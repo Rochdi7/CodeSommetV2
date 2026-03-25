@@ -48,7 +48,7 @@
 
             {{-- CTA Buttons --}}
             <div class="flex items-center gap-2 pr-2 relative z-10">
-                <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5"
+                <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 hover:bg-white hover:from-white hover:to-white hover:text-[var(--color-primary-orange)] hover:border hover:border-[var(--color-primary-orange)]"
                    href="{{ route('get-quote') }}">
                     Get Quote
                 </a>
