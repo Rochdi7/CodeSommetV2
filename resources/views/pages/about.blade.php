@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - CodeSommet | Digital Agency in Morocco | Web Development, Branding & SEO')
-@section('meta_description', 'CodeSommet is a Morocco-based digital agency since 2018, specializing in web development,
-    UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered. Contactez-nous today.')
-@section('meta_keywords', 'about CodeSommet,digital agency Morocco,web development Morocco,UI UX design,branding
-    agency,SEO Morocco,e-commerce development,mobile apps,SaaS solutions')
-@section('og_title', 'About Us - CodeSommet | Digital Agency in Morocco')
-@section('og_description', 'CodeSommet is a Morocco-based digital agency since 2018. We specialize in web development,
-    UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions.')
-@section('twitter_description', 'Morocco-based digital agency since 2018. Web development, UI/UX design, branding, SEO,
-    e-commerce, mobile apps & SaaS. 50+ projects delivered.')
+@section('title', 'À Propos - CodeSommet | Agence Digitale au Maroc | Développement Web, Branding & SEO')
+@section('meta_description', 'CodeSommet est une agence digitale basée au Maroc depuis 2018, spécialisée en développement web,
+    design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. Plus de 50 projets livrés. Contactez-nous.')
+@section('meta_keywords', 'à propos CodeSommet,agence digitale Maroc,développement web Maroc,design UI UX,agence
+    branding,SEO Maroc,développement e-commerce,applications mobiles,solutions SaaS')
+@section('og_title', 'À Propos - CodeSommet | Agence Digitale au Maroc')
+@section('og_description', 'CodeSommet est une agence digitale basée au Maroc depuis 2018. Nous sommes spécialisés en développement web,
+    design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS.')
+@section('twitter_description', 'Agence digitale basée au Maroc depuis 2018. Développement web, design UI/UX, branding, SEO,
+    e-commerce, applications mobiles & SaaS. Plus de 50 projets livrés.')
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -44,31 +44,31 @@
                                 <path
                                     d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
                                 </path>
-                            </svg><span class="text-sm font-medium text-[#00AEEF]">Our Story</span></div>
+                            </svg><span class="text-sm font-medium text-[#00AEEF]">Notre Histoire</span></div>
                         <div class="space-y-4">
                             <h1 class="font-heading tracking-tight text-[var(--text-4xl)] md:text-[var(--text-5xl)] lg:text-[var(--text-6xl)] font-bold leading-tight"
-                                style="font-family:var(--font-display)">Your Digital Partner in Morocco Since 2018</h1>
+                                style="font-family:var(--font-display)">Votre Partenaire Digital au Maroc Depuis 2018</h1>
                             <p
                                 class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
-                                We&#x27;re CodeSommet, a Morocco-based digital agency specializing in développement web, UI/UX
-                                design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. Let&#x27;s bring your
-                                vision to life - get in touch today.</p>
+                                Nous sommes CodeSommet, une agence digitale basée au Maroc spécialisée en développement web, design UI/UX,
+                                branding, SEO, e-commerce, applications mobiles et solutions SaaS. Donnons vie à votre
+                                vision - contactez-nous dès aujourd&#x27;hui.</p>
                         </div>
                         <div
                             class="flex flex-wrap items-center justify-center lg:justify-start gap-6 md:gap-8 text-sm md:text-base">
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">4+ Years Experience</span>
+                                    class="font-semibold text-[#0F0F0F]">4+ Ans d&#x27;Expérience</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+ Projets Delivered</span>
+                                    class="font-semibold text-[#0F0F0F]">50+ Projets Livrés</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">Team of Experts</span>
+                                    class="font-semibold text-[#0F0F0F]">Équipe d&#x27;Experts</span>
                             </div>
                         </div>
                         <div>
@@ -86,9 +86,8 @@
                                             class="min-h-[60px] flex items-center justify-center px-4">
                                             <p id="fun-fact-text"
                                                 class="text-sm md:text-base text-[#0F0F0F]/80 text-center leading-relaxed"
-                                                style="font-family:var(--font-display)">Since 2018, we&#x27;ve helped
-                                                businesses across Morocco and beyond build powerful digital experiences.
-                                                Ready to start yours? Contactez-nous!</p>
+                                                style="font-family:var(--font-display)">Depuis 2018, nous avons aidé des entreprises à travers le Maroc et au-delà à créer des expériences digitales puissantes.
+                                                Prêt à commencer la vôtre ? Contactez-nous !</p>
                                         </div>
                                         <div class="flex justify-center"><button id="fun-fact-btn"
                                                 class="inline-flex items-center justify-center font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 text-base group bg-[#00AEEF] hover:bg-[#0071BC] text-white border-0 rounded-full px-6 py-2 transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -102,14 +101,14 @@
                                                     </path>
                                                     <path d="M9 18h6"></path>
                                                     <path d="M10 22h4"></path>
-                                                </svg><span class="text-sm font-medium">Click for Another
-                                                    Fact</span></button></div>
+                                                </svg><span class="text-sm font-medium">Cliquez pour un Autre
+                                                    Fait</span></button></div>
                                     </div>
                                 </div>
                             </div>
                         </div><a
                             class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 h-12"
-                            style="color:white" href="{{ route('contact') }}">Get Started<svg
+                            style="color:white" href="{{ route('contact') }}">Commencer<svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
@@ -120,7 +119,7 @@
                     <div class="hidden lg:flex relative h-[400px] items-center justify-center"
                         style="transform:scale(0.95)">
                         <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div>
-                        <img src="{{ asset('images/about-hero.webp') }}" alt="About CodeSommet"
+                        <img src="{{ asset('images/about-hero.webp') }}" alt="À Propos de CodeSommet"
                             class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
                     </div>
                 </div>
@@ -132,7 +131,7 @@
                     <div class="relative h-[400px] lg:h-[500px] flex items-center justify-center"
                         style="opacity:0;transform:translateY(30px)"><img
                             src="{{ asset('images/about-mission-team-collaboration.webp') }}"
-                            alt="CodeSommet team collaboration" class="w-full h-full object-contain" /></div>
+                            alt="Collaboration de l'équipe CodeSommet" class="w-full h-full object-contain" /></div>
                     <div style="opacity:0;transform:translateY(30px)">
                         <div
                             class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
@@ -149,14 +148,13 @@
                                 <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                             </svg>Notre Mission</div>
                         <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-6"
-                            style="font-family:var(--font-heading)">Comprehensive Digital Solutions That Drive Results</h2>
+                            style="font-family:var(--font-heading)">Des Solutions Digitales Complètes Qui Génèrent des Résultats</h2>
                         <div class="space-y-4 text-[var(--text-secondary)]">
-                            <p class="leading-relaxed text-lg">Since 2018, CodeSommet has been helping businesses in
-                                Morocco and internationally grow through développement web, UI/UX design, branding, SEO,
-                                e-commerce, mobile apps, and SaaS solutions.</p>
-                            <p class="leading-relaxed text-lg">From strategy to launch and beyond - we handle everything.
-                                You focus on your business, we build your digital presence. Ready to get started? Reach out
-                                to our team.</p>
+                            <p class="leading-relaxed text-lg">Depuis 2018, CodeSommet aide les entreprises au Maroc et à l&#x27;international à se développer grâce au développement web, design UI/UX, branding, SEO,
+                                e-commerce, applications mobiles et solutions SaaS.</p>
+                            <p class="leading-relaxed text-lg">De la stratégie au lancement et au-delà - nous gérons tout.
+                                Vous vous concentrez sur votre activité, nous construisons votre présence digitale. Prêt à commencer ? Contactez
+                                notre équipe.</p>
                         </div>
                         <div class="mt-8 space-y-3">
                             <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -166,8 +164,8 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[var(--text-primary)] font-medium">Web development, e-commerce
-                                    &amp; SaaS solutions</span></div>
+                                </svg><span class="text-[var(--text-primary)] font-medium">Développement web, e-commerce
+                                    &amp; solutions SaaS</span></div>
                             <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -175,8 +173,8 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[var(--text-primary)] font-medium">Complete end-to-end
-                                    service</span></div>
+                                </svg><span class="text-[var(--text-primary)] font-medium">Service complet de bout
+                                    en bout</span></div>
                             <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -184,8 +182,8 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[var(--text-primary)] font-medium">Focus on lead generation and
-                                    results</span></div>
+                                </svg><span class="text-[var(--text-primary)] font-medium">Axé sur la génération de leads et
+                                    les résultats</span></div>
                         </div>
                     </div>
                 </div>
@@ -205,13 +203,13 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Why CodeSommet?</div>
+                        </svg>Pourquoi CodeSommet ?</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-6"
-                        style="font-family:var(--font-heading)">We&#x27;re Not Your Typical Agency</h2>
+                        style="font-family:var(--font-heading)">Nous Ne Sommes Pas une Agence Ordinaire</h2>
                     <p class="font-body leading-relaxed font-normal max-w-4xl mx-auto text-[var(--text-secondary)]"><span
-                            class="text-[#00AEEF] font-semibold">Your growth partner since 2018.</span> From web
-                        development to branding and SEO - we do it all.<br />Contactez-nous for a free consultation and
-                        let&#x27;s discuss your project.</p>
+                            class="text-[#00AEEF] font-semibold">Votre partenaire de croissance depuis 2018.</span> Du développement web
+                        au branding en passant par le SEO - nous faisons tout.<br />Contactez-nous pour une consultation gratuite et
+                        discutons de votre projet.</p>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
                     <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 lg:p-10 border-2 border-gray-200"
@@ -226,44 +224,44 @@
                                     <circle cx="12" cy="12" r="10"></circle>
                                 </svg></div>
                             <h3 class="text-2xl font-bold text-gray-700" style="font-family:var(--font-heading)">
-                                Traditional Agencies</h3>
+                                Agences Traditionnelles</h3>
                         </div>
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3">
                                 <div
                                     class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center mt-0.5 flex-shrink-0">
                                     <span class="text-red-600 text-xs font-bold">✕</span></div><span
-                                    class="text-gray-600 line-through">Weeks or months to deliver</span>
+                                    class="text-gray-600 line-through">Des semaines ou des mois pour livrer</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div
                                     class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center mt-0.5 flex-shrink-0">
                                     <span class="text-red-600 text-xs font-bold">✕</span></div><span
-                                    class="text-gray-600 line-through">Lack of transparency</span>
+                                    class="text-gray-600 line-through">Manque de transparence</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div
                                     class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center mt-0.5 flex-shrink-0">
                                     <span class="text-red-600 text-xs font-bold">✕</span></div><span
-                                    class="text-gray-600 line-through">Poor communication and follow-up</span>
+                                    class="text-gray-600 line-through">Mauvaise communication et suivi</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div
                                     class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center mt-0.5 flex-shrink-0">
                                     <span class="text-red-600 text-xs font-bold">✕</span></div><span
-                                    class="text-gray-600 line-through">Multiple vendors to coordinate</span>
+                                    class="text-gray-600 line-through">Plusieurs prestataires à coordonner</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div
                                     class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center mt-0.5 flex-shrink-0">
                                     <span class="text-red-600 text-xs font-bold">✕</span></div><span
-                                    class="text-gray-600 line-through">Generic templates and designs</span>
+                                    class="text-gray-600 line-through">Templates et designs génériques</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div
                                     class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center mt-0.5 flex-shrink-0">
                                     <span class="text-red-600 text-xs font-bold">✕</span></div><span
-                                    class="text-gray-600 line-through">No ongoing support or strategy</span>
+                                    class="text-gray-600 line-through">Aucun support ou stratégie continue</span>
                             </li>
                         </ul>
                     </div>
@@ -271,7 +269,7 @@
                         style="opacity:0;transform:translateY(30px)" data-delay="2">
                         <div
                             class="absolute top-4 right-4 bg-[#00AEEF] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                            That&#x27;s Us</div>
+                            C&#x27;est Nous</div>
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-12 h-12 rounded-full bg-[#00AEEF] flex items-center justify-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -293,7 +291,7 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[#0F0F0F] font-medium">Fast, reliable delivery</span></li>
+                                </svg><span class="text-[#0F0F0F] font-medium">Livraison rapide et fiable</span></li>
                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -301,7 +299,7 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[#0F0F0F] font-medium">Custom quotes tailored to your needs</span>
+                                </svg><span class="text-[#0F0F0F] font-medium">Devis personnalisés adaptés à vos besoins</span>
                             </li>
                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -310,7 +308,7 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[#0F0F0F] font-medium">100% transparent process</span></li>
+                                </svg><span class="text-[#0F0F0F] font-medium">Processus 100% transparent</span></li>
                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -318,7 +316,7 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[#0F0F0F] font-medium">Complete end-to-end service</span></li>
+                                </svg><span class="text-[#0F0F0F] font-medium">Service complet de bout en bout</span></li>
                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -326,7 +324,7 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[#0F0F0F] font-medium">Full-stack digital solutions</span></li>
+                                </svg><span class="text-[#0F0F0F] font-medium">Solutions digitales full-stack</span></li>
                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -334,12 +332,12 @@
                                     aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
-                                </svg><span class="text-[#0F0F0F] font-medium">Web, mobile, branding &amp; SEO
-                                    expertise</span></li>
+                                </svg><span class="text-[#0F0F0F] font-medium">Expertise web, mobile, branding &amp;
+                                    SEO</span></li>
                         </ul>
                         <div class="mt-8 pt-6 border-t-2 border-[#00AEEF]/20">
-                            <p class="text-sm text-[#0F0F0F]/70 italic">&quot;Your trusted digital partner in Morocco since
-                                2018. Contactez-nous to discuss your project.&quot;</p>
+                            <p class="text-sm text-[#0F0F0F]/70 italic">&quot;Votre partenaire digital de confiance au Maroc depuis
+                                2018. Contactez-nous pour discuter de votre projet.&quot;</p>
                         </div>
                     </div>
                 </div>
@@ -360,19 +358,17 @@
                                 </path>
                             </svg></div>
                         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-primary)]"
-                            style="font-family:var(--font-heading)">See Our Expertise in Action</h2>
-                        <p class="text-lg text-[var(--text-secondary)] mb-8 max-w-2xl mx-auto">Try our free Website
-                            Analyzer - 40+ AI-powered checks built by our team to demonstrate what we can do for you.</p><a
+                            style="font-family:var(--font-heading)">Découvrez Notre Expertise en Action</h2>
+                        <p class="text-lg text-[var(--text-secondary)] mb-8 max-w-2xl mx-auto">Essayez notre Analyseur de Site Web gratuit - plus de 40 vérifications alimentées par l&#x27;IA, conçues par notre équipe pour démontrer ce que nous pouvons faire pour vous.</p><a
                             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
-                            href="{{ route('tool', 'website-analyzer') }}"><span>Try Free Tool</span><svg
+                            href="{{ route('tool', 'website-analyzer') }}"><span>Essayer l&#x27;Outil Gratuit</span><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a>
-                        <p class="text-sm text-[var(--text-secondary)] mt-4">✓ Built by our development team ✓ AI-powered
-                            insights ✓ Instant results</p>
+                        <p class="text-sm text-[var(--text-secondary)] mt-4">✓ Conçu par notre équipe de développement ✓ Analyses alimentées par l&#x27;IA ✓ Résultats instantanés</p>
                     </div>
                 </div>
             </div>
@@ -391,11 +387,11 @@
                                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
-                            </svg><span class="text-sm font-semibold text-[#00AEEF]">The Dream Team</span></div>
+                            </svg><span class="text-sm font-semibold text-[#00AEEF]">L&#x27;Équipe de Rêve</span></div>
                         <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
-                            style="font-family:var(--font-heading)">Our Expert Team</h3>
-                        <p class="text-[#0F0F0F]/60 text-lg md:text-xl max-w-2xl mx-auto">A passionate team of developers,
-                            designers, and strategists ready to elevate your business. Contactez-nous to meet the team.</p>
+                            style="font-family:var(--font-heading)">Notre Équipe d&#x27;Experts</h3>
+                        <p class="text-[#0F0F0F]/60 text-lg md:text-xl max-w-2xl mx-auto">Une équipe passionnée de développeurs,
+                            designers et stratèges prête à faire grandir votre entreprise. Contactez-nous pour rencontrer l&#x27;équipe.</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         <div class="relative" style="opacity:0;transform:translateY(30px)" data-delay="1">
@@ -413,10 +409,10 @@
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/90 to-transparent p-6">
                                     <h4 class="text-white text-xl font-bold mb-1" style="font-family:var(--font-heading)">
-                                        Development Team</h4>
+                                        Équipe de Développement</h4>
                                     <div class="flex items-center gap-2">
                                         <div class="h-0.5 w-8 bg-[#00AEEF]"></div>
-                                        <p class="text-white/80 text-sm font-medium">Web, Mobile &amp; SaaS Experts</p>
+                                        <p class="text-white/80 text-sm font-medium">Experts Web, Mobile &amp; SaaS</p>
                                     </div>
                                 </div>
                             </div>
@@ -436,10 +432,10 @@
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/90 to-transparent p-6">
                                     <h4 class="text-white text-xl font-bold mb-1" style="font-family:var(--font-heading)">
-                                        Design Team</h4>
+                                        Équipe Design</h4>
                                     <div class="flex items-center gap-2">
                                         <div class="h-0.5 w-8 bg-[#00AEEF]"></div>
-                                        <p class="text-white/80 text-sm font-medium">UI/UX &amp; Branding Specialists</p>
+                                        <p class="text-white/80 text-sm font-medium">Spécialistes UI/UX &amp; Branding</p>
                                     </div>
                                 </div>
                             </div>
@@ -457,19 +453,18 @@
                                 <div
                                     class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/90 to-transparent p-6">
                                     <h4 class="text-white text-xl font-bold mb-1" style="font-family:var(--font-heading)">
-                                        Strategy Team</h4>
+                                        Équipe Stratégie</h4>
                                     <div class="flex items-center gap-2">
                                         <div class="h-0.5 w-8 bg-[#00AEEF]"></div>
-                                        <p class="text-white/80 text-sm font-medium">SEO &amp; Digital Marketing Pros</p>
+                                        <p class="text-white/80 text-sm font-medium">Pros du SEO &amp; Marketing Digital</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="text-center">
-                        <p class="text-[#0F0F0F]/50 text-sm italic">Together, we&#x27;ve delivered 50+ exceptional projects
-                            since 2018. <a href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Get in
-                                touch</a> to discuss your project.</p>
+                        <p class="text-[#0F0F0F]/50 text-sm italic">Ensemble, nous avons livré plus de 50 projets exceptionnels
+                            depuis 2018. <a href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous</a> pour discuter de votre projet.</p>
                     </div>
                 </div>
             </div>
@@ -488,15 +483,13 @@
                             <circle cx="9" cy="7" r="4"></circle>
                         </svg>Notre Équipe</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">The People Behind The Projets</h2>
-                    <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-3xl mx-auto">A
-                        passionate, talented team based in Morocco delivering exceptional results since 2018. We believe in
-                        celebrating wins together and building strong client relationships. Want to work with us? <a
-                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous today</a>.</p>
+                        style="font-family:var(--font-heading)">Les Personnes Derrière Les Projets</h2>
+                    <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-3xl mx-auto">Une équipe passionnée et talentueuse basée au Maroc qui livre des résultats exceptionnels depuis 2018. Nous croyons en la célébration des victoires ensemble et en la construction de relations clients solides. Envie de travailler avec nous ? <a
+                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous</a>.</p>
                 </div>
                 <div class="space-y-8">
                     <div class="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl group"
-                        style="opacity:0;transform:translateY(30px)"><img alt="CodeSommet Professional Team Photo"
+                        style="opacity:0;transform:translateY(30px)"><img alt="Photo Professionnelle de l'Équipe CodeSommet"
                             decoding="async"
                             class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -516,14 +509,14 @@
                                 </svg><span class="text-sm font-medium uppercase tracking-wide text-white">Notre Équipe</span>
                             </div>
                             <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white"
-                                style="font-family:var(--font-heading)">Meet The People Behind CodeSommet</h3>
+                                style="font-family:var(--font-heading)">Rencontrez Les Personnes Derrière CodeSommet</h3>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
                         style="opacity:0;transform:translateY(30px)">
                         <div
                             class="relative h-[300px] md:h-[400px] lg:col-span-2 rounded-2xl overflow-hidden shadow-lg group lg:row-start-1">
-                            <img alt="CodeSommet Team Receiving Awards" loading="lazy" decoding="async"
+                            <img alt="L'Équipe CodeSommet Recevant des Prix" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
@@ -541,11 +534,11 @@
                                         d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
                                     </path>
                                     <circle cx="12" cy="8" r="6"></circle>
-                                </svg><span class="text-sm font-semibold text-[#0F0F0F]">Award Winners</span></div>
+                                </svg><span class="text-sm font-semibold text-[#0F0F0F]">Lauréats</span></div>
                         </div>
                         <div
                             class="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg group lg:row-start-1">
-                            <img alt="CodeSommet Team Collaborating" loading="lazy" decoding="async"
+                            <img alt="Collaboration de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
@@ -555,7 +548,7 @@
                             </div>
                         </div>
                         <div class="relative h-[250px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group"><img
-                                alt="CodeSommet Team Celebration" loading="lazy" decoding="async"
+                                alt="Célébration de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
@@ -566,7 +559,7 @@
                         </div>
                         <div
                             class="relative h-[250px] md:h-[300px] lg:col-span-2 rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="CodeSommet Team Adventure Activity" loading="lazy" decoding="async"
+                            <img alt="Activité Aventure de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
@@ -583,11 +576,11 @@
                                     <path
                                         d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
                                     </path>
-                                </svg><span class="text-sm font-semibold text-[#0F0F0F]">Team Building</span></div>
+                                </svg><span class="text-sm font-semibold text-[#0F0F0F]">Esprit d&#x27;Équipe</span></div>
                         </div>
                         <div
                             class="relative h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="CodeSommet Team Pizza Party" loading="lazy" decoding="async"
+                            <img alt="Soirée Pizza de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
@@ -598,7 +591,7 @@
                         </div>
                         <div
                             class="relative h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="CodeSommet Team Outdoor Event" loading="lazy" decoding="async"
+                            <img alt="Événement en Plein Air de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
@@ -609,7 +602,7 @@
                         </div>
                         <div
                             class="relative h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="CodeSommet Team Awards Ceremony" loading="lazy" decoding="async"
+                            <img alt="Cérémonie de Remise de Prix de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
@@ -620,7 +613,7 @@
                         </div>
                         <div
                             class="relative h-[300px] md:h-[350px] lg:h-[400px] lg:col-span-3 rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="CodeSommet Team Pool Outing" loading="lazy" decoding="async"
+                            <img alt="Sortie Piscine de l'Équipe CodeSommet" loading="lazy" decoding="async"
                                 class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
@@ -635,22 +628,22 @@
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
                                 style="font-family:var(--font-heading)">4+</div>
-                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Years Experience</p>
+                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Ans d&#x27;Expérience</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
                                 style="font-family:var(--font-heading)">50+</div>
-                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Projets Delivered</p>
+                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Projets Livrés</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
                                 style="font-family:var(--font-heading)">7+</div>
-                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Services Offered</p>
+                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Services Proposés</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
                                 style="font-family:var(--font-heading)">100%</div>
-                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Client Satisfaction</p>
+                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Satisfaction Client</p>
                         </div>
                     </div>
                 </div>
@@ -667,17 +660,16 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                             <path d="M2 12h20"></path>
-                        </svg>Our Location</div>
+                        </svg>Notre Localisation</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Our Office in Morocco</h2>
-                    <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Based
-                        in Morocco, we bring local expertise and international quality to every project. <a
-                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous</a> to start
-                        your next project.</p>
+                        style="font-family:var(--font-heading)">Notre Bureau au Maroc</h2>
+                    <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Basés au Maroc, nous apportons une expertise locale et une qualité internationale à chaque projet. <a
+                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous</a> pour démarrer
+                        votre prochain projet.</p>
                 </div>
                 <div class="grid grid-cols-1 max-w-lg mx-auto gap-6">
                     <div class="bg-[var(--bg-primary)] p-4 relative overflow-hidden group border-none shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg aspect-[5/7]"
-                        style="opacity:0;transform:translateY(30px)" data-delay="1"><img alt="Morocco Office background"
+                        style="opacity:0;transform:translateY(30px)" data-delay="1"><img alt="Arrière-plan du bureau au Maroc"
                             loading="lazy" decoding="async"
                             class="object-cover transition-transform duration-500 group-hover:scale-105 z-0"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -688,19 +680,18 @@
                         <div class="relative z-20 p-5 md:p-6 flex flex-col h-full justify-end text-white">
                             <div>
                                 <div class="flex items-start gap-3 mb-4"><span class="text-3xl pt-0.5" role="img"
-                                        aria-label="Morocco flag">&#x1F1F2;&#x1F1E6;</span>
+                                        aria-label="Drapeau du Maroc">&#x1F1F2;&#x1F1E6;</span>
                                     <div>
                                         <h3 class="text-lg md:text-xl font-semibold mb-1.5 text-white drop-shadow-lg">
-                                            Morocco (Main Office)</h3>
+                                            Maroc (Bureau Principal)</h3>
                                         <address class="not-italic text-gray-200 text-xs md:text-sm leading-snug"><span
-                                                class="block">Maroc</span><span class="block">Headquarters</span>
+                                                class="block">Maroc</span><span class="block">Siège Social</span>
                                         </address>
                                     </div>
                                 </div>
                                 <div class="mt-4 pt-4 border-t border-white/20 space-y-2">
-                                    <p class="text-white/80 text-sm">Have a project in mind? <a
-                                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contact
-                                            us</a> and let&#x27;s talk.</p>
+                                    <p class="text-white/80 text-sm">Vous avez un projet en tête ? <a
+                                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous</a> et discutons-en.</p>
                                 </div>
                             </div>
                         </div>
@@ -763,8 +754,8 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book
-                                        Discovery Call</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un
+                                        Appel Découverte</span>
                                 </a><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -783,8 +774,8 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyze
-                                        Your Website</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
+                                        Votre Site Web</span>
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="codesommet/discovery"
@@ -817,8 +808,8 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book
-                                        Discovery Call</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un
+                                        Appel Découverte</span>
                                 </button><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -837,8 +828,8 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyze
-                                        Your Website</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
+                                        Votre Site Web</span>
                                 </a></div>
                             <div class="relative mt-2 h-16">
                                 <div class="absolute pointer-events-none animate-cursor-stops" style="left:50%;top:50%">
@@ -851,15 +842,15 @@
                                                 stroke-miterlimit="10"></path>
                                         </svg></div>
                                     <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
-                                        style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">Just
-                                            click</span></div>
+                                        style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">Cliquez
+                                            ici</span></div>
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Join forward-thinking companies who
-                            chose excellence</p>
-                        <p class="text-sm md:text-base text-white/50">Let&#x27;s discuss how AI and modern design can
-                            elevate your business</p>
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises visionnaires qui
+                            ont choisi l&#x27;excellence</p>
+                        <p class="text-sm md:text-base text-white/50">Discutons de comment l&#x27;IA et le design moderne peuvent
+                            propulser votre entreprise</p>
                         <div class="mt-6">
                             <div class="relative w-full py-8">
                                 <div class="flex items-center justify-center gap-0">

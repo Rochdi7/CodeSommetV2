@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Obtenir un Devis Gratuit | CodeSommet')
-@section('meta_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
+@section('meta_description', 'Parlez-nous de votre projet et obtenez un devis personnalis&eacute; sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
 @section('meta_keywords', 'web development Morocco, AI web development agency, Next.js development agency, dashboard development, SaaS development, education website development, healthcare website development, React development Morocco, TypeScript development, web development worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
 @section('og_title', 'Obtenir un Devis Gratuit | CodeSommet')
-@section('og_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
-@section('twitter_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
+@section('og_description', 'Parlez-nous de votre projet et obtenez un devis personnalis&eacute; sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
+@section('twitter_description', 'Parlez-nous de votre projet et obtenez un devis personnalis&eacute; sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
 
 @section('content')
 <div class="min-h-screen bg-[#F5F5F5] flex flex-col">
@@ -14,23 +14,23 @@
 {{-- Header --}}
 <div class="text-center mb-6 sm:mb-8 max-w-lg" id="quoteHeader" style="opacity:0;transform:translateY(10px)">
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-3" style="font-family:var(--font-display)">Obtenir un Devis Gratuit</h1>
-    <p class="text-sm sm:text-base text-[var(--text-secondary)]">Tell us about your project and we&#x27;ll provide a custom quote based on your needs.</p>
+    <p class="text-sm sm:text-base text-[var(--text-secondary)]">Parlez-nous de votre projet et nous vous fournirons un devis personnalis&#x00E9; selon vos besoins.</p>
     <div class="flex items-center justify-center gap-4 sm:gap-6 mt-4">
         <div class="flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift w-3.5 h-3.5 text-[#00AEEF]" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>
-            <span class="text-xs text-[var(--text-secondary)]">Free quote</span>
+            <span class="text-xs text-[var(--text-secondary)]">Devis gratuit</span>
         </div>
         <div class="flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3.5 h-3.5 text-[#00AEEF]" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
-            <span class="text-xs text-[var(--text-secondary)]">24h response</span>
+            <span class="text-xs text-[var(--text-secondary)]">R&#x00E9;ponse sous 24h</span>
         </div>
         <div class="flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-3.5 h-3.5 text-[#00AEEF]" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
-            <span class="text-xs text-[var(--text-secondary)]">No obligation</span>
+            <span class="text-xs text-[var(--text-secondary)]">Sans engagement</span>
         </div>
         <div class="flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag w-3.5 h-3.5 text-[#00AEEF]" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
-            <span class="text-xs text-[var(--text-secondary)]">Custom pricing</span>
+            <span class="text-xs text-[var(--text-secondary)]">Tarification sur mesure</span>
         </div>
     </div>
 </div>
@@ -45,18 +45,18 @@
             <div class="flex flex-col items-center relative" id="stepIndicator1">
                 <div class="absolute top-3.5 left-[calc(50%+14px)] h-[2px]" id="stepLine1" style="width:calc(100% + 32px);background-color:#E5E7EB"></div>
                 <div class="relative z-10 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 bg-[#00AEEF] text-white ring-[3px] ring-[#00AEEF]/20" id="stepBadge1">1</div>
-                <span class="mt-1.5 text-[10px] font-medium text-[#00AEEF]" id="stepLabel1">About You</span>
+                <span class="mt-1.5 text-[10px] font-medium text-[#00AEEF]" id="stepLabel1">&Agrave; propos de vous</span>
             </div>
             {{-- Step 2 indicator --}}
             <div class="flex flex-col items-center relative" id="stepIndicator2">
                 <div class="absolute top-3.5 left-[calc(50%+14px)] h-[2px]" id="stepLine2" style="width:calc(100% + 32px);background-color:#E5E7EB"></div>
                 <div class="relative z-10 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 bg-gray-100 text-gray-400 border border-gray-200" id="stepBadge2">2</div>
-                <span class="mt-1.5 text-[10px] font-medium text-gray-400" id="stepLabel2">Your Project</span>
+                <span class="mt-1.5 text-[10px] font-medium text-gray-400" id="stepLabel2">Votre Projet</span>
             </div>
             {{-- Step 3 indicator --}}
             <div class="flex flex-col items-center relative" id="stepIndicator3">
                 <div class="relative z-10 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 bg-gray-100 text-gray-400 border border-gray-200" id="stepBadge3">3</div>
-                <span class="mt-1.5 text-[10px] font-medium text-gray-400" id="stepLabel3">Details</span>
+                <span class="mt-1.5 text-[10px] font-medium text-gray-400" id="stepLabel3">D&#x00E9;tails</span>
             </div>
         </div>
     </div>
@@ -67,23 +67,23 @@
             {{-- STEP 1: About You --}}
             <div class="space-y-3.5 quote-step" id="step1" style="opacity:1;transform:translateX(0)">
                 <div>
-                    <label for="fullName" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Full Name <span class="text-[#00AEEF]">*</span></label>
-                    <input type="text" id="fullName" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="John Doe" name="fullName" value=""/>
+                    <label for="fullName" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Nom complet <span class="text-[#00AEEF]">*</span></label>
+                    <input type="text" id="fullName" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="Jean Dupont" name="fullName" value=""/>
                     <p class="mt-1 text-xs text-red-500 hidden" id="error-fullName"></p>
                 </div>
                 <div>
-                    <label for="email" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Email Address <span class="text-[#00AEEF]">*</span></label>
-                    <input type="email" id="email" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="john@company.com" name="email" value=""/>
+                    <label for="email" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Adresse e-mail <span class="text-[#00AEEF]">*</span></label>
+                    <input type="email" id="email" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="jean@entreprise.com" name="email" value=""/>
                     <p class="mt-1 text-xs text-red-500 hidden" id="error-email"></p>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-3.5">
                     <div>
-                        <label for="phone" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Phone / WhatsApp <span class="text-[#00AEEF]">*</span></label>
-                        <input type="tel" id="phone" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="+1 (555) 000-0000" name="phone" value=""/>
+                        <label for="phone" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">T&#x00E9;l&#x00E9;phone / WhatsApp <span class="text-[#00AEEF]">*</span></label>
+                        <input type="tel" id="phone" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="+33 6 00 00 00 00" name="phone" value=""/>
                         <p class="mt-1 text-xs text-red-500 hidden" id="error-phone"></p>
                     </div>
                     <div>
-                        <label for="companyName" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Company / Brand Name <span class="text-[#00AEEF]">*</span></label>
+                        <label for="companyName" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Nom de l&#x27;entreprise / Marque <span class="text-[#00AEEF]">*</span></label>
                         <input type="text" id="companyName" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="Acme Corp" name="companyName" value=""/>
                         <p class="mt-1 text-xs text-red-500 hidden" id="error-companyName"></p>
                     </div>
@@ -93,68 +93,68 @@
             {{-- STEP 2: Your Project --}}
             <div class="space-y-3.5 quote-step" id="step2" style="display:none;opacity:0;transform:translateX(200px)">
                 <div>
-                    <label for="referenceWebsite1" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Reference Website 1 <span class="text-[#00AEEF]">*</span></label>
+                    <label for="referenceWebsite1" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Site web de r&#x00E9;f&#x00E9;rence 1 <span class="text-[#00AEEF]">*</span></label>
                     <div class="relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-350"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                        <input type="url" id="referenceWebsite1" name="referenceWebsite1" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350 pl-10" style="border-radius:8px" placeholder="https://example.com" value=""/>
+                        <input type="url" id="referenceWebsite1" name="referenceWebsite1" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350 pl-10" style="border-radius:8px" placeholder="https://exemple.com" value=""/>
                     </div>
-                    <p class="mt-1 text-xs text-[var(--text-secondary)]">A website whose design or functionality you admire</p>
+                    <p class="mt-1 text-xs text-[var(--text-secondary)]">Un site web dont vous admirez le design ou les fonctionnalit&#x00E9;s</p>
                     <p class="mt-1 text-xs text-red-500 hidden" id="error-referenceWebsite1"></p>
                 </div>
                 <div>
-                    <label for="referenceWebsite2" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Reference Website 2 (Optional)</label>
+                    <label for="referenceWebsite2" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Site web de r&#x00E9;f&#x00E9;rence 2 (Optionnel)</label>
                     <div class="relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-350"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                        <input type="url" id="referenceWebsite2" name="referenceWebsite2" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350 pl-10" style="border-radius:8px" placeholder="https://another-example.com" value=""/>
+                        <input type="url" id="referenceWebsite2" name="referenceWebsite2" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350 pl-10" style="border-radius:8px" placeholder="https://autre-exemple.com" value=""/>
                     </div>
                     <p class="mt-1 text-xs text-red-500 hidden" id="error-referenceWebsite2"></p>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-3.5">
                     <div>
-                        <label for="projectType" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Project Type</label>
+                        <label for="projectType" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Type de projet</label>
                         <select id="projectType" name="projectType" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                            <option value="">Select type</option>
-                            <option value="New Website">New Website</option>
-                            <option value="Website Redesign">Website Redesign</option>
-                            <option value="Web Application">Web Application</option>
-                            <option value="E-commerce Store">E-commerce Store</option>
-                            <option value="SaaS Platform">SaaS Platform</option>
-                            <option value="Landing Page">Landing Page</option>
-                            <option value="Dashboard">Dashboard</option>
-                            <option value="Other">Other</option>
+                            <option value="">S&#x00E9;lectionner le type</option>
+                            <option value="New Website">Nouveau site web</option>
+                            <option value="Website Redesign">Refonte de site web</option>
+                            <option value="Web Application">Application web</option>
+                            <option value="E-commerce Store">Boutique e-commerce</option>
+                            <option value="SaaS Platform">Plateforme SaaS</option>
+                            <option value="Landing Page">Page d&#x27;atterrissage</option>
+                            <option value="Dashboard">Tableau de bord</option>
+                            <option value="Other">Autre</option>
                         </select>
                     </div>
                     <div>
-                        <label for="industry" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Industry</label>
+                        <label for="industry" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Secteur d&#x27;activit&#x00E9;</label>
                         <select id="industry" name="industry" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                            <option value="">Select industry</option>
-                            <option value="Education / EdTech">Education / EdTech</option>
-                            <option value="Healthcare / Medical">Healthcare / Medical</option>
-                            <option value="Study Abroad / Immigration">Study Abroad / Immigration</option>
-                            <option value="SaaS / B2B Software">SaaS / B2B Software</option>
-                            <option value="E-commerce / Retail">E-commerce / Retail</option>
+                            <option value="">S&#x00E9;lectionner le secteur</option>
+                            <option value="Education / EdTech">&#x00C9;ducation / EdTech</option>
+                            <option value="Healthcare / Medical">Sant&#x00E9; / M&#x00E9;dical</option>
+                            <option value="Study Abroad / Immigration">&#x00C9;tudes &#x00E0; l&#x27;&#x00E9;tranger / Immigration</option>
+                            <option value="SaaS / B2B Software">SaaS / Logiciel B2B</option>
+                            <option value="E-commerce / Retail">E-commerce / Commerce de d&#x00E9;tail</option>
                             <option value="FinTech / Finance">FinTech / Finance</option>
                             <option value="Real Estate">Immobilier</option>
-                            <option value="Travel / Hospitality">Travel / Hospitality</option>
-                            <option value="Other">Other</option>
+                            <option value="Travel / Hospitality">Voyage / H&#x00F4;tellerie</option>
+                            <option value="Other">Autre</option>
                         </select>
                     </div>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-3.5">
                     <div>
-                        <label for="currentWebsite" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Current Website URL</label>
-                        <input type="url" id="currentWebsite" name="currentWebsite" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="https://yoursite.com" value=""/>
+                        <label for="currentWebsite" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">URL du site web actuel</label>
+                        <input type="url" id="currentWebsite" name="currentWebsite" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350" style="border-radius:8px" placeholder="https://votresite.com" value=""/>
                         <p class="mt-1 text-xs text-red-500 hidden" id="error-currentWebsite"></p>
                     </div>
                     <div>
-                        <label for="estimatedPages" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Estimated Pages</label>
+                        <label for="estimatedPages" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Nombre de pages estim&#x00E9;</label>
                         <select id="estimatedPages" name="estimatedPages" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                            <option value="">Select range</option>
+                            <option value="">S&#x00E9;lectionner la plage</option>
                             <option value="1-5 pages">1-5 pages</option>
                             <option value="6-10 pages">6-10 pages</option>
                             <option value="11-20 pages">11-20 pages</option>
                             <option value="20+ pages">20+ pages</option>
-                            <option value="Not sure">Not sure</option>
+                            <option value="Not sure">Pas s&#x00FB;r</option>
                         </select>
                     </div>
                 </div>
@@ -163,10 +163,10 @@
             {{-- STEP 3: Details --}}
             <div class="space-y-3.5 quote-step" id="step3" style="display:none;opacity:0;transform:translateX(200px)">
                 <div>
-                    <label class="block text-xs font-medium text-[var(--text-primary)] mb-2">Key Features Needed</label>
+                    <label class="block text-xs font-medium text-[var(--text-primary)] mb-2">Fonctionnalit&#x00E9;s cl&#x00E9;s requises</label>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="featuresGrid">
                         @php
-                        $features = ['AI Chatbot','Blog/CMS','E-commerce','Contact Forms','SEO','Analytics','Multi-language','Payment Integration','User Auth','Admin Dashboard','Custom API','Booking System'];
+                        $features = ['Chatbot IA','Blog/CMS','E-commerce','Formulaires de contact','SEO','Analytique','Multilingue','Int&#x00E9;gration de paiement','Authentification','Tableau de bord admin','API personnalis&#x00E9;e','Syst&#x00E8;me de r&#x00E9;servation'];
                         @endphp
                         @foreach($features as $feature)
                         <button type="button" onclick="toggleFeature(this)" data-feature="{{ $feature }}" class="feature-btn flex items-center gap-1.5 px-2.5 py-1.5 border text-xs font-medium transition-all duration-150 border-gray-200 bg-white text-gray-600 hover:border-gray-300" style="border-radius:6px">
@@ -179,45 +179,45 @@
                     </div>
                 </div>
                 <div>
-                    <label for="description" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Brief Description</label>
-                    <textarea id="description" name="description" rows="3" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350 resize-none" style="border-radius:8px" placeholder="Tell us about your project goals, target audience, or any specific requirements..."></textarea>
+                    <label for="description" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Br&#x00E8;ve description</label>
+                    <textarea id="description" name="description" rows="3" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150 placeholder:text-gray-350 resize-none" style="border-radius:8px" placeholder="Parlez-nous des objectifs de votre projet, de votre public cible ou de toute exigence sp&#x00E9;cifique..."></textarea>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-3.5">
                     <div>
-                        <label for="budgetRange" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Budget Range</label>
+                        <label for="budgetRange" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Fourchette budg&#x00E9;taire</label>
                         <select id="budgetRange" name="budgetRange" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                            <option value="">Select budget range</option>
-                            <option value="Starter (Small Project)">Starter (Small Project)</option>
-                            <option value="Growth (Medium Project)">Growth (Medium Project)</option>
-                            <option value="Scale (Large Project)">Scale (Large Project)</option>
-                            <option value="Enterprise (Custom)">Enterprise (Custom)</option>
-                            <option value="Not sure yet">Not sure yet</option>
+                            <option value="">S&#x00E9;lectionner la fourchette</option>
+                            <option value="Starter (Small Project)">D&#x00E9;marrage (Petit projet)</option>
+                            <option value="Growth (Medium Project)">Croissance (Projet moyen)</option>
+                            <option value="Scale (Large Project)">&#x00C9;volution (Grand projet)</option>
+                            <option value="Enterprise (Custom)">Entreprise (Sur mesure)</option>
+                            <option value="Not sure yet">Pas encore s&#x00FB;r</option>
                         </select>
-                        <p class="mt-1 text-xs text-[var(--text-secondary)]">We'll provide a custom quote based on your needs</p>
+                        <p class="mt-1 text-xs text-[var(--text-secondary)]">Nous vous fournirons un devis personnalis&#x00E9; selon vos besoins</p>
                     </div>
                     <div>
-                        <label for="startTimeline" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">When do you want to start?</label>
+                        <label for="startTimeline" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Quand souhaitez-vous commencer ?</label>
                         <select id="startTimeline" name="startTimeline" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                            <option value="">Select timeline</option>
-                            <option value="ASAP">ASAP</option>
-                            <option value="Within 2 weeks">Within 2 weeks</option>
-                            <option value="Within 1 month">Within 1 month</option>
-                            <option value="1-3 months">1-3 months</option>
-                            <option value="Just exploring">Just exploring</option>
+                            <option value="">S&#x00E9;lectionner le d&#x00E9;lai</option>
+                            <option value="ASAP">D&#x00E8;s que possible</option>
+                            <option value="Within 2 weeks">Sous 2 semaines</option>
+                            <option value="Within 1 month">Sous 1 mois</option>
+                            <option value="1-3 months">1-3 mois</option>
+                            <option value="Just exploring">Je me renseigne</option>
                         </select>
                     </div>
                 </div>
                 <div>
-                    <label for="howFoundUs" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">How did you find us?</label>
+                    <label for="howFoundUs" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Comment nous avez-vous trouv&#x00E9;s ?</label>
                     <select id="howFoundUs" name="howFoundUs" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                        <option value="">Select option</option>
-                        <option value="Google Search">Google Search</option>
-                        <option value="Social Media">Social Media</option>
-                        <option value="Referral">Referral</option>
+                        <option value="">S&#x00E9;lectionner une option</option>
+                        <option value="Google Search">Recherche Google</option>
+                        <option value="Social Media">R&#x00E9;seaux sociaux</option>
+                        <option value="Referral">Recommandation</option>
                         <option value="LinkedIn">LinkedIn</option>
                         <option value="Instagram">Instagram</option>
-                        <option value="Clutch / Directory">Clutch / Directory</option>
-                        <option value="Other">Other</option>
+                        <option value="Clutch / Directory">Clutch / Annuaire</option>
+                        <option value="Other">Autre</option>
                     </select>
                 </div>
             </div>
@@ -239,7 +239,7 @@
             </div>
         </div>
 
-        <p class="text-[11px] text-center text-[var(--text-secondary)] mt-4">By submitting this form, you agree to our <a href="{{ url('privacy-policy') }}" class="text-[#00AEEF] hover:text-[#0071BC] underline">Privacy Policy</a></p>
+        <p class="text-[11px] text-center text-[var(--text-secondary)] mt-4">En soumettant ce formulaire, vous acceptez notre <a href="{{ url('privacy-policy') }}" class="text-[#00AEEF] hover:text-[#0071BC] underline">Politique de confidentialit&#x00E9;</a></p>
     </form>
 
     {{-- Success message (hidden by default) --}}
@@ -247,9 +247,9 @@
         <div class="w-14 h-14 rounded-full bg-[#22C55E]/10 flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-[#22C55E]"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
         </div>
-        <h3 class="text-lg sm:text-xl font-bold text-[var(--text-primary)] mb-2">Quote Request Envoyerted!</h3>
-        <p class="text-sm text-[var(--text-secondary)] mb-5">We'll review your project details and get back to you within 24 hours with a custom quote tailored to your needs.</p>
-        <button onclick="resetForm()" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00AEEF] text-white rounded-full text-sm font-medium hover:bg-[#0071BC] transition-colors">Envoyer Another Request</button>
+        <h3 class="text-lg sm:text-xl font-bold text-[var(--text-primary)] mb-2">Demande de devis envoy&#x00E9;e !</h3>
+        <p class="text-sm text-[var(--text-secondary)] mb-5">Nous examinerons les d&#x00E9;tails de votre projet et vous recontacterons sous 24 heures avec un devis personnalis&#x00E9; adapt&#x00E9; &#x00E0; vos besoins.</p>
+        <button onclick="resetForm()" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00AEEF] text-white rounded-full text-sm font-medium hover:bg-[#0071BC] transition-colors">Envoyer une autre demande</button>
     </div>
 
 </div>
@@ -334,17 +334,17 @@ function validateStep(step) {
         var phone = document.getElementById('phone').value.trim();
         var companyName = document.getElementById('companyName').value.trim();
 
-        if (!fullName) { showError('fullName', 'Full name is required'); valid = false; }
-        else if (fullName.length < 2) { showError('fullName', 'Name must be at least 2 characters'); valid = false; }
+        if (!fullName) { showError('fullName', 'Le nom complet est requis'); valid = false; }
+        else if (fullName.length < 2) { showError('fullName', 'Le nom doit contenir au moins 2 caract\u00e8res'); valid = false; }
 
-        if (!email) { showError('email', 'Email is required'); valid = false; }
-        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('email', 'Please enter a valid email address'); valid = false; }
+        if (!email) { showError('email', 'L\u2019adresse e-mail est requise'); valid = false; }
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('email', 'Veuillez entrer une adresse e-mail valide'); valid = false; }
 
-        if (!phone) { showError('phone', 'Phone number is required'); valid = false; }
-        else if (phone.length < 10) { showError('phone', 'Please enter a valid phone number'); valid = false; }
+        if (!phone) { showError('phone', 'Le num\u00e9ro de t\u00e9l\u00e9phone est requis'); valid = false; }
+        else if (phone.length < 10) { showError('phone', 'Veuillez entrer un num\u00e9ro de t\u00e9l\u00e9phone valide'); valid = false; }
 
-        if (!companyName) { showError('companyName', 'Company name is required'); valid = false; }
-        else if (companyName.length < 2) { showError('companyName', 'Company name must be at least 2 characters'); valid = false; }
+        if (!companyName) { showError('companyName', 'Le nom de l\u2019entreprise est requis'); valid = false; }
+        else if (companyName.length < 2) { showError('companyName', 'Le nom de l\u2019entreprise doit contenir au moins 2 caract\u00e8res'); valid = false; }
     }
 
     if (step === 2) {
@@ -352,11 +352,11 @@ function validateStep(step) {
         var ref2 = document.getElementById('referenceWebsite2').value.trim();
         var currentSite = document.getElementById('currentWebsite').value.trim();
 
-        if (!ref1) { showError('referenceWebsite1', 'At least one reference website is required'); valid = false; }
-        else if (!isValidURL(ref1)) { showError('referenceWebsite1', 'Please enter a valid URL (e.g. https://example.com)'); valid = false; }
+        if (!ref1) { showError('referenceWebsite1', 'Au moins un site web de r\u00e9f\u00e9rence est requis'); valid = false; }
+        else if (!isValidURL(ref1)) { showError('referenceWebsite1', 'Veuillez entrer une URL valide (ex. https://exemple.com)'); valid = false; }
 
-        if (ref2 && !isValidURL(ref2)) { showError('referenceWebsite2', 'Please enter a valid URL (e.g. https://example.com)'); valid = false; }
-        if (currentSite && !isValidURL(currentSite)) { showError('currentWebsite', 'Please enter a valid URL'); valid = false; }
+        if (ref2 && !isValidURL(ref2)) { showError('referenceWebsite2', 'Veuillez entrer une URL valide (ex. https://exemple.com)'); valid = false; }
+        if (currentSite && !isValidURL(currentSite)) { showError('currentWebsite', 'Veuillez entrer une URL valide'); valid = false; }
     }
 
     return valid;
@@ -396,7 +396,7 @@ function updateButtons() {
 
     // Back button
     if (currentStep > 1) {
-        backContainer.innerHTML = '<button type="button" onclick="goBack()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gray-200 text-[var(--text-secondary)] text-sm font-medium hover:bg-gray-50 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Back</button>';
+        backContainer.innerHTML = '<button type="button" onclick="goBack()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gray-200 text-[var(--text-secondary)] text-sm font-medium hover:bg-gray-50 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Retour</button>';
     } else {
         backContainer.innerHTML = '';
     }
@@ -405,7 +405,7 @@ function updateButtons() {
     if (currentStep < 3) {
         nextContainer.innerHTML = '<button type="button" id="nextBtn" onclick="goSuivant()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Suivant<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>';
     } else {
-        nextContainer.innerHTML = '<button type="button" id="submitBtn" onclick="submitForm()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Envoyer Request<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></button>';
+        nextContainer.innerHTML = '<button type="button" id="submitBtn" onclick="submitForm()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Envoyer la demande<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></button>';
     }
 }
 
@@ -482,7 +482,7 @@ function submitForm() {
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
     submitBtn.style.cursor = 'not-allowed';
-    submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 animate-spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>Envoyerting...';
+    submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 animate-spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>Envoi en cours...';
 
     var data = {
         fullName: document.getElementById('fullName').value,
@@ -509,7 +509,7 @@ function submitForm() {
     })
     .then(function(res) {
         return res.json().then(function(json) {
-            if (!res.ok) throw new Error(json.error || 'Failed to submit quote request');
+            if (!res.ok) throw new Error(json.error || '\u00c9chec de l\u2019envoi de la demande de devis');
             // Show success
             document.getElementById('quoteForm').classList.add('hidden');
             document.getElementById('successMessage').classList.remove('hidden');
@@ -518,12 +518,12 @@ function submitForm() {
     .catch(function(err) {
         var errorBanner = document.getElementById('submitError');
         var errorText = document.getElementById('submitErrorText');
-        errorText.textContent = err.message || 'Failed to submit. Please try again.';
+        errorText.textContent = err.message || '\u00c9chec de l\u2019envoi. Veuillez r\u00e9essayer.';
         errorBanner.classList.remove('hidden');
         submitBtn.disabled = false;
         submitBtn.style.opacity = '1';
         submitBtn.style.cursor = 'pointer';
-        submitBtn.innerHTML = 'Envoyer Request<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>';
+        submitBtn.innerHTML = 'Envoyer la demande<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>';
     });
 }
 

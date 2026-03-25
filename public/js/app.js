@@ -1185,8 +1185,8 @@
             var cards = grid.children;
             if (cards.length < 2) return;
 
-            var prevBtn = section.querySelector('button[aria-label="Previous testimonials"]');
-            var nextBtn = section.querySelector('button[aria-label="Next testimonials"]');
+            var prevBtn = section.querySelector('button[aria-label="Previous testimonials"]') || section.querySelector('button[aria-label="Précédent testimonials"]');
+            var nextBtn = section.querySelector('button[aria-label="Next testimonials"]') || section.querySelector('button[aria-label="Suivant testimonials"]');
             var dotsContainer = section.querySelector('.flex.justify-center.items-center.gap-3');
             var dots = dotsContainer ? dotsContainer.querySelectorAll('button') : [];
 
