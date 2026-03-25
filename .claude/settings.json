@@ -465,11 +465,17 @@
       "Bash(grep -oE '.{0,20}faq-answer.{0,5}' resources/views/pages/tools/website-analyzer.blade.php)",
       "Bash(grep -oE '.{0,150}border-b border-gray.{0,60}' resources/views/pages/tools/website-analyzer.blade.php)",
       "Bash(grep -oE '.{0,300}Questions Fr' resources/views/pages/tools/website-analyzer.blade.php)",
-      "Bash(grep -oE '.{0,500}Questions Fr' resources/views/pages/tools/website-analyzer.blade.php)"
+      "Bash(grep -oE '.{0,500}Questions Fr' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -l faq-answer resources/views/pages/locations/*.blade.php)",
+      "Bash(grep -oE '.{0,100}Frequently Asked.{0,100}' resources/views/pages/services/ecommerce-website-development.blade.php)",
+      "Bash(mysql -u root -e \"CREATE DATABASE IF NOT EXISTS morocco_quest;\")",
+      "Bash(\"/c/xampp/mysql/bin/mysql\" -u root -e \"CREATE DATABASE IF NOT EXISTS morocco_quest;\")",
+      "Bash(\"/c/Program Files/MySQL/MySQL Server 8.0/bin/mysql\" -u root -e \"CREATE DATABASE IF NOT EXISTS morocco_quest;\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\ASUS\\Desktop\\pikasso studio\\pikasso-laravel-temp",
-      "c:\\Users\\ASUS\\Desktop\\pikasso studio\\pikassostudio.com\\.claude"
+      "c:\\Users\\ASUS\\Desktop\\pikasso studio\\pikassostudio.com\\.claude",
+      "C:\\Users\\ASUS\\Desktop\\Projects\\morocco-quest-Production\\database\\migrations"
     ]
   }
 }
