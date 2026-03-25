@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - AI-Powered Développement Web Agency | Morocco | CodeSommet')
-@section('meta_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA,
-    tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+
-    projets livrés.')
-@section('meta_keywords', 'développement web Morocco,AI développement web agency,Suivant.js development agency,dashboard
+@section('title', 'CodeSommet - AI-Powered Web Development Agency | Morocco | CodeSommet')
+@section('meta_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
+    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
+    projects delivered.')
+@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard
     development,SaaS development,education website development,healthcare website development,React development
-    Morocco,TypeScript development,développement web Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'CodeSommet - AI-Powered Développement Web Agency | Morocco')
-@section('og_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA,
-    tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+
-    projets livrés.')
-@section('twitter_description', 'Agence de développement web premium specializing in sites web alimentés par l'IA, intelligent
-    dashboards, and plateformes SaaS. 50+ projets livrés.')
+    Morocco,TypeScript development,web development Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
+@section('og_title', 'CodeSommet - AI-Powered Web Development Agency | Morocco')
+@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
+    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
+    projects delivered.')
+@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent
+    dashboards, and SaaS platforms. 50+ projects delivered.')
 
 @section('content')
     <div class="min-h-screen bg-white">
@@ -1257,7 +1257,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="/tools/base64-encoder" data-category="content">
+                    </a><a href="{{ route('tool', 'base64-encoder') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1615,11 +1615,6 @@
 
         function setActiveButton(btn) {
             filterBtns.forEach(function(b) {
-                b.className = b.className
-                    .replace(/bg-\[#00AEEF\]/g, '')
-                    .replace(/text-white/g, '')
-                    .replace(/shadow-lg/g, '')
-                    .replace(/shadow-\[#00AEEF\]\/25/g, '');
                 b.className = 'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ' + inactiveClass;
             });
             btn.className = 'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ' + activeClass;
@@ -1634,6 +1629,11 @@
         });
 
         searchInput.addEventListener('input', filterTools);
+
+        // Ensure grid is visible immediately (override scroll-animation opacity:0)
+        grid.style.opacity = '1';
+        grid.style.transform = 'none';
+        grid.classList.add('is-visible');
     });
     </script>
     @endsection

@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'Développement Web in Amsterdam, Netherlands | CodeSommet')
-@section('meta_description', 'Partner with Amsterdam\'s leading développement web studio for sites web alimentés par l'IA and
-    tableaux de bord intelligents. We specialize in building conversion-focused platforms for fintech, tech startups, and
+@section('title', 'Web Development in Amsterdam, Netherlands | CodeSommet')
+@section('meta_description', 'Partner with Amsterdam\'s leading web development studio for AI-powered websites and
+    intelligent dashboards. We specialize in building conversion-focused platforms for fintech, tech startups, and
     healthcare sectors.')
-@section('meta_keywords', 'développement web Morocco,AI développement web agency,Suivant.js development agency,dashboard
+@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard
     development,SaaS development,education website development,healthcare website development,React development
-    Dubai,TypeScript development,développement web worldwide,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'Pikasso Studio - Digital Agency | Développement Web, Design & SEO')
-@section('og_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA,
-    tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+
-    projets livrés.')
-@section('twitter_description', 'Agence de développement web premium specializing in sites web alimentés par l'IA, intelligent
-    dashboards, and plateformes SaaS. 50+ projets livrés.')
+    Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency Morocco')
+@section('og_title', 'Pikasso Studio - Digital Agency | Web Development, Design & SEO')
+@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
+    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
+    projects delivered.')
+@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent
+    dashboards, and SaaS platforms. 50+ projects delivered.')
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -121,7 +121,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
-                                href="/#pricing"><span class="text-[15px] font-semibold text-[#0F0F0F]">View Our
+                                href="#pricing"><span class="text-[15px] font-semibold text-[#0F0F0F]">View Our
                                     Pricing</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
@@ -1481,7 +1481,7 @@
                             <path d="M12 17h.01"></path>
                         </svg>Common Questions</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Questions Fréquemment Posées About Développement Web in
+                        style="font-family:var(--font-heading)">Frequently Asked Questions About Développement Web in
                         <!-- -->Amsterdam</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Have questions? We&#x27;ve got answers. Here
                         are the most common questions from <!-- -->Amsterdam<!-- --> businesses.</p>

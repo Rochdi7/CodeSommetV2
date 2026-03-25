@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Contactez-Nous - Get Your Free Strategy Call | CodeSommet')
-@section('meta_description', 'Contact CodeSommet for AI-powered développement web in Morocco. Book a free discovery call or reach us via email, WhatsApp. 24-hour response time guaranteed.')
-@section('meta_keywords', 'contact CodeSommet,développement web quote Morocco,hire web developers,AI development consultation,free strategy call,développement web inquiry')
+@section('meta_description', 'Contact CodeSommet for AI-powered web development in Morocco. Book a free discovery call or reach us via email, WhatsApp. 24-hour response time guaranteed.')
+@section('meta_keywords', 'contact CodeSommet,web development quote Morocco,hire web developers,AI development consultation,free strategy call,web development inquiry')
 @section('og_title', 'Contactez-Nous - CodeSommet')
-@section('og_description', 'Contact CodeSommet for AI-powered développement web in Morocco. Book a free discovery call or reach us via email, WhatsApp. 24-hour response time.')
-@section('twitter_description', 'Contactez-nous for AI-powered développement web in Morocco. Book a free discovery call. 24-hour response time.')
+@section('og_description', 'Contact CodeSommet for AI-powered web development in Morocco. Book a free discovery call or reach us via email, WhatsApp. 24-hour response time.')
+@section('twitter_description', 'Contactez-nous for AI-powered web development in Morocco. Book a free discovery call. 24-hour response time.')
 
 @section('content')
 <div class="min-h-screen bg-[var(--bg-primary)]"><section class="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 md:pb-20"><div class="absolute inset-0 bg-white"></div><div class="absolute inset-0" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),

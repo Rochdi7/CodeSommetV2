@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - AI-Powered Développement Web Agency | Morocco | CodeSommet')
-@section('meta_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA, tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+ projets livrés.')
-@section('meta_keywords', 'développement web Morocco,AI développement web agency,Suivant.js development agency,dashboard development,SaaS development,education website development,healthcare website development,React development Morocco,TypeScript development,développement web Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'CodeSommet - AI-Powered Développement Web Agency | Morocco')
-@section('og_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA, tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+ projets livrés.')
-@section('twitter_description', 'Agence de développement web premium specializing in sites web alimentés par l'IA, tableaux de bord intelligents, and plateformes SaaS. 50+ projets livrés.')
+@section('title', 'CodeSommet - AI-Powered Web Development Agency | Morocco | CodeSommet')
+@section('meta_description', 'Premium web development agency in Morocco specializing in AI-powered websites, intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+ projects delivered.')
+@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard development,SaaS development,education website development,healthcare website development,React development Morocco,TypeScript development,web development Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
+@section('og_title', 'CodeSommet - AI-Powered Web Development Agency | Morocco')
+@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites, intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+ projects delivered.')
+@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent dashboards, and SaaS platforms. 50+ projects delivered.')
 
 @section('content')
 <div class="min-h-screen bg-white"><section class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-16 bg-white"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Al-Raba Technologies Case Study - B2B Tech Website Development | CodeSommet')
-@section('meta_description', 'How we built a professional B2B website for Al-Raba Technologies,\'s leading UPS and IT infrastructure distributor, achieving 180% lead increase with Suivant.js 15, Supabase CMS, and WhatsApp integration.')
-@section('meta_keywords', 'B2B website development,UPS distributor website,IT infrastructure website,Suivant.js B2B platform,tech company website,product catalog development')
+@section('meta_description', 'How we built a professional B2B website for Al-Raba Technologies,\'s leading UPS and IT infrastructure distributor, achieving 180% lead increase with Next.js 15, Supabase CMS, and WhatsApp integration.')
+@section('meta_keywords', 'B2B website development,UPS distributor website,IT infrastructure website,Next.js B2B platform,tech company website,product catalog development')
 @section('og_title', 'Al-Raba Technologies Case Study - B2B Tech Website Development')
-@section('og_description', 'How we built a professional B2B website for Al-Raba Technologies,\'s leading UPS and IT infrastructure distributor, achieving 180% lead increase with Suivant.js 15, Supabase CMS, and WhatsApp integration.')
-@section('twitter_description', 'How we built a professional B2B website for Al-Raba Technologies,\'s leading UPS and IT infrastructure distributor, achieving 180% lead increase with Suivant.js 15, Supabase CMS, and WhatsApp integration.')
+@section('og_description', 'How we built a professional B2B website for Al-Raba Technologies,\'s leading UPS and IT infrastructure distributor, achieving 180% lead increase with Next.js 15, Supabase CMS, and WhatsApp integration.')
+@section('twitter_description', 'How we built a professional B2B website for Al-Raba Technologies,\'s leading UPS and IT infrastructure distributor, achieving 180% lead increase with Next.js 15, Supabase CMS, and WhatsApp integration.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Nos Projets - CodeSommet Portfolio | Education, Healthcare & SaaS Projets | CodeSommet')
-@section('meta_description', 'Explore our portfolio of sites web alimentés par l'IA and dashboards for education, healthcare, and SaaS sectors. 5+ successful projects with 180%-500% lead increases.')
-@section('meta_keywords', 'portfolio, case studies, développement web projects, education platforms, healthcare websites, SaaS development')
+@section('meta_description', 'Explore our portfolio of AI-powered websites and dashboards for education, healthcare, and SaaS sectors. 5+ successful projects with 180%-500% lead increases.')
+@section('meta_keywords', 'portfolio, case studies, web development projects, education platforms, healthcare websites, SaaS development')
 @section('og_title', 'Nos Projets - CodeSommet Portfolio')
-@section('og_description', 'Explore our portfolio of sites web alimentés par l'IA and dashboards for education, healthcare, and SaaS sectors.')
-@section('twitter_description', 'Explore our portfolio of sites web alimentés par l'IA and dashboards for education, healthcare, and SaaS sectors.')
+@section('og_description', 'Explore our portfolio of AI-powered websites and dashboards for education, healthcare, and SaaS sectors.')
+@section('twitter_description', 'Explore our portfolio of AI-powered websites and dashboards for education, healthcare, and SaaS sectors.')
 
 @section('content')
 <section class="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 md:pb-20"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
