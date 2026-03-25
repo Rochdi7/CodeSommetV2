@@ -1500,4 +1500,137 @@
         });
     })();
 
+
+    /* ── Count-Up Animation (location + service pages) ───────────────── */
+    (function () {
+        // Find all spans that contain "0" and are followed by "+ Leads" or "+ Clients"
+        var statSpans = document.querySelectorAll('span.font-semibold');
+
+        statSpans.forEach(function (parentSpan) {
+            var innerSpan = parentSpan.querySelector('span');
+            if (!innerSpan) return;
+
+            var text = parentSpan.textContent.trim();
+            var isLeads = text.indexOf('+ Leads') !== -1;
+            var isClients = text.indexOf('+ Clients') !== -1;
+
+            if (!isLeads && !isClients) return;
+            if (innerSpan.textContent.trim() !== '0') return;
+
+            // Determine target value from page slug
+            var slug = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+            var targetValue = 0;
+
+            // Location page metrics (leads: 150-500, clients: 25-50)
+            var cityMetrics = {
+                'web-development/abudhabi': {leads: 180, clients: 28},
+                'web-development/amsterdam': {leads: 220, clients: 32},
+                'web-development/austin': {leads: 250, clients: 35},
+                'web-development/barcelona': {leads: 200, clients: 30},
+                'web-development/berlin': {leads: 230, clients: 33},
+                'web-development/boston': {leads: 240, clients: 34},
+                'web-development/brussels': {leads: 190, clients: 29},
+                'web-development/cairo': {leads: 170, clients: 27},
+                'web-development/casablanca': {leads: 200, clients: 30},
+                'web-development/chicago': {leads: 260, clients: 36},
+                'web-development/copenhagen': {leads: 210, clients: 31},
+                'web-development/denver': {leads: 230, clients: 33},
+                'web-development/dubai': {leads: 280, clients: 38},
+                'web-development/dublin': {leads: 200, clients: 30},
+                'web-development/lagos': {leads: 180, clients: 27},
+                'web-development/lisbon': {leads: 190, clients: 29},
+                'web-development/london': {leads: 300, clients: 40},
+                'web-development/los-angeles': {leads: 320, clients: 42},
+                'web-development/madrid': {leads: 210, clients: 31},
+                'web-development/marrakech': {leads: 160, clients: 26},
+                'web-development/milan': {leads: 210, clients: 31},
+                'web-development/new-york': {leads: 350, clients: 45},
+                'web-development/paris': {leads: 270, clients: 37},
+                'web-development/rabat': {leads: 160, clients: 26},
+                'web-development/rome': {leads: 200, clients: 30},
+                'web-development/san-francisco': {leads: 290, clients: 39},
+                'web-development/seattle': {leads: 250, clients: 35},
+                'web-development/stockholm': {leads: 210, clients: 31},
+                'web-development/tangier': {leads: 150, clients: 25},
+                'web-development/tel-aviv': {leads: 240, clients: 34},
+                'web-development/toronto': {leads: 260, clients: 36},
+                'web-development/tunis': {leads: 160, clients: 26},
+                'web-development/vancouver': {leads: 230, clients: 33},
+                'web-development/worldwide': {leads: 500, clients: 50},
+                'web-development/zurich': {leads: 220, clients: 32}
+            };
+
+            // Service page metrics (leads: 200-600, clients: 25-45)
+            var serviceMetrics = {
+                'services/ecommerce-website-development': {leads: 450, clients: 38},
+                'services/edtech-platform-development': {leads: 380, clients: 35},
+                'services/education-website-development': {leads: 420, clients: 37},
+                'services/fintech-platform-development': {leads: 350, clients: 32},
+                'services/fintech-website-development': {leads: 340, clients: 30},
+                'services/healthcare-website-development': {leads: 360, clients: 33},
+                'services/immigration-consultancy-website-development': {leads: 280, clients: 28},
+                'services/language-school-website-development': {leads: 300, clients: 30},
+                'services/online-course-platform-development': {leads: 400, clients: 36},
+                'services/real-estate-website-development': {leads: 320, clients: 32},
+                'services/saas-platform-development': {leads: 500, clients: 40},
+                'services/study-abroad-website-development': {leads: 380, clients: 35},
+                'services/telemedicine-website-development': {leads: 340, clients: 31},
+                'services/university-website-development': {leads: 440, clients: 38}
+            };
+
+            var metrics = cityMetrics[slug] || serviceMetrics[slug];
+            if (!metrics) {
+                // Fallback: try matching partial slug
+                for (var key in cityMetrics) {
+                    if (slug.indexOf(key.split('/')[1]) !== -1) {
+                        metrics = cityMetrics[key];
+                        break;
+                    }
+                }
+                if (!metrics) {
+                    for (var key2 in serviceMetrics) {
+                        if (slug.indexOf(key2.split('/')[1]) !== -1) {
+                            metrics = serviceMetrics[key2];
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if (!metrics) {
+                // Default fallback
+                metrics = {leads: 250, clients: 30};
+            }
+
+            targetValue = isLeads ? metrics.leads : metrics.clients;
+
+            // Animate on scroll into view
+            var animated = false;
+            var observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting && !animated) {
+                    animated = true;
+                    animateCount(innerSpan, targetValue);
+                    observer.disconnect();
+                }
+            }, {threshold: 0.1});
+
+            observer.observe(parentSpan);
+        });
+
+        function animateCount(el, target) {
+            var duration = 2000;
+            var increment = target / (duration / 16);
+            var current = 0;
+            var timer = setInterval(function () {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 16);
+        }
+    })();
+
 })();

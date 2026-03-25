@@ -445,7 +445,14 @@
       "Bash(grep -li 'Mumbai\\\\|Delhi\\\\|Chennai\\\\|Hyderabad\\\\|Pune\\\\|Hong Kong\\\\|Tokyo\\\\|Seoul\\\\|Bangkok\\\\|Kuala Lumpur\\\\|Jakarta\\\\|Manila\\\\|Ho Chi Minh\\\\|Beijing\\\\|Shanghai\\\\|Shenzhen\\\\|Taipei\\\\|Melbourne\\\\|Brisbane' *.blade.php)",
       "Bash(find 'c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/_next/data' -name *.json)",
       "Bash(find 'c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/_next' -name *amsterdam*)",
-      "Bash(grep -o '.\\\\{0,50\\\\}tel-aviv.\\\\{0,50\\\\}' web-development-dubai.blade.php)"
+      "Bash(grep -o '.\\\\{0,50\\\\}tel-aviv.\\\\{0,50\\\\}' web-development-dubai.blade.php)",
+      "Bash(sed -i \"s/route\\(''location'', ''tel-aviv''\\)/route\\(''location'', ''riyadh''\\)/g\" \"$f\")",
+      "Bash(sed -i 's/>Tel Aviv</>Riyadh</g' \"$f\")",
+      "Bash(sed -i 's/🇮🇱/🇸🇦/g' \"$f\")",
+      "Bash(sed -i 's/>Israel</>Saudi Arabia</g' \"$f\")",
+      "Bash(node -c \"c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js\")",
+      "Bash(node -e \"require\\(''''fs''''\\).readFileSync\\(''''c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js'''', ''''utf8''''\\)\")",
+      "Bash(node -e \"try { new Function\\(require\\(''fs''\\).readFileSync\\(''c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js'', ''utf8''\\)\\); console.log\\(''JS syntax OK''\\); } catch\\(e\\) { console.error\\(''SYNTAX ERROR:'', e.message\\); }\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\ASUS\\Desktop\\pikasso studio\\pikasso-laravel-temp",
