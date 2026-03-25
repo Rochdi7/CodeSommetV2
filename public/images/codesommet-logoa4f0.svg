@@ -1,0 +1,11 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vertical rectangle - thicker with rounded edges -->
+  <rect x="9" y="8" width="9" height="24" rx="1.5" fill="#000000">
+    <animate attributeName="x" from="-11" to="9" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+
+  <!-- Half circle on top right with gap - thicker with soft edges -->
+  <path d="M 21 8 A 9 9 0 0 1 21 26 L 21 8 Z" fill="#00AEEF">
+    <animateTransform attributeName="transform" type="translate" from="23 0" to="0 0" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </path>
+</svg>
