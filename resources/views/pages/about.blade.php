@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - CodeSommet | Digital Agency in Morocco | Développement Web, Branding & SEO')
-@section('meta_description', 'CodeSommet is a Morocco-based digital agency since 2018, specializing in développement web,
-    UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés. Contactez-nous today.')
-@section('meta_keywords', 'about CodeSommet,digital agency Morocco,développement web Morocco,UI UX design,branding
+@section('title', 'About Us - CodeSommet | Digital Agency in Morocco | Web Development, Branding & SEO')
+@section('meta_description', 'CodeSommet is a Morocco-based digital agency since 2018, specializing in web development,
+    UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered. Contactez-nous today.')
+@section('meta_keywords', 'about CodeSommet,digital agency Morocco,web development Morocco,UI UX design,branding
     agency,SEO Morocco,e-commerce development,mobile apps,SaaS solutions')
 @section('og_title', 'About Us - CodeSommet | Digital Agency in Morocco')
-@section('og_description', 'CodeSommet is a Morocco-based digital agency since 2018. We specialize in développement web,
+@section('og_description', 'CodeSommet is a Morocco-based digital agency since 2018. We specialize in web development,
     UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions.')
 @section('twitter_description', 'Morocco-based digital agency since 2018. Web development, UI/UX design, branding, SEO,
-    e-commerce, mobile apps & SaaS. 50+ projets livrés.')
+    e-commerce, mobile apps & SaaS. 50+ projects delivered.')
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">

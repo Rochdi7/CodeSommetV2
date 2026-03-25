@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Worldwide Développement Web Services | Pikasso Studio')
-@section('meta_description', 'Morocco-based développement web studio serving businesses worldwide. We build sites web alimentés par l'IA, dashboards, and plateformes SaaS remotely — no matter where you are.')
-@section('meta_keywords', 'worldwide développement web, remote développement web agency, global développement web services, AI développement web, Suivant.js development, SaaS development, dashboard development, web agency Morocco')
+@section('title', 'Worldwide Web Development Services | Pikasso Studio')
+@section('meta_description', 'Morocco-based web development studio serving businesses worldwide. We build AI-powered websites, dashboards, and SaaS platforms remotely — no matter where you are.')
+@section('meta_keywords', 'worldwide web development, remote web development agency, global web development services, AI web development, Next.js development, SaaS development, dashboard development, web agency Morocco')
 @section('og_title', 'Pikasso Studio — We Serve You Wherever You Are')
-@section('og_description', 'Agence de développement web premium based in Morocco, delivering sites web alimentés par l'IA, tableaux de bord intelligents, and plateformes SaaS to clients across every continent.')
-@section('twitter_description', 'Agence de développement web premium serving clients worldwide. sites web alimentés par l'IA, dashboards, and plateformes SaaS. 50+ projets livrés globally.')
+@section('og_description', 'Premium web development agency based in Morocco, delivering AI-powered websites, intelligent dashboards, and SaaS platforms to clients across every continent.')
+@section('twitter_description', 'Premium web development agency serving clients worldwide. AI-powered websites, dashboards, and SaaS platforms. 50+ projects delivered globally.')
 
 @section('content')
 <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -304,7 +304,7 @@
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="text-center mb-16">
                 <span class="inline-block px-4 py-1.5 bg-[#F59E0B]/10 text-[#F59E0B] text-xs font-semibold uppercase tracking-wider rounded-full mb-4">FAQ</span>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Questions Fréquemment Posées</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Frequently Asked Questions</h2>
             </div>
             <div class="max-w-3xl mx-auto space-y-4">
                 @php

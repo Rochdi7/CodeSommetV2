@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Obtenir un Devis Gratuit | CodeSommet')
-@section('meta_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and plateformes SaaS.')
-@section('meta_keywords', 'développement web Morocco, AI développement web agency, Suivant.js development agency, dashboard development, SaaS development, education website development, healthcare website development, React development Morocco, TypeScript development, développement web worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
+@section('meta_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
+@section('meta_keywords', 'web development Morocco, AI web development agency, Next.js development agency, dashboard development, SaaS development, education website development, healthcare website development, React development Morocco, TypeScript development, web development worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
 @section('og_title', 'Obtenir un Devis Gratuit | CodeSommet')
-@section('og_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and plateformes SaaS.')
-@section('twitter_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and plateformes SaaS.')
+@section('og_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
+@section('twitter_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
 
 @section('content')
 <div class="min-h-screen bg-[#F5F5F5] flex flex-col">

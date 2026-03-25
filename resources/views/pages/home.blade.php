@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - Digital Agency | Développement Web, Design & SEO')
-@section('meta_description', 'CodeSommet is a Morocco-based digital agency specializing in développement web, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés with 98% client satisfaction.')
-@section('meta_keywords', 'développement web Morocco,digital agency Morocco,UI UX design,branding agency,SEO services,e-commerce development,mobile app development,SaaS development,web design Morocco,React development,Suivant.js development,custom web solutions')
-@section('og_title', 'CodeSommet - Digital Agency | Développement Web, Design & SEO')
-@section('og_description', 'CodeSommet is a Morocco-based digital agency specializing in développement web, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés with 98% client satisfaction.')
-@section('twitter_description', 'Morocco-based digital agency specializing in développement web, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés.')
+@section('title', 'CodeSommet - Digital Agency | Web Development, Design & SEO')
+@section('meta_description', 'CodeSommet is a Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered with 98% client satisfaction.')
+@section('meta_keywords', 'web development Morocco,digital agency Morocco,UI UX design,branding agency,SEO services,e-commerce development,mobile app development,SaaS development,web design Morocco,React development,Next.js development,custom web solutions')
+@section('og_title', 'CodeSommet - Digital Agency | Web Development, Design & SEO')
+@section('og_description', 'CodeSommet is a Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered with 98% client satisfaction.')
+@section('twitter_description', 'Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered.')
 
 @section('content')
     <section

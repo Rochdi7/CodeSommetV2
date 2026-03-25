@@ -2,7 +2,7 @@
 
 @section('title', 'GoAusbildung Case Study - AI-Powered EdTech SaaS Platform | CodeSommet')
 @section('meta_description', 'Comprehensive EdTech SaaS connecting students with German vocational training. Features AI chatbot (GPT-4), 3-phase learning system, gamification, and cultural training serving 9+ countries.')
-@section('meta_keywords', 'EdTech SaaS development,AI chatbot integration,GPT-4 learning platform,German language learning app,gamification development,Suivant.js EdTech platform')
+@section('meta_keywords', 'EdTech SaaS development,AI chatbot integration,GPT-4 learning platform,German language learning app,gamification development,Next.js EdTech platform')
 @section('og_title', 'GoAusbildung Case Study - AI-Powered EdTech SaaS Platform')
 @section('og_description', 'Comprehensive EdTech SaaS connecting students with German vocational training. Features AI chatbot (GPT-4), 3-phase learning system, gamification, and cultural training serving 9+ countries.')
 @section('twitter_description', 'Comprehensive EdTech SaaS connecting students with German vocational training. Features AI chatbot (GPT-4), 3-phase learning system, gamification, and cultural training serving 9+ countries.')

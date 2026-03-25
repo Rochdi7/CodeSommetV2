@@ -1066,7 +1066,8 @@
         var premiumSection = null;
         document.querySelectorAll('h2').forEach(function(h2) {
             if (h2.textContent.indexOf('18 Premium Features') !== -1) {
-                premiumSection = h2.closest('section') || h2.closest('.space-y-4')?.parentElement;
+                var spaceEl = h2.closest('.space-y-4');
+                premiumSection = h2.closest('section') || (spaceEl ? spaceEl.parentElement : null);
             }
         });
         if (!premiumSection) return;
@@ -1348,6 +1349,42 @@
                         btn.style.backgroundColor = '';
                     }
                 });
+            });
+        });
+    })();
+
+
+    /* ── FAQ Accordion (tool pages) ──────────────────────────────────── */
+    (function () {
+        var faqAnswers = document.querySelectorAll('.faq-answer.hidden');
+        if (!faqAnswers.length) return;
+
+        faqAnswers.forEach(function (answer) {
+            var btn = answer.previousElementSibling;
+            if (!btn || btn.tagName !== 'BUTTON') return;
+
+            var chevron = btn.querySelector('svg');
+
+            btn.addEventListener('click', function () {
+                var isHidden = answer.classList.contains('hidden');
+
+                if (isHidden) {
+                    answer.classList.remove('hidden');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.transition = 'max-height 0.3s ease-out';
+                    if (chevron) {
+                        chevron.style.transition = 'transform 0.3s ease';
+                        chevron.style.transform = 'rotate(180deg)';
+                    }
+                    btn.style.backgroundColor = 'rgba(0, 174, 239, 0.05)';
+                } else {
+                    answer.classList.add('hidden');
+                    answer.style.maxHeight = '0';
+                    if (chevron) {
+                        chevron.style.transform = 'rotate(0deg)';
+                    }
+                    btn.style.backgroundColor = '';
+                }
             });
         });
     })();

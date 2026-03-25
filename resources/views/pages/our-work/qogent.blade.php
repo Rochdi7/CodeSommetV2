@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Qogent Global Case Study - AI Study Abroad Platform (51 Countries) | CodeSommet')
-@section('meta_description', 'Zero-commission study abroad platform with 14 AI tools, email automation, and 88% success rate. Serving 51+ countries with Suivant.js 15.3.2, OpenAI GPT-4, and sophisticated database architecture.')
-@section('meta_keywords', 'study abroad platform,AI recommendation engine,email automation development,Suivant.js 15 SaaS,multi-country platform,education technology')
+@section('meta_description', 'Zero-commission study abroad platform with 14 AI tools, email automation, and 88% success rate. Serving 51+ countries with Next.js 15.3.2, OpenAI GPT-4, and sophisticated database architecture.')
+@section('meta_keywords', 'study abroad platform,AI recommendation engine,email automation development,Next.js 15 SaaS,multi-country platform,education technology')
 @section('og_title', 'Qogent Global Case Study - AI Study Abroad Platform (51 Countries)')
-@section('og_description', 'Zero-commission study abroad platform with 14 AI tools, email automation, and 88% success rate. Serving 51+ countries with Suivant.js 15.3.2, OpenAI GPT-4, and sophisticated database architecture.')
-@section('twitter_description', 'Zero-commission study abroad platform with 14 AI tools, email automation, and 88% success rate. Serving 51+ countries with Suivant.js 15.3.2, OpenAI GPT-4, and sophisticated database architecture.')
+@section('og_description', 'Zero-commission study abroad platform with 14 AI tools, email automation, and 88% success rate. Serving 51+ countries with Next.js 15.3.2, OpenAI GPT-4, and sophisticated database architecture.')
+@section('twitter_description', 'Zero-commission study abroad platform with 14 AI tools, email automation, and 88% success rate. Serving 51+ countries with Next.js 15.3.2, OpenAI GPT-4, and sophisticated database architecture.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),

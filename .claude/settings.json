@@ -452,7 +452,20 @@
       "Bash(sed -i 's/>Israel</>Saudi Arabia</g' \"$f\")",
       "Bash(node -c \"c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js\")",
       "Bash(node -e \"require\\(''''fs''''\\).readFileSync\\(''''c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js'''', ''''utf8''''\\)\")",
-      "Bash(node -e \"try { new Function\\(require\\(''fs''\\).readFileSync\\(''c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js'', ''utf8''\\)\\); console.log\\(''JS syntax OK''\\); } catch\\(e\\) { console.error\\(''SYNTAX ERROR:'', e.message\\); }\")"
+      "Bash(node -e \"try { new Function\\(require\\(''fs''\\).readFileSync\\(''c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/public/js/app.js'', ''utf8''\\)\\); console.log\\(''JS syntax OK''\\); } catch\\(e\\) { console.error\\(''SYNTAX ERROR:'', e.message\\); }\")",
+      "Bash(grep -l 'id=\"\"pricing\"\"' resources/views/pages/locations/*.blade.php)",
+      "Bash(grep -l '/#pricing' resources/views/pages/locations/*.blade.php)",
+      "Bash(ls \"c:\\\\Users\\\\ASUS\\\\Desktop\\\\pikasso studio\\\\pikassostudio.com\\\\resources\\\\views\\\\pages\\\\tools\\\\Should\"*)",
+      "Bash(curl -sI http://127.0.0.1:8000/favicon.ico)",
+      "Bash(curl -s http://127.0.0.1:8000/)",
+      "Bash(curl -sI http://127.0.0.1:8000/favicon/favicon.svg)",
+      "Bash(grep -oE '.{0,50}Questions Fr.{0,200}' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -oE '.{0,30}\\(button|click|toggle|expand|collapse|hidden\\).{0,100}' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -oE '.{0,30}faq-answer.{0,100}' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -oE '.{0,20}faq-answer.{0,5}' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -oE '.{0,150}border-b border-gray.{0,60}' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -oE '.{0,300}Questions Fr' resources/views/pages/tools/website-analyzer.blade.php)",
+      "Bash(grep -oE '.{0,500}Questions Fr' resources/views/pages/tools/website-analyzer.blade.php)"
     ],
     "additionalDirectories": [
       "c:\\Users\\ASUS\\Desktop\\pikasso studio\\pikasso-laravel-temp",

@@ -1,4 +1,4 @@
-<svg width="400" height="150" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="150" viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
   <path d="M 45 22 A 20 20 0 1 0 45 58" 
         fill="none" 
         stroke="#1A1A1B" 
@@ -17,7 +17,7 @@
         stroke-linejoin="round"
         opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.5s" fill="freeze" />
-    <animateTransform attributeName="transform" type="translate" from="20 0" to="0 0" dur="0.6s" begin="0.5s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="10 0" to="0 0" dur="0.6s" begin="0.5s" fill="freeze" />
     <animate attributeName="stroke" values="#00AEEF;#0071BC;#00AEEF" dur="3s" repeatCount="indefinite" />
   </path>
 
@@ -29,7 +29,7 @@
         stroke-linejoin="round"
         opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.8s" fill="freeze" />
-    <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" dur="0.6s" begin="0.8s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="0 5" to="0 0" dur="0.6s" begin="0.8s" fill="freeze" />
     <animate attributeName="stroke" values="#0071BC;#00AEEF;#0071BC" dur="3s" repeatCount="indefinite" />
   </path>
 </svg>
