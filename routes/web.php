@@ -74,7 +74,7 @@ Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
 $cityPages = [
     'worldwide',
     'casablanca', 'marrakech', 'rabat', 'tangier',
-    'dubai', 'abudhabi', 'riyadh', 'doha', 'kuwait-city', 'tel-aviv',
+    'dubai', 'abudhabi', 'riyadh', 'doha', 'kuwait-city',
     'london', 'amsterdam', 'berlin', 'paris', 'copenhagen',
     'dublin', 'brussels', 'zurich', 'stockholm',
     'madrid', 'barcelona', 'lisbon', 'rome', 'milan',

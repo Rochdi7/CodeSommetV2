@@ -437,7 +437,15 @@
       "Bash(grep -c 'text-black mb-12' *.blade.php)",
       "Bash(grep -c 'text-center text-black' *.blade.php)",
       "Bash(sed -n '2130,2135p' web-development-amsterdam.blade.php)",
-      "Bash(sed -n '2405,2410p' web-development-amsterdam.blade.php)"
+      "Bash(sed -n '2405,2410p' web-development-amsterdam.blade.php)",
+      "Bash(grep -c 'from-\\\\[#00AEEF\\\\] to-\\\\[#0071BC\\\\].*text-white' *.blade.php)",
+      "Bash(grep -c 'from-\\\\[#00AEEF\\\\].*text-white' *.blade.php)",
+      "Bash(grep -li 'Bangalore\\\\|Mumbai\\\\|Delhi\\\\|Chennai\\\\|Hyderabad\\\\|Pune\\\\|Singapore\\\\|Hong Kong\\\\|Tokyo\\\\|Seoul\\\\|Bangkok\\\\|Kuala Lumpur\\\\|Jakarta\\\\|Manila\\\\|Ho Chi Minh\\\\|Beijing\\\\|Shanghai\\\\|Shenzhen\\\\|Taipei\\\\|Sydney\\\\|Melbourne\\\\|Brisbane\\\\|bangalore\\\\|mumbai\\\\|delhi\\\\|chennai\\\\|hyderabad\\\\|pune\\\\|singapore\\\\|hong-kong\\\\|tokyo\\\\|seoul\\\\|bangkok\\\\|kuala-lumpur\\\\|jakarta\\\\|manila\\\\|ho-chi-minh\\\\|beijing\\\\|shanghai\\\\|shenzhen\\\\|taipei\\\\|sydney\\\\|melbourne\\\\|brisbane' *.blade.php)",
+      "Bash(grep -li 'Bangalore\\\\|Singapore\\\\|Sydney\\\\|bangalore\\\\|singapore\\\\|sydney' *.blade.php)",
+      "Bash(grep -li 'Mumbai\\\\|Delhi\\\\|Chennai\\\\|Hyderabad\\\\|Pune\\\\|Hong Kong\\\\|Tokyo\\\\|Seoul\\\\|Bangkok\\\\|Kuala Lumpur\\\\|Jakarta\\\\|Manila\\\\|Ho Chi Minh\\\\|Beijing\\\\|Shanghai\\\\|Shenzhen\\\\|Taipei\\\\|Melbourne\\\\|Brisbane' *.blade.php)",
+      "Bash(find 'c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/_next/data' -name *.json)",
+      "Bash(find 'c:/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/_next' -name *amsterdam*)",
+      "Bash(grep -o '.\\\\{0,50\\\\}tel-aviv.\\\\{0,50\\\\}' web-development-dubai.blade.php)"
     ],
     "additionalDirectories": [
       "c:\\Users\\ASUS\\Desktop\\pikasso studio\\pikasso-laravel-temp",
