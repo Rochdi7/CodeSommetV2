@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - AI-Powered Web Development Agency | Morocco | CodeSommet')
-@section('meta_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
-    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
-    projects delivered.')
-@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard
-    development,SaaS development,education website development,healthcare website development,React development
-    Morocco,TypeScript development,web development Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'CodeSommet - AI-Powered Web Development Agency | Morocco')
-@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
-    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
-    projects delivered.')
-@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent
-    dashboards, and SaaS platforms. 50+ projects delivered.')
+@section('title', 'CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc | CodeSommet')
+@section('meta_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'IA,
+    les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'éducation, la santé et les entreprises. Plus de 50
+    projets livrés.')
+@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord
+    ,développement SaaS,développement site web éducation,développement site web santé,développement React
+    Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
+@section('og_title', 'CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc')
+@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'IA,
+    les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'éducation, la santé et les entreprises. Plus de 50
+    projets livrés.')
+@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web propulsés par l'IA, les tableaux de bord
+    intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
 
 @section('content')
     <div class="min-h-screen bg-white">
@@ -38,7 +38,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
                 <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a
                         class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Accueil</a><span>/</span><span
-                        class="text-gray-600 font-medium">Free Tools</span></nav>
+                        class="text-gray-600 font-medium">Outils Gratuits</span></nav>
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
                     <div class="space-y-6 text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF]/10 rounded-full"><svg
@@ -48,17 +48,17 @@
                                 <path
                                     d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                 </path>
-                            </svg><span class="text-sm font-medium text-[#00AEEF]">45<!-- --> Free Tools Available</span>
+                            </svg><span class="text-sm font-medium text-[#00AEEF]">45<!-- --> Outils Gratuits Disponibles</span>
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
-                            style="font-family:var(--font-heading)">Free SEO &amp; AI Tools<!-- --> <span
-                                class="text-[#00AEEF]">For Your Website</span></h1>
-                        <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">Professional-grade
-                            tools to boost your website&#x27;s performance, SEO rankings, and conversions. All tools are
-                            completely free to use.</p>
+                            style="font-family:var(--font-heading)">Outils SEO &amp; IA Gratuits<!-- --> <span
+                                class="text-[#00AEEF]">Pour Votre Site Web</span></h1>
+                        <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">Outils de qualité professionnelle
+                            pour améliorer les performances de votre site web, le classement SEO et les conversions. Tous les outils sont
+                            entièrement gratuits.</p>
                         <div class="flex flex-wrap gap-4 justify-center lg:justify-start"><a
                                 class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto"
-                                style="color:white" href="#tools">Browse Tools<svg xmlns="http://www.w3.org/2000/svg"
+                                style="color:white" href="#tools">Parcourir les Outils<svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -66,10 +66,10 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a><a
                                 class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
-                                href="{{ route('contact') }}">Need Custom Solution?</a></div>
+                                href="{{ route('contact') }}">Besoin d'une Solution Sur Mesure ?</a></div>
                     </div>
                     <div class="relative flex items-center justify-center"><img src="{{ asset('images/our-work/tools-hero.webp') }}"
-                            alt="Free SEO and AI Tools" class="w-full h-auto max-w-lg mx-auto" /></div>
+                            alt="Outils SEO et IA Gratuits" class="w-full h-auto max-w-lg mx-auto" /></div>
                 </div>
                 <div class="space-y-4" id="tools">
                     <div class="relative max-w-3xl mx-auto group">
@@ -84,7 +84,7 @@
                                 class="lucide lucide-search ml-6 h-5 w-5 text-gray-400 flex-shrink-0" aria-hidden="true">
                                 <path d="m21 21-4.34-4.34"></path>
                                 <circle cx="11" cy="11" r="8"></circle>
-                            </svg><input id="tools-search" type="text" placeholder="Search 45 free tools..."
+                            </svg><input id="tools-search" type="text" placeholder="Rechercher parmi 45 outils gratuits..."
                                 class="flex-1 px-4 py-4 bg-transparent focus:outline-none text-[#0F0F0F] placeholder-gray-400 text-base"
                                 value="" />
                             <div id="tools-count" class="text-gray-400 px-5 py-4 text-sm">45</div>
@@ -100,7 +100,7 @@
                                 </path>
                                 <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                                 <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
-                            </svg><span>All Tools</span></button><button data-filter="ai"
+                            </svg><span>Tous les Outils</span></button><button data-filter="ai"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -111,14 +111,14 @@
                                 <path d="M20 2v4"></path>
                                 <path d="M22 4h-4"></path>
                                 <circle cx="4" cy="20" r="2"></circle>
-                            </svg><span>AI Powered</span></button><button data-filter="seo"
+                            </svg><span>IA</span></button><button data-filter="seo"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-trending-up h-4 w-4" aria-hidden="true">
                                 <path d="M16 7h6v6"></path>
                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                            </svg><span>SEO Tools</span></button><button data-filter="content"
+                            </svg><span>Outils SEO</span></button><button data-filter="content"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -127,7 +127,7 @@
                                 <path d="m14 12.5 2 2.5-2 2.5"></path>
                                 <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                                 <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
-                            </svg><span>Content</span></button><button data-filter="design"
+                            </svg><span>Contenu</span></button><button data-filter="design"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -164,12 +164,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Website Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">70+ checks: SEO, Performance, Design,
-                                Security - AI-powered insights with personalized improvement plan</p>
+                                style="font-family:var(--font-heading)">Analyseur de Site Web</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Plus de 70 vérifications : SEO, Performance, Design,
+                                Sécurité - analyses propulsées par l'IA avec plan d'amélioration personnalisé</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -199,12 +199,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">AI Meta Tag Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate SEO-optimized meta tags with
+                                style="font-family:var(--font-heading)">Générateur de Balises Meta IA</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des balises meta optimisées pour le SEO avec
                                 AI analysis</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -229,12 +229,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">AI Blog Title Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">10 viral titles with SEO scores and
+                                style="font-family:var(--font-heading)">Générateur de Titres de Blog IA</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">10 titres viraux avec des scores SEO et
                                 CTR estimates</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -259,12 +259,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">AI Chatbot Script Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Industry-specific conversation flows
+                                style="font-family:var(--font-heading)">Générateur de Scripts Chatbot IA</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Flux de conversation spécifiques à chaque secteur
                                 with lead qualification</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -296,12 +296,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">AI Landing Page Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Complete landing page copy with
+                                style="font-family:var(--font-heading)">Générateur de Pages d'Atterrissage IA</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Copie complète de page d'atterrissage avec
                                 conversion psychology</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -327,12 +327,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Open Graph Preview</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Preview social media cards for 4
+                                style="font-family:var(--font-heading)">Aperçu Open Graph</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Prévisualisez les cartes réseaux sociaux pour 4
                                 major platforms</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -360,12 +360,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Heading Structure Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Visual H1-H6 tree with SEO validation
+                                style="font-family:var(--font-heading)">Analyseur de Structure de Titres</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Arbre visuel H1-H6 avec validation SEO
                             </p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -391,12 +391,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Keyword Density Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Detect keyword stuffing and thin
+                                style="font-family:var(--font-heading)">Analyseur de Densité de Mots-Clés</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Détectez le bourrage de mots-clés et le contenu
                                 content</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -421,12 +421,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Broken Link Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Find broken links, redirects, and
+                                style="font-family:var(--font-heading)">Vérificateur de Liens Cassés</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Trouvez les liens cassés, redirections et
                                 timeouts</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -450,12 +450,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Backlink Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Real Moz API data: DA, PA, Spam Score
+                                style="font-family:var(--font-heading)">Vérificateur de Backlinks</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Données réelles de l'API Moz : DA, PA, Score de Spam
                                 + Top 10 backlinks with two-tier quota optimization</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -481,12 +481,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Image Alt Text Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Scan images for missing or poor alt
+                                style="font-family:var(--font-heading)">Analyseur de Texte Alt d'Images</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez les images pour les balises alt manquantes ou insuffisantes
                                 text</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -513,12 +513,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Sitemap Validator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Validate XML sitemaps for SEO best
+                                style="font-family:var(--font-heading)">Validateur de Sitemap</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Validez les sitemaps XML selon les meilleures
                                 practices</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -543,12 +543,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Robots.txt Validator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Check robots.txt syntax and crawl
+                                style="font-family:var(--font-heading)">Validateur Robots.txt</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Vérifiez la syntaxe robots.txt et les
                                 directives</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -573,12 +573,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Schema Markup Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate JSON-LD for Articles,
+                                style="font-family:var(--font-heading)">Générateur de Balisage Schema</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez du JSON-LD pour les Articles,
                                 Products, Reviews &amp; more</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -603,12 +603,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Page Speed Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analyze loading performance and get
+                                style="font-family:var(--font-heading)">Analyseur de Vitesse de Page</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez les performances de chargement et obtenez
                                 actionable recommendations</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -633,12 +633,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">URL Slug Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate SEO-friendly URL slugs with
+                                style="font-family:var(--font-heading)">Générateur de Slug URL</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des slugs URL optimisés pour le SEO avec
                                 best practices</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -663,12 +663,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">HTML/CSS/JS Minifier</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Minify code to reduce file size and
+                                style="font-family:var(--font-heading)">Minificateur HTML/CSS/JS</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Minifiez le code pour réduire la taille du fichier et
                                 improve page speed</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -693,12 +693,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Redirect Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Follow redirect chains, detect loops,
+                                style="font-family:var(--font-heading)">Vérificateur de Redirections</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Suivez les chaînes de redirection, détectez les boucles,
                                 and get SEO recommendations</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -723,12 +723,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Canonical URL Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Detect canonical tag issues that hurt
+                                style="font-family:var(--font-heading)">Vérificateur d'URL Canonique</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Détectez les problèmes de balises canoniques qui nuisent au
                                 SEO rankings</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -753,12 +753,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Internal Link Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analyze internal linking structure
+                                style="font-family:var(--font-heading)">Analyseur de Liens Internes</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez la structure de liens internes
                                 and find broken links</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -784,12 +784,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Image Compression Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Identify oversized images and get
+                                style="font-family:var(--font-heading)">Analyseur de Compression d'Images</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Identifiez les images surdimensionnées et obtenez
                                 compression recommendations</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -814,12 +814,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Domain Health Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">12 comprehensive checks for technical
+                                style="font-family:var(--font-heading)">Vérificateur de Santé du Domaine</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">12 vérifications complètes pour la
                                 SEO and on-page health</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -844,12 +844,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Website Readiness Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">14-point analysis across SEO, Growth,
+                                style="font-family:var(--font-heading)">Vérificateur de Préparation du Site</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analyse en 14 points couvrant SEO, Croissance,
                                 Performance &amp; Security</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -874,12 +874,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Hreflang Tag Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate hreflang tags for
+                                style="font-family:var(--font-heading)">Générateur de Balises Hreflang</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des balises hreflang pour
                                 multilingual websites</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -906,12 +906,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Local Business Schema Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate JSON-LD schema for local SEO
+                                style="font-family:var(--font-heading)">Générateur de Schema Entreprise Locale</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez du schema JSON-LD pour le SEO local
                                 and Google Maps</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -937,12 +937,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate SEO-friendly XML sitemaps
+                                style="font-family:var(--font-heading)">Générateur de Sitemap XML</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des sitemaps XML optimisés pour le SEO
                                 for search engines</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -967,12 +967,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">UTM Parameter Builder</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Build trackable campaign URLs with
+                                style="font-family:var(--font-heading)">Constructeur de Paramètres UTM</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Créez des URLs de campagne traçables avec
                                 UTM parameters for analytics</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -999,12 +999,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Robots.txt Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Control search engine crawling with
+                                style="font-family:var(--font-heading)">Générateur Robots.txt</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Contrôlez l'exploration des moteurs de recherche avec
                                 custom robots.txt files</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1029,12 +1029,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Nofollow Link Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analyze HTML to find nofollow links
+                                style="font-family:var(--font-heading)">Vérificateur de Liens Nofollow</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez le HTML pour trouver les liens nofollow
                                 and link metrics</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1059,12 +1059,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Duplicate Content Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Compare text blocks to detect
+                                style="font-family:var(--font-heading)">Vérificateur de Contenu Dupliqué</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Comparez des blocs de texte pour détecter
                                 duplicate or similar content</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1090,12 +1090,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Meta Refresh Redirect Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate HTML meta refresh redirects
+                                style="font-family:var(--font-heading)">Générateur de Redirection Meta Refresh</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des redirections HTML meta refresh
                                 with custom delays</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1122,12 +1122,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">FAQ Schema Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convert FAQs to Google-friendly
+                                style="font-family:var(--font-heading)">Générateur de Schema FAQ</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez les FAQ au format
                                 JSON-LD schema</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1153,12 +1153,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Readability Score Analyzer</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analyze text readability with 5
+                                style="font-family:var(--font-heading)">Analyseur de Score de Lisibilité</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez la lisibilité du texte avec 5
                                 algorithms and grade levels</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1183,12 +1183,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Word &amp; Character Counter</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Count words, characters, and check
+                                style="font-family:var(--font-heading)">Compteur de Mots &amp; Caractères</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Comptez les mots, caractères et vérifiez
                                 platform limits</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1214,12 +1214,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">HTML to Plain Text Converter</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convert HTML to clean, readable
+                                style="font-family:var(--font-heading)">Convertisseur HTML vers Texte Brut</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez du HTML en texte lisible et propre
                                 plain text instantly</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1244,12 +1244,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Text Case Converter</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convert text between uppercase,
+                                style="font-family:var(--font-heading)">Convertisseur de Casse de Texte</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez du texte entre majuscules,
                                 lowercase, title case, and more</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1273,12 +1273,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Base64 Encoder/Decoder</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Encode text to Base64 or decode
+                                style="font-family:var(--font-heading)">Encodeur/Décodeur Base64</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Encodez du texte en Base64 ou décodez
                                 Base64 strings</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1304,12 +1304,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">JSON Formatter/Validator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Format, validate, and minify JSON
+                                style="font-family:var(--font-heading)">Formateur/Validateur JSON</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Formatez, validez et minifiez du JSON
                                 with syntax highlighting</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1336,12 +1336,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Lorem Ipsum Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate placeholder text for design
+                                style="font-family:var(--font-heading)">Générateur de Lorem Ipsum</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez du texte de remplissage pour le design
                                 mockups and prototypes</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1370,12 +1370,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Color Palette Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Extract brand colors from logos with
+                                style="font-family:var(--font-heading)">Générateur de Palette de Couleurs</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Extrayez les couleurs de marque des logos avec
                                 AI vision</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1409,12 +1409,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">QR Code Generator</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Generate scannable QR codes for
+                                style="font-family:var(--font-heading)">Générateur de Code QR</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des codes QR scannables pour
                                 URLs, text, and contact info</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1439,12 +1439,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">CSS Minifier</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Minify CSS code to reduce file size
+                                style="font-family:var(--font-heading)">Minificateur CSS</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Minifiez le code CSS pour réduire la taille du fichier
                                 and improve performance</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1469,12 +1469,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">SSL Certificate Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Verify SSL/TLS certificates and
+                                style="font-family:var(--font-heading)">Vérificateur de Certificat SSL</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Vérifiez les certificats SSL/TLS et
                                 security warnings</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1499,12 +1499,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Mobile-Friendly Test</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Test mobile responsiveness and
+                                style="font-family:var(--font-heading)">Test de Compatibilité Mobile</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Testez la réactivité mobile et
                                 usability</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1528,12 +1528,12 @@
                                     </svg></div>
                             </div>
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Core Web Vitals Checker</h3>
-                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Measure LCP, FID, CLS for Google
+                                style="font-family:var(--font-heading)">Vérificateur Core Web Vitals</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Mesurez LCP, FID, CLS pour le classement Google
                                 rankings</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
-                                <span>Try it free</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
@@ -1547,20 +1547,20 @@
                         <path d="m21 21-4.34-4.34"></path>
                         <circle cx="11" cy="11" r="8"></circle>
                     </svg>
-                    <h3 class="text-2xl font-bold text-[#0F0F0F] mb-2" style="font-family:var(--font-heading)">No tools found</h3>
-                    <p class="text-[#0F0F0F]/60">Try a different search term or category</p>
+                    <h3 class="text-2xl font-bold text-[#0F0F0F] mb-2" style="font-family:var(--font-heading)">Aucun outil trouvé</h3>
+                    <p class="text-[#0F0F0F]/60">Essayez un autre terme de recherche ou une autre catégorie</p>
                 </div>
             </div>
         </section>
         <section class="py-16 bg-white">
             <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-4"
-                    style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Need a Custom Solution?
+                    style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Besoin d'une Solution Sur Mesure ?
                 </h2>
-                <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">We build sites web alimentés par l'IA, dashboards, and
+                <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">Nous créons des sites web alimentés par l'IA, des tableaux de bord et
                     custom tools for education, healthcare, and SaaS startups.</p><a
                     class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto"
-                    style="color:white" href="{{ route('contact') }}">Book a Strategy Call<svg
+                    style="color:white" href="{{ route('contact') }}">Réserver un Appel Stratégique<svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">

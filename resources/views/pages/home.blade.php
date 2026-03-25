@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - Digital Agency | Web Development, Design & SEO')
-@section('meta_description', 'CodeSommet is a Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered with 98% client satisfaction.')
-@section('meta_keywords', 'web development Morocco,digital agency Morocco,UI UX design,branding agency,SEO services,e-commerce development,mobile app development,SaaS development,web design Morocco,React development,Next.js development,custom web solutions')
-@section('og_title', 'CodeSommet - Digital Agency | Web Development, Design & SEO')
-@section('og_description', 'CodeSommet is a Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered with 98% client satisfaction.')
-@section('twitter_description', 'Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered.')
+@section('title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')
+@section('meta_description', 'CodeSommet est une agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. 50+ projets livrés avec 98% de satisfaction client.')
+@section('meta_keywords', 'développement web Maroc,agence digitale Maroc,design UI UX,agence branding,services SEO,développement e-commerce,développement applications mobiles,développement SaaS,design web Maroc,développement React,développement Next.js,solutions web sur mesure')
+@section('og_title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')
+@section('og_description', 'CodeSommet est une agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. 50+ projets livrés avec 98% de satisfaction client.')
+@section('twitter_description', 'Agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. 50+ projets livrés.')
 
 @section('content')
     <section
@@ -35,7 +35,7 @@
                         <div class="relative">
                             <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                             <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75"></div>
-                        </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant les New Projets</span>
+                        </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant les Nouveaux Projets</span>
                     </div>
                     <div class="space-y-6 lg:space-y-6">
                         <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold"
@@ -56,7 +56,7 @@
                                         class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]" id="hero-rotating-text">GROWTH</span></span></span></h1>
                         <p
                             class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                            We craft high-performance websites, e-commerce stores, and digital solutions tailored to grow your business.</p>
+                            Nous créons des sites web haute performance, des boutiques e-commerce et des solutions digitales sur mesure pour développer votre activité.</p>
                     </div>
                     <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4"><a target="_blank"
                             rel="noopener noreferrer"
@@ -83,8 +83,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div><span
                                 class="relative z-10 text-sm md:text-base font-medium tracking-tight text-white"
-                                style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book Discovery
-                                Call</span>
+                                style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel
+                                Découverte</span>
                         </a><button data-cal-link="codesommet/discovery"
                             data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
                             class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto"
@@ -109,13 +109,13 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div><span
                                 class="relative z-10 text-sm md:text-base font-medium tracking-tight text-white"
-                                style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book Discovery
-                                Call</span>
+                                style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel
+                                Découverte</span>
                         </button><a
                             class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white transition-all w-full sm:w-auto"
                             href="{{ route('tool', 'website-analyzer') }}"><span
-                                class="text-sm md:text-base font-medium text-[#00AEEF] group-hover:text-white">Analyze Your
-                                Website</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                class="text-sm md:text-base font-medium text-[#00AEEF] group-hover:text-white">Analyser Votre
+                                Site Web</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-arrow-right w-4 h-4 text-[#00AEEF] group-hover:text-white"
@@ -128,7 +128,7 @@
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-[var(--color-primary-orange)]/5 to-transparent rounded-3xl">
                     </div><img src="{{ asset('images/hero-image-1.webp') }}"
-                        alt="Creative developer building amazing web experiences"
+                        alt="Développeur créatif construisant des expériences web exceptionnelles"
                         class="relative w-full max-w-lg object-contain animate-float drop-shadow-2xl" loading="eager"
                         fetchPriority="high" />
                 </div>
@@ -150,8 +150,8 @@
                                     aria-hidden="true">
                                     <path d="M12 6v6l4 2"></path>
                                     <circle cx="12" cy="12" r="10"></circle>
-                                </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Fast Turnaround
-                                Guaranteed</span>
+                                </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Livraison Rapide
+                                Garantie</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <div
@@ -164,8 +164,8 @@
                                     <path
                                         d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                                     </path>
-                                </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">100% Transparent
-                                Process</span>
+                                </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Processus 100%
+                                Transparent</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <div
@@ -183,8 +183,8 @@
                                     <path d="M8 7h8"></path>
                                     <circle cx="12" cy="17" r="5"></circle>
                                     <path d="M12 18v-2h-.5"></path>
-                                </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Free
-                                Consultation</span>
+                                </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Consultation
+                                Gratuite</span>
                         </div>
                     </div>
                 </div>
@@ -198,8 +198,8 @@
                                 aria-hidden="true">
                                 <path d="M12 6v6l4 2"></path>
                                 <circle cx="12" cy="12" r="10"></circle>
-                            </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Fast Turnaround
-                            Guaranteed</span>
+                            </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Livraison Rapide
+                            Garantie</span>
                     </div>
                     <div
                         class="bg-white border-2 border-dashed border-[#E5E5E5] rounded-xl px-4 py-3 flex items-center gap-2.5">
@@ -212,8 +212,8 @@
                                 <path
                                     d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                                 </path>
-                            </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">End-to-End Service:
-                            Design to Launch</span>
+                            </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Service Complet :
+                            Du Design au Lancement</span>
                     </div>
                     <div
                         class="bg-white border-2 border-dashed border-[#E5E5E5] rounded-xl px-4 py-3 flex items-center gap-2.5">
@@ -231,7 +231,7 @@
                                 <circle cx="12" cy="17" r="5"></circle>
                                 <path d="M12 18v-2h-.5"></path>
                             </svg></div><span class="text-sm font-medium text-[var(--text-primary)]">Satisfaction
-                            Guaranteed</span>
+                            Garantie</span>
                     </div>
                 </div>
             </div>
@@ -248,169 +248,169 @@
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/vertex-logo.webp') }}"
-                                alt="Vertex - Global technology solutions client" loading="lazy"
+                                alt="Vertex - Client solutions technologiques mondiales" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/celestia-logo.webp') }}"
-                                alt="Celestia - Enterprise cloud platform client" loading="lazy"
+                                alt="Celestia - Client plateforme cloud entreprise" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/nexus-logo.webp') }}"
-                                alt="Nexus - Digital transformation consulting client" loading="lazy"
+                                alt="Nexus - Client conseil en transformation digitale" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/pioneer-logo.webp') }}"
-                                alt="Pioneer - Innovation and startup accelerator client" loading="lazy"
+                                alt="Pioneer - Client accélérateur d'innovation et de startups" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/bubblebox-logo.webp') }}"
-                                alt="BubbleBox - Creative marketing agency client" loading="lazy"
+                                alt="BubbleBox - Client agence marketing créative" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/skyward-logo.webp') }}"
-                                alt="Skyward - Aviation and aerospace technology client" loading="lazy"
+                                alt="Skyward - Client technologie aéronautique et aérospatiale" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/ironworks-logo.webp') }}"
-                                alt="IronWorks - Industrial manufacturing client" loading="lazy"
+                                alt="IronWorks - Client fabrication industrielle" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/eduglobal-logo.webp') }}"
-                                alt="EduGlobal - International education consultancy client" loading="lazy"
+                                alt="EduGlobal - Client conseil en éducation internationale" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/technova-logo.webp') }}"
-                                alt="TechNova - Software development and AI solutions client" loading="lazy"
+                                alt="TechNova - Client développement logiciel et solutions IA" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/healthcareplus-logo.webp') }}"
-                                alt="HealthcarePlus - Medical technology and healthcare provider" loading="lazy"
+                                alt="HealthcarePlus - Technologie médicale et prestataire de santé" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/linguaacademy-logo.webp') }}"
-                                alt="Lingua Academy - Language learning and education platform" loading="lazy"
+                                alt="Lingua Academy - Plateforme d'apprentissage des langues et d'éducation" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:40px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/goausbildung-logo.webp') }}"
-                                alt="GoAusbildung - German vocational training EdTech platform" loading="lazy"
+                                alt="GoAusbildung - Plateforme EdTech de formation professionnelle allemande" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:40px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:40px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/al-raba-logo.webp') }}"
-                                alt="Al-Raba Technologies - UPS and IT infrastructure distributor" loading="lazy"
+                                alt="Al-Raba Technologies - Distributeur d'onduleurs et d'infrastructure IT" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:40px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:40px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/msingermany-logo.webp') }}"
-                                alt="MS in Germany - German university admissions platform" loading="lazy"
+                                alt="MS in Germany - Plateforme d'admission universitaire en Allemagne" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:40px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/vertex-logo.webp') }}"
-                                alt="Vertex - Global technology solutions client" loading="lazy"
+                                alt="Vertex - Client solutions technologiques mondiales" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/celestia-logo.webp') }}"
-                                alt="Celestia - Enterprise cloud platform client" loading="lazy"
+                                alt="Celestia - Client plateforme cloud entreprise" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/nexus-logo.webp') }}"
-                                alt="Nexus - Digital transformation consulting client" loading="lazy"
+                                alt="Nexus - Client conseil en transformation digitale" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/pioneer-logo.webp') }}"
-                                alt="Pioneer - Innovation and startup accelerator client" loading="lazy"
+                                alt="Pioneer - Client accélérateur d'innovation et de startups" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/bubblebox-logo.webp') }}"
-                                alt="BubbleBox - Creative marketing agency client" loading="lazy"
+                                alt="BubbleBox - Client agence marketing créative" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/skyward-logo.webp') }}"
-                                alt="Skyward - Aviation and aerospace technology client" loading="lazy"
+                                alt="Skyward - Client technologie aéronautique et aérospatiale" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/ironworks-logo.webp') }}"
-                                alt="IronWorks - Industrial manufacturing client" loading="lazy"
+                                alt="IronWorks - Client fabrication industrielle" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/eduglobal-logo.webp') }}"
-                                alt="EduGlobal - International education consultancy client" loading="lazy"
+                                alt="EduGlobal - Client conseil en éducation internationale" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/technova-logo.webp') }}"
-                                alt="TechNova - Software development and AI solutions client" loading="lazy"
+                                alt="TechNova - Client développement logiciel et solutions IA" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/healthcareplus-logo.webp') }}"
-                                alt="HealthcarePlus - Medical technology and healthcare provider" loading="lazy"
+                                alt="HealthcarePlus - Technologie médicale et prestataire de santé" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/linguaacademy-logo.webp') }}"
-                                alt="Lingua Academy - Language learning and education platform" loading="lazy"
+                                alt="Lingua Academy - Plateforme d'apprentissage des langues et d'éducation" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:45px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:40px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/goausbildung-logo.webp') }}"
-                                alt="GoAusbildung - German vocational training EdTech platform" loading="lazy"
+                                alt="GoAusbildung - Plateforme EdTech de formation professionnelle allemande" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:40px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:40px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/al-raba-logo.webp') }}"
-                                alt="Al-Raba Technologies - UPS and IT infrastructure distributor" loading="lazy"
+                                alt="Al-Raba Technologies - Distributeur d'onduleurs et d'infrastructure IT" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:40px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                         <div style="height:40px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('logos/msingermany-logo.webp') }}"
-                                alt="MS in Germany - German university admissions platform" loading="lazy"
+                                alt="MS in Germany - Plateforme d'admission universitaire en Allemagne" loading="lazy"
                                 style="filter:grayscale(100%);.7;height:40px;width:auto"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" /></div>
                     </div>
@@ -423,9 +423,9 @@
             <div class="text-center mb-8" style="opacity:0;transform:translateY(30px)">
                 <h2
                     class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 text-3xl md:text-4xl lg:text-5xl">
-                    Pixel-Perfect Design Meets Powerful Technology</h2>
+                    Un Design Pixel-Perfect Allié à une Technologie Puissante</h2>
                 <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">
-                    Award-winning designs that captivate users and drive business growth</p>
+                    Des designs primés qui captivent les utilisateurs et stimulent la croissance</p>
             </div>
         </div>
         <div class="jsx-2447671171 relative w-full py-4 md:py-8">
@@ -442,7 +442,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Study abroad education platform with AI-powered recommendations and student portal"
+                            <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.jpeg') }}" />
@@ -455,7 +455,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Modern fintech dashboard with real-time analytics and payment processing"
+                            <img alt="Tableau de bord fintech moderne avec analytiques en temps réel et traitement des paiements"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/fintech-hero835e.jpeg') }}" />
@@ -468,7 +468,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Healthcare provider website with appointment booking and patient management system"
+                            <img alt="Site web de prestataire de santé avec prise de rendez-vous et gestion des patients"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.jpeg') }}" />
@@ -481,7 +481,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Enterprise SaaS dashboard featuring data visualization and user management"
+                            <img alt="Tableau de bord SaaS entreprise avec visualisation de données et gestion des utilisateurs"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.jpeg') }}" />
@@ -494,7 +494,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="E-commerce platform with product catalog, shopping cart, and secure checkout"
+                            <img alt="Plateforme e-commerce avec catalogue produits, panier et paiement sécurisé"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.jpeg') }}" />
@@ -507,7 +507,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Professional services website showcasing expertise and client testimonials"
+                            <img alt="Site web de services professionnels présentant expertise et témoignages clients"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/professional-services-hero4f40.jpeg') }}" />
@@ -520,7 +520,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="EdTech learning management system with interactive courses and progress tracking"
+                            <img alt="Système de gestion d'apprentissage EdTech avec cours interactifs et suivi de progression"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/edtech-herodbd9.jpeg') }}" />
@@ -533,7 +533,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="AI-powered chatbot integration with natural language processing capabilities"
+                            <img alt="Intégration de chatbot IA avec capacités de traitement du langage naturel"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/ai-heroc6fe.jpeg') }}" />
@@ -546,7 +546,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="SaaS platform with subscription management and multi-tenant architecture"
+                            <img alt="Plateforme SaaS avec gestion des abonnements et architecture multi-tenant"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/saas-herod5d6.jpeg') }}" />
@@ -559,7 +559,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Healthcare technology solution with HIPAA compliance and electronic health records"
+                            <img alt="Solution technologique de santé conforme HIPAA avec dossiers médicaux électroniques"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/healthcare-heroeb9b.jpeg') }}" />
@@ -572,7 +572,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Study abroad education platform with AI-powered recommendations and student portal"
+                            <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.jpeg') }}" />
@@ -585,7 +585,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Modern fintech dashboard with real-time analytics and payment processing"
+                            <img alt="Tableau de bord fintech moderne avec analytiques en temps réel et traitement des paiements"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/fintech-hero835e.jpeg') }}" />
@@ -598,7 +598,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Healthcare provider website with appointment booking and patient management system"
+                            <img alt="Site web de prestataire de santé avec prise de rendez-vous et gestion des patients"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.jpeg') }}" />
@@ -611,7 +611,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Enterprise SaaS dashboard featuring data visualization and user management"
+                            <img alt="Tableau de bord SaaS entreprise avec visualisation de données et gestion des utilisateurs"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.jpeg') }}" />
@@ -624,7 +624,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="E-commerce platform with product catalog, shopping cart, and secure checkout"
+                            <img alt="Plateforme e-commerce avec catalogue produits, panier et paiement sécurisé"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.jpeg') }}" />
@@ -637,7 +637,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Professional services website showcasing expertise and client testimonials"
+                            <img alt="Site web de services professionnels présentant expertise et témoignages clients"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/professional-services-hero4f40.jpeg') }}" />
@@ -650,7 +650,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="EdTech learning management system with interactive courses and progress tracking"
+                            <img alt="Système de gestion d'apprentissage EdTech avec cours interactifs et suivi de progression"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/edtech-herodbd9.jpeg') }}" />
@@ -663,7 +663,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="AI-powered chatbot integration with natural language processing capabilities"
+                            <img alt="Intégration de chatbot IA avec capacités de traitement du langage naturel"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/ai-heroc6fe.jpeg') }}" />
@@ -676,7 +676,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="SaaS platform with subscription management and multi-tenant architecture"
+                            <img alt="Plateforme SaaS avec gestion des abonnements et architecture multi-tenant"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/saas-herod5d6.jpeg') }}" />
@@ -689,7 +689,7 @@
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                            <img alt="Healthcare technology solution with HIPAA compliance and electronic health records"
+                            <img alt="Solution technologique de santé conforme HIPAA avec dossiers médicaux électroniques"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="480px" src="{{ asset('images/healthcare-heroeb9b.jpeg') }}" />
@@ -707,9 +707,9 @@
             <div class="text-center mb-12" style="opacity:0;transform:translateY(30px)">
                 <h2
                     class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 text-3xl md:text-4xl lg:text-5xl">
-                    Proven Results That Speak for Themselves</h2>
-                <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Approuvé par
-                    businesses across multiple industries</p>
+                    Des Résultats Prouvés Qui Parlent d'Eux-Mêmes</h2>
+                <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Approuvé par des
+                    entreprises de multiples secteurs</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div
@@ -717,15 +717,15 @@
                     <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                         <div class="absolute inset-0 flex items-start justify-center overflow-hidden px-8 pt-2.5">
                             <div class="flex items-center justify-center relative" style="z-index:10"><img
-                                    src="{{ asset('mockups/al-raba-top.png') }}" alt="50+ Projets Delivered"
+                                    src="{{ asset('mockups/al-raba-top.png') }}" alt="50+ Projets Livrés"
                                     class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]"
                                     style="min-height:150%" loading="lazy" /></div>
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">50+ Projets Delivered</h3>
-                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Delivered websites that generate
-                            leads and establish professional digital presence</p>
+                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">50+ Projets Livrés</h3>
+                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Des sites web livrés qui génèrent
+                            des leads et établissent une présence digitale professionnelle</p>
                     </div>
                 </div>
                 <div
@@ -736,38 +736,38 @@
                                     class="font-bold leading-none z-0">4+</span>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + 140px);top:calc(50% + -50px);transform:translate(-50%, -50%)">
-                                    Web Designs</div>
+                                    Design Web</div>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + -80px);top:calc(50% + -60px);transform:translate(-50%, -50%)">
-                                    Landing pages</div>
+                                    Pages d'atterrissage</div>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + -130px);top:calc(50% + -20px);transform:translate(-50%, -50%)">
                                     Logos</div>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + -80px);top:calc(50% + 60px);transform:translate(-50%, -50%)">
-                                    Pitch Decks</div>
+                                    Présentations</div>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + 0px);top:calc(50% + -140px);transform:translate(-50%, -50%)">
-                                    Copywriting</div>
+                                    Rédaction</div>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + 100px);top:calc(50% + 0px);transform:translate(-50%, -50%)">
-                                    Webflow Development</div>
+                                    Développement Webflow</div>
                             </div>
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">4+ Years of Experience</h3>
-                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Bringing seasoned expertise to
-                            every project</p>
+                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">4+ Années d'Expérience</h3>
+                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Une expertise chevronnée apportée à
+                            chaque projet</p>
                     </div>
                 </div>
                 <div
                     class="flex-shrink-0 w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5" style="opacity:0;transform:translateY(30px)" data-delay="3">
                     <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                         <div class="absolute inset-0 p-2 flex flex-col">
-                            <div class="text-xl font-semibold text-[var(--text-primary)] mb-0 pt-2.5 pl-2.5">Savings</div>
+                            <div class="text-xl font-semibold text-[var(--text-primary)] mb-0 pt-2.5 pl-2.5">Économies</div>
                             <div class="relative w-full mb-0">
-                                <div class="text-xs text-[#00AEEF] mb-0.5 text-right">Highest (This month)</div><svg
+                                <div class="text-xs text-[#00AEEF] mb-0.5 text-right">Le plus élevé (Ce mois-ci)</div><svg
                                     width="100%" height="6" viewBox="-20 3 350 5" class="absolute top-[20px]"
                                     preserveAspectRatio="none">
                                     <path d="M 2.33 3.5 L 340 3.5" fill="transparent" stroke="#00AEEF" stroke-width="3"
@@ -791,8 +791,8 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">98% Client Satisfaction</h3>
-                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Our clients keep coming back because we deliver results that matter</p>
+                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">98% de Satisfaction Client</h3>
+                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Nos clients reviennent parce que nous livrons des résultats qui comptent</p>
                     </div>
                 </div>
             </div>
@@ -821,8 +821,8 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6 mb-12 md:mb-16">
                 <div class="text-center" style="opacity:0;transform:translateY(30px)">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white"
-                        style="font-family:var(--font-heading)">18 Premium Features. Built Into Every Project.</h2>
-                    <p class="text-base md:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">Enterprise-grade features and capabilities included as standard. Get your free custom quote today.</p>
+                        style="font-family:var(--font-heading)">18 Fonctionnalités Premium. Intégrées à Chaque Projet.</h2>
+                    <p class="text-base md:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">Des fonctionnalités et capacités de niveau entreprise incluses en standard. Obtenez votre devis personnalisé gratuit dès aujourd'hui.</p>
                 </div>
             </div>
             <div class="space-y-4">
@@ -856,8 +856,8 @@
                                                         <path d="M15 13v2"></path>
                                                         <path d="M9 13v2"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">AI
-                                                    Chatbots</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Chatbots
+                                                    IA</span>
                                             </div>
                                         </div>
                                     </div>
@@ -882,8 +882,8 @@
                                                         </rect>
                                                         <path d="M3 10h18"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Booking
-                                                    Systems</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Systèmes de
+                                                    Réservation</span>
                                             </div>
                                         </div>
                                     </div>
@@ -907,8 +907,8 @@
                                                         <line x1="2" x2="22" y1="10"
                                                             y2="10"></line>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Payment
-                                                    Gateway</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Passerelle de
+                                                    Paiement</span>
                                             </div>
                                         </div>
                                     </div>
@@ -960,8 +960,8 @@
                                                         <rect width="7" height="5" x="3" y="16" rx="1">
                                                         </rect>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">User
-                                                    Dashboards</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Tableaux de Bord
+                                                    Utilisateur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -983,8 +983,8 @@
                                                         <path d="M16 7h6v6"></path>
                                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">SEO
-                                                    Optimization</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Optimisation
+                                                    SEO</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1010,8 +1010,8 @@
                                                         <path d="M15 13v2"></path>
                                                         <path d="M9 13v2"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">AI
-                                                    Chatbots</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Chatbots
+                                                    IA</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1036,8 +1036,8 @@
                                                         </rect>
                                                         <path d="M3 10h18"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Booking
-                                                    Systems</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Systèmes de
+                                                    Réservation</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1061,8 +1061,8 @@
                                                         <line x1="2" x2="22" y1="10"
                                                             y2="10"></line>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Payment
-                                                    Gateway</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Passerelle de
+                                                    Paiement</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1114,8 +1114,8 @@
                                                         <rect width="7" height="5" x="3" y="16" rx="1">
                                                         </rect>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">User
-                                                    Dashboards</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Tableaux de Bord
+                                                    Utilisateur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1137,8 +1137,8 @@
                                                         <path d="M16 7h6v6"></path>
                                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">SEO
-                                                    Optimization</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Optimisation
+                                                    SEO</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1165,8 +1165,8 @@
                                                         <path d="M15 13v2"></path>
                                                         <path d="M9 13v2"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">AI
-                                                    Chatbots</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Chatbots
+                                                    IA</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1192,8 +1192,8 @@
                                                             rx="2"></rect>
                                                         <path d="M3 10h18"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Booking
-                                                    Systems</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Systèmes de
+                                                    Réservation</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1218,8 +1218,8 @@
                                                         <line x1="2" x2="22" y1="10"
                                                             y2="10"></line>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Payment
-                                                    Gateway</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Passerelle de
+                                                    Paiement</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1273,8 +1273,8 @@
                                                         <rect width="7" height="5" x="3" y="16"
                                                             rx="1"></rect>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">User
-                                                    Dashboards</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Tableaux de Bord
+                                                    Utilisateur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1297,8 +1297,8 @@
                                                         <path d="M16 7h6v6"></path>
                                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">SEO
-                                                    Optimization</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Optimisation
+                                                    SEO</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1336,8 +1336,8 @@
                                                         <path d="M13 17V5"></path>
                                                         <path d="M8 17v-3"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Analytics
-                                                    &amp; Heatmaps</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Analytiques
+                                                    &amp; Cartes de Chaleur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1362,8 +1362,8 @@
                                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                                         <circle cx="9" cy="7" r="4"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">CRM
-                                                    Integration</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Intégration
+                                                    CRM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1386,8 +1386,8 @@
                                                             d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                                         </path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">API
-                                                    Integration</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Intégration
+                                                    API</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1462,8 +1462,8 @@
                                                             d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
                                                         </path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Push
-                                                    Notifications</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Notifications
+                                                    Push</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1488,8 +1488,8 @@
                                                         <path d="M13 17V5"></path>
                                                         <path d="M8 17v-3"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Analytics
-                                                    &amp; Heatmaps</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Analytiques
+                                                    &amp; Cartes de Chaleur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1514,8 +1514,8 @@
                                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                                         <circle cx="9" cy="7" r="4"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">CRM
-                                                    Integration</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Intégration
+                                                    CRM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1538,8 +1538,8 @@
                                                             d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                                         </path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">API
-                                                    Integration</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Intégration
+                                                    API</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1614,8 +1614,8 @@
                                                             d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
                                                         </path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Push
-                                                    Notifications</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Notifications
+                                                    Push</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1640,8 +1640,8 @@
                                                         <path d="M13 17V5"></path>
                                                         <path d="M8 17v-3"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Analytics
-                                                    &amp; Heatmaps</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Analytiques
+                                                    &amp; Cartes de Chaleur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1666,8 +1666,8 @@
                                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                                         <circle cx="9" cy="7" r="4"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">CRM
-                                                    Integration</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Intégration
+                                                    CRM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1690,8 +1690,8 @@
                                                             d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                                         </path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">API
-                                                    Integration</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Intégration
+                                                    API</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1766,8 +1766,8 @@
                                                             d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
                                                         </path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Push
-                                                    Notifications</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Notifications
+                                                    Push</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1804,8 +1804,8 @@
                                                         <rect x="2" y="4" width="20" height="16"
                                                             rx="2"></rect>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Email
-                                                    Automation</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Automatisation
+                                                    Email</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1832,7 +1832,7 @@
                                                         <path d="m22 22-5-10-5 10"></path>
                                                         <path d="M14 18h6"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Multi-language</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Multilingue</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1856,8 +1856,8 @@
                                                             ry="2"></rect>
                                                         <path d="M12 18h.01"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Mobile
-                                                    PWA</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">PWA
+                                                    Mobile</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1884,8 +1884,8 @@
                                                         <path d="M22 4h-4"></path>
                                                         <circle cx="4" cy="20" r="2"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">AI
-                                                    Automation</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Automatisation
+                                                    IA</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1908,8 +1908,8 @@
                                                         <path d="m21 21-4.34-4.34"></path>
                                                         <circle cx="11" cy="11" r="8"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Smart
-                                                    Search</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Recherche
+                                                    Intelligente</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1933,8 +1933,8 @@
                                                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                                         <path d="M2 12h20"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Global
-                                                    CDN</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">CDN
+                                                    Mondial</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1958,8 +1958,8 @@
                                                         <rect x="2" y="4" width="20" height="16"
                                                             rx="2"></rect>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Email
-                                                    Automation</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Automatisation
+                                                    Email</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1986,7 +1986,7 @@
                                                         <path d="m22 22-5-10-5 10"></path>
                                                         <path d="M14 18h6"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Multi-language</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Multilingue</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2010,8 +2010,8 @@
                                                             ry="2"></rect>
                                                         <path d="M12 18h.01"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Mobile
-                                                    PWA</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">PWA
+                                                    Mobile</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2038,8 +2038,8 @@
                                                         <path d="M22 4h-4"></path>
                                                         <circle cx="4" cy="20" r="2"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">AI
-                                                    Automation</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Automatisation
+                                                    IA</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2062,8 +2062,8 @@
                                                         <path d="m21 21-4.34-4.34"></path>
                                                         <circle cx="11" cy="11" r="8"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Smart
-                                                    Search</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Recherche
+                                                    Intelligente</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2087,8 +2087,8 @@
                                                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                                         <path d="M2 12h20"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Global
-                                                    CDN</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">CDN
+                                                    Mondial</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2112,8 +2112,8 @@
                                                         <rect x="2" y="4" width="20" height="16"
                                                             rx="2"></rect>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Email
-                                                    Automation</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Automatisation
+                                                    Email</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2140,7 +2140,7 @@
                                                         <path d="m22 22-5-10-5 10"></path>
                                                         <path d="M14 18h6"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Multi-language</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Multilingue</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2164,8 +2164,8 @@
                                                             ry="2"></rect>
                                                         <path d="M12 18h.01"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Mobile
-                                                    PWA</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">PWA
+                                                    Mobile</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2192,8 +2192,8 @@
                                                         <path d="M22 4h-4"></path>
                                                         <circle cx="4" cy="20" r="2"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">AI
-                                                    Automation</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Automatisation
+                                                    IA</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2216,8 +2216,8 @@
                                                         <path d="m21 21-4.34-4.34"></path>
                                                         <circle cx="11" cy="11" r="8"></circle>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Smart
-                                                    Search</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Recherche
+                                                    Intelligente</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2241,8 +2241,8 @@
                                                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                                         <path d="M2 12h20"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Global
-                                                    CDN</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">CDN
+                                                    Mondial</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2254,8 +2254,8 @@
             </div>
             <div class="max-w-7xl mx-auto px-4 md:px-6 mt-12">
                 <div class="text-center">
-                    <p class="text-sm md:text-base text-gray-500"><span class="font-semibold text-white">18 advanced
-                            features</span> ready to integrate into your project. Hover to explore capabilities.</p>
+                    <p class="text-sm md:text-base text-gray-500"><span class="font-semibold text-white">18 fonctionnalités
+                            avancées</span> prêtes à être intégrées dans votre projet. Survolez pour explorer les capacités.</p>
                 </div>
             </div>
         </div>
@@ -2267,69 +2267,69 @@
             <div class="text-center mb-12 md:mb-16" style="opacity:0;transform:translateY(30px)">
                 <h2
                     class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 text-3xl md:text-4xl lg:text-5xl">
-                    Why Industry Leaders Choose CodeSommet</h2>
-                <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-3xl mx-auto">The
-                    perfect blend of creativity, technology, and business strategy</p>
+                    Pourquoi les Leaders du Secteur Choisissent CodeSommet</h2>
+                <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-3xl mx-auto">Le
+                    mélange parfait de créativité, technologie et stratégie commerciale</p>
             </div>
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="lg:hidden grid grid-cols-1 gap-4" style="opacity:0;transform:translateY(30px)">
                     <div
                         class="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">AI-Powered Intelligence</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Smart chatbots, automation workflows, and AI
-                                features that enhance user experience and streamline operations.</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Intelligence Alimentée par l'IA</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Chatbots intelligents, workflows d'automatisation et fonctionnalités IA
+                                qui améliorent l'expérience utilisateur et optimisent les opérations.</p>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-32 h-32 opacity-90"><img alt="AI-Powered Intelligence" loading="lazy"
+                            <div class="w-32 h-32 opacity-90"><img alt="Intelligence alimentée par l'IA" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-ai-intelligence.webp" />
+                                    src="{{ asset('images/benefits-ai-intelligencec8e1.jpeg') }}" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Stunning Dashboard Design</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Beautiful admin panels and data
-                                visualizations that make complex information simple and actionable.</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Design de Tableau de Bord Époustouflant</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">De magnifiques panneaux d'administration et visualisations de données
+                                qui rendent l'information complexe simple et exploitable.</p>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-32 h-32 opacity-90"><img alt="Stunning Dashboard Design" loading="lazy"
+                            <div class="w-32 h-32 opacity-90"><img alt="Design de Tableau de Bord Époustouflant" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-dashboard-design.webp" />
+                                    src="{{ asset('images/benefits-dashboard-design55d8.jpeg') }}" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="bg-gradient-to-br from-green-50 to-emerald-50 border-green-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Growth-Focused Strategy</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">SEO optimization, conversion design, and
-                                performance metrics built into every project.</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Stratégie Axée sur la Croissance</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Optimisation SEO, design de conversion et
+                                métriques de performance intégrés à chaque projet.</p>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-32 h-32 opacity-90"><img alt="Growth-Focused Strategy" loading="lazy"
+                            <div class="w-32 h-32 opacity-90"><img alt="Stratégie Axée sur la Croissance" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-growth-strategy-v2.webp" />
+                                    src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="bg-gradient-to-br from-orange-50 to-amber-50 border-orange-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Complete Digital Solution</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Design, development, content, SEO, and
-                                hosting. Everything you need in one package.</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Solution Digitale Complète</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Design, développement, contenu, SEO et
+                                hébergement. Tout ce dont vous avez besoin en un seul package.</p>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-32 h-32 opacity-90"><img alt="Complete Digital Solution" loading="lazy"
+                            <div class="w-32 h-32 opacity-90"><img alt="Solution Digitale Complète" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-complete-solution-v2.webp" />
+                                    src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
                             </div>
                         </div>
                     </div>
@@ -2337,49 +2337,49 @@
                         class="bg-gradient-to-br from-teal-50 to-cyan-50 border-teal-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
                             <h3 class="text-lg font-bold text-gray-900 mb-2">Expertise Sectorielle</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Specialized knowledge in education,
-                                healthcare, and SaaS with proven success stories.</p>
+                            <p class="text-sm text-gray-600 leading-relaxed">Connaissances spécialisées en éducation,
+                                santé et SaaS avec des success stories prouvées.</p>
                         </div>
                         <div class="flex justify-center">
                             <div class="w-32 h-32 opacity-90"><img alt="Expertise Sectorielle" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-industry-expertise-v2.webp" />
+                                    src="{{ asset('images/benefits-industry-expertise-v2ddd0.jpeg') }}" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Cutting-Edge Technology</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Suivant.js 15, React, TypeScript, and the latest
-                                AI models for future-proof solutions.</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Technologie de Pointe</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Next.js 15, React, TypeScript et les derniers
+                                modèles IA pour des solutions pérennes.</p>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-32 h-32 opacity-90"><img alt="Cutting-Edge Technology" loading="lazy"
+                            <div class="w-32 h-32 opacity-90"><img alt="Technologie de Pointe" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-tech-stack-v2.webp" />
+                                    src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
                             </div>
                         </div>
                     </div><a
                         class="group bg-gray-900 text-white rounded-2xl p-6 flex items-center justify-between hover:bg-gray-800 transition-colors border-2 border-gray-800"
                         href="{{ route('our-work') }}">
                         <div class="flex items-center gap-3">
-                            <div class="flex -space-x-3"><img alt="Client testimonial" loading="lazy" width="32"
+                            <div class="flex -space-x-3"><img alt="Témoignage client" loading="lazy" width="32"
                                     height="32" decoding="async"
                                     class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/david-chen-chicago.webp" /><img
-                                    alt="Client testimonial" loading="lazy" width="32" height="32"
+                                    src="{{ asset('images/david-chen-chicago7d3d.jpeg') }}" /><img
+                                    alt="Témoignage client" loading="lazy" width="32" height="32"
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/elena-rodriguez-newyork.webp" /><img
-                                    alt="Client testimonial" loading="lazy" width="32" height="32"
+                                    src="{{ asset('images/elena-rodriguez-newyork6763.jpeg') }}" /><img
+                                    alt="Témoignage client" loading="lazy" width="32" height="32"
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/emma-van-dijk-amsterdam.webp" />
-                            </div><span class="text-sm font-medium">Explore Our Projets</span>
+                                    src="{{ asset('images/emma-van-dijk-amsterdam6432.jpeg') }}" />
+                            </div><span class="text-sm font-medium">Découvrir Nos Projets</span>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"
@@ -2397,17 +2397,17 @@
                             <div
                                 class="inline-flex items-center gap-2 px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full mb-4">
                                 <div class="w-2 h-2 bg-blue-500 rounded-full"></div><span
-                                    class="text-xs font-medium text-gray-700">AI-POWERED</span>
+                                    class="text-xs font-medium text-gray-700">PROPULSÉ PAR L'IA</span>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">AI-Powered Intelligence</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Smart chatbots, automation workflows, and AI
-                                features that enhance user experience and streamline operations.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Intelligence Alimentée par l'IA</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Chatbots intelligents, workflows d'automatisation et fonctionnalités IA
+                                qui améliorent l'expérience utilisateur et optimisent les opérations.</p>
                         </div>
                         <div class="flex-1 flex items-center justify-center mt-6">
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
-                                    alt="AI Intelligence" loading="lazy" width="256" height="256"
+                                    alt="Intelligence IA" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-ai-intelligence.webp" />
+                                    src="{{ asset('images/benefits-ai-intelligencec8e1.jpeg') }}" />
                             </div>
                         </div>
                     </div>
@@ -2415,15 +2415,15 @@
                         class="col-span-2 bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-6 relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-purple-100">
                         <div class="flex items-center justify-between h-full">
                             <div class="relative z-10 flex-1">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Stunning Dashboard Design</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Design de Tableau de Bord Époustouflant</h3>
                                 <p class="text-sm text-gray-600 leading-relaxed">Beautiful admin panels and data
                                     visualizations that make complex information simple and actionable.</p>
                             </div>
                             <div
                                 class="w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
-                                <img alt="Dashboard Design" loading="lazy" width="160" height="160"
+                                <img alt="Design de tableau de bord" loading="lazy" width="160" height="160"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-dashboard-design.webp" />
+                                    src="{{ asset('images/benefits-dashboard-design55d8.jpeg') }}" />
                             </div>
                         </div>
                     </div>
@@ -2433,17 +2433,17 @@
                             <div
                                 class="inline-flex items-center gap-2 px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full mb-4">
                                 <div class="w-2 h-2 bg-green-500 rounded-full"></div><span
-                                    class="text-xs font-medium text-gray-700">RESULTS-DRIVEN</span>
+                                    class="text-xs font-medium text-gray-700">AXÉ RÉSULTATS</span>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Growth-Focused Strategy</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">SEO optimization, conversion design, and
-                                performance metrics built into every project.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Stratégie Axée sur la Croissance</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Optimisation SEO, design de conversion et
+                                métriques de performance intégrés à chaque projet.</p>
                         </div>
                         <div class="flex-1 flex items-center justify-center mt-6">
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="Growth Strategy" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-growth-strategy-v2.webp" />
+                                    src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
                             </div>
                         </div>
                     </div>
@@ -2455,37 +2455,37 @@
                                 <div class="w-2 h-2 bg-orange-500 rounded-full"></div><span
                                     class="text-xs font-medium text-gray-700">END-TO-END</span>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Complete Digital Solution</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Design, development, content, SEO, and
-                                hosting. Everything you need in one package.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Solution Digitale Complète</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Design, développement, contenu, SEO et
+                                hébergement. Tout ce dont vous avez besoin en un seul package.</p>
                         </div>
                         <div class="flex-1 flex items-center justify-center mt-6">
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="Complete Solution" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-complete-solution-v2.webp" />
+                                    src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
                             </div>
                         </div>
                     </div><a
                         class="row-span-1 group bg-gray-900 text-white rounded-3xl p-6 flex items-center justify-between hover:bg-gray-800 transition-all duration-300 hover:shadow-xl border-2 border-gray-800"
                         href="{{ route('our-work') }}">
                         <div class="flex items-center gap-3">
-                            <div class="flex -space-x-3"><img alt="Client testimonial" loading="lazy" width="40"
+                            <div class="flex -space-x-3"><img alt="Témoignage client" loading="lazy" width="40"
                                     height="40" decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/david-chen-chicago.webp" /><img
-                                    alt="Client testimonial" loading="lazy" width="40" height="40"
+                                    src="{{ asset('images/david-chen-chicago7d3d.jpeg') }}" /><img
+                                    alt="Témoignage client" loading="lazy" width="40" height="40"
                                     decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/elena-rodriguez-newyork.webp" /><img
-                                    alt="Client testimonial" loading="lazy" width="40" height="40"
+                                    src="{{ asset('images/elena-rodriguez-newyork6763.jpeg') }}" /><img
+                                    alt="Témoignage client" loading="lazy" width="40" height="40"
                                     decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/emma-van-dijk-amsterdam.webp" />
-                            </div><span class="text-sm font-medium">Explore Our Projets</span>
+                                    src="{{ asset('images/emma-van-dijk-amsterdam6432.jpeg') }}" />
+                            </div><span class="text-sm font-medium">Découvrir Nos Projets</span>
                         </div>
                         <div
                             class="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors flex-shrink-0">
@@ -2510,22 +2510,22 @@
                                 class="w-32 h-32 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
                                 <img alt="Expertise Sectorielle" loading="lazy" width="128" height="128"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-industry-expertise-v2.webp" />
+                                    src="{{ asset('images/benefits-industry-expertise-v2ddd0.jpeg') }}" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-2 bg-gradient-to-br from-pink-50 to-rose-50 rounded-3xl p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-pink-100">
                         <div class="relative z-10">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Cutting-Edge Technology</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Suivant.js 15, React, TypeScript, and the latest
-                                AI models for future-proof solutions.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Technologie de Pointe</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Next.js 15, React, TypeScript et les derniers
+                                modèles IA pour des solutions pérennes.</p>
                         </div>
                         <div
                             class="absolute bottom-4 right-4 w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500">
                             <img alt="Tech Stack" loading="lazy" width="160" height="160" decoding="async"
                                 class="object-contain" style="color:transparent"
-                                src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-tech-stack-v2.webp" />
+                                src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
                         </div>
                     </div>
                 </div>
