@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background -->
+  <rect width="32" height="32" fill="#FFFFFF"/>
+
+  <!-- Vertical rectangle -->
+  <rect x="7" y="6" width="7" height="20" rx="1.2" fill="#000000"/>
+
+  <!-- Half circle -->
+  <path d="M 16 6 A 7 7 0 0 1 16 22 L 16 6 Z" fill="#00AEEF"/>
+</svg>
