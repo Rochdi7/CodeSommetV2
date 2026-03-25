@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - AI-Powered Web Development Agency | Morocco | CodeSommet')
-@section('meta_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
-    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
-    projects delivered.')
-@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard
+@section('title', 'CodeSommet - AI-Powered Développement Web Agency | Morocco | CodeSommet')
+@section('meta_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA,
+    tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+
+    projets livrés.')
+@section('meta_keywords', 'développement web Morocco,AI développement web agency,Suivant.js development agency,dashboard
     development,SaaS development,education website development,healthcare website development,React development
-    Morocco,TypeScript development,web development Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'CodeSommet - AI-Powered Web Development Agency | Morocco')
-@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
-    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
-    projects delivered.')
-@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent
-    dashboards, and SaaS platforms. 50+ projects delivered.')
+    Morocco,TypeScript development,développement web Morocco,AI chatbot integration,custom dashboard design,web agency Morocco')
+@section('og_title', 'CodeSommet - AI-Powered Développement Web Agency | Morocco')
+@section('og_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA,
+    tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+
+    projets livrés.')
+@section('twitter_description', 'Agence de développement web premium specializing in sites web alimentés par l'IA, intelligent
+    dashboards, and plateformes SaaS. 50+ projets livrés.')
 
 @section('content')
     <div class="min-h-screen bg-white">
@@ -37,7 +37,7 @@
             </div>
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
                 <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a
-                        class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Home</a><span>/</span><span
+                        class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Accueil</a><span>/</span><span
                         class="text-gray-600 font-medium">Free Tools</span></nav>
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
                     <div class="space-y-6 text-center lg:text-left">
@@ -84,13 +84,13 @@
                                 class="lucide lucide-search ml-6 h-5 w-5 text-gray-400 flex-shrink-0" aria-hidden="true">
                                 <path d="m21 21-4.34-4.34"></path>
                                 <circle cx="11" cy="11" r="8"></circle>
-                            </svg><input type="text" placeholder="Search 45 free tools..."
+                            </svg><input id="tools-search" type="text" placeholder="Search 45 free tools..."
                                 class="flex-1 px-4 py-4 bg-transparent focus:outline-none text-[#0F0F0F] placeholder-gray-400 text-base"
                                 value="" />
-                            <div class="text-gray-400 px-5 py-4 text-sm">45</div>
+                            <div id="tools-count" class="text-gray-400 px-5 py-4 text-sm">45</div>
                         </div>
                     </div>
-                    <div class="flex flex-wrap items-center justify-center gap-2 max-w-3xl mx-auto"><button
+                    <div id="tools-filters" class="flex flex-wrap items-center justify-center gap-2 max-w-3xl mx-auto"><button data-filter="all"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-[#00AEEF] text-white shadow-lg shadow-[#00AEEF]/25"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -100,7 +100,7 @@
                                 </path>
                                 <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                                 <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
-                            </svg><span>All Tools</span></button><button
+                            </svg><span>All Tools</span></button><button data-filter="ai"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -111,14 +111,14 @@
                                 <path d="M20 2v4"></path>
                                 <path d="M22 4h-4"></path>
                                 <circle cx="4" cy="20" r="2"></circle>
-                            </svg><span>AI Powered</span></button><button
+                            </svg><span>AI Powered</span></button><button data-filter="seo"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-trending-up h-4 w-4" aria-hidden="true">
                                 <path d="M16 7h6v6"></path>
                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                            </svg><span>SEO Tools</span></button><button
+                            </svg><span>SEO Tools</span></button><button data-filter="content"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -127,7 +127,7 @@
                                 <path d="m14 12.5 2 2.5-2 2.5"></path>
                                 <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                                 <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
-                            </svg><span>Content</span></button><button
+                            </svg><span>Content</span></button><button data-filter="design"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -146,7 +146,8 @@
         <section class="py-16 bg-[#F5F5F5]">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                    style="opacity:0;transform:translateY(30px)"><a href="{{ route('tool', 'website-analyzer') }}">
+                    id="tools-grid"
+                    style="opacity:0;transform:translateY(30px)"><a href="{{ route('tool', 'website-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -176,7 +177,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'meta-tag-generator') }}">
+                    </a><a href="{{ route('tool', 'meta-tag-generator') }}" data-category="ai">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -211,7 +212,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'blog-title-generator') }}">
+                    </a><a href="{{ route('tool', 'blog-title-generator') }}" data-category="ai">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -241,7 +242,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'chatbot-script-generator') }}">
+                    </a><a href="{{ route('tool', 'chatbot-script-generator') }}" data-category="ai">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -271,7 +272,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'landing-page-generator') }}">
+                    </a><a href="{{ route('tool', 'landing-page-generator') }}" data-category="ai">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -308,7 +309,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'og-preview-generator') }}">
+                    </a><a href="{{ route('tool', 'og-preview-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -339,7 +340,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'heading-analyzer') }}">
+                    </a><a href="{{ route('tool', 'heading-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -372,7 +373,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'keyword-density-analyzer') }}">
+                    </a><a href="{{ route('tool', 'keyword-density-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -403,7 +404,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'broken-link-checker') }}">
+                    </a><a href="{{ route('tool', 'broken-link-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -433,7 +434,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'backlink-checker') }}">
+                    </a><a href="{{ route('tool', 'backlink-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -462,7 +463,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'image-alt-analyzer') }}">
+                    </a><a href="{{ route('tool', 'image-alt-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -493,7 +494,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'sitemap-validator') }}">
+                    </a><a href="{{ route('tool', 'sitemap-validator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -525,7 +526,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-validator') }}">
+                    </a><a href="{{ route('tool', 'robots-validator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -555,7 +556,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'schema-generator') }}">
+                    </a><a href="{{ route('tool', 'schema-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -585,7 +586,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'page-speed-analyzer') }}">
+                    </a><a href="{{ route('tool', 'page-speed-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -615,7 +616,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'url-slug-generator') }}">
+                    </a><a href="{{ route('tool', 'url-slug-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -645,7 +646,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'html-minifier') }}">
+                    </a><a href="{{ route('tool', 'html-minifier') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -675,7 +676,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'redirect-checker') }}">
+                    </a><a href="{{ route('tool', 'redirect-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -705,7 +706,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'canonical-checker') }}">
+                    </a><a href="{{ route('tool', 'canonical-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -735,7 +736,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'internal-link-analyzer') }}">
+                    </a><a href="{{ route('tool', 'internal-link-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -765,7 +766,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'image-compression-analyzer') }}">
+                    </a><a href="{{ route('tool', 'image-compression-analyzer') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -796,7 +797,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'domain-health-checker') }}">
+                    </a><a href="{{ route('tool', 'domain-health-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -826,7 +827,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'website-readiness-checker') }}">
+                    </a><a href="{{ route('tool', 'website-readiness-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -856,7 +857,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'hreflang-generator') }}">
+                    </a><a href="{{ route('tool', 'hreflang-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -886,7 +887,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'local-business-schema') }}">
+                    </a><a href="{{ route('tool', 'local-business-schema') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -918,7 +919,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'xml-sitemap-generator') }}">
+                    </a><a href="{{ route('tool', 'xml-sitemap-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -949,7 +950,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'utm-builder') }}">
+                    </a><a href="{{ route('tool', 'utm-builder') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -979,7 +980,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-txt-generator') }}">
+                    </a><a href="{{ route('tool', 'robots-txt-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1011,7 +1012,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'nofollow-link-checker') }}">
+                    </a><a href="{{ route('tool', 'nofollow-link-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1041,7 +1042,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'duplicate-content-checker') }}">
+                    </a><a href="{{ route('tool', 'duplicate-content-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1071,7 +1072,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'meta-refresh-generator') }}">
+                    </a><a href="{{ route('tool', 'meta-refresh-generator') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1102,7 +1103,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'faq-schema-generator') }}">
+                    </a><a href="{{ route('tool', 'faq-schema-generator') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1134,7 +1135,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'readability-analyzer') }}">
+                    </a><a href="{{ route('tool', 'readability-analyzer') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1165,7 +1166,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'word-counter') }}">
+                    </a><a href="{{ route('tool', 'word-counter') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1195,7 +1196,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'html-to-text') }}">
+                    </a><a href="{{ route('tool', 'html-to-text') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1226,7 +1227,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'text-case-converter') }}">
+                    </a><a href="{{ route('tool', 'text-case-converter') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1256,7 +1257,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="/tools/base64-encoder">
+                    </a><a href="/tools/base64-encoder" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1285,7 +1286,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'json-formatter') }}">
+                    </a><a href="{{ route('tool', 'json-formatter') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1316,7 +1317,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'lorem-ipsum-generator') }}">
+                    </a><a href="{{ route('tool', 'lorem-ipsum-generator') }}" data-category="content">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1348,7 +1349,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'color-palette-generator') }}">
+                    </a><a href="{{ route('tool', 'color-palette-generator') }}" data-category="design">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1382,7 +1383,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'qr-code-generator') }}">
+                    </a><a href="{{ route('tool', 'qr-code-generator') }}" data-category="design">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1421,7 +1422,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'css-minifier') }}">
+                    </a><a href="{{ route('tool', 'css-minifier') }}" data-category="design">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1451,7 +1452,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'ssl-certificate-checker') }}">
+                    </a><a href="{{ route('tool', 'ssl-certificate-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1481,7 +1482,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'mobile-friendly-test') }}">
+                    </a><a href="{{ route('tool', 'mobile-friendly-test') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1511,7 +1512,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div>
                         </div>
-                    </a><a href="{{ route('tool', 'core-web-vitals-checker') }}">
+                    </a><a href="{{ route('tool', 'core-web-vitals-checker') }}" data-category="seo">
                         <div
                             class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1541,6 +1542,14 @@
                                 </svg></div>
                         </div>
                     </a></div>
+                <div id="tools-empty" class="text-center py-20 bg-white rounded-2xl border border-gray-100" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-16 w-16 text-gray-300 mx-auto mb-4">
+                        <path d="m21 21-4.34-4.34"></path>
+                        <circle cx="11" cy="11" r="8"></circle>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-[#0F0F0F] mb-2" style="font-family:var(--font-heading)">No tools found</h3>
+                    <p class="text-[#0F0F0F]/60">Try a different search term or category</p>
+                </div>
             </div>
         </section>
         <section class="py-16 bg-white">
@@ -1548,7 +1557,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-4"
                     style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Need a Custom Solution?
                 </h2>
-                <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">We build AI-powered websites, dashboards, and
+                <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">We build sites web alimentés par l'IA, dashboards, and
                     custom tools for education, healthcare, and SaaS startups.</p><a
                     class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto"
                     style="color:white" href="{{ route('contact') }}">Book a Strategy Call<svg
@@ -1560,4 +1569,71 @@
                     </svg></a>
             </div>
         </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var searchInput = document.getElementById('tools-search');
+        var countDisplay = document.getElementById('tools-count');
+        var grid = document.getElementById('tools-grid');
+        var emptyState = document.getElementById('tools-empty');
+        var filterBtns = document.querySelectorAll('#tools-filters button[data-filter]');
+        var toolCards = grid.querySelectorAll(':scope > a');
+        var activeFilter = 'all';
+
+        var activeClass = 'bg-[#00AEEF] text-white shadow-lg shadow-[#00AEEF]/25';
+        var inactiveClass = 'bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm';
+
+        function filterTools() {
+            var query = searchInput.value.toLowerCase().trim();
+            var visibleCount = 0;
+
+            toolCards.forEach(function(card) {
+                var category = card.getAttribute('data-category') || '';
+                var name = card.querySelector('h3') ? card.querySelector('h3').textContent.toLowerCase() : '';
+                var desc = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() : '';
+
+                var matchesCategory = activeFilter === 'all' || category === activeFilter;
+                var matchesSearch = !query || name.indexOf(query) !== -1 || desc.indexOf(query) !== -1;
+
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            countDisplay.textContent = visibleCount;
+
+            if (visibleCount === 0) {
+                grid.style.display = 'none';
+                emptyState.style.display = '';
+            } else {
+                grid.style.display = 'grid';
+                emptyState.style.display = 'none';
+            }
+        }
+
+        function setActiveButton(btn) {
+            filterBtns.forEach(function(b) {
+                b.className = b.className
+                    .replace(/bg-\[#00AEEF\]/g, '')
+                    .replace(/text-white/g, '')
+                    .replace(/shadow-lg/g, '')
+                    .replace(/shadow-\[#00AEEF\]\/25/g, '');
+                b.className = 'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ' + inactiveClass;
+            });
+            btn.className = 'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ' + activeClass;
+        }
+
+        filterBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                activeFilter = btn.getAttribute('data-filter');
+                setActiveButton(btn);
+                filterTools();
+            });
+        });
+
+        searchInput.addEventListener('input', filterTools);
+    });
+    </script>
     @endsection

@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'Web Development in Amsterdam, Netherlands | CodeSommet')
-@section('meta_description', 'Partner with Amsterdam\'s leading web development studio for AI-powered websites and
-    intelligent dashboards. We specialize in building conversion-focused platforms for fintech, tech startups, and
+@section('title', 'Développement Web in Amsterdam, Netherlands | CodeSommet')
+@section('meta_description', 'Partner with Amsterdam\'s leading développement web studio for sites web alimentés par l'IA and
+    tableaux de bord intelligents. We specialize in building conversion-focused platforms for fintech, tech startups, and
     healthcare sectors.')
-@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard
+@section('meta_keywords', 'développement web Morocco,AI développement web agency,Suivant.js development agency,dashboard
     development,SaaS development,education website development,healthcare website development,React development
-    Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'Pikasso Studio - Digital Agency | Web Development, Design & SEO')
-@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
-    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
-    projects delivered.')
-@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent
-    dashboards, and SaaS platforms. 50+ projects delivered.')
+    Dubai,TypeScript development,développement web worldwide,AI chatbot integration,custom dashboard design,web agency Morocco')
+@section('og_title', 'Pikasso Studio - Digital Agency | Développement Web, Design & SEO')
+@section('og_description', 'Agence de développement web premium in Morocco specializing in sites web alimentés par l'IA,
+    tableaux de bord intelligents, and plateformes SaaS. Expert Suivant.js development for education, healthcare & business. 50+
+    projets livrés.')
+@section('twitter_description', 'Agence de développement web premium specializing in sites web alimentés par l'IA, intelligent
+    dashboards, and plateformes SaaS. 50+ projets livrés.')
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -50,7 +50,7 @@
                                         d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
-                                href="{{ route('locations') }}">Locations</a><span>/</span><span
+                                href="{{ route('locations') }}">Emplacements</a><span>/</span><span
                                 class="text-gray-600">Amsterdam</span></nav>
                         <div class="flex justify-center" >
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
@@ -58,8 +58,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Now Accepting
-                                    <!-- -->Amsterdam<!-- --> Projects</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant les
+                                    <!-- -->Amsterdam<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -75,7 +75,7 @@
                         </div>
                         <div class="space-y-6" >
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
-                                style="font-family:var(--font-display)">WE BUILD WEBSITES THAT DRIVE<!-- --> <span
+                                style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT<!-- --> <span
                                     class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
                                         style="min-height:1.2em"
                                         class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
@@ -95,8 +95,8 @@
                                             Platforms</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
-                                Partner with Amsterdam&#x27;s leading web development studio for AI-powered websites and
-                                intelligent dashboards. We specialize in building conversion-focused platforms for fintech,
+                                Partner with Amsterdam&#x27;s leading développement web studio for sites web alimentés par l'IA and
+                                tableaux de bord intelligents. We specialize in building conversion-focused platforms for fintech,
                                 tech startups, and healthcare sectors.</p>
                         </div>
                         <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
@@ -165,11 +165,11 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Why Choose Us</div>
+                        </svg>Pourquoi Nous Choisir</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Why Partner with CodeSommet in <!-- -->Amsterdam<!-- -->?</h2>
+                        style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommet in <!-- -->Amsterdam<!-- -->?</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Local expertise meets global standards.
-                        Here&#x27;s what makes us the perfect web development partner in <!-- -->Amsterdam<!-- -->.</p>
+                        Here&#x27;s what makes us the perfect développement web partner in <!-- -->Amsterdam<!-- -->.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div >
@@ -201,7 +201,7 @@
                                                 <rect x="8" y="8" width="8" height="8" rx="1"></rect>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">AI Feature Experts</h3>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Experts en IA</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">Build intelligent chatbots,
                                         automation workflows, AI-powered search, and recommendation engines tailored for
                                         Amsterdam&#x27;s innovative tech scene.</p>
@@ -232,7 +232,7 @@
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Dashboard &amp; SaaS
                                         Specialists</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">Design user portals, admin
-                                        panels, analytics dashboards, and SaaS platforms that scale with your Amsterdam
+                                        panels, analytics dashboards, and plateformes SaaS that scale with your Amsterdam
                                         startup.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
@@ -256,7 +256,7 @@
                                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Lead Generation Focused
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Axé Génération de Prospects
                                     </h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">SEO-optimized,
                                         conversion-focused websites that turn Amsterdam visitors into paying customers.</p>
@@ -283,7 +283,7 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Startup-Ready Speed</h3>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Rapidité Startup</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch your MVP in 7-14 days
                                         with unlimited revisions. Perfect for Amsterdam&#x27;s fast-paced startup ecosystem.
                                     </p>
@@ -311,7 +311,7 @@
                                                 <circle cx="9" cy="7" r="4"></circle>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Industry Specialists
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Spécialistes Sectoriels
                                     </h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">Deep expertise in fintech,
                                         tech startups, and healthcare - the fastest-growing sectors in Amsterdam.</p>
@@ -343,8 +343,8 @@
                                                 <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Modern Tech Stack</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Next.js 15, React,
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Stack Technologique Moderne</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Suivant.js 15, React,
                                         TypeScript, Supabase, OpenAI, Claude - technologies that attract Amsterdam&#x27;s
                                         top engineering talent.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
@@ -359,18 +359,17 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center" >
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">Trusted by <!-- -->Amsterdam<!-- --> Businesses</h2>
+                        style="font-family:var(--font-heading)">Approuvé par <!-- -->Amsterdam<!-- --> Businesses</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">€4.0M<!-- --> Revenue
-                                Generated</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">50+ Projets Delivered</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap"><span>0</span>+ Leads</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap"><span>0</span>+ Prospects</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
@@ -399,14 +398,14 @@
                             <path d="M10 10h4"></path>
                             <path d="M10 14h4"></path>
                             <path d="M10 18h4"></path>
-                        </svg>Industry Expertise</div>
+                        </svg>Expertise Sectorielle</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Amsterdam<!-- --> Industries We Specialize In</h2>
+                        style="font-family:var(--font-heading)">Amsterdam<!-- --> Nos Secteurs de Spécialisation</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Deep expertise in
                         <!-- -->Amsterdam<!-- -->&#x27;s key sectors. We understand your industry&#x27;s unique challenges
                         and compliance requirements.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="FinTech illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/fintech.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">FinTech</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Secure financial platforms with payment processing, compliance, and regulatory features</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Payment systems</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Trading platforms</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Wallet apps</span></li></ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/al-raba" style="color: rgb(255, 101, 0);">View Case Study<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Legal Practice illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/legal-practice.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Legal Practice</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Professional law firm websites with case management and client portals</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Case management</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Client portals</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Document automation</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Consulting Firms illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/consulting.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Consulting Firms</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Professional consulting websites with service showcases and lead generation tools</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Service portfolio</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Case studies</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Lead generation</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Healthcare illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/healthcare.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Healthcare</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Clinic websites, appointment booking systems, and patient portals compliant with health regulations</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Patient portals</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Appointment systems</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Health records</span></li></ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/doctor-hubli" style="color: rgb(255, 101, 0);">View Case Study<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Real Estate illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/real-estate.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Real Estate</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">High-end property websites with virtual tours, booking systems, and CRM integration</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Property listings</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Virtual tours</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Agent dashboards</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="SaaS Platforms illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/saas-platforms.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">SaaS Platforms</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Complete SaaS applications with authentication, billing, and real-time features</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>User authentication</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Subscription billing</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>API development</span></li></ul></div></div></div></div></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="FinTech illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/fintech.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">FinTech</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Plateformes financières sécurisées avec traitement des paiements, conformité et fonctionnalités réglementaires</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de paiement</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Plateformes de trading</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Applications wallet</span></li></ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/al-raba" style="color: rgb(255, 101, 0);">Voir l'Étude de Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Legal Practice illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/legal-practice.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinet Juridique</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web professionnels pour cabinets d'avocats avec gestion des dossiers et portails clients</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Gestion des dossiers</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails clients</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Automatisation documentaire</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Consulting Firms illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/consulting.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinets de Conseil</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web de conseil professionnels avec vitrines de services et outils de génération de leads</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portfolio de services</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Études de cas</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Génération de leads</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Healthcare illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/healthcare.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Santé</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web de cliniques, systèmes de prise de rendez-vous et portails patients conformes aux réglementations sanitaires</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails patients</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de rendez-vous</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Dossiers médicaux</span></li></ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/doctor-hubli" style="color: rgb(255, 101, 0);">Voir l'Étude de Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Real Estate illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/real-estate.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Immobilier</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et intégration CRM</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Annonces immobilières</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Visites virtuelles</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Tableaux de bord agents</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="SaaS Platforms illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="https://storage.googleapis.com/pikasso-studio-portfolio/industries/saas-platforms.webp" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Plateformes SaaS</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Authentification utilisateur</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Facturation par abonnement</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Développement API</span></li></ul></div></div></div></div></div>
                 <div class="mt-10 text-center" >
                     <p class="text-[#0F0F0F]/70 mb-4">Don&#x27;t see your industry? We work with businesses across all
                         sectors in <!-- -->Amsterdam<!-- -->.</p><a
@@ -431,7 +430,7 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>Our Work in <!-- -->Amsterdam</div>
+                        </svg>Nos Projets in <!-- -->Amsterdam</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Success Stories from <!-- -->Amsterdam</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Real projects, real results. See how we&#x27;ve
@@ -505,7 +504,7 @@
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                         <span
-                                            class="text-xs font-bold text-white tracking-wide uppercase">Healthcare</span>
+                                            class="text-xs font-bold text-white tracking-wide uppercase">Santé</span>
                                     </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
@@ -648,7 +647,7 @@
                             </div>
                             <p class="text-[#0F0F0F]/80 leading-relaxed">Amsterdam businesses serve global markets with
                                 European operations. With Adyen processing €1T+ annually and thriving crypto ecosystem,
-                                demand for Next.js payment platforms, React fintech dashboards, and iDEAL/SEPA integrations
+                                demand for Suivant.js payment platforms, React fintech dashboards, and iDEAL/SEPA integrations
                                 has grown 165%. Companies need GDPR-compliant systems, multi-language support, and platforms
                                 handling cross-border European transactions with local payment method support.</p>
                         </div>
@@ -737,7 +736,7 @@
                             <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">Our
                                 Solution</h3>
                         </div>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed">Built Next.js payment orchestration platform
+                        <p class="text-[#0F0F0F]/70 leading-relaxed">Built Suivant.js payment orchestration platform
                             aggregating Stripe and Mollie for redundancy, implemented 15+ local payment methods across
                             Europe, added intelligent dunning with ML-powered retry logic, built subscription lifecycle
                             management with proration calculations, created revenue analytics dashboard with MRR, churn, and
@@ -748,7 +747,7 @@
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12"
                     >
                     <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center text-black" style="font-family:var(--font-heading)">
-                        Measurable Impact</h3>
+                        Impact Mesurable</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="flex items-start gap-3"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -797,7 +796,7 @@
                     >
                     <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4 text-center">Technologies Used</h3>
                     <div class="flex flex-wrap justify-center gap-3"><span
-                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Next.js</span><span
+                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Suivant.js</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">React</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Stripe</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Mollie</span><span
@@ -959,7 +958,7 @@
                         <div class="px-6 md:px-8 pb-3">
                             <div class="mb-6">
                                 <div class="flex flex-col"><span
-                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">Get a Quote</span>
+                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">Demander un Devis</span>
                                     <div class="flex items-end gap-2"><span
                                             class="text-5xl md:text-6xl font-bold">Custom</span><span
                                             class="text-white/50 text-xl mb-2">per project</span></div>
@@ -1097,7 +1096,7 @@
                         <div class="px-6 md:px-8 pb-3">
                             <div class="mb-6">
                                 <div class="flex flex-col"><span
-                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">Get a Quote</span>
+                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">Demander un Devis</span>
                                     <div class="flex items-end gap-2">
                                         <div class="relative overflow-hidden" style="height:fit-content"><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Custom</span><span
@@ -1154,7 +1153,7 @@
                             </div>
                         </div><a
                             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
-                            href="{{ route('tool', 'website-analyzer') }}"><span>Analyze Your Website - 100%
+                            href="{{ route('tool', 'website-analyzer') }}"><span>Analyser Votre Site Web - 100%
                                 Free</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"
@@ -1178,7 +1177,7 @@
                             stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                        </svg>Why Choose Us</div>
+                        </svg>Pourquoi Nous Choisir</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Amsterdam<!-- --> vs Others</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">See why <!-- -->Amsterdam<!-- --> businesses
@@ -1352,7 +1351,7 @@
                             </div>
                             <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white"
                                 >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Modern Tech Stack
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Stack Technologique Moderne
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1431,29 +1430,29 @@
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                             </path>
-                        </svg>Client Success Stories</div>
+                        </svg>Témoignages de Nos Clients</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">What <!-- -->Amsterdam<!-- --> Clients Say About Us</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Don&#x27;t just take our word for it. Hear from
-                        businesses in <!-- -->Amsterdam<!-- --> who&#x27;ve achieved remarkable results with CodeSommet.
+                        businesses in <!-- -->Amsterdam<!-- --> who&#x27;ve achieved des résultats remarquables avec CodeSommet.
                     </p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
-                        aria-label="Previous testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        aria-label="Précédent testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-chevron-left w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                             <path d="m15 18-6-6 6-6"></path>
                         </svg></button><button
                         class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
-                        aria-label="Next testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        aria-label="Suivant testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-chevron-right w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                         </svg></button>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8"><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;CodeSommet transformed our B2B platform and generated 250% more qualified leads in just 6 months. Their understanding of the market and technical expertise is exceptional.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/mohammed-al-raba.webp" alt="Mohammed Al-Raba" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Al-Raba</div><div class="text-sm text-[#0F0F0F]/60 mb-2">CEO at Al-Raba Technologies</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Morocco</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Working remotely with CodeSommet was seamless. They delivered our healthcare booking platform in 10 days with full DHA compliance. The patient portal has reduced our admin workload by 60% and appointments are up 180%.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/sarah-al-mansouri.webp" alt="Dr. Sarah Al-Mansouri" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Medical Director at Dubai Wellness Clinic</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Dubai Healthcare City, UAE</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;We needed a complex e-learning platform with live video, progress tracking, and payment integration. CodeSommet delivered everything in 3 weeks. Student enrollment increased 320% in the first quarter after launch.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/james-thornton.webp" alt="James Thornton" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Founder at EduPath Global</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>London, UK</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Our real estate website went from basic listings to a full booking platform with virtual tours and CRM integration. Online inquiries jumped 400% and we now convert 3x more leads into viewings. Truly outstanding work.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/fatima-benali.webp" alt="Fatima Zahra Benali" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Operations Director at Riad Luxe Properties</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Marrakech, Morocco</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8"><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;CodeSommet transformed our B2B platform and generated 250% more qualified leads in just 6 months. Their understanding of the market and technical expertise is exceptional.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/mohammed-al-raba.webp" alt="Mohammed Al-Raba" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Al-Raba</div><div class="text-sm text-[#0F0F0F]/60 mb-2">CEO at Al-Raba Technologies</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Maroc</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Working remotely with CodeSommet was seamless. They delivered our healthcare booking platform in 10 days with full DHA compliance. The patient portal has reduced our admin workload by 60% and appointments are up 180%.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/sarah-al-mansouri.webp" alt="Dr. Sarah Al-Mansouri" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Medical Director at Dubai Wellness Clinic</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Dubai Healthcare City, UAE</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;We needed a complex e-learning platform with live video, progress tracking, and payment integration. CodeSommet delivered everything in 3 weeks. Student enrollment increased 320% in the first quarter after launch.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/james-thornton.webp" alt="James Thornton" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Founder at EduPath Global</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>London, UK</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Our real estate website went from basic listings to a full booking platform with virtual tours and CRM integration. Online inquiries jumped 400% and we now convert 3x more leads into viewings. Truly outstanding work.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="https://storage.googleapis.com/pikasso-studio-portfolio/testimonials/fatima-benali.webp" alt="Fatima Zahra Benali" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Operations Director at Riad Luxe Properties</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Marrakech, Morocco</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div></div>
                     <div class="flex justify-center items-center gap-3 mt-8"><button
                             class="transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125"
                             aria-label="Go to testimonial group 1"></button><button
@@ -1482,7 +1481,7 @@
                             <path d="M12 17h.01"></path>
                         </svg>Common Questions</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Frequently Asked Questions About Web Development in
+                        style="font-family:var(--font-heading)">Questions Fréquemment Posées About Développement Web in
                         <!-- -->Amsterdam</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Have questions? We&#x27;ve got answers. Here
                         are the most common questions from <!-- -->Amsterdam<!-- --> businesses.</p>
@@ -1496,7 +1495,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Why choose CodeSommet over
-                                    Amsterdam&#x27;s many web development agencies?</h3>
+                                    Amsterdam&#x27;s many développement web agencies?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1807,7 +1806,7 @@
                     </a></div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
-                        href="{{ route('locations') }}">View All Locations<svg xmlns="http://www.w3.org/2000/svg"
+                        href="{{ route('locations') }}">Voir Tout Locations<svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -1845,7 +1844,7 @@
                                 40+ checks</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">Learn more</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -1871,12 +1870,12 @@
                                 </svg></div>
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                View Our Work</h3>
+                                Voir Nos Projets</h3>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explore case studies and client
                                 success stories</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">Learn more</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -1908,7 +1907,7 @@
                                 approach</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#8B5CF6">Learn more</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -1934,11 +1933,11 @@
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                                 Get in Touch</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contact us for your project
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous for your project
                                 requirements</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#10B981">Learn more</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -1968,7 +1967,7 @@
                                 offerings</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#3B82F6">Learn more</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -2003,7 +2002,7 @@
                     </div>
                     <div class="relative z-10 text-center space-y-3 md:space-y-4">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
-                            style="font-family:var(--font-display)">Ready to Build Something Extraordinary?</h2>
+                            style="font-family:var(--font-display)">Prêt à Créer Quelque Chose d'Extraordinaire ?</h2>
                         <div class="flex flex-col items-center gap-4 md:gap-6">
                             <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
                                     rel="noopener noreferrer"
@@ -2125,7 +2124,7 @@
                                         </svg></div>
                                     <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
                                         style="font-size:10px"><span
-                                            class="text-white font-medium whitespace-nowrap">Just click</span></div>
+                                            class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div>
                                 </div>
                             </div>
                         </div>
@@ -2159,7 +2158,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2170,7 +2169,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automation</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2191,7 +2190,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2202,7 +2201,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2213,7 +2212,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Payments</span>
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2245,7 +2244,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2256,7 +2255,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automation</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2277,7 +2276,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2288,7 +2287,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2299,7 +2298,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Payments</span>
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2331,7 +2330,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2342,7 +2341,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automation</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2363,7 +2362,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2374,7 +2373,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2385,7 +2384,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Payments</span>
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2443,7 +2442,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2459,7 +2458,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automation</span>
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2490,7 +2489,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2506,7 +2505,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2522,7 +2521,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Payments</span>
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2569,7 +2568,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2585,7 +2584,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automation</span>
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2616,7 +2615,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2632,7 +2631,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2648,7 +2647,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Payments</span>
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2695,7 +2694,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2711,7 +2710,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automation</span>
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2742,7 +2741,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2758,7 +2757,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2774,7 +2773,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Payments</span>
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">

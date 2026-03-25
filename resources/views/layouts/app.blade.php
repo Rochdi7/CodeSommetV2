@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,7 @@
     <meta property="og:description" content="@yield('og_description', 'Premium web development agency specializing in AI-powered websites, intelligent dashboards, and SaaS platforms.')" />
     <meta property="og:url" content="@yield('og_url', config('app.url'))" />
     <meta property="og:site_name" content="CodeSommet" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:image" content="@yield('og_image', asset('images/featured-image.webp'))" />
     <meta property="og:image:width" content="2494" />
     <meta property="og:image:height" content="1550" />

@@ -29,7 +29,7 @@
                         <span style="font-family:var(--font-heading)" class="text-2xl font-bold text-white">CodeSommet</span>
                     </a>
                     <p class="text-[#A0A0A0] leading-relaxed text-sm">
-                        CodeSommet is a digital agency specializing in custom web development, UI/UX design, branding, SEO, and e-commerce solutions. We help businesses grow their online presence with modern, high-performance digital solutions.
+                        CodeSommet est une agence digitale spécialisée dans le développement web sur mesure, le design UI/UX, le branding, le SEO et les solutions e-commerce. Nous aidons les entreprises à développer leur présence en ligne avec des solutions digitales modernes et performantes.
                     </p>
                 </div>
 
@@ -38,55 +38,55 @@
 
                     {{-- Locations --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">Locations</h3>
+                        <h3 class="text-base font-medium text-[#E0E0E0]">Emplacements</h3>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'casablanca') }}">Casablanca</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'marrakech') }}">Marrakech</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'rabat') }}">Rabat</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'tangier') }}">Tangier</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'worldwide') }}">Worldwide</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('locations') }}">View All Locations →</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'worldwide') }}">International</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('locations') }}">Tous les Emplacements →</a></li>
                         </ul>
                     </div>
 
                     {{-- Industries --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">Industries</h3>
+                        <h3 class="text-base font-medium text-[#E0E0E0]">Secteurs</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'education-website-development') }}">Education & EdTech</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'healthcare-website-development') }}">Healthcare & Medical</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'study-abroad-website-development') }}">Study Abroad Consultancy</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'saas-platform-development') }}">SaaS & B2B Software</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'education-website-development') }}">Éducation & EdTech</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'healthcare-website-development') }}">Santé & Médical</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'study-abroad-website-development') }}">Études à l'Étranger</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'saas-platform-development') }}">SaaS & Logiciel B2B</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'ecommerce-website-development') }}">E-commerce</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'fintech-platform-development') }}">FinTech & Financial</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('industries') }}">View All Industries →</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'fintech-platform-development') }}">FinTech & Finance</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('industries') }}">Tous les Secteurs →</a></li>
                         </ul>
                     </div>
 
                     {{-- Popular Tools --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">Popular Tools</h3>
+                        <h3 class="text-base font-medium text-[#E0E0E0]">Outils Populaires</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'website-analyzer') }}">Website Analyzer</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'website-readiness-checker') }}">Website Readiness Checker</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'meta-tag-generator') }}">Meta Tag Generator</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'blog-title-generator') }}">Blog Title Generator</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'heading-analyzer') }}">Heading Analyzer</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'color-palette-generator') }}">Color Palette Generator</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tools') }}">View All Tools →</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'website-analyzer') }}">Analyseur de Site Web</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'website-readiness-checker') }}">Vérificateur de Site</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'meta-tag-generator') }}">Générateur de Balises Meta</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'blog-title-generator') }}">Générateur de Titres</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'heading-analyzer') }}">Analyseur de Titres</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'color-palette-generator') }}">Générateur de Palette</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tools') }}">Tous les Outils →</a></li>
                         </ul>
                     </div>
 
                     {{-- Legal --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">Legal</h3>
+                        <h3 class="text-base font-medium text-[#E0E0E0]">Légal</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('get-quote') }}">Get a Quote</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('terms-of-service') }}">Terms of Service</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('refund-policy') }}">Refund Policy</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('cookie-policy') }}">Cookie Policy</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('acceptable-use') }}">Acceptable Use</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('get-quote') }}">Demander un Devis</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('privacy-policy') }}">Politique de Confidentialité</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('refund-policy') }}">Politique de Remboursement</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('cookie-policy') }}">Politique de Cookies</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('acceptable-use') }}">Utilisation Acceptable</a></li>
                         </ul>
                     </div>
 

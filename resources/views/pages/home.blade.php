@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - Digital Agency | Web Development, Design & SEO')
-@section('meta_description', 'CodeSommet is a Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered with 98% client satisfaction.')
-@section('meta_keywords', 'web development Morocco,digital agency Morocco,UI UX design,branding agency,SEO services,e-commerce development,mobile app development,SaaS development,web design Morocco,React development,Next.js development,custom web solutions')
-@section('og_title', 'CodeSommet - Digital Agency | Web Development, Design & SEO')
-@section('og_description', 'CodeSommet is a Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered with 98% client satisfaction.')
-@section('twitter_description', 'Morocco-based digital agency specializing in web development, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered.')
+@section('title', 'CodeSommet - Digital Agency | Développement Web, Design & SEO')
+@section('meta_description', 'CodeSommet is a Morocco-based digital agency specializing in développement web, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés with 98% client satisfaction.')
+@section('meta_keywords', 'développement web Morocco,digital agency Morocco,UI UX design,branding agency,SEO services,e-commerce development,mobile app development,SaaS development,web design Morocco,React development,Suivant.js development,custom web solutions')
+@section('og_title', 'CodeSommet - Digital Agency | Développement Web, Design & SEO')
+@section('og_description', 'CodeSommet is a Morocco-based digital agency specializing in développement web, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés with 98% client satisfaction.')
+@section('twitter_description', 'Morocco-based digital agency specializing in développement web, UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés.')
 
 @section('content')
     <section
@@ -35,11 +35,11 @@
                         <div class="relative">
                             <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                             <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75"></div>
-                        </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Now Accepting New Projects</span>
+                        </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant les New Projets</span>
                     </div>
                     <div class="space-y-6 lg:space-y-6">
                         <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold"
-                            style="font-family:var(--font-display)">WE BUILD WEBSITES THAT DRIVE<!-- --> <span
+                            style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT<!-- --> <span
                                 class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em"
                                     class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3" id="hero-rotating-wrapper"><span
                                         style="border-color:var(--color-primary-orange);z-index:1"
@@ -708,7 +708,7 @@
                 <h2
                     class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 text-3xl md:text-4xl lg:text-5xl">
                     Proven Results That Speak for Themselves</h2>
-                <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Trusted by
+                <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Approuvé par
                     businesses across multiple industries</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -717,13 +717,13 @@
                     <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                         <div class="absolute inset-0 flex items-start justify-center overflow-hidden px-8 pt-2.5">
                             <div class="flex items-center justify-center relative" style="z-index:10"><img
-                                    src="{{ asset('mockups/al-raba-top.png') }}" alt="50+ Projects Delivered"
+                                    src="{{ asset('mockups/al-raba-top.png') }}" alt="50+ Projets Delivered"
                                     class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]"
                                     style="min-height:150%" loading="lazy" /></div>
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">50+ Projects Delivered</h3>
+                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">50+ Projets Delivered</h3>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Delivered websites that generate
                             leads and establish professional digital presence</p>
                     </div>
@@ -1437,7 +1437,7 @@
                                                             rx="2" ry="2"></rect>
                                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Authentication</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Authentification</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1589,7 +1589,7 @@
                                                             rx="2" ry="2"></rect>
                                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Authentication</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Authentification</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1741,7 +1741,7 @@
                                                             rx="2" ry="2"></rect>
                                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                                     </svg></div><span
-                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Authentication</span>
+                                                    class="text-sm font-medium text-white whitespace-nowrap tracking-tight">Authentification</span>
                                             </div>
                                         </div>
                                     </div>
@@ -2336,12 +2336,12 @@
                     <div
                         class="bg-gradient-to-br from-teal-50 to-cyan-50 border-teal-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Industry Expertise</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">Expertise Sectorielle</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">Specialized knowledge in education,
                                 healthcare, and SaaS with proven success stories.</p>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-32 h-32 opacity-90"><img alt="Industry Expertise" loading="lazy"
+                            <div class="w-32 h-32 opacity-90"><img alt="Expertise Sectorielle" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
                                     src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-industry-expertise-v2.webp" />
@@ -2352,7 +2352,7 @@
                         class="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
                             <h3 class="text-lg font-bold text-gray-900 mb-2">Cutting-Edge Technology</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Next.js 15, React, TypeScript, and the latest
+                            <p class="text-sm text-gray-600 leading-relaxed">Suivant.js 15, React, TypeScript, and the latest
                                 AI models for future-proof solutions.</p>
                         </div>
                         <div class="flex justify-center">
@@ -2379,7 +2379,7 @@
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
                                     src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/emma-van-dijk-amsterdam.webp" />
-                            </div><span class="text-sm font-medium">Explore Our Projects</span>
+                            </div><span class="text-sm font-medium">Explore Our Projets</span>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"
@@ -2485,7 +2485,7 @@
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
                                     src="https://storage.googleapis.com/pikasso-studio-portfolio/images/testimonials/emma-van-dijk-amsterdam.webp" />
-                            </div><span class="text-sm font-medium">Explore Our Projects</span>
+                            </div><span class="text-sm font-medium">Explore Our Projets</span>
                         </div>
                         <div
                             class="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors flex-shrink-0">
@@ -2502,13 +2502,13 @@
                         class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-6 relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-teal-100">
                         <div class="flex items-center justify-between h-full">
                             <div class="relative z-10 flex-1">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2">Industry Expertise</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Expertise Sectorielle</h3>
                                 <p class="text-sm text-gray-600 leading-relaxed">Specialized knowledge in education,
                                     healthcare, and SaaS with proven success stories.</p>
                             </div>
                             <div
                                 class="w-32 h-32 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
-                                <img alt="Industry Expertise" loading="lazy" width="128" height="128"
+                                <img alt="Expertise Sectorielle" loading="lazy" width="128" height="128"
                                     decoding="async" class="object-contain" style="color:transparent"
                                     src="https://storage.googleapis.com/pikasso-studio-portfolio/images/benefits/benefits-industry-expertise-v2.webp" />
                             </div>
@@ -2518,7 +2518,7 @@
                         class="col-span-2 bg-gradient-to-br from-pink-50 to-rose-50 rounded-3xl p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-pink-100">
                         <div class="relative z-10">
                             <h3 class="text-2xl font-bold text-gray-900 mb-3">Cutting-Edge Technology</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Next.js 15, React, TypeScript, and the latest
+                            <p class="text-sm text-gray-600 leading-relaxed">Suivant.js 15, React, TypeScript, and the latest
                                 AI models for future-proof solutions.</p>
                         </div>
                         <div

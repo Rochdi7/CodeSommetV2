@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - CodeSommet | Digital Agency in Morocco | Web Development, Branding & SEO')
-@section('meta_description', 'CodeSommet is a Morocco-based digital agency since 2018, specializing in web development,
-    UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projects delivered. Contact us today.')
-@section('meta_keywords', 'about CodeSommet,digital agency Morocco,web development Morocco,UI UX design,branding
+@section('title', 'About Us - CodeSommet | Digital Agency in Morocco | Développement Web, Branding & SEO')
+@section('meta_description', 'CodeSommet is a Morocco-based digital agency since 2018, specializing in développement web,
+    UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. 50+ projets livrés. Contactez-nous today.')
+@section('meta_keywords', 'about CodeSommet,digital agency Morocco,développement web Morocco,UI UX design,branding
     agency,SEO Morocco,e-commerce development,mobile apps,SaaS solutions')
 @section('og_title', 'About Us - CodeSommet | Digital Agency in Morocco')
-@section('og_description', 'CodeSommet is a Morocco-based digital agency since 2018. We specialize in web development,
+@section('og_description', 'CodeSommet is a Morocco-based digital agency since 2018. We specialize in développement web,
     UI/UX design, branding, SEO, e-commerce, mobile apps, and SaaS solutions.')
 @section('twitter_description', 'Morocco-based digital agency since 2018. Web development, UI/UX design, branding, SEO,
-    e-commerce, mobile apps & SaaS. 50+ projects delivered.')
+    e-commerce, mobile apps & SaaS. 50+ projets livrés.')
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -50,7 +50,7 @@
                                 style="font-family:var(--font-display)">Your Digital Partner in Morocco Since 2018</h1>
                             <p
                                 class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
-                                We&#x27;re CodeSommet, a Morocco-based digital agency specializing in web development, UI/UX
+                                We&#x27;re CodeSommet, a Morocco-based digital agency specializing in développement web, UI/UX
                                 design, branding, SEO, e-commerce, mobile apps, and SaaS solutions. Let&#x27;s bring your
                                 vision to life - get in touch today.</p>
                         </div>
@@ -63,7 +63,7 @@
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+ Projects Delivered</span>
+                                    class="font-semibold text-[#0F0F0F]">50+ Projets Delivered</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -88,7 +88,7 @@
                                                 class="text-sm md:text-base text-[#0F0F0F]/80 text-center leading-relaxed"
                                                 style="font-family:var(--font-display)">Since 2018, we&#x27;ve helped
                                                 businesses across Morocco and beyond build powerful digital experiences.
-                                                Ready to start yours? Contact us!</p>
+                                                Ready to start yours? Contactez-nous!</p>
                                         </div>
                                         <div class="flex justify-center"><button id="fun-fact-btn"
                                                 class="inline-flex items-center justify-center font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 text-base group bg-[#00AEEF] hover:bg-[#0071BC] text-white border-0 rounded-full px-6 py-2 transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -147,12 +147,12 @@
                                 </path>
                                 <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                 <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                            </svg>Our Mission</div>
+                            </svg>Notre Mission</div>
                         <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-6"
                             style="font-family:var(--font-heading)">Comprehensive Digital Solutions That Drive Results</h2>
                         <div class="space-y-4 text-[var(--text-secondary)]">
                             <p class="leading-relaxed text-lg">Since 2018, CodeSommet has been helping businesses in
-                                Morocco and internationally grow through web development, UI/UX design, branding, SEO,
+                                Morocco and internationally grow through développement web, UI/UX design, branding, SEO,
                                 e-commerce, mobile apps, and SaaS solutions.</p>
                             <p class="leading-relaxed text-lg">From strategy to launch and beyond - we handle everything.
                                 You focus on your business, we build your digital presence. Ready to get started? Reach out
@@ -210,7 +210,7 @@
                         style="font-family:var(--font-heading)">We&#x27;re Not Your Typical Agency</h2>
                     <p class="font-body leading-relaxed font-normal max-w-4xl mx-auto text-[var(--text-secondary)]"><span
                             class="text-[#00AEEF] font-semibold">Your growth partner since 2018.</span> From web
-                        development to branding and SEO - we do it all.<br />Contact us for a free consultation and
+                        development to branding and SEO - we do it all.<br />Contactez-nous for a free consultation and
                         let&#x27;s discuss your project.</p>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
@@ -339,7 +339,7 @@
                         </ul>
                         <div class="mt-8 pt-6 border-t-2 border-[#00AEEF]/20">
                             <p class="text-sm text-[#0F0F0F]/70 italic">&quot;Your trusted digital partner in Morocco since
-                                2018. Contact us to discuss your project.&quot;</p>
+                                2018. Contactez-nous to discuss your project.&quot;</p>
                         </div>
                     </div>
                 </div>
@@ -395,7 +395,7 @@
                         <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
                             style="font-family:var(--font-heading)">Our Expert Team</h3>
                         <p class="text-[#0F0F0F]/60 text-lg md:text-xl max-w-2xl mx-auto">A passionate team of developers,
-                            designers, and strategists ready to elevate your business. Contact us to meet the team.</p>
+                            designers, and strategists ready to elevate your business. Contactez-nous to meet the team.</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         <div class="relative" style="opacity:0;transform:translateY(30px)" data-delay="1">
@@ -486,13 +486,13 @@
                             <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                             <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                             <circle cx="9" cy="7" r="4"></circle>
-                        </svg>Our Team</div>
+                        </svg>Notre Équipe</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">The People Behind The Projects</h2>
+                        style="font-family:var(--font-heading)">The People Behind The Projets</h2>
                     <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-3xl mx-auto">A
                         passionate, talented team based in Morocco delivering exceptional results since 2018. We believe in
                         celebrating wins together and building strong client relationships. Want to work with us? <a
-                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contact us today</a>.</p>
+                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous today</a>.</p>
                 </div>
                 <div class="space-y-8">
                     <div class="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl group"
@@ -513,7 +513,7 @@
                                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                     <circle cx="9" cy="7" r="4"></circle>
-                                </svg><span class="text-sm font-medium uppercase tracking-wide text-white">Our Team</span>
+                                </svg><span class="text-sm font-medium uppercase tracking-wide text-white">Notre Équipe</span>
                             </div>
                             <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white"
                                 style="font-family:var(--font-heading)">Meet The People Behind CodeSommet</h3>
@@ -640,7 +640,7 @@
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
                                 style="font-family:var(--font-heading)">50+</div>
-                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Projects Delivered</p>
+                            <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Projets Delivered</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
@@ -672,7 +672,7 @@
                         style="font-family:var(--font-heading)">Our Office in Morocco</h2>
                     <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Based
                         in Morocco, we bring local expertise and international quality to every project. <a
-                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contact us</a> to start
+                            href="{{ route('contact') }}" class="text-[#00AEEF] hover:underline">Contactez-nous</a> to start
                         your next project.</p>
                 </div>
                 <div class="grid grid-cols-1 max-w-lg mx-auto gap-6">
@@ -693,7 +693,7 @@
                                         <h3 class="text-lg md:text-xl font-semibold mb-1.5 text-white drop-shadow-lg">
                                             Morocco (Main Office)</h3>
                                         <address class="not-italic text-gray-200 text-xs md:text-sm leading-snug"><span
-                                                class="block">Morocco</span><span class="block">Headquarters</span>
+                                                class="block">Maroc</span><span class="block">Headquarters</span>
                                         </address>
                                     </div>
                                 </div>
@@ -730,7 +730,7 @@
                     </div>
                     <div class="relative z-10 text-center space-y-3 md:space-y-4">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
-                            style="font-family:var(--font-display)">Ready to Build Something Extraordinary?</h2>
+                            style="font-family:var(--font-display)">Prêt à Créer Quelque Chose d'Extraordinaire ?</h2>
                         <div class="flex flex-col items-center gap-4 md:gap-6">
                             <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
                                     rel="noopener noreferrer"
@@ -886,7 +886,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -897,7 +897,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automation</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -918,7 +918,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -929,7 +929,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -940,7 +940,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Payments</span>
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -972,7 +972,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -983,7 +983,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automation</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1004,7 +1004,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1015,7 +1015,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1026,7 +1026,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Payments</span>
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1058,7 +1058,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1069,7 +1069,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automation</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1090,7 +1090,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1101,7 +1101,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1112,7 +1112,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Payments</span>
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1169,7 +1169,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1185,7 +1185,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automation</span>
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1216,7 +1216,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1232,7 +1232,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1248,7 +1248,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Payments</span>
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1295,7 +1295,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1311,7 +1311,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automation</span>
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1342,7 +1342,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1358,7 +1358,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1374,7 +1374,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Payments</span>
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1421,7 +1421,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Dashboards</span>
+                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1437,7 +1437,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automation</span>
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1468,7 +1468,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Analytics</span>
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1484,7 +1484,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Authentication</span>
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -1500,7 +1500,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Payments</span>
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">

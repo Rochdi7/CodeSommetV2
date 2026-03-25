@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Get a Free Quote | CodeSommet')
-@section('meta_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
-@section('meta_keywords', 'web development Morocco, AI web development agency, Next.js development agency, dashboard development, SaaS development, education website development, healthcare website development, React development Morocco, TypeScript development, web development worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
-@section('og_title', 'Get a Free Quote | CodeSommet')
-@section('og_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
-@section('twitter_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and SaaS platforms.')
+@section('title', 'Obtenir un Devis Gratuit | CodeSommet')
+@section('meta_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and plateformes SaaS.')
+@section('meta_keywords', 'développement web Morocco, AI développement web agency, Suivant.js development agency, dashboard development, SaaS development, education website development, healthcare website development, React development Morocco, TypeScript development, développement web worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
+@section('og_title', 'Obtenir un Devis Gratuit | CodeSommet')
+@section('og_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and plateformes SaaS.')
+@section('twitter_description', 'Tell us about your project and get a custom quote within 24 hours. Free quote, no obligation, custom pricing for websites, dashboards, and plateformes SaaS.')
 
 @section('content')
 <div class="min-h-screen bg-[#F5F5F5] flex flex-col">
@@ -13,7 +13,7 @@
 
 {{-- Header --}}
 <div class="text-center mb-6 sm:mb-8 max-w-lg" id="quoteHeader" style="opacity:0;transform:translateY(10px)">
-    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-3" style="font-family:var(--font-display)">Get a Free Quote</h1>
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-3" style="font-family:var(--font-display)">Obtenir un Devis Gratuit</h1>
     <p class="text-sm sm:text-base text-[var(--text-secondary)]">Tell us about your project and we&#x27;ll provide a custom quote based on your needs.</p>
     <div class="flex items-center justify-center gap-4 sm:gap-6 mt-4">
         <div class="flex items-center gap-1.5">
@@ -134,7 +134,7 @@
                             <option value="SaaS / B2B Software">SaaS / B2B Software</option>
                             <option value="E-commerce / Retail">E-commerce / Retail</option>
                             <option value="FinTech / Finance">FinTech / Finance</option>
-                            <option value="Real Estate">Real Estate</option>
+                            <option value="Real Estate">Immobilier</option>
                             <option value="Travel / Hospitality">Travel / Hospitality</option>
                             <option value="Other">Other</option>
                         </select>
@@ -235,7 +235,7 @@
                 {{-- Back button (hidden on step 1) --}}
             </div>
             <div id="nextBtnContainer">
-                <button type="button" id="nextBtn" onclick="goNext()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Next<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+                <button type="button" id="nextBtn" onclick="goSuivant()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Suivant<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
             </div>
         </div>
 
@@ -247,9 +247,9 @@
         <div class="w-14 h-14 rounded-full bg-[#22C55E]/10 flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-[#22C55E]"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
         </div>
-        <h3 class="text-lg sm:text-xl font-bold text-[var(--text-primary)] mb-2">Quote Request Submitted!</h3>
+        <h3 class="text-lg sm:text-xl font-bold text-[var(--text-primary)] mb-2">Quote Request Envoyerted!</h3>
         <p class="text-sm text-[var(--text-secondary)] mb-5">We'll review your project details and get back to you within 24 hours with a custom quote tailored to your needs.</p>
-        <button onclick="resetForm()" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00AEEF] text-white rounded-full text-sm font-medium hover:bg-[#0071BC] transition-colors">Submit Another Request</button>
+        <button onclick="resetForm()" class="inline-flex items-center gap-2 px-5 py-2 bg-[#00AEEF] text-white rounded-full text-sm font-medium hover:bg-[#0071BC] transition-colors">Envoyer Another Request</button>
     </div>
 
 </div>
@@ -401,11 +401,11 @@ function updateButtons() {
         backContainer.innerHTML = '';
     }
 
-    // Next / Submit button
+    // Suivant / Envoyer button
     if (currentStep < 3) {
-        nextContainer.innerHTML = '<button type="button" id="nextBtn" onclick="goNext()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Next<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>';
+        nextContainer.innerHTML = '<button type="button" id="nextBtn" onclick="goSuivant()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Suivant<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>';
     } else {
-        nextContainer.innerHTML = '<button type="button" id="submitBtn" onclick="submitForm()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Submit Request<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></button>';
+        nextContainer.innerHTML = '<button type="button" id="submitBtn" onclick="submitForm()" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-white text-sm font-medium transition-all duration-200" style="background-color:#00AEEF;box-shadow:0 3px 12px rgba(0, 174, 239, 0.25)">Envoyer Request<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></button>';
     }
 }
 
@@ -441,7 +441,7 @@ function showStep(step, direction) {
     }, 200);
 }
 
-function goNext() {
+function goSuivant() {
     if (!validateStep(currentStep)) return;
     if (currentStep < 3) {
         showStep(currentStep + 1, 1);
@@ -482,7 +482,7 @@ function submitForm() {
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
     submitBtn.style.cursor = 'not-allowed';
-    submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 animate-spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>Submitting...';
+    submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 animate-spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>Envoyerting...';
 
     var data = {
         fullName: document.getElementById('fullName').value,
@@ -523,7 +523,7 @@ function submitForm() {
         submitBtn.disabled = false;
         submitBtn.style.opacity = '1';
         submitBtn.style.cursor = 'pointer';
-        submitBtn.innerHTML = 'Submit Request<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>';
+        submitBtn.innerHTML = 'Envoyer Request<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>';
     });
 }
 
