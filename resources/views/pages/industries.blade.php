@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc | CodeSommet')
-@section('meta_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'''éducation, la santé et les entreprises. Plus de 50 projets livrés.')
+@section('title', "CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc | CodeSommet")
+@section('meta_description', "Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'''éducation, la santé et les entreprises. Plus de 50 projets livrés.")
 @section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site web éducation,développement site web santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
-@section('og_title', 'CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc')
-@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'''éducation, la santé et les entreprises. Plus de 50 projets livrés.')
-@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
+@section('og_title', "CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc")
+@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'''éducation, la santé et les entreprises. Plus de 50 projets livrés.")
+@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
 
 @section('content')
 <div class="min-h-screen bg-white"><section class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-16 bg-white"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),

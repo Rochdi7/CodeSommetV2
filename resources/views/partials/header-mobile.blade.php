@@ -1,27 +1,27 @@
-{{-- Mobile Header - Hidden on desktop (lg:hidden) --}}
+{{-- En-tête mobile - masqué sur desktop (lg:hidden) --}}
 <header class="fixed left-0 right-0 z-40 lg:hidden transition-all duration-500 ease-out top-0">
     <div class="flex w-full justify-center px-4 pt-3 pb-1">
         <div class="relative flex w-full max-w-[380px] items-center justify-between rounded-full border border-[var(--border-light)] bg-white/90 backdrop-blur-xl px-3 py-2.5 shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)]">
 
-            {{-- Hamburger / Close Button --}}
+            {{-- Bouton menu / fermeture --}}
             <button class="h-11 w-11 rounded-full bg-transparent text-[var(--text-primary)] transition hover:bg-[var(--bg-secondary)] flex items-center justify-center"
-                    aria-label="Toggle navigation menu"
+                    aria-label="Basculer le menu de navigation"
                     aria-expanded="false"
                     id="mobile-menu-toggle">
-                {{-- Hamburger icon --}}
+                {{-- Icône hamburger --}}
                 <svg id="mobile-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
                     <path d="M4 5h16"></path>
                     <path d="M4 12h16"></path>
                     <path d="M4 19h16"></path>
                 </svg>
-                {{-- Close icon (hidden by default) --}}
+                {{-- Icône de fermeture (masquée par défaut) --}}
                 <svg id="mobile-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 hidden" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                 </svg>
             </button>
 
-            {{-- Centered Logo --}}
+            {{-- Logo centré --}}
             <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center" href="{{ route('home') }}">
                 <div class="flex items-center gap-1">
                     <div class="w-14 h-14 flex items-center justify-center">
@@ -31,22 +31,22 @@
                 </div>
             </a>
 
-            {{-- Language Switcher --}}
+            {{-- Sélecteur de langue --}}
             <div class="relative" id="mobile-lang-switcher">
                 <button onclick="document.getElementById('mobile-lang-dropdown').classList.toggle('hidden'); document.getElementById('mobile-lang-dropdown').classList.toggle('lang-dropdown-open')"
                         class="h-11 w-11 rounded-full flex items-center justify-center text-[var(--text-secondary)] transition hover:bg-[var(--bg-secondary)]"
-                        aria-label="Switch language">
+                        aria-label="Changer de langue">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                         <circle cx="12" cy="12" r="10"/>
                         <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
                     </svg>
                 </button>
 
-                {{-- Dropdown --}}
+                {{-- Menu déroulant --}}
                 <div id="mobile-lang-dropdown"
                      class="hidden absolute right-0 top-full mt-2 w-44 rounded-2xl bg-white/95 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_8px_30px_rgba(0,0,0,0.1)] py-2 z-50 transition-all duration-200 origin-top-right">
 
-                    {{-- English --}}
+                    {{-- Anglais --}}
                     <a href="?lang=en" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
                         <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                             <svg viewBox="0 0 60 30" class="w-5 h-auto">
@@ -61,7 +61,7 @@
                                 </g>
                             </svg>
                         </span>
-                        <span class="text-sm font-medium text-[var(--text-primary)]">English</span>
+                        <span class="text-sm font-medium text-[var(--text-primary)]">Anglais</span>
                     </a>
 
                     {{-- French --}}
@@ -76,7 +76,7 @@
                         <span class="text-sm font-medium text-[var(--text-primary)]">Français</span>
                     </a>
 
-                    {{-- Arabic --}}
+                    {{-- Arabe --}}
                     <a href="?lang=ar" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
                         <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                             <svg viewBox="0 0 1200 800" class="w-5 h-auto">
@@ -99,7 +99,7 @@
         </div>
     </div>
 
-    {{-- Mobile Navigation Panel --}}
+    {{-- Panneau de navigation mobile --}}
     <div id="mobile-menu" class="hidden fixed left-0 right-0 z-[70] flex justify-center px-4" style="top: 88px;">
         <div class="w-full max-w-[380px] max-h-[calc(100vh-120px)] overflow-y-auto rounded-3xl border border-white/30 bg-white/95 p-3 shadow-[0_28px_60px_-24px_rgba(37,99,235,0.45)] backdrop-blur-2xl">
             <nav class="flex flex-col gap-1.5">
@@ -124,7 +124,7 @@
                 @endforeach
             </nav>
 
-            {{-- CTA Buttons --}}
+            {{-- Boutons CTA --}}
             <div class="mt-4 rounded-2xl bg-white/80 p-2 shadow-inner backdrop-blur-sm space-y-2">
                 <a class="h-11 w-full rounded-xl bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:shadow-lg inline-flex items-center justify-center font-semibold transition-all"
                    href="{{ route('get-quote') }}">
