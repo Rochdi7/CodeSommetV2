@@ -53,7 +53,7 @@
                                             style="background-color:var(--color-primary-orange)"
                                             class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
                                         class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" id="hero-rotating-sizer">CONVERSIONS</span><span
-                                        class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]" id="hero-rotating-text">GROWTH</span></span></span></h1>
+                                        class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]" id="hero-rotating-text">CROISSANCE</span></span></span></h1>
                         <p
                             class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             Nous créons des sites web haute performance, des boutiques e-commerce et des solutions digitales sur mesure pour développer votre activité.</p>
@@ -2416,8 +2416,8 @@
                         <div class="flex items-center justify-between h-full">
                             <div class="relative z-10 flex-1">
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">Design de Tableau de Bord Époustouflant</h3>
-                                <p class="text-sm text-gray-600 leading-relaxed">Beautiful admin panels and data
-                                    visualizations that make complex information simple and actionable.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">De magnifiques panneaux d'administration et visualisations de données
+                                    qui rendent l'information complexe simple et exploitable.</p>
                             </div>
                             <div
                                 class="w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
@@ -2441,7 +2441,7 @@
                         </div>
                         <div class="flex-1 flex items-center justify-center mt-6">
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
-                                    alt="Growth Strategy" loading="lazy" width="256" height="256"
+                                    alt="Stratégie de croissance" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
                                     src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
                             </div>
@@ -2453,7 +2453,7 @@
                             <div
                                 class="inline-flex items-center gap-2 px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full mb-4">
                                 <div class="w-2 h-2 bg-orange-500 rounded-full"></div><span
-                                    class="text-xs font-medium text-gray-700">END-TO-END</span>
+                                    class="text-xs font-medium text-gray-700">DE BOUT EN BOUT</span>
                             </div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-3">Solution Digitale Complète</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">Design, développement, contenu, SEO et
@@ -2461,7 +2461,7 @@
                         </div>
                         <div class="flex-1 flex items-center justify-center mt-6">
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
-                                    alt="Complete Solution" loading="lazy" width="256" height="256"
+                                    alt="Solution complète" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
                                     src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
                             </div>
@@ -2503,8 +2503,8 @@
                         <div class="flex items-center justify-between h-full">
                             <div class="relative z-10 flex-1">
                                 <h3 class="text-xl font-bold text-gray-900 mb-2">Expertise Sectorielle</h3>
-                                <p class="text-sm text-gray-600 leading-relaxed">Specialized knowledge in education,
-                                    healthcare, and SaaS with proven success stories.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Connaissances spécialisées en éducation,
+                                    santé et SaaS avec des success stories prouvées.</p>
                             </div>
                             <div
                                 class="w-32 h-32 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
@@ -2523,7 +2523,7 @@
                         </div>
                         <div
                             class="absolute bottom-4 right-4 w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500">
-                            <img alt="Tech Stack" loading="lazy" width="160" height="160" decoding="async"
+                            <img alt="Stack technologique" loading="lazy" width="160" height="160" decoding="async"
                                 class="object-contain" style="color:transparent"
                                 src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
                         </div>

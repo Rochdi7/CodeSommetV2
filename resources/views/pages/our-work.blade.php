@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Nos Projets - CodeSommet Portfolio | Education, Healthcare & SaaS Projets | CodeSommet')
-@section('meta_description', 'Découvrez notre portfolio de sites web propulsés par l'IA et de tableaux de bord pour les secteurs de l'éducation, de la santé et du SaaS. Plus de 5 projets réussis avec des augmentations de leads de 180% à 500%.')
+@section('meta_description', "Découvrez notre portfolio de sites web propulsés par l'IA et de tableaux de bord pour les secteurs de l'éducation, de la santé et du SaaS. Plus de 5 projets réussis avec des augmentations de leads de 180% à 500%.")
 @section('meta_keywords', 'portfolio, études de cas, projets de développement web, plateformes éducatives, sites web santé, développement SaaS')
 @section('og_title', 'Nos Projets - CodeSommet Portfolio')
-@section('og_description', 'Découvrez notre portfolio de sites web propulsés par l'IA et de tableaux de bord pour les secteurs de l'éducation, de la santé et du SaaS.')
-@section('twitter_description', 'Découvrez notre portfolio de sites web propulsés par l'IA et de tableaux de bord pour les secteurs de l'éducation, de la santé et du SaaS.')
+@section('og_description', "Découvrez notre portfolio de sites web propulsés par l'IA et de tableaux de bord pour les secteurs de l'éducation, de la santé et du SaaS.")
+@section('twitter_description', "Découvrez notre portfolio de sites web propulsés par l'IA et de tableaux de bord pour les secteurs de l'éducation, de la santé et du SaaS.")
 
 @section('content')
 <section class="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 md:pb-20"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),

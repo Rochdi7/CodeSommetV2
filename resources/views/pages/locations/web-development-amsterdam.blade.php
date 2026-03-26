@@ -1,18 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'Web Development in Amsterdam, Netherlands | CodeSommet')
-@section('meta_description', 'Partner with Amsterdam\'s leading web development studio for AI-powered websites and
-    intelligent dashboards. We specialize in building conversion-focused platforms for fintech, tech startups, and
-    healthcare sectors.')
-@section('meta_keywords', 'web development Morocco,AI web development agency,Next.js development agency,dashboard
+@section('title', 'Développement Web à Amsterdam, Pays-Bas | CodeSommet')
+@section('meta_description', 'Associez-vous au studio de développement web leader d\'Amsterdam pour des sites web
+    alimentés par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes axées
+    sur la conversion pour la fintech, les startups tech et les secteurs de la santé.')
+@section('meta_keywords',
+    'web development Morocco,AI web development agency,Next.js development agency,dashboard
     development,SaaS development,education website development,healthcare website development,React development
-    Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency Morocco')
-@section('og_title', 'Pikasso Studio - Digital Agency | Web Development, Design & SEO')
-@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites,
-    intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+
-    projects delivered.')
-@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent
-    dashboards, and SaaS platforms. 50+ projects delivered.')
+    Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency
+    Morocco')
+@section('og_title', 'CodeSommetStudio - Agence Digitale | Développement Web, Design & SEO')
+@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par
+    l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la
+    santé et les entreprises. Plus de 50 projets livrés.')
+@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA,
+    les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -39,8 +41,8 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
                 <div class="grid lg:grid-cols-1 gap-6 lg:gap-8 items-center">
                     <div class="space-y-6 lg:space-y-8 text-center">
-                        <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb"
-                            ><a class="hover:text-gray-600 transition-colors" aria-label="Home"
+                        <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb"><a
+                                class="hover:text-gray-600 transition-colors" aria-label="Home"
                                 href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3"
@@ -52,13 +54,14 @@
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="{{ route('locations') }}">Emplacements</a><span>/</span><span
                                 class="text-gray-600">Amsterdam</span></nav>
-                        <div class="flex justify-center" >
+                        <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant les
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
+                                    les
                                     <!-- -->Amsterdam<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -70,10 +73,10 @@
                                     </path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🇳🇱<!-- -->
-                                    <!-- -->Amsterdam<!-- -->, <!-- -->Netherlands</span>
+                                    <!-- -->Amsterdam<!-- -->, <!-- -->Pays-Bas</span>
                             </div>
                         </div>
-                        <div class="space-y-6" >
+                        <div class="space-y-6">
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
                                 style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT<!-- --> <span
                                     class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
@@ -89,18 +92,20 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">FinTech
-                                            Platforms</span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">FinTech
-                                            Platforms</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">Plateformes
+                                            FinTech</span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Plateformes
+                                            FinTech</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
-                                Partner with Amsterdam&#x27;s leading développement web studio for sites web alimentés par l'IA and
-                                tableaux de bord intelligents. We specialize in building conversion-focused platforms for fintech,
-                                tech startups, and healthcare sectors.</p>
+                                Associez-vous au studio de développement web leader d'Amsterdam pour des sites web alimentés
+                                par l'IA et
+                                des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes
+                                axées sur la conversion pour la fintech,
+                                les startups tech et les secteurs de la santé.</p>
                         </div>
-                        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
-                            ><a target="_blank" rel="noopener noreferrer"
+                        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank"
+                                rel="noopener noreferrer"
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto bg-black hover:bg-black/90 transition-colors"
                                 style="border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                     rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,
@@ -111,8 +116,9 @@
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
                     rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px"
                                 href="https://cal.com/codesommet/discovery"><span
-                                    class="relative text-[15px] font-semibold text-white z-10">Book Free Amsterdam
-                                    Consultation</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="relative text-[15px] font-semibold text-white z-10">Réserver une Consultation
+                                    Gratuite
+                                    Amsterdam</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform"
@@ -121,8 +127,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
-                                href="#pricing"><span class="text-[15px] font-semibold text-[#0F0F0F]">View Our
-                                    Pricing</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                href="#pricing"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir Nos
+                                    Tarifs</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
@@ -130,21 +136,20 @@
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a></div>
-                        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4"
-                            >
+                        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">Based in <!-- -->Amsterdam</span>
+                                    class="font-semibold text-[#0F0F0F]">Basé à <!-- -->Amsterdam</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">7-10 Day Delivery</span>
+                                    class="font-semibold text-[#0F0F0F]">Livraison en 7-10 Jours</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+ <!-- -->Amsterdam<!-- --> Clients</span>
+                                    class="font-semibold text-[#0F0F0F]">50+ clients à <!-- -->Amsterdam<!-- --></span>
                             </div>
                         </div>
                     </div>
@@ -165,14 +170,17 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Pourquoi Nous Choisir</div>
+                        </svg>Pourquoi Nous Choisir
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommet in <!-- -->Amsterdam<!-- -->?</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Local expertise meets global standards.
-                        Here&#x27;s what makes us the perfect développement web partner in <!-- -->Amsterdam<!-- -->.</p>
+                        style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommet à <!-- -->Amsterdam<!-- -->?
+                    </h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">L'expertise locale rencontre les standards
+                        mondiaux.
+                        Voici ce qui fait de nous le partenaire de développement web idéal à <!-- -->Amsterdam<!-- -->.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div >
+                    <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
                                 class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -199,18 +207,21 @@
                                                 <path d="M7 2v2"></path>
                                                 <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                                                 <rect x="8" y="8" width="8" height="8" rx="1"></rect>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Experts en IA</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Build intelligent chatbots,
-                                        automation workflows, AI-powered search, and recommendation engines tailored for
-                                        Amsterdam&#x27;s innovative tech scene.</p>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Créez des chatbots
+                                        intelligents,
+                                        des workflows d'automatisation, de la recherche alimentée par l'IA et des moteurs de
+                                        recommandation adaptés
+                                        à la scène tech innovante d'Amsterdam.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div >
+                    <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
                                 class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -227,19 +238,23 @@
                                                 <rect width="7" height="5" x="14" y="3" rx="1"></rect>
                                                 <rect width="7" height="9" x="14" y="12" rx="1"></rect>
                                                 <rect width="7" height="5" x="3" y="16" rx="1"></rect>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Dashboard &amp; SaaS
-                                        Specialists</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Design user portals, admin
-                                        panels, analytics dashboards, and plateformes SaaS that scale with your Amsterdam
-                                        startup.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Spécialistes Tableau de
+                                        Bord
+                                        &amp; SaaS</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Concevez des portails
+                                        utilisateurs, des panneaux
+                                        d'administration, des tableaux de bord analytiques et des plateformes SaaS qui
+                                        évoluent avec votre startup
+                                        d'Amsterdam.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div >
+                    <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
                                 class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -254,18 +269,22 @@
                                                 style="color:#00AEEF">
                                                 <path d="M16 7h6v6"></path>
                                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Axé Génération de Prospects
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Axé Génération de
+                                        Prospects
                                     </h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">SEO-optimized,
-                                        conversion-focused websites that turn Amsterdam visitors into paying customers.</p>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Sites web optimisés pour le
+                                        SEO et
+                                        axés sur la conversion qui transforment les visiteurs d'Amsterdam en clients
+                                        payants.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div >
+                    <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
                                 class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -281,18 +300,21 @@
                                                 <path
                                                     d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                                 </path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Rapidité Startup</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch your MVP in 7-14 days
-                                        with unlimited revisions. Perfect for Amsterdam&#x27;s fast-paced startup ecosystem.
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Lancez votre MVP en 7-14
+                                        jours
+                                        avec des révisions illimitées. Parfait pour l'écosystème startup dynamique
+                                        d'Amsterdam.
                                     </p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div >
+                    <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
                                 class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -309,18 +331,21 @@
                                                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                                 <circle cx="9" cy="7" r="4"></circle>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Spécialistes Sectoriels
                                     </h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Deep expertise in fintech,
-                                        tech startups, and healthcare - the fastest-growing sectors in Amsterdam.</p>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Expertise approfondie dans
+                                        la fintech,
+                                        les startups tech et la santé - les secteurs à la croissance la plus rapide à
+                                        Amsterdam.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div >
+                    <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
                                 class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -341,12 +366,14 @@
                                                 </path>
                                                 <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                                 <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Stack Technologique Moderne</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Suivant.js 15, React,
-                                        TypeScript, Supabase, OpenAI, Claude - technologies that attract Amsterdam&#x27;s
-                                        top engineering talent.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Stack Technologique
+                                        Moderne</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Next.js 15, React,
+                                        TypeScript, Supabase, OpenAI, Claude - technologies qui attirent
+                                        les meilleurs talents d'ingénierie d'Amsterdam.</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -357,14 +384,14 @@
         </section>
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-                <div class="text-center" >
+                <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">Approuvé par <!-- -->Amsterdam<!-- --> Businesses</h2>
+                        style="font-family:var(--font-heading)">Approuvé par <!-- -->Amsterdam<!-- --> Entreprises</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">50+ Projets Delivered</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">50+ Projets Livrés</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
@@ -377,8 +404,9 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Real results from
-                        <!-- -->Amsterdam<!-- -->-based businesses we&#x27;ve partnered with</p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
+                        <!-- -->Amsterdam<!-- --> - entreprises avec lesquelles nous avons collaboré
+                    </p>
                 </div>
             </div>
         </section>
@@ -398,19 +426,236 @@
                             <path d="M10 10h4"></path>
                             <path d="M10 14h4"></path>
                             <path d="M10 18h4"></path>
-                        </svg>Expertise Sectorielle</div>
+                        </svg>Expertise Sectorielle
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Amsterdam<!-- --> Nos Secteurs de Spécialisation</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Deep expertise in
-                        <!-- -->Amsterdam<!-- -->&#x27;s key sectors. We understand your industry&#x27;s unique challenges
-                        and compliance requirements.</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans
+                        <!-- -->Amsterdam<!-- --> . Nous comprenons les défis uniques de votre secteur
+                        et les exigences de conformité.
+                    </p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="FinTech illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/fintech35b6.jpeg') }}" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">FinTech</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Plateformes financières sécurisées avec traitement des paiements, conformité et fonctionnalités réglementaires</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de paiement</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Plateformes de trading</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Applications wallet</span></li></ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/al-raba" style="color: rgb(255, 101, 0);">Voir l'Étude de Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Legal Practice illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/legal-practice569f.jpeg') }}" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinet Juridique</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web professionnels pour cabinets d'avocats avec gestion des dossiers et portails clients</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Gestion des dossiers</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails clients</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Automatisation documentaire</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Consulting Firms illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/consultingc465.jpeg') }}" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinets de Conseil</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web de conseil professionnels avec vitrines de services et outils de génération de leads</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portfolio de services</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Études de cas</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Génération de leads</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Healthcare illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/healthcareec28.jpeg') }}" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Santé</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web de cliniques, systèmes de prise de rendez-vous et portails patients conformes aux réglementations sanitaires</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails patients</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de rendez-vous</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Dossiers médicaux</span></li></ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/doctor-hubli" style="color: rgb(255, 101, 0);">Voir l'Étude de Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="Real Estate illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/real-estate42b6.jpeg') }}" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Immobilier</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et intégration CRM</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Annonces immobilières</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Visites virtuelles</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Tableaux de bord agents</span></li></ul></div></div></div></div><div style="opacity: 1; transform: none;"><div class="block h-full"><div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer"><div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0"><div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]"><img alt="SaaS Platforms illustration" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/saas-platforms65bf.jpeg') }}" style="color: transparent;"></div></div><div class="px-5 py-4 flex flex-col flex-grow"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Plateformes SaaS</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel</p><ul class="space-y-1.5 mb-4 flex-grow"><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Authentification utilisateur</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Facturation par abonnement</span></li><li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Développement API</span></li></ul></div></div></div></div></div>
-                <div class="mt-10 text-center" >
-                    <p class="text-[#0F0F0F]/70 mb-4">Don&#x27;t see your industry? We work with businesses across all
-                        sectors in <!-- -->Amsterdam<!-- -->.</p><a
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div style="opacity: 1; transform: none;">
+                        <div class="block h-full">
+                            <div
+                                class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
+                                <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
+                                    <div
+                                        class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
+                                        <img alt="FinTech illustration" loading="lazy" width="500" height="500"
+                                            decoding="async" class="w-full h-full object-contain object-bottom px-4"
+                                            src="{{ asset('images/fintech35b6.jpeg') }}" style="color: transparent;">
+                                    </div>
+                                </div>
+                                <div class="px-5 py-4 flex flex-col flex-grow">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">FinTech</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">
+                                        Plateformes financières sécurisées avec traitement des paiements, conformité et
+                                        fonctionnalités réglementaires</p>
+                                    <ul class="space-y-1.5 mb-4 flex-grow">
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de
+                                                paiement</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Plateformes
+                                                de trading</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Applications
+                                                wallet</span></li>
+                                    </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto"
+                                        href="/our-work/al-raba" style="color: rgb(255, 101, 0);">Voir l'Étude de Cas<svg
+                                            class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div class="block h-full">
+                            <div
+                                class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
+                                <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
+                                    <div
+                                        class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
+                                        <img alt="Legal Practice illustration" loading="lazy" width="500"
+                                            height="500" decoding="async"
+                                            class="w-full h-full object-contain object-bottom px-4"
+                                            src="{{ asset('images/legal-practice569f.jpeg') }}"
+                                            style="color: transparent;"></div>
+                                </div>
+                                <div class="px-5 py-4 flex flex-col flex-grow">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinet Juridique
+                                    </h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
+                                        web professionnels pour cabinets d'avocats avec gestion des dossiers et portails
+                                        clients</p>
+                                    <ul class="space-y-1.5 mb-4 flex-grow">
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Gestion des
+                                                dossiers</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails
+                                                clients</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2"
+                                                style="color: rgb(255, 101, 0);">•</span><span>Automatisation
+                                                documentaire</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div class="block h-full">
+                            <div
+                                class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
+                                <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
+                                    <div
+                                        class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
+                                        <img alt="Consulting Firms illustration" loading="lazy" width="500"
+                                            height="500" decoding="async"
+                                            class="w-full h-full object-contain object-bottom px-4"
+                                            src="{{ asset('images/consultingc465.jpeg') }}" style="color: transparent;">
+                                    </div>
+                                </div>
+                                <div class="px-5 py-4 flex flex-col flex-grow">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinets de Conseil
+                                    </h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
+                                        web de conseil professionnels avec vitrines de services et outils de génération de
+                                        leads</p>
+                                    <ul class="space-y-1.5 mb-4 flex-grow">
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portfolio de
+                                                services</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Études de
+                                                cas</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Génération
+                                                de leads</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div class="block h-full">
+                            <div
+                                class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
+                                <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
+                                    <div
+                                        class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
+                                        <img alt="Healthcare illustration" loading="lazy" width="500" height="500"
+                                            decoding="async" class="w-full h-full object-contain object-bottom px-4"
+                                            src="{{ asset('images/healthcareec28.jpeg') }}" style="color: transparent;">
+                                    </div>
+                                </div>
+                                <div class="px-5 py-4 flex flex-col flex-grow">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Santé</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
+                                        web de cliniques, systèmes de prise de rendez-vous et portails patients conformes
+                                        aux réglementations sanitaires</p>
+                                    <ul class="space-y-1.5 mb-4 flex-grow">
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails
+                                                patients</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de
+                                                rendez-vous</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Dossiers
+                                                médicaux</span></li>
+                                    </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto"
+                                        href="/our-work/doctor-hubli" style="color: rgb(255, 101, 0);">Voir l'Étude de
+                                        Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div class="block h-full">
+                            <div
+                                class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
+                                <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
+                                    <div
+                                        class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
+                                        <img alt="Real Estate illustration" loading="lazy" width="500" height="500"
+                                            decoding="async" class="w-full h-full object-contain object-bottom px-4"
+                                            src="{{ asset('images/real-estate42b6.jpeg') }}" style="color: transparent;">
+                                    </div>
+                                </div>
+                                <div class="px-5 py-4 flex flex-col flex-grow">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Immobilier</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
+                                        web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et
+                                        intégration CRM</p>
+                                    <ul class="space-y-1.5 mb-4 flex-grow">
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Annonces
+                                                immobilières</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Visites
+                                                virtuelles</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Tableaux de
+                                                bord agents</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <div class="block h-full">
+                            <div
+                                class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
+                                <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
+                                    <div
+                                        class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
+                                        <img alt="SaaS Platforms illustration" loading="lazy" width="500"
+                                            height="500" decoding="async"
+                                            class="w-full h-full object-contain object-bottom px-4"
+                                            src="{{ asset('images/saas-platforms65bf.jpeg') }}"
+                                            style="color: transparent;"></div>
+                                </div>
+                                <div class="px-5 py-4 flex flex-col flex-grow">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Plateformes SaaS
+                                    </h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">
+                                        Applications SaaS complètes avec authentification, facturation et fonctionnalités en
+                                        temps réel</p>
+                                    <ul class="space-y-1.5 mb-4 flex-grow">
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2"
+                                                style="color: rgb(255, 101, 0);">•</span><span>Authentification
+                                                utilisateur</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Facturation
+                                                par abonnement</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2"
+                                                style="color: rgb(255, 101, 0);">•</span><span>Développement API</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 text-center">
+                    <p class="text-[#0F0F0F]/70 mb-4">Vous ne voyez pas votre secteur ? Nous travaillons avec des
+                        entreprises de tous
+                        les secteurs à <!-- -->Amsterdam<!-- -->.</p><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:gap-3 transition-all"
-                        href="{{ route('contact') }}"><span>Discuss Your Industry Needs</span><svg
+                        href="{{ route('contact') }}"><span>Discuter de Vos Besoins Sectoriels</span><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
@@ -430,15 +675,16 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>Nos Projets in <!-- -->Amsterdam</div>
+                        </svg>Nos Projets à <!-- -->Amsterdam
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Success Stories from <!-- -->Amsterdam</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Real projects, real results. See how we&#x27;ve
-                        helped businesses in <!-- -->Amsterdam<!-- --> achieve their digital goals.</p>
+                        style="font-family:var(--font-heading)">Histoires de Succès de <!-- -->Amsterdam</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
+                        comment nous avons
+                        aidé les entreprises à <!-- -->Amsterdam<!-- --> atteindre leurs objectifs numériques.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
-                    <div ><a class="block"
-                            href="{{ route('case-study', 'al-raba') }}">
+                    <div><a class="block" href="{{ route('case-study', 'al-raba') }}">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -448,7 +694,7 @@
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                         <span
-                                            class="text-xs font-bold text-white tracking-wide uppercase">Technology</span>
+                                            class="text-xs font-bold text-white tracking-wide uppercase">Technologie</span>
                                     </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
@@ -456,7 +702,7 @@
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>500+ property listings managed</span></div>
+                                            </svg>Plus de 500 annonces immobilières gérées</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Al-Raba
@@ -466,8 +712,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div ><a class="block"
-                            href="{{ route('case-study', 'qogent') }}">
+                    <div><a class="block" href="{{ route('case-study', 'qogent') }}">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -476,7 +721,7 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Education</span>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
                                     </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
@@ -484,7 +729,7 @@
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>2,000+ students admitted</span></div>
+                                            </svg>Plus de 2 000 étudiants admis</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Qogent Global</h3>
@@ -493,8 +738,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div ><a class="block"
-                            href="{{ route('case-study', 'doctor-hubli') }}">
+                    <div><a class="block" href="{{ route('case-study', 'doctor-hubli') }}">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -503,8 +747,7 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span
-                                            class="text-xs font-bold text-white tracking-wide uppercase">Santé</span>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Santé</span>
                                     </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
@@ -512,7 +755,7 @@
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>5,000+ patient registrations</span></div>
+                                            </svg>Plus de 5 000 inscriptions de patients</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">DoctorHubli</h3>
@@ -522,7 +765,7 @@
                             </div>
                         </a></div>
                 </div>
-                <div class="text-center" ></div>
+                <div class="text-center"></div>
             </div>
         </section>
         <section class="w-full py-24 md:py-32 bg-white">
@@ -535,14 +778,15 @@
                             stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                        </svg>Market Insights</div>
+                        </svg>Aperçus du Marché
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Amsterdam&#x27;s Fintech &amp; SaaS Innovation Hub</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Understanding <!-- -->Amsterdam<!-- -->&#x27;s
-                        digital landscape helps us deliver solutions that truly resonate with your local market.</p>
+                        style="font-family:var(--font-heading)">Hub d'Innovation Fintech &amp; SaaS d'Amsterdam</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Comprendre <!-- -->Amsterdam<!-- -->
+                        aide à livrer des solutions qui résonnent vraiment avec votre marché local.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <div class="group relative" >
+                    <div class="group relative">
                         <div
                             class="bg-gradient-to-br from-[#F5F5F5] to-white border border-[#0F0F0F]/10 rounded-2xl p-6 hover:border-[#00AEEF]/30 hover:shadow-xl transition-all duration-300">
                             <div
@@ -555,14 +799,15 @@
                                     <path d="M18 17V9"></path>
                                     <path d="M13 17V5"></path>
                                     <path d="M8 17v-3"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <div class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-2"
                                 style="font-family:var(--font-heading)">4,200+</div>
-                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Tech Startups</div>
-                            <p class="text-sm text-[#0F0F0F]/60">Active in Amsterdam</p>
+                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Startups Tech</div>
+                            <p class="text-sm text-[#0F0F0F]/60">Actif à Amsterdam</p>
                         </div>
                     </div>
-                    <div class="group relative" >
+                    <div class="group relative">
                         <div
                             class="bg-gradient-to-br from-[#F5F5F5] to-white border border-[#0F0F0F]/10 rounded-2xl p-6 hover:border-[#00AEEF]/30 hover:shadow-xl transition-all duration-300">
                             <div
@@ -579,14 +824,15 @@
                                     <path d="M10 10h4"></path>
                                     <path d="M10 14h4"></path>
                                     <path d="M10 18h4"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <div class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-2"
                                 style="font-family:var(--font-heading)">€5.8B</div>
-                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">VC Investment</div>
-                            <p class="text-sm text-[#0F0F0F]/60">Raised in 2024</p>
+                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Investissement Capital-Risque</div>
+                            <p class="text-sm text-[#0F0F0F]/60">Levés en 2024</p>
                         </div>
                     </div>
-                    <div class="group relative" >
+                    <div class="group relative">
                         <div
                             class="bg-gradient-to-br from-[#F5F5F5] to-white border border-[#0F0F0F]/10 rounded-2xl p-6 hover:border-[#00AEEF]/30 hover:shadow-xl transition-all duration-300">
                             <div
@@ -599,14 +845,15 @@
                                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                     <circle cx="9" cy="7" r="4"></circle>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <div class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-2"
                                 style="font-family:var(--font-heading)">14</div>
-                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Unicorn Companies</div>
-                            <p class="text-sm text-[#0F0F0F]/60">Based in Amsterdam</p>
+                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Entreprises Licornes</div>
+                            <p class="text-sm text-[#0F0F0F]/60">Basé à Amsterdam</p>
                         </div>
                     </div>
-                    <div class="group relative" >
+                    <div class="group relative">
                         <div
                             class="bg-gradient-to-br from-[#F5F5F5] to-white border border-[#0F0F0F]/10 rounded-2xl p-6 hover:border-[#00AEEF]/30 hover:shadow-xl transition-all duration-300">
                             <div
@@ -617,39 +864,50 @@
                                     class="lucide lucide-trending-up w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <div class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-2"
                                 style="font-family:var(--font-heading)">€28B</div>
-                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Digital Economy</div>
-                            <p class="text-sm text-[#0F0F0F]/60">Total valuation</p>
+                            <div class="text-base font-semibold text-[#0F0F0F] mb-1">Économie Numérique</div>
+                            <p class="text-sm text-[#0F0F0F]/60">Valorisation totale</p>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="bg-[#F8F8F8] border border-[#0F0F0F]/5 rounded-2xl p-6 hover:border-[#00AEEF]/20 hover:shadow-lg transition-all duration-300"
-                        >
+                    <div
+                        class="bg-[#F8F8F8] border border-[#0F0F0F]/5 rounded-2xl p-6 hover:border-[#00AEEF]/20 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-start gap-3">
                             <div
                                 class="w-1 h-full bg-gradient-to-b from-[#FF6500] to-[#FF7A1F] rounded-full flex-shrink-0 mt-1">
                             </div>
-                            <p class="text-[#0F0F0F]/80 leading-relaxed">Amsterdam leads Europe in payments and fintech
-                                infrastructure, with €5.8B raised in 2024 across 4,200+ startups. Home to Adyen, Mollie, and
-                                14 unicorns, the city excels in payment processing, crypto/blockchain, and international B2B
-                                SaaS. Amsterdam&#x27;s English proficiency (95%), tech talent concentration, and favorable
-                                business environment make it a top choice for international companies entering Europe.</p>
+                            <p class="text-[#0F0F0F]/80 leading-relaxed">Amsterdam est en tête de l'Europe en matière de
+                                paiements et d'infrastructure
+                                fintech, avec 5,8 milliards d'euros levés en 2024 auprès de plus de 4 200 startups. Siège
+                                d'Adyen, Mollie et
+                                14 licornes, la ville excelle dans le traitement des paiements, la crypto/blockchain et le
+                                B2B
+                                SaaS international. La maîtrise de l'anglais d'Amsterdam (95%), la concentration de talents
+                                tech et l'environnement
+                                commercial favorable en font un choix de premier plan pour les entreprises internationales
+                                entrant en Europe.</p>
                         </div>
                     </div>
-                    <div class="bg-[#F8F8F8] border border-[#0F0F0F]/5 rounded-2xl p-6 hover:border-[#00AEEF]/20 hover:shadow-lg transition-all duration-300"
-                        >
+                    <div
+                        class="bg-[#F8F8F8] border border-[#0F0F0F]/5 rounded-2xl p-6 hover:border-[#00AEEF]/20 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-start gap-3">
                             <div
                                 class="w-1 h-full bg-gradient-to-b from-[#FF6500] to-[#FF7A1F] rounded-full flex-shrink-0 mt-1">
                             </div>
-                            <p class="text-[#0F0F0F]/80 leading-relaxed">Amsterdam businesses serve global markets with
-                                European operations. With Adyen processing €1T+ annually and thriving crypto ecosystem,
-                                demand for Suivant.js payment platforms, React fintech dashboards, and iDEAL/SEPA integrations
-                                has grown 165%. Companies need GDPR-compliant systems, multi-language support, and platforms
-                                handling cross-border European transactions with local payment method support.</p>
+                            <p class="text-[#0F0F0F]/80 leading-relaxed">Les entreprises d'Amsterdam servent des marchés
+                                mondiaux avec
+                                des opérations européennes. Avec Adyen traitant plus de 1T€ par an et un écosystème crypto
+                                florissant,
+                                la demande de plateformes de paiement Next.js, de tableaux de bord fintech React et
+                                d'intégrations iDEAL/SEPA
+                                a augmenté de 165%. Les entreprises ont besoin de systèmes conformes au RGPD, de support
+                                multilingue et de plateformes
+                                gérant les transactions européennes transfrontalières avec le support des méthodes de
+                                paiement locales.</p>
                         </div>
                     </div>
                 </div>
@@ -668,14 +926,17 @@
                             </path>
                             <path d="M9 18h6"></path>
                             <path d="M10 22h4"></path>
-                        </svg>Success Story</div>
+                        </svg>Histoire de Succès
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">How We Built a Payment Platform Processing €500M Monthly
-                        Transactions</h2>
+                        style="font-family:var(--font-heading)">Comment Nous Avons Construit une Plateforme de Paiement
+                        Traitant 500M€ de
+                        Transactions Mensuelles</h2>
                     <div class="flex items-center justify-center gap-6 text-sm text-[#0F0F0F]/60 flex-wrap">
-                        <div class="flex items-center gap-2"><span class="font-semibold text-[#0F0F0F]">B2B payment
-                                processing and subscription management platform</span></div><span>•</span>
-                        <div class="flex items-center gap-2"><span>Fintech / Payments</span></div><span>•</span>
+                        <div class="flex items-center gap-2"><span class="font-semibold text-[#0F0F0F]">Plateforme de
+                                traitement de paiements B2B
+                                et de gestion d'abonnements</span></div><span>•</span>
+                        <div class="flex items-center gap-2"><span>Fintech / Paiements</span></div><span>•</span>
                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -685,17 +946,17 @@
                             </svg><span>12 months</span></div>
                     </div>
                 </div>
-                <div class="relative w-full max-w-5xl mx-auto mb-12" >
+                <div class="relative w-full max-w-5xl mx-auto mb-12">
                     <div class="relative aspect-[16/9]"><img
-                            alt="How We Built a Payment Platform Processing €500M Monthly Transactions" decoding="async" class="object-contain"
+                            alt="How We Built a Payment Platform Processing €500M Monthly Transactions" decoding="async"
+                            class="object-contain"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            sizes="100vw"
-                            src="{{ asset('images/success-story-fintech2093.jpeg') }}" />
+                            sizes="100vw" src="{{ asset('images/success-story-fintech2093.jpeg') }}" />
                     </div>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300"
-                        >
+                    <div
+                        class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -706,18 +967,22 @@
                                     <circle cx="12" cy="12" r="6"></circle>
                                     <circle cx="12" cy="12" r="2"></circle>
                                 </svg></div>
-                            <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">The
-                                Challenge</h3>
+                            <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">Le
+                                Défi</h3>
                         </div>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed">Amsterdam payment startup needed platform for European
-                            SaaS companies to manage subscriptions and recurring billing. Required support for 15+ payment
-                            methods (cards, iDEAL, SEPA, Bancontact, etc.), automated dunning and failed payment recovery,
-                            subscription management with upgrades/downgrades/pauses, revenue recognition and MRR analytics,
-                            integration with Stripe and Mollie, PSD2 Strong Customer Authentication, and GDPR-compliant
-                            payment data handling.</p>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed">Une startup de paiement d'Amsterdam avait besoin d'une
+                            plateforme pour les entreprises
+                            SaaS européennes pour gérer les abonnements et la facturation récurrente. Support requis pour
+                            plus de 15 méthodes de
+                            paiement (cartes, iDEAL, SEPA, Bancontact, etc.), relance automatisée et récupération des
+                            paiements échoués,
+                            gestion des abonnements avec mises à niveau/rétrogradations/pauses, reconnaissance des revenus
+                            et analyses MRR,
+                            intégration avec Stripe et Mollie, Authentification Forte du Client PSD2, et traitement
+                            des données de paiement conforme au RGPD.</p>
                     </div>
-                    <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300"
-                        >
+                    <div
+                        class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 bg-[#00AEEF]/10 rounded-xl flex items-center justify-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -733,84 +998,86 @@
                                     <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                     <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                 </svg></div>
-                            <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">Our
+                            <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">Notre
                                 Solution</h3>
                         </div>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed">Built Suivant.js payment orchestration platform
-                            aggregating Stripe and Mollie for redundancy, implemented 15+ local payment methods across
-                            Europe, added intelligent dunning with ML-powered retry logic, built subscription lifecycle
-                            management with proration calculations, created revenue analytics dashboard with MRR, churn, and
-                            LTV metrics, ensured PSD2 SCA compliance with 3DS2 authentication, implemented GDPR-compliant
-                            payment tokenization, and deployed on AWS Amsterdam with 99.99% uptime.</p>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed">Plateforme d'orchestration de paiement Next.js
+                            construite
+                            agrégeant Stripe et Mollie pour la redondance, implémentation de plus de 15 méthodes de paiement
+                            locales à travers
+                            l'Europe, ajout de relance intelligente avec logique de réessai alimentée par ML, gestion du
+                            cycle de vie
+                            des abonnements avec calculs de prorata, création d'un tableau de bord d'analyse des revenus
+                            avec MRR, churn et
+                            métriques LTV, conformité PSD2 SCA assurée avec authentification 3DS2, tokenisation de paiement
+                            conforme au RGPD implémentée et déploiement sur AWS Amsterdam avec 99,99% de disponibilité.</p>
                     </div>
                 </div>
-                <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12"
-                    >
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center text-black" style="font-family:var(--font-heading)">
+                <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center text-black"
+                        style="font-family:var(--font-heading)">
                         Impact Mesurable</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="flex items-start gap-3"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1"
-                                aria-hidden="true">
+                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
-                            <p class="text-base font-medium leading-snug">€500M monthly payment volume processed</p>
+                            <p class="text-base font-medium leading-snug">500M€ de volume de paiement mensuel traité</p>
                         </div>
-                        <div class="flex items-start gap-3"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1"
-                                aria-hidden="true">
+                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
-                            <p class="text-base font-medium leading-snug">Payment success rate: 94% (industry avg: 87%)</p>
+                            <p class="text-base font-medium leading-snug">Taux de succès des paiements : 94% (moyenne du
+                                secteur : 87%)</p>
                         </div>
-                        <div class="flex items-start gap-3"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1"
-                                aria-hidden="true">
+                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
-                            <p class="text-base font-medium leading-snug">Churn reduced 22% through smart dunning</p>
+                            <p class="text-base font-medium leading-snug">Churn réduit de 22% grâce à la relance
+                                intelligente</p>
                         </div>
-                        <div class="flex items-start gap-3"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1"
-                                aria-hidden="true">
+                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
-                            <p class="text-base font-medium leading-snug">Series A funding (€18M) secured based on metrics
+                            <p class="text-base font-medium leading-snug">Financement Série A (18M€) obtenu sur la base des
+                                métriques
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 mb-12"
-                    >
-                    <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4 text-center">Technologies Used</h3>
+                <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 mb-12">
+                    <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4 text-center">Technologies Utilisées</h3>
                     <div class="flex flex-wrap justify-center gap-3"><span
-                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Suivant.js</span><span
+                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Next.js</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">React</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Stripe</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Mollie</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">PSD2
                             SCA</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">GDPR</span><span
-                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">ML
-                            Dunning</span><span
+                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Relance
+                            ML</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">AWS</span><span
-                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Revenue
-                            Analytics</span></div>
+                            class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Analytique
+                            des Revenus</span></div>
                 </div>
-                <div class="relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] rounded-3xl p-8 md:p-12 text-white overflow-hidden"
-                    >
+                <div
+                    class="relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] rounded-3xl p-8 md:p-12 text-white overflow-hidden">
                     <div class="absolute top-6 right-6 opacity-10"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-24 h-24"
@@ -824,14 +1091,16 @@
                         </svg></div>
                     <div class="relative z-10 max-w-3xl">
                         <p class="text-xl md:text-2xl leading-relaxed mb-6 italic font-light text-white">
-                            &quot;<!-- -->Platform handles our complex European payment needs flawlessly.
-                            Multi-payment-method support is comprehensive, dunning automation recovered thousands in failed
-                            payments, and PSD2 compliance is bulletproof. Processing €500M monthly now.<!-- -->&quot;</p>
+                            &quot;<!-- -->La plateforme gère nos besoins complexes de paiement européens sans faille.
+                            Le support multi-méthodes de paiement est complet, l'automatisation de la relance a récupéré des
+                            milliers en paiements
+                            échoués, et la conformité PSD2 est à toute épreuve. Nous traitons 500 millions d'euros par mois
+                            maintenant.<!-- -->&quot;</p>
                         <div class="flex items-center gap-4">
                             <div class="w-px h-12 bg-[#00AEEF]"></div>
                             <div>
                                 <div class="font-semibold text-lg text-white">CTO</div>
-                                <div class="text-[#00AEEF] text-sm font-medium">Amsterdam Payment Startup</div>
+                                <div class="text-[#00AEEF] text-sm font-medium">Startup de Paiement d'Amsterdam</div>
                             </div>
                         </div>
                     </div>
@@ -842,9 +1111,10 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-12 md:mb-16">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4"
-                        style="font-family:var(--font-heading)">Custom Solutions, Transparent Pricing</h2>
-                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Book a discovery call to discuss your
-                        specific needs and get a custom quote</p>
+                        style="font-family:var(--font-heading)">Solutions Personnalisées, Tarification Transparente</h2>
+                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour
+                        discuter de vos
+                        besoins spécifiques et obtenir un devis personnalisé</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
                     <div class="relative bg-black rounded-[32px] p-3 text-white">
@@ -857,7 +1127,8 @@
                                     class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                </svg>Recommended</div>
+                                </svg>Recommandé
+                            </div>
                         </div>
                         <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
                             <div class="flex items-start justify-between mb-6">
@@ -871,12 +1142,13 @@
                                             <line x1="8" x2="16" y1="21" y2="21"></line>
                                             <line x1="12" x2="12" y1="17" y2="21"></line>
                                         </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-white">Website Development</h3>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-white">Développement Web</h3>
                                 </div>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                                <p class="text-white/70">Complete website with AI features, dashboards, and premium design
-                                    delivered in 7-10 days.</p>
+                                <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et
+                                    design premium
+                                    livré en 7-10 jours.</p>
                             </div>
                             <div class="divide-y divide-white/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -886,7 +1158,8 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">AI-powered features integration</span></div>
+                                    </svg><span class="text-white/80">Intégration de fonctionnalités alimentées par
+                                        l'IA</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -894,7 +1167,8 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Custom dashboard &amp; user portal</span></div>
+                                    </svg><span class="text-white/80">Tableau de bord personnalisé &amp; portail
+                                        utilisateur</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -902,7 +1176,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Mobile-first responsive design</span></div>
+                                    </svg><span class="text-white/80">Design responsive mobile-first</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -910,7 +1184,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Professional content &amp; copywriting</span></div>
+                                    </svg><span class="text-white/80">Contenu professionnel &amp; rédaction</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -918,7 +1192,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Advanced SEO &amp; performance optimization</span>
+                                    </svg><span class="text-white/80">SEO avancé &amp; optimisation des performances</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -927,7 +1201,8 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Authentication &amp; user management</span></div>
+                                    </svg><span class="text-white/80">Authentification &amp; gestion des
+                                        utilisateurs</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -935,7 +1210,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Payment integration ready</span></div>
+                                    </svg><span class="text-white/80">Intégration de paiement prête</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -943,7 +1218,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Analytics &amp; conversion tracking</span></div>
+                                    </svg><span class="text-white/80">Analytique &amp; suivi des conversions</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -951,8 +1226,8 @@
                                         class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-green-400 font-medium">Free hosting for 3 months
-                                        included</span></div>
+                                    </svg><span class="text-green-400 font-medium">Hébergement gratuit pendant 3 mois
+                                        inclus</span></div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
@@ -960,18 +1235,19 @@
                                 <div class="flex flex-col"><span
                                         class="text-lg md:text-xl font-medium text-white/70 mb-1">Demander un Devis</span>
                                     <div class="flex items-end gap-2"><span
-                                            class="text-5xl md:text-6xl font-bold">Custom</span><span
-                                            class="text-white/50 text-xl mb-2">per project</span></div>
-                                    <p class="text-white/60 text-sm mt-2">Custom quote based on your project scope</p>
+                                            class="text-5xl md:text-6xl font-bold">Personnalisé</span><span
+                                            class="text-white/50 text-xl mb-2">par projet</span></div>
+                                    <p class="text-white/60 text-sm mt-2">Devis personnalisé basé sur l'étendue de votre
+                                        projet</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><a
                                     class="flex-1 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors whitespace-nowrap text-center"
-                                    href="{{ route('get-quote') }}">Get Custom Quote</a><a
+                                    href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connect
-                                    on WhatsApp</a></div>
+                                    class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connectez-vous
+                                    sur WhatsApp</a></div>
                         </div>
                     </div>
                     <div class="relative bg-white rounded-[32px] p-3 text-black border border-black/10">
@@ -986,8 +1262,9 @@
                                             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-infinity w-7 h-7 text-black" aria-hidden="true">
                                             <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
-                                        </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-black">Retainer</h3>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-black">Forfait Mensuel</h3>
                                 </div><button
                                     class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20"
                                     style="margin-top:0">
@@ -997,8 +1274,9 @@
                                             class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5">
                                         </div>
                                     </div><span
-                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Include
-                                        Social Media</span>
+                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Inclut
+                                        les
+                                        Réseaux Sociaux</span>
                                 </button>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg
@@ -1014,8 +1292,9 @@
                                     <path d="M22 4h-4"></path>
                                     <circle cx="4" cy="20" r="2"></circle>
                                 </svg>
-                                <p class="text-black/70 transition-all duration-300">Perfect for businesses needing
-                                    ongoing AI features, dashboards, and website improvements.</p>
+                                <p class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant
+                                    besoin de
+                                    fonctionnalités IA continues, de tableaux de bord et d'améliorations de site web.</p>
                             </div>
                             <div class="divide-y divide-black/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1025,7 +1304,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">1 active project at a time</span></div>
+                                    </svg><span class="text-black/80">1 projet actif à la fois</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1033,7 +1312,8 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">AI chatbot &amp; automation features</span></div>
+                                    </svg><span class="text-black/80">Fonctionnalités de chatbot IA &amp;
+                                        automatisation</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1041,31 +1321,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Custom dashboard development</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">48-72 hour task delivery</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Unlimited revisions until perfect</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Full-stack development (frontend + backend)</span>
+                                    </svg><span class="text-black/80">Développement de tableau de bord personnalisé</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1074,7 +1330,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Professional SEO &amp; content strategy</span></div>
+                                    </svg><span class="text-black/80">Livraison des tâches en 48-72 heures</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1082,7 +1338,8 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Real-time collaboration on Slack</span></div>
+                                    </svg><span class="text-black/80">Révisions illimitées jusqu'à la perfection</span>
+                                </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1090,7 +1347,33 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Premium hosting &amp; maintenance</span></div>
+                                    </svg><span class="text-black/80">Développement full-stack (frontend + backend)</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Stratégie SEO &amp; contenu professionnelle</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Collaboration en temps réel sur Slack</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Hébergement premium &amp; maintenance</span></div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
@@ -1099,21 +1382,22 @@
                                         class="text-lg md:text-xl font-medium text-black/60 mb-1">Demander un Devis</span>
                                     <div class="flex items-end gap-2">
                                         <div class="relative overflow-hidden" style="height:fit-content"><span
-                                                class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Custom</span><span
-                                                class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Custom</span>
-                                        </div><span class="text-black/50 text-xl mb-2">/month</span>
+                                                class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Personnalisé</span><span
+                                                class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Personnalisé</span>
+                                        </div><span class="text-black/50 text-xl mb-2">/mois</span>
                                     </div>
-                                    <p class="text-black/60 text-sm mt-2">Pause or cancel anytime</p>
+                                    <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="codesommet/discovery"
                                     data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
-                                    class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Book
-                                    Discovery Call</button><a
+                                    class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Réserver
+                                    un
+                                    Appel Découverte</button><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connect
-                                    on WhatsApp</a></div>
+                                    class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connectez-vous
+                                    sur WhatsApp</a></div>
                         </div>
                     </div>
                 </div>
@@ -1121,7 +1405,7 @@
         </section>
         <section class="py-12 md:py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
-                <div class="max-w-4xl mx-auto" >
+                <div class="max-w-4xl mx-auto">
                     <div
                         class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-12 border-2 border-[#00AEEF]/20 text-center">
                         <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#00AEEF]/10 mb-6">
@@ -1132,37 +1416,41 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                 <path d="M2 12h20"></path>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]"
-                            style="font-family:var(--font-heading)">Ready to Upgrade Your Amsterdam Website?</h2>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Get a
-                            comprehensive free analysis first:</p>
+                            style="font-family:var(--font-heading)">Prêt à Améliorer Votre Site Web à Amsterdam ?</h2>
+                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Obtenez
+                            d'abord une analyse
+                            gratuite complète :</p>
                         <div class="flex flex-wrap gap-3 justify-center mb-4">
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>SEO audit</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Performance check</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Vérification de
+                                    performance</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Design review</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Revue de design</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>AI-powered
-                                    recommendations</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Recommandations alimentées
+                                    par l'IA</span>
                             </div>
                         </div><a
                             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
                             href="{{ route('tool', 'website-analyzer') }}"><span>Analyser Votre Site Web - 100%
-                                Free</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                Gratuit</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a>
-                        <p class="text-xs text-[var(--text-secondary)] mt-4">No credit card required • Results in 30
-                            seconds • Personalized improvement plan</p>
+                        <p class="text-xs text-[var(--text-secondary)] mt-4">Aucune carte de crédit requise • Résultats en
+                            30
+                            secondes • Plan d'amélioration personnalisé</p>
                     </div>
                 </div>
             </div>
@@ -1177,18 +1465,21 @@
                             stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                        </svg>Pourquoi Nous Choisir</div>
+                        </svg>Pourquoi Nous Choisir
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Amsterdam<!-- --> vs Others</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">See why <!-- -->Amsterdam<!-- --> businesses
-                        choose CodeSommet over other local agencies and international competitors.</p>
+                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Amsterdam<!-- --> vs Autres</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Découvrez pourquoi <!-- -->Amsterdam<!-- -->
+                        entreprises
+                        choisissent CodeSommet plutôt que d'autres agences locales et concurrents internationaux.</p>
                 </div>
-                <div class="max-w-5xl mx-auto" >
+                <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
                         <div
                             class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
                             <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
-                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Feature</div>
+                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Fonctionnalité
+                                </div>
                                 <div class="p-3 md:p-4 text-center">
                                     <div
                                         class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
@@ -1198,13 +1489,13 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
-                                    Other <!-- -->Amsterdam<!-- --> Agencies</div>
+                                    Other <!-- -->Amsterdam<!-- --> Agences</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
-                                    International Agencies</div>
+                                    Agences Internationales</div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Unlimited Revisions
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Révisions Illimitées
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1236,10 +1527,11 @@
                                         <path d="m9 9 6 6"></path>
                                     </svg></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">AI Feature
-                                    Development</div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Développement de
+                                    Fonctionnalités
+                                    IA</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -1249,14 +1541,15 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="m9 12 2 2 4-4"></path>
                                     </svg></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Extra
-                                        Cost</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
+                                        Supplémentaire</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Limited</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">Limité</span></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Dashboard Expertise
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Expertise Tableau de
+                                    Bord
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1267,14 +1560,14 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="m9 12 2 2 4-4"></path>
                                     </svg></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Extra
-                                        Cost</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Depends on
-                                        hire</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
+                                        Supplémentaire</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Dépend du
+                                        recrutement</span></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">48-72hr Turnaround
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Délai de 48-72h
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1306,19 +1599,20 @@
                                         <path d="m9 9 6 6"></path>
                                     </svg></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Monthly Cost</div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Coût Mensuel</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">€1,399 - €2,299</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">€4,500+/month</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">€4,500+/mois</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">€7,500+/month</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">€7,500+/mois</span></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Pause Anytime</div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Pause à Tout Moment
+                                </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -1349,9 +1643,10 @@
                                         <path d="m9 9 6 6"></path>
                                     </svg></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Stack Technologique Moderne
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Stack Technologique
+                                    Moderne
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1371,12 +1666,13 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="m9 12 2 2 4-4"></path>
                                     </svg></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Depends on
-                                        hire</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Dépend du
+                                        recrutement</span></div>
                             </div>
-                            <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30"
-                                >
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Fixed Scope Pricing
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Tarification
+                                    Forfaitaire
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1387,8 +1683,8 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="m9 12 2 2 4-4"></path>
                                     </svg></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Often
-                                        overruns</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Souvent
+                                        dépassé</span></div>
                                 <div class="p-3 md:p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -1402,9 +1698,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-8 text-center" >
-                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparison based on average pricing and service
-                            offerings from top 10 agencies in <!-- -->Amsterdam</p>
+                    <div class="mt-8 text-center">
+                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les tarifs moyens et les offres
+                            de
+                            services des 10 meilleures agences à <!-- -->Amsterdam</p>
                         <div
                             class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full text-sm font-semibold text-[#22C55E]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1413,7 +1710,8 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>Best Value for <!-- -->Amsterdam<!-- --> Businesses</div>
+                            </svg>Meilleur Rapport Qualité-Prix pour <!-- -->Amsterdam<!-- --> Entreprises
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1430,11 +1728,14 @@
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                             </path>
-                        </svg>Témoignages de Nos Clients</div>
+                        </svg>Témoignages de Nos Clients
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">What <!-- -->Amsterdam<!-- --> Clients Say About Us</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Don&#x27;t just take our word for it. Hear from
-                        businesses in <!-- -->Amsterdam<!-- --> who&#x27;ve achieved des résultats remarquables avec CodeSommet.
+                        style="font-family:var(--font-heading)">Quoi <!-- -->Amsterdam<!-- --> Nos Clients Disent de Nous
+                    </h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
+                        Écoutez les
+                        entreprises de <!-- -->Amsterdam<!-- --> qui ont obtenu des résultats remarquables avec CodeSommet.
                     </p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
@@ -1452,20 +1753,401 @@
                             class="lucide lucide-chevron-right w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                         </svg></button>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8"><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;CodeSommet transformed our B2B platform and generated 250% more qualified leads in just 6 months. Their understanding of the market and technical expertise is exceptional.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}" alt="Mohammed Al-Raba" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Al-Raba</div><div class="text-sm text-[#0F0F0F]/60 mb-2">CEO at Al-Raba Technologies</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Maroc</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Working remotely with CodeSommet was seamless. They delivered our healthcare booking platform in 10 days with full DHA compliance. The patient portal has reduced our admin workload by 60% and appointments are up 180%.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}" alt="Dr. Sarah Al-Mansouri" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Medical Director at Dubai Wellness Clinic</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Dubai Healthcare City, UAE</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;We needed a complex e-learning platform with live video, progress tracking, and payment integration. CodeSommet delivered everything in 3 weeks. Student enrollment increased 320% in the first quarter after launch.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/james-thornton.webp') }}" alt="James Thornton" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Founder at EduPath Global</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>London, UK</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Our real estate website went from basic listings to a full booking platform with virtual tours and CRM integration. Online inquiries jumped 400% and we now convert 3x more leads into viewings. Truly outstanding work.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/fatima-benali.webp') }}" alt="Fatima Zahra Benali" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Operations Director at Riad Luxe Properties</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Marrakech, Morocco</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div></div>
+                    <div class="testimonial-carousel-container" data-current-slide="0"><div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="0">
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;CodeSommet a
+                                    transformé notre plateforme B2B et généré 250% de prospects qualifiés en plus en
+                                    seulement 6 mois. Leur compréhension du marché et leur expertise technique sont
+                                    exceptionnelles.&quot;</blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}"
+                                        alt="Mohammed Al-Raba"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Al-Raba</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">PDG chez Al-Raba Technologies</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Maroc</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Travailler à
+                                    distance avec CodeSommet a été une expérience fluide. Ils ont livré notre plateforme de
+                                    réservation médicale en 10 jours avec une conformité DHA complète. Le portail patient a
+                                    réduit notre charge administrative de 60% et les rendez-vous ont augmenté de 180%.&quot;
+                                </blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}"
+                                        alt="Dr. Sarah Al-Mansouri"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur Médical à Dubai Wellness
+                                            Clinic</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Dubai Healthcare City, EAU</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div></div><div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="1" style="display: none;">
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Nous avions
+                                    besoin d'une plateforme e-learning complexe avec vidéo en direct, suivi de progression
+                                    et intégration de paiement. CodeSommet a tout livré en 3 semaines. Les inscriptions
+                                    d'étudiants ont augmenté de 320% au premier trimestre après le lancement.&quot;
+                                </blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/james-thornton.webp') }}"
+                                        alt="James Thornton"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Fondateur chez EduPath Global</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>London, UK</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Notre site
+                                    immobilier est passé de simples annonces à une plateforme de réservation complète avec
+                                    visites virtuelles et intégration CRM. Les demandes en ligne ont bondi de 400% et nous
+                                    convertissons maintenant 3 fois plus de prospects en visites. Un travail vraiment
+                                    exceptionnel.&quot;</blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/fatima-benali.webp') }}"
+                                        alt="Fatima Zahra Benali"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directrice des Opérations chez Riad
+                                            Luxe Properties</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Marrakech, Morocco</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
                     <div class="flex justify-center items-center gap-3 mt-8"><button
-                            class="transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125"
-                            aria-label="Go to testimonial group 1"></button><button
-                            class="transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40"
-                            aria-label="Go to testimonial group 2"></button></div>
+                            class="testimonial-dot transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125"
+                            aria-label="Go to testimonial group 1" data-dot="0"></button><button
+                            class="testimonial-dot transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40"
+                            aria-label="Go to testimonial group 2" data-dot="1"></button></div>
                 </div>
-                <div class="mt-10 text-center" >
-                    <p class="text-sm text-[#0F0F0F]/60">Want to see more success stories?<!-- --> <a
-                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">View
-                            all case studies</a></p>
+                <div class="mt-10 text-center">
+                    <p class="text-sm text-[#0F0F0F]/60">Vous voulez voir plus de réussites ?<!-- --> <a
+                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">Voir
+                            toutes les études de cas</a></p>
                 </div>
             </div>
-        </section>
+        </section><script>
+(function() {
+    var container = document.querySelector('.testimonial-carousel-container');
+    if (!container) return;
+    var slides = container.querySelectorAll('.testimonial-slide');
+    var wrapper = container.closest('.relative.max-w-5xl');
+    var dots = wrapper ? wrapper.querySelectorAll('.testimonial-dot') : [];
+    var prevBtn = wrapper ? wrapper.querySelector('[aria-label="Précédent testimonials"]') : null;
+    var nextBtn = wrapper ? wrapper.querySelector('[aria-label="Suivant testimonials"]') : null;
+    var current = 0;
+    var total = slides.length;
+
+    function showSlide(index) {
+        slides.forEach(function(s) { s.style.display = 'none'; });
+        slides[index].style.display = '';
+        dots.forEach(function(d, i) {
+            if (i === index) {
+                d.className = 'testimonial-dot transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125';
+            } else {
+                d.className = 'testimonial-dot transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40';
+            }
+        });
+        current = index;
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function() {
+        showSlide((current - 1 + total) % total);
+    });
+    if (nextBtn) nextBtn.addEventListener('click', function() {
+        showSlide((current + 1) % total);
+    });
+    dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() { showSlide(i); });
+    });
+})();
+</script>
         @include('partials.location-process-steps')
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
@@ -1479,23 +2161,27 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
-                        </svg>Common Questions</div>
+                        </svg>Questions Fréquentes
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Frequently Asked Questions About Développement Web in
-                        <!-- -->Amsterdam</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Have questions? We&#x27;ve got answers. Here
-                        are the most common questions from <!-- -->Amsterdam<!-- --> businesses.</p>
+                        style="font-family:var(--font-heading)">Questions Fréquemment Posées Sur le Développement Web à
+                        <!-- -->Amsterdam
+                    </h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
+                        réponses. Voici les
+                        questions les plus fréquentes de <!-- -->Amsterdam<!-- --> entreprises.</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"
-                        ><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">1</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">1</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Why choose CodeSommet over
-                                    Amsterdam&#x27;s many développement web agencies?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pourquoi choisir CodeSommet plutôt
+                                    que
+                                    les nombreuses agences de développement web d'Amsterdam ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1504,15 +2190,16 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"
-                        ><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">2</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">2</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Do you work with Amsterdam startups
-                                    and early-stage companies?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Travaillez-vous avec les startups
+                                    d'Amsterdam
+                                    et les entreprises en phase de démarrage ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1521,15 +2208,16 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"
-                        ><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">3</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">3</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">What technologies do you use for
-                                    Amsterdam projects?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quelles technologies utilisez-vous
+                                    pour
+                                    les projets à Amsterdam ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1538,15 +2226,16 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"
-                        ><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">4</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">4</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Can you integrate with existing
-                                    systems used by Amsterdam businesses?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous intégrer les systèmes
+                                    existants
+                                    utilisés par les entreprises d'Amsterdam ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1555,15 +2244,16 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"
-                        ><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">5</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">5</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">How does the unlimited revision
-                                    model work for Amsterdam clients?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Comment fonctionne le modèle de
+                                    révisions
+                                    illimitées pour les clients d'Amsterdam ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1572,15 +2262,16 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"
-                        ><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">6</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">6</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Do you provide ongoing support after
-                                    launch in Amsterdam?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Fournissez-vous un support continu
+                                    après
+                                    le lancement à Amsterdam ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1590,10 +2281,11 @@
                                 </svg></div>
                         </button></div>
                 </div>
-                <div class="mt-10 text-center" >
-                    <p class="text-sm text-[#0F0F0F]/60 mb-2">Still have questions?</p><a href="{{ route('contact') }}"
-                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Get in touch
-                        with our <!-- -->Amsterdam<!-- --> team<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                <div class="mt-10 text-center">
+                    <p class="text-sm text-[#0F0F0F]/60 mb-2">Vous avez encore des questions ?</p><a
+                        href="{{ route('contact') }}"
+                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
+                        notre <!-- -->Amsterdam<!-- --> équipe<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -1605,9 +2297,10 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-8 md:mb-10">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--text-primary)] mb-3 px-4"
-                        style="font-family:var(--font-heading)">We Also Serve</h2>
-                    <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">Explore our web
-                        development services in other cities across the globe</p>
+                        style="font-family:var(--font-heading)">Nous Servons Également</h2>
+                    <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">Explorez nos
+                        services de développement
+                        web dans d'autres villes à travers le monde</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
@@ -1625,13 +2318,14 @@
                                             d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                         </path>
                                         <circle cx="12" cy="10" r="3"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         London</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">United
-                                        Kingdom</p>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Royaume-
+                                        Uni</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1658,7 +2352,8 @@
                                             d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                         </path>
                                         <circle cx="12" cy="10" r="3"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
@@ -1690,12 +2385,13 @@
                                             d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                         </path>
                                         <circle cx="12" cy="10" r="3"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Berlin</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Germany</p>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Allemagne</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1722,12 +2418,13 @@
                                             d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                         </path>
                                         <circle cx="12" cy="10" r="3"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Zurich</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Switzerland
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Suisse
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1755,12 +2452,13 @@
                                             d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                         </path>
                                         <circle cx="12" cy="10" r="3"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Dublin</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Ireland</p>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Irlande</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1787,12 +2485,13 @@
                                             d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                         </path>
                                         <circle cx="12" cy="10" r="3"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Copenhagen</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Denmark</p>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Danemark</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1819,9 +2518,9 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3"
-                        style="font-family:var(--font-heading)">Explore More</h2>
-                    <p class="text-lg text-[var(--text-secondary)]">Discover what makes CodeSommet your ideal web
-                        development partner</p>
+                        style="font-family:var(--font-heading)">En Savoir Plus</h2>
+                    <p class="text-lg text-[var(--text-secondary)]">Découvrez ce qui fait de CodeSommet votre partenaire
+                        de développement web idéal</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -1839,9 +2538,10 @@
                                 </svg></div>
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Free Website Audit</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Get AI-powered analysis with
-                                40+ checks</p>
+                                Audit Gratuit de Site Web</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Obtenez une analyse alimentée
+                                par l'IA avec
+                                plus de 40 vérifications</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
                                 <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -1852,7 +2552,8 @@
                                     aria-hidden="true" style="color:#00AEEF">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -1871,8 +2572,9 @@
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                                 Voir Nos Projets</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explore case studies and client
-                                success stories</p>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez les études de cas et
+                                témoignages
+                                clients</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
                                 <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -1883,7 +2585,8 @@
                                     aria-hidden="true" style="color:#00AEEF">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -1902,9 +2605,9 @@
                                 </svg></div>
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                About CodeSommet</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Learn about our team and
-                                approach</p>
+                                À Propos de CodeSommet</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Découvrez notre équipe et notre
+                                approche</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
                                 <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -1915,7 +2618,8 @@
                                     aria-hidden="true" style="color:#8B5CF6">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -1932,9 +2636,10 @@
                                 </svg></div>
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Get in Touch</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous for your project
-                                requirements</p>
+                                Nous Contacter</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous pour les
+                                exigences
+                                de votre projet</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
                                 <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -1945,7 +2650,8 @@
                                     aria-hidden="true" style="color:#10B981">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -1962,9 +2668,9 @@
                                 </svg></div>
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Back to Homepage</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explore all our services and
-                                offerings</p>
+                                Retour à l'Accueil</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
+                                offres</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
                                 <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -1975,7 +2681,8 @@
                                     aria-hidden="true" style="color:#3B82F6">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a></div>
             </div>
@@ -2035,8 +2742,9 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book
-                                        Discovery Call</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
+                                        un
+                                        Appel Découverte</span>
                                 </a><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -2055,8 +2763,8 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyze
-                                        Your Website</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
+                                        Votre Site Web</span>
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="codesommet/discovery"
@@ -2089,8 +2797,9 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book
-                                        Discovery Call</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
+                                        un
+                                        Appel Découverte</span>
                                 </button><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -2109,8 +2818,8 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyze
-                                        Your Website</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
+                                        Votre Site Web</span>
                                 </a></div>
                             <div class="relative mt-2 h-16">
                                 <div class="absolute pointer-events-none animate-cursor-stops" style="left:50%;top:50%">
@@ -2128,10 +2837,12 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Join 50+ forward-thinking companies who
-                            chose excellence</p>
-                        <p class="text-sm md:text-base text-white/50">Let&#x27;s discuss how AI and modern design can
-                            elevate your business</p>
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 50 entreprises
+                            visionnaires qui
+                            ont choisi l'excellence</p>
+                        <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
+                            peuvent
+                            propulser votre entreprise</p>
                         <div class="mt-6">
                             <div class="relative w-full py-8">
                                 <div class="flex items-center justify-center gap-0">
@@ -2146,8 +2857,8 @@
                                                         <div
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
-                                                    </div><span class="text-[10px] font-medium text-white/40">AI
-                                                        Chatbots</span>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Chatbots
+                                                        IA</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2157,94 +2868,8 @@
                                                         <div
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span class="text-[10px] font-medium text-white/40">SEO</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span class="text-[10px] font-medium text-white/40">CMS</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span class="text-[10px] font-medium text-white/40">AI
-                                                        Chatbots</span>
-                                                </div>
-                                            </li>
-                                            <li class="flex-shrink-0">
-                                                <div
-                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                    <div class="relative w-5 h-5">
-                                                        <div
-                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                        </div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Tableaux de
+                                                        Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2318,8 +2943,19 @@
                                                         <div
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
-                                                    </div><span class="text-[10px] font-medium text-white/40">AI
-                                                        Chatbots</span>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Tableaux de
+                                                        Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2330,7 +2966,82 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Tableaux de Bord</span>
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">CMS</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Tableaux de
+                                                        Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2406,7 +3117,8 @@
                                             <div
                                                 class="jsx-19a8fa7e477c8109 relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center">
                                                 <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet"
-                                                    class="jsx-19a8fa7e477c8109 h-8 w-auto" /></div>
+                                                    class="jsx-19a8fa7e477c8109 h-8 w-auto" />
+                                            </div>
                                         </div>
                                     </div>
                                     <section class="flex items-center overflow-hidden"
@@ -2424,9 +3136,10 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
-                                                    </div><span class="text-[10px] font-medium text-white/90">AI
-                                                        Chatbots</span>
+                                                            </svg>
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Chatbots
+                                                        IA</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2440,9 +3153,10 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
+                                                            </svg>
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Tableaux de
+                                                        Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2456,7 +3170,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
@@ -2472,7 +3187,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">SEO</span>
                                                 </div>
                                             </li>
@@ -2487,7 +3203,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
@@ -2503,7 +3220,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
@@ -2519,7 +3237,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
@@ -2535,7 +3254,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">CMS</span>
                                                 </div>
                                             </li>
@@ -2550,9 +3270,10 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
-                                                    </div><span class="text-[10px] font-medium text-white/90">AI
-                                                        Chatbots</span>
+                                                            </svg>
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Chatbots
+                                                        IA</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2566,9 +3287,10 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
+                                                            </svg>
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Tableaux de
+                                                        Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2582,7 +3304,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
@@ -2598,7 +3321,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">SEO</span>
                                                 </div>
                                             </li>
@@ -2613,7 +3337,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
@@ -2629,7 +3354,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
@@ -2645,7 +3371,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
@@ -2661,7 +3388,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">CMS</span>
                                                 </div>
                                             </li>
@@ -2676,9 +3404,10 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
-                                                    </div><span class="text-[10px] font-medium text-white/90">AI
-                                                        Chatbots</span>
+                                                            </svg>
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Chatbots
+                                                        IA</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2692,9 +3421,10 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
-                                                    </div><span
-                                                        class="text-[10px] font-medium text-white/90">Tableaux de Bord</span>
+                                                            </svg>
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Tableaux de
+                                                        Bord</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -2708,7 +3438,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Automatisation</span>
                                                 </div>
@@ -2724,7 +3455,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">SEO</span>
                                                 </div>
                                             </li>
@@ -2739,7 +3471,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
@@ -2755,7 +3488,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
@@ -2771,7 +3505,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
@@ -2787,7 +3522,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">CMS</span>
                                                 </div>
                                             </li>

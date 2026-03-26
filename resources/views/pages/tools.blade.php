@@ -1,18 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc | CodeSommet')
-@section('meta_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'IA,
-    les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'éducation, la santé et les entreprises. Plus de 50
-    projets livrés.')
-@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord
-    ,développement SaaS,développement site web éducation,développement site web santé,développement React
-    Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
-@section('og_title', 'CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc')
-@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'IA,
-    les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'éducation, la santé et les entreprises. Plus de 50
-    projets livrés.')
-@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web propulsés par l'IA, les tableaux de bord
-    intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
+@section('title', "CodeSommet - Agence de Développement Web Propulsée par l'IA | Maroc | CodeSommet")
+@section('meta_description', "Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'éducation, la santé et les entreprises. Plus de 50 projets livrés.")
+@section('meta_keywords', "développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site web éducation,développement site web santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc")
+@section('og_title', "CodeSommet - Agence de Développement Web Propulsée par l'IA | Maroc")
+@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'éducation, la santé et les entreprises. Plus de 50 projets livrés.")
+@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web propulsés par l'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
 
 @section('content')
     <div class="min-h-screen bg-white">
@@ -261,7 +254,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Scripts Chatbot IA</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Flux de conversation spécifiques à chaque secteur
-                                with lead qualification</p>
+                                avec qualification de prospects</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -452,7 +445,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur de Backlinks</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Données réelles de l'API Moz : DA, PA, Score de Spam
-                                + Top 10 backlinks with two-tier quota optimization</p>
+                                + Top 10 backlinks avec optimisation de quota à deux niveaux</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -695,7 +688,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur de Redirections</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Suivez les chaînes de redirection, détectez les boucles,
-                                and get SEO recommendations</p>
+                                et obtenez des recommandations SEO</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -725,7 +718,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur d'URL Canonique</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Détectez les problèmes de balises canoniques qui nuisent au
-                                SEO rankings</p>
+                                le classement SEO</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -755,7 +748,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Analyseur de Liens Internes</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez la structure de liens internes
-                                and find broken links</p>
+                                et trouvez les liens cassés</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -816,7 +809,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur de Santé du Domaine</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">12 vérifications complètes pour la
-                                SEO and on-page health</p>
+                                la santé SEO et on-page</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -908,7 +901,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Schema Entreprise Locale</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez du schema JSON-LD pour le SEO local
-                                and Google Maps</p>
+                                et Google Maps</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -939,7 +932,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Sitemap XML</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des sitemaps XML optimisés pour le SEO
-                                for search engines</p>
+                                pour les moteurs de recherche</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -969,7 +962,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Constructeur de Paramètres UTM</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Créez des URLs de campagne traçables avec
-                                UTM parameters for analytics</p>
+                                des paramètres UTM pour l'analytique</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1001,7 +994,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur Robots.txt</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Contrôlez l'exploration des moteurs de recherche avec
-                                custom robots.txt files</p>
+                                des fichiers robots.txt personnalisés</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1031,7 +1024,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur de Liens Nofollow</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez le HTML pour trouver les liens nofollow
-                                and link metrics</p>
+                                et les métriques de liens</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1061,7 +1054,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur de Contenu Dupliqué</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Comparez des blocs de texte pour détecter
-                                duplicate or similar content</p>
+                                le contenu dupliqué ou similaire</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1092,7 +1085,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Redirection Meta Refresh</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des redirections HTML meta refresh
-                                with custom delays</p>
+                                avec des délais personnalisés</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1155,7 +1148,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Analyseur de Score de Lisibilité</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez la lisibilité du texte avec 5
-                                algorithms and grade levels</p>
+                                algorithmes et niveaux scolaires</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1185,7 +1178,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Compteur de Mots &amp; Caractères</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Comptez les mots, caractères et vérifiez
-                                platform limits</p>
+                                les limites de plateformes</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1216,7 +1209,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Convertisseur HTML vers Texte Brut</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez du HTML en texte lisible et propre
-                                plain text instantly</p>
+                                en texte brut instantanément</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1246,7 +1239,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Convertisseur de Casse de Texte</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez du texte entre majuscules,
-                                lowercase, title case, and more</p>
+                                minuscules, casse de titre et plus</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1275,7 +1268,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Encodeur/Décodeur Base64</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Encodez du texte en Base64 ou décodez
-                                Base64 strings</p>
+                                des chaînes Base64</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1306,7 +1299,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Formateur/Validateur JSON</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Formatez, validez et minifiez du JSON
-                                with syntax highlighting</p>
+                                avec coloration syntaxique</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1338,7 +1331,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Lorem Ipsum</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez du texte de remplissage pour le design
-                                mockups and prototypes</p>
+                                les maquettes et prototypes</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1372,7 +1365,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Palette de Couleurs</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Extrayez les couleurs de marque des logos avec
-                                AI vision</p>
+                                la vision IA</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1411,7 +1404,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Générateur de Code QR</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Générez des codes QR scannables pour
-                                URLs, text, and contact info</p>
+                                les URL, texte et coordonnées</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1441,7 +1434,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Minificateur CSS</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Minifiez le code CSS pour réduire la taille du fichier
-                                and improve performance</p>
+                                et améliorer les performances</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1471,7 +1464,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Vérificateur de Certificat SSL</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Vérifiez les certificats SSL/TLS et
-                                security warnings</p>
+                                les avertissements de sécurité</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1501,7 +1494,7 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">Test de Compatibilité Mobile</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Testez la réactivité mobile et
-                                usability</p>
+                                l'ergonomie</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1558,7 +1551,7 @@
                     style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Besoin d'une Solution Sur Mesure ?
                 </h2>
                 <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">Nous créons des sites web alimentés par l'IA, des tableaux de bord et
-                    custom tools for education, healthcare, and SaaS startups.</p><a
+                    des outils personnalisés pour l'éducation, la santé et les startups SaaS.</p><a
                     class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto"
                     style="color:white" href="{{ route('contact') }}">Réserver un Appel Stratégique<svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

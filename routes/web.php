@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\AdminLoginController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\PaymentController;
+use App\Http\Controllers\Admin\FinanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -117,3 +122,27 @@ Route::get('/our-work/{slug}', function (string $slug) {
     }
     return view($view);
 })->where('slug', '[a-z\-]+')->name('case-study');
+
+// ─── Admin Authentication ────────────────────────────────────────────────────
+
+Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
+Route::post('/admin/login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
+Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
+
+Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(function () {
+    // Dashboard
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    // Projects Management
+    Route::resource('projects', ProjectController::class);
+    Route::post('/projects/{project}/update-status', [ProjectController::class, 'updateStatus'])->name('projects.update-status');
+
+    // Payments
+    Route::resource('payments', PaymentController::class);
+    Route::get('/projects/{project}/payments', [PaymentController::class, 'byProject'])->name('projects.payments');
+
+    // Finance Tracking
+    Route::get('/finance', [FinanceController::class, 'index'])->name('finance');
+    Route::post('/finance/expense', [FinanceController::class, 'storeExpense'])->name('finance.expense.store');
+    Route::delete('/finance/expense/{expense}', [FinanceController::class, 'destroyExpense'])->name('finance.expense.destroy');
+});

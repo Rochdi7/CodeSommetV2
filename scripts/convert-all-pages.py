@@ -78,8 +78,8 @@ def extract_meta(html_content):
         return htmllib.unescape(m.group(1)) if m else ''
 
     title = get(r'<title>([^<]*)</title>')
-    # Remove duplicate " | Pikasso Studio" suffixes
-    title = re.sub(r'(\s*\|\s*Pikasso Studio)+$', '', title).strip()
+    # Remove duplicate " | CodeSommetStudio" suffixes
+    title = re.sub(r'(\s*\|\s*CodeSommetStudio)+$', '', title).strip()
 
     return {
         'title': title,
@@ -174,7 +174,7 @@ def make_blade(meta, body):
     """Wrap content in Blade template extending layouts.app."""
     return f"""@extends('layouts.app')
 
-@section('title', '{escape_blade(meta["title"])} | Pikasso Studio')
+@section('title', '{escape_blade(meta["title"])} | CodeSommetStudio')
 @section('meta_description', '{escape_blade(meta["desc"])}')
 @section('meta_keywords', '{escape_blade(meta["keywords"])}')
 @section('og_title', '{escape_blade(meta["og_title"])}')

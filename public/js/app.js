@@ -1039,7 +1039,25 @@
             'Mobile PWA': 'Progressive Web Apps that work offline, install like native mobile apps, send push notifications, and provide app-like experiences',
             'AI Automation': 'Intelligent workflow automation with AI-powered task execution, predictive scheduling, and smart process optimization',
             'Smart Search': 'AI-powered search with natural language processing, semantic understanding, auto-suggestions, and personalized search results',
-            'Global CDN': 'Lightning-fast content delivery with worldwide CDN infrastructure, edge caching, and optimized performance across all continents'
+            'Global CDN': 'Lightning-fast content delivery with worldwide CDN infrastructure, edge caching, and optimized performance across all continents',
+            // French labels
+            'Chatbots IA': 'Support client intelligent 24/7 et qualification de leads avec des conversations alimentées par l\'IA qui comprennent le contexte et fournissent des réponses personnalisées',
+            'Systèmes de Réservation': 'Planification automatisée de rendez-vous avec synchronisation de calendrier, intégration de paiement et rappels automatisés pour une expérience de réservation fluide',
+            'Passerelle de Paiement': 'Intégration sécurisée de Stripe, PayPal et Razorpay pour des paiements en ligne instantanés avec gestion des abonnements et facturation récurrente',
+            'Tableaux de Bord Utilisateur': 'Portails clients personnalisés avec analyses en temps réel, visualisation interactive des données, gestion de compte et expériences utilisateur personnalisées',
+            'Optimisation SEO': 'SEO technique, balisage schema, optimisation Core Web Vitals et optimisation stratégique du contenu pour un classement Google optimal et du trafic organique',
+            'Analytiques & Cartes de Chaleur': 'Intégration Google Analytics 4, cartes de chaleur comportementales, suivi des conversions et insights basés sur les données pour des décisions d\'optimisation',
+            'Intégration CRM': 'Synchronisation transparente avec HubSpot, Salesforce et Zoho pour la gestion automatisée des leads, le suivi du pipeline et la fidélisation client',
+            'Intégration API': 'Développement d\'API personnalisées, intégrations de services tiers via webhooks, endpoints REST et GraphQL pour un échange de données fluide',
+            'E-commerce': 'Plateformes e-commerce complètes avec catalogues de produits, gestion des stocks, systèmes de panier sécurisés et flux de paiement optimisés',
+            'Authentification': 'Systèmes de connexion/inscription sécurisés avec OAuth, Single Sign-On (SSO), authentification multifacteur et contrôle d\'accès basé sur les rôles',
+            'Notifications Push': 'Notifications push en temps réel par email, SMS, alertes navigateur et applications mobiles pour un engagement utilisateur instantané',
+            'Automatisation Email': 'Campagnes email automatisées, séquences drip, emails transactionnels et newsletters personnalisées avec suivi du taux d\'ouverture et tests A/B',
+            'Multilingue': 'Sites web internationaux supportant l\'arabe, l\'anglais et plus de 10 langues avec support RTL, détection de la locale et personnalisation culturelle',
+            'PWA Mobile': 'Progressive Web Apps fonctionnant hors ligne, s\'installant comme des applications natives, envoyant des notifications push et offrant des expériences similaires aux apps',
+            'Automatisation IA': 'Automatisation intelligente des workflows avec exécution de tâches alimentée par l\'IA, planification prédictive et optimisation intelligente des processus',
+            'Recherche Intelligente': 'Recherche alimentée par l\'IA avec traitement du langage naturel, compréhension sémantique, suggestions automatiques et résultats de recherche personnalisés',
+            'CDN Mondial': 'Livraison de contenu ultra-rapide avec infrastructure CDN mondiale, mise en cache en périphérie et performances optimisées sur tous les continents'
         };
 
         // Create tooltip element
@@ -1065,7 +1083,7 @@
         // Find all feature pills in the premium features section
         var premiumSection = null;
         document.querySelectorAll('h2').forEach(function(h2) {
-            if (h2.textContent.indexOf('18 Premium Features') !== -1) {
+            if (h2.textContent.indexOf('18 Premium Features') !== -1 || h2.textContent.indexOf('18 Fonctionnalit') !== -1) {
                 var spaceEl = h2.closest('.space-y-4');
                 premiumSection = h2.closest('section') || (spaceEl ? spaceEl.parentElement : null);
             }
@@ -1285,6 +1303,8 @@
 
     /* ── FAQ Accordion (location pages) ──────────────────────────────── */
     (function () {
+        if (window.location.pathname.indexOf('/services/') === 0) return;
+
         // Generic FAQ answers keyed by question pattern
         var faqAnswers = {
             'why choose': 'We combine cutting-edge AI technology with premium design and rapid delivery. Unlike traditional agencies that take months, we deliver in 7-10 days with unlimited revisions. Our full-stack expertise covers everything from custom dashboards to AI chatbots, ensuring your business gets a competitive edge with modern web solutions.',
@@ -1355,7 +1375,529 @@
 
 
     /* ── FAQ Accordion (tool pages) ──────────────────────────────────── */
+    /* Services Testimonials Carousel */
     (function () {
+        if (window.location.pathname.indexOf('/services/') !== 0) return;
+
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function (section) {
+            var heading = section.querySelector('h2');
+            if (!heading || heading.textContent.indexOf('Les Clients Disent de Nous') === -1) return;
+
+            var grid = section.querySelector('.grid.grid-cols-1.lg\\:grid-cols-2');
+            var prevBtn = section.querySelector('button[aria-label="Previous testimonials"]') || section.querySelector('button[aria-label="Precedent testimonials"]') || section.querySelector('button[aria-label="Précédent testimonials"]');
+            var nextBtn = section.querySelector('button[aria-label="Next testimonials"]') || section.querySelector('button[aria-label="Suivant testimonials"]');
+            var dotsContainer = section.querySelector('.flex.justify-center.items-center.gap-3');
+            var cards = grid ? Array.prototype.slice.call(grid.children) : [];
+            var currentPage = 0;
+            var autoRotate = null;
+            var dots = [];
+
+            if (!grid || !prevBtn || !nextBtn || cards.length < 2) return;
+
+            function getCardsPerPage() {
+                return Math.min(2, cards.length);
+            }
+
+            function getTotalPages() {
+                return Math.ceil(cards.length / getCardsPerPage());
+            }
+
+            function stopAutoRotate() {
+                if (autoRotate) {
+                    clearInterval(autoRotate);
+                    autoRotate = null;
+                }
+            }
+
+            function startAutoRotate() {
+                stopAutoRotate();
+                autoRotate = setInterval(function () {
+                    showPage(currentPage + 1);
+                }, 6000);
+            }
+
+            function buildDots() {
+                if (!dotsContainer) return;
+
+                var totalPages = getTotalPages();
+                dotsContainer.innerHTML = '';
+
+                for (var i = 0; i < totalPages; i += 1) {
+                    var dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.setAttribute('aria-label', 'Go to testimonial page ' + (i + 1));
+                    dot.addEventListener('click', (function (pageIndex) {
+                        return function () {
+                            stopAutoRotate();
+                            showPage(pageIndex);
+                            startAutoRotate();
+                        };
+                    })(i));
+                    dotsContainer.appendChild(dot);
+                }
+
+                dots = Array.prototype.slice.call(dotsContainer.querySelectorAll('button'));
+            }
+
+            function updateDots() {
+                dots.forEach(function (dot, index) {
+                    dot.className = index === currentPage
+                        ? 'transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125'
+                        : 'transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40';
+                });
+            }
+
+            function showPage(page) {
+                var perPage = getCardsPerPage();
+                var totalPages = getTotalPages();
+
+                if (page < 0) page = totalPages - 1;
+                if (page >= totalPages) page = 0;
+                currentPage = page;
+
+                cards.forEach(function (card, index) {
+                    var start = page * perPage;
+                    var end = start + perPage;
+                    var isVisible = index >= start && index < end;
+
+                    card.style.display = isVisible ? '' : 'none';
+                    card.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+
+                    if (!isVisible) return;
+
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateX(20px)';
+                    setTimeout(function () {
+                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateX(0)';
+                    }, 30);
+                });
+
+                updateDots();
+            }
+
+            if (section.dataset.serviceTestimonialsBound !== 'true') {
+                prevBtn.addEventListener('click', function () {
+                    stopAutoRotate();
+                    showPage(currentPage - 1);
+                    startAutoRotate();
+                });
+
+                nextBtn.addEventListener('click', function () {
+                    stopAutoRotate();
+                    showPage(currentPage + 1);
+                    startAutoRotate();
+                });
+
+                section.addEventListener('mouseenter', stopAutoRotate);
+                section.addEventListener('mouseleave', startAutoRotate);
+                section.dataset.serviceTestimonialsBound = 'true';
+            }
+
+            buildDots();
+            showPage(0);
+            startAutoRotate();
+        });
+    })();
+
+
+    /* Services FAQ Accordion */
+    (function () {
+        if (window.location.pathname.indexOf('/services/') !== 0) return;
+
+        function normalizeText(value) {
+            return (value || '')
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/[^a-z0-9]+/g, ' ')
+                .trim();
+        }
+
+        function matchesQuestion(questionText, fragments) {
+            return fragments.every(function (fragment) {
+                return questionText.indexOf(fragment) !== -1;
+            });
+        }
+
+        function findAnswer(questionText) {
+            var q = normalizeText(questionText);
+            var rules = [
+                {
+                    fragments: ['combien', 'temps', 'migrer'],
+                    answer: "Une migration depuis Teachable, Thinkific ou Kajabi prend en general 7 a 14 jours selon le volume de cours, de videos, d'etudiants et d'automatisations a reprendre. Nous preparons la bascule sur un environnement de test pour eviter les interruptions."
+                },
+                {
+                    fragments: ['combien', 'puis je economiser'],
+                    answer: "Le gain depend de vos frais de plateforme, de vos commissions et de votre volume de ventes. Pour des activites regulieres, une plateforme sur mesure permet souvent de recuperer une part importante de marge des les premiers mois."
+                },
+                {
+                    fragments: ['combien', 'temps', 'plateforme'],
+                    answer: "Une plateforme sur mesure prend souvent entre 3 et 6 semaines selon les modules attendus, les integrations et les regles metier. Nous pouvons aussi lancer une V1 rapide puis ajouter les fonctions avancees par etapes."
+                },
+                {
+                    fragments: ['combien', 'temps', 'site web'],
+                    answer: "La plupart des sites web sectoriels se livrent en 2 a 4 semaines selon le nombre de pages, le contenu disponible et les integrations. Nous validons d'abord le perimetre pour garder un delai realiste."
+                },
+                {
+                    fragments: ['passerelles', 'paiement'],
+                    answer: "Nous integrons les passerelles les plus adaptees a votre marche comme Stripe, PayPal, Checkout.com, CMI ou d'autres solutions locales et internationales. Nous gerons aussi les paiements one-shot, les abonnements, les coupons et les webhooks."
+                },
+                {
+                    fragments: ['stripe'],
+                    answer: "Oui, nous integrons Stripe, Adyen, Checkout.com, PayPal et d'autres PSP selon votre pays, vos volumes et vos exigences de conformite. Nous pouvons aussi prendre en charge la fraude, le 3D Secure et les remboursements."
+                },
+                {
+                    fragments: ['variations', 'produits'],
+                    answer: "Oui. Nous pouvons gerer les tailles, couleurs, bundles, options personnalisees, regles de prix et variantes complexes avec une gestion simple cote administration."
+                },
+                {
+                    fragments: ['stocks'],
+                    answer: "Oui, nous mettons en place le suivi de stock en temps reel, les alertes, la gestion multi-entrepots et le traitement des commandes. Si besoin, nous pouvons aussi connecter votre logistique ou votre ERP."
+                },
+                {
+                    fragments: ['recommandation', 'produits', 'ia'],
+                    answer: "Le moteur IA peut utiliser l'historique d'achat, la navigation, les categories et les comportements de clients similaires pour proposer des produits pertinents et augmenter le panier moyen."
+                },
+                {
+                    fragments: ['panier'],
+                    answer: "Oui, les clients peuvent sauvegarder leur panier et leurs favoris puis reprendre leur parcours plus tard. C'est utile pour les achats compares et les paniers a cycle plus long."
+                },
+                {
+                    fragments: ['achats mobiles'],
+                    answer: "Oui, nous optimisons le parcours mobile, le poids des pages, le checkout et la vitesse de chargement pour garder de bonnes conversions sur smartphone."
+                },
+                {
+                    fragments: ['google shopping'],
+                    answer: "Oui, nous pouvons preparer le flux produit, le balisage schema, la structure SEO e-commerce et les bases de vos campagnes Google Shopping avec un tracking propre."
+                },
+                {
+                    fragments: ['teachable', 'thinkific'],
+                    answer: "Oui, nous pouvons migrer les cours, chapitres, videos, quiz, etudiants et donnees utiles depuis Teachable ou Thinkific. Nous verifions aussi les redirections et les acces avant la mise en ligne."
+                },
+                {
+                    fragments: ['hebergement', 'video'],
+                    answer: "Nous utilisons selon le projet des solutions comme Vimeo, Bunny Stream, Mux, Wistia ou un stockage prive type S3 avec CDN. Le choix depend du volume, du budget et du niveau de controle attendu."
+                },
+                {
+                    fragments: ['marketplace', 'multi instructeurs'],
+                    answer: "Oui, nous pouvons construire une marketplace multi-instructeurs avec espaces formateurs, partage de revenus, approbation de contenus, tableaux de bord et gestion des commissions."
+                },
+                {
+                    fragments: ['gamification'],
+                    answer: "Oui. Nous pouvons ajouter badges, points, certificats, progression, streaks, classements et rappels intelligents pour renforcer l'engagement et la completion."
+                },
+                {
+                    fragments: ['appareils mobiles'],
+                    answer: "Oui, les etudiants peuvent suivre leurs cours sur mobile avec une interface adaptee, progression synchronisee et, selon le besoin, certaines fonctions hors ligne."
+                },
+                {
+                    fragments: ['redaction', 'contenu'],
+                    answer: "Oui, nous pouvons vous aider sur l'arborescence, les messages cles, les pages de conversion et les textes SEO. Nous preferons toutefois travailler avec votre expertise metier pour garder un contenu credible."
+                },
+                {
+                    fragments: ['chatbot', 'plusieurs langues'],
+                    answer: "Oui, nous pouvons configurer un chatbot IA multilingue en francais, anglais, arabe ou d'autres langues selon votre public. Les reponses peuvent etre alimentees par votre contenu et vos procedures internes."
+                },
+                {
+                    fragments: ['crm'],
+                    answer: "Nous integrons regulierement HubSpot, Salesforce, Zoho, Pipedrive et d'autres CRM. Les leads, formulaires, rendez-vous et evenements peuvent etre synchronises automatiquement."
+                },
+                {
+                    fragments: ['portail', 'candidature'],
+                    answer: "Oui, nous pouvons creer un portail de candidature avec formulaires avances, upload de documents, suivi d'etapes, notifications et validation par votre equipe."
+                },
+                {
+                    fragments: ['plusieurs devises'],
+                    answer: "Oui, nous pouvons prendre en charge plusieurs devises, localiser les moyens de paiement et afficher des montants adaptes au pays de l'utilisateur avec les regles de taxe utiles."
+                },
+                {
+                    fragments: ['qu est ce qui vous differencie'],
+                    answer: "Nous combinons execution rapide, design premium et vraie logique produit. Le point cle est que nous adaptons le site ou la plateforme a votre secteur au lieu de livrer un modele generique."
+                },
+                {
+                    fragments: ['google ads'],
+                    answer: "Oui, nous pouvons preparer les landing pages, le tracking GA4 et GTM, les events de conversion et les fondations SEO pour soutenir vos campagnes Google Ads."
+                },
+                {
+                    fragments: ['pci dss'],
+                    answer: "Oui, nous concevons l'architecture avec les bonnes pratiques PCI-DSS et nous evitons que votre application stocke inutilement des donnees sensibles. La certification formelle depend ensuite de votre perimetre."
+                },
+                {
+                    fragments: ['kyc'],
+                    answer: "Nous pouvons integrer des fournisseurs KYC comme Sumsub, Persona, Onfido, Veriff ou d'autres services compatibles avec votre zone geographique et vos contraintes de conformite."
+                },
+                {
+                    fragments: ['trading', 'temps reel'],
+                    answer: "Oui, nous pouvons connecter des flux de marche en temps reel, construire des tableaux de bord, des watchlists et des alertes. Le perimetre exact depend ensuite des licences de donnees et des API disponibles."
+                },
+                {
+                    fragments: ['transfrontaliers'],
+                    answer: "Oui, nous pouvons gerer les paiements multi-devises, les parcours internationaux, les taux de change et les moyens de paiement adaptes a plusieurs regions."
+                },
+                {
+                    fragments: ['conformite reglementaire'],
+                    answer: "Oui, nous pouvons vous accompagner sur les besoins techniques lies a la conformite et travailler avec vos partenaires juridiques ou de licence pour cadrer correctement la solution."
+                },
+                {
+                    fragments: ['donnees', 'temps reel'],
+                    answer: "Oui, nous pouvons connecter des donnees en temps reel via API ou webhooks pour afficher soldes, disponibilites, statuts ou indicateurs metier sans retards inutiles."
+                },
+                {
+                    fragments: ['hipaa'],
+                    answer: "Oui, la plateforme peut etre concue avec des pratiques compatibles HIPAA comme le controle d'acces, la journalisation, le chiffrement et le choix de fournisseurs appropries. Le cadrage final depend toujours de votre organisation."
+                },
+                {
+                    fragments: ['dse existant'],
+                    answer: "Oui, nous pouvons integrer votre DSE via API, middleware ou echanges securises selon ce que permet votre systeme actuel. Nous verifions d'abord les points d'entree, les droits et les limites techniques."
+                },
+                {
+                    fragments: ['dme existant'],
+                    answer: "Oui, nous pouvons relier votre DME existant si une API, un connecteur ou un flux securise est disponible. Une phase de test est prevue pour fiabiliser les synchronisations sensibles."
+                },
+                {
+                    fragments: ['formation', 'personnel'],
+                    answer: "Oui, nous prevoyons une formation equipe, une documentation claire et une passation pour que vos collaborateurs puissent utiliser l'outil sans dependance inutile."
+                },
+                {
+                    fragments: ['rendez vous en ligne'],
+                    answer: "Oui, les patients peuvent reserver 24 h sur 24 avec choix du praticien, disponibilites, confirmations et rappels automatiques pour reduire les oublis."
+                },
+                {
+                    fragments: ['telemedecine'],
+                    answer: "Nous pouvons mettre en place une experience de telemedecine avec video securisee, salle d'attente, gestion de rendez-vous, comptes patients et historique utile au suivi."
+                },
+                {
+                    fragments: ['absenteisme'],
+                    answer: "Oui, avec rappels SMS et email, confirmations, reprogrammation simple et suivi des no-shows, il est possible de reduire nettement le taux d'absenteisme."
+                },
+                {
+                    fragments: ['eligibilite', 'visa'],
+                    answer: "Oui, nous pouvons creer des calculateurs d'eligibilite visa avec questions conditionnelles, scores, orientation par pays et capture de lead en fin de parcours."
+                },
+                {
+                    fragments: ['suivi de dossiers'],
+                    answer: "Oui, nous pouvons mettre en place un espace client avec suivi de dossier, checklist, demandes de documents, statut des etapes et notifications."
+                },
+                {
+                    fragments: ['rgpd'],
+                    answer: "Nous appliquons des mesures comme le chiffrement, les droits d'acces, les journaux, les consentements et une gestion propre des donnees personnelles pour rester alignes avec les bonnes pratiques RGPD."
+                },
+                {
+                    fragments: ['hubspot'],
+                    answer: "Oui, HubSpot, Salesforce, Zoho et d'autres CRM peuvent etre relies pour synchroniser prospects, dossiers, taches et relances commerciales."
+                },
+                {
+                    fragments: ['types de visa'],
+                    answer: "Oui, chaque pays et chaque type de visa peut avoir son propre parcours, ses documents requis, ses regles et ses automations dans le meme systeme."
+                },
+                {
+                    fragments: ['perdre des etudiants'],
+                    answer: "Non, pas si la migration est planifiee proprement. Nous migrons le contenu, conservons les acces, preparons les redirections utiles et validons le tout avant la bascule publique."
+                },
+                {
+                    fragments: ['abonnements', 'plans de paiement'],
+                    answer: "Oui, nous pouvons proposer des abonnements, des plans de paiement fractionnes, des coupons, des essais gratuits et des relances de paiement selon votre modele commercial."
+                },
+                {
+                    fragments: ['contenu progressif'],
+                    answer: "Oui, nous pouvons gerer le drip content, les prerequis, la planification des modules et l'ouverture automatique des lecons selon vos regles pedagogiques."
+                },
+                {
+                    fragments: ['meilleur seo'],
+                    answer: "Oui, une plateforme sur mesure donne un controle SEO beaucoup plus fin que les solutions fermees. Vous maitrisez l'URL, le balisage, la structure des pages et la performance."
+                },
+                {
+                    fragments: ['teachable n offre pas'],
+                    answer: "C'est justement l'avantage du sur-mesure. Si une fonctionnalite utile n'existe pas dans Teachable ou Kajabi, nous pouvons la concevoir autour de votre logique produit."
+                },
+                {
+                    fragments: ['mls'],
+                    answer: "Oui, nous pouvons integrer MLS, IDX ou vos flux immobiliers locaux selon les connecteurs et les droits disponibles, puis adapter la recherche a votre marche."
+                },
+                {
+                    fragments: ['visites virtuelles'],
+                    answer: "Oui, nous supportons les visites 360, les galeries interactives, les videos et des integrations comme Matterport pour mieux valoriser les biens."
+                },
+                {
+                    fragments: ['agents', 'propres annonces'],
+                    answer: "Oui, chaque agent peut disposer de son espace pour publier, modifier et suivre ses annonces, ses leads et ses performances sans exposer les donnees des autres."
+                },
+                {
+                    fragments: ['prospects'],
+                    answer: "Nous pouvons integrer un CRM immobilier pour capter, qualifier, distribuer et suivre les prospects avec historique, relances et attribution aux agents."
+                },
+                {
+                    fragments: ['filtres', 'carte'],
+                    answer: "Oui, nous pouvons ajouter des filtres avances par prix, surface, quartier, type de bien et disponibilite, ainsi qu'une carte interactive pour la recherche geolocalisee."
+                },
+                {
+                    fragments: ['biens favoris'],
+                    answer: "Oui, les acheteurs peuvent creer un compte, enregistrer leurs biens favoris, comparer des annonces et recevoir des alertes sur les nouvelles opportunites."
+                },
+                {
+                    fragments: ['seo immobilier'],
+                    answer: "Oui, nous optimisons les pages de ville, les fiches biens, le schema markup et les parcours de conversion, puis nous preparons le terrain pour vos campagnes Google Ads."
+                },
+                {
+                    fragments: ['10 000 utilisateurs'],
+                    answer: "Oui, nous pouvons concevoir une architecture evolutive avec separation claire du front, du back, du cache, des files de taches et de la base de donnees pour absorber la croissance."
+                },
+                {
+                    fragments: ['facturation'],
+                    answer: "Nous integrons selon le modele Stripe Billing, Paddle, Lemon Squeezy ou une logique de facturation plus personnalisee avec essais, plans, prorata et webhooks."
+                },
+                {
+                    fragments: ['marque blanche'],
+                    answer: "Oui, nous pouvons livrer une plateforme SaaS en marque blanche avec theming, domaines personnalises, parametrage client et une base produit reutilisable."
+                },
+                {
+                    fragments: ['api'],
+                    answer: "Oui, nous pouvons developper vos API REST ou GraphQL, gerer l'authentification, les permissions et la documentation pour vos partenaires ou clients."
+                },
+                {
+                    fragments: ['publicite payante'],
+                    answer: "Oui, nous pouvons preparer les pages de conversion, le tracking et les fondations SEO et SEA pour soutenir la croissance d'une plateforme SaaS apres le lancement."
+                },
+                {
+                    fragments: ['documents de visa'],
+                    answer: "Oui, nous pouvons suivre chaque document requis, son statut, ses dates limites, les validations internes et les relances automatiques vers l'etudiant."
+                },
+                {
+                    fragments: ['mots cles', 'etudes a l etranger'],
+                    answer: "Oui, nous pouvons structurer le site autour des mots-cles etudes a l'etranger, visas, destinations et programmes puis relier le tout a des landing pages performantes."
+                },
+                {
+                    fragments: ['symptomes', 'ia'],
+                    answer: "Oui, l'IA peut aider au pre-triage avec des questionnaires guides et des regles de securite. Elle ne remplace pas le jugement medical, mais elle peut accelerer l'orientation des patients."
+                },
+                {
+                    fragments: ['plateforme video'],
+                    answer: "Nous utilisons selon le besoin des solutions comme Twilio Video, Daily, Zoom SDK ou d'autres briques video securisees selon la qualite, le budget et la conformite attendus."
+                },
+                {
+                    fragments: ['internationaux'],
+                    answer: "Oui, nous pouvons gerer plusieurs fuseaux horaires, devises, langues et parcours patient pour des services de telemedecine a portee internationale, dans la limite des regles applicables."
+                },
+                {
+                    fragments: ['prescriptions'],
+                    answer: "Nous pouvons integrer des workflows de prescription securises, des validations internes et, si necessaire, des connexions a des services tiers ou logiciels metier."
+                },
+                {
+                    fragments: ['commercialiser'],
+                    answer: "Oui, nous pouvons vous aider sur la structure d'acquisition, les landing pages, le tracking, le SEO et les parcours de conversion pour soutenir le lancement commercial."
+                },
+                {
+                    fragments: ['lms existant'],
+                    answer: "Oui, nous pouvons nous integrer a Moodle, Canvas, Blackboard et d'autres LMS si des API ou connecteurs sont disponibles. Nous cadrons ensuite les flux de comptes, notes et contenus."
+                },
+                {
+                    fragments: ['ferpa'],
+                    answer: "Oui, nous pouvons structurer la plateforme avec de bonnes pratiques FERPA sur les acces, la confidentialite, les journaux et la separation des roles."
+                },
+                {
+                    fragments: ['devise locale'],
+                    answer: "Oui, les etudiants internationaux peuvent postuler et payer dans leur devise locale si le prestataire de paiement et votre modele de facturation le permettent."
+                },
+                {
+                    fragments: ['verification', 'documents', 'admissions'],
+                    answer: "Nous mettons en place un upload securise, des checklists, une validation interne, des statuts clairs et des notifications pour fluidifier la verification des dossiers d'admission."
+                },
+                {
+                    fragments: ['statut', 'candidature'],
+                    answer: "Oui, un portail peut permettre aux etudiants de suivre en temps reel le statut de leur candidature, les documents manquants et les prochaines actions attendues."
+                },
+                {
+                    fragments: ['admission', 'enseignants'],
+                    answer: "Oui, nous prevoyons onboarding, documentation et sessions de formation pour les equipes d'admission, les enseignants et les administrateurs."
+                },
+                {
+                    fragments: ['plusieurs campus'],
+                    answer: "Oui, un seul back-office peut gerer plusieurs campus, programmes, equipes et flux d'admission avec des permissions et des rapports distincts."
+                }
+            ];
+
+            for (var i = 0; i < rules.length; i += 1) {
+                if (matchesQuestion(q, rules[i].fragments)) {
+                    return rules[i].answer;
+                }
+            }
+
+            return "Oui, nous pouvons adapter cette partie a votre besoin metier et vous proposer une reponse precise apres avoir valide vos contraintes techniques, contenu et integrations.";
+        }
+
+        function closeItem(item, button, chevron, answerDiv) {
+            item.dataset.open = 'false';
+            answerDiv.style.maxHeight = '0';
+            if (chevron) {
+                chevron.style.transition = 'transform 0.3s ease';
+                chevron.style.transform = 'rotate(0deg)';
+            }
+            button.style.backgroundColor = '';
+        }
+
+        function openItem(item, button, chevron, answerDiv) {
+            item.dataset.open = 'true';
+            answerDiv.style.maxHeight = answerDiv.scrollHeight + 'px';
+            if (chevron) {
+                chevron.style.transition = 'transform 0.3s ease';
+                chevron.style.transform = 'rotate(180deg)';
+            }
+            button.style.backgroundColor = 'rgba(0, 174, 239, 0.05)';
+        }
+
+        var faqContainers = document.querySelectorAll('.max-w-4xl.mx-auto.bg-white.rounded-2xl.border');
+        faqContainers.forEach(function (container) {
+            var faqItems = container.querySelectorAll('.border-b');
+
+            faqItems.forEach(function (item) {
+                var btn = item.querySelector('button');
+                if (!btn || btn.dataset.faqBound === 'true') return;
+
+                var questionEl = btn.querySelector('h3');
+                if (!questionEl) return;
+
+                var chevron = btn.querySelector('svg');
+                var answerDiv = item.querySelector('.faq-answer');
+
+                if (!answerDiv) {
+                    answerDiv = document.createElement('div');
+                    answerDiv.className = 'faq-answer overflow-hidden';
+                    answerDiv.style.maxHeight = '0';
+                    answerDiv.style.transition = 'max-height 0.3s ease';
+                    item.appendChild(answerDiv);
+                }
+
+                answerDiv.innerHTML = '<div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">' + findAnswer(questionEl.textContent) + '</p></div>';
+                closeItem(item, btn, chevron, answerDiv);
+                btn.dataset.faqBound = 'true';
+
+                btn.addEventListener('click', function () {
+                    var shouldOpen = item.dataset.open !== 'true';
+
+                    faqItems.forEach(function (otherItem) {
+                        var otherBtn = otherItem.querySelector('button');
+                        var otherChevron = otherBtn ? otherBtn.querySelector('svg') : null;
+                        var otherAnswerDiv = otherItem.querySelector('.faq-answer');
+                        if (!otherBtn || !otherAnswerDiv) return;
+                        closeItem(otherItem, otherBtn, otherChevron, otherAnswerDiv);
+                    });
+
+                    if (shouldOpen) {
+                        openItem(item, btn, chevron, answerDiv);
+                    }
+                });
+            });
+        });
+    })();
+
+
+    /* Tool FAQ Accordion */
+    (function () {
+        if (window.location.pathname.indexOf('/tools/') !== 0) return;
+
         var faqAnswers = document.querySelectorAll('.faq-answer');
         if (!faqAnswers.length) return;
 
@@ -1389,11 +1931,12 @@
 
     /* ── Retainer Social Media Toggle (location pages) ───────────────── */
     (function () {
-        // Find retainer toggle button by text content "Include Social Media"
+        // Find retainer toggle button by text content (FR or EN)
         var allButtons = document.querySelectorAll('button');
         var toggleBtn = null;
         allButtons.forEach(function (btn) {
-            if (btn.textContent.trim().indexOf('Include Social Media') !== -1 && !btn.id) {
+            var txt = btn.textContent.trim();
+            if ((txt.indexOf('Include Social Media') !== -1 || (txt.indexOf('Inclure') !== -1 && txt.indexOf('seaux Sociaux') !== -1)) && !btn.id) {
                 toggleBtn = btn;
             }
         });
@@ -1429,7 +1972,7 @@
         if (!descP) {
             var allP = retainerCard.querySelectorAll('p');
             allP.forEach(function(p) {
-                if (p.textContent.indexOf('Perfect for businesses') !== -1) descP = p;
+                if (p.textContent.indexOf('Perfect for businesses') !== -1 || p.textContent.indexOf('Parfait pour les entreprises') !== -1) descP = p;
             });
         }
 
@@ -1439,10 +1982,10 @@
 
         // Social features HTML to inject
         var socialFeaturesHTML = '<div class="retainer-social-features" style="display:none">' +
-            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg><span class="text-[var(--color-primary-orange)]">Professional social media management</span></div>' +
-            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><span class="text-[var(--color-primary-orange)]">Content creation for all platforms</span></div>' +
-            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg><span class="text-[var(--color-primary-orange)]">Strategic posting & scheduling</span></div>' +
-            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg><span class="text-[var(--color-primary-orange)]">Monthly analytics & growth reports</span></div>' +
+            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg><span class="text-[var(--color-primary-orange)]">Gestion professionnelle des réseaux sociaux</span></div>' +
+            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><span class="text-[var(--color-primary-orange)]">Création de contenu pour toutes les plateformes</span></div>' +
+            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg><span class="text-[var(--color-primary-orange)]">Publication stratégique & planification</span></div>' +
+            '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg><span class="text-[var(--color-primary-orange)]">Rapports mensuels d\'analytique & croissance</span></div>' +
             '</div>';
 
         // Inject social features at the top of the features container
@@ -1496,7 +2039,7 @@
                     }
                 }
                 if (descP) {
-                    descP.textContent = 'Complete digital transformation with social media management and content strategy.';
+                    descP.textContent = 'Transformation digitale complète avec gestion des réseaux sociaux et stratégie de contenu.';
                 }
                 if (socialFeatures) {
                     socialFeatures.style.display = '';
@@ -1525,7 +2068,7 @@
                 var badge = titleH3 ? titleH3.querySelector('.retainer-social-badge') : null;
                 if (badge) badge.remove();
                 if (descP) {
-                    descP.textContent = 'Perfect for businesses needing ongoing AI features, dashboards, and website improvements.';
+                    descP.textContent = 'Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d\'améliorations de site web.';
                 }
                 if (socialFeatures) {
                     socialFeatures.style.display = 'none';
@@ -1534,6 +2077,45 @@
         });
     })();
 
+
+    /* ── Count-Up Animation for .count-up elements (service hero stats) ── */
+    (function () {
+        var countEls = document.querySelectorAll('.count-up[data-target]');
+        if (!countEls.length) return;
+
+        function animateCountUp(el, target) {
+            var duration = 2000;
+            var increment = target / (duration / 16);
+            var current = 0;
+            var timer = setInterval(function () {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current) + '+';
+                }
+            }, 16);
+        }
+
+        if ('IntersectionObserver' in window) {
+            countEls.forEach(function (el) {
+                var animated = false;
+                var obs = new IntersectionObserver(function (entries) {
+                    if (entries[0].isIntersecting && !animated) {
+                        animated = true;
+                        animateCountUp(el, parseInt(el.getAttribute('data-target'), 10));
+                        obs.disconnect();
+                    }
+                }, {threshold: 0.1});
+                obs.observe(el);
+            });
+        } else {
+            countEls.forEach(function (el) {
+                el.textContent = el.getAttribute('data-target') + '+';
+            });
+        }
+    })();
 
     /* ── Count-Up Animation (location + service pages) ───────────────── */
     (function () {
@@ -1665,6 +2247,49 @@
                 }
             }, 16);
         }
+    })();
+
+    /* ── Count-Up Animation for static trust stats (location pages) ──── */
+    (function () {
+        // Matches spans like "50+ Projets Livrés", "100+ Prospects", "35+ Clients"
+        var trustStatSpans = document.querySelectorAll('span.font-semibold.whitespace-nowrap');
+        if (!trustStatSpans.length) return;
+
+        var statPattern = /^(\d+)\+\s+(.+)$/;
+
+        trustStatSpans.forEach(function (span) {
+            var text = span.textContent.trim();
+            var match = text.match(statPattern);
+            if (!match) return;
+
+            var target = parseInt(match[1], 10);
+            var label = match[2];
+
+            // Set initial state
+            span.textContent = '0+ ' + label;
+
+            var animated = false;
+            var observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting && !animated) {
+                    animated = true;
+                    var duration = 2000;
+                    var increment = target / (duration / 16);
+                    var current = 0;
+                    var timer = setInterval(function () {
+                        current += increment;
+                        if (current >= target) {
+                            span.textContent = target + '+ ' + label;
+                            clearInterval(timer);
+                        } else {
+                            span.textContent = Math.floor(current) + '+ ' + label;
+                        }
+                    }, 16);
+                    observer.disconnect();
+                }
+            }, {threshold: 0.1});
+
+            observer.observe(span);
+        });
     })();
 
 })();

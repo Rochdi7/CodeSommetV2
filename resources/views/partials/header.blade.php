@@ -1,9 +1,9 @@
-{{-- Desktop Header - Hidden on mobile (lg:block) --}}
+{{-- En-tête de bureau - masqué sur mobile (lg:block) --}}
 <header class="fixed top-6 left-0 right-0 z-40 hidden lg:block px-6 transition-all duration-500 ease-out">
     <div class="flex justify-center items-center gap-3">
         <div class="relative flex items-center gap-4 px-3 py-2 rounded-full transition-all duration-300 bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)]">
 
-            {{-- Animated gradient overlay --}}
+            {{-- Superposition dégradée animée --}}
             <div class="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
                 <div class="absolute top-0 left-0 h-full" style="background:linear-gradient(90deg, transparent 0%, rgba(0,174,239,0.08) 40%, rgba(0,174,239,0.12) 50%, rgba(0,174,239,0.08) 60%, transparent 100%);width:200%;animation:nav-sweep 4s ease-in-out infinite"></div>
             </div>
@@ -46,7 +46,7 @@
                 @endforeach
             </nav>
 
-            {{-- CTA Buttons --}}
+            {{-- Boutons CTA --}}
             <div class="flex items-center gap-2 pr-2 relative z-10">
                 <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 hover:bg-white hover:from-white hover:to-white hover:text-[var(--color-primary-orange)] hover:border hover:border-[var(--color-primary-orange)]"
                    href="{{ route('get-quote') }}">
@@ -61,7 +61,7 @@
 
         </div>
 
-        {{-- Language Switcher --}}
+        {{-- Sélecteur de langue --}}
         <div class="relative" id="lang-switcher">
             <button onclick="document.getElementById('lang-dropdown').classList.toggle('hidden'); document.getElementById('lang-dropdown').classList.toggle('lang-dropdown-open')"
                     class="w-11 h-11 rounded-full flex items-center justify-center bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] transition-all duration-200 hover:-translate-y-0.5">
@@ -72,11 +72,11 @@
                 </svg>
             </button>
 
-            {{-- Dropdown --}}
+            {{-- Menu déroulant --}}
             <div id="lang-dropdown"
                  class="hidden absolute right-0 top-full mt-2 w-44 rounded-2xl bg-white/95 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_8px_30px_rgba(0,0,0,0.1)] py-2 z-50 transition-all duration-200 origin-top-right">
 
-                {{-- English --}}
+                {{-- Anglais --}}
                 <a href="?lang=en" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
                     <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                         <svg viewBox="0 0 60 30" class="w-5 h-auto">
@@ -91,7 +91,7 @@
                             </g>
                         </svg>
                     </span>
-                    <span class="text-sm font-medium text-[var(--text-primary)]">English</span>
+                    <span class="text-sm font-medium text-[var(--text-primary)]">Anglais</span>
                 </a>
 
                 {{-- French --}}
@@ -106,7 +106,7 @@
                     <span class="text-sm font-medium text-[var(--text-primary)]">Français</span>
                 </a>
 
-                {{-- Arabic --}}
+                {{-- Arabe --}}
                 <a href="?lang=ar" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
                     <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                         <svg viewBox="0 0 1200 800" class="w-5 h-auto">

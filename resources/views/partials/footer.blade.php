@@ -1,8 +1,8 @@
-{{-- Footer --}}
+{{-- Pied de page --}}
 <footer class="relative bg-black text-white overflow-hidden min-h-[600px]">
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 h-full min-h-[600px]">
 
-        {{-- Background SVG "codesommet" text --}}
+        {{-- Texte SVG d'arrière-plan "codesommet" --}}
         <div class="absolute bottom-0 left-0 pointer-events-none w-full flex justify-center md:justify-start">
             <svg viewBox="0 0 1600 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMax meet" aria-hidden="true" class="h-auto will-change-transform">
                 <defs>
@@ -17,10 +17,10 @@
 
         <div class="relative z-10 pt-16 pb-8">
 
-            {{-- Top section: Brand + Navigation Columns --}}
+            {{-- Section supérieure : marque + colonnes de navigation --}}
             <div class="md:flex md:gap-12 lg:gap-20 mb-16">
 
-                {{-- Brand Block --}}
+                {{-- Bloc marque --}}
                 <div class="space-y-6 mb-12 md:mb-0 md:max-w-sm flex-shrink-0">
                     <a class="inline-flex items-center gap-1" href="{{ route('home') }}">
                         <div class="w-10 h-10">
@@ -33,17 +33,17 @@
                     </p>
                 </div>
 
-                {{-- Navigation Columns --}}
+                {{-- Colonnes de navigation --}}
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 lg:gap-8 mb-12 md:mb-0 flex-1">
 
-                    {{-- Locations --}}
+                    {{-- Villes --}}
                     <div class="space-y-4">
                         <h3 class="text-base font-medium text-[#E0E0E0]">Emplacements</h3>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'casablanca') }}">Casablanca</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'marrakech') }}">Marrakech</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'rabat') }}">Rabat</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'tangier') }}">Tangier</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'tangier') }}">Tanger</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'worldwide') }}">International</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('locations') }}">Tous les Emplacements →</a></li>
                         </ul>
@@ -77,7 +77,7 @@
                         </ul>
                     </div>
 
-                    {{-- Legal --}}
+                    {{-- Légal --}}
                     <div class="space-y-4">
                         <h3 class="text-base font-medium text-[#E0E0E0]">Légal</h3>
                         <ul class="space-y-2.5">
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            {{-- Social Icons --}}
+            {{-- Icônes sociales --}}
             <div class="flex justify-center md:justify-end items-center mb-32 md:mb-0">
                 <div class="flex items-center gap-3">
                     {{-- LinkedIn --}}

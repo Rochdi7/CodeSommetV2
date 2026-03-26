@@ -1,17 +1,17 @@
-{{-- SECTION: How to Get Started in 3 Simple Steps --}}
+{{-- SECTION: Comment Commencer en 3 étapes Simples --}}
 <section id="process" class="py-16 md:py-24 bg-[#F5F5F5] relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
         <div class="text-center mb-12 md:mb-16">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style="font-family: var(--font-heading);">How to Get Started in 3 Simple Steps</h2>
-            <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">From first call to project delivery - see exactly how we work together</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style="font-family: var(--font-heading);">Comment Commencer en 3 étapes Simples</h2>
+            <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">Du premier appel à la livraison du projet, voyez exactement comment nous travaillons ensemble</p>
         </div>
 
-        {{-- Mobile: Stacked cards with embedded visuals --}}
+        {{-- Mobile : cartes empilées avec visuels intégrés --}}
         <div class="lg:hidden space-y-8">
-            {{-- Step 1: Choose Your Plan --}}
+            {{-- étape 1 : choisissez votre formule --}}
             <div id="mob-step1" class="bg-white rounded-3xl p-6 shadow-lg overflow-hidden">
                 <div class="mb-6">
-                    <div class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-[var(--text-primary)] text-white">Step 1</div>
+                    <div class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-[var(--text-primary)] text-white">Étape 1</div>
                 </div>
                 <div class="mb-6 overflow-hidden relative" style="height: 320px;">
                     <div class="absolute inset-0 flex items-center justify-center">
@@ -21,34 +21,34 @@
                                 <div id="mob-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-2xl border border-gray-200 shadow-lg" style="width: 200px; height: 270px; padding: 16px; transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(0.9); opacity: 0;">
                                     <h3 class="font-semibold mb-3 italic text-base" style="font-family: var(--font-heading);">Retainer</h3>
                                     <div class="space-y-1.5 text-xs text-gray-600">
-                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">1 active project</div>
-                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Unlimited revisions</div>
-                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Design &amp; development</div>
-                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">SEO &amp; content</div>
+                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">1 projet actif</div>
+                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
+                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Design &amp; développement</div>
+                                        <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">SEO &amp; contenu</div>
                                     </div>
                                 </div>
-                                {{-- Website Development card (front) --}}
+                                {{-- Développement de Site Web card (front) --}}
                                 <div id="mob-website" class="absolute top-1/2 left-1/2 bg-gradient-to-br from-black to-[#1A1A1A] rounded-2xl overflow-hidden shadow-xl" style="width: 200px; height: 270px; transform: translateX(-50%) translateY(-50%) scale(0.9); opacity: 0;">
                                     {{-- Plan details (visible initially) --}}
                                     <div id="mob-plan-details" style="padding: 16px;">
                                         <div class="flex items-center gap-2 mb-2">
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" class="text-white"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                            <span class="text-xs text-white/90 font-medium italic">Recommended</span>
+                                            <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                         </div>
-                                        <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);">Website Development</h3>
+                                        <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);">Développement de Site Web</h3>
                                         <div class="space-y-1.5 text-xs">
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Custom landing page</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Full development</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">SEO optimization</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">7-10 day delivery</div>
-                                            <div id="mob-book-btn" class="w-full py-1.5 px-2.5 rounded-xl font-medium text-center text-xs bg-white text-gray-900">Book your Slot</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Page d'atterrissage sur mesure</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 7-10 jours</div>
+                                            <div id="mob-book-btn" class="w-full py-1.5 px-2.5 rounded-xl font-medium text-center text-xs bg-white text-gray-900">Réservez votre Créneau</div>
                                         </div>
                                     </div>
                                     {{-- "You have done your part" state --}}
                                     <div id="mob-plan-done" class="absolute inset-0 flex flex-col items-center justify-center" style="padding: 16px; opacity: 0;">
                                         <div class="flex items-center gap-2 mb-3">
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" class="text-white"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                            <span class="text-xs text-white/90 font-medium">Recommended</span>
+                                            <span class="text-xs text-white/90 font-medium">Recommandé</span>
                                         </div>
                                         <div class="flex justify-center mb-4">
                                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="text-white process-spin-icon">
@@ -56,9 +56,9 @@
                                             </svg>
                                         </div>
                                         <div class="text-center space-y-2">
-                                            <h3 class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);">You have done<br>your part</h3>
+                                            <h3 class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);">Vous avez fait<br>votre part</h3>
                                             <div class="bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2">
-                                                <p class="text-white font-medium text-sm">It's our turn now</p>
+                                                <p class="text-white font-medium text-sm">C'est notre tour maintenant</p>
                                             </div>
                                         </div>
                                     </div>
@@ -72,48 +72,48 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Choose Your Plan</h3>
-                    <p class="text-base text-gray-600 leading-relaxed">Select Website Development or Monthly Retainer tailored to your needs</p>
+                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Choisissez Votre Formule</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Sélectionnez Développement de Site Web ou le forfait mensuel adapté à vos besoins</p>
                 </div>
             </div>
 
-            {{-- Step 2: Submit Your Request --}}
+            {{-- étape 2 : soumettez votre demande --}}
             <div id="mob-step2" class="bg-white rounded-3xl p-6 shadow-lg overflow-hidden">
                 <div class="mb-6">
-                    <div class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-[var(--text-primary)] text-white">Step 2</div>
+                    <div class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-[var(--text-primary)] text-white">Étape 2</div>
                 </div>
                 <div class="mb-6 overflow-hidden relative" style="height: 400px;">
                     <div class="max-w-full mx-auto absolute inset-0 flex items-center justify-center" style="max-width: 300px;">
                         <div id="mob-backlog-card" class="bg-white rounded-2xl shadow-xl border border-gray-200 w-full p-5" style="transform: rotate(-3deg);">
-                            <h3 class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);">Your Design Backlogs</h3>
+                            <h3 class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);">Vos Tâches de Design</h3>
                             <div id="mob-backlog-list" class="space-y-2 relative">
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">Pitch deck for Client</span>
+                                        <span class="text-xs font-medium text-gray-700">Pitch deck pour le client</span>
                                     </div>
-                                    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Request</span>
+                                    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Demande</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">New infographics for Instagram</span>
+                                        <span class="text-xs font-medium text-gray-700">Nouvelles infographies pour Instagram</span>
                                     </div>
-                                    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Request</span>
+                                    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Demande</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-300 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">Add a contact page</span>
+                                        <span class="text-xs font-medium text-gray-700">Ajouter une page contact</span>
                                     </div>
                                     <span class="text-xs px-2 py-0.5 rounded-full bg-[#00AEEF]/10 text-[var(--color-primary-orange)] font-medium">Urgent</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">New Logo</span>
+                                        <span class="text-xs font-medium text-gray-700">Nouveau Logo</span>
                                     </div>
-                                    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Request</span>
+                                    <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Demande</span>
                                 </div>
                                 {{-- Animated cursor --}}
                                 <div id="mob-backlog-cursor" class="absolute pointer-events-none z-20" style="left:20px; top:20px; opacity:0;">
@@ -124,15 +124,15 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Submit Your Request</h3>
-                    <p class="text-base text-gray-600 leading-relaxed">Share your requirements and we'll prioritize your tasks</p>
+                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Soumettez Votre Demande</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Partagez vos besoins et nous prioriserons vos tâches</p>
                 </div>
             </div>
 
-            {{-- Step 3: Watch Us Deliver --}}
+            {{-- étape 3 : regardez-nous livrer --}}
             <div id="mob-step3" class="bg-white rounded-3xl p-6 shadow-lg overflow-hidden">
                 <div class="mb-6">
-                    <div class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-[var(--text-primary)] text-white">Step 3</div>
+                    <div class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-[var(--text-primary)] text-white">Étape 3</div>
                 </div>
                 <div class="mb-6 overflow-hidden relative" style="height: 400px;">
                     <div class="max-w-full mx-auto absolute inset-0 flex items-center justify-center" style="max-width: 300px;">
@@ -142,12 +142,12 @@
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="text-white"><path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);">Project Tasks</h3>
-                                    <p class="text-xs text-gray-500">Your design backlog</p>
+                                    <h3 class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);">Tâches du Projet</h3>
+                                    <p class="text-xs text-gray-500">Vos tâches de design</p>
                                 </div>
                             </div>
                             <div id="mob-checklist-list" class="space-y-2 relative">
-                                @foreach(['Design Homepage', 'Create Brand Assets', 'Develop Components', 'Final Review'] as $task)
+                                @foreach(['Designer la Page d\'Accueil', 'Créer les Éléments de Marque', 'Développer les Composants', 'Revue Finale'] as $task)
                                 <div class="mob-checklist-item flex items-center gap-2 rounded-xl p-2">
                                     <div class="mob-check-box w-5 h-5 rounded-md border-2 border-gray-300 flex items-center justify-center flex-shrink-0">
                                         <svg class="mob-check-icon w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" style="opacity:0; transform:scale(0);"><path d="M5 12L10 17L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="pt-4 border-t border-gray-100 mt-4">
                                 <div class="flex items-center justify-between mb-2">
-                                    <span class="text-xs font-medium text-gray-600">Progress</span>
+                                    <span class="text-xs font-medium text-gray-600">Progression</span>
                                     <span id="mob-progress-count" class="text-xs font-semibold text-gray-900">0/4</span>
                                 </div>
                                 <div class="w-full bg-gray-100 rounded-full overflow-hidden h-1.5">
@@ -173,8 +173,8 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Watch Us Deliver</h3>
-                    <p class="text-base text-gray-600 leading-relaxed">Track progress in real-time as we complete your project</p>
+                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Regardez-nous Livrer</h3>
+                    <p class="text-base text-gray-600 leading-relaxed">Suivez l'avancement en temps réel pendant que nous réalisons votre projet</p>
                 </div>
             </div>
         </div>
@@ -190,34 +190,34 @@
                         <div id="plan-card-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-3xl border border-gray-200 shadow-lg" style="width:300px;height:400px;padding:28px;transform:translateX(-90%) translateY(-35%) rotate(-8deg)">
                             <h3 class="font-semibold mb-6 italic text-2xl" style="font-family:var(--font-heading)">Retainer</h3>
                             <div class="space-y-3 text-sm text-gray-600">
-                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">1 active project</div>
-                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">Unlimited revisions</div>
-                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">Design &amp; development</div>
-                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">SEO &amp; content</div>
+                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">1 projet actif</div>
+                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
+                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">Design &amp; développement</div>
+                                <div class="py-2 px-4 bg-gray-50 rounded-xl italic">SEO &amp; contenu</div>
                             </div>
                         </div>
-                        {{-- Website Development card (front) --}}
+                        {{-- Développement de Site Web card (front) --}}
                         <div id="plan-card-website" class="absolute top-1/2 left-1/2 bg-gradient-to-br from-black to-[#1A1A1A] rounded-3xl overflow-hidden shadow-xl" style="width:300px;height:400px;transform:translateX(-50%) translateY(-50%)">
                             {{-- Plan details (visible initially) --}}
                             <div id="plan-details" class="transition-opacity duration-500" style="padding:28px">
                                 <div class="flex items-center gap-2 mb-4">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-white"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                    <span class="text-xs text-white/90 font-medium italic">Recommended</span>
+                                    <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                 </div>
-                                <h3 class="font-semibold mb-6 text-white italic text-3xl" style="font-family:var(--font-heading)">Website Development</h3>
+                                <h3 class="font-semibold mb-6 text-white italic text-3xl" style="font-family:var(--font-heading)">Développement de Site Web</h3>
                                 <div class="space-y-3 text-sm">
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Custom landing page</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Full development</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">SEO optimization</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">7-10 day delivery</div>
-                                    <div id="plan-book-btn" class="w-full py-3 px-4 rounded-xl font-medium text-center transition-colors bg-white text-gray-900">Book your Slot</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Page d'atterrissage sur mesure</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 7-10 jours</div>
+                                    <div id="plan-book-btn" class="w-full py-3 px-4 rounded-xl font-medium text-center transition-colors bg-white text-gray-900">Réservez votre Créneau</div>
                                 </div>
                             </div>
                             {{-- "You have done your part" state (hidden initially) --}}
                             <div id="plan-done" class="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-500 opacity-0 pointer-events-none" style="padding:28px">
                                 <div class="flex items-center gap-2 mb-6">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-white"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                    <span class="text-xs text-white/90 font-medium">Recommended</span>
+                                    <span class="text-xs text-white/90 font-medium">Recommandé</span>
                                 </div>
                                 <div class="flex justify-center mb-8">
                                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" class="text-white process-spin-icon">
@@ -225,9 +225,9 @@
                                     </svg>
                                 </div>
                                 <div class="text-center space-y-4">
-                                    <h3 class="font-bold text-white leading-snug text-2xl" style="font-family:var(--font-heading)">You have done<br>your part</h3>
+                                    <h3 class="font-bold text-white leading-snug text-2xl" style="font-family:var(--font-heading)">Vous avez fait<br>votre part</h3>
                                     <div class="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4">
-                                        <p class="text-white font-medium text-base">It's our turn now</p>
+                                        <p class="text-white font-medium text-base">C'est notre tour maintenant</p>
                                     </div>
                                 </div>
                             </div>
@@ -242,13 +242,13 @@
                 {{-- STATE 2: Design Backlogs card (Step 2) --}}
                 <div id="process-card-2" class="process-card-state absolute inset-0 flex items-center justify-center transition-all duration-700 ease-out opacity-0 pointer-events-none" style="transform:translateY(30px)">
                     <div class="bg-white rounded-3xl shadow-xl border border-gray-200 w-full max-w-md p-6" style="transform:rotate(-5deg)">
-                        <h3 class="font-semibold text-xl mb-4 text-gray-900" style="font-family:var(--font-heading)">Your Design Backlogs</h3>
+                        <h3 class="font-semibold text-xl mb-4 text-gray-900" style="font-family:var(--font-heading)">Vos Tâches de Design</h3>
                         <div class="space-y-3 relative backlog-list">
                             @foreach([
-                                ['title' => 'Pitch deck for Client', 'tag' => 'Request', 'urgent' => false],
-                                ['title' => 'New infographics for Instagram', 'tag' => 'Request', 'urgent' => false],
-                                ['title' => 'Add a contact page', 'tag' => 'Urgent', 'urgent' => true],
-                                ['title' => 'New Logo', 'tag' => 'Request', 'urgent' => false],
+                                ['title' => 'Pitch deck pour le client', 'tag' => 'Demande', 'urgent' => false],
+                                ['title' => 'Nouvelles infographies pour Instagram', 'tag' => 'Demande', 'urgent' => false],
+                                ['title' => 'Ajouter une page contact', 'tag' => 'Urgent', 'urgent' => true],
+                                ['title' => 'Nouveau Logo', 'tag' => 'Demande', 'urgent' => false],
                             ] as $task)
                             <div class="backlog-item flex items-center justify-between p-4 rounded-xl border-2 {{ $task['urgent'] ? 'border-gray-300' : 'border-gray-200' }} bg-gray-50">
                                 <div class="flex items-center gap-3">
@@ -274,12 +274,12 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-white"><path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-gray-900 text-base" style="font-family:var(--font-heading)">Project Tasks</h3>
-                                <p class="text-xs text-gray-500">Your design backlog</p>
+                                <h3 class="font-semibold text-gray-900 text-base" style="font-family:var(--font-heading)">Tâches du Projet</h3>
+                                <p class="text-xs text-gray-500">Vos tâches de design</p>
                             </div>
                         </div>
                         <div class="space-y-3 relative checklist-list">
-                            @foreach(['Design Homepage', 'Create Brand Assets', 'Develop Components', 'Final Review'] as $task)
+                            @foreach(['Designer la Page d\'Accueil', 'Créer les Éléments de Marque', 'Développer les Composants', 'Revue Finale'] as $task)
                             <div class="checklist-item flex items-center gap-3 rounded-xl hover:bg-gray-50 transition-colors p-3">
                                 <div class="checklist-box w-6 h-6 rounded-md border-2 border-gray-300 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                                     <svg class="checklist-check w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" style="opacity:0;transform:scale(0)"><path d="M5 12L10 17L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -294,7 +294,7 @@
                         </div>
                         <div class="pt-4 border-t border-gray-100 mt-6">
                             <div class="flex items-center justify-between mb-2">
-                                <span class="text-xs font-medium text-gray-600">Progress</span>
+                                <span class="text-xs font-medium text-gray-600">Progression</span>
                                 <span class="text-xs font-semibold text-gray-900">4/4</span>
                             </div>
                             <div class="w-full bg-gray-100 rounded-full overflow-hidden h-2">
@@ -309,25 +309,25 @@
             <div class="space-y-4">
                 <div class="process-step relative p-6 rounded-xl cursor-pointer transition-all duration-300 bg-white shadow-lg scale-[1.02]" data-step="1">
                     <div class="space-y-2.5">
-                        <div class="process-step-badge inline-block px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 bg-[var(--text-primary)] text-white">Step 1</div>
-                        <h3 class="process-step-title text-xl font-semibold transition-colors duration-300 text-[var(--text-primary)]" style="font-family:var(--font-heading)">Choose Your Plan</h3>
-                        <p class="process-step-desc text-base leading-relaxed transition-colors duration-300 text-gray-600">Select Website Development or Monthly Retainer tailored to your needs</p>
+                        <div class="process-step-badge inline-block px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 bg-[var(--text-primary)] text-white">Étape 1</div>
+                        <h3 class="process-step-title text-xl font-semibold transition-colors duration-300 text-[var(--text-primary)]" style="font-family:var(--font-heading)">Choisissez Votre Formule</h3>
+                        <p class="process-step-desc text-base leading-relaxed transition-colors duration-300 text-gray-600">Sélectionnez Développement de Site Web ou le forfait mensuel adapté à vos besoins</p>
                     </div>
                     <div class="process-step-bar absolute left-0 top-1/2 -translate-y-1/2 w-1 h-12 bg-[var(--text-primary)] rounded-r-full transition-opacity duration-300 opacity-100"></div>
                 </div>
                 <div class="process-step relative p-6 rounded-xl cursor-pointer transition-all duration-300 bg-gray-50 hover:bg-white hover:shadow-md" data-step="2">
                     <div class="space-y-2.5">
-                        <div class="process-step-badge inline-block px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 bg-gray-200 text-gray-600">Step 2</div>
-                        <h3 class="process-step-title text-xl font-semibold transition-colors duration-300 text-gray-700" style="font-family:var(--font-heading)">Submit Your Request</h3>
-                        <p class="process-step-desc text-base leading-relaxed transition-colors duration-300 text-gray-500">Share your requirements and we'll prioritize your tasks</p>
+                        <div class="process-step-badge inline-block px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 bg-gray-200 text-gray-600">Étape 2</div>
+                        <h3 class="process-step-title text-xl font-semibold transition-colors duration-300 text-gray-700" style="font-family:var(--font-heading)">Soumettez Votre Demande</h3>
+                        <p class="process-step-desc text-base leading-relaxed transition-colors duration-300 text-gray-500">Partagez vos besoins et nous prioriserons vos tâches</p>
                     </div>
                     <div class="process-step-bar absolute left-0 top-1/2 -translate-y-1/2 w-1 h-12 bg-[var(--text-primary)] rounded-r-full transition-opacity duration-300 opacity-0"></div>
                 </div>
                 <div class="process-step relative p-6 rounded-xl cursor-pointer transition-all duration-300 bg-gray-50 hover:bg-white hover:shadow-md" data-step="3">
                     <div class="space-y-2.5">
-                        <div class="process-step-badge inline-block px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 bg-gray-200 text-gray-600">Step 3</div>
-                        <h3 class="process-step-title text-xl font-semibold transition-colors duration-300 text-gray-700" style="font-family:var(--font-heading)">Watch Us Deliver</h3>
-                        <p class="process-step-desc text-base leading-relaxed transition-colors duration-300 text-gray-500">Track progress in real-time as we complete your project</p>
+                        <div class="process-step-badge inline-block px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-300 bg-gray-200 text-gray-600">Étape 3</div>
+                        <h3 class="process-step-title text-xl font-semibold transition-colors duration-300 text-gray-700" style="font-family:var(--font-heading)">Regardez-nous Livrer</h3>
+                        <p class="process-step-desc text-base leading-relaxed transition-colors duration-300 text-gray-500">Suivez l'avancement en temps réel pendant que nous réalisons votre projet</p>
                     </div>
                     <div class="process-step-bar absolute left-0 top-1/2 -translate-y-1/2 w-1 h-12 bg-[var(--text-primary)] rounded-r-full transition-opacity duration-300 opacity-0"></div>
                 </div>
@@ -338,26 +338,26 @@
 
 
 {{-- ============================================== --}}
-{{-- SECTION 2: The Smart Investment Choice          --}}
+{{-- SECTION 2: Le Choix d'Investissement Intelligent --}}
 {{-- ============================================== --}}
 @php
     $comparisons = [
-        ['label' => 'Investment', 'codesommet' => 'Custom tailored pricing', 'designer' => 'High salary costs', 'agency' => 'Premium rates'],
-        ['label' => 'Delivery Speed', 'codesommet' => '48-72 hours', 'designer' => '2-3 weeks', 'agency' => '3-6 months'],
-        ['label' => 'Quality Guarantee', 'codesommet' => 'Unlimited revisions', 'designer' => 'Variable quality', 'agency' => '2-3 revision rounds'],
-        ['label' => 'Start Time', 'codesommet' => 'Within 24 hours', 'designer' => '4-8 weeks hiring', 'agency' => '2-4 weeks kickoff'],
-        ['label' => 'Scope', 'codesommet' => 'Full-service solution', 'designer' => 'Limited to skillset', 'agency' => 'Often requires multiple vendors'],
-        ['label' => 'Technology', 'codesommet' => 'Latest AI &amp; frameworks', 'designer' => 'Depends on individual', 'agency' => 'Varies by agency'],
-        ['label' => 'Industry Focus', 'codesommet' => 'Specialized expertise', 'designer' => 'General knowledge', 'agency' => 'Jack of all trades'],
-        ['label' => 'Flexibility', 'codesommet' => 'Pause or cancel anytime', 'designer' => 'Long-term commitment', 'agency' => 'Contract penalties'],
+        ['label' => 'Investissement', 'codesommet' => 'Tarification sur mesure', 'designer' => 'Coûts salariaux élevés', 'agency' => 'Tarifs premium'],
+        ['label' => 'Rapidité de Livraison', 'codesommet' => '48-72 heures', 'designer' => '2-3 semaines', 'agency' => '3-6 mois'],
+        ['label' => 'Garantie Qualité', 'codesommet' => 'Révisions illimitées', 'designer' => 'Qualité variable', 'agency' => '2-3 cycles de révision'],
+        ['label' => 'Délai de Démarrage', 'codesommet' => 'Sous 24 heures', 'designer' => '4-8 semaines de recrutement', 'agency' => '2-4 semaines de lancement'],
+        ['label' => 'Périmètre', 'codesommet' => 'Solution complète clé en main', 'designer' => 'Limité aux compétences', 'agency' => 'Nécessite souvent plusieurs prestataires'],
+        ['label' => 'Technologie', 'codesommet' => 'Dernières IA &amp; frameworks', 'designer' => 'Dépend de l\'individu', 'agency' => 'Varie selon l\'agence'],
+        ['label' => 'Spécialisation Sectorielle', 'codesommet' => 'Expertise spécialisée', 'designer' => 'Connaissances générales', 'agency' => 'Touche-à-tout'],
+        ['label' => 'Flexibilité', 'codesommet' => 'Pause ou annulation à tout moment', 'designer' => 'Engagement à long terme', 'agency' => 'Pénalités contractuelles'],
     ];
 @endphp
 <section class="py-24 bg-[#F5F5F5]">
     <div class="max-w-7xl mx-auto px-6">
         {{-- Section Header --}}
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="font-family: var(--font-heading);">The Smart Investment Choice</h2>
-            <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Compare your options and see why CodeSommet delivers the best value. <a href="{{ route('get-quote') }}" class="text-[var(--color-primary-orange)] font-semibold hover:underline">Request Your Free Quote</a></p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="font-family: var(--font-heading);">Le Choix d'Investissement Intelligent</h2>
+            <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Comparez vos options et découvrez pourquoi CodeSommet offre le meilleur rapport qualité-prix. <a href="{{ route('get-quote') }}" class="text-[var(--color-primary-orange)] font-semibold hover:underline">Demandez Votre Devis Gratuit</a></p>
         </div>
 
         {{-- Mobile: horizontal scroll table --}}
@@ -372,8 +372,8 @@
                             <h3 class="text-lg font-bold" style="font-family: var(--font-heading);">CodeSommet</h3>
                         </div>
                     </div>
-                    <div><h3 class="text-lg font-bold" style="font-family: var(--font-heading);">Full-time Designer</h3></div>
-                    <div><h3 class="text-lg font-bold" style="font-family: var(--font-heading);">Other agencies</h3></div>
+                    <div><h3 class="text-lg font-bold" style="font-family: var(--font-heading);">Designer à temps plein</h3></div>
+                    <div><h3 class="text-lg font-bold" style="font-family: var(--font-heading);">Autres agences</h3></div>
                 </div>
                 {{-- Table body --}}
                 <div class="relative bg-gray-100 rounded-[32px] p-[5px] mr-6">
@@ -419,8 +419,8 @@
                         <h3 class="text-xl font-bold" style="font-family: var(--font-heading);">CodeSommet</h3>
                     </div>
                 </div>
-                <div><h3 class="text-xl font-bold" style="font-family: var(--font-heading);">full-time Designer</h3></div>
-                <div><h3 class="text-xl font-bold" style="font-family: var(--font-heading);">Other agencies</h3></div>
+                <div><h3 class="text-xl font-bold" style="font-family: var(--font-heading);">Designer à temps plein</h3></div>
+                <div><h3 class="text-xl font-bold" style="font-family: var(--font-heading);">Autres agences</h3></div>
             </div>
             {{-- Table body --}}
             <div class="relative bg-gray-100 rounded-[32px] p-[5px]">
@@ -458,23 +458,23 @@
 
 
 {{-- ============================================== --}}
-{{-- SECTION 3: 6 Common Website Problems We Solve  --}}
+{{-- SECTION 3: 6 Problèmes Courants de Sites Web que Nous Résolvons --}}
 {{-- ============================================== --}}
 <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="text-center mb-16">
-            <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 max-w-4xl mx-auto text-3xl md:text-4xl lg:text-5xl">6 Common Website Problems We Solve</h2>
-            <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Transform challenges into opportunities with our proven solutions</p>
+            <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 max-w-4xl mx-auto text-3xl md:text-4xl lg:text-5xl">6 Problèmes Courants de Sites Web que Nous Résolvons</h2>
+            <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Transformez les défis en opportunités avec nos solutions éprouvées</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @php
                 $problems = [
-                    ['title' => '1. Poor User Experience', 'problem' => 'Slow loading, confusing navigation, and outdated design frustrate visitors.', 'solution' => 'Lightning-fast performance, intuitive UX, and modern design that delights users.'],
-                    ['title' => '2. No AI Integration', 'problem' => 'Missing out on AI capabilities that competitors are already using.', 'solution' => 'Smart chatbots, AI search, automation, and intelligent features built-in.'],
-                    ['title' => '3. Months of Waiting', 'problem' => 'Traditional agencies take 3-6 months while you lose opportunities.', 'solution' => 'Live in 7 days. Full website in 2-4 weeks. Start growing immediately.'],
-                    ['title' => '4. Unprofessional Brand', 'problem' => "Your website doesn't reflect your company's true value and expertise.", 'solution' => 'Premium design that establishes authority and builds instant trust.'],
-                    ['title' => '5. Unclear Pricing', 'problem' => 'Agencies hide costs until you\'re committed.', 'solution' => 'Transparent process. You know exactly what you get before you commit.'],
-                    ['title' => '6. Low Conversions', 'problem' => "Traffic doesn't convert. Visitors browse but don't take action.", 'solution' => 'Strategic CTAs, optimized forms, and conversion-focused design.'],
+                    ['title' => '1. Mauvaise Expérience Utilisateur', 'problem' => 'Chargement lent, navigation confuse et design obsolète qui frustrent les visiteurs.', 'solution' => 'Performance ultra-rapide, UX intuitive et design moderne qui ravit les utilisateurs.'],
+                    ['title' => '2. Pas d\'Intégration IA', 'problem' => 'Vous passez à côté des capacités IA que vos concurrents utilisent déjà.', 'solution' => 'Chatbots intelligents, recherche IA, automatisation et fonctionnalités intelligentes intégrées.'],
+                    ['title' => '3. Des Mois d\'Attente', 'problem' => 'Les agences traditionnelles prennent 3-6 mois pendant que vous perdez des opportunités.', 'solution' => 'En ligne en 7 jours. Site complet en 2-4 semaines. Commencez à croître immédiatement.'],
+                    ['title' => '4. Image de Marque Non Professionnelle', 'problem' => 'Votre site web ne reflète pas la vraie valeur et l\'expertise de votre entreprise.', 'solution' => 'Design premium qui établit l\'autorité et inspire confiance instantanément.'],
+                    ['title' => '5. Tarification Opaque', 'problem' => 'Les agences cachent les coûts jusqu\'à ce que vous soyez engagé.', 'solution' => 'Processus transparent. Vous savez exactement ce que vous obtenez avant de vous engager.'],
+                    ['title' => '6. Faible Taux de Conversion', 'problem' => 'Le trafic ne convertit pas. Les visiteurs naviguent mais ne passent pas à l\'action.', 'solution' => 'CTAs stratégiques, formulaires optimisés et design orienté conversion.'],
                 ];
             @endphp
 
@@ -487,12 +487,12 @@
                             <div>
                                 <h3 class="text-base font-semibold text-[var(--text-primary)] mb-3">{{ $item['title'] }}</h3>
                                 <div class="hidden md:block bg-[#F8F8F8] rounded-lg px-4 py-2 mb-3">
-                                    <p class="text-xs font-medium text-center text-[var(--text-primary)]">Problem</p>
+                                    <p class="text-xs font-medium text-center text-[var(--text-primary)]">Problème</p>
                                 </div>
                                 <p class="text-sm text-[var(--text-secondary)] leading-normal">{{ $item['problem'] }}</p>
                             </div>
                             <button class="md:hidden bg-[#F8F8F8] rounded-lg px-4 py-2 hover:bg-[#ECECEC] transition-colors">
-                                <p class="text-xs font-medium text-center text-[var(--text-primary)]">Tap to solve</p>
+                                <p class="text-xs font-medium text-center text-[var(--text-primary)]">Appuyez pour résoudre</p>
                             </button>
                         </div>
                     </div>
@@ -506,7 +506,7 @@
                                 <p class="text-sm text-[#CCCCCC] leading-normal">{{ $item['solution'] }}</p>
                             </div>
                             <button class="md:hidden bg-[#2A2A2A] rounded-lg px-4 py-2 hover:bg-[#3A3A3A] transition-colors">
-                                <p class="text-xs font-medium text-center text-white">Tap to close</p>
+                                <p class="text-xs font-medium text-center text-white">Appuyez pour fermer</p>
                             </button>
                         </div>
                     </div>
@@ -522,15 +522,15 @@
 <section id="pricing" class="relative w-full py-16 md:py-24 bg-[#F5F5F5]">
     <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-12 md:mb-16">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">Custom Solutions, Tailored for You</h2>
-            <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Book a discovery call to discuss your specific needs and get a custom quote</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">Solutions Personnalisées, Conçues pour Vous</h2>
+            <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour discuter de vos besoins et obtenir un devis personnalisé</p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
-            {{-- Website Development Card --}}
+            {{-- Développement de Site Web Card --}}
             <div class="relative bg-black rounded-[32px] p-3 text-white">
                 <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                     <div class="bg-[var(--color-primary-orange)] text-white px-4 py-1.5 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Recommended
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Recommandé
                     </div>
                 </div>
                 <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
@@ -539,14 +539,14 @@
                             <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor w-6 h-6 text-white" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
                             </div>
-                            <h3 class="text-3xl md:text-4xl font-bold text-white">Website Development</h3>
+                            <h3 class="text-3xl md:text-4xl font-bold text-white">Développement de Site Web</h3>
                         </div>
                     </div>
                     <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                        <p class="text-white/70">Complete website with AI features, dashboards, and premium design delivered in 7-10 days.</p>
+                        <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7 à 10 jours.</p>
                     </div>
                     <div class="divide-y divide-white/10">
-                        @foreach(['AI-powered features integration', 'Custom dashboard & user portal', 'Mobile-first responsive design', 'Professional content & copywriting', 'Advanced SEO & performance optimization', 'Authentication & user management', 'Payment integration ready', 'Analytics & conversion tracking'] as $feature)
+                        @foreach(['Intégration de fonctionnalités IA', 'Tableau de bord & portail utilisateur personnalisé', 'Design responsive mobile-first', 'Contenu professionnel & rédaction', 'SEO avancé & optimisation des performances', 'Authentification & gestion des utilisateurs', 'Intégration de paiement prête', 'Analytics & suivi des conversions'] as $feature)
                         <div class="flex items-start gap-3 py-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
                             <span class="text-white/80">{{ $feature }}</span>
@@ -554,23 +554,23 @@
                         @endforeach
                         <div class="flex items-start gap-3 py-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
-                            <span class="text-green-400 font-medium">Free hosting for 3 months included</span>
+                            <span class="text-green-400 font-medium">Hébergement gratuit pendant 3 mois inclus</span>
                         </div>
                     </div>
                 </div>
                 <div class="px-6 md:px-8 pb-3">
                     <div class="mb-6">
                         <div class="flex flex-col">
-                            <span class="text-lg md:text-xl font-medium text-white/70 mb-1">Investment</span>
+                            <span class="text-lg md:text-xl font-medium text-white/70 mb-1">Investissement</span>
                             <div class="flex items-end gap-2">
-                                <span class="text-3xl md:text-4xl font-bold">Custom Quote</span>
+                                <span class="text-3xl md:text-4xl font-bold">Devis Personnalisé</span>
                             </div>
-                            <p class="text-white/60 text-sm mt-2">Tailored to your project scope and goals</p>
+                            <p class="text-white/60 text-sm mt-2">Adapté à la portée et aux objectifs de votre projet</p>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <a class="flex-1 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors whitespace-nowrap text-center" href="{{ route('get-quote') }}">Get Your Free Quote</a>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connect on WhatsApp</a>
+                        <a class="flex-1 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors whitespace-nowrap text-center" href="{{ route('get-quote') }}">Obtenez Votre Devis Gratuit</a>
+                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -595,13 +595,13 @@
                             <div id="retainer-toggle-track" class="relative rounded-full transition-all duration-400 ease-out w-14 h-7 bg-black/20">
                                 <div id="retainer-toggle-dot" class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5"></div>
                             </div>
-                            <span id="retainer-toggle-text" class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out ml-2">Include Social Media</span>
+                            <span id="retainer-toggle-text" class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out ml-2">Inclure les Réseaux Sociaux</span>
                         </button>
                     </div>
                     {{-- Description --}}
                     <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3">
                         <svg id="retainer-desc-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 transition-all duration-300 text-black/40 flex-shrink-0 hidden" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
-                        <p id="retainer-desc-text" class="text-black/70 transition-all duration-300">Perfect for businesses needing ongoing AI features, dashboards, and website improvements.</p>
+                        <p id="retainer-desc-text" class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de site web.</p>
                     </div>
                     {{-- Features list --}}
                     <div class="divide-y divide-black/10">
@@ -609,23 +609,23 @@
                         <div id="retainer-social-features" class="hidden">
                             <div class="flex items-start gap-3 py-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
-                                <span class="text-[var(--color-primary-orange)]">Professional social media management</span>
+                                <span class="text-[var(--color-primary-orange)]">Gestion professionnelle des réseaux sociaux</span>
                             </div>
                             <div class="flex items-start gap-3 py-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
-                                <span class="text-[var(--color-primary-orange)]">Content creation for all platforms</span>
+                                <span class="text-[var(--color-primary-orange)]">Création de contenu pour toutes les plateformes</span>
                             </div>
                             <div class="flex items-start gap-3 py-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-                                <span class="text-[var(--color-primary-orange)]">Strategic posting & scheduling</span>
+                                <span class="text-[var(--color-primary-orange)]">Publication stratégique & planification</span>
                             </div>
                             <div class="flex items-start gap-3 py-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
-                                <span class="text-[var(--color-primary-orange)]">Monthly analytics & growth reports</span>
+                                <span class="text-[var(--color-primary-orange)]">Rapports mensuels d'analytics & de croissance</span>
                             </div>
                         </div>
                         {{-- Base retainer features --}}
-                        @foreach(['1 project at a time', 'Unlimited revisions until perfect', 'Full-stack development (frontend + backend)', 'Professional SEO & content strategy', 'Real-time collaboration on Slack', 'Premium hosting & maintenance'] as $feature)
+                        @foreach(['1 projet à la fois', 'Révisions illimitées jusqu\'à la perfection', 'Développement full-stack (frontend + backend)', 'SEO professionnel & stratégie de contenu', 'Collaboration en temps réel sur Slack', 'Hébergement premium & maintenance'] as $feature)
                         <div class="flex items-start gap-3 py-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
                             <span class="text-black/80">{{ $feature }}</span>
@@ -636,16 +636,16 @@
                 <div class="px-6 md:px-8 pb-3">
                     <div class="mb-6">
                         <div class="flex flex-col">
-                            <span class="text-lg md:text-xl font-medium text-black/60 mb-1">Investment</span>
+                            <span class="text-lg md:text-xl font-medium text-black/60 mb-1">Investissement</span>
                             <div class="flex items-end gap-2">
-                                <span class="text-3xl md:text-4xl font-bold">Contact for Custom Quote</span>
+                                <span class="text-3xl md:text-4xl font-bold">Contactez-nous pour un devis sur mesure</span>
                             </div>
-                            <p class="text-black/60 text-sm mt-2">Pause or cancel anytime</p>
+                            <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Book Discovery Call</button>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connect on WhatsApp</a>
+                        <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Réserver un Appel Découverte</button>
+                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -686,7 +686,7 @@
                     toggleText.style.marginLeft = '0';
                     descIcon.classList.remove('hidden', 'text-black/40');
                     descIcon.classList.add('text-[var(--color-primary-orange)]');
-                    descText.textContent = 'Complete digital transformation with social media management and content strategy.';
+                    descText.textContent = 'Transformation digitale complète avec gestion des réseaux sociaux et stratégie de contenu.';
                     socialFeatures.classList.remove('hidden');
                 } else {
                     // Deactivate social
@@ -708,7 +708,7 @@
                     toggleText.classList.add('ml-2');
                     descIcon.classList.add('hidden', 'text-black/40');
                     descIcon.classList.remove('text-[var(--color-primary-orange)]');
-                    descText.textContent = 'Perfect for businesses needing ongoing AI features, dashboards, and website improvements.';
+                    descText.textContent = 'Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d\'améliorations de site web.';
                     socialFeatures.classList.add('hidden');
                 }
             }
@@ -723,14 +723,14 @@
     <div class="max-w-7xl mx-auto relative">
         <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 py-8 md:py-12 isolate bg-black" style="z-index: 1;">
             <div class="relative z-10 text-center space-y-4 md:space-y-6">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white" style="font-family: var(--font-display);">Month Too Busy? Pause Anytime.</h2>
-                <p class="text-base md:text-lg text-white/60 max-w-2xl mx-auto">Zero penalties. Resume when ready. Your subscription, your rules.</p>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white" style="font-family: var(--font-display);">Un Mois Trop Chargé ? Mettez en Pause à Tout Moment.</h2>
+                <p class="text-base md:text-lg text-white/60 max-w-2xl mx-auto">Zéro pénalité. Reprenez quand vous voulez. Votre abonnement, vos règles.</p>
                 <div class="flex justify-center pt-2">
                     <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="relative z-10 flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-5 h-5 text-black fill-black" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
                         </div>
-                        <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black">Start Risk-Free Today</span>
+                        <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black">Commencez Sans Risque Aujourd'hui</span>
                     </button>
                 </div>
             </div>
@@ -750,7 +750,7 @@
             <div class="absolute inset-0 z-[1]" style="background: radial-gradient(70% 70%, transparent 0%, transparent 10%, rgba(10, 10, 10, 0.15) 25%, rgba(10, 10, 10, 0.35) 40%, rgba(10, 10, 10, 0.6) 60%, rgba(10, 10, 10, 0.85) 80%, rgba(10, 10, 10, 0.95) 100%);"></div>
 
             <div class="relative z-10 text-center space-y-3 md:space-y-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family: var(--font-display);">Ready to Build Something Extraordinary?</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family: var(--font-display);">Prêt à Construire Quelque Chose d'Extraordinaire ?</h2>
 
                 <div class="flex flex-col items-center gap-4 md:gap-6">
                     {{-- Mobile CTAs --}}
@@ -761,13 +761,13 @@
                             <div class="relative z-10 flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-black" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
                             </div>
-                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Book Discovery Call</span>
+                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Réserver un Appel Découverte</span>
                         </a>
                         <a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" href="{{ route('tool', 'website-analyzer') }}" style="border-radius: 118px;">
                             <div class="relative z-10 flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
                             </div>
-                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analyze Your Website</span>
+                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analysez Votre Site Web</span>
                         </a>
                     </div>
 
@@ -779,13 +779,13 @@
                             <div class="relative z-10 flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-black" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
                             </div>
-                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Book Discovery Call</span>
+                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Réserver un Appel Découverte</span>
                         </button>
                         <a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" href="{{ route('tool', 'website-analyzer') }}" style="border-radius: 118px;">
                             <div class="relative z-10 flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
                             </div>
-                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analyze Your Website</span>
+                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analysez Votre Site Web</span>
                         </a>
                     </div>
 
@@ -796,14 +796,14 @@
                                 <svg width="20" height="19" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-lg"><path d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z" fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-miterlimit="10"></path></svg>
                             </div>
                             <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size: 10px;">
-                                <span class="text-white font-medium whitespace-nowrap">Just click</span>
+                                <span class="text-white font-medium whitespace-nowrap">Cliquez ici</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <p class="text-base md:text-lg text-white/70 font-medium">Join forward-thinking companies who chose excellence</p>
-                <p class="text-sm md:text-base text-white/50">Let's discuss how AI and modern design can elevate your business</p>
+                <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises visionnaires qui ont choisi l'excellence</p>
+                <p class="text-sm md:text-base text-white/50">Discutons de la manière dont l'IA et le design moderne peuvent faire évoluer votre activité</p>
 
                 {{-- Technology pills marquee --}}
                 <div class="mt-6">
@@ -813,7 +813,7 @@
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="will-change: transform;">
                                     @for($i = 0; $i < 3; $i++)
-                                    @foreach(['AI Chatbots', 'Dashboards', 'Automation', 'SEO', 'Analytics', 'Authentication', 'Payments', 'CMS'] as $kw)
+                                    @foreach(['Chatbots IA', 'Tableaux de bord', 'Automatisation', 'SEO', 'Analytics', 'Authentification', 'Paiements', 'CMS'] as $kw)
                                     <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div>
@@ -838,7 +838,7 @@
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right" style="will-change: transform;">
                                     @for($i = 0; $i < 3; $i++)
-                                    @foreach(['AI Chatbots', 'Dashboards', 'Automation', 'SEO', 'Analytics', 'Authentication', 'Payments', 'CMS'] as $kw)
+                                    @foreach(['Chatbots IA', 'Tableaux de bord', 'Automatisation', 'SEO', 'Analytics', 'Authentification', 'Paiements', 'CMS'] as $kw)
                                     <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">

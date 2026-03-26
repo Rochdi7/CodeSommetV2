@@ -1,15 +1,31 @@
 @extends('layouts.app')
 
-@section('title', 'Healthcare Website Development | Patient Portals & Telemedicine Platforms | Pikasso Studio')
-@section('meta_description', 'Specialized healthcare website development. Built 30+ healthcare platforms including patient portals, telemedicine systems, and appointment booking. HIPAA-compliant, AI-powered features. Contact us for pricing.')
-@section('meta_keywords', 'healthcare website development,patient portal development,telemedicine platform,medical website design,hospital website development,clinic website,healthcare CRM,appointment booking system')
-@section('og_title', 'Pikasso Studio - AI-Powered Web Development Agency | Morocco')
-@section('og_description', 'Premium web development agency in Morocco specializing in AI-powered websites, intelligent dashboards, and SaaS platforms. Expert Next.js development for education, healthcare & business. 50+ projects delivered.')
-@section('twitter_description', 'Premium web development agency specializing in AI-powered websites, intelligent dashboards, and SaaS platforms. 50+ projects delivered.')
+@section('title', 'Développement de Sites Web de Santé | Portails Patients & Plateformes de Télémédecine |
+    CodeSommetStudio')
+@section('meta_description', "Développement de sites web de santé spécialisé. Plus de 30 plateformes de santé
+    construites incluant des portails patients, des systèmes de télémédecine et la prise de rendez-vous. Conformes HIPAA,
+    fonctionnalités alimentées par l'IA. Contactez-nous pour les tarifs.")
+@section('meta_keywords', 'développement site web santé,développement portail patient,plateforme de
+    télémédecine,conception site web médical,développement site web hôpital,site web clinique,CRM santé,système de prise de
+    rendez-vous')
+@section('og_title', "CodeSommetStudio - Agence de Développement Web Alimentée par l'IA | Maroc")
+@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par
+    l'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l'éducation, la santé
+    et les entreprises. Plus de 50 projets livrés.")
+@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web alimentés par l'IA,
+    les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
 
 @section('content')
-<div class="min-h-screen bg-[var(--bg-primary)]"><section class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-[30px] md:pb-16 bg-[var(--bg-primary)]"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(180, 180, 180, 0.2) 1px, transparent 1px);background-size:30px 30px;background-position:center center"></div><div class="absolute inset-0 w-full h-full" style="background:radial-gradient(
+    <div class="min-h-screen bg-[var(--bg-primary)]">
+        <section
+            class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-[30px] md:pb-16 bg-[var(--bg-primary)]">
+            <div class="absolute inset-0 pointer-events-none" style="z-index:0">
+                <div class="absolute inset-0 w-full h-full"
+                    style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(180, 180, 180, 0.2) 1px, transparent 1px);background-size:30px 30px;background-position:center center">
+                </div>
+                <div class="absolute inset-0 w-full h-full"
+                    style="background:radial-gradient(
             ellipse 70% 70% at center,
             transparent 0%,
             transparent 10%,
@@ -18,15 +34,3078 @@
             rgba(255, 255, 255, 0.57) 60%,
             rgba(255, 255, 255, 0.8075) 80%,
             rgba(255, 255, 255, 0.95) 100%
-          )"></div></div><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10"><div class="grid lg:grid-cols-1 gap-6 lg:gap-8 items-center"><div class="space-y-6 lg:space-y-8 text-center"><nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb" ><a class="hover:text-gray-600 transition-colors" aria-label="Home" href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></a><span>/</span><a class="hover:text-gray-600 transition-colors" href="/#industries">Industries</a><span>/</span><span class="text-gray-600">Healthcare &amp; Medical</span></nav><div class="flex justify-center" ><div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full"><div class="relative"><div class="w-2 h-2 bg-[#22C55E] rounded-full"></div><div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75"></div></div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Now Accepting <!-- -->Healthcare &amp; Medical<!-- --> Projects</span><span class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 text-[#00AEEF]" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🏥<!-- --> <!-- -->Healthcare &amp; Medical<!-- -->, <!-- -->Specialized Industry</span></div></div><div class="space-y-6" ><h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto" style="font-family:var(--font-display)">WE BUILD WEBSITES THAT DRIVE<!-- --> <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">PATIENT PORTALS</span><span class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">PATIENT PORTALS</span></span></span></h1><p class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">Specialized healthcare website development for clinics, hospitals, and medical practices. We&#x27;ve built 30+ healthcare websites with patient portals, telemedicine, and appointment systems. HIPAA-compliant solutions. Average 250% increase in patient registrations.</p></div><div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4" ><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto bg-black hover:bg-black/90 transition-colors" style="border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
+          )">
+                </div>
+            </div>
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
+                <div class="grid lg:grid-cols-1 gap-6 lg:gap-8 items-center">
+                    <div class="space-y-6 lg:space-y-8 text-center">
+                        <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb"><a
+                                class="hover:text-gray-600 transition-colors" aria-label="Home"
+                                href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3"
+                                    aria-hidden="true">
+                                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                                    <path
+                                        d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                                    </path>
+                                </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
+                                href="/#industries">Industries</a><span>/</span><span class="text-gray-600">Santé et
+                                Médical</span></nav>
+                        <div class="flex justify-center">
+                            <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
+                                <div class="relative">
+                                    <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
+                                    <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
+                                    </div>
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Accepte Actuellement les
+                                    <!-- -->Santé et Médical<!-- --> Projets</span><span
+                                    class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 text-[#00AEEF]"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                    </path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🏥<!-- --> <!-- -->Santé et
+                                    Médical<!-- -->, <!-- -->Industrie Spécialisée</span>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
+                                style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES<!-- -->
+                                <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
+                                        style="min-height:1.2em"
+                                        class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
+                                            style="border-color:var(--color-primary-orange);z-index:1"
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span
+                                                style="background-color:var(--color-primary-orange)"
+                                                class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span
+                                                style="background-color:var(--color-primary-orange)"
+                                                class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span
+                                                style="background-color:var(--color-primary-orange)"
+                                                class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
+                                                style="background-color:var(--color-primary-orange)"
+                                                class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">PORTAILS
+                                            PATIENTS</span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">PORTAILS
+                                            PATIENTS</span></span></span></h1>
+                            <p
+                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
+                                Développement de sites web de santé spécialisé pour les cliniques, les hôpitaux et les
+                                cabinets médicaux. Nous avons construit plus de 30 sites web de santé avec des portails
+                                patients, la télémédecine et des systèmes de rendez-vous. Solutions conformes HIPAA.
+                                Augmentation moyenne de 250% des inscriptions de patients.</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank"
+                                rel="noopener noreferrer"
+                                class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto bg-black hover:bg-black/90 transition-colors"
+                                style="border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                     rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,
                     rgba(0, 0, 0, 0.08) 0px 10.8925px 10.8925px -1.40625px,
                     rgba(0, 0, 0, 0.08) 0px 18.1088px 18.1088px -1.875px,
                     rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                     rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/pikasso/discovery"><span class="relative text-[15px] font-semibold text-white z-10">Book Free Healthcare Demo</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto" href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">View Healthcare Portfolio</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div><div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4" ><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">Based in <!-- -->Healthcare &amp; Medical</span></div><div class="w-px h-4 bg-[#0F0F0F]/20"></div><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">7-10 Day Delivery</span></div><div class="w-px h-4 bg-[#0F0F0F]/20"></div><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">50+ <!-- -->Healthcare &amp; Medical<!-- --> Clients</span></div></div></div></div></div></section><section class="w-full py-24 md:py-32 bg-[#F5F5F5]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 mr-2" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>Why Choose Us</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Why Choose Pikasso Studio in <!-- -->Healthcare &amp; Medical<!-- -->?</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Local expertise meets global standards. Here&#x27;s what makes us the perfect web development partner in <!-- -->Healthcare &amp; Medical<!-- -->.</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><div ><div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full"><div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"><div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]"><div class="mb-6 flex-shrink-0"><div class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-7 h-7" aria-hidden="true" style="color:#00AEEF"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg></div></div><h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">55% of Our Clients Are in Healthcare</h3><p class="text-gray-600 text-sm leading-relaxed flex-grow">Deep expertise in patient portals, telemedicine platforms, appointment systems, and electronic health records. We understand HIPAA compliance, patient workflows, and healthcare regulations.</p><div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div></div></div></div></div><div ><div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full"><div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"><div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]"><div class="mb-6 flex-shrink-0"><div class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu w-7 h-7" aria-hidden="true" style="color:#00AEEF"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg></div></div><h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">AI-Powered Patient Engagement</h3><p class="text-gray-600 text-sm leading-relaxed flex-grow">Custom AI chatbots for symptom checking, appointment scheduling, and patient inquiries 24/7. Automated reminders reduce no-shows by 40%.</p><div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div></div></div></div></div><div ><div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full"><div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"><div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]"><div class="mb-6 flex-shrink-0"><div class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-7 h-7" aria-hidden="true" style="color:#00AEEF"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div></div><h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">HIPAA Compliance Built-In</h3><p class="text-gray-600 text-sm leading-relaxed flex-grow">Secure patient data handling, encrypted communications, audit logs, and access controls. All platforms are HIPAA-compliant from day one.</p><div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div></div></div></div></div><div ><div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full"><div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"><div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]"><div class="mb-6 flex-shrink-0"><div class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7" aria-hidden="true" style="color:#00AEEF"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg></div></div><h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Patient Acquisition Experts</h3><p class="text-gray-600 text-sm leading-relaxed flex-grow">Healthcare websites optimized for local SEO and Google My Business. Our healthcare clients see average 280% increase in new patient inquiries.</p><div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div></div></div></div></div><div ><div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full"><div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"><div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]"><div class="mb-6 flex-shrink-0"><div class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-7 h-7" aria-hidden="true" style="color:#00AEEF"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></div></div><h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Reduce No-Shows by 40%</h3><p class="text-gray-600 text-sm leading-relaxed flex-grow">Automated SMS and email appointment reminders, easy rescheduling, and waitlist management. Save thousands in lost revenue.</p><div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div></div></div></div></div><div ><div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full"><div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"><div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]"><div class="mb-6 flex-shrink-0"><div class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-7 h-7" aria-hidden="true" style="color:#00AEEF"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div></div><h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Quick Launch for New Practices</h3><p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch in 7-10 days for new clinics or practice expansions. Perfect for doctors opening new locations or starting telemedicine services.</p><div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div></div></div></div></div></div></div></section><section class="w-full py-24 md:py-32 bg-[#F5F5F5]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center" ><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8" style="font-family:var(--font-heading)">Trusted by <!-- -->Healthcare &amp; Medical<!-- --> Businesses</h2><div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6"><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">50+ Projects Delivered</span></div><div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span></div><div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div><div class="flex items-center gap-2"><div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span></div></div><p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Real results from <!-- -->Healthcare &amp; Medical<!-- -->-based businesses we&#x27;ve partnered with</p></div></div></section><section class="w-full py-24 md:py-32 bg-[#F8F8F8]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 mr-2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>Common Challenges</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">The Challenge<!-- -->: <!-- -->Healthcare &amp; Medical<!-- --> Businesses Face Unique Website Challenges</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Generic web developers don&#x27;t understand these healthcare &amp; medical-specific pain points</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><div ><div class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200"><div class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg></div><h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Patient Portals Don&#x27;t Meet HIPAA Standards</h3><p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Generic website builders don&#x27;t provide HIPAA-compliant features like encrypted patient portals, secure appointment booking, or protected health data storage. Healthcare providers need specialized platforms built with regulatory compliance from day one.</p></div></div><div ><div class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200"><div class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div><h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Staff Struggle with Complex CMS Backends</h3><p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Front desk staff waste valuable time fighting complicated content management systems just to update appointment availability, provider schedules, or service offerings. Healthcare teams need intuitive tools that match their workflow, not generic admin panels that require training.</p></div></div><div ><div class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200"><div class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 17h6v-6"></path><path d="m22 17-8.5-8.5-5 5L2 7"></path></svg></div><h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Low Online Appointment Conversion Rates</h3><p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Patients visit your website but call instead of booking online, overwhelming front desk staff and creating scheduling bottlenecks. Modern healthcare websites need frictionless booking experiences that convert visitors into confirmed appointments in 60 seconds or less.</p></div></div><div ><div class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200"><div class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m15 9-6 6"></path><path d="m9 9 6 6"></path></svg></div><h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">No Patient Engagement After First Visit</h3><p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Healthcare providers lose touch with patients after the initial consultation, resulting in poor follow-up compliance, missed preventive care opportunities, and reduced patient lifetime value. Modern practices need automated engagement systems that nurture long-term patient relationships.</p></div></div><div ><div class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200"><div class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path><circle cx="12" cy="12" r="10"></circle></svg></div><h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Losing Patients to Competitors on Google</h3><p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Competitors with modern, mobile-optimized websites rank higher on Google and win patients searching for healthcare services in your area. Healthcare providers need SEO-optimized platforms with fast loading speeds, structured data markup, and local search optimization to capture patient demand.</p></div></div><div ><div class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200"><div class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-off w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true"><path d="m2 2 20 20"></path><path d="M4.93 4.929a10 10 0 0 0-1.938 11.412 2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 0 0 11.302-1.989"></path><path d="M8.35 2.69A10 10 0 0 1 21.3 15.65"></path></svg></div><h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Front Desk Overwhelmed with Repetitive Questions</h3><p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Receptionists spend hours answering the same questions about insurance, office hours, parking, and appointment procedures. Healthcare practices need intelligent automation to handle routine inquiries, freeing staff to focus on patient care and complex scheduling needs.</p></div></div></div><div class="text-center mt-10 md:mt-12" ><p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">Sound familiar? We&#x27;ve solved these exact problems for 40+ <!-- -->healthcare &amp; medical<!-- --> businesses.</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">See Our Solution</a></div></div></section><section class="w-full py-24 md:py-32 bg-white"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-16"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 mr-2" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>Purpose-Built for <!-- -->Healthcare &amp; Medical</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Essential Features<!-- --> for <!-- -->Healthcare &amp; Medical<!-- --> Websites</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Everything your healthcare &amp; medical business needs in one platform</p></div><div class="space-y-12"><div ><div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5"><div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative"><div class="flex flex-col md:flex-row gap-0" style="flex-direction:row"><div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden"><h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Appointment Booking System</h3><p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Online booking with real-time availability, automated reminders, and waitlist management.</p><ul class="space-y-3 md:space-y-4 relative z-10"><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">24/7 online booking</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Automated SMS/email reminders</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Easy rescheduling</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Waitlist automation</span></li></ul></div><div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden" ><div class="absolute top-6 right-6 z-20 inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF] text-white text-xs font-bold rounded-full shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3.5 h-3.5" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>MOST POPULAR</div><img src="{{ asset('images/healthcare/healthcare-appointment-booking.webp') }}" alt="Appointment Booking System" class="absolute inset-0 w-full h-full object-contain"/></div></div></div></div></div><div ><div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5"><div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative"><div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse"><div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden"><h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Telemedicine Platform</h3><p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">HIPAA-compliant video consultations with prescription management and billing integration.</p><ul class="space-y-3 md:space-y-4 relative z-10"><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">HD video consultations</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">E-prescription system</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Payment integration</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Medical records access</span></li></ul></div><div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden" ><div class="absolute top-6 right-6 z-20 inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF] text-white text-xs font-bold rounded-full shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-3.5 h-3.5" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>HIPAA COMPLIANT</div><img src="{{ asset('images/healthcare/healthcare-telemedicine-platform.webp') }}" alt="Telemedicine Platform" class="absolute inset-0 w-full h-full object-contain"/></div></div></div></div></div><div ><div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5"><div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative"><div class="flex flex-col md:flex-row gap-0" style="flex-direction:row"><div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden"><h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Patient Portal</h3><p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Secure access to medical records, test results, prescriptions, and appointment history.</p><ul class="space-y-3 md:space-y-4 relative z-10"><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">View medical history</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Download test results</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Request prescription refills</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Message your doctor</span></li></ul></div><div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden" ><img src="{{ asset('images/healthcare/healthcare-patient-portal.webp') }}" alt="Patient Portal" class="absolute inset-0 w-full h-full object-contain"/></div></div></div></div></div><div ><div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5"><div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative"><div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse"><div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden"><h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Practice Analytics</h3><p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Track appointments, revenue, patient demographics, and operational metrics in real-time.</p><ul class="space-y-3 md:space-y-4 relative z-10"><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Appointment analytics</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Revenue tracking</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Patient insights</span></li><li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Staff performance</span></li></ul></div><div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden" ><img src="{{ asset('images/healthcare/healthcare-analytics-dashboard.webp') }}" alt="Practice Analytics" class="absolute inset-0 w-full h-full object-contain"/></div></div></div></div></div></div></div></section><section class="w-full py-24 md:py-32 bg-[#F5F5F5]" id="portfolio"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>Our Work in <!-- -->Healthcare &amp; Medical</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Success Stories from <!-- -->Healthcare &amp; Medical</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Real projects, real results. See how we&#x27;ve helped businesses in <!-- -->Healthcare &amp; Medical<!-- --> achieve their digital goals.</p></div><div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10"><div ><a class="block" href="{{ route('case-study', 'doctor-hubli') }}"><div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5"><div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/doctor-hubli/doctor-hubli-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video><div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">HEALTHCARE MARKETPLACE</span></div><div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>+300% Engagement</span></div></div><div class="px-5 py-4"><h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">DoctorHubli</h3><p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Multi-specialty doctor booking platform</p><p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p></div></div></a></div></div><div class="text-center" ></div></div></section><section class="w-full py-24 md:py-32 bg-[#F8F8F8]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>7-10 Day Launch Timeline</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Our Development Process<!-- --> for <!-- -->Healthcare &amp; Medical</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">From concept to launch in 4 weeks, optimized for healthcare &amp; medical businesses</p></div><div class="relative"><div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2" style="height:100%"></div><div class="space-y-12 md:space-y-16"><div class="relative" ><div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row"><div class="flex-1"><div class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200"><div class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-5 h-5 md:w-6 md:h-6 text-white" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></div><div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3" style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 1</div><h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Discovery &amp; HIPAA Compliance Planning</h3><ul class="space-y-2"><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Practice workflow audit and patient journey mapping</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">HIPAA compliance checklist and security requirements</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Competitor analysis of healthcare providers in your area</span></li></ul></div></div><div class="hidden md:flex items-center justify-center flex-shrink-0 relative"><div class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-8 h-8 text-white" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></div><div class="absolute left-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap" style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 1</div></div><div class="flex-1 hidden md:block"></div></div></div><div class="relative" ><div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse"><div class="flex-1"><div class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200"><div class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-5 h-5 md:w-6 md:h-6 text-white" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg></div><div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3" style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 2</div><h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Design &amp; Patient Portal Development</h3><ul class="space-y-2"><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Custom UI designs for homepage, services, and provider profiles</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">HIPAA-compliant patient portal with encryption</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Appointment booking system with real-time availability</span></li></ul></div></div><div class="hidden md:flex items-center justify-center flex-shrink-0 relative"><div class="absolute right-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap" style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 2</div><div class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-8 h-8 text-white" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg></div></div><div class="flex-1 hidden md:block"></div></div></div><div class="relative" ><div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row"><div class="flex-1"><div class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200"><div class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code w-5 h-5 md:w-6 md:h-6 text-white" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg></div><div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3" style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 3</div><h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Development &amp; Integration</h3><ul class="space-y-2"><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Secure authentication system with MFA for staff and patients</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Electronic health record (EHR) integration</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Insurance verification and eligibility checking</span></li></ul></div></div><div class="hidden md:flex items-center justify-center flex-shrink-0 relative"><div class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code w-8 h-8 text-white" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg></div><div class="absolute left-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap" style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 3</div></div><div class="flex-1 hidden md:block"></div></div></div><div class="relative" ><div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse"><div class="flex-1"><div class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200"><div class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 md:w-6 md:h-6 text-white" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div><div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3" style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 4</div><h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Testing, Compliance Audit &amp; Launch</h3><ul class="space-y-2"><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">HIPAA compliance audit and penetration testing</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Staff training on patient portal and admin features</span></li><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">SEO setup for local healthcare searches</span></li></ul></div></div><div class="hidden md:flex items-center justify-center flex-shrink-0 relative"><div class="absolute right-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap" style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Week 4</div><div class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-8 h-8 text-white" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div></div><div class="flex-1 hidden md:block"></div></div></div></div></div><div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8" ><p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">Ready to start your <!-- -->healthcare &amp; medical<!-- --> website project?</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">Book Free Discovery Call</a></div></div></section><section id="pricing" class="relative w-full py-16 md:py-24 bg-[#F5F5F5]"><div class="max-w-7xl mx-auto px-4"><div class="text-center mb-12 md:mb-16"><h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">Custom Solutions, Transparent Pricing</h2><p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Book a discovery call to discuss your specific needs and get a custom quote</p></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto"><div class="relative bg-black rounded-[32px] p-3 text-white"><div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10"><div class="bg-[var(--color-primary-orange)] text-white px-4 py-1.5 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Recommended</div></div><div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent"><div class="flex items-start justify-between mb-6"><div class="flex items-center gap-3"><div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor w-6 h-6 text-white" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg></div><h3 class="text-3xl md:text-4xl font-bold text-white">Website Development</h3></div></div><div class="mb-6 p-4 rounded-2xl bg-white/5"><p class="text-white/70">Complete website with AI features, dashboards, and premium design delivered in 7-10 days.</p></div><div class="divide-y divide-white/10"><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">AI-powered features integration</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Custom dashboard &amp; user portal</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Mobile-first responsive design</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Professional content &amp; copywriting</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Advanced SEO &amp; performance optimization</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Authentication &amp; user management</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Payment integration ready</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-white/80">Analytics &amp; conversion tracking</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-green-400 font-medium">Free hosting for 3 months included</span></div></div></div><div class="px-6 md:px-8 pb-3"><div class="mb-6"><div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-white/70 mb-1">Starting from</span><div class="flex items-end gap-2"><span class="text-5xl md:text-6xl font-bold">Obtenir Votre Devis Gratuit</span><span class="text-white/50 text-xl mb-2"></span></div><p class="text-white/60 text-sm mt-2">Custom quote based on your project scope</p></div></div><div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors whitespace-nowrap text-center" href="{{ route('get-quote') }}">Get Custom Quote</a><a href="https://wa.me/212632582096?text=Hi%20Pikasso Studio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connect on WhatsApp</a></div></div></div><div class="relative bg-white rounded-[32px] p-3 text-black border border-black/10"><div class="relative rounded-[20px] p-6 md:p-8 mb-3 transition-all duration-700 ease-in-out bg-[#F5F5F5] overflow-hidden border border-transparent"><div class="flex items-start justify-between gap-4 mb-6"><div class="flex items-center gap-3 flex-shrink-0"><div class="w-12 h-12 rounded-full bg-black/10 flex items-center justify-center transition-all duration-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-infinity w-7 h-7 text-black" aria-hidden="true"><path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path></svg></div><h3 class="text-3xl md:text-4xl font-bold text-black">Retainer</h3></div><button class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20" style="margin-top:0"><div class="relative rounded-full transition-all duration-400 ease-out w-11 h-7 bg-black/20" style="box-shadow:none"><div class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5"></div></div><span class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Include Social Media</span></button></div><div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 transition-all duration-300 text-transparent" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><p class="text-black/70 transition-all duration-300">Perfect for businesses needing ongoing AI features, dashboards, and website improvements.</p></div><div class="divide-y divide-black/10"><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">1 active project at a time</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">AI chatbot &amp; automation features</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">Custom dashboard development</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">48-72 hour task delivery</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">Unlimited revisions until perfect</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">Full-stack development (frontend + backend)</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">Professional SEO &amp; content strategy</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">Real-time collaboration on Slack</span></div><div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-black/80">Premium hosting &amp; maintenance</span></div></div></div><div class="px-6 md:px-8 pb-3"><div class="mb-6"><div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-black/60 mb-1">Starting from</span><div class="flex items-end gap-2"><div class="relative overflow-hidden" style="height:fit-content"><span class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Obtenir Votre Devis Gratuit</span><span class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Obtenir Votre Devis Gratuit</span></div><span class="text-black/50 text-xl mb-2">/month</span></div><p class="text-black/60 text-sm mt-2">Pause or cancel anytime</p></div></div><div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Book Discovery Call</button><a href="https://wa.me/212632582096?text=Hi%20Pikasso Studio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connect on WhatsApp</a></div></div></div></div></div></section><section class="py-12 md:py-16 bg-white"><div class="max-w-7xl mx-auto px-4 md:px-6"><div class="max-w-4xl mx-auto" ><div class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-12 border-2 border-[#00AEEF]/20 text-center"><div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#00AEEF]/10 mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-8 h-8 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div><h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]" style="font-family:var(--font-heading)">Ready to Transform Your Healthcare &amp; Medical Website?</h2><p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Get a comprehensive free analysis first:</p><div class="flex flex-wrap gap-3 justify-center mb-4"><div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]"><div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>SEO audit</span></div><div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]"><div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Performance check</span></div><div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]"><div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Design review</span></div><div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]"><div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>AI-powered recommendations</span></div></div><a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105" href="{{ route('tool', 'website-analyzer') }}"><span>Analyser Votre Site Web - 100% Free</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><p class="text-xs text-[var(--text-secondary)] mt-4">No credit card required • Results in 30 seconds • Personalized improvement plan</p></div></div></div></section><section class="w-full py-24 md:py-32 bg-[#F8F8F8]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>Why Choose Us</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Pikasso Studio <!-- -->Healthcare &amp; Medical<!-- --> vs Others</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">See why <!-- -->Healthcare &amp; Medical<!-- --> businesses choose Pikasso Studio over other local agencies and international competitors.</p></div><div class="max-w-5xl mx-auto" ><div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0"><div class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]"><div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10"><div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Feature</div><div class="p-3 md:p-4 text-center"><div class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full"><div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">Pikasso Studio <!-- -->Healthcare &amp; Medical</span></div></div><div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Other <!-- -->Healthcare &amp; Medical<!-- --> Agencies</div><div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">International Agencies</div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Healthcare Experience</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">30+ healthcare projects</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Generic experience</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Limited</span></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">HIPAA Compliance</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Built-in from day one</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Extra cost</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Not guaranteed</span></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Patient Portal</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Basic contact form</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Extra cost</span></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Telemedicine Platform</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Fully integrated</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Third-party only</span></div><div class="p-3 md:p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x w-6 h-6 text-[#EF4444]/40 mx-auto" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m15 9-6 6"></path><path d="m9 9 6 6"></path></svg></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">EHR Integration</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">All major systems</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Limited</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Extra cost</span></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Starting Price</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Obtenir Votre Devis Gratuit</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Higher cost</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Higher cost</span></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Turnaround Time</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">7-10 days</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">6-8 weeks</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">12-16 weeks</span></div></div><div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30" ><div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">HIPAA Support</div><div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Included</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Extra fees</span></div><div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Not included</span></div></div></div></div><div class="mt-8 text-center" ><p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparison based on average pricing and service offerings from top 10 agencies in <!-- -->Healthcare &amp; Medical</p><div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full text-sm font-semibold text-[#22C55E]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>Best Value for <!-- -->Healthcare &amp; Medical<!-- --> Businesses</div></div></div></div></section><section class="w-full py-24 md:py-32 bg-[#F8F8F8]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square w-4 h-4 mr-2" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg>What Clients Say About Us</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">What <!-- -->Healthcare &amp; Medical<!-- --> Clients Say About Us</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Don&#x27;t just take our word for it. Hear from businesses in <!-- -->Healthcare &amp; Medical<!-- --> who&#x27;ve achieved remarkable results with Pikasso Studio.</p></div><div class="relative max-w-5xl mx-auto"><button class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110" aria-label="Previous testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button><button class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110" aria-label="Suivant testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button><div class="grid grid-cols-1 lg:grid-cols-2 gap-8"><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Pikasso Studio transformed our B2B platform and generated 250% more qualified leads in just 6 months. Their understanding of the market and technical expertise is exceptional.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}" alt="Mohammed Al-Raba" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Al-Raba</div><div class="text-sm text-[#0F0F0F]/60 mb-2">CEO at Al-Raba Technologies</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Maroc</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Working remotely with Pikasso Studio was seamless. They delivered our healthcare booking platform in 10 days with full DHA compliance. The patient portal has reduced our admin workload by 60% and appointments are up 180%.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}" alt="Dr. Sarah Al-Mansouri" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Medical Director at Dubai Wellness Clinic</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Dubai Healthcare City, UAE</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;We needed a complex e-learning platform with live video, progress tracking, and payment integration. Pikasso Studio delivered everything in 3 weeks. Student enrollment increased 320% in the first quarter after launch.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/james-thornton.webp') }}" alt="James Thornton" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Founder at EduPath Global</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>London, UK</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div><div class="relative"><div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full"><div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg></div><div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div><blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Our real estate website went from basic listings to a full booking platform with virtual tours and CRM integration. Online inquiries jumped 400% and we now convert 3x more leads into viewings. Truly outstanding work.&quot;</blockquote><div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/fatima-benali.webp') }}" alt="Fatima Zahra Benali" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20"/><div class="flex-1 min-w-0"><div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div><div class="text-sm text-[#0F0F0F]/60 mb-2">Operations Director at Riad Luxe Properties</div><div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Marrakech, Morocco</span></div></div></div><div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl"></div></div></div></div><div class="flex justify-center items-center gap-3 mt-8"><button class="transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125" aria-label="Go to testimonial group 1"></button><button class="transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40" aria-label="Go to testimonial group 2"></button></div></div><div class="mt-10 text-center" ><p class="text-sm text-[#0F0F0F]/60">Want to see more success stories?<!-- --> <a href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">View all case studies</a></p></div></div></section><section class="w-full py-24 md:py-32 bg-[#F5F5F5]"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark w-4 h-4 mr-2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>Common Questions</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Frequently Asked Questions About Web Development in <!-- -->Healthcare &amp; Medical</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Have questions? We&#x27;ve got answers. Here are the most common questions from <!-- -->Healthcare &amp; Medical<!-- --> businesses.</p></div><div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6"><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">How long does it take to build a healthcare website?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Is your platform HIPAA compliant?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Can you integrate with our existing EHR system?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Do you provide training for our staff?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Can patients book appointments online 24/7?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">How does the telemedicine platform work?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">What makes you different from other healthcare web developers?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div><div class="border-b border-[#0F0F0F]/10 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">8</span></div><div class="flex-1 min-w-0"><h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Can you help reduce our no-show rates?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button></div></div><div class="mt-10 text-center" ><p class="text-sm text-[#0F0F0F]/60 mb-2">Still have questions?</p><a href="{{ route('contact') }}" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Get in touch with our <!-- -->Healthcare &amp; Medical<!-- --> team<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a></div></div></section><section class="w-full py-24 md:py-32 bg-white"><div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]"><div class="text-center mb-12"><div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-4 h-4 mr-2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>Global Presence</div><h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Au Service de Clients dans le Monde Entier</h2><p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">We&#x27;ve built healthcare &amp; medical websites for clients across the globe. Whether you&#x27;re in Morocco or anywhere else, we deliver world-class solutions.</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10"><div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'dubai') }}"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2 md:gap-3 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div class="min-w-0 flex-1"><h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Dubai</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate"><span>🇦🇪</span><span class="truncate">UAE</span></p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div><div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'casablanca') }}"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2 md:gap-3 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div class="min-w-0 flex-1"><h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Casablanca</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate"><span>🇲🇦</span><span class="truncate">Maroc</span></p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div><div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'san-francisco') }}"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2 md:gap-3 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div class="min-w-0 flex-1"><h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">San Francisco</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate"><span>🇺🇸</span><span class="truncate">United States</span></p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div><div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'london') }}"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2 md:gap-3 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div class="min-w-0 flex-1"><h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">London</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate"><span>🇬🇧</span><span class="truncate">United Kingdom</span></p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div><div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'paris') }}"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2 md:gap-3 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div class="min-w-0 flex-1"><h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Paris</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate"><span>🇫🇷</span><span class="truncate">Paris</span></p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div><div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'marrakech') }}"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-2 md:gap-3 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div class="min-w-0 flex-1"><h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Marrakech</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate"><span>🇲🇦</span><span class="truncate">Maroc</span></p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div></div><div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8" ><p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Looking for <!-- -->healthcare &amp; medical<!-- --> web development in a specific city?</p><div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 px-4"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="/#locations"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>View All Locations<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><span class="text-[#0F0F0F]/40">or</span><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="{{ route('contact') }}">Contact Us for Your City<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></div></section><section class="w-full bg-white py-16 md:py-20"><div class="max-w-7xl mx-auto px-4 md:px-6"><div class="text-center mb-8 md:mb-10"><h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4" style="font-family:var(--font-heading)">Related Industries We Serve</h2><p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">Explore our specialized web development services for other industries</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'telemedicine-platform-development') }}"><div class="flex items-start justify-between gap-2"><div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Telemedicine</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Secure video consultation platforms with patient management and prescription systems.</p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'study-abroad-website-development') }}"><div class="flex items-start justify-between gap-2"><div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Study Abroad Consultancy</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Course platforms, LMS systems, and student portals for study abroad consultancies.</p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'language-school-website-development') }}"><div class="flex items-start justify-between gap-2"><div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Language Schools</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Modern websites for language training institutes with course management and online learning features.</p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'immigration-consultancy-website-development') }}"><div class="flex items-start justify-between gap-2"><div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">Immigration Consultancy</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Professional websites for visa and immigration consultants with case tracking and document management.</p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'saas-platform-development') }}"><div class="flex items-start justify-between gap-2"><div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">SaaS Platforms</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Complete SaaS applications with authentication, billing, and real-time features.</p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'fintech-website-development') }}"><div class="flex items-start justify-between gap-2"><div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0"><div class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">FinTech</h3><p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Secure financial platforms with payment processing, compliance, and regulatory features.</p></div></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></a></div><div class="text-center mt-8 md:mt-10"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="/#industries">View All Industries<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></section><section class="w-full bg-[#F5F5F5] py-16 md:py-20"><div class="max-w-7xl mx-auto px-4 md:px-6"><div class="text-center mb-10"><h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3" style="font-family:var(--font-heading)">Explore More</h2><p class="text-lg text-[var(--text-secondary)]">Discover what makes Pikasso Studio your ideal web development partner</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('tool', 'website-analyzer') }}"><div class="flex flex-col h-full"><div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-6 h-6" aria-hidden="true" style="color:#00AEEF"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div><h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">Free Website Audit</h3><p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Get AI-powered analysis with 40+ checks</p><div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors"><span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div></a><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('our-work') }}"><div class="flex flex-col h-full"><div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder w-6 h-6" aria-hidden="true" style="color:#00AEEF"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg></div><h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">View Our Work</h3><p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explore case studies and client success stories</p><div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors"><span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div></a><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('about') }}"><div class="flex flex-col h-full"><div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style="background-color:#8B5CF615"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6" aria-hidden="true" style="color:#8B5CF6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div><h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">About Pikasso Studio</h3><p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Learn about our team and approach</p><div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors"><span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#8B5CF6"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div></a><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('contact') }}"><div class="flex flex-col h-full"><div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style="background-color:#10B98115"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-6 h-6" aria-hidden="true" style="color:#10B981"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></div><h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">Get in Touch</h3><p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contact us for your project requirements</p><div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors"><span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#10B981"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div></a><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('home') }}"><div class="flex flex-col h-full"><div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style="background-color:#3B82F615"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-6 h-6" aria-hidden="true" style="color:#3B82F6"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg></div><h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">Back to Homepage</h3><p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explore all our services and offerings</p><div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors"><span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#3B82F6"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div></div></a></div></div></section><div class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]"><div class="max-w-7xl mx-auto"><div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 py-6 md:py-8" style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)"><div class="absolute inset-0 z-0" style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                               linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);background-size:50px 50px"></div><div class="absolute inset-0 z-[1]" style="background:radial-gradient(
+                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px"
+                                href="https://cal.com/pikasso/discovery"><span
+                                    class="relative text-[15px] font-semibold text-white z-10">Réserver une Démo Santé
+                                    Gratuite</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></a><a
+                                class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
+                                href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir le Portfolio
+                                    Santé</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></a></div>
+                        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
+                                    class="font-semibold text-[#0F0F0F]">Basé dans le secteur <!-- -->Santé et
+                                    Médical</span>
+                            </div>
+                            <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
+                                    class="font-semibold text-[#0F0F0F]">Livraison en 7-10 Jours</span>
+                            </div>
+                            <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
+                                    class="font-semibold text-[#0F0F0F]">50+ <!-- -->Santé et Médical<!-- -->
+                                    Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 mr-2" aria-hidden="true">
+                            <path
+                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                            </path>
+                            <path d="M20 2v4"></path>
+                            <path d="M22 4h-4"></path>
+                            <circle cx="4" cy="20" r="2"></circle>
+                        </svg>Pourquoi Nous Choisir</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommetStudio dans le secteur
+                        <!-- -->Santé et Médical<!-- -->?</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">L'expertise locale rencontre les standards
+                        internationaux. Voici ce qui fait de nous le partenaire idéal en développement web dans le secteur
+                        <!-- -->Santé et Médical<!-- -->.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div>
+                        <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
+                            <div
+                                class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
+                                    <div class="mb-6 flex-shrink-0">
+                                        <div
+                                            class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path
+                                                    d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">55% de Nos Clients Sont
+                                        dans la Santé</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Expertise approfondie dans
+                                        les portails patients, les plateformes de télémédecine, les systèmes de rendez-vous
+                                        et les dossiers de santé électroniques. Nous comprenons la conformité HIPAA, les
+                                        flux de travail patient et les réglementations de santé.</p>
+                                    <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
+                            <div
+                                class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
+                                    <div class="mb-6 flex-shrink-0">
+                                        <div
+                                            class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-cpu w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path d="M12 20v2"></path>
+                                                <path d="M12 2v2"></path>
+                                                <path d="M17 20v2"></path>
+                                                <path d="M17 2v2"></path>
+                                                <path d="M2 12h2"></path>
+                                                <path d="M2 17h2"></path>
+                                                <path d="M2 7h2"></path>
+                                                <path d="M20 12h2"></path>
+                                                <path d="M20 17h2"></path>
+                                                <path d="M20 7h2"></path>
+                                                <path d="M7 20v2"></path>
+                                                <path d="M7 2v2"></path>
+                                                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                                                <rect x="8" y="8" width="8" height="8" rx="1"></rect>
+                                            </svg></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Engagement Patient
+                                        Alimenté par l'IA</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Chatbots IA personnalisés
+                                        pour la vérification des symptômes, la planification de rendez-vous et les demandes
+                                        des patients 24h/24. Les rappels automatisés réduisent les absences de 40%.</p>
+                                    <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
+                            <div
+                                class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
+                                    <div class="mb-6 flex-shrink-0">
+                                        <div
+                                            class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-shield w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path
+                                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Conformité HIPAA
+                                        Intégrée</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Gestion sécurisée des
+                                        données patients, communications chiffrées, journaux d'audit et contrôles d'accès.
+                                        Toutes les plateformes sont conformes HIPAA dès le premier jour.</p>
+                                    <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
+                            <div
+                                class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
+                                    <div class="mb-6 flex-shrink-0">
+                                        <div
+                                            class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-chart-column w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                                <path d="M18 17V9"></path>
+                                                <path d="M13 17V5"></path>
+                                                <path d="M8 17v-3"></path>
+                                            </svg></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Experts en Acquisition
+                                        de Patients</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Sites web de santé optimisés
+                                        pour le SEO local et Google My Business. Nos clients du secteur santé constatent une
+                                        augmentation moyenne de 280% des demandes de nouveaux patients.</p>
+                                    <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
+                            <div
+                                class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
+                                    <div class="mb-6 flex-shrink-0">
+                                        <div
+                                            class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-clock w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path d="M12 6v6l4 2"></path>
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                            </svg></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Réduire les Absences de
+                                        40%</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Rappels de rendez-vous
+                                        automatisés par SMS et email, reprogrammation facile et gestion des listes
+                                        d'attente. Économisez des milliers en revenus perdus.</p>
+                                    <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
+                            <div
+                                class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
+                                    <div class="mb-6 flex-shrink-0">
+                                        <div
+                                            class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-zap w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path
+                                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Lancement Rapide pour
+                                        les Nouveaux Cabinets</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Lancement en 7-10 jours pour
+                                        les nouvelles cliniques ou expansions de cabinet. Parfait pour les médecins ouvrant
+                                        de nouveaux emplacements ou démarrant des services de télémédecine.</p>
+                                    <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center">
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
+                        style="font-family:var(--font-heading)">Adopté par les <!-- -->Santé et Médical<!-- --> Entreprises
+                    </h2>
+                    <div
+                        class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                    data-target="50">0</span> Projets Livrés</span>
+                        </div>
+                        <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                    data-target="100">0</span> Prospects</span>
+                        </div>
+                        <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                    data-target="35">0</span> Clients</span>
+                        </div>
+                    </div>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de <!-- -->Santé
+                        et Médical<!-- --> avec lesquelles nous avons collaboré</p>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F8F8F8]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 mr-2" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" x2="12" y1="8" y2="12"></line>
+                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                        </svg>Défis Courants</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Le Défi<!-- -->: <!-- -->Santé et Médical<!-- --> Les
+                        Entreprises Font Face à des Défis Web Uniques</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Les développeurs web généralistes ne comprennent
+                        pas ces problématiques spécifiques à la santé et au médical</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div>
+                        <div
+                            class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-shield-alert w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                    </path>
+                                    <path d="M12 8v4"></path>
+                                    <path d="M12 16h.01"></path>
+                                </svg></div>
+                            <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
+                                style="font-family:var(--font-heading)">Les Portails Patients Ne Répondent Pas aux Normes
+                                HIPAA</h3>
+                            <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
+                                style="font-family:var(--font-body)">Les constructeurs de sites web génériques ne
+                                fournissent pas de fonctionnalités conformes HIPAA comme les portails patients chiffrés, la
+                                prise de rendez-vous sécurisée ou le stockage protégé de données de santé. Les prestataires
+                                de santé ont besoin de plateformes spécialisées construites avec la conformité réglementaire
+                                dès le premier jour.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-users w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg></div>
+                            <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
+                                style="font-family:var(--font-heading)">Le Personnel Lutte avec les Backends CMS Complexes
+                            </h3>
+                            <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
+                                style="font-family:var(--font-body)">Le personnel d'accueil perd un temps précieux à lutter
+                                contre des systèmes de gestion de contenu compliqués juste pour mettre à jour la
+                                disponibilité des rendez-vous, les horaires des médecins ou les offres de services. Les
+                                équipes de santé ont besoin d'outils intuitifs qui correspondent à leur flux de travail, pas
+                                de panneaux d'administration génériques nécessitant une formation.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-trending-down w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]"
+                                    aria-hidden="true">
+                                    <path d="M16 17h6v-6"></path>
+                                    <path d="m22 17-8.5-8.5-5 5L2 7"></path>
+                                </svg></div>
+                            <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
+                                style="font-family:var(--font-heading)">Faibles Taux de Conversion des Rendez-vous en Ligne
+                            </h3>
+                            <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
+                                style="font-family:var(--font-body)">Les patients visitent votre site web mais appellent au
+                                lieu de réserver en ligne, submergeant le personnel d'accueil et créant des goulots
+                                d'étranglement de planification. Les sites web de santé modernes ont besoin d'expériences de
+                                réservation sans friction qui convertissent les visiteurs en rendez-vous confirmés en 60
+                                secondes ou moins.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-x w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m15 9-6 6"></path>
+                                    <path d="m9 9 6 6"></path>
+                                </svg></div>
+                            <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
+                                style="font-family:var(--font-heading)">Pas d'Engagement Patient Après la Première Visite
+                            </h3>
+                            <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
+                                style="font-family:var(--font-body)">Les prestataires de santé perdent le contact avec les
+                                patients après la consultation initiale, entraînant un mauvais suivi, des opportunités de
+                                soins préventifs manquées et une valeur patient à vie réduite. Les cabinets modernes ont
+                                besoin de systèmes d'engagement automatisés qui entretiennent des relations patient à long
+                                terme.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-earth w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]" aria-hidden="true">
+                                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                                    <path
+                                        d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17">
+                                    </path>
+                                    <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg></div>
+                            <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
+                                style="font-family:var(--font-heading)">Perte de Patients au Profit des Concurrents sur
+                                Google</h3>
+                            <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
+                                style="font-family:var(--font-body)">Les concurrents avec des sites web modernes et
+                                optimisés pour mobile se classent mieux sur Google et gagnent les patients recherchant des
+                                services de santé dans votre zone. Les prestataires de santé ont besoin de plateformes
+                                optimisées pour le SEO avec des vitesses de chargement rapides, un balisage de données
+                                structurées et une optimisation de recherche locale pour capter la demande des patients.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-message-circle-off w-5 h-5 md:w-6 md:h-6 text-[#00AEEF]"
+                                    aria-hidden="true">
+                                    <path d="m2 2 20 20"></path>
+                                    <path
+                                        d="M4.93 4.929a10 10 0 0 0-1.938 11.412 2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 0 0 11.302-1.989">
+                                    </path>
+                                    <path d="M8.35 2.69A10 10 0 0 1 21.3 15.65"></path>
+                                </svg></div>
+                            <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
+                                style="font-family:var(--font-heading)">Accueil Submergé de Questions Répétitives</h3>
+                            <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
+                                style="font-family:var(--font-body)">Les réceptionnistes passent des heures à répondre aux
+                                mêmes questions sur l'assurance, les horaires d'ouverture, le stationnement et les
+                                procédures de rendez-vous. Les cabinets médicaux ont besoin d'une automatisation
+                                intelligente pour gérer les demandes de routine, libérant le personnel pour se concentrer
+                                sur les soins aux patients et les besoins de planification complexes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10 md:mt-12">
+                    <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
+                        style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
+                        exacts pour plus de 40 <!-- -->santé et médical<!-- --> entreprises.</p><a
+                        class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
+                        style="color:white" href="https://cal.com/pikasso/discovery">Voir Notre Solution</a>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-white">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-16">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 mr-2" aria-hidden="true">
+                            <path
+                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                            </path>
+                            <path d="M20 2v4"></path>
+                            <path d="M22 4h-4"></path>
+                            <circle cx="4" cy="20" r="2"></circle>
+                        </svg>Conçu sur Mesure pour <!-- -->Santé et Médical</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Fonctionnalités Essentielles<!-- --> for <!-- -->Santé et
+                        Médical<!-- --> Sites Web</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise de santé et
+                        médicale a besoin sur une seule plateforme</p>
+                </div>
+                <div class="space-y-12">
+                    <div>
+                        <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
+                            <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
+                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
+                                    <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
+                                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
+                                            style="font-family:var(--font-heading)">Système de Prise de Rendez-vous</h3>
+                                        <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
+                                            style="font-family:var(--font-body)">Réservation en ligne avec disponibilité en
+                                            temps réel, rappels automatisés et gestion des listes d'attente.</p>
+                                        <ul class="space-y-3 md:space-y-4 relative z-10">
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Réservation en ligne 24h/24</span>
+                                            </li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Rappels SMS/email
+                                                    automatisés</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Reprogrammation facile</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Automatisation de liste
+                                                    d'attente</span></li>
+                                        </ul>
+                                    </div>
+                                    <div
+                                        class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
+                                        <div
+                                            class="absolute top-6 right-6 z-20 inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF] text-white text-xs font-bold rounded-full shadow-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-sparkles w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                                </path>
+                                                <path d="M20 2v4"></path>
+                                                <path d="M22 4h-4"></path>
+                                                <circle cx="4" cy="20" r="2"></circle>
+                                            </svg>LE PLUS POPULAIRE</div><img
+                                            src="{{ asset('images/healthcare/healthcare-appointment-booking.webp') }}"
+                                            alt="Système de Prise de Rendez-vous"
+                                            class="absolute inset-0 w-full h-full object-contain" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
+                            <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
+                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse">
+                                    <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
+                                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
+                                            style="font-family:var(--font-heading)">Plateforme de Télémédecine</h3>
+                                        <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
+                                            style="font-family:var(--font-body)">Consultations vidéo conformes HIPAA avec
+                                            gestion des ordonnances et intégration de facturation.</p>
+                                        <ul class="space-y-3 md:space-y-4 relative z-10">
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Consultations vidéo HD</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Système de prescription
+                                                    électronique</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Intégration de paiement</span>
+                                            </li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Accès aux dossiers médicaux</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div
+                                        class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
+                                        <div
+                                            class="absolute top-6 right-6 z-20 inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF] text-white text-xs font-bold rounded-full shadow-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-sparkles w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                                </path>
+                                                <path d="M20 2v4"></path>
+                                                <path d="M22 4h-4"></path>
+                                                <circle cx="4" cy="20" r="2"></circle>
+                                            </svg>CONFORME HIPAA</div><img
+                                            src="{{ asset('images/healthcare/healthcare-telemedicine-platform.webp') }}"
+                                            alt="Plateforme de Télémédecine"
+                                            class="absolute inset-0 w-full h-full object-contain" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
+                            <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
+                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
+                                    <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
+                                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
+                                            style="font-family:var(--font-heading)">Portail Patient</h3>
+                                        <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
+                                            style="font-family:var(--font-body)">Accès sécurisé aux dossiers médicaux,
+                                            résultats d'examens, ordonnances et historique de rendez-vous.</p>
+                                        <ul class="space-y-3 md:space-y-4 relative z-10">
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Voir l'historique médical</span>
+                                            </li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Télécharger les résultats
+                                                    d'examens</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Demander le renouvellement
+                                                    d'ordonnances</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Envoyer un message à votre
+                                                    médecin</span></li>
+                                        </ul>
+                                    </div>
+                                    <div
+                                        class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
+                                        <img src="{{ asset('images/healthcare/healthcare-patient-portal.webp') }}"
+                                            alt="Portail Patient" class="absolute inset-0 w-full h-full object-contain" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
+                            <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
+                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse">
+                                    <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
+                                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
+                                            style="font-family:var(--font-heading)">Analytique du Cabinet</h3>
+                                        <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
+                                            style="font-family:var(--font-body)">Suivez les rendez-vous, les revenus, les
+                                            données démographiques des patients et les métriques opérationnelles en temps
+                                            réel.</p>
+                                        <ul class="space-y-3 md:space-y-4 relative z-10">
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Analytique de rendez-vous</span>
+                                            </li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Suivi des revenus</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Insights patients</span></li>
+                                            <li class="flex items-start gap-2 md:gap-3"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
+                                                    style="font-family:var(--font-body)">Performance du personnel</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div
+                                        class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
+                                        <img src="{{ asset('images/healthcare/healthcare-analytics-dashboard.webp') }}"
+                                            alt="Analytique du Cabinet"
+                                            class="absolute inset-0 w-full h-full object-contain" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F5F5F5]" id="portfolio">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
+                            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                        </svg>Nos Réalisations en <!-- -->Santé et Médical</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Histoires de Succès en <!-- -->Santé et Médical</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Projets réels, résultats réels. Découvrez
+                        comment nous avons aidé les entreprises en <!-- -->Santé et Médical<!-- --> à atteindre leurs
+                        objectifs numériques.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
+                    <div><a class="block" href="{{ route('case-study', 'doctor-hubli') }}">
+                            <div
+                                class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
+                                <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
+                                        src="{{ asset('images/our-work/doctor-hubli/doctor-hubli-hero.mp4') }}"
+                                        autoPlay="" loop="" muted="" playsInline=""
+                                        class="w-full h-full object-cover"></video>
+                                    <div
+                                        class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">MARKETPLACE
+                                            SANTÉ</span></div>
+                                    <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
+                                            class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
+                                                class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                            </svg>+300% Engagement</span></div>
+                                </div>
+                                <div class="px-5 py-4">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">DoctorHubli</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme de
+                                        réservation de médecins multi-spécialités</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
+                                </div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="text-center"></div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F8F8F8]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                            <path d="M3 10h18"></path>
+                        </svg>Calendrier de Lancement en 7-10 Jours</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Notre Processus de Développement<!-- --> for <!-- -->Santé
+                        et Médical</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Du concept au lancement en 4 semaines, optimisé
+                        pour les entreprises de santé et médicales</p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2"
+                        style="height:100%"></div>
+                    <div class="space-y-12 md:space-y-16">
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row">
+                                <div class="flex-1">
+                                    <div
+                                        class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        <div
+                                            class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-search w-5 h-5 md:w-6 md:h-6 text-white"
+                                                aria-hidden="true">
+                                                <path d="m21 21-4.34-4.34"></path>
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                            </svg></div>
+                                        <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
+                                            style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true">
+                                                <path d="M8 2v4"></path>
+                                                <path d="M16 2v4"></path>
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <path d="M3 10h18"></path>
+                                            </svg>Semaine 1</div>
+                                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
+                                            style="font-family:var(--font-heading)">Découverte et Planification de
+                                            Conformité HIPAA</h3>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Audit du flux de travail du
+                                                    cabinet et cartographie du parcours patient</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Liste de contrôle de conformité
+                                                    HIPAA et exigences de sécurité</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Analyse concurrentielle des
+                                                    prestataires de santé dans votre zone</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden md:flex items-center justify-center flex-shrink-0 relative">
+                                    <div
+                                        class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-search w-8 h-8 text-white" aria-hidden="true">
+                                            <path d="m21 21-4.34-4.34"></path>
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                        </svg></div>
+                                    <div class="absolute left-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
+                                        style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-calendar w-4 h-4" aria-hidden="true">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                        </svg>Semaine 1</div>
+                                </div>
+                                <div class="flex-1 hidden md:block"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse">
+                                <div class="flex-1">
+                                    <div
+                                        class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        <div
+                                            class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-palette w-5 h-5 md:w-6 md:h-6 text-white"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
+                                                </path>
+                                                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor">
+                                                </circle>
+                                                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor">
+                                                </circle>
+                                                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor">
+                                                </circle>
+                                                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor">
+                                                </circle>
+                                            </svg></div>
+                                        <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
+                                            style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true">
+                                                <path d="M8 2v4"></path>
+                                                <path d="M16 2v4"></path>
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <path d="M3 10h18"></path>
+                                            </svg>Semaine 2</div>
+                                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
+                                            style="font-family:var(--font-heading)">Design et Développement de Portail
+                                            Patient</h3>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Designs UI personnalisés pour la
+                                                    page d'accueil, les services et les profils de prestataires</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Portail patient conforme HIPAA
+                                                    avec chiffrement</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Système de prise de rendez-vous
+                                                    avec disponibilité en temps réel</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden md:flex items-center justify-center flex-shrink-0 relative">
+                                    <div class="absolute right-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
+                                        style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-calendar w-4 h-4" aria-hidden="true">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                        </svg>Semaine 2</div>
+                                    <div
+                                        class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-palette w-8 h-8 text-white" aria-hidden="true">
+                                            <path
+                                                d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
+                                            </path>
+                                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                        </svg></div>
+                                </div>
+                                <div class="flex-1 hidden md:block"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row">
+                                <div class="flex-1">
+                                    <div
+                                        class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        <div
+                                            class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-code w-5 h-5 md:w-6 md:h-6 text-white"
+                                                aria-hidden="true">
+                                                <path d="m16 18 6-6-6-6"></path>
+                                                <path d="m8 6-6 6 6 6"></path>
+                                            </svg></div>
+                                        <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
+                                            style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true">
+                                                <path d="M8 2v4"></path>
+                                                <path d="M16 2v4"></path>
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <path d="M3 10h18"></path>
+                                            </svg>Semaine 3</div>
+                                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
+                                            style="font-family:var(--font-heading)">Développement et Intégration</h3>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Système d'authentification
+                                                    sécurisé avec MFA pour le personnel et les patients</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Intégration de dossiers de santé
+                                                    électroniques (DSE)</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Vérification d'assurance et
+                                                    contrôle d'éligibilité</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden md:flex items-center justify-center flex-shrink-0 relative">
+                                    <div
+                                        class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-code w-8 h-8 text-white" aria-hidden="true">
+                                            <path d="m16 18 6-6-6-6"></path>
+                                            <path d="m8 6-6 6 6 6"></path>
+                                        </svg></div>
+                                    <div class="absolute left-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
+                                        style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-calendar w-4 h-4" aria-hidden="true">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                        </svg>Semaine 3</div>
+                                </div>
+                                <div class="flex-1 hidden md:block"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse">
+                                <div class="flex-1">
+                                    <div
+                                        class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        <div
+                                            class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-rocket w-5 h-5 md:w-6 md:h-6 text-white"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                                </path>
+                                                <path
+                                                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                                </path>
+                                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                            </svg></div>
+                                        <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
+                                            style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-calendar w-3 h-3 md:w-4 md:h-4" aria-hidden="true">
+                                                <path d="M8 2v4"></path>
+                                                <path d="M16 2v4"></path>
+                                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                <path d="M3 10h18"></path>
+                                            </svg>Semaine 4</div>
+                                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
+                                            style="font-family:var(--font-heading)">Tests, Audit de Conformité et
+                                            Lancement</h3>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Audit de conformité HIPAA et
+                                                    tests de pénétration</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Formation du personnel sur le
+                                                    portail patient et les fonctionnalités admin</span></li>
+                                            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]"
+                                                    aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
+                                                    style="font-family:var(--font-body)">Configuration SEO pour les
+                                                    recherches de santé locales</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden md:flex items-center justify-center flex-shrink-0 relative">
+                                    <div class="absolute right-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
+                                        style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-calendar w-4 h-4" aria-hidden="true">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                        </svg>Semaine 4</div>
+                                    <div
+                                        class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-rocket w-8 h-8 text-white" aria-hidden="true">
+                                            <path
+                                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                            </path>
+                                            <path
+                                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                            </path>
+                                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                        </svg></div>
+                                </div>
+                                <div class="flex-1 hidden md:block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8">
+                    <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
+                        style="font-family:var(--font-heading)">Prêt à démarrer votre <!-- -->santé et médical<!-- -->
+                        projet de site web ?</p><a
+                        class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
+                        style="color:white" href="https://cal.com/pikasso/discovery">Réserver un Appel Découverte
+                        Gratuit</a>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="relative w-full py-16 md:py-24 bg-[#F5F5F5]">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4"
+                        style="font-family:var(--font-heading)">Solutions Personnalisées, Tarification Transparente</h2>
+                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour
+                        discuter de vos besoins spécifiques et obtenir un devis personnalisé</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
+                    <div class="relative bg-black rounded-[32px] p-3 text-white">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-[var(--color-primary-orange)] text-white px-4 py-1.5 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
+                                    <path d="M16 7h6v6"></path>
+                                    <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                </svg>Recommandé</div>
+                        </div>
+                        <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-monitor w-6 h-6 text-white" aria-hidden="true">
+                                            <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                            <line x1="8" x2="16" y1="21" y2="21">
+                                            </line>
+                                            <line x1="12" x2="12" y1="17" y2="21">
+                                            </line>
+                                        </svg></div>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-white">Développement de Sites Web</h3>
+                                </div>
+                            </div>
+                            <div class="mb-6 p-4 rounded-2xl bg-white/5">
+                                <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et
+                                    design premium livré en 7-10 jours.</p>
+                            </div>
+                            <div class="divide-y divide-white/10">
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Intégration de fonctionnalités alimentées par
+                                        l'IA</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Tableau de bord personnalisé et portail
+                                        utilisateur</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Design responsive mobile-first</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Contenu professionnel et rédaction</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">SEO avancé et optimisation des performances</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Authentification et gestion des utilisateurs</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Intégration de paiement prête</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-white/80">Analytique et suivi de conversion</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-green-400 font-medium">Hébergement gratuit pour 3 mois
+                                        inclus</span></div>
+                            </div>
+                        </div>
+                        <div class="px-6 md:px-8 pb-3">
+                            <div class="mb-6">
+                                <div class="flex flex-col"><span
+                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">À partir de</span>
+                                    <div class="flex items-end gap-2"><span
+                                            class="text-5xl md:text-6xl font-bold">Obtenir Votre Devis Gratuit</span><span
+                                            class="text-white/50 text-xl mb-2"></span></div>
+                                    <p class="text-white/60 text-sm mt-2">Devis personnalisé basé sur la portée de votre
+                                        projet</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-3"><a
+                                    class="flex-1 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors whitespace-nowrap text-center"
+                                    href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a
+                                    href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connectez-vous
+                                    sur WhatsApp</a></div>
+                        </div>
+                    </div>
+                    <div class="relative bg-white rounded-[32px] p-3 text-black border border-black/10">
+                        <div
+                            class="relative rounded-[20px] p-6 md:p-8 mb-3 transition-all duration-700 ease-in-out bg-[#F5F5F5] overflow-hidden border border-transparent">
+                            <div class="flex items-start justify-between gap-4 mb-6">
+                                <div class="flex items-center gap-3 flex-shrink-0">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-black/10 flex items-center justify-center transition-all duration-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-infinity w-7 h-7 text-black" aria-hidden="true">
+                                            <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
+                                        </svg></div>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-black">Abonnement</h3>
+                                </div><button
+                                    class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20"
+                                    style="margin-top:0">
+                                    <div class="relative rounded-full transition-all duration-400 ease-out w-11 h-7 bg-black/20"
+                                        style="box-shadow:none">
+                                        <div
+                                            class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5">
+                                        </div>
+                                    </div><span
+                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Inclure
+                                        les Réseaux Sociaux</span>
+                                </button>
+                            </div>
+                            <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-sparkles w-5 h-5 transition-all duration-300 text-transparent"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                    </path>
+                                    <path d="M20 2v4"></path>
+                                    <path d="M22 4h-4"></path>
+                                    <circle cx="4" cy="20" r="2"></circle>
+                                </svg>
+                                <p class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant
+                                    besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de site
+                                    web.</p>
+                            </div>
+                            <div class="divide-y divide-black/10">
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">1 projet actif à la fois</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Chatbot IA et fonctionnalités
+                                        d'automatisation</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Développement de tableau de bord personnalisé</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Livraison des tâches en 48-72 heures</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Révisions illimitées jusqu'à la perfection</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Développement full-stack (frontend + backend)</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">SEO professionnel et stratégie de contenu</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Collaboration en temps réel sur Slack</span></div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-black/80">Hébergement premium et maintenance</span></div>
+                            </div>
+                        </div>
+                        <div class="px-6 md:px-8 pb-3">
+                            <div class="mb-6">
+                                <div class="flex flex-col"><span
+                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">À partir de</span>
+                                    <div class="flex items-end gap-2">
+                                        <div class="relative overflow-hidden" style="height:fit-content"><span
+                                                class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Obtenir
+                                                Votre Devis Gratuit</span><span
+                                                class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Obtenir
+                                                Votre Devis Gratuit</span></div><span
+                                            class="text-black/50 text-xl mb-2">/mois</span>
+                                    </div>
+                                    <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery"
+                                    data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
+                                    class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Réserver
+                                    un Appel Découverte</button><a
+                                    href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Connectez-vous
+                                    sur WhatsApp</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12 md:py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div
+                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-12 border-2 border-[#00AEEF]/20 text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#00AEEF]/10 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-globe w-8 h-8 text-[#00AEEF]" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg></div>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]"
+                            style="font-family:var(--font-heading)">Prêt à Transformer Votre Site Web de Santé et Médical
+                            ?</h2>
+                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Obtenez
+                            d'abord une analyse gratuite complète :</p>
+                        <div class="flex flex-wrap gap-3 justify-center mb-4">
+                            <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Vérification des
+                                    performances</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Révision du design</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Recommandations alimentées
+                                    par l'IA</span>
+                            </div>
+                        </div><a
+                            class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
+                            href="{{ route('tool', 'website-analyzer') }}"><span>Analyser Votre Site Web - 100%
+                                Gratuit</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                        <p class="text-xs text-[var(--text-secondary)] mt-4">Pas de carte de crédit requise • Résultats en
+                            30 secondes • Plan d'amélioration personnalisé</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F8F8F8]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
+                            <path d="M16 7h6v6"></path>
+                            <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                        </svg>Pourquoi Nous Choisir</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->Santé et Médical<!-- --> vs
+                        Autres</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Découvrez pourquoi <!-- -->Santé et
+                        Médical<!-- --> entreprises choisissent CodeSommetStudio plutôt que d'autres agences locales et
+                        concurrents internationaux.</p>
+                </div>
+                <div class="max-w-5xl mx-auto">
+                    <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
+                        <div
+                            class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
+                            <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
+                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Fonctionnalité
+                                </div>
+                                <div class="p-3 md:p-4 text-center">
+                                    <div
+                                        class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                                            class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">CodeSommetStudio
+                                            <!-- -->Santé et Médical</span>
+                                    </div>
+                                </div>
+                                <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
+                                    Other <!-- -->Santé et Médical<!-- --> Agences</div>
+                                <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
+                                    Agences Internationales</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Expérience en Santé
+                                </div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">Plus de 30 projets santé</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Expérience
+                                        générique</span></div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">Limité</span></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Conformité HIPAA
+                                </div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">Intégré dès le premier jour</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
+                                        supplémentaire</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
+                                        garanti</span></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Portail Patient
+                                </div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]"
+                                        aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Formulaire
+                                        de contact basique</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
+                                        supplémentaire</span></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Plateforme de
+                                    Télémédecine</div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">Entièrement intégré</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Tiers
+                                        uniquement</span></div>
+                                <div class="p-3 md:p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-circle-x w-6 h-6 text-[#EF4444]/40 mx-auto"
+                                        aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m15 9-6 6"></path>
+                                        <path d="m9 9 6 6"></path>
+                                    </svg></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Intégration DSE
+                                </div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">Tous les systèmes majeurs</span></div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">Limité</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
+                                        supplémentaire</span></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Prix de Départ</div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">Obtenir Votre Devis Gratuit</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
+                                        élevé</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
+                                        élevé</span></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Délai de Réalisation
+                                </div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">6-8
+                                        semaines</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">12-16
+                                        semaines</span></div>
+                            </div>
+                            <div
+                                class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Support HIPAA</div>
+                                <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
+                                        class="text-sm font-bold text-[#0F0F0F]">Inclus</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Frais
+                                        supplémentaires</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
+                                        inclus</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les prix moyens et les offres de
+                            services des 10 meilleures agences en <!-- -->Santé et Médical</p>
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full text-sm font-semibold text-[#22C55E]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>Meilleur Rapport Qualité-Prix pour <!-- -->Santé et Médical<!-- --> Entreprises</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-[#F8F8F8]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-message-square w-4 h-4 mr-2"
+                            aria-hidden="true">
+                            <path
+                                d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>Ce que Nos Clients Disent de Nous</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">What <!-- -->Santé et Médical<!-- --> Les Clients Disent
+                        de Nous</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
+                        entreprises en <!-- -->Santé et Médical<!-- --> qui ont obtenu des résultats remarquables avec
+                        CodeSommetStudio.</p>
+                </div>
+                <div class="relative max-w-5xl mx-auto"><button
+                        class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                        aria-label="Previous testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-left w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg></button><button
+                        class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                        aria-label="Suivant testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg></button>
+                    <div class="testimonial-carousel-container" data-current-slide="0">
+                        <div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="0">
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
+                                    &quot;CodeSommetStudio a transformé notre plateforme B2B et généré 250% de leads
+                                    qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise
+                                    technique sont exceptionnelles.&quot;</blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}"
+                                        alt="Mohammed Al-Raba"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Al-Raba</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">PDG chez Al-Raba Technologies</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Maroc</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Travailler à
+                                    distance avec CodeSommetStudio a été fluide. Ils ont livré notre plateforme de
+                                    réservation médicale en 10 jours avec une conformité DHA complète. Le portail patient a
+                                    réduit notre charge de travail admin de 60% et les rendez-vous ont augmenté de
+                                    180%.&quot;</blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}"
+                                        alt="Dr. Sarah Al-Mansouri"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur Médical chez Dubaï Wellness
+                                            Clinic</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Dubaï Healthcare City, EAU</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="1" style="display: none;">
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Nous avions
+                                    besoin d'une plateforme e-learning complexe avec vidéo en direct, suivi des progrès et
+                                    intégration de paiement. CodeSommetStudio a tout livré en 3 semaines. Les inscriptions
+                                    étudiantes ont augmenté de 320% au premier trimestre après le lancement.&quot;
+                                </blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/james-thornton.webp') }}"
+                                        alt="James Thornton"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Fondateur chez EduPath Global</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Londres, Royaume-Uni</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                <div class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-quote w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <path
+                                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                        <path
+                                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="0" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 fill-[#FFB800] text-[#FFB800]"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Notre site
+                                    immobilier est passé de simples annonces à une plateforme de réservation complète avec
+                                    visites virtuelles et intégration CRM. Les demandes en ligne ont augmenté de 400% et
+                                    nous convertissons maintenant 3x plus de leads en visites. Un travail vraiment
+                                    exceptionnel.&quot;</blockquote>
+                                <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
+                                        src="{{ asset('images/testimonials/fatima-benali.webp') }}"
+                                        alt="Fatima Zahra Benali"
+                                        class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur des Opérations chez Riad
+                                            Luxe Properties</div>
+                                        <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
+                                                <path
+                                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                </path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg><span>Marrakech, Maroc</span></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 mt-8"><button
+                            class="testimonial-dot transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125"
+                            data-dot="0"
+                            aria-label="Go to testimonial group 1"></button><button
+                            class="testimonial-dot transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40"
+                            data-dot="1"
+                            aria-label="Go to testimonial group 2"></button></div>
+                </div>
+                <div class="mt-10 text-center">
+                    <p class="text-sm text-[#0F0F0F]/60">Vous voulez voir plus d'histoires de succès ?<!-- --> <a
+                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">Voir
+                            toutes les études de cas</a></p>
+                </div>
+            </div>
+        </section>
+        <script>
+        (function() {
+            var container = document.querySelector('.testimonial-carousel-container');
+            if (!container) return;
+            var slides = container.querySelectorAll('.testimonial-slide');
+            var wrapper = container.closest('.relative.max-w-5xl') || container.closest('[class*="max-w-5xl"]');
+            var dots = wrapper ? wrapper.querySelectorAll('.testimonial-dot') : [];
+            var prevBtn = wrapper ? wrapper.querySelector('[aria-label="Previous testimonials"]') : null;
+            var nextBtn = wrapper ? wrapper.querySelector('[aria-label*="Suivant testimonials"]') : null;
+            var current = 0;
+            var total = slides.length;
+
+            function showSlide(index) {
+                slides.forEach(function(s) { s.style.display = 'none'; });
+                slides[index].style.display = '';
+                dots.forEach(function(d, i) {
+                    if (i === index) {
+                        d.className = 'testimonial-dot transition-all duration-300 rounded-full w-3 h-3 bg-[#00AEEF] scale-125';
+                    } else {
+                        d.className = 'testimonial-dot transition-all duration-300 rounded-full w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40';
+                    }
+                });
+                current = index;
+            }
+
+            if (prevBtn) prevBtn.addEventListener('click', function() {
+                showSlide((current - 1 + total) % total);
+            });
+            if (nextBtn) nextBtn.addEventListener('click', function() {
+                showSlide((current + 1) % total);
+            });
+            dots.forEach(function(dot, i) {
+                dot.addEventListener('click', function() { showSlide(i); });
+            });
+        })();
+        </script>
+        <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle-question-mark w-4 h-4 mr-2"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>Questions fréquentes</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
+                        <!-- -->Santé et Médical</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
+                        réponses. Voici les questions les plus courantes de <!-- -->Santé et Médical<!-- --> entreprises.
+                    </p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">1</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Combien de temps faut-il pour
+                                    construire un site web de santé ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">2</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Votre plateforme est-elle conforme
+                                    HIPAA ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">3</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous vous intégrer avec notre
+                                    système DSE existant ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">4</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Fournissez-vous une formation pour
+                                    notre personnel ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">5</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Les patients peuvent-ils réserver
+                                    des rendez-vous en ligne 24h/24 ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">6</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Comment fonctionne la plateforme de
+                                    télémédecine ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">7</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Qu'est-ce qui vous différencie des
+                                    autres développeurs web de santé ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">8</span></div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous aider à réduire nos taux
+                                    d'absentéisme ?</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button></div>
+                </div>
+                <div class="mt-10 text-center">
+                    <p class="text-sm text-[#0F0F0F]/60 mb-2">Vous avez encore des questions ?</p><a
+                        href="{{ route('contact') }}"
+                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
+                        notre <!-- -->Santé et Médical<!-- --> team<svg class="w-4 h-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+        <section class="w-full py-24 md:py-32 bg-white">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-globe w-4 h-4 mr-2" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>Présence Mondiale</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">Au Service de Clients dans le Monde Entier</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Nous avons construit des sites web de santé et
+                        médicaux pour des clients à travers le monde. Que vous soyez au Maroc ou ailleurs, nous livrons des
+                        solutions de classe mondiale.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
+                    <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                            href="{{ route('location', 'dubai') }}">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-2 md:gap-3 min-w-0">
+                                    <div
+                                        class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg></div>
+                                    <div class="min-w-0 flex-1">
+                                        <h3
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            Dubaï</h3>
+                                        <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
+                                            <span>🇦🇪</span><span class="truncate">UAE</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                            href="{{ route('location', 'casablanca') }}">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-2 md:gap-3 min-w-0">
+                                    <div
+                                        class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg></div>
+                                    <div class="min-w-0 flex-1">
+                                        <h3
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            Casablanca</h3>
+                                        <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
+                                            <span>🇲🇦</span><span class="truncate">Maroc</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                            href="{{ route('location', 'san-francisco') }}">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-2 md:gap-3 min-w-0">
+                                    <div
+                                        class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg></div>
+                                    <div class="min-w-0 flex-1">
+                                        <h3
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            San Francisco</h3>
+                                        <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
+                                            <span>🇺🇸</span><span class="truncate">États-Unis</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                            href="{{ route('location', 'london') }}">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-2 md:gap-3 min-w-0">
+                                    <div
+                                        class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg></div>
+                                    <div class="min-w-0 flex-1">
+                                        <h3
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            Londres</h3>
+                                        <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
+                                            <span>🇬🇧</span><span class="truncate">Royaume-Uni</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                            href="{{ route('location', 'paris') }}">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-2 md:gap-3 min-w-0">
+                                    <div
+                                        class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg></div>
+                                    <div class="min-w-0 flex-1">
+                                        <h3
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            Paris</h3>
+                                        <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
+                                            <span>🇫🇷</span><span class="truncate">Paris</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                            href="{{ route('location', 'marrakech') }}">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-2 md:gap-3 min-w-0">
+                                    <div
+                                        class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg></div>
+                                    <div class="min-w-0 flex-1">
+                                        <h3
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            Marrakech</h3>
+                                        <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
+                                            <span>🇲🇦</span><span class="truncate">Maroc</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
+                    <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez <!-- -->santé et
+                        médical<!-- --> développement web dans une ville spécifique ?</p>
+                    <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 px-4"><a
+                            class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
+                            href="/#locations"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4"
+                                aria-hidden="true">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>Voir Tous les Emplacements<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a><span class="text-[#0F0F0F]/40">or</span><a
+                            class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
+                            href="{{ route('contact') }}">Contactez-nous pour Votre Ville<svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-white py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="text-center mb-8 md:mb-10">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4"
+                        style="font-family:var(--font-heading)">Industries Connexes que Nous Servons</h2>
+                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">Découvrez nos services de
+                        développement web spécialisés pour d'autres industries</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
+                        class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                        href="{{ route('service', 'telemedicine-platform-development') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-video w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5">
+                                        </path>
+                                        <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                                    </svg></div>
+                                <div class="flex-1 min-w-0">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Télémédecine</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
+                                        consultation vidéo sécurisées avec gestion des patients et systèmes d'ordonnances.
+                                    </p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                        href="{{ route('service', 'study-abroad-website-development') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-graduation-cap w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                        </path>
+                                        <path d="M22 10v6"></path>
+                                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                    </svg></div>
+                                <div class="flex-1 min-w-0">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Conseil en Études à l'Étranger</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
+                                        cours, systèmes LMS et portails étudiants pour les agences d'études à l'étranger.
+                                    </p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                        href="{{ route('service', 'language-school-website-development') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-message-square w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex-1 min-w-0">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Écoles de Langues</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web modernes
+                                        pour les instituts de formation linguistique avec gestion des cours et
+                                        fonctionnalités d'apprentissage en ligne.</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                        href="{{ route('service', 'immigration-consultancy-website-development') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-sparkles w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                        </path>
+                                        <path d="M20 2v4"></path>
+                                        <path d="M22 4h-4"></path>
+                                        <circle cx="4" cy="20" r="2"></circle>
+                                    </svg></div>
+                                <div class="flex-1 min-w-0">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Conseil en Immigration</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web
+                                        professionnels pour les consultants en visa et immigration avec suivi de dossiers et
+                                        gestion de documents.</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                        href="{{ route('service', 'saas-platform-development') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-zap w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                        </path>
+                                    </svg></div>
+                                <div class="flex-1 min-w-0">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Plateformes SaaS</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Applications SaaS
+                                        complètes avec authentification, facturation et fonctionnalités en temps réel.</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                        href="{{ route('service', 'fintech-website-development') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-dollar-sign w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <line x1="12" x2="12" y1="2" y2="22"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg></div>
+                                <div class="flex-1 min-w-0">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        FinTech</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes
+                                        financières sécurisées avec traitement des paiements, conformité et fonctionnalités
+                                        réglementaires.</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a></div>
+                <div class="text-center mt-8 md:mt-10"><a
+                        class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
+                        href="/#industries">Voir Toutes les Industries<svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg></a></div>
+            </div>
+        </section>
+        <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3"
+                        style="font-family:var(--font-heading)">Explorer Plus</h2>
+                    <p class="text-lg text-[var(--text-secondary)]">Découvrez ce qui fait de CodeSommetStudio votre
+                        partenaire idéal en développement web</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
+                        class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                        href="{{ route('tool', 'website-analyzer') }}">
+                        <div class="flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                                style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-globe w-6 h-6" aria-hidden="true"
+                                    style="color:#00AEEF">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg></div>
+                            <h3
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                Audit Gratuit de Site Web</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Obtenez une analyse alimentée
+                                par l'IA avec plus de 40 vérifications</p>
+                            <div
+                                class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
+                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true" style="color:#00AEEF">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></div>
+                        </div>
+                    </a><a
+                        class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                        href="{{ route('our-work') }}">
+                        <div class="flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                                style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-folder w-6 h-6" aria-hidden="true"
+                                    style="color:#00AEEF">
+                                    <path
+                                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z">
+                                    </path>
+                                </svg></div>
+                            <h3
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                Voir Nos Réalisations</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez les études de cas et
+                                les histoires de succès clients</p>
+                            <div
+                                class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
+                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true" style="color:#00AEEF">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></div>
+                        </div>
+                    </a><a
+                        class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                        href="{{ route('about') }}">
+                        <div class="flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                                style="background-color:#8B5CF615"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-users w-6 h-6" aria-hidden="true"
+                                    style="color:#8B5CF6">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg></div>
+                            <h3
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                À Propos de CodeSommetStudio</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Découvrez notre équipe et notre
+                                approche</p>
+                            <div
+                                class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
+                                <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true" style="color:#8B5CF6">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></div>
+                        </div>
+                    </a><a
+                        class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                        href="{{ route('contact') }}">
+                        <div class="flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                                style="background-color:#10B98115"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail w-6 h-6" aria-hidden="true"
+                                    style="color:#10B981">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                </svg></div>
+                            <h3
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                Contactez-nous</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous pour les
+                                exigences de votre projet</p>
+                            <div
+                                class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
+                                <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true" style="color:#10B981">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></div>
+                        </div>
+                    </a><a
+                        class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                        href="{{ route('home') }}">
+                        <div class="flex flex-col h-full">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                                style="background-color:#3B82F615"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-briefcase w-6 h-6" aria-hidden="true"
+                                    style="color:#3B82F6">
+                                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                </svg></div>
+                            <h3
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                Retour à l'Accueil</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
+                                offres</p>
+                            <div
+                                class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
+                                <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true" style="color:#3B82F6">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></div>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+        <div class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
+            <div class="max-w-7xl mx-auto">
+                <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 py-6 md:py-8"
+                    style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)">
+                    <div class="absolute inset-0 z-0"
+                        style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                               linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);background-size:50px 50px">
+                    </div>
+                    <div class="absolute inset-0 z-[1]"
+                        style="background:radial-gradient(
                 ellipse 70% 70% at center,
                 transparent 0%,
                 transparent 10%,
@@ -35,19 +3114,807 @@
                 rgba(10, 10, 10, 0.6) 60%,
                 rgba(10, 10, 10, 0.85) 80%,
                 rgba(10, 10, 10, 0.95) 100%
-              )"></div><div class="relative z-10 text-center space-y-3 md:space-y-4"><h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family:var(--font-display)">Ready to Build Something Extraordinary?</h2><div class="flex flex-col items-center gap-4 md:gap-6"><div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+              )">
+                    </div>
+                    <div class="relative z-10 text-center space-y-3 md:space-y-4">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
+                            style="font-family:var(--font-display)">Prêt à Construire Quelque Chose d'Extraordinaire ?
+                        </h2>
+                        <div class="flex flex-col items-center gap-4 md:gap-6">
+                            <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto"
+                                    style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,
                 rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                 rgba(0, 0, 0, 0.055) 0px 47.8699px 47.8699px -2.8125px,
                 rgba(0, 0, 0, 0.043) 0px 82.4287px 82.4287px -3.28125px,
-                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" href="https://cal.com/pikasso/discovery"><div class="shine-wrapper"><div class="shine-element"></div></div><div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-black" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book Discovery Call</span></a><a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}"><div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser Votre Site Web</span></a></div><div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="pikasso/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px"
+                                    href="https://cal.com/pikasso/discovery">
+                                    <div class="shine-wrapper">
+                                        <div class="shine-element"></div>
+                                    </div>
+                                    <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div>
+                                    <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-black"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                            </path>
+                                            <path
+                                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                            </path>
+                                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                        </svg></div><span
+                                        class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
+                                        un Appel Découverte</span>
+                                </a><a
+                                    class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
+                                    style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
+                                    <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                            </path>
+                                            <path
+                                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                            </path>
+                                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                        </svg></div><span
+                                        class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
+                                        Votre Site Web</span>
+                                </a></div>
+                            <div class="hidden md:flex flex-row items-center gap-4"><button
+                                    data-cal-link="pikasso/discovery"
+                                    data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
+                                    class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden"
+                                    style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,
                 rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                 rgba(0, 0, 0, 0.055) 0px 47.8699px 47.8699px -2.8125px,
                 rgba(0, 0, 0, 0.043) 0px 82.4287px 82.4287px -3.28125px,
-                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px"><div class="shine-wrapper"><div class="shine-element"></div></div><div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-black" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Book Discovery Call</span></button><a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}"><div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser Votre Site Web</span></a></div><div class="relative mt-2 h-16"><div class="absolute pointer-events-none animate-cursor-stops" style="left:50%;top:50%"><div class="absolute left-0 -top-6 -translate-x-1/2"><svg width="20" height="19" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-lg"><path d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z" fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-miterlimit="10"></path></svg></div><div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div></div></div></div><p class="text-base md:text-lg text-white/70 font-medium">Join 95+ forward-thinking companies who chose excellence</p><p class="text-sm md:text-base text-white/50">Let&#x27;s discuss how AI and modern design can elevate your business</p><div class="mt-6"><div class="relative w-full py-8"><div class="flex items-center justify-center gap-0"><section class="flex items-center overflow-hidden" style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)"><ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="position:relative;flex-direction:row;will-change:transform"><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Chatbots IA</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Tableaux de Bord</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Automatisation</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">SEO</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Analytique</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Authentification</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Paiements</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">CMS</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Chatbots IA</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Tableaux de Bord</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Automatisation</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">SEO</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Analytique</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Authentification</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Paiements</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">CMS</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Chatbots IA</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Tableaux de Bord</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Automatisation</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">SEO</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Analytique</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Authentification</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">Paiements</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full border-2 border-white/30"></div></div><span class="text-[10px] font-medium text-white/40">CMS</span></div></li></ul></section><div style="margin-top:5px" class="jsx-19a8fa7e477c8109 relative z-10 flex-shrink-0"><div style="background:linear-gradient(135deg, #00AEEF, #0071BC, #0088D4);animation:subtle-pulse 2s ease-in-out infinite" class="jsx-19a8fa7e477c8109 relative p-[2px] rounded-[12px]"><div class="jsx-19a8fa7e477c8109 relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center"><img src="{{ asset('logo-white.svg') }}" alt="Pikasso Studio" class="jsx-19a8fa7e477c8109 h-8 w-auto"/></div></div></div><section class="flex items-center overflow-hidden" style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)"><ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="position:relative;flex-direction:row;will-change:transform"><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Chatbots IA</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Tableaux de Bord</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Automatisation</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">SEO</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Analytique</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Authentification</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Paiements</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">CMS</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Chatbots IA</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Tableaux de Bord</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Automatisation</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">SEO</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Analytique</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Authentification</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Paiements</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">CMS</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Chatbots IA</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Tableaux de Bord</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Automatisation</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">SEO</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Analytique</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Authentification</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">Paiements</span></div></li><li class="flex-shrink-0"><div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent"><div class="relative w-5 h-5"><div class="absolute inset-0 rounded-full bg-white flex items-center justify-center"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><span class="text-[10px] font-medium text-white/90">CMS</span></div></li></ul></section></div></div></div></div></div></div></div>
-@endsection
+                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px">
+                                    <div class="shine-wrapper">
+                                        <div class="shine-element"></div>
+                                    </div>
+                                    <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div>
+                                    <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-black"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                            </path>
+                                            <path
+                                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                            </path>
+                                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                        </svg></div><span
+                                        class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
+                                        un Appel Découverte</span>
+                                </button><a
+                                    class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
+                                    style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
+                                    <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                            </path>
+                                            <path
+                                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                            </path>
+                                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                        </svg></div><span
+                                        class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
+                                        Votre Site Web</span>
+                                </a></div>
+                            <div class="relative mt-2 h-16">
+                                <div class="absolute pointer-events-none animate-cursor-stops" style="left:50%;top:50%">
+                                    <div class="absolute left-0 -top-6 -translate-x-1/2"><svg width="20"
+                                            height="19" viewBox="0 0 24 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="drop-shadow-lg">
+                                            <path
+                                                d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z"
+                                                fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2"
+                                                stroke-miterlimit="10"></path>
+                                        </svg></div>
+                                    <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
+                                        style="font-size:10px"><span
+                                            class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
+                            visionnaires qui ont choisi l'excellence</p>
+                        <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
+                            peuvent élever votre entreprise</p>
+                        <div class="mt-6">
+                            <div class="relative w-full py-8">
+                                <div class="flex items-center justify-center gap-0">
+                                    <section class="flex items-center overflow-hidden"
+                                        style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
+                                        <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right"
+                                            style="position:relative;flex-direction:row;will-change:transform">
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Tableaux de
+                                                        Bord</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">CMS</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Tableaux de
+                                                        Bord</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">CMS</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">Tableaux de
+                                                        Bord</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/40">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full border-2 border-white/30">
+                                                        </div>
+                                                    </div><span class="text-[10px] font-medium text-white/40">CMS</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <div style="margin-top:5px"
+                                        class="jsx-19a8fa7e477c8109 relative z-10 flex-shrink-0">
+                                        <div style="background:linear-gradient(135deg, #00AEEF, #0071BC, #0088D4);animation:subtle-pulse 2s ease-in-out infinite"
+                                            class="jsx-19a8fa7e477c8109 relative p-[2px] rounded-[12px]">
+                                            <div
+                                                class="jsx-19a8fa7e477c8109 relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center">
+                                                <img src="{{ asset('logo-white.svg') }}" alt="CodeSommetStudio"
+                                                    class="jsx-19a8fa7e477c8109 h-8 w-auto" /></div>
+                                        </div>
+                                    </div>
+                                    <section class="flex items-center overflow-hidden"
+                                        style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
+                                        <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right"
+                                            style="position:relative;flex-direction:row;will-change:transform">
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Tableaux de
+                                                        Bord</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">CMS</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Tableaux de
+                                                        Bord</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">CMS</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Chatbots
+                                                        IA</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">Tableaux de
+                                                        Bord</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">SEO</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Analytique</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Authentification</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span
+                                                        class="text-[10px] font-medium text-white/90">Paiements</span>
+                                                </div>
+                                            </li>
+                                            <li class="flex-shrink-0">
+                                                <div
+                                                    class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
+                                                    <div class="relative w-5 h-5">
+                                                        <div
+                                                            class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
+                                                            <svg width="12" height="10" viewBox="0 0 12 10"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                    </div><span class="text-[10px] font-medium text-white/90">CMS</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endsection

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Obtenir un Devis Gratuit | CodeSommet')
-@section('meta_description', 'Parlez-nous de votre projet et obtenez un devis personnalis&eacute; sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
-@section('meta_keywords', 'web development Morocco, AI web development agency, Next.js development agency, dashboard development, SaaS development, education website development, healthcare website development, React development Morocco, TypeScript development, web development worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
+@section('meta_description', 'Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
+@section('meta_keywords', 'développement web Maroc, agence web IA, agence de développement Next.js, développement de tableaux de bord, développement SaaS, education website development, healthcare website development, React development Morocco, TypeScript development, web development worldwide, AI chatbot integration, custom dashboard design, web agency Morocco')
 @section('og_title', 'Obtenir un Devis Gratuit | CodeSommet')
-@section('og_description', 'Parlez-nous de votre projet et obtenez un devis personnalis&eacute; sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
-@section('twitter_description', 'Parlez-nous de votre projet et obtenez un devis personnalis&eacute; sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
+@section('og_description', 'Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
+@section('twitter_description', 'Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure pour sites web, tableaux de bord et plateformes SaaS.')
 
 @section('content')
 <div class="min-h-screen bg-[#F5F5F5] flex flex-col">
