@@ -7,24 +7,36 @@
 {{-- Quick Actions --}}
 <div class="flex flex-wrap items-center gap-3 mb-6">
     <a href="{{ route('admin.projects.edit', $project) }}" class="admin-btn admin-btn-secondary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
+        </svg>
         Modifier
     </a>
     <a href="{{ route('admin.payments.create', ['project_id' => $project->id]) }}" class="admin-btn admin-btn-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14"></path>
+            <path d="M12 5v14"></path>
+        </svg>
         Ajouter un paiement
     </a>
     @if($project->production_url)
-        <a href="{{ $project->production_url }}" target="_blank" class="admin-btn admin-btn-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
-            Voir en ligne
-        </a>
+    <a href="{{ $project->production_url }}" target="_blank" class="admin-btn admin-btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" x2="21" y1="14" y2="3"></line>
+        </svg>
+        Voir en ligne
+    </a>
     @endif
     @if($project->repo_url)
-        <a href="{{ $project->repo_url }}" target="_blank" class="admin-btn admin-btn-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-            Repository
-        </a>
+    <a href="{{ $project->repo_url }}" target="_blank" class="admin-btn admin-btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+        </svg>
+        Repository
+    </a>
     @endif
 </div>
 
@@ -76,7 +88,7 @@
                     <div class="text-[10px] text-[var(--text-tertiary)] uppercase tracking-wider mb-2">Stack technique</div>
                     <div class="flex flex-wrap gap-1.5">
                         @foreach($project->tech_stack as $tech)
-                            <span class="px-2 py-0.5 bg-[#00AEEF]/8 text-[#00AEEF] text-[11px] font-medium rounded-md">{{ $tech }}</span>
+                        <span class="px-2 py-0.5 bg-[#00AEEF]/8 text-[#00AEEF] text-[11px] font-medium rounded-md">{{ $tech }}</span>
                         @endforeach
                     </div>
                 </div>
@@ -87,25 +99,29 @@
         {{-- Phases --}}
         @if($project->phases && count($project->phases))
         <div class="admin-card">
-            <div class="admin-card-header"><h3 class="text-sm font-semibold">Phases du Projet</h3></div>
+            <div class="admin-card-header">
+                <h3 class="text-sm font-semibold">Phases du Projet</h3>
+            </div>
             <div class="admin-card-body">
                 <div class="space-y-2">
                     @foreach($project->phases as $i => $phase)
                     @php
-                        $phaseColor = match($phase['status'] ?? 'pending') {
-                            'completed' => '#22C55E',
-                            'in_progress' => '#00AEEF',
-                            default => '#D1D5DB',
-                        };
+                    $phaseColor = match($phase['status'] ?? 'pending') {
+                    'completed' => '#22C55E',
+                    'in_progress' => '#00AEEF',
+                    default => '#D1D5DB',
+                    };
                     @endphp
                     <div class="flex items-center gap-3 p-2.5 rounded-lg {{ ($phase['status'] ?? 'pending') === 'in_progress' ? 'bg-[#00AEEF]/5' : '' }}">
                         <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background:{{ $phaseColor }}20">
                             @if(($phase['status'] ?? 'pending') === 'completed')
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{{ $phaseColor }}" stroke-width="3"><path d="m5 12 5 5L20 7"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{{ $phaseColor }}" stroke-width="3">
+                                <path d="m5 12 5 5L20 7"></path>
+                            </svg>
                             @elseif(($phase['status'] ?? 'pending') === 'in_progress')
-                                <div class="w-2 h-2 rounded-full" style="background:{{ $phaseColor }}"></div>
+                            <div class="w-2 h-2 rounded-full" style="background:{{ $phaseColor }}"></div>
                             @else
-                                <div class="w-2 h-2 rounded-full" style="background:{{ $phaseColor }}"></div>
+                            <div class="w-2 h-2 rounded-full" style="background:{{ $phaseColor }}"></div>
                             @endif
                         </div>
                         <div class="flex-1">
@@ -127,7 +143,15 @@
             </div>
             <div class="overflow-x-auto">
                 <table class="admin-table">
-                    <thead><tr><th>Type</th><th>Montant</th><th>M&eacute;thode</th><th>Statut</th><th>&Eacute;ch&eacute;ance</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Montant</th>
+                            <th>M&eacute;thode</th>
+                            <th>Statut</th>
+                            <th>&Eacute;ch&eacute;ance</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         @forelse($project->payments as $payment)
                         <tr>
@@ -138,7 +162,9 @@
                             <td class="text-xs text-[var(--text-tertiary)]">{{ $payment->due_date?->format('d/m/Y') ?? '—' }}</td>
                         </tr>
                         @empty
-                        <tr><td colspan="5" class="text-center text-[var(--text-tertiary)] py-6 text-xs">Aucun paiement enregistr&eacute;</td></tr>
+                        <tr>
+                            <td colspan="5" class="text-center text-[var(--text-tertiary)] py-6 text-xs">Aucun paiement enregistr&eacute;</td>
+                        </tr>
                         @endforelse
                     </tbody>
                 </table>
@@ -150,7 +176,9 @@
     <div class="space-y-6">
         {{-- Client --}}
         <div class="admin-card">
-            <div class="admin-card-header"><h3 class="text-sm font-semibold">Client</h3></div>
+            <div class="admin-card-header">
+                <h3 class="text-sm font-semibold">Client</h3>
+            </div>
             <div class="admin-card-body space-y-3">
                 <div>
                     <div class="text-[10px] text-[var(--text-tertiary)] uppercase tracking-wider">Nom</div>
@@ -179,7 +207,9 @@
 
         {{-- Financial Summary --}}
         <div class="admin-card">
-            <div class="admin-card-header"><h3 class="text-sm font-semibold">Finances</h3></div>
+            <div class="admin-card-header">
+                <h3 class="text-sm font-semibold">Finances</h3>
+            </div>
             <div class="admin-card-body space-y-3">
                 <div class="flex justify-between"><span class="text-xs text-[var(--text-tertiary)]">Prix convenu</span><span class="text-sm font-semibold">{{ number_format($project->agreed_price, 0, ',', ' ') }} {{ $project->currency }}</span></div>
                 <div class="flex justify-between"><span class="text-xs text-[var(--text-tertiary)]">Pay&eacute;</span><span class="text-sm font-semibold text-[#22C55E]">{{ number_format($project->total_paid, 0, ',', ' ') }} {{ $project->currency }}</span></div>
@@ -195,7 +225,9 @@
         {{-- Notes --}}
         @if($project->notes)
         <div class="admin-card">
-            <div class="admin-card-header"><h3 class="text-sm font-semibold">Notes</h3></div>
+            <div class="admin-card-header">
+                <h3 class="text-sm font-semibold">Notes</h3>
+            </div>
             <div class="admin-card-body">
                 <p class="text-sm text-[var(--text-secondary)] whitespace-pre-line">{{ $project->notes }}</p>
             </div>
@@ -204,13 +236,15 @@
 
         {{-- Quick Status Update --}}
         <div class="admin-card">
-            <div class="admin-card-header"><h3 class="text-sm font-semibold">Changer le statut</h3></div>
+            <div class="admin-card-header">
+                <h3 class="text-sm font-semibold">Changer le statut</h3>
+            </div>
             <div class="admin-card-body">
                 <form method="POST" action="{{ route('admin.projects.update-status', $project) }}">
                     @csrf
                     <select name="status" class="admin-input mb-3">
                         @foreach(['lead'=>'Lead','proposal'=>'Proposition','negotiation'=>'N&eacute;gociation','contracted'=>'Sous contrat','discovery'=>'D&eacute;couverte','design'=>'Design','development'=>'D&eacute;veloppement','testing'=>'Test & QA','review'=>'Revue client','launched'=>'Lanc&eacute;','maintenance'=>'Maintenance','completed'=>'Termin&eacute;','cancelled'=>'Annul&eacute;','on_hold'=>'En pause'] as $val => $label)
-                            <option value="{{ $val }}" {{ $project->status === $val ? 'selected' : '' }}>{!! $label !!}</option>
+                        <option value="{{ $val }}" {{ $project->status === $val ? 'selected' : '' }}>{!! $label !!}</option>
                         @endforeach
                     </select>
                     <button type="submit" class="admin-btn admin-btn-primary w-full justify-center">Mettre &agrave; jour</button>

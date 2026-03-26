@@ -2085,15 +2085,16 @@
 
         function animateCountUp(el, target) {
             var duration = 2000;
+            var suffix = el.getAttribute('data-suffix') || '+';
             var increment = target / (duration / 16);
             var current = 0;
             var timer = setInterval(function () {
                 current += increment;
                 if (current >= target) {
-                    el.textContent = target + '+';
+                    el.textContent = target + suffix;
                     clearInterval(timer);
                 } else {
-                    el.textContent = Math.floor(current) + '+';
+                    el.textContent = Math.floor(current) + suffix;
                 }
             }, 16);
         }
@@ -2112,7 +2113,7 @@
             });
         } else {
             countEls.forEach(function (el) {
-                el.textContent = el.getAttribute('data-target') + '+';
+                el.textContent = el.getAttribute('data-target') + (el.getAttribute('data-suffix') || '+');
             });
         }
     })();

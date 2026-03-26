@@ -11,7 +11,10 @@
         <p class="text-xs text-[var(--text-tertiary)]">{{ $projects->total() }} projet(s) au total</p>
     </div>
     <a href="{{ route('admin.projects.create') }}" class="admin-btn admin-btn-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14"></path>
+            <path d="M12 5v14"></path>
+        </svg>
         Nouveau Projet
     </a>
 </div>
@@ -29,7 +32,7 @@
                 <select name="status" class="admin-input">
                     <option value="">Tous</option>
                     @foreach(['lead'=>'Lead','proposal'=>'Proposition','negotiation'=>'N&eacute;gociation','contracted'=>'Sous contrat','discovery'=>'D&eacute;couverte','design'=>'Design','development'=>'D&eacute;veloppement','testing'=>'Test & QA','review'=>'Revue','launched'=>'Lanc&eacute;','maintenance'=>'Maintenance','completed'=>'Termin&eacute;','cancelled'=>'Annul&eacute;','on_hold'=>'En pause'] as $val => $label)
-                        <option value="{{ $val }}" {{ request('status') === $val ? 'selected' : '' }}>{!! $label !!}</option>
+                    <option value="{{ $val }}" {{ request('status') === $val ? 'selected' : '' }}>{!! $label !!}</option>
                     @endforeach
                 </select>
             </div>
@@ -38,13 +41,13 @@
                 <select name="priority" class="admin-input">
                     <option value="">Toutes</option>
                     @foreach(['low'=>'Basse','medium'=>'Moyenne','high'=>'Haute','urgent'=>'Urgente'] as $val => $label)
-                        <option value="{{ $val }}" {{ request('priority') === $val ? 'selected' : '' }}>{{ $label }}</option>
+                    <option value="{{ $val }}" {{ request('priority') === $val ? 'selected' : '' }}>{{ $label }}</option>
                     @endforeach
                 </select>
             </div>
             <button type="submit" class="admin-btn admin-btn-secondary">Filtrer</button>
             @if(request()->hasAny(['search','status','priority','type']))
-                <a href="{{ route('admin.projects.index') }}" class="admin-btn admin-btn-secondary">R&eacute;initialiser</a>
+            <a href="{{ route('admin.projects.index') }}" class="admin-btn admin-btn-secondary">R&eacute;initialiser</a>
             @endif
         </form>
     </div>
@@ -97,12 +100,18 @@
                     <td>
                         <div class="flex items-center gap-1">
                             <a href="{{ route('admin.projects.edit', $project) }}" class="p-1.5 rounded-md hover:bg-gray-100 text-gray-400 hover:text-[#00AEEF] transition-colors" title="Modifier">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
+                                </svg>
                             </a>
                             <form method="POST" action="{{ route('admin.projects.destroy', $project) }}" onsubmit="return confirm('Supprimer ce projet ?')">
                                 @csrf @method('DELETE')
                                 <button class="p-1.5 rounded-md hover:bg-red-50 text-gray-400 hover:text-red-500 transition-colors" title="Supprimer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                    </svg>
                                 </button>
                             </form>
                         </div>
@@ -112,7 +121,9 @@
                 <tr>
                     <td colspan="9" class="text-center py-12">
                         <div class="text-[var(--text-tertiary)]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="mx-auto mb-3 opacity-30"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="mx-auto mb-3 opacity-30">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
                             <div class="text-sm">Aucun projet trouv&eacute;</div>
                             <a href="{{ route('admin.projects.create') }}" class="text-xs text-[#00AEEF] hover:underline mt-1 inline-block">Cr&eacute;er votre premier projet</a>
                         </div>

@@ -49,7 +49,9 @@
 <div class="grid lg:grid-cols-3 gap-6 mb-6">
     {{-- Monthly Chart --}}
     <div class="lg:col-span-2 admin-card">
-        <div class="admin-card-header"><h3 class="text-sm font-semibold">Revenus vs D&eacute;penses par mois</h3></div>
+        <div class="admin-card-header">
+            <h3 class="text-sm font-semibold">Revenus vs D&eacute;penses par mois</h3>
+        </div>
         <div class="admin-card-body">
             <div class="flex items-end gap-3 justify-between" style="height:200px">
                 @php $maxVal = max(1, max(array_column($monthlyData, 'revenue')), max(array_column($monthlyData, 'expenses'))); @endphp
@@ -64,20 +66,26 @@
                 @endforeach
             </div>
             <div class="flex items-center gap-4 mt-4 justify-center">
-                <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm" style="background:#00AEEF"></div><span class="text-[11px] text-[var(--text-tertiary)]">Revenus</span></div>
-                <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm" style="background:#EF4444;opacity:0.5"></div><span class="text-[11px] text-[var(--text-tertiary)]">D&eacute;penses</span></div>
+                <div class="flex items-center gap-1.5">
+                    <div class="w-3 h-3 rounded-sm" style="background:#00AEEF"></div><span class="text-[11px] text-[var(--text-tertiary)]">Revenus</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <div class="w-3 h-3 rounded-sm" style="background:#EF4444;opacity:0.5"></div><span class="text-[11px] text-[var(--text-tertiary)]">D&eacute;penses</span>
+                </div>
             </div>
         </div>
     </div>
 
     {{-- Expenses by Category --}}
     <div class="admin-card">
-        <div class="admin-card-header"><h3 class="text-sm font-semibold">D&eacute;penses par cat&eacute;gorie</h3></div>
+        <div class="admin-card-header">
+            <h3 class="text-sm font-semibold">D&eacute;penses par cat&eacute;gorie</h3>
+        </div>
         <div class="admin-card-body space-y-2">
             @forelse($expensesByCategory as $cat)
             @php
-                $catModel = new \App\Models\Expense(['category' => $cat->category]);
-                $pct = $totalExpenses > 0 ? ($cat->total / $totalExpenses * 100) : 0;
+            $catModel = new \App\Models\Expense(['category' => $cat->category]);
+            $pct = $totalExpenses > 0 ? ($cat->total / $totalExpenses * 100) : 0;
             @endphp
             <div>
                 <div class="flex items-center justify-between mb-1">
@@ -98,7 +106,9 @@
 {{-- Revenue by Project --}}
 @if($revenueByProject->count())
 <div class="admin-card mb-6">
-    <div class="admin-card-header"><h3 class="text-sm font-semibold">Revenus par Projet</h3></div>
+    <div class="admin-card-header">
+        <h3 class="text-sm font-semibold">Revenus par Projet</h3>
+    </div>
     <div class="admin-card-body">
         <div class="space-y-2">
             @php $maxProjectRevenue = max(1, $revenueByProject->max('total_paid')); @endphp
@@ -150,13 +160,19 @@
                             <form method="POST" action="{{ route('admin.finance.expense.destroy', $expense) }}" onsubmit="return confirm('Supprimer ?')">
                                 @csrf @method('DELETE')
                                 <button class="p-1.5 rounded-md hover:bg-red-50 text-gray-400 hover:text-red-500 transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                    </svg>
                                 </button>
                             </form>
                         </td>
                     </tr>
                     @empty
-                    <tr><td colspan="6" class="text-center py-8 text-[var(--text-tertiary)] text-xs">Aucune d&eacute;pense</td></tr>
+                    <tr>
+                        <td colspan="6" class="text-center py-8 text-[var(--text-tertiary)] text-xs">Aucune d&eacute;pense</td>
+                    </tr>
                     @endforelse
                 </tbody>
             </table>
@@ -168,7 +184,9 @@
 
     {{-- Add Expense Form --}}
     <div class="admin-card h-fit">
-        <div class="admin-card-header"><h3 class="text-sm font-semibold">Ajouter une d&eacute;pense</h3></div>
+        <div class="admin-card-header">
+            <h3 class="text-sm font-semibold">Ajouter une d&eacute;pense</h3>
+        </div>
         <div class="admin-card-body">
             <form method="POST" action="{{ route('admin.finance.expense.store') }}" class="space-y-3">
                 @csrf
@@ -185,7 +203,7 @@
                         <label class="admin-label">Cat&eacute;gorie <span class="text-[#00AEEF]">*</span></label>
                         <select name="category" class="admin-input" required>
                             @foreach(['hosting'=>'H&eacute;bergement','domain'=>'Domaine','license'=>'Licence','software'=>'Logiciel','freelancer'=>'Freelance','ads'=>'Publicit&eacute;','tools'=>'Outils','hardware'=>'Mat&eacute;riel','office'=>'Bureau','travel'=>'D&eacute;placement','marketing'=>'Marketing','design_asset'=>'Asset design','api_service'=>'Service API','other'=>'Autre'] as $val => $label)
-                                <option value="{{ $val }}">{!! $label !!}</option>
+                            <option value="{{ $val }}">{!! $label !!}</option>
                             @endforeach
                         </select>
                     </div>
@@ -195,7 +213,7 @@
                     <select name="project_id" class="admin-input">
                         <option value="">Aucun projet</option>
                         @foreach($projects as $p)
-                            <option value="{{ $p->id }}">{{ $p->name }}</option>
+                        <option value="{{ $p->id }}">{{ $p->name }}</option>
                         @endforeach
                     </select>
                 </div>
@@ -212,7 +230,10 @@
                     <textarea name="notes" class="admin-input" rows="2" placeholder="Remarques..."></textarea>
                 </div>
                 <button type="submit" class="admin-btn admin-btn-primary w-full justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5v14"></path>
+                    </svg>
                     Ajouter
                 </button>
             </form>
