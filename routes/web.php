@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\FinanceController;
+use App\Http\Controllers\Admin\BlogPostController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -123,6 +125,13 @@ Route::get('/our-work/{slug}', function (string $slug) {
     return view($view);
 })->where('slug', '[a-z\-]+')->name('case-study');
 
+// ─── Blog ───────────────────────────────────────────────────────────────────
+// URL: /blog, /blog/{slug}
+
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/preview', function () { return view('pages.blog.preview'); })->name('blog.preview');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9\-]+')->name('blog.show');
+
 // ─── Admin Authentication ────────────────────────────────────────────────────
 
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
@@ -145,4 +154,7 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     Route::get('/finance', [FinanceController::class, 'index'])->name('finance');
     Route::post('/finance/expense', [FinanceController::class, 'storeExpense'])->name('finance.expense.store');
     Route::delete('/finance/expense/{expense}', [FinanceController::class, 'destroyExpense'])->name('finance.expense.destroy');
+
+    // Blog Management
+    Route::resource('blog', BlogPostController::class);
 });

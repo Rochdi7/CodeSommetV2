@@ -8,8 +8,11 @@
 @section('twitter_description', 'Générez des balises de redirection meta refresh HTML avec des délais personnalisés. Outil gratuit pour créer des redirections automatiques de pages avec des comptes à rebours.')
 
 @section('content')
-<section class="relative overflow-hidden pt-28 pb-16 bg-white"><div class="absolute inset-0 pointer-events-none" style="z-index:0"><div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(180, 180, 180, 0.2) 1px, transparent 1px);background-size:30px 30px;background-position:center center"></div><div class="absolute inset-0 w-full h-full" style="background:radial-gradient(
+<section class="relative overflow-hidden pt-28 pb-16 bg-white">
+    <div class="absolute inset-0 pointer-events-none" style="z-index:0">
+        <div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(180, 180, 180, 0.2) 1px, transparent 1px);background-size:30px 30px;background-position:center center"></div>
+        <div class="absolute inset-0 w-full h-full" style="background:radial-gradient(
             ellipse 70% 70% at center,
             transparent 0%,
             transparent 10%,
@@ -18,16 +21,304 @@
             rgba(255, 255, 255, 0.57) 60%,
             rgba(255, 255, 255, 0.8075) 80%,
             rgba(255, 255, 255, 0.95) 100%
-          )"></div></div><div class="relative z-10 max-w-5xl mx-auto px-4 text-center"><nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Générateur de Redirection Meta Refresh</span></nav><div class="mb-8"><h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Générateur de Redirection Meta Refresh</h1><p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Générez des redirections meta refresh HTML avec des délais personnalisés</p></div><div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm"><div class="relative"><div class="w-2 h-2 bg-green-500 rounded-full"></div><div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div></div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span></div></div></section><section class="max-w-5xl mx-auto px-4 py-12"><div class="space-y-8"><div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-6"><div><h3 class="text-lg font-semibold text-gray-900 mb-2">Configuration de Redirection</h3><p class="text-sm text-gray-600 mb-4">Configurez vos paramètres de redirection meta refresh ci-dessous.</p></div><div class="space-y-2"><label class="block text-sm font-medium text-black">URL de Destination<span class="text-[#00AEEF] ml-1">*</span></label><div class="relative"><div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div><input type="url" placeholder="https://example.com/new-page" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value=""/></div><p class="text-sm text-gray-500">Entrez l'URL complète incluant http:// ou https://</p></div><div><label class="block text-sm font-medium text-black mb-3">Délai de Redirection : <span class="text-[#00AEEF] font-bold">5<!-- --> second<!-- -->s</span></label><input type="range" min="0" max="10" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#00AEEF]" style="background:linear-gradient(to right, #00AEEF 0%, #00AEEF 50%, #e5e5e5 50%, #e5e5e5 100%)" value="5"/><div class="flex justify-between text-xs text-gray-500 mt-2"><span>0s (Instantané)</span><span>5s (Recommandé)</span><span>10s (Max)</span></div></div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw w-4 h-4 mr-2" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>Générer le Code HTML</button></div></div><div class="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6"><div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert w-6 h-6 text-yellow-600 flex-shrink-0" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg><div><h3 class="text-lg font-semibold text-yellow-900 mb-2">Avertissement Impact SEO</h3><p class="text-sm text-yellow-800 leading-relaxed">Les redirections meta refresh ne sont <strong>PAS recommandées pour le SEO</strong>. Les moteurs de recherche peuvent ne pas transmettre l'équité de lien (PageRank) via les redirections meta refresh. Utilisez les <strong>redirections 301</strong> (côté serveur) pour les redirections permanentes ou les <strong>redirections 302</strong> pour les temporaires dans la mesure du possible.</p><p class="text-sm text-yellow-800 mt-2"><strong>Cas d'utilisation valides :</strong> Redirections côté client lorsque vous n'avez pas accès au serveur, pages d'atterrissage temporaires ou pages de redirection visibles par l'utilisateur.</p></div></div></div><div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6"><h3 class="text-lg font-semibold text-gray-900 mb-4">Quand Utiliser Meta Refresh</h3><div class="space-y-4"><div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><div><p class="text-sm font-medium text-gray-900">Pas d'Accès Serveur</p><p class="text-sm text-gray-600">Vous ne pouvez pas configurer les redirections côté serveur (ex., hébergement statique)</p></div></div><div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><div><p class="text-sm font-medium text-gray-900">Redirections Visibles par l'Utilisateur</p><p class="text-sm text-gray-600">You want users to see a &quot;redirecting...&quot; message</p></div></div><div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><div><p class="text-sm font-medium text-gray-900">Pages d'Atterrissage Temporaires</p><p class="text-sm text-gray-600">Pages spécifiques à une campagne qui redirigent après un compte à rebours</p></div></div><div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg><div><p class="text-sm font-medium text-gray-900">PAS pour les Redirections SEO Permanentes</p><p class="text-sm text-gray-600">Utilisez plutôt les redirections 301 pour préserver les classements de recherche</p></div></div></div></div><div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8"><div class="mb-6"><div class="flex items-center gap-2 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark w-5 h-5 text-[#00AEEF]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg><h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3></div><p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p></div><div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6"><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'une redirection meta refresh et comment fonctionne-t-elle ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Une redirection meta refresh est une redirection HTML qui utilise une balise <meta> dans la section head de la page to automatically redirect users to another URL after a specified delay. Unlike server-side redirects (301/302), meta refresh happens in the browser after the page loads. The browser reads the meta tag, waits for the delay, and then navigates to the destination URL.</p></div></div><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Quand dois-je utiliser les redirections meta refresh au lieu des redirections 301 ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Utilisez les redirections meta refresh uniquement lorsque vous n'avez pas accès au serveur (like static hosting platforms) or want users to see a 'redirecting...' message. For SEO purposes, always prefer 301 redirects as they pass link equity (PageRank) to the new URL. Meta refresh redirects may not preserve SEO value and can be treated as soft 301s by search engines, but results vary.</p></div></div><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Quel est le meilleur réglage de délai pour une redirection meta refresh ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Le délai recommandé est de 5 secondes, donnant aux utilisateurs le temps de lire le message de redirection and understand what's happening. Use 0 seconds (instant) only when the redirect is purely technical. Avoid delays over 10 seconds as users may navigate away or think the page is broken. Always include a manual 'click here' fallback link for accessibility.</p></div></div><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Les redirections meta refresh nuisent-elles au SEO ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Oui, les redirections meta refresh peuvent avoir un impact négatif sur le SEO. Search engines like Google may not pass full link equity through meta refresh redirects, and they're considered a less reliable signal than server-side 301 redirects. Google generally treats 0-second meta refresh redirects similarly to 301s, but delays over 5 seconds may be ignored completely. For permanent moves, always use 301 redirects.</p></div></div><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les redirections meta refresh et JavaScript ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Les redirections meta refresh fonctionnent même avec JavaScript désactivé and are defined in HTML, making them more reliable for older browsers. JavaScript redirects (window.location.href) execute faster, offer more control (like conditional redirects), and work better with modern web apps. However, JavaScript redirects fail if JavaScript is disabled, while meta refresh continues to work.</p></div></div><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser les redirections meta refresh pour les utilisateurs mobiles ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Oui, les redirections meta refresh fonctionnent sur tous les navigateurs et appareils mobiles. They're a good option for redirecting mobile users to app download pages or mobile-optimized sites when server-side redirects aren't available. However, ensure the redirect page loads quickly and the fallback link is easily clickable on mobile screens for better user experience.</p></div></div><div class="border-b border-gray-200 last:border-0" ><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200"><div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div><div class="flex-1 min-w-0"><h3 class="text-base md:text-lg font-semibold text-black">Quels sont les meilleurs cas d'utilisation pour les redirections meta refresh ?</h3></div><div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></button><div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem"><p>Les cas d'utilisation valides incluent : les pages d'atterrissage de campagne temporaires with countdown timers, client-side redirects on static hosting platforms (GitHub Pages, Netlify without server access), affiliate link redirect pages, 'thank you' pages that redirect after showing a message, and maintenance pages that redirect after a specific time. Avoid using them for permanent SEO redirects or critical navigation paths.</p></div></div></div><div class="mt-6 text-center" ><p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a></div></div></div></section><section class="py-16 bg-white border-t border-gray-100"><div class="max-w-5xl mx-auto px-4"><div class="text-center mb-10"><h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2><p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p></div><div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/og-preview-generator"><div class="mb-4"><div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></div></div><h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Aperçu Open Graph</h3><p class="text-sm text-gray-600 leading-relaxed mb-4">Prévisualisez les cartes de réseaux sociaux pour 4 plateformes majeures</p><div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div></a><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/xml-sitemap-generator"><div class="mb-4"><div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M10 12.5 8 15l2 2.5"></path><path d="m14 12.5 2 2.5-2 2.5"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path></svg></div></div><h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">XML Sitemap Generator</h3><p class="text-sm text-gray-600 leading-relaxed mb-4">Générez des sitemaps XML optimisés SEO pour les moteurs de recherche</p><div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div></a><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/robots-txt-generator"><div class="mb-4"><div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></div></div><h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Robots.txt Generator</h3><p class="text-sm text-gray-600 leading-relaxed mb-4">Contrôlez l'exploration des moteurs de recherche avec des fichiers robots.txt personnalisés</p><div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div></a></div><div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></section><section class="py-12 bg-[#F5F5F5]"><div class="max-w-5xl mx-auto px-4"><div class="relative overflow-hidden rounded-2xl px-6 py-8 md:py-10" style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)"><div class="absolute inset-0 z-0" style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                                 linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);background-size:50px 50px"></div><div class="absolute inset-0 z-[1]" style="background:radial-gradient(
+          )"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Générateur de Redirection Meta Refresh</span></nav>
+        <div class="mb-8">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Générateur de Redirection Meta Refresh</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Générez des redirections meta refresh HTML avec des délais personnalisés</p>
+        </div>
+        <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
+            <div class="relative">
+                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
+            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+        </div>
+    </div>
+</section>
+<section class="max-w-5xl mx-auto px-4 py-12">
+    <div class="space-y-8">
+        <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Configuration de Redirection</h3>
+                    <p class="text-sm text-gray-600 mb-4">Configurez vos paramètres de redirection meta refresh ci-dessous.</p>
+                </div>
+                <div class="space-y-2"><label class="block text-sm font-medium text-black">URL de Destination<span class="text-[#00AEEF] ml-1">*</span></label>
+                    <div class="relative">
+                        <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg></div><input type="url" placeholder="https://example.com/new-page" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value="" />
+                    </div>
+                    <p class="text-sm text-gray-500">Entrez l'URL complète incluant http:// ou https://</p>
+                </div>
+                <div><label class="block text-sm font-medium text-black mb-3">Délai de Redirection : <span class="text-[#00AEEF] font-bold">5<!-- --> second<!-- -->s</span></label><input type="range" min="0" max="10" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#00AEEF]" style="background:linear-gradient(to right, #00AEEF 0%, #00AEEF 50%, #e5e5e5 50%, #e5e5e5 100%)" value="5" />
+                    <div class="flex justify-between text-xs text-gray-500 mt-2"><span>0s (Instantané)</span><span>5s (Recommandé)</span><span>10s (Max)</span></div>
+                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw w-4 h-4 mr-2" aria-hidden="true">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                        <path d="M21 3v5h-5"></path>
+                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                        <path d="M8 16H3v5"></path>
+                    </svg>Générer le Code HTML</button>
+            </div>
+        </div>
+        <div class="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6">
+            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert w-6 h-6 text-yellow-600 flex-shrink-0" aria-hidden="true">
+                    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
+                    <path d="M12 9v4"></path>
+                    <path d="M12 17h.01"></path>
+                </svg>
+                <div>
+                    <h3 class="text-lg font-semibold text-yellow-900 mb-2">Avertissement Impact SEO</h3>
+                    <p class="text-sm text-yellow-800 leading-relaxed">Les redirections meta refresh ne sont <strong>PAS recommandées pour le SEO</strong>. Les moteurs de recherche peuvent ne pas transmettre l'équité de lien (PageRank) via les redirections meta refresh. Utilisez les <strong>redirections 301</strong> (côté serveur) pour les redirections permanentes ou les <strong>redirections 302</strong> pour les temporaires dans la mesure du possible.</p>
+                    <p class="text-sm text-yellow-800 mt-2"><strong>Cas d'utilisation valides :</strong> Redirections côté client lorsque vous n'avez pas accès au serveur, pages d'atterrissage temporaires ou pages de redirection visibles par l'utilisateur.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Quand Utiliser Meta Refresh</h3>
+            <div class="space-y-4">
+                <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">Pas d'Accès Serveur</p>
+                        <p class="text-sm text-gray-600">Vous ne pouvez pas configurer les redirections côté serveur (ex., hébergement statique)</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">Redirections Visibles par l'Utilisateur</p>
+                        <p class="text-sm text-gray-600">You want users to see a &quot;redirecting...&quot; message</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">Pages d'Atterrissage Temporaires</p>
+                        <p class="text-sm text-gray-600">Pages spécifiques à une campagne qui redirigent après un compte à rebours</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
+                        <path d="M12 9v4"></path>
+                        <path d="M12 17h.01"></path>
+                    </svg>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">PAS pour les Redirections SEO Permanentes</p>
+                        <p class="text-sm text-gray-600">Utilisez plutôt les redirections 301 pour préserver les classements de recherche</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
+            <div class="mb-6">
+                <div class="flex items-center gap-2 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark w-5 h-5 text-[#00AEEF]" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <path d="M12 17h.01"></path>
+                    </svg>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                </div>
+                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'une redirection meta refresh et comment fonctionne-t-elle ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Une redirection meta refresh est une redirection HTML qui utilise une balise
+                            <meta> dans la section head de la page to automatically redirect users to another URL after a specified delay. Unlike server-side redirects (301/302), meta refresh happens in the browser after the page loads. The browser reads the meta tag, waits for the delay, and then navigates to the destination URL.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Quand dois-je utiliser les redirections meta refresh au lieu des redirections 301 ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Utilisez les redirections meta refresh uniquement lorsque vous n'avez pas accès au serveur (like static hosting platforms) or want users to see a 'redirecting...' message. For SEO purposes, always prefer 301 redirects as they pass link equity (PageRank) to the new URL. Meta refresh redirects may not preserve SEO value and can be treated as soft 301s by search engines, but results vary.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Quel est le meilleur réglage de délai pour une redirection meta refresh ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Le délai recommandé est de 5 secondes, donnant aux utilisateurs le temps de lire le message de redirection and understand what's happening. Use 0 seconds (instant) only when the redirect is purely technical. Avoid delays over 10 seconds as users may navigate away or think the page is broken. Always include a manual 'click here' fallback link for accessibility.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Les redirections meta refresh nuisent-elles au SEO ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Oui, les redirections meta refresh peuvent avoir un impact négatif sur le SEO. Search engines like Google may not pass full link equity through meta refresh redirects, and they're considered a less reliable signal than server-side 301 redirects. Google generally treats 0-second meta refresh redirects similarly to 301s, but delays over 5 seconds may be ignored completely. For permanent moves, always use 301 redirects.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les redirections meta refresh et JavaScript ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Les redirections meta refresh fonctionnent même avec JavaScript désactivé and are defined in HTML, making them more reliable for older browsers. JavaScript redirects (window.location.href) execute faster, offer more control (like conditional redirects), and work better with modern web apps. However, JavaScript redirects fail if JavaScript is disabled, while meta refresh continues to work.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser les redirections meta refresh pour les utilisateurs mobiles ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Oui, les redirections meta refresh fonctionnent sur tous les navigateurs et appareils mobiles. They're a good option for redirecting mobile users to app download pages or mobile-optimized sites when server-side redirects aren't available. However, ensure the redirect page loads quickly and the fallback link is easily clickable on mobile screens for better user experience.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-base md:text-lg font-semibold text-black">Quels sont les meilleurs cas d'utilisation pour les redirections meta refresh ?</h3>
+                        </div>
+                        <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></div>
+                    </button>
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                        <p>Les cas d'utilisation valides incluent : les pages d'atterrissage de campagne temporaires with countdown timers, client-side redirects on static hosting platforms (GitHub Pages, Netlify without server access), affiliate link redirect pages, 'thank you' pages that redirect after showing a message, and maintenance pages that redirect after a specific time. Avoid using them for permanent SEO redirects or critical navigation paths.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-16 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
+            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/og-preview-generator">
+                <div class="mb-4">
+                    <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true">
+                            <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg></div>
+                </div>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Aperçu Open Graph</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">Prévisualisez les cartes de réseaux sociaux pour 4 plateformes majeures</p>
+                <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg></div>
+                <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
+            </a><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/xml-sitemap-generator">
+                <div class="mb-4">
+                    <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true">
+                            <path d="M10 12.5 8 15l2 2.5"></path>
+                            <path d="m14 12.5 2 2.5-2 2.5"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
+                        </svg></div>
+                </div>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">Générez des sitemaps XML optimisés SEO pour les moteurs de recherche</p>
+                <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg></div>
+                <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
+            </a><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/robots-txt-generator">
+                <div class="mb-4">
+                    <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" aria-hidden="true">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M10 9H8"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                        </svg></div>
+                </div>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Robots.txt Generator</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">Contrôlez l'exploration des moteurs de recherche avec des fichiers robots.txt personnalisés</p>
+                <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg></div>
+                <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
+            </a></div>
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg></a></div>
+    </div>
+</section>
+<section class="py-12 bg-[#F5F5F5]">
+    <div class="max-w-5xl mx-auto px-4">
+        <div class="relative overflow-hidden rounded-2xl px-6 py-8 md:py-10" style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)">
+            <div class="absolute inset-0 z-0" style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                                 linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);background-size:50px 50px"></div>
+            <div class="absolute inset-0 z-[1]" style="background:radial-gradient(
                   ellipse 70% 70% at center,
                   transparent 0%,
                   rgba(10, 10, 10, 0.3) 50%,
                   rgba(10, 10, 10, 0.8) 100%
-                )"></div><div class="relative z-10 text-center space-y-6"><h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2><p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p><div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                )"></div>
+            <div class="relative z-10 text-center space-y-6">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery"><div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span></a></div><p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Pas de contrats à long terme</p></div></div></div></section>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                    </a></div>
+                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Pas de contrats à long terme</p>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 
 @push('scripts')

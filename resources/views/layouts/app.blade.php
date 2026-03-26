@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,31 +60,42 @@
 
     {{-- Schéma d'organisation (global) --}}
     <script id="organization-schema" type="application/ld+json">
-    {
-        "@@context": "https://schema.org",
-        "@@type": "Organization",
-        "name": "CodeSommet",
-        "alternateName": "Code Sommet",
-        "url": "{{ config('app.url') }}",
-        "logo": "{{ asset('logo.svg') }}",
-        "description": "Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital.",
-        "sameAs": [
-            "https://www.linkedin.com/in/codesommet",
-            "https://www.instagram.com/code_sommet/",
-            "https://www.facebook.com/codesommetagency",
-            "https://www.youtube.com/@codesommet"
-        ],
-        "contactPoint": {
-            "@@type": "ContactPoint",
-            "contactType": "sales",
-            "telephone": "+212632582096",
-            "email": "codesommet@gmail.com",
-            "availableLanguage": ["Anglais", "Français", "Arabe"]
+        {
+            "@@context": "https://schema.org",
+            "@@type": "Organization",
+            "name": "CodeSommet",
+            "alternateName": "Code Sommet",
+            "url": "{{ config('app.url') }}",
+            "logo": "{{ asset('logo.svg') }}",
+            "description": "Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital.",
+            "sameAs": [
+                "https://www.linkedin.com/in/codesommet",
+                "https://www.instagram.com/code_sommet/",
+                "https://www.facebook.com/codesommetagency",
+                "https://www.youtube.com/@codesommet"
+            ],
+            "contactPoint": {
+                "@@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+212632582096",
+                "email": "codesommet@gmail.com",
+                "availableLanguage": ["Anglais", "Français", "Arabe"]
+            }
         }
-    }
     </script>
 </head>
+
 <body class="antialiased">
+
+    {{-- Preloader --}}
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <img src="{{ asset('logo.svg') }}" alt="CodeSommet" class="preloader-logo" width="160" height="40" />
+            <div class="preloader-spinner">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
 
     {{-- En-tête desktop --}}
     @include('partials.header')
@@ -105,6 +117,17 @@
     {{-- JS principal --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    {{-- Preloader dismiss --}}
+    <script>
+        window.addEventListener('load', function () {
+            var p = document.getElementById('preloader');
+            if (p) {
+                p.classList.add('loaded');
+                setTimeout(function () { p.remove(); }, 600);
+            }
+        });
+    </script>
+
     {{-- Google Analytics --}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K"></script>
     <script src="{{ asset('scripts/google-analytics.js') }}"></script>
@@ -113,4 +136,5 @@
     @stack('scripts')
 
 </body>
+
 </html>

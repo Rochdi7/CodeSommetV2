@@ -10,7 +10,10 @@
         <p class="text-xs text-[var(--text-tertiary)]">{{ $payments->total() }} paiement(s)</p>
     </div>
     <a href="{{ route('admin.payments.create') }}" class="admin-btn admin-btn-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14"></path>
+            <path d="M12 5v14"></path>
+        </svg>
         Nouveau Paiement
     </a>
 </div>
@@ -24,7 +27,7 @@
                 <select name="project_id" class="admin-input">
                     <option value="">Tous les projets</option>
                     @foreach($projects as $p)
-                        <option value="{{ $p->id }}" {{ request('project_id') == $p->id ? 'selected' : '' }}>{{ $p->name }}</option>
+                    <option value="{{ $p->id }}" {{ request('project_id') == $p->id ? 'selected' : '' }}>{{ $p->name }}</option>
                     @endforeach
                 </select>
             </div>
@@ -33,13 +36,13 @@
                 <select name="status" class="admin-input">
                     <option value="">Tous</option>
                     @foreach(['pending'=>'En attente','paid'=>'Pay&eacute;','overdue'=>'En retard','cancelled'=>'Annul&eacute;','refunded'=>'Rembours&eacute;'] as $val => $label)
-                        <option value="{{ $val }}" {{ request('status') === $val ? 'selected' : '' }}>{!! $label !!}</option>
+                    <option value="{{ $val }}" {{ request('status') === $val ? 'selected' : '' }}>{!! $label !!}</option>
                     @endforeach
                 </select>
             </div>
             <button type="submit" class="admin-btn admin-btn-secondary">Filtrer</button>
             @if(request()->hasAny(['status','project_id']))
-                <a href="{{ route('admin.payments.index') }}" class="admin-btn admin-btn-secondary">R&eacute;initialiser</a>
+            <a href="{{ route('admin.payments.index') }}" class="admin-btn admin-btn-secondary">R&eacute;initialiser</a>
             @endif
         </form>
     </div>
@@ -67,9 +70,9 @@
                 <tr>
                     <td>
                         @if($payment->project)
-                            <a href="{{ route('admin.projects.show', $payment->project) }}" class="font-semibold hover:text-[#00AEEF] transition-colors text-sm">{{ $payment->project->name }}</a>
+                        <a href="{{ route('admin.projects.show', $payment->project) }}" class="font-semibold hover:text-[#00AEEF] transition-colors text-sm">{{ $payment->project->name }}</a>
                         @else
-                            <span class="text-[var(--text-tertiary)]">—</span>
+                        <span class="text-[var(--text-tertiary)]">—</span>
                         @endif
                     </td>
                     <td><span class="text-xs">{{ $payment->type_label }}</span></td>
@@ -82,19 +85,27 @@
                     <td>
                         <div class="flex items-center gap-1">
                             <a href="{{ route('admin.payments.edit', $payment) }}" class="p-1.5 rounded-md hover:bg-gray-100 text-gray-400 hover:text-[#00AEEF] transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
+                                </svg>
                             </a>
                             <form method="POST" action="{{ route('admin.payments.destroy', $payment) }}" onsubmit="return confirm('Supprimer ce paiement ?')">
                                 @csrf @method('DELETE')
                                 <button class="p-1.5 rounded-md hover:bg-red-50 text-gray-400 hover:text-red-500 transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                    </svg>
                                 </button>
                             </form>
                         </div>
                     </td>
                 </tr>
                 @empty
-                <tr><td colspan="9" class="text-center py-12 text-[var(--text-tertiary)]">Aucun paiement enregistr&eacute;</td></tr>
+                <tr>
+                    <td colspan="9" class="text-center py-12 text-[var(--text-tertiary)]">Aucun paiement enregistr&eacute;</td>
+                </tr>
                 @endforelse
             </tbody>
         </table>
