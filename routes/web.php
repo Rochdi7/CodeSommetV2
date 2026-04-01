@@ -26,23 +26,23 @@ use App\Http\Controllers\BlogController;
 
 // ─── Core Pages ──────────────────────────────────────────────────────────────
 
-Route::view('/', 'pages.home')->name('home');
-Route::view('/about', 'pages.about')->name('about');
-Route::view('/contact', 'pages.contact')->name('contact');
-Route::view('/get-quote', 'pages.get-quote')->name('get-quote');
-Route::view('/our-work', 'pages.our-work')->name('our-work');
-Route::view('/industries', 'pages.industries')->name('industries');
-Route::view('/locations', 'pages.locations')->name('locations');
-Route::view('/tools', 'pages.tools')->name('tools');
+Route::view('/', 'frontoffice.pages.home')->name('home');
+Route::view('/about', 'frontoffice.pages.about')->name('about');
+Route::view('/contact', 'frontoffice.pages.contact')->name('contact');
+Route::view('/get-quote', 'frontoffice.pages.get-quote')->name('get-quote');
+Route::view('/our-work', 'frontoffice.pages.our-work')->name('our-work');
+Route::view('/industries', 'frontoffice.pages.industries')->name('industries');
+Route::view('/locations', 'frontoffice.pages.locations')->name('locations');
+Route::view('/tools', 'frontoffice.pages.tools')->name('tools');
 
 // ─── Legal Pages ─────────────────────────────────────────────────────────────
 
 Route::prefix('legal')->group(function () {
-    Route::view('/privacy-policy', 'pages.legal.privacy-policy')->name('privacy-policy');
-    Route::view('/terms-of-service', 'pages.legal.terms-of-service')->name('terms-of-service');
-    Route::view('/refund-policy', 'pages.legal.refund-policy')->name('refund-policy');
-    Route::view('/cookie-policy', 'pages.legal.cookie-policy')->name('cookie-policy');
-    Route::view('/acceptable-use', 'pages.legal.acceptable-use')->name('acceptable-use');
+    Route::view('/privacy-policy', 'frontoffice.pages.legal.privacy-policy')->name('privacy-policy');
+    Route::view('/terms-of-service', 'frontoffice.pages.legal.terms-of-service')->name('terms-of-service');
+    Route::view('/refund-policy', 'frontoffice.pages.legal.refund-policy')->name('refund-policy');
+    Route::view('/cookie-policy', 'frontoffice.pages.legal.cookie-policy')->name('cookie-policy');
+    Route::view('/acceptable-use', 'frontoffice.pages.legal.acceptable-use')->name('acceptable-use');
 });
 
 // ─── Service / Industry Pages (SEO Landing Pages) ───────────────────────────
@@ -72,7 +72,7 @@ Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
     if (! in_array($slug, $servicePages)) {
         abort(404);
     }
-    $view = "pages.services.{$slug}";
+    $view = "frontoffice.pages.services.{$slug}";
     if (! view()->exists($view)) {
         abort(404);
     }
@@ -99,7 +99,7 @@ Route::get('/web-development-company/{city}', function (string $city) use ($city
     if (! in_array($city, $cityPages)) {
         abort(404);
     }
-    $view = "pages.locations.web-development-company-{$city}";
+    $view = "frontoffice.pages.locations.web-development-company-{$city}";
     if (! view()->exists($view)) {
         abort(404);
     }
@@ -111,7 +111,7 @@ Route::get('/web-development-company/{city}', function (string $city) use ($city
 // Example: /tools/website-analyzer
 
 Route::get('/tools/{slug}', function (string $slug) {
-    $view = "pages.tools.{$slug}";
+    $view = "frontoffice.pages.tools.{$slug}";
     if (! view()->exists($view)) {
         abort(404);
     }
@@ -123,7 +123,7 @@ Route::get('/tools/{slug}', function (string $slug) {
 // Example: /our-work/glamworlds
 
 Route::get('/our-work/{slug}', function (string $slug) {
-    $view = "pages.our-work.{$slug}";
+    $view = "frontoffice.pages.our-work.{$slug}";
     if (! view()->exists($view)) {
         abort(404);
     }
@@ -134,7 +134,7 @@ Route::get('/our-work/{slug}', function (string $slug) {
 // URL: /blog, /blog/{slug}
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog/preview', function () { return view('pages.blog.preview'); })->name('blog.preview');
+Route::get('/blog/preview', function () { return view('frontoffice.pages.blog.preview'); })->name('blog.preview');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9\-]+')->name('blog.show');
 
 // ─── Newsletter (Public) ─────────────────────────────────────────────────────
@@ -144,6 +144,7 @@ Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
 // ─── Admin Authentication ────────────────────────────────────────────────────
 
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
+// Auth views now at backoffice.pages.auth.*
 Route::post('/admin/login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
 Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 

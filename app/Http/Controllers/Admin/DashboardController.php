@@ -57,7 +57,7 @@ class DashboardController extends Controller
             ->pluck('count', 'status')
             ->toArray();
 
-        return view('pages.admin.dashboard', compact(
+        return view('backoffice.pages.dashboard', compact(
             'totalProjects', 'activeProjects', 'totalRevenue', 'totalExpenses',
             'pendingPayments', 'profit', 'monthlyRevenue', 'recentProjects',
             'upcomingPayments', 'overduePayments', 'projectsByStatus'

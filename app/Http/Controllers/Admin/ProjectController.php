@@ -39,12 +39,12 @@ class ProjectController extends Controller
         $dir  = $request->get('dir', 'desc');
         $projects = $query->orderBy($sort, $dir)->paginate(15);
 
-        return view('pages.admin.projects.index', compact('projects'));
+        return view('backoffice.pages.projects.index', compact('projects'));
     }
 
     public function create()
     {
-        return view('pages.admin.projects.create');
+        return view('backoffice.pages.projects.create');
     }
 
     public function store(Request $request)
@@ -117,12 +117,12 @@ class ProjectController extends Controller
     public function show(Project $project)
     {
         $project->load(['payments', 'expenses']);
-        return view('pages.admin.projects.show', compact('project'));
+        return view('backoffice.pages.projects.show', compact('project'));
     }
 
     public function edit(Project $project)
     {
-        return view('pages.admin.projects.edit', compact('project'));
+        return view('backoffice.pages.projects.edit', compact('project'));
     }
 
     public function update(Request $request, Project $project)

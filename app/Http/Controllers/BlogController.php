@@ -28,7 +28,7 @@ class BlogController extends Controller
         $categories = BlogPost::published()->select('category')->distinct()->pluck('category');
         $featuredPost = BlogPost::published()->orderByDesc('published_at')->first();
 
-        return view('pages.blog.index', compact('posts', 'categories', 'featuredPost'));
+        return view('frontoffice.pages.blog.index', compact('posts', 'categories', 'featuredPost'));
     }
 
     public function show(string $slug)
@@ -52,6 +52,6 @@ class BlogController extends Controller
             $relatedPosts = $relatedPosts->merge($morePosts);
         }
 
-        return view('pages.blog.show', compact('post', 'relatedPosts'));
+        return view('frontoffice.pages.blog.show', compact('post', 'relatedPosts'));
     }
 }

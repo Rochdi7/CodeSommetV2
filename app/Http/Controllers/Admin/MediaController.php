@@ -22,7 +22,7 @@ class MediaController extends Controller
             return response()->json($media);
         }
 
-        return view('pages.admin.media.index', compact('media'));
+        return view('backoffice.pages.media.index', compact('media'));
     }
 
     /**

@@ -54,13 +54,13 @@ class BlogPostController extends Controller
         $posts = $query->paginate(15);
         $categories = self::$categories;
 
-        return view('pages.admin.blog.index', compact('posts', 'categories'));
+        return view('backoffice.pages.blog.index', compact('posts', 'categories'));
     }
 
     public function create()
     {
         $categories = self::$categories;
-        return view('pages.admin.blog.create', compact('categories'));
+        return view('backoffice.pages.blog.create', compact('categories'));
     }
 
     public function store(Request $request)
@@ -110,7 +110,7 @@ class BlogPostController extends Controller
     public function edit(BlogPost $blog)
     {
         $categories = self::$categories;
-        return view('pages.admin.blog.edit', ['post' => $blog, 'categories' => $categories]);
+        return view('backoffice.pages.blog.edit', ['post' => $blog, 'categories' => $categories]);
     }
 
     public function update(Request $request, BlogPost $blog)

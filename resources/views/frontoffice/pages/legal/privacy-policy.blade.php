@@ -1,0 +1,354 @@
+@extends('frontoffice.layouts.app')
+
+@section('title', 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet')
+@section('meta_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.')
+@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
+@section('og_title', 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc')
+@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.')
+@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
+
+@section('content')
+<section class="relative min-h-[60vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 bg-white">
+    <div class="absolute inset-0 pointer-events-none" style="z-index:0">
+        <div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(180, 180, 180, 0.2) 1px, transparent 1px);background-size:30px 30px;background-position:center center"></div>
+        <div class="absolute inset-0 w-full h-full" style="background:radial-gradient(
+            ellipse 70% 70% at center,
+            transparent 0%,
+            transparent 10%,
+            rgba(255, 255, 255, 0.1425) 25%,
+            rgba(255, 255, 255, 0.33249999999999996) 40%,
+            rgba(255, 255, 255, 0.57) 60%,
+            rgba(255, 255, 255, 0.8075) 80%,
+            rgba(255, 255, 255, 0.95) 100%
+          )"></div>
+    </div>
+    <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF]/10 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-4 h-4 text-[#00AEEF]" aria-hidden="true">
+                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                </svg><span class="text-sm font-medium text-[#0F0F0F]">Dernière mise à jour : Janvier 2026</span></div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#0F0F0F] leading-tight" style="font-family:var(--font-heading)">Politique de Confidentialité</h1>
+            <p class="text-lg md:text-xl text-[#0F0F0F]/70 max-w-2xl mx-auto">Votre vie privée nous tient à cœur. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.</p>
+            <div class="flex flex-wrap justify-center gap-3 pt-4"><a href="#information-we-collect" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Informations collectées</a><a href="#how-we-use" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Utilisation des données</a><a href="#your-rights" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Vos droits</a></div>
+        </div>
+    </div>
+</section>
+<section class="w-full py-16 md:py-24 bg-[#F8F8F8]">
+    <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-4" style="font-family:var(--font-heading)">Introduction</h2>
+                <div class="prose prose-lg max-w-none text-[#0F0F0F]/70 space-y-4">
+                    <p>Bienvenue chez CodeSommet (&quot;nous&quot;, &quot;notre&quot;). Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web <a class="text-[#00AEEF] hover:underline" href="{{ route('home') }}">codesommet.com</a>, utilisez nos services ou interagissez avec nous.</p>
+                    <p>Nous nous engageons à protéger votre vie privée et à vous garantir une expérience positive sur notre site web et dans l'utilisation de nos services. Cette politique est conforme au RGPD (Règlement Général sur la Protection des Données), au CCPA (California Consumer Privacy Act) et aux autres lois applicables en matière de protection des données.</p>
+                    <p class="font-medium text-[#0F0F0F]">En utilisant notre site web ou nos services, vous acceptez la collecte et l'utilisation des informations conformément à cette politique.</p>
+                </div>
+            </div>
+            <div id="information-we-collect" class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M10 9H8"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                        </svg></div>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Informations que nous collectons</h2>
+                </div>
+                <div class="space-y-6 text-[#0F0F0F]/70">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">1. Informations personnelles que vous fournissez</h3>
+                        <p class="mb-3">Lorsque vous interagissez avec nos services, nous pouvons collecter :</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Coordonnées :</strong> Nom, adresse e-mail, numéro de téléphone, nom de l'entreprise</li>
+                            <li><strong>Informations commerciales :</strong> Secteur d'activité, taille de l'entreprise, URL du site web, exigences du projet</li>
+                            <li><strong>Informations de paiement :</strong> Adresse de facturation, détails du mode de paiement (traités de manière sécurisée via Stripe)</li>
+                            <li><strong>Données de communication :</strong> Informations provenant des e-mails, formulaires de contact, messages de chat et demandes d'assistance</li>
+                            <li><strong>Données de projet :</strong> Contenu, images, documents et matériaux que vous fournissez pour vos projets</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">2. Informations collectées automatiquement</h3>
+                        <p class="mb-3">Lorsque vous visitez notre site web, nous collectons automatiquement :</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Informations sur l'appareil :</strong> Adresse IP, type de navigateur, type d'appareil, système d'exploitation</li>
+                            <li><strong>Données d'utilisation :</strong> Pages visitées, temps passé, schémas de clics, sources de référencement</li>
+                            <li><strong>Cookies et suivi :</strong> Cookies de session, cookies d'analyse, cookies de préférences</li>
+                            <li><strong>Données de localisation :</strong> Localisation géographique approximative basée sur l'adresse IP</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">3. Informations provenant de tiers</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Fournisseurs d'analyse :</strong> Google Analytics 4 pour l'analyse du site web</li>
+                            <li><strong>Réseaux sociaux :</strong> Informations de profil public si vous vous connectez via des plateformes sociales</li>
+                            <li><strong>Processeurs de paiement :</strong> Données de transaction de Stripe (notre passerelle de paiement)</li>
+                            <li><strong>Outils marketing :</strong> Données d'engagement par e-mail de notre fournisseur de services de messagerie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="how-we-use" class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg></div>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Comment nous utilisons vos informations</h2>
+                </div>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p class="mb-4">Nous utilisons les informations collectées aux fins suivantes :</p>
+                    <div class="
+        relative overflow-hidden rounded-xl border backdrop-blur-sm
+        border-[#00AEEF]/20 shadow-[0_0_20px_rgba(0,174,239,0.08)]
+        bg-gradient-to-br from-[#00AEEF]/5 to-[#00AEEF]/0
+
+      ">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-[#00AEEF]/10 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
+                        <div class="relative p-6">
+                            <div class="flex items-center gap-3 mb-5">
+                                <div class="bg-[#00AEEF]/10 rounded-xl p-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg></div>
+                                <h4 class="text-xl font-semibold text-[#0F0F0F]"></h4>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3 group">
+                                    <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
+                                    </div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Fourniture de services<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour fournir, maintenir et améliorer nos services de développement web, communiquer sur les projets, livrer les travaux terminés et fournir un support client.</span></div>
+                                </div>
+                                <div class="flex items-start gap-3 group">
+                                    <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
+                                    </div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Traitement des paiements<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour traiter les paiements, émettre des factures, prévenir la fraude et respecter les réglementations financières via notre partenaire de paiement sécurisé Stripe.</span></div>
+                                </div>
+                                <div class="flex items-start gap-3 group">
+                                    <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
+                                    </div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Communication<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour envoyer des mises à jour de projet, répondre aux demandes, fournir un support technique et envoyer des annonces importantes concernant les services.</span></div>
+                                </div>
+                                <div class="flex items-start gap-3 group">
+                                    <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
+                                    </div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Marketing (avec consentement)<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour envoyer des newsletters, des offres promotionnelles, des études de cas et des informations sectorielles. Vous pouvez vous désinscrire à tout moment.</span></div>
+                                </div>
+                                <div class="flex items-start gap-3 group">
+                                    <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
+                                    </div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Analyse et amélioration<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour analyser l'utilisation du site web, comprendre le comportement des utilisateurs, améliorer nos services et optimiser l'expérience utilisateur.</span></div>
+                                </div>
+                                <div class="flex items-start gap-3 group">
+                                    <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
+                                    </div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Conformité légale<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour respecter les obligations légales, faire appliquer nos conditions, protéger nos droits et résoudre les litiges.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg></div>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Partage et divulgation des données</h2>
+                </div>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p class="font-medium text-[#0F0F0F]">Nous ne vendons pas vos informations personnelles. Nous pouvons partager vos données avec :</p>
+                    <ul class="list-disc pl-6 space-y-3">
+                        <li><strong>Prestataires de services :</strong> Des fournisseurs tiers de confiance qui nous aident à fournir des services (hébergement, traitement des paiements, analyse, services de messagerie). Tous les fournisseurs sont contractuellement obligés de protéger vos données.</li>
+                        <li><strong>Processeurs de paiement :</strong> Stripe pour le traitement sécurisé des paiements. Consultez la <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">Politique de confidentialité de Stripe</a>.</li>
+                        <li><strong>Autorités légales :</strong> Lorsque requis par la loi, une ordonnance du tribunal ou pour protéger nos droits et notre sécurité.</li>
+                        <li><strong>Transferts d'entreprise :</strong> En cas de fusion, acquisition ou vente d'actifs, vos informations peuvent être transférées à la nouvelle entité.</li>
+                        <li><strong>Avec votre consentement :</strong> Lorsque vous nous autorisez explicitement à partager vos informations à des fins spécifiques.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg></div>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Sécurité des données</h2>
+                </div>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>Nous mettons en œuvre des mesures de sécurité conformes aux normes de l'industrie pour protéger vos informations personnelles :</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Chiffrement :</strong> Chiffrement SSL/TLS pour la transmission des données</li>
+                        <li><strong>Stockage sécurisé :</strong> Bases de données chiffrées avec accès restreint</li>
+                        <li><strong>Contrôles d'accès :</strong> Accès limité des employés sur la base du besoin de savoir</li>
+                        <li><strong>Audits réguliers :</strong> Évaluations et mises à jour périodiques de la sécurité</li>
+                        <li><strong>Traitement sécurisé des paiements :</strong> Traitement des paiements conforme PCI-DSS via Stripe</li>
+                    </ul>
+                    <div class="
+        flex items-start gap-3 p-4 rounded-lg border backdrop-blur-sm
+        border-[#F59E0B]/20 bg-gradient-to-br from-[#F59E0B]/5 to-[#F59E0B]/0
+        transition-all duration-200 hover:scale-[1.01]
+
+      ">
+                        <div class="bg-[#F59E0B]/10 rounded-lg p-1.5 flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 text-[#F59E0B]" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" x2="12" y1="8" y2="12"></line>
+                                <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                            </svg></div>
+                        <div class="flex-1 text-sm text-[#0F0F0F]/80">
+                            <p><strong>Important :</strong> Bien que nous nous efforcions de protéger vos informations, aucune méthode de transmission sur Internet n'est sécurisée à 100%. Nous ne pouvons pas garantir une sécurité absolue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="your-rights" class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg></div>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Vos droits en matière de vie privée</h2>
+                </div>
+                <div class="space-y-6 text-[#0F0F0F]/70">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">En vertu du RGPD (pour les résidents de l'UE/Royaume-Uni) :</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Droit d'accès :</strong> Demander une copie de vos données personnelles</li>
+                            <li><strong>Droit de rectification :</strong> Corriger les données inexactes ou incomplètes</li>
+                            <li><strong>Droit à l'effacement :</strong> Demander la suppression de vos données (&quot;droit à l'oubli&quot;)</li>
+                            <li><strong>Droit à la limitation du traitement :</strong> Limiter la façon dont nous utilisons vos données</li>
+                            <li><strong>Droit à la portabilité des données :</strong> Recevoir vos données dans un format structuré</li>
+                            <li><strong>Droit d'opposition :</strong> S'opposer au traitement basé sur des intérêts légitimes</li>
+                            <li><strong>Droit de retrait du consentement :</strong> Retirer votre consentement à tout moment</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">En vertu du CCPA (pour les résidents de Californie) :</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Droit de savoir :</strong> Quelles informations personnelles nous collectons et comment nous les utilisons</li>
+                            <li><strong>Droit de suppression :</strong> Demander la suppression de vos informations personnelles</li>
+                            <li><strong>Droit de refus :</strong> Refuser la vente d'informations personnelles (nous ne vendons pas de données)</li>
+                            <li><strong>Droit à la non-discrimination :</strong> Service égal indépendamment de l'exercice des droits à la vie privée</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#00AEEF]/5 rounded-lg p-6 border border-[#00AEEF]/20">
+                        <h4 class="font-semibold text-[#0F0F0F] mb-3">Comment exercer vos droits :</h4>
+                        <p class="mb-3">Pour exercer l'un de ces droits, veuillez nous contacter à :</p>
+                        <ul class="space-y-2">
+                            <li><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="0169646d6d6e4171686a6072726e72757465686e2f626e6c">[email&#160;protected]</span></a></li>
+                            <li><strong>Téléphone :</strong> +212 6 32 58 20 96</li>
+                            <li><strong>Téléphone :</strong> +212 6 32 58 20 96</li>
+                        </ul>
+                        <p class="mt-3 text-sm">Nous répondrons à votre demande dans un délai de 30 jours.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Cookies et technologies de suivi</h2>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience. Pour des informations détaillées, veuillez consulter notre <a class="text-[#00AEEF] hover:underline" href="{{ route('cookie-policy') }}">Politique de Cookies</a>.</p>
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">Types de cookies que nous utilisons :</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><strong>Cookies essentiels :</strong> Nécessaires au fonctionnement du site web</li>
+                            <li><strong>Cookies d'analyse :</strong> Google Analytics pour comprendre les schémas d'utilisation</li>
+                            <li><strong>Cookies de préférences :</strong> Mémoriser vos paramètres et préférences</li>
+                            <li><strong>Cookies marketing :</strong> Suivre l'efficacité des campagnes marketing (avec consentement)</li>
+                        </ul>
+                    </div>
+                    <p>Vous pouvez contrôler les cookies via les paramètres de votre navigateur. Cependant, la désactivation des cookies peut affecter le fonctionnement du site web.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Transferts internationaux de données</h2>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>CodeSommet opère à l'international avec son siège social au Maroc. Vos informations peuvent être transférées vers, et conservées sur, des serveurs situés en dehors de votre pays.</p>
+                    <p>Nous veillons à ce que tous les transferts internationaux de données soient conformes aux lois applicables en matière de protection des données et mettons en œuvre des garanties appropriées telles que :</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Clauses Contractuelles Types (CCT) approuvées par la Commission européenne</li>
+                        <li>Décisions d'adéquation pour les pays ayant des normes de protection des données équivalentes</li>
+                        <li>Mesures de sécurité techniques et organisationnelles appropriées</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Conservation des données</h2>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>Nous conservons vos informations personnelles uniquement aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette Politique de Confidentialité :</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Données client :</strong> Durée de la relation commerciale + 7 ans (pour la conformité fiscale et légale)</li>
+                        <li><strong>Fichiers de projet :</strong> Projets actifs + 2 ans après achèvement</li>
+                        <li><strong>Données marketing :</strong> Jusqu'à votre désinscription ou demande de suppression</li>
+                        <li><strong>Analyse du site web :</strong> 26 mois (valeur par défaut de Google Analytics)</li>
+                        <li><strong>Registres de paiement :</strong> 7 ans (exigences réglementaires financières)</li>
+                    </ul>
+                    <p>Après la période de conservation, nous supprimons ou anonymisons vos données de manière sécurisée.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Protection des données des enfants</h2>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>Nos services ne s'adressent pas aux personnes de moins de 18 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 18 ans.</p>
+                    <p>Si vous êtes un parent ou un tuteur et pensez que votre enfant nous a fourni des informations personnelles, veuillez nous contacter à <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="3d55585151527d4d54565c4e4e524e4948595452135e5250">[email&#160;protected]</span></a>, et nous supprimerons rapidement ces informations.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Modifications de cette politique de confidentialité</h2>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre pour refléter les changements dans nos pratiques, la technologie, les exigences légales ou pour d'autres raisons.</p>
+                    <p>Nous vous informerons de tout changement important en :</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Publiant la politique mise à jour sur cette page avec une nouvelle date de &quot;Dernière mise à jour&quot;</li>
+                        <li>Vous envoyant une notification par e-mail (pour les changements significatifs)</li>
+                        <li>Affichant un avis bien visible sur notre site web</li>
+                    </ul>
+                    <p>Nous vous encourageons à consulter régulièrement cette Politique de Confidentialité pour rester informé de la façon dont nous protégeons vos informations.</p>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-[#00AEEF]/10 to-[#0071BC]/10 rounded-xl p-8 md:p-10 border border-[#00AEEF]/20">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-lg bg-white flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        </svg></div>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Contactez-nous</h2>
+                </div>
+                <div class="space-y-4 text-[#0F0F0F]/70">
+                    <p>Si vous avez des questions, des préoccupations ou des demandes concernant cette Politique de Confidentialité ou nos pratiques en matière de données, veuillez nous contacter :</p>
+                    <div class="bg-white rounded-lg p-6 space-y-3">
+                        <div>
+                            <p class="font-semibold text-[#0F0F0F]">CodeSommet</p>
+                            <p>Agence Premium de Développement Web</p>
+                        </div>
+                        <div class="space-y-2">
+                            <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="5f373a3333301f2f36343e2c2c302c2b2a3b3630713c3032">[email&#160;protected]</span></a></p>
+                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                        </div>
+                        <div>
+                            <p><strong>Siège social :</strong> Maroc</p>
+                            <p><strong>Opérations :</strong> Monde entier</p>
+                        </div>
+                        <div class="pt-3 border-t border-[#0F0F0F]/10">
+                            <p class="text-sm">Pour les demandes relatives à la protection des données, veuillez inclure &quot;Demande de Confidentialité&quot; dans l'objet de votre e-mail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-[#0F0F0F]/70 mb-4">Documents juridiques connexes :</p>
+                <div class="flex flex-wrap justify-center gap-3"><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('cookie-policy') }}">Politique de Cookies</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('refund-policy') }}">Politique de Remboursement</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('acceptable-use') }}">Politique d'Utilisation Acceptable</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
