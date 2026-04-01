@@ -23,7 +23,7 @@ class PaymentController extends Controller
         $payments = $query->latest()->paginate(20);
         $projects = Project::orderBy('name')->get();
 
-        return view('pages.admin.payments.index', compact('payments', 'projects'));
+        return view('backoffice.pages.payments.index', compact('payments', 'projects'));
     }
 
     public function create(Request $request)
@@ -31,7 +31,7 @@ class PaymentController extends Controller
         $projects = Project::orderBy('name')->get();
         $selectedProject = $request->get('project_id');
 
-        return view('pages.admin.payments.create', compact('projects', 'selectedProject'));
+        return view('backoffice.pages.payments.create', compact('projects', 'selectedProject'));
     }
 
     public function store(Request $request)
@@ -83,7 +83,7 @@ class PaymentController extends Controller
     {
         $projects = Project::orderBy('name')->get();
 
-        return view('pages.admin.payments.edit', compact('payment', 'projects'));
+        return view('backoffice.pages.payments.edit', compact('payment', 'projects'));
     }
 
     public function update(Request $request, Payment $payment)
@@ -166,7 +166,7 @@ class PaymentController extends Controller
     {
         $payments = $project->payments()->latest()->paginate(20);
 
-        return view('pages.admin.payments.index', [
+        return view('backoffice.pages.payments.index', [
             'payments'       => $payments,
             'projects'       => Project::orderBy('name')->get(),
             'currentProject' => $project,

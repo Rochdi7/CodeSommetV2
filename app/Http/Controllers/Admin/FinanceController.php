@@ -78,7 +78,7 @@ class FinanceController extends Controller
 
         $projects = Project::orderBy('name')->get();
 
-        return view('pages.admin.finance.index', compact(
+        return view('backoffice.pages.finance.index', compact(
             'totalRevenue', 'totalExpenses', 'netProfit', 'pendingRevenue',
             'overdueAmount', 'monthlyData', 'expensesByCategory',
             'revenueByProject', 'recentExpenses', 'projects',

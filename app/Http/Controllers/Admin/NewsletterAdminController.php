@@ -40,7 +40,7 @@ class NewsletterAdminController extends Controller
             'unsubscribed' => NewsletterSubscriber::whereNotNull('unsubscribed_at')->count(),
         ];
 
-        return view('pages.admin.newsletter.index', compact('subscribers', 'stats'));
+        return view('backoffice.pages.newsletter.index', compact('subscribers', 'stats'));
     }
 
     public function destroy(NewsletterSubscriber $subscriber): RedirectResponse

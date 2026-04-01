@@ -14,7 +14,7 @@ class AdminLoginController extends Controller
             return redirect()->route('admin.dashboard');
         }
 
-        return view('pages.auth.login');
+        return view('backoffice.pages.auth.login');
     }
 
     public function login(Request $request)

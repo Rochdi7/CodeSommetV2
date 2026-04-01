@@ -52,7 +52,7 @@ class BudgetController extends Controller
         if (session('budget_unlocked')) {
             return redirect()->route('admin.budget.index');
         }
-        return view('pages.admin.budget.lock');
+        return view('backoffice.pages.budget.lock');
     }
 
     public function unlock(Request $request)
@@ -155,7 +155,7 @@ class BudgetController extends Controller
 
         $categories = BudgetEntry::$categories;
 
-        return view('pages.admin.budget.index', compact(
+        return view('backoffice.pages.budget.index', compact(
             'date', 'entries', 'weekTotal', 'monthTotal', 'breakdown',
             'categories', 'salary', 'startMonth', 'last30', 'monthCatTotals',
             'monthCatCounts', 'allCatCounts', 'monthlySavings'

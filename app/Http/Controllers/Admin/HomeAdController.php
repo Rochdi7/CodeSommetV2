@@ -16,7 +16,7 @@ class HomeAdController extends Controller
             3 => HomeAd::forSlot(3),
         ];
 
-        return view('pages.admin.home-ads.index', compact('ads'));
+        return view('backoffice.pages.home-ads.index', compact('ads'));
     }
 
     public function update(Request $request, HomeAd $homeAd)
