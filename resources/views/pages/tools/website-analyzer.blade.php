@@ -449,9 +449,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-6 flex flex-wrap gap-3"><a class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="/our-work/msingermany"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
+                <div class="mt-6 flex flex-wrap gap-3"><a class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="/our-work/mon-asso"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
-                        </svg>See how we improved MSinGermany&#x27;s SEO by 300%</a><a class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="/our-work/doctor-hubli"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
+                        </svg>See how we improved MSinGermany&#x27;s SEO by 300%</a><a class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="/our-work/dental-pro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                         </svg>Read Doctor Hubli case study - 50K monthly visitors</a></div>
             </div>

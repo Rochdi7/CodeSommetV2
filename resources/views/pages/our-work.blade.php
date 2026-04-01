@@ -64,62 +64,62 @@
 <section class="py-20 bg-[#F5F5F5]">
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
-            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'al-raba') }}">
+            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'glamworlds') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/al-raba/al-raba-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
-                            <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Technologie</span></div>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/glamworlds/glamworlds-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                            <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Beauté</span></div>
                         </div>
                         <div class="px-5 py-4">
-                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Al-Raba Technologies</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Solutions Énergétiques B2B &amp; Infrastructure IT</p>
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds</h3>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Boutique Beauté</p>
                             <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Refonte complète du site web pour un distributeur de confiance de systèmes UPS, solutions de recharge VE et produits d'infrastructure IT</p>
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'msingermany') }}">
+            <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'mon-asso') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/msingermany/msingermany-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
-                            <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span></div>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                            <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">SaaS</span></div>
                         </div>
                         <div class="px-5 py-4">
-                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">MS in Germany</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Première Plateforme Universitaire Allemande</p>
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Solution SaaS</p>
                             <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme leader de conseil en études à l'étranger construite sur Webflow, spécialisée exclusivement dans les universités publiques allemandes avec plus de 1 000 étudiants servis, un célèbre calculateur de notes et un taux de réussite visa de 90-95%</p>
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'goausbildung') }}">
+            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'morocco-quest') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/goausbildung/goausbildung-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
-                            <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span></div>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                            <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Tourisme</span></div>
                         </div>
                         <div class="px-5 py-4">
-                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GoAusbildung</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Place de Marché d'Emploi Propulsée par l'IA</p>
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Agence Touristique</p>
                             <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Première place de marché d'agrégation d'emplois en Allemagne connectant les étudiants internationaux à plus de 25 000 postes d'Ausbildung réels auprès d'entreprises allemandes vérifiées, avec des outils de préparation propulsés par l'IA, une architecture de plateforme bilatérale et une portée mondiale dans 223 pays</p>
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'qogent') }}">
+            <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'project-azubi') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/qogent/qogent-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/project-azubi/project-azubi-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span></div>
                         </div>
                         <div class="px-5 py-4">
-                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Qogent Global</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Plateforme d'Études à l'Étranger Propulsée par l'IA</p>
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Study Abroad Ausbildung</p>
                             <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme complète d'études à l'étranger démocratisant l'éducation internationale avec un modèle sans commission, desservant plus de 51 pays avec 14 outils propulsés par l'IA, l'automatisation des emails et un taux de réussite d'admission de 88%</p>
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'doctor-hubli') }}">
+            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'dental-pro') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/doctor-hubli/doctor-hubli-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/dental-pro/dental-pro-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Santé</span></div>
                         </div>
                         <div class="px-5 py-4">
-                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">DoctorHubli</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Plateforme de Réservation de Rendez-vous Médicaux</p>
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Boutique Médicale</p>
                             <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Système complet de réservation de rendez-vous médicaux pour Dr. Geeta S K, convertissant plus de 100K abonnés sur les réseaux sociaux en une plateforme de santé numérique professionnelle avec réservation en temps réel et contenu propulsé par l'IA</p>
                         </div>
                     </div>

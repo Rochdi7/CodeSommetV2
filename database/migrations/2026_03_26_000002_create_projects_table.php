@@ -23,6 +23,9 @@ return new class extends Migration
                 'website', 'ecommerce', 'webapp', 'saas', 'dashboard',
                 'mobile_app', 'landing_page', 'redesign', 'maintenance', 'other'
             ])->default('website');
+            $table->string('type_custom')->nullable();
+            $table->string('billing_type')->default('one_time'); // one_time | recurring
+            $table->string('recurring_period')->nullable(); // monthly | quarterly | annually
             $table->json('tech_stack')->nullable(); // ["Laravel", "React", "Tailwind", ...]
             $table->string('domain')->nullable();
             $table->string('staging_url')->nullable();
@@ -48,6 +51,7 @@ return new class extends Migration
             $table->decimal('quoted_price', 12, 2)->default(0);
             $table->decimal('agreed_price', 12, 2)->default(0);
             $table->string('currency', 3)->default('MAD');
+            $table->decimal('tva_percent', 5, 2)->default(0);
 
             // Phases / milestones (JSON)
             $table->json('phases')->nullable();

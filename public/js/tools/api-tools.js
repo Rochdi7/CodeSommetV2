@@ -170,7 +170,10 @@
             html += '</div></div>';
         }
 
-        // Generic data display (links, headings, etc.)
+        // Tool-specific data display
+        if (data.images && data.images.length > 0) {
+            html += renderImagesTable(data.images);
+        }
         if (data.links && data.links.length > 0) {
             html += renderLinksTable(data.links);
         }
@@ -193,6 +196,31 @@
 
         var container = document.querySelector('section.max-w-5xl .space-y-6.mb-8, section.max-w-5xl .space-y-6');
         if (container) container.insertAdjacentHTML('afterend', html);
+    }
+
+    function renderImagesTable(images) {
+        var html = '<div class="bg-white rounded-xl border border-gray-100 p-6 overflow-x-auto">' +
+            '<h3 class="text-lg font-bold text-black mb-4">Images (' + images.length + ')</h3>' +
+            '<table class="w-full text-sm"><thead><tr class="border-b border-gray-200">' +
+            '<th class="text-left py-2 px-2 w-8">#</th>' +
+            '<th class="text-left py-2 px-2">Image URL</th>' +
+            '<th class="text-left py-2 px-2">Alt Text</th>' +
+            '<th class="text-left py-2 px-2 w-24">Status</th></tr></thead><tbody>';
+        images.forEach(function (img, i) {
+            var statusColor = img.status === 'good' ? 'green' : img.status === 'empty' ? 'yellow' : 'red';
+            var statusLabel = img.status === 'good' ? 'Good' : img.status === 'empty' ? 'Empty' : 'Missing';
+            var altDisplay = img.status === 'good' ? escapeHtml(img.alt || '') :
+                img.status === 'empty' ? '<span class="text-yellow-600 italic">alt=""</span>' :
+                '<span class="text-red-600 italic">No alt attribute</span>';
+            var urlDisplay = img.url ? escapeHtml(img.url) : '<span class="text-gray-400 italic">No src</span>';
+            html += '<tr class="border-b border-gray-100 hover:bg-gray-50">' +
+                '<td class="py-2 px-2 text-gray-400 text-xs">' + (i + 1) + '</td>' +
+                '<td class="py-2 px-2 font-mono text-xs break-all max-w-[350px]">' + urlDisplay + '</td>' +
+                '<td class="py-2 px-2 text-xs max-w-[250px]">' + altDisplay + '</td>' +
+                '<td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-' + statusColor + '-50 text-' + statusColor + '-700">' + statusLabel + '</span></td></tr>';
+        });
+        html += '</tbody></table></div>';
+        return html;
     }
 
     function renderLinksTable(links) {
