@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', "CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc | CodeSommet")
-@section('meta_description', "Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'''éducation, la santé et les entreprises. Plus de 50 projets livrés.")
-@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site web éducation,développement site web santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
-@section('og_title', "CodeSommet - Agence de Développement Web Propulsée par l'''IA | Maroc")
-@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l'''éducation, la santé et les entreprises. Plus de 50 projets livrés.")
-@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web propulsés par l'''IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
+@section('title', __('industries.title'))
+@section('meta_description', __('industries.meta_description'))
+@section('meta_keywords', __('industries.meta_keywords'))
+@section('og_title', __('industries.og_title'))
+@section('og_description', __('industries.og_description'))
+@section('twitter_description', __('industries.twitter_description'))
 
 @section('content')
 <div class="min-h-screen bg-white">
@@ -25,20 +25,20 @@
           )"></div>
         </div>
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
-            <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Accueil</a><span>/</span><a class="hover:text-gray-600 transition-colors" href="{{ route('our-work') }}">Nos Projets</a><span>/</span><span class="text-gray-600 font-medium">Industries</span></nav>
+            <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Accueil</a><span>/</span><a class="hover:text-gray-600 transition-colors" href="{{ route('our-work') }}">{{ __("industries.text_0") }}</a><span>/</span><span class="text-gray-600 font-medium">Industries</span></nav>
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div class="space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF]/10 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                             <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                             <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                             <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
-                        </svg><span class="text-sm font-medium text-[#00AEEF]">14<!-- -->+ Spécialisations Sectorielles</span></div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight" style="font-family:var(--font-heading)">Sites Web Spécialisés Pour<!-- --> <span class="text-[#00AEEF]">Chaque Secteur</span></h1>
-                    <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">De l'éducation à la santé, du SaaS à l'immobilier — nous créons des sites web spécifiques à chaque secteur avec des fonctionnalités propulsées par l'IA et une optimisation des conversions.</p>
-                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start"><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto" style="color:white" href="{{ route('contact') }}">Démarrer Votre Projet<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        </svg><span class="text-sm font-medium text-[#00AEEF]">14<!-- -->{{ __("industries.text_1") }}</span></div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight" style="font-family:var(--font-heading)">{{ __("industries.text_2") }}<!-- --> <span class="text-[#00AEEF]">{{ __("industries.text_3") }}</span></h1>
+                    <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">{{ __("industries.text_4") }}</p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start"><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto" style="color:white" href="{{ route('contact') }}">{{ __("industries.text_5") }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
-                            </svg></a><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="{{ route('our-work') }}">Voir le Portfolio</a></div>
+                            </svg></a><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="{{ route('our-work') }}">{{ __('industries.text_116') }}</a></div>
                 </div>
                 <div class="relative">
                     <div class="relative w-full aspect-[3/2] lg:aspect-auto lg:h-[500px]"><img alt="Services de développement web spécifiques à chaque secteur" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/industries-hub-hero0031.jpeg') }}" /></div>
@@ -50,7 +50,7 @@
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="space-y-12">
                 <div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Éducation &amp; Formation<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->8<!-- --> <!-- -->secteurs<!-- -->)</span></h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">{{ __("industries.text_6") }}<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->8<!-- --> <!-- -->secteurs<!-- -->)</span></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100" href="{{ route('service', 'elearning-platform-development') }}">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-3">
@@ -92,7 +92,7 @@
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Éducation &amp; EdTech</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __("industries.text_7") }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -108,7 +108,7 @@
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Conseil en Immigration</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __('industries.text_117') }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -124,7 +124,7 @@
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Écoles de Langues</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __("industries.text_8") }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -140,7 +140,7 @@
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Plateformes de Cours en Ligne</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __('industries.text_118') }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -156,7 +156,7 @@
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Études à l'Étranger &amp; Conseil Visa</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __("industries.text_9") }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -172,7 +172,7 @@
                                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Universités &amp; Enseignement Supérieur</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __("industries.text_10") }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -182,7 +182,7 @@
                         </a></div>
                 </div>
                 <div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Santé &amp; Médecine<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- --> <!-- -->secteurs<!-- -->)</span></h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">{{ __("industries.text_11") }}<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- --> <!-- -->secteurs<!-- -->)</span></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100" href="{{ route('service', 'healthcare-website-development') }}">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-3">
@@ -190,7 +190,7 @@
                                             <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Santé &amp; Médecine</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __("industries.text_12") }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -204,7 +204,7 @@
                                             <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Télémédecine &amp; Soins Virtuels</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __("industries.text_13") }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -248,7 +248,7 @@
                         </a></div>
                 </div>
                 <div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Finance &amp; Professionnel<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->1<!-- --> <!-- -->secteur<!-- -->)</span></h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Finance &amp; Professionnel<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->1<!-- --> <!-- -->{{ __('industries.text_119') }}<!-- -->)</span></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100" href="{{ route('service', 'fintech-platform-development') }}">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-3">
@@ -267,7 +267,7 @@
                         </a></div>
                 </div>
                 <div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Immobilier &amp; Propriété<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->1<!-- --> <!-- -->secteur<!-- -->)</span></h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">{{ __("industries.text_14") }}<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->1<!-- --> <!-- -->{{ __('industries.text_120') }}<!-- -->)</span></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100" href="{{ route('service', 'real-estate-website-development') }}">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-3">
@@ -281,7 +281,7 @@
                                             <path d="M10 18h4"></path>
                                         </svg></div>
                                     <div>
-                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">Immobilier</h3>
+                                        <h3 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">{{ __('industries.text_121') }}</h3>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -295,8 +295,8 @@
     </section>
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-4" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Vous ne trouvez pas votre secteur ?</h2>
-            <p class="text-lg text-[#0F0F0F]/70 mb-8">Nous travaillons avec des entreprises de tous les secteurs. Contactez-nous pour discuter de vos besoins personnalisés.</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto" style="color:white" href="{{ route('contact') }}">Contactez-Nous<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0F0F0F] mb-4" style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">{{ __("industries.text_15") }}</h2>
+            <p class="text-lg text-[#0F0F0F]/70 mb-8">{{ __("industries.text_16") }}</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto" style="color:white" href="{{ route('contact') }}">{{ __('industries.text_122') }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a>

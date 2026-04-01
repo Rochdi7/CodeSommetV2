@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Convertisseur de Casse de Texte - Outil Gratuit Majuscules/Minuscules | CodeSommet')
-@section('meta_description', 'Convertissez le texte en majuscules, minuscules, casse de titre, casse de phrase ou camelCase. Outil gratuit de transformation de texte avec conversion instantanée.')
-@section('meta_keywords', 'text case converter,uppercase converter,lowercase converter,title case,camelCase,text transformer')
-@section('og_title', 'Convertisseur de Casse de Texte - Transformez le Texte Instantanément')
-@section('og_description', 'Convertissez le texte entre majuscules, minuscules, casse de titre et plus')
-@section('twitter_description', 'Convertissez le texte entre majuscules, minuscules, casse de titre et plus')
+@section('title', __('tools/text-case-converter.title'))
+@section('meta_description', __('tools/text-case-converter.meta_description'))
+@section('meta_keywords', __('tools/text-case-converter.meta_keywords'))
+@section('og_title', __('tools/text-case-converter.og_title'))
+@section('og_description', __('tools/text-case-converter.og_description'))
+@section('twitter_description', __('tools/text-case-converter.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,16 +24,16 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Convertisseur de Casse de Texte</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/text-case-converter.text_133') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Convertisseur de Casse de Texte</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Convertissez le texte entre différentes casses (majuscules, minuscules, casse de titre, camelCase, snake_case et plus)</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/text-case-converter.text_134') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/text-case-converter.text_0') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/text-case-converter.text_1') }}</span>
         </div>
     </div>
 </section>
@@ -42,44 +42,44 @@
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
                 <div class="space-y-2">
-                    <div class="flex items-center justify-between"><label class="block text-sm font-medium text-black">Entrez Votre Texte</label></div><textarea placeholder="Tapez ou collez votre texte ici..." rows="6" class="w-full px-4 py-3 rounded-lg resize-none bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"></textarea>
-                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">Convertir le Texte</button>
+                    <div class="flex items-center justify-between"><label class="block text-sm font-medium text-black">{{ __('tools/text-case-converter.text_2') }}</label></div><textarea placeholder="{{ __('tools/text-case-converter.placeholder_33') }}" rows="6" class="w-full px-4 py-3 rounded-lg resize-none bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"></textarea>
+                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">{{ __('tools/text-case-converter.text_135') }}</button>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Ce que Cet Outil Fait</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/text-case-converter.text_3') }}</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="space-y-3">
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-1">UPPERCASE</p>
-                        <p class="text-xs text-gray-600">Convertit toutes les lettres en majuscules</p>
+                        <p class="text-xs text-gray-600">{{ __('tools/text-case-converter.text_4') }}</p>
                         <p class="text-xs text-gray-400 font-mono mt-1">Example: HELLO WORLD</p>
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-1">lowercase</p>
-                        <p class="text-xs text-gray-600">Convertit toutes les lettres en minuscules</p>
+                        <p class="text-xs text-gray-600">{{ __('tools/text-case-converter.text_5') }}</p>
                         <p class="text-xs text-gray-400 font-mono mt-1">Example: hello world</p>
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-1">Title Case</p>
-                        <p class="text-xs text-gray-600">Met en majuscule la première lettre de chaque mot</p>
+                        <p class="text-xs text-gray-600">{{ __('tools/text-case-converter.text_6') }}</p>
                         <p class="text-xs text-gray-400 font-mono mt-1">Example: Hello World</p>
                     </div>
                 </div>
                 <div class="space-y-3">
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-1">Sentence case</p>
-                        <p class="text-xs text-gray-600">Met en majuscule uniquement la première lettre</p>
+                        <p class="text-xs text-gray-600">{{ __('tools/text-case-converter.text_7') }}</p>
                         <p class="text-xs text-gray-400 font-mono mt-1">Example: Hello world</p>
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-1">camelCase</p>
-                        <p class="text-xs text-gray-600">Supprime les espaces, met en majuscule chaque mot sauf le premier</p>
+                        <p class="text-xs text-gray-600">{{ __('tools/text-case-converter.text_8') }}</p>
                         <p class="text-xs text-gray-400 font-mono mt-1">Example: helloWorld</p>
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-1">snake_case</p>
-                        <p class="text-xs text-gray-600">Remplace les espaces par des tirets bas, tout en minuscules</p>
+                        <p class="text-xs text-gray-600">{{ __('tools/text-case-converter.text_9') }}</p>
                         <p class="text-xs text-gray-400 font-mono mt-1">Example: hello_world</p>
                     </div>
                 </div>
@@ -92,41 +92,41 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/text-case-converter.text_10') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/text-case-converter.text_11') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quand utiliser la Casse de Titre vs la Casse de Phrase ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_136') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Utilisez la Casse de Titre pour les titres, les titres de billets de blog et les titres de documents formels où chaque mot principal est en majuscule. Utilisez la Casse de Phrase pour le corps de texte, les descriptions et le design d'interface moderne où seul le premier mot est en majuscule. La casse de titre est plus traditionnelle, tandis que la casse de phrase est plus conversationnelle et accessible.</p>
+                        <p>{{ __('tools/text-case-converter.text_12') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">La casse des URL (majuscules vs minuscules) affecte-t-elle le SEO ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_13') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>camelCase est standard pour les variables et fonctions JavaScript/TypeScript (ex. : getUserData). snake_case est courant en Python, Ruby et les champs de base de données (ex. : user_name). Title Case est rarement utilisé dans le code. UPPERCASE est généralement réservé aux constantes (ex. : API_KEY). Suivre ces conventions améliore la lisibilité et la maintenabilité du code.</p>
+                        <p>{{ __('tools/text-case-converter.text_14') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les conventions de nommage en programmation ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_15') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -135,58 +135,58 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les règles correctes pour la Casse de Titre ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_16') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>En Casse de Titre, mettez en majuscule le premier et le dernier mot, ainsi que tous les mots principaux (noms, verbes, adjectifs, adverbes). Ne mettez pas en majuscule les articles (a, an, the), les conjonctions de coordination (and, but, or) ou les prépositions de moins de 5 lettres (in, on, at, to, for) sauf s'ils sont le premier ou le dernier mot. Notre outil suit la convention AP Stylebook.</p>
+                        <p>{{ __('tools/text-case-converter.text_17') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment la casse du texte affecte-t-elle l'accessibilité pour les lecteurs d'écran ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_18') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les lecteurs d'écran gèrent bien les différentes casses, mais évitez les MAJUSCULES pour les longs paragraphes car certains anciens lecteurs d'écran peuvent lire chaque lettre individuellement. La casse de phrase et la casse de titre sont également accessibles. Pour les labels d'interface, la casse de phrase est souvent préférée dans le design moderne pour une meilleure lisibilité rapide.</p>
+                        <p>{{ __('tools/text-case-converter.text_19') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Puis-je convertir de grands blocs de texte ou plusieurs paragraphes ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_137') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Oui ! Cet outil gère du texte de toute longueur, y compris plusieurs paragraphes et caractères spéciaux. Collez simplement votre contenu et tout le formatage sera préservé. L'outil convertit la casse tout en maintenant les sauts de ligne, la ponctuation et l'espacement. Utilisez le bouton Copier sur chaque carte de résultat pour une copie rapide.</p>
+                        <p>{{ __('tools/text-case-converter.text_20') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi aurais-je besoin de snake_case ou camelCase pour des tâches non liées au code ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/text-case-converter.text_21') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>snake_case est utile pour le nommage de fichiers (report_2026_q1.pdf), les imports de base de données, les en-têtes CSV et les slugs d'URL. camelCase est idéal pour créer des hashtags, des identifiants de produits ou des références internes qui doivent être compactes sans espaces. Les deux formats sont également couramment utilisés dans le suivi analytique et les noms de paramètres API.</p>
+                        <p>{{ __('tools/text-case-converter.text_22') }}</p>
                     </div>
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/text-case-converter.text_23') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/text-case-converter.text_24') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -196,8 +196,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/text-case-converter.text_25') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/text-case-converter.text_26') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/html-to-text">
                 <div class="mb-4">
@@ -224,7 +224,7 @@
                             <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Analyseur de Score de Lisibilité</h3>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/text-case-converter.text_27') }}</h3>
                 <p class="text-sm text-gray-600 leading-relaxed mb-4">Analyze text readability with 5 algorithms and grade levels</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
@@ -247,7 +247,7 @@
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">content</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/text-case-converter.text_28') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -265,15 +265,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/text-case-converter.text_29') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/text-case-converter.text_30') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/text-case-converter.text_31') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Sans engagement à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/text-case-converter.text_32') }}</p>
             </div>
         </div>
     </div>

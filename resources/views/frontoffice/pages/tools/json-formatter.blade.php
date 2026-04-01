@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Formateur JSON - Embellisseur et Validateur JSON Gratuit | CodeSommet')
-@section('meta_description', 'Formatez, validez et minifiez les données JSON instantanément. Embellisseur JSON gratuit avec validation de syntaxe, détection d\'erreurs et optimisation de taille. Parfait pour les développeurs et les tests API.')
-@section('meta_keywords', 'JSON formatter,JSON beautifier,JSON validator,format JSON,prettify JSON,JSON tool,minify JSON,validate JSON,JSON syntax checker')
-@section('og_title', 'Formateur JSON - Embellisseur et Validateur JSON Gratuit')
-@section('og_description', 'Formatez, validez et minifiez les données JSON instantanément avec notre outil gratuit')
-@section('twitter_description', 'Formatez, validez et minifiez les données JSON instantanément avec notre outil gratuit')
+@section('title', __('tools/json-formatter.title'))
+@section('meta_description', __('tools/json-formatter.meta_description'))
+@section('meta_keywords', __('tools/json-formatter.meta_keywords'))
+@section('og_title', __('tools/json-formatter.og_title'))
+@section('og_description', __('tools/json-formatter.og_description'))
+@section('twitter_description', __('tools/json-formatter.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -27,13 +27,13 @@
         <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Formateur/Validateur JSON</span></nav>
         <div class="mb-8">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Formateur/Validateur JSON</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Formatez, validez et minifiez le JSON avec coloration syntaxique et statistiques détaillées</p>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/json-formatter.text_0') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/json-formatter.text_1') }}</span>
         </div>
     </div>
 </section>
@@ -41,34 +41,34 @@
     <div class="space-y-8">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div class="bg-white rounded-2xl border-2 border-gray-200 p-2 inline-flex items-center gap-2"><button class="px-6 py-3 rounded-full font-semibold transition-all bg-[#00AEEF] text-white shadow-md">Formater</button><button class="px-6 py-3 rounded-full font-semibold transition-all text-[#0F0F0F] hover:bg-gray-50">Minifier</button><button class="px-6 py-3 rounded-full font-semibold transition-all text-[#0F0F0F] hover:bg-gray-50">Valider</button></div>
-            <div class="flex items-center gap-3"><label class="text-sm font-medium text-[#0F0F0F]">Taille d'Indentation :</label><select class="px-4 py-2 bg-white border border-gray-200 rounded-full text-[#0F0F0F] focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 transition-all duration-200">
-                    <option value="2" selected="">2 espaces</option>
-                    <option value="4">4 espaces</option>
+            <div class="flex items-center gap-3"><label class="text-sm font-medium text-[#0F0F0F]">{{ __('tools/json-formatter.text_639') }}</label><select class="px-4 py-2 bg-white border border-gray-200 rounded-full text-[#0F0F0F] focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 transition-all duration-200">
+                    <option value="2" selected="">{{ __('tools/json-formatter.opt_638') }}</option>
+                    <option value="4">{{ __('tools/json-formatter.opt_338') }}</option>
                 </select></div>
         </div>
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
-                <div class="flex items-center justify-between"><label class="text-sm font-medium text-[#0F0F0F]">Entrez le JSON à Formater</label><span class="text-xs text-gray-500">0 B</span></div><textarea placeholder="{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;city&quot;: &quot;New York&quot;}" rows="12" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-[#0F0F0F] placeholder:text-gray-400 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 transition-all duration-200 resize-none font-mono text-sm"></textarea><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">Formater le JSON</button>
+                <div class="flex items-center justify-between"><label class="text-sm font-medium text-[#0F0F0F]">{{ __('tools/json-formatter.text_2') }}</label><span class="text-xs text-gray-500">0 B</span></div><textarea placeholder="{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;city&quot;: &quot;New York&quot;}" rows="12" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-[#0F0F0F] placeholder:text-gray-400 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 transition-all duration-200 resize-none font-mono text-sm"></textarea><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">{{ __('tools/json-formatter.text_137') }}</button>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Comment Utiliser le Formateur JSON</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/json-formatter.text_3') }}</h3>
             <div class="space-y-4 text-sm text-gray-700">
-                <p>Un outil JSON puissant avec trois modes pour vous aider à travailler efficacement avec les données JSON :</p>
+                <p>{{ __('tools/json-formatter.text_4') }}</p>
                 <ul class="space-y-2 ml-6 list-disc">
-                    <li><strong>Formater :</strong> Convertissez le JSON désordonné en format propre et lisible avec une indentation appropriée</li>
-                    <li><strong>Minifier :</strong> Supprimez tous les espaces blancs pour réduire la taille du fichier pour la production</li>
-                    <li><strong>Valider :</strong> Vérifiez si votre JSON est valide et obtenez des messages d'erreur détaillés</li>
+                    <li><strong>Formater :</strong> {{ __('tools/json-formatter.text_5') }}</li>
+                    <li><strong>Minifier :</strong> {{ __('tools/json-formatter.text_6') }}</li>
+                    <li><strong>Valider :</strong> {{ __('tools/json-formatter.text_7') }}</li>
                 </ul>
                 <div class="bg-white rounded-lg p-4 border border-gray-200 mt-4">
                     <p class="text-xs text-gray-600 mb-2"><strong>Example:</strong></p>
                     <div class="space-y-2 font-mono text-xs">
                         <div>
-                            <p class="text-[#00AEEF] font-semibold mb-1">Entrée (Désordonné) :</p>
+                            <p class="text-[#00AEEF] font-semibold mb-1">{{ __('tools/json-formatter.text_8') }}</p>
                             <p class="text-gray-900 bg-[#F8F8F8] p-2 rounded">{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:30,&quot;city&quot;:&quot;NYC&quot;}</p>
                         </div>
                         <div>
-                            <p class="text-[#00AEEF] font-semibold mb-1">Sortie (Formaté) :</p>
+                            <p class="text-[#00AEEF] font-semibold mb-1">{{ __('tools/json-formatter.text_9') }}</p>
                             <pre class="text-gray-900 bg-[#F8F8F8] p-2 rounded">{
   &quot;name&quot;: &quot;John&quot;,
   &quot;age&quot;: 30,
@@ -87,105 +87,105 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/json-formatter.text_10') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/json-formatter.text_11') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le JSON et pourquoi est-ce important ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_12') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>JSON (JavaScript Object Notation) est un format de données léger utilisé pour échanger des données entre serveurs et applications web. Il est lisible par l'humain, indépendant du langage et le format le plus courant pour les API. JSON est essentiel pour le développement web moderne, permettant un transfert de données fluide entre les systèmes frontend et backend.</p>
+                        <p>{{ __('tools/json-formatter.text_13') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les erreurs de syntaxe JSON les plus courantes ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_14') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les erreurs JSON courantes incluent : virgules manquantes ou en trop, clés non entre guillemets, guillemets simples au lieu de doubles, virgules finales dans les tableaux/objets et caractères spéciaux non échappés. Utilisez le mode Valider pour identifier exactement où votre syntaxe JSON est incorrecte et obtenir des messages d'erreur spécifiques pour la corriger rapidement.</p>
+                        <p>{{ __('tools/json-formatter.text_15') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quand dois-je formater ou minifier le JSON ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_138') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Formatez le JSON quand vous devez lire, déboguer ou maintenir du code — cela rend la structure claire avec une indentation appropriée. Minifiez le JSON pour les environnements de production afin de réduire la taille des fichiers, améliorer les temps de chargement et économiser la bande passante. Notre outil affiche le pourcentage exact de réduction de taille lors de la minification.</p>
+                        <p>{{ __('tools/json-formatter.text_16') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi dois-je valider le JSON avant de l'utiliser en production ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_17') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Un JSON invalide peut provoquer des plantages d'application, des échecs d'API et une corruption de données. La validation garantit que votre structure JSON est syntaxiquement correcte avant le déploiement. Notre validateur fournit des messages d'erreur détaillés avec les numéros de ligne, facilitant la correction des problèmes avant qu'ils n'atteignent la production.</p>
+                        <p>{{ __('tools/json-formatter.text_18') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment le JSON aide-t-il au développement d'API ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_19') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>JSON est le format standard pour les API REST et les services web modernes. Il permet l'échange de données structurées entre différents systèmes indépendamment du langage de programmation. Utilisez notre formateur pour vous assurer que vos requêtes/réponses API sont correctement structurées, et notre validateur pour détecter les erreurs avant de faire des appels API.</p>
+                        <p>{{ __('tools/json-formatter.text_20') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre JSON et XML ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_21') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>JSON est plus léger, plus facile à lire et plus rapide à analyser que XML. Il a un support natif en JavaScript et nécessite moins de code pour représenter les mêmes données. JSON utilise des paires clé-valeur tandis que XML utilise des balises. Pour les applications web modernes, JSON est le choix préféré grâce à de meilleures performances et une plus grande simplicité.</p>
+                        <p>{{ __('tools/json-formatter.text_22') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les bonnes pratiques pour travailler avec le JSON ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/json-formatter.text_23') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Validez toujours le JSON avant le déploiement, utilisez une indentation cohérente (2 ou 4 espaces), gardez les clés descriptives en camelCase, évitez l'imbrication profonde (maximum 3-4 niveaux) et minifiez pour la production. Notre outil gère automatiquement le formatage, la minification et la validation, et fournit des statistiques pour vous aider à optimiser votre structure JSON.</p>
+                        <p>{{ __('tools/json-formatter.text_24') }}</p>
                     </div>
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/json-formatter.text_25') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/json-formatter.text_26') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -195,8 +195,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/json-formatter.text_27') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/json-formatter.text_28') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/faq-schema-generator">
                 <div class="mb-4">
@@ -208,7 +208,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">FAQ Schema Generator</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Convertissez les FAQ en schéma JSON-LD compatible Google</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/json-formatter.text_29') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -223,8 +223,8 @@
                             <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Analyseur de Score de Lisibilité</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Analysez la lisibilité du texte avec 5 algorithmes et niveaux scolaires</p>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/json-formatter.text_30') }}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/json-formatter.text_31') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -239,14 +239,14 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Word &amp; Character Counter</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Comptez les mots, caractères et vérifiez les limites de plateforme</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/json-formatter.text_32') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">content</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/json-formatter.text_33') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -264,15 +264,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/json-formatter.text_34') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/json-formatter.text_35') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/json-formatter.text_36') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Pas de contrats à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/json-formatter.text_37') }}</p>
             </div>
         </div>
     </div>

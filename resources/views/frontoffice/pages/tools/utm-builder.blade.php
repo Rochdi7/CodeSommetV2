@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', "Constructeur UTM - Générateur Gratuit d'''URL de Campagne | CodeSommet")
-@section('meta_description', 'Create UTM tracking URLs for marketing campaigns with our free UTM builder. Track campaign performance in Google Analytics with utm_source, utm_medium, utm_campaign, and more. Generate clean, optimized tracking URLs instantly.')
-@section('meta_keywords', 'UTM builder,UTM generator,campaign URL,UTM parameters,Google Analytics UTM,tracking URL,utm_source,utm_medium,utm_campaign,marketing analytics,campaign tracking,URL builder,analytics tracking,traffic source tracking')
-@section('og_title', "Constructeur UTM - Générateur Gratuit d'''URL de Campagne")
-@section('og_description', 'Create UTM tracking URLs for marketing campaigns with our free UTM builder. Track campaign performance in Google Analytics with utm_source, utm_medium, utm_campaign, and more.')
-@section('twitter_description', 'Create UTM tracking URLs for marketing campaigns. Track campaign performance in Google Analytics instantly.')
+@section('title', __('tools/utm-builder.title'))
+@section('meta_description', __('tools/utm-builder.meta_description'))
+@section('meta_keywords', __('tools/utm-builder.meta_keywords'))
+@section('og_title', __('tools/utm-builder.og_title'))
+@section('og_description', __('tools/utm-builder.og_description'))
+@section('twitter_description', __('tools/utm-builder.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,25 +24,25 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Constructeur de Paramètres UTM</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/utm-builder.text_0') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Constructeur de Paramètres UTM</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Créez des URL de campagne traçables avec des paramètres UTM pour Google Analytics</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/utm-builder.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/utm-builder.text_2') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/utm-builder.text_3') }}</span>
         </div>
     </div>
 </section>
 <section class="max-w-5xl mx-auto px-4 py-12">
     <div class="space-y-8">
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
-            <h3 class="text-lg font-semibold text-gray-900 mb-6">Générateur d'URL de Campagne</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-6">{{ __('tools/utm-builder.text_4') }}</h3>
             <div class="space-y-6">
-                <div class="space-y-2"><label class="block text-sm font-medium text-black">URL du Site Web<span class="text-[#00AEEF] ml-1">*</span></label>
+                <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_148') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                     <div class="relative">
                         <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2 lucide-link-2 w-5 h-5" aria-hidden="true">
                                 <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
@@ -50,81 +50,81 @@
                                 <line x1="8" x2="16" y1="12" y2="12"></line>
                             </svg></div><input type="url" placeholder="https://example.com/page" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value="" />
                     </div>
-                    <p class="text-sm text-gray-500">L'URL complète du site web (ex. : https://codesommet.com/services)</p>
+                    <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_5') }}</p>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-sm font-medium text-gray-900">Paramètres Requis</p>
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Source de Campagne<span class="text-[#00AEEF] ml-1">*</span></label>
+                    <p class="text-sm font-medium text-gray-900">{{ __('tools/utm-builder.text_6') }}</p>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_149') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                         <div class="relative"><input type="text" placeholder="google" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" value="" /></div>
-                        <p class="text-sm text-gray-500">Indique d'où provient le trafic (ex. : google, newsletter, facebook)</p>
+                        <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_7') }}</p>
                     </div>
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Canal de Campagne<span class="text-[#00AEEF] ml-1">*</span></label>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_150') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                         <div class="relative"><input type="text" placeholder="cpc" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" value="" /></div>
-                        <p class="text-sm text-gray-500">Indique le canal marketing (ex. : cpc, email, social, banner)</p>
+                        <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_154') }}</p>
                     </div>
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Nom de Campagne<span class="text-[#00AEEF] ml-1">*</span></label>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_151') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                         <div class="relative"><input type="text" placeholder="summer_sale" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" value="" /></div>
-                        <p class="text-sm text-gray-500">Indique le produit, la promotion ou le slogan (ex. : summer_sale, product_launch)</p>
+                        <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_155') }}</p>
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-sm font-medium text-gray-900">Paramètres Optionnels</p>
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Terme de Campagne</label>
+                    <p class="text-sm font-medium text-gray-900">{{ __('tools/utm-builder.text_8') }}</p>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_152') }}</label>
                         <div class="relative"><input type="text" placeholder="ai+websites" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" value="" /></div>
-                        <p class="text-sm text-gray-500">Mots-clés payants (ex. : running+shoes, ai+websites)</p>
+                        <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_9') }}</p>
                     </div>
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Contenu de Campagne</label>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_153') }}</label>
                         <div class="relative"><input type="text" placeholder="ad_variant_1" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" value="" /></div>
-                        <p class="text-sm text-gray-500">Permet de différencier des annonces ou des liens (ex. : logo_link, ad_variant_1)</p>
+                        <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_10') }}</p>
                     </div>
                 </div>
                 <div class="pt-4 border-t border-gray-200">
-                    <p class="text-sm font-medium text-gray-900 mb-3">Préréglages Rapides</p>
-                    <div class="flex flex-wrap gap-2"><button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Campagne Google Ads</button><button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Newsletter par E-mail</button><button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Publication Réseaux Sociaux</button></div>
+                    <p class="text-sm font-medium text-gray-900 mb-3">{{ __('tools/utm-builder.text_11') }}</p>
+                    <div class="flex flex-wrap gap-2"><button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Campagne Google Ads</button><button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_12') }}</button><button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_13') }}</button></div>
                 </div>
-                <div class="flex gap-3"><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] border border-[var(--border-default)] text-[var(--text-primary)] bg-transparent hover:border-[var(--color-primary-orange)] hover:text-[var(--color-primary-orange)] hover:bg-[var(--hover-primary)] h-10 px-6 text-base rounded-full flex-1" tabindex="0">Réinitialiser le Formulaire</button></div>
+                <div class="flex gap-3"><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] border border-[var(--border-default)] text-[var(--text-primary)] bg-transparent hover:border-[var(--color-primary-orange)] hover:text-[var(--color-primary-orange)] hover:bg-[var(--hover-primary)] h-10 px-6 text-base rounded-full flex-1" tabindex="0">{{ __('tools/utm-builder.text_14') }}</button></div>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-8">
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Comment Utiliser les Paramètres UTM</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/utm-builder.text_15') }}</h3>
             <div class="space-y-4">
                 <div>
-                    <p class="text-sm font-semibold text-gray-900 mb-2">Que sont les Paramètres UTM ?</p>
+                    <p class="text-sm font-semibold text-gray-900 mb-2">{{ __('tools/utm-builder.text_16') }}</p>
                     <p class="text-sm text-gray-700 leading-relaxed">UTM parameters are tags you add to URLs to track the effectiveness of marketing campaigns in Google Analytics. They help you identify which campaigns, sources, and content drive the most traffic and conversions.</p>
                 </div>
                 <div>
-                    <p class="text-sm font-semibold text-gray-900 mb-2">Référence des Paramètres</p>
+                    <p class="text-sm font-semibold text-gray-900 mb-2">{{ __('tools/utm-builder.text_17') }}</p>
                     <div class="space-y-2">
                         <div class="p-3 bg-white rounded-lg border border-gray-200">
                             <p class="text-sm font-medium text-gray-900">utm_source (Required)</p>
-                            <p class="text-xs text-gray-600">Identifie la source du trafic (google, newsletter, facebook)</p>
+                            <p class="text-xs text-gray-600">{{ __('tools/utm-builder.text_156') }}</p>
                         </div>
                         <div class="p-3 bg-white rounded-lg border border-gray-200">
                             <p class="text-sm font-medium text-gray-900">utm_medium (Required)</p>
-                            <p class="text-xs text-gray-600">Identifie le canal marketing (cpc, email, social, banner)</p>
+                            <p class="text-xs text-gray-600">{{ __('tools/utm-builder.text_157') }}</p>
                         </div>
                         <div class="p-3 bg-white rounded-lg border border-gray-200">
                             <p class="text-sm font-medium text-gray-900">utm_campaign (Required)</p>
-                            <p class="text-xs text-gray-600">Identifie le nom de la campagne (summer_sale, product_launch)</p>
+                            <p class="text-xs text-gray-600">{{ __('tools/utm-builder.text_158') }}</p>
                         </div>
                         <div class="p-3 bg-white rounded-lg border border-gray-200">
                             <p class="text-sm font-medium text-gray-900">utm_term (Optional)</p>
-                            <p class="text-xs text-gray-600">Identifie les mots-clés payants pour les campagnes de recherche</p>
+                            <p class="text-xs text-gray-600">{{ __('tools/utm-builder.text_18') }}</p>
                         </div>
                         <div class="p-3 bg-white rounded-lg border border-gray-200">
                             <p class="text-sm font-medium text-gray-900">utm_content (Optional)</p>
-                            <p class="text-xs text-gray-600">Différencie des contenus ou liens similaires (ad_variant_1, header_cta)</p>
+                            <p class="text-xs text-gray-600">{{ __('tools/utm-builder.text_19') }}</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <p class="text-sm font-semibold text-gray-900 mb-2">Meilleures Pratiques</p>
                     <ul class="text-sm text-gray-700 space-y-2">
-                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>Utilisez des lettres minuscules et des underscores (ex. : summer_sale, pas Summer Sale)</span></li>
-                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>Restez cohérent dans les conventions de nommage sur toutes les campagnes</span></li>
-                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>Gardez les URL sous 2 000 caractères pour une compatibilité maximale</span></li>
-                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>Testez vos URL avant de lancer des campagnes afin d'assurer un suivi correct</span></li>
-                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>Documentez vos conventions de nommage UTM pour garantir la cohérence de toute l?équipe</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>{{ __('tools/utm-builder.text_20') }}</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>{{ __('tools/utm-builder.text_21') }}</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>{{ __('tools/utm-builder.text_22') }}</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>{{ __('tools/utm-builder.text_23') }}</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#00AEEF] font-bold">•</span><span>{{ __('tools/utm-builder.text_24') }}</span></li>
                     </ul>
                 </div>
                 <div>
@@ -145,15 +145,15 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/utm-builder.text_25') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/utm-builder.text_26') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que sont les paramètres UTM et pourquoi les utiliser ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_27') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -166,7 +166,7 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quels paramètres UTM sont requis vs optionnels ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_28') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -179,7 +179,7 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelles conventions de nommage suivre pour les paramètres UTM ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_29') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -192,7 +192,7 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment les paramètres UTM fonctionnent-ils avec Google Analytics ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_30') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -205,7 +205,7 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Dois-je raccourcir les URL avec UTM avant de les partager ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_31') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -218,7 +218,7 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les erreurs courantes à éviter avec les paramètres UTM ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_32') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -231,7 +231,7 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser des paramètres UTM pour le trafic non payant ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/utm-builder.text_33') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -243,7 +243,7 @@
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/utm-builder.text_34') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/utm-builder.text_35') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -253,8 +253,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/utm-builder.text_36') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/utm-builder.text_37') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/og-preview-generator">
                 <div class="mb-4">
@@ -263,8 +263,8 @@
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Aperçu Open Graph</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Prévisualisez les cartes de réseaux sociaux pour 4 plateformes majeures</p>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/utm-builder.text_38') }}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/utm-builder.text_39') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -281,8 +281,8 @@
                             <path d="M8 19h13"></path>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Analyseur de Structure des Titres</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Arborescence visuelle H1-H6 avec validation SEO</p>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/utm-builder.text_40') }}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/utm-builder.text_41') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -297,15 +297,15 @@
                             <path d="M8 17v-3"></path>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Analyseur de Densité de Mots-clés</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Détectez le bourrage de mots-clés et le contenu insuffisant</p>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/utm-builder.text_42') }}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/utm-builder.text_43') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/utm-builder.text_44') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -323,15 +323,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/utm-builder.text_45') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/utm-builder.text_46') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/utm-builder.text_47') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Sans engagement à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/utm-builder.text_48') }}</p>
             </div>
         </div>
     </div>

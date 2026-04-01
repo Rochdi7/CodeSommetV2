@@ -56,7 +56,7 @@
                 <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 hover:bg-white hover:from-white hover:to-white hover:text-[var(--color-primary-orange)] hover:border hover:border-[var(--color-primary-orange)]" href="{{ route('get-quote') }}">
                     Devis Gratuit
                 </a>
-                <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 border border-[var(--border-light)] text-[var(--text-primary)] hover:bg-gray-50">
+                <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 border border-[var(--border-light)] text-[var(--text-primary)] hover:bg-gray-50">
                     Réserver un Appel
                 </button>
             </div>

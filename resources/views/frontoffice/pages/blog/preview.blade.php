@@ -1,7 +1,7 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Comment l\'IA Révolutionne le Développement Web en 2026 - Blog | CodeSommet')
-@section('meta_description', 'Découvrez comment l\'intelligence artificielle transforme la façon dont nous concevons, développons et déployons des sites web modernes.')
+@section('title', __('blog/preview.title'))
+@section('meta_description', __('blog/preview.meta_description'))
 
 @section('content')
 {{-- Hero / Header --}}
@@ -26,12 +26,12 @@
         <div class="max-w-4xl mx-auto text-center">
             <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20 mb-6" style="transform:scale(0.9)">
                 <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div>
-                <span class="text-sm font-semibold text-[#00AEEF]">Développement</span>
+                <span class="text-sm font-semibold text-[#00AEEF]">{{ __('blog/preview.text_0') }}</span>
             </div>
 
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style="font-family:var(--font-heading)">Comment l'IA Révolutionne le Développement Web en 2026</h1>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style="font-family:var(--font-heading)">{{ __('blog/preview.text_1') }}</h1>
 
-            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto mb-8">Découvrez comment l'intelligence artificielle transforme la façon dont nous concevons, développons et déployons des sites web modernes.</p>
+            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto mb-8">{{ __('blog/preview.text_2') }}</p>
 
             {{-- Meta Info --}}
             <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8">
@@ -62,8 +62,7 @@
                     <span class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></span>IA
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></span>Développement Web
-                </span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></span>{{ __('blog/preview.ml_541') }}</span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></span>Laravel
                 </span>
@@ -84,7 +83,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto opacity-30">
                         <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
                     </svg>
-                    <p class="text-sm text-[var(--text-tertiary)]">Image de couverture</p>
+                    <p class="text-sm text-[var(--text-tertiary)]">{{ __('blog/preview.text_140') }}</p>
                 </div>
             </div>
         </div>
@@ -95,64 +94,64 @@
 <section class="py-12 md:py-16 bg-white">
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[860px]">
         <div class="blog-content">
-            <h2>L'IA dans le Développement Web : Une Révolution en Marche</h2>
-            <p>L'intelligence artificielle n'est plus un concept futuriste. En 2026, elle est devenue un outil indispensable pour les développeurs web du monde entier. Des outils de génération de code aux systèmes de test automatisés, l'IA transforme chaque étape du processus de développement.</p>
+            <h2>{{ __('blog/preview.text_3') }}</h2>
+            <p>{{ __('blog/preview.text_4') }}</p>
 
-            <p>Chez <strong>CodeSommet</strong>, nous avons intégré ces technologies dans notre workflow quotidien, ce qui nous permet de livrer des projets plus rapidement tout en maintenant une qualité exceptionnelle.</p>
+            <p>Chez <strong>CodeSommet</strong>{{ __('blog/preview.text_5') }}</p>
 
-            <h2>1. Génération de Code Assistée par l'IA</h2>
-            <p>Les outils comme GitHub Copilot et Claude ont révolutionné la façon dont nous écrivons du code. Ces assistants IA peuvent :</p>
+            <h2>{{ __('blog/preview.text_6') }}</h2>
+            <p>{{ __('blog/preview.text_7') }}</p>
 
             <ul>
-                <li>Générer des composants entiers à partir de descriptions en langage naturel</li>
-                <li>Suggérer des optimisations de performance en temps réel</li>
-                <li>Détecter les bugs potentiels avant même l'exécution du code</li>
-                <li>Créer des tests unitaires automatiquement pour chaque fonction</li>
+                <li>{{ __('blog/preview.text_8') }}</li>
+                <li>{{ __('blog/preview.text_9') }}</li>
+                <li>{{ __('blog/preview.text_10') }}</li>
+                <li>{{ __('blog/preview.text_11') }}</li>
             </ul>
 
             <blockquote>
                 <div class="quote-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
                 </div>
-                <p class="quote-text">L'IA ne remplace pas les développeurs, elle les rend 10 fois plus productifs. C'est comme passer d'un vélo à une voiture de course.</p>
+                <p class="quote-text">{{ __('blog/preview.text_12') }}</p>
                 <div class="quote-author">
                     <div class="author-line"></div>
-                    <cite>Équipe CodeSommet</cite>
+                    <cite>{{ __('blog/preview.text_13') }}</cite>
                 </div>
             </blockquote>
 
-            <h2>2. Design Généré par l'IA</h2>
-            <p>Le design web connaît également une transformation majeure grâce à l'IA. Les designers utilisent désormais des outils capables de :</p>
+            <h2>{{ __('blog/preview.text_14') }}</h2>
+            <p>{{ __('blog/preview.text_15') }}</p>
 
             <ol>
-                <li><strong>Générer des maquettes</strong> à partir de simples descriptions textuelles</li>
-                <li><strong>Adapter automatiquement</strong> les designs pour différentes tailles d'écran</li>
-                <li><strong>Optimiser les palettes de couleurs</strong> pour l'accessibilité et l'engagement</li>
-                <li><strong>Créer des variations A/B</strong> pour tester différentes approches visuelles</li>
+                <li><strong>{{ __('blog/preview.text_16') }}</strong> {{ __('blog/preview.text_17') }}</li>
+                <li><strong>Adapter automatiquement</strong> {{ __('blog/preview.text_18') }}</li>
+                <li><strong>{{ __('blog/preview.text_19') }}</strong> {{ __('blog/preview.text_20') }}</li>
+                <li><strong>{{ __('blog/preview.text_21') }}</strong> {{ __('blog/preview.text_22') }}</li>
             </ol>
 
-            <h2>3. SEO Propulsé par l'IA</h2>
-            <p>L'optimisation pour les moteurs de recherche a été transformée par l'IA. Les algorithmes de Google eux-mêmes utilisent l'IA pour comprendre et classer le contenu. Pour rester compétitif, il est essentiel d'adopter ces outils :</p>
+            <h2>{{ __('blog/preview.text_23') }}</h2>
+            <p>{{ __('blog/preview.text_24') }}</p>
 
             <ul>
-                <li>Analyse sémantique avancée du contenu pour une meilleure pertinence</li>
-                <li>Génération automatique de meta descriptions optimisées</li>
-                <li>Prédiction des tendances de recherche et recommandations de mots-clés</li>
-                <li>Optimisation automatique des images avec alt text généré par l'IA</li>
+                <li>{{ __('blog/preview.text_25') }}</li>
+                <li>{{ __('blog/preview.text_26') }}</li>
+                <li>{{ __('blog/preview.text_27') }}</li>
+                <li>{{ __('blog/preview.text_28') }}</li>
             </ul>
 
-            <h3>L'Impact sur les Performances</h3>
-            <p>Les résultats parlent d'eux-mêmes. Nos clients qui ont adopté ces technologies ont constaté des améliorations significatives dans leurs métriques clés.</p>
+            <h3>{{ __('blog/preview.text_29') }}</h3>
+            <p>{{ __('blog/preview.text_30') }}</p>
 
-            <p>La combinaison de l'IA avec des frameworks modernes comme <code>Laravel</code> et <code>Next.js</code> permet de créer des expériences web qui étaient impensables il y a quelques années seulement.</p>
+            <p>{{ __('blog/preview.text_31') }} <code>Laravel</code> et <code>Next.js</code> {{ __('blog/preview.text_32') }}</p>
 
-            <h2>4. Tests et Déploiement Automatisés</h2>
-            <p>L'IA a considérablement amélioré les processus de test et de déploiement. Les systèmes intelligents peuvent maintenant identifier les zones critiques du code qui nécessitent des tests supplémentaires, générer des scénarios de test pertinents et même prédire les régressions potentielles.</p>
+            <h2>{{ __('blog/preview.text_33') }}</h2>
+            <p>{{ __('blog/preview.text_34') }}</p>
 
             <h2>Conclusion</h2>
-            <p>L'IA n'est pas une mode passagère dans le développement web — c'est une transformation fondamentale de notre industrie. Les agences et les développeurs qui embrassent ces technologies aujourd'hui seront les leaders de demain.</p>
+            <p>{{ __('blog/preview.text_35') }}</p>
 
-            <p>Chez <strong>CodeSommet</strong>, nous restons à la pointe de cette révolution pour offrir à nos clients les meilleures solutions digitales possibles. <a href="/contact">Contactez-nous</a> pour discuter de votre prochain projet.</p>
+            <p>Chez <strong>CodeSommet</strong>{{ __('blog/preview.text_36') }} <a href="/contact">{{ __('blog/preview.text_141') }}</a> {{ __('blog/preview.text_37') }}</p>
         </div>
     </div>
 </section>
@@ -163,7 +162,7 @@
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex flex-wrap gap-2">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">#IA</span>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">#Développement</span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">{{ __('blog/preview.text_38') }}</span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">#Laravel</span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">#Tendances</span>
             </div>
@@ -193,9 +192,9 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1.5"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                 </div>
                 <div class="text-center sm:text-left">
-                    <div class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider mb-1">À propos de l'auteur</div>
+                    <div class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider mb-1">{{ __('blog/preview.text_39') }}</div>
                     <h3 class="text-lg font-bold text-[var(--text-primary)] mb-2" style="font-family:var(--font-heading)">CodeSommet</h3>
-                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Chez CodeSommet, nous partageons notre expertise en développement web, design UI/UX et stratégie digitale pour aider les entreprises à réussir en ligne.</p>
+                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('blog/preview.text_40') }}</p>
                 </div>
             </div>
         </div>
@@ -207,9 +206,7 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="text-center mb-12">
             <span class="inline-flex items-center gap-2 px-3 py-1 bg-[#00AEEF]/10 text-[#00AEEF] text-xs font-semibold rounded-full mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                À lire aussi
-            </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>{{ __('blog/preview.ml_542') }}</span>
             <h2 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)]" style="font-family:var(--font-heading)">Articles Similaires</h2>
         </div>
 

@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Générateur de QR Code - Créateur de QR Code Gratuit | CodeSommet')
-@section('meta_description', "Générez des QR codes personnalisables instantanément avec notre générateur de QR code gratuit. Créez des QR codes pour les URL, le texte, les numéros de téléphone et plus encore. Téléchargez des QR codes haute qualité pour impression ou usage numérique avec support de correction d'''erreurs.")
-@section('meta_keywords', 'QR code generator,QR code creator,custom QR code,QR code maker,free QR generator,QR code tool,create QR code,generate QR code online,QR code builder,printable QR code,URL QR code,QR code download,error correction QR,high quality QR code')
-@section('og_title', 'Générateur de QR Code - Créateur de QR Code Gratuit')
-@section('og_description', 'Générez des QR codes personnalisables instantanément avec notre générateur gratuit. Créez des QR codes pour les URL, le texte, les numéros de téléphone et plus encore. Téléchargez des QR codes haute qualité.')
-@section('twitter_description', 'Générez des QR codes personnalisables instantanément avec notre générateur gratuit. Créez des QR codes pour les URL, le texte, les numéros de téléphone et plus encore.')
+@section('title', __('tools/qr-code-generator.title'))
+@section('meta_description', __('tools/qr-code-generator.meta_description'))
+@section('meta_keywords', __('tools/qr-code-generator.meta_keywords'))
+@section('og_title', __('tools/qr-code-generator.og_title'))
+@section('og_description', __('tools/qr-code-generator.og_description'))
+@section('twitter_description', __('tools/qr-code-generator.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,16 +24,16 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Générateur de QR Code</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/qr-code-generator.text_0') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Générateur de QR Code</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Générez des QR codes scannables pour les URL, le texte et les informations de contact</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/qr-code-generator.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/qr-code-generator.text_2') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/qr-code-generator.text_3') }}</span>
         </div>
     </div>
 </section>
@@ -41,7 +41,7 @@
     <div class="space-y-8">
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
-                <div class="space-y-2"><label class="block text-sm font-medium text-black">Contenu<span class="text-[#00AEEF] ml-1">*</span></label>
+                <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/qr-code-generator.label_152') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                     <div class="relative">
                         <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-5 h-5" aria-hidden="true">
                                 <rect width="5" height="5" x="3" y="3" rx="1"></rect>
@@ -58,38 +58,38 @@
                                 <path d="M12 21v-1"></path>
                             </svg></div><input type="text" placeholder="https://example.com or any text" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value="" />
                     </div>
-                    <p class="text-sm text-gray-500">Entrez une URL, du texte, un numéro de téléphone ou tout contenu que vous souhaitez encoder</p>
+                    <p class="text-sm text-gray-500">{{ __('tools/qr-code-generator.text_4') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Taille</label>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/qr-code-generator.text_653') }}</label>
                         <div class="relative"><select class="h-12 w-full px-4 pr-10 rounded-lg appearance-none bg-white border border-gray-200 text-black transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 cursor-pointer">
-                                <option value="" disabled="">Sélectionnez une option</option>
-                                <option value="128" class="text-black">128×128 px (Petit)</option>
-                                <option value="256" class="text-black" selected="">256×256 px (Moyen)</option>
-                                <option value="384" class="text-black">384×384 px (Grand)</option>
-                                <option value="512" class="text-black">512×512 px (Très Grand)</option>
+                                <option value="" disabled="">{{ __('tools/qr-code-generator.text_5') }}</option>
+                                <option value="128" class="text-black">{{ __('tools/qr-code-generator.text_6') }}</option>
+                                <option value="256" class="text-black" selected="">{{ __('tools/qr-code-generator.text_7') }}</option>
+                                <option value="384" class="text-black">{{ __('tools/qr-code-generator.text_8') }}</option>
+                                <option value="512" class="text-black">{{ __('tools/qr-code-generator.text_9') }}</option>
                             </select>
                             <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </div>
                     </div>
-                    <div class="space-y-2"><label class="block text-sm font-medium text-black">Niveau de Correction d'Erreur</label>
+                    <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/qr-code-generator.label_153') }}</label>
                         <div class="relative"><select class="h-12 w-full px-4 pr-10 rounded-lg appearance-none bg-white border border-gray-200 text-black transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 cursor-pointer">
-                                <option value="" disabled="">Sélectionnez une option</option>
-                                <option value="L" class="text-black">Faible (7% de récupération)</option>
-                                <option value="M" class="text-black">Moyen (15% de récupération)</option>
-                                <option value="Q" class="text-black">Quartile (25% de récupération)</option>
-                                <option value="H" class="text-black" selected="">Élevé (30% de récupération)</option>
+                                <option value="" disabled="">{{ __('tools/qr-code-generator.text_10') }}</option>
+                                <option value="L" class="text-black">{{ __('tools/qr-code-generator.text_11') }}</option>
+                                <option value="M" class="text-black">{{ __('tools/qr-code-generator.text_12') }}</option>
+                                <option value="Q" class="text-black">{{ __('tools/qr-code-generator.text_13') }}</option>
+                                <option value="H" class="text-black" selected="">{{ __('tools/qr-code-generator.text_14') }}</option>
                             </select>
                             <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </div>
-                        <p class="text-sm text-gray-500">Les niveaux supérieurs fonctionnent mieux avec les QR codes endommagés</p>
+                        <p class="text-sm text-gray-500">{{ __('tools/qr-code-generator.text_15') }}</p>
                     </div>
                 </div>
-                <div class="flex gap-3"><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full flex-1" tabindex="0">Générer le QR Code</button></div>
+                <div class="flex gap-3"><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full flex-1" tabindex="0">{{ __('tools/qr-code-generator.text_16') }}</button></div>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
@@ -98,19 +98,19 @@
                 <div class="space-y-2">
                     <p class="text-sm font-semibold text-gray-900">Sites Web >Websites &amp; URLs<amp; URL</p>
                             <ul class="text-sm text-gray-600 space-y-1">
-                                <li>• Portfolio ou site web professionnel</li>
-                                <li>• Pages de destination produit</li>
-                                <li>• Formulaires d'inscription aux événements</li>
-                                <li>• Liens vers menus ou catalogues</li>
+                                <li>{{ __('tools/qr-code-generator.text_17') }}</li>
+                                <li>{{ __('tools/qr-code-generator.text_18') }}</li>
+                                <li>{{ __('tools/qr-code-generator.text_19') }}</li>
+                                <li>{{ __('tools/qr-code-generator.text_20') }}</li>
                             </ul>
                 </div>
                 <div class="space-y-2">
                     <p class="text-sm font-semibold text-gray-900">Contact >Contact &amp; Text<amp; Texte</p>
                             <ul class="text-sm text-gray-600 space-y-1">
-                                <li>• Numéros de téléphone (tel:+1234567890)</li>
-                                <li>• Adresses e-mail (mailto:<a href="mailto:codesommet@gmail.com" class="__cf_email__" data-cfemail="147c7178787b54716c75796478713a777b79">[email&#160;protected]</a>)</li>
-                                <li>• Identifiants WiFi</li>
-                                <li>• Messages texte simple</li>
+                                <li>{{ __('tools/qr-code-generator.text_21') }}</li>
+                                <li>{{ __('tools/qr-code-generator.text_22') }}<a href="mailto:codesommet@gmail.com" class="__cf_email__" data-cfemail="147c7178787b54716c75796478713a777b79">{{ __('tools/qr-code-generator.text_353') }}</a>)</li>
+                                <li>{{ __('tools/qr-code-generator.text_23') }}</li>
+                                <li>{{ __('tools/qr-code-generator.text_24') }}</li>
                             </ul>
                 </div>
             </div>
@@ -122,105 +122,105 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/qr-code-generator.text_25') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/qr-code-generator.text_26') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment fonctionnent les QR codes ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_27') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les QR codes encodent des informations dans un code-barres bidimensionnel que les smartphones peuvent scanner. Ils utilisent des algorithmes de correction d'erreurs pour rester lisibles même s'ils sont partiellement endommagés. Lorsqu'il est scanné, l'appareil photo du téléphone décode le motif et effectue l'action (ouvrir une URL, composer un numéro, etc.).</p>
+                        <p>{{ __('tools/qr-code-generator.text_28') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelle taille d'impression pour mon QR code ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_29') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>La taille minimale recommandée est de 2×2 cm pour un scan fiable avec les smartphones. Pour un scan extérieur ou à distance, utilisez au moins 5×5 cm. Les QR codes plus grands sont plus faciles à scanner mais prennent plus de place.</p>
+                        <p>{{ __('tools/qr-code-generator.text_30') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que sont les niveaux de correction d'erreur et lequel choisir ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_31') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>La correction d'erreur permet aux QR codes d'être lus même lorsqu'ils sont endommagés. Low (7%) est pour les conditions parfaites, Medium (15%) pour un usage général, Quartile (25%) pour un risque léger de dommage, et High (30%) pour les environnements où les dommages sont probables. Une correction d'erreur élevée rend les QR codes plus denses mais plus résistants.</p>
+                        <p>{{ __('tools/qr-code-generator.text_32') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Puis-je personnaliser les couleurs de mon QR code ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_33') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Cet outil génère des QR codes standard en noir et blanc pour une compatibilité maximale. Pour des QR codes colorés ou personnalisés, vous aurez besoin d'un logiciel de design spécialisé. Assurez-vous toujours d'un contraste élevé entre les couleurs de premier plan et d'arrière-plan pour un scan fiable.</p>
+                        <p>{{ __('tools/qr-code-generator.text_34') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment suivre le nombre de personnes qui scannent mon QR code ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_35') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Pour suivre les scans, créez un raccourcisseur d'URL avec des analyses (comme Bitly ou TinyURL) et encodez cette URL raccourcie dans votre QR code. Le raccourcisseur suivra tous les clics, vous donnant des statistiques de scan. Vous pouvez également utiliser des plateformes de QR code dédiées avec des analyses intégrées.</p>
+                        <p>{{ __('tools/qr-code-generator.text_36') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la quantité maximale de données qu'un QR code peut stocker ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_37') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les QR codes peuvent stocker jusqu'à environ 2 950 caractères pour du texte alphanumérique ou 4 296 caractères pour des données numériques. Cependant, plus de données créent des codes plus denses et plus difficiles à scanner. Pour de meilleurs résultats, gardez les URL sous 100 caractères en utilisant des raccourcisseurs d'URL.</p>
+                        <p>{{ __('tools/qr-code-generator.text_38') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment tester si mon QR code fonctionne correctement ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/qr-code-generator.text_39') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Testez votre QR code avec plusieurs appareils (iPhone, Android) et différentes applications caméra avant la production en masse. Essayez de scanner à différentes distances et conditions d'éclairage. Vérifiez que l'action (ouverture d'URL, composition de numéro) fonctionne comme prévu sur tous les appareils.</p>
+                        <p>{{ __('tools/qr-code-generator.text_40') }}</p>
                     </div>
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/qr-code-generator.text_41') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/qr-code-generator.text_42') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -230,8 +230,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/qr-code-generator.text_43') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/qr-code-generator.text_44') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/color-palette-generator">
                 <div class="mb-4">
@@ -244,7 +244,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Color Palette Generator</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Extrayez les couleurs de marque des logos avec la vision IA</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/qr-code-generator.text_45') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -259,7 +259,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">CSS Minifier</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Minifiez le code CSS pour réduire la taille des fichiers et améliorer les performances</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/qr-code-generator.text_46') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -275,14 +275,14 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Générez des sitemaps XML optimisés pour les moteurs de recherche</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/qr-code-generator.text_47') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/qr-code-generator.text_48') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -300,15 +300,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/qr-code-generator.text_49') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/qr-code-generator.text_50') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/qr-code-generator.text_51') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Sans engagement à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/qr-code-generator.text_52') }}</p>
             </div>
         </div>
     </div>

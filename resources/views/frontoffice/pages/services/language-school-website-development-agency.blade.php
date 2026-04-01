@@ -1,19 +1,11 @@
 ﻿@extends('frontoffice.layouts.app')
 
-@section('title', "Développement de Sites Web pour Écoles de Langues | Plateforme d'Apprentissage Linguistique en Ligne
-    - CodeSommetStudio")
-@section('meta_description', "Créez des plateformes interactives d'apprentissage des langues avec des outils de
-    prononciation alimentés par l'IA, l'intégration de tutorat en direct, le suivi des progrès et du contenu multimédia
-    engageant. Développement web spécialisé pour les écoles de langues et instituts.")
-@section('meta_keywords', 'site web école de langues,plateforme apprentissage langues,cours de langues en ligne,site
-    institut linguistique,développement plateforme ESL,apprentissage langues étrangères,plateforme tutorat
-    langues,plateforme éducation multilingue')
-@section('og_title', "CodeSommetStudio - Agence de Développement Web Alimentée par l'IA | Maroc")
-@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par
-    l'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l'éducation, la santé
-    et les entreprises. Plus de 50 projets livrés.")
-@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web alimentés par l'IA,
-    les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
+@section('title', __('services/language-school-website-development-agency.title'))
+@section('meta_description', __('services/language-school-website-development-agency.meta_description'))
+@section('meta_keywords', __('services/language-school-website-development-agency.meta_keywords'))
+@section('og_title', __('services/language-school-website-development-agency.og_title'))
+@section('og_description', __('services/language-school-website-development-agency.og_description'))
+@section('twitter_description', __('services/language-school-website-development-agency.twitter_description'))
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -51,8 +43,7 @@
                                         d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
-                                href="/#industries">Industries</a><span>/</span><span class="text-gray-600">Écoles de
-                                Langues</span></nav>
+                                href="/#industries">Industries</a><span>/</span><span class="text-gray-600">{{ __('services/language-school-website-development-agency.ml_932') }}</span></nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -60,7 +51,7 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Accepte Actuellement les
-                                    <!-- -->Écoles de Langues<!-- --> Projets</span><span
+                                    <!-- -->{{ __('services/language-school-website-development-agency.text_0') }}<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -71,12 +62,12 @@
                                     </path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🌐<!-- --> <!-- -->Écoles de
-                                    Langues<!-- -->, <!-- -->Industrie Spécialisée</span>
+                                    Langues<!-- -->, <!-- -->{{ __('services/language-school-website-development-agency.text_1') }}</span>
                             </div>
                         </div>
                         <div class="space-y-6">
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
-                                style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES<!-- -->
+                                style="font-family:var(--font-display)">{{ __('services/language-school-website-development-agency.text_2') }}<!-- -->
                                 <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
                                         style="min-height:1.2em"
                                         class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
@@ -90,15 +81,10 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">Écoles
-                                            de Langues</span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Écoles
-                                            de Langues</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">{{ __('services/language-school-website-development-agency.ml_933') }}</span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">{{ __('services/language-school-website-development-agency.ml_934') }}</span></span></span></h1>
                             <p
-                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
-                                Créez des plateformes d'apprentissage des langues engageantes avec retour de prononciation
-                                alimenté par l'IA, leçons interactives, tutorat en direct, contenu d'immersion culturelle et
-                                expériences ludiques qui accélèrent la maîtrise de la langue.</p>
+                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">{{ __('services/language-school-website-development-agency.ml_935') }}</p>
                         </div>
                         <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank"
                                 rel="noopener noreferrer"
@@ -112,8 +98,7 @@
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
                     rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px"
                                 href="https://cal.com/pikasso/discovery"><span
-                                    class="relative text-[15px] font-semibold text-white z-10">Réserver une démo
-                                    gratuite</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="relative text-[15px] font-semibold text-white z-10">{{ __('services/language-school-website-development-agency.ml_936') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform"
@@ -122,8 +107,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
-                                href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir le Portfolio
-                                    Écoles de Langues</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_937') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
@@ -134,18 +118,17 @@
                         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">Basé dans le secteur <!-- -->Écoles de
-                                    Langues</span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_3') }} <!-- -->{{ __('services/language-school-website-development-agency.ml_938') }}</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">Livraison en 7-10 Jours</span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_200') }}</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+ clients dans <!-- -->Écoles de
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_4') }} <!-- -->Écoles de
                                     Langues<!-- --></span>
                             </div>
                         </div>
@@ -167,13 +150,13 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Pourquoi Nous Choisir</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_5') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommetStudio dans le secteur
-                        <!-- -->Écoles de Langues<!-- -->?</h2>
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_6') }}<!-- -->?</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise locale alliée à des standards
                         internationaux. Voici ce qui fait de nous le partenaire idéal en développement web dans le secteur
-                        <!-- -->Écoles de Langues<!-- -->.</p>
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_7') }}<!-- -->.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -196,12 +179,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Spécialistes en
-                                        Éducation Linguistique</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Expert dans la création de
-                                        plateformes pour écoles de langues avec support multi-langues, outils de
-                                        prononciation, correcteurs grammaticaux et contenu d'immersion culturelle qui rend
-                                        l'apprentissage des langues engageant et efficace.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_939') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_940') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -236,12 +215,8 @@
                                                 <rect x="8" y="8" width="8" height="8" rx="1"></rect>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Prononciation &amp;
-                                        Retour Alimentés par l'IA</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Chatbots IA personnalisés
-                                        qui répondent aux questions des étudiants 24h/24 en plusieurs langues. Qualification
-                                        de leads automatisée, recommandations de cours instantanées et suivis personnalisés
-                                        qui convertissent 3x mieux.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_941') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_942') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -266,12 +241,8 @@
                                                 <circle cx="9" cy="7" r="4"></circle>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Suivi des Progrès &amp;
-                                        Certification</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">De la demande à
-                                        l'inscription - nous construisons l'écosystème entier : pages de destination,
-                                        portails de candidature, systèmes de téléchargement de documents, passerelles de
-                                        paiement, tableaux de bord étudiants et outils de communication parentale.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_943') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_944') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -296,12 +267,8 @@
                                                 <path d="M8 17v-3"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Live Tutoring &amp;
-                                        Community Fonctionnalités</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Sites web éducatifs
-                                        optimisés pour Google Ads et le SEO organique. Suivi avancé, tests A/B et
-                                        optimisation du taux de conversion. Nos clients du secteur éducatif constatent une
-                                        augmentation moyenne de 300% des leads qualifiés.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_945') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_946') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -325,12 +292,8 @@
                                                 <path d="M2 12h20"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Contenu d'Apprentissage
-                                        Multimédia</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Support pour plus de 50
-                                        langues et 20+ devises. Essentiel pour les entreprises d'éducation internationale
-                                        servant des étudiants du Maroc, du Moyen-Orient, d'Europe et d'Asie. Support RTL
-                                        inclus.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_947') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_948') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -354,12 +317,8 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Inscription &amp;
-                                        Rétention des Étudiants</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Lancement en 7-10 jours pour
-                                        capter les saisons d'admission. Délai rapide pour les campagnes urgentes (saison
-                                        IELTS, délais universitaires). Processus agile conçu pour les délais de l'industrie
-                                        éducative.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_949') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_950') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -372,30 +331,30 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">Adopté par les <!-- -->Écoles de Langues<!-- -->
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_8') }} <!-- -->{{ __('services/language-school-website-development-agency.text_9') }}<!-- -->
                         Entreprises</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
-                                    data-target="50">0</span> Projets Livrés</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_10') }} <span class="count-up"
+                                    data-target="50">0</span> {{ __('services/language-school-website-development-agency.text_11') }}</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_12') }} <span class="count-up"
                                     data-target="100">0</span> Prospects</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_13') }} <span class="count-up"
                                     data-target="35">0</span> Clients</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de <!-- -->Écoles
-                        de Langues<!-- --> avec lesquelles nous avons collaboré</p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/language-school-website-development-agency.text_14') }} <!-- -->Écoles
+                        de Langues<!-- --> {{ __('services/language-school-website-development-agency.text_15') }}</p>
                 </div>
             </div>
         </section>
@@ -410,12 +369,10 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" x2="12" y1="8" y2="12"></line>
                             <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                        </svg>Défis Courants</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_16') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Le Défi<!-- -->: <!-- -->Écoles de Langues<!-- --> Les
-                        Entreprises Font Face à des Défis Web Uniques</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Les développeurs web généralistes ne comprennent
-                        pas ces problèmes spécifiques aux écoles de langues</p>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_17') }}<!-- -->: <!-- -->{{ __('services/language-school-website-development-agency.text_18') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_951') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_952') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -433,14 +390,9 @@
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Faible Engagement Étudiant &amp; Abandons</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_19') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Wix et WordPress ne peuvent pas gérer les flux de
-                                candidature étudiants complexes, les processus de visa ou le support multilingue nécessaires
-                                aux entreprises d'éducation internationale. Nous construisons des plateformes personnalisées
-                                avec des formulaires de candidature multi-étapes, la gestion de documents, des vérificateurs
-                                automatisés de conditions de visa et un support natif pour plus de 50 langues sans plugins
-                                tiers.</p>
+                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_953') }}</p>
                         </div>
                     </div>
                     <div>
@@ -459,13 +411,9 @@
                                     <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Gestion de Programmes Multilingues</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_20') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Gérer les demandes étudiantes sur WhatsApp, email,
-                                appels téléphoniques et DMs Instagram est accablant sans système centralisé. Nos plateformes
-                                incluent une boîte de réception unifiée avec suivis automatisés, un chatbot IA pour les FAQ
-                                et une intégration CRM qui suit chaque interaction étudiante dans un seul tableau de bord.
-                            </p>
+                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_954') }}</p>
                         </div>
                     </div>
                     <div>
@@ -482,14 +430,9 @@
                                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Modèles de Tarification &amp; Paiement Complexes
-                            </h3>
+                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_955') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Les conseillers perdent plus de 15 heures par semaine
-                                à répondre à des questions répétitives d'étudiants non qualifiés qui ne sont pas prêts à
-                                postuler. Nous implémentons des chatbots alimentés par l'IA qui gèrent les FAQ,
-                                pré-qualifient les leads avec des vérificateurs d'éligibilité et notent automatiquement les
-                                leads pour que les conseillers se concentrent sur les étudiants à forte intention.</p>
+                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_956') }}</p>
                         </div>
                     </div>
                     <div>
@@ -506,13 +449,9 @@
                                     </path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Contrôle Qualité des Tuteurs en Ligne</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_21') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Embaucher des traducteurs ou gérer le contenu
-                                multilingue manuellement pour différents marchés est coûteux, incohérent et difficile à
-                                maintenir. Un CMS multilingue intégré avec traduction alimentée par l'IA, support des
-                                langues RTL et localisation des devises rend la gestion du contenu dans plus de 50 langues
-                                sans effort.</p>
+                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_957') }}</p>
                         </div>
                     </div>
                     <div>
@@ -529,13 +468,9 @@
                                     <path d="M2 12h20"></path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Limité Interactive Speaking Practice</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_22') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Vos concurrents se classent mieux sur Google pour les
-                                mots-clés d'études à l'étranger. Vous perdez 60% des étudiants potentiels au profit de sites
-                                mieux optimisés. Nous implémentons le SEO technique, le balisage schema, les systèmes de
-                                blog et les pages de destination spécifiques par pays qui améliorent les classements et
-                                génèrent 3x plus de trafic organique.</p>
+                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_958') }}</p>
                         </div>
                     </div>
                     <div>
@@ -554,22 +489,18 @@
                                     <path d="M8 17v-3"></path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Difficulté à Mesurer la Maîtrise Linguistique</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_23') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Le suivi des documents étudiants (relevés de notes,
-                                passeports, certificats) par email et Google Drive est chaotique et mène à des délais
-                                manqués. Portail sécurisé de téléchargement de documents avec vérification automatisée,
-                                suivi des dates d'expiration, rappels par email et tableau de bord admin affichant le statut
-                                de complétion des candidatures en temps réel.</p>
+                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_959') }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-10 md:mt-12">
                     <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
                         style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                        exacts pour plus de 40 <!-- -->écoles de langues<!-- --> entreprises.</p><a
+                        exacts pour plus de 40 <!-- -->{{ __('services/language-school-website-development-agency.text_24') }}<!-- --> entreprises.</p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
-                        style="color:white" href="https://cal.com/pikasso/discovery">Voir Notre Solution</a>
+                        style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/language-school-website-development-agency.text_25') }}</a>
                 </div>
             </div>
         </section>
@@ -587,12 +518,11 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Conçu sur Mesure pour <!-- -->Écoles de Langues</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_26') }} <!-- -->{{ __('services/language-school-website-development-agency.text_27') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Fonctionnalités Essentielles<!-- --> pour <!-- -->Écoles de
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_28') }}<!-- --> {{ __('services/language-school-website-development-agency.text_201') }} <!-- -->Écoles de
                         Langues<!-- --> Sites Web</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise d'école de langues
-                        a besoin en une seule plateforme</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_960') }}</p>
                 </div>
                 <div class="space-y-12">
                     <div>
@@ -604,9 +534,7 @@
                                             style="font-family:var(--font-heading)">Inscription aux Cours &amp; Test de
                                             Placement</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Formulaires de candidature intelligents
-                                            avec téléchargement de documents, suivi en temps réel et notifications
-                                            automatisées.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_961') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -617,8 +545,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Formulaires multi-étapes avec
-                                                    validation</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_962') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -628,8 +555,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Téléchargement sécurisé de
-                                                    documents (PDF, JPG, PNG)</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_963') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -639,8 +565,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Suivi de statut en temps
-                                                    réel</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_964') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -668,7 +593,7 @@
                                                 <path d="M20 2v4"></path>
                                                 <path d="M22 4h-4"></path>
                                                 <circle cx="4" cy="20" r="2"></circle>
-                                            </svg>LE PLUS POPULAIRE</div><img
+                                            </svg>{{ __('services/language-school-website-development-agency.text_202') }}</div><img
                                             src="{{ asset('images/education/education-application-portal.webp') }}"
                                             alt="Portail de Candidature"
                                             class="absolute inset-0 w-full h-full object-contain" />
@@ -686,8 +611,7 @@
                                             style="font-family:var(--font-heading)">Chatbot IA de Pratique Linguistique
                                         </h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Support multilingue 24h/24 pourmé sur vos
-                                            cours et exigences de visa. Qualifie les leads automatiquement.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_965') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -698,8 +622,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Plus de 50 langues
-                                                    supportées</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_966') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -709,7 +632,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Recommandations de cours</span>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_203') }}</span>
                                             </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -720,7 +643,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Vérificateur d'éligibilité</span>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_29') }}</span>
                                             </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -749,7 +672,7 @@
                                                 <path d="M20 2v4"></path>
                                                 <path d="M22 4h-4"></path>
                                                 <circle cx="4" cy="20" r="2"></circle>
-                                            </svg>ALIMENTÉ PAR L'IA</div><img
+                                            </svg>{{ __('services/language-school-website-development-agency.text_30') }}</div><img
                                             src="{{ asset('images/education/education-ai-chatbot.webp') }}"
                                             alt="Chatbot IA" class="absolute inset-0 w-full h-full object-contain" />
                                     </div>
@@ -763,12 +686,9 @@
                                 <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
-                                            style="font-family:var(--font-heading)">Tableau de Bord d'Apprentissage
-                                            Étudiant</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_967') }}</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Portail personnalisé pour le suivi des
-                                            candidatures, des documents, des paiements et la communication avec les
-                                            conseillers.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_968') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -790,7 +710,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Gestion de documents</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_31') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -800,7 +720,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Reçus de paiement</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_32') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -831,8 +751,7 @@
                                             style="font-family:var(--font-heading)">CRM de Gestion &amp; Planification des
                                             Tuteurs</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Système de gestion de prospects avec
-                                            notation, suivis et analytiques de conversion pour les conseillers.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_969') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -854,7 +773,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Rappels de suivi</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_204') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -864,8 +783,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Pipeline par
-                                                    glisser-déposer</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_970') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -875,7 +793,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Prévision des revenus</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_33') }}</span></li>
                                         </ul>
                                     </div>
                                     <div
@@ -900,12 +818,11 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>Nos Réalisations en <!-- -->Écoles de Langues</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_34') }} <!-- -->{{ __('services/language-school-website-development-agency.text_35') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Histoires de Succès en <!-- -->Écoles de Langues</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_36') }} <!-- -->{{ __('services/language-school-website-development-agency.text_37') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Projets réels, résultats réels. Découvrez
-                        comment nous avons aidé les entreprises en <!-- -->Écoles de Langues<!-- --> à atteindre leurs
-                        objectifs numériques.</p>
+                        comment nous avons aidé les entreprises en <!-- -->{{ __('services/language-school-website-development-agency.text_38') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_971') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
@@ -917,8 +834,7 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">PLATEFORME
-                                            D'ÉTUDES À L'ÉTRANGER</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/language-school-website-development-agency.ml_972') }}</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
@@ -928,10 +844,8 @@
                                             </svg>+60% Candidatures</span></div>
                                 </div>
                                 <div class="px-5 py-4">
-                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">École de Langues
-                                        Español Vivo</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme de
-                                        Conseil en Études à l'Étranger en Allemagne</p>
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('services/language-school-website-development-agency.ml_973') }}</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/language-school-website-development-agency.ml_974') }}</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
@@ -972,20 +886,18 @@
                                         alt="Project Azubi" class="absolute inset-0 w-full h-full object-cover" />
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">CONSEIL EN
-                                            ÉDUCATION</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/language-school-website-development-agency.ml_975') }}</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>+150% Conversion de Leads</span></div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_205') }}</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme
-                                        d'Éducation Internationale</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/language-school-website-development-agency.ml_976') }}</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc + dans
                                         le Monde</p>
                                 </div>
@@ -1007,12 +919,11 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_206') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Notre Processus de Développement<!-- --> pour
-                        <!-- -->Écoles de Langues</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Du concept au lancement en 4 semaines, optimisé
-                        pour les entreprises d'écoles de langues</p>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_39') }}<!-- --> pour
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_40') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_977') }}</p>
                 </div>
                 <div class="relative">
                     <div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2"
@@ -1043,9 +954,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 1</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_207') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Découverte et Analyse</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_41') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1067,8 +978,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Développement de personas
-                                                    étudiants</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_978') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1078,8 +988,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Priorisation des
-                                                    fonctionnalités</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_979') }}</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1103,7 +1012,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 1</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_208') }}</div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1142,9 +1051,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 2</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_209') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Design et Prototypage</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_210') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1155,8 +1064,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Maquettes pour les pages
-                                                    clés</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_980') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1166,7 +1074,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Maquettes haute fidélité</span>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_42') }}</span>
                                             </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1193,7 +1101,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 2</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_211') }}</div>
                                     <div
                                         class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1237,10 +1145,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 3</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_212') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Interactive Fonctionnalités &amp; AI
-                                            Integration</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_981') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1251,8 +1158,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Développement frontend et
-                                                    backend</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_982') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1262,7 +1168,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Formation du chatbot IA</span>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_213') }}</span>
                                             </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1273,8 +1179,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Intégration CRM et
-                                                    paiement</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_983') }}</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1298,7 +1203,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 3</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_214') }}</div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1334,9 +1239,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 4</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_215') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Lancement et Support</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_216') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1347,8 +1252,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Tests cross-device et assurance
-                                                    qualité</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_984') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1358,8 +1262,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Session de formation
-                                                    d'équipe</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_985') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1385,7 +1288,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 4</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_217') }}</div>
                                     <div
                                         class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1409,11 +1312,10 @@
                 </div>
                 <div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8">
                     <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
-                        style="font-family:var(--font-heading)">Prêt à démarrer votre <!-- -->écoles de langues<!-- -->
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_43') }} <!-- -->{{ __('services/language-school-website-development-agency.text_44') }}<!-- -->
                         projet de site web ?</p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
-                        style="color:white" href="https://cal.com/pikasso/discovery">Réserver un Appel Découverte
-                        Gratuit</a>
+                        style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/language-school-website-development-agency.ml_986') }}</a>
                 </div>
             </div>
         </section>
@@ -1421,9 +1323,8 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-12 md:mb-16">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4"
-                        style="font-family:var(--font-heading)">Solutions Personnalisées, Tarification Transparente</h2>
-                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour
-                        discuter de vos besoins spécifiques et obtenir un devis personnalisé</p>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_45') }}</h2>
+                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">{{ __('services/language-school-website-development-agency.ml_987') }}</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
                     <div class="relative bg-black rounded-[32px] p-3 text-white">
@@ -1436,7 +1337,7 @@
                                     class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                </svg>Recommandé</div>
+                                </svg>{{ __('services/language-school-website-development-agency.text_46') }}</div>
                         </div>
                         <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
                             <div class="flex items-start justify-between mb-6">
@@ -1452,12 +1353,11 @@
                                             <line x1="12" x2="12" y1="17" y2="21">
                                             </line>
                                         </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-white">Développement de Sites Web</h3>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-white">{{ __('services/language-school-website-development-agency.text_47') }}</h3>
                                 </div>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                                <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et
-                                    design premium livré en 7-10 jours.</p>
+                                <p class="text-white/70">{{ __('services/language-school-website-development-agency.ml_988') }}</p>
                             </div>
                             <div class="divide-y divide-white/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1467,8 +1367,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Intégration de fonctionnalités alimentées par
-                                        l'IA</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.ml_989') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1476,8 +1375,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Tableau de bord personnalisé et portail
-                                        utilisateur</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.ml_990') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1493,7 +1391,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Contenu professionnel et rédaction</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_48') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1501,7 +1399,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">SEO avancé et optimisation des performances</span>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_49') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1510,7 +1408,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Authentification et gestion des utilisateurs</span>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_50') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1519,7 +1417,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Intégration de paiement prête</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_51') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1527,7 +1425,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Analytique et suivi de conversion</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_218') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1535,24 +1433,22 @@
                                         class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-green-400 font-medium">Hébergement gratuit pour 3 mois
-                                        inclus</span></div>
+                                    </svg><span class="text-green-400 font-medium">{{ __('services/language-school-website-development-agency.ml_991') }}</span></div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
                             <div class="mb-6">
                                 <div class="flex flex-col"><span
-                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">À partir de</span>
+                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">{{ __('services/language-school-website-development-agency.text_52') }}</span>
                                     <div class="flex items-end gap-2"><span
-                                            class="text-5xl md:text-6xl font-bold">Obtenir Votre Devis Gratuit</span><span
+                                            class="text-5xl md:text-6xl font-bold">{{ __('services/language-school-website-development-agency.text_53') }}</span><span
                                             class="text-white/50 text-xl mb-2"></span></div>
-                                    <p class="text-white/60 text-sm mt-2">Devis personnalisé basé sur la portée de votre
-                                        projet</p>
+                                    <p class="text-white/60 text-sm mt-2">{{ __('services/language-school-website-development-agency.ml_992') }}</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><a
                                     class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight"
-                                    href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a
+                                    href="{{ route('get-quote') }}">{{ __('services/language-school-website-development-agency.text_54') }}</a><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
                                     class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez
@@ -1572,7 +1468,7 @@
                                             class="lucide lucide-infinity w-7 h-7 text-black" aria-hidden="true">
                                             <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
                                         </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-black">Abonnement</h3>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-black">{{ __('services/language-school-website-development-agency.text_520') }}</h3>
                                 </div><button
                                     class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20"
                                     style="margin-top:0">
@@ -1582,8 +1478,7 @@
                                             class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5">
                                         </div>
                                     </div><span
-                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Inclure
-                                        les Réseaux Sociaux</span>
+                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">{{ __('services/language-school-website-development-agency.ml_993') }}</span>
                                 </button>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg
@@ -1599,9 +1494,7 @@
                                     <path d="M22 4h-4"></path>
                                     <circle cx="4" cy="20" r="2"></circle>
                                 </svg>
-                                <p class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant
-                                    besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de site
-                                    web.</p>
+                                <p class="text-black/70 transition-all duration-300">{{ __('services/language-school-website-development-agency.ml_994') }}</p>
                             </div>
                             <div class="divide-y divide-black/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1611,7 +1504,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">1 projet actif à la fois</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_55') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1619,8 +1512,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Chatbot IA et fonctionnalités
-                                        d'automatisation</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.ml_995') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1628,7 +1520,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Développement de tableau de bord personnalisé</span>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_56') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1637,7 +1529,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Livraison des tâches en 48-72 heures</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_57') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1645,7 +1537,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Révisions illimitées jusqu'à la perfection</span>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_58') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1654,7 +1546,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Développement full-stack (frontend + backend)</span>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_59') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1663,7 +1555,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">SEO professionnel et stratégie de contenu</span>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_60') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1672,7 +1564,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Collaboration en temps réel sur Slack</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_61') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1680,28 +1572,27 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Hébergement premium et maintenance</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_62') }}</span></div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
                             <div class="mb-6">
                                 <div class="flex flex-col"><span
-                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">À partir de</span>
+                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">{{ __('services/language-school-website-development-agency.text_63') }}</span>
                                     <div class="flex items-end gap-2">
                                         <div class="relative overflow-hidden" style="height:fit-content"><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Obtenir
                                                 Votre Devis Gratuit</span><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Obtenir
                                                 Votre Devis Gratuit</span></div><span
-                                            class="text-black/50 text-xl mb-2">/mois</span>
+                                            class="text-black/50 text-xl mb-2">{{ __('services/language-school-website-development-agency.text_219') }}</span>
                                     </div>
-                                    <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
+                                    <p class="text-black/60 text-sm mt-2">{{ __('services/language-school-website-development-agency.text_64') }}</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery"
-                                    data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
-                                    class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
-                                    un Appel Découverte</button><a
+                                    data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
+                                    class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">{{ __('services/language-school-website-development-agency.ml_996') }}</button><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
                                     class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez
@@ -1726,24 +1617,20 @@
                                 <path d="M2 12h20"></path>
                             </svg></div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]"
-                            style="font-family:var(--font-heading)">Prêt à Transformer Votre Site Web d'Écoles de Langues
-                            ?</h2>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Obtenez
-                            d'abord une analyse gratuite complète :</p>
+                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_997') }}</h2>
+                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_998') }}</p>
                         <div class="flex flex-wrap gap-3 justify-center mb-4">
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
                                 <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Vérification des
-                                    performances</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/language-school-website-development-agency.ml_999') }}</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Révision du design</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/language-school-website-development-agency.text_65') }}</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Recommandations alimentées
-                                    par l'IA</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/language-school-website-development-agency.ml_1000') }}</span>
                             </div>
                         </div><a
                             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
@@ -1755,8 +1642,7 @@
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a>
-                        <p class="text-xs text-[var(--text-secondary)] mt-4">Pas de carte de crédit requise • Résultats en
-                            30 secondes • Plan d'amélioration personnalisé</p>
+                        <p class="text-xs text-[var(--text-secondary)] mt-4">{{ __('services/language-school-website-development-agency.ml_1001') }}</p>
                     </div>
                 </div>
             </div>
@@ -1771,31 +1657,29 @@
                             stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                        </svg>Pourquoi Nous Choisir</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_66') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->Écoles de Langues<!-- --> vs
+                        style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->{{ __('services/language-school-website-development-agency.text_67') }}<!-- --> vs
                         Autres</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Découvrez pourquoi <!-- -->Écoles de
-                        Langues<!-- --> entreprises choisissent CodeSommetStudio plutôt que d'autres agences locales et
-                        concurrents internationaux.</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.text_68') }} <!-- -->Écoles de
+                        Langues<!-- -->{{ __('services/language-school-website-development-agency.ml_1002') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
                         <div
                             class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
                             <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
-                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Fonctionnalité
-                                </div>
+                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">{{ __('services/language-school-website-development-agency.ml_1003') }}</div>
                                 <div class="p-3 md:p-4 text-center">
                                     <div
                                         class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
                                         <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
                                             class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">CodeSommetStudio
-                                            <!-- -->Écoles de Langues</span>
+                                            <!-- -->{{ __('services/language-school-website-development-agency.text_69') }}</span>
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
-                                    Other <!-- -->Écoles de Langues<!-- --> Agences</div>
+                                    Other <!-- -->{{ __('services/language-school-website-development-agency.text_70') }}<!-- --> Agences</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
                                     Agences Internationales</div>
                             </div>
@@ -1804,104 +1688,81 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Test de Placement
                                     &amp; Attribution de Niveau</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Tests automatisés alignés CECRL
-                                        (A1-C2)</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Quiz
-                                        basique, précision limitée</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Évaluation
-                                        manuelle par les instructeurs</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1004') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1005') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1006') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Retour de
                                     Prononciation IA</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Reconnaissance vocale avec correction en
-                                        temps réel</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Limité to
-                                        premium plans (premium plans)</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1007') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1008') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
                                         disponible</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Intégration de
-                                    Tutorat en Direct</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1009') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Vidéo intégrée + planification
-                                        automatisée</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1010') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Frais tiers
                                         par session</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Liens Zoom
-                                        externes, réservation manuelle</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1011') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Gestion de
                                     Programmes Multi-Langues</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Tableau de bord unifié pour toutes les
-                                        langues</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
-                                        supplémentaire par langue</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Systèmes
-                                        séparés par langue</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1012') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1013') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1014') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Suivi des Progrès
-                                    &amp; Certification</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1015') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Certificats alignés CECRL avec
-                                        analytiques détaillées</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Certificats
-                                        de complétion basiques uniquement</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Génération
-                                        manuelle de certificats</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1016') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1017') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1018') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Ludification &amp;
                                     Engagement</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Badges, séries, classements, défis</span>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_71') }}</span>
                                 </div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Limité
-                                        gamification features</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1019') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
                                         disponible</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Prix de Départ</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_72') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Obtenir Votre Devis Gratuit</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
-                                        élevé</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
-                                        élevé</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_73') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1020') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1021') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Flexibilité de
-                                    Paiement</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1022') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">Horaire, forfaits, abonnements,
                                         multi-devises</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Commission
                                         de plateforme (10-20%)</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Méthode de
-                                        paiement unique</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1023') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Expérience
-                                    d'Apprentissage Mobile</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1024') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Entièrement responsive + options
-                                        d'application native</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Application
-                                        disponible, mais fonctionnalités limitées</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1025') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1026') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Bureau
                                         uniquement ou mobile basique</span></div>
                             </div>
@@ -1909,7 +1770,7 @@
                     </div>
                     <div class="mt-8 text-center">
                         <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les prix moyens et les offres de
-                            services des 10 meilleures agences en <!-- -->Écoles de Langues</p>
+                            services des 10 meilleures agences en <!-- -->{{ __('services/language-school-website-development-agency.text_74') }}</p>
                         <div
                             class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full text-sm font-semibold text-[#22C55E]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1918,7 +1779,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>Meilleur Rapport Qualité-Prix pour <!-- -->Écoles de Langues<!-- --> Entreprises</div>
+                            </svg>{{ __('services/language-school-website-development-agency.text_75') }} <!-- -->{{ __('services/language-school-website-development-agency.text_76') }}<!-- --> Entreprises</div>
                     </div>
                 </div>
             </div>
@@ -1935,13 +1796,11 @@
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                             </path>
-                        </svg>Ce que Nos Clients Disent de Nous</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_77') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Ce que Nos Clients en Écoles de Langues Disent de Nous
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_1027') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
-                        entreprises en <!-- -->Écoles de Langues<!-- --> qui ont obtenu des résultats remarquables avec
-                        CodeSommetStudio.</p>
+                        entreprises en <!-- -->{{ __('services/language-school-website-development-agency.text_78') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_1028') }}</p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -2116,8 +1975,7 @@
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
                                             <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur Médical chez Dubaï
-                                                Wellness Clinic</div>
+                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/language-school-website-development-agency.ml_1029') }}</div>
                                             <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2127,7 +1985,7 @@
                                                         d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                     </path>
                                                     <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>Dubaï Healthcare City, EAU</span></div>
+                                                </svg><span>{{ __('services/language-school-website-development-agency.text_79') }}</span></div>
                                         </div>
                                     </div>
                                     <div
@@ -2295,8 +2153,7 @@
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
                                             <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur des Opérations chez Riad
-                                                Luxe Properties</div>
+                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/language-school-website-development-agency.ml_1030') }}</div>
                                             <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2325,9 +2182,8 @@
                             aria-label="Go to testimonial group 2"></button></div>
                 </div>
                 <div class="mt-10 text-center">
-                    <p class="text-sm text-[#0F0F0F]/60">Vous voulez voir plus d'histoires de succès ?<!-- --> <a
-                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">Voir
-                            toutes les études de cas</a></p>
+                    <p class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.text_80') }}<!-- --> <a
+                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">{{ __('services/language-school-website-development-agency.ml_1031') }}</a></p>
                 </div>
             </div>
         </section>
@@ -2390,12 +2246,12 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
-                        </svg>Questions fréquentes</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_81') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
-                        <!-- -->Écoles de Langues</h2>
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_82') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de <!-- -->Écoles de Langues<!-- --> entreprises.
+                        réponses. Voici les questions les plus courantes de <!-- -->{{ __('services/language-school-website-development-agency.text_83') }}<!-- --> entreprises.
                     </p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
@@ -2405,8 +2261,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Combien de temps faut-il pour créer
-                                    un site web d'école de langues ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1032') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2421,8 +2276,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Fournissez-vous la rédaction de
-                                    contenu pour les sites web éducatifs ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1033') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2437,8 +2291,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Le chatbot IA peut-il gérer les
-                                    requêtes étudiantes en plusieurs langues ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1034') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2453,8 +2306,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quels systèmes CRM intégrez-vous ?
-                                </h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1035') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2469,8 +2321,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous construire un portail de
-                                    candidature étudiant avec téléchargement de documents ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1036') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2501,8 +2352,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Qu'est-ce qui vous différencie des
-                                    autres développeurs web ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1037') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2517,8 +2367,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">8</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous aider avec Google Ads et
-                                    le SEO pour les sites web éducatifs ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1038') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2529,10 +2378,10 @@
                         </button></div>
                 </div>
                 <div class="mt-10 text-center">
-                    <p class="text-sm text-[#0F0F0F]/60 mb-2">Vous avez encore des questions ?</p><a
+                    <p class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/language-school-website-development-agency.text_84') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Écoles de Langues<!-- --> équipe<svg class="w-4 h-4" fill="none"
+                        notre <!-- -->{{ __('services/language-school-website-development-agency.text_85') }}<!-- --> {{ __('services/language-school-website-development-agency.text_86') }}<svg class="w-4 h-4" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -2551,12 +2400,10 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                             <path d="M2 12h20"></path>
-                        </svg>Présence Mondiale</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_87') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Au Service de Clients dans le Monde Entier</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Nous avons créé des sites web pour écoles de
-                        langues pour des clients du monde entier. Que vous soyez au Maroc ou ailleurs, nous livrons des
-                        solutions de classe mondiale.</p>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_88') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_1039') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
                     <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
@@ -2577,10 +2424,9 @@
                                         </svg></div>
                                     <div class="min-w-0 flex-1">
                                         <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Dubaï</h3>
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1040') }}</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇦🇪</span><span class="truncate">UAE</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_521') }}</span><span class="truncate">UAE</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2613,7 +2459,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Casablanca</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇲🇦</span><span class="truncate">Maroc</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_522') }}</span><span class="truncate">Maroc</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2646,7 +2492,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             San Francisco</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇺🇸</span><span class="truncate">États-Unis</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_523') }}</span><span class="truncate">{{ __('services/language-school-website-development-agency.text_89') }}</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2679,7 +2525,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Londres</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇬🇧</span><span class="truncate">Royaume-Uni</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_524') }}</span><span class="truncate">Royaume-Uni</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2712,7 +2558,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Paris</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇫🇷</span><span class="truncate">Paris</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_525') }}</span><span class="truncate">Paris</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2745,7 +2591,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Marrakech</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇲🇦</span><span class="truncate">Maroc</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_526') }}</span><span class="truncate">Maroc</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2760,7 +2606,7 @@
                 </div>
                 <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
                     <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez <!-- -->écoles de
-                        langues<!-- --> développement web dans une ville spécifique ?</p>
+                        langues<!-- --> {{ __('services/language-school-website-development-agency.text_90') }}</p>
                     <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 px-4"><a
                             class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
                             href="/#locations"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2771,7 +2617,7 @@
                                     d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                 </path>
                                 <circle cx="12" cy="10" r="3"></circle>
-                            </svg>Voir Tous les Emplacements<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            </svg>{{ __('services/language-school-website-development-agency.text_91') }}<svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -2779,7 +2625,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a><span class="text-[#0F0F0F]/40">or</span><a
                             class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
-                            href="{{ route('contact') }}">Contactez-nous pour Votre Ville<svg
+                            href="{{ route('contact') }}">{{ __('services/language-school-website-development-agency.text_92') }}<svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -2793,9 +2639,8 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-8 md:mb-10">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4"
-                        style="font-family:var(--font-heading)">Industries Connexes que Nous Servons</h2>
-                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">Découvrez nos services de
-                        développement web spécialisés pour d'autres industries</p>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_93') }}</h2>
+                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">{{ __('services/language-school-website-development-agency.ml_1041') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
@@ -2817,11 +2662,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Conseil en Études à l'Étranger</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
-                                        cours, systèmes LMS et portails étudiants pour les agences d'études à l'étranger.
-                                    </p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1042') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1043') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2850,11 +2692,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Écoles de Langues</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web modernes
-                                        pour les instituts de formation linguistique avec gestion des cours et
-                                        fonctionnalités d'apprentissage en ligne.</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1044') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1045') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2884,11 +2723,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Technologie Éducative</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes
-                                        d'apprentissage en ligne avec gestion des cours, hébergement vidéo et analyses des
-                                        étudiants.</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1046') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1047') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2919,9 +2755,7 @@
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Plateformes de Cours en Ligne</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
-                                        créateurs de cours avec livraison de contenu, gestion des étudiants et
-                                        fonctionnalités de monétisation.</p>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1048') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2986,11 +2820,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Santé</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web de
-                                        cliniques, systèmes de prise de rendez-vous et portails patients conformes aux
-                                        réglementations de santé.</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1049') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1050') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -3004,7 +2835,7 @@
                     </a></div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
-                        href="/#industries">Voir Toutes les Industries<svg xmlns="http://www.w3.org/2000/svg"
+                        href="/#industries">{{ __('services/language-school-website-development-agency.text_94') }}<svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -3017,9 +2848,8 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3"
-                        style="font-family:var(--font-heading)">Explorer Plus</h2>
-                    <p class="text-lg text-[var(--text-secondary)]">Découvrez ce qui fait de CodeSommetStudio votre
-                        partenaire idéal en développement web</p>
+                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_95') }}</h2>
+                    <p class="text-lg text-[var(--text-secondary)]">{{ __('services/language-school-website-development-agency.ml_1051') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -3038,11 +2868,10 @@
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                                 Audit Gratuit de Site Web</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Obtenez une analyse alimentée
-                                par l'IA avec plus de 40 vérifications</p>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/language-school-website-development-agency.ml_1052') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#00AEEF">{{ __('services/language-school-website-development-agency.text_96') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3067,13 +2896,11 @@
                                     </path>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Voir Nos Réalisations</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez les études de cas et
-                                les histoires de succès clients</p>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/language-school-website-development-agency.ml_1053') }}</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/language-school-website-development-agency.ml_1054') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#00AEEF">{{ __('services/language-school-website-development-agency.text_97') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3099,13 +2926,11 @@
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                À Propos de CodeSommetStudio</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Découvrez notre équipe et notre
-                                approche</p>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/language-school-website-development-agency.ml_1055') }}</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/language-school-website-development-agency.ml_1056') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#8B5CF6">{{ __('services/language-school-website-development-agency.text_98') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3135,7 +2960,7 @@
                                 exigences de votre projet</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#10B981">{{ __('services/language-school-website-development-agency.text_99') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3159,13 +2984,12 @@
                                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Retour à l'Accueil</h3>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/language-school-website-development-agency.ml_1057') }}</h3>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                                 offres</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#3B82F6">{{ __('services/language-school-website-development-agency.text_100') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3200,8 +3024,7 @@
                     </div>
                     <div class="relative z-10 text-center space-y-3 md:space-y-4">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
-                            style="font-family:var(--font-display)">Prêt à Construire Quelque Chose d'Extraordinaire ?
-                        </h2>
+                            style="font-family:var(--font-display)">{{ __('services/language-school-website-development-agency.ml_1058') }}</h2>
                         <div class="flex flex-col items-center gap-4 md:gap-6">
                             <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
                                     rel="noopener noreferrer"
@@ -3234,8 +3057,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                        un Appel Découverte</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('services/language-school-website-development-agency.ml_1059') }}</span>
                                 </a><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -3259,7 +3081,7 @@
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="pikasso/discovery"
-                                    data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
+                                    data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden"
                                     style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
@@ -3288,8 +3110,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                        un Appel Découverte</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('services/language-school-website-development-agency.ml_1060') }}</span>
                                 </button><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -3323,14 +3144,13 @@
                                         </svg></div>
                                     <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
                                         style="font-size:10px"><span
-                                            class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div>
+                                            class="text-white font-medium whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_220') }}</span></div>
                                 </div>
                             </div>
                         </div>
                         <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
                             visionnaires qui ont choisi l'excellence</p>
-                        <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
-                            peuvent élever votre entreprise</p>
+                        <p class="text-sm md:text-base text-white/50">{{ __('services/language-school-website-development-agency.ml_1061') }}</p>
                         <div class="mt-6">
                             <div class="relative w-full py-8">
                                 <div class="flex items-center justify-center gap-0">
@@ -3368,7 +3188,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/40">{{ __('services/language-school-website-development-agency.text_527') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3454,7 +3274,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/40">{{ __('services/language-school-website-development-agency.text_528') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3540,7 +3360,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/40">{{ __('services/language-school-website-development-agency.text_529') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3657,7 +3477,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/90">{{ __('services/language-school-website-development-agency.text_530') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3783,7 +3603,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/90">{{ __('services/language-school-website-development-agency.text_531') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3909,7 +3729,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/90">{{ __('services/language-school-website-development-agency.text_532') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">

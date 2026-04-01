@@ -1,0 +1,63 @@
+<?php
+
+return [
+    'title' => 'Generator de Schéma FAQ - Balisage JSON-LD FAQ Free | CodeSommet',
+    'meta_description' => 'Générez du balisage de schéma FAQ (JSON-LD) pour votre site web. Améliorez la visibilité avec des rich snippets. Generator de données structurées FAQ free.',
+    'meta_keywords' => '[TRANSLATE] FAQ schema generator,FAQ markup,JSON-LD FAQ,structured data,FAQ rich snippets,schema markup',
+    'og_title' => 'Generator de Schéma FAQ - Balisage JSON-LD Free',
+    'og_description' => '[TRANSLATE] Générez du balisage JSON-LD FAQ pour une meilleure visibilité',
+    'twitter_description' => '[TRANSLATE] Générez du balisage JSON-LD FAQ pour une meilleure visibilité',
+    'text_0' => '[TRANSLATE] Générateur de Schéma FAQ',
+    'text_1' => '[TRANSLATE] Générateur de Schéma FAQ',
+    'text_2' => '[TRANSLATE] Convertissez votre contenu FAQ en balisage JSON-LD compatible Google. Augmentez la visibilité dans les résultats et apparaissez dans les encadrés &#x27;Autres questions posées&#x27;.',
+    'text_3' => 'Free • No signup required',
+    'text_4' => '[TRANSLATE] Comment utiliser :',
+    'text_5' => '[TRANSLATE] Copiez votre contenu FAQ depuis votre site ou document',
+    'text_6' => '[TRANSLATE] Collez-le dans la zone de texte ci-dessous',
+    'text_7' => 'Cliquez sur &quot;Generate le Schéma&quot;',
+    'text_8' => '[TRANSLATE] Copiez le code généré et ajoutez-le à la section &lt;head&gt; de votre site',
+    'text_9' => '[TRANSLATE] Formats supportés :',
+    'text_10' => '[TRANSLATE] Q: / R:, listes numérotées, gras markdown ou questions simples se terminant par ?',
+    'text_11' => '[TRANSLATE] Collez Votre Contenu FAQ',
+    'text_12' => '[TRANSLATE] Collez vos FAQ dans n\'importe quel format - nous détecterons automatiquement les questions et réponses',
+    'text_13' => 'Generate le Schéma FAQ',
+    'text_14' => 'Frequently Asked Questions',
+    'text_15' => '[TRANSLATE] Questions courantes sur cet outil et comment l\'utiliser efficacement',
+    'text_16' => '[TRANSLATE] Qu\'est-ce que le balisage FAQ et pourquoi est-ce important ?',
+    'text_17' => '[TRANSLATE] Le balisage FAQ est une donnée structurée qui aide les moteurs de recherche comme Google à comprendre votre contenu FAQ. Il peut afficher vos FAQ directement dans les résultats de recherche sous forme de résultats enrichis, augmentant la visibilité et le taux de clics jusqu\'à 30%. Il vous aide également à apparaître dans la section \'Autres questions posées\'.',
+    'text_18' => '[TRANSLATE] Comment le schéma FAQ améliore-t-il mon SEO ?',
+    'text_19' => '[TRANSLATE] Le balisage FAQ donne à votre site plus d\'espace sur la page de résultats Google en affichant vos questions et réponses directement dans les résultats enrichis. Cela augmente la visibilité, améliore le taux de clics et vous positionne comme une source faisant autorité, ce qui peut indirectement améliorer votre classement.',
+    'text_20' => '[TRANSLATE] Combien de FAQ inclure sur une page ?',
+    'text_21' => '[TRANSLATE] Google recommande d\'inclure au moins 3 FAQ pour le balisage, mais le nombre idéal est de 5 à 10 questions de qualité par page. Concentrez-vous sur les vraies questions des utilisateurs plutôt que sur le bourrage de mots-clés. Trop de FAQ (20+) peuvent diluer la qualité et ne pas toutes apparaître dans les résultats enrichis.',
+    'text_22' => '[TRANSLATE] Quelle est la longueur idéale pour les questions et réponses ?',
+    'text_23' => '[TRANSLATE] Les questions doivent être concises (40-100 caractères) et rédigées comme des questions naturelles. Les réponses doivent être complètes mais pas excessives (150-300 caractères pour les questions simples, jusqu\'à 500 pour les complexes). Google préfère des réponses complètes et utiles aux réponses courtes bourrées de mots-clés.',
+    'text_24' => '[TRANSLATE] Comment implémenter le schéma FAQ généré sur mon site ?',
+    'text_25' => '[TRANSLATE] de votre page web avant la balise',
+    'text_26' => '[TRANSLATE] Mes FAQ apparaîtront-elles dans la section &#x27;Autres questions posées&#x27; de Google ?',
+    'text_27' => '[TRANSLATE] Pas automatiquement. Google décide quelles FAQ afficher en fonction de la pertinence, de la qualité et de l\'intention de recherche. L\'implémentation du balisage FAQ augmente vos chances, mais vous avez besoin de contenu de qualité, d\'une implémentation correcte et de pages bien classées pour les requêtes pertinentes. Il faut généralement 2 à 4 semaines pour voir les résultats enrichis après l\'implémentation.',
+    'text_28' => '[TRANSLATE] Y a-t-il des directives Google à suivre pour le schéma FAQ ?',
+    'text_29' => '[TRANSLATE] Oui. Utilisez le balisage FAQ uniquement pour du vrai contenu Q&R visible sur la page. Ne l\'utilisez pas à des fins publicitaires ou promotionnelles. Chaque question ne doit avoir qu\'une seule réponse. Évitez de dupliquer les FAQ sur plusieurs pages. Les questions doivent refléter les vraies requêtes des utilisateurs, et les réponses doivent être précises et utiles.',
+    'text_30' => '[TRANSLATE] Vous avez encore des questions ?',
+    'text_31' => '[TRANSLATE] Contactez notre équipe pour obtenir de l\'aide',
+    'text_32' => 'Tools Connexes Qui Pourraient Vous Intéresser',
+    'text_33' => '[TRANSLATE] Continuez à optimiser votre site web avec ces outils complémentaires',
+    'text_34' => '[TRANSLATE] Analyseur de Score de Lisibilité',
+    'text_35' => '[TRANSLATE] Analysez la lisibilité du texte avec 5 algorithmes et niveaux scolaires',
+    'text_36' => '[TRANSLATE] Comptez les mots, caractères et vérifiez les limites de plateformes',
+    'text_37' => '[TRANSLATE] Convertissez le HTML en texte brut lisible instantanément',
+    'text_38' => '[TRANSLATE] Parcourir les',
+    'text_39' => 'Besoin d\'un Outil Personnalisé pour Votre Company ?',
+    'text_40' => '[TRANSLATE] Nous créons des outils alimentés par l\'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats',
+    'text_41' => 'Book a Discovery Call',
+    'text_42' => '[TRANSLATE] 50+ projets réussis • Livraison en 48h • Sans engagement',
+    'placeholder_43' => '[TRANSLATE] Q : Qu\'est-ce que le balisage FAQ ?
+R : Le balisage FAQ est une donnée structurée qui aide les moteurs de recherche à comprendre votre contenu FAQ et à l\'afficher sous forme de résultats enrichis dans les résultats Google.
+
+Q : Pourquoi utiliser le balisage FAQ ?
+R : Le balisage FAQ peut augmenter votre visibilité dans les résultats Google, améliorer le taux de clics et aider votre contenu à apparaître dans la section &quot;Autres questions posées&quot;.
+
+Q : Comment ajouter le balisage FAQ à mon site web ?
+R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; de votre page web, ou utilisez un plugin si vous êtes sur WordPress ou Shopify.',
+    'text_143' => 'Charger un Exemple',
+    'ml_543' => '[TRANSLATE] fermante. Pour WordPress, utilisez des plugins comme \'Insert Headers and Footers\' ou \'Schema Pro\'. Pour Shopify, modifiez votre fichier theme.liquid. Après l\'implémentation, validez avec l\'outil de test des résultats enrichis de Google.',
+];

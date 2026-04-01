@@ -171,6 +171,9 @@
         }
 
         // Tool-specific data display
+        if (data.ogData) {
+            html += renderOgPreview(data.ogData);
+        }
         if (data.images && data.images.length > 0) {
             html += renderImagesTable(data.images);
         }
@@ -194,8 +197,57 @@
 
         html += '</div>';
 
-        var container = document.querySelector('section.max-w-5xl .space-y-6.mb-8, section.max-w-5xl .space-y-6');
-        if (container) container.insertAdjacentHTML('afterend', html);
+        // Insert results right after the form area (button's parent), before FAQ
+        var existing = document.getElementById('tool-results');
+        var actionBtn = document.getElementById('tool-action-btn');
+        var insertTarget = actionBtn ? actionBtn.closest('.space-y-4') || actionBtn.parentElement : null;
+        if (!insertTarget) {
+            insertTarget = document.querySelector('section.max-w-5xl .space-y-6');
+        }
+        if (insertTarget) {
+            insertTarget.insertAdjacentHTML('afterend', html);
+            var resultsEl = document.getElementById('tool-results');
+            if (resultsEl) resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    function renderOgPreview(og) {
+        var html = '<div class="bg-white rounded-xl border border-gray-100 p-6">' +
+            '<h3 class="text-lg font-bold text-black mb-4">Open Graph Preview</h3>';
+        // Social card preview
+        html += '<div class="max-w-lg mx-auto border border-gray-200 rounded-xl overflow-hidden mb-6">';
+        if (og.image) {
+            html += '<div class="aspect-[1.91/1] bg-gray-100"><img src="' + escapeHtml(og.image) + '" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML=\'<div class=\\\'flex items-center justify-center h-full text-gray-400 text-sm\\\'>No image preview</div>\'" /></div>';
+        } else {
+            html += '<div class="aspect-[1.91/1] bg-gray-100 flex items-center justify-center text-gray-400 text-sm">No og:image set</div>';
+        }
+        html += '<div class="p-4 bg-[#F8F8F8]">' +
+            '<p class="text-xs text-gray-500 uppercase mb-1">' + escapeHtml(og.siteName || og.url || '') + '</p>' +
+            '<p class="font-bold text-sm text-black mb-1">' + escapeHtml(og.title || 'No title') + '</p>' +
+            '<p class="text-xs text-gray-600 line-clamp-2">' + escapeHtml(og.description || 'No description') + '</p>' +
+            '</div></div>';
+        // Warnings
+        if (og.warnings && og.warnings.length > 0) {
+            html += '<div class="space-y-2">';
+            og.warnings.forEach(function (w) {
+                html += '<div class="flex items-start gap-2 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">' +
+                    '<svg class="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>' +
+                    '<span class="text-sm text-yellow-800">' + escapeHtml(w) + '</span></div>';
+            });
+            html += '</div>';
+        }
+        // Meta tags table
+        html += '<div class="mt-4"><table class="w-full text-sm"><tbody>';
+        var fields = [['og:title', og.title], ['og:description', og.description], ['og:image', og.image], ['og:type', og.type], ['og:site_name', og.siteName], ['og:url', og.url], ['twitter:image', og.twitterImage]];
+        fields.forEach(function (f) {
+            var val = f[1] || '';
+            var color = val ? 'green' : 'red';
+            html += '<tr class="border-b border-gray-100"><td class="py-2 px-2 font-mono text-xs text-gray-500">' + f[0] + '</td>' +
+                '<td class="py-2 px-2 text-xs break-all">' + (val ? escapeHtml(val) : '<span class="text-red-500 italic">Missing</span>') + '</td>' +
+                '<td class="py-2 px-2"><span class="w-2 h-2 rounded-full inline-block bg-' + color + '-500"></span></td></tr>';
+        });
+        html += '</tbody></table></div></div>';
+        return html;
     }
 
     function renderImagesTable(images) {
@@ -229,7 +281,8 @@
             '<table class="w-full text-sm"><thead><tr class="border-b border-gray-200">' +
             '<th class="text-left py-2 px-2">URL</th><th class="text-left py-2 px-2">Status</th><th class="text-left py-2 px-2">Type</th></tr></thead><tbody>';
         links.slice(0, 50).forEach(function (link) {
-            var statusColor = link.status === 'working' ? 'green' : link.status === 'redirect' ? 'yellow' : 'red';
+            var s = (link.status || '').toLowerCase();
+            var statusColor = (s === 'working' || s === 'good' || s === 'pass' || s === 'valid') ? 'green' : (s === 'redirect' || s === 'warning' || s === 'empty') ? 'yellow' : 'red';
             html += '<tr class="border-b border-gray-100">' +
                 '<td class="py-2 px-2 font-mono text-xs break-all max-w-[300px]">' + escapeHtml(link.url || '') + '</td>' +
                 '<td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-' + statusColor + '-50 text-' + statusColor + '-700">' + (link.status || link.statusCode || '') + '</span></td>' +

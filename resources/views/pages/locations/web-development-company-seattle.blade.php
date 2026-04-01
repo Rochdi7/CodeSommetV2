@@ -71,7 +71,7 @@ les tableaux de bord intelligents et les plateformes SaaS. 50+ projets livrés."
                     rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                     rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery"><span class="relative text-[15px] font-semibold text-white z-10">Réserver une consultation
+                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#"><span class="relative text-[15px] font-semibold text-white z-10">Réserver une consultation
                                 gratuite à Seattle</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
@@ -825,7 +825,7 @@ les tableaux de bord intelligents et les plateformes SaaS. 50+ projets livrés."
                                 <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
+                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
                                 un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Échanger
                                 sur WhatsApp</a></div>
                     </div>
@@ -1657,7 +1657,7 @@ les tableaux de bord intelligents et les plateformes SaaS. 50+ projets livrés."
                 rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                 rgba(0, 0, 0, 0.055) 0px 47.8699px 47.8699px -2.8125px,
                 rgba(0, 0, 0, 0.043) 0px 82.4287px 82.4287px -3.28125px,
-                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery">
+                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
                                 <div class="shine-wrapper">
                                     <div class="shine-element"></div>
                                 </div>
@@ -1682,7 +1682,7 @@ les tableaux de bord intelligents et les plateformes SaaS. 50+ projets livrés."
                                     </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
                                     Votre Site Web</span>
                             </a></div>
-                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,

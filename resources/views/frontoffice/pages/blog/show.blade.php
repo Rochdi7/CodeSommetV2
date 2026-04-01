@@ -120,7 +120,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto opacity-30">
                         <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
                     </svg>
-                    <p class="text-sm text-[var(--text-tertiary)]">Image de couverture</p>
+                    <p class="text-sm text-[var(--text-tertiary)]">{{ __('blog/show.text_101') }}</p>
                 </div>
             </div>
             @endif
@@ -179,9 +179,9 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1.5"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                 </div>
                 <div class="text-center sm:text-left">
-                    <div class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider mb-1">À propos de l'auteur</div>
+                    <div class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider mb-1">{{ __('blog/show.text_0') }}</div>
                     <h3 class="text-lg font-bold text-[var(--text-primary)] mb-2" style="font-family:var(--font-heading)">{{ $post->author }}</h3>
-                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed">Chez CodeSommet, nous partageons notre expertise en développement web, design UI/UX et stratégie digitale pour aider les entreprises à réussir en ligne.</p>
+                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('blog/show.text_1') }}</p>
                 </div>
             </div>
         </div>
@@ -193,9 +193,7 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="text-center mb-12">
             <span class="inline-flex items-center gap-2 px-3 py-1 bg-[#00AEEF]/10 text-[#00AEEF] text-xs font-semibold rounded-full mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                À lire aussi
-            </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>{{ __('blog/show.ml_502') }}</span>
             <h2 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)]" style="font-family:var(--font-heading)">Articles Similaires</h2>
         </div>
 
@@ -224,7 +222,7 @@
                                 <div class="flex items-center gap-3 mb-3">
                                     <span class="text-xs text-[var(--text-tertiary)]">{{ $related->formatted_date }}</span>
                                     <span class="text-[var(--text-tertiary)]">&middot;</span>
-                                    <span class="text-xs text-[var(--text-tertiary)]">{{ $related->read_time }} de lecture</span>
+                                    <span class="text-xs text-[var(--text-tertiary)]">{{ $related->{{ __('blog/show.text_102') }}</span>
                                 </div>
                                 <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">{{ $related->title }}</h3>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2">{{ $related->excerpt }}</p>

@@ -195,7 +195,7 @@ class ToolsApiController extends Controller
         }
 
         // Links count
-        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']([^"\']+)["\']/i', $html, $linkMatches);
+        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']?([^\s>"\'#]+)/i', $html, $linkMatches);
         $internalLinks = 0;
         $externalLinks = 0;
         $parsedUrl = parse_url($url);
@@ -294,7 +294,7 @@ class ToolsApiController extends Controller
         $text = strtolower(trim($text));
 
         $words = preg_split('/\s+/', $text);
-        $words = array_filter($words, fn($w) => strlen($w) > 2);
+        $words = array_values(array_filter($words, fn($w) => strlen($w) > 2));
         $totalWords = count($words);
         $uniqueWords = count(array_unique($words));
 
@@ -364,7 +364,7 @@ class ToolsApiController extends Controller
         $baseDomain = $parsedBase['host'] ?? '';
         $baseScheme = $parsedBase['scheme'] ?? 'https';
 
-        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']([^"\'#]+)["\']/i', $html, $matches);
+        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']?([^\s>"\'#]+)/i', $html, $matches);
         $links = array_unique($matches[1]);
 
         $results = [];
@@ -650,16 +650,23 @@ class ToolsApiController extends Controller
         $withAlt = 0; $missingAlt = 0; $emptyAlt = 0;
 
         foreach ($imgMatches[1] as $attrs) {
-            // Try src first, then data-src, then srcset first entry
+            // Try src with quotes, then unquoted, then data-src, then srcset
             preg_match('/\bsrc\s*=\s*["\']([^"\']+)["\']/i', $attrs, $srcM);
             if (empty($srcM[1])) {
-                preg_match('/\bdata-src\s*=\s*["\']([^"\']+)["\']/i', $attrs, $srcM);
+                preg_match('/\bsrc\s*=\s*([^\s>"\']+)/i', $attrs, $srcM);
             }
             if (empty($srcM[1])) {
-                preg_match('/\bsrcset\s*=\s*["\']([^\s,"\']+)/i', $attrs, $srcM);
+                preg_match('/\bdata-src\s*=\s*["\']?([^\s>"\']+)/i', $attrs, $srcM);
+            }
+            if (empty($srcM[1])) {
+                preg_match('/\bsrcset\s*=\s*["\']?([^\s,"\']+)/i', $attrs, $srcM);
             }
 
+            // Alt: try quoted first, then unquoted
             preg_match('/\balt\s*=\s*["\']([^"\']*?)["\']/i', $attrs, $altM);
+            if (empty($altM[0])) {
+                preg_match('/\balt\s*=\s*([^\s>]+)/i', $attrs, $altM);
+            }
 
             $src = trim($srcM[1] ?? '');
 
@@ -784,16 +791,19 @@ class ToolsApiController extends Controller
     {
         $url = $this->normalizeUrl($request->input('url', ''));
         $html = $this->fetchUrl($url);
-        $baseDomain = parse_url($url, PHP_URL_HOST);
+        $parsed = parse_url($url);
+        $baseDomain = $parsed['host'] ?? '';
+        $baseUrl = ($parsed['scheme'] ?? 'https') . '://' . $baseDomain;
 
-        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']([^"\'#]+)["\']/i', $html, $matches);
+        // Match both quoted and unquoted href values
+        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']?([^\s>"\'#]+)/i', $html, $matches);
         $internal = []; $external = 0;
 
         foreach ($matches[1] as $link) {
-            $parsed = parse_url($link);
-            $host = $parsed['host'] ?? null;
+            $linkParsed = parse_url($link);
+            $host = $linkParsed['host'] ?? null;
             if (!$host && str_starts_with($link, '/')) {
-                $internal[] = $link;
+                $internal[] = $baseUrl . $link;
             } elseif ($host === $baseDomain) {
                 $internal[] = $link;
             } else {
@@ -1006,15 +1016,30 @@ class ToolsApiController extends Controller
         $url = $this->normalizeUrl($request->input('url', ''));
         $html = $this->fetchUrl($url);
 
-        preg_match_all('/<img\s+[^>]*src\s*=\s*["\']([^"\']+)["\']/i', $html, $matches);
+        $parsed = parse_url($url);
+        $baseUrl = ($parsed['scheme'] ?? 'https') . '://' . ($parsed['host'] ?? '');
+
+        preg_match_all('/<img\s+[^>]*src\s*=\s*["\']?([^\s>"\']+)/i', $html, $matches);
         $images = [];
 
         foreach (array_slice(array_unique($matches[1]), 0, 20) as $src) {
+            // Resolve relative URLs
+            $displaySrc = $src;
+            if (str_starts_with($src, 'data:')) {
+                $displaySrc = '[inline data URI]';
+            } elseif (str_starts_with($src, '//')) {
+                $displaySrc = ($parsed['scheme'] ?? 'https') . ':' . $src;
+            } elseif (str_starts_with($src, '/')) {
+                $displaySrc = $baseUrl . $src;
+            } elseif (!preg_match('#^https?://#i', $src)) {
+                $displaySrc = rtrim($url, '/') . '/' . $src;
+            }
+
             $ext = strtolower(pathinfo(parse_url($src, PHP_URL_PATH) ?? '', PATHINFO_EXTENSION));
             $format = in_array($ext, ['webp', 'avif']) ? 'modern' : (in_array($ext, ['jpg', 'jpeg', 'png', 'gif']) ? 'legacy' : 'other');
 
             $images[] = [
-                'url' => $src,
+                'url' => $displaySrc,
                 'status' => $format === 'modern' ? 'working' : 'warning',
                 'type' => strtoupper($ext ?: 'unknown'),
                 'text' => $format === 'modern' ? 'Modern format' : 'Consider converting to WebP',

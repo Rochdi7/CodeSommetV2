@@ -957,67 +957,7 @@
         }, 5000);
     })();
 
-    /* ── Cal.com Modal (iframe) ────────────────────────────────────────── */
-    (function initCalModal() {
-        var overlay  = document.getElementById('cal-modal-overlay');
-        var iframe   = document.getElementById('cal-modal-iframe');
-        var closeBtn = document.getElementById('cal-modal-close');
-        var loading  = document.getElementById('cal-modal-loading');
-        if (!overlay || !iframe) return;
-
-        var calSrc = iframe.getAttribute('data-cal-src');
-
-        // Hide spinner when iframe finishes loading
-        iframe.addEventListener('load', function() {
-            if (loading) loading.style.display = 'none';
-        });
-
-        function openModal() {
-            // Show spinner on each open
-            if (loading) loading.style.display = 'flex';
-            // Load iframe src on first open
-            if (!iframe.src || iframe.src === 'about:blank') {
-                iframe.src = calSrc;
-            }
-            overlay.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-            // Trigger transition
-            requestAnimationFrame(function() {
-                overlay.classList.add('is-visible');
-            });
-        }
-
-        function closeModal() {
-            overlay.classList.remove('is-visible');
-            document.body.style.overflow = '';
-            setTimeout(function() {
-                overlay.style.display = 'none';
-            }, 250);
-        }
-
-        // Close button
-        if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-        // Click on overlay background
-        overlay.addEventListener('click', function(e) {
-            if (e.target === overlay) closeModal();
-        });
-
-        // Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && overlay.style.display === 'flex') closeModal();
-        });
-
-        // Attach to all "Book a Call" triggers
-        document.querySelectorAll('[data-cal-link]').forEach(function(btn) {
-            btn.removeAttribute('data-cal-link');
-            btn.removeAttribute('data-cal-config');
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                openModal();
-            });
-        });
-    })();
+    /* ── Cal.com is now handled by the official embed script in cal-modal partial ── */
 
     // Premium Features hover tooltip
     (function() {

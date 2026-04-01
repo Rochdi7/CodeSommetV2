@@ -1,10 +1,10 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Blog - CodeSommet | Actualités, Conseils & Tendances du Développement Web')
-@section('meta_description', 'Découvrez nos articles sur le développement web, le design UI/UX, le SEO, les tendances tech et les meilleures pratiques pour votre projet digital.')
-@section('meta_keywords', 'blog développement web,actualités tech,conseils SEO,tendances design,tutoriels web,CodeSommet blog')
-@section('og_title', 'Blog - CodeSommet | Actualités & Conseils du Développement Web')
-@section('og_description', 'Découvrez nos articles sur le développement web, le design UI/UX, le SEO et les tendances tech.')
+@section('title', __('blog/index.title'))
+@section('meta_description', __('blog/index.meta_description'))
+@section('meta_keywords', __('blog/index.meta_keywords'))
+@section('og_title', __('blog/index.og_title'))
+@section('og_description', __('blog/index.og_description'))
 
 @section('content')
 {{-- Hero Section --}}
@@ -18,15 +18,13 @@
                         <path d="M12 20h9"></path>
                         <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"></path>
                     </svg>
-                    <span class="text-sm font-medium text-[#00AEEF]">Notre Blog</span>
+                    <span class="text-sm font-medium text-[#00AEEF]">{{ __('blog/index.text_0') }}</span>
                 </div>
                 <div class="space-y-4">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-heading">
-                        Insights & <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#0071BC]">Actualités Tech</span>
+                        Insights & <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#0071BC]">{{ __('blog/index.text_1') }}</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
-                        Découvrez nos articles, tutoriels et conseils pour réussir votre projet digital et rester à jour avec les dernières tendances tech.
-                    </p>
+                    <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">{{ __('blog/index.ml_512') }}</p>
                 </div>
                 <div class="flex flex-wrap justify-center lg:justify-start gap-6 md:gap-8">
                     <div class="flex items-center gap-2">
@@ -55,7 +53,7 @@
                 {{-- Search --}}
                 <div class="max-w-lg mx-auto lg:mx-0">
                     <form method="GET" action="{{ route('blog') }}" class="relative">
-                        <input type="text" name="search" value="{{ request('search') }}" placeholder="Rechercher un article..." class="w-full h-12 pl-12 pr-4 rounded-full border border-[var(--border-light)] bg-white/90 backdrop-blur-sm text-sm text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 transition-all" />
+                        <input type="text" name="search" value="{{ request('search') }}" placeholder="{{ __('blog/index.placeholder_109') }}" class="w-full h-12 pl-12 pr-4 rounded-full border border-[var(--border-light)] bg-white/90 backdrop-blur-sm text-sm text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 transition-all" />
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)]">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.3-4.3"></path>
@@ -73,8 +71,8 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"></path></svg>
                             </div>
                             <div>
-                                <div class="text-xs font-semibold text-[var(--text-primary)]">Développement Web</div>
-                                <div class="text-[10px] text-[var(--text-tertiary)]">5 min de lecture</div>
+                                <div class="text-xs font-semibold text-[var(--text-primary)]">{{ __('blog/index.text_2') }}</div>
+                                <div class="text-[10px] text-[var(--text-tertiary)]">{{ __('blog/index.text_110') }}</div>
                             </div>
                         </div>
                         <div class="h-2 bg-gray-100 rounded-full w-full mb-2"></div>
@@ -87,7 +85,7 @@
                             </div>
                             <div>
                                 <div class="text-xs font-semibold text-[var(--text-primary)]">SEO & Marketing</div>
-                                <div class="text-[10px] text-[var(--text-tertiary)]">8 min de lecture</div>
+                                <div class="text-[10px] text-[var(--text-tertiary)]">{{ __('blog/index.text_111') }}</div>
                             </div>
                         </div>
                         <div class="h-2 bg-gray-100 rounded-full w-full mb-2"></div>
@@ -100,7 +98,7 @@
                             </div>
                             <div>
                                 <div class="text-xs font-semibold text-[var(--text-primary)]">Design UI/UX</div>
-                                <div class="text-[10px] text-[var(--text-tertiary)]">3 min de lecture</div>
+                                <div class="text-[10px] text-[var(--text-tertiary)]">{{ __('blog/index.text_112') }}</div>
                             </div>
                         </div>
                         <div class="h-2 bg-gray-100 rounded-full w-full mb-2"></div>
@@ -131,7 +129,7 @@
                             </svg>
                         </div>
                         <div class="absolute top-5 right-5 px-3 py-1.5 bg-[#00AEEF]/80 backdrop-blur-md rounded-full border border-white/30">
-                            <span class="text-xs font-bold text-white tracking-wide uppercase">Développement</span>
+                            <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('blog/index.text_3') }}</span>
                         </div>
                     </div>
                     <div class="flex flex-col justify-center px-6 md:px-10 py-6 md:py-8">
@@ -146,8 +144,8 @@
                                 8 min de lecture
                             </div>
                         </div>
-                        <h2 class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Comment l'IA Révolutionne le Développement Web en 2026</h2>
-                        <p class="text-[var(--text-secondary)] leading-relaxed mb-6 line-clamp-3">Découvrez comment l'intelligence artificielle transforme la façon dont nous concevons, développons et déployons des sites web modernes. Des outils de génération de code aux tests automatisés.</p>
+                        <h2 class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('blog/index.text_4') }}</h2>
+                        <p class="text-[var(--text-secondary)] leading-relaxed mb-6 line-clamp-3">{{ __('blog/index.text_5') }}</p>
                         <div class="flex items-center gap-3">
                             <div class="w-8 h-8 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
@@ -174,7 +172,7 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="flex flex-wrap justify-center gap-3">
             <a href="{{ route('blog') }}" class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]">Tous</a>
-            <a href="#" class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Développement</a>
+            <a href="#" class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">{{ __('blog/index.text_6') }}</a>
             <a href="#" class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Design</a>
             <a href="#" class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">SEO</a>
             <a href="#" class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Marketing</a>
@@ -358,22 +356,20 @@
         <div class="text-center max-w-2xl mx-auto" style="display:flex;flex-direction:column;align-items:center;gap:2rem">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full" style="background:rgba(0,174,239,0.08);border:1px solid rgba(0,174,239,0.2)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-                <span class="text-sm font-medium" style="color:#00AEEF">Restez Informé</span>
+                <span class="text-sm font-medium" style="color:#00AEEF">{{ __('blog/index.text_7') }}</span>
             </div>
             <h2 class="font-heading tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style="font-family:var(--font-display);color:#0F0F0F">
                 NE MANQUEZ AUCUN ARTICLE
             </h2>
-            <p class="max-w-xl mx-auto text-lg" style="color:rgba(15,15,15,0.6)">
-                Recevez nos derniers articles, tutoriels et conseils directement dans votre boîte mail. Pas de spam, que du contenu de qualité.
-            </p>
+            <p class="max-w-xl mx-auto text-lg" style="color:rgba(15,15,15,0.6)">{{ __('blog/index.ml_513') }}</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto" style="width:100%">
-                <input type="email" placeholder="Votre adresse email..." class="w-full sm:flex-1 h-12 px-6 rounded-full text-sm transition-all" style="background:white;border:1px solid rgba(15,15,15,0.15);color:#0F0F0F;outline:none" />
+                <input type="email" placeholder="{{ __('blog/index.placeholder_9') }}" class="w-full sm:flex-1 h-12 px-6 rounded-full text-sm transition-all" style="background:white;border:1px solid rgba(15,15,15,0.15);color:#0F0F0F;outline:none" />
                 <button class="w-full sm:w-auto h-12 px-8 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 gap-2" style="background:linear-gradient(to right, var(--color-primary-orange), var(--color-orange-hover));color:white;box-shadow:0 4px 16px rgba(0,174,239,0.25)">
                     S'abonner
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </button>
             </div>
-            <p class="text-xs" style="color:rgba(15,15,15,0.45)">Rejoignez 500+ professionnels. Désabonnement en un clic.</p>
+            <p class="text-xs" style="color:rgba(15,15,15,0.45)">{{ __('blog/index.text_8') }}</p>
         </div>
     </div>
 

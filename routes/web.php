@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
@@ -16,135 +17,128 @@ use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes - CodeSommet
+| Web Routes - CodeSommet (Localized)
 |--------------------------------------------------------------------------
 |
-| All routes return Blade views directly. For pages that need dynamic
-| data (contact form, tools), add controllers as needed.
+| Front-office routes are wrapped in LaravelLocalization group.
+| Default locale: fr (no prefix)
+| English:        /en/...
+|
+| Admin routes remain outside the locale group.
 |
 */
 
-// ─── Core Pages ──────────────────────────────────────────────────────────────
+// ─── Localized Front-Office Routes ──────────────────────────────────────────
 
-Route::view('/', 'frontoffice.pages.home')->name('home');
-Route::view('/about', 'frontoffice.pages.about')->name('about');
-Route::view('/contact', 'frontoffice.pages.contact')->name('contact');
-Route::view('/get-quote', 'frontoffice.pages.get-quote')->name('get-quote');
-Route::view('/our-work', 'frontoffice.pages.our-work')->name('our-work');
-Route::view('/industries', 'frontoffice.pages.industries')->name('industries');
-Route::view('/locations', 'frontoffice.pages.locations')->name('locations');
-Route::view('/tools', 'frontoffice.pages.tools')->name('tools');
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => ['localize', 'localizationRedirect'],
+], function () {
 
-// ─── Legal Pages ─────────────────────────────────────────────────────────────
+    // ─── Core Pages ─────────────────────────────────────────────────────────
+    Route::view('/', 'frontoffice.pages.home')->name('home');
+    Route::view('/about', 'frontoffice.pages.about')->name('about');
+    Route::view('/contact', 'frontoffice.pages.contact')->name('contact');
+    Route::view('/get-quote', 'frontoffice.pages.get-quote')->name('get-quote');
+    Route::view('/our-work', 'frontoffice.pages.our-work')->name('our-work');
+    Route::view('/industries', 'frontoffice.pages.industries')->name('industries');
+    Route::view('/locations', 'frontoffice.pages.locations')->name('locations');
+    Route::view('/tools', 'frontoffice.pages.tools')->name('tools');
 
-Route::prefix('legal')->group(function () {
-    Route::view('/privacy-policy', 'frontoffice.pages.legal.privacy-policy')->name('privacy-policy');
-    Route::view('/terms-of-service', 'frontoffice.pages.legal.terms-of-service')->name('terms-of-service');
-    Route::view('/refund-policy', 'frontoffice.pages.legal.refund-policy')->name('refund-policy');
-    Route::view('/cookie-policy', 'frontoffice.pages.legal.cookie-policy')->name('cookie-policy');
-    Route::view('/acceptable-use', 'frontoffice.pages.legal.acceptable-use')->name('acceptable-use');
+    // ─── Legal Pages ────────────────────────────────────────────────────────
+    Route::prefix('legal')->group(function () {
+        Route::view('/privacy-policy', 'frontoffice.pages.legal.privacy-policy')->name('privacy-policy');
+        Route::view('/terms-of-service', 'frontoffice.pages.legal.terms-of-service')->name('terms-of-service');
+        Route::view('/refund-policy', 'frontoffice.pages.legal.refund-policy')->name('refund-policy');
+        Route::view('/cookie-policy', 'frontoffice.pages.legal.cookie-policy')->name('cookie-policy');
+        Route::view('/acceptable-use', 'frontoffice.pages.legal.acceptable-use')->name('acceptable-use');
+    });
+
+    // ─── Service / Industry Pages (SEO Landing Pages) ───────────────────────
+    $servicePages = [
+        'ecommerce-website-development-agency',
+        'saas-platform-development-agency',
+        'fintech-platform-development-agency',
+        'fintech-website-development-agency',
+        'healthcare-website-development-agency',
+        'education-website-development-agency',
+        'edtech-platform-development-agency',
+        'elearning-platform-development-agency',
+        'online-course-platform-development-agency',
+        'university-website-development-agency',
+        'language-school-website-development-agency',
+        'study-abroad-website-development-agency',
+        'immigration-consultancy-website-development-agency',
+        'real-estate-website-development-agency',
+        'telemedicine-platform-development-agency',
+        'telemedicine-website-development-agency',
+    ];
+
+    Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
+        if (! in_array($slug, $servicePages)) {
+            abort(404);
+        }
+        $view = "frontoffice.pages.services.{$slug}";
+        if (! view()->exists($view)) {
+            abort(404);
+        }
+        return view($view);
+    })->where('slug', '[a-z\-]+')->name('service');
+
+    // ─── Location / City Pages (SEO Landing Pages) ──────────────────────────
+    $cityPages = [
+        'worldwide',
+        'casablanca', 'marrakech', 'rabat', 'tangier',
+        'dubai', 'abudhabi', 'riyadh', 'doha', 'kuwait-city',
+        'london', 'amsterdam', 'berlin', 'paris', 'copenhagen',
+        'dublin', 'brussels', 'zurich', 'stockholm',
+        'madrid', 'barcelona', 'lisbon', 'rome', 'milan',
+        'new-york', 'san-francisco', 'los-angeles', 'austin',
+        'seattle', 'boston', 'chicago', 'denver', 'toronto', 'vancouver',
+        'tunis', 'cairo', 'lagos',
+    ];
+
+    Route::get('/web-development-company/{city}', function (string $city) use ($cityPages) {
+        if (! in_array($city, $cityPages)) {
+            abort(404);
+        }
+        $view = "frontoffice.pages.locations.web-development-company-{$city}";
+        if (! view()->exists($view)) {
+            abort(404);
+        }
+        return view($view);
+    })->where('city', '[a-z\-]+')->name('location');
+
+    // ─── Tools Pages ────────────────────────────────────────────────────────
+    Route::get('/tools/{slug}', function (string $slug) {
+        $view = "frontoffice.pages.tools.{$slug}";
+        if (! view()->exists($view)) {
+            abort(404);
+        }
+        return view($view);
+    })->where('slug', '[a-z0-9\-]+')->name('tool');
+
+    // ─── Our Work / Case Study Pages ────────────────────────────────────────
+    Route::get('/our-work/{slug}', function (string $slug) {
+        $view = "frontoffice.pages.our-work.{$slug}";
+        if (! view()->exists($view)) {
+            abort(404);
+        }
+        return view($view);
+    })->where('slug', '[a-z\-]+')->name('case-study');
+
+    // ─── Blog ───────────────────────────────────────────────────────────────
+    Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+    Route::get('/blog/preview', function () { return view('frontoffice.pages.blog.preview'); })->name('blog.preview');
+    Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9\-]+')->name('blog.show');
+
+    // ─── Newsletter (Public) ────────────────────────────────────────────────
+    Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
 });
 
-// ─── Service / Industry Pages (SEO Landing Pages) ───────────────────────────
-// URL: /services/{slug}
-// Example: /services/ecommerce-website-development
-
-$servicePages = [
-    'ecommerce-website-development-agency',
-    'saas-platform-development-agency',
-    'fintech-platform-development-agency',
-    'fintech-website-development-agency',
-    'healthcare-website-development-agency',
-    'education-website-development-agency',
-    'edtech-platform-development-agency',
-    'elearning-platform-development-agency',
-    'online-course-platform-development-agency',
-    'university-website-development-agency',
-    'language-school-website-development-agency',
-    'study-abroad-website-development-agency',
-    'immigration-consultancy-website-development-agency',
-    'real-estate-website-development-agency',
-    'telemedicine-platform-development-agency',
-    'telemedicine-website-development-agency',
-];
-
-Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
-    if (! in_array($slug, $servicePages)) {
-        abort(404);
-    }
-    $view = "frontoffice.pages.services.{$slug}";
-    if (! view()->exists($view)) {
-        abort(404);
-    }
-    return view($view);
-})->where('slug', '[a-z\-]+')->name('service');
-
-// ─── Location / City Pages (SEO Landing Pages) ──────────────────────────────
-// URL: /web-development/{city}
-// Example: /web-development/dubai
-
-$cityPages = [
-    'worldwide',
-    'casablanca', 'marrakech', 'rabat', 'tangier',
-    'dubai', 'abudhabi', 'riyadh', 'doha', 'kuwait-city',
-    'london', 'amsterdam', 'berlin', 'paris', 'copenhagen',
-    'dublin', 'brussels', 'zurich', 'stockholm',
-    'madrid', 'barcelona', 'lisbon', 'rome', 'milan',
-    'new-york', 'san-francisco', 'los-angeles', 'austin',
-    'seattle', 'boston', 'chicago', 'denver', 'toronto', 'vancouver',
-    'tunis', 'cairo', 'lagos',
-];
-
-Route::get('/web-development-company/{city}', function (string $city) use ($cityPages) {
-    if (! in_array($city, $cityPages)) {
-        abort(404);
-    }
-    $view = "frontoffice.pages.locations.web-development-company-{$city}";
-    if (! view()->exists($view)) {
-        abort(404);
-    }
-    return view($view);
-})->where('city', '[a-z\-]+')->name('location');
-
-// ─── Tools Pages ─────────────────────────────────────────────────────────────
-// URL: /tools/{slug}
-// Example: /tools/website-analyzer
-
-Route::get('/tools/{slug}', function (string $slug) {
-    $view = "frontoffice.pages.tools.{$slug}";
-    if (! view()->exists($view)) {
-        abort(404);
-    }
-    return view($view);
-})->where('slug', '[a-z0-9\-]+')->name('tool');
-
-// ─── Our Work / Case Study Pages ────────────────────────────────────────────
-// URL: /our-work/{slug}
-// Example: /our-work/glamworlds
-
-Route::get('/our-work/{slug}', function (string $slug) {
-    $view = "frontoffice.pages.our-work.{$slug}";
-    if (! view()->exists($view)) {
-        abort(404);
-    }
-    return view($view);
-})->where('slug', '[a-z\-]+')->name('case-study');
-
-// ─── Blog ───────────────────────────────────────────────────────────────────
-// URL: /blog, /blog/{slug}
-
-Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog/preview', function () { return view('frontoffice.pages.blog.preview'); })->name('blog.preview');
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9\-]+')->name('blog.show');
-
-// ─── Newsletter (Public) ─────────────────────────────────────────────────────
-
-Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
-
-// ─── Admin Authentication ────────────────────────────────────────────────────
+// ─── Admin Authentication (NOT localized) ───────────────────────────────────
 
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
-// Auth views now at backoffice.pages.auth.*
 Route::post('/admin/login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
 Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 

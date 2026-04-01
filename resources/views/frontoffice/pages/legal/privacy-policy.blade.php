@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet')
-@section('meta_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.')
-@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
-@section('og_title', 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc')
-@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.')
-@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
+@section('title', __('legal/privacy-policy.title'))
+@section('meta_description', __('legal/privacy-policy.meta_description'))
+@section('meta_keywords', __('legal/privacy-policy.meta_keywords'))
+@section('og_title', __('legal/privacy-policy.og_title'))
+@section('og_description', __('legal/privacy-policy.og_description'))
+@section('twitter_description', __('legal/privacy-policy.twitter_description'))
 
 @section('content')
 <section class="relative min-h-[60vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 bg-white">
@@ -27,10 +27,10 @@
         <div class="max-w-4xl mx-auto text-center space-y-6">
             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF]/10 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                </svg><span class="text-sm font-medium text-[#0F0F0F]">Dernière mise à jour : Janvier 2026</span></div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#0F0F0F] leading-tight" style="font-family:var(--font-heading)">Politique de Confidentialité</h1>
-            <p class="text-lg md:text-xl text-[#0F0F0F]/70 max-w-2xl mx-auto">Votre vie privée nous tient à cœur. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.</p>
-            <div class="flex flex-wrap justify-center gap-3 pt-4"><a href="#information-we-collect" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Informations collectées</a><a href="#how-we-use" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Utilisation des données</a><a href="#your-rights" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Vos droits</a></div>
+                </svg><span class="text-sm font-medium text-[#0F0F0F]">{{ __('legal/privacy-policy.text_0') }}</span></div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#0F0F0F] leading-tight" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-[#0F0F0F]/70 max-w-2xl mx-auto">{{ __('legal/privacy-policy.text_2') }}</p>
+            <div class="flex flex-wrap justify-center gap-3 pt-4"><a href="#information-we-collect" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">{{ __('legal/privacy-policy.text_3') }}</a><a href="#how-we-use" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">{{ __('legal/privacy-policy.text_4') }}</a><a href="#your-rights" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">{{ __('legal/privacy-policy.text_5') }}</a></div>
         </div>
     </div>
 </section>
@@ -40,9 +40,9 @@
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
                 <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-4" style="font-family:var(--font-heading)">Introduction</h2>
                 <div class="prose prose-lg max-w-none text-[#0F0F0F]/70 space-y-4">
-                    <p>Bienvenue chez CodeSommet (&quot;nous&quot;, &quot;notre&quot;). Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web <a class="text-[#00AEEF] hover:underline" href="{{ route('home') }}">codesommet.com</a>, utilisez nos services ou interagissez avec nous.</p>
-                    <p>Nous nous engageons à protéger votre vie privée et à vous garantir une expérience positive sur notre site web et dans l'utilisation de nos services. Cette politique est conforme au RGPD (Règlement Général sur la Protection des Données), au CCPA (California Consumer Privacy Act) et aux autres lois applicables en matière de protection des données.</p>
-                    <p class="font-medium text-[#0F0F0F]">En utilisant notre site web ou nos services, vous acceptez la collecte et l'utilisation des informations conformément à cette politique.</p>
+                    <p>{{ __('legal/privacy-policy.text_6') }} <a class="text-[#00AEEF] hover:underline" href="{{ route('home') }}">codesommet.com</a>{{ __('legal/privacy-policy.text_7') }}</p>
+                    <p>{{ __('legal/privacy-policy.text_8') }}</p>
+                    <p class="font-medium text-[#0F0F0F]">{{ __('legal/privacy-policy.text_9') }}</p>
                 </div>
             </div>
             <div id="information-we-collect" class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
@@ -54,37 +54,37 @@
                             <path d="M16 13H8"></path>
                             <path d="M16 17H8"></path>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Informations que nous collectons</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_10') }}</h2>
                 </div>
                 <div class="space-y-6 text-[#0F0F0F]/70">
                     <div>
-                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">1. Informations personnelles que vous fournissez</h3>
-                        <p class="mb-3">Lorsque vous interagissez avec nos services, nous pouvons collecter :</p>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_11') }}</h3>
+                        <p class="mb-3">{{ __('legal/privacy-policy.text_12') }}</p>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Coordonnées :</strong> Nom, adresse e-mail, numéro de téléphone, nom de l'entreprise</li>
-                            <li><strong>Informations commerciales :</strong> Secteur d'activité, taille de l'entreprise, URL du site web, exigences du projet</li>
-                            <li><strong>Informations de paiement :</strong> Adresse de facturation, détails du mode de paiement (traités de manière sécurisée via Stripe)</li>
-                            <li><strong>Données de communication :</strong> Informations provenant des e-mails, formulaires de contact, messages de chat et demandes d'assistance</li>
-                            <li><strong>Données de projet :</strong> Contenu, images, documents et matériaux que vous fournissez pour vos projets</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_13') }}</strong> {{ __('legal/privacy-policy.text_14') }}</li>
+                            <li><strong>Informations commerciales :</strong> {{ __('legal/privacy-policy.text_15') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_235') }}</strong> {{ __('legal/privacy-policy.text_16') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_17') }}</strong> {{ __('legal/privacy-policy.text_18') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_19') }}</strong> {{ __('legal/privacy-policy.text_20') }}</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">2. Informations collectées automatiquement</h3>
-                        <p class="mb-3">Lorsque vous visitez notre site web, nous collectons automatiquement :</p>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_21') }}</h3>
+                        <p class="mb-3">{{ __('legal/privacy-policy.text_22') }}</p>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Informations sur l'appareil :</strong> Adresse IP, type de navigateur, type d'appareil, système d'exploitation</li>
-                            <li><strong>Données d'utilisation :</strong> Pages visitées, temps passé, schémas de clics, sources de référencement</li>
-                            <li><strong>Cookies et suivi :</strong> Cookies de session, cookies d'analyse, cookies de préférences</li>
-                            <li><strong>Données de localisation :</strong> Localisation géographique approximative basée sur l'adresse IP</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_23') }}</strong> {{ __('legal/privacy-policy.text_24') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_25') }}</strong> {{ __('legal/privacy-policy.text_26') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_236') }}</strong> {{ __('legal/privacy-policy.text_27') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_28') }}</strong> {{ __('legal/privacy-policy.text_29') }}</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">3. Informations provenant de tiers</h3>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_237') }}</h3>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Fournisseurs d'analyse :</strong> Google Analytics 4 pour l'analyse du site web</li>
-                            <li><strong>Réseaux sociaux :</strong> Informations de profil public si vous vous connectez via des plateformes sociales</li>
-                            <li><strong>Processeurs de paiement :</strong> Données de transaction de Stripe (notre passerelle de paiement)</li>
-                            <li><strong>Outils marketing :</strong> Données d'engagement par e-mail de notre fournisseur de services de messagerie</li>
+                            <li><strong>Fournisseurs d'analyse :</strong> {{ __('legal/privacy-policy.text_30') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_31') }}</strong> {{ __('legal/privacy-policy.text_32') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_238') }}</strong> {{ __('legal/privacy-policy.text_33') }}</li>
+                            <li><strong>Outils marketing :</strong> {{ __('legal/privacy-policy.text_34') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
                             <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Comment nous utilisons vos informations</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_35') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p class="mb-4">Nous utilisons les informations collectées aux fins suivantes :</p>
+                    <p class="mb-4">{{ __('legal/privacy-policy.text_36') }}</p>
                     <div class="
         relative overflow-hidden rounded-xl border backdrop-blur-sm
         border-[#00AEEF]/20 shadow-[0_0_20px_rgba(0,174,239,0.08)]
@@ -120,37 +120,37 @@
                                     <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
                                         <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
                                     </div>
-                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Fourniture de services<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour fournir, maintenir et améliorer nos services de développement web, communiquer sur les projets, livrer les travaux terminés et fournir un support client.</span></div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">{{ __('legal/privacy-policy.text_239') }}<!-- -->:</span> <span class="text-[#0F0F0F]/70">{{ __('legal/privacy-policy.text_37') }}</span></div>
                                 </div>
                                 <div class="flex items-start gap-3 group">
                                     <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
                                         <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
                                     </div>
-                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Traitement des paiements<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour traiter les paiements, émettre des factures, prévenir la fraude et respecter les réglementations financières via notre partenaire de paiement sécurisé Stripe.</span></div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">{{ __('legal/privacy-policy.text_38') }}<!-- -->:</span> <span class="text-[#0F0F0F]/70">{{ __('legal/privacy-policy.text_39') }}</span></div>
                                 </div>
                                 <div class="flex items-start gap-3 group">
                                     <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
                                         <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
                                     </div>
-                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Communication<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour envoyer des mises à jour de projet, répondre aux demandes, fournir un support technique et envoyer des annonces importantes concernant les services.</span></div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Communication<!-- -->:</span> <span class="text-[#0F0F0F]/70">{{ __('legal/privacy-policy.text_40') }}</span></div>
                                 </div>
                                 <div class="flex items-start gap-3 group">
                                     <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
                                         <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
                                     </div>
-                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Marketing (avec consentement)<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour envoyer des newsletters, des offres promotionnelles, des études de cas et des informations sectorielles. Vous pouvez vous désinscrire à tout moment.</span></div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">{{ __('legal/privacy-policy.text_41') }}<!-- -->:</span> <span class="text-[#0F0F0F]/70">{{ __('legal/privacy-policy.text_42') }}</span></div>
                                 </div>
                                 <div class="flex items-start gap-3 group">
                                     <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
                                         <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
                                     </div>
-                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Analyse et amélioration<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour analyser l'utilisation du site web, comprendre le comportement des utilisateurs, améliorer nos services et optimiser l'expérience utilisateur.</span></div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">{{ __('legal/privacy-policy.text_43') }}<!-- -->:</span> <span class="text-[#0F0F0F]/70">{{ __('legal/privacy-policy.text_44') }}</span></div>
                                 </div>
                                 <div class="flex items-start gap-3 group">
                                     <div class="bg-[#00AEEF]/10 rounded-md p-1 flex-shrink-0 mt-1 transition-transform group-hover:scale-110">
                                         <div class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></div>
                                     </div>
-                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">Conformité légale<!-- -->:</span> <span class="text-[#0F0F0F]/70">Pour respecter les obligations légales, faire appliquer nos conditions, protéger nos droits et résoudre les litiges.</span></div>
+                                    <div class="flex-1"><span class="font-semibold text-[#0F0F0F]">{{ __('legal/privacy-policy.text_45') }}<!-- -->:</span> <span class="text-[#0F0F0F]/70">{{ __('legal/privacy-policy.text_46') }}</span></div>
                                 </div>
                             </div>
                         </div>
@@ -164,16 +164,16 @@
                             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                             <path d="M2 12h20"></path>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Partage et divulgation des données</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_47') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p class="font-medium text-[#0F0F0F]">Nous ne vendons pas vos informations personnelles. Nous pouvons partager vos données avec :</p>
+                    <p class="font-medium text-[#0F0F0F]">{{ __('legal/privacy-policy.text_48') }}</p>
                     <ul class="list-disc pl-6 space-y-3">
-                        <li><strong>Prestataires de services :</strong> Des fournisseurs tiers de confiance qui nous aident à fournir des services (hébergement, traitement des paiements, analyse, services de messagerie). Tous les fournisseurs sont contractuellement obligés de protéger vos données.</li>
-                        <li><strong>Processeurs de paiement :</strong> Stripe pour le traitement sécurisé des paiements. Consultez la <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">Politique de confidentialité de Stripe</a>.</li>
-                        <li><strong>Autorités légales :</strong> Lorsque requis par la loi, une ordonnance du tribunal ou pour protéger nos droits et notre sécurité.</li>
-                        <li><strong>Transferts d'entreprise :</strong> En cas de fusion, acquisition ou vente d'actifs, vos informations peuvent être transférées à la nouvelle entité.</li>
-                        <li><strong>Avec votre consentement :</strong> Lorsque vous nous autorisez explicitement à partager vos informations à des fins spécifiques.</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_240') }}</strong> {{ __('legal/privacy-policy.text_49') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_241') }}</strong> {{ __('legal/privacy-policy.text_50') }} <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_51') }}</a>.</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_52') }}</strong> {{ __('legal/privacy-policy.text_53') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_54') }}</strong> {{ __('legal/privacy-policy.text_55') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_56') }}</strong> {{ __('legal/privacy-policy.text_57') }}</li>
                     </ul>
                 </div>
             </div>
@@ -183,16 +183,16 @@
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Sécurité des données</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_58') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Nous mettons en œuvre des mesures de sécurité conformes aux normes de l'industrie pour protéger vos informations personnelles :</p>
+                    <p>{{ __('legal/privacy-policy.text_59') }}</p>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li><strong>Chiffrement :</strong> Chiffrement SSL/TLS pour la transmission des données</li>
-                        <li><strong>Stockage sécurisé :</strong> Bases de données chiffrées avec accès restreint</li>
-                        <li><strong>Contrôles d'accès :</strong> Accès limité des employés sur la base du besoin de savoir</li>
-                        <li><strong>Audits réguliers :</strong> Évaluations et mises à jour périodiques de la sécurité</li>
-                        <li><strong>Traitement sécurisé des paiements :</strong> Traitement des paiements conforme PCI-DSS via Stripe</li>
+                        <li><strong>Chiffrement :</strong> {{ __('legal/privacy-policy.text_60') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_61') }}</strong> {{ __('legal/privacy-policy.text_62') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_63') }}</strong> {{ __('legal/privacy-policy.text_64') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_65') }}</strong> {{ __('legal/privacy-policy.text_66') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_67') }}</strong> {{ __('legal/privacy-policy.text_68') }}</li>
                     </ul>
                     <div class="
         flex items-start gap-3 p-4 rounded-lg border backdrop-blur-sm
@@ -206,7 +206,7 @@
                                 <line x1="12" x2="12.01" y1="16" y2="16"></line>
                             </svg></div>
                         <div class="flex-1 text-sm text-[#0F0F0F]/80">
-                            <p><strong>Important :</strong> Bien que nous nous efforcions de protéger vos informations, aucune méthode de transmission sur Internet n'est sécurisée à 100%. Nous ne pouvons pas garantir une sécurité absolue.</p>
+                            <p><strong>Important :</strong> {{ __('legal/privacy-policy.text_69') }}</p>
                         </div>
                     </div>
                 </div>
@@ -216,102 +216,102 @@
                     <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Vos droits en matière de vie privée</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_70') }}</h2>
                 </div>
                 <div class="space-y-6 text-[#0F0F0F]/70">
                     <div>
-                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">En vertu du RGPD (pour les résidents de l'UE/Royaume-Uni) :</h3>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_71') }}</h3>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Droit d'accès :</strong> Demander une copie de vos données personnelles</li>
-                            <li><strong>Droit de rectification :</strong> Corriger les données inexactes ou incomplètes</li>
-                            <li><strong>Droit à l'effacement :</strong> Demander la suppression de vos données (&quot;droit à l'oubli&quot;)</li>
-                            <li><strong>Droit à la limitation du traitement :</strong> Limiter la façon dont nous utilisons vos données</li>
-                            <li><strong>Droit à la portabilité des données :</strong> Recevoir vos données dans un format structuré</li>
-                            <li><strong>Droit d'opposition :</strong> S'opposer au traitement basé sur des intérêts légitimes</li>
-                            <li><strong>Droit de retrait du consentement :</strong> Retirer votre consentement à tout moment</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_72') }}</strong> {{ __('legal/privacy-policy.text_73') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_242') }}</strong> {{ __('legal/privacy-policy.text_74') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_75') }}</strong> {{ __('legal/privacy-policy.text_76') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_77') }}</strong> {{ __('legal/privacy-policy.text_78') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_79') }}</strong> {{ __('legal/privacy-policy.text_80') }}</li>
+                            <li><strong>Droit d'opposition :</strong> {{ __('legal/privacy-policy.text_81') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_243') }}</strong> {{ __('legal/privacy-policy.text_82') }}</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">En vertu du CCPA (pour les résidents de Californie) :</h3>
+                        <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_83') }}</h3>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Droit de savoir :</strong> Quelles informations personnelles nous collectons et comment nous les utilisons</li>
-                            <li><strong>Droit de suppression :</strong> Demander la suppression de vos informations personnelles</li>
-                            <li><strong>Droit de refus :</strong> Refuser la vente d'informations personnelles (nous ne vendons pas de données)</li>
-                            <li><strong>Droit à la non-discrimination :</strong> Service égal indépendamment de l'exercice des droits à la vie privée</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_244') }}</strong> {{ __('legal/privacy-policy.text_84') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_245') }}</strong> {{ __('legal/privacy-policy.text_85') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_246') }}</strong> {{ __('legal/privacy-policy.text_86') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_87') }}</strong> {{ __('legal/privacy-policy.text_88') }}</li>
                         </ul>
                     </div>
                     <div class="bg-[#00AEEF]/5 rounded-lg p-6 border border-[#00AEEF]/20">
-                        <h4 class="font-semibold text-[#0F0F0F] mb-3">Comment exercer vos droits :</h4>
-                        <p class="mb-3">Pour exercer l'un de ces droits, veuillez nous contacter à :</p>
+                        <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_89') }}</h4>
+                        <p class="mb-3">{{ __('legal/privacy-policy.text_90') }}</p>
                         <ul class="space-y-2">
-                            <li><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="0169646d6d6e4171686a6072726e72757465686e2f626e6c">[email&#160;protected]</span></a></li>
-                            <li><strong>Téléphone :</strong> +212 6 32 58 20 96</li>
-                            <li><strong>Téléphone :</strong> +212 6 32 58 20 96</li>
+                            <li><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="0169646d6d6e4171686a6072726e72757465686e2f626e6c">{{ __('legal/privacy-policy.text_454') }}</span></a></li>
+                            <li><strong>{{ __('legal/privacy-policy.text_91') }}</strong> +212 6 32 58 20 96</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_92') }}</strong> +212 6 32 58 20 96</li>
                         </ul>
-                        <p class="mt-3 text-sm">Nous répondrons à votre demande dans un délai de 30 jours.</p>
+                        <p class="mt-3 text-sm">{{ __('legal/privacy-policy.text_93') }}</p>
                     </div>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Cookies et technologies de suivi</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_247') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience. Pour des informations détaillées, veuillez consulter notre <a class="text-[#00AEEF] hover:underline" href="{{ route('cookie-policy') }}">Politique de Cookies</a>.</p>
+                    <p>{{ __('legal/privacy-policy.text_94') }} <a class="text-[#00AEEF] hover:underline" href="{{ route('cookie-policy') }}">{{ __('legal/privacy-policy.text_248') }}</a>.</p>
                     <div>
-                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">Types de cookies que nous utilisons :</h3>
+                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">{{ __('legal/privacy-policy.text_95') }}</h3>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Cookies essentiels :</strong> Nécessaires au fonctionnement du site web</li>
-                            <li><strong>Cookies d'analyse :</strong> Google Analytics pour comprendre les schémas d'utilisation</li>
-                            <li><strong>Cookies de préférences :</strong> Mémoriser vos paramètres et préférences</li>
-                            <li><strong>Cookies marketing :</strong> Suivre l'efficacité des campagnes marketing (avec consentement)</li>
+                            <li><strong>Cookies essentiels :</strong> {{ __('legal/privacy-policy.text_96') }}</li>
+                            <li><strong>Cookies d'analyse :</strong> {{ __('legal/privacy-policy.text_97') }}</li>
+                            <li><strong>{{ __('legal/privacy-policy.text_98') }}</strong> {{ __('legal/privacy-policy.text_99') }}</li>
+                            <li><strong>Cookies marketing :</strong> {{ __('legal/privacy-policy.text_100') }}</li>
                         </ul>
                     </div>
-                    <p>Vous pouvez contrôler les cookies via les paramètres de votre navigateur. Cependant, la désactivation des cookies peut affecter le fonctionnement du site web.</p>
+                    <p>{{ __('legal/privacy-policy.text_101') }}</p>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Transferts internationaux de données</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_102') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>CodeSommet opère à l'international avec son siège social au Maroc. Vos informations peuvent être transférées vers, et conservées sur, des serveurs situés en dehors de votre pays.</p>
-                    <p>Nous veillons à ce que tous les transferts internationaux de données soient conformes aux lois applicables en matière de protection des données et mettons en œuvre des garanties appropriées telles que :</p>
+                    <p>{{ __('legal/privacy-policy.text_103') }}</p>
+                    <p>{{ __('legal/privacy-policy.text_104') }}</p>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li>Clauses Contractuelles Types (CCT) approuvées par la Commission européenne</li>
-                        <li>Décisions d'adéquation pour les pays ayant des normes de protection des données équivalentes</li>
-                        <li>Mesures de sécurité techniques et organisationnelles appropriées</li>
+                        <li>{{ __('legal/privacy-policy.text_105') }}</li>
+                        <li>{{ __('legal/privacy-policy.text_106') }}</li>
+                        <li>{{ __('legal/privacy-policy.text_107') }}</li>
                     </ul>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Conservation des données</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_108') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Nous conservons vos informations personnelles uniquement aussi longtemps que nécessaire pour atteindre les objectifs décrits dans cette Politique de Confidentialité :</p>
+                    <p>{{ __('legal/privacy-policy.text_109') }}</p>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li><strong>Données client :</strong> Durée de la relation commerciale + 7 ans (pour la conformité fiscale et légale)</li>
-                        <li><strong>Fichiers de projet :</strong> Projets actifs + 2 ans après achèvement</li>
-                        <li><strong>Données marketing :</strong> Jusqu'à votre désinscription ou demande de suppression</li>
-                        <li><strong>Analyse du site web :</strong> 26 mois (valeur par défaut de Google Analytics)</li>
-                        <li><strong>Registres de paiement :</strong> 7 ans (exigences réglementaires financières)</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_110') }}</strong> {{ __('legal/privacy-policy.text_111') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_249') }}</strong> {{ __('legal/privacy-policy.text_112') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_113') }}</strong> {{ __('legal/privacy-policy.text_114') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_250') }}</strong> {{ __('legal/privacy-policy.text_115') }}</li>
+                        <li><strong>{{ __('legal/privacy-policy.text_251') }}</strong> {{ __('legal/privacy-policy.text_116') }}</li>
                     </ul>
-                    <p>Après la période de conservation, nous supprimons ou anonymisons vos données de manière sécurisée.</p>
+                    <p>{{ __('legal/privacy-policy.text_117') }}</p>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Protection des données des enfants</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_118') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Nos services ne s'adressent pas aux personnes de moins de 18 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 18 ans.</p>
-                    <p>Si vous êtes un parent ou un tuteur et pensez que votre enfant nous a fourni des informations personnelles, veuillez nous contacter à <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="3d55585151527d4d54565c4e4e524e4948595452135e5250">[email&#160;protected]</span></a>, et nous supprimerons rapidement ces informations.</p>
+                    <p>{{ __('legal/privacy-policy.text_119') }}</p>
+                    <p>{{ __('legal/privacy-policy.text_120') }} <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="3d55585151527d4d54565c4e4e524e4948595452135e5250">{{ __('legal/privacy-policy.text_455') }}</span></a>{{ __('legal/privacy-policy.text_121') }}</p>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Modifications de cette politique de confidentialité</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_122') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre pour refléter les changements dans nos pratiques, la technologie, les exigences légales ou pour d'autres raisons.</p>
-                    <p>Nous vous informerons de tout changement important en :</p>
+                    <p>{{ __('legal/privacy-policy.text_123') }}</p>
+                    <p>{{ __('legal/privacy-policy.text_124') }}</p>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li>Publiant la politique mise à jour sur cette page avec une nouvelle date de &quot;Dernière mise à jour&quot;</li>
-                        <li>Vous envoyant une notification par e-mail (pour les changements significatifs)</li>
-                        <li>Affichant un avis bien visible sur notre site web</li>
+                        <li>{{ __('legal/privacy-policy.text_125') }}</li>
+                        <li>{{ __('legal/privacy-policy.text_126') }}</li>
+                        <li>{{ __('legal/privacy-policy.text_127') }}</li>
                     </ul>
-                    <p>Nous vous encourageons à consulter régulièrement cette Politique de Confidentialité pour rester informé de la façon dont nous protégeons vos informations.</p>
+                    <p>{{ __('legal/privacy-policy.text_128') }}</p>
                 </div>
             </div>
             <div class="bg-gradient-to-br from-[#00AEEF]/10 to-[#0071BC]/10 rounded-xl p-8 md:p-10 border border-[#00AEEF]/20">
@@ -320,33 +320,33 @@
                             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                             <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Contactez-nous</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/privacy-policy.text_252') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Si vous avez des questions, des préoccupations ou des demandes concernant cette Politique de Confidentialité ou nos pratiques en matière de données, veuillez nous contacter :</p>
+                    <p>{{ __('legal/privacy-policy.text_129') }}</p>
                     <div class="bg-white rounded-lg p-6 space-y-3">
                         <div>
                             <p class="font-semibold text-[#0F0F0F]">CodeSommet</p>
-                            <p>Agence Premium de Développement Web</p>
+                            <p>{{ __('legal/privacy-policy.text_130') }}</p>
                         </div>
                         <div class="space-y-2">
-                            <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="5f373a3333301f2f36343e2c2c302c2b2a3b3630713c3032">[email&#160;protected]</span></a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="5f373a3333301f2f36343e2c2c302c2b2a3b3630713c3032">{{ __('legal/privacy-policy.text_456') }}</span></a></p>
+                            <p><strong>{{ __('legal/privacy-policy.text_131') }}</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>{{ __('legal/privacy-policy.text_132') }}</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                         </div>
                         <div>
-                            <p><strong>Siège social :</strong> Maroc</p>
-                            <p><strong>Opérations :</strong> Monde entier</p>
+                            <p><strong>{{ __('legal/privacy-policy.text_133') }}</strong> Maroc</p>
+                            <p><strong>{{ __('legal/privacy-policy.text_134') }}</strong> Monde entier</p>
                         </div>
                         <div class="pt-3 border-t border-[#0F0F0F]/10">
-                            <p class="text-sm">Pour les demandes relatives à la protection des données, veuillez inclure &quot;Demande de Confidentialité&quot; dans l'objet de votre e-mail.</p>
+                            <p class="text-sm">{{ __('legal/privacy-policy.text_135') }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-12 text-center">
                 <p class="text-[#0F0F0F]/70 mb-4">Documents juridiques connexes :</p>
-                <div class="flex flex-wrap justify-center gap-3"><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('cookie-policy') }}">Politique de Cookies</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('refund-policy') }}">Politique de Remboursement</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('acceptable-use') }}">Politique d'Utilisation Acceptable</a></div>
+                <div class="flex flex-wrap justify-center gap-3"><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('cookie-policy') }}">{{ __('legal/privacy-policy.text_253') }}</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('refund-policy') }}">{{ __('legal/privacy-policy.text_254') }}</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('acceptable-use') }}">Politique d'Utilisation Acceptable</a></div>
             </div>
         </div>
     </div>
