@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Vérificateur de Préparation de Site Web - Outil Gratuit de Checklist de Lancement | CodeSommet')
-@section('meta_description', "Vérifiez la préparation au lancement de votre site web avec notre outil d'''audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne. Checklist pré-lancement complète avec des recommandations concrètes.")
-@section('meta_keywords', 'website readiness checker,launch checklist,website audit,pre-launch check,website launch,readiness tool,seo audit,website health check,pre-launch audit,website launch checklist')
-@section('og_title', 'Vérificateur de Préparation de Site Web - Outil Gratuit de Checklist')
-@section('og_description', "Vérifiez la préparation au lancement de votre site web avec notre outil d'''audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne.")
-@section('twitter_description', "Vérifiez la préparation au lancement de votre site web avec notre outil d'''audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité.")
+@section('title', __('tools/website-readiness-checker.title'))
+@section('meta_description', __('tools/website-readiness-checker.meta_description'))
+@section('meta_keywords', __('tools/website-readiness-checker.meta_keywords'))
+@section('og_title', __('tools/website-readiness-checker.og_title'))
+@section('og_description', __('tools/website-readiness-checker.og_description'))
+@section('twitter_description', __('tools/website-readiness-checker.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,16 +24,16 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Vérificateur de Préparation du Site Web</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/website-readiness-checker.text_0') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Vérificateur de Préparation du Site Web</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Analyse complète en 14 points à travers les catégories SEO, Croissance, Performance et Sécurité - entièrement gratuit</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/website-readiness-checker.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/website-readiness-checker.text_2') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/website-readiness-checker.text_3') }}</span>
         </div>
     </div>
 </section>
@@ -41,7 +41,7 @@
     <div class="space-y-8">
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
-                <div class="space-y-2"><label class="block text-sm font-medium text-black">URL du Site Web<span class="text-[#00AEEF] ml-1">*</span></label>
+                <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/website-readiness-checker.label_139') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                     <div class="relative">
                         <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
@@ -49,8 +49,8 @@
                                 <path d="M2 12h20"></path>
                             </svg></div><input type="text" placeholder="https://example.com" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value="" />
                     </div>
-                    <p class="text-sm text-gray-500">Entrez l'URL complète incluant https://</p>
-                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">Vérifier la Préparation du Site Web</button>
+                    <p class="text-sm text-gray-500">{{ __('tools/website-readiness-checker.text_4') }}</p>
+                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">{{ __('tools/website-readiness-checker.text_5') }}</button>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
@@ -60,144 +60,144 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/website-readiness-checker.text_6') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/website-readiness-checker.text_7') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Qu'analyse le Vérificateur de Préparation du Site Web ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_8') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Notre outil effectue une analyse complète en 14 points à travers 4 catégories critiques : SEO (8 vérifications incluant sitemap, robots.txt, balises meta, Open Graph), Croissance (1 vérification pour la configuration analytique), Performance (2 vérifications pour les redirections et l'optimisation des images) et Sécurité & Conformité (3 vérifications pour HTTPS, SSL et les pages de politique).</p>
+                        <p>{{ __('tools/website-readiness-checker.text_9') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment le score de préparation est-il calculé ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_10') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Le score global de préparation est calculé en pourcentage basé sur les vérifications réussies dans les 4 catégories. Chaque catégorie affiche son propre ratio de réussite/échec. Un score de 85%+ indique une excellente préparation du site web, 70-84% est bon, 55-69% nécessite des améliorations et en dessous de 55% nécessite une attention immédiate.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_11') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre ceci et le Vérificateur de Santé de Domaine ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_12') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Le Vérificateur de Préparation du Site Web est plus complet et organisé en catégories spécifiques (SEO, Croissance, Performance, Sécurité). Il inclut des vérifications supplémentaires comme la configuration analytique et l'optimisation des images, et présente les résultats dans un format plus actionnable avec un suivi de progression par catégorie.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_13') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi le SEO est-il important pour mon site web ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_14') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Le SEO garantit que votre site web est découvrable par les moteurs de recherche et se classe bien pour les mots-clés pertinents. Nos vérifications SEO vérifient les éléments essentiels comme sitemap.xml, robots.txt, les meta descriptions, les balises H1 et les balises Open Graph - tous critiques pour la visibilité dans les moteurs de recherche et le partage sur les réseaux sociaux.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_15') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que vérifie la vérification de Configuration Analytique ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_16') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>La vérification de Configuration Analytique (catégorie Croissance) vérifie si votre site web a des outils analytiques comme Google Analytics, Plausible ou d'autres scripts de suivi correctement configurés. C'est crucial pour comprendre le comportement des utilisateurs, mesurer les conversions et prendre des décisions basées sur les données.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_17') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi HTTPS et SSL sont-ils importants ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_18') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>HTTPS (avec un certificat SSL valide) est essentiel pour la sécurité, la confiance des utilisateurs et le SEO. Google privilégie les sites HTTPS dans les classements de recherche et les navigateurs affichent des avertissements pour les sites non-HTTPS. Notre vérificateur vérifie à la fois la redirection HTTPS et la validité du certificat SSL.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_19') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que sont les Pages de Politique et pourquoi en ai-je besoin ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_20') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les pages de politique (Politique de confidentialité, Conditions d'utilisation) sont légalement requises dans la plupart des juridictions, surtout si vous collectez des données utilisateur ou opérez dans l'UE (RGPD) ou en Californie (CCPA). Notre vérificateur vérifie si ces pages essentielles existent et sont accessibles.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_21') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">8</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence dois-je vérifier la préparation de mon site web ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_22') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Nous recommandons de vérifier la préparation de votre site web : 1) Avant de lancer un nouveau site web, 2) Après des mises à jour majeures ou des refontes, 3) Trimestriellement dans le cadre de la maintenance régulière, 4) Lors de baisses de classement SEO, et 5) Avant de lancer des campagnes marketing majeures.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_23') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">9</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser cet outil pour l'analyse de la concurrence ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_24') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Oui ! Vous pouvez analyser n'importe quel site web public pour comprendre leur configuration SEO, leur configuration de sécurité et leur préparation globale. Cela vous aide à comparer votre site avec les concurrents et à identifier les meilleures pratiques dans votre secteur.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_25') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">10</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Cet outil est-il entièrement gratuit ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/website-readiness-checker.text_26') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Oui, 100% gratuit sans paywall caché. Contrairement à d'autres outils qui verrouillent les vérifications critiques derrière des niveaux premium, nous fournissons les 14 vérifications entièrement gratuites, y compris l'analyse d'optimisation des images et la validation de la structure H1.</p>
+                        <p>{{ __('tools/website-readiness-checker.text_27') }}</p>
                     </div>
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/website-readiness-checker.text_28') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/website-readiness-checker.text_29') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -207,8 +207,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/website-readiness-checker.text_30') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/website-readiness-checker.text_31') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/domain-health-checker">
                 <div class="mb-4">
@@ -217,7 +217,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Domain Health Checker</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">12 vérifications complètes pour le SEO technique et la santé on-page</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/website-readiness-checker.text_32') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -230,7 +230,7 @@
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Aperçu Open Graph</h3>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/website-readiness-checker.text_33') }}</h3>
                 <p class="text-sm text-gray-600 leading-relaxed mb-4">Preview social media cards for 4 major platforms</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
@@ -248,7 +248,7 @@
                             <path d="M8 19h13"></path>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Analyseur de Structure des Titres</h3>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/website-readiness-checker.text_34') }}</h3>
                 <p class="text-sm text-gray-600 leading-relaxed mb-4">Visual H1-H6 tree with SEO validation</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
@@ -256,7 +256,7 @@
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/website-readiness-checker.text_35') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -274,15 +274,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/website-readiness-checker.text_36') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/website-readiness-checker.text_37') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/website-readiness-checker.text_38') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Sans engagement à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/website-readiness-checker.text_39') }}</p>
             </div>
         </div>
     </div>

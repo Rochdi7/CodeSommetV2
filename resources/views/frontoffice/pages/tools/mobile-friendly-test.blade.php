@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Test de Compatibilité Mobile - Outil Gratuit de Test Mobile | CodeSommet')
-@section('meta_description', 'Analysez la réactivité mobile et l\'utilisabilité de votre site web. Vérifiez la configuration du viewport, les tailles de police, les cibles tactiles et obtenez des recommandations concrètes. Outil gratuit.')
-@section('meta_keywords', 'mobile friendly test,test mobile,responsive design,mobile SEO,viewport,touch targets,mobile usability')
-@section('og_title', 'Test de Compatibilité Mobile - Outil Gratuit de Test Mobile')
-@section('og_description', 'Analysez la réactivité mobile et l\'utilisabilité de votre site web. Vérifiez la configuration du viewport, les tailles de police et les cibles tactiles.')
-@section('twitter_description', 'Analysez la réactivité mobile et l\'utilisabilité de votre site web. Vérifiez la configuration du viewport, les tailles de police et les cibles tactiles.')
+@section('title', __('tools/mobile-friendly-test.title'))
+@section('meta_description', __('tools/mobile-friendly-test.meta_description'))
+@section('meta_keywords', __('tools/mobile-friendly-test.meta_keywords'))
+@section('og_title', __('tools/mobile-friendly-test.og_title'))
+@section('og_description', __('tools/mobile-friendly-test.og_description'))
+@section('twitter_description', __('tools/mobile-friendly-test.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,16 +24,16 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Test de Compatibilité Mobile</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/mobile-friendly-test.text_0') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Test de Compatibilité Mobile</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Analysez la réactivité mobile et l'utilisabilité de votre site web. Vérifiez la configuration du viewport, les tailles de police, les cibles tactiles et obtenez des recommandations concrètes pour améliorer l'expérience mobile.</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/mobile-friendly-test.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/mobile-friendly-test.text_2') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/mobile-friendly-test.text_3') }}</span>
         </div>
     </div>
 </section>
@@ -41,7 +41,7 @@
     <div class="space-y-8">
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
-                <div class="space-y-2"><label class="block text-sm font-medium text-black">URL du site web<span class="text-[#00AEEF] ml-1">*</span></label>
+                <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/mobile-friendly-test.label_126') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                     <div class="relative">
                         <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
@@ -49,8 +49,8 @@
                                 <path d="M2 12h20"></path>
                             </svg></div><input type="text" placeholder="https://codesommet.com" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value="" />
                     </div>
-                    <p class="text-sm text-gray-500">Entrez l'URL complète avec https://</p>
-                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">Tester la Compatibilité Mobile</button>
+                    <p class="text-sm text-gray-500">{{ __('tools/mobile-friendly-test.text_4') }}</p>
+                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">{{ __('tools/mobile-friendly-test.text_5') }}</button>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
@@ -60,41 +60,41 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/mobile-friendly-test.text_6') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/mobile-friendly-test.text_7') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi la compatibilité mobile est-elle importante pour le SEO ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_8') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Google utilise l'indexation mobile-first, ce qui signifie qu'il utilise principalement la version mobile de votre site pour le classement et l'indexation. Sites that aren't mobile-friendly receive lower rankings in mobile search results. With over 60% of web traffic coming from mobile devices, having a mobile-friendly site is critical for both SEO and user experience.</p>
+                        <p>{{ __('tools/mobile-friendly-test.text_9') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que la balise méta viewport et pourquoi est-elle essentielle ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_10') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Google recommande une taille de police minimale de 12px pour les appareils mobiles, though 16px is ideal for body text. Fonts smaller than 12px require users to zoom in to read, creating a poor user experience. Using relative units (em, rem) instead of pixels ensures text scales properly across different devices and user preferences.</p>
+                        <p>{{ __('tools/mobile-friendly-test.text_11') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la taille de police minimale pour la lisibilité mobile ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_12') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -103,58 +103,58 @@
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que sont les cibles tactiles et pourquoi sont-elles importantes ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_13') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les cibles tactiles sont des éléments interactifs comme les boutons, liens et champs de formulaire que les utilisateurs tapent sur les appareils mobiles. Google recommends minimum dimensions of 48x48 pixels (CSS pixels) with adequate spacing between them. Small or crowded touch targets lead to accidental taps, frustrating users and increasing bounce rates. Proper touch target sizing is crucial for mobile usability.</p>
+                        <p>{{ __('tools/mobile-friendly-test.text_14') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment empêcher le défilement horizontal sur mobile ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_15') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Le défilement horizontal se produit lorsque le contenu est plus large que le viewport. Prevent this by: 1) Using the viewport meta tag, 2) Setting max-width: 100% on images and media, 3) Using responsive units (%, vw, rem) instead of fixed pixels, 4) Testing with CSS media queries, and 5) Avoiding fixed-width containers wider than the viewport. Modern CSS frameworks handle this automatically.</p>
+                        <p>{{ __('tools/mobile-friendly-test.text_16') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que sont les media queries et en ai-je besoin ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_17') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les media queries sont des règles CSS qui appliquent différents styles en fonction des caractéristiques de l'appareil comme la largeur de l'écran. They're essential for responsive design, allowing your layout to adapt from desktop to tablet to mobile. Modern sites should include breakpoints for mobile (320-768px), tablet (768-1024px), and desktop (1024px+). Most CSS frameworks like Tailwind and Bootstrap include these by default.</p>
+                        <p>{{ __('tools/mobile-friendly-test.text_18') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence dois-je tester la compatibilité mobile de mon site ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/mobile-friendly-test.text_19') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Testez la compatibilité mobile après chaque changement de design majeur, new feature deployment, or content update. Also run monthly checks to catch issues from third-party scripts or plugins. Use this tool alongside Google's Mobile-Friendly Test, real device testing (iPhone, Android), and Chrome DevTools mobile emulation. Mobile issues can appear unexpectedly, so regular testing prevents ranking drops.</p>
+                        <p>{{ __('tools/mobile-friendly-test.text_20') }}</p>
                     </div>
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/mobile-friendly-test.text_21') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/mobile-friendly-test.text_22') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -173,15 +173,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/mobile-friendly-test.text_23') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/mobile-friendly-test.text_24') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/mobile-friendly-test.text_25') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Pas de contrats à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/mobile-friendly-test.text_26') }}</p>
             </div>
         </div>
     </div>

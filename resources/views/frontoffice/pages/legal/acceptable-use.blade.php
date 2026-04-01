@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet')
-@section('meta_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.')
-@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc')
-@section('og_title', 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc')
-@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.')
-@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
+@section('title', __('legal/acceptable-use.title'))
+@section('meta_description', __('legal/acceptable-use.meta_description'))
+@section('meta_keywords', __('legal/acceptable-use.meta_keywords'))
+@section('og_title', __('legal/acceptable-use.og_title'))
+@section('og_description', __('legal/acceptable-use.og_description'))
+@section('twitter_description', __('legal/acceptable-use.twitter_description'))
 
 @section('content')
 <section class="relative min-h-[60vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 bg-white">
@@ -27,10 +27,10 @@
         <div class="max-w-4xl mx-auto text-center space-y-6">
             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#00AEEF]/10 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                </svg><span class="text-sm font-medium text-[#0F0F0F]">Dernière mise à jour : Janvier 2026</span></div>
+                </svg><span class="text-sm font-medium text-[#0F0F0F]">{{ __('legal/acceptable-use.text_0') }}</span></div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#0F0F0F] leading-tight" style="font-family:var(--font-heading)">Politique d'Utilisation Acceptable</h1>
-            <p class="text-lg md:text-xl text-[#0F0F0F]/70 max-w-2xl mx-auto">Directives pour une utilisation responsable et légale des services et de la plateforme de CodeSommet.</p>
-            <div class="flex flex-wrap justify-center gap-3 pt-4"><a href="#permitted-uses" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Utilisations autorisées</a><a href="#prohibited-uses" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Utilisations interdites</a><a href="#violations" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Violations</a></div>
+            <p class="text-lg md:text-xl text-[#0F0F0F]/70 max-w-2xl mx-auto">{{ __('legal/acceptable-use.text_1') }}</p>
+            <div class="flex flex-wrap justify-center gap-3 pt-4"><a href="#permitted-uses" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">{{ __('legal/acceptable-use.text_2') }}</a><a href="#prohibited-uses" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Utilisations interdites</a><a href="#violations" class="px-4 py-2 text-sm font-medium text-[#00AEEF] hover:bg-[#00AEEF]/5 rounded-lg transition-colors">Violations</a></div>
         </div>
     </div>
 </section>
@@ -40,8 +40,8 @@
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
                 <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-4" style="font-family:var(--font-heading)">Introduction</h2>
                 <div class="prose prose-lg max-w-none text-[#0F0F0F]/70 space-y-4">
-                    <p>Cette Politique d'Utilisation Acceptable (&quot;PUA&quot;) régit votre utilisation du site web, des services et de la plateforme de CodeSommet. Cette politique est conçue pour protéger nos utilisateurs, notre entreprise et la communauté Internet au sens large contre les activités irresponsables ou illégales.</p>
-                    <p>En utilisant nos services, vous acceptez de vous conformer à cette Politique d'Utilisation Acceptable. Cette PUA fait partie de nos <a class="text-[#00AEEF] hover:underline" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a> et doit être lue conjointement avec celles-ci.</p>
+                    <p>{{ __('legal/acceptable-use.text_3') }}</p>
+                    <p>{{ __('legal/acceptable-use.text_4') }} <a class="text-[#00AEEF] hover:underline" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a> {{ __('legal/acceptable-use.text_5') }}</p>
                     <div class="
         flex items-start gap-3 p-4 rounded-lg border backdrop-blur-sm
         border-[#F59E0B]/20 bg-gradient-to-br from-[#F59E0B]/5 to-[#F59E0B]/0
@@ -58,7 +58,7 @@
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <line x1="12" x2="12" y1="8" y2="12"></line>
                                     <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                                </svg><span>IMPORTANT : La violation de cette politique peut entraîner la suspension ou la résiliation immédiate de votre compte et de vos services sans préavis ni remboursement.</span></p>
+                                </svg><span>{{ __('legal/acceptable-use.text_6') }}</span></p>
                         </div>
                     </div>
                 </div>
@@ -69,18 +69,18 @@
                             <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                             <path d="m9 11 3 3L22 4"></path>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Utilisations autorisées</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/acceptable-use.text_7') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Vous pouvez utiliser nos services à des fins légales, notamment mais sans s'y limiter :</p>
+                    <p>{{ __('legal/acceptable-use.text_8') }}</p>
                     <ul class="list-disc pl-6 space-y-3">
-                        <li><strong>Sites web d'entreprise :</strong> Créer des sites web professionnels pour des entreprises, organisations et marques personnelles légitimes</li>
-                        <li><strong>E-commerce :</strong> Créer des boutiques en ligne pour vendre des produits et services légaux</li>
-                        <li><strong>Publication de contenu :</strong> Partager des blogs, portfolios, actualités, contenu éducatif et œuvres créatives</li>
-                        <li><strong>Construction de communauté :</strong> Créer des forums, réseaux sociaux et plateformes communautaires (sous réserve de modération)</li>
-                        <li><strong>Services professionnels :</strong> Promouvoir le conseil, le freelance, les agences et les services professionnels</li>
-                        <li><strong>Organisations à but non lucratif :</strong> Sites web pour des œuvres caritatives, ONG et organisations communautaires</li>
-                        <li><strong>Plateformes éducatives :</strong> Apprentissage en ligne, cours, tutoriels et ressources éducatives</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_9') }}</strong> {{ __('legal/acceptable-use.text_10') }}</li>
+                        <li><strong>E-commerce :</strong> {{ __('legal/acceptable-use.text_11') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_226') }}</strong> {{ __('legal/acceptable-use.text_12') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_13') }}</strong> {{ __('legal/acceptable-use.text_14') }}</li>
+                        <li><strong>Services professionnels :</strong> {{ __('legal/acceptable-use.text_15') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_16') }}</strong> {{ __('legal/acceptable-use.text_17') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_18') }}</strong> {{ __('legal/acceptable-use.text_19') }}</li>
                     </ul>
                     <div class="
         flex items-start gap-3 p-4 rounded-lg border backdrop-blur-sm
@@ -93,7 +93,7 @@
                                 <path d="m9 11 3 3L22 4"></path>
                             </svg></div>
                         <div class="flex-1 text-sm text-[#0F0F0F]/80">
-                            <p class="font-medium text-[#0F0F0F]">Nous encourageons l'innovation et la créativité. Si vous n'êtes pas sûr que votre utilisation prévue est autorisée, veuillez nous contacter avant de procéder.</p>
+                            <p class="font-medium text-[#0F0F0F]">{{ __('legal/acceptable-use.text_20') }}</p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                     <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Utilisations interdites</h2>
                 </div>
                 <div class="space-y-6 text-[#0F0F0F]/70">
-                    <p class="font-medium text-[#0F0F0F]">Vous NE POUVEZ PAS utiliser nos services pour l'un des usages suivants :</p>
+                    <p class="font-medium text-[#0F0F0F]">{{ __('legal/acceptable-use.text_21') }}</p>
                     <div class="space-y-6">
                         <div class="
         relative overflow-hidden rounded-xl border backdrop-blur-sm
@@ -125,16 +125,16 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">1. Activités illégales</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_22') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Toute activité qui enfreint les lois locales, nationales ou internationales</li>
-                                        <li>Promouvoir, faciliter ou participer à des activités illégales</li>
-                                        <li>Vendre ou distribuer des drogues illégales, des armes, des produits contrefaits ou des biens volés</li>
-                                        <li>Blanchiment d'argent, fraude ou crimes financiers</li>
-                                        <li>Traite des êtres humains, exploitation ou services d'immigration illégale</li>
-                                        <li>Jeux d'argent ou paris en ligne (sauf si dûment autorisé)</li>
+                                        <li>{{ __('legal/acceptable-use.text_23') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_24') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_25') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_227') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_26') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_27') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -154,16 +154,16 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">2. Contenu nuisible ou abusif</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_228') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Matériel d'abus sexuel d'enfants (CSAM) ou exploitation d'enfants</li>
-                                        <li>Contenu promouvant la violence, le terrorisme ou l'extrémisme</li>
-                                        <li>Discours de haine, discrimination ou harcèlement fondé sur la race, la religion, le sexe, l'orientation sexuelle, le handicap ou d'autres caractéristiques protégées</li>
-                                        <li>Doxing ou partage d'informations personnelles sans consentement</li>
-                                        <li>Menaces, intimidation ou incitation à la violence</li>
-                                        <li>Automutilation, promotion du suicide ou encouragement aux troubles alimentaires</li>
+                                        <li>{{ __('legal/acceptable-use.text_28') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_29') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_30') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_31') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_32') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_33') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -183,16 +183,16 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">3. Spam et activités malveillantes</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_34') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Envoi d'e-mails en masse non sollicités (spam)</li>
-                                        <li>Hameçonnage, escroquerie ou attaques d'ingénierie sociale</li>
-                                        <li>Distribution de logiciels malveillants, virus, rançongiciels ou autres logiciels malveillants</li>
-                                        <li>Création de faux sites web pour usurper l'identité d'autrui ou voler des identifiants</li>
-                                        <li>Extraction automatisée ou collecte de données utilisateur sans autorisation</li>
-                                        <li>Attaques par déni de service (DoS) ou déni de service distribué (DDoS)</li>
+                                        <li>{{ __('legal/acceptable-use.text_35') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_36') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_37') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_38') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_39') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_40') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -212,15 +212,15 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">4. Violations de la propriété intellectuelle</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_41') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Hébergement de logiciels, films, musique, livres ou jeux piratés</li>
-                                        <li>Violation du droit d'auteur ou utilisation non autorisée de matériaux protégés</li>
-                                        <li>Violation de marque ou usurpation d'identité de marque</li>
-                                        <li>Distribution de logiciels craqués, générateurs de clés ou outils de contournement de licence</li>
-                                        <li>Plagiat ou appropriation du travail d'autrui</li>
+                                        <li>{{ __('legal/acceptable-use.text_42') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_43') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_44') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_45') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_229') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -240,16 +240,16 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">5. Abus de service</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_230') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Consommation excessive de bande passante ou monopolisation des ressources</li>
-                                        <li>Exploitation de minage de cryptomonnaie sans autorisation explicite</li>
-                                        <li>Hébergement de sites de partage de fichiers ou de torrents</li>
-                                        <li>Création de comptes multiples pour contourner les interdictions ou restrictions</li>
-                                        <li>Tentative d'accès non autorisé à nos systèmes ou aux comptes d'autres utilisateurs</li>
-                                        <li>Ingénierie inverse, décompilation ou tentative d'extraction du code source</li>
+                                        <li>{{ __('legal/acceptable-use.text_46') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_47') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_48') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_49') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_50') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_51') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -273,11 +273,11 @@
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Systèmes pyramidaux, escroqueries de marketing multiniveau ou systèmes d'enrichissement rapide</li>
-                                        <li>Publicité mensongère ou allégations trompeuses sur les produits</li>
-                                        <li>Création de faux avis, témoignages ou évaluations</li>
-                                        <li>Usurpation d'identité de personnes, d'entreprises ou d'organisations</li>
-                                        <li>Diffusion de désinformation ou de fausses informations</li>
+                                        <li>{{ __('legal/acceptable-use.text_52') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_53') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_54') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_55') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_56') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -297,16 +297,16 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">7. Contenu adulte et explicite (restrictions applicables)</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_231') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Contenu pornographique ou divertissement pour adultes (interdit sans approbation préalable)</li>
-                                        <li>Services d'escorte ou contenu sexuel impliquant des mineurs</li>
+                                        <li>{{ __('legal/acceptable-use.text_57') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_58') }}</li>
                                         <li>Images intimes non consensuelles (&quot;revenge porn&quot;)</li>
-                                        <li>Contenu sexuellement explicite sans vérification d'âge appropriée</li>
+                                        <li>{{ __('legal/acceptable-use.text_59') }}</li>
                                     </ul>
-                                    <p class="mt-3 text-sm font-medium text-[#0F0F0F]">Remarque : Le contenu adulte légal peut être autorisé au cas par cas avec une vérification d'âge appropriée, des avertissements de contenu et le respect de toutes les lois applicables. Contactez-nous pour approbation.</p>
+                                    <p class="mt-3 text-sm font-medium text-[#0F0F0F]">{{ __('legal/acceptable-use.text_60') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -325,15 +325,15 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">8. Violations de la vie privée</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_61') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <ul class="list-disc pl-6 space-y-2">
-                                        <li>Collecte de données personnelles sans consentement ni divulgation appropriée</li>
-                                        <li>Vente de données utilisateur sans autorisation explicite</li>
-                                        <li>Violation des lois sur la protection des données (RGPD, CCPA, etc.)</li>
-                                        <li>Installation de logiciels de suivi ou espions</li>
-                                        <li>Surveillance ou monitoring non autorisé</li>
+                                        <li>{{ __('legal/acceptable-use.text_62') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_63') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_64') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_232') }}</li>
+                                        <li>{{ __('legal/acceptable-use.text_65') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -351,32 +351,32 @@
                                 <path d="m9 9 6 6"></path>
                             </svg></div>
                         <div class="flex-1 text-sm text-[#0F0F0F]/80">
-                            <p class="font-medium text-[#0F0F0F] mb-2">Politique de tolérance zéro</p>
-                            <p>Nous appliquons une politique de tolérance zéro pour certaines violations, notamment l'exploitation d'enfants, le terrorisme et les activités illégales graves. De telles violations entraîneront la résiliation immédiate du compte et un signalement aux forces de l'ordre.</p>
+                            <p class="font-medium text-[#0F0F0F] mb-2">{{ __('legal/acceptable-use.text_66') }}</p>
+                            <p>{{ __('legal/acceptable-use.text_67') }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Sécurité et utilisation responsable</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/acceptable-use.text_68') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Vous êtes responsable de :</p>
+                    <p>{{ __('legal/acceptable-use.text_69') }}</p>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li><strong>Sécurité du compte :</strong> Maintenir la confidentialité de vos identifiants de connexion</li>
-                        <li><strong>Protection par mot de passe :</strong> Utiliser des mots de passe forts et uniques et activer l'authentification à deux facteurs lorsqu'elle est disponible</li>
-                        <li><strong>Surveillance de l'activité :</strong> Vérifier régulièrement l'activité de votre compte pour détecter tout accès non autorisé</li>
-                        <li><strong>Signalement rapide :</strong> Nous informer immédiatement de toute faille de sécurité ou utilisation non autorisée</li>
-                        <li><strong>Conformité :</strong> S'assurer que tout le contenu et toutes les activités sont conformes aux lois et réglementations applicables</li>
-                        <li><strong>Services tiers :</strong> Vérifier et surveiller tout plugin, intégration ou service tiers que vous utilisez</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_70') }}</strong> {{ __('legal/acceptable-use.text_71') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_72') }}</strong> {{ __('legal/acceptable-use.text_73') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_74') }}</strong> {{ __('legal/acceptable-use.text_75') }}</li>
+                        <li><strong>Signalement rapide :</strong> {{ __('legal/acceptable-use.text_76') }}</li>
+                        <li><strong>{{ __('legal/acceptable-use.text_77') }}</strong> {{ __('legal/acceptable-use.text_78') }}</li>
+                        <li><strong>Services tiers :</strong> {{ __('legal/acceptable-use.text_79') }}</li>
                     </ul>
                     <div class="bg-[#00AEEF]/5 rounded-lg p-6 border border-[#00AEEF]/20 mt-4">
-                        <h4 class="font-semibold text-[#0F0F0F] mb-2">Bonnes pratiques de sécurité</h4>
+                        <h4 class="font-semibold text-[#0F0F0F] mb-2">{{ __('legal/acceptable-use.text_80') }}</h4>
                         <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Garder tous les logiciels, plugins et thèmes à jour</li>
-                            <li>Utiliser des certificats SSL/TLS pour les connexions chiffrées</li>
-                            <li>Sauvegarder régulièrement votre site web et vos données</li>
-                            <li>Mettre en place des contrôles d'accès et des permissions utilisateur solides</li>
-                            <li>Surveiller les journaux pour détecter toute activité suspecte</li>
+                            <li>{{ __('legal/acceptable-use.text_81') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_82') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_83') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_84') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_85') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -388,10 +388,10 @@
                             <line x1="12" x2="12" y1="8" y2="12"></line>
                             <line x1="12" x2="12.01" y1="16" y2="16"></line>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Conséquences des violations</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/acceptable-use.text_86') }}</h2>
                 </div>
                 <div class="space-y-6 text-[#0F0F0F]/70">
-                    <p>Si vous enfreignez cette Politique d'Utilisation Acceptable, nous pouvons prendre une ou plusieurs des mesures suivantes :</p>
+                    <p>{{ __('legal/acceptable-use.text_87') }}</p>
                     <div class="space-y-4">
                         <div class="
         relative overflow-hidden rounded-xl border backdrop-blur-sm
@@ -411,7 +411,7 @@
                                     <h4 class="text-lg font-semibold text-[#0F0F0F]">1. Avertissement</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p>Émettre un avertissement écrit formel pour les violations mineures ou de première fois, avec l'obligation de remédier au problème dans un délai spécifié.</p>
+                                    <p>{{ __('legal/acceptable-use.text_88') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -430,10 +430,10 @@
                                             <line x1="12" x2="12" y1="8" y2="12"></line>
                                             <line x1="12" x2="12.01" y1="16" y2="16"></line>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">2. Suppression de contenu</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_233') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p>Supprimer ou désactiver l'accès au contenu spécifique qui enfreint cette politique sans préavis.</p>
+                                    <p>{{ __('legal/acceptable-use.text_89') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -452,10 +452,10 @@
                                             <line x1="12" x2="12" y1="8" y2="12"></line>
                                             <line x1="12" x2="12.01" y1="16" y2="16"></line>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">3. Suspension du service</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_234') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p>Suspendre temporairement votre compte et vos services pour des violations répétées ou graves pendant que nous enquêtons.</p>
+                                    <p>{{ __('legal/acceptable-use.text_90') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -474,10 +474,10 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">4. Résiliation du compte</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_91') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p>Résilier définitivement votre compte, supprimer toutes les données et vous interdire l'utilisation de nos services. Aucun remboursement ne sera accordé pour les violations.</p>
+                                    <p>{{ __('legal/acceptable-use.text_92') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -496,10 +496,10 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">5. Action en justice</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_235') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p>Signaler les violations aux forces de l'ordre, aux autorités réglementaires ou à d'autres parties compétentes. Nous pouvons coopérer pleinement avec les enquêtes judiciaires et fournir des preuves si nécessaire.</p>
+                                    <p>{{ __('legal/acceptable-use.text_93') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -518,10 +518,10 @@
                                             <path d="m15 9-6 6"></path>
                                             <path d="m9 9 6 6"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">6. Responsabilité financière</h4>
+                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">{{ __('legal/acceptable-use.text_94') }}</h4>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p>Vous tenir financièrement responsable de tout dommage, coût, frais juridiques ou pertes encourus à la suite de vos violations.</p>
+                                    <p>{{ __('legal/acceptable-use.text_95') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -529,10 +529,10 @@
                     <div class="bg-[#F8F8F8] rounded-lg p-6 border border-[#0F0F0F]/10">
                         <p class="font-semibold text-[#0F0F0F] mb-2">Notes importantes :</p>
                         <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Nous nous réservons le droit de prendre des mesures immédiates sans préavis pour les violations graves</li>
-                            <li>Les mesures prises sont à notre seule discrétion en fonction de la gravité et de la nature de la violation</li>
-                            <li>Les résiliations dues aux violations de la politique ne donnent pas droit à un remboursement</li>
-                            <li>Nous pouvons conserver les dossiers et les preuves à des fins juridiques et de conformité</li>
+                            <li>{{ __('legal/acceptable-use.text_96') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_97') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_98') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_99') }}</li>
                         </ul>
                     </div>
                 </div>
@@ -542,23 +542,23 @@
                     <div class="w-12 h-12 rounded-lg bg-[#00AEEF]/10 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flag w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                             <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Signalement des violations</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/acceptable-use.text_100') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Si vous avez connaissance d'un contenu ou d'une activité qui enfreint cette Politique d'Utilisation Acceptable, veuillez nous le signaler immédiatement.</p>
+                    <p>{{ __('legal/acceptable-use.text_101') }}</p>
                     <div class="bg-[#00AEEF]/5 rounded-lg p-6 border border-[#00AEEF]/20">
-                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-3">Comment signaler</h3>
-                        <p class="mb-3">Envoyez un rapport détaillé à <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline font-medium"><span class="__cf_email__" data-cfemail="0c64696060634c7c65676d7f7f637f7879686563226f6361">[email&#160;protected]</span></a> avec l'objet : &quot;Rapport de violation PUA&quot;</p>
+                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-3">{{ __('legal/acceptable-use.text_102') }}</h3>
+                        <p class="mb-3">{{ __('legal/acceptable-use.text_103') }} <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline font-medium"><span class="__cf_email__" data-cfemail="0c64696060634c7c65676d7f7f637f7879686563226f6361">{{ __('legal/acceptable-use.text_438') }}</span></a> {{ __('legal/acceptable-use.text_104') }}</p>
                         <p class="mb-2 font-medium text-[#0F0F0F]">Veuillez inclure :</p>
                         <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>URL ou emplacement de la violation</li>
-                            <li>Description de la violation et quelle section de la politique est enfreinte</li>
-                            <li>Captures d'écran ou preuves (le cas échéant)</li>
-                            <li>Vos coordonnées pour le suivi</li>
-                            <li>Tout autre détail pertinent</li>
+                            <li>{{ __('legal/acceptable-use.text_236') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_105') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_106') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_107') }}</li>
+                            <li>{{ __('legal/acceptable-use.text_108') }}</li>
                         </ul>
                     </div>
-                    <p class="text-sm">Nous prenons tous les signalements au sérieux et enquêterons rapidement. Nous pouvons vous contacter pour des informations supplémentaires. Les signalements sont traités de manière confidentielle dans la mesure permise par la loi.</p>
+                    <p class="text-sm">{{ __('legal/acceptable-use.text_109') }}</p>
                     <div class="
         flex items-start gap-3 p-4 rounded-lg border backdrop-blur-sm
         border-[#EF4444]/20 bg-gradient-to-br from-[#EF4444]/5 to-[#EF4444]/0
@@ -572,22 +572,22 @@
                             </svg></div>
                         <div class="flex-1 text-sm text-[#0F0F0F]/80">
                             <p class="font-medium text-[#0F0F0F] mb-1">Signalements urgents</p>
-                            <p class="text-sm">Pour les questions urgentes impliquant un danger immédiat, la sécurité des enfants ou une activité criminelle, contactez immédiatement les forces de l'ordre locales avant de nous contacter.</p>
+                            <p class="text-sm">{{ __('legal/acceptable-use.text_110') }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bg-white rounded-xl p-8 md:p-10 shadow-sm mb-8">
-                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">Mises à jour de cette politique</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6" style="font-family:var(--font-heading)">{{ __('legal/acceptable-use.text_111') }}</h2>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Nous pouvons mettre à jour cette Politique d'Utilisation Acceptable de temps à autre pour refléter les changements technologiques, les exigences légales ou nos pratiques commerciales.</p>
-                    <p>Nous vous informerons des changements importants en :</p>
+                    <p>{{ __('legal/acceptable-use.text_112') }}</p>
+                    <p>{{ __('legal/acceptable-use.text_113') }}</p>
                     <ul class="list-disc pl-6 space-y-1">
-                        <li>Publiant la politique mise à jour sur cette page avec une nouvelle date de &quot;Dernière mise à jour&quot;</li>
-                        <li>Envoyant des notifications par e-mail aux utilisateurs actifs</li>
-                        <li>Affichant un avis bien visible sur notre site web</li>
+                        <li>{{ __('legal/acceptable-use.text_114') }}</li>
+                        <li>{{ __('legal/acceptable-use.text_115') }}</li>
+                        <li>{{ __('legal/acceptable-use.text_116') }}</li>
                     </ul>
-                    <p>Votre utilisation continue de nos services après la publication des modifications constitue l'acceptation de la politique mise à jour.</p>
+                    <p>{{ __('legal/acceptable-use.text_117') }}</p>
                 </div>
             </div>
             <div class="bg-gradient-to-br from-[#00AEEF]/10 to-[#0071BC]/10 rounded-xl p-8 md:p-10 border border-[#00AEEF]/20">
@@ -596,33 +596,33 @@
                             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                             <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                         </svg></div>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">Des questions ou des préoccupations ?</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('legal/acceptable-use.text_118') }}</h2>
                 </div>
                 <div class="space-y-4 text-[#0F0F0F]/70">
-                    <p>Si vous avez des questions sur cette Politique d'Utilisation Acceptable ou avez besoin de précisions sur ce qui est autorisé, veuillez nous contacter :</p>
+                    <p>{{ __('legal/acceptable-use.text_119') }}</p>
                     <div class="bg-white rounded-lg p-6 space-y-3">
                         <div>
                             <p class="font-semibold text-[#0F0F0F]">CodeSommet</p>
-                            <p>Agence Premium de Développement Web</p>
+                            <p>{{ __('legal/acceptable-use.text_120') }}</p>
                         </div>
                         <div class="space-y-2">
-                            <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="3e565b5252517e4e57555f4d4d514d4a4b5a5751105d5153">[email&#160;protected]</span></a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="3e565b5252517e4e57555f4d4d514d4a4b5a5751105d5153">{{ __('legal/acceptable-use.text_439') }}</span></a></p>
+                            <p><strong>{{ __('legal/acceptable-use.text_121') }}</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>{{ __('legal/acceptable-use.text_122') }}</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                         </div>
                         <div>
-                            <p><strong>Siège social :</strong> Maroc</p>
-                            <p><strong>Opérations :</strong> Monde entier</p>
+                            <p><strong>{{ __('legal/acceptable-use.text_123') }}</strong> Maroc</p>
+                            <p><strong>{{ __('legal/acceptable-use.text_124') }}</strong> Monde entier</p>
                         </div>
                         <div class="pt-3 border-t border-[#0F0F0F]/10">
-                            <p class="text-sm">Pour les demandes relatives à cette politique, veuillez inclure &quot;Politique d'Utilisation Acceptable&quot; dans l'objet de votre e-mail.</p>
+                            <p class="text-sm">{{ __('legal/acceptable-use.text_125') }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mt-12 text-center">
                 <p class="text-[#0F0F0F]/70 mb-4">Documents juridiques connexes :</p>
-                <div class="flex flex-wrap justify-center gap-3"><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('privacy-policy') }}">Politique de Confidentialité</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('cookie-policy') }}">Politique de Cookies</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('refund-policy') }}">Politique de Remboursement</a></div>
+                <div class="flex flex-wrap justify-center gap-3"><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('privacy-policy') }}">{{ __('legal/acceptable-use.text_126') }}</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('cookie-policy') }}">{{ __('legal/acceptable-use.text_237') }}</a><a class="px-6 py-3 text-sm font-medium text-[#00AEEF] border-2 border-[#00AEEF] hover:text-white rounded-full transition-colors" href="{{ route('refund-policy') }}">{{ __('legal/acceptable-use.text_238') }}</a></div>
             </div>
         </div>
     </div>

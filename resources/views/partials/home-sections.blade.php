@@ -751,7 +751,7 @@ $comparisons = [
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver un Appel Découverte</button>
+                        <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver un Appel Découverte</button>
                         <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
@@ -833,7 +833,7 @@ $comparisons = [
                 <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white" style="font-family: var(--font-display);">Un Mois Trop Chargé ? Mettez en Pause à Tout Moment.</h2>
                 <p class="text-base md:text-lg text-white/60 max-w-2xl mx-auto">Zéro pénalité. Reprenez quand vous voulez. Votre abonnement, vos règles.</p>
                 <div class="flex justify-center pt-2">
-                    <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="relative z-10 flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-5 h-5 text-black fill-black" aria-hidden="true">
                                 <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
@@ -864,7 +864,7 @@ $comparisons = [
                 <div class="flex flex-col items-center gap-4 md:gap-6">
                     {{-- Mobile CTAs --}}
                     <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden">
-                        <a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" href="https://cal.com/codesommet/discovery" style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
+                        <a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#" style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
                             <div class="shine-wrapper-hero">
                                 <div class="shine-element-hero"></div>
                             </div>
@@ -894,7 +894,7 @@ $comparisons = [
 
                     {{-- Desktop CTAs --}}
                     <div class="hidden md:flex flex-row items-center gap-4">
-                        <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
+                        <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
                             <div class="shine-wrapper-hero">
                                 <div class="shine-element-hero"></div>
                             </div>

@@ -133,7 +133,7 @@
                 <a class="h-11 w-full rounded-xl bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:shadow-lg inline-flex items-center justify-center font-semibold transition-all" href="{{ route('get-quote') }}">
                     Devis Gratuit
                 </a>
-                <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="h-11 w-full rounded-xl border border-black/10 text-slate-700 hover:bg-white/90 inline-flex items-center justify-center font-semibold transition-all">
+                <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="h-11 w-full rounded-xl border border-black/10 text-slate-700 hover:bg-white/90 inline-flex items-center justify-center font-semibold transition-all">
                     Réserver un Appel
                 </button>
             </div>

@@ -75,13 +75,13 @@
                         rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                         rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                         rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                        rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery">
+                        rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
                             <div class="absolute inset-[3px] rounded-[114px] bg-black z-0"></div>
                             <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white" aria-hidden="true" style="filter:drop-shadow(0 0 4px rgba(255, 255, 255, 0.8))">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
-                        </a><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
+                        </a><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                         rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,
                         rgba(0, 0, 0, 0.08) 0px 10.8925px 10.8925px -1.40625px,
                         rgba(0, 0, 0, 0.08) 0px 18.1088px 18.1088px -1.875px,
@@ -295,7 +295,7 @@
                 rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                 rgba(0, 0, 0, 0.055) 0px 47.8699px 47.8699px -2.8125px,
                 rgba(0, 0, 0, 0.043) 0px 82.4287px 82.4287px -3.28125px,
-                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery">
+                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
                                 <div class="shine-wrapper">
                                     <div class="shine-element"></div>
                                 </div>
@@ -314,7 +314,7 @@
                                         <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                     </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser Votre Site Web</span>
                             </a></div>
-                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,

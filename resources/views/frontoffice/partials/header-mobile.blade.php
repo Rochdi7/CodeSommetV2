@@ -28,20 +28,32 @@
                 </div>
             </a>
 
-            {{-- Sélecteur de langue --}}
+            {{-- Language Switcher --}}
             <div class="relative" id="mobile-lang-switcher">
-                <button onclick="document.getElementById('mobile-lang-dropdown').classList.toggle('hidden'); document.getElementById('mobile-lang-dropdown').classList.toggle('lang-dropdown-open')" class="h-11 w-11 rounded-full flex items-center justify-center text-[var(--text-secondary)] transition hover:bg-[var(--bg-secondary)]" aria-label="Changer de langue">
+                <button onclick="document.getElementById('mobile-lang-dropdown').classList.toggle('hidden'); document.getElementById('mobile-lang-dropdown').classList.toggle('lang-dropdown-open')" class="h-11 w-11 rounded-full flex items-center justify-center text-[var(--text-secondary)] transition hover:bg-[var(--bg-secondary)]" aria-label="{{ __('nav.change_language') }}">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                         <circle cx="12" cy="12" r="10" />
                         <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" />
                     </svg>
                 </button>
 
-                {{-- Menu déroulant --}}
                 <div id="mobile-lang-dropdown" class="hidden absolute right-0 top-full mt-2 w-44 rounded-2xl bg-white/95 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_8px_30px_rgba(0,0,0,0.1)] py-2 z-50 transition-all duration-200 origin-top-right">
 
-                    {{-- Anglais --}}
-                    <a href="?lang=en" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
+                    {{-- French (default locale — URL without /fr/ prefix) --}}
+                    <a href="{{ LaravelLocalization::getNonLocalizedURL() }}" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors {{ app()->getLocale() === 'fr' ? 'bg-gray-50' : '' }}">
+                        <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
+                            <svg viewBox="0 0 3 2" class="w-5 h-auto">
+                                <rect width="1" height="2" fill="#002395" />
+                                <rect x="1" width="1" height="2" fill="#fff" />
+                                <rect x="2" width="1" height="2" fill="#ED2939" />
+                            </svg>
+                        </span>
+                        <span class="text-sm font-medium text-[var(--text-primary)]">Français</span>
+                        @if(app()->getLocale() === 'fr')<span class="ml-auto w-2 h-2 rounded-full bg-[var(--color-primary-orange)]"></span>@endif
+                    </a>
+
+                    {{-- English --}}
+                    <a href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors {{ app()->getLocale() === 'en' ? 'bg-gray-50' : '' }}">
                         <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                             <svg viewBox="0 0 60 30" class="w-5 h-auto">
                                 <clipPath id="m-en-clip">
@@ -59,37 +71,8 @@
                                 </g>
                             </svg>
                         </span>
-                        <span class="text-sm font-medium text-[var(--text-primary)]">Anglais</span>
-                    </a>
-
-                    {{-- French --}}
-                    <a href="?lang=fr" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
-                        <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
-                            <svg viewBox="0 0 3 2" class="w-5 h-auto">
-                                <rect width="1" height="2" fill="#002395" />
-                                <rect x="1" width="1" height="2" fill="#fff" />
-                                <rect x="2" width="1" height="2" fill="#ED2939" />
-                            </svg>
-                        </span>
-                        <span class="text-sm font-medium text-[var(--text-primary)]">Français</span>
-                    </a>
-
-                    {{-- Arabe --}}
-                    <a href="?lang=ar" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors">
-                        <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
-                            <svg viewBox="0 0 1200 800" class="w-5 h-auto">
-                                <rect width="1200" height="267" fill="#C1272D" />
-                                <rect y="267" width="1200" height="267" fill="#fff" />
-                                <rect y="534" width="1200" height="267" fill="#006233" />
-                                <g fill="none" stroke="#C1272D" stroke-width="18" transform="translate(600,400)">
-                                    <circle r="80" />
-                                    <circle r="65" fill="#fff" stroke="none" />
-                                    <circle r="65" fill="none" />
-                                    <path d="M-80,-35 L0,-95 L80,-35 L50,70 L-50,70 Z" stroke-width="14" />
-                                </g>
-                            </svg>
-                        </span>
-                        <span class="text-sm font-medium text-[var(--text-primary)]">العربية</span>
+                        <span class="text-sm font-medium text-[var(--text-primary)]">English</span>
+                        @if(app()->getLocale() === 'en')<span class="ml-auto w-2 h-2 rounded-full bg-[var(--color-primary-orange)]"></span>@endif
                     </a>
                 </div>
             </div>
@@ -103,17 +86,17 @@
             <nav class="flex flex-col gap-1.5">
                 @php
                 $mobileNav = [
-                ['route' => 'home', 'label' => 'Accueil', 'icon' => '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                ['route' => 'home', 'label' => __('nav.home'), 'icon' => '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>'],
-                ['route' => 'our-work', 'label' => 'Nos Projets', 'icon' => '<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                ['route' => 'our-work', 'label' => __('nav.our_work'), 'icon' => '<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>'],
-                ['route' => 'tools', 'label' => 'Outils', 'icon' => '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>'],
-                ['route' => 'blog', 'label' => 'Blog', 'icon' => '<path d="M12 20h9"></path>
+                ['route' => 'tools', 'label' => __('nav.tools'), 'icon' => '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>'],
+                ['route' => 'blog', 'label' => __('nav.blog'), 'icon' => '<path d="M12 20h9"></path>
                 <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"></path>'],
-                ['route' => 'about', 'label' => 'À Propos', 'icon' => '<circle cx="12" cy="12" r="10"></circle>
+                ['route' => 'about', 'label' => __('nav.about'), 'icon' => '<circle cx="12" cy="12" r="10"></circle>
                 <path d="M12 16v-4"></path>
                 <path d="M12 8h.01"></path>'],
-                ['route' => 'contact', 'label' => 'Contact', 'icon' => '<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                ['route' => 'contact', 'label' => __('nav.contact'), 'icon' => '<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>'],
                 ];
                 @endphp
@@ -131,10 +114,10 @@
             {{-- Boutons CTA --}}
             <div class="mt-4 rounded-2xl bg-white/80 p-2 shadow-inner backdrop-blur-sm space-y-2">
                 <a class="h-11 w-full rounded-xl bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:shadow-lg inline-flex items-center justify-center font-semibold transition-all" href="{{ route('get-quote') }}">
-                    Devis Gratuit
+                    {{ __('nav.get_quote') }}
                 </a>
-                <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="h-11 w-full rounded-xl border border-black/10 text-slate-700 hover:bg-white/90 inline-flex items-center justify-center font-semibold transition-all">
-                    Réserver un Appel
+                <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="h-11 w-full rounded-xl border border-black/10 text-slate-700 hover:bg-white/90 inline-flex items-center justify-center font-semibold transition-all">
+                    {{ __('nav.book_call') }}
                 </button>
             </div>
         </div>

@@ -1,19 +1,11 @@
 ﻿@extends('frontoffice.layouts.app')
 
-@section('title', 'Développement Web à Paris, France | CodeSommet')
-@section('meta_description', 'Associez-vous au studio de développement web leader de Paris pour des sites web alimentés
-par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes orientées
-conversion pour l\'éducation, la santé et les startups SaaS.')
-@section('meta_keywords', 'développement web Maroc,agence développement web IA,agence développement
-Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site
-sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception
-tableau de bord personnalisé,agence web Maroc')
-@section('og_title', 'CodeSommetStudio - Agence Digitale | Développement Web, Design & SEO')
-@section('og_description', 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par
-l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la
-santé et les entreprises. Plus de 50 projets livrés.')
-@section('twitter_description', 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA,
-les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.')
+@section('title', __('locations/web-development-company-paris.title'))
+@section('meta_description', __('locations/web-development-company-paris.meta_description'))
+@section('meta_keywords', __('locations/web-development-company-paris.meta_keywords'))
+@section('og_title', __('locations/web-development-company-paris.og_title'))
+@section('og_description', __('locations/web-development-company-paris.og_description'))
+@section('twitter_description', __('locations/web-development-company-paris.twitter_description'))
 
 @section('content')
 <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -53,18 +45,15 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                 </path>
                                 <circle cx="12" cy="10" r="3"></circle>
-                            </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🇫🇷<!-- --> <!-- -->Paris<!-- -->,
+                            </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">{{ __('locations/web-development-company-paris.text_668') }}<!-- --> <!-- -->Paris<!-- -->,
                                 <!-- -->France</span>
                         </div>
                     </div>
                     <div class="space-y-6">
-                        <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto" style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT<!-- --> <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">Tableaux
+                        <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto" style="font-family:var(--font-display)">{{ __('locations/web-development-company-paris.text_0') }}<!-- --> <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">Tableaux
                                         de Bord SaaS</span><span class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Tableaux
                                         de Bord SaaS</span></span></span></h1>
-                        <p class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
-                            Associez-vous au studio de développement web leader de Paris pour des sites web alimentés
-                            par l'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de
-                            plateformes orientées conversion pour l'éducation, la santé et les startups SaaS.</p>
+                        <p class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">{{ __('locations/web-development-company-paris.ml_1074') }}</p>
                     </div>
                     <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto bg-black hover:bg-black/90 transition-colors" style="border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                     rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,
@@ -73,8 +62,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                     rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery"><span class="relative text-[15px] font-semibold text-white z-10">Réserver une Consultation
-                                Gratuite Paris</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true">
+                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#"><span class="relative text-[15px] font-semibold text-white z-10">{{ __('locations/web-development-company-paris.ml_1075') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a><a class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto" href="#pricing"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir Nos
@@ -84,15 +72,15 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </svg></a></div>
                     <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                         <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">Basé à <!-- -->Paris</span>
+                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-paris.text_1') }} <!-- -->Paris</span>
                         </div>
                         <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">Livraison en 7-10 Jours</span>
+                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-paris.text_159') }}</span>
                         </div>
                         <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">50+ clients à <!-- -->Paris<!-- --></span>
+                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-paris.text_2') }} <!-- -->Paris<!-- --></span>
                         </div>
                     </div>
                 </div>
@@ -111,7 +99,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <circle cx="4" cy="20" r="2"></circle>
                     </svg>Pourquoi Nous Choisir
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommet à <!-- -->Paris<!-- --> ?</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_3') }} <!-- -->Paris<!-- --> ?</h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">L'expertise locale rencontre les standards
                     internationaux. Voici ce qui fait de nous le partenaire idéal en développement web à
                     <!-- -->Paris<!-- -->.
@@ -142,10 +130,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Experts en IA</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Créez des chatbots
-                                    intelligents, des workflows d'automatisation, une recherche alimentée par l'IA et
-                                    des moteurs de recommandation adaptés au public technophile de Paris.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('locations/web-development-company-paris.text_160') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('locations/web-development-company-paris.ml_1076') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -165,11 +151,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Spécialistes Dashboard
-                                    &amp; SaaS</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Concevez des portails
-                                    utilisateurs, des panneaux d'administration, des tableaux de bord analytiques et des
-                                    plateformes SaaS qui évoluent avec votre startup à Paris.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('locations/web-development-company-paris.ml_1077') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('locations/web-development-company-paris.ml_1078') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -187,11 +170,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Axé Génération de
-                                    Prospects</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Sites web optimisés pour le
-                                    SEO et orientés conversion qui transforment les visiteurs de Paris en clients
-                                    payants.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('locations/web-development-company-paris.ml_1079') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('locations/web-development-company-paris.ml_1080') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -209,10 +189,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Rapidité Startup</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Lancez votre MVP en 7-14
-                                    jours avec des révisions illimitées. Parfait pour l'écosystème de startups dynamique
-                                    de Paris.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('locations/web-development-company-paris.text_4') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('locations/web-development-company-paris.ml_1081') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -232,11 +210,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Spécialistes Sectoriels
-                                </h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Expertise approfondie dans
-                                    l'éducation, la santé et le SaaS B2B - les secteurs à la croissance la plus rapide
-                                    de Paris.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('locations/web-development-company-paris.ml_1082') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('locations/web-development-company-paris.ml_1083') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -260,9 +235,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Stack Technologique
                                     Moderne</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Next.js 15, React,
-                                    TypeScript, Supabase, OpenAI, Claude - des technologies qui attirent les meilleurs
-                                    talents en ingénierie de Paris.</p>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('locations/web-development-company-paris.ml_1084') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -274,10 +247,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="text-center">
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8" style="font-family:var(--font-heading)">Approuvé par les Entreprises de <!-- -->Paris<!-- --></h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_5') }} <!-- -->Paris<!-- --></h2>
                 <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">50+ Projets Livrés</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('locations/web-development-company-paris.text_6') }}</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
@@ -289,8 +262,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                    <!-- -->Paris<!-- --> - des entreprises avec lesquelles nous avons collaboré
-                </p>
+                    <!-- -->Paris<!-- -->{{ __('locations/web-development-company-paris.ml_1085') }}</p>
             </div>
         </div>
     </section>
@@ -308,11 +280,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <path d="M10 18h4"></path>
                     </svg>Expertise Sectorielle
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Paris<!-- --> Nos Secteurs de Spécialisation</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Paris<!-- --> {{ __('locations/web-development-company-paris.text_7') }}</h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans les secteurs clés de
-                    <!-- -->Paris<!-- -->. Nous comprenons les défis uniques de votre secteur et les exigences de
-                    conformité.
-                </p>
+                    <!-- -->Paris<!-- -->{{ __('locations/web-development-company-paris.ml_1086') }}</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div style="opacity: 1; transform: none;">
@@ -325,17 +295,14 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">FinTech</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">
-                                    Plateformes financières sécurisées avec traitement des paiements, conformité et
-                                    fonctionnalités réglementaires</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">{{ __('locations/web-development-company-paris.ml_1087') }}</p>
                                 <ul class="space-y-1.5 mb-4 flex-grow">
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de
-                                            paiement</span></li>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.ml_1088') }}</span></li>
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Plateformes
                                             de trading</span></li>
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Applications
                                             wallet</span></li>
-                                </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/glamworlds" style="color: rgb(255, 101, 0);">Voir l'Étude de Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/glamworlds" style="color: rgb(255, 101, 0);">{{ __('locations/web-development-company-paris.text_8') }}<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                     </svg></a>
                             </div>
@@ -379,16 +346,12 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <div class="px-5 py-4 flex flex-col flex-grow">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Cabinets de Conseil
                                 </h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
-                                    web de conseil professionnels avec vitrines de services et outils de génération de
-                                    leads</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">{{ __('locations/web-development-company-paris.ml_1089') }}</p>
                                 <ul class="space-y-1.5 mb-4 flex-grow">
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portfolio de
                                             services</span></li>
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Études de
-                                            cas</span></li>
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Génération
-                                            de leads</span></li>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.ml_1090') }}</span></li>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.ml_1091') }}</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -403,17 +366,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Santé</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
-                                    web de cliniques, systèmes de prise de rendez-vous et portails patients conformes
-                                    aux réglementations sanitaires</p>
+                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('locations/web-development-company-paris.text_9') }}</h3>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">{{ __('locations/web-development-company-paris.ml_1092') }}</p>
                                 <ul class="space-y-1.5 mb-4 flex-grow">
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Portails
                                             patients</span></li>
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Systèmes de
-                                            rendez-vous</span></li>
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Dossiers
-                                            médicaux</span></li>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.ml_1093') }}</span></li>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.ml_1094') }}</span></li>
                                 </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto" href="/our-work/dental-pro" style="color: rgb(255, 101, 0);">Voir l'Étude de
                                     Cas<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -431,13 +390,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Immobilier</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">Sites
-                                    web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et
-                                    intégration CRM</p>
+                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('locations/web-development-company-paris.text_161') }}</h3>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">{{ __('locations/web-development-company-paris.ml_1095') }}</p>
                                 <ul class="space-y-1.5 mb-4 flex-grow">
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Annonces
-                                            immobilières</span></li>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.ml_1096') }}</span></li>
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Visites
                                             virtuelles</span></li>
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Tableaux de
@@ -458,15 +414,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <div class="px-5 py-4 flex flex-col flex-grow">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Plateformes SaaS
                                 </h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">
-                                    Applications SaaS complètes avec authentification, facturation et fonctionnalités en
-                                    temps réel</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-2">{{ __('locations/web-development-company-paris.ml_1097') }}</p>
                                 <ul class="space-y-1.5 mb-4 flex-grow">
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Authentification
                                             utilisateur</span></li>
                                     <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Facturation
                                             par abonnement</span></li>
-                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Développement API</span>
+                                    <li class="flex items-start text-xs text-[var(--text-secondary)]"><span class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-paris.text_10') }}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -476,7 +430,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
             </div>
             <div class="mt-10 text-center">
                 <p class="text-[#0F0F0F]/70 mb-4">Vous ne voyez pas votre secteur ? Nous travaillons avec des
-                    entreprises de tous les secteurs à <!-- -->Paris<!-- -->.</p><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:gap-3 transition-all" href="{{ route('contact') }}"><span>Discutez de Vos Besoins Sectoriels</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
+                    entreprises de tous les secteurs à <!-- -->Paris<!-- -->.</p><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:gap-3 transition-all" href="{{ route('contact') }}"><span>{{ __('locations/web-development-company-paris.text_11') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></a>
@@ -490,23 +444,22 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                         <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                    </svg>Nos réalisations à <!-- -->Paris
+                    </svg>{{ __('locations/web-development-company-paris.text_12') }} <!-- -->Paris
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Histoires de réussite à <!-- -->Paris</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_13') }} <!-- -->Paris</h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, des résultats concrets.
-                    Découvrez comment nous avons aidé des entreprises de <!-- -->Paris<!-- --> à atteindre leurs
-                    objectifs numériques.</p>
+                    Découvrez comment nous avons aidé des entreprises de <!-- -->Paris<!-- -->{{ __('locations/web-development-company-paris.ml_1098') }}</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                 <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-paris.text_14') }}</span>
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>2 000+ candidatures étudiantes traitées</span></div>
+                                        </svg>{{ __('locations/web-development-company-paris.text_15') }}</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
@@ -518,11 +471,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-paris.text_16') }}</span>
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>2,5M€ de revenus au premier trimestre</span></div>
+                                        </svg>{{ __('locations/web-development-company-paris.text_17') }}</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>
@@ -534,11 +487,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/dental-pro/dental-pro-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Santé</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-paris.text_18') }}</span>
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>5 000+ inscriptions de patients en 3 mois</span></div>
+                                        </svg>{{ __('locations/web-development-company-paris.text_162') }}</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
@@ -560,10 +513,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         </path>
                         <path d="M9 18h6"></path>
                         <path d="M10 22h4"></path>
-                    </svg>Histoire de Réussite
-                </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Comment Nous Avons Construit une Plateforme E-Commerce de
-                    Luxe Traitant 100M€ de Revenus Annuels</h2>
+                    </svg>{{ __('locations/web-development-company-paris.ml_1099') }}</div>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.ml_1100') }}</h2>
                 <div class="flex items-center justify-center gap-6 text-sm text-[#0F0F0F]/60 flex-wrap">
                     <div class="flex items-center gap-2"><span class="font-semibold text-[#0F0F0F]">E-commerce et
                             marketplace de mode de luxe</span></div><span>•</span>
@@ -585,16 +536,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <circle cx="12" cy="12" r="6"></circle>
                                 <circle cx="12" cy="12" r="2"></circle>
                             </svg></div>
-                        <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">Le Défi
-                        </h3>
+                        <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.ml_1101') }}</h3>
                     </div>
-                    <p class="text-[#0F0F0F]/70 leading-relaxed">Une maison de mode de luxe parisienne avait besoin
-                        d'une plateforme e-commerce à la hauteur du prestige de sa marque. Nécessitait des galeries
-                        photo de produits de très haute qualité, des recommandations de taille alimentées par l'IA, des
-                        services d'authentification pour les articles d'occasion, l'intégration avec les méthodes de
-                        paiement françaises (CB, SEPA, Klarna), le support multi-devises (EUR, GBP, USD, CHF), des
-                        fonctionnalités de service client haut de gamme et un traitement des données conforme au RGPD
-                        pour les clients de l'UE.</p>
+                    <p class="text-[#0F0F0F]/70 leading-relaxed">{{ __('locations/web-development-company-paris.ml_1102') }}</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3 mb-4">
@@ -609,14 +553,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <h3 class="text-xl font-bold text-[#0F0F0F]" style="font-family:var(--font-heading)">Notre
                             Solution</h3>
                     </div>
-                    <p class="text-[#0F0F0F]/70 leading-relaxed">Construction d'une plateforme e-commerce premium
-                        Next.js avec visualisation 3D des produits et zoom, implémentation de recommandations de taille
-                        par IA utilisant les mesures des clients et les données de retour, intégration de services
-                        d'authentification avec certificats blockchain, ajout de Stripe, prélèvement SEPA et financement
-                        Klarna, construction d'un chat concierge avec disponibilité des stylistes en temps réel,
-                        création d'expériences d'achat personnalisées utilisant le ML, conformité RGPD assurée avec
-                        portabilité des données et droit à l'effacement, et déploiement sur AWS Paris avec CloudFront
-                        CDN pour l'Europe.</p>
+                    <p class="text-[#0F0F0F]/70 leading-relaxed">{{ __('locations/web-development-company-paris.ml_1103') }}</p>
                 </div>
             </div>
             <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">
@@ -626,37 +563,33 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="m9 12 2 2 4-4"></path>
                         </svg>
-                        <p class="text-base font-medium leading-snug">100M€ de revenus annuels dans les 18 premiers
-                            mois</p>
+                        <p class="text-base font-medium leading-snug">{{ __('locations/web-development-company-paris.ml_1104') }}</p>
                     </div>
                     <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="m9 12 2 2 4-4"></path>
                         </svg>
-                        <p class="text-base font-medium leading-snug">Panier moyen : 1 250€ (segment luxe)</p>
+                        <p class="text-base font-medium leading-snug">{{ __('locations/web-development-company-paris.text_19') }}</p>
                     </div>
                     <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="m9 12 2 2 4-4"></path>
                         </svg>
-                        <p class="text-base font-medium leading-snug">Taux de retour : 8% (moyenne du secteur : 25%)
-                            grâce au dimensionnement IA</p>
+                        <p class="text-base font-medium leading-snug">{{ __('locations/web-development-company-paris.ml_1105') }}</p>
                     </div>
                     <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 flex-shrink-0 mt-1" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="m9 12 2 2 4-4"></path>
                         </svg>
-                        <p class="text-base font-medium leading-snug">Expansion dans 35 pays à travers l'Europe et le
-                            Moyen-Orient</p>
+                        <p class="text-base font-medium leading-snug">{{ __('locations/web-development-company-paris.ml_1106') }}</p>
                     </div>
                 </div>
             </div>
             <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 mb-12">
-                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4 text-center">Technologies Utilisées</h3>
+                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4 text-center">{{ __('locations/web-development-company-paris.text_20') }}</h3>
                 <div class="flex flex-wrap justify-center gap-3"><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Next.js</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">React</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Stripe</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">AI
                         Sizing</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Visualisation
-                        3D</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Conformité
-                        RGPD</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">AWS</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Multi-devises</span>
+                        3D</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">{{ __('locations/web-development-company-paris.ml_1107') }}</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">AWS</span><span class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Multi-devises</span>
                 </div>
             </div>
             <div class="relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] rounded-3xl p-8 md:p-12 text-white overflow-hidden">
@@ -675,8 +608,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     <div class="flex items-center gap-4">
                         <div class="w-px h-12 bg-[#00AEEF]"></div>
                         <div>
-                            <div class="font-semibold text-lg text-white">Directeur Numérique</div>
-                            <div class="text-[#00AEEF] text-sm font-medium">Maison de Mode de Luxe Parisienne</div>
+                            <div class="font-semibold text-lg text-white">{{ __('locations/web-development-company-paris.text_21') }}</div>
+                            <div class="text-[#00AEEF] text-sm font-medium">{{ __('locations/web-development-company-paris.text_163') }}</div>
                         </div>
                     </div>
                 </div>
@@ -686,9 +619,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section id="pricing" class="relative w-full py-16 md:py-24 bg-[#F5F5F5]">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">Solutions Sur Mesure, Tarification Transparente</h2>
-                <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour
-                    discuter de vos besoins spécifiques et obtenir un devis sur mesure</p>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_22') }}</h2>
+                <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">{{ __('locations/web-development-company-paris.ml_1108') }}</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
                 <div class="relative bg-black rounded-[32px] p-3 text-white">
@@ -697,8 +629,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
                                 <path d="M16 7h6v6"></path>
                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                            </svg>Recommandé
-                        </div>
+                            </svg>{{ __('locations/web-development-company-paris.ml_1109') }}</div>
                     </div>
                     <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
                         <div class="flex items-start justify-between mb-6">
@@ -708,31 +639,28 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <line x1="8" x2="16" y1="21" y2="21"></line>
                                         <line x1="12" x2="12" y1="17" y2="21"></line>
                                     </svg></div>
-                                <h3 class="text-3xl md:text-4xl font-bold text-white">Développement de Sites Web</h3>
+                                <h3 class="text-3xl md:text-4xl font-bold text-white">{{ __('locations/web-development-company-paris.text_23') }}</h3>
                             </div>
                         </div>
                         <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                            <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et
-                                design premium livré en 7-10 jours.</p>
+                            <p class="text-white/70">{{ __('locations/web-development-company-paris.ml_1110') }}</p>
                         </div>
                         <div class="divide-y divide-white/10">
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Intégration de fonctionnalités alimentées par
-                                    l'IA</span></div>
+                                </svg><span class="text-white/80">{{ __('locations/web-development-company-paris.ml_1111') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Tableau de bord personnalisé &amp; portail
-                                    utilisateur</span></div>
+                                </svg><span class="text-white/80">{{ __('locations/web-development-company-paris.ml_1112') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
                                 </svg><span class="text-white/80">Design responsive mobile-first</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Contenu professionnel &amp; rédaction</span></div>
+                                </svg><span class="text-white/80">{{ __('locations/web-development-company-paris.text_24') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">SEO avancé &amp; optimisation des performances</span>
+                                </svg><span class="text-white/80">{{ __('locations/web-development-company-paris.text_25') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
@@ -740,26 +668,24 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     utilisateurs</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Intégration de paiement prête</span></div>
+                                </svg><span class="text-white/80">{{ __('locations/web-development-company-paris.text_26') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Analytique &amp; suivi des conversions</span></div>
+                                </svg><span class="text-white/80">{{ __('locations/web-development-company-paris.text_27') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-green-400 font-medium">Hébergement gratuit pendant 3 mois
-                                    inclus</span></div>
+                                </svg><span class="text-green-400 font-medium">{{ __('locations/web-development-company-paris.ml_1113') }}</span></div>
                         </div>
                     </div>
                     <div class="px-6 md:px-8 pb-3">
                         <div class="mb-6">
-                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-white/70 mb-1">Demander un Devis</span>
+                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-white/70 mb-1">{{ __('locations/web-development-company-paris.text_28') }}</span>
                                 <div class="flex items-end gap-2"><span class="text-5xl md:text-6xl font-bold">Sur
-                                        Mesure</span><span class="text-white/50 text-xl mb-2">par projet</span></div>
-                                <p class="text-white/60 text-sm mt-2">Devis sur mesure basé sur la portée de votre
-                                    projet</p>
+                                        Mesure</span><span class="text-white/50 text-xl mb-2">{{ __('locations/web-development-company-paris.text_29') }}</span></div>
+                                <p class="text-white/60 text-sm mt-2">{{ __('locations/web-development-company-paris.ml_1114') }}</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">Obtenir un Devis Sur Mesure</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">{{ __('locations/web-development-company-paris.text_30') }}</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -777,8 +703,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="relative rounded-full transition-all duration-400 ease-out w-11 h-7 bg-black/20" style="box-shadow:none">
                                     <div class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5">
                                     </div>
-                                </div><span class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Inclure
-                                    les Réseaux Sociaux</span>
+                                </div><span class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">{{ __('locations/web-development-company-paris.ml_1115') }}</span>
                             </button>
                         </div>
                         <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 transition-all duration-300 text-transparent" aria-hidden="true">
@@ -788,58 +713,53 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M22 4h-4"></path>
                                 <circle cx="4" cy="20" r="2"></circle>
                             </svg>
-                            <p class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant
-                                besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de sites
-                                web.</p>
+                            <p class="text-black/70 transition-all duration-300">{{ __('locations/web-development-company-paris.ml_1116') }}</p>
                         </div>
                         <div class="divide-y divide-black/10">
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">1 projet actif à la fois</span></div>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_31') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Chatbot IA &amp; fonctionnalités
-                                    d'automatisation</span></div>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.ml_1117') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Développement de tableaux de bord
-                                    personnalisés</span></div>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.ml_1118') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Livraison des tâches en 48-72 heures</span></div>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_32') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Révisions illimitées jusqu'à la perfection</span>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_33') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Développement full-stack (frontend + backend)</span>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_34') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">SEO professionnel &amp; stratégie de contenu</span>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_35') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Collaboration en temps réel sur Slack</span></div>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_36') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Hébergement premium &amp; maintenance</span></div>
+                                </svg><span class="text-black/80">{{ __('locations/web-development-company-paris.text_37') }}</span></div>
                         </div>
                     </div>
                     <div class="px-6 md:px-8 pb-3">
                         <div class="mb-6">
-                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-black/60 mb-1">Demander un Devis</span>
+                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-black/60 mb-1">{{ __('locations/web-development-company-paris.text_38') }}</span>
                                 <div class="flex items-end gap-2">
                                     <div class="relative overflow-hidden" style="height:fit-content"><span class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Sur
                                             Mesure</span><span class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Sur
-                                            Mesure</span></div><span class="text-black/50 text-xl mb-2">/mois</span>
+                                            Mesure</span></div><span class="text-black/50 text-xl mb-2">{{ __('locations/web-development-company-paris.text_164') }}</span>
                                 </div>
-                                <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
+                                <p class="text-black/60 text-sm mt-2">{{ __('locations/web-development-company-paris.text_39') }}</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
-                                un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">{{ __('locations/web-development-company-paris.ml_1119') }}</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -857,31 +777,27 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <path d="M2 12h20"></path>
                         </svg>
                     </div>
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]" style="font-family:var(--font-heading)">Prêt à Améliorer Votre Site Web à Paris ?</h2>
-                    <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Obtenez
-                        d'abord une analyse gratuite complète :</p>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_40') }}</h2>
+                    <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">{{ __('locations/web-development-company-paris.ml_1120') }}</p>
                     <div class="flex flex-wrap gap-3 justify-center mb-4">
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
                             <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
                         </div>
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Vérification des
-                                performances</span>
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('locations/web-development-company-paris.ml_1121') }}</span>
                         </div>
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Revue du design</span>
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('locations/web-development-company-paris.text_165') }}</span>
                         </div>
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Recommandations alimentées
-                                par l'IA</span>
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('locations/web-development-company-paris.ml_1122') }}</span>
                         </div>
                     </div><a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105" href="{{ route('tool', 'website-analyzer') }}"><span>Analyser Votre Site Web - 100%
                             Gratuit</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg></a>
-                    <p class="text-xs text-[var(--text-secondary)] mt-4">Aucune carte de crédit requise • Résultats en
-                        30 secondes • Plan d'amélioration personnalisé</p>
+                    <p class="text-xs text-[var(--text-secondary)] mt-4">{{ __('locations/web-development-company-paris.ml_1123') }}</p>
                 </div>
             </div>
         </div>
@@ -895,16 +811,14 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>Pourquoi Nous Choisir
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">CodeSommet <!-- -->Paris<!-- --> vs Autres</h2>
-                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Découvrez pourquoi <!-- -->Paris<!-- --> les
-                    entreprises choisissent CodeSommet plutôt que d'autres agences locales et internationales.</p>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">CodeSommet <!-- -->Paris<!-- --> {{ __('locations/web-development-company-paris.text_41') }}</h2>
+                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-paris.text_42') }} <!-- -->Paris<!-- -->{{ __('locations/web-development-company-paris.ml_1124') }}</p>
             </div>
             <div class="max-w-5xl mx-auto">
                 <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
                     <div class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
                         <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
-                            <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Fonctionnalité
-                            </div>
+                            <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">{{ __('locations/web-development-company-paris.ml_1125') }}</div>
                             <div class="p-3 md:p-4 text-center">
                                 <div class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
                                     <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">CodeSommet
@@ -917,8 +831,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 Agences Internationales</div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Révisions Illimitées
-                            </div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('locations/web-development-company-paris.ml_1126') }}</div>
                             <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
@@ -935,15 +848,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </svg></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Développement de
-                                Fonctionnalités IA</div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('locations/web-development-company-paris.ml_1127') }}</div>
                             <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
                                 </svg></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
-                                    Supplémentaire</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Limité</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1128') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.text_43') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Expertise Tableaux
@@ -952,14 +863,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
                                 </svg></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
-                                    Supplémentaire</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Dépend du
-                                    recrutement</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1129') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1130') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Délai de 48-72h
-                            </div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('locations/web-development-company-paris.ml_1131') }}</div>
                             <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
@@ -976,16 +884,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </svg></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Coût Mensuel</div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">€1,399 - €2,299</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">€4
-                                    500+/mois</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">€7
-                                    500+/mois</span></div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('locations/web-development-company-paris.text_44') }}</div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('locations/web-development-company-paris.text_45') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1132') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1133') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Pause à Tout Moment
-                            </div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('locations/web-development-company-paris.ml_1134') }}</div>
                             <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
@@ -1012,18 +917,15 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
                                 </svg></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Dépend du
-                                    recrutement</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1135') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Tarification à
-                                Portée Fixe</div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('locations/web-development-company-paris.ml_1136') }}</div>
                             <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 mx-auto text-[#22C55E]" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
                                 </svg></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Souvent
-                                    dépassé</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.ml_1137') }}</span></div>
                             <div class="p-3 md:p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x w-6 h-6 text-[#EF4444]/40 mx-auto" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m15 9-6 6"></path>
@@ -1039,7 +941,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="m9 12 2 2 4-4"></path>
-                        </svg>Meilleur rapport qualité-prix pour les entreprises de <!-- -->Paris<!-- -->
+                        </svg>{{ __('locations/web-development-company-paris.text_46') }} <!-- -->Paris<!-- -->
                     </div>
                 </div>
             </div>
@@ -1052,14 +954,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square w-4 h-4 mr-2" aria-hidden="true">
                         <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                         </path>
-                    </svg>Témoignages de Nos Clients
-                </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Ce Que les Clients de <!-- -->Paris<!-- --> Disent de Nous
+                    </svg>{{ __('locations/web-development-company-paris.ml_1138') }}</div>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_47') }} <!-- -->Paris<!-- --> Disent de Nous
                 </h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
-                    entreprises de <!-- -->Paris<!-- --> qui ont obtenu des résultats remarquables avec CodeSommet.</p>
+                    entreprises de <!-- -->Paris<!-- --> {{ __('locations/web-development-company-paris.text_48') }}</p>
             </div>
-            <div class="relative max-w-5xl mx-auto"><button class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110" aria-label="Précédent testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6 text-[#00AEEF]" aria-hidden="true">
+            <div class="relative max-w-5xl mx-auto"><button class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110" aria-label="{{ __('locations/web-development-company-paris.aria_60') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                         <path d="m15 18-6-6 6-6"></path>
                     </svg></button><button class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110" aria-label="Suivant testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                         <path d="m9 18 6-6-6-6"></path>
@@ -1099,7 +1000,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}" alt="Mohammed GlamWorlds" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed GlamWorlds</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">PDG de GlamWorlds</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('locations/web-development-company-paris.text_166') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
@@ -1145,8 +1046,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}" alt="Dr. Sarah Al-Mansouri" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directrice Médicale de Dubai Wellness
-                                            Clinic</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('locations/web-development-company-paris.ml_1139') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
@@ -1240,8 +1140,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/fatima-benali.webp') }}" alt="Fatima Zahra Benali" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directrice des Opérations de Riad Luxe
-                                            Properties</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('locations/web-development-company-paris.ml_1140') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
@@ -1258,8 +1157,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 <div class="flex justify-center items-center gap-3 mt-8"><button class="testimonial-dot transition-all duration-300 rounded-full" style="width:12px;height:12px;background:#00AEEF;transform:scale(1.25)" data-dot="0" aria-label="Go to testimonial group 1"></button><button class="testimonial-dot transition-all duration-300 rounded-full" style="width:10px;height:10px;background:rgba(15,15,15,0.25)" data-dot="1" aria-label="Go to testimonial group 2"></button></div>
             </div>
             <div class="mt-10 text-center">
-                <p class="text-sm text-[#0F0F0F]/60">Vous voulez voir plus d'histoires de réussite ?<!-- --> <a href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">Voir
-                        toutes les études de cas</a></p>
+                <p class="text-sm text-[#0F0F0F]/60">{{ __('locations/web-development-company-paris.text_49') }}<!-- --> <a href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">{{ __('locations/web-development-company-paris.ml_1141') }}</a></p>
             </div>
         </div>
     </section>
@@ -1270,7 +1168,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
             var slides = container.querySelectorAll('.testimonial-slide');
             var wrapper = container.closest('.relative.max-w-5xl');
             var dots = wrapper ? wrapper.querySelectorAll('.testimonial-dot') : [];
-            var prevBtn = wrapper ? wrapper.querySelector('[aria-label="Précédent testimonials"]') : null;
+            var prevBtn = wrapper ? wrapper.querySelector('[aria-label="{{ __('locations/web-development-company-paris.aria_61') }}"]') : null;
             var nextBtn = wrapper ? wrapper.querySelector('[aria-label="Suivant testimonials"]') : null;
             var current = 0;
             var total = slides.length;
@@ -1317,8 +1215,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
-                    </svg>Questions Fréquentes
-                </div>
+                    </svg>{{ __('locations/web-development-company-paris.ml_1142') }}</div>
                 <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web à
                     <!-- -->Paris
                 </h2>
@@ -1331,8 +1228,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">1</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Why choose CodeSommet over
-                                Paris&#x27;s many développement web agencies?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-paris.text_367') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1343,8 +1239,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">2</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Travaillez-vous avec les startups et
-                                les entreprises en phase de démarrage de Paris ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-paris.ml_1143') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1367,8 +1262,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">4</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous vous intégrer aux
-                                systèmes existants utilisés par les entreprises de Paris ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-paris.ml_1144') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1379,8 +1273,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">5</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Comment fonctionne le modèle de
-                                révisions illimitées de Paris ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-paris.ml_1145') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1391,8 +1284,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">6</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Fournissez-vous un support continu
-                                après le lancement à Paris ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-paris.ml_1146') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1400,7 +1292,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     </button></div>
             </div>
             <div class="mt-10 text-center">
-                <p class="text-sm text-[#0F0F0F]/60 mb-2">Vous avez encore des questions ?</p><a href="{{ route('contact') }}" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
+                <p class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('locations/web-development-company-paris.text_50') }}</p><a href="{{ route('contact') }}" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
                     notre équipe de <!-- -->Paris<!-- --><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
@@ -1410,9 +1302,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="text-center mb-8 md:mb-10">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--text-primary)] mb-3 px-4" style="font-family:var(--font-heading)">Nous Desservons Aussi</h2>
-                <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">Explorez nos
-                    services de développement web dans d'autres villes à travers le monde</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--text-primary)] mb-3 px-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_51') }}</h2>
+                <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">{{ __('locations/web-development-company-paris.ml_1147') }}</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a class="group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100" href="{{ route('location', 'london') }}">
                     <div class="flex items-start justify-between gap-2">
@@ -1538,7 +1429,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         </svg>
                     </div>
                 </a></div>
-            <div class="text-center mt-8 md:mt-10"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="{{ route('locations') }}">Voir Toutes les Villes<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+            <div class="text-center mt-8 md:mt-10"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="{{ route('locations') }}">{{ __('locations/web-development-company-paris.text_52') }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></a></div>
@@ -1547,9 +1438,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="text-center mb-10">
-                <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3" style="font-family:var(--font-heading)">Explorer Plus</h2>
-                <p class="text-lg text-[var(--text-secondary)]">Découvrez ce qui fait de CodeSommet votre partenaire
-                    idéal en développement web</p>
+                <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-paris.text_53') }}</h2>
+                <p class="text-lg text-[var(--text-secondary)]">{{ __('locations/web-development-company-paris.ml_1148') }}</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('tool', 'website-analyzer') }}">
                     <div class="flex flex-col h-full">
@@ -1560,10 +1450,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </svg></div>
                         <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                             Audit Gratuit de Site Web</h3>
-                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Obtenez une analyse alimentée
-                            par l'IA avec plus de 40 vérifications</p>
+                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('locations/web-development-company-paris.ml_1149') }}</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
+                            <span style="color:#00AEEF">{{ __('locations/web-development-company-paris.text_54') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1577,10 +1466,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </svg></div>
                         <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                             Voir Nos Projets</h3>
-                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez les études de cas et
-                            les témoignages de réussite</p>
+                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('locations/web-development-company-paris.ml_1150') }}</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
+                            <span style="color:#00AEEF">{{ __('locations/web-development-company-paris.text_55') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1594,12 +1482,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                             </svg></div>
-                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                            À Propos de CodeSommet</h3>
-                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Découvrez notre équipe et notre
-                            approche</p>
+                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('locations/web-development-company-paris.ml_1151') }}</h3>
+                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('locations/web-development-company-paris.ml_1152') }}</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#8B5CF6">
+                            <span style="color:#8B5CF6">{{ __('locations/web-development-company-paris.text_56') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#8B5CF6">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1616,7 +1502,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous pour vos besoins
                             de projet</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#10B981">
+                            <span style="color:#10B981">{{ __('locations/web-development-company-paris.text_57') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#10B981">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1628,12 +1514,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                             </svg></div>
-                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                            Retour à l'Accueil</h3>
+                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('locations/web-development-company-paris.ml_1153') }}</h3>
                         <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                             offres</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#3B82F6">
+                            <span style="color:#3B82F6">{{ __('locations/web-development-company-paris.text_58') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#3B82F6">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1660,7 +1545,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
               )">
                 </div>
                 <div class="relative z-10 text-center space-y-3 md:space-y-4">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family:var(--font-display)">Prêt à Créer Quelque Chose d'Extraordinaire ?</h2>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family:var(--font-display)">{{ __('locations/web-development-company-paris.text_59') }}</h2>
                     <div class="flex flex-col items-center gap-4 md:gap-6">
                         <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
@@ -1669,7 +1554,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                 rgba(0, 0, 0, 0.055) 0px 47.8699px 47.8699px -2.8125px,
                 rgba(0, 0, 0, 0.043) 0px 82.4287px 82.4287px -3.28125px,
-                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery">
+                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
                                 <div class="shine-wrapper">
                                     <div class="shine-element"></div>
                                 </div>
@@ -1681,8 +1566,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </path>
                                         <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                         <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                    un Appel Découverte</span>
+                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('locations/web-development-company-paris.ml_1154') }}</span>
                             </a><a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
                                 <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true">
                                         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
@@ -1694,7 +1578,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
                                     Votre Site Web</span>
                             </a></div>
-                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,
@@ -1713,8 +1597,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </path>
                                         <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                         <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                    un Appel Découverte</span>
+                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('locations/web-development-company-paris.ml_1155') }}</span>
                             </button><a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
                                 <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true">
                                         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
@@ -1731,14 +1614,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="absolute left-0 -top-6 -translate-x-1/2"><svg width="20" height="19" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-lg">
                                         <path d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z" fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-miterlimit="10"></path>
                                     </svg></div>
-                                <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div>
+                                <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">{{ __('locations/web-development-company-paris.text_167') }}</span></div>
                             </div>
                         </div>
                     </div>
                     <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 50 entreprises
                         visionnaires qui ont choisi l'excellence</p>
-                    <p class="text-sm md:text-base text-white/50">Let&#x27;s discuter de la façon dont l'IA et le
-                        design moderne peuvent propulser votre entreprise</p>
+                    <p class="text-sm md:text-base text-white/50">{{ __('locations/web-development-company-paris.text_368') }}</p>
                     <div class="mt-6">
                         <div class="relative w-full py-8">
                             <div class="flex items-center justify-center gap-0">
@@ -1767,7 +1649,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                 <div class="relative w-5 h-5">
                                                     <div class="absolute inset-0 rounded-full border-2 border-white/30">
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/40">{{ __('locations/web-development-company-paris.text_669') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -1833,7 +1715,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                 <div class="relative w-5 h-5">
                                                     <div class="absolute inset-0 rounded-full border-2 border-white/30">
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/40">{{ __('locations/web-development-company-paris.text_670') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -1899,7 +1781,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                 <div class="relative w-5 h-5">
                                                     <div class="absolute inset-0 rounded-full border-2 border-white/30">
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/40">{{ __('locations/web-development-company-paris.text_671') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -1985,7 +1867,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                             <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         </svg>
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/90">{{ __('locations/web-development-company-paris.text_672') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2075,7 +1957,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                             <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         </svg>
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/90">{{ __('locations/web-development-company-paris.text_673') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2165,7 +2047,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                             <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         </svg>
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/90">{{ __('locations/web-development-company-paris.text_674') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">

@@ -1,17 +1,11 @@
 ﻿@extends('frontoffice.layouts.app')
 
-@section('title', 'Développement de Sites E-commerce | Boutique en Ligne & Plateforme de Vente Personnalisée |
-CodeSommetStudio')
-@section('meta_description', 'Sites e-commerce personnalisés avec paiements sécurisés, gestion des stocks,
-recommandations IA et optimisation de conversion. Lancez votre boutique en ligne en 7-10 jours.')
-@section('meta_keywords', "développement site e-commerce,développement boutique en ligne,plateforme panier
-d'achat,intégration passerelle de paiement,catalogue produits,gestion des stocks,SEO e-commerce")
-@section('og_title', "CodeSommetStudio - Agence de Développement Web Alimentée par l'IA | Maroc")
-@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par
-l'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l'éducation, la santé
-et les entreprises. Plus de 50 projets livrés.")
-@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web alimentés par l'IA,
-les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
+@section('title', __('services/ecommerce-website-development-agency.title'))
+@section('meta_description', __('services/ecommerce-website-development-agency.meta_description'))
+@section('meta_keywords', __('services/ecommerce-website-development-agency.meta_keywords'))
+@section('og_title', __('services/ecommerce-website-development-agency.og_title'))
+@section('og_description', __('services/ecommerce-website-development-agency.og_description'))
+@section('twitter_description', __('services/ecommerce-website-development-agency.twitter_description'))
 
 @section('content')
 <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -52,20 +46,16 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🛒<!-- -->
-                                <!-- -->E-commerce<!-- -->, <!-- -->Industrie Spécialisée</span>
+                                <!-- -->E-commerce<!-- -->, <!-- -->{{ __('services/ecommerce-website-development-agency.text_0') }}</span>
                         </div>
                     </div>
                     <div class="space-y-6">
-                        <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto" style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES<!-- -->
+                        <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto" style="font-family:var(--font-display)">{{ __('services/ecommerce-website-development-agency.text_1') }}<!-- -->
                             <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">BOUTIQUES
                                         EN LIGNE</span><span class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">BOUTIQUES
                                         EN LIGNE</span></span></span>
                         </h1>
-                        <p class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
-                            Plateformes e-commerce personnalisées avec traitement sécurisé des paiements, gestion
-                            d'inventaire en temps réel, recommandations de produits alimentées par l'IA et flux de
-                            paiement optimisés pour la conversion afin d'aider les détaillants, les marques et les
-                            startups à maximiser leurs ventes en ligne.</p>
+                        <p class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">{{ __('services/ecommerce-website-development-agency.ml_891') }}</p>
                     </div>
                     <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto bg-black hover:bg-black/90 transition-colors" style="border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                     rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,
@@ -74,8 +64,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                     rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/pikasso/discovery"><span class="relative text-[15px] font-semibold text-white z-10">Réserver un Appel Découverte
-                                Gratuit</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true">
+                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/pikasso/discovery"><span class="relative text-[15px] font-semibold text-white z-10">{{ __('services/ecommerce-website-development-agency.ml_892') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a><a class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto" href="#pricing"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir les
@@ -85,11 +74,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </svg></a></div>
                     <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                         <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">Basé dans le secteur <!-- -->E-commerce</span>
+                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.text_2') }} <!-- -->E-commerce</span>
                         </div>
                         <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">Livraison en 7-10 Jours</span>
+                            <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.text_168') }}</span>
                         </div>
                         <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
@@ -135,11 +124,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Paiement Optimisé pour
-                                    la Conversion</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Flux de paiement simplifié
-                                    avec paiement invité, remplissage automatique, options de paiement multiples et
-                                    récupération de panier abandonné pour maximiser les conversions.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/ecommerce-website-development-agency.ml_893') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/ecommerce-website-development-agency.ml_894') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -158,11 +144,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Traitement Sécurisé des
-                                    Paiements</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Intégration de passerelle de
-                                    paiement conforme PCI avec Stripe, PayPal, Apple Pay, Google Pay et support de
-                                    cryptomonnaie pour les ventes mondiales.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/ecommerce-website-development-agency.ml_895') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/ecommerce-website-development-agency.ml_896') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -182,11 +165,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Gestion d'Inventaire en
-                                    Temps Réel</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Suivi automatisé des stocks,
-                                    alertes de stock bas, support multi-entrepôts et intégration fournisseurs pour
-                                    éviter la survente.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/ecommerce-website-development-agency.ml_897') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/ecommerce-website-development-agency.ml_898') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -209,10 +189,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Recommandations de
                                     Produits par IA</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Les algorithmes
-                                    d'apprentissage automatique analysent le comportement de navigation et l'historique
-                                    d'achats pour suggérer des produits pertinents et augmenter la valeur moyenne des
-                                    commandes.</p>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/ecommerce-website-development-agency.ml_899') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -234,9 +211,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Tableau de Bord
                                     d'Analyse des Ventes</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Suivi des revenus en temps
-                                    réel, surveillance du taux de conversion, analyse de la valeur client à vie et
-                                    insights de performance produit.</p>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/ecommerce-website-development-agency.ml_900') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -258,11 +233,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Expérience d'Achat
-                                    Mobile-First</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">Design responsive optimisé
-                                    pour les achats mobiles avec chargement rapide, navigation tactile et expérience
-                                    similaire à une application native.</p>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/ecommerce-website-development-agency.ml_901') }}</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/ecommerce-website-development-agency.ml_902') }}</p>
                                 <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                             </div>
                         </div>
@@ -274,23 +246,22 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="text-center">
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8" style="font-family:var(--font-heading)">Adopté par les <!-- -->E-commerce<!-- --> Entreprises</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_3') }} <!-- -->E-commerce<!-- --> Entreprises</h2>
                 <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up" data-target="50">0</span> Projets Livrés</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_4') }} <span class="count-up" data-target="50">0</span> {{ __('services/ecommerce-website-development-agency.text_5') }}</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up" data-target="100">0</span> Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_6') }} <span class="count-up" data-target="100">0</span> Prospects</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up" data-target="35">0</span> Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_7') }} <span class="count-up" data-target="35">0</span> Clients</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                    <!-- -->E-commerce<!-- --> avec lesquelles nous avons collaboré
-                </p>
+                    <!-- -->E-commerce<!-- -->{{ __('services/ecommerce-website-development-agency.ml_903') }}</p>
             </div>
         </div>
     </section>
@@ -302,12 +273,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="12" x2="12" y1="8" y2="12"></line>
                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                    </svg>Défis Courants
-                </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Le Défi<!-- -->: <!-- -->E-commerce<!-- --> Les Entreprises
-                    Font Face à des Défis Web Uniques</h2>
-                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Les développeurs web généralistes ne comprennent
-                    pas ces problématiques spécifiques au e-commerce</p>
+                    </svg>{{ __('services/ecommerce-website-development-agency.ml_904') }}</div>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_8') }}<!-- -->: <!-- -->E-commerce<!-- -->{{ __('services/ecommerce-website-development-agency.ml_905') }}</h2>
+                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/ecommerce-website-development-agency.ml_906') }}</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div>
@@ -319,10 +287,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="m9 9 6 6"></path>
                             </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Taux Élevés d'Abandon de Panier</h3>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Les processus de paiement complexes causent 70%
-                            d'abandon de panier. Des flux simplifiés avec paiement invité et remplissage automatique
-                            récupèrent les ventes perdues.</p>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_9') }}</h3>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_907') }}</p>
                     </div>
                 </div>
                 <div>
@@ -333,10 +299,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <line x1="2" x2="22" y1="10" y2="10"></line>
                             </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Options de Paiement Limitées</h3>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Les clients s'attendent à plusieurs méthodes de
-                            paiement. Offrir des cartes de crédit, des portefeuilles numériques et le paiement différé
-                            augmente les conversions de 30%.</p>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_10') }}</h3>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_908') }}</p>
                     </div>
                 </div>
                 <div>
@@ -349,10 +313,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="m9.5 12.5 5 5"></path>
                             </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Chaos dans la Gestion des Stocks</h3>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Le suivi manuel des stocks mène à la survente et à des
-                            clients déçus. La synchronisation d'inventaire en temps réel prévient les ruptures de stock
-                            et les commandes en attente.</p>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_11') }}</h3>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_909') }}</p>
                     </div>
                 </div>
                 <div>
@@ -363,10 +325,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                             </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Faible Valeur Moyenne de Commande</h3>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Sans recommandations personnalisées, les clients
-                            passent à côté de produits pertinents. Les suggestions alimentées par l'IA augmentent la
-                            valeur moyenne de commande de 40%.</p>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_169') }}</h3>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_910') }}</p>
                     </div>
                 </div>
                 <div>
@@ -377,10 +337,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
                             </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Temps de Chargement Lents</h3>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Chaque seconde de retard coûte 7% en conversions. Des
-                            images optimisées, une livraison CDN et un hébergement rapide garantissent des temps de
-                            chargement inférieurs à 2 secondes.</p>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_170') }}</h3>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_911') }}</p>
                     </div>
                 </div>
                 <div>
@@ -393,16 +351,14 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M12 16h.01"></path>
                             </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">Préoccupations de Sécurité et de Confiance</h3>
-                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">Les clients s'inquiètent de la sécurité des paiements.
-                            Les certificats SSL, la conformité PCI, les badges de confiance et le paiement sécurisé
-                            renforcent la confiance.</p>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_12') }}</h3>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_912') }}</p>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-10 md:mt-12">
                 <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                    exacts pour plus de 40 <!-- -->e-commerce<!-- --> entreprises.</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">Voir Notre Solution</a>
+                    exacts pour plus de 40 <!-- -->e-commerce<!-- --> entreprises.</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/ecommerce-website-development-agency.text_13') }}</a>
             </div>
         </div>
     </section>
@@ -416,9 +372,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <path d="M20 2v4"></path>
                         <path d="M22 4h-4"></path>
                         <circle cx="4" cy="20" r="2"></circle>
-                    </svg>Conçu sur Mesure pour <!-- -->E-commerce
+                    </svg>{{ __('services/ecommerce-website-development-agency.text_14') }} <!-- -->E-commerce
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Fonctionnalités Essentielles<!-- --> for
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_15') }}<!-- --> for
                     <!-- -->E-commerce<!-- --> Sites Web
                 </h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise e-commerce a
@@ -430,22 +386,17 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
                             <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
                                 <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
-                                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Flux de Paiement Optimisé</h3>
-                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Paiement simplifié sur une seule page avec
-                                        option invité, remplissage automatique, indicateurs de progression et méthodes
-                                        de paiement multiples. E-mails de récupération de panier abandonné avec remises
-                                        personnalisées pour récupérer les ventes perdues.</p>
+                                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_16') }}</h3>
+                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_913') }}</p>
                                     <ul class="space-y-3 md:space-y-4 relative z-10">
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Paiement sur une seule page avec
-                                                indicateurs de progression et option invité</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_914') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Remplissage automatique d'adresse,
-                                                méthodes de paiement sauvegardées et paiement express</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_915') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
@@ -454,8 +405,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">E-mails de récupération de panier
-                                                abandonné avec codes de réduction personnalisés</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_916') }}</span></li>
                                     </ul>
                                 </div>
                                 <div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
@@ -470,32 +420,25 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
                             <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse">
                                 <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
-                                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Système d'Inventaire en Temps Réel</h3>
-                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Suivi automatisé des stocks sur plusieurs
-                                        entrepôts avec alertes de stock bas, intégration fournisseurs et gestion des
-                                        commandes en attente. Prévient la survente avec des mises à jour de
-                                        disponibilité en temps réel sur les pages produits.</p>
+                                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_17') }}</h3>
+                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_917') }}</p>
                                     <ul class="space-y-3 md:space-y-4 relative z-10">
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Suivi d'inventaire multi-entrepôts
-                                                avec synchronisation en temps réel</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_918') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Alertes de stock bas et
-                                                notifications automatiques de point de réapprovisionnement</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_919') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Intégration fournisseurs pour les
-                                                bons de commande automatisés</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_920') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Gestion des commandes en attente
-                                                et fonctionnalité de précommande</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_921') }}</span></li>
                                     </ul>
                                 </div>
                                 <div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
@@ -510,33 +453,25 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
                             <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
                                 <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
-                                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Recommandations de Produits par IA</h3>
-                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Les algorithmes d'apprentissage
-                                        automatique analysent le comportement de navigation, l'historique d'achats et
-                                        les modèles de clients similaires pour suggérer des produits pertinents.
-                                        Augmente la valeur moyenne des commandes de 40% avec des ventes incitatives et
-                                        croisées personnalisées.</p>
+                                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_18') }}</h3>
+                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_922') }}</p>
                                     <ul class="space-y-3 md:space-y-4 relative z-10">
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Recommandations de produits
-                                                personnalisées basées sur l'historique de navigation</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_923') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Ventes incitatives et croisées
-                                                intelligentes au moment du paiement</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_924') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Lots fréquemment achetés
-                                                ensemble</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_925') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Recherche alimentée par l'IA avec
-                                                autocomplétion et filtres</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_926') }}</span></li>
                                     </ul>
                                 </div>
                                 <div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
@@ -553,21 +488,16 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                     <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10" style="font-family:var(--font-heading)">Tableau de Bord d'Analyse des Ventes
                                     </h3>
-                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">Analyses complètes suivant les revenus,
-                                        les taux de conversion, la valeur client à vie et la performance des produits.
-                                        Tableaux de bord en temps réel avec intégration Google Analytics et rapports
-                                        personnalisés pour des décisions basées sur les données.</p>
+                                    <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_927') }}</p>
                                     <ul class="space-y-3 md:space-y-4 relative z-10">
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Suivi des revenus en temps réel et
-                                                surveillance du taux de conversion</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_928') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Valeur client à vie et analyse de
-                                                cohorte</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_929') }}</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
@@ -576,8 +506,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <li class="flex items-start gap-2 md:gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] flex-shrink-0 mt-0.5 md:mt-1" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">Intégration Google Analytics et
-                                                Facebook Pixel</span></li>
+                                            </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_930') }}</span></li>
                                     </ul>
                                 </div>
                                 <div class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
@@ -597,12 +526,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                         <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                    </svg>Nos Réalisations en <!-- -->E-commerce
+                    </svg>{{ __('services/ecommerce-website-development-agency.text_19') }} <!-- -->E-commerce
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Histoires de Succès en <!-- -->E-commerce</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_20') }} <!-- -->E-commerce</h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Projets réels, résultats réels. Découvrez
-                    comment nous avons aidé les entreprises en <!-- -->E-commerce<!-- --> à atteindre leurs objectifs
-                    numériques.</p>
+                    comment nous avons aidé les entreprises en <!-- -->E-commerce<!-- -->{{ __('services/ecommerce-website-development-agency.ml_931') }}</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                 <div><a class="block" href="{{ route('case-study', 'glamworlds') }}">
@@ -615,13 +543,12 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>+140% Croissance des Leads</span></div>
+                                        </svg>{{ __('services/ecommerce-website-development-agency.text_21') }}</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds
                                     Technologies</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme
-                                    d'entreprise connectant les fournisseurs de technologie avec les décideurs</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/ecommerce-website-development-agency.ml_932') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                             </div>
                         </div>
@@ -641,11 +568,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <path d="M3 10h18"></path>
                     </svg>Calendrier de Lancement en 7-10 Jours
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Notre Processus de Développement<!-- --> for
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_22') }}<!-- --> for
                     <!-- -->E-commerce
                 </h2>
-                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Du concept au lancement en 4 semaines, optimisé
-                    pour les entreprises e-commerce</p>
+                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/ecommerce-website-development-agency.ml_933') }}</p>
             </div>
             <div class="relative">
                 <div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2" style="height:100%"></div>
@@ -668,7 +594,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                             <path d="M3 10h18"></path>
                                         </svg>Semaine 1
                                     </div>
-                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Découverte et Design de Boutique</h3>
+                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_23') }}</h3>
                                     <ul class="space-y-2">
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
@@ -678,8 +604,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Analyse concurrentielle de 5 à 10
-                                                boutiques e-commerce</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_934') }}</span></li>
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
@@ -700,7 +625,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <path d="M16 2v4"></path>
                                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                         <path d="M3 10h18"></path>
-                                    </svg>Semaine 1</div>
+                                    </svg>{{ __('services/ecommerce-website-development-agency.text_171') }}</div>
                             </div>
                             <div class="flex-1 hidden md:block"></div>
                         </div>
@@ -731,24 +656,20 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                             <path d="M3 10h18"></path>
                                         </svg>Semaine 2
                                     </div>
-                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Développement de la Plateforme
-                                        Principale</h3>
+                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.ml_935') }}</h3>
                                     <ul class="space-y-2">
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Base de données produits avec
-                                                catégories, variantes et tarification</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_936') }}</span></li>
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Panier d'achat avec mises à jour
-                                                de quantité et codes promo</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_937') }}</span></li>
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Authentification utilisateur avec
-                                                option de paiement invité</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_938') }}</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -758,7 +679,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <path d="M16 2v4"></path>
                                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                         <path d="M3 10h18"></path>
-                                    </svg>Semaine 2</div>
+                                    </svg>{{ __('services/ecommerce-website-development-agency.text_172') }}</div>
                                 <div class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-8 h-8 text-white" aria-hidden="true">
                                         <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
@@ -791,23 +712,20 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                             <path d="M3 10h18"></path>
                                         </svg>Semaine 3
                                     </div>
-                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Inventaire et Recommandations</h3>
+                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_173') }}</h3>
                                     <ul class="space-y-2">
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Suivi d'inventaire en temps réel
-                                                et alertes de stock</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_939') }}</span></li>
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Tableau de bord de gestion des
-                                                commandes avec statut d'exécution</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_940') }}</span></li>
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">Calculateur de frais d'expédition
-                                                et intégration transporteur</span></li>
+                                            </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70" style="font-family:var(--font-body)">{{ __('services/ecommerce-website-development-agency.ml_941') }}</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -823,7 +741,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <path d="M16 2v4"></path>
                                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                         <path d="M3 10h18"></path>
-                                    </svg>Semaine 3</div>
+                                    </svg>{{ __('services/ecommerce-website-development-agency.text_174') }}</div>
                             </div>
                             <div class="flex-1 hidden md:block"></div>
                         </div>
@@ -850,7 +768,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                             <path d="M3 10h18"></path>
                                         </svg>Semaine 4
                                     </div>
-                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">Tests, Analytique et Lancement</h3>
+                                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_175') }}</h3>
                                     <ul class="space-y-2">
                                         <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0 mt-0.5 text-[#00AEEF]" aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
@@ -876,7 +794,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <path d="M16 2v4"></path>
                                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                         <path d="M3 10h18"></path>
-                                    </svg>Semaine 4</div>
+                                    </svg>{{ __('services/ecommerce-website-development-agency.text_176') }}</div>
                                 <div class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-8 h-8 text-white" aria-hidden="true">
                                         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
@@ -894,18 +812,16 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 </div>
             </div>
             <div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8">
-                <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">Prêt à démarrer votre <!-- -->e-commerce<!-- --> projet de
-                    site web ?</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">Réserver un Appel Découverte
-                    Gratuit</a>
+                <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_24') }} <!-- -->e-commerce<!-- --> projet de
+                    site web ?</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/ecommerce-website-development-agency.ml_942') }}</a>
             </div>
         </div>
     </section>
     <section id="pricing" class="relative w-full py-16 md:py-24 bg-[#F5F5F5]">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">Solutions Personnalisées, Tarification Transparente</h2>
-                <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour
-                    discuter de vos besoins spécifiques et obtenir un devis personnalisé</p>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_25') }}</h2>
+                <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">{{ __('services/ecommerce-website-development-agency.ml_943') }}</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
                 <div class="relative bg-black rounded-[32px] p-3 text-white">
@@ -914,8 +830,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
                                 <path d="M16 7h6v6"></path>
                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                            </svg>Recommandé
-                        </div>
+                            </svg>{{ __('services/ecommerce-website-development-agency.ml_944') }}</div>
                     </div>
                     <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
                         <div class="flex items-start justify-between mb-6">
@@ -927,57 +842,52 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <line x1="12" x2="12" y1="17" y2="21">
                                         </line>
                                     </svg></div>
-                                <h3 class="text-3xl md:text-4xl font-bold text-white">Développement de Sites Web</h3>
+                                <h3 class="text-3xl md:text-4xl font-bold text-white">{{ __('services/ecommerce-website-development-agency.text_26') }}</h3>
                             </div>
                         </div>
                         <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                            <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et
-                                design premium livré en 7-10 jours.</p>
+                            <p class="text-white/70">{{ __('services/ecommerce-website-development-agency.ml_945') }}</p>
                         </div>
                         <div class="divide-y divide-white/10">
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Intégration de fonctionnalités alimentées par
-                                    l'IA</span></div>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.ml_946') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Tableau de bord personnalisé et portail
-                                    utilisateur</span></div>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.ml_947') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
                                 </svg><span class="text-white/80">Design responsive mobile-first</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Contenu professionnel et rédaction</span></div>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.text_27') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">SEO avancé et optimisation des performances</span>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.text_28') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Authentification et gestion des utilisateurs</span>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.text_29') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Intégration de paiement prête</span></div>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.text_30') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-white/80">Analytique et suivi de conversion</span></div>
+                                </svg><span class="text-white/80">{{ __('services/ecommerce-website-development-agency.text_177') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-green-400 font-medium">Hébergement gratuit pour 3 mois
-                                    inclus</span></div>
+                                </svg><span class="text-green-400 font-medium">{{ __('services/ecommerce-website-development-agency.ml_948') }}</span></div>
                         </div>
                     </div>
                     <div class="px-6 md:px-8 pb-3">
                         <div class="mb-6">
-                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-white/70 mb-1">À partir de</span>
-                                <div class="flex items-end gap-2"><span class="text-5xl md:text-6xl font-bold">Obtenir Votre Devis Gratuit</span><span class="text-white/50 text-xl mb-2"></span></div>
-                                <p class="text-white/60 text-sm mt-2">Devis personnalisé basé sur la portée de votre
-                                    projet</p>
+                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-white/70 mb-1">{{ __('services/ecommerce-website-development-agency.text_31') }}</span>
+                                <div class="flex items-end gap-2"><span class="text-5xl md:text-6xl font-bold">{{ __('services/ecommerce-website-development-agency.text_32') }}</span><span class="text-white/50 text-xl mb-2"></span></div>
+                                <p class="text-white/60 text-sm mt-2">{{ __('services/ecommerce-website-development-agency.ml_949') }}</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">{{ __('services/ecommerce-website-development-agency.text_33') }}</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -990,13 +900,12 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-3xl md:text-4xl font-bold text-black">Abonnement</h3>
+                                <h3 class="text-3xl md:text-4xl font-bold text-black">{{ __('services/ecommerce-website-development-agency.text_479') }}</h3>
                             </div><button class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20" style="margin-top:0">
                                 <div class="relative rounded-full transition-all duration-400 ease-out w-11 h-7 bg-black/20" style="box-shadow:none">
                                     <div class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5">
                                     </div>
-                                </div><span class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Inclure
-                                    les Réseaux Sociaux</span>
+                                </div><span class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">{{ __('services/ecommerce-website-development-agency.ml_950') }}</span>
                             </button>
                         </div>
                         <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 transition-all duration-300 text-transparent" aria-hidden="true">
@@ -1006,58 +915,54 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M22 4h-4"></path>
                                 <circle cx="4" cy="20" r="2"></circle>
                             </svg>
-                            <p class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant
-                                besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de site
-                                web.</p>
+                            <p class="text-black/70 transition-all duration-300">{{ __('services/ecommerce-website-development-agency.ml_951') }}</p>
                         </div>
                         <div class="divide-y divide-black/10">
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">1 projet actif à la fois</span></div>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_34') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Chatbot IA et fonctionnalités
-                                    d'automatisation</span></div>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.ml_952') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Développement de tableau de bord personnalisé</span>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_35') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Livraison des tâches en 48-72 heures</span></div>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_36') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Révisions illimitées jusqu'à la perfection</span>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_37') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Développement full-stack (frontend + backend)</span>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_38') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">SEO professionnel et stratégie de contenu</span>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_39') }}</span>
                             </div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Collaboration en temps réel sur Slack</span></div>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_40') }}</span></div>
                             <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                     <path d="M20 6 9 17l-5-5"></path>
-                                </svg><span class="text-black/80">Hébergement premium et maintenance</span></div>
+                                </svg><span class="text-black/80">{{ __('services/ecommerce-website-development-agency.text_41') }}</span></div>
                         </div>
                     </div>
                     <div class="px-6 md:px-8 pb-3">
                         <div class="mb-6">
-                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-black/60 mb-1">À partir de</span>
+                            <div class="flex flex-col"><span class="text-lg md:text-xl font-medium text-black/60 mb-1">{{ __('services/ecommerce-website-development-agency.text_42') }}</span>
                                 <div class="flex items-end gap-2">
                                     <div class="relative overflow-hidden" style="height:fit-content"><span class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Obtenir
                                             Votre Devis Gratuit</span><span class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Obtenir
-                                            Votre Devis Gratuit</span></div><span class="text-black/50 text-xl mb-2">/mois</span>
+                                            Votre Devis Gratuit</span></div><span class="text-black/50 text-xl mb-2">{{ __('services/ecommerce-website-development-agency.text_178') }}</span>
                                 </div>
-                                <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
+                                <p class="text-black/60 text-sm mt-2">{{ __('services/ecommerce-website-development-agency.text_43') }}</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
-                                un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">{{ __('services/ecommerce-website-development-agency.ml_953') }}</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -1075,31 +980,27 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <path d="M2 12h20"></path>
                         </svg>
                     </div>
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]" style="font-family:var(--font-heading)">Prêt à Transformer Votre Site Web E-commerce ?</h2>
-                    <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Obtenez
-                        d'abord une analyse gratuite complète :</p>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_44') }}</h2>
+                    <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">{{ __('services/ecommerce-website-development-agency.ml_954') }}</p>
                     <div class="flex flex-wrap gap-3 justify-center mb-4">
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
                             <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
                         </div>
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Vérification des
-                                performances</span>
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/ecommerce-website-development-agency.ml_955') }}</span>
                         </div>
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Révision du design</span>
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/ecommerce-website-development-agency.text_45') }}</span>
                         </div>
                         <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Recommandations alimentées
-                                par l'IA</span>
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/ecommerce-website-development-agency.ml_956') }}</span>
                         </div>
                     </div><a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105" href="{{ route('tool', 'website-analyzer') }}"><span>Analyser Votre Site Web - 100%
                             Gratuit</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg></a>
-                    <p class="text-xs text-[var(--text-secondary)] mt-4">Pas de carte de crédit requise • Résultats en
-                        30 secondes • Plan d'amélioration personnalisé</p>
+                    <p class="text-xs text-[var(--text-secondary)] mt-4">{{ __('services/ecommerce-website-development-agency.ml_957') }}</p>
                 </div>
             </div>
         </div>
@@ -1113,17 +1014,14 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>Pourquoi Nous Choisir
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->E-commerce<!-- --> vs Autres</h2>
-                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Découvrez pourquoi <!-- -->E-commerce<!-- -->
-                    entreprises choisissent CodeSommetStudio plutôt que d'autres agences locales et concurrents
-                    internationaux.</p>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->E-commerce<!-- --> {{ __('services/ecommerce-website-development-agency.text_46') }}</h2>
+                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/ecommerce-website-development-agency.text_47') }} <!-- -->E-commerce<!-- -->{{ __('services/ecommerce-website-development-agency.ml_958') }}</p>
             </div>
             <div class="max-w-5xl mx-auto">
                 <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
                     <div class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
                         <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
-                            <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Fonctionnalité
-                            </div>
+                            <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">{{ __('services/ecommerce-website-development-agency.ml_959') }}</div>
                             <div class="p-3 md:p-4 text-center">
                                 <div class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
                                     <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">CodeSommetStudio
@@ -1136,38 +1034,30 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 Agences Internationales</div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Prix de Départ</div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Obtenir Votre Devis Gratuit</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
-                                    élevé</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
-                                    beaucoup plus élevé</span></div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.text_48') }}</div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.text_49') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_960') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_961') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Optimisation du
                                 Paiement</div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Paiement sur une seule page avec option
-                                    invité, remplissage automatique, récupération de panier abandonné</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Paiement
-                                    multi-étapes, compte requis</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Paiement
-                                    basique sans fonctionnalités de récupération</span></div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_962') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_963') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_964') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Options de Paiement
                             </div>
                             <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Stripe, PayPal, Apple Pay, Google Pay,
                                     cryptomonnaie</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Cartes de
-                                    crédit uniquement</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Intégration
-                                    limitée de passerelle de paiement</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_965') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_966') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Gestion des Stocks
                             </div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Suivi multi-entrepôts en temps réel avec
-                                    alertes de stock bas</span></div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_967') }}</span></div>
                             <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Comptage de
                                     stock basique</span></div>
                             <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Suivi par
@@ -1176,41 +1066,31 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Recommandations IA
                             </div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Suggestions personnalisées et ventes
-                                    incitatives alimentées par ML</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Produits
-                                    associés manuels</span></div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_968') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_969') }}</span></div>
                             <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Pas de
                                     moteur de recommandation</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Analytique</div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Suivi en temps réel des revenus,
-                                    conversions, LTV avec rapports personnalisés</span></div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_970') }}</span></div>
                             <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Google
                                     Analytics basique uniquement</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Rapports
-                                    manuels à partir d'exports CSV</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_971') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Expérience Mobile
-                            </div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">Entièrement responsive avec achats
-                                    mobiles similaires à une application</span></div>
+                            <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_972') }}</div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_973') }}</span></div>
                             <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Design
                                     desktop-first, mobile maladroit</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Application
-                                    mobile séparée requise</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_974') }}</span></div>
                         </div>
                         <div class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                             <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Calendrier de
                                 Lancement</div>
-                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">7-10 jours pour le MVP, 2-3 semaines pour
-                                    la boutique complète</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">4-8 mois
-                                    avec plusieurs cycles de révision</span></div>
-                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-14 mois
-                                    avec recrutement, formation et développement</span></div>
+                            <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span class="text-sm font-bold text-[#0F0F0F]">{{ __('services/ecommerce-website-development-agency.ml_975') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_976') }}</span></div>
+                            <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.ml_977') }}</span></div>
                         </div>
                     </div>
                 </div>
@@ -1221,7 +1101,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="m9 12 2 2 4-4"></path>
-                        </svg>Meilleur Rapport Qualité-Prix pour <!-- -->E-commerce<!-- --> Entreprises
+                        </svg>{{ __('services/ecommerce-website-development-agency.text_50') }} <!-- -->E-commerce<!-- --> Entreprises
                     </div>
                 </div>
             </div>
@@ -1236,10 +1116,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         </path>
                     </svg>Ce que Nos Clients Disent de Nous
                 </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Ce que Nos Clients en E-commerce Disent de Nous</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_51') }}</h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
-                    entreprises en <!-- -->E-commerce<!-- --> qui ont obtenu des résultats remarquables avec
-                    CodeSommetStudio.</p>
+                    entreprises en <!-- -->E-commerce<!-- -->{{ __('services/ecommerce-website-development-agency.ml_978') }}</p>
             </div>
             <div class="relative max-w-5xl mx-auto"><button class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110" aria-label="Previous testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6 text-[#00AEEF]" aria-hidden="true">
                         <path d="m15 18-6-6 6-6"></path>
@@ -1281,7 +1160,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}" alt="Mohammed GlamWorlds" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed GlamWorlds</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">PDG chez GlamWorlds</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/ecommerce-website-development-agency.text_52') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
@@ -1327,13 +1206,12 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}" alt="Dr. Sarah Al-Mansouri" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur Médical chez Dubaï Wellness
-                                            Clinic</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/ecommerce-website-development-agency.ml_979') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
                                                 <circle cx="12" cy="10" r="3"></circle>
-                                            </svg><span>Dubaï Healthcare City, EAU</span></div>
+                                            </svg><span>{{ __('services/ecommerce-website-development-agency.text_53') }}</span></div>
                                     </div>
                                 </div>
                                 <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-bl-3xl rounded-tr-2xl">
@@ -1376,7 +1254,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/james-thornton.webp') }}" alt="James Thornton" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Fondateur chez EduPath Global</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/ecommerce-website-development-agency.text_54') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
@@ -1422,8 +1300,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img src="{{ asset('images/testimonials/fatima-benali.webp') }}" alt="Fatima Zahra Benali" class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                     <div class="flex-1 min-w-0">
                                         <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
-                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur des Opérations chez Riad
-                                            Luxe Properties</div>
+                                        <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/ecommerce-website-development-agency.ml_980') }}</div>
                                         <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
                                                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                 </path>
@@ -1440,8 +1317,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 <div class="flex justify-center items-center gap-3 mt-8"><button class="testimonial-dot transition-all duration-300 rounded-full" style="width:12px;height:12px;background:#00AEEF;transform:scale(1.25)" data-dot="0" aria-label="Go to testimonial group 1"></button><button class="testimonial-dot transition-all duration-300 rounded-full" style="width:10px;height:10px;background:rgba(15,15,15,0.25)" data-dot="1" aria-label="Go to testimonial group 2"></button></div>
             </div>
             <div class="mt-10 text-center">
-                <p class="text-sm text-[#0F0F0F]/60">Vous voulez voir plus d'histoires de succès ?<!-- --> <a href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">Voir
-                        toutes les études de cas</a></p>
+                <p class="text-sm text-[#0F0F0F]/60">{{ __('services/ecommerce-website-development-agency.text_55') }}<!-- --> <a href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">{{ __('services/ecommerce-website-development-agency.ml_981') }}</a></p>
             </div>
         </div>
     </section>
@@ -1500,8 +1376,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
-                    </svg>Questions fréquentes
-                </div>
+                    </svg>{{ __('services/ecommerce-website-development-agency.ml_982') }}</div>
                 <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
                     <!-- -->E-commerce
                 </h2>
@@ -1526,8 +1401,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">2</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quelles passerelles de paiement
-                                intégrez-vous ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/ecommerce-website-development-agency.ml_983') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1538,8 +1412,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">3</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous construire des
-                                variations et options de produits personnalisées ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/ecommerce-website-development-agency.ml_984') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1550,8 +1423,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <span class="text-sm font-bold text-[#00AEEF]">4</span>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Incluez-vous la gestion des stocks
-                                et l'exécution des commandes ?</h3>
+                            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/ecommerce-website-development-agency.ml_985') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
@@ -1607,7 +1479,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     </button></div>
             </div>
             <div class="mt-10 text-center">
-                <p class="text-sm text-[#0F0F0F]/60 mb-2">Vous avez encore des questions ?</p><a href="{{ route('contact') }}" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
+                <p class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/ecommerce-website-development-agency.text_56') }}</p><a href="{{ route('contact') }}" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
                     notre <!-- -->E-commerce<!-- --> team<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
@@ -1622,12 +1494,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                         <path d="M2 12h20"></path>
-                    </svg>Présence Mondiale
-                </div>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Au Service de Clients dans le Monde Entier</h2>
-                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Nous avons construit des sites web e-commerce
-                    pour des clients à travers le monde. Que vous soyez au Maroc ou ailleurs, nous livrons des solutions
-                    de classe mondiale.</p>
+                    </svg>{{ __('services/ecommerce-website-development-agency.ml_986') }}</div>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_57') }}</h2>
+                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/ecommerce-website-development-agency.ml_987') }}</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
                 <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block" href="{{ route('location', 'dubai') }}">
@@ -1641,10 +1510,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     </svg>
                                 </div>
                                 <div class="min-w-0 flex-1">
-                                    <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Dubaï</h3>
+                                    <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/ecommerce-website-development-agency.ml_988') }}</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                        <span>🇦🇪</span><span class="truncate">UAE</span>
+                                        <span>{{ __('services/ecommerce-website-development-agency.text_480') }}</span><span class="truncate">UAE</span>
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
@@ -1667,7 +1535,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Casablanca</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                        <span>🇲🇦</span><span class="truncate">Maroc</span>
+                                        <span>{{ __('services/ecommerce-website-development-agency.text_481') }}</span><span class="truncate">Maroc</span>
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
@@ -1690,7 +1558,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         San Francisco</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                        <span>🇺🇸</span><span class="truncate">États-Unis</span>
+                                        <span>{{ __('services/ecommerce-website-development-agency.text_482') }}</span><span class="truncate">{{ __('services/ecommerce-website-development-agency.text_58') }}</span>
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
@@ -1713,7 +1581,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Londres</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                        <span>🇬🇧</span><span class="truncate">Royaume-Uni</span>
+                                        <span>{{ __('services/ecommerce-website-development-agency.text_483') }}</span><span class="truncate">Royaume-Uni</span>
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
@@ -1736,7 +1604,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Paris</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                        <span>🇫🇷</span><span class="truncate">Paris</span>
+                                        <span>{{ __('services/ecommerce-website-development-agency.text_484') }}</span><span class="truncate">Paris</span>
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
@@ -1759,7 +1627,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     <h3 class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Marrakech</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                        <span>🇲🇦</span><span class="truncate">Maroc</span>
+                                        <span>{{ __('services/ecommerce-website-development-agency.text_485') }}</span><span class="truncate">Maroc</span>
                                     </p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
@@ -1771,16 +1639,15 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
             </div>
             <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
                 <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez
-                    <!-- -->e-commerce<!-- --> développement web dans une ville spécifique ?
-                </p>
+                    <!-- -->e-commerce<!-- -->{{ __('services/ecommerce-website-development-agency.ml_989') }}</p>
                 <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 px-4"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="/#locations"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4" aria-hidden="true">
                             <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                             </path>
                             <circle cx="12" cy="10" r="3"></circle>
-                        </svg>Voir Tous les Emplacements<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        </svg>{{ __('services/ecommerce-website-development-agency.text_59') }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
-                        </svg></a><span class="text-[#0F0F0F]/40">or</span><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="{{ route('contact') }}">Contactez-nous pour Votre Ville<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        </svg></a><span class="text-[#0F0F0F]/40">or</span><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="{{ route('contact') }}">{{ __('services/ecommerce-website-development-agency.text_60') }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg></a></div>
@@ -1790,9 +1657,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section class="w-full bg-white py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="text-center mb-8 md:mb-10">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4" style="font-family:var(--font-heading)">Industries Connexes que Nous Servons</h2>
-                <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">Découvrez nos services de
-                    développement web spécialisés pour d'autres industries</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_61') }}</h2>
+                <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">{{ __('services/ecommerce-website-development-agency.ml_990') }}</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20" href="{{ route('service', 'saas-platform-development') }}">
                     <div class="flex items-start justify-between gap-2">
@@ -1806,8 +1672,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                     Plateformes SaaS</h3>
-                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Applications SaaS
-                                    complètes avec authentification, facturation et fonctionnalités en temps réel.</p>
+                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/ecommerce-website-development-agency.ml_991') }}</p>
                             </div>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -1826,11 +1691,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                    Conseil en Études à l'Étranger</h3>
-                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
-                                    cours, systèmes LMS et portails étudiants pour les agences d'études à l'étranger.
-                                </p>
+                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/ecommerce-website-development-agency.ml_992') }}</h3>
+                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/ecommerce-website-development-agency.ml_993') }}</p>
                             </div>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -1847,11 +1709,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                    Écoles de Langues</h3>
-                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web modernes
-                                    pour les instituts de formation linguistique avec gestion des cours et
-                                    fonctionnalités d'apprentissage en ligne.</p>
+                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/ecommerce-website-development-agency.ml_994') }}</h3>
+                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/ecommerce-website-development-agency.ml_995') }}</p>
                             </div>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -1892,11 +1751,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                    Santé</h3>
-                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web de
-                                    cliniques, systèmes de prise de rendez-vous et portails patients conformes aux
-                                    réglementations de santé.</p>
+                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/ecommerce-website-development-agency.ml_996') }}</h3>
+                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/ecommerce-website-development-agency.ml_997') }}</p>
                             </div>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -1914,11 +1770,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                    Télémédecine</h3>
-                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
-                                    consultation vidéo sécurisées avec gestion des patients et systèmes d'ordonnances.
-                                </p>
+                                <h3 class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/ecommerce-website-development-agency.ml_998') }}</h3>
+                                <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/ecommerce-website-development-agency.ml_999') }}</p>
                             </div>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-[#0F0F0F]/30 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -1926,7 +1779,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         </svg>
                     </div>
                 </a></div>
-            <div class="text-center mt-8 md:mt-10"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="/#industries">Voir Toutes les Industries<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+            <div class="text-center mt-8 md:mt-10"><a class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline" href="/#industries">{{ __('services/ecommerce-website-development-agency.text_62') }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></a></div>
@@ -1935,9 +1788,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
     <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="text-center mb-10">
-                <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3" style="font-family:var(--font-heading)">Explorer Plus</h2>
-                <p class="text-lg text-[var(--text-secondary)]">Découvrez ce qui fait de CodeSommetStudio votre
-                    partenaire idéal en développement web</p>
+                <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3" style="font-family:var(--font-heading)">{{ __('services/ecommerce-website-development-agency.text_63') }}</h2>
+                <p class="text-lg text-[var(--text-secondary)]">{{ __('services/ecommerce-website-development-agency.ml_1000') }}</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200" href="{{ route('tool', 'website-analyzer') }}">
                     <div class="flex flex-col h-full">
@@ -1948,10 +1800,9 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </svg></div>
                         <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                             Audit Gratuit de Site Web</h3>
-                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Obtenez une analyse alimentée
-                            par l'IA avec plus de 40 vérifications</p>
+                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/ecommerce-website-development-agency.ml_1001') }}</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
+                            <span style="color:#00AEEF">{{ __('services/ecommerce-website-development-agency.text_64') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1963,12 +1814,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z">
                                 </path>
                             </svg></div>
-                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                            Voir Nos Réalisations</h3>
-                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez les études de cas et
-                            les histoires de succès clients</p>
+                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/ecommerce-website-development-agency.ml_1002') }}</h3>
+                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/ecommerce-website-development-agency.ml_1003') }}</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
+                            <span style="color:#00AEEF">{{ __('services/ecommerce-website-development-agency.text_65') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#00AEEF">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -1982,12 +1831,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                             </svg></div>
-                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                            À Propos de CodeSommetStudio</h3>
-                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Découvrez notre équipe et notre
-                            approche</p>
+                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/ecommerce-website-development-agency.ml_1004') }}</h3>
+                        <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/ecommerce-website-development-agency.ml_1005') }}</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#8B5CF6">
+                            <span style="color:#8B5CF6">{{ __('services/ecommerce-website-development-agency.text_66') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#8B5CF6">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -2004,7 +1851,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous pour les
                             exigences de votre projet</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#10B981">
+                            <span style="color:#10B981">{{ __('services/ecommerce-website-development-agency.text_67') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#10B981">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -2016,12 +1863,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                             </svg></div>
-                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                            Retour à l'Accueil</h3>
+                        <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/ecommerce-website-development-agency.ml_1006') }}</h3>
                         <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                             offres</p>
                         <div class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                            <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#3B82F6">
+                            <span style="color:#3B82F6">{{ __('services/ecommerce-website-development-agency.text_68') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" style="color:#3B82F6">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -2048,8 +1894,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
               )">
                 </div>
                 <div class="relative z-10 text-center space-y-3 md:space-y-4">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family:var(--font-display)">Prêt à Construire Quelque Chose d'Extraordinaire ?
-                    </h2>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family:var(--font-display)">{{ __('services/ecommerce-website-development-agency.ml_1007') }}</h2>
                     <div class="flex flex-col items-center gap-4 md:gap-6">
                         <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
@@ -2070,8 +1915,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </path>
                                         <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                         <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                    un Appel Découverte</span>
+                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('services/ecommerce-website-development-agency.ml_1008') }}</span>
                             </a><a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
                                 <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true">
                                         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
@@ -2083,7 +1927,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
                                     Votre Site Web</span>
                             </a></div>
-                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="pikasso/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="pikasso/discovery" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,
@@ -2102,8 +1946,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </path>
                                         <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                         <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                    un Appel Découverte</span>
+                                    </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('services/ecommerce-website-development-agency.ml_1009') }}</span>
                             </button><a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
                                 <div class="relative z-10 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true">
                                         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
@@ -2120,14 +1963,13 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <div class="absolute left-0 -top-6 -translate-x-1/2"><svg width="20" height="19" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-lg">
                                         <path d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z" fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-miterlimit="10"></path>
                                     </svg></div>
-                                <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div>
+                                <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size:10px"><span class="text-white font-medium whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_179') }}</span></div>
                             </div>
                         </div>
                     </div>
                     <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
                         visionnaires qui ont choisi l'excellence</p>
-                    <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
-                        peuvent élever votre entreprise</p>
+                    <p class="text-sm md:text-base text-white/50">{{ __('services/ecommerce-website-development-agency.ml_1010') }}</p>
                     <div class="mt-6">
                         <div class="relative w-full py-8">
                             <div class="flex items-center justify-center gap-0">
@@ -2156,7 +1998,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                 <div class="relative w-5 h-5">
                                                     <div class="absolute inset-0 rounded-full border-2 border-white/30">
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/40">{{ __('services/ecommerce-website-development-agency.text_486') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2222,7 +2064,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                 <div class="relative w-5 h-5">
                                                     <div class="absolute inset-0 rounded-full border-2 border-white/30">
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/40">{{ __('services/ecommerce-website-development-agency.text_487') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2288,7 +2130,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                 <div class="relative w-5 h-5">
                                                     <div class="absolute inset-0 rounded-full border-2 border-white/30">
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/40">{{ __('services/ecommerce-website-development-agency.text_488') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2374,7 +2216,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                             <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         </svg>
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/90">{{ __('services/ecommerce-website-development-agency.text_489') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2464,7 +2306,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                             <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         </svg>
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/90">{{ __('services/ecommerce-website-development-agency.text_490') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">
@@ -2554,7 +2396,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                                             <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         </svg>
                                                     </div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                </div><span class="text-[10px] font-medium text-white/90">{{ __('services/ecommerce-website-development-agency.text_491') }}</span>
                                             </div>
                                         </li>
                                         <li class="flex-shrink-0">

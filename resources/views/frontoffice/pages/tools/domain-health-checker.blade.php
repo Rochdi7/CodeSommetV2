@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Vérificateur de Santé de Domaine - Testeur DNS & SSL Gratuit | CodeSommet')
-@section('meta_description', 'Vérificateur de santé de domaine gratuit pour analyser la configuration DNS, le certificat SSL, la réponse serveur et la santé du site. Vérifiez le score SEO technique, la sécurité HTTPS, la compatibilité mobile et les Core Web Vitals en quelques secondes.')
-@section('meta_keywords', 'domain health checker,DNS checker,SSL checker,domain analyzer,website health,server status,domain tester,SSL certificate checker,DNS lookup tool,website uptime checker,domain security checker,HTTPS checker,domain monitoring tool,website health analyzer,technical SEO checker')
-@section('og_title', 'Vérificateur de Santé de Domaine - Testeur DNS & SSL Gratuit')
-@section('og_description', 'Vérificateur de santé de domaine gratuit pour analyser la configuration DNS, le certificat SSL et la santé du site. Vérifiez le score SEO technique et la sécurité en secondes.')
-@section('twitter_description', 'Vérificateur de santé de domaine gratuit pour analyser la configuration DNS, le certificat SSL et la santé du site. Vérifiez le score SEO technique et la sécurité en secondes.')
+@section('title', __('tools/domain-health-checker.title'))
+@section('meta_description', __('tools/domain-health-checker.meta_description'))
+@section('meta_keywords', __('tools/domain-health-checker.meta_keywords'))
+@section('og_title', __('tools/domain-health-checker.og_title'))
+@section('og_description', __('tools/domain-health-checker.og_description'))
+@section('twitter_description', __('tools/domain-health-checker.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,16 +24,16 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Vérificateur de Santé de Domaine</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/domain-health-checker.text_0') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Vérificateur de Santé de Domaine</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Analyse complète du SEO technique et de la santé on-page de votre domaine</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/domain-health-checker.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/domain-health-checker.text_2') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/domain-health-checker.text_3') }}</span>
         </div>
     </div>
 </section>
@@ -41,7 +41,7 @@
     <div class="space-y-8">
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
-                <div class="space-y-2"><label class="block text-sm font-medium text-black">Nom de Domaine<span class="text-[#00AEEF] ml-1">*</span></label>
+                <div class="space-y-2"><label class="block text-sm font-medium text-black">{{ __('tools/domain-health-checker.label_147') }}<span class="text-[#00AEEF] ml-1">*</span></label>
                     <div class="relative">
                         <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-5 h-5" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
@@ -49,31 +49,31 @@
                                 <path d="M2 12h20"></path>
                             </svg></div><input type="text" placeholder="example.com" required="" class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" value="" />
                     </div>
-                    <p class="text-sm text-gray-500">Entrez le domaine sans http:// ou www</p>
-                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">Vérifier la Santé du Domaine</button>
+                    <p class="text-sm text-gray-500">{{ __('tools/domain-health-checker.text_4') }}</p>
+                </div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">{{ __('tools/domain-health-checker.text_5') }}</button>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Ce que Cet Outil Vérifie</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/domain-health-checker.text_6') }}</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="space-y-2">
-                    <p class="text-sm font-semibold text-gray-900">SEO Technique (6 vérifications)</p>
+                    <p class="text-sm font-semibold text-gray-900">{{ __('tools/domain-health-checker.text_7') }}</p>
                     <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Accessibilité du domaine</li>
-                        <li>• Certificat HTTPS &amp; SSL</li>
-                        <li>• Configuration de la redirection WWW</li>
-                        <li>• Sitemap.xml &amp; robots.txt</li>
-                        <li>• En-têtes de sécurité</li>
+                        <li>{{ __('tools/domain-health-checker.text_8') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_9') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_10') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_11') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_12') }}</li>
                     </ul>
                 </div>
                 <div class="space-y-2">
-                    <p class="text-sm font-semibold text-gray-900">SEO On-Page (6 vérifications)</p>
+                    <p class="text-sm font-semibold text-gray-900">{{ __('tools/domain-health-checker.text_13') }}</p>
                     <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Balise viewport mobile</li>
-                        <li>• Meta description</li>
-                        <li>• Structure de la balise H1</li>
-                        <li>• Balises Open Graph</li>
-                        <li>• Présence du favicon</li>
+                        <li>{{ __('tools/domain-health-checker.text_14') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_15') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_16') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_17') }}</li>
+                        <li>{{ __('tools/domain-health-checker.text_18') }}</li>
                     </ul>
                 </div>
             </div>
@@ -87,105 +87,105 @@
                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                 <path d="M12 17h.01"></path>
             </svg>
-            <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+            <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/domain-health-checker.text_19') }}</h3>
         </div>
-        <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+        <p class="text-sm md:text-base text-gray-600">{{ __('tools/domain-health-checker.text_20') }}</p>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que la santé du domaine et pourquoi est-ce important pour le SEO ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_21') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>La santé du domaine mesure les fondations techniques SEO de votre site web — incluant la sécurité HTTPS, la compatibilité mobile, la structure HTML appropriée et la découvrabilité par les moteurs de recherche. Un domaine sain (score 85+) garantit que Google peut explorer, indexer et classer vos pages efficacement. Une mauvaise santé du domaine entraîne des classements plus bas, une visibilité réduite et une perte de trafic organique.</p>
+                <p>{{ __('tools/domain-health-checker.text_22') }}</p>
             </div>
         </div>
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence vérifier la santé de mon domaine ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_23') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>Vérifiez la santé de votre domaine mensuellement dans le cadre de la maintenance SEO de routine, et immédiatement après tout changement majeur du site web (migrations, refontes, mises à jour CMS). La surveillance régulière aide à détecter les problèmes techniques avant qu'ils n'impactent le classement. Si vous lancez un nouveau site, vérifiez-le avant la mise en ligne pour corriger les problèmes de manière proactive.</p>
+                <p>{{ __('tools/domain-health-checker.text_24') }}</p>
             </div>
         </div>
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi HTTPS/SSL est-il si important pour mon site ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_25') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>HTTPS est un facteur de classement Google confirmé et essentiel pour la confiance des utilisateurs. Sans SSL, les navigateurs affichent un avertissement « Non sécurisé » qui fait fuir les visiteurs. HTTPS protège également les données des utilisateurs (identifiants de connexion, informations de paiement) contre l'interception. Les normes web modernes exigent HTTPS — ce n'est plus optionnel pour tout site web sérieux.</p>
+                <p>{{ __('tools/domain-health-checker.text_26') }}</p>
             </div>
         </div>
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">Que signifie l'indexation mobile-first et pourquoi une balise viewport ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_27') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>Google utilise désormais la version mobile de votre site pour l'indexation et le classement, pas la version desktop. La balise meta viewport indique aux navigateurs comment mettre à l'échelle votre site sur les appareils mobiles. Sans elle, votre site apparaît minuscule et cassé sur les téléphones, entraînant de mauvais classements et des taux de rebond élevés. C'est l'exigence technique SEO n°1 pour l'indexation mobile-first.</p>
+                <p>{{ __('tools/domain-health-checker.text_28') }}</p>
             </div>
         </div>
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">Comment les Core Web Vitals sont-ils liés à la santé du domaine ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_29') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>Bien que cet outil vérifie les bases techniques du SEO, les Core Web Vitals mesurent les métriques d'expérience utilisateur (vitesse de chargement, interactivité, stabilité visuelle). Les deux sont essentiels — la santé du domaine garantit que les moteurs de recherche peuvent accéder à votre site, tandis que les Core Web Vitals affectent l'expérience des utilisateurs. Utilisez l'outil PageSpeed Insights de Google pour vérifier les Core Web Vitals séparément.</p>
+                <p>{{ __('tools/domain-health-checker.text_30') }}</p>
             </div>
         </div>
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">J'ai un score faible - que corriger en premier ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_31') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>Corrigez d'abord les problèmes critiques : accessibilité du domaine, certificat HTTPS/SSL et balise viewport mobile. Ceux-ci ont le plus grand impact SEO (15 points chacun). Ensuite, traitez les meta descriptions et les balises H1 (10 points chacune). Laissez les éléments secondaires comme le favicon et les redirections WWW pour la fin. Concentrez-vous sur la réussite de toutes les « Vérifications critiques » pour atteindre la note A.</p>
+                <p>{{ __('tools/domain-health-checker.text_32') }}</p>
             </div>
         </div>
         <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="text-base md:text-lg font-semibold text-black">Quelle différence entre sitemap.xml et robots.txt ?</h3>
+                    <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/domain-health-checker.text_33') }}</h3>
                 </div>
                 <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
             <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                <p>Le sitemap.xml indique aux moteurs de recherche quelles pages explorer — c'est comme un plan de votre site. Le robots.txt indique aux moteurs de recherche quelles pages NE PAS explorer (panneaux d'administration, zones privées). Les deux sont essentiels pour le SEO : le sitemap garantit que les pages importantes sont indexées, tandis que le robots.txt empêche l'indexation du contenu sensible ou dupliqué. Chaque site web a besoin de ces deux fichiers dans le répertoire racine.</p>
+                <p>{{ __('tools/domain-health-checker.text_34') }}</p>
             </div>
         </div>
     </div>
     <div class="mt-6 text-center">
-        <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <p class="text-sm text-gray-600 mb-2">{{ __('tools/domain-health-checker.text_35') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/domain-health-checker.text_36') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg></a>
     </div>
@@ -193,8 +193,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/domain-health-checker.text_37') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/domain-health-checker.text_38') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/website-readiness-checker">
                 <div class="mb-4">
@@ -205,7 +205,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Website Readiness Checker</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Analyse en 14 points couvrant SEO, Croissance, Performance >14-point analysis across SEO, Growth, Performance &amp; Security</p>amp; Sécurité</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">Analyse en 14 points couvrant SEO, Croissance, Performance >14-point analysis across SEO, Growth, Performance &amp; Security</p>{{ __('tools/domain-health-checker.text_39') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -222,8 +222,8 @@
                             <path d="M8 19h13"></path>
                         </svg></div>
                 </div>
-                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Analyseur de Structure des Titres</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Arbre visuel H1-H6 avec validation SEO</p>
+                <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">{{ __('tools/domain-health-checker.text_40') }}</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/domain-health-checker.text_41') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -238,14 +238,14 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Broken Link Checker</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Trouvez les liens brisés, redirections et délais d'attente</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/domain-health-checker.text_42') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/domain-health-checker.text_43') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -263,15 +263,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/domain-health-checker.text_44') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/domain-health-checker.text_45') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/domain-health-checker.text_46') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Sans engagement</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/domain-health-checker.text_47') }}</p>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="utf-8" />
@@ -19,7 +19,12 @@
     <meta property="og:description" content="@yield('og_description', 'Agence premium de développement web spécialisée dans les sites alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.')" />
     <meta property="og:url" content="@yield('og_url', config('app.url'))" />
     <meta property="og:site_name" content="CodeSommet" />
-    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale" content="{{ app()->getLocale() === 'en' ? 'en_GB' : 'fr_FR' }}" />
+    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        @if($localeCode !== app()->getLocale())
+    <meta property="og:locale:alternate" content="{{ $properties['regional'] }}" />
+        @endif
+    @endforeach
     <meta property="og:image" content="@yield('og_image', asset('images/featured-image.webp'))" />
     <meta property="og:image:width" content="2494" />
     <meta property="og:image:height" content="1550" />
@@ -34,8 +39,17 @@
     <meta name="twitter:description" content="@yield('twitter_description', 'Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital. Obtenez votre devis gratuit dès aujourd\'hui.')" />
     <meta name="twitter:image" content="@yield('twitter_image', asset('images/featured-image.webp'))" />
 
-    {{-- Canonique --}}
-    <link rel="canonical" href="@yield('canonical', url()->current())" />
+    {{-- Canonical (default locale = no prefix, other locales = with prefix) --}}
+    @if(app()->getLocale() === 'fr')
+    <link rel="canonical" href="@yield('canonical', LaravelLocalization::getNonLocalizedURL())" />
+    @else
+    <link rel="canonical" href="@yield('canonical', LaravelLocalization::getLocalizedURL(app()->getLocale(), null, [], true))" />
+    @endif
+
+    {{-- Hreflang tags for SEO --}}
+    <link rel="alternate" hreflang="fr" href="{{ LaravelLocalization::getNonLocalizedURL() }}" />
+    <link rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ LaravelLocalization::getNonLocalizedURL() }}" />
 
     {{-- Favicons --}}
     <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-96x96.png') }}" sizes="96x96" />
@@ -67,7 +81,7 @@
             "alternateName": "Code Sommet",
             "url": "{{ config('app.url') }}",
             "logo": "{{ asset('logo.svg') }}",
-            "description": "Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital.",
+            "description": "{{ __('layout.org_description') }}",
             "sameAs": [
                 "https://www.linkedin.com/in/codesommet",
                 "https://www.instagram.com/code_sommet/",
@@ -79,7 +93,7 @@
                 "contactType": "sales",
                 "telephone": "+212632582096",
                 "email": "codesommet@gmail.com",
-                "availableLanguage": ["Anglais", "Français", "Arabe"]
+                "availableLanguage": ["English", "French", "Arabic"]
             }
         }
     </script>

@@ -1085,7 +1085,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
+                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
                                 un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
@@ -2114,7 +2114,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
                                     Votre Site Web</span>
                             </a></div>
-                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="pikasso/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="pikasso/discovery" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,

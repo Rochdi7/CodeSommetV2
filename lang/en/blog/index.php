@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'title' => 'Blog - CodeSommet | Actualités, Conseils & Tendances du Web Development',
+    'meta_description' => 'Découvrez nos articles sur le web development, le design UI/UX, le SEO, les tendances tech et les meilleures pratiques pour votre projet digital.',
+    'meta_keywords' => 'blog web development,actualités tech,conseils SEO,tendances design,tutoriels web,CodeSommet blog',
+    'og_title' => 'Blog - CodeSommet | Actualités & Conseils du Web Development',
+    'og_description' => 'Découvrez nos articles sur le web development, le design UI/UX, le SEO et les tendances tech.',
+    'text_0' => '[TRANSLATE] Notre Blog',
+    'text_1' => '[TRANSLATE] Actualités Tech',
+    'text_2' => '[TRANSLATE] Développement Web',
+    'text_3' => '[TRANSLATE] Développement',
+    'text_4' => '[TRANSLATE] Comment l\'IA Révolutionne le Développement Web en 2026',
+    'text_5' => '[TRANSLATE] Découvrez comment l\'intelligence artificielle transforme la façon dont nous concevons, développons et déployons des sites web modernes. Des outils de génération de code aux tests automatisés.',
+    'text_6' => '[TRANSLATE] Développement',
+    'text_7' => '[TRANSLATE] Restez Informé',
+    'text_8' => '[TRANSLATE] Rejoignez 500+ professionnels. Désabonnement en un clic.',
+    'placeholder_9' => '[TRANSLATE] Votre adresse email...',
+    'placeholder_109' => 'Rechercher un article...',
+    'text_110' => '5 min de lecture',
+    'text_111' => '8 min de lecture',
+    'text_112' => '3 min de lecture',
+    'ml_512' => '[TRANSLATE] Découvrez nos articles, tutoriels et conseils pour réussir votre projet digital et rester à jour avec les dernières tendances tech.',
+    'ml_513' => '[TRANSLATE] Recevez nos derniers articles, tutoriels et conseils directement dans votre boîte mail. Pas de spam, que du contenu de qualité.',
+];

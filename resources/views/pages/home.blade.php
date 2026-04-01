@@ -51,7 +51,7 @@ $homeAd3 = \App\Models\HomeAd::where('slot', 3)->first();
                       rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                       rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                       rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                      rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/codesommet/discovery">
+                      rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
                         <div class="shine-wrapper-hero">
                             <div class="shine-element-hero"></div>
                         </div>
@@ -61,7 +61,7 @@ $homeAd3 = \App\Models\HomeAd::where('slot', 3)->first();
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></div><span class="relative z-10 text-sm md:text-base font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel
                             Découverte</span>
-                    </a><button data-cal-link="codesommet/discovery" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}" class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
+                    </a><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.08) 0px 10.8925px 10.8925px -1.40625px,
                       rgba(0, 0, 0, 0.08) 0px 18.1088px 18.1088px -1.875px,

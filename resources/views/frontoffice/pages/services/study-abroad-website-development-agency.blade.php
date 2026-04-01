@@ -1,18 +1,11 @@
 ﻿@extends('frontoffice.layouts.app')
 
-@section('title', "Développement de Sites Web Études à l'Étranger | Plateformes de Conseil en Visa | CodeSommetStudio")
-@section('meta_description', "Développement spécialisé de sites web d'études à l'étranger pour les cabinets de conseil
-    en Éducation internationale. Plus de 40 plateformes créées avec portails étudiants, suivi de visa et chatbots
-    multilingues. Contactez-nous pour les tarifs.")
-@section('meta_keywords', "développement site web études à l'étranger,site web conseil en visa,plateforme éducation
-    internationale,CRM études à l'étranger,développement portail étudiant,système suivi de visa,site web conseil en
-    éducation")
-@section('og_title', "CodeSommetStudio - Agence de Développement Web Alimentée par l'IA | Maroc")
-@section('og_description', "Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par
-    l'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l'éducation, la santé
-    et les entreprises. Plus de 50 projets livrés.")
-@section('twitter_description', "Agence de développement web premium spécialisée dans les sites web alimentés par l'IA,
-    les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.")
+@section('title', __('services/study-abroad-website-development-agency.title'))
+@section('meta_description', __('services/study-abroad-website-development-agency.meta_description'))
+@section('meta_keywords', __('services/study-abroad-website-development-agency.meta_keywords'))
+@section('og_title', __('services/study-abroad-website-development-agency.og_title'))
+@section('og_description', __('services/study-abroad-website-development-agency.og_description'))
+@section('twitter_description', __('services/study-abroad-website-development-agency.twitter_description'))
 
 @section('content')
     <div class="min-h-screen bg-[var(--bg-primary)]">
@@ -50,8 +43,7 @@
                                         d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
-                                href="/#industries">Industries</a><span>/</span><span class="text-gray-600">Études à
-                                l'Étranger &amp; Conseil en Visa</span></nav>
+                                href="/#industries">Industries</a><span>/</span><span class="text-gray-600">{{ __('services/study-abroad-website-development-agency.ml_1122') }}</span></nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -59,7 +51,7 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Accepte Actuellement les
-                                    <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- --> Projets</span><span
+                                    <!-- -->{{ __('services/study-abroad-website-development-agency.text_0') }}<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -70,12 +62,12 @@
                                     </path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🎓<!-- --> <!-- -->Études à
-                                    l'Étranger &amp; Conseil en Visa<!-- -->, <!-- -->Industrie Spécialisée</span>
+                                    l'Étranger &amp; Conseil en Visa<!-- -->, <!-- -->{{ __('services/study-abroad-website-development-agency.text_1') }}</span>
                             </div>
                         </div>
                         <div class="space-y-6">
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
-                                style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES<!-- -->
+                                style="font-family:var(--font-display)">{{ __('services/study-abroad-website-development-agency.text_2') }}<!-- -->
                                 <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
                                         style="min-height:1.2em"
                                         class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
@@ -89,16 +81,10 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">PORTAILS
-                                            DE CANDIDATURE ÉTUDIANTS</span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">PORTAILS
-                                            DE CANDIDATURE ÉTUDIANTS</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">{{ __('services/study-abroad-website-development-agency.ml_1123') }}</span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">{{ __('services/study-abroad-website-development-agency.ml_1124') }}</span></span></span></h1>
                             <p
-                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
-                                Développement spécialisé de sites web d'études à l'étranger pour les cabinets de conseil en
-                                éducation internationale, agences de visa et services de placement universitaire. Nous avons
-                                créé plus de 40 plateformes avec portails de candidature sur mesure, suivi de visa et
-                                chatbots alimentés par l'IA. Augmentation moyenne de 300 % des candidatures étudiantes.</p>
+                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1125') }}</p>
                         </div>
                         <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank"
                                 rel="noopener noreferrer"
@@ -112,8 +98,7 @@
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
                     rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px"
                                 href="https://cal.com/pikasso/discovery"><span
-                                    class="relative text-[15px] font-semibold text-white z-10">Réserver une démo
-                                    gratuite</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    class="relative text-[15px] font-semibold text-white z-10">{{ __('services/study-abroad-website-development-agency.ml_1126') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform"
@@ -122,8 +107,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
-                                href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir le Portfolio
-                                    Études à l'Étranger</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1127') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
@@ -134,18 +118,17 @@
                         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">Basé dans le secteur <!-- -->Études à l'Étranger
-                                    &amp; Conseil en Visa</span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_3') }} <!-- -->{{ __('services/study-abroad-website-development-agency.ml_1128') }}</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">Livraison en 7-10 Jours</span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_190') }}</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+ clients dans <!-- -->Études à l'Étranger &amp;
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_4') }} <!-- -->Études à l'Étranger &amp;
                                     Conseil en Visa<!-- --></span>
                             </div>
                         </div>
@@ -167,13 +150,13 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Pourquoi Nous Choisir</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_5') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommetStudio dans le secteur
-                        <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- -->?</h2>
+                        <!-- -->{{ __('services/study-abroad-website-development-agency.text_6') }}<!-- -->?</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise locale alliée à des standards
                         internationaux. Voici ce qui fait de nous le partenaire idéal en développement web dans le secteur
-                        <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- -->.</p>
+                        <!-- -->{{ __('services/study-abroad-website-development-agency.text_7') }}<!-- -->.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -196,12 +179,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">60% de Nos Clients sont
-                                        des Cabinets de Conseil en Études à l'Étranger</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Expertise approfondie en
-                                        Éducation internationale, traitement des visas, candidatures universitaires et
-                                        recrutement étudiant. Nous maîtrisons les exigences spécifiques ? chaque pays pour
-                                        les USA, le Royaume-Uni, le Canada, l'Allemagne et l'Australie.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/study-abroad-website-development-agency.ml_1129') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1130') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -236,12 +215,8 @@
                                                 <rect x="8" y="8" width="8" height="8" rx="1"></rect>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Conseil Étudiant
-                                        Alimenté par l'IA</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Chatbots IA personnalisés
-                                        formés sur les exigences de visa, l'éligibilité universitaire et les requêtes
-                                        spécifiques par pays. Répondez instantanément à plus de 1000 questions d'étudiants
-                                        en 50+ langues.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/study-abroad-website-development-agency.ml_1131') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1132') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -266,12 +241,8 @@
                                                 <circle cx="9" cy="7" r="4"></circle>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Parcours Étudiant
-                                        Complet</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">De la demande à
-                                        l'approbation du visa - nous construisons l'écosystème complet : pages
-                                        d'atterrissage, portails de candidature, téléchargement de documents, suivi de visa,
-                                        passerelles de paiement et CRM pour conseillers.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/study-abroad-website-development-agency.ml_1133') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1134') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -296,11 +267,8 @@
                                                 <path d="M8 17v-3"></path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Experts en Génération de
-                                        Leads pour Study Abroad</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Sites web d'études à
-                                        l'étranger optimisés pour Google Ads (Étudier aux USA, MS en Allemagne). Nos clients
-                                        voient une augmentation moyenne de 300% des prospects étudiants qualifiés.</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/study-abroad-website-development-agency.ml_1135') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1136') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -326,9 +294,7 @@
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Multilingue et
                                         Multi-Devises</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">Support de plus de 50
-                                        langues et 20+ devises. Essentiel pour recruter des étudiants d'Inde, du Bangladesh,
-                                        du Pakistan, du Népal, du Nigeria et du Moyen-Orient.</p>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1137') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -352,8 +318,7 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Déploiement Rapide pour
-                                        les Saisons d'Admission</h3>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/study-abroad-website-development-agency.ml_1138') }}</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch in 7-10 jours to
                                         catch peak admission cycles. Quick turnaround pour urgent intakes (Fall, Spring,
                                         Winter).</p>
@@ -369,30 +334,30 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">Adopté par les <!-- -->Études à l'Étranger &amp; Conseil en
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_8') }} <!-- -->Études à l'Étranger &amp; Conseil en
                         Visa<!-- --> Entreprises</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
-                                    data-target="50">0</span> Projets Livrés</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_9') }} <span class="count-up"
+                                    data-target="50">0</span> {{ __('services/study-abroad-website-development-agency.text_10') }}</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_11') }} <span class="count-up"
                                     data-target="100">0</span> Prospects</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Plus de <span class="count-up"
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_12') }} <span class="count-up"
                                     data-target="35">0</span> Clients</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de <!-- -->Études
-                        à l'Étranger &amp; Conseil en Visa<!-- --> avec lesquelles nous avons collaboré</p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/study-abroad-website-development-agency.text_13') }} <!-- -->Études
+                        à l'Étranger &amp; Conseil en Visa<!-- --> {{ __('services/study-abroad-website-development-agency.text_14') }}</p>
                 </div>
             </div>
         </section>
@@ -407,12 +372,11 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" x2="12" y1="8" y2="12"></line>
                             <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                        </svg>Défis Courants</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_15') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Le Défi<!-- -->: <!-- -->Études à l'Étranger &amp; Conseil
-                        en Visa<!-- --> Les Entreprises Font Face à des Défis Web Uniques</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Les développeurs web généralistes ne comprennent
-                        pas ces problèmes spécifiques aux études à l'étranger &amp; conseil en visa</p>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_16') }}<!-- -->: <!-- -->Études à l'Étranger &amp; Conseil
+                        en Visa<!-- --> {{ __('services/study-abroad-website-development-agency.text_17') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1139') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -430,14 +394,9 @@
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Les Constructeurs de Sites Génériques Ne
-                                Fonctionnent Pas pour Study Abroad</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1140') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Wix and WordPress can&#x27;t handle complex student
-                                application workflows, visa document requirements, or country-specific processes needed pour
-                                international education consultancies. We build custom platforms with multi-step application
-                                forms, document checklist wizards, country-specific visa requirement trackers, and automated
-                                status updates pour students and parents.</p>
+                                style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.text_409') }}</p>
                         </div>
                     </div>
                     <div>
@@ -456,15 +415,9 @@
                                     <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Communication Étudiante Chaotique à Travers les
-                                Canaux</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1141') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Gérer les demandes étudiantes via WhatsApp, e-mail,
-                                téléphone, Instagram et visites sur place devient vite ingérable. Les conseillers oublient
-                                des relances et des étudiants passent entre les mailles du filet. Nous mettons en place un
-                                tableau de bord de communication unifié avec intégration de l'API WhatsApp, rappels
-                                automatiques de suivi, historique des interactions et CRM qui suit chaque point de contact
-                                de la demande ? l'inscription.</p>
+                                style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1142') }}</p>
                         </div>
                     </div>
                     <div>
@@ -481,8 +434,7 @@
                                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Aucune Qualification de Prospects - Temps Perdu sur
-                                des Étudiants Non Qualifiés</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1143') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
                                 style="font-family:var(--font-body)">Counselors spend 20+ hours per week answering basic
                                 questions from students who don&#x27;t meet eligibility criteria or can&#x27;t afford
@@ -505,14 +457,9 @@
                                     </path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Le Support Multilingue est Coûteux et Incohérent
-                            </h3>
+                                style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1144') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Faire appel ? des traducteurs ou ? des agences pour le
-                                contenu hindi, arabe ou espagnol coûte cher, souvent langue par langue. Une terminologie
-                                incohérente brouille les étudiants. Nous intégrons un CMS multilingue avec traduction
-                                assistée par l'IA, gestion de glossaire pour des termes visa/Éducation cohérents et support
-                                RTL pour les marchés arabe et hébreu.</p>
+                                style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1145') }}</p>
                         </div>
                     </div>
                     <div>
@@ -529,14 +476,9 @@
                                     <path d="M2 12h20"></path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Mauvais Classement SEO - Perte d'Étudiants au
-                                Profit des Concurrents</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1146') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Your website doesn&#x27;t rank pour &#x27;study in
-                                [country]&#x27; keywords. Competitors with better SEO capture 70% of organic traffic and you
-                                rely on expensive Google Ads. Technical SEO optimization, country-specific landing pages,
-                                schema markup pour courses/universities, blog system pour study abroad content, and
-                                link-building strategy.</p>
+                                style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.text_410') }}</p>
                         </div>
                     </div>
                     <div>
@@ -555,22 +497,18 @@
                                     <path d="M8 17v-3"></path>
                                 </svg></div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">Chaos dans la Gestion Manuelle des Documents</h3>
+                                style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_18') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Le suivi des documents étudiants (passeports, relevés,
-                                justificatifs financiers, lettres de recommandation) par e-mail et Google Drive provoque des
-                                retards et des refus de visa. Nous créons un portail documentaire sécurisé avec listes de
-                                vérification automatisées, suivi des dates d'expiration, rappels e-mail/SMS pour les pièces
-                                manquantes et tableau de bord admin affichant en temps réel la complétude des dossiers.</p>
+                                style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1147') }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-10 md:mt-12">
                     <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
                         style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                        exacts pour plus de 40 <!-- -->études à l'étranger &amp; conseil en visa<!-- --> entreprises.</p><a
+                        exacts pour plus de 40 <!-- -->{{ __('services/study-abroad-website-development-agency.text_19') }}<!-- --> entreprises.</p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
-                        style="color:white" href="https://cal.com/pikasso/discovery">Voir Notre Solution</a>
+                        style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/study-abroad-website-development-agency.text_20') }}</a>
                 </div>
             </div>
         </section>
@@ -588,12 +526,11 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>Conçu sur Mesure pour <!-- -->Études à l'Étranger &amp; Conseil en Visa</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_21') }} <!-- -->{{ __('services/study-abroad-website-development-agency.text_22') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Fonctionnalités Essentielles<!-- --> pour <!-- -->Études à
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_23') }}<!-- --> {{ __('services/study-abroad-website-development-agency.text_191') }} <!-- -->Études à
                         l'Étranger &amp; Conseil en Visa<!-- --> Sites Web</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise de conseil en
-                        études à l'étranger &amp; visa a besoin en une seule plateforme</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1148') }}</p>
                 </div>
                 <div class="space-y-12">
                     <div>
@@ -602,11 +539,9 @@
                                 <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
-                                            style="font-family:var(--font-heading)">Portail de Candidature</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_192') }}</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Formulaires de candidature intelligents
-                                            avec listes de vérification de documents spécifiques au pays et suivi en temps
-                                            réel.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1149') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -617,8 +552,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Formulaires multi-étapes avec
-                                                    sélection du pays</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1150') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -628,8 +562,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Téléchargement de documents
-                                                    (Passeport, Relevés de Notes, Scores de Tests)</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1151') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -639,8 +572,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Suivi du statut de candidature en
-                                                    temps réel</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1152') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -668,7 +600,7 @@
                                                 <path d="M20 2v4"></path>
                                                 <path d="M22 4h-4"></path>
                                                 <circle cx="4" cy="20" r="2"></circle>
-                                            </svg>LE PLUS POPULAIRE</div><img
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_193') }}</div><img
                                             src="{{ asset('images/education/education-application-portal.webp') }}"
                                             alt="Portail de Candidature"
                                             class="absolute inset-0 w-full h-full object-contain" />
@@ -685,8 +617,7 @@
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
                                             style="font-family:var(--font-heading)">Chatbot IA</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Chatbot multilingue 24h/24 et 7j/7 formé
-                                            sur les exigences de visa et l'éligibilité universitaire.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1153') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -708,8 +639,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Exigences de visa spécifiques au
-                                                    pays</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1154') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -719,8 +649,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Vérificateur d'éligibilité
-                                                    universitaire</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1155') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -748,7 +677,7 @@
                                                 <path d="M20 2v4"></path>
                                                 <path d="M22 4h-4"></path>
                                                 <circle cx="4" cy="20" r="2"></circle>
-                                            </svg>ALIMENTÉ PAR L'IA</div><img
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_24') }}</div><img
                                             src="{{ asset('images/education/education-ai-chatbot.webp') }}"
                                             alt="Chatbot IA" class="absolute inset-0 w-full h-full object-contain" />
                                     </div>
@@ -762,10 +691,9 @@
                                 <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
-                                            style="font-family:var(--font-heading)">Tableau de Bord Étudiant</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_25') }}</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Portail personnalisé pour le suivi des
-                                            candidatures, documents et paiements.</p>
+                                            style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1156') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -776,8 +704,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Chronologie visuelle de
-                                                    progression (Applied → Offer → Visa → Travel)</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1157') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -787,8 +714,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Liste de vérification des
-                                                    documents avec statut de téléchargement</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1158') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -798,8 +724,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Suivi des paiements et
-                                                    reçus</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1159') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -828,7 +753,7 @@
                                 <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
-                                            style="font-family:var(--font-heading)">CRM et Pipeline</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_194') }}</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
                                             style="font-family:var(--font-body)">Gestion de prospects avec notation
                                             automatique, suivis et analytiques de conversion.</p>
@@ -864,8 +789,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Pipeline par glisser-déposer (Lead
-                                                    → Applied → Visa → Enrolled)</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1160') }}</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -875,8 +799,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Prévision des revenus per
-                                                    intake</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1161') }}</span></li>
                                         </ul>
                                     </div>
                                     <div
@@ -901,13 +824,11 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>Nos Réalisations en <!-- -->Études à l'Étranger &amp; Conseil en Visa</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_26') }} <!-- -->{{ __('services/study-abroad-website-development-agency.text_27') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Histoires de Succès en <!-- -->Études à l'Étranger &amp;
-                        Conseil en Visa</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_28') }} <!-- -->{{ __('services/study-abroad-website-development-agency.ml_1162') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Projets réels, résultats réels. Découvrez
-                        comment nous avons aidé les entreprises en <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- -->
-                        à atteindre leurs objectifs numériques.</p>
+                        comment nous avons aidé les entreprises en <!-- -->{{ __('services/study-abroad-website-development-agency.text_29') }}<!-- -->{{ __('services/study-abroad-website-development-agency.ml_1163') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
@@ -919,8 +840,7 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">PLATEFORME
-                                            D'ÉTUDES À L'ÉTRANGER</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/study-abroad-website-development-agency.ml_1164') }}</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
@@ -931,8 +851,7 @@
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">MSinGermany</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme de
-                                        Conseil en Études à l'Étranger en Allemagne</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/study-abroad-website-development-agency.ml_1165') }}</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
@@ -973,20 +892,18 @@
                                         alt="Project Azubi" class="absolute inset-0 w-full h-full object-cover" />
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">CONSEIL EN
-                                            ÉDUCATION</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/study-abroad-website-development-agency.ml_1166') }}</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>+150% Conversion de Leads</span></div>
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_195') }}</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme
-                                        d'Éducation Internationale</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/study-abroad-website-development-agency.ml_1167') }}</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc + dans
                                         le Monde</p>
                                 </div>
@@ -1008,12 +925,11 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_196') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Notre Processus de Développement<!-- --> pour
-                        <!-- -->Études à l'Étranger &amp; Conseil en Visa</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Du concept au lancement en 4 semaines, optimisé
-                        pour les entreprises de conseil en études à l'étranger &amp; visa</p>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_30') }}<!-- --> pour
+                        <!-- -->{{ __('services/study-abroad-website-development-agency.text_31') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1168') }}</p>
                 </div>
                 <div class="relative">
                     <div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2"
@@ -1044,9 +960,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 1</div>
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_197') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Découverte &amp; Analyse du Marché</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_32') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1057,8 +973,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Analyse de la concurrence pour les
-                                                    cabinets de conseil en études à l'étranger</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1169') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1068,8 +983,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Développement de personas
-                                                    étudiants by target country</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1170') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1104,7 +1018,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 1</div>
+                                        </svg>{{ __('services/study-abroad-website-development-agency.text_198') }}</div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1143,9 +1057,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 2</div>
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_199') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Portail de Candidature Design</h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_200') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1156,8 +1070,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Maquettes fil de fer pour le flux
-                                                    de candidature étudiant</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1171') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1167,8 +1080,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Maquettes haute fidélité avec
-                                                    marque spécifique au pays</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1172') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1178,8 +1090,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Design responsive mobile pour les
-                                                    étudiants en déplacement</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1173') }}</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1194,7 +1105,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 2</div>
+                                        </svg>{{ __('services/study-abroad-website-development-agency.text_201') }}</div>
                                     <div
                                         class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1238,10 +1149,9 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 3</div>
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_202') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">Développement &amp; AI Integration
-                                        </h3>
+                                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1174') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1252,8 +1162,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Développement frontend et backend
-                                                    with secure auth</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1175') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1274,8 +1183,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Intégration CRM (HubSpot/Zoho)
-                                                    pour le suivi des prospects</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1176') }}</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1299,7 +1207,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 3</div>
+                                        </svg>{{ __('services/study-abroad-website-development-agency.text_203') }}</div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1335,7 +1243,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 4</div>
+                                            </svg>{{ __('services/study-abroad-website-development-agency.text_204') }}</div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">Tests &amp; Lancement</h3>
                                         <ul class="space-y-2">
@@ -1359,8 +1267,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">Formation des conseillers sur le
-                                                    portail étudiant et le CRM</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/study-abroad-website-development-agency.ml_1177') }}</span></li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1386,7 +1293,7 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>Semaine 4</div>
+                                        </svg>{{ __('services/study-abroad-website-development-agency.text_205') }}</div>
                                     <div
                                         class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1410,11 +1317,10 @@
                 </div>
                 <div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8">
                     <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
-                        style="font-family:var(--font-heading)">Prêt à démarrer votre <!-- -->études à l'étranger &amp;
-                        conseil en visa<!-- --> projet de site web ?</p><a
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_33') }} <!-- -->études à l'étranger &amp;
+                        conseil en visa<!-- --> {{ __('services/study-abroad-website-development-agency.text_206') }}</p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
-                        style="color:white" href="https://cal.com/pikasso/discovery">Réserver un Appel Découverte
-                        Gratuit</a>
+                        style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/study-abroad-website-development-agency.ml_1178') }}</a>
                 </div>
             </div>
         </section>
@@ -1422,9 +1328,8 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-12 md:mb-16">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4"
-                        style="font-family:var(--font-heading)">Solutions Personnalisées, Tarification Transparente</h2>
-                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour
-                        discuter de vos besoins spécifiques et obtenir un devis personnalisé</p>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_34') }}</h2>
+                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1179') }}</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
                     <div class="relative bg-black rounded-[32px] p-3 text-white">
@@ -1437,7 +1342,7 @@
                                     class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                </svg>Recommandé</div>
+                                </svg>{{ __('services/study-abroad-website-development-agency.text_35') }}</div>
                         </div>
                         <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
                             <div class="flex items-start justify-between mb-6">
@@ -1453,12 +1358,11 @@
                                             <line x1="12" x2="12" y1="17" y2="21">
                                             </line>
                                         </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-white">Développement de Sites Web</h3>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-white">{{ __('services/study-abroad-website-development-agency.text_36') }}</h3>
                                 </div>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                                <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et
-                                    design premium livré en 7-10 jours.</p>
+                                <p class="text-white/70">{{ __('services/study-abroad-website-development-agency.ml_1180') }}</p>
                             </div>
                             <div class="divide-y divide-white/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1468,8 +1372,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Intégration de fonctionnalités alimentées par
-                                        l'IA</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.ml_1181') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1477,8 +1380,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Tableau de bord personnalisé et portail
-                                        utilisateur</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.ml_1182') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1494,7 +1396,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Contenu professionnel et rédaction</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.text_37') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1502,7 +1404,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">SEO avancé et optimisation des performances</span>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.text_38') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1511,7 +1413,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Authentification et gestion des utilisateurs</span>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.text_39') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1520,7 +1422,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Intégration de paiement prête</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.text_40') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1528,7 +1430,7 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">Analytique et suivi de conversion</span></div>
+                                    </svg><span class="text-white/80">{{ __('services/study-abroad-website-development-agency.text_207') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1536,24 +1438,22 @@
                                         class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-green-400 font-medium">Hébergement gratuit pour 3 mois
-                                        inclus</span></div>
+                                    </svg><span class="text-green-400 font-medium">{{ __('services/study-abroad-website-development-agency.ml_1183') }}</span></div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
                             <div class="mb-6">
                                 <div class="flex flex-col"><span
-                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">À partir de</span>
+                                        class="text-lg md:text-xl font-medium text-white/70 mb-1">{{ __('services/study-abroad-website-development-agency.text_41') }}</span>
                                     <div class="flex items-end gap-2"><span
-                                            class="text-5xl md:text-6xl font-bold">Obtenir Votre Devis Gratuit</span><span
+                                            class="text-5xl md:text-6xl font-bold">{{ __('services/study-abroad-website-development-agency.text_42') }}</span><span
                                             class="text-white/50 text-xl mb-2"></span></div>
-                                    <p class="text-white/60 text-sm mt-2">Devis personnalisé basé sur la portée de votre
-                                        projet</p>
+                                    <p class="text-white/60 text-sm mt-2">{{ __('services/study-abroad-website-development-agency.ml_1184') }}</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><a
                                     class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight"
-                                    href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a
+                                    href="{{ route('get-quote') }}">{{ __('services/study-abroad-website-development-agency.text_43') }}</a><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
                                     class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez
@@ -1573,7 +1473,7 @@
                                             class="lucide lucide-infinity w-7 h-7 text-black" aria-hidden="true">
                                             <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
                                         </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-black">Abonnement</h3>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-black">{{ __('services/study-abroad-website-development-agency.text_710') }}</h3>
                                 </div><button
                                     class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20"
                                     style="margin-top:0">
@@ -1583,8 +1483,7 @@
                                             class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5">
                                         </div>
                                     </div><span
-                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">Inclure
-                                        les Réseaux Sociaux</span>
+                                        class="text-sm whitespace-nowrap overflow-hidden transition-all duration-400 ease-out opacity-100 w-auto">{{ __('services/study-abroad-website-development-agency.ml_1185') }}</span>
                                 </button>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-black/5 flex items-center gap-3"><svg
@@ -1600,9 +1499,7 @@
                                     <path d="M22 4h-4"></path>
                                     <circle cx="4" cy="20" r="2"></circle>
                                 </svg>
-                                <p class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant
-                                    besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de site
-                                    web.</p>
+                                <p class="text-black/70 transition-all duration-300">{{ __('services/study-abroad-website-development-agency.ml_1186') }}</p>
                             </div>
                             <div class="divide-y divide-black/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1612,7 +1509,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">1 projet actif à la fois</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_44') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1620,8 +1517,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Chatbot IA et fonctionnalités
-                                        d'automatisation</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.ml_1187') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1629,7 +1525,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Développement de tableau de bord personnalisé</span>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_45') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1638,7 +1534,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Livraison des tâches en 48-72 heures</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_46') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1646,7 +1542,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Révisions illimitées jusqu'à la perfection</span>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_47') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1655,7 +1551,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Développement full-stack (frontend + backend)</span>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_48') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1664,7 +1560,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">SEO professionnel et stratégie de contenu</span>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_49') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1673,7 +1569,7 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Collaboration en temps réel sur Slack</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_50') }}</span></div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1681,28 +1577,27 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">Hébergement premium et maintenance</span></div>
+                                    </svg><span class="text-black/80">{{ __('services/study-abroad-website-development-agency.text_51') }}</span></div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
                             <div class="mb-6">
                                 <div class="flex flex-col"><span
-                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">À partir de</span>
+                                        class="text-lg md:text-xl font-medium text-black/60 mb-1">{{ __('services/study-abroad-website-development-agency.text_52') }}</span>
                                     <div class="flex items-end gap-2">
                                         <div class="relative overflow-hidden" style="height:fit-content"><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Obtenir
                                                 Votre Devis Gratuit</span><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Obtenir
                                                 Votre Devis Gratuit</span></div><span
-                                            class="text-black/50 text-xl mb-2">/mois</span>
+                                            class="text-black/50 text-xl mb-2">{{ __('services/study-abroad-website-development-agency.text_208') }}</span>
                                     </div>
-                                    <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
+                                    <p class="text-black/60 text-sm mt-2">{{ __('services/study-abroad-website-development-agency.text_53') }}</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery"
-                                    data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
-                                    class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
-                                    un Appel Découverte</button><a
+                                    data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
+                                    class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">{{ __('services/study-abroad-website-development-agency.ml_1188') }}</button><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
                                     class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez
@@ -1727,24 +1622,20 @@
                                 <path d="M2 12h20"></path>
                             </svg></div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]"
-                            style="font-family:var(--font-heading)">Prêt à Transformer Votre Site Web d'Études à
-                            l'Étranger &amp; Conseil en Visa ?</h2>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">Obtenez
-                            d'abord une analyse gratuite complète :</p>
+                            style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1189') }}</h2>
+                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1190') }}</p>
                         <div class="flex flex-wrap gap-3 justify-center mb-4">
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
                                 <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Vérification des
-                                    performances</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/study-abroad-website-development-agency.ml_1191') }}</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Révision du design</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/study-abroad-website-development-agency.text_54') }}</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Recommandations alimentées
-                                    par l'IA</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/study-abroad-website-development-agency.ml_1192') }}</span>
                             </div>
                         </div><a
                             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
@@ -1756,8 +1647,7 @@
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a>
-                        <p class="text-xs text-[var(--text-secondary)] mt-4">Pas de carte de crédit requise • Résultats en
-                            30 secondes • Plan d'amélioration personnalisé</p>
+                        <p class="text-xs text-[var(--text-secondary)] mt-4">{{ __('services/study-abroad-website-development-agency.ml_1193') }}</p>
                     </div>
                 </div>
             </div>
@@ -1772,50 +1662,44 @@
                             stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                        </svg>Pourquoi Nous Choisir</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_55') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->Études à l'Étranger &amp; Conseil
-                        en Visa<!-- --> vs Autres</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Découvrez pourquoi <!-- -->Études à l'Étranger
-                        &amp; Conseil en Visa<!-- --> entreprises choisissent CodeSommetStudio plutôt que d'autres agences
-                        locales et concurrents internationaux.</p>
+                        en Visa<!-- --> {{ __('services/study-abroad-website-development-agency.text_56') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.text_57') }} <!-- -->Études à l'Étranger
+                        &amp; Conseil en Visa<!-- -->{{ __('services/study-abroad-website-development-agency.ml_1194') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
                         <div
                             class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
                             <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
-                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">Fonctionnalité
-                                </div>
+                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">{{ __('services/study-abroad-website-development-agency.ml_1195') }}</div>
                                 <div class="p-3 md:p-4 text-center">
                                     <div
                                         class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
                                         <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
                                             class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">CodeSommetStudio
-                                            <!-- -->Études à l'Étranger &amp; Conseil en Visa</span>
+                                            <!-- -->{{ __('services/study-abroad-website-development-agency.text_58') }}</span>
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
-                                    Other <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- --> Agences</div>
+                                    Other <!-- -->{{ __('services/study-abroad-website-development-agency.text_59') }}<!-- --> Agences</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
                                     Agences Internationales</div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Expérience Études à
-                                    l'Étranger</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1196') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Plus de 40 projets études à
-                                        l'étranger</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Expérience
-                                        générique</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1197') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1198') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Limité</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.text_60') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Développement du
-                                    Flux de Travail Visa</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1199') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -1827,29 +1711,25 @@
                                     </svg></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Formulaires
                                         basiques uniquement</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
-                                        supplémentaire</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1200') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Support Multilingue
                                 </div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Plus de 50 langues incluses</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_61') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Anglais
                                         uniquement</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Frais
-                                        supplémentaires</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1201') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Chatbot IA pour les
-                                    Questions Étudiantes</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1202') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Formé sur les exigences de visa</span>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_62') }}</span>
                                 </div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Chatbot
-                                        générique</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1203') }}</span></div>
                                 <div class="p-3 md:p-4 text-center"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -1863,29 +1743,24 @@
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Intégration CRM
-                                </div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1204') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">HubSpot, Zoho, Salesforce</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Limité</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût
-                                        supplémentaire</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.text_63') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1205') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Prix de Départ</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_64') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">Obtenir Votre Devis Gratuit</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
-                                        élevé</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Coût plus
-                                        élevé</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.text_65') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1206') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1207') }}</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Délai de Réalisation
-                                </div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/study-abroad-website-development-agency.ml_1208') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">4-6
@@ -1901,14 +1776,13 @@
                                         class="text-sm font-bold text-[#0F0F0F]">Support prioritaire</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">File
                                         d'attente standard</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Pas de
-                                        priorité</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.ml_1209') }}</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="mt-8 text-center">
                         <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les prix moyens et les offres de
-                            services des 10 meilleures agences en <!-- -->Études à l'Étranger &amp; Conseil en Visa</p>
+                            services des 10 meilleures agences en <!-- -->{{ __('services/study-abroad-website-development-agency.text_66') }}</p>
                         <div
                             class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full text-sm font-semibold text-[#22C55E]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1917,7 +1791,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>Meilleur Rapport Qualité-Prix pour <!-- -->Études à l'Étranger &amp; Conseil en
+                            </svg>{{ __('services/study-abroad-website-development-agency.text_67') }} <!-- -->Études à l'Étranger &amp; Conseil en
                             Visa<!-- --> Entreprises</div>
                     </div>
                 </div>
@@ -1935,13 +1809,11 @@
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                             </path>
-                        </svg>Ce que Nos Clients Disent de Nous</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_68') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Ce que Nos Clients en Études à l'Étranger &amp; Conseil en
-                        Visa Disent de Nous</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.ml_1210') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
-                        entreprises en <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- --> qui ont obtenu des
-                        résultats remarquables avec CodeSommetStudio.</p>
+                        entreprises en <!-- -->{{ __('services/study-abroad-website-development-agency.text_69') }}<!-- -->{{ __('services/study-abroad-website-development-agency.ml_1211') }}</p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -2116,8 +1988,7 @@
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
                                             <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur Médical chez Dubaï
-                                                Wellness Clinic</div>
+                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/study-abroad-website-development-agency.ml_1212') }}</div>
                                             <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2127,7 +1998,7 @@
                                                         d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                     </path>
                                                     <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>Dubaï Healthcare City, EAU</span></div>
+                                                </svg><span>{{ __('services/study-abroad-website-development-agency.text_70') }}</span></div>
                                         </div>
                                     </div>
                                     <div
@@ -2295,8 +2166,7 @@
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
                                             <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">Directeur des Opérations chez Riad
-                                                Luxe Properties</div>
+                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/study-abroad-website-development-agency.ml_1213') }}</div>
                                             <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2325,9 +2195,8 @@
                             aria-label="Go to testimonial group 2"></button></div>
                 </div>
                 <div class="mt-10 text-center">
-                    <p class="text-sm text-[#0F0F0F]/60">Vous voulez voir plus d'histoires de succès ?<!-- --> <a
-                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">Voir
-                            toutes les études de cas</a></p>
+                    <p class="text-sm text-[#0F0F0F]/60">{{ __('services/study-abroad-website-development-agency.text_71') }}<!-- --> <a
+                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">{{ __('services/study-abroad-website-development-agency.ml_1214') }}</a></p>
                 </div>
             </div>
         </section>
@@ -2390,10 +2259,10 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
-                        </svg>Questions fréquentes</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_72') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
-                        <!-- -->Études à l'Étranger &amp; Conseil en Visa</h2>
+                        <!-- -->{{ __('services/study-abroad-website-development-agency.text_73') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
                         réponses. Voici les questions les plus courantes de <!-- -->Études à l'Étranger &amp; Conseil en
                         Visa<!-- --> entreprises.</p>
@@ -2405,8 +2274,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Combien de temps faut-il pour créer
-                                    un site web d'études à l'étranger ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1215') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2421,8 +2289,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Fournissez-vous la rédaction de
-                                    contenu pour les sites web d'études à l'étranger ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1216') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2437,8 +2304,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Le chatbot IA peut-il gérer les
-                                    requêtes de visa en plusieurs langues ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1217') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2453,8 +2319,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quels systèmes CRM intégrez-vous ?
-                                </h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1218') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2469,8 +2334,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous créer un système de
-                                    suivi de documents de visa ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1219') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2501,8 +2365,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Qu'est-ce qui vous différencie des
-                                    autres développeurs web ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1220') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2517,8 +2380,7 @@
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">8</span></div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous aider avec Google Ads et
-                                    le SEO pour les mots-clés études à l'étranger ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/study-abroad-website-development-agency.ml_1221') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2529,10 +2391,10 @@
                         </button></div>
                 </div>
                 <div class="mt-10 text-center">
-                    <p class="text-sm text-[#0F0F0F]/60 mb-2">Vous avez encore des questions ?</p><a
+                    <p class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/study-abroad-website-development-agency.text_74') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Études à l'Étranger &amp; Conseil en Visa<!-- --> équipe<svg class="w-4 h-4"
+                        notre <!-- -->{{ __('services/study-abroad-website-development-agency.text_75') }}<!-- --> {{ __('services/study-abroad-website-development-agency.text_76') }}<svg class="w-4 h-4"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -2551,12 +2413,10 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                             <path d="M2 12h20"></path>
-                        </svg>Présence Mondiale</div>
+                        </svg>{{ __('services/study-abroad-website-development-agency.text_77') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Au Service de Clients dans le Monde Entier</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Nous avons créé des sites web d'études à
-                        l'étranger &amp; conseil en visa pour des clients du monde entier. Que vous soyez au Maroc ou
-                        ailleurs, nous livrons des solutions de classe mondiale.</p>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_78') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.ml_1222') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
                     <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
@@ -2577,10 +2437,9 @@
                                         </svg></div>
                                     <div class="min-w-0 flex-1">
                                         <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Dubaï</h3>
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/study-abroad-website-development-agency.ml_1223') }}</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇦🇪</span><span class="truncate">UAE</span></p>
+                                            <span>{{ __('services/study-abroad-website-development-agency.text_711') }}</span><span class="truncate">UAE</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2613,7 +2472,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Casablanca</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇲🇦</span><span class="truncate">Maroc</span></p>
+                                            <span>{{ __('services/study-abroad-website-development-agency.text_712') }}</span><span class="truncate">Maroc</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2646,7 +2505,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             San Francisco</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇺🇸</span><span class="truncate">États-Unis</span></p>
+                                            <span>{{ __('services/study-abroad-website-development-agency.text_713') }}</span><span class="truncate">{{ __('services/study-abroad-website-development-agency.text_79') }}</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2679,7 +2538,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Londres</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇬🇧</span><span class="truncate">Royaume-Uni</span></p>
+                                            <span>{{ __('services/study-abroad-website-development-agency.text_714') }}</span><span class="truncate">Royaume-Uni</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2712,7 +2571,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Paris</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇫🇷</span><span class="truncate">Paris</span></p>
+                                            <span>{{ __('services/study-abroad-website-development-agency.text_715') }}</span><span class="truncate">Paris</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2745,7 +2604,7 @@
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Marrakech</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>🇲🇦</span><span class="truncate">Maroc</span></p>
+                                            <span>{{ __('services/study-abroad-website-development-agency.text_716') }}</span><span class="truncate">Maroc</span></p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2760,7 +2619,7 @@
                 </div>
                 <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
                     <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez <!-- -->études à
-                        l'étranger &amp; conseil en visa<!-- --> développement web dans une ville spécifique ?</p>
+                        l'étranger &amp; conseil en visa<!-- --> {{ __('services/study-abroad-website-development-agency.text_80') }}</p>
                     <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 px-4"><a
                             class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
                             href="/#locations"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2771,7 +2630,7 @@
                                     d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                 </path>
                                 <circle cx="12" cy="10" r="3"></circle>
-                            </svg>Voir Tous les Emplacements<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            </svg>{{ __('services/study-abroad-website-development-agency.text_81') }}<svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -2779,7 +2638,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a><span class="text-[#0F0F0F]/40">or</span><a
                             class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
-                            href="{{ route('contact') }}">Contactez-nous pour Votre Ville<svg
+                            href="{{ route('contact') }}">{{ __('services/study-abroad-website-development-agency.text_82') }}<svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -2793,9 +2652,8 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-8 md:mb-10">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4"
-                        style="font-family:var(--font-heading)">Industries Connexes que Nous Servons</h2>
-                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">Découvrez nos services de
-                        développement web spécialisés pour d'autres industries</p>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_83') }}</h2>
+                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">{{ __('services/study-abroad-website-development-agency.ml_1224') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
@@ -2815,11 +2673,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Écoles de Langues</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web modernes
-                                        pour les instituts de formation linguistique avec gestion des cours et
-                                        fonctionnalités d'apprentissage en ligne.</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/study-abroad-website-development-agency.ml_1225') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/study-abroad-website-development-agency.ml_1226') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2849,11 +2704,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Technologie Éducative</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes
-                                        d'apprentissage en ligne avec gestion des cours, hébergement vidéo et analyses des
-                                        étudiants.</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/study-abroad-website-development-agency.ml_1227') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/study-abroad-website-development-agency.ml_1228') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2884,9 +2736,7 @@
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Plateformes de Cours en Ligne</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
-                                        créateurs de cours avec livraison de contenu, gestion des étudiants et
-                                        fonctionnalités de monétisation.</p>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/study-abroad-website-development-agency.ml_1229') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2951,11 +2801,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Santé</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web de
-                                        cliniques, systèmes de prise de rendez-vous et portails patients conformes aux
-                                        réglementations de santé.</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/study-abroad-website-development-agency.ml_1230') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/study-abroad-website-development-agency.ml_1231') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2984,11 +2831,8 @@
                                     </svg></div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Télémédecine</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Plateformes de
-                                        consultation vidéo sécurisées avec gestion des patients et systèmes d'ordonnances.
-                                    </p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/study-abroad-website-development-agency.ml_1232') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/study-abroad-website-development-agency.ml_1233') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -3002,7 +2846,7 @@
                     </a></div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
-                        href="/#industries">Voir Toutes les Industries<svg xmlns="http://www.w3.org/2000/svg"
+                        href="/#industries">{{ __('services/study-abroad-website-development-agency.text_84') }}<svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
@@ -3015,9 +2859,8 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3"
-                        style="font-family:var(--font-heading)">Explorer Plus</h2>
-                    <p class="text-lg text-[var(--text-secondary)]">Découvrez ce qui fait de CodeSommetStudio votre
-                        partenaire idéal en développement web</p>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.text_85') }}</h2>
+                    <p class="text-lg text-[var(--text-secondary)]">{{ __('services/study-abroad-website-development-agency.ml_1234') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -3036,11 +2879,10 @@
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                                 Audit Gratuit de Site Web</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Obtenez une analyse alimentée
-                                par l'IA avec plus de 40 vérifications</p>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1235') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#00AEEF">{{ __('services/study-abroad-website-development-agency.text_86') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3065,13 +2907,11 @@
                                     </path>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Voir Nos Réalisations</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez les études de cas et
-                                les histoires de succès clients</p>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/study-abroad-website-development-agency.ml_1236') }}</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1237') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#00AEEF">{{ __('services/study-abroad-website-development-agency.text_87') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3097,13 +2937,11 @@
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                À Propos de CodeSommetStudio</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Découvrez notre équipe et notre
-                                approche</p>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/study-abroad-website-development-agency.ml_1238') }}</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/study-abroad-website-development-agency.ml_1239') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#8B5CF6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#8B5CF6">{{ __('services/study-abroad-website-development-agency.text_88') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3133,7 +2971,7 @@
                                 exigences de votre projet</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#10B981">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#10B981">{{ __('services/study-abroad-website-development-agency.text_89') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3157,13 +2995,12 @@
                                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Retour à l'Accueil</h3>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/study-abroad-website-development-agency.ml_1240') }}</h3>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                                 offres</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#3B82F6">En savoir plus</span><svg xmlns="http://www.w3.org/2000/svg"
+                                <span style="color:#3B82F6">{{ __('services/study-abroad-website-development-agency.text_90') }}</span><svg xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -3198,8 +3035,7 @@
                     </div>
                     <div class="relative z-10 text-center space-y-3 md:space-y-4">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
-                            style="font-family:var(--font-display)">Prêt à Construire Quelque Chose d'Extraordinaire ?
-                        </h2>
+                            style="font-family:var(--font-display)">{{ __('services/study-abroad-website-development-agency.ml_1241') }}</h2>
                         <div class="flex flex-col items-center gap-4 md:gap-6">
                             <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
                                     rel="noopener noreferrer"
@@ -3232,8 +3068,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                        un Appel Découverte</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('services/study-abroad-website-development-agency.ml_1242') }}</span>
                                 </a><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -3257,7 +3092,7 @@
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="pikasso/discovery"
-                                    data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"
+                                    data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden"
                                     style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
@@ -3286,8 +3121,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver
-                                        un Appel Découverte</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('services/study-abroad-website-development-agency.ml_1243') }}</span>
                                 </button><a
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors"
                                     style="border-radius:118px" href="{{ route('tool', 'website-analyzer') }}">
@@ -3321,14 +3155,13 @@
                                         </svg></div>
                                     <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
                                         style="font-size:10px"><span
-                                            class="text-white font-medium whitespace-nowrap">Cliquez ici</span></div>
+                                            class="text-white font-medium whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_209') }}</span></div>
                                 </div>
                             </div>
                         </div>
                         <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
                             visionnaires qui ont choisi l'excellence</p>
-                        <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
-                            peuvent élever votre entreprise</p>
+                        <p class="text-sm md:text-base text-white/50">{{ __('services/study-abroad-website-development-agency.ml_1244') }}</p>
                         <div class="mt-6">
                             <div class="relative w-full py-8">
                                 <div class="flex items-center justify-center gap-0">
@@ -3366,7 +3199,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/40">{{ __('services/study-abroad-website-development-agency.text_717') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3452,7 +3285,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/40">{{ __('services/study-abroad-website-development-agency.text_718') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3538,7 +3371,7 @@
                                                             class="absolute inset-0 rounded-full border-2 border-white/30">
                                                         </div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/40">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/40">{{ __('services/study-abroad-website-development-agency.text_719') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3655,7 +3488,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/90">{{ __('services/study-abroad-website-development-agency.text_720') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3781,7 +3614,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/90">{{ __('services/study-abroad-website-development-agency.text_721') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">
@@ -3907,7 +3740,7 @@
                                                                     stroke-linejoin="round"></path>
                                                             </svg></div>
                                                     </div><span
-                                                        class="text-[10px] font-medium text-white/90">Automatisation</span>
+                                                        class="text-[10px] font-medium text-white/90">{{ __('services/study-abroad-website-development-agency.text_722') }}</span>
                                                 </div>
                                             </li>
                                             <li class="flex-shrink-0">

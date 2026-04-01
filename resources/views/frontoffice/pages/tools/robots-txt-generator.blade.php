@@ -1,11 +1,11 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', 'Générateur Robots.txt - Créateur de Fichier Robots Gratuit | CodeSommet')
-@section('meta_description', "Générez des fichiers robots.txt conformes pour contrôler l'''exploration des moteurs de recherche sur votre site web. Ajoutez des règles user-agent personnalisées, des chemins disallow/allow, des délais de crawl et des URL de sitemap avec notre outil gratuit.")
-@section('meta_keywords', 'robots txt generator,robots.txt creator,robots file,crawl rules,search engine robots,robots.txt builder,robots.txt validator,user agent rules,disallow rules,sitemap url,crawl delay,googlebot rules,seo robots file')
-@section('og_title', 'Générateur Robots.txt - Créateur de Fichier Robots Gratuit')
-@section('og_description', "Générez des fichiers robots.txt conformes pour contrôler l'''exploration des moteurs de recherche sur votre site web. Ajoutez des règles user-agent personnalisées, des chemins disallow/allow, des délais de crawl et des URL de sitemap avec notre outil gratuit.")
-@section('twitter_description', "Générez des fichiers robots.txt conformes pour contrôler l'''exploration des moteurs de recherche sur votre site web. Ajoutez des règles user-agent personnalisées, des chemins disallow/allow, des délais de crawl et des URL de sitemap avec notre outil gratuit.")
+@section('title', __('tools/robots-txt-generator.title'))
+@section('meta_description', __('tools/robots-txt-generator.meta_description'))
+@section('meta_keywords', __('tools/robots-txt-generator.meta_keywords'))
+@section('og_title', __('tools/robots-txt-generator.og_title'))
+@section('og_description', __('tools/robots-txt-generator.og_description'))
+@section('twitter_description', __('tools/robots-txt-generator.twitter_description'))
 
 @section('content')
 <section class="relative overflow-hidden pt-28 pb-16 bg-white">
@@ -24,16 +24,16 @@
           )"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">Générateur Robots.txt</span></nav>
+        <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span class="text-black font-medium">{{ __('tools/robots-txt-generator.text_0') }}</span></nav>
         <div class="mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Générateur Robots.txt</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Générez des fichiers robots.txt pour contrôler l'exploration des moteurs de recherche</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ __('tools/robots-txt-generator.text_1') }}</h1>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">{{ __('tools/robots-txt-generator.text_2') }}</p>
         </div>
         <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
             <div class="relative">
                 <div class="w-2 h-2 bg-green-500 rounded-full"></div>
                 <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75"></div>
-            </div><span class="text-green-700 font-medium">Gratuit • Aucune inscription requise</span>
+            </div><span class="text-green-700 font-medium">{{ __('tools/robots-txt-generator.text_3') }}</span>
         </div>
     </div>
 </section>
@@ -42,26 +42,26 @@
         <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
             <div class="space-y-6">
                 <div>
-                    <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">Configurer le Robots.txt</h3>
-                    <p class="text-sm text-[#0F0F0F]/60 mb-4">Contrôlez quels robots de moteurs de recherche peuvent explorer votre site web et quel contenu ils peuvent accéder.</p>
+                    <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.text_142') }}</h3>
+                    <p class="text-sm text-[#0F0F0F]/60 mb-4">{{ __('tools/robots-txt-generator.text_4') }}</p>
                 </div>
-                <div><label class="block text-sm font-medium text-[#0F0F0F] mb-2">User-agent (Robot de Moteur de Recherche)</label><select class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
+                <div><label class="block text-sm font-medium text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.label_140') }}</label><select class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
                         <option value="*" selected="">* (All Bots)</option>
-                        <option value="Googlebot">Googlebot (Google)</option>
-                        <option value="Googlebot-Image">Googlebot-Image (Google Images)</option>
-                        <option value="Bingbot">Bingbot (Bing)</option>
-                        <option value="Slurp">Slurp (Yahoo)</option>
-                        <option value="DuckDuckBot">DuckDuckBot (DuckDuckGo)</option>
-                        <option value="Baiduspider">Baiduspider (Baidu)</option>
-                        <option value="YandexBot">YandexBot (Yandex)</option>
-                        <option value="facebookexternalhit">facebookexternalhit (Facebook)</option>
-                        <option value="Twitterbot">Twitterbot (Twitter/X)</option>
+                        <option value="Googlebot">{{ __('tools/robots-txt-generator.opt_342') }}</option>
+                        <option value="Googlebot-Image">{{ __('tools/robots-txt-generator.opt_343') }}</option>
+                        <option value="Bingbot">{{ __('tools/robots-txt-generator.opt_344') }}</option>
+                        <option value="Slurp">{{ __('tools/robots-txt-generator.opt_345') }}</option>
+                        <option value="DuckDuckBot">{{ __('tools/robots-txt-generator.opt_346') }}</option>
+                        <option value="Baiduspider">{{ __('tools/robots-txt-generator.opt_347') }}</option>
+                        <option value="YandexBot">{{ __('tools/robots-txt-generator.opt_348') }}</option>
+                        <option value="facebookexternalhit">{{ __('tools/robots-txt-generator.opt_349') }}</option>
+                        <option value="Twitterbot">{{ __('tools/robots-txt-generator.opt_350') }}</option>
                     </select></div>
-                <div><label class="block text-sm font-medium text-[#0F0F0F] mb-2">Règles d'Exploration</label>
+                <div><label class="block text-sm font-medium text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.text_5') }}</label>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3"><select class="w-32 px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
                                 <option value="disallow" selected="">Disallow</option>
-                                <option value="allow">Allow</option>
+                                <option value="allow">{{ __('tools/robots-txt-generator.opt_351') }}</option>
                             </select><input type="text" placeholder="/path/to/block/" class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm" value="/admin/" /><button class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2 lucide-trash-2 w-5 h-5 text-gray-600" aria-hidden="true">
                                     <path d="M10 11v6"></path>
                                     <path d="M14 11v6"></path>
@@ -71,7 +71,7 @@
                                 </svg></button></div>
                         <div class="flex items-center gap-3"><select class="w-32 px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
                                 <option value="disallow" selected="">Disallow</option>
-                                <option value="allow">Allow</option>
+                                <option value="allow">{{ __('tools/robots-txt-generator.opt_352') }}</option>
                             </select><input type="text" placeholder="/path/to/block/" class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm" value="/private/" /><button class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2 lucide-trash-2 w-5 h-5 text-gray-600" aria-hidden="true">
                                     <path d="M10 11v6"></path>
                                     <path d="M14 11v6"></path>
@@ -80,7 +80,7 @@
                                     <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                                 </svg></button></div>
                         <div class="flex items-center gap-3"><select class="w-32 px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
-                                <option value="disallow">Disallow</option>
+                                <option value="disallow">{{ __('tools/robots-txt-generator.opt_353') }}</option>
                                 <option value="allow" selected="">Allow</option>
                             </select><input type="text" placeholder="/path/to/block/" class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm" value="/public/" /><button class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2 lucide-trash-2 w-5 h-5 text-gray-600" aria-hidden="true">
                                     <path d="M10 11v6"></path>
@@ -92,29 +92,29 @@
                     </div><button class="w-full mt-3 py-3 px-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-[#00AEEF] hover:bg-orange-50 transition-colors flex items-center justify-center gap-2 text-sm font-medium text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
-                        </svg>Ajouter une Règle (max 20)</button>
+                        </svg>{{ __('tools/robots-txt-generator.text_6') }}</button>
                 </div>
-                <div><label class="block text-sm font-medium text-[#0F0F0F] mb-2">URL du Sitemap (optionnel)</label><input type="url" placeholder="https://example.com/sitemap.xml" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm" value="" /></div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">Générer le Robots.txt</button>
+                <div><label class="block text-sm font-medium text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.label_141') }}</label><input type="url" placeholder="https://example.com/sitemap.xml" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm" value="" /></div><button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full" tabindex="0">{{ __('tools/robots-txt-generator.text_7') }}</button>
             </div>
         </div>
         <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4">Comment Utiliser Cet Outil</h3>
+            <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4">{{ __('tools/robots-txt-generator.text_8') }}</h3>
             <div class="space-y-4">
                 <div class="flex items-start gap-3">
                     <div class="w-6 h-6 rounded-full bg-[#00AEEF] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">1</div>
-                    <p class="text-sm text-[#0F0F0F]/70">Sélectionnez un user-agent (utilisez * pour tous les robots ou ciblez des moteurs de recherche spécifiques)</p>
+                    <p class="text-sm text-[#0F0F0F]/70">{{ __('tools/robots-txt-generator.text_9') }}</p>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="w-6 h-6 rounded-full bg-[#00AEEF] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">2</div>
-                    <p class="text-sm text-[#0F0F0F]/70">Ajoutez des règles pour autoriser ou interdire des chemins spécifiques (ex. : /admin/, /private/)</p>
+                    <p class="text-sm text-[#0F0F0F]/70">{{ __('tools/robots-txt-generator.text_10') }}</p>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="w-6 h-6 rounded-full bg-[#00AEEF] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">3</div>
-                    <p class="text-sm text-[#0F0F0F]/70">Ajoutez l'URL de votre sitemap (aide les moteurs de recherche à découvrir toutes vos pages)</p>
+                    <p class="text-sm text-[#0F0F0F]/70">{{ __('tools/robots-txt-generator.text_11') }}</p>
                 </div>
                 <div class="flex items-start gap-3">
                     <div class="w-6 h-6 rounded-full bg-[#00AEEF] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">4</div>
-                    <p class="text-sm text-[#0F0F0F]/70">Générez, téléchargez et uploadez le fichier dans le répertoire racine de votre site web</p>
+                    <p class="text-sm text-[#0F0F0F]/70">{{ __('tools/robots-txt-generator.text_12') }}</p>
                 </div>
             </div>
         </div>
@@ -125,105 +125,105 @@
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                         <path d="M12 17h.01"></path>
                     </svg>
-                    <h3 class="text-xl md:text-2xl font-bold text-black">Questions Fréquemment Posées</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/robots-txt-generator.text_13') }}</h3>
                 </div>
-                <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
+                <p class="text-sm md:text-base text-gray-600">{{ __('tools/robots-txt-generator.text_14') }}</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'un fichier robots.txt et pourquoi en ai-je besoin ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_15') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Un fichier robots.txt est un fichier texte placé dans le répertoire racine de votre site web qui indique aux robots d'exploration des moteurs de recherche quelles pages ou sections de votre site ils peuvent ou ne peuvent pas accéder. C'est essentiel pour contrôler le comportement des robots, empêcher l'indexation de contenu dupliqué, protéger les zones sensibles et gérer votre budget de crawl efficacement.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_16') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Où placer le fichier robots.txt sur mon site web ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_17') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Le fichier robots.txt doit être placé dans le répertoire racine de votre site web (ex. : https://example.com/robots.txt). Il ne peut pas être placé dans un sous-répertoire ou sous-dossier. Les moteurs de recherche ne le cherchent qu'à la racine du domaine, et il doit être publiquement accessible sans authentification.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_18') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Que signifient les directives User-agent et laquelle utiliser ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_19') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Les directives User-agent spécifient à quel robot les règles s'appliquent. L'utilisation de '*' applique les règles à tous les robots universellement. Vous pouvez également cibler des robots spécifiques comme 'Googlebot' pour Google ou 'Bingbot' pour Bing. Si vous voulez des règles différentes pour différents robots, créez plusieurs sections user-agent dans votre fichier robots.txt.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_20') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment bloquer des robots de moteurs de recherche spécifiques tout en en autorisant d'autres ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_21') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Créez des sections user-agent séparées pour chaque robot. Par exemple, pour bloquer uniquement Bingbot tout en autorisant les autres, utilisez 'User-agent: Bingbot' suivi de 'Disallow: /' pour tout bloquer. Puis ajoutez 'User-agent: *' avec des règles Allow/Disallow spécifiques pour les autres robots. Chaque section user-agent fonctionne indépendamment.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_22') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Dois-je inclure l'URL de mon sitemap dans robots.txt ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_23') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Oui, inclure l'URL de votre sitemap dans robots.txt aide les moteurs de recherche à découvrir toutes vos pages plus efficacement. Ajoutez-la à la fin de votre fichier en utilisant le format 'Sitemap: https://example.com/sitemap.xml'. Vous pouvez inclure plusieurs URL de sitemap si votre site a plusieurs sitemaps pour différents types de contenu.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_24') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser des caractères génériques dans les règles de chemin robots.txt ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_25') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Oui, vous pouvez utiliser des caractères génériques comme '*' (correspond à toute séquence de caractères) et '$' (correspond à la fin de l'URL). Par exemple, 'Disallow: /*.pdf$' bloque tous les fichiers PDF, et 'Disallow: /private*' bloque toute URL commençant par /private. Cependant, les caractères génériques ne sont pas supportés par tous les robots, utilisez-les donc avec précaution.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_26') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
-                            <h3 class="text-base md:text-lg font-semibold text-black">Comment tester mon fichier robots.txt avant de le déployer ?</h3>
+                            <h3 class="text-base md:text-lg font-semibold text-black">{{ __('tools/robots-txt-generator.text_27') }}</h3>
                         </div>
                         <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
                     <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                        <p>Utilisez l'outil de test robots.txt de Google Search Console pour valider votre fichier et tester des URL spécifiques. Cet outil vous montre exactement comment Googlebot interprétera vos règles et aide à identifier les erreurs de syntaxe. Testez toujours avant de déployer pour éviter de bloquer accidentellement des pages importantes des moteurs de recherche.</p>
+                        <p>{{ __('tools/robots-txt-generator.text_28') }}</p>
                     </div>
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-2">Vous avez encore des questions ?</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Contactez notre équipe pour obtenir de l'aide<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p class="text-sm text-gray-600 mb-2">{{ __('tools/robots-txt-generator.text_29') }}</p><a href="/contact" class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/robots-txt-generator.text_30') }}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg></a>
             </div>
@@ -233,8 +233,8 @@
 <section class="py-16 bg-white border-t border-gray-100">
     <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">Outils Connexes Qui Pourraient Vous Intéresser</h2>
-            <p class="text-gray-600 text-lg">Continuez à optimiser votre site web avec ces outils complémentaires</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-3" style="font-family:var(--font-heading)">{{ __('tools/robots-txt-generator.text_31') }}</h2>
+            <p class="text-gray-600 text-lg">{{ __('tools/robots-txt-generator.text_32') }}</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mb-8"><a class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1" href="/tools/robots-validator">
                 <div class="mb-4">
@@ -243,7 +243,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Robots.txt Validator</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Vérifiez la syntaxe robots.txt et les directives de crawl</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-txt-generator.text_33') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -259,7 +259,7 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Générez des sitemaps XML optimisés pour les moteurs de recherche</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-txt-generator.text_34') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -274,14 +274,14 @@
                         </svg></div>
                 </div>
                 <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors" style="font-family:var(--font-heading)">Sitemap Validator</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-4">Validez les sitemaps XML pour les meilleures pratiques SEO</p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-txt-generator.text_35') }}</p>
                 <div class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all"><span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></div>
                 <div class="absolute top-4 right-4"><span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span></div>
             </a></div>
-        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">Parcourir les <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+        <div class="text-center"><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="/tools">{{ __('tools/robots-txt-generator.text_36') }} <!-- -->41<!-- --> Outils Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg></a></div>
@@ -299,15 +299,15 @@
                   rgba(10, 10, 10, 0.8) 100%
                 )"></div>
             <div class="relative z-10 text-center space-y-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">Besoin d'un Outil Personnalisé pour Votre Entreprise ?</h2>
-                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">{{ __('tools/robots-txt-generator.text_37') }}</h2>
+                <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">{{ __('tools/robots-txt-generator.text_38') }}</p>
                 <div class="pt-2"><a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                       rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
-                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" href="https://cal.com/codesommet/discovery">
-                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Réserver un Appel Découverte</span>
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                        <div class="absolute inset-[3px] rounded-[114px] bg-white z-0"></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/robots-txt-generator.text_39') }}</span>
                     </a></div>
-                <p class="text-sm text-white/50 pt-2">50+ projets réussis • Livraison en 48h • Sans engagement à long terme</p>
+                <p class="text-sm text-white/50 pt-2">{{ __('tools/robots-txt-generator.text_40') }}</p>
             </div>
         </div>
     </div>
