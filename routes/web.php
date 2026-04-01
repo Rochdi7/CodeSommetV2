@@ -7,6 +7,11 @@ use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\FinanceController;
 use App\Http\Controllers\Admin\BlogPostController;
+use App\Http\Controllers\Admin\BudgetController;
+use App\Http\Controllers\Admin\HomeAdController;
+use App\Http\Controllers\Admin\MediaController;
+use App\Http\Controllers\Admin\NewsletterAdminController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\BlogController;
 
 /*
@@ -45,22 +50,22 @@ Route::prefix('legal')->group(function () {
 // Example: /services/ecommerce-website-development
 
 $servicePages = [
-    'ecommerce-website-development',
-    'saas-platform-development',
-    'fintech-platform-development',
-    'fintech-website-development',
-    'healthcare-website-development',
-    'education-website-development',
-    'edtech-platform-development',
-    'elearning-platform-development',
-    'online-course-platform-development',
-    'university-website-development',
-    'language-school-website-development',
-    'study-abroad-website-development',
-    'immigration-consultancy-website-development',
-    'real-estate-website-development',
-    'telemedicine-platform-development',
-    'telemedicine-website-development',
+    'ecommerce-website-development-agency',
+    'saas-platform-development-agency',
+    'fintech-platform-development-agency',
+    'fintech-website-development-agency',
+    'healthcare-website-development-agency',
+    'education-website-development-agency',
+    'edtech-platform-development-agency',
+    'elearning-platform-development-agency',
+    'online-course-platform-development-agency',
+    'university-website-development-agency',
+    'language-school-website-development-agency',
+    'study-abroad-website-development-agency',
+    'immigration-consultancy-website-development-agency',
+    'real-estate-website-development-agency',
+    'telemedicine-platform-development-agency',
+    'telemedicine-website-development-agency',
 ];
 
 Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
@@ -90,11 +95,11 @@ $cityPages = [
     'tunis', 'cairo', 'lagos',
 ];
 
-Route::get('/web-development/{city}', function (string $city) use ($cityPages) {
+Route::get('/web-development-company/{city}', function (string $city) use ($cityPages) {
     if (! in_array($city, $cityPages)) {
         abort(404);
     }
-    $view = "pages.locations.web-development-{$city}";
+    $view = "pages.locations.web-development-company-{$city}";
     if (! view()->exists($view)) {
         abort(404);
     }
@@ -115,7 +120,7 @@ Route::get('/tools/{slug}', function (string $slug) {
 
 // ─── Our Work / Case Study Pages ────────────────────────────────────────────
 // URL: /our-work/{slug}
-// Example: /our-work/al-raba
+// Example: /our-work/glamworlds
 
 Route::get('/our-work/{slug}', function (string $slug) {
     $view = "pages.our-work.{$slug}";
@@ -132,6 +137,10 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog/preview', function () { return view('pages.blog.preview'); })->name('blog.preview');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9\-]+')->name('blog.show');
 
+// ─── Newsletter (Public) ─────────────────────────────────────────────────────
+
+Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
+
 // ─── Admin Authentication ────────────────────────────────────────────────────
 
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
@@ -144,7 +153,11 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
 
     // Projects Management
     Route::resource('projects', ProjectController::class);
-    Route::post('/projects/{project}/update-status', [ProjectController::class, 'updateStatus'])->name('projects.update-status');
+    Route::post('/projects/{project}/update-status',   [ProjectController::class, 'updateStatus'])->name('projects.update-status');
+    Route::post('/projects/{project}/update-progress', [ProjectController::class, 'updateProgress'])->name('projects.update-progress');
+    Route::post('/projects/{project}/add-payment',     [ProjectController::class, 'addPayment'])->name('projects.add-payment');
+    Route::post('/projects/{project}/generate-schedule', [ProjectController::class, 'generatePaymentSchedule'])->name('projects.generate-schedule');
+    Route::post('/projects/{project}/update-phases',    [ProjectController::class, 'updatePhases'])->name('projects.update-phases');
 
     // Payments
     Route::resource('payments', PaymentController::class);
@@ -157,4 +170,31 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
 
     // Blog Management
     Route::resource('blog', BlogPostController::class);
+
+    // Media Library
+    Route::get('/media/picker', [MediaController::class, 'picker'])->name('media.picker');
+    Route::get('/media', [MediaController::class, 'index'])->name('media.index');
+    Route::post('/media/upload', [MediaController::class, 'upload'])->name('media.upload');
+    Route::post('/media/{medium}', [MediaController::class, 'update'])->name('media.update');
+    Route::delete('/media/{medium}', [MediaController::class, 'destroy'])->name('media.destroy');
+
+    // Newsletter Management
+    Route::get('/newsletter/export', [NewsletterAdminController::class, 'export'])->name('newsletter.export');
+    Route::get('/newsletter', [NewsletterAdminController::class, 'index'])->name('newsletter.index');
+    Route::delete('/newsletter/{subscriber}', [NewsletterAdminController::class, 'destroy'])->name('newsletter.destroy');
+
+    // Personal Budget
+    Route::get('/budget/lock',      [BudgetController::class, 'showLock'])->name('budget.lock');
+    Route::post('/budget/unlock',   [BudgetController::class, 'unlock'])->name('budget.unlock');
+    Route::post('/budget/lock',     [BudgetController::class, 'lock'])->name('budget.lock.out');
+    Route::post('/budget/salary',   [BudgetController::class, 'saveSalary'])->name('budget.salary');
+    Route::post('/budget/start',    [BudgetController::class, 'startTracking'])->name('budget.start');
+    Route::get('/budget',           [BudgetController::class, 'index'])->name('budget.index');
+    Route::post('/budget',          [BudgetController::class, 'store'])->name('budget.store');
+    Route::delete('/budget/{entry}',[BudgetController::class, 'destroy'])->name('budget.destroy');
+
+    // Home Ads
+    Route::get('/home-ads', [HomeAdController::class, 'index'])->name('home-ads.index');
+    Route::post('/home-ads/{homeAd}', [HomeAdController::class, 'update'])->name('home-ads.update');
+    Route::post('/home-ads/{homeAd}/toggle', [HomeAdController::class, 'toggle'])->name('home-ads.toggle');
 });

@@ -8,6 +8,11 @@
 @section('twitter_description', 'Agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. 50+ projets livrés.')
 
 @section('content')
+@php
+$homeAd1 = \App\Models\HomeAd::where('slot', 1)->first();
+$homeAd2 = \App\Models\HomeAd::where('slot', 2)->first();
+$homeAd3 = \App\Models\HomeAd::where('slot', 3)->first();
+@endphp
 <section class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-[30px] md:pb-16 bg-[var(--bg-primary)]">
     <div class="absolute inset-0 pointer-events-none" style="z-index:0">
         <div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
@@ -158,90 +163,68 @@
                 </div>
                 <div class="jsx-fbe667a4dcceba66 absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[var(--bg-primary)] via-[var(--bg-primary)]/80 to-transparent z-10 pointer-events-none">
                 </div>
-                <div style="animation-duration:40s;animation-play-state:running" class="jsx-fbe667a4dcceba66 flex gap-6 md:gap-12 items-center logo-scroll-container">
+                <div style="animation-duration:12s;animation-play-state:running" class="jsx-fbe667a4dcceba66 flex gap-6 md:gap-12 items-center logo-scroll-container">
+                    {{-- Set 1 --}}
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/vertex-logo.webp') }}" alt="Vertex - Client solutions technologiques mondiales" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/celestia-logo.webp') }}" alt="Celestia - Client plateforme cloud entreprise" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/GLS.webp') }}" alt="GLS" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/nexus-logo.webp') }}" alt="Nexus - Client conseil en transformation digitale" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/Glamworlds.webp') }}" alt="Glamworlds" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/pioneer-logo.webp') }}" alt="Pioneer - Client accélérateur d'innovation et de startups" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/LocalMoroccoTours_bg.webp') }}" alt="Local Morocco Tours" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/bubblebox-logo.webp') }}" alt="BubbleBox - Client agence marketing créative" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="DentalPro" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/skyward-logo.webp') }}" alt="Skyward - Client technologie aéronautique et aérospatiale" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/discovermorocco.webp') }}" alt="Discover Morocco" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/ironworks-logo.webp') }}" alt="IronWorks - Client fabrication industrielle" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/locationbuggy.webp') }}" alt="Location Buggy" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/eduglobal-logo.webp') }}" alt="EduGlobal - Client conseil en éducation internationale" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/monasso.webp') }}" alt="Monasso" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/technova-logo.webp') }}" alt="TechNova - Client développement logiciel et solutions IA" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/moroccoquest.webp') }}" alt="Morocco Quest" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/healthcareplus-logo.webp') }}" alt="HealthcarePlus - Technologie médicale et prestataire de santé" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Premium Kech" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/linguaacademy-logo.webp') }}" alt="Lingua Academy - Plateforme d'apprentissage des langues et d'éducation" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/wmcars.webp') }}" alt="WM Cars" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
-                    <div style="height:40px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/goausbildung-logo.webp') }}" alt="GoAusbildung - Plateforme EdTech de formation professionnelle allemande" loading="lazy" style="filter:grayscale(100%);.7;height:40px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:40px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/al-raba-logo.webp') }}" alt="Al-Raba Technologies - Distributeur d'onduleurs et d'infrastructure IT" loading="lazy" style="filter:grayscale(100%);.7;height:40px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:40px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/msingermany-logo.webp') }}" alt="MS in Germany - Plateforme d'admission universitaire en Allemagne" loading="lazy" style="filter:grayscale(100%);.7;height:40px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                    {{-- Set 2 (duplicate for seamless infinite scroll) --}}
+                    <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                        <img src="{{ asset('images/partners/GLS.webp') }}" alt="GLS" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/vertex-logo.webp') }}" alt="Vertex - Client solutions technologiques mondiales" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/Glamworlds.webp') }}" alt="Glamworlds" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/celestia-logo.webp') }}" alt="Celestia - Client plateforme cloud entreprise" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/LocalMoroccoTours_bg.webp') }}" alt="Local Morocco Tours" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/nexus-logo.webp') }}" alt="Nexus - Client conseil en transformation digitale" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="DentalPro" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/pioneer-logo.webp') }}" alt="Pioneer - Client accélérateur d'innovation et de startups" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/discovermorocco.webp') }}" alt="Discover Morocco" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/bubblebox-logo.webp') }}" alt="BubbleBox - Client agence marketing créative" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/locationbuggy.webp') }}" alt="Location Buggy" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/skyward-logo.webp') }}" alt="Skyward - Client technologie aéronautique et aérospatiale" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/monasso.webp') }}" alt="Monasso" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/ironworks-logo.webp') }}" alt="IronWorks - Client fabrication industrielle" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/moroccoquest.webp') }}" alt="Morocco Quest" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/eduglobal-logo.webp') }}" alt="EduGlobal - Client conseil en éducation internationale" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Premium Kech" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                     <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/technova-logo.webp') }}" alt="TechNova - Client développement logiciel et solutions IA" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/healthcareplus-logo.webp') }}" alt="HealthcarePlus - Technologie médicale et prestataire de santé" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:45px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/linguaacademy-logo.webp') }}" alt="Lingua Academy - Plateforme d'apprentissage des langues et d'éducation" loading="lazy" style="filter:grayscale(100%);.7;height:45px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:40px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/goausbildung-logo.webp') }}" alt="GoAusbildung - Plateforme EdTech de formation professionnelle allemande" loading="lazy" style="filter:grayscale(100%);.7;height:40px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:40px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/al-raba-logo.webp') }}" alt="Al-Raba Technologies - Distributeur d'onduleurs et d'infrastructure IT" loading="lazy" style="filter:grayscale(100%);.7;height:40px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                    </div>
-                    <div style="height:40px;width:auto" class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                        <img src="{{ asset('logos/msingermany-logo.webp') }}" alt="MS in Germany - Plateforme d'admission universitaire en Allemagne" loading="lazy" style="filter:grayscale(100%);.7;height:40px;width:auto" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        <img src="{{ asset('images/partners/wmcars.webp') }}" alt="WM Cars" loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8" class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                     </div>
                 </div>
             </div>
@@ -250,11 +233,16 @@
 </section>
 
 <!-- Promo Banners — Two Squares Side by Side -->
+@php
+$showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2->is_active);
+@endphp
+@if($showSquareBanners)
 <div class="w-full py-6 md:py-8 bg-white">
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
-            <a href="#" class="promo-banner group relative block w-full overflow-hidden rounded-xl" style="aspect-ratio:1/1;max-height:320px">
-                <img src="{{ asset('images/flyer-square-1.jpg') }}" alt="Pikasso Studio — Offre Spéciale" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            @if($homeAd1 && $homeAd1->is_active)
+            <a href="{{ $homeAd1->link_url ?: '#' }}" class="promo-banner group relative block w-full overflow-hidden rounded-xl" style="aspect-ratio:1/1;max-height:320px">
+                <img src="{{ $homeAd1->image_url ?: asset('images/flyer-square-1.jpg') }}" alt="{{ $homeAd1->alt_text ?: 'CodeSommet — Offre Spéciale' }}" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/5"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                     <span class="inline-flex items-center gap-1.5 text-white text-xs font-semibold tracking-wide uppercase">
@@ -263,8 +251,10 @@
                     </span>
                 </div>
             </a>
-            <a href="#" class="promo-banner group relative block w-full overflow-hidden rounded-xl" style="aspect-ratio:1/1;max-height:320px">
-                <img src="{{ asset('images/flyer-square-2.jpg') }}" alt="Pikasso Studio — Nos Services" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            @endif
+            @if($homeAd2 && $homeAd2->is_active)
+            <a href="{{ $homeAd2->link_url ?: '#' }}" class="promo-banner group relative block w-full overflow-hidden rounded-xl" style="aspect-ratio:1/1;max-height:320px">
+                <img src="{{ $homeAd2->image_url ?: asset('images/flyer-square-2.jpg') }}" alt="{{ $homeAd2->alt_text ?: 'CodeSommet — Nos Services' }}" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/5"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                     <span class="inline-flex items-center gap-1.5 text-white text-xs font-semibold tracking-wide uppercase">
@@ -273,9 +263,11 @@
                     </span>
                 </div>
             </a>
+            @endif
         </div>
     </div>
 </div>
+@endif
 
 <section class="w-full py-12 md:py-16 bg-[#F5F5F5]" id="work">
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
@@ -292,7 +284,7 @@
         <div class="jsx-2447671171 absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#F5F5F5] via-[#F5F5F5]/80 to-transparent z-10 pointer-events-none">
         </div>
         <div style="cursor:grab" class="jsx-2447671171 overflow-x-auto overflow-y-hidden scrollbar-hide">
-            <div style="gap:24px;animation:heroScroll 25s linear infinite" class="jsx-2447671171 flex items-center will-change-transform">
+            <div style="gap:24px;animation:heroScroll 8s linear infinite" class="jsx-2447671171 flex items-center will-change-transform">
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                         <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.jpeg') }}" />
@@ -449,7 +441,7 @@
             <div class="flex-shrink-0 w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5" style="opacity:0;transform:translateY(30px)" data-delay="1">
                 <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                     <div class="absolute inset-0 flex items-start justify-center overflow-hidden px-8 pt-2.5">
-                        <div class="flex items-center justify-center relative" style="z-index:10"><img src="{{ asset('mockups/al-raba-top.png') }}" alt="50+ Projets Livrés" class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]" style="min-height:150%" loading="lazy" /></div>
+                        <div class="flex items-center justify-center relative" style="z-index:10"><img src="{{ asset('mockups/glamworlds-top.png') }}" alt="50+ Projets Livrés" class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]" style="min-height:150%" loading="lazy" /></div>
                     </div>
                 </div>
                 <div class="px-5 py-4">
@@ -1749,10 +1741,11 @@
 </section>
 
 <!-- Promo Banner 3 — Rectangle -->
+@if($homeAd3 && $homeAd3->is_active)
 <div class="w-full py-8 md:py-12 bg-[#F5F5F5]">
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-        <a href="#" class="promo-banner group relative block w-full overflow-hidden rounded-2xl" style="aspect-ratio:21/9">
-            <img src="https://codesommet.com/storage/blog/1767049157_695307c571de7.jpg" alt="Pikasso Studio — Promotion" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+        <a href="{{ $homeAd3->link_url ?: '#' }}" class="promo-banner group relative block w-full overflow-hidden rounded-2xl" style="aspect-ratio:21/9">
+            <img src="{{ $homeAd3->image_url ?: 'https://codesommet.com/storage/blog/1767049157_695307c571de7.jpg' }}" alt="{{ $homeAd3->alt_text ?: 'CodeSommet — Promotion' }}" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
             <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                 <span class="inline-flex items-center gap-2 text-white text-sm md:text-base font-semibold tracking-wide uppercase">
@@ -1763,6 +1756,7 @@
         </a>
     </div>
 </div>
+@endif
 
 @include('partials.home-testimonials')
 @include('partials.home-sections')

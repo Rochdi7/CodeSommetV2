@@ -89,15 +89,16 @@ class FinanceController extends Controller
     public function storeExpense(Request $request)
     {
         $validated = $request->validate([
-            'label' => 'required|string|max:255',
-            'amount' => 'required|numeric|min:0.01',
-            'currency' => 'nullable|string|max:3',
-            'category' => 'required|string',
-            'project_id' => 'nullable|exists:projects,id',
-            'expense_date' => 'required|date',
-            'is_recurring' => 'nullable|boolean',
+            'label'            => 'required|string|max:255',
+            'amount'           => 'required|numeric|min:0.01',
+            'currency'         => 'nullable|string|max:3',
+            'category'         => 'required|string',
+            'category_custom'  => 'nullable|string|max:100',
+            'project_id'       => 'nullable|exists:projects,id',
+            'expense_date'     => 'required|date',
+            'is_recurring'     => 'nullable|boolean',
             'recurring_period' => 'nullable|string',
-            'notes' => 'nullable|string',
+            'notes'            => 'nullable|string',
         ]);
 
         $validated['is_recurring'] = $request->boolean('is_recurring');

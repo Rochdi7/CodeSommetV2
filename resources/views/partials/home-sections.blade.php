@@ -39,11 +39,11 @@
                                         </div>
                                         <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);">Développement de Site Web</h3>
                                         <div class="space-y-1.5 text-xs">
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Page d'atterrissage sur mesure</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 7-10 jours</div>
-                                            <div id="mob-book-btn" class="w-full py-1.5 px-2.5 rounded-xl font-medium text-center text-xs bg-white text-gray-900">Réservez votre Créneau</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Vitrine en 10-20 jours</div>
+                                            <div id="mob-book-btn" class="w-full py-1.5 px-2.5 rounded-xl font-medium text-center text-xs bg-white text-gray-900">Demandez un Devis Gratuit</div>
                                         </div>
                                     </div>
                                     {{-- "You have done your part" state --}}
@@ -96,21 +96,21 @@
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">Pitch deck pour le client</span>
+                                        <span class="text-xs font-medium text-gray-700">Création du site vitrine</span>
                                     </div>
                                     <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Demande</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">Nouvelles infographies pour Instagram</span>
+                                        <span class="text-xs font-medium text-gray-700">Design identité visuelle</span>
                                     </div>
                                     <span class="text-xs px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 font-medium">Demande</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-300 bg-gray-50">
                                     <div class="flex items-center gap-2">
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
-                                        <span class="text-xs font-medium text-gray-700">Ajouter une page contact</span>
+                                        <span class="text-xs font-medium text-gray-700">Optimisation SEO On-Page</span>
                                     </div>
                                     <span class="text-xs px-2 py-0.5 rounded-full bg-[#00AEEF]/10 text-[var(--color-primary-orange)] font-medium">Urgent</span>
                                 </div>
@@ -158,7 +158,7 @@
                                 </div>
                             </div>
                             <div id="mob-checklist-list" class="space-y-2 relative">
-                                @foreach(['Designer la Page d\'Accueil', 'Créer les Éléments de Marque', 'Développer les Composants', 'Revue Finale'] as $task)
+                                @foreach(['Designer la Page d\'Accueil', 'Créer l\'Identité de Marque', 'Développer le Site Web', 'Lancement & Livraison'] as $task)
                                 <div class="mob-checklist-item flex items-center gap-2 rounded-xl p-2">
                                     <div class="mob-check-box w-5 h-5 rounded-md border-2 border-gray-300 flex items-center justify-center flex-shrink-0">
                                         <svg class="mob-check-icon w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" style="opacity:0; transform:scale(0);">
@@ -223,11 +223,11 @@
                                 </div>
                                 <h3 class="font-semibold mb-6 text-white italic text-3xl" style="font-family:var(--font-heading)">Développement de Site Web</h3>
                                 <div class="space-y-3 text-sm">
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Page d'atterrissage sur mesure</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 7-10 jours</div>
-                                    <div id="plan-book-btn" class="w-full py-3 px-4 rounded-xl font-medium text-center transition-colors bg-white text-gray-900">Réservez votre Créneau</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Vitrine en 10-20 jours</div>
+                                    <div id="plan-book-btn" class="w-full py-3 px-4 rounded-xl font-medium text-center transition-colors bg-white text-gray-900">Demandez un Devis Gratuit</div>
                                 </div>
                             </div>
                             {{-- "You have done your part" state (hidden initially) --}}
@@ -266,9 +266,9 @@
                         <h3 class="font-semibold text-xl mb-4 text-gray-900" style="font-family:var(--font-heading)">Vos Tâches de Design</h3>
                         <div class="space-y-3 relative backlog-list">
                             @foreach([
-                            ['title' => 'Pitch deck pour le client', 'tag' => 'Demande', 'urgent' => false],
-                            ['title' => 'Nouvelles infographies pour Instagram', 'tag' => 'Demande', 'urgent' => false],
-                            ['title' => 'Ajouter une page contact', 'tag' => 'Urgent', 'urgent' => true],
+                            ['title' => 'Création du site vitrine', 'tag' => 'Demande', 'urgent' => false],
+                            ['title' => 'Design identité visuelle', 'tag' => 'Demande', 'urgent' => false],
+                            ['title' => 'Optimisation SEO On-Page', 'tag' => 'Urgent', 'urgent' => true],
                             ['title' => 'Nouveau Logo', 'tag' => 'Demande', 'urgent' => false],
                             ] as $task)
                             <div class="backlog-item flex items-center justify-between p-4 rounded-xl border-2 {{ $task['urgent'] ? 'border-gray-300' : 'border-gray-200' }} bg-gray-50">
@@ -305,7 +305,7 @@
                             </div>
                         </div>
                         <div class="space-y-3 relative checklist-list">
-                            @foreach(['Designer la Page d\'Accueil', 'Créer les Éléments de Marque', 'Développer les Composants', 'Revue Finale'] as $task)
+                            @foreach(['Designer la Page d\'Accueil', 'Créer l\'Identité de Marque', 'Développer le Site Web', 'Lancement & Livraison'] as $task)
                             <div class="checklist-item flex items-center gap-3 rounded-xl hover:bg-gray-50 transition-colors p-3">
                                 <div class="checklist-box w-6 h-6 rounded-md border-2 border-gray-300 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                                     <svg class="checklist-check w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" style="opacity:0;transform:scale(0)">
@@ -373,9 +373,9 @@
 @php
 $comparisons = [
 ['label' => 'Investissement', 'codesommet' => 'Tarification sur mesure', 'designer' => 'Coûts salariaux élevés', 'agency' => 'Tarifs premium'],
-['label' => 'Rapidité de Livraison', 'codesommet' => '48-72 heures', 'designer' => '2-3 semaines', 'agency' => '3-6 mois'],
+['label' => 'Rapidité de Livraison', 'codesommet' => '10 à 20 jours (vitrine)', 'designer' => '2-3 semaines', 'agency' => '3-6 mois'],
 ['label' => 'Garantie Qualité', 'codesommet' => 'Révisions illimitées', 'designer' => 'Qualité variable', 'agency' => '2-3 cycles de révision'],
-['label' => 'Délai de Démarrage', 'codesommet' => 'Sous 24 heures', 'designer' => '4-8 semaines de recrutement', 'agency' => '2-4 semaines de lancement'],
+['label' => 'Délai de Démarrage', 'codesommet' => 'Devis gratuit & immédiat', 'designer' => '4-8 semaines de recrutement', 'agency' => '2-4 semaines de lancement'],
 ['label' => 'Périmètre', 'codesommet' => 'Solution complète clé en main', 'designer' => 'Limité aux compétences', 'agency' => 'Nécessite souvent plusieurs prestataires'],
 ['label' => 'Technologie', 'codesommet' => 'Dernières IA &amp; frameworks', 'designer' => 'Dépend de l\'individu', 'agency' => 'Varie selon l\'agence'],
 ['label' => 'Spécialisation Sectorielle', 'codesommet' => 'Expertise spécialisée', 'designer' => 'Connaissances générales', 'agency' => 'Touche-à-tout'],
@@ -531,7 +531,7 @@ $comparisons = [
             $problems = [
             ['title' => '1. Mauvaise Expérience Utilisateur', 'problem' => 'Chargement lent, navigation confuse et design obsolète qui frustrent les visiteurs.', 'solution' => 'Performance ultra-rapide, UX intuitive et design moderne qui ravit les utilisateurs.'],
             ['title' => '2. Pas d\'Intégration IA', 'problem' => 'Vous passez à côté des capacités IA que vos concurrents utilisent déjà.', 'solution' => 'Chatbots intelligents, recherche IA, automatisation et fonctionnalités intelligentes intégrées.'],
-            ['title' => '3. Des Mois d\'Attente', 'problem' => 'Les agences traditionnelles prennent 3-6 mois pendant que vous perdez des opportunités.', 'solution' => 'En ligne en 7 jours. Site complet en 2-4 semaines. Commencez à croître immédiatement.'],
+            ['title' => '3. Des Mois d\'Attente', 'problem' => 'Les agences traditionnelles prennent 3-6 mois pendant que vous perdez des opportunités.', 'solution' => 'Vitrine livrée en 10 à 20 jours. E-commerce ou SaaS en 3 à 6 semaines. Commencez à croître immédiatement.'],
             ['title' => '4. Image de Marque Non Professionnelle', 'problem' => 'Votre site web ne reflète pas la vraie valeur et l\'expertise de votre entreprise.', 'solution' => 'Design premium qui établit l\'autorité et inspire confiance instantanément.'],
             ['title' => '5. Tarification Opaque', 'problem' => 'Les agences cachent les coûts jusqu\'à ce que vous soyez engagé.', 'solution' => 'Processus transparent. Vous savez exactement ce que vous obtenez avant de vous engager.'],
             ['title' => '6. Faible Taux de Conversion', 'problem' => 'Le trafic ne convertit pas. Les visiteurs naviguent mais ne passent pas à l\'action.', 'solution' => 'CTAs stratégiques, formulaires optimisés et design orienté conversion.'],
@@ -610,10 +610,10 @@ $comparisons = [
                         </div>
                     </div>
                     <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                        <p class="text-white/70">Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7 à 10 jours.</p>
+                        <p class="text-white/70">Site vitrine en 10-20 jours, e-commerce ou SaaS en 3-6 semaines. Dépôt de 40% pour démarrer, solde à la livraison.</p>
                     </div>
                     <div class="divide-y divide-white/10">
-                        @foreach(['Intégration de fonctionnalités IA', 'Tableau de bord & portail utilisateur personnalisé', 'Design responsive mobile-first', 'Contenu professionnel & rédaction', 'SEO avancé & optimisation des performances', 'Authentification & gestion des utilisateurs', 'Intégration de paiement prête', 'Analytics & suivi des conversions'] as $feature)
+                        @foreach(['Sites vitrine, e-commerce & SaaS sur mesure', 'Applications mobiles (Flutter) & CRM', 'Design UI/UX responsive mobile-first', 'Identité visuelle & création de logo', 'SEO On-Page & Off-Page avancé', 'Intégration Shopify, WordPress, Laravel', 'Intégration de paiement prête', 'Analytics & suivi des conversions'] as $feature)
                         <div class="flex items-start gap-3 py-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
@@ -640,8 +640,8 @@ $comparisons = [
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <a class="flex-1 px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors whitespace-nowrap text-center" href="{{ route('get-quote') }}">Obtenez Votre Devis Gratuit</a>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-white/20 text-white font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Contactez-nous sur WhatsApp</a>
+                        <a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">Obtenez Votre Devis Gratuit</a>
+                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -685,7 +685,7 @@ $comparisons = [
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
                         </svg>
-                        <p id="retainer-desc-text" class="text-black/70 transition-all duration-300">Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d'améliorations de site web.</p>
+                        <p id="retainer-desc-text" class="text-black/70 transition-all duration-300">Parfait pour les startups, PME et grandes entreprises souhaitant une présence digitale continue avec développement, SEO et marketing.</p>
                     </div>
                     {{-- Features list --}}
                     <div class="divide-y divide-black/10">
@@ -730,7 +730,7 @@ $comparisons = [
                             </div>
                         </div>
                         {{-- Base retainer features --}}
-                        @foreach(['1 projet à la fois', 'Révisions illimitées jusqu\'à la perfection', 'Développement full-stack (frontend + backend)', 'SEO professionnel & stratégie de contenu', 'Collaboration en temps réel sur Slack', 'Hébergement premium & maintenance'] as $feature)
+                        @foreach(['1 projet actif à la fois', 'Cycles de révisions multiples jusqu\'à la perfection', 'Développement full-stack (React, Laravel, Shopify...)', 'SEO professionnel & marketing digital', 'Communication directe & suivi de projet', 'Maintenance, sécurité & hébergement inclus'] as $feature)
                         <div class="flex items-start gap-3 py-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
@@ -751,8 +751,8 @@ $comparisons = [
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="flex-1 px-6 py-3.5 rounded-full bg-black text-white font-semibold hover:bg-black/90 transition-colors whitespace-nowrap">Réserver un Appel Découverte</button>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3.5 rounded-full border-2 border-black/20 text-black font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center whitespace-nowrap">Contactez-nous sur WhatsApp</a>
+                        <button data-cal-link="codesommet/discovery" data-cal-config='{"layout":"month_view"}' class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver un Appel Découverte</button>
+                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -793,7 +793,7 @@ $comparisons = [
                         toggleText.style.marginLeft = '0';
                         descIcon.classList.remove('hidden', 'text-black/40');
                         descIcon.classList.add('text-[var(--color-primary-orange)]');
-                        descText.textContent = 'Transformation digitale complète avec gestion des réseaux sociaux et stratégie de contenu.';
+                        descText.textContent = 'Transformation digitale complète avec gestion des réseaux sociaux, création de contenu et stratégie marketing.';
                         socialFeatures.classList.remove('hidden');
                     } else {
                         // Deactivate social
@@ -815,7 +815,7 @@ $comparisons = [
                         toggleText.classList.add('ml-2');
                         descIcon.classList.add('hidden', 'text-black/40');
                         descIcon.classList.remove('text-[var(--color-primary-orange)]');
-                        descText.textContent = 'Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d\'améliorations de site web.';
+                        descText.textContent = 'Parfait pour les startups, PME et grandes entreprises souhaitant une présence digitale continue avec développement, SEO et marketing.';
                         socialFeatures.classList.add('hidden');
                     }
                 }
@@ -937,8 +937,8 @@ $comparisons = [
                     </div>
                 </div>
 
-                <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises visionnaires qui ont choisi l'excellence</p>
-                <p class="text-sm md:text-base text-white/50">Discutons de la manière dont l'IA et le design moderne peuvent faire évoluer votre activité</p>
+                <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les startups, PME et entreprises qui ont choisi CodeSommet</p>
+                <p class="text-sm md:text-base text-white/50">Discutons de la façon dont nous pouvons développer votre présence digitale depuis Marrakech</p>
 
                 {{-- Technology pills marquee --}}
                 <div class="mt-6">
@@ -947,7 +947,7 @@ $comparisons = [
                             {{-- Left side: dashed border pills (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="will-change: transform;">
-                                    @for($i = 0; $i < 3; $i++) @foreach(['Chatbots IA', 'Tableaux de bord' , 'Automatisation' , 'SEO' , 'Analytics' , 'Authentification' , 'Paiements' , 'CMS' ] as $kw) <li class="flex-shrink-0">
+                                    @for($i = 0; $i < 3; $i++) @foreach(['React Js', 'Laravel 11' , 'Shopify' , 'WordPress' , 'Figma' , 'Flutter' , 'MySQL' , 'Docker' ] as $kw) <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full border-2 border-white/30"></div>
@@ -972,7 +972,7 @@ $comparisons = [
                             {{-- Right side: solid border pills with checkmarks (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right" style="will-change: transform;">
-                                    @for($i = 0; $i < 3; $i++) @foreach(['Chatbots IA', 'Tableaux de bord' , 'Automatisation' , 'SEO' , 'Analytics' , 'Authentification' , 'Paiements' , 'CMS' ] as $kw) <li class="flex-shrink-0">
+                                    @for($i = 0; $i < 3; $i++) @foreach(['React Js', 'Laravel 11' , 'Shopify' , 'WordPress' , 'Figma' , 'Flutter' , 'MySQL' , 'Docker' ] as $kw) <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full bg-white flex items-center justify-center">

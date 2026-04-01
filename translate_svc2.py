@@ -144,7 +144,7 @@ body_tr = {
     ">Starting from<": ">\u00c0 partir de<",
     ">Custom quote based on your project scope<": ">Devis personnalis\u00e9 selon la port\u00e9e de votre projet<",
     ">Get Custom Quote<": ">Obtenir un Devis Personnalis\u00e9<",
-    ">Connect on WhatsApp<": ">Connectez-vous sur WhatsApp<",
+    ">Connect on WhatsApp<": ">Connectez sur WhatsApp<",
     ">Retainer<": ">Forfait<",
     ">Include Social Media<": ">R\u00e9seaux Sociaux Inclus<",
     ">Perfect for businesses needing ongoing AI features, dashboards, and website improvements.<": ">Parfait pour les entreprises ayant besoin de fonctionnalit\u00e9s IA continues, de tableaux de bord et d'am\u00e9liorations de site web.<",

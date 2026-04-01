@@ -641,32 +641,67 @@ class ToolsApiController extends Controller
         $url = $this->normalizeUrl($request->input('url', ''));
         $html = $this->fetchUrl($url);
 
-        preg_match_all('/<img\b([^>]*)>/is', $html, $imgMatches);
+        // Parse base URL for resolving relative paths
+        $parsed = parse_url($url);
+        $baseUrl = ($parsed['scheme'] ?? 'https') . '://' . ($parsed['host'] ?? '');
+
+        preg_match_all('/<img\b([^>]*?)\/?\s*>/is', $html, $imgMatches);
         $images = [];
         $withAlt = 0; $missingAlt = 0; $emptyAlt = 0;
 
         foreach ($imgMatches[1] as $attrs) {
-            preg_match('/src\s*=\s*["\']([^"\']+)["\']/i', $attrs, $srcM);
-            preg_match('/alt\s*=\s*["\']([^"\']*?)["\']/i', $attrs, $altM);
-            $src = $srcM[1] ?? '';
-            $hasAlt = isset($altM[0]);
+            // Try src first, then data-src, then srcset first entry
+            preg_match('/\bsrc\s*=\s*["\']([^"\']+)["\']/i', $attrs, $srcM);
+            if (empty($srcM[1])) {
+                preg_match('/\bdata-src\s*=\s*["\']([^"\']+)["\']/i', $attrs, $srcM);
+            }
+            if (empty($srcM[1])) {
+                preg_match('/\bsrcset\s*=\s*["\']([^\s,"\']+)/i', $attrs, $srcM);
+            }
+
+            preg_match('/\balt\s*=\s*["\']([^"\']*?)["\']/i', $attrs, $altM);
+
+            $src = trim($srcM[1] ?? '');
+
+            // Skip data URIs and SVG inline data in URL display but still count them
+            $displaySrc = $src;
+            if (str_starts_with($src, 'data:')) {
+                $displaySrc = '[inline data URI]';
+            } elseif ($src !== '') {
+                // Resolve relative URLs to absolute
+                if (str_starts_with($src, '//')) {
+                    $displaySrc = ($parsed['scheme'] ?? 'https') . ':' . $src;
+                } elseif (str_starts_with($src, '/')) {
+                    $displaySrc = $baseUrl . $src;
+                } elseif (!preg_match('#^https?://#i', $src)) {
+                    $displaySrc = rtrim($url, '/') . '/' . $src;
+                }
+            }
+
+            $hasAlt = (bool) preg_match('/\balt\s*=/i', $attrs);
             $altText = $altM[1] ?? null;
 
             if (!$hasAlt) { $missingAlt++; $status = 'missing'; }
-            elseif (trim($altText) === '') { $emptyAlt++; $status = 'empty'; }
+            elseif ($altText === null || trim($altText) === '') { $emptyAlt++; $status = 'empty'; }
             else { $withAlt++; $status = 'good'; }
 
-            $images[] = ['src' => $src, 'alt' => $altText, 'status' => $status];
+            $images[] = ['src' => $displaySrc, 'alt' => $altText, 'status' => $status];
         }
 
+        $total = count($images);
+        $score = $total > 0 ? round(($withAlt / $total) * 100) : 100;
+
         return response()->json([
-            'passed' => $missingAlt === 0,
-            'stats' => ['total' => count($images), 'withAlt' => $withAlt, 'missingAlt' => $missingAlt, 'emptyAlt' => $emptyAlt],
+            'score' => $score,
+            'passed' => $missingAlt === 0 && $emptyAlt === 0,
+            'message' => $missingAlt === 0 && $emptyAlt === 0 ? 'Passed' : 'Issues Found',
+            'stats' => ['total' => $total, 'withAlt' => $withAlt, 'missingAlt' => $missingAlt, 'emptyAlt' => $emptyAlt],
             'issues' => $missingAlt > 0 ? [['type' => 'error', 'message' => "{$missingAlt} images missing alt text"]] : [],
-            'links' => array_map(fn($img) => [
-                'url' => $img['src'], 'status' => $img['status'], 'type' => 'image',
-                'text' => $img['alt'] ?? 'N/A',
-            ], array_slice($images, 0, 50)),
+            'images' => array_map(fn($img) => [
+                'url' => $img['src'],
+                'alt' => $img['alt'] ?? '',
+                'status' => $img['status'],
+            ], array_slice($images, 0, 100)),
         ]);
     }
 

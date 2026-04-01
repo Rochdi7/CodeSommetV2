@@ -19,6 +19,7 @@ return new class extends Migration
                 'ads', 'tools', 'hardware', 'office', 'travel',
                 'marketing', 'design_asset', 'api_service', 'other'
             ])->default('other');
+            $table->string('category_custom')->nullable();
             $table->date('expense_date');
             $table->boolean('is_recurring')->default(false);
             $table->string('recurring_period')->nullable(); // monthly, yearly
