@@ -33,10 +33,10 @@ return [
     'text_23' => 'Technologies Utilisées',
     'text_24' => 'Solutions sur mesure, tarification transparente',
     'text_25' => 'Développement Web',
-    'text_26' => 'Contenu professionnel &amp; rédaction',
-    'text_27' => 'SEO avancé &amp; optimisation des performances',
+    'text_26' => 'Contenu professionnel & rédaction',
+    'text_27' => 'SEO avancé & optimisation des performances',
     'text_28' => 'Prêt pour l\'intégration des paiements',
-    'text_29' => 'Analytique &amp; suivi des conversions',
+    'text_29' => 'Analytique & suivi des conversions',
     'text_30' => 'Demander un Devis',
     'text_31' => 'par projet',
     'text_32' => 'Obtenir un devis personnalisé',
@@ -44,9 +44,9 @@ return [
     'text_34' => 'Développement de tableau de bord sur mesure',
     'text_35' => 'Livraison des tâches en 48-72 heures',
     'text_36' => 'Développement full-stack (frontend + backend)',
-    'text_37' => 'SEO professionnel &amp; stratégie de contenu',
+    'text_37' => 'SEO professionnel & stratégie de contenu',
     'text_38' => 'Collaboration en temps réel sur Slack',
-    'text_39' => 'Hébergement premium &amp; maintenance',
+    'text_39' => 'Hébergement premium & maintenance',
     'text_40' => 'Demander un Devis',
     'text_41' => 'Pause ou annulation à tout moment',
     'text_42' => 'Prêt ? améliorer votre site web ? San Francisco ?',
@@ -101,7 +101,7 @@ return [
     'text_686' => 'Automatisation',
     'ml_1086' => 'Associez-vous au studio leader du développement web de San Francisco pour des sites web alimentés par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes orientées conversion pour les startups SaaS, les prestataires de santé et les innovateurs fintech de la Silicon Valley.',
     'ml_1087' => 'Réserver une consultation gratuite à San Francisco',
-    'ml_1088' => 'Spécialistes Dashboard &amp; SaaS',
+    'ml_1088' => 'Spécialistes Dashboard & SaaS',
     'ml_1089' => 'Concevez des portails utilisateurs, des panneaux d\'administration, des tableaux de bord analytiques et des plateformes SaaS qui évoluent avec votre startup à San Francisco.',
     'ml_1090' => 'Axé Génération de Prospects',
     'ml_1091' => 'Sites web optimisés SEO et axés conversion qui transforment les visiteurs de San Francisco en clients payants.',
@@ -130,7 +130,7 @@ return [
     'ml_1114' => 'Réservez un appel découverte pour discuter de vos besoins spécifiques et obtenir un devis personnalisé',
     'ml_1115' => 'Recommandé',
     'ml_1116' => 'Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7-10 jours.',
-    'ml_1117' => 'Tableau de bord personnalisé &amp; portail utilisateur',
+    'ml_1117' => 'Tableau de bord personnalisé & portail utilisateur',
     'ml_1118' => 'Hébergement gratuit pendant 3 mois inclus',
     'ml_1119' => 'Devis personnalisé selon le périmètre de votre projet',
     'ml_1120' => 'Échanger sur WhatsApp',
@@ -176,4 +176,27 @@ return [
     'ml_1160' => 'Retour à l\'accueil',
     'ml_1161' => 'Réserver un Appel Découverte',
     'ml_1162' => 'Réserver un Appel Découverte',
+    'attr_1662' => 'Comment Nous Avons Aidé une Startup SaaS de San Francisco à Atteindre 10 000 Utilisateurs',
+    'qb_2262' => '"CodeSommet a transformé notre plateforme B2B et généré 250% de prospects qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2263' => '"Travailler à distance avec CodeSommet a été fluide. Ils ont livré notre plateforme de réservation santé en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge administrative de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2264' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont bondi de 400% et nous convertissons désormais 3 fois plus de prospects en visites. Un travail vraiment exceptionnel."',
+    'sw_3064' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à San Francisco.',
+    'sw_3065' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à San Francisco.',
+    'sw_3066' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? San Francisco',
+    'sw_3067' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de San Francisco.',
+    'sw_3068' => 'Questions Fréquemment Posées sur le Développement Web à San Francisco',
+    'sw_3069' => 'Voir l\'Étude de Cas',
+    'sw_3070' => 'Contactez notre équipe San Francisco',
+    'sw_3071' => ') }}</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
 ];

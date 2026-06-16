@@ -1,11 +1,14 @@
 {{-- En-tête de bureau - masqué sur mobile (lg:block) --}}
 <header class="fixed top-6 left-0 right-0 z-40 hidden lg:block px-6 transition-all duration-500 ease-out">
     <div class="flex justify-center items-center gap-3">
-        <div class="relative flex items-center gap-4 px-3 py-2 rounded-full transition-all duration-300 bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)]">
+        <div
+            class="relative flex items-center gap-4 px-3 py-2 rounded-full transition-all duration-300 bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)]">
 
             {{-- Superposition dégradée animée --}}
             <div class="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
-                <div class="absolute top-0 left-0 h-full" style="background:linear-gradient(90deg, transparent 0%, rgba(0,174,239,0.08) 40%, rgba(0,174,239,0.12) 50%, rgba(0,174,239,0.08) 60%, transparent 100%);width:200%;animation:nav-sweep 4s ease-in-out infinite"></div>
+                <div class="absolute top-0 left-0 h-full"
+                    style="background:linear-gradient(90deg, transparent 0%, rgba(0,174,239,0.08) 40%, rgba(0,174,239,0.12) 50%, rgba(0,174,239,0.08) 60%, transparent 100%);width:200%;animation:nav-sweep 4s ease-in-out infinite">
+                </div>
             </div>
             <style>
                 @keyframes nav-sweep {
@@ -32,31 +35,35 @@
             {{-- Navigation --}}
             <nav class="flex items-center gap-1 relative z-10">
                 @php
-                $navItems = [
-                ['route' => 'home', 'label' => __('nav.home')],
-                ['route' => 'our-work', 'label' => __('nav.our_work')],
-                ['route' => 'tools', 'label' => __('nav.tools')],
-                ['route' => 'blog', 'label' => __('nav.blog')],
-                ['route' => 'about', 'label' => __('nav.about')],
-                ['route' => 'contact', 'label' => __('nav.contact')],
-                ];
+                    $navItems = [
+                        ['route' => 'home', 'label' => __('nav.home')],
+                        ['route' => 'our-work', 'label' => __('nav.our_work')],
+                        ['route' => 'tools', 'label' => __('nav.tools')],
+                        ['route' => 'blog', 'label' => __('nav.blog')],
+                        ['route' => 'about', 'label' => __('nav.about')],
+                        ['route' => 'contact', 'label' => __('nav.contact')],
+                    ];
                 @endphp
 
-                @foreach($navItems as $item)
-                <div class="relative">
-                    <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 {{ request()->routeIs($item['route']) ? 'text-[var(--text-primary)]' : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]' }}" href="{{ route($item['route']) }}">
-                        {{ $item['label'] }}
-                    </a>
-                </div>
+                @foreach ($navItems as $item)
+                    <div class="relative">
+                        <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 {{ request()->routeIs($item['route']) ? 'text-[var(--text-primary)]' : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]' }}"
+                            href="{{ route($item['route']) }}">
+                            {{ $item['label'] }}
+                        </a>
+                    </div>
                 @endforeach
             </nav>
 
             {{-- Boutons CTA --}}
             <div class="flex items-center gap-2 pr-2 relative z-10">
-                <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 hover:bg-white hover:from-white hover:to-white hover:text-[var(--color-primary-orange)] hover:border hover:border-[var(--color-primary-orange)]" href="{{ route('get-quote') }}">
+                <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 hover:bg-white hover:from-white hover:to-white hover:text-[var(--color-primary-orange)] hover:border hover:border-[var(--color-primary-orange)]"
+                    href="{{ route('get-quote') }}">
                     {{ __('nav.get_quote') }}
                 </a>
-                <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 border border-[var(--border-light)] text-[var(--text-primary)] hover:bg-gray-50">
+                <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                    class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 border border-[var(--border-light)] text-[var(--text-primary)] hover:bg-gray-50">
                     {{ __('nav.book_call') }}
                 </button>
             </div>
@@ -65,18 +72,25 @@
 
         {{-- Language Switcher --}}
         <div class="relative" id="lang-switcher">
-            <button onclick="document.getElementById('lang-dropdown').classList.toggle('hidden'); document.getElementById('lang-dropdown').classList.toggle('lang-dropdown-open')" class="w-11 h-11 rounded-full flex items-center justify-center bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] transition-all duration-200 hover:-translate-y-0.5">
-                <svg class="w-5 h-5 text-[var(--text-secondary)]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <button
+                onclick="document.getElementById('lang-dropdown').classList.toggle('hidden'); document.getElementById('lang-dropdown').classList.toggle('lang-dropdown-open')"
+                class="w-11 h-11 rounded-full flex items-center justify-center bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.08)] transition-all duration-200 hover:-translate-y-0.5">
+                <svg class="w-5 h-5 text-[var(--text-secondary)]" fill="none" stroke="currentColor"
+                    stroke-width="1.8" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="10" />
-                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" />
+                    <path
+                        d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" />
                 </svg>
             </button>
 
-            <div id="lang-dropdown" class="hidden absolute right-0 top-full mt-2 w-44 rounded-2xl bg-white/95 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_8px_30px_rgba(0,0,0,0.1)] py-2 z-50 transition-all duration-200 origin-top-right">
+            <div id="lang-dropdown"
+                class="hidden absolute right-0 top-full mt-2 w-44 rounded-2xl bg-white/95 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_8px_30px_rgba(0,0,0,0.1)] py-2 z-50 transition-all duration-200 origin-top-right">
 
                 {{-- French (default locale — URL without /fr/ prefix) --}}
-                <a href="{{ LaravelLocalization::getNonLocalizedURL() }}" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors {{ app()->getLocale() === 'fr' ? 'bg-gray-50' : '' }}">
-                    <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
+                <a href="{{ LaravelLocalization::getNonLocalizedURL() }}"
+                    class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors {{ app()->getLocale() === 'fr' ? 'bg-gray-50' : '' }}">
+                    <span
+                        class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                         <svg viewBox="0 0 3 2" class="w-5 h-auto">
                             <rect width="1" height="2" fill="#002395" />
                             <rect x="1" width="1" height="2" fill="#fff" />
@@ -84,12 +98,16 @@
                         </svg>
                     </span>
                     <span class="text-sm font-medium text-[var(--text-primary)]">Français</span>
-                    @if(app()->getLocale() === 'fr')<span class="ml-auto w-2 h-2 rounded-full bg-[var(--color-primary-orange)]"></span>@endif
+                    @if (app()->getLocale() === 'fr')
+                        <span class="ml-auto w-2 h-2 rounded-full bg-[var(--color-primary-orange)]"></span>
+                    @endif
                 </a>
 
                 {{-- English --}}
-                <a href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}" class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors {{ app()->getLocale() === 'en' ? 'bg-gray-50' : '' }}">
-                    <span class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
+                <a href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}"
+                    class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors {{ app()->getLocale() === 'en' ? 'bg-gray-50' : '' }}">
+                    <span
+                        class="w-7 h-7 rounded-full overflow-hidden border border-gray-200 flex-shrink-0 flex items-center justify-center bg-white shadow-sm">
                         <svg viewBox="0 0 60 30" class="w-5 h-auto">
                             <clipPath id="en-clip">
                                 <rect width="60" height="30" />
@@ -97,9 +115,11 @@
                             <g clip-path="url(#en-clip)">
                                 <rect width="60" height="30" fill="#012169" />
                                 <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
-                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" clip-path="url(#en-center)" />
+                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"
+                                    clip-path="url(#en-center)" />
                                 <clipPath id="en-center">
-                                    <path d="M30,0 L60,0 L60,15 Z M60,15 L60,30 L30,30 Z M30,30 L0,30 L0,15 Z M0,15 L0,0 L30,0 Z" />
+                                    <path
+                                        d="M30,0 L60,0 L60,15 Z M60,15 L60,30 L30,30 Z M30,30 L0,30 L0,15 Z M0,15 L0,0 L30,0 Z" />
                                 </clipPath>
                                 <path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10" />
                                 <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6" />
@@ -107,7 +127,9 @@
                         </svg>
                     </span>
                     <span class="text-sm font-medium text-[var(--text-primary)]">English</span>
-                    @if(app()->getLocale() === 'en')<span class="ml-auto w-2 h-2 rounded-full bg-[var(--color-primary-orange)]"></span>@endif
+                    @if (app()->getLocale() === 'en')
+                        <span class="ml-auto w-2 h-2 rounded-full bg-[var(--color-primary-orange)]"></span>
+                    @endif
                 </a>
             </div>
         </div>

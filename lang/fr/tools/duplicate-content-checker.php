@@ -15,7 +15,7 @@ return [
     'text_5' => 'Comment utiliser cet outil',
     'text_6' => 'Collez votre contenu :',
     'text_7' => 'Copiez le texte de deux sources dans Contenu A et Contenu B',
-    'text_8' => 'Cliquez sur &quot;Comparer le Contenu&quot; pour analyser la similarité',
+    'text_8' => 'Cliquez sur "Comparer le Contenu" pour analyser la similarité',
     'text_9' => 'Vérifiez le pourcentage de similarité, les phrases et mots uniques',
     'text_10' => 'Utilisez les recommandations pour améliorer l\'unicité du contenu',
     'text_11' => 'Questions Fréquemment Posées',

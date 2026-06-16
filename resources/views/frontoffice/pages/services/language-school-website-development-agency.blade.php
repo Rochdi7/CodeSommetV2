@@ -1,4 +1,4 @@
-﻿@extends('frontoffice.layouts.app')
+@extends('frontoffice.layouts.app')
 
 @section('title', __('services/language-school-website-development-agency.title'))
 @section('meta_description', __('services/language-school-website-development-agency.meta_description'))
@@ -43,7 +43,9 @@
                                         d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
-                                href="/#industries">Industries</a><span>/</span><span class="text-gray-600">{{ __('services/language-school-website-development-agency.ml_932') }}</span></nav>
+                                href="/#industries">Industries</a><span>/</span><span
+                                class="text-gray-600">{{ __('services/language-school-website-development-agency.ml_932') }}</span>
+                        </nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -51,8 +53,8 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Accepte Actuellement les
-                                    <!-- -->{{ __('services/language-school-website-development-agency.text_0') }}<!-- --> Projets</span><span
-                                    class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
+                                    <!-- -->{{ __('services/language-school-website-development-agency.text_0') }}<!-- -->
+                                    Projets</span><span class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 text-[#00AEEF]"
@@ -62,12 +64,14 @@
                                     </path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🌐<!-- --> <!-- -->Écoles de
-                                    Langues<!-- -->, <!-- -->{{ __('services/language-school-website-development-agency.text_1') }}</span>
+                                    Langues<!-- -->,
+                                    <!-- -->{{ __('services/language-school-website-development-agency.text_1') }}</span>
                             </div>
                         </div>
                         <div class="space-y-6">
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
-                                style="font-family:var(--font-display)">{{ __('services/language-school-website-development-agency.text_2') }}<!-- -->
+                                style="font-family:var(--font-display)">
+                                {{ __('services/language-school-website-development-agency.text_2') }}<!-- -->
                                 <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
                                         style="min-height:1.2em"
                                         class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
@@ -82,9 +86,11 @@
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
                                             class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">{{ __('services/language-school-website-development-agency.ml_933') }}</span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">{{ __('services/language-school-website-development-agency.ml_934') }}</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">{{ __('services/language-school-website-development-agency.ml_934') }}</span></span></span>
+                            </h1>
                             <p
-                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">{{ __('services/language-school-website-development-agency.ml_935') }}</p>
+                                class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
+                                {{ __('services/language-school-website-development-agency.ml_935') }}</p>
                         </div>
                         <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"><a target="_blank"
                                 rel="noopener noreferrer"
@@ -98,18 +104,21 @@
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
                     rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px"
                                 href="https://cal.com/pikasso/discovery"><span
-                                    class="relative text-[15px] font-semibold text-white z-10">{{ __('services/language-school-website-development-agency.ml_936') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="relative text-[15px] font-semibold text-white z-10">{{ __('services/language-school-website-development-agency.ml_936') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
-                                href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_937') }}</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
+                                href="#portfolio"><span
+                                    class="text-[15px] font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_937') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true">
                                     <path d="M5 12h14"></path>
@@ -118,7 +127,8 @@
                         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_3') }} <!-- -->{{ __('services/language-school-website-development-agency.ml_938') }}</span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_3') }}
+                                    <!-- -->{{ __('services/language-school-website-development-agency.ml_938') }}</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -128,7 +138,8 @@
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_4') }} <!-- -->Écoles de
+                                    class="font-semibold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_4') }}
+                                    <!-- -->Écoles de
                                     Langues<!-- --></span>
                             </div>
                         </div>
@@ -150,13 +161,16 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>{{ __('services/language-school-website-development-agency.text_5') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_5') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Pourquoi Choisir CodeSommetStudio dans le secteur
-                        <!-- -->{{ __('services/language-school-website-development-agency.text_6') }}<!-- -->?</h2>
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_6') }}<!-- -->?
+                    </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise locale alliée à des standards
                         internationaux. Voici ce qui fait de nous le partenaire idéal en développement web dans le secteur
-                        <!-- -->{{ __('services/language-school-website-development-agency.text_7') }}<!-- -->.</p>
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_7') }}<!-- -->.
+                    </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -177,10 +191,13 @@
                                                 </path>
                                                 <path d="M22 10v6"></path>
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_939') }}</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_940') }}</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
+                                        {{ __('services/language-school-website-development-agency.ml_939') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">
+                                        {{ __('services/language-school-website-development-agency.ml_940') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -213,10 +230,13 @@
                                                 <path d="M7 2v2"></path>
                                                 <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                                                 <rect x="8" y="8" width="8" height="8" rx="1"></rect>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_941') }}</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_942') }}</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
+                                        {{ __('services/language-school-website-development-agency.ml_941') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">
+                                        {{ __('services/language-school-website-development-agency.ml_942') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -239,10 +259,13 @@
                                                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                                 <circle cx="9" cy="7" r="4"></circle>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_943') }}</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_944') }}</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
+                                        {{ __('services/language-school-website-development-agency.ml_943') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">
+                                        {{ __('services/language-school-website-development-agency.ml_944') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -265,10 +288,13 @@
                                                 <path d="M18 17V9"></path>
                                                 <path d="M13 17V5"></path>
                                                 <path d="M8 17v-3"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_945') }}</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_946') }}</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
+                                        {{ __('services/language-school-website-development-agency.ml_945') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">
+                                        {{ __('services/language-school-website-development-agency.ml_946') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -290,10 +316,13 @@
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                                 <path d="M2 12h20"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_947') }}</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_948') }}</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
+                                        {{ __('services/language-school-website-development-agency.ml_947') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">
+                                        {{ __('services/language-school-website-development-agency.ml_948') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -315,10 +344,13 @@
                                                 <path
                                                     d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                                 </path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">{{ __('services/language-school-website-development-agency.ml_949') }}</h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">{{ __('services/language-school-website-development-agency.ml_950') }}</p>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
+                                        {{ __('services/language-school-website-development-agency.ml_949') }}</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">
+                                        {{ __('services/language-school-website-development-agency.ml_950') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                 </div>
                             </div>
@@ -331,29 +363,34 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_8') }} <!-- -->{{ __('services/language-school-website-development-agency.text_9') }}<!-- -->
-                        Entreprises</h2>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_8') }}
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_9') }}<!-- -->
+                        Entreprises
+                    </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_10') }} <span class="count-up"
-                                    data-target="50">0</span> {{ __('services/language-school-website-development-agency.text_11') }}</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_10') }}
+                                <span class="count-up" data-target="50">0</span>
+                                {{ __('services/language-school-website-development-agency.text_11') }}</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_12') }} <span class="count-up"
-                                    data-target="100">0</span> Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_12') }}
+                                <span class="count-up" data-target="100">0</span> Prospects</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_13') }} <span class="count-up"
-                                    data-target="35">0</span> Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_13') }}
+                                <span class="count-up" data-target="35">0</span> Clients</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/language-school-website-development-agency.text_14') }} <!-- -->Écoles
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">
+                        {{ __('services/language-school-website-development-agency.text_14') }} <!-- -->Écoles
                         de Langues<!-- --> {{ __('services/language-school-website-development-agency.text_15') }}</p>
                 </div>
             </div>
@@ -369,10 +406,15 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" x2="12" y1="8" y2="12"></line>
                             <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                        </svg>{{ __('services/language-school-website-development-agency.text_16') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_16') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_17') }}<!-- -->: <!-- -->{{ __('services/language-school-website-development-agency.text_18') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_951') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_952') }}</p>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_17') }}<!-- -->:
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_18') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_951') }}
+                    </h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
+                        {{ __('services/language-school-website-development-agency.ml_952') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -388,11 +430,14 @@
                                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                     <circle cx="9" cy="7" r="4"></circle>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_19') }}</h3>
+                                style="font-family:var(--font-heading)">
+                                {{ __('services/language-school-website-development-agency.text_19') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_953') }}</p>
+                                style="font-family:var(--font-body)">
+                                {{ __('services/language-school-website-development-agency.ml_953') }}</p>
                         </div>
                     </div>
                     <div>
@@ -409,11 +454,14 @@
                                     <rect width="7" height="5" x="14" y="3" rx="1"></rect>
                                     <rect width="7" height="9" x="14" y="12" rx="1"></rect>
                                     <rect width="7" height="5" x="3" y="16" rx="1"></rect>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_20') }}</h3>
+                                style="font-family:var(--font-heading)">
+                                {{ __('services/language-school-website-development-agency.text_20') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_954') }}</p>
+                                style="font-family:var(--font-body)">
+                                {{ __('services/language-school-website-development-agency.ml_954') }}</p>
                         </div>
                     </div>
                     <div>
@@ -428,11 +476,14 @@
                                     aria-hidden="true">
                                     <line x1="12" x2="12" y1="2" y2="22"></line>
                                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_955') }}</h3>
+                                style="font-family:var(--font-heading)">
+                                {{ __('services/language-school-website-development-agency.ml_955') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_956') }}</p>
+                                style="font-family:var(--font-body)">
+                                {{ __('services/language-school-website-development-agency.ml_956') }}</p>
                         </div>
                     </div>
                     <div>
@@ -447,11 +498,14 @@
                                     <path
                                         d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
                                     </path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_21') }}</h3>
+                                style="font-family:var(--font-heading)">
+                                {{ __('services/language-school-website-development-agency.text_21') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_957') }}</p>
+                                style="font-family:var(--font-body)">
+                                {{ __('services/language-school-website-development-agency.ml_957') }}</p>
                         </div>
                     </div>
                     <div>
@@ -466,11 +520,14 @@
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                     <path d="M2 12h20"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_22') }}</h3>
+                                style="font-family:var(--font-heading)">
+                                {{ __('services/language-school-website-development-agency.text_22') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_958') }}</p>
+                                style="font-family:var(--font-body)">
+                                {{ __('services/language-school-website-development-agency.ml_958') }}</p>
                         </div>
                     </div>
                     <div>
@@ -487,20 +544,27 @@
                                     <path d="M18 17V9"></path>
                                     <path d="M13 17V5"></path>
                                     <path d="M8 17v-3"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-[#0F0F0F]"
-                                style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_23') }}</h3>
+                                style="font-family:var(--font-heading)">
+                                {{ __('services/language-school-website-development-agency.text_23') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_959') }}</p>
+                                style="font-family:var(--font-body)">
+                                {{ __('services/language-school-website-development-agency.ml_959') }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-10 md:mt-12">
                     <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
                         style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                        exacts pour plus de 40 <!-- -->{{ __('services/language-school-website-development-agency.text_24') }}<!-- --> entreprises.</p><a
+                        exacts pour plus de 40
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_24') }}<!-- -->
+                        entreprises.
+                    </p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
-                        style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/language-school-website-development-agency.text_25') }}</a>
+                        style="color:white"
+                        href="https://cal.com/pikasso/discovery">{{ __('services/language-school-website-development-agency.text_25') }}</a>
                 </div>
             </div>
         </section>
@@ -518,11 +582,16 @@
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
                             <circle cx="4" cy="20" r="2"></circle>
-                        </svg>{{ __('services/language-school-website-development-agency.text_26') }} <!-- -->{{ __('services/language-school-website-development-agency.text_27') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_26') }}
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_27') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_28') }}<!-- --> {{ __('services/language-school-website-development-agency.text_201') }} <!-- -->Écoles de
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_28') }}<!-- -->
+                        {{ __('services/language-school-website-development-agency.text_201') }} <!-- -->Écoles de
                         Langues<!-- --> Sites Web</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_960') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
+                        {{ __('services/language-school-website-development-agency.ml_960') }}</p>
                 </div>
                 <div class="space-y-12">
                     <div>
@@ -534,7 +603,8 @@
                                             style="font-family:var(--font-heading)">Inscription aux Cours &amp; Test de
                                             Placement</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_961') }}</p>
+                                            style="font-family:var(--font-body)">
+                                            {{ __('services/language-school-website-development-agency.ml_961') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -545,7 +615,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_962') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_962') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -555,7 +626,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_963') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_963') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -565,7 +637,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_964') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_964') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -593,8 +666,8 @@
                                                 <path d="M20 2v4"></path>
                                                 <path d="M22 4h-4"></path>
                                                 <circle cx="4" cy="20" r="2"></circle>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_202') }}</div><img
-                                            src="{{ asset('images/education/education-application-portal.webp') }}"
+                                            </svg>{{ __('services/language-school-website-development-agency.text_202') }}
+                                        </div><img src="{{ asset('images/education/education-application-portal.webp') }}"
                                             alt="Portail de Candidature"
                                             class="absolute inset-0 w-full h-full object-contain" />
                                     </div>
@@ -611,7 +684,8 @@
                                             style="font-family:var(--font-heading)">Chatbot IA de Pratique Linguistique
                                         </h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_965') }}</p>
+                                            style="font-family:var(--font-body)">
+                                            {{ __('services/language-school-website-development-agency.ml_965') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -622,7 +696,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_966') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_966') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -672,8 +747,8 @@
                                                 <path d="M20 2v4"></path>
                                                 <path d="M22 4h-4"></path>
                                                 <circle cx="4" cy="20" r="2"></circle>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_30') }}</div><img
-                                            src="{{ asset('images/education/education-ai-chatbot.webp') }}"
+                                            </svg>{{ __('services/language-school-website-development-agency.text_30') }}
+                                        </div><img src="{{ asset('images/education/education-ai-chatbot.webp') }}"
                                             alt="Chatbot IA" class="absolute inset-0 w-full h-full object-contain" />
                                     </div>
                                 </div>
@@ -686,9 +761,11 @@
                                 <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
-                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_967') }}</h3>
+                                            style="font-family:var(--font-heading)">
+                                            {{ __('services/language-school-website-development-agency.ml_967') }}</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_968') }}</p>
+                                            style="font-family:var(--font-body)">
+                                            {{ __('services/language-school-website-development-agency.ml_968') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -710,7 +787,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_31') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_31') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -720,7 +798,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_32') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_32') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -736,8 +815,9 @@
                                     <div
                                         class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
                                         <img src="{{ asset('images/education/education-student-dashboard.webp') }}"
-                                            alt="Tableau de Bord Étudiant"
-                                            class="absolute inset-0 w-full h-full object-contain" /></div>
+                                            alt="{{ __('services/language-school-website-development-agency.attr_1561') }}"
+                                            class="absolute inset-0 w-full h-full object-contain" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -751,7 +831,8 @@
                                             style="font-family:var(--font-heading)">CRM de Gestion &amp; Planification des
                                             Tuteurs</h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_969') }}</p>
+                                            style="font-family:var(--font-body)">
+                                            {{ __('services/language-school-website-development-agency.ml_969') }}</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -773,7 +854,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_204') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_204') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -783,7 +865,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_970') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_970') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -793,7 +876,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_33') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.text_33') }}</span>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div
@@ -818,23 +902,32 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>{{ __('services/language-school-website-development-agency.text_34') }} <!-- -->{{ __('services/language-school-website-development-agency.text_35') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_34') }}
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_35') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_36') }} <!-- -->{{ __('services/language-school-website-development-agency.text_37') }}</h2>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_36') }}
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_37') }}
+                    </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Projets réels, résultats réels. Découvrez
-                        comment nous avons aidé les entreprises en <!-- -->{{ __('services/language-school-website-development-agency.text_38') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_971') }}</p>
+                        comment nous avons aidé les entreprises en
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_38') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_971') }}
+                    </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}"
-                                        autoPlay="" loop="" muted="" playsInline=""
+                                        src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay=""
+                                        loop="" muted="" playsInline=""
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/language-school-website-development-agency.ml_972') }}</span></div>
+                                        <span
+                                            class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/language-school-website-development-agency.ml_972') }}</span>
+                                    </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
@@ -844,8 +937,10 @@
                                             </svg>+60% Candidatures</span></div>
                                 </div>
                                 <div class="px-5 py-4">
-                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('services/language-school-website-development-agency.ml_973') }}</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/language-school-website-development-agency.ml_974') }}</p>
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">
+                                        {{ __('services/language-school-website-development-agency.ml_973') }}</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">
+                                        {{ __('services/language-school-website-development-agency.ml_974') }}</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
@@ -860,7 +955,8 @@
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                         <span class="text-xs font-bold text-white tracking-wide uppercase">FORMATION
-                                            PROFESSIONNELLE</span></div>
+                                            PROFESSIONNELLE</span>
+                                    </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
@@ -886,18 +982,22 @@
                                         alt="Project Azubi" class="absolute inset-0 w-full h-full object-cover" />
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/language-school-website-development-agency.ml_975') }}</span></div>
+                                        <span
+                                            class="text-xs font-bold text-white tracking-wide uppercase">{{ __('services/language-school-website-development-agency.ml_975') }}</span>
+                                    </div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_205') }}</span></div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_205') }}</span>
+                                    </div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">{{ __('services/language-school-website-development-agency.ml_976') }}</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">
+                                        {{ __('services/language-school-website-development-agency.ml_976') }}</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc + dans
                                         le Monde</p>
                                 </div>
@@ -919,11 +1019,15 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>{{ __('services/language-school-website-development-agency.text_206') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_206') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_39') }}<!-- --> pour
-                        <!-- -->{{ __('services/language-school-website-development-agency.text_40') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_977') }}</p>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_39') }}<!-- --> pour
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_40') }}
+                    </h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
+                        {{ __('services/language-school-website-development-agency.ml_977') }}</p>
                 </div>
                 <div class="relative">
                     <div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2"
@@ -943,7 +1047,8 @@
                                                 aria-hidden="true">
                                                 <path d="m21 21-4.34-4.34"></path>
                                                 <circle cx="11" cy="11" r="8"></circle>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                         <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
                                             style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -954,9 +1059,11 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_207') }}</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_207') }}
+                                        </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_41') }}</h3>
+                                            style="font-family:var(--font-heading)">
+                                            {{ __('services/language-school-website-development-agency.text_41') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -978,7 +1085,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_978') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_978') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -988,7 +1096,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_979') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_979') }}</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1001,7 +1110,8 @@
                                             class="lucide lucide-search w-8 h-8 text-white" aria-hidden="true">
                                             <path d="m21 21-4.34-4.34"></path>
                                             <circle cx="11" cy="11" r="8"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="absolute left-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
                                         style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1012,7 +1122,8 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>{{ __('services/language-school-website-development-agency.text_208') }}</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_208') }}
+                                    </div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1040,7 +1151,8 @@
                                                 </circle>
                                                 <circle cx="8.5" cy="7.5" r=".5" fill="currentColor">
                                                 </circle>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                         <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
                                             style="font-family:var(--font-body);background-color:#FFF5F0;color:#00AEEF">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1051,9 +1163,11 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_209') }}</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_209') }}
+                                        </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_210') }}</h3>
+                                            style="font-family:var(--font-heading)">
+                                            {{ __('services/language-school-website-development-agency.text_210') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1064,7 +1178,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_980') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_980') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1101,7 +1216,8 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>{{ __('services/language-school-website-development-agency.text_211') }}</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_211') }}
+                                    </div>
                                     <div
                                         class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1115,7 +1231,8 @@
                                             <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
                                             <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
                                             <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1134,7 +1251,8 @@
                                                 aria-hidden="true">
                                                 <path d="m16 18 6-6-6-6"></path>
                                                 <path d="m8 6-6 6 6 6"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                         <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
                                             style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1145,9 +1263,11 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_212') }}</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_212') }}
+                                        </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_981') }}</h3>
+                                            style="font-family:var(--font-heading)">
+                                            {{ __('services/language-school-website-development-agency.ml_981') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1158,7 +1278,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_982') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_982') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1179,7 +1300,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_983') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_983') }}</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1192,7 +1314,8 @@
                                             class="lucide lucide-code w-8 h-8 text-white" aria-hidden="true">
                                             <path d="m16 18 6-6-6-6"></path>
                                             <path d="m8 6-6 6 6 6"></path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="absolute left-20 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
                                         style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1203,7 +1326,8 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>{{ __('services/language-school-website-development-agency.text_214') }}</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_214') }}
+                                    </div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1228,7 +1352,8 @@
                                                 </path>
                                                 <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                                 <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                         <div class="md:hidden inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-3"
                                             style="font-family:var(--font-body);background-color:#00AEEF;color:#FFFFFF">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1239,9 +1364,11 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>{{ __('services/language-school-website-development-agency.text_215') }}</div>
+                                            </svg>{{ __('services/language-school-website-development-agency.text_215') }}
+                                        </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
-                                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_216') }}</h3>
+                                            style="font-family:var(--font-heading)">
+                                            {{ __('services/language-school-website-development-agency.text_216') }}</h3>
                                         <ul class="space-y-2">
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1252,7 +1379,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_984') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_984') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1262,7 +1390,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-xs md:text-sm text-[#0F0F0F]/70"
-                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_985') }}</span></li>
+                                                    style="font-family:var(--font-body)">{{ __('services/language-school-website-development-agency.ml_985') }}</span>
+                                            </li>
                                             <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                     width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1288,7 +1417,8 @@
                                             <path d="M16 2v4"></path>
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
-                                        </svg>{{ __('services/language-school-website-development-agency.text_217') }}</div>
+                                        </svg>{{ __('services/language-school-website-development-agency.text_217') }}
+                                    </div>
                                     <div
                                         class="w-16 h-16 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white z-10 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1303,7 +1433,8 @@
                                             </path>
                                             <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                 </div>
                                 <div class="flex-1 hidden md:block"></div>
                             </div>
@@ -1312,10 +1443,14 @@
                 </div>
                 <div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8">
                     <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_43') }} <!-- -->{{ __('services/language-school-website-development-agency.text_44') }}<!-- -->
-                        projet de site web ?</p><a
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_43') }}
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_44') }}<!-- -->
+                        projet de site web ?
+                    </p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
-                        style="color:white" href="https://cal.com/pikasso/discovery">{{ __('services/language-school-website-development-agency.ml_986') }}</a>
+                        style="color:white"
+                        href="https://cal.com/pikasso/discovery">{{ __('services/language-school-website-development-agency.ml_986') }}</a>
                 </div>
             </div>
         </section>
@@ -1323,8 +1458,10 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-12 md:mb-16">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_45') }}</h2>
-                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">{{ __('services/language-school-website-development-agency.ml_987') }}</p>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_45') }}</h2>
+                    <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">
+                        {{ __('services/language-school-website-development-agency.ml_987') }}</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
                     <div class="relative bg-black rounded-[32px] p-3 text-white">
@@ -1337,7 +1474,8 @@
                                     class="lucide lucide-trending-up w-4 h-4" aria-hidden="true">
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                </svg>{{ __('services/language-school-website-development-agency.text_46') }}</div>
+                                </svg>{{ __('services/language-school-website-development-agency.text_46') }}
+                            </div>
                         </div>
                         <div class="relative rounded-[20px] p-6 md:p-8 mb-3 bg-[#1a1a1a] border border-transparent">
                             <div class="flex items-start justify-between mb-6">
@@ -1353,11 +1491,13 @@
                                             <line x1="12" x2="12" y1="17" y2="21">
                                             </line>
                                         </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-white">{{ __('services/language-school-website-development-agency.text_47') }}</h3>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-white">
+                                        {{ __('services/language-school-website-development-agency.text_47') }}</h3>
                                 </div>
                             </div>
                             <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                                <p class="text-white/70">{{ __('services/language-school-website-development-agency.ml_988') }}</p>
+                                <p class="text-white/70">
+                                    {{ __('services/language-school-website-development-agency.ml_988') }}</p>
                             </div>
                             <div class="divide-y divide-white/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1367,7 +1507,9 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.ml_989') }}</span></div>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.ml_989') }}</span>
+                                </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1375,7 +1517,9 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.ml_990') }}</span></div>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.ml_990') }}</span>
+                                </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1391,15 +1535,8 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_48') }}</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_49') }}</span>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.text_48') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1408,7 +1545,8 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_50') }}</span>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.text_49') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1417,7 +1555,9 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_51') }}</span></div>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.text_50') }}</span>
+                                </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1425,7 +1565,19 @@
                                         class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-white/80">{{ __('services/language-school-website-development-agency.text_218') }}</span></div>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.text_51') }}</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-white/50 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span
+                                        class="text-white/80">{{ __('services/language-school-website-development-agency.text_218') }}</span>
+                                </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1433,7 +1585,9 @@
                                         class="lucide lucide-check w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-green-400 font-medium">{{ __('services/language-school-website-development-agency.ml_991') }}</span></div>
+                                    </svg><span
+                                        class="text-green-400 font-medium">{{ __('services/language-school-website-development-agency.ml_991') }}</span>
+                                </div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
@@ -1443,7 +1597,8 @@
                                     <div class="flex items-end gap-2"><span
                                             class="text-5xl md:text-6xl font-bold">{{ __('services/language-school-website-development-agency.text_53') }}</span><span
                                             class="text-white/50 text-xl mb-2"></span></div>
-                                    <p class="text-white/60 text-sm mt-2">{{ __('services/language-school-website-development-agency.ml_992') }}</p>
+                                    <p class="text-white/60 text-sm mt-2">
+                                        {{ __('services/language-school-website-development-agency.ml_992') }}</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><a
@@ -1467,8 +1622,10 @@
                                             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-infinity w-7 h-7 text-black" aria-hidden="true">
                                             <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
-                                        </svg></div>
-                                    <h3 class="text-3xl md:text-4xl font-bold text-black">{{ __('services/language-school-website-development-agency.text_520') }}</h3>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-3xl md:text-4xl font-bold text-black">
+                                        {{ __('services/language-school-website-development-agency.text_520') }}</h3>
                                 </div><button
                                     class="flex items-center rounded-full transition-all duration-400 ease-out gap-2 px-4 py-2 bg-black/10 hover:bg-black/20"
                                     style="margin-top:0">
@@ -1494,7 +1651,8 @@
                                     <path d="M22 4h-4"></path>
                                     <circle cx="4" cy="20" r="2"></circle>
                                 </svg>
-                                <p class="text-black/70 transition-all duration-300">{{ __('services/language-school-website-development-agency.ml_994') }}</p>
+                                <p class="text-black/70 transition-all duration-300">
+                                    {{ __('services/language-school-website-development-agency.ml_994') }}</p>
                             </div>
                             <div class="divide-y divide-black/10">
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1504,23 +1662,8 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_55') }}</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.ml_995') }}</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_56') }}</span>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_55') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1529,15 +1672,8 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_57') }}</span></div>
-                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
-                                        aria-hidden="true">
-                                        <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_58') }}</span>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.ml_995') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1546,7 +1682,8 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_59') }}</span>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_56') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1555,7 +1692,8 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_60') }}</span>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_57') }}</span>
                                 </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1564,7 +1702,9 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_61') }}</span></div>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_58') }}</span>
+                                </div>
                                 <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1572,7 +1712,39 @@
                                         class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
                                         aria-hidden="true">
                                         <path d="M20 6 9 17l-5-5"></path>
-                                    </svg><span class="text-black/80">{{ __('services/language-school-website-development-agency.text_62') }}</span></div>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_59') }}</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_60') }}</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_61') }}</span>
+                                </div>
+                                <div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-check w-5 h-5 text-black/40 mt-0.5 flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span
+                                        class="text-black/80">{{ __('services/language-school-website-development-agency.text_62') }}</span>
+                                </div>
                             </div>
                         </div>
                         <div class="px-6 md:px-8 pb-3">
@@ -1587,7 +1759,8 @@
                                                 Votre Devis Gratuit</span></div><span
                                             class="text-black/50 text-xl mb-2">{{ __('services/language-school-website-development-agency.text_219') }}</span>
                                     </div>
-                                    <p class="text-black/60 text-sm mt-2">{{ __('services/language-school-website-development-agency.text_64') }}</p>
+                                    <p class="text-black/60 text-sm mt-2">
+                                        {{ __('services/language-school-website-development-agency.text_64') }}</p>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery"
@@ -1615,22 +1788,28 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                 <path d="M2 12h20"></path>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]"
-                            style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_997') }}</h2>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_998') }}</p>
+                            style="font-family:var(--font-heading)">
+                            {{ __('services/language-school-website-development-agency.ml_997') }}</h2>
+                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                            {{ __('services/language-school-website-development-agency.ml_998') }}</p>
                         <div class="flex flex-wrap gap-3 justify-center mb-4">
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
                                 <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>Audit SEO</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/language-school-website-development-agency.ml_999') }}</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div>
+                                <span>{{ __('services/language-school-website-development-agency.ml_999') }}</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/language-school-website-development-agency.text_65') }}</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div>
+                                <span>{{ __('services/language-school-website-development-agency.text_65') }}</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div><span>{{ __('services/language-school-website-development-agency.ml_1000') }}</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#22C55E]"></div>
+                                <span>{{ __('services/language-school-website-development-agency.ml_1000') }}</span>
                             </div>
                         </div><a
                             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
@@ -1642,7 +1821,8 @@
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a>
-                        <p class="text-xs text-[var(--text-secondary)] mt-4">{{ __('services/language-school-website-development-agency.ml_1001') }}</p>
+                        <p class="text-xs text-[var(--text-secondary)] mt-4">
+                            {{ __('services/language-school-website-development-agency.ml_1001') }}</p>
                     </div>
                 </div>
             </div>
@@ -1657,11 +1837,15 @@
                             stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                        </svg>{{ __('services/language-school-website-development-agency.text_66') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_66') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->{{ __('services/language-school-website-development-agency.text_67') }}<!-- --> vs
-                        Autres</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.text_68') }} <!-- -->Écoles de
+                        style="font-family:var(--font-heading)">CodeSommetStudio
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_67') }}<!-- --> vs
+                        Autres
+                    </h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
+                        {{ __('services/language-school-website-development-agency.text_68') }} <!-- -->Écoles de
                         Langues<!-- -->{{ __('services/language-school-website-development-agency.ml_1002') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
@@ -1669,7 +1853,8 @@
                         <div
                             class="bg-white rounded-2xl border border-[#0F0F0F]/10 overflow-hidden shadow-xl min-w-[600px]">
                             <div class="grid grid-cols-4 bg-[#F8F8F8] border-b border-[#0F0F0F]/10">
-                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">{{ __('services/language-school-website-development-agency.ml_1003') }}</div>
+                                <div class="p-3 md:p-4 font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
+                                    {{ __('services/language-school-website-development-agency.ml_1003') }}</div>
                                 <div class="p-3 md:p-4 text-center">
                                     <div
                                         class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
@@ -1679,7 +1864,10 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
-                                    Other <!-- -->{{ __('services/language-school-website-development-agency.text_70') }}<!-- --> Agences</div>
+                                    Other
+                                    <!-- -->{{ __('services/language-school-website-development-agency.text_70') }}<!-- -->
+                                    Agences
+                                </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
                                     Agences Internationales</div>
                             </div>
@@ -1688,45 +1876,68 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Test de Placement
                                     &amp; Attribution de Niveau</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1004') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1005') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1006') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1004') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1005') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1006') }}</span>
+                                </div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Retour de
                                     Prononciation IA</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1007') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1008') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1007') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1008') }}</span>
+                                </div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
                                         disponible</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1009') }}</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
+                                    {{ __('services/language-school-website-development-agency.ml_1009') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1010') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1010') }}</span>
+                                </div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Frais tiers
                                         par session</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1011') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1011') }}</span>
+                                </div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">Gestion de
                                     Programmes Multi-Langues</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1012') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1013') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1014') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1012') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1013') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1014') }}</span>
+                                </div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1015') }}</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
+                                    {{ __('services/language-school-website-development-agency.ml_1015') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1016') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1017') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1018') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1016') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1017') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1018') }}</span>
+                                </div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
@@ -1735,34 +1946,49 @@
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_71') }}</span>
                                 </div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1019') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1019') }}</span>
+                                </div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
                                         disponible</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_72') }}</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
+                                    {{ __('services/language-school-website-development-agency.text_72') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_73') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1020') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1021') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.text_73') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1020') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1021') }}</span>
+                                </div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1022') }}</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
+                                    {{ __('services/language-school-website-development-agency.ml_1022') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">Horaire, forfaits, abonnements,
                                         multi-devises</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Commission
                                         de plateforme (10-20%)</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1023') }}</span></div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1023') }}</span>
+                                </div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-white">
-                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1024') }}</div>
+                                <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
+                                    {{ __('services/language-school-website-development-agency.ml_1024') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1025') }}</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1026') }}</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">{{ __('services/language-school-website-development-agency.ml_1025') }}</span>
+                                </div>
+                                <div class="p-3 md:p-4 text-center"><span
+                                        class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.ml_1026') }}</span>
+                                </div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Bureau
                                         uniquement ou mobile basique</span></div>
                             </div>
@@ -1770,7 +1996,9 @@
                     </div>
                     <div class="mt-8 text-center">
                         <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les prix moyens et les offres de
-                            services des 10 meilleures agences en <!-- -->{{ __('services/language-school-website-development-agency.text_74') }}</p>
+                            services des 10 meilleures agences en
+                            <!-- -->{{ __('services/language-school-website-development-agency.text_74') }}
+                        </p>
                         <div
                             class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full text-sm font-semibold text-[#22C55E]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1779,7 +2007,10 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('services/language-school-website-development-agency.text_75') }} <!-- -->{{ __('services/language-school-website-development-agency.text_76') }}<!-- --> Entreprises</div>
+                            </svg>{{ __('services/language-school-website-development-agency.text_75') }}
+                            <!-- -->{{ __('services/language-school-website-development-agency.text_76') }}<!-- -->
+                            Entreprises
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1796,11 +2027,15 @@
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                             </path>
-                        </svg>{{ __('services/language-school-website-development-agency.text_77') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_77') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.ml_1027') }}</h2>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.ml_1027') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
-                        entreprises en <!-- -->{{ __('services/language-school-website-development-agency.text_78') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_1028') }}</p>
+                        entreprises en
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_78') }}<!-- -->{{ __('services/language-school-website-development-agency.ml_1028') }}
+                    </p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -1834,7 +2069,8 @@
                                             <path
                                                 d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
                                             </path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             stroke="currentColor" stroke-width="0" stroke-linecap="round"
@@ -1878,9 +2114,8 @@
                                             </path>
                                         </svg></div>
                                     <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
-                                        &quot;CodeSommetStudio a transformé notre plateforme B2B et généré 250% de leads
-                                        qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur
-                                        expertise technique sont exceptionnelles.&quot;</blockquote>
+                                        {{ __('services/language-school-website-development-agency.qb_2161') }}
+                                    </blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
                                             src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}"
                                             alt="Mohammed GlamWorlds"
@@ -1921,7 +2156,8 @@
                                             <path
                                                 d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
                                             </path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             stroke="currentColor" stroke-width="0" stroke-linecap="round"
@@ -1964,18 +2200,18 @@
                                                 d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
                                             </path>
                                         </svg></div>
-                                    <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Travailler
-                                        à distance avec CodeSommetStudio a été fluide. Ils ont livré notre plateforme de
-                                        réservation médicale en 10 jours avec une conformité DHA complète. Le portail
-                                        patient a réduit notre charge de travail admin de 60% et les rendez-vous ont
-                                        augmenté de 180%.&quot;</blockquote>
+                                    <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
+                                        {{ __('services/language-school-website-development-agency.qb_2162') }}
+                                    </blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
                                             src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}"
                                             alt="Dr. Sarah Al-Mansouri"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
                                             <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/language-school-website-development-agency.ml_1029') }}</div>
+                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">
+                                                {{ __('services/language-school-website-development-agency.ml_1029') }}
+                                            </div>
                                             <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1985,7 +2221,8 @@
                                                         d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                                     </path>
                                                     <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>{{ __('services/language-school-website-development-agency.text_79') }}</span></div>
+                                                </svg><span>{{ __('services/language-school-website-development-agency.text_79') }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div
@@ -2011,7 +2248,8 @@
                                             <path
                                                 d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
                                             </path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             stroke="currentColor" stroke-width="0" stroke-linecap="round"
@@ -2054,11 +2292,9 @@
                                                 d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
                                             </path>
                                         </svg></div>
-                                    <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Nous avions
-                                        besoin d'une plateforme e-learning complexe avec vidéo en direct, suivi des progrès
-                                        et intégration de paiement. CodeSommetStudio a tout livré en 3 semaines. Les
-                                        inscriptions étudiantes ont augmenté de 320% au premier trimestre après le
-                                        lancement.&quot;</blockquote>
+                                    <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
+                                        {{ __('services/language-school-website-development-agency.qb_2163') }}
+                                    </blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
                                             src="{{ asset('images/testimonials/james-thornton.webp') }}"
                                             alt="James Thornton"
@@ -2099,7 +2335,8 @@
                                             <path
                                                 d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
                                             </path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="flex items-center gap-1 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             stroke="currentColor" stroke-width="0" stroke-linecap="round"
@@ -2142,18 +2379,18 @@
                                                 d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
                                             </path>
                                         </svg></div>
-                                    <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">&quot;Notre site
-                                        immobilier est passé de simples annonces à une plateforme de réservation complète
-                                        avec visites virtuelles et intégration CRM. Les demandes en ligne ont augmenté de
-                                        400% et nous convertissons maintenant 3x plus de leads en visites. Un travail
-                                        vraiment exceptionnel.&quot;</blockquote>
+                                    <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
+                                        {{ __('services/language-school-website-development-agency.qb_2164') }}
+                                    </blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
                                             src="{{ asset('images/testimonials/fatima-benali.webp') }}"
                                             alt="Fatima Zahra Benali"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
                                             <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/language-school-website-development-agency.ml_1030') }}</div>
+                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">
+                                                {{ __('services/language-school-website-development-agency.ml_1030') }}
+                                            </div>
                                             <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2182,8 +2419,11 @@
                             aria-label="Go to testimonial group 2"></button></div>
                 </div>
                 <div class="mt-10 text-center">
-                    <p class="text-sm text-[#0F0F0F]/60">{{ __('services/language-school-website-development-agency.text_80') }}<!-- --> <a
-                            href="{{ route('our-work') }}" class="text-[#00AEEF] font-semibold hover:underline">{{ __('services/language-school-website-development-agency.ml_1031') }}</a></p>
+                    <p class="text-sm text-[#0F0F0F]/60">
+                        {{ __('services/language-school-website-development-agency.text_80') }}<!-- --> <a
+                            href="{{ route('our-work') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">{{ __('services/language-school-website-development-agency.ml_1031') }}</a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -2246,12 +2486,16 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
-                        </svg>{{ __('services/language-school-website-development-agency.text_81') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_81') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
-                        <!-- -->{{ __('services/language-school-website-development-agency.text_82') }}</h2>
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_82') }}
+                    </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de <!-- -->{{ __('services/language-school-website-development-agency.text_83') }}<!-- --> entreprises.
+                        réponses. Voici les questions les plus courantes de
+                        <!-- -->{{ __('services/language-school-website-development-agency.text_83') }}<!-- -->
+                        entreprises.
                     </p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
@@ -2259,9 +2503,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">1</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">1</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1032') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1032') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2274,9 +2520,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">2</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">2</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1033') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1033') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2289,9 +2537,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">3</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">3</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1034') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1034') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2304,9 +2554,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">4</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">4</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1035') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1035') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2319,9 +2571,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">5</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">5</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1036') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1036') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2334,7 +2588,8 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">6</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">6</span>
+                            </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Supportez-vous plusieurs devises et
                                     passerelles de paiement ?</h3>
@@ -2350,9 +2605,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">7</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">7</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1037') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1037') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2365,9 +2622,11 @@
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
-                                <span class="text-sm font-bold text-[#00AEEF]">8</span></div>
+                                <span class="text-sm font-bold text-[#00AEEF]">8</span>
+                            </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/language-school-website-development-agency.ml_1038') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
+                                    {{ __('services/language-school-website-development-agency.ml_1038') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2378,11 +2637,13 @@
                         </button></div>
                 </div>
                 <div class="mt-10 text-center">
-                    <p class="text-sm text-[#0F0F0F]/60 mb-2">{{ __('services/language-school-website-development-agency.text_84') }}</p><a
+                    <p class="text-sm text-[#0F0F0F]/60 mb-2">
+                        {{ __('services/language-school-website-development-agency.text_84') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->{{ __('services/language-school-website-development-agency.text_85') }}<!-- --> {{ __('services/language-school-website-development-agency.text_86') }}<svg class="w-4 h-4" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
+                        notre <!-- -->{{ __('services/language-school-website-development-agency.text_85') }}<!-- -->
+                        {{ __('services/language-school-website-development-agency.text_86') }}<svg class="w-4 h-4"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg></a>
@@ -2400,10 +2661,13 @@
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                             <path d="M2 12h20"></path>
-                        </svg>{{ __('services/language-school-website-development-agency.text_87') }}</div>
+                        </svg>{{ __('services/language-school-website-development-agency.text_87') }}
+                    </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_88') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/language-school-website-development-agency.ml_1039') }}</p>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_88') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
+                        {{ __('services/language-school-website-development-agency.ml_1039') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
                     <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
@@ -2421,12 +2685,16 @@
                                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                             </path>
                                             <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="min-w-0 flex-1">
                                         <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1040') }}</h3>
+                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                            {{ __('services/language-school-website-development-agency.ml_1040') }}</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>{{ __('services/language-school-website-development-agency.text_521') }}</span><span class="truncate">UAE</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_521') }}</span><span
+                                                class="truncate">UAE</span>
+                                        </p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2453,13 +2721,16 @@
                                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                             </path>
                                             <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="min-w-0 flex-1">
                                         <h3
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Casablanca</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>{{ __('services/language-school-website-development-agency.text_522') }}</span><span class="truncate">Maroc</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_522') }}</span><span
+                                                class="truncate">Maroc</span>
+                                        </p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2486,13 +2757,16 @@
                                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                             </path>
                                             <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="min-w-0 flex-1">
                                         <h3
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             San Francisco</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>{{ __('services/language-school-website-development-agency.text_523') }}</span><span class="truncate">{{ __('services/language-school-website-development-agency.text_89') }}</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_523') }}</span><span
+                                                class="truncate">{{ __('services/language-school-website-development-agency.text_89') }}</span>
+                                        </p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2519,13 +2793,16 @@
                                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                             </path>
                                             <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="min-w-0 flex-1">
                                         <h3
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Londres</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>{{ __('services/language-school-website-development-agency.text_524') }}</span><span class="truncate">Royaume-Uni</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_524') }}</span><span
+                                                class="truncate">Royaume-Uni</span>
+                                        </p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2552,13 +2829,16 @@
                                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                             </path>
                                             <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="min-w-0 flex-1">
                                         <h3
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Paris</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>{{ __('services/language-school-website-development-agency.text_525') }}</span><span class="truncate">Paris</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_525') }}</span><span
+                                                class="truncate">Paris</span>
+                                        </p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2585,13 +2865,16 @@
                                                 d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                             </path>
                                             <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="min-w-0 flex-1">
                                         <h3
                                             class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                             Marrakech</h3>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
-                                            <span>{{ __('services/language-school-website-development-agency.text_526') }}</span><span class="truncate">Maroc</span></p>
+                                            <span>{{ __('services/language-school-website-development-agency.text_526') }}</span><span
+                                                class="truncate">Maroc</span>
+                                        </p>
                                     </div>
                                 </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2617,10 +2900,10 @@
                                     d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
                                 </path>
                                 <circle cx="12" cy="10" r="3"></circle>
-                            </svg>{{ __('services/language-school-website-development-agency.text_91') }}<svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                            </svg>{{ __('services/language-school-website-development-agency.text_91') }}<svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a><span class="text-[#0F0F0F]/40">or</span><a
@@ -2639,8 +2922,10 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-8 md:mb-10">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_93') }}</h2>
-                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">{{ __('services/language-school-website-development-agency.ml_1041') }}</p>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_93') }}</h2>
+                    <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">
+                        {{ __('services/language-school-website-development-agency.ml_1041') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
@@ -2659,11 +2944,14 @@
                                         </path>
                                         <path d="M22 10v6"></path>
                                         <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1042') }}</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1043') }}</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        {{ __('services/language-school-website-development-agency.ml_1042') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        {{ __('services/language-school-website-development-agency.ml_1043') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2689,11 +2977,14 @@
                                         <path
                                             d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                                         </path>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1044') }}</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1045') }}</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        {{ __('services/language-school-website-development-agency.ml_1044') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        {{ __('services/language-school-website-development-agency.ml_1045') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2720,11 +3011,14 @@
                                         <path
                                             d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
                                         </path>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1046') }}</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1047') }}</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        {{ __('services/language-school-website-development-agency.ml_1046') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        {{ __('services/language-school-website-development-agency.ml_1047') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2750,12 +3044,14 @@
                                         <rect width="20" height="14" x="2" y="3" rx="2"></rect>
                                         <line x1="8" x2="16" y1="21" y2="21"></line>
                                         <line x1="12" x2="12" y1="17" y2="21"></line>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Plateformes de Cours en Ligne</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1048') }}</p>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        {{ __('services/language-school-website-development-agency.ml_1048') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2784,7 +3080,8 @@
                                         <path d="M20 2v4"></path>
                                         <path d="M22 4h-4"></path>
                                         <circle cx="4" cy="20" r="2"></circle>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
@@ -2817,11 +3114,14 @@
                                         <path
                                             d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
                                         </path>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">{{ __('services/language-school-website-development-agency.ml_1049') }}</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">{{ __('services/language-school-website-development-agency.ml_1050') }}</p>
+                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        {{ __('services/language-school-website-development-agency.ml_1049') }}</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        {{ __('services/language-school-website-development-agency.ml_1050') }}</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2835,10 +3135,10 @@
                     </a></div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
-                        href="/#industries">{{ __('services/language-school-website-development-agency.text_94') }}<svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                        href="/#industries">{{ __('services/language-school-website-development-agency.text_94') }}<svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg></a></div>
@@ -2848,8 +3148,10 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3"
-                        style="font-family:var(--font-heading)">{{ __('services/language-school-website-development-agency.text_95') }}</h2>
-                    <p class="text-lg text-[var(--text-secondary)]">{{ __('services/language-school-website-development-agency.ml_1051') }}</p>
+                        style="font-family:var(--font-heading)">
+                        {{ __('services/language-school-website-development-agency.text_95') }}</h2>
+                    <p class="text-lg text-[var(--text-secondary)]">
+                        {{ __('services/language-school-website-development-agency.ml_1051') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -2868,18 +3170,21 @@
                             <h3
                                 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
                                 Audit Gratuit de Site Web</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/language-school-website-development-agency.ml_1052') }}</p>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
+                                {{ __('services/language-school-website-development-agency.ml_1052') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">{{ __('services/language-school-website-development-agency.text_96') }}</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <span
+                                    style="color:#00AEEF">{{ __('services/language-school-website-development-agency.text_96') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true" style="color:#00AEEF">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -2896,19 +3201,23 @@
                                     </path>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/language-school-website-development-agency.ml_1053') }}</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/language-school-website-development-agency.ml_1054') }}</p>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                {{ __('services/language-school-website-development-agency.ml_1053') }}</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
+                                {{ __('services/language-school-website-development-agency.ml_1054') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#00AEEF">{{ __('services/language-school-website-development-agency.text_97') }}</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <span
+                                    style="color:#00AEEF">{{ __('services/language-school-website-development-agency.text_97') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true" style="color:#00AEEF">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -2926,19 +3235,23 @@
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/language-school-website-development-agency.ml_1055') }}</h3>
-                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">{{ __('services/language-school-website-development-agency.ml_1056') }}</p>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                {{ __('services/language-school-website-development-agency.ml_1055') }}</h3>
+                            <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
+                                {{ __('services/language-school-website-development-agency.ml_1056') }}</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#8B5CF6">{{ __('services/language-school-website-development-agency.text_98') }}</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <span
+                                    style="color:#8B5CF6">{{ __('services/language-school-website-development-agency.text_98') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true" style="color:#8B5CF6">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -2960,15 +3273,17 @@
                                 exigences de votre projet</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#10B981">{{ __('services/language-school-website-development-agency.text_99') }}</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <span
+                                    style="color:#10B981">{{ __('services/language-school-website-development-agency.text_99') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true" style="color:#10B981">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
@@ -2984,20 +3299,23 @@
                                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                                 </svg></div>
                             <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('services/language-school-website-development-agency.ml_1057') }}</h3>
+                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
+                                {{ __('services/language-school-website-development-agency.ml_1057') }}</h3>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                                 offres</p>
                             <div
                                 class="flex items-center text-sm font-medium group-hover:text-[#00AEEF] transition-colors">
-                                <span style="color:#3B82F6">{{ __('services/language-school-website-development-agency.text_100') }}</span><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <span
+                                    style="color:#3B82F6">{{ __('services/language-school-website-development-agency.text_100') }}</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                                     aria-hidden="true" style="color:#3B82F6">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                         </div>
                     </a></div>
             </div>
@@ -3024,7 +3342,8 @@
                     </div>
                     <div class="relative z-10 text-center space-y-3 md:space-y-4">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
-                            style="font-family:var(--font-display)">{{ __('services/language-school-website-development-agency.ml_1058') }}</h2>
+                            style="font-family:var(--font-display)">
+                            {{ __('services/language-school-website-development-agency.ml_1058') }}</h2>
                         <div class="flex flex-col items-center gap-4 md:gap-6">
                             <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
                                     rel="noopener noreferrer"
@@ -3144,13 +3463,15 @@
                                         </svg></div>
                                     <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
                                         style="font-size:10px"><span
-                                            class="text-white font-medium whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_220') }}</span></div>
+                                            class="text-white font-medium whitespace-nowrap">{{ __('services/language-school-website-development-agency.text_220') }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
                             visionnaires qui ont choisi l'excellence</p>
-                        <p class="text-sm md:text-base text-white/50">{{ __('services/language-school-website-development-agency.ml_1061') }}</p>
+                        <p class="text-sm md:text-base text-white/50">
+                            {{ __('services/language-school-website-development-agency.ml_1061') }}</p>
                         <div class="mt-6">
                             <div class="relative w-full py-8">
                                 <div class="flex items-center justify-center gap-0">
@@ -3425,7 +3746,8 @@
                                             <div
                                                 class="jsx-19a8fa7e477c8109 relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center">
                                                 <img src="{{ asset('logo-white.svg') }}" alt="CodeSommetStudio"
-                                                    class="jsx-19a8fa7e477c8109 h-8 w-auto" /></div>
+                                                    class="jsx-19a8fa7e477c8109 h-8 w-auto" />
+                                            </div>
                                         </div>
                                     </div>
                                     <section class="flex items-center overflow-hidden"
@@ -3443,7 +3765,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">Chatbots
                                                         IA</span>
                                                 </div>
@@ -3459,7 +3782,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">Tableaux de
                                                         Bord</span>
                                                 </div>
@@ -3475,7 +3799,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">{{ __('services/language-school-website-development-agency.text_530') }}</span>
                                                 </div>
@@ -3491,7 +3816,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">SEO</span>
                                                 </div>
                                             </li>
@@ -3506,7 +3832,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
@@ -3522,7 +3849,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
@@ -3538,7 +3866,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
@@ -3554,7 +3883,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">CMS</span>
                                                 </div>
                                             </li>
@@ -3569,7 +3899,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">Chatbots
                                                         IA</span>
                                                 </div>
@@ -3585,7 +3916,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">Tableaux de
                                                         Bord</span>
                                                 </div>
@@ -3601,7 +3933,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">{{ __('services/language-school-website-development-agency.text_531') }}</span>
                                                 </div>
@@ -3617,7 +3950,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">SEO</span>
                                                 </div>
                                             </li>
@@ -3632,7 +3966,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
@@ -3648,7 +3983,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
@@ -3664,7 +4000,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
@@ -3680,7 +4017,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">CMS</span>
                                                 </div>
                                             </li>
@@ -3695,7 +4033,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">Chatbots
                                                         IA</span>
                                                 </div>
@@ -3711,7 +4050,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">Tableaux de
                                                         Bord</span>
                                                 </div>
@@ -3727,7 +4067,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">{{ __('services/language-school-website-development-agency.text_532') }}</span>
                                                 </div>
@@ -3743,7 +4084,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">SEO</span>
                                                 </div>
                                             </li>
@@ -3758,7 +4100,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Analytique</span>
                                                 </div>
@@ -3774,7 +4117,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Authentification</span>
                                                 </div>
@@ -3790,7 +4134,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span
                                                         class="text-[10px] font-medium text-white/90">Paiements</span>
                                                 </div>
@@ -3806,7 +4151,8 @@
                                                                 <path d="M1 5L4.5 8.5L11 1.5" stroke="black"
                                                                     stroke-width="2" stroke-linecap="round"
                                                                     stroke-linejoin="round"></path>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div><span class="text-[10px] font-medium text-white/90">CMS</span>
                                                 </div>
                                             </li>

@@ -4,14 +4,16 @@
 
         {{-- Texte SVG d'arrière-plan "codesommet" --}}
         <div class="absolute bottom-0 left-0 pointer-events-none w-full flex justify-center md:justify-start">
-            <svg viewBox="0 0 1600 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMax meet" aria-hidden="true" class="h-auto will-change-transform">
+            <svg viewBox="0 0 1600 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMax meet"
+                aria-hidden="true" class="h-auto will-change-transform">
                 <defs>
                     <linearGradient id="textStrokeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" stop-color="#C0C0C0" stop-opacity="1"></stop>
                         <stop offset="85%" stop-color="#000000" stop-opacity="1"></stop>
                     </linearGradient>
                 </defs>
-                <text x="20" y="200" fill="none" stroke="url(#textStrokeGradient)" stroke-width="1.5" font-size="200" font-weight="bold" font-family="var(--font-heading)">codesommet</text>
+                <text x="20" y="200" fill="none" stroke="url(#textStrokeGradient)" stroke-width="1.5" font-size="200"
+                    font-weight="bold" font-family="var(--font-heading)">codesommet</text>
             </svg>
         </div>
 
@@ -24,9 +26,11 @@
                 <div class="space-y-6 mb-12 md:mb-0 md:max-w-sm flex-shrink-0">
                     <a class="inline-flex items-center gap-1" href="{{ route('home') }}">
                         <div class="w-10 h-10">
-                            <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet" class="w-full h-full object-contain" />
+                            <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet"
+                                class="w-full h-full object-contain" />
                         </div>
-                        <span style="font-family:var(--font-heading)" class="text-2xl font-bold text-white">CodeSommet</span>
+                        <span style="font-family:var(--font-heading)"
+                            class="text-2xl font-bold text-white">CodeSommet</span>
                     </a>
                     <p class="text-[#A0A0A0] leading-relaxed text-sm">
                         {{ __('footer.description') }}
@@ -40,12 +44,18 @@
                     <div class="space-y-4">
                         <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.locations') }}</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'casablanca') }}">Casablanca</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'marrakech') }}">Marrakech</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'rabat') }}">Rabat</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'tangier') }}">{{ __('footer.tangier') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('location', 'worldwide') }}">{{ __('footer.worldwide') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('locations') }}">{{ __('footer.all_locations') }} →</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('location', 'casablanca') }}">Casablanca</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('location', 'marrakech') }}">Marrakech</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('location', 'rabat') }}">Rabat</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('location', 'tangier') }}">{{ __('footer.tangier') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('location', 'worldwide') }}">{{ __('footer.worldwide') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('locations') }}">{{ __('footer.all_locations') }} →</a></li>
                         </ul>
                     </div>
 
@@ -53,13 +63,26 @@
                     <div class="space-y-4">
                         <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.industries') }}</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'education-website-development') }}">{{ __('footer.education_edtech') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'healthcare-website-development') }}">{{ __('footer.healthcare') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'study-abroad-website-development') }}">{{ __('footer.study_abroad') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'saas-platform-development') }}">{{ __('footer.saas') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'ecommerce-website-development') }}">{{ __('footer.ecommerce') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('service', 'fintech-platform-development') }}">{{ __('footer.fintech') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('industries') }}">{{ __('footer.all_industries') }} →</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'education-website-development') }}">{{ __('footer.education_edtech') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'healthcare-website-development') }}">{{ __('footer.healthcare') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'study-abroad-website-development') }}">{{ __('footer.study_abroad') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'saas-platform-development') }}">{{ __('footer.saas') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'ecommerce-website-development') }}">{{ __('footer.ecommerce') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'fintech-platform-development') }}">{{ __('footer.fintech') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('industries') }}">{{ __('footer.all_industries') }} →</a></li>
                         </ul>
                     </div>
 
@@ -67,13 +90,26 @@
                     <div class="space-y-4">
                         <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.popular_tools') }}</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'website-analyzer') }}">{{ __('footer.website_analyzer') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'website-readiness-checker') }}">{{ __('footer.readiness_checker') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'meta-tag-generator') }}">{{ __('footer.meta_tag_generator') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'blog-title-generator') }}">{{ __('footer.title_generator') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'heading-analyzer') }}">{{ __('footer.heading_analyzer') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tool', 'color-palette-generator') }}">{{ __('footer.palette_generator') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('tools') }}">{{ __('footer.all_tools') }} →</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tool', 'website-analyzer') }}">{{ __('footer.website_analyzer') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tool', 'website-readiness-checker') }}">{{ __('footer.readiness_checker') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tool', 'meta-tag-generator') }}">{{ __('footer.meta_tag_generator') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tool', 'blog-title-generator') }}">{{ __('footer.title_generator') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tool', 'heading-analyzer') }}">{{ __('footer.heading_analyzer') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tool', 'color-palette-generator') }}">{{ __('footer.palette_generator') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('tools') }}">{{ __('footer.all_tools') }} →</a></li>
                         </ul>
                     </div>
 
@@ -81,13 +117,21 @@
                     <div class="space-y-4">
                         <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.legal') }}</h3>
                         <ul class="space-y-2.5">
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('blog') }}">Blog</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('get-quote') }}">{{ __('footer.request_quote') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('privacy-policy') }}">{{ __('footer.privacy_policy') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('terms-of-service') }}">{{ __('footer.terms_of_service') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('refund-policy') }}">{{ __('footer.refund_policy') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('cookie-policy') }}">{{ __('footer.cookie_policy') }}</a></li>
-                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="{{ route('acceptable-use') }}">{{ __('footer.acceptable_use') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('blog') }}">Blog</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('get-quote') }}">{{ __('footer.request_quote') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('privacy-policy') }}">{{ __('footer.privacy_policy') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('terms-of-service') }}">{{ __('footer.terms_of_service') }}</a>
+                            </li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('refund-policy') }}">{{ __('footer.refund_policy') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('cookie-policy') }}">{{ __('footer.cookie_policy') }}</a></li>
+                            <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('acceptable-use') }}">{{ __('footer.acceptable_use') }}</a></li>
                         </ul>
                     </div>
 
@@ -98,17 +142,28 @@
             <div class="flex justify-center md:justify-end items-center mb-32 md:mb-0">
                 <div class="flex items-center gap-3">
                     {{-- LinkedIn --}}
-                    <a aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.linkedin.com/in/codesommet">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4 text-white" aria-hidden="true">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <a aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
+                        href="https://www.linkedin.com/in/codesommet">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4 text-white"
+                            aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
                             <rect width="4" height="12" x="2" y="9"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
 
                     {{-- Instagram --}}
-                    <a aria-label="Instagram" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.instagram.com/code_sommet/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4 text-white" aria-hidden="true">
+                    <a aria-label="Instagram" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
+                        href="https://www.instagram.com/code_sommet/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4 text-white"
+                            aria-hidden="true">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
@@ -116,16 +171,24 @@
                     </a>
 
                     {{-- Facebook --}}
-                    <a aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.facebook.com/codesommetagency">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-white">
+                    <a aria-label="Facebook" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
+                        href="https://www.facebook.com/codesommetagency">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-white">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                         </svg>
                     </a>
 
                     {{-- YouTube --}}
-                    <a aria-label="YouTube" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.youtube.com/@codesommet">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-white">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                    <a aria-label="YouTube" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
+                        href="https://www.youtube.com/@codesommet">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-white">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                            </path>
                         </svg>
                     </a>
                 </div>

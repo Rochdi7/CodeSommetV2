@@ -243,4 +243,11 @@ return [
     'ml_1030' => 'Réserver un Appel Découverte',
     'ml_1031' => 'Réserver un Appel Découverte',
     'ml_1032' => 'Discutons de comment l\'IA et le design moderne peuvent élever votre entreprise',
+    'attr_1532' => 'Calculateur d\'Éligibilité Visa',
+    'attr_1533' => 'Système de Suivi de Dossiers',
+    'qb_2133' => '"CodeSommetStudio a transformé notre plateforme B2B et généré 250% de leads qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2134' => '"Travailler à distance avec CodeSommetStudio a été fluide. Ils ont livré notre plateforme de réservation médicale en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge de travail admin de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2135' => '"Nous avions besoin d\'une plateforme e-learning complexe avec vidéo en direct, suivi des progrès et intégration de paiement. CodeSommetStudio a tout livré en 3 semaines. Les inscriptions étudiantes ont augmenté de 320% au premier trimestre après le lancement."',
+    'qb_2136' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont augmenté de 400% et nous convertissons maintenant 3x plus de leads en visites. Un travail vraiment exceptionnel."',
+    'sw_2936' => 'Questions Fréquemment Posées sur le Développement Web en Conseil en Immigration',
 ];

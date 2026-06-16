@@ -9,13 +9,13 @@ return [
     'twitter_description' => 'Générez du balisage JSON-LD FAQ pour une meilleure visibilité',
     'text_0' => 'Générateur de Schéma FAQ',
     'text_1' => 'Générateur de Schéma FAQ',
-    'text_2' => 'Convertissez votre contenu FAQ en balisage JSON-LD compatible Google. Augmentez la visibilité dans les résultats et apparaissez dans les encadrés &#x27;Autres questions posées&#x27;.',
+    'text_2' => 'Convertissez votre contenu FAQ en balisage JSON-LD compatible Google. Augmentez la visibilité dans les résultats et apparaissez dans les encadrés \'Autres questions posées\'.',
     'text_3' => 'Gratuit • Aucune inscription requise',
     'text_4' => 'Comment utiliser :',
     'text_5' => 'Copiez votre contenu FAQ depuis votre site ou document',
     'text_6' => 'Collez-le dans la zone de texte ci-dessous',
-    'text_7' => 'Cliquez sur &quot;Générer le Schéma&quot;',
-    'text_8' => 'Copiez le code généré et ajoutez-le à la section &lt;head&gt; de votre site',
+    'text_7' => 'Cliquez sur "Générer le Schéma"',
+    'text_8' => 'Copiez le code généré et ajoutez-le à la section <head> de votre site',
     'text_9' => 'Formats supportés :',
     'text_10' => 'Q: / R:, listes numérotées, gras markdown ou questions simples se terminant par ?',
     'text_11' => 'Collez Votre Contenu FAQ',
@@ -33,7 +33,7 @@ return [
     'text_23' => 'Les questions doivent être concises (40-100 caractères) et rédigées comme des questions naturelles. Les réponses doivent être complètes mais pas excessives (150-300 caractères pour les questions simples, jusqu\'à 500 pour les complexes). Google préfère des réponses complètes et utiles aux réponses courtes bourrées de mots-clés.',
     'text_24' => 'Comment implémenter le schéma FAQ généré sur mon site ?',
     'text_25' => 'de votre page web avant la balise',
-    'text_26' => 'Mes FAQ apparaîtront-elles dans la section &#x27;Autres questions posées&#x27; de Google ?',
+    'text_26' => 'Mes FAQ apparaîtront-elles dans la section \'Autres questions posées\' de Google ?',
     'text_27' => 'Pas automatiquement. Google décide quelles FAQ afficher en fonction de la pertinence, de la qualité et de l\'intention de recherche. L\'implémentation du balisage FAQ augmente vos chances, mais vous avez besoin de contenu de qualité, d\'une implémentation correcte et de pages bien classées pour les requêtes pertinentes. Il faut généralement 2 à 4 semaines pour voir les résultats enrichis après l\'implémentation.',
     'text_28' => 'Y a-t-il des directives Google à suivre pour le schéma FAQ ?',
     'text_29' => 'Oui. Utilisez le balisage FAQ uniquement pour du vrai contenu Q&R visible sur la page. Ne l\'utilisez pas à des fins publicitaires ou promotionnelles. Chaque question ne doit avoir qu\'une seule réponse. Évitez de dupliquer les FAQ sur plusieurs pages. Les questions doivent refléter les vraies requêtes des utilisateurs, et les réponses doivent être précises et utiles.',
@@ -54,10 +54,10 @@ return [
 R : Le balisage FAQ est une donnée structurée qui aide les moteurs de recherche à comprendre votre contenu FAQ et à l\'afficher sous forme de résultats enrichis dans les résultats Google.
 
 Q : Pourquoi utiliser le balisage FAQ ?
-R : Le balisage FAQ peut augmenter votre visibilité dans les résultats Google, améliorer le taux de clics et aider votre contenu à apparaître dans la section &quot;Autres questions posées&quot;.
+R : Le balisage FAQ peut augmenter votre visibilité dans les résultats Google, améliorer le taux de clics et aider votre contenu à apparaître dans la section "Autres questions posées".
 
 Q : Comment ajouter le balisage FAQ à mon site web ?
-R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; de votre page web, ou utilisez un plugin si vous êtes sur WordPress ou Shopify.',
+R : Copiez le code JSON-LD généré et collez-le dans la section <head> de votre page web, ou utilisez un plugin si vous êtes sur WordPress ou Shopify.',
     'text_143' => 'Charger un Exemple',
     'ml_543' => 'fermante. Pour WordPress, utilisez des plugins comme \'Insert Headers and Footers\' ou \'Schema Pro\'. Pour Shopify, modifiez votre fichier theme.liquid. Après l\'implémentation, validez avec l\'outil de test des résultats enrichis de Google.',
 ];

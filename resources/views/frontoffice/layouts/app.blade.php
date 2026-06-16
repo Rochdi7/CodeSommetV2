@@ -20,9 +20,9 @@
     <meta property="og:url" content="@yield('og_url', config('app.url'))" />
     <meta property="og:site_name" content="CodeSommet" />
     <meta property="og:locale" content="{{ app()->getLocale() === 'en' ? 'en_GB' : 'fr_FR' }}" />
-    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-        @if($localeCode !== app()->getLocale())
-    <meta property="og:locale:alternate" content="{{ $properties['regional'] }}" />
+    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        @if ($localeCode !== app()->getLocale())
+            <meta property="og:locale:alternate" content="{{ $properties['regional'] }}" />
         @endif
     @endforeach
     <meta property="og:image" content="@yield('og_image', asset('images/featured-image.webp'))" />
@@ -40,10 +40,10 @@
     <meta name="twitter:image" content="@yield('twitter_image', asset('images/featured-image.webp'))" />
 
     {{-- Canonical (default locale = no prefix, other locales = with prefix) --}}
-    @if(app()->getLocale() === 'fr')
-    <link rel="canonical" href="@yield('canonical', LaravelLocalization::getNonLocalizedURL())" />
+    @if (app()->getLocale() === 'fr')
+        <link rel="canonical" href="@yield('canonical', LaravelLocalization::getNonLocalizedURL())" />
     @else
-    <link rel="canonical" href="@yield('canonical', LaravelLocalization::getLocalizedURL(app()->getLocale(), null, [], true))" />
+        <link rel="canonical" href="@yield('canonical', LaravelLocalization::getLocalizedURL(app()->getLocale(), null, [], true))" />
     @endif
 
     {{-- Hreflang tags for SEO --}}
@@ -133,11 +133,13 @@
 
     {{-- Preloader dismiss --}}
     <script>
-        window.addEventListener('load', function () {
+        window.addEventListener('load', function() {
             var p = document.getElementById('preloader');
             if (p) {
                 p.classList.add('loaded');
-                setTimeout(function () { p.remove(); }, 600);
+                setTimeout(function() {
+                    p.remove();
+                }, 600);
             }
         });
     </script>

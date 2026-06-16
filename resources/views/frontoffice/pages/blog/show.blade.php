@@ -235,8 +235,8 @@
                 @php
                 $relatedStatic = [
                     ['title' => 'Guide Complet du SEO Technique pour Laravel', 'excerpt' => 'Optimisez votre site Laravel pour les moteurs de recherche avec ce guide pratique.', 'category' => 'SEO', 'date' => '20 Mars 2026', 'read_time' => '12 min', 'gradient' => 'from-[#10B981]/20 to-[#059669]/5'],
-                    ['title' => 'Les 10 Tendances du Design Web en 2026', 'excerpt' => 'Du bento grid au glassmorphism avancé, les tendances visuelles qui dominent le web.', 'category' => 'Design', 'date' => '22 Mars 2026', 'read_time' => '6 min', 'gradient' => 'from-[#8B5CF6]/20 to-[#7C3AED]/5'],
-                    ['title' => 'Créer une API RESTful avec Laravel 12', 'excerpt' => 'Architecture, authentification Sanctum, pagination et documentation automatique.', 'category' => 'Développement', 'date' => '8 Mars 2026', 'read_time' => '15 min', 'gradient' => 'from-[#00AEEF]/20 to-[#0071BC]/5'],
+                    ['title' => 'Les 10 Tendances du Design Web en 2026', 'excerpt' => '' . __('blog/show.php_1002') . '', 'category' => 'Design', 'date' => '22 Mars 2026', 'read_time' => '6 min', 'gradient' => 'from-[#8B5CF6]/20 to-[#7C3AED]/5'],
+                    ['title' => '' . __('blog/show.php_1003') . '', 'excerpt' => 'Architecture, authentification Sanctum, pagination et documentation automatique.', 'category' => '' . __('blog/show.php_1004') . '', 'date' => '8 Mars 2026', 'read_time' => '15 min', 'gradient' => 'from-[#00AEEF]/20 to-[#0071BC]/5'],
                 ];
                 @endphp
                 @foreach($relatedStatic as $index => $related)

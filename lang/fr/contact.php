@@ -37,8 +37,8 @@ return [
     'text_27' => 'Pas encore sûr',
     'text_28' => 'Comment pouvons-nous vous aider ?',
     'text_29' => 'Sélectionner le type de demande',
-    'text_30' => 'Fonctionnalités IA &amp; Chatbots',
-    'text_31' => 'Développement de Tableau de Bord &amp; SaaS',
+    'text_30' => 'Fonctionnalités IA & Chatbots',
+    'text_31' => 'Développement de Tableau de Bord & SaaS',
     'text_32' => 'Développement de Site Web',
     'text_33' => 'Opportunité de Partenariat',
     'text_34' => 'Demande Générale',
@@ -92,4 +92,5 @@ return [
     'text_679' => 'Automatisation',
     'text_680' => 'Automatisation',
     'text_681' => 'Automatisation',
+    'attr_1181' => 'Arrière-plan du bureau au Maroc',
 ];

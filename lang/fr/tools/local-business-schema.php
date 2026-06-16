@@ -44,7 +44,7 @@ return [
     'text_34' => 'Contactez notre équipe pour obtenir de l\'aide',
     'text_35' => 'Outils Connexes Qui Pourraient Vous Intéresser',
     'text_36' => 'Continuez à optimiser votre site web avec ces outils complémentaires',
-    'text_37' => 'Générez du JSON-LD pour Articles, Produits, Avis &amp; plus',
+    'text_37' => 'Générez du JSON-LD pour Articles, Produits, Avis & plus',
     'text_38' => 'Aperçu Open Graph',
     'text_39' => 'Prévisualisez les cartes de réseaux sociaux pour 4 plateformes majeures',
     'text_40' => 'Analyseur de Structure des Titres',

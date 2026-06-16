@@ -538,7 +538,8 @@
       "Read(//c/Users/ASUS/AppData/Local/Temp/claude/c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com/7720c5cf-6594-4dfb-b057-d0506a0445e0/tasks/**)",
       "Bash(pip install:*)",
       "Bash(python -m pip install ftfy)",
-      "Bash(grep -rn \"[A-Z][a-z]\\\\{3,\\\\}\" resources/views/partials/ resources/views/layouts/ --include=\"*.blade.php\")"
+      "Bash(grep -rn \"[A-Z][a-z]\\\\{3,\\\\}\" resources/views/partials/ resources/views/layouts/ --include=\"*.blade.php\")",
+      "Read(//c/Users/ASUS/Desktop/pikasso studio/pikassostudio.com/**)"
     ],
     "additionalDirectories": [
       "c:\\Users\\ASUS\\Desktop\\CodeSommetstudio\\pikasso-laravel-temp",

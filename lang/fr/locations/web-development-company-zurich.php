@@ -37,10 +37,10 @@ return [
     'text_27' => 'Associé Gérant',
     'text_28' => 'Solutions sur mesure, tarification transparente',
     'text_29' => 'Développement Web',
-    'text_30' => 'Contenu professionnel &amp; rédaction',
-    'text_31' => 'SEO avancé &amp; optimisation des performances',
+    'text_30' => 'Contenu professionnel & rédaction',
+    'text_31' => 'SEO avancé & optimisation des performances',
     'text_32' => 'Prêt pour l\'intégration des paiements',
-    'text_33' => 'Analytique &amp; suivi des conversions',
+    'text_33' => 'Analytique & suivi des conversions',
     'text_34' => 'Demander un Devis',
     'text_35' => 'par projet',
     'text_36' => 'Obtenir un devis personnalisé',
@@ -48,9 +48,9 @@ return [
     'text_38' => 'Développement de tableau de bord sur mesure',
     'text_39' => 'Livraison des tâches en 48-72 heures',
     'text_40' => 'Développement full-stack (frontend + backend)',
-    'text_41' => 'SEO professionnel &amp; stratégie de contenu',
+    'text_41' => 'SEO professionnel & stratégie de contenu',
     'text_42' => 'Collaboration en temps réel sur Slack',
-    'text_43' => 'Hébergement premium &amp; maintenance',
+    'text_43' => 'Hébergement premium & maintenance',
     'text_44' => 'Demander un Devis',
     'text_45' => 'Pause ou annulation à tout moment',
     'text_46' => 'Prêt ? améliorer votre site web ? Zurich ?',
@@ -106,7 +106,7 @@ return [
     'ml_1090' => 'Associez-vous au studio leader du développement web de Zurich pour des sites web alimentés par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes orientées conversion pour les secteurs de la fintech, de la santé et de la technologie dans la capitale de l\'innovation suisse.',
     'ml_1091' => 'Réserver une consultation gratuite à Zurich',
     'ml_1092' => 'Créez des chatbots intelligents, des workflows d\'automatisation, une recherche alimentée par l\'IA et des moteurs de recommandation adaptés aux secteurs financiers et de la santé technologiquement avancés de Zurich.',
-    'ml_1093' => 'Spécialistes Dashboard &amp; SaaS',
+    'ml_1093' => 'Spécialistes Dashboard & SaaS',
     'ml_1094' => 'Concevez des portails utilisateurs, des panneaux d\'administration, des tableaux de bord analytiques et des plateformes SaaS qui évoluent avec les opérations de startups et de fintech de Zurich.',
     'ml_1095' => 'Axé Génération de Prospects',
     'ml_1096' => 'Lancez votre MVP en 7 ? 14 jours avec révisions illimitées. Parfait pour l\'écosystème florissant de startups et d\'innovation de Zurich.',
@@ -134,7 +134,7 @@ return [
     'ml_1118' => 'Réservez un appel découverte pour discuter de vos besoins spécifiques et obtenir un devis personnalisé',
     'ml_1119' => 'Recommandé',
     'ml_1120' => 'Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7-10 jours.',
-    'ml_1121' => 'Tableau de bord personnalisé &amp; portail utilisateur',
+    'ml_1121' => 'Tableau de bord personnalisé & portail utilisateur',
     'ml_1122' => 'Hébergement gratuit pendant 3 mois inclus',
     'ml_1123' => 'Devis personnalisé selon le périmètre de votre projet',
     'ml_1124' => 'Échanger sur WhatsApp',
@@ -174,4 +174,28 @@ return [
     'ml_1158' => 'Retour à l\'accueil',
     'ml_1159' => 'Réserver un Appel Découverte',
     'ml_1160' => 'Réserver un Appel Découverte',
+    'attr_1660' => 'Comment Nous Avons Construit une Plateforme de Patrimoine Crypto Gérant 2 Milliards CHF d\'Actifs Numériques',
+    'qb_2260' => '"CodeSommet a transformé notre plateforme B2B et généré 250% de prospects qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2261' => '"Travailler à distance avec CodeSommet a été fluide. Ils ont livré notre plateforme de réservation santé en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge administrative de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2262' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont bondi de 400% et nous convertissons désormais 3 fois plus de prospects en visites. Un travail vraiment exceptionnel."',
+    'sw_3062' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Zurich.',
+    'sw_3063' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Zurich.',
+    'sw_3064' => '"La plateforme répond aux standards bancaires suisses pour la crypto. La sécurité est de niveau institutionnel, la conformité FINMA est irréprochable. Nous gardons 2 milliards CHF sans aucun incident."',
+    'sw_3065' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Zurich',
+    'sw_3066' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Zurich.',
+    'sw_3067' => 'Questions fréquemment posées sur le Développement Web à Zurich',
+    'sw_3068' => 'Voir l\'Étude de Cas',
+    'sw_3069' => 'Contactez notre équipe Zurich',
+    'sw_3070' => ') }}</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
 ];

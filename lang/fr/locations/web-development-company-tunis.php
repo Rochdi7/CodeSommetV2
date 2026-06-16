@@ -30,10 +30,10 @@ return [
     'text_20' => 'Associé Gérant',
     'text_21' => 'Solutions sur mesure, tarification transparente',
     'text_22' => 'Développement Web',
-    'text_23' => 'Contenu professionnel &amp; rédaction',
-    'text_24' => 'SEO avancé &amp; optimisation des performances',
+    'text_23' => 'Contenu professionnel & rédaction',
+    'text_24' => 'SEO avancé & optimisation des performances',
     'text_25' => 'Prêt pour l\'intégration des paiements',
-    'text_26' => 'Analytique &amp; suivi des conversions',
+    'text_26' => 'Analytique & suivi des conversions',
     'text_27' => 'Demander un Devis',
     'text_28' => 'par projet',
     'text_29' => 'Obtenir un devis personnalisé',
@@ -41,9 +41,9 @@ return [
     'text_31' => 'Développement de tableau de bord sur mesure',
     'text_32' => 'Livraison des tâches en 48-72 heures',
     'text_33' => 'Développement full-stack (frontend + backend)',
-    'text_34' => 'SEO professionnel &amp; stratégie de contenu',
+    'text_34' => 'SEO professionnel & stratégie de contenu',
     'text_35' => 'Collaboration en temps réel sur Slack',
-    'text_36' => 'Hébergement premium &amp; maintenance',
+    'text_36' => 'Hébergement premium & maintenance',
     'text_37' => 'Demander un Devis',
     'text_38' => 'Pause ou annulation à tout moment',
     'text_39' => 'Prêt à Améliorer Votre Site Web à Tunis ?',
@@ -71,7 +71,7 @@ return [
     'text_158' => 'Experts en IA',
     'text_159' => 'Immobilier',
     'text_160' => '500 K AED+ de revenus en 6 mois',
-    'text_161' => 'Immobilier &amp; PropTech',
+    'text_161' => 'Immobilier & PropTech',
     'text_162' => '4 mois',
     'text_163' => 'Revue de design',
     'text_164' => 'Cliquez ici',
@@ -101,7 +101,7 @@ return [
     'ml_1085' => 'CROISSANCE COMMERCIALE À TUNIS',
     'ml_1086' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
     'ml_1087' => 'Réserver une consultation gratuite à Tunis',
-    'ml_1088' => 'Spécialistes Dashboard &amp; SaaS',
+    'ml_1088' => 'Spécialistes Dashboard & SaaS',
     'ml_1089' => 'Axé Génération de Prospects',
     'ml_1090' => 'Sites web optimisés SEO et axés conversion qui transforment les visiteurs de Tunis en clients payants.',
     'ml_1091' => 'Du concept au lancement, nous gérons le design, le développement, les tests et le déploiement. Pas besoin de coordonner plusieurs prestataires.',
@@ -132,7 +132,7 @@ return [
     'ml_1116' => 'Réservez un appel découverte pour discuter de vos besoins spécifiques et obtenir un devis personnalisé',
     'ml_1117' => 'Recommandé',
     'ml_1118' => 'Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7-10 jours.',
-    'ml_1119' => 'Tableau de bord personnalisé &amp; portail utilisateur',
+    'ml_1119' => 'Tableau de bord personnalisé & portail utilisateur',
     'ml_1120' => 'Hébergement gratuit pendant 3 mois inclus',
     'ml_1121' => 'Devis personnalisé selon le périmètre de votre projet',
     'ml_1122' => 'Échanger sur WhatsApp',
@@ -173,4 +173,27 @@ return [
     'ml_1157' => 'Retour à l\'accueil',
     'ml_1158' => 'Réserver un Appel Découverte',
     'ml_1159' => 'Réserver un Appel Découverte',
+    'attr_1659' => 'Comment nous avons aidé une plateforme immobilière ? Tunis ? générer plus de 250 prospects qualifiés par mois',
+    'qb_2259' => '"CodeSommet a transformé notre plateforme B2B et généré 250% de prospects qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2260' => '"Travailler à distance avec CodeSommet a été fluide. Ils ont livré notre plateforme de réservation santé en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge administrative de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2261' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont bondi de 400% et nous convertissons désormais 3 fois plus de prospects en visites. Un travail vraiment exceptionnel."',
+    'sw_3061' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Tunis.',
+    'sw_3062' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Tunis.',
+    'sw_3063' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Tunis',
+    'sw_3064' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Tunis.',
+    'sw_3065' => 'Questions fréquemment posées sur le Développement Web à Tunis',
+    'sw_3066' => 'Voir l\'Étude de Cas',
+    'sw_3067' => 'Contactez notre équipe Tunis',
+    'sw_3068' => ') }}</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
 ];

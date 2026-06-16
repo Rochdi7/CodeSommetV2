@@ -48,4 +48,7 @@ return [
     'text_141' => 'Contactez-nous',
     'ml_541' => 'Développement Web',
     'ml_542' => 'À lire aussi',
+    'php_1042' => 'Du bento grid au glassmorphism avancé, les tendances visuelles qui dominent le web.',
+    'php_1043' => 'Créer une API RESTful avec Laravel 12',
+    'php_1044' => 'Développement',
 ];

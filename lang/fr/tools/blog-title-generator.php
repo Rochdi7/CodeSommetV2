@@ -23,7 +23,7 @@ return [
     'text_13' => 'Gardez 50-70 caractères',
     'text_14' => '- Parfait pour les résultats de recherche Google et le partage social',
     'text_15' => 'Utilisez des mots puissants',
-    'text_16' => '- Des mots comme &quot;ultime,&quot; &quot;éprouvé,&quot; &quot;secret&quot; augmentent les clics',
+    'text_16' => '- Des mots comme "ultime," "éprouvé," "secret" augmentent les clics',
     'text_17' => 'Incluez des chiffres',
     'text_18' => '- Les chiffres impairs (7, 9, 13) convertissent mieux que les pairs',
     'text_19' => 'Créez de la curiosité',

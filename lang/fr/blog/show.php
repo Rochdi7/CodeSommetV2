@@ -6,4 +6,7 @@ return [
     'text_101' => 'Image de couverture',
     'text_102' => 'read_time }} de lecture',
     'ml_502' => 'À lire aussi',
+    'php_1002' => 'Du bento grid au glassmorphism avancé, les tendances visuelles qui dominent le web.',
+    'php_1003' => 'Créer une API RESTful avec Laravel 12',
+    'php_1004' => 'Développement',
 ];

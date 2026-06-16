@@ -31,10 +31,10 @@ return [
     'text_21' => 'Société de Gestion Immobilière à Rome',
     'text_22' => 'Solutions sur mesure, tarification transparente',
     'text_23' => 'Développement Web',
-    'text_24' => 'Contenu professionnel &amp; rédaction',
-    'text_25' => 'SEO avancé &amp; optimisation des performances',
+    'text_24' => 'Contenu professionnel & rédaction',
+    'text_25' => 'SEO avancé & optimisation des performances',
     'text_26' => 'Prêt pour l\'intégration des paiements',
-    'text_27' => 'Analytique &amp; suivi des conversions',
+    'text_27' => 'Analytique & suivi des conversions',
     'text_28' => 'Demander un Devis',
     'text_29' => 'par projet',
     'text_30' => 'Obtenir un devis personnalisé',
@@ -42,9 +42,9 @@ return [
     'text_32' => 'Développement de tableau de bord sur mesure',
     'text_33' => 'Livraison des tâches en 48-72 heures',
     'text_34' => 'Développement full-stack (frontend + backend)',
-    'text_35' => 'SEO professionnel &amp; stratégie de contenu',
+    'text_35' => 'SEO professionnel & stratégie de contenu',
     'text_36' => 'Collaboration en temps réel sur Slack',
-    'text_37' => 'Hébergement premium &amp; maintenance',
+    'text_37' => 'Hébergement premium & maintenance',
     'text_38' => 'Demander un Devis',
     'text_39' => 'Pause ou annulation à tout moment',
     'text_40' => 'Prêt à Améliorer Votre Site Web à Rome ?',
@@ -72,7 +72,7 @@ return [
     'text_159' => 'Experts en IA',
     'text_160' => 'Immobilier',
     'text_161' => '500 K AED+ de revenus en 6 mois',
-    'text_162' => 'Immobilier &amp; PropTech',
+    'text_162' => 'Immobilier & PropTech',
     'text_163' => '4 mois',
     'text_164' => 'Revue de design',
     'text_165' => 'Cliquez ici',
@@ -102,7 +102,7 @@ return [
     'ml_1086' => 'CROISSANCE COMMERCIALE À ROME',
     'ml_1087' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
     'ml_1088' => 'Réserver une consultation gratuite à Rome',
-    'ml_1089' => 'Spécialistes Dashboard &amp; SaaS',
+    'ml_1089' => 'Spécialistes Dashboard & SaaS',
     'ml_1090' => 'Axé Génération de Prospects',
     'ml_1091' => 'Sites web optimisés SEO et axés conversion qui transforment les visiteurs de Rome en clients payants.',
     'ml_1092' => 'Du concept au lancement, nous gérons le design, le développement, les tests et le déploiement. Pas besoin de coordonner plusieurs prestataires.',
@@ -132,7 +132,7 @@ return [
     'ml_1116' => 'Réservez un appel découverte pour discuter de vos besoins spécifiques et obtenir un devis personnalisé',
     'ml_1117' => 'Recommandé',
     'ml_1118' => 'Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7-10 jours.',
-    'ml_1119' => 'Tableau de bord personnalisé &amp; portail utilisateur',
+    'ml_1119' => 'Tableau de bord personnalisé & portail utilisateur',
     'ml_1120' => 'Hébergement gratuit pendant 3 mois inclus',
     'ml_1121' => 'Devis personnalisé selon le périmètre de votre projet',
     'ml_1122' => 'Échanger sur WhatsApp',
@@ -173,4 +173,27 @@ return [
     'ml_1157' => 'Retour à l\'accueil',
     'ml_1158' => 'Réserver un Appel Découverte',
     'ml_1159' => 'Réserver un Appel Découverte',
+    'attr_1659' => 'Comment nous avons aidé une plateforme immobilière ? Rome ? générer plus de 250 prospects qualifiés par mois',
+    'qb_2259' => '"CodeSommet a transformé notre plateforme B2B et généré 250% de prospects qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2260' => '"Travailler à distance avec CodeSommet a été fluide. Ils ont livré notre plateforme de réservation santé en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge administrative de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2261' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont bondi de 400% et nous convertissons désormais 3 fois plus de prospects en visites. Un travail vraiment exceptionnel."',
+    'sw_3061' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Rome.',
+    'sw_3062' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Rome.',
+    'sw_3063' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Rome',
+    'sw_3064' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Rome.',
+    'sw_3065' => 'Questions Fréquemment Posées sur le Développement Web à Rome',
+    'sw_3066' => 'Voir l\'Étude de Cas',
+    'sw_3067' => 'Contactez notre équipe Rome',
+    'sw_3068' => ') }}</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
 ];

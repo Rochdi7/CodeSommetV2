@@ -7,14 +7,14 @@ return [
     'og_title' => 'CodeSommetStudio - Agence de Développement Web Alimentée par l\'IA | Maroc',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
-    'text_0' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_0' => 'Études à l\'Étranger & Conseil en Visa',
     'text_1' => 'Industrie Spécialisée',
     'text_2' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
     'text_3' => 'Basé dans le secteur',
     'text_4' => '50+ clients dans',
     'text_5' => 'Pourquoi Nous Choisir',
-    'text_6' => 'Études à l\'Étranger &amp; Conseil en Visa',
-    'text_7' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_6' => 'Études à l\'Étranger & Conseil en Visa',
+    'text_7' => 'Études à l\'Étranger & Conseil en Visa',
     'text_8' => 'Adopté par les',
     'text_9' => 'Plus de',
     'text_10' => 'Projets Livrés',
@@ -26,20 +26,20 @@ return [
     'text_16' => 'Le Défi',
     'text_17' => 'Les Entreprises Font Face à des Défis Web Uniques',
     'text_18' => 'Chaos dans la Gestion Manuelle des Documents',
-    'text_19' => 'études à l\'étranger &amp; conseil en visa',
+    'text_19' => 'études à l\'étranger & conseil en visa',
     'text_20' => 'Voir Notre Solution',
     'text_21' => 'Conçu sur Mesure pour',
-    'text_22' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_22' => 'Études à l\'Étranger & Conseil en Visa',
     'text_23' => 'Fonctionnalités Essentielles',
     'text_24' => 'ALIMENTÉ PAR L\'IA',
     'text_25' => 'Tableau de Bord Étudiant',
     'text_26' => 'Nos Réalisations en',
-    'text_27' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_27' => 'Études à l\'Étranger & Conseil en Visa',
     'text_28' => 'Histoires de Succès en',
-    'text_29' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_29' => 'Études à l\'Étranger & Conseil en Visa',
     'text_30' => 'Notre Processus de Développement',
-    'text_31' => 'Études à l\'Étranger &amp; Conseil en Visa',
-    'text_32' => 'Découverte &amp; Analyse du Marché',
+    'text_31' => 'Études à l\'Étranger & Conseil en Visa',
+    'text_32' => 'Découverte & Analyse du Marché',
     'text_33' => 'Prêt à démarrer votre',
     'text_34' => 'Solutions Personnalisées, Tarification Transparente',
     'text_35' => 'Recommandé',
@@ -65,24 +65,24 @@ return [
     'text_55' => 'Pourquoi Nous Choisir',
     'text_56' => 'vs Autres',
     'text_57' => 'Découvrez pourquoi',
-    'text_58' => 'Études à l\'Étranger &amp; Conseil en Visa',
-    'text_59' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_58' => 'Études à l\'Étranger & Conseil en Visa',
+    'text_59' => 'Études à l\'Étranger & Conseil en Visa',
     'text_60' => 'Limité',
     'text_61' => 'Plus de 50 langues incluses',
     'text_62' => 'Formé sur les exigences de visa',
     'text_63' => 'Limité',
     'text_64' => 'Prix de Départ',
     'text_65' => 'Obtenir Votre Devis Gratuit',
-    'text_66' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_66' => 'Études à l\'Étranger & Conseil en Visa',
     'text_67' => 'Meilleur Rapport Qualité-Prix pour',
     'text_68' => 'Ce que Nos Clients Disent de Nous',
-    'text_69' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_69' => 'Études à l\'Étranger & Conseil en Visa',
     'text_70' => 'Dubaï Healthcare City, EAU',
     'text_71' => 'Vous voulez voir plus d\'histoires de succès ?',
     'text_72' => 'Questions fréquentes',
-    'text_73' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_73' => 'Études à l\'Étranger & Conseil en Visa',
     'text_74' => 'Vous avez encore des questions ?',
-    'text_75' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'text_75' => 'Études à l\'Étranger & Conseil en Visa',
     'text_76' => 'équipe',
     'text_77' => 'Présence Mondiale',
     'text_78' => 'Au Service de Clients dans le Monde Entier',
@@ -133,13 +133,13 @@ return [
     'text_720' => 'Automatisation',
     'text_721' => 'Automatisation',
     'text_722' => 'Automatisation',
-    'ml_1122' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'ml_1122' => 'Études à l\'Étranger & Conseil en Visa',
     'ml_1123' => 'PORTAILS DE CANDIDATURE ÉTUDIANTS',
     'ml_1124' => 'PORTAILS DE CANDIDATURE ÉTUDIANTS',
     'ml_1125' => 'Développement spécialisé de sites web d\'études à l\'étranger pour les cabinets de conseil en éducation internationale, agences de visa et services de placement universitaire. Nous avons créé plus de 40 plateformes avec portails de candidature sur mesure, suivi de visa et chatbots alimentés par l\'IA. Augmentation moyenne de 300 % des candidatures étudiantes.',
     'ml_1126' => 'Réserver une démo gratuite',
     'ml_1127' => 'Voir le Portfolio Études à l\'Étranger',
-    'ml_1128' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'ml_1128' => 'Études à l\'Étranger & Conseil en Visa',
     'ml_1129' => '60% de Nos Clients sont des Cabinets de Conseil en Études à l\'Étranger',
     'ml_1130' => 'Expertise approfondie en Éducation internationale, traitement des visas, candidatures universitaires et recrutement étudiant. Nous maîtrisons les exigences spécifiques ? chaque pays pour les USA, le Royaume-Uni, le Canada, l\'Allemagne et l\'Australie.',
     'ml_1131' => 'Conseil Étudiant Alimenté par l\'IA',
@@ -150,7 +150,7 @@ return [
     'ml_1136' => 'Sites web d\'études à l\'étranger optimisés pour Google Ads (Étudier aux USA, MS en Allemagne). Nos clients voient une augmentation moyenne de 300% des prospects étudiants qualifiés.',
     'ml_1137' => 'Support de plus de 50 langues et 20+ devises. Essentiel pour recruter des étudiants d\'Inde, du Bangladesh, du Pakistan, du Népal, du Nigeria et du Moyen-Orient.',
     'ml_1138' => 'Déploiement Rapide pour les Saisons d\'Admission',
-    'ml_1139' => 'Les développeurs web généralistes ne comprennent pas ces problèmes spécifiques aux études à l\'étranger &amp; conseil en visa',
+    'ml_1139' => 'Les développeurs web généralistes ne comprennent pas ces problèmes spécifiques aux études à l\'étranger & conseil en visa',
     'ml_1140' => 'Les Constructeurs de Sites Génériques Ne Fonctionnent Pas pour Study Abroad',
     'ml_1141' => 'Communication Étudiante Chaotique à Travers les Canaux',
     'ml_1142' => 'Gérer les demandes étudiantes via WhatsApp, e-mail, téléphone, Instagram et visites sur place devient vite ingérable. Les conseillers oublient des relances et des étudiants passent entre les mailles du filet. Nous mettons en place un tableau de bord de communication unifié avec intégration de l\'API WhatsApp, rappels automatiques de suivi, historique des interactions et CRM qui suit chaque point de contact de la demande ? l\'inscription.',
@@ -159,7 +159,7 @@ return [
     'ml_1145' => 'Faire appel ? des traducteurs ou ? des agences pour le contenu hindi, arabe ou espagnol coûte cher, souvent langue par langue. Une terminologie incohérente brouille les étudiants. Nous intégrons un CMS multilingue avec traduction assistée par l\'IA, gestion de glossaire pour des termes visa/Éducation cohérents et support RTL pour les marchés arabe et hébreu.',
     'ml_1146' => 'Mauvais Classement SEO - Perte d\'Étudiants au Profit des Concurrents',
     'ml_1147' => 'Le suivi des documents étudiants (passeports, relevés, justificatifs financiers, lettres de recommandation) par e-mail et Google Drive provoque des retards et des refus de visa. Nous créons un portail documentaire sécurisé avec listes de vérification automatisées, suivi des dates d\'expiration, rappels e-mail/SMS pour les pièces manquantes et tableau de bord admin affichant en temps réel la complétude des dossiers.',
-    'ml_1148' => 'Tout ce dont votre entreprise de conseil en études à l\'étranger &amp; visa a besoin en une seule plateforme',
+    'ml_1148' => 'Tout ce dont votre entreprise de conseil en études à l\'étranger & visa a besoin en une seule plateforme',
     'ml_1149' => 'Formulaires de candidature intelligents avec listes de vérification de documents spécifiques au pays et suivi en temps réel.',
     'ml_1150' => 'Formulaires multi-étapes avec sélection du pays',
     'ml_1151' => 'Téléchargement de documents (Passeport, Relevés de Notes, Scores de Tests)',
@@ -173,19 +173,19 @@ return [
     'ml_1159' => 'Suivi des paiements et reçus',
     'ml_1160' => 'Pipeline par glisser-déposer (Lead → Applied → Visa → Enrolled)',
     'ml_1161' => 'Prévision des revenus per intake',
-    'ml_1162' => 'Études à l\'Étranger &amp; Conseil en Visa',
+    'ml_1162' => 'Études à l\'Étranger & Conseil en Visa',
     'ml_1163' => 'à atteindre leurs objectifs numériques.',
     'ml_1164' => 'PLATEFORME D\'ÉTUDES À L\'ÉTRANGER',
     'ml_1165' => 'Plateforme de Conseil en Études à l\'Étranger en Allemagne',
     'ml_1166' => 'CONSEIL EN ÉDUCATION',
     'ml_1167' => 'Plateforme d\'Éducation Internationale',
-    'ml_1168' => 'Du concept au lancement en 4 semaines, optimisé pour les entreprises de conseil en études à l\'étranger &amp; visa',
+    'ml_1168' => 'Du concept au lancement en 4 semaines, optimisé pour les entreprises de conseil en études à l\'étranger & visa',
     'ml_1169' => 'Analyse de la concurrence pour les cabinets de conseil en études à l\'étranger',
     'ml_1170' => 'Développement de personas étudiants by target country',
     'ml_1171' => 'Maquettes fil de fer pour le flux de candidature étudiant',
     'ml_1172' => 'Maquettes haute fidélité avec marque spécifique au pays',
     'ml_1173' => 'Design responsive mobile pour les étudiants en déplacement',
-    'ml_1174' => 'Développement &amp; AI Integration',
+    'ml_1174' => 'Développement & AI Integration',
     'ml_1175' => 'Développement frontend et backend with secure auth',
     'ml_1176' => 'Intégration CRM (HubSpot/Zoho) pour le suivi des prospects',
     'ml_1177' => 'Formation des conseillers sur le portail étudiant et le CRM',
@@ -200,7 +200,7 @@ return [
     'ml_1186' => 'Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d\'améliorations de site web.',
     'ml_1187' => 'Chatbot IA et fonctionnalités d\'automatisation',
     'ml_1188' => 'Réserver un Appel Découverte',
-    'ml_1189' => 'Prêt à Transformer Votre Site Web d\'Études à l\'Étranger &amp; Conseil en Visa ?',
+    'ml_1189' => 'Prêt à Transformer Votre Site Web d\'Études à l\'Étranger & Conseil en Visa ?',
     'ml_1190' => 'Obtenez d\'abord une analyse gratuite complète :',
     'ml_1191' => 'Vérification des performances',
     'ml_1192' => 'Recommandations alimentées par l\'IA',
@@ -221,7 +221,7 @@ return [
     'ml_1207' => 'Coût plus élevé',
     'ml_1208' => 'Délai de Réalisation',
     'ml_1209' => 'Pas de priorité',
-    'ml_1210' => 'Ce que Nos Clients en Études à l\'Étranger &amp; Conseil en Visa Disent de Nous',
+    'ml_1210' => 'Ce que Nos Clients en Études à l\'Étranger & Conseil en Visa Disent de Nous',
     'ml_1211' => 'qui ont obtenu des résultats remarquables avec CodeSommetStudio.',
     'ml_1212' => 'Directeur Médical chez Dubaï Wellness Clinic',
     'ml_1213' => 'Directeur des Opérations chez Riad Luxe Properties',
@@ -233,7 +233,7 @@ return [
     'ml_1219' => 'Pouvez-vous créer un système de suivi de documents de visa ?',
     'ml_1220' => 'Qu\'est-ce qui vous différencie des autres développeurs web ?',
     'ml_1221' => 'Pouvez-vous aider avec Google Ads et le SEO pour les mots-clés études à l\'étranger ?',
-    'ml_1222' => 'Nous avons créé des sites web d\'études à l\'étranger &amp; conseil en visa pour des clients du monde entier. Que vous soyez au Maroc ou ailleurs, nous livrons des solutions de classe mondiale.',
+    'ml_1222' => 'Nous avons créé des sites web d\'études à l\'étranger & conseil en visa pour des clients du monde entier. Que vous soyez au Maroc ou ailleurs, nous livrons des solutions de classe mondiale.',
     'ml_1223' => 'Dubaï',
     'ml_1224' => 'Découvrez nos services de développement web spécialisés pour d\'autres industries',
     'ml_1225' => 'Écoles de Langues',
@@ -256,4 +256,51 @@ return [
     'ml_1242' => 'Réserver un Appel Découverte',
     'ml_1243' => 'Réserver un Appel Découverte',
     'ml_1244' => 'Discutons de comment l\'IA et le design moderne peuvent élever votre entreprise',
+    'attr_1744' => 'Tableau de Bord Étudiant',
+    'qb_2344' => '"CodeSommetStudio a transformé notre plateforme B2B et généré 250% de leads qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2345' => '"Travailler à distance avec CodeSommetStudio a été fluide. Ils ont livré notre plateforme de réservation médicale en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge de travail admin de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2346' => '"Nous avions besoin d\'une plateforme e-learning complexe avec vidéo en direct, suivi des progrès et intégration de paiement. CodeSommetStudio a tout livré en 3 semaines. Les inscriptions étudiantes ont augmenté de 320% au premier trimestre après le lancement."',
+    'qb_2347' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont augmenté de 400% et nous convertissons maintenant 3x plus de leads en visites. Un travail vraiment exceptionnel."',
+    'sw_3147' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes de Études à l\'Étranger & Conseil en Visa entreprises.',
+    'sw_3148' => ') }}</span><span class="truncate">Maroc</span></p>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
+                    <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez <!-- -->études à
+                        l',
+    'sw_3149' => ') }} <!-- -->Études à l',
+    'sw_3150' => ') }} <!-- -->Études à l',
+    'sw_3151' => ') }}</div>
+                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
+                        style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->Études à l',
+    'sw_3152' => ') }} <!-- -->études à l',
+    'sw_3153' => ') }} <!-- -->Études à
+                        l',
+    'sw_3154' => ') }}<!-- -->: <!-- -->Études à l',
+    'sw_3155' => ') }} <!-- -->Études
+                        à l',
+    'sw_3156' => ') }} <!-- -->Études à l',
+    'sw_3157' => ') }} <!-- -->Études à l',
+    'sw_3158' => ') }}<!-- --> Projets</span><span
+                                    class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 text-[#00AEEF]"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                    </path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🎓<!-- --> <!-- -->Études à
+                                    l',
 ];
