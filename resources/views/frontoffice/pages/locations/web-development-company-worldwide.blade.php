@@ -64,13 +64,7 @@
 
                     {{-- CTA buttons --}}
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-                        <a href="{{ route('get-quote') }}" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0F0F0F] text-white font-medium text-sm sm:text-base hover:bg-[#0F0F0F]/90 transition-all duration-200 w-full sm:w-auto">
-                            Démarrer Votre Projet
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </a>
+                        <a href="{{ route('get-quote') }}" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0F0F0F] text-white font-medium text-sm sm:text-base hover:bg-[#0F0F0F]/90 transition-all duration-200 w-full sm:w-auto">{{ __('locations/web-development-company-worldwide.sw_2157') }}</a>
                         <a href="{{ route('our-work') }}" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-white text-[#0F0F0F] font-medium text-sm sm:text-base border border-[#E0E0E0] hover:bg-[#F5F5F5] transition-all duration-200 w-full sm:w-auto">
                             Voir Nos Projets
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4" aria-hidden="true">
@@ -240,18 +234,18 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 @php
                 $industries = [
-                ['name' => 'Éducation & EdTech', 'desc' => 'Universités, cours en ligne, plateformes LMS, cabinets de conseil en études à l\'étranger et écoles de langues.', 'icon' => '<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                ['name' => __('locations/web-development-company-worldwide.ind_education'), 'desc' => __('locations/web-development-company-worldwide.ind_education_desc'), 'icon' => '<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                 <path d="M6 12v5c3 3 8 3 12 0v-5"></path>', 'slug' => 'education-website-development'],
-                ['name' => 'Santé & Médical', 'desc' => 'Cliniques, hôpitaux, plateformes de télémédecine et startups en santé numérique.', 'icon' => '<path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"></path>', 'slug' => 'healthcare-website-development'],
-                ['name' => 'E-Commerce & Retail', 'desc' => 'Boutiques en ligne, places de marché, catalogues produits et systèmes de gestion des stocks.', 'icon' => '<circle cx="8" cy="21" r="1"></circle>
+                ['name' => __('locations/web-development-company-worldwide.ind_health'), 'desc' => __('locations/web-development-company-worldwide.ind_health_desc'), 'icon' => '<path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"></path>', 'slug' => 'healthcare-website-development'],
+                ['name' => 'E-Commerce & Retail', 'desc' => __('locations/web-development-company-worldwide.ind_ecommerce_desc'), 'icon' => '<circle cx="8" cy="21" r="1"></circle>
                 <circle cx="19" cy="21" r="1"></circle>
                 <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>', 'slug' => 'ecommerce-website-development'],
-                ['name' => 'FinTech & Finance', 'desc' => 'Plateformes bancaires, solutions de paiement, tableaux de bord financiers et interfaces crypto.', 'icon' => '<line x1="12" x2="12" y1="2" y2="22"></line>
+                ['name' => 'FinTech & Finance', 'desc' => __('locations/web-development-company-worldwide.ind_fintech_desc'), 'icon' => '<line x1="12" x2="12" y1="2" y2="22"></line>
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>', 'slug' => 'fintech-platform-development'],
-                ['name' => 'SaaS & Logiciels B2B', 'desc' => 'Plateformes multi-tenant, panneaux d\'administration, tableaux de bord analytiques et applications basées sur API.', 'icon' => '<rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                ['name' => __('locations/web-development-company-worldwide.ind_saas'), 'desc' => __('locations/web-development-company-worldwide.ind_saas_desc'), 'icon' => '<rect width="20" height="14" x="2" y="3" rx="2"></rect>
                 <line x1="8" x2="16" y1="21" y2="21"></line>
                 <line x1="12" x2="12" y1="17" y2="21"></line>', 'slug' => 'saas-platform-development'],
-                ['name' => 'Immobilier & Propriété', 'desc' => 'Annonces immobilières, visites virtuelles, intégrations CRM et plateformes pour agents.', 'icon' => '<path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                ['name' => __('locations/web-development-company-worldwide.ind_realestate'), 'desc' => __('locations/web-development-company-worldwide.ind_realestate_desc'), 'icon' => '<path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>', 'slug' => 'real-estate-website-development'],
                 ];
                 @endphp
@@ -346,12 +340,12 @@
             <div class="max-w-3xl mx-auto space-y-4">
                 @php
                 $faqs = [
-                ['q' => 'Où êtes-vous basés ?', 'a' => 'Nous sommes basés au Maroc, mais nous travaillons 100% à distance avec des clients du monde entier — de l\'Europe et du Moyen-Orient à l\'Amérique du Nord, l\'Asie et au-delà.'],
-                ['q' => 'Pouvez-vous travailler dans mon fuseau horaire ?', 'a' => 'Absolument. Nous ajustons nos heures de travail pour correspondre à votre emploi du temps. Que vous soyez à New York, Londres, Dubai ou Tokyo — nous nous adaptons.'],
-                ['q' => 'Comment communiquons-nous pendant le projet ?', 'a' => 'Nous utilisons Slack, Zoom, Google Meet, WhatsApp ou toute plateforme que vous préférez. Vous recevrez des mises à jour quotidiennes et un canal projet dédié pour la communication en temps réel.'],
-                ['q' => 'Quels modes de paiement acceptez-vous ?', 'a' => 'Nous acceptons les virements bancaires internationaux (SWIFT), PayPal, Wise et les paiements par carte de crédit via Stripe. Nous nous adaptons à ce qui vous convient.'],
-                ['q' => 'En combien de temps pouvez-vous livrer un site web ?', 'a' => 'La plupart des sites web sont livrés en 7 à 14 jours. Les plateformes complexes comme les tableaux de bord SaaS ou les boutiques e-commerce peuvent prendre 3 à 4 semaines selon l\'envergure.'],
-                ['q' => 'Offrez-vous un support continu après le lancement ?', 'a' => 'Oui ! Nous proposons des forfaits de maintenance, de mises à jour et de support continu. Nous ne disparaissons pas après le lancement — nous sommes votre partenaire digital à long terme.'],
+                ['q' => __('locations/web-development-company-worldwide.faq_q1'), 'a' => __('locations/web-development-company-worldwide.faq_a1')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q2'), 'a' => __('locations/web-development-company-worldwide.faq_a2')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q3'), 'a' => __('locations/web-development-company-worldwide.faq_a3')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q4'), 'a' => __('locations/web-development-company-worldwide.faq_a4')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q5'), 'a' => __('locations/web-development-company-worldwide.faq_a5')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q6'), 'a' => __('locations/web-development-company-worldwide.faq_a6')],
                 ];
                 @endphp
                 @foreach($faqs as $faq)
@@ -407,13 +401,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family:var(--font-display)">{{ __('locations/web-development-company-worldwide.text_46') }}</h2>
             <p class="text-base md:text-lg text-white/60 max-w-2xl mx-auto mb-10">{{ __('locations/web-development-company-worldwide.text_47') }}</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="{{ route('get-quote') }}" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-[#0F0F0F] font-semibold text-base hover:bg-white/90 transition-all duration-200">
-                    Démarrer Votre Projet
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg>
-                </a>
+                <a href="{{ route('get-quote') }}" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-[#0F0F0F] font-semibold text-base hover:bg-white/90 transition-all duration-200">{{ __('locations/web-development-company-worldwide.sw_2158') }}</a>
                 <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-transparent text-white font-semibold text-base border border-white/20 hover:bg-white/10 transition-all duration-200">
                     Contactez-Nous
                 </a>

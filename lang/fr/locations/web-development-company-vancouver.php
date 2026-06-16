@@ -32,10 +32,10 @@ return [
     'text_22' => 'Entreprise Tech Climatique de Vancouver',
     'text_23' => 'Solutions sur mesure, tarification transparente',
     'text_24' => 'Développement Web',
-    'text_25' => 'Contenu professionnel &amp; rédaction',
-    'text_26' => 'SEO avancé &amp; optimisation des performances',
+    'text_25' => 'Contenu professionnel & rédaction',
+    'text_26' => 'SEO avancé & optimisation des performances',
     'text_27' => 'Prêt pour l\'intégration des paiements',
-    'text_28' => 'Analytique &amp; suivi des conversions',
+    'text_28' => 'Analytique & suivi des conversions',
     'text_29' => 'Demander un Devis',
     'text_30' => 'par projet',
     'text_31' => 'Obtenir un devis personnalisé',
@@ -43,9 +43,9 @@ return [
     'text_33' => 'Développement de tableau de bord sur mesure',
     'text_34' => 'Livraison des tâches en 48-72 heures',
     'text_35' => 'Développement full-stack (frontend + backend)',
-    'text_36' => 'SEO professionnel &amp; stratégie de contenu',
+    'text_36' => 'SEO professionnel & stratégie de contenu',
     'text_37' => 'Collaboration en temps réel sur Slack',
-    'text_38' => 'Hébergement premium &amp; maintenance',
+    'text_38' => 'Hébergement premium & maintenance',
     'text_39' => 'Demander un Devis',
     'text_40' => 'Pause ou annulation à tout moment',
     'text_41' => 'Prêt ? améliorer votre site web ? Vancouver ?',
@@ -103,7 +103,7 @@ return [
     'text_688' => 'Automatisation',
     'ml_1088' => 'Associez-vous au studio leader du développement web de Vancouver pour des sites web alimentés par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes orientées conversion pour les startups tech, les secteurs de la santé et de l\'éducation.',
     'ml_1089' => 'Réserver une consultation gratuite à Vancouver',
-    'ml_1090' => 'Spécialistes Dashboard &amp; SaaS',
+    'ml_1090' => 'Spécialistes Dashboard & SaaS',
     'ml_1091' => 'Concevez des portails utilisateurs, des panneaux d\'administration, des tableaux de bord analytiques et des plateformes SaaS qui évoluent avec votre startup à Vancouver.',
     'ml_1092' => 'Axé Génération de Prospects',
     'ml_1093' => 'Sites web optimisés SEO et axés conversion qui transforment les visiteurs de Vancouver en clients payants.',
@@ -130,7 +130,7 @@ return [
     'ml_1114' => 'Réservez un appel découverte pour discuter de vos besoins spécifiques et obtenir un devis personnalisé',
     'ml_1115' => 'Recommandé',
     'ml_1116' => 'Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7-10 jours.',
-    'ml_1117' => 'Tableau de bord personnalisé &amp; portail utilisateur',
+    'ml_1117' => 'Tableau de bord personnalisé & portail utilisateur',
     'ml_1118' => 'Hébergement gratuit pendant 3 mois inclus',
     'ml_1119' => 'Devis personnalisé selon le périmètre de votre projet',
     'ml_1120' => 'Échanger sur WhatsApp',
@@ -175,4 +175,27 @@ return [
     'ml_1159' => 'Retour à l\'accueil',
     'ml_1160' => 'Réserver un Appel Découverte',
     'ml_1161' => 'Réserver un Appel Découverte',
+    'attr_1661' => 'Comment Nous Avons Construit une Plateforme Tech Climatique Gérant Plus de 10 000 Projets Verts',
+    'qb_2261' => '"CodeSommet a transformé notre plateforme B2B et généré 250% de prospects qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
+    'qb_2262' => '"Travailler à distance avec CodeSommet a été fluide. Ils ont livré notre plateforme de réservation santé en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge administrative de 60% et les rendez-vous ont augmenté de 180%."',
+    'qb_2263' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont bondi de 400% et nous convertissons désormais 3 fois plus de prospects en visites. Un travail vraiment exceptionnel."',
+    'sw_3063' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Vancouver.',
+    'sw_3064' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Vancouver.',
+    'sw_3065' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Vancouver',
+    'sw_3066' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Vancouver.',
+    'sw_3067' => 'Questions fréquemment posées sur le Développement Web à Vancouver',
+    'sw_3068' => 'Voir l\'Étude de Cas',
+    'sw_3069' => 'Contactez notre équipe Vancouver',
+    'sw_3070' => ') }}</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
 ];

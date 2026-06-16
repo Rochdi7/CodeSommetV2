@@ -44,4 +44,7 @@ return [
     'label_133' => 'Date de Publication',
     'label_134' => 'Nom de l\'Auteur',
     'ml_534' => '. Testez toujours votre implémentation avec le test des résultats enrichis de Google pour vous assurer qu\'elle fonctionne correctement.',
+    'sw_1334' => 'implémentation est simple : copiez le code HTML généré et collez-le dans la section
+
+                            <head> de votre page web. Pour WordPress, utilisez des plugins comme ',
 ];

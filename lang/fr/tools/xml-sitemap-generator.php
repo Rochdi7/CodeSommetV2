@@ -22,7 +22,7 @@ return [
     'text_12' => 'Ajoutez une URL par ligne. Incluez votre page d\'accueil, les pages importantes, les articles de blog, etc.',
     'text_13' => 'Configurer les Paramètres',
     'text_14' => 'Définissez la fréquence de modification (à quelle fréquence les pages sont mises à jour) et la priorité (importance 0.0-1.0)',
-    'text_15' => 'Generate &amp; Télécharger',
+    'text_15' => 'Generate & Télécharger',
     'text_16' => 'Uploader sur le Site Web',
     'text_17' => 'Uploadez sitemap.xml à la racine de votre site web (ex. : example.com/sitemap.xml)',
     'text_18' => 'Meilleures Pratiques pour les Sitemaps XML',

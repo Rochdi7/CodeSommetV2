@@ -64,4 +64,5 @@ return [
     'text_452' => '🇺🇸',
     'text_453' => '🇨🇦',
     'text_454' => '🇨🇦',
+    'attr_954' => 'Global développement web services',
 ];
