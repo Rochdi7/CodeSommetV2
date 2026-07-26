@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('json-formatter')) return;
@@ -169,9 +169,9 @@
         }
 
         function escapeHtml(str) {
-            var d = document.createElement('div');
-            d.textContent = str;
-            return d.innerHTML;
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
         CodeSommetTools.initUsageCounter('json-formatter', 'JSON operations completed');

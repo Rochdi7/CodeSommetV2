@@ -13,7 +13,7 @@
         'color-palette-generator': { title: 'Color Palette', action: 'Extract Colors', actionText: 'palettes generated', inputLabel: 'Upload Image', inputType: 'file' }
     };
 
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var slug = detectToolSlug();
         if (!slug || !AI_TOOLS[slug]) return;
 
@@ -184,7 +184,7 @@
                 '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Generated Content</h3>' +
                 '<button id="copy-content-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy</button></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200">' +
-                '<div class="prose prose-sm max-w-none text-[#0F0F0F]">' + (typeof content === 'string' ? content.replace(/\n/g, '<br>') : '<pre>' + escapeHtml(JSON.stringify(content, null, 2)) + '</pre>') + '</div></div></div></div>';
+                '<div class="prose prose-sm max-w-none text-[#0F0F0F]">' + (typeof content === 'string' ? escapeHtml(content).replace(/\n/g, '<br>') : '<pre>' + escapeHtml(JSON.stringify(content, null, 2)) + '</pre>') + '</div></div></div></div>';
         }
 
         // Fallback for unknown structures
@@ -234,6 +234,6 @@
     }
 
     function toCamelCase(str) { return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function (m, c) { return c.toUpperCase(); }); }
-    function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+    {NEW_S}
     function escapeAttr(s) { return s.replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
 })();

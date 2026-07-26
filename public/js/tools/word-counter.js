@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('word-counter')) return;

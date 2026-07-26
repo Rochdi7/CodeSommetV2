@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('robots-txt-generator')) return;
@@ -102,7 +102,7 @@
             document.getElementById('download-result-btn')?.addEventListener('click', function () { CodeSommetTools.downloadFile(result, 'robots.txt', 'text/plain'); });
         }
 
-        function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+        {NEW_S}
 
         CodeSommetTools.initUsageCounter('robots-txt-generator', 'robots.txt files generated');
     });

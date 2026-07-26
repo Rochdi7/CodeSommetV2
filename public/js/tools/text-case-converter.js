@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('text-case-converter')) return;
@@ -92,7 +92,7 @@
             debounceTimer = setTimeout(processText, 300);
         });
 
-        function escapeHtml(str) { var d = document.createElement('div'); d.textContent = str; return d.innerHTML; }
+        {NEW_STR}
         function escapeAttr(str) { return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
 
         CodeSommetTools.initUsageCounter('text-case-converter', 'text conversions performed');

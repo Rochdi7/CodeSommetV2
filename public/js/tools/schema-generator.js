@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         // Gate on the URL slug, not the (translated) title. An exact slug match
@@ -90,7 +90,7 @@
             document.getElementById('download-btn')?.addEventListener('click', function () { CodeSommetTools.downloadFile(jsonStr, 'schema.json', 'application/json'); });
         }
 
-        function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+        {NEW_S}
 
         CodeSommetTools.initUsageCounter('schema-generator', 'schema markups generated');
     });

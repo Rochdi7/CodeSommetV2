@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('utm-builder')) return;
@@ -92,7 +92,7 @@
             });
         }
 
-        function escapeHtml(str) { var d = document.createElement('div'); d.textContent = str; return d.innerHTML; }
+        {NEW_STR}
 
         CodeSommetTools.initUsageCounter('utm-builder', 'UTM URLs generated');
     });

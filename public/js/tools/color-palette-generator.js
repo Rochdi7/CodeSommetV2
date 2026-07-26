@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         if (!CodeSommetTools.isTool('color-palette-generator')) return;
         // Find elements - this tool uses max-w-4xl not max-w-5xl
         var dropZone = document.querySelector('.border-dashed');
@@ -342,7 +342,7 @@
             });
         }
 
-        function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+        {NEW_S}
 
         CodeSommetTools.initUsageCounter('color-palette-generator', 'palettes generated');
     });
