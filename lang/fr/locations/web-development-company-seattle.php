@@ -2,11 +2,11 @@
 
 return [
     'title' => 'Développement Web à Seattle, États-Unis | CodeSommet',
-    'meta_description' => 'Sites web et tableaux de bord SaaS pour les entreprises de Seattle : développement sur mesure à distance, performance et SEO par CodeSommet.',
+    'meta_description' => 'Développement à distance pour les entreprises de Seattle : sites web performants, tableaux de bord SaaS et SEO technique par l\'équipe CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'og_description' => 'Sites web et tableaux de bord SaaS pour les entreprises de Seattle : développement sur mesure à distance, performance et SEO par CodeSommet.',
-    'twitter_description' => 'Sites web et tableaux de bord SaaS pour les entreprises de Seattle, développés à distance par CodeSommet.',
+    'og_description' => 'Développement à distance pour les entreprises de Seattle : sites web performants, tableaux de bord SaaS et SEO technique par l\'équipe CodeSommet.',
+    'twitter_description' => 'Développement à distance pour les entreprises de Seattle : sites performants, tableaux de bord SaaS et SEO technique.',
     'text_0' => 'États-Unis',
     'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_2' => 'Basé à',
