@@ -3,18 +3,22 @@
  * Shared utilities for all tool pages: FAQ toggles, usage counter, copy, download, tabs
  */
 
-/* ── DOMContentLoaded polyfill for deferred body scripts ────────────── */
-/* Ensures DOMContentLoaded callbacks fire even if DOM is already ready */
-(function () {
-    var _origAdd = document.addEventListener;
-    document.addEventListener = function (type, fn, opts) {
-        if (type === 'DOMContentLoaded' && document.readyState !== 'loading') {
-            setTimeout(fn, 0);
-        } else {
-            _origAdd.call(document, type, fn, opts);
-        }
-    };
-})();
+/* ── Ready helper for deferred body scripts ─────────────────────────── */
+/* Deferred tool scripts may register a DOMContentLoaded handler after the
+ * event has already fired. Rather than globally monkey-patching
+ * document.addEventListener (which breaks removeEventListener, the `this`
+ * binding, and listener options), expose a safe, local onReady() helper.
+ * Tool scripts should prefer CodeSommetTools.onReady(fn). */
+window.CodeSommetTools = window.CodeSommetTools || {};
+window.CodeSommetTools.onReady = function (fn) {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fn, { once: true });
+    } else {
+        // DOM already parsed: run on the next tick so registration order is
+        // preserved and errors don't block other scripts.
+        setTimeout(function () { fn(); }, 0);
+    }
+};
 
 (function () {
     'use strict';
@@ -65,6 +69,22 @@
                         chevron.style.transition = 'transform 0.2s ease';
                     }
                 }
+            });
+        });
+    }
+
+    /* ── Scroll-to-tool CTA (e.g. "Scroll up to start") ────────────────
+     * Buttons carrying [data-scroll-to-tool] scroll back to the tool form
+     * and focus its first input — mirrors the original Next.js onClick. */
+    function initScrollToToolButtons() {
+        document.querySelectorAll('[data-scroll-to-tool]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(function () {
+                    var toolSection = document.querySelector('section.max-w-5xl') || document.querySelector('section.max-w-4xl');
+                    var input = (toolSection || document).querySelector('input[type="text"], input[type="url"], textarea');
+                    if (input) input.focus({ preventScroll: true });
+                }, 500);
             });
         });
     }
@@ -422,6 +442,7 @@
     function _initAll() {
         initFaqAccordion();
         initAutoTabs();
+        initScrollToToolButtons();
     }
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', _initAll);

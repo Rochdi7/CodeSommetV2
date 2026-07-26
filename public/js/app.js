@@ -1273,8 +1273,14 @@
                 var btn = item.querySelector('button');
                 if (!btn) return;
 
+                // Bind each FAQ button only once (shared marker with the other
+                // FAQ initializer to prevent double-binding / desynced state).
+                if (btn.dataset.faqBound === 'true') return;
+
                 var questionEl = btn.querySelector('h3');
                 if (!questionEl) return;
+
+                btn.dataset.faqBound = 'true';
 
                 var chevron = btn.querySelector('svg');
                 var questionText = questionEl.textContent;

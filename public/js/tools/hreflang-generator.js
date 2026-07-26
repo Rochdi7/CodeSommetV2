@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('hreflang-generator')) return;
@@ -142,7 +142,7 @@
             document.getElementById('copy-http-btn')?.addEventListener('click', function () { CodeSommetTools.copyToClipboard(result.httpHeaders, this); });
         }
 
-        function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+        {NEW_S}
 
         CodeSommetTools.initUsageCounter('hreflang-generator', 'hreflang tags generated');
     });

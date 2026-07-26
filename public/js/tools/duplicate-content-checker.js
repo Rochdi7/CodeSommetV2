@@ -4,7 +4,7 @@
  */
 (function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
         if (!CodeSommetTools.isTool('duplicate-content-checker')) return;
@@ -112,7 +112,7 @@
                 '<div class="text-sm text-gray-600 mt-1">' + label + '</div></div>';
         }
 
-        function escapeHtml(str) { var d = document.createElement('div'); d.textContent = str; return d.innerHTML; }
+        {NEW_STR}
 
         CodeSommetTools.initUsageCounter('duplicate-content-checker', 'content comparisons performed');
     });

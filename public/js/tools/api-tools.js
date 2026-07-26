@@ -34,7 +34,7 @@
         'og-preview-generator': { title: 'OG Preview', action: 'Preview', actionText: 'previews generated', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' }
     };
 
-    document.addEventListener('DOMContentLoaded', function () {
+    CodeSommetTools.onReady(function () {
         // Detect which tool page we're on
         var slug = detectToolSlug();
         if (!slug || !TOOL_CONFIG[slug]) return;
@@ -124,7 +124,7 @@
             var grade = data.grade || (score >= 90 ? 'A' : score >= 80 ? 'B' : score >= 60 ? 'C' : score >= 40 ? 'D' : 'F');
             html += '<div class="rounded-2xl border-2 p-8 bg-' + color + '-50 border-' + color + '-200 text-center">' +
                 '<div class="text-5xl font-bold text-' + color + '-600 mb-2">' + (data.grade ? grade : score + '/100') + '</div>' +
-                '<div class="text-lg font-semibold text-' + color + '-900">' + (data.message || (data.passed ? 'Passed' : 'Issues Found')) + '</div></div>';
+                '<div class="text-lg font-semibold text-' + color + '-900">' + escapeHtml(data.message || (data.passed ? 'Passed' : 'Issues Found')) + '</div></div>';
         }
 
         // Stats grid
@@ -154,7 +154,7 @@
                 var severity = issue.type || issue.severity || 'warning';
                 var sColor = severity === 'error' ? 'red' : 'yellow';
                 html += '<div class="p-4 bg-' + sColor + '-50 border border-' + sColor + '-200 rounded-lg">' +
-                    '<div class="flex items-start gap-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-' + sColor + '-100 text-' + sColor + '-800">' + severity + '</span>' +
+                    '<div class="flex items-start gap-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-' + sColor + '-100 text-' + sColor + '-800">' + escapeHtml(severity) + '</span>' +
                     '<p class="text-sm text-' + sColor + '-900">' + escapeHtml(issue.message || JSON.stringify(issue)) + '</p></div></div>';
             });
             html += '</div></div>';
@@ -285,8 +285,8 @@
             var statusColor = (s === 'working' || s === 'good' || s === 'pass' || s === 'valid') ? 'green' : (s === 'redirect' || s === 'warning' || s === 'empty') ? 'yellow' : 'red';
             html += '<tr class="border-b border-gray-100">' +
                 '<td class="py-2 px-2 font-mono text-xs break-all max-w-[300px]">' + escapeHtml(link.url || '') + '</td>' +
-                '<td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-' + statusColor + '-50 text-' + statusColor + '-700">' + (link.status || link.statusCode || '') + '</span></td>' +
-                '<td class="py-2 px-2 text-xs">' + (link.type || '') + '</td></tr>';
+                '<td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-' + statusColor + '-50 text-' + statusColor + '-700">' + escapeHtml(link.status || link.statusCode || '') + '</span></td>' +
+                '<td class="py-2 px-2 text-xs">' + escapeHtml(link.type || '') + '</td></tr>';
         });
         html += '</tbody></table></div>';
         return html;
@@ -313,7 +313,7 @@
             html += '<div class="flex items-center gap-3 p-3 bg-[#F8F8F8] rounded-lg">' +
                 '<span class="w-8 h-8 bg-[#00AEEF] text-white rounded-full flex items-center justify-center text-sm font-bold">' + (i + 1) + '</span>' +
                 '<div class="flex-1"><div class="font-mono text-sm break-all">' + escapeHtml(step.url || '') + '</div>' +
-                '<div class="text-xs text-gray-500 mt-1">Status: ' + (step.statusCode || '') + (step.timestamp ? ' • ' + step.timestamp + 'ms' : '') + '</div></div></div>';
+                '<div class="text-xs text-gray-500 mt-1">Status: ' + escapeHtml(step.statusCode || '') + (step.timestamp ? ' • ' + escapeHtml(step.timestamp) + 'ms' : '') + '</div></div></div>';
             if (i < chain.length - 1) {
                 html += '<div class="flex justify-center"><svg class="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></div>';
             }
@@ -334,5 +334,5 @@
         return key.replace(/([A-Z])/g, ' $1').replace(/^./, function (s) { return s.toUpperCase(); }).replace(/_/g, ' ');
     }
 
-    function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+    {NEW_S}
 })();
