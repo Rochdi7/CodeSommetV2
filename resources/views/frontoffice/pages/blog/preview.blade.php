@@ -2,6 +2,7 @@
 
 @section('title', __('blog/preview.title'))
 @section('meta_description', __('blog/preview.meta_description'))
+@section('robots', 'noindex, nofollow')
 
 @section('content')
     {{-- Hero / Header --}}

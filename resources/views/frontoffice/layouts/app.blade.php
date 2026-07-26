@@ -11,7 +11,7 @@
     <meta name="description" content="@yield('meta_description', 'Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital. Obtenez votre devis gratuit dès aujourd\'hui.')" />
     <meta name="author" content="CodeSommet" />
     <meta name="keywords" content="@yield('meta_keywords', 'développement web Maroc, agence web IA, agence de développement Next.js, développement de tableaux de bord, développement SaaS')" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="@yield('robots', 'index, follow')" />
     <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
 
     {{-- Open Graph --}}
@@ -20,9 +20,9 @@
     <meta property="og:url" content="@yield('og_url', config('app.url'))" />
     <meta property="og:site_name" content="CodeSommet" />
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:image" content="@yield('og_image', asset('images/featured-image.webp'))" />
-    <meta property="og:image:width" content="2494" />
-    <meta property="og:image:height" content="1550" />
+    <meta property="og:image" content="@yield('og_image', asset('heros/saas-hero.webp'))" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
     <meta property="og:image:alt" content="@yield('og_image_alt', 'CodeSommet - Agence Digitale')" />
     <meta property="og:type" content="website" />
 
@@ -32,7 +32,7 @@
     <meta name="twitter:creator" content="@@code_sommet" />
     <meta name="twitter:title" content="@yield('twitter_title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')" />
     <meta name="twitter:description" content="@yield('twitter_description', 'Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital. Obtenez votre devis gratuit dès aujourd\'hui.')" />
-    <meta name="twitter:image" content="@yield('twitter_image', asset('images/featured-image.webp'))" />
+    <meta name="twitter:image" content="@yield('twitter_image', asset('heros/saas-hero.webp'))" />
 
     {{-- Canonical --}}
     <link rel="canonical" href="@yield('canonical', url()->current())" />

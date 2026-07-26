@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /admin
+Disallow: /admin/
+Disallow: /blog/preview
+Disallow: /api/
+
+Sitemap: https://codesommet.com/sitemap.xml
