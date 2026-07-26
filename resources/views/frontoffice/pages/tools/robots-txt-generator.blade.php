@@ -58,7 +58,6 @@
                     </div>
                     <div><label
                             class="block text-sm font-medium text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.label_140') }}</label><select
-                            id="robots-user-agent"
                             class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
                             <option value="*" selected="">* (All Bots)</option>
                             <option value="Googlebot">{{ __('tools/robots-txt-generator.opt_342') }}</option>
@@ -73,14 +72,14 @@
                         </select></div>
                     <div><label
                             class="block text-sm font-medium text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.text_5') }}</label>
-                        <div class="space-y-3" id="robots-rules">
+                        <div class="space-y-3">
                             <div class="flex items-center gap-3"><select
                                     class="w-32 px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm bg-white">
                                     <option value="disallow" selected="">Disallow</option>
                                     <option value="allow">{{ __('tools/robots-txt-generator.opt_351') }}</option>
                                 </select><input type="text" placeholder="/path/to/block/"
                                     class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
-                                    value="/admin/" /><button data-remove-row
+                                    value="/admin/" /><button
                                     class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -99,7 +98,7 @@
                                     <option value="allow">{{ __('tools/robots-txt-generator.opt_352') }}</option>
                                 </select><input type="text" placeholder="/path/to/block/"
                                     class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
-                                    value="/private/" /><button data-remove-row
+                                    value="/private/" /><button
                                     class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -118,7 +117,7 @@
                                     <option value="allow" selected="">Allow</option>
                                 </select><input type="text" placeholder="/path/to/block/"
                                     class="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
-                                    value="/public/" /><button data-remove-row
+                                    value="/public/" /><button
                                     class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -131,7 +130,7 @@
                                         <path d="M3 6h18"></path>
                                         <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                                     </svg></button></div>
-                        </div><button id="robots-add-btn"
+                        </div><button
                             class="w-full mt-3 py-3 px-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-[#00AEEF] hover:bg-orange-50 transition-colors flex items-center justify-center gap-2 text-sm font-medium text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -144,7 +143,7 @@
                             class="block text-sm font-medium text-[#0F0F0F] mb-2">{{ __('tools/robots-txt-generator.label_141') }}</label><input
                             type="url" placeholder="https://example.com/sitemap.xml"
                             class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
-                            value="" /></div><button id="tool-action-btn"
+                            value="" /></div><button
                         class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full"
                         tabindex="0">{{ __('tools/robots-txt-generator.text_7') }}</button>
                 </div>
@@ -195,7 +194,7 @@
                 </div>
                 <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
@@ -211,12 +210,13 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_16') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
@@ -232,12 +232,13 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_18') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
@@ -253,12 +254,13 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_20') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
@@ -274,12 +276,13 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_22') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
@@ -295,12 +298,13 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_24') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
@@ -316,12 +320,13 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_26') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span>
@@ -337,7 +342,8 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
                             <p>{{ __('tools/robots-txt-generator.text_28') }}</p>
                         </div>
                     </div>

@@ -23,65 +23,52 @@ window.CodeSommetTools.onReady = function (fn) {
 (function () {
     'use strict';
 
-    /* ── FAQ Accordion ───────────────────────────────────────────────────
-     * Located structurally, via the .faq-answer elements the markup already
-     * carries. The previous version searched for an <h3> whose text was
-     * exactly "Frequently Asked Questions", which matches no translated page —
-     * on the French site the accordion never bound and every answer stayed
-     * hidden with the chevrons inert. */
+    /* ── FAQ Accordion ─────────────────────────────────────────────────── */
     function initFaqAccordion() {
-        var answers = document.querySelectorAll('.faq-answer');
-        if (!answers.length) return;
+        // Find the FAQ heading to reliably locate the FAQ section
+        var faqHeadings = document.querySelectorAll('h3');
+        var faqSection = null;
+        for (var i = 0; i < faqHeadings.length; i++) {
+            if (faqHeadings[i].textContent.trim() === 'Frequently Asked Questions') {
+                // The FAQ container is the nearest parent with bg-white rounded-lg
+                faqSection = faqHeadings[i].closest('.bg-gradient-to-br, .bg-white');
+                if (faqSection) {
+                    // Look for the white card that holds the FAQ items
+                    var card = faqSection.querySelector('.bg-white.rounded-lg.border');
+                    if (card) faqSection = card;
+                }
+                break;
+            }
+        }
+        if (!faqSection) return;
 
-        // Group answers by their FAQ card so "close the others" stays scoped to
-        // one accordion even if a page ever renders more than one.
-        var groups = [];
-        answers.forEach(function (answer) {
-            var item = answer.closest('.border-b') || answer.parentElement;
-            if (!item) return;
+        var faqItems = faqSection.querySelectorAll('.border-b.border-gray-200');
+        faqItems.forEach(function (item) {
             var btn = item.querySelector('button');
             if (!btn) return;
 
-            var container = item.parentElement;
-            var group = null;
-            for (var i = 0; i < groups.length; i++) {
-                if (groups[i].container === container) { group = groups[i]; break; }
-            }
-            if (!group) { group = { container: container, entries: [] }; groups.push(group); }
-            group.entries.push({ btn: btn, answer: answer });
-        });
+            var answer = item.querySelector('.faq-answer');
+            if (!answer) return; // answer content must be in the HTML
 
-        groups.forEach(function (group) {
-            group.entries.forEach(function (entry, index) {
-                var btn = entry.btn;
-                var answer = entry.answer;
-                var chevron = btn.querySelector('svg.lucide-chevron-down');
-
-                // Expose accordion state to assistive tech.
-                if (!answer.id) {
-                    answer.id = 'faq-answer-' + (groups.indexOf(group) + 1) + '-' + (index + 1);
-                }
-                btn.setAttribute('type', 'button');
-                btn.setAttribute('aria-controls', answer.id);
-                btn.setAttribute('aria-expanded', answer.classList.contains('hidden') ? 'false' : 'true');
-                if (chevron) chevron.style.transition = 'transform 0.2s ease';
-
-                btn.addEventListener('click', function () {
-                    var isOpen = !answer.classList.contains('hidden');
-
-                    group.entries.forEach(function (other) {
-                        other.answer.classList.add('hidden');
-                        other.btn.setAttribute('aria-expanded', 'false');
-                        var otherChevron = other.btn.querySelector('svg.lucide-chevron-down');
-                        if (otherChevron) otherChevron.style.transform = 'rotate(0deg)';
-                    });
-
-                    if (!isOpen) {
-                        answer.classList.remove('hidden');
-                        btn.setAttribute('aria-expanded', 'true');
-                        if (chevron) chevron.style.transform = 'rotate(180deg)';
-                    }
+            btn.addEventListener('click', function () {
+                var isOpen = !answer.classList.contains('hidden');
+                // Close all
+                faqSection.querySelectorAll('.faq-answer').forEach(function (a) {
+                    a.classList.add('hidden');
                 });
+                faqSection.querySelectorAll('button svg.lucide-chevron-down').forEach(function (svg) {
+                    svg.style.transform = 'rotate(0deg)';
+                    svg.style.transition = 'transform 0.2s ease';
+                });
+                // Open clicked if was closed
+                if (!isOpen) {
+                    answer.classList.remove('hidden');
+                    var chevron = btn.querySelector('svg.lucide-chevron-down');
+                    if (chevron) {
+                        chevron.style.transform = 'rotate(180deg)';
+                        chevron.style.transition = 'transform 0.2s ease';
+                    }
+                }
             });
         });
     }

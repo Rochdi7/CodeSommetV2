@@ -92,7 +92,7 @@
         <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que la santé du domaine et pourquoi est-ce important pour le SEO ?</h3>
@@ -101,11 +101,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>La santé du domaine mesure les fondations techniques SEO de votre site web — incluant la sécurité HTTPS, la compatibilité mobile, la structure HTML appropriée et la découvrabilité par les moteurs de recherche. Un domaine sain (score 85+) garantit que Google peut explorer, indexer et classer vos pages efficacement. Une mauvaise santé du domaine entraîne des classements plus bas, une visibilité réduite et une perte de trafic organique.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence vérifier la santé de mon domaine ?</h3>
@@ -114,11 +114,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Vérifiez la santé de votre domaine mensuellement dans le cadre de la maintenance SEO de routine, et immédiatement après tout changement majeur du site web (migrations, refontes, mises à jour CMS). La surveillance régulière aide à détecter les problèmes techniques avant qu'ils n'impactent le classement. Si vous lancez un nouveau site, vérifiez-le avant la mise en ligne pour corriger les problèmes de manière proactive.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi HTTPS/SSL est-il si important pour mon site ?</h3>
@@ -127,11 +127,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>HTTPS est un facteur de classement Google confirmé et essentiel pour la confiance des utilisateurs. Sans SSL, les navigateurs affichent un avertissement « Non sécurisé » qui fait fuir les visiteurs. HTTPS protège également les données des utilisateurs (identifiants de connexion, informations de paiement) contre l'interception. Les normes web modernes exigent HTTPS — ce n'est plus optionnel pour tout site web sérieux.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Que signifie l'indexation mobile-first et pourquoi une balise viewport ?</h3>
@@ -140,11 +140,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Google utilise désormais la version mobile de votre site pour l'indexation et le classement, pas la version desktop. La balise meta viewport indique aux navigateurs comment mettre à l'échelle votre site sur les appareils mobiles. Sans elle, votre site apparaît minuscule et cassé sur les téléphones, entraînant de mauvais classements et des taux de rebond élevés. C'est l'exigence technique SEO n°1 pour l'indexation mobile-first.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Comment les Core Web Vitals sont-ils liés à la santé du domaine ?</h3>
@@ -153,11 +153,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Bien que cet outil vérifie les bases techniques du SEO, les Core Web Vitals mesurent les métriques d'expérience utilisateur (vitesse de chargement, interactivité, stabilité visuelle). Les deux sont essentiels — la santé du domaine garantit que les moteurs de recherche peuvent accéder à votre site, tandis que les Core Web Vitals affectent l'expérience des utilisateurs. Utilisez l'outil PageSpeed Insights de Google pour vérifier les Core Web Vitals séparément.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">J'ai un score faible - que corriger en premier ?</h3>
@@ -166,11 +166,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Corrigez d'abord les problèmes critiques : accessibilité du domaine, certificat HTTPS/SSL et balise viewport mobile. Ceux-ci ont le plus grand impact SEO (15 points chacun). Ensuite, traitez les meta descriptions et les balises H1 (10 points chacune). Laissez les éléments secondaires comme le favicon et les redirections WWW pour la fin. Concentrez-vous sur la réussite de toutes les « Vérifications critiques » pour atteindre la note A.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quelle différence entre sitemap.xml et robots.txt ?</h3>
@@ -179,7 +179,7 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Le sitemap.xml indique aux moteurs de recherche quelles pages explorer — c'est comme un plan de votre site. Le robots.txt indique aux moteurs de recherche quelles pages NE PAS explorer (panneaux d'administration, zones privées). Les deux sont essentiels pour le SEO : le sitemap garantit que les pages importantes sont indexées, tandis que le robots.txt empêche l'indexation du contenu sensible ou dupliqué. Chaque site web a besoin de ces deux fichiers dans le répertoire racine.</p>
             </div>
         </div>

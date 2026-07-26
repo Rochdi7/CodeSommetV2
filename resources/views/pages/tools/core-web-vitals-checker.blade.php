@@ -65,7 +65,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Que sont les Core Web Vitals et pourquoi sont-ils importants pour le SEO ?</h3>
@@ -74,11 +74,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les Core Web Vitals sont les métriques officielles de Google pour mesurer l'expérience de page : LCP (performance de chargement), FID/INP (interactivité) et CLS (stabilité visuelle). Depuis 2021, ce sont des facteurs de classement directs dans l'algorithme de Google. Les sites avec de bons scores Core Web Vitals bénéficient d'un bonus de classement, tandis que de mauvais scores peuvent nuire à votre visibilité dans les résultats de recherche. Ils sont essentiels tant pour le SEO que pour l'expérience utilisateur.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les Core Web Vitals mobile et desktop ?</h3>
@@ -87,11 +87,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les métriques mobile et desktop diffèrent souvent significativement en raison des vitesses réseau, des capacités des appareils et des différences de rendu. Google utilise l'indexation mobile-first, ce qui signifie que vos performances mobiles sont plus importantes pour le classement. Les appareils mobiles ont généralement des connexions réseau plus lentes et moins de puissance de traitement, donc les scores LCP et INP sont généralement moins bons sur mobile. Vous devriez prioriser l'optimisation pour mobile en premier.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que l'INP et pourquoi a-t-il remplacé le FID ?</h3>
@@ -100,11 +100,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>L'INP (Interaction to Next Paint) a remplacé le FID (First Input Delay) en tant que Core Web Vital en mars 2024. Alors que le FID ne mesurait que le délai de la première interaction, l'INP mesure la réactivité de toutes les interactions utilisateur tout au long du cycle de vie de la page. Cela fournit une vue plus complète de l'interactivité. Un bon INP est inférieur à 200 ms, à améliorer entre 200-500 ms, et mauvais au-dessus de 500 ms.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment améliorer mon score LCP (Largest Contentful Paint) ?</h3>
@@ -113,11 +113,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Pour améliorer le LCP : 1) Optimisez et compressez les images en utilisant les formats WebP/AVIF, 2) Utilisez un CDN pour réduire les temps de réponse serveur, 3) Implémentez le chargement différé pour les images sous la ligne de flottaison, 4) Préchargez les ressources critiques comme les polices et les images hero, 5) Minimisez le JavaScript et CSS bloquant le rendu, 6) Passez à un meilleur hébergement avec des serveurs plus rapides, et 7) Activez la compression de texte (Gzip/Brotli).</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qui cause de mauvais scores CLS ?</h3>
@@ -126,11 +126,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Le CLS mesure les décalages de mise en page inattendus. Les causes courantes incluent : 1) Les images sans attributs width/height, 2) Les publicités ou intégrations qui se chargent dynamiquement, 3) Les polices web causant le FOIT/FOUT (Flash of Invisible/Unstyled Text), 4) Les animations qui poussent le contenu, et 5) Le contenu chargé tardivement qui décale les éléments existants. Corrigez cela en définissant des dimensions explicites, en réservant de l'espace pour le contenu dynamique, et en utilisant font-display: swap.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence vérifier mes Core Web Vitals ?</h3>
@@ -139,11 +139,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Vérifiez les Core Web Vitals chaque semaine pour les pages critiques (page d'accueil, pages d'atterrissage principales, pages produits) et mensuellement pour les autres pages. Testez toujours après des mises à jour majeures, des changements de design ou des déploiements de nouvelles fonctionnalités. Utilisez cet outil en complément du rapport Core Web Vitals de Google Search Console et de PageSpeed Insights pour surveiller les tendances et détecter les problèmes avant qu'ils n'impactent le classement.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'un bon score global de Core Web Vitals ?</h3>
@@ -152,7 +152,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Un bon score global signifie réussir les trois métriques principales : LCP inférieur à 2,5 secondes, FID inférieur à 100 ms (ou INP inférieur à 200 ms) et CLS inférieur à 0,1. Google exige que 75 % des visites de page atteignent ces seuils pour la classification « bon ». Visez : TTFB inférieur à 800 ms, FCP inférieur à 1,8 s, et tous les Core Web Vitals dans la plage « bon » sur mobile et desktop.</p>
                     </div>
                 </div>
