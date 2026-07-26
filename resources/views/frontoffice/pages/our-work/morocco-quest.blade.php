@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pt-2 md:pt-4"><a href="https://goausbildung.com/" target="_blank" rel="noopener noreferrer"
+                    <div class="pt-2 md:pt-4"><a href="https://morocco-quest.com/" target="_blank" rel="noopener noreferrer"
                             class="block w-full"><button
                                 class="inline-flex items-center justify-center cursor-pointer disabled:pointer-events-none disabled:opacity-50 overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] rounded-full group relative w-full bg-gradient-to-r from-[#00AEEF] to-[#0071BC] text-white hover:shadow-[0_8px_30px_rgba(0,174,239,0.4)] transition-all duration-300 text-base md:text-lg px-6 py-3.5 md:py-4 h-auto font-semibold"
                                 tabindex="0"><span>{{ __('our-work/morocco-quest.text_152') }}</span><svg
@@ -132,8 +132,8 @@
                     </div>
                     <div
                         class="relative aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 md:border-2 shadow-xl md:shadow-2xl">
-                        <video src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}" autoPlay=""
-                            loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <video src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}" autoplay
+                            loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                     </div>
                 </div>
             </div>
@@ -588,7 +588,7 @@
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <img src="{{ asset('images/our-work/morocco-quest/homepage.webp') }}"
+                    <img src="{{ asset('mockups/morocco-quest-top.png') }}"
                         alt="{{ __('our-work/morocco-quest.attr_1369') }}" class="w-full h-full object-cover" />
                 </div>
             </div>
@@ -844,7 +844,7 @@
     </section>
     <section class="pt-12 md:pt-16 lg:pt-20 pb-3 md:pb-4 bg-[#F5F5F5] border-t border-gray-200">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-            <div class="grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 max-w-4xl mx-auto"><a class="group"
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-4 max-w-4xl mx-auto"><a class="group"
                     href="/our-work/mon-asso">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
@@ -873,7 +873,8 @@
                         <p class="text-sm font-semibold text-white hidden md:block">
                             {{ __('our-work/morocco-quest.text_45') }}</p>
                     </div>
-                </a><a class="group" href="/our-work/project-azubi">
+                </a>
+<a class="group" href="/our-work/gls-sprachenzentrum">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

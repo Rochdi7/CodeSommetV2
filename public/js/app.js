@@ -922,12 +922,12 @@
     /* ── Hero rotating text (every 5s) ────────────────────────────────── */
     (function () {
         var words = [
-            'GROWTH',
-            'RESULTS',
+            'CROISSANCE',
+            'RÉSULTATS',
             'CONVERSIONS',
-            'LEADS',
-            'SALES',
-            'BRAND BUILDING'
+            'PROSPECTS',
+            'VENTES',
+            'IMAGE DE MARQUE'
         ];
         var idx = 0;
         var textEl = document.getElementById('hero-rotating-text');
@@ -2233,4 +2233,263 @@
         });
     })();
 
+    // Showcase video autoplay
+    // The muted attribute alone is not always enough for Chrome/Safari to grant
+    // autoplay, so set the property explicitly and play once the video is in view.
+    (function () {
+        var videos = document.querySelectorAll('video[autoplay]');
+        if (!videos.length) return;
+
+        function play(video) {
+            video.muted = true;
+            video.defaultMuted = true;
+            var attempt = video.play();
+            if (attempt && typeof attempt.catch === 'function') {
+                attempt.catch(function () {});
+            }
+        }
+
+        if (!('IntersectionObserver' in window)) {
+            Array.prototype.forEach.call(videos, play);
+            return;
+        }
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    play(entry.target);
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }, {threshold: 0.25});
+
+        Array.prototype.forEach.call(videos, function (video) {
+            video.muted = true;
+            video.defaultMuted = true;
+            observer.observe(video);
+        });
+    })();
+
+})();
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Floating actions — WhatsApp bubble + back-to-top
+   ───────────────────────────────────────────────────────────────────────
+   Markup: resources/views/frontoffice/partials/floating-actions.blade.php
+   Styles: public/css/components.css → "Floating action buttons"
+
+   The back-to-top button reveals itself past one viewport of scrolling and
+   draws a progress ring showing how far down the page the reader is.
+   ═══════════════════════════════════════════════════════════════════════ */
+(function () {
+    'use strict';
+
+    function init() {
+        var stack = document.querySelector('.fab-stack');
+        if (!stack) { return; }
+
+        var btn = document.getElementById('backToTop');
+        var wa = stack.querySelector('.fab--whatsapp');
+        var bar = stack.querySelector('.fab-progress__bar');
+        var RING = 125.66; // 2πr, r=20 — matches stroke-dasharray in the CSS
+
+        // Stagger the WhatsApp entrance slightly so it reads as deliberate.
+        if (wa) {
+            setTimeout(function () { wa.classList.add('is-ready'); }, 450);
+        }
+
+        if (!btn) { return; }
+
+        var reduce = window.matchMedia &&
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var ticking = false;
+        var shown = false;
+
+        function update() {
+            ticking = false;
+
+            var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+            var docH = Math.max(
+                document.body.scrollHeight, document.documentElement.scrollHeight,
+                document.body.offsetHeight, document.documentElement.offsetHeight
+            );
+            var scrollable = docH - window.innerHeight;
+
+            // Reveal after roughly one screen of scrolling.
+            var should = y > Math.min(window.innerHeight * 0.7, 600);
+            if (should !== shown) {
+                shown = should;
+                btn.classList.toggle('is-visible', shown);
+            }
+
+            if (bar) {
+                var pct = scrollable > 0 ? Math.min(1, Math.max(0, y / scrollable)) : 0;
+                bar.style.strokeDashoffset = (RING * (1 - pct)).toFixed(2);
+            }
+        }
+
+        function onScroll() {
+            if (!ticking) {
+                ticking = true;
+                window.requestAnimationFrame(update);
+            }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll, { passive: true });
+        update();
+
+        btn.addEventListener('click', function () {
+            // html{scroll-behavior:smooth} is already set globally, but pass the
+            // behaviour explicitly so this works if that rule ever changes.
+            window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+
+            // Move focus to the top of the document for keyboard/screen-reader
+            // users — scrolling alone leaves focus stranded down the page.
+            var target = document.querySelector('main') || document.body;
+            var hadTabIndex = target.hasAttribute('tabindex');
+            if (!hadTabIndex) { target.setAttribute('tabindex', '-1'); }
+            target.focus({ preventScroll: true });
+            if (!hadTabIndex) {
+                target.addEventListener('blur', function handler() {
+                    target.removeAttribute('tabindex');
+                    target.removeEventListener('blur', handler);
+                });
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Promo ads — offer countdown + sticky bottom bar
+   ───────────────────────────────────────────────────────────────────────
+   Markup: frontoffice/partials/promo-offer.blade.php
+           frontoffice/partials/promo-sticky-bar.blade.php
+   Styles: public/css/components.css → "Offer / promo ads"
+
+   The deadline comes from the server (end of the current month) via
+   data-promo-deadline. It is NOT regenerated client-side — when it passes,
+   the countdown stops at zero rather than resetting to manufacture urgency.
+   ═══════════════════════════════════════════════════════════════════════ */
+(function () {
+    'use strict';
+
+    var DISMISS_KEY = 'cs_promo_bar_dismissed_until';
+
+    function pad(n) {
+        return (n < 10 ? '0' : '') + n;
+    }
+
+    /* ── Countdown on the hero offer strip ──────────────────────────── */
+    function initCountdown() {
+        var root = document.querySelector('[data-promo-deadline]');
+        if (!root) { return; }
+
+        var end = Date.parse(root.getAttribute('data-promo-deadline'));
+        if (isNaN(end)) { return; }
+
+        var elD = root.querySelector('[data-promo-days]');
+        var elH = root.querySelector('[data-promo-hours]');
+        var elM = root.querySelector('[data-promo-mins]');
+        var elS = root.querySelector('[data-promo-secs]');
+        if (!elD || !elH || !elM || !elS) { return; }
+
+        var timer = null;
+
+        function tick() {
+            var left = end - Date.now();
+
+            if (left <= 0) {
+                elD.textContent = elH.textContent = elM.textContent = elS.textContent = '00';
+                if (timer) { clearInterval(timer); }
+                return;
+            }
+
+            var s = Math.floor(left / 1000);
+            elD.textContent = pad(Math.floor(s / 86400));
+            elH.textContent = pad(Math.floor(s % 86400 / 3600));
+            elM.textContent = pad(Math.floor(s % 3600 / 60));
+            elS.textContent = pad(s % 60);
+        }
+
+        tick();
+        timer = setInterval(tick, 1000);
+    }
+
+    /* ── Sticky bottom bar ──────────────────────────────────────────── */
+    function initBar() {
+        var bar = document.getElementById('promoBar');
+        if (!bar) { return; }
+
+        // Respect an earlier dismissal.
+        try {
+            var until = parseInt(window.localStorage.getItem(DISMISS_KEY) || '0', 10);
+            if (until && Date.now() < until) { return; }
+        } catch (e) { /* localStorage unavailable (private mode) — show the bar */ }
+
+        bar.hidden = false;
+
+        var shown = false;
+        var ticking = false;
+
+        function update() {
+            ticking = false;
+            if (shown) { return; }
+
+            var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+            if (y > Math.min(window.innerHeight * 0.6, 520)) {
+                shown = true;
+                bar.classList.add('is-visible');
+                // Lift the floating buttons so the bar never covers them.
+                document.body.classList.add('has-promo-bar');
+                window.removeEventListener('scroll', onScroll);
+            }
+        }
+
+        function onScroll() {
+            if (!ticking) {
+                ticking = true;
+                window.requestAnimationFrame(update);
+            }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        update();
+
+        var close = document.getElementById('promoBarClose');
+        if (close) {
+            close.addEventListener('click', function () {
+                bar.classList.remove('is-visible');
+                document.body.classList.remove('has-promo-bar');
+                window.removeEventListener('scroll', onScroll);
+
+                // Remember for a week so it does not nag on every visit.
+                try {
+                    window.localStorage.setItem(
+                        DISMISS_KEY, String(Date.now() + 7 * 24 * 60 * 60 * 1000)
+                    );
+                } catch (e) { /* ignore */ }
+
+                setTimeout(function () { bar.hidden = true; }, 500);
+            });
+        }
+    }
+
+    function init() {
+        initCountdown();
+        initBar();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
 })();

@@ -72,6 +72,26 @@
     /* ── Tool Usage Counter (localStorage-based) ──────────────────────── */
     window.CodeSommetTools = window.CodeSommetTools || {};
 
+    /* ── Page identity ────────────────────────────────────────────────────
+     * The current tool's slug, taken from the URL (/tools/<slug>, optionally
+     * behind a locale prefix like /fr/tools/<slug>).
+     *
+     * Tool scripts must gate on this rather than on document.title: titles are
+     * translated, so an English check like title.includes('word') is false on
+     * the French site and the tool silently never initialises.
+     */
+    window.CodeSommetTools.currentToolSlug = function () {
+        var m = window.location.pathname.match(/\/tools\/([a-z0-9-]+)/i);
+        return m ? m[1].toLowerCase() : '';
+    };
+
+    /* True when the page is the given tool. Accepts one slug or a list. */
+    window.CodeSommetTools.isTool = function (slugs) {
+        var current = window.CodeSommetTools.currentToolSlug();
+        if (!current) return false;
+        return (Array.isArray(slugs) ? slugs : [slugs]).indexOf(current) !== -1;
+    };
+
     CodeSommetTools.getUsageCount = function (toolSlug) {
         var key = 'tool_usage_' + toolSlug;
         var stored = localStorage.getItem(key);

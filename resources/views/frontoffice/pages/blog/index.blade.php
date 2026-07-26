@@ -153,330 +153,329 @@
         </div>
     </section>
 
-    {{-- Featured Post (Static) --}}
-    <section class="py-12 md:py-16 bg-[#F5F5F5]">
-        <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-            <div class="mb-8">
-                <span
-                    class="inline-flex items-center gap-2 px-3 py-1 bg-[#00AEEF]/10 text-[#00AEEF] text-xs font-semibold rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polygon
-                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                        </polygon>
-                    </svg>
-                    Article en Vedette
-                </span>
-            </div>
-            <a href="#" class="block group">
-                <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                    <div class="grid md:grid-cols-2 gap-0">
-                        <div class="relative aspect-[16/10] md:aspect-auto overflow-hidden rounded-[14px] bg-[#F3F4F6]">
+    {{-- Featured Post — most recent published article --}}
+    @if ($featuredPost && !request()->hasAny(['search', 'category']))
+        @php $featuredColor = $featuredPost->category?->color ?: '#00AEEF'; @endphp
+        <section class="py-12 md:py-16 bg-[#F5F5F5]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="mb-8">
+                    <span
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-[#00AEEF]/10 text-[#00AEEF] text-xs font-semibold rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        Article en Vedette
+                    </span>
+                </div>
+                <a href="{{ route('blog.show', $featuredPost->slug) }}" class="block group">
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
+                        <div class="grid md:grid-cols-2 gap-0">
                             <div
-                                class="w-full h-full min-h-[300px] bg-gradient-to-br from-[#00AEEF]/20 via-[#0071BC]/10 to-[#00AEEF]/5 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
-                                    viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round" class="opacity-20">
-                                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-                                </svg>
-                            </div>
-                            <div
-                                class="absolute top-5 right-5 px-3 py-1.5 bg-[#00AEEF]/80 backdrop-blur-md rounded-full border border-white/30">
-                                <span
-                                    class="text-xs font-bold text-white tracking-wide uppercase">{{ __('blog/index.text_3') }}</span>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-center px-6 md:px-10 py-6 md:py-8">
-                            <div class="flex items-center gap-3 mb-4">
-                                <div class="flex items-center gap-2 text-xs text-[var(--text-tertiary)]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2">
-                                        </rect>
-                                        <line x1="16" x2="16" y1="2" y2="6"></line>
-                                        <line x1="8" x2="8" y1="2" y2="6"></line>
-                                        <line x1="3" x2="21" y1="10" y2="10"></line>
-                                    </svg>
-                                    25 Mars 2026
-                                </div>
-                                <span class="text-[var(--text-tertiary)]">&middot;</span>
-                                <div class="flex items-center gap-1 text-xs text-[var(--text-tertiary)]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                    </svg>
-                                    8 min de lecture
+                                class="relative aspect-[16/10] md:aspect-auto overflow-hidden rounded-[14px] bg-[#F3F4F6]">
+                                @if ($featuredPost->featured_image)
+                                    <img src="{{ asset('storage/' . $featuredPost->featured_image) }}"
+                                        alt="{{ $featuredPost->image_alt }}"
+                                        class="w-full h-full min-h-[300px] object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                                @else
+                                    <div class="w-full h-full min-h-[300px] flex items-center justify-center"
+                                        style="background-image:linear-gradient(to bottom right, {{ $featuredColor }}33, {{ $featuredColor }}1a, {{ $featuredColor }}0d)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+                                            viewBox="0 0 24 24" fill="none" stroke="{{ $featuredColor }}"
+                                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                            class="opacity-20">
+                                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                        </svg>
+                                    </div>
+                                @endif
+                                <div class="absolute top-5 right-5 px-3 py-1.5 backdrop-blur-md rounded-full border border-white/30"
+                                    style="background-color:{{ $featuredColor }}cc">
+                                    <span
+                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ $featuredPost->category_name }}</span>
                                 </div>
                             </div>
-                            <h2 class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[#00AEEF] transition-colors"
-                                style="font-family:var(--font-heading)">{{ __('blog/index.text_4') }}</h2>
-                            <p class="text-[var(--text-secondary)] leading-relaxed mb-6 line-clamp-3">
-                                {{ __('blog/index.text_5') }}</p>
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-8 h-8 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                        viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2">
-                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg>
+                            <div class="flex flex-col justify-center px-6 md:px-10 py-6 md:py-8">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="flex items-center gap-2 text-xs text-[var(--text-tertiary)]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2">
+                                            </rect>
+                                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                                        </svg>
+                                        {{ $featuredPost->formatted_date }}
+                                    </div>
+                                    <span class="text-[var(--text-tertiary)]">&middot;</span>
+                                    <div class="flex items-center gap-1 text-xs text-[var(--text-tertiary)]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>
+                                        {{ $featuredPost->read_time }} de lecture
+                                    </div>
                                 </div>
-                                <div>
-                                    <div class="text-sm font-semibold text-[var(--text-primary)]">CodeSommet</div>
+                                <h2 class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[#00AEEF] transition-colors"
+                                    style="font-family:var(--font-heading)">{{ $featuredPost->title }}</h2>
+                                @if ($featuredPost->excerpt)
+                                    <p class="text-[var(--text-secondary)] leading-relaxed mb-6 line-clamp-3">
+                                        {{ $featuredPost->excerpt }}</p>
+                                @endif
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                                        @if ($featuredPost->author_avatar)
+                                            <img src="{{ asset('storage/' . $featuredPost->author_avatar) }}"
+                                                alt="{{ $featuredPost->author }}"
+                                                class="w-full h-full object-cover" />
+                                        @else
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2">
+                                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                                <circle cx="12" cy="7" r="4"></circle>
+                                            </svg>
+                                        @endif
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-semibold text-[var(--text-primary)]">
+                                            {{ $featuredPost->author }}</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mt-6">
-                                <span
-                                    class="inline-flex items-center gap-2 text-sm font-semibold text-[#00AEEF] group-hover:gap-3 transition-all">
-                                    Lire l'article
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </span>
+                                <div class="mt-6">
+                                    <span
+                                        class="inline-flex items-center gap-2 text-sm font-semibold text-[#00AEEF] group-hover:gap-3 transition-all">
+                                        Lire l'article
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    {{-- Category Filters (Static) --}}
-    <section class="py-8 bg-white border-b border-[var(--border-light)]">
-        <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-            <div class="flex flex-wrap justify-center gap-3">
-                <a href="{{ route('blog') }}"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]">Tous</a>
-                <a href="#"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">{{ __('blog/index.text_6') }}</a>
-                <a href="#"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Design</a>
-                <a href="#"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">SEO</a>
-                <a href="#"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Marketing</a>
-                <a href="#"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Business</a>
-                <a href="#"
-                    class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Tendances</a>
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
-    {{-- Static Blog Cards Grid --}}
+    {{-- Category Filters — only categories that have a published post --}}
+    @if ($categories->isNotEmpty())
+        @php $activeCategory = request('category', 'all'); @endphp
+        <section class="py-8 bg-white border-b border-[var(--border-light)]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="{{ route('blog', request()->only('search')) }}"
+                        class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 {{ $activeCategory === 'all' ? 'bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]' : 'bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]' }}">Tous</a>
+                    @foreach ($categories as $category)
+                        <a href="{{ route('blog', array_merge(request()->only('search'), ['category' => $category->slug])) }}"
+                            class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 {{ $activeCategory === $category->slug ? 'bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]' : 'bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]' }}">{{ $category->name }}</a>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
+
+    {{-- Blog Cards Grid — published posts --}}
     <section class="py-16 md:py-20 bg-[#F5F5F5]">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
 
-            @php
-                $staticPosts = [
-                    [
-                        'title' => '' . __('blog/index.php_1013') . '',
-                        'excerpt' => '' . __('blog/index.php_1014') . '',
-                        'category' => 'Design',
-                        'date' => '22 Mars 2026',
-                        'read_time' => '6 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#8B5CF6]/20 via-[#7C3AED]/10 to-[#8B5CF6]/5',
-                        'badge_bg' => 'bg-[#8B5CF6]/80',
-                        'icon' =>
-                            '<rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="m9 12 2 2 4-4"></path>',
-                    ],
-                    [
-                        'title' => 'Guide Complet du SEO Technique pour les Sites Laravel',
-                        'excerpt' =>
-                            'Optimisez votre site Laravel pour les moteurs de recherche : sitemap XML, meta tags dynamiques, schema markup, Core Web Vitals et plus encore.',
-                        'category' => 'SEO',
-                        'date' => '20 Mars 2026',
-                        'read_time' => '12 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#10B981]/20 via-[#059669]/10 to-[#10B981]/5',
-                        'badge_bg' => 'bg-[#10B981]/80',
-                        'icon' => '<circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path>',
-                    ],
-                    [
-                        'title' => 'Pourquoi Choisir Laravel pour Votre Prochain Projet SaaS',
-                        'excerpt' => '' . __('blog/index.php_1015') . '',
-                        'category' => '' . __('blog/index.php_1016') . '',
-                        'date' => '18 Mars 2026',
-                        'read_time' => '9 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#00AEEF]/20 via-[#0071BC]/10 to-[#00AEEF]/5',
-                        'badge_bg' => 'bg-[#00AEEF]/80',
-                        'icon' =>
-                            '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>',
-                    ],
-                    [
-                        'title' => 'Comment Augmenter Vos Conversions de 300% avec le CRO',
-                        'excerpt' => '' . __('blog/index.php_1017') . '',
-                        'category' => 'Marketing',
-                        'date' => '15 Mars 2026',
-                        'read_time' => '7 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#F59E0B]/20 via-[#D97706]/10 to-[#F59E0B]/5',
-                        'badge_bg' => 'bg-[#F59E0B]/80',
-                        'icon' => '<path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path>',
-                    ],
-                    [
-                        'title' => '' . __('blog/index.php_1018') . '',
-                        'excerpt' => '' . __('blog/index.php_1019') . '',
-                        'category' => 'Business',
-                        'date' => '12 Mars 2026',
-                        'read_time' => '10 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#EF4444]/20 via-[#DC2626]/10 to-[#EF4444]/5',
-                        'badge_bg' => 'bg-[#EF4444]/80',
-                        'icon' =>
-                            '<circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>',
-                    ],
-                    [
-                        'title' => '' . __('blog/index.arr_1626') . '',
-                        'excerpt' => '' . __('blog/index.arr_1627') . '',
-                        'category' => '' . __('blog/index.php_1020') . '',
-                        'date' => '10 Mars 2026',
-                        'read_time' => '8 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#06B6D4]/20 via-[#0891B2]/10 to-[#06B6D4]/5',
-                        'badge_bg' => 'bg-[#06B6D4]/80',
-                        'icon' =>
-                            '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle>',
-                    ],
-                    [
-                        'title' => '' . __('blog/index.php_1021') . '',
-                        'excerpt' => '' . __('blog/index.php_1022') . '',
-                        'category' => '' . __('blog/index.php_1023') . '',
-                        'date' => '8 Mars 2026',
-                        'read_time' => '15 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#00AEEF]/20 via-[#0071BC]/10 to-[#00AEEF]/5',
-                        'badge_bg' => 'bg-[#00AEEF]/80',
-                        'icon' =>
-                            '<path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>',
-                    ],
-                    [
-                        'title' => 'UI/UX : Comment Concevoir un Formulaire de Contact Efficace',
-                        'excerpt' => '' . __('blog/index.php_1024') . '',
-                        'category' => 'Design',
-                        'date' => '5 Mars 2026',
-                        'read_time' => '5 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#8B5CF6]/20 via-[#7C3AED]/10 to-[#8B5CF6]/5',
-                        'badge_bg' => 'bg-[#8B5CF6]/80',
-                        'icon' =>
-                            '<path d="M12 20h9"></path><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"></path>',
-                    ],
-                    [
-                        'title' => '' . __('blog/index.php_1025') . '',
-                        'excerpt' => '' . __('blog/index.php_1026') . '',
-                        'category' => 'Marketing',
-                        'date' => '2 Mars 2026',
-                        'read_time' => '11 min',
-                        'author' => 'CodeSommet',
-                        'gradient' => 'from-[#F59E0B]/20 via-[#D97706]/10 to-[#F59E0B]/5',
-                        'badge_bg' => 'bg-[#F59E0B]/80',
-                        'icon' =>
-                            '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>',
-                    ],
-                ];
-            @endphp
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                @foreach ($staticPosts as $index => $post)
-                    <article style="opacity:0;transform:translateY(30px)" data-delay="{{ ($index % 3) + 1 }}">
-                        <a href="#" class="block group">
-                            <div
-                                class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                                <div class="relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
-                                    <div
-                                        class="w-full h-full bg-gradient-to-br {{ $post['gradient'] }} flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="opacity-20 text-[var(--text-primary)]">{!! $post['icon'] !!}</svg>
-                                    </div>
-                                    <div
-                                        class="absolute top-4 right-4 px-3 py-1.5 {{ $post['badge_bg'] }} backdrop-blur-md rounded-full border border-white/30">
-                                        <span
-                                            class="text-xs font-bold text-white tracking-wide uppercase">{{ $post['category'] }}</span>
-                                    </div>
-                                </div>
-                                <div class="px-5 py-4">
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <span class="text-xs text-[var(--text-tertiary)]">{{ $post['date'] }}</span>
-                                        <span class="text-[var(--text-tertiary)]">&middot;</span>
-                                        <span class="text-xs text-[var(--text-tertiary)]">{{ $post['read_time'] }} de
-                                            lecture</span>
-                                    </div>
-                                    <h3
-                                        class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">
-                                        {{ $post['title'] }}</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2 mb-4">
-                                        {{ $post['excerpt'] }}</p>
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex items-center gap-2">
-                                            <div
-                                                class="w-6 h-6 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#00AEEF"
-                                                    stroke-width="2">
-                                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                                    <circle cx="12" cy="7" r="4"></circle>
+            @if ($posts->isEmpty())
+                {{-- Empty state --}}
+                <div class="text-center py-16 md:py-24">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-[#00AEEF]/10 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                            fill="none" stroke="#00AEEF" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path
+                                d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-[var(--text-primary)] mb-3"
+                        style="font-family:var(--font-heading)">
+                        @if (request()->filled('search'))
+                            Aucun résultat pour « {{ request('search') }} »
+                        @else
+                            Aucun article pour le moment
+                        @endif
+                    </h3>
+                    <p class="text-[var(--text-secondary)] max-w-md mx-auto mb-8">
+                        @if (request()->hasAny(['search', 'category']))
+                            Essayez d'autres mots-clés ou explorez une autre catégorie.
+                        @else
+                            Nos premiers articles arrivent très bientôt. Revenez nous voir !
+                        @endif
+                    </p>
+                    @if (request()->hasAny(['search', 'category']))
+                        <a href="{{ route('blog') }}"
+                            class="inline-flex items-center gap-2 h-12 px-8 rounded-full font-medium text-white transition-all duration-200"
+                            style="background:linear-gradient(to right, var(--color-primary-orange), var(--color-orange-hover));box-shadow:0 4px 16px rgba(0,174,239,0.25)">
+                            Voir tous les articles
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    @endif
+                </div>
+            @else
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    @foreach ($posts as $index => $post)
+                        @php $color = $post->category?->color ?: '#00AEEF'; @endphp
+                        <article style="opacity:0;transform:translateY(30px)" data-delay="{{ ($index % 3) + 1 }}">
+                            <a href="{{ route('blog.show', $post->slug) }}" class="block group">
+                                <div
+                                    class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
+                                    <div class="relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
+                                        @if ($post->featured_image)
+                                            <img src="{{ asset('storage/' . $post->featured_image) }}"
+                                                alt="{{ $post->image_alt }}" loading="lazy"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        @else
+                                            <div class="w-full h-full flex items-center justify-center"
+                                                style="background-image:linear-gradient(to bottom right, {{ $color }}33, {{ $color }}1a, {{ $color }}0d)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="opacity-20 text-[var(--text-primary)]">
+                                                    <path d="M12 20h9"></path>
+                                                    <path
+                                                        d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z">
+                                                    </path>
                                                 </svg>
                                             </div>
+                                        @endif
+                                        <div class="absolute top-4 right-4 px-3 py-1.5 backdrop-blur-md rounded-full border border-white/30"
+                                            style="background-color:{{ $color }}cc">
                                             <span
-                                                class="text-xs font-medium text-[var(--text-secondary)]">{{ $post['author'] }}</span>
+                                                class="text-xs font-bold text-white tracking-wide uppercase">{{ $post->category_name }}</span>
                                         </div>
-                                        <span
-                                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#00AEEF] group-hover:gap-2 transition-all">
-                                            Lire
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M5 12h14"></path>
-                                                <path d="m12 5 7 7-7 7"></path>
-                                            </svg>
-                                        </span>
+                                    </div>
+                                    <div class="px-5 py-4">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span
+                                                class="text-xs text-[var(--text-tertiary)]">{{ $post->formatted_date }}</span>
+                                            <span class="text-[var(--text-tertiary)]">&middot;</span>
+                                            <span class="text-xs text-[var(--text-tertiary)]">{{ $post->read_time }} de
+                                                lecture</span>
+                                        </div>
+                                        <h3
+                                            class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">
+                                            {{ $post->title }}</h3>
+                                        <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2 mb-4">
+                                            {{ $post->excerpt ?: Str::limit(strip_tags($post->content), 120) }}</p>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <div
+                                                    class="w-6 h-6 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                                                    @if ($post->author_avatar)
+                                                        <img src="{{ asset('storage/' . $post->author_avatar) }}"
+                                                            alt="{{ $post->author }}" loading="lazy"
+                                                            class="w-full h-full object-cover" />
+                                                    @else
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                            viewBox="0 0 24 24" fill="none" stroke="#00AEEF"
+                                                            stroke-width="2">
+                                                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                                            <circle cx="12" cy="7" r="4"></circle>
+                                                        </svg>
+                                                    @endif
+                                                </div>
+                                                <span
+                                                    class="text-xs font-medium text-[var(--text-secondary)]">{{ $post->author }}</span>
+                                            </div>
+                                            <span
+                                                class="inline-flex items-center gap-1 text-xs font-semibold text-[#00AEEF] group-hover:gap-2 transition-all">
+                                                Lire
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
-                @endforeach
-            </div>
+                            </a>
+                        </article>
+                    @endforeach
+                </div>
 
-            {{-- Pagination (Static) --}}
-            <div class="flex justify-center mt-12">
-                <nav class="flex items-center gap-2">
-                    <span
-                        class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 text-gray-300 cursor-not-allowed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="m15 18-6-6 6-6"></path>
-                        </svg>
-                    </span>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]">1</a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF] hover:text-[#00AEEF] bg-white transition-colors">2</a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF] hover:text-[#00AEEF] bg-white transition-colors">3</a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF] hover:text-[#00AEEF] transition-colors bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="m9 18 6-6-6-6"></path>
-                        </svg>
-                    </a>
-                </nav>
-            </div>
+                {{-- Pagination --}}
+                @if ($posts->hasPages())
+                    <div class="flex justify-center mt-12">
+                        <nav class="flex items-center gap-2">
+                            {{-- Previous --}}
+                            @if ($posts->onFirstPage())
+                                <span
+                                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 text-gray-300 cursor-not-allowed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m15 18-6-6 6-6"></path>
+                                    </svg>
+                                </span>
+                            @else
+                                <a href="{{ $posts->previousPageUrl() }}" rel="prev" aria-label="Page précédente"
+                                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF] hover:text-[#00AEEF] transition-colors bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m15 18-6-6 6-6"></path>
+                                    </svg>
+                                </a>
+                            @endif
+
+                            {{-- Page numbers --}}
+                            @foreach ($posts->getUrlRange(1, $posts->lastPage()) as $page => $url)
+                                @if ($page == $posts->currentPage())
+                                    <span
+                                        class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]">{{ $page }}</span>
+                                @else
+                                    <a href="{{ $url }}"
+                                        class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF] hover:text-[#00AEEF] bg-white transition-colors">{{ $page }}</a>
+                                @endif
+                            @endforeach
+
+                            {{-- Next --}}
+                            @if ($posts->hasMorePages())
+                                <a href="{{ $posts->nextPageUrl() }}" rel="next" aria-label="Page suivante"
+                                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF] hover:text-[#00AEEF] transition-colors bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                </a>
+                            @else
+                                <span
+                                    class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 text-gray-300 cursor-not-allowed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                </span>
+                            @endif
+                        </nav>
+                    </div>
+                @endif
+            @endif
 
         </div>
     </section>

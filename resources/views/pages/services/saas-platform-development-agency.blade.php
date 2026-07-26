@@ -75,7 +75,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                     rgba(0, 0, 0, 0.05) 0px 47.8699px 47.8699px -2.8125px,
                     rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
-                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/pikasso/discovery"><span class="relative text-[15px] font-semibold text-white z-10">Réserver une démo
+                    rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px" href="https://cal.com/code-sommet/new-client-meeting"><span class="relative text-[15px] font-semibold text-white z-10">Réserver une démo
                                 gratuite</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 text-white relative z-10 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
@@ -415,7 +415,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
             </div>
             <div class="text-center mt-10 md:mt-12">
                 <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                    exacts pour plus de 40 <!-- -->SaaS &amp; logiciels B2B<!-- --> entreprises.</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">Voir Notre Solution</a>
+                    exacts pour plus de 40 <!-- -->SaaS &amp; logiciels B2B<!-- --> entreprises.</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/code-sommet/new-client-meeting">Voir Notre Solution</a>
             </div>
         </div>
     </section>
@@ -628,7 +628,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 <div><a class="block" href="{{ route('case-study', 'glamworlds') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
-                                <div class="absolute inset-0 from-blue-500 via-purple-500 to-pink-600"></div><img src="{{ asset('images/our-work/glamworlds/glamworlds-hero.webp') }}" alt="GlamWorlds" class="absolute inset-0 w-full h-full object-cover" />
+                                <div class="absolute inset-0 from-blue-500 via-purple-500 to-pink-600"></div><img src="{{ asset('images/our-work/glamworlds/homepage.webp') }}" alt="GlamWorlds" class="absolute inset-0 w-full h-full object-cover" />
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">PLATEFORME TECH
                                         B2B</span>
@@ -646,10 +646,10 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                             </div>
                         </div>
                     </a></div>
-                <div><a class="block" href="{{ route('case-study', 'project-azubi') }}">
+<div><a class="block" href="{{ route('case-study', 'gls-sprachenzentrum') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
-                                <div class="absolute inset-0 from-orange-500 via-red-500 to-pink-600"></div><img src="{{ asset('images/our-work/project-azubi/project-azubi-hero-caricature.webp') }}" alt="Project Azubi" class="absolute inset-0 w-full h-full object-cover" />
+                                <div class="absolute inset-0 from-orange-500 via-red-500 to-pink-600"></div><img src="{{ asset('images/our-work/gls-sprachenzentrum/homepage.webp') }}" alt="GLS Sprachenzentrum" class="absolute inset-0 w-full h-full object-cover" />
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">SAAS
                                         ÉDUCATIF</span>
@@ -659,15 +659,14 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                         </svg>+300% d'Utilisation de la Plateforme</span></div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
+                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">SaaS de conseil en
                                     éducation alimenté par l'IA</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc + dans
                                     le Monde</p>
                             </div>
                         </div>
-                    </a></div>
-            </div>
+                    </a></div>            </div>
             <div class="text-center"></div>
         </div>
     </section>
@@ -934,7 +933,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
             </div>
             <div class="text-center mt-12 md:mt-16 pt-8 md:pt-12 border-t border-[#0F0F0F]/8">
                 <p class="text-lg md:text-xl font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4" style="font-family:var(--font-heading)">Prêt à démarrer votre <!-- -->SaaS &amp; logiciels
-                    B2B<!-- --> projet de site web ?</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/pikasso/discovery">Réserver un Appel Découverte
+                    B2B<!-- --> projet de site web ?</p><a class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base" style="color:white" href="https://cal.com/code-sommet/new-client-meeting">Réserver un Appel Découverte
                     Gratuit</a>
             </div>
         </div>
@@ -1016,7 +1015,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     projet</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors" href="{{ route('get-quote') }}">Obtenir un Devis Personnalisé</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -1095,8 +1094,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="pikasso/discovery" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
-                                un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">Réserver
+                                un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommetStudio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -2099,7 +2098,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 rgba(0, 0, 0, 0.06) 0px 29.2442px 29.2442px -2.34375px,
                 rgba(0, 0, 0, 0.055) 0px 47.8699px 47.8699px -2.8125px,
                 rgba(0, 0, 0, 0.043) 0px 82.4287px 82.4287px -3.28125px,
-                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" href="https://cal.com/pikasso/discovery">
+                rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px" href="https://cal.com/code-sommet/new-client-meeting">
                                 <div class="shine-wrapper">
                                     <div class="shine-element"></div>
                                 </div>
@@ -2124,7 +2123,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     </svg></div><span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
                                     Votre Site Web</span>
                             </a></div>
-                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="pikasso/discovery" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                        <div class="hidden md:flex flex-row items-center gap-4"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
                 rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
                 rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px,

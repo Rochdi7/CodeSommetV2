@@ -51,6 +51,9 @@ class MediaController extends Controller
 
         return response()->json([
             'success' => true,
+            // Top-level "url" is what CKEditor 5's SimpleUploadAdapter reads when
+            // an image is dropped or pasted into the post content.
+            'url'     => $medium->url,
             'media'   => [
                 'id'            => $medium->id,
                 'uuid'          => $medium->uuid,

@@ -40,7 +40,7 @@ $homeAd3 = \App\Models\HomeAd::where('slot', 3)->first();
                     </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant les Nouveaux Projets</span>
                 </div>
                 <div class="space-y-6 lg:space-y-6">
-                    <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold" style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT<!-- --> <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3" id="hero-rotating-wrapper"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" id="hero-rotating-sizer">CONVERSIONS</span><span class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]" id="hero-rotating-text">CROISSANCE</span></span></span></h1>
+                    <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold" style="font-family:var(--font-display)">NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT<!-- --> <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3" id="hero-rotating-wrapper"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" id="hero-rotating-sizer">IMAGE DE MARQUE</span><span class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]" id="hero-rotating-text">CROISSANCE</span></span></span></h1>
                     <p class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
                         Nous créons des sites web haute performance, des boutiques e-commerce et des solutions digitales sur mesure pour développer votre activité.</p>
                 </div>
@@ -1579,7 +1579,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             qui améliorent l'expérience utilisateur et optimisent les opérations.</p>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-32 h-32 opacity-90"><img alt="Intelligence alimentée par l'IA" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-ai-intelligencec8e1.jpeg') }}" />
+                        <div class="w-32 h-32 opacity-90"><img alt="Intelligence alimentée par l'IA" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-ai-intelligence.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1590,7 +1590,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             qui rendent l'information complexe simple et exploitable.</p>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-32 h-32 opacity-90"><img alt="Design de Tableau de Bord Époustouflant" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-dashboard-design55d8.jpeg') }}" />
+                        <div class="w-32 h-32 opacity-90"><img alt="Design de Tableau de Bord Époustouflant" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-dashboard-design.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1601,7 +1601,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             métriques de performance intégrés à chaque projet.</p>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-32 h-32 opacity-90"><img alt="Stratégie Axée sur la Croissance" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
+                        <div class="w-32 h-32 opacity-90"><img alt="Stratégie Axée sur la Croissance" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-growth-strategy.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1612,7 +1612,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             hébergement. Tout ce dont vous avez besoin en un seul package.</p>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-32 h-32 opacity-90"><img alt="Solution Digitale Complète" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
+                        <div class="w-32 h-32 opacity-90"><img alt="Solution Digitale Complète" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-complete-solution.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1623,7 +1623,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             santé et SaaS avec des success stories prouvées.</p>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-32 h-32 opacity-90"><img alt="Expertise Sectorielle" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-industry-expertise-v2ddd0.jpeg') }}" />
+                        <div class="w-32 h-32 opacity-90"><img alt="Expertise Sectorielle" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-industry-expertise.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1634,12 +1634,12 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             modèles IA pour des solutions pérennes.</p>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-32 h-32 opacity-90"><img alt="Technologie de Pointe" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
+                        <div class="w-32 h-32 opacity-90"><img alt="Technologie de Pointe" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-tech-stack.webp') }}" />
                         </div>
                     </div>
                 </div><a class="group bg-gray-900 text-white rounded-2xl p-6 flex items-center justify-between hover:bg-gray-800 transition-colors border-2 border-gray-800" href="{{ route('our-work') }}">
                     <div class="flex items-center gap-3">
-                        <div class="flex -space-x-3"><img alt="Témoignage client" loading="lazy" width="32" height="32" decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/david-chen-chicago7d3d.jpeg') }}" /><img alt="Témoignage client" loading="lazy" width="32" height="32" decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/elena-rodriguez-newyork6763.jpeg') }}" /><img alt="Témoignage client" loading="lazy" width="32" height="32" decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/emma-van-dijk-amsterdam6432.jpeg') }}" />
+                        <div class="flex -space-x-3"><img alt="Témoignage client" loading="lazy" width="32" height="32" decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/testimonials/mounira-kajia.webp') }}" /><img alt="Témoignage client" loading="lazy" width="32" height="32" decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/testimonials/gls-ceo.webp') }}" /><img alt="Témoignage client" loading="lazy" width="32" height="32" decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" />
                         </div><span class="text-sm font-medium">Découvrir Nos Projets</span>
                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                         <path d="M5 12h14"></path>
@@ -1658,7 +1658,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             qui améliorent l'expérience utilisateur et optimisent les opérations.</p>
                     </div>
                     <div class="flex-1 flex items-center justify-center mt-6">
-                        <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img alt="Intelligence IA" loading="lazy" width="256" height="256" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-ai-intelligencec8e1.jpeg') }}" />
+                        <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img alt="Intelligence IA" loading="lazy" width="256" height="256" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-ai-intelligence.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1670,7 +1670,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                                 qui rendent l'information complexe simple et exploitable.</p>
                         </div>
                         <div class="w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
-                            <img alt="Design de tableau de bord" loading="lazy" width="160" height="160" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-dashboard-design55d8.jpeg') }}" />
+                            <img alt="Design de tableau de bord" loading="lazy" width="160" height="160" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-dashboard-design.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1684,7 +1684,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             métriques de performance intégrés à chaque projet.</p>
                     </div>
                     <div class="flex-1 flex items-center justify-center mt-6">
-                        <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img alt="Stratégie de croissance" loading="lazy" width="256" height="256" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
+                        <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img alt="Stratégie de croissance" loading="lazy" width="256" height="256" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-growth-strategy.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1698,12 +1698,12 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             hébergement. Tout ce dont vous avez besoin en un seul package.</p>
                     </div>
                     <div class="flex-1 flex items-center justify-center mt-6">
-                        <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img alt="Solution complète" loading="lazy" width="256" height="256" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
+                        <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img alt="Solution complète" loading="lazy" width="256" height="256" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-complete-solution.webp') }}" />
                         </div>
                     </div>
                 </div><a class="row-span-1 group bg-gray-900 text-white rounded-3xl p-6 flex items-center justify-between hover:bg-gray-800 transition-all duration-300 hover:shadow-xl border-2 border-gray-800" href="{{ route('our-work') }}">
                     <div class="flex items-center gap-3">
-                        <div class="flex -space-x-3"><img alt="Témoignage client" loading="lazy" width="40" height="40" decoding="async" class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/david-chen-chicago7d3d.jpeg') }}" /><img alt="Témoignage client" loading="lazy" width="40" height="40" decoding="async" class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/elena-rodriguez-newyork6763.jpeg') }}" /><img alt="Témoignage client" loading="lazy" width="40" height="40" decoding="async" class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/emma-van-dijk-amsterdam6432.jpeg') }}" />
+                        <div class="flex -space-x-3"><img alt="Témoignage client" loading="lazy" width="40" height="40" decoding="async" class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/testimonials/mounira-kajia.webp') }}" /><img alt="Témoignage client" loading="lazy" width="40" height="40" decoding="async" class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/testimonials/gls-ceo.webp') }}" /><img alt="Témoignage client" loading="lazy" width="40" height="40" decoding="async" class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover" style="color:transparent" src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" />
                         </div><span class="text-sm font-medium">Découvrir Nos Projets</span>
                     </div>
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors flex-shrink-0">
@@ -1721,7 +1721,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                                 santé et SaaS avec des success stories prouvées.</p>
                         </div>
                         <div class="w-32 h-32 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
-                            <img alt="Expertise Sectorielle" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-industry-expertise-v2ddd0.jpeg') }}" />
+                            <img alt="Expertise Sectorielle" loading="lazy" width="128" height="128" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-industry-expertise.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -1732,7 +1732,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
                             modèles IA pour des solutions pérennes.</p>
                     </div>
                     <div class="absolute bottom-4 right-4 w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500">
-                        <img alt="Stack technologique" loading="lazy" width="160" height="160" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
+                        <img alt="Stack technologique" loading="lazy" width="160" height="160" decoding="async" class="object-contain" style="color:transparent" src="{{ asset('images/benefits-tech-stack.webp') }}" />
                     </div>
                 </div>
             </div>

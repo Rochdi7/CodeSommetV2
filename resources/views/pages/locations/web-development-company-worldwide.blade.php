@@ -346,7 +346,7 @@
                 <span class="inline-block px-4 py-1.5 bg-[#F59E0B]/10 text-[#F59E0B] text-xs font-semibold uppercase tracking-wider rounded-full mb-4">FAQ</span>
                 <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">Questions fréquemment posées</h2>
             </div>
-            <div class="max-w-3xl mx-auto space-y-4">
+            <div class="max-w-3xl mx-auto space-y-3">
                 @php
                 $faqs = [
                 ['q' => 'Où êtes-vous basés ?', 'a' => 'Nous sommes basés au Maroc, mais nous travaillons 100% à distance avec des clients du monde entier — de l\'Europe et du Moyen-Orient à l\'Amérique du Nord, l\'Asie et au-delà.'],
@@ -358,15 +358,15 @@
                 ];
                 @endphp
                 @foreach($faqs as $faq)
-                <details class="group bg-[#F8F8F8] rounded-xl border border-[#E8E8E8]">
-                    <summary class="flex items-center justify-between cursor-pointer px-6 py-5 text-left">
-                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-0 pr-4">{{ $faq['q'] }}</h3>
+                <details class="group bg-[#F8F8F8] rounded-xl border border-[#E8E8E8] transition-colors duration-200 hover:border-[#DCDCDC] open:bg-white">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-5 sm:px-6 py-4 sm:py-5 text-left list-none [&::-webkit-details-marker]:hidden">
+                        <h3 class="text-base sm:text-lg font-semibold text-[#0F0F0F] leading-snug mb-0">{{ $faq['q'] }}</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#0F0F0F]/40 flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </summary>
-                    <div class="px-6 pb-5">
-                        <p class="text-sm text-[#0F0F0F]/60 leading-relaxed">{{ $faq['a'] }}</p>
+                    <div class="px-5 sm:px-6 pt-4 pb-5 sm:pb-6 border-t border-[#E8E8E8]">
+                        <p class="text-[15px] text-[#0F0F0F]/60 leading-[1.7]">{{ $faq['a'] }}</p>
                     </div>
                 </details>
                 @endforeach

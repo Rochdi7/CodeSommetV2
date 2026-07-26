@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
@@ -9,7 +8,8 @@ use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\FinanceController;
 use App\Http\Controllers\Admin\BlogPostController;
 use App\Http\Controllers\Admin\BudgetController;
-use App\Http\Controllers\Admin\HomeAdController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsletterAdminController;
 use App\Http\Controllers\NewsletterController;
@@ -17,23 +17,16 @@ use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes - CodeSommet (Localized)
+| Web Routes - CodeSommet
 |--------------------------------------------------------------------------
 |
-| Front-office routes are wrapped in LaravelLocalization group.
-| Default locale: fr (no prefix)
-| English:        /en/...
-|
-| Admin routes remain outside the locale group.
+| Site is French-only. No locale prefixes, no multilingual routing.
 |
 */
 
-// ─── Localized Front-Office Routes ──────────────────────────────────────────
+// ─── Front-Office Routes ────────────────────────────────────────────────────
 
-Route::group([
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localize', 'localizationRedirect'],
-], function () {
+Route::group([], function () {
 
     // ─── Core Pages ─────────────────────────────────────────────────────────
     Route::view('/', 'frontoffice.pages.home')->name('home');
@@ -56,22 +49,22 @@ Route::group([
 
     // ─── Service / Industry Pages (SEO Landing Pages) ───────────────────────
     $servicePages = [
-        'ecommerce-website-development-agency',
-        'saas-platform-development-agency',
-        'fintech-platform-development-agency',
-        'fintech-website-development-agency',
-        'healthcare-website-development-agency',
-        'education-website-development-agency',
-        'edtech-platform-development-agency',
-        'elearning-platform-development-agency',
-        'online-course-platform-development-agency',
-        'university-website-development-agency',
-        'language-school-website-development-agency',
-        'study-abroad-website-development-agency',
-        'immigration-consultancy-website-development-agency',
-        'real-estate-website-development-agency',
-        'telemedicine-platform-development-agency',
-        'telemedicine-website-development-agency',
+        'ecommerce-website-development',
+        'saas-platform-development',
+        'fintech-platform-development',
+        'fintech-website-development',
+        'healthcare-website-development',
+        'education-website-development',
+        'edtech-platform-development',
+        'elearning-platform-development',
+        'online-course-platform-development',
+        'university-website-development',
+        'language-school-website-development',
+        'study-abroad-website-development',
+        'immigration-consultancy-website-development',
+        'real-estate-website-development',
+        'telemedicine-platform-development',
+        'telemedicine-website-development',
     ];
 
     Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
@@ -188,8 +181,10 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     Route::post('/budget',          [BudgetController::class, 'store'])->name('budget.store');
     Route::delete('/budget/{entry}',[BudgetController::class, 'destroy'])->name('budget.destroy');
 
-    // Home Ads
-    Route::get('/home-ads', [HomeAdController::class, 'index'])->name('home-ads.index');
-    Route::post('/home-ads/{homeAd}', [HomeAdController::class, 'update'])->name('home-ads.update');
-    Route::post('/home-ads/{homeAd}/toggle', [HomeAdController::class, 'toggle'])->name('home-ads.toggle');
+    // Categories & Tags (Blog taxonomy)
+    Route::post('/categories/quick', [CategoryController::class, 'quickStore'])->name('categories.quick');
+    Route::resource('categories', CategoryController::class)->except(['show']);
+
+    Route::post('/tags/quick', [TagController::class, 'quickStore'])->name('tags.quick');
+    Route::resource('tags', TagController::class)->except(['show']);
 });

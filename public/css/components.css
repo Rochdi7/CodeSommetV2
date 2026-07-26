@@ -743,3 +743,886 @@ html {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
     transform: translateY(-3px);
 }
+
+/* ─── Anchor hover color guard ───────────────────────────────────────────────
+   The global `a:hover{color:var(--hover-accent)}` rule in main.css has higher
+   specificity (0,1,1) than a utility class like `.text-white` (0,1,0), so it
+   repaints links that set their own text color. On solid-fill buttons whose
+   hover background is the same blue as --hover-accent (#0071BC), the label
+   turned blue-on-blue and vanished. Re-assert the explicit color on hover. */
+a.text-white:hover,
+a.text-white:hover span,
+a.text-white:hover svg,
+a:hover > .text-white,
+button.text-white:hover,
+button.text-white:hover span,
+button.text-white:hover svg {
+    color: #fff;
+}
+
+/* ── Custom Select (cs-select) ────────────────────────────────────────
+   Progressive enhancement over native <select>. The native element is
+   kept in the DOM (visually hidden) so form submission, validation and
+   reset keep working; this markup is the visible control.
+   Built by public/js/app.js → initCustomSelects(). */
+
+.cs-select {
+    position: relative;
+    width: 100%;
+    font-family: var(--font-body);
+}
+
+/* Native select stays for form data — hidden but focusable-by-script only */
+.cs-select > select.cs-select__native {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ── Trigger button ──────────────────────────────────────────────── */
+.cs-select__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+    text-align: left;
+    cursor: pointer;
+    transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.cs-select__trigger:hover {
+    border-color: #d1d5db;
+}
+
+.cs-select__trigger:focus-visible,
+.cs-select.is-open .cs-select__trigger {
+    outline: none;
+    border-color: var(--color-primary-orange);
+    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.15);
+}
+
+/* Placeholder state (empty value) */
+.cs-select__trigger[data-placeholder="true"] .cs-select__value {
+    color: var(--text-secondary);
+}
+
+.cs-select__value {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Chevron */
+.cs-select__arrow {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    color: var(--text-secondary);
+    transition: transform .2s cubic-bezier(.4, 0, .2, 1), color .15s ease;
+}
+
+.cs-select.is-open .cs-select__arrow {
+    transform: rotate(180deg);
+    color: var(--color-primary-orange);
+}
+
+/* ── Panel ───────────────────────────────────────────────────────── */
+.cs-select__panel {
+    position: absolute;
+    z-index: 60;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 100%;
+    max-height: 16rem;
+    overflow-y: auto;
+    /* Stop wheel/touch scrolling from chaining out to the page once the list
+       hits its end (or when it doesn't scroll at all). Without this the page
+       slides behind the open dropdown and the panel chases the cursor. */
+    overscroll-behavior: contain;
+    padding: 0.3125rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -8px rgba(17, 17, 17, 0.16), 0 2px 8px -2px rgba(17, 17, 17, 0.08);
+    opacity: 0;
+    transform: translateY(-4px) scale(.985);
+    transform-origin: top center;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .16s ease, transform .16s cubic-bezier(.4, 0, .2, 1), visibility .16s;
+}
+
+.cs-select.is-open .cs-select__panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Escapes a clipping ancestor (e.g. the get-quote wizard's overflow-hidden
+   step container) by being moved to <body>. JS sets top/left/width inline
+   against the viewport. Since it is no longer a descendant of .cs-select,
+   it carries its own .is-open instead of inheriting the wrapper's. */
+.cs-select__panel--fixed {
+    position: fixed;
+    /* Above the sticky header (70) and floating action buttons (90), but
+       below the preloader / Cal.com modal / tooltip tier (99999) so an
+       overlay is never painted over by a stray dropdown. */
+    z-index: 95;
+}
+
+.cs-select__panel--fixed.is-open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Drop upward when there is no room below */
+.cs-select.is-up .cs-select__panel {
+    top: auto;
+    bottom: calc(100% + 6px);
+    transform-origin: bottom center;
+    transform: translateY(4px) scale(.985);
+}
+
+.cs-select.is-up.is-open .cs-select__panel {
+    transform: translateY(0) scale(1);
+}
+
+/* Scrollbar */
+.cs-select__panel::-webkit-scrollbar {
+    width: 6px;
+}
+.cs-select__panel::-webkit-scrollbar-track {
+    background: transparent;
+}
+.cs-select__panel::-webkit-scrollbar-thumb {
+    background: rgba(17, 17, 17, 0.15);
+    border-radius: 3px;
+}
+.cs-select__panel::-webkit-scrollbar-thumb:hover {
+    background: rgba(17, 17, 17, 0.28);
+}
+
+/* ── Options ─────────────────────────────────────────────────────── */
+.cs-select__option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5625rem 0.75rem;
+    border-radius: 7px;
+    font-size: 0.875rem;
+    line-height: 1.35;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: background-color .12s ease, color .12s ease;
+}
+
+.cs-select__option + .cs-select__option {
+    margin-top: 1px;
+}
+
+/* Hover + keyboard-active share one look; brand tint, never the OS blue */
+.cs-select__option:hover,
+.cs-select__option.is-active {
+    background: rgba(0, 174, 239, 0.08);
+    color: var(--color-orange-hover);
+}
+
+.cs-select__option.is-selected {
+    background: rgba(0, 174, 239, 0.12);
+    color: var(--color-orange-hover);
+    font-weight: 500;
+}
+
+.cs-select__option.is-selected:hover,
+.cs-select__option.is-selected.is-active {
+    background: rgba(0, 174, 239, 0.18);
+}
+
+.cs-select__option[aria-disabled="true"] {
+    color: #9ca3af;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Checkmark on the selected row */
+.cs-select__check {
+    flex: 0 0 auto;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    transform: scale(.7);
+    transition: opacity .12s ease, transform .12s ease;
+}
+
+.cs-select__option.is-selected .cs-select__check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Group labels (<optgroup>) */
+.cs-select__group-label {
+    padding: 0.5rem 0.75rem 0.25rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+/* ── Disabled whole control ──────────────────────────────────────── */
+.cs-select.is-disabled .cs-select__trigger {
+    background: #f9fafb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* ── Error state (pairs with existing .border-red-500 validation) ── */
+.cs-select.is-invalid .cs-select__trigger {
+    border-color: #ef4444;
+}
+.cs-select.is-invalid .cs-select__trigger:focus-visible,
+.cs-select.is-invalid.is-open .cs-select__trigger {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+/* ── Size variant: compact (get-quote uses py-2 / text-sm / r8) ──── */
+.cs-select--sm .cs-select__trigger {
+    padding: 0.5rem 0.875rem;
+    border-radius: 8px;
+}
+.cs-select--sm .cs-select__panel {
+    border-radius: 8px;
+}
+
+/* ── Dark surfaces (footer / dark form cards) ────────────────────── */
+.cs-select--dark .cs-select__trigger {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+.cs-select--dark .cs-select__trigger:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+}
+.cs-select--dark .cs-select__trigger[data-placeholder="true"] .cs-select__value {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── Inline validation message ───────────────────────────────────────
+   Shown when a `required` select is submitted empty. The native bubble
+   cannot appear (the real <select> is clipped to 1px), so the message is
+   rendered here instead. Matches the pages' own error text convention. */
+.cs-select__error {
+    margin-top: 0.375rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #ef4444;
+}
+
+.cs-select__error[hidden] {
+    display: none;
+}
+
+/* ── Touch devices ───────────────────────────────────────────────────
+   Coarse pointers need bigger hit areas (Apple HIG / Material both call
+   for ~44px). Gated on `pointer: coarse` so the desktop design, which
+   matches the original site's field height, is left untouched. */
+@media (pointer: coarse) {
+    .cs-select__trigger,
+    .cs-select--sm .cs-select__trigger {
+        min-height: 44px;
+    }
+
+    .cs-select__option {
+        min-height: 44px;
+        padding-top: 0.6875rem;
+        padding-bottom: 0.6875rem;
+    }
+
+    /* A tap should never be mistaken for a text selection drag. */
+    .cs-select__trigger,
+    .cs-select__option {
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────
+   The open/close transition and chevron spin are decorative. */
+@media (prefers-reduced-motion: reduce) {
+    .cs-select__panel,
+    .cs-select__arrow,
+    .cs-select__check,
+    .cs-select__option {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ── Forced-colours / Windows High Contrast ──────────────────────────
+   Background tints are dropped in forced-colours mode, so selection and
+   keyboard position would both become invisible. Re-assert with system
+   colours and a border that survives the mode. */
+@media (forced-colors: active) {
+    .cs-select__trigger,
+    .cs-select__panel {
+        border: 1px solid CanvasText;
+    }
+    .cs-select__option.is-active,
+    .cs-select__option:hover {
+        background: Highlight;
+        color: HighlightText;
+        forced-color-adjust: none;
+    }
+    .cs-select__option.is-selected .cs-select__check {
+        forced-color-adjust: none;
+    }
+}
+
+/* ── Comparison table header ──────────────────────────────────────────────
+   The 4-column comparison grid renders a brand pill plus long compound
+   labels ("SaaS & Logiciels B2B", "Agences Internationales"). The pill used
+   `whitespace-nowrap`, so a long label forced it wider than its grid column
+   and it overlapped the neighbouring headers. Columns are equal-width and
+   cannot grow, so the text must wrap and long words must be breakable. */
+.grid.grid-cols-4 > div {
+    min-width: 0;            /* let grid items shrink below content width */
+}
+.grid.grid-cols-4 > div > .inline-flex {
+    max-width: 100%;
+}
+.grid.grid-cols-4 > div > .inline-flex > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-wrap: balance;      /* progressive enhancement; ignored where unsupported */
+}
+
+/* ── Floating action buttons (WhatsApp + back to top) ─────────────────
+   Markup: resources/views/frontoffice/partials/floating-actions.blade.php
+   Behaviour: public/js/app.js → floating actions IIFE.
+   Sits below the preloader/modals (99999) but above the sticky header. */
+
+.fab-stack {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+    pointer-events: none;
+}
+
+.fab-stack > * {
+    pointer-events: auto;
+}
+
+.fab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Fixed px so the control keeps its size regardless of the root
+       font-size, which this site varies by breakpoint. */
+    width: 54px;
+    height: 54px;
+    flex: 0 0 auto;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow .35s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity .35s cubic-bezier(0.22, 1, 0.36, 1),
+                background-color .2s ease;
+}
+
+.fab:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .9), 0 0 0 6px var(--color-primary-orange);
+}
+
+.fab__icon {
+    position: relative;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+}
+
+/* ── WhatsApp ───────────────────────────────────────────────────────── */
+.fab--whatsapp {
+    background: #25D366;
+    color: #fff;
+    box-shadow: 0 8px 22px -6px rgba(37, 211, 102, .55), 0 2px 8px -2px rgba(17, 17, 17, .12);
+    /* Entrance: slides up once the page is ready */
+    opacity: 0;
+    transform: translateY(14px) scale(.85);
+}
+
+.fab--whatsapp.is-ready {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.fab--whatsapp:hover {
+    background: #1FBE5A;
+    transform: translateY(-3px) scale(1.06);
+    box-shadow: 0 14px 30px -8px rgba(37, 211, 102, .6), 0 4px 12px -3px rgba(17, 17, 17, .16);
+}
+
+.fab--whatsapp:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+.fab__icon--wa {
+    width: 25px;
+    height: 25px;
+}
+
+/* Halo pulsing to draw the eye — pauses on hover so it never fights the label */
+.fab__pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: #25D366;
+    opacity: .55;
+    z-index: 1;
+    animation: fab-pulse 2.6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+/* Cancel the animation outright — merely pausing it freezes the halo
+   mid-keyframe, where the keyframe's own opacity beats this rule. */
+.fab--whatsapp:hover .fab__pulse,
+.fab--whatsapp:focus-visible .fab__pulse {
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes fab-pulse {
+    0%   { transform: scale(1);    opacity: .5; }
+    70%  { transform: scale(1.75); opacity: 0; }
+    100% { transform: scale(1.75); opacity: 0; }
+}
+
+/* Label that expands on hover (desktop only) */
+.fab__label {
+    position: absolute;
+    right: calc(100% + 0.625rem);
+    white-space: nowrap;
+    padding: 0.5rem 0.875rem;
+    border-radius: 999px;
+    background: var(--text-primary);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1;
+    box-shadow: 0 8px 20px -8px rgba(17, 17, 17, .35);
+    opacity: 0;
+    transform: translateX(8px);
+    pointer-events: none;
+    transition: opacity .28s cubic-bezier(0.22, 1, 0.36, 1),
+                transform .28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fab--whatsapp:hover .fab__label,
+.fab--whatsapp:focus-visible .fab__label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ── Back to top ────────────────────────────────────────────────────── */
+.fab--top {
+    background: var(--color-primary-orange);
+    color: #fff;
+    box-shadow: 0 8px 22px -6px rgba(0, 174, 239, .5), 0 2px 8px -2px rgba(17, 17, 17, .12);
+    /* Hidden until the user scrolls down */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px) scale(.8);
+}
+
+.fab--top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.fab--top:hover {
+    background: var(--color-orange-hover);
+    transform: translateY(-3px) scale(1.06);
+    box-shadow: 0 14px 30px -8px rgba(0, 174, 239, .55), 0 4px 12px -3px rgba(17, 17, 17, .16);
+}
+
+.fab--top:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+/* Nudge the arrow upward on hover */
+.fab--top:hover .fab__icon {
+    animation: fab-arrow-nudge .6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes fab-arrow-nudge {
+    0%   { transform: translateY(0); }
+    45%  { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+}
+
+/* Scroll-progress ring around the back-to-top button */
+.fab-progress {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.fab-progress__track {
+    fill: none;
+    stroke: rgba(255, 255, 255, .28);
+    stroke-width: 2.5;
+}
+
+.fab-progress__bar {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    /* 2πr with r=20 ≈ 125.66; JS drives stroke-dashoffset */
+    stroke-dasharray: 125.66;
+    stroke-dashoffset: 125.66;
+    transition: stroke-dashoffset .12s linear;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+    .fab-stack {
+        right: 16px;
+        bottom: 16px;
+        gap: 10px;
+    }
+    /* Fixed px, not rem: the site sets html{font-size:14px} on small screens,
+       so 3rem would compute to 42px — under the 44px touch-target minimum. */
+    .fab {
+        width: 48px;
+        height: 48px;
+    }
+    /* No hover on touch — the label would never show, so keep it out */
+    .fab__label {
+        display: none;
+    }
+}
+
+/* ── Print / reduced motion ─────────────────────────────────────────── */
+@media print {
+    .fab-stack { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fab,
+    .fab__label,
+    .fab-progress__bar {
+        transition-duration: .01s;
+    }
+    .fab__pulse,
+    .fab--top:hover .fab__icon {
+        animation: none;
+    }
+    .fab--whatsapp:hover,
+    .fab--top:hover {
+        transform: none;
+    }
+}
+
+/* ── Offer / promo ads (home page) ────────────────────────────────────
+   Markup: frontoffice/partials/promo-offer.blade.php (hero strip)
+           frontoffice/partials/promo-sticky-bar.blade.php (bottom bar)
+   Behaviour: public/js/app.js → promo IIFE (countdown + dismiss).
+   The deadline is REAL (end of the current month, computed in PHP) —
+   the countdown never resets itself to fake fresh urgency. */
+
+/* ═══ Shared: animated gradient sheen used by both ads ═══ */
+@keyframes promo-sheen {
+    0%   { transform: translateX(-120%) skewX(-18deg); }
+    100% { transform: translateX(320%)  skewX(-18deg); }
+}
+
+.promo-sheen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 28%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .28), transparent);
+    animation: promo-sheen 4.5s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    pointer-events: none;
+}
+
+/* ═══ 1. Hero offer strip ═══ */
+.promo-offer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: linear-gradient(115deg, #00AEEF 0%, #0071BC 55%, #7D53FF 100%);
+    color: #fff;
+    box-shadow: 0 18px 44px -18px rgba(0, 113, 188, .55);
+}
+
+/* Soft moving glow behind the content */
+.promo-offer::after {
+    content: '';
+    position: absolute;
+    top: -60%;
+    right: -10%;
+    width: 55%;
+    height: 220%;
+    background: radial-gradient(closest-side, rgba(255, 255, 255, .22), transparent);
+    animation: promo-float 9s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes promo-float {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50%      { transform: translate3d(-8%, 6%, 0); }
+}
+
+.promo-offer__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .3rem .7rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .16);
+    backdrop-filter: blur(4px);
+    font-size: .6875rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.promo-offer__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #4ADE80;
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, .7);
+    animation: promo-dot 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@keyframes promo-dot {
+    0%   { box-shadow: 0 0 0 0 rgba(74, 222, 128, .7); }
+    70%  { box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+}
+
+/* The big -30% figure */
+.promo-offer__figure {
+    font-family: var(--font-display), var(--font-phudu), sans-serif;
+    font-size: clamp(2.75rem, 7vw, 4.5rem);
+    line-height: .9;
+    letter-spacing: -.02em;
+    font-weight: 700;
+}
+
+/* Countdown pills */
+.promo-count {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .15rem;
+    min-width: 3.1rem;
+    padding: .45rem .5rem;
+    border-radius: .625rem;
+    background: rgba(0, 0, 0, .22);
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+    flex-direction: column;
+}
+
+.promo-count__num {
+    font-family: var(--font-display), var(--font-phudu), sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.promo-count__lbl {
+    font-size: .5625rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    opacity: .75;
+}
+
+/* CTA inside the strip */
+.promo-offer__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .8rem 1.5rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #0071BC;
+    font-weight: 600;
+    font-size: .9375rem;
+    white-space: nowrap;
+    transition: transform .3s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow .3s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, .35);
+}
+
+.promo-offer__cta:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 14px 28px -10px rgba(0, 0, 0, .45);
+    color: #0071BC;
+}
+
+.promo-offer__cta svg {
+    transition: transform .3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.promo-offer__cta:hover svg {
+    transform: translateX(3px);
+}
+
+/* ═══ 2. Sticky bottom bar ═══ */
+.promo-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .75rem 1rem;
+    background: linear-gradient(100deg, #0F0F0F 0%, #14314a 60%, #0071BC 100%);
+    color: #fff;
+    box-shadow: 0 -8px 30px -12px rgba(0, 0, 0, .4);
+    transform: translateY(105%);
+    transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.promo-bar.is-visible {
+    transform: translateY(0);
+}
+
+.promo-bar__text {
+    font-size: .875rem;
+    line-height: 1.35;
+}
+
+.promo-bar__hl {
+    color: #00AEEF;
+    font-weight: 700;
+}
+
+.promo-bar__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .55rem 1.15rem;
+    border-radius: 999px;
+    background: var(--color-primary-orange);
+    color: #fff;
+    font-size: .8125rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color .2s ease, transform .3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.promo-bar__cta:hover {
+    background: var(--color-orange-hover);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.promo-bar__close {
+    position: absolute;
+    right: .6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.promo-bar__close:hover {
+    background: rgba(255, 255, 255, .24);
+}
+
+/* Keep the floating buttons clear of the bar while it is showing */
+body.has-promo-bar .fab-stack {
+    bottom: 5.25rem;
+}
+
+/* ═══ Responsive ═══ */
+@media (max-width: 900px) {
+    .promo-bar {
+        gap: .625rem;
+        padding: .7rem 2.5rem .7rem .9rem;
+        flex-wrap: wrap;
+    }
+    .promo-bar__text {
+        font-size: .8125rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .promo-offer {
+        border-radius: .875rem;
+    }
+    .promo-bar__text .promo-bar__sub {
+        display: none;
+    }
+}
+
+/* ═══ Motion / print ═══ */
+@media print {
+    .promo-bar { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-sheen,
+    .promo-offer::after,
+    .promo-offer__dot {
+        animation: none;
+    }
+    .promo-bar {
+        transition-duration: .01s;
+    }
+    .promo-offer__cta:hover,
+    .promo-bar__cta:hover {
+        transform: none;
+    }
+}

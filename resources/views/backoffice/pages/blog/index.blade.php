@@ -39,8 +39,8 @@
                 <label class="admin-label">Catégorie</label>
                 <select name="category" class="admin-input">
                     <option value="">Toutes</option>
-                    @foreach($categories as $val => $label)
-                    <option value="{{ $val }}" {{ request('category') === $val ? 'selected' : '' }}>{{ $label }}</option>
+                    @foreach($categories as $category)
+                    <option value="{{ $category->id }}" {{ (int) request('category') === $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
                     @endforeach
                 </select>
             </div>
@@ -61,10 +61,8 @@
     <div class="md:hidden">
         @forelse($posts as $post)
         @php
-            $catColors = \App\Http\Controllers\Admin\BlogPostController::$categoryColors;
-            $catLabels = \App\Http\Controllers\Admin\BlogPostController::$categories;
-            $catColor  = $catColors[$post->category] ?? '#6B7280';
-            $catLabel  = $catLabels[$post->category] ?? ucfirst(str_replace('-', ' ', $post->category));
+            $catColor = $post->category?->color ?? '#6B7280';
+            $catLabel = $post->category?->name ?? 'Sans catégorie';
         @endphp
         <div class="admin-mobile-row">
             {{-- Row 1: thumbnail + title + status --}}
@@ -163,10 +161,8 @@
                     </td>
                     <td>
                         @php
-                        $catColors = \App\Http\Controllers\Admin\BlogPostController::$categoryColors;
-                        $catLabels = \App\Http\Controllers\Admin\BlogPostController::$categories;
-                        $catColor  = $catColors[$post->category] ?? '#6B7280';
-                        $catLabel  = $catLabels[$post->category] ?? ucfirst(str_replace('-', ' ', $post->category));
+                        $catColor = $post->category?->color ?? '#6B7280';
+                        $catLabel = $post->category?->name ?? 'Sans catégorie';
                         @endphp
                         <span class="admin-badge" style="background:{{ $catColor }}15;color:{{ $catColor }}">{{ $catLabel }}</span>
                     </td>

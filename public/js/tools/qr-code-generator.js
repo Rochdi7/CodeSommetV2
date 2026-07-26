@@ -7,8 +7,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('qr code')) return;
-
+        if (!CodeSommetTools.isTool('qr-code-generator')) return;
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');
         if (!actionBtn) return;
         actionBtn.id = 'tool-action-btn';

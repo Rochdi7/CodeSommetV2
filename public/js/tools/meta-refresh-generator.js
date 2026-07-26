@@ -7,8 +7,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('meta refresh')) return;
-
+        if (!CodeSommetTools.isTool('meta-refresh-generator')) return;
         var inputs = toolSection.querySelectorAll('input');
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');
         if (!actionBtn) return;

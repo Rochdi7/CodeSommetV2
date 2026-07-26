@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\BlogPost;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
     public function index(Request $request)
     {
-        $query = BlogPost::published()->orderByDesc('published_at');
+        $query = BlogPost::published()->with(['category', 'tags'])->orderByDesc('published_at');
 
         if ($request->filled('category') && $request->category !== 'all') {
-            $query->where('category', $request->category);
+            $query->whereHas('category', fn ($q) => $q->where('slug', $request->category));
         }
 
         if ($request->filled('search')) {
@@ -24,19 +25,26 @@ class BlogController extends Controller
             });
         }
 
-        $posts = $query->paginate(9);
-        $categories = BlogPost::published()->select('category')->distinct()->pluck('category');
-        $featuredPost = BlogPost::published()->orderByDesc('published_at')->first();
+        $posts = $query->paginate(9)->withQueryString();
+
+        // Only categories that actually have a published post.
+        $categories = Category::whereHas('posts', fn ($q) => $q->published())
+            ->orderBy('name')
+            ->get();
+
+        $featuredPost = BlogPost::published()->with('category')->orderByDesc('published_at')->first();
 
         return view('frontoffice.pages.blog.index', compact('posts', 'categories', 'featuredPost'));
     }
 
     public function show(string $slug)
     {
-        $post = BlogPost::published()->where('slug', $slug)->firstOrFail();
+        $post = BlogPost::published()->with(['category', 'tags'])->where('slug', $slug)->firstOrFail();
+
         $relatedPosts = BlogPost::published()
+            ->with('category')
             ->where('id', '!=', $post->id)
-            ->where('category', $post->category)
+            ->where('category_id', $post->category_id)
             ->orderByDesc('published_at')
             ->limit(3)
             ->get();
@@ -44,6 +52,7 @@ class BlogController extends Controller
         if ($relatedPosts->count() < 3) {
             $remaining = 3 - $relatedPosts->count();
             $morePosts = BlogPost::published()
+                ->with('category')
                 ->where('id', '!=', $post->id)
                 ->whereNotIn('id', $relatedPosts->pluck('id'))
                 ->orderByDesc('published_at')

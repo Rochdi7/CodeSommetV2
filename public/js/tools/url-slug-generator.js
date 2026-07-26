@@ -7,8 +7,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('url slug')) return;
-
+        if (!CodeSommetTools.isTool('url-slug-generator')) return;
         var input = toolSection.querySelector('input[type="text"], textarea');
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');
         if (!input || !actionBtn) return;

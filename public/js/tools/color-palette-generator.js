@@ -5,8 +5,7 @@
 (function () {
     'use strict';
     document.addEventListener('DOMContentLoaded', function () {
-        if (!document.title.toLowerCase().includes('color palette')) return;
-
+        if (!CodeSommetTools.isTool('color-palette-generator')) return;
         // Find elements - this tool uses max-w-4xl not max-w-5xl
         var dropZone = document.querySelector('.border-dashed');
         var fileInput = document.querySelector('input[type="file"]');

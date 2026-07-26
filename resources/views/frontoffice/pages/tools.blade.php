@@ -63,7 +63,7 @@
                                 href="{{ route('contact') }}">{{ __('tools.text_2') }}</a></div>
                     </div>
                     <div class="relative flex items-center justify-center"><img
-                            src="{{ asset('images/our-work/tools-hero.webp') }}" alt="Outils SEO et IA Gratuits"
+                            src="{{ asset('images/new-flyers/free-seo-web-development-tools.webp') }}" alt="Outils SEO et IA Gratuits"
                             class="w-full h-auto max-w-lg mx-auto" /></div>
                 </div>
                 <div class="space-y-4" id="tools">

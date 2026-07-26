@@ -9,9 +9,27 @@
 
 @section('content')
     @php
-        $homeAd1 = \App\Models\HomeAd::where('slot', 1)->first();
-        $homeAd2 = \App\Models\HomeAd::where('slot', 2)->first();
-        $homeAd3 = \App\Models\HomeAd::where('slot', 3)->first();
+        // ── Bannières promo (éditables ici) ──────────────────────────────────
+        // Mets 'active' => false pour masquer une bannière.
+        // NOTE: réactiver (active => true) une fois les visuels ajoutés dans public/images/.
+        $homeAd1 = [
+            'active' => false,
+            'link'   => '#',
+            'image'  => asset('images/flyer-square-1.jpg'),
+            'alt'    => __('home.ad_alt_text'),
+        ];
+        $homeAd2 = [
+            'active' => false,
+            'link'   => '#',
+            'image'  => asset('images/flyer-square-2.jpg'),
+            'alt'    => 'CodeSommet — Nos Services',
+        ];
+        $homeAd3 = [
+            'active' => true,
+            'link'   => '#',
+            'image'  => 'https://codesommet.com/storage/blog/1767049157_695307c571de7.jpg',
+            'alt'    => 'CodeSommet — Promotion',
+        ];
     @endphp
     <section
         class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-[30px] md:pb-16 bg-[var(--bg-primary)]">
@@ -59,7 +77,7 @@
                                             style="background-color:var(--color-primary-orange)"
                                             class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
                                         class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none"
-                                        id="hero-rotating-sizer">CONVERSIONS</span><span
+                                        id="hero-rotating-sizer">IMAGE DE MARQUE</span><span
                                         class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]"
                                         id="hero-rotating-text">CROISSANCE</span></span></span></h1>
                         <p
@@ -385,18 +403,18 @@
 
     <!-- Promo Banners — Two Squares Side by Side -->
     @php
-        $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2->is_active);
+        $showSquareBanners = $homeAd1['active'] || $homeAd2['active'];
     @endphp
     @if ($showSquareBanners)
         <div class="w-full py-6 md:py-8 bg-white">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
-                    @if ($homeAd1 && $homeAd1->is_active)
-                        <a href="{{ $homeAd1->link_url ?: '#' }}"
+                    @if ($homeAd1['active'])
+                        <a href="{{ $homeAd1['link'] }}"
                             class="promo-banner group relative block w-full overflow-hidden rounded-xl"
                             style="aspect-ratio:1/1;max-height:320px">
-                            <img src="{{ $homeAd1->image_url ?: asset('images/flyer-square-1.jpg') }}"
-                                alt="{{ $homeAd1->alt_text ?: __('home.ad_alt_text') }}" loading="lazy" decoding="async"
+                            <img src="{{ $homeAd1['image'] }}"
+                                alt="{{ $homeAd1['alt'] }}" loading="lazy" decoding="async"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/5"></div>
                             <div
@@ -412,12 +430,12 @@
                             </div>
                         </a>
                     @endif
-                    @if ($homeAd2 && $homeAd2->is_active)
-                        <a href="{{ $homeAd2->link_url ?: '#' }}"
+                    @if ($homeAd2['active'])
+                        <a href="{{ $homeAd2['link'] }}"
                             class="promo-banner group relative block w-full overflow-hidden rounded-xl"
                             style="aspect-ratio:1/1;max-height:320px">
-                            <img src="{{ $homeAd2->image_url ?: asset('images/flyer-square-2.jpg') }}"
-                                alt="{{ $homeAd2->alt_text ?: 'CodeSommet — Nos Services' }}" loading="lazy"
+                            <img src="{{ $homeAd2['image'] }}"
+                                alt="{{ $homeAd2['alt'] }}" loading="lazy"
                                 decoding="async"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/5"></div>
@@ -432,6 +450,9 @@
             </div>
         </div>
     @endif
+
+    {{-- Offre en cours : -30% sur le premier projet --}}
+    @include('frontoffice.partials.promo-offer')
 
     <section class="w-full py-12 md:py-16 bg-[#F5F5F5]" id="work">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
@@ -714,7 +735,7 @@
                     <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                         <div class="absolute inset-0 flex items-start justify-center overflow-hidden px-8 pt-2.5">
                             <div class="flex items-center justify-center relative" style="z-index:10"><img
-                                    src="{{ asset('mockups/glamworlds-top.png') }}" alt="{{ __('home.attr_1077') }}"
+                                    src="{{ asset('mockups/dental-pro-top.png') }}" alt="{{ __('home.attr_1077') }}"
                                     class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]"
                                     style="min-height:150%" loading="lazy" /></div>
                         </div>
@@ -2332,7 +2353,7 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1078') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="{{ asset('images/benefits-ai-intelligencec8e1.jpeg') }}" />
+                                    src="{{ asset('images/benefits-ai-intelligence.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2346,7 +2367,7 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1079') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="{{ asset('images/benefits-dashboard-design55d8.jpeg') }}" />
+                                    src="{{ asset('images/benefits-dashboard-design.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2360,7 +2381,7 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1080') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
+                                    src="{{ asset('images/benefits-growth-strategy.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2374,7 +2395,7 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1081') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
+                                    src="{{ asset('images/benefits-complete-solution.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2388,7 +2409,7 @@
                             <div class="w-32 h-32 opacity-90"><img alt="Expertise Sectorielle" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="{{ asset('images/benefits-industry-expertise-v2ddd0.jpeg') }}" />
+                                    src="{{ asset('images/benefits-industry-expertise.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2402,7 +2423,7 @@
                             <div class="w-32 h-32 opacity-90"><img alt="Technologie de Pointe" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
-                                    src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
+                                    src="{{ asset('images/benefits-tech-stack.webp') }}" />
                             </div>
                         </div>
                     </div><a
@@ -2413,15 +2434,15 @@
                                     width="32" height="32" decoding="async"
                                     class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/david-chen-chicago7d3d.jpeg') }}" /><img
+                                    src="{{ asset('images/testimonials/mounira-kajia.webp') }}" /><img
                                     alt="{{ __('home.attr_1083') }}" loading="lazy" width="32" height="32"
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/elena-rodriguez-newyork6763.jpeg') }}" /><img
+                                    src="{{ asset('images/testimonials/gls-ceo.webp') }}" /><img
                                     alt="{{ __('home.attr_1084') }}" loading="lazy" width="32" height="32"
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/emma-van-dijk-amsterdam6432.jpeg') }}" />
+                                    src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" />
                             </div><span class="text-sm font-medium">{{ __('home.text_14') }}</span>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2449,7 +2470,7 @@
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="Intelligence IA" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="{{ asset('images/benefits-ai-intelligencec8e1.jpeg') }}" />
+                                    src="{{ asset('images/benefits-ai-intelligence.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2464,7 +2485,7 @@
                                 class="w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
                                 <img alt="Design de tableau de bord" loading="lazy" width="160" height="160"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="{{ asset('images/benefits-dashboard-design55d8.jpeg') }}" />
+                                    src="{{ asset('images/benefits-dashboard-design.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2483,7 +2504,7 @@
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="{{ __('home.attr_1085') }}" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="{{ asset('images/benefits-growth-strategy-v26574.jpeg') }}" />
+                                    src="{{ asset('images/benefits-growth-strategy.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2502,7 +2523,7 @@
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="{{ __('home.attr_1086') }}" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="{{ asset('images/benefits-complete-solution-v236c6.jpeg') }}" />
+                                    src="{{ asset('images/benefits-complete-solution.webp') }}" />
                             </div>
                         </div>
                     </div><a
@@ -2513,17 +2534,17 @@
                                     width="40" height="40" decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/david-chen-chicago7d3d.jpeg') }}" /><img
+                                    src="{{ asset('images/testimonials/mounira-kajia.webp') }}" /><img
                                     alt="{{ __('home.attr_1088') }}" loading="lazy" width="40" height="40"
                                     decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/elena-rodriguez-newyork6763.jpeg') }}" /><img
+                                    src="{{ asset('images/testimonials/gls-ceo.webp') }}" /><img
                                     alt="{{ __('home.attr_1089') }}" loading="lazy" width="40" height="40"
                                     decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/emma-van-dijk-amsterdam6432.jpeg') }}" />
+                                    src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" />
                             </div><span class="text-sm font-medium">{{ __('home.text_21') }}</span>
                         </div>
                         <div
@@ -2549,7 +2570,7 @@
                                 class="w-32 h-32 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
                                 <img alt="Expertise Sectorielle" loading="lazy" width="128" height="128"
                                     decoding="async" class="object-contain" style="color:transparent"
-                                    src="{{ asset('images/benefits-industry-expertise-v2ddd0.jpeg') }}" />
+                                    src="{{ asset('images/benefits-industry-expertise.webp') }}" />
                             </div>
                         </div>
                     </div>
@@ -2563,7 +2584,7 @@
                             class="absolute bottom-4 right-4 w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500">
                             <img alt="Stack technologique" loading="lazy" width="160" height="160"
                                 decoding="async" class="object-contain" style="color:transparent"
-                                src="{{ asset('images/benefits-tech-stack-v2f572.jpeg') }}" />
+                                src="{{ asset('images/benefits-tech-stack.webp') }}" />
                         </div>
                     </div>
                 </div>
@@ -2572,14 +2593,14 @@
     </section>
 
     <!-- Promo Banner 3 — Rectangle -->
-    @if ($homeAd3 && $homeAd3->is_active)
+    @if ($homeAd3['active'])
         <div class="w-full py-8 md:py-12 bg-[#F5F5F5]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-                <a href="{{ $homeAd3->link_url ?: '#' }}"
+                <a href="{{ $homeAd3['link'] }}"
                     class="promo-banner group relative block w-full overflow-hidden rounded-2xl"
                     style="aspect-ratio:21/9">
-                    <img src="{{ $homeAd3->image_url ?: 'https://codesommet.com/storage/blog/1767049157_695307c571de7.jpg' }}"
-                        alt="{{ $homeAd3->alt_text ?: 'CodeSommet — Promotion' }}" loading="lazy" decoding="async"
+                    <img src="{{ $homeAd3['image'] }}"
+                        alt="{{ $homeAd3['alt'] }}" loading="lazy" decoding="async"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                     <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5"></div>
                     <div
@@ -2600,4 +2621,7 @@
 
     @include('frontoffice.partials.home-testimonials')
     @include('frontoffice.partials.home-sections')
+
+    {{-- Barre promo fixe (bas de page) --}}
+    @include('frontoffice.partials.promo-sticky-bar')
 @endsection

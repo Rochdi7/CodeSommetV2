@@ -89,7 +89,7 @@
                 </div>
                 <div class="hidden lg:flex relative h-[400px] items-center justify-center" style="transform:scale(0.95)">
                     <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div><img
-                        src="{{ asset('images/our-work-hero.webp') }}" alt="Nos Projets Showcase"
+                        src="{{ asset('images/new-flyers/web-development-case-studies-presentation.webp') }}" alt="Nos Projets Showcase"
                         class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
                 </div>
             </div>
@@ -102,8 +102,8 @@
                         href="{{ route('case-study', 'glamworlds') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('images/our-work/glamworlds/glamworlds-hero.mp4') }}" autoPlay=""
-                                    loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                                    src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay
+                                    loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span
@@ -124,8 +124,8 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay=""
-                                    loop="" muted="" playsInline=""
+                                    src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay
+                                    loop muted playsinline webkit-playsinline
                                     class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -145,8 +145,8 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}"
-                                    autoPlay="" loop="" muted="" playsInline=""
+                                    src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
+                                    autoplay loop muted playsinline webkit-playsinline
                                     class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -162,13 +162,13 @@
                             </div>
                         </div>
                     </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block"
-                        href="{{ route('case-study', 'project-azubi') }}">
+<div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block"
+                        href="{{ route('case-study', 'gls-sprachenzentrum') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('images/our-work/project-azubi/project-azubi-hero.mp4') }}"
-                                    autoPlay="" loop="" muted="" playsInline=""
+                                    src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}"
+                                    autoplay loop muted playsinline webkit-playsinline
                                     class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -177,21 +177,20 @@
                                 </div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
+                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Study Abroad
                                     Ausbildung</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
                                     {{ __('our-work.text_15') }}</p>
                             </div>
                         </div>
-                    </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block"
+                    </a></div>                <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block"
                         href="{{ route('case-study', 'dental-pro') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('images/our-work/dental-pro/dental-pro-hero.mp4') }}" autoPlay=""
-                                    loop="" muted="" playsInline=""
+                                    src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
+                                    loop muted playsinline webkit-playsinline
                                     class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -205,6 +204,29 @@
                                     {{ __('our-work.text_17') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
                                     {{ __('our-work.text_18') }}</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block"
+                        href="{{ route('case-study', 'hssabek') }}">
+                        <div
+                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
+                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
+                                    src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
+                                    loop muted playsinline webkit-playsinline
+                                    class="w-full h-full object-cover"></video>
+                                <div
+                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                                    <span
+                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.hssabek_tag') }}</span>
+                                </div>
+                            </div>
+                            <div class="px-5 py-4">
+                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Hssabek</h3>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
+                                    {{ __('our-work.hssabek_subtitle') }}</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
+                                    {{ __('our-work.hssabek_description') }}</p>
                             </div>
                         </div>
                     </a></div>

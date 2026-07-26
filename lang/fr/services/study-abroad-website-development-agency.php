@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Études à l\'Étranger | Plateformes de Conseil en Visa | CodeSommetStudio',
+    'title' => 'Développement de Sites Web Études à l\'Étranger | Plateformes de Conseil en Visa | CodeSommet',
     'meta_description' => 'Développement spécialisé de sites web d\'études à l\'étranger pour les cabinets de conseil en Éducation internationale. Plus de 40 plateformes créées avec portails étudiants, suivi de visa et chatbots multilingues. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement site web études à l\'étranger,site web conseil en visa,plateforme éducation internationale,CRM études à l\'étranger,développement portail étudiant,système suivi de visa,site web conseil en éducation',
-    'og_title' => 'CodeSommetStudio - Agence de Développement Web Alimentée par l\'IA | Maroc',
+    'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
     'text_0' => 'Études à l\'Étranger & Conseil en Visa',
@@ -205,7 +205,7 @@ return [
     'ml_1191' => 'Vérification des performances',
     'ml_1192' => 'Recommandations alimentées par l\'IA',
     'ml_1193' => 'Pas de carte de crédit requise • Résultats en 30 secondes • Plan d\'amélioration personnalisé',
-    'ml_1194' => 'entreprises choisissent CodeSommetStudio plutôt que d\'autres agences locales et concurrents internationaux.',
+    'ml_1194' => 'entreprises choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
     'ml_1195' => 'Fonctionnalité',
     'ml_1196' => 'Expérience Études à l\'Étranger',
     'ml_1197' => 'Plus de 40 projets études à l\'étranger',
@@ -222,9 +222,9 @@ return [
     'ml_1208' => 'Délai de Réalisation',
     'ml_1209' => 'Pas de priorité',
     'ml_1210' => 'Ce que Nos Clients en Études à l\'Étranger & Conseil en Visa Disent de Nous',
-    'ml_1211' => 'qui ont obtenu des résultats remarquables avec CodeSommetStudio.',
+    'ml_1211' => 'qui ont obtenu des résultats remarquables avec CodeSommet.',
     'ml_1212' => 'Directeur Médical chez Dubaï Wellness Clinic',
-    'ml_1213' => 'Directeur des Opérations chez Riad Luxe Properties',
+    'ml_1213' => 'PDG de GLS',
     'ml_1214' => 'Voir toutes les études de cas',
     'ml_1215' => 'Combien de temps faut-il pour créer un site web d\'études à l\'étranger ?',
     'ml_1216' => 'Fournissez-vous la rédaction de contenu pour les sites web d\'études à l\'étranger ?',
@@ -245,11 +245,11 @@ return [
     'ml_1231' => 'Sites web de cliniques, systèmes de prise de rendez-vous et portails patients conformes aux réglementations de santé.',
     'ml_1232' => 'Télémédecine',
     'ml_1233' => 'Plateformes de consultation vidéo sécurisées avec gestion des patients et systèmes d\'ordonnances.',
-    'ml_1234' => 'Découvrez ce qui fait de CodeSommetStudio votre partenaire idéal en développement web',
+    'ml_1234' => 'Découvrez ce qui fait de CodeSommet votre partenaire idéal en développement web',
     'ml_1235' => 'Obtenez une analyse alimentée par l\'IA avec plus de 40 vérifications',
     'ml_1236' => 'Voir Nos Réalisations',
     'ml_1237' => 'Explorez les études de cas et les histoires de succès clients',
-    'ml_1238' => 'À Propos de CodeSommetStudio',
+    'ml_1238' => 'À Propos de CodeSommet',
     'ml_1239' => 'Découvrez notre équipe et notre approche',
     'ml_1240' => 'Retour à l\'Accueil',
     'ml_1241' => 'Prêt à Construire Quelque Chose d\'Extraordinaire ?',
@@ -257,10 +257,10 @@ return [
     'ml_1243' => 'Réserver un Appel Découverte',
     'ml_1244' => 'Discutons de comment l\'IA et le design moderne peuvent élever votre entreprise',
     'attr_1744' => 'Tableau de Bord Étudiant',
-    'qb_2344' => '"CodeSommetStudio a transformé notre plateforme B2B et généré 250% de leads qualifiés en plus en seulement 6 mois. Leur compréhension du marché et leur expertise technique sont exceptionnelles."',
-    'qb_2345' => '"Travailler à distance avec CodeSommetStudio a été fluide. Ils ont livré notre plateforme de réservation médicale en 10 jours avec une conformité DHA complète. Le portail patient a réduit notre charge de travail admin de 60% et les rendez-vous ont augmenté de 180%."',
-    'qb_2346' => '"Nous avions besoin d\'une plateforme e-learning complexe avec vidéo en direct, suivi des progrès et intégration de paiement. CodeSommetStudio a tout livré en 3 semaines. Les inscriptions étudiantes ont augmenté de 320% au premier trimestre après le lancement."',
-    'qb_2347' => '"Notre site immobilier est passé de simples annonces à une plateforme de réservation complète avec visites virtuelles et intégration CRM. Les demandes en ligne ont augmenté de 400% et nous convertissons maintenant 3x plus de leads en visites. Un travail vraiment exceptionnel."',
+    'qb_2344' => '"Une collaboration professionnelle du début à la fin. Je recommande sans hésiter."',
+    'qb_2345' => '"Un travail sérieux et une équipe vraiment à l\'écoute. Le résultat correspond à ce que nous avions imaginé."',
+    'qb_2346' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
+    'qb_2347' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
     'sw_3147' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes de Études à l\'Étranger & Conseil en Visa entreprises.',
     'sw_3148' => ') }}</span><span class="truncate">Maroc</span></p>
                                     </div>
@@ -282,7 +282,7 @@ return [
     'sw_3150' => ') }} <!-- -->Études à l',
     'sw_3151' => ') }}</div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommetStudio <!-- -->Études à l',
+                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Études à l',
     'sw_3152' => ') }} <!-- -->études à l',
     'sw_3153' => ') }} <!-- -->Études à
                         l',

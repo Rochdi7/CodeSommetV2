@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Services de développement web dans le monde entier | CodeSommetStudio',
+    'title' => 'Services de développement web dans le monde entier | CodeSommet',
     'meta_description' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons à distance des sites web alimentés par l\'IA, des tableaux de bord et des plateformes SaaS, où que vous soyez.',
     'meta_keywords' => 'développement web mondial, agence de développement web ? distance, services de développement web globaux, développement web IA, développement Next.js, développement SaaS, développement de tableaux de bord, agence web Maroc',
-    'og_title' => 'CodeSommetStudio — Nous Vous Accompagnons Où Que Vous Soyez',
+    'og_title' => 'CodeSommet — Nous Vous Accompagnons Où Que Vous Soyez',
     'og_description' => 'Agence premium de développement web basée au Maroc, livrant des sites web alimentés par l\'IA, des tableaux de bord intelligents et des plateformes SaaS ? des clients sur tous les continents.',
     'twitter_description' => 'Agence premium de développement web au service de clients dans le monde entier. Sites web alimentés par l\'IA, tableaux de bord et plateformes SaaS. Plus de 50 projets livrés ? l\'échelle internationale.',
     'text_0' => 'Nous acceptons des projets dans le monde entier',
@@ -12,7 +12,7 @@ return [
     'text_2' => 'Projets Livrés',
     'text_3' => '100% à Distance',
     'text_4' => 'Pourquoi Nous Choisir',
-    'text_5' => 'Pourquoi les entreprises du monde entier choisissent CodeSommetStudio',
+    'text_5' => 'Pourquoi les entreprises du monde entier choisissent CodeSommet',
     'text_6' => 'Nous combinons les meilleurs talents du Maroc avec des processus de niveau international pour livrer des sites premium à distance, de manière fiable et dans les délais.',
     'text_7' => 'Entièrement à Distance, Disponible Partout',
     'text_8' => 'Quel que soit votre fuseau horaire ou votre localisation, nous adaptons notre planning au vôtre. Communication en temps réel via Slack, Zoom ou vos outils préférés.',

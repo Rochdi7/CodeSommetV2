@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Compteur de Mots \'Compteur de Mots et de Caractères - Gratuit Text Counter Tool | CodeSommet\' Caractères - Outil Gratuit de Comptage de Texte | CodeSommet',
+    'title' => 'Compteur de Mots et de Caractères - Outil Gratuit de Comptage de Texte | CodeSommet',
     'meta_description' => 'Comptez les mots, caractères, phrases et paragraphes instantanément. Compteur de mots gratuit avec estimation du temps de lecture et fréquence des mots-clés.',
     'meta_keywords' => 'word counter,character counter,text counter,word count tool,character count,text statistics',
     'og_title' => 'Compteur de Mots \'Compteur de Mots et de Caractères - Instant Text Analysis\' Caractères - Analyse de Texte Instantanée',
