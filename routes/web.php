@@ -16,6 +16,7 @@ use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SitemapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,9 @@ use App\Http\Controllers\BlogController;
 // ─── Front-Office Routes ────────────────────────────────────────────────────
 
 Route::group([], function () {
+
+    // ─── Sitemap XML (référencé par public/robots.txt) ──────────────────────
+    Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
     // ─── Core Pages ─────────────────────────────────────────────────────────
     Route::view('/', 'frontoffice.pages.home')->name('home');
@@ -50,24 +54,8 @@ Route::group([], function () {
     });
 
     // ─── Service / Industry Pages (SEO Landing Pages) ───────────────────────
-    $servicePages = [
-        'ecommerce-website-development',
-        'saas-platform-development',
-        'fintech-platform-development',
-        'fintech-website-development',
-        'healthcare-website-development',
-        'education-website-development',
-        'edtech-platform-development',
-        'elearning-platform-development',
-        'online-course-platform-development',
-        'university-website-development',
-        'language-school-website-development',
-        'study-abroad-website-development',
-        'immigration-consultancy-website-development',
-        'real-estate-website-development',
-        'telemedicine-platform-development',
-        'telemedicine-website-development',
-    ];
+    // Whitelist partagée avec le sitemap : voir config/pages.php
+    $servicePages = config('pages.services');
 
     Route::get('/services/{slug}', function (string $slug) use ($servicePages) {
         if (! in_array($slug, $servicePages)) {
@@ -81,17 +69,8 @@ Route::group([], function () {
     })->where('slug', '[a-z\-]+')->name('service');
 
     // ─── Location / City Pages (SEO Landing Pages) ──────────────────────────
-    $cityPages = [
-        'worldwide',
-        'casablanca', 'marrakech', 'rabat', 'tangier',
-        'dubai', 'abudhabi', 'riyadh', 'doha', 'kuwait-city',
-        'london', 'amsterdam', 'berlin', 'paris', 'copenhagen',
-        'dublin', 'brussels', 'zurich', 'stockholm',
-        'madrid', 'barcelona', 'lisbon', 'rome', 'milan',
-        'new-york', 'san-francisco', 'los-angeles', 'austin',
-        'seattle', 'boston', 'chicago', 'denver', 'toronto', 'vancouver',
-        'tunis', 'cairo', 'lagos',
-    ];
+    // Whitelist partagée avec le sitemap : voir config/pages.php
+    $cityPages = config('pages.cities');
 
     Route::get('/web-development-company/{city}', function (string $city) use ($cityPages) {
         if (! in_array($city, $cityPages)) {
