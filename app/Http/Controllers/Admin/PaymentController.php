@@ -5,10 +5,45 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Payment;
 use App\Models\Project;
+use App\Services\InvoiceNumberGenerator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rule;
 
 class PaymentController extends Controller
 {
+    /** Allowed enum-like values (payments columns are plain strings in the DB). */
+    private const STATUSES = ['pending', 'partial', 'paid', 'overdue', 'cancelled', 'refunded'];
+
+    private const TYPES = ['deposit', 'milestone', 'final', 'recurring', 'one_time', 'other'];
+
+    private const METHODS = ['bank_transfer', 'cash', 'card', 'paypal', 'wise', 'stripe', 'check', 'other'];
+
+    public function __construct(private InvoiceNumberGenerator $invoiceNumbers)
+    {
+    }
+
+    /** Validation rules shared by store() and update(). */
+    private function rules(): array
+    {
+        return [
+            'project_id'     => 'required|exists:projects,id',
+            'amount'         => 'required|numeric|min:0.01|max:99999999.99',
+            'currency'       => 'nullable|string|max:3',
+            'type'           => ['nullable', Rule::in(self::TYPES)],
+            'billing_period' => 'nullable|string|max:20',
+            'payment_mode'   => 'required|in:full,partial',
+            'partial_amount' => 'nullable|numeric|min:0|lte:amount',
+            'method'         => ['required', Rule::in(self::METHODS)],
+            'method_custom'  => 'nullable|string|max:100',
+            'status'         => ['nullable', Rule::in(self::STATUSES)],
+            'invoice_number' => 'nullable|string|max:100',
+            'reference'      => 'nullable|string|max:255',
+            'due_date'       => 'nullable|date',
+            'paid_at'        => 'nullable|date',
+            'notes'          => 'nullable|string',
+        ];
+    }
     public function index(Request $request)
     {
         $query = Payment::with('project');
@@ -36,45 +71,16 @@ class PaymentController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'project_id'     => 'required|exists:projects,id',
-            'amount'         => 'required|numeric|min:0.01',
-            'currency'       => 'nullable|string|max:3',
-            'type'           => 'nullable|string',
-            'billing_period' => 'nullable|string|max:20',
-            'payment_mode'   => 'required|in:full,partial',
-            'partial_amount' => 'nullable|numeric|min:0',
-            'method'         => 'required|string',
-            'method_custom'  => 'nullable|string|max:100',
-            'status'         => 'nullable|string',
-            'invoice_number' => 'nullable|string|max:100',
-            'reference'      => 'nullable|string|max:255',
-            'due_date'       => 'nullable|date',
-            'paid_at'        => 'nullable|date',
-            'notes'          => 'nullable|string',
-        ]);
+        $validated = $request->validate($this->rules());
 
-        // Auto-derive status from payment_mode
-        if ($validated['payment_mode'] === 'full') {
-            $validated['status']         = 'paid';
-            $validated['paid_at']        = $validated['paid_at'] ?? now()->toDateString();
-            $validated['partial_amount'] = null;
-        } else {
-            // partial
-            $validated['status'] = 'partial';
-            if (isset($validated['partial_amount']) && $validated['partial_amount'] >= $validated['amount']) {
-                $validated['status']  = 'paid'; // fully covered despite being marked partial
-                $validated['paid_at'] = $validated['paid_at'] ?? now()->toDateString();
-            }
+        $this->applyPaymentMode($validated);
+
+        // Reject payments that would exceed the project's remaining balance.
+        if ($error = $this->overpaymentError($validated, null)) {
+            return back()->withInput()->withErrors(['amount' => $error]);
         }
 
-        // Auto-generate invoice number if empty
-        if (empty($validated['invoice_number'])) {
-            $count = Payment::whereYear('created_at', now()->year)->count() + 1;
-            $validated['invoice_number'] = $this->buildInvoiceNumber($validated['billing_period'] ?? null, $count);
-        }
-
-        Payment::create($validated);
+        $this->createWithInvoiceNumber($validated);
 
         return redirect()->route('admin.payments.index')->with('success', 'Paiement ajouté avec succès.');
     }
@@ -88,40 +94,21 @@ class PaymentController extends Controller
 
     public function update(Request $request, Payment $payment)
     {
-        $validated = $request->validate([
-            'project_id'     => 'required|exists:projects,id',
-            'amount'         => 'required|numeric|min:0.01',
-            'currency'       => 'nullable|string|max:3',
-            'type'           => 'nullable|string',
-            'billing_period' => 'nullable|string|max:20',
-            'payment_mode'   => 'required|in:full,partial',
-            'partial_amount' => 'nullable|numeric|min:0',
-            'method'         => 'required|string',
-            'method_custom'  => 'nullable|string|max:100',
-            'status'         => 'nullable|string',
-            'invoice_number' => 'nullable|string|max:100',
-            'reference'      => 'nullable|string|max:255',
-            'due_date'       => 'nullable|date',
-            'paid_at'        => 'nullable|date',
-            'notes'          => 'nullable|string',
-        ]);
+        $validated = $request->validate($this->rules());
 
-        if ($validated['payment_mode'] === 'full') {
-            $validated['status']         = 'paid';
-            $validated['paid_at']        = $validated['paid_at'] ?? now()->toDateString();
-            $validated['partial_amount'] = null;
-        } else {
-            $validated['status'] = 'partial';
-            if (isset($validated['partial_amount']) && $validated['partial_amount'] >= $validated['amount']) {
-                $validated['status']  = 'paid';
-                $validated['paid_at'] = $validated['paid_at'] ?? now()->toDateString();
-            }
+        $this->applyPaymentMode($validated);
+
+        if ($error = $this->overpaymentError($validated, $payment->id)) {
+            return back()->withInput()->withErrors(['amount' => $error]);
         }
 
-        // Re-generate invoice number if period changed and no custom invoice
-        if (empty($payment->invoice_number) || empty($validated['invoice_number'])) {
-            $count = Payment::whereYear('created_at', now()->year)->count() + 1;
-            $validated['invoice_number'] = $this->buildInvoiceNumber($validated['billing_period'] ?? null, $count);
+        // Preserve an already-issued invoice number. Only generate a new one
+        // when the payment does not yet have one AND the form did not supply one.
+        if (! empty($payment->invoice_number)) {
+            // Keep the existing number; ignore a blank form field.
+            unset($validated['invoice_number']);
+        } elseif (empty($validated['invoice_number'])) {
+            $validated['invoice_number'] = $this->generateUniqueInvoiceNumber($validated['billing_period'] ?? null);
         }
 
         $payment->update($validated);
@@ -137,29 +124,89 @@ class PaymentController extends Controller
     }
 
     /**
-     * Build a structured invoice number.
-     * - Recurring monthly  "2026-03" → INV-2026-MAR-001
-     * - Recurring quarterly "2026-Q2" → INV-2026-Q2-001
-     * - Recurring annually "2026"    → INV-2026-AN-001
-     * - One-time                     → INV-2026-001
+     * Derive status/paid_at from the payment mode.
      */
-    private function buildInvoiceNumber(?string $billingPeriod, int $seq): string
+    private function applyPaymentMode(array &$validated): void
     {
-        $seq = str_pad($seq, 3, '0', STR_PAD_LEFT);
-
-        if ($billingPeriod) {
-            if (preg_match('/^(\d{4})-(\d{2})$/', $billingPeriod, $m)) {
-                $months = ['','JAN','FEV','MAR','AVR','MAI','JUN','JUL','AOU','SEP','OCT','NOV','DEC'];
-                $tag = $m[1].'-'.($months[(int)$m[2]] ?? $m[2]);
-            } elseif (preg_match('/^(\d{4})-(Q\d)$/', $billingPeriod, $m)) {
-                $tag = $m[1].'-'.$m[2];
-            } else {
-                $tag = $billingPeriod.'-AN';
+        if ($validated['payment_mode'] === 'full') {
+            $validated['status']         = 'paid';
+            $validated['paid_at']        = $validated['paid_at'] ?? now()->toDateString();
+            $validated['partial_amount'] = null;
+        } else {
+            $validated['status'] = 'partial';
+            if (isset($validated['partial_amount']) && $validated['partial_amount'] >= $validated['amount']) {
+                $validated['status']  = 'paid';
+                $validated['paid_at'] = $validated['paid_at'] ?? now()->toDateString();
             }
-            return 'INV-'.$tag.'-'.$seq;
+        }
+    }
+
+    /**
+     * Return an error message if this payment would push the project's total
+     * paid past its agreed price, else null. Only "paid" payments count toward
+     * the balance. $ignoreId excludes the current payment on update.
+     */
+    private function overpaymentError(array $validated, ?int $ignoreId): ?string
+    {
+        // Only enforce for payments that will count as paid.
+        if (($validated['status'] ?? null) !== 'paid') {
+            return null;
         }
 
-        return 'INV-'.now()->year.'-'.$seq;
+        $project = Project::find($validated['project_id']);
+        if (! $project || $project->agreed_price === null) {
+            return null;
+        }
+
+        $alreadyPaid = (float) $project->payments()
+            ->where('status', 'paid')
+            ->when($ignoreId, fn ($q) => $q->where('id', '!=', $ignoreId))
+            ->sum('amount');
+
+        $newTotal = $alreadyPaid + (float) $validated['amount'];
+
+        // Allow a 1-cent rounding tolerance.
+        if ($newTotal > ((float) $project->agreed_price + 0.01)) {
+            $remaining = max(0, (float) $project->agreed_price - $alreadyPaid);
+
+            return 'Le montant dépasse le solde restant du projet ('
+                . number_format($remaining, 2) . ' ' . ($project->currency ?? 'MAD') . ').';
+        }
+
+        return null;
+    }
+
+    /**
+     * Create a payment, generating a unique invoice number if none supplied,
+     * inside a transaction and retrying on the rare unique-constraint conflict.
+     */
+    private function createWithInvoiceNumber(array $validated): Payment
+    {
+        for ($attempt = 0; $attempt < 3; $attempt++) {
+            try {
+                return DB::transaction(function () use ($validated) {
+                    if (empty($validated['invoice_number'])) {
+                        $validated['invoice_number'] = $this->invoiceNumbers
+                            ->next($validated['billing_period'] ?? null);
+                    }
+
+                    return Payment::create($validated);
+                });
+            } catch (\Illuminate\Database\UniqueConstraintViolationException $e) {
+                // Another request took the number; retry with a fresh sequence.
+                $validated['invoice_number'] = null;
+            }
+        }
+
+        throw new \RuntimeException('Could not allocate a unique invoice number.');
+    }
+
+    /**
+     * Generate a unique invoice number (used on update when regenerating).
+     */
+    private function generateUniqueInvoiceNumber(?string $billingPeriod): string
+    {
+        return DB::transaction(fn () => $this->invoiceNumbers->next($billingPeriod));
     }
 
     public function byProject(Project $project)

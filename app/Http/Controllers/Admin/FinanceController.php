@@ -8,6 +8,7 @@ use App\Models\Payment;
 use App\Models\Project;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class FinanceController extends Controller
 {
@@ -90,14 +91,18 @@ class FinanceController extends Controller
     {
         $validated = $request->validate([
             'label'            => 'required|string|max:255',
-            'amount'           => 'required|numeric|min:0.01',
+            'amount'           => 'required|numeric|min:0.01|max:99999999.99',
             'currency'         => 'nullable|string|max:3',
-            'category'         => 'required|string',
+            'category'         => ['required', Rule::in([
+                'hosting', 'domain', 'license', 'software', 'freelancer',
+                'ads', 'tools', 'hardware', 'office', 'travel',
+                'marketing', 'design_asset', 'api_service', 'other',
+            ])],
             'category_custom'  => 'nullable|string|max:100',
             'project_id'       => 'nullable|exists:projects,id',
             'expense_date'     => 'required|date',
             'is_recurring'     => 'nullable|boolean',
-            'recurring_period' => 'nullable|string',
+            'recurring_period' => ['nullable', Rule::in(['monthly', 'yearly'])],
             'notes'            => 'nullable|string',
         ]);
 
