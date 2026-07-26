@@ -124,10 +124,9 @@ class BlogPostController extends Controller
             : BlogPost::uniqueSlug($validated['slug'], $ignoreId);
         $validated['author'] = empty($validated['author']) ? 'CodeSommet' : $validated['author'];
 
-        // Sanitize rich-text content: keep formatting, strip scripts / event
-        // handlers / javascript: URLs / iframes.
+        // Sanitize rich-text content with HTMLPurifier (allowlist-based).
         if (isset($validated['content'])) {
-            $validated['content'] = $this->sanitizeHtml($validated['content']);
+            $validated['content'] = app(\App\Services\HtmlSanitizer::class)->clean($validated['content']);
         }
 
         if ($request->hasFile('featured_image')) {
@@ -152,28 +151,5 @@ class BlogPostController extends Controller
         }
 
         return $validated;
-    }
-
-    /**
-     * Conservatively sanitize rich-text HTML: preserve formatting but remove
-     * active-content vectors. This is intentionally allowlist-adjacent and
-     * defensive; a dedicated library can replace it later.
-     */
-    private function sanitizeHtml(string $html): string
-    {
-        // Remove entire dangerous elements (with content).
-        $html = preg_replace('#<(script|style|iframe|object|embed|form|noscript)\b[^>]*>.*?</\1>#is', '', $html) ?? $html;
-        // Remove self-closing / unclosed dangerous tags.
-        $html = preg_replace('#<(script|style|iframe|object|embed|form|noscript|link|meta)\b[^>]*/?>#is', '', $html) ?? $html;
-        // Strip inline event handlers: on*="..." / on*='...' / on*=value.
-        $html = preg_replace('#\son[a-z]+\s*=\s*"(?:[^"]*)"#is', '', $html) ?? $html;
-        $html = preg_replace("#\son[a-z]+\s*=\s*'(?:[^']*)'#is", '', $html) ?? $html;
-        $html = preg_replace('#\son[a-z]+\s*=\s*[^\s>]+#is', '', $html) ?? $html;
-        // Neutralize javascript:/vbscript:/data: URLs in href/src/style.
-        $html = preg_replace('#(href|src|xlink:href)\s*=\s*(["\'])\s*(?:javascript|vbscript|data)\s*:[^"\']*\2#is', '$1=$2#$2', $html) ?? $html;
-        // Remove CSS expression()/behavior and url(javascript:) in style attrs.
-        $html = preg_replace('#\sstyle\s*=\s*(["\'])[^"\']*(?:expression|javascript:|behavior)[^"\']*\1#is', '', $html) ?? $html;
-
-        return $html;
     }
 }
