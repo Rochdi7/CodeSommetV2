@@ -5,32 +5,47 @@
 @section('og_title', $post->meta_title ?: $post->title)
 @section('og_description', $post->meta_description ?: $post->excerpt)
 @section('og_type', 'article')
+@section('twitter_title', $post->meta_title ?: $post->title)
+@section('twitter_description', $post->meta_description ?: $post->excerpt)
 @if($post->featured_image)
 @section('og_image', asset('storage/' . $post->featured_image))
+@section('og_image_alt', $post->image_alt ?: $post->title)
+@section('twitter_image', asset('storage/' . $post->featured_image))
 @endif
 
 @section('structured_data')
 @php
+    $postUrl = rtrim(config('app.url'), '/') . '/blog/' . $post->slug;
     $blogSchema = [
         '@context' => 'https://schema.org',
         '@type' => 'BlogPosting',
         'headline' => $post->title,
-        'description' => $post->excerpt,
+        'description' => $post->meta_description ?: $post->excerpt,
+        'url' => $postUrl,
+        'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $postUrl],
+        'inLanguage' => 'fr',
         'author' => ['@type' => 'Person', 'name' => $post->author],
         'publisher' => [
             '@type' => 'Organization',
+            '@id' => rtrim(config('app.url'), '/') . '/#organization',
             'name' => 'CodeSommet',
             'logo' => ['@type' => 'ImageObject', 'url' => asset('logo.svg')],
         ],
         'datePublished' => $post->published_at?->toIso8601String(),
         'dateModified' => $post->updated_at->toIso8601String(),
     ];
+    if ($post->category) {
+        $blogSchema['articleSection'] = $post->category->name;
+    }
+    if ($post->tags->isNotEmpty()) {
+        $blogSchema['keywords'] = $post->tags->pluck('name')->implode(', ');
+    }
     if ($post->featured_image) {
         $blogSchema['image'] = asset('storage/' . $post->featured_image);
     }
 @endphp
 <script type="application/ld+json">
-{!! json_encode($blogSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+{!! json_encode($blogSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP) !!}
 </script>
 @endsection
 

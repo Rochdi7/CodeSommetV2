@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
+    @php
+        // Canonique par défaut : construite sur APP_URL pour rester stable
+        // quel que soit l'hôte/schéma de la requête (www, http, proxy…).
+        $seoCanonical = rtrim(config('app.url'), '/').(request()->getPathInfo() === '/' ? '' : request()->getPathInfo());
+    @endphp
+
     {{-- SEO par page --}}
     <title>@yield('title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')</title>
     <meta name="description" content="@yield('meta_description', 'Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital. Obtenez votre devis gratuit dès aujourd\'hui.')" />
@@ -17,14 +23,14 @@
     {{-- Open Graph --}}
     <meta property="og:title" content="@yield('og_title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')" />
     <meta property="og:description" content="@yield('og_description', 'Agence premium de développement web spécialisée dans les sites alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.')" />
-    <meta property="og:url" content="@yield('og_url', config('app.url'))" />
+    <meta property="og:url" content="@yield('og_url', $seoCanonical)" />
     <meta property="og:site_name" content="CodeSommet" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:image" content="@yield('og_image', asset('heros/saas-hero.webp'))" />
     <meta property="og:image:width" content="1536" />
     <meta property="og:image:height" content="1024" />
     <meta property="og:image:alt" content="@yield('og_image_alt', 'CodeSommet - Agence Digitale')" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="@yield('og_type', 'website')" />
 
     {{-- Carte Twitter --}}
     <meta name="twitter:card" content="summary_large_image" />
@@ -35,7 +41,7 @@
     <meta name="twitter:image" content="@yield('twitter_image', asset('heros/saas-hero.webp'))" />
 
     {{-- Canonical --}}
-    <link rel="canonical" href="@yield('canonical', url()->current())" />
+    <link rel="canonical" href="@yield('canonical', $seoCanonical)" />
 
     {{-- Favicons --}}
     <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-96x96.png') }}" sizes="96x96" />
@@ -58,31 +64,8 @@
     {{-- Éléments supplémentaires du head par page (CSS additionnel, préchargements, etc.) --}}
     @stack('head')
 
-    {{-- Schéma d'organisation (global) --}}
-    <script id="organization-schema" type="application/ld+json">
-        {
-            "@@context": "https://schema.org",
-            "@@type": "Organization",
-            "name": "CodeSommet",
-            "alternateName": "Code Sommet",
-            "url": "{{ config('app.url') }}",
-            "logo": "{{ asset('logo.svg') }}",
-            "description": "{{ __('layout.org_description') }}",
-            "sameAs": [
-                "https://www.linkedin.com/in/codesommet",
-                "https://www.instagram.com/code_sommet/",
-                "https://www.facebook.com/codesommetagency",
-                "https://www.youtube.com/@codesommet"
-            ],
-            "contactPoint": {
-                "@@type": "ContactPoint",
-                "contactType": "sales",
-                "telephone": "+212632582096",
-                "email": "codesommet@gmail.com",
-                "availableLanguage": ["English", "French", "Arabic"]
-            }
-        }
-    </script>
+    {{-- Données structurées globales + par type de page (Organization, WebSite, BreadcrumbList, Service, WebApplication) --}}
+    @include('frontoffice.partials.structured-data')
 </head>
 
 <body class="antialiased">
