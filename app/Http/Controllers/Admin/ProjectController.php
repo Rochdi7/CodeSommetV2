@@ -54,8 +54,11 @@ class ProjectController extends Controller
             });
         }
 
-        $sort = $request->get('sort', 'created_at');
-        $dir  = $request->get('dir', 'desc');
+        // Whitelist sort column/direction to avoid unhandled QueryExceptions
+        // (and any identifier-injection surface) from arbitrary input.
+        $sortable = ['created_at', 'updated_at', 'name', 'status', 'priority', 'agreed_price', 'deadline', 'start_date'];
+        $sort = in_array($request->get('sort'), $sortable, true) ? $request->get('sort') : 'created_at';
+        $dir  = strtolower((string) $request->get('dir')) === 'asc' ? 'asc' : 'desc';
         $projects = $query->orderBy($sort, $dir)->paginate(15);
 
         return view('backoffice.pages.projects.index', compact('projects'));

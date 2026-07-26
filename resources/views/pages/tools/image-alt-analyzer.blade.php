@@ -64,7 +64,7 @@
         <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le texte alt d'image et pourquoi est-ce important ?</h3>
@@ -73,11 +73,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Le texte alt (texte alternatif) est une description écrite d'une image qui apparaît dans le code HTML. Il remplit deux objectifs essentiels : aider les utilisateurs malvoyants à comprendre les images via les lecteurs d'écran et aider les moteurs de recherche à comprendre et indexer vos images pour un meilleur classement SEO.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quelle longueur doit avoir mon texte alt ?</h3>
@@ -86,11 +86,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Gardez le texte alt concis mais descriptif, idéalement sous 125 caractères. Les lecteurs d'écran peuvent couper les descriptions plus longues. Concentrez-vous sur les aspects les plus importants de l'image et évitez les mots inutiles comme 'image de' ou 'photo de'.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Dois-je inclure des mots-clés dans mon texte alt pour le SEO ?</h3>
@@ -99,11 +99,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Oui, mais uniquement de manière naturelle. Incluez des mots-clés pertinents qui décrivent précisément l'image, mais ne bourrez jamais de mots-clés de manière artificielle. Le texte alt doit principalement servir les utilisateurs, pas les moteurs de recherche. Concentrez-vous sur un langage clair et descriptif qui bénéficie à la fois à l'accessibilité et au SEO.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quand dois-je utiliser un texte alt vide (alt='') ?</h3>
@@ -112,11 +112,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Utilisez un texte alt vide pour les images purement décoratives comme les éléments de design, les icônes, les espaceurs ou les images qui n'ajoutent pas de valeur informative. Cela indique aux lecteurs d'écran de passer l'image, évitant les interruptions inutiles pour les utilisateurs malvoyants.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les erreurs courantes de texte alt à éviter ?</h3>
@@ -125,11 +125,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Évitez ces erreurs : laisser les attributs alt complètement manquants, utiliser des descriptions génériques comme 'image' ou 'photo', inclure des extensions de fichiers (.jpg, .png), le bourrage de mots-clés, utiliser les préfixes 'image de' ou 'photo de', et écrire des descriptions trop longues dépassant 125 caractères.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Le texte alt manquant affecte-t-il mon classement Google ?</h3>
@@ -138,11 +138,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Oui, indirectement. Bien que le texte alt manquant ne soit pas une pénalité de classement directe, il a un impact négatif sur l'expérience utilisateur et l'accessibilité, qui sont des facteurs de classement. De plus, les images avec un texte alt approprié peuvent apparaître dans Google Images, générant du trafic supplémentaire vers votre site.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence dois-je auditer le texte alt des images de mon site web ?</h3>
@@ -151,7 +151,7 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Effectuez un audit du texte alt des images chaque fois que vous ajoutez du nouveau contenu avec des images, au moins trimestriellement pour les pages existantes, et surtout avant les grandes campagnes SEO ou les révisions de conformité d'accessibilité. Des audits réguliers garantissent que votre site reste accessible et optimisé pour le SEO.</p>
             </div>
         </div>

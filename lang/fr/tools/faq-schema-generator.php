@@ -59,5 +59,13 @@ R : Le balisage FAQ peut augmenter votre visibilité dans les résultats Google,
 Q : Comment ajouter le balisage FAQ à mon site web ?
 R : Copiez le code JSON-LD généré et collez-le dans la section <head> de votre page web, ou utilisez un plugin si vous êtes sur WordPress ou Shopify.',
     'text_143' => 'Charger un Exemple',
+    'sample_faq' => 'Q : Combien coûte la création d\'un site web professionnel ?
+R : Le prix d\'un site web professionnel varie généralement entre 1 500 € et 10 000 € selon la complexité, le nombre de pages et les fonctionnalités souhaitées.
+
+Q : Combien de temps faut-il pour créer un site web ?
+R : En moyenne, la création d\'un site vitrine prend 2 à 4 semaines, tandis qu\'un site e-commerce complet peut nécessiter 6 à 12 semaines.
+
+Q : Proposez-vous la maintenance après la mise en ligne ?
+R : Oui, nous proposons des forfaits de maintenance mensuels incluant les mises à jour de sécurité, les sauvegardes régulières et le support technique.',
     'ml_543' => 'fermante. Pour WordPress, utilisez des plugins comme \'Insert Headers and Footers\' ou \'Schema Pro\'. Pour Shopify, modifiez votre fichier theme.liquid. Après l\'implémentation, validez avec l\'outil de test des résultats enrichis de Google.',
 ];

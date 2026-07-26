@@ -97,7 +97,11 @@
             document.getElementById('copy-json-btn')?.addEventListener('click', function () { CodeSommetTools.copyToClipboard(jsonStr, this); });
         }
 
-        {NEW_S}
+        function escapeHtml(str) {
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
 
         CodeSommetTools.initUsageCounter('local-business-schema', 'schemas generated');
     });

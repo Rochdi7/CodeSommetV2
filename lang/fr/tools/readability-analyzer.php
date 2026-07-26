@@ -32,4 +32,11 @@ return [
     'text_22' => 'Nous créons des outils alimentés par l\'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats',
     'text_23' => 'Réserver un Appel Découverte',
     'text_24' => '50+ projets réussis • Livraison en 48h • Sans engagement à long terme',
+    'tab_paste' => 'Coller le Texte',
+    'tab_url' => 'Analyser une URL',
+    'label_paste' => 'Collez votre texte',
+    'placeholder_paste' => 'Collez votre article, billet de blog ou contenu ici (30 mots minimum)...',
+    'btn_analyze' => 'Analyser la Lisibilité',
+    'faq_title' => 'Questions Fréquentes',
+    'faq_subtitle' => 'Tout ce que vous devez savoir sur l\'analyseur de lisibilité',
 ];

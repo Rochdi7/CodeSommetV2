@@ -34,18 +34,12 @@ class BudgetController extends Controller
 
     private function getSalary(): float
     {
-        $path = storage_path('app/' . self::SETTINGS_PATH);
-        if (! file_exists($path)) return 0;
-        $data = json_decode(file_get_contents($path), true);
-        return (float) ($data['salary'] ?? 0);
+        return (float) ($this->getSettings()['salary'] ?? 0);
     }
 
     private function setSalary(float $amount): void
     {
-        $path = storage_path('app/' . self::SETTINGS_PATH);
-        $data = file_exists($path) ? json_decode(file_get_contents($path), true) : [];
-        $data['salary'] = $amount;
-        file_put_contents($path, json_encode($data));
+        $this->saveSettings(['salary' => $amount]);
     }
 
     // ── Settings helpers (generic) ─────────────────────────────────────────────
@@ -53,15 +47,20 @@ class BudgetController extends Controller
     private function getSettings(): array
     {
         $path = storage_path('app/' . self::SETTINGS_PATH);
-        if (! file_exists($path)) return [];
-        return json_decode(file_get_contents($path), true) ?? [];
+        if (! file_exists($path)) {
+            return [];
+        }
+        $decoded = json_decode((string) file_get_contents($path), true);
+
+        return is_array($decoded) ? $decoded : [];
     }
 
     private function saveSettings(array $data): void
     {
         $path = storage_path('app/' . self::SETTINGS_PATH);
-        $existing = file_exists($path) ? json_decode(file_get_contents($path), true) : [];
-        file_put_contents($path, json_encode(array_merge($existing, $data)));
+        $merged = array_merge($this->getSettings(), $data);
+        // Exclusive lock + atomic-ish write to avoid lost updates / truncation.
+        file_put_contents($path, json_encode($merged), LOCK_EX);
     }
 
     // ── Lock screen ────────────────────────────────────────────────────────────

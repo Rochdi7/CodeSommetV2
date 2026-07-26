@@ -49,7 +49,7 @@
     </section>
     <section class="max-w-5xl mx-auto px-4 py-12">
         <div class="space-y-8">
-            <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
+            <div id="utm-form-card" class="bg-white rounded-2xl border-2 border-gray-200 p-8">
                 <h3 class="text-lg font-semibold text-gray-900 mb-6">{{ __('tools/utm-builder.text_4') }}</h3>
                 <div class="space-y-6">
                     <div class="space-y-2"><label
@@ -64,7 +64,7 @@
                                     <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
                                     <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                     <line x1="8" x2="16" y1="12" y2="12"></line>
-                                </svg></div><input type="url" placeholder="https://example.com/page" required=""
+                                </svg></div><input id="utm-url" type="url" placeholder="https://example.com/page" required=""
                                 class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11"
                                 value="" />
                         </div>
@@ -75,7 +75,7 @@
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_149') }}<span
                                     class="text-[#00AEEF] ml-1">*</span></label>
-                            <div class="relative"><input type="text" placeholder="google" required=""
+                            <div class="relative"><input id="utm-source" type="text" placeholder="google" required=""
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_7') }}</p>
@@ -83,7 +83,7 @@
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_150') }}<span
                                     class="text-[#00AEEF] ml-1">*</span></label>
-                            <div class="relative"><input type="text" placeholder="cpc" required=""
+                            <div class="relative"><input id="utm-medium" type="text" placeholder="cpc" required=""
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_154') }}</p>
@@ -91,7 +91,7 @@
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_151') }}<span
                                     class="text-[#00AEEF] ml-1">*</span></label>
-                            <div class="relative"><input type="text" placeholder="summer_sale" required=""
+                            <div class="relative"><input id="utm-campaign" type="text" placeholder="summer_sale" required=""
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_155') }}</p>
@@ -101,14 +101,14 @@
                         <p class="text-sm font-medium text-gray-900">{{ __('tools/utm-builder.text_8') }}</p>
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_152') }}</label>
-                            <div class="relative"><input type="text" placeholder="ai+websites"
+                            <div class="relative"><input id="utm-term" type="text" placeholder="ai+websites"
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_9') }}</p>
                         </div>
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_153') }}</label>
-                            <div class="relative"><input type="text" placeholder="ad_variant_1"
+                            <div class="relative"><input id="utm-content" type="text" placeholder="ad_variant_1"
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_10') }}</p>
@@ -116,14 +116,21 @@
                     </div>
                     <div class="pt-4 border-t border-gray-200">
                         <p class="text-sm font-medium text-gray-900 mb-3">{{ __('tools/utm-builder.text_11') }}</p>
-                        <div class="flex flex-wrap gap-2"><button
+                        <div class="flex flex-wrap gap-2"><button type="button" data-utm-preset="google-ads"
+                                data-utm-source="google" data-utm-medium="cpc" data-utm-campaign="campagne_google_ads"
                                 class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Campagne
-                                Google Ads</button><button
+                                Google Ads</button><button type="button" data-utm-preset="newsletter"
+                                data-utm-source="newsletter" data-utm-medium="email" data-utm-campaign="newsletter_mensuelle"
                                 class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_12') }}</button><button
+                                type="button" data-utm-preset="social"
+                                data-utm-source="social" data-utm-medium="social" data-utm-campaign="publication_sociale"
                                 class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_13') }}</button>
                         </div>
                     </div>
-                    <div class="flex gap-3"><button
+                    <button id="utm-generate-btn" type="button"
+                        class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full bg-[#00AEEF] hover:bg-[#0071BC] text-white"
+                        tabindex="0">{{ __('tools/utm-builder.generate_button') }}</button>
+                    <div class="flex gap-3"><button id="utm-reset-btn" type="button"
                             class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] border border-[var(--border-default)] text-[var(--text-primary)] bg-transparent hover:border-[var(--color-primary-orange)] hover:text-[var(--color-primary-orange)] hover:bg-[var(--hover-primary)] h-10 px-6 text-base rounded-full flex-1"
                             tabindex="0">{{ __('tools/utm-builder.text_14') }}</button></div>
                 </div>
@@ -217,7 +224,7 @@
                 </div>
                 <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
@@ -233,8 +240,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>UTM parameters are tags added to URLs that help track the performance of marketing campaigns
                                 in Google Analytics. They allow you to see exactly where your traffic comes from, which
                                 campaigns are most effective, and which content drives the most conversions. This data is
@@ -242,7 +248,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
@@ -258,8 +264,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>Three parameters are required: utm_source (identifies traffic source like 'google'),
                                 utm_medium (identifies marketing channel like 'cpc' or 'email'), and utm_campaign
                                 (identifies the specific campaign like 'summer_sale'). Two are optional: utm_term (for paid
@@ -267,7 +272,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
@@ -283,8 +288,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>Always use lowercase letters and replace spaces with underscores (e.g., 'summer_sale' not
                                 'Summer Sale'). Be consistent across all campaigns-decide on a naming structure and stick to
                                 it. Avoid special characters and keep names descriptive but concise. Document your
@@ -292,7 +296,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
@@ -308,8 +312,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>When someone clicks a URL with UTM parameters, Google Analytics automatically captures those
                                 parameters and organizes your traffic data by source, medium, and campaign. You can view
                                 this data in the Acquisition reports to analyze campaign performance, compare traffic
@@ -317,7 +320,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
@@ -333,8 +336,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>Yes, it's highly recommended to use URL shorteners like Bitly or TinyURL for UTM-tagged URLs,
                                 especially for social media and printed materials. Long URLs with multiple parameters look
                                 unprofessional and may get truncated. URL shorteners preserve all tracking parameters while
@@ -342,7 +344,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
@@ -358,8 +360,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>Avoid inconsistent naming (using both 'Facebook' and 'facebook'), using spaces instead of
                                 underscores, adding UTM parameters to internal links (this breaks your analytics),
                                 forgetting to encode special characters, and creating URLs longer than 2000 characters.
@@ -367,7 +368,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span>
@@ -383,8 +384,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>Absolutely! UTM parameters work for any traffic source, not just paid ads. Use them for email
                                 newsletters (medium=email), organic social posts (medium=social), blog guest posts
                                 (medium=referral), QR codes (medium=qr_code), and any other marketing channel. This gives

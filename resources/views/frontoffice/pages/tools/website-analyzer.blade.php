@@ -301,7 +301,30 @@
                                         class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                     </svg></div>
-                            </button></div>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                                <div class="space-y-3">
+                                    @foreach (range(1, 10) as $i)
+                                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="m9 12 2 2 4-4"></path>
+                                            </svg>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="text-sm font-semibold text-black mb-1">
+                                                    {{ __('tools/website-analyzer.check_seo_' . $i . '_name') }}</h4>
+                                                <p class="text-xs text-gray-600 leading-relaxed">
+                                                    {{ __('tools/website-analyzer.check_seo_' . $i . '_desc') }}</p>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                         <div class="bg-white rounded-xl border border-gray-200 overflow-hidden"><button
                                 class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
                                 <div
@@ -327,7 +350,30 @@
                                         class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                     </svg></div>
-                            </button></div>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                                <div class="space-y-3">
+                                    @foreach (range(1, 8) as $i)
+                                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="m9 12 2 2 4-4"></path>
+                                            </svg>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="text-sm font-semibold text-black mb-1">
+                                                    {{ __('tools/website-analyzer.check_perf_' . $i . '_name') }}</h4>
+                                                <p class="text-xs text-gray-600 leading-relaxed">
+                                                    {{ __('tools/website-analyzer.check_perf_' . $i . '_desc') }}</p>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                         <div class="bg-white rounded-xl border border-gray-200 overflow-hidden"><button
                                 class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
                                 <div
@@ -357,7 +403,30 @@
                                         class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                     </svg></div>
-                            </button></div>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                                <div class="space-y-3">
+                                    @foreach (range(1, 7) as $i)
+                                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="m9 12 2 2 4-4"></path>
+                                            </svg>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="text-sm font-semibold text-black mb-1">
+                                                    {{ __('tools/website-analyzer.check_design_' . $i . '_name') }}</h4>
+                                                <p class="text-xs text-gray-600 leading-relaxed">
+                                                    {{ __('tools/website-analyzer.check_design_' . $i . '_desc') }}</p>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                         <div class="bg-white rounded-xl border border-gray-200 overflow-hidden"><button
                                 class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
                                 <div
@@ -383,7 +452,30 @@
                                         class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                     </svg></div>
-                            </button></div>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                                <div class="space-y-3">
+                                    @foreach (range(1, 7) as $i)
+                                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="m9 12 2 2 4-4"></path>
+                                            </svg>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="text-sm font-semibold text-black mb-1">
+                                                    {{ __('tools/website-analyzer.check_sec_' . $i . '_name') }}</h4>
+                                                <p class="text-xs text-gray-600 leading-relaxed">
+                                                    {{ __('tools/website-analyzer.check_sec_' . $i . '_desc') }}</p>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                         <div class="bg-white rounded-xl border border-gray-200 overflow-hidden"><button
                                 class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
                                 <div
@@ -408,7 +500,30 @@
                                         class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                     </svg></div>
-                            </button></div>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                                <div class="space-y-3">
+                                    @foreach (range(1, 8) as $i)
+                                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="m9 12 2 2 4-4"></path>
+                                            </svg>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="text-sm font-semibold text-black mb-1">
+                                                    {{ __('tools/website-analyzer.check_tech_' . $i . '_name') }}</h4>
+                                                <p class="text-xs text-gray-600 leading-relaxed">
+                                                    {{ __('tools/website-analyzer.check_tech_' . $i . '_desc') }}</p>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div
                         class="mt-6 p-4 bg-gradient-to-r from-[#00AEEF]/10 to-orange-50 border border-[#00AEEF]/20 rounded-lg">
@@ -576,14 +691,14 @@
                             <div>
                                 <h3 class="text-xl font-bold mb-1">{{ __('tools/website-analyzer.text_41') }}</h3>
                                 <p class="text-sm text-white/90">{{ __('tools/website-analyzer.text_42') }}</p>
-                            </div><button
+                            </div><button data-scroll-to-tool
                                 class="flex items-center gap-2 text-sm font-medium bg-white text-[#00AEEF] px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all flex-shrink-0 cursor-pointer"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
-                                </svg><span>Scroll up to start</span></button>
+                                </svg><span>{{ __('tools/website-analyzer.text_179') }}</span></button>
                         </div>
                     </div>
                 </div>
@@ -803,7 +918,7 @@
                 </div>
                 <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
@@ -819,13 +934,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_53') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
@@ -841,13 +955,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_55') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
@@ -863,13 +976,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_57') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
@@ -885,13 +997,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_59') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
@@ -907,13 +1018,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_61') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
@@ -929,13 +1039,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_63') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span>
@@ -951,8 +1060,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>Yes! After your analysis is complete, click the 'Partager Results' button to get a unique
                                 shareable link. You can copy the link, download results, or share directly on social media.
                                 The shared results remain accessible and can be used to track improvements over time or show
@@ -960,7 +1068,7 @@
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">8</span>
@@ -976,8 +1084,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/website-analyzer.text_66') }}</p>
                         </div>
                     </div>

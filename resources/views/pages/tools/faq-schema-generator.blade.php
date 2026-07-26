@@ -90,7 +90,7 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le balisage FAQ et pourquoi est-ce important ?</h3>
@@ -99,11 +99,11 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Le balisage FAQ est une donnée structurée qui aide les moteurs de recherche comme Google à comprendre votre contenu FAQ. Il peut afficher vos FAQ directement dans les résultats de recherche sous forme de résultats enrichis, augmentant la visibilité et le taux de clics jusqu'à 30%. Il vous aide également à apparaître dans la section 'Autres questions posées'.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment le schéma FAQ améliore-t-il mon SEO ?</h3>
@@ -112,11 +112,11 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Le balisage FAQ donne à votre site plus d'espace sur la page de résultats Google en affichant vos questions et réponses directement dans les résultats enrichis. Cela augmente la visibilité, améliore le taux de clics et vous positionne comme une source faisant autorité, ce qui peut indirectement améliorer votre classement.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Combien de FAQ inclure sur une page ?</h3>
@@ -125,11 +125,11 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Google recommande d'inclure au moins 3 FAQ pour le balisage, mais le nombre idéal est de 5 à 10 questions de qualité par page. Concentrez-vous sur les vraies questions des utilisateurs plutôt que sur le bourrage de mots-clés. Trop de FAQ (20+) peuvent diluer la qualité et ne pas toutes apparaître dans les résultats enrichis.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la longueur idéale pour les questions et réponses ?</h3>
@@ -138,11 +138,11 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Les questions doivent être concises (40-100 caractères) et rédigées comme des questions naturelles. Les réponses doivent être complètes mais pas excessives (150-300 caractères pour les questions simples, jusqu'à 500 pour les complexes). Google préfère des réponses complètes et utiles aux réponses courtes bourrées de mots-clés.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment implémenter le schéma FAQ généré sur mon site ?</h3>
@@ -151,14 +151,14 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Copiez le code HTML généré et collez-le dans la section
 
                             <head> de votre page web avant la balise </head> fermante. Pour WordPress, utilisez des plugins comme 'Insert Headers and Footers' ou 'Schema Pro'. Pour Shopify, modifiez votre fichier theme.liquid. Après l'implémentation, validez avec l'outil de test des résultats enrichis de Google.
                         </p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Mes FAQ apparaîtront-elles dans la section &#x27;Autres questions posées&#x27; de Google ?</h3>
@@ -167,11 +167,11 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Pas automatiquement. Google décide quelles FAQ afficher en fonction de la pertinence, de la qualité et de l'intention de recherche. L'implémentation du balisage FAQ augmente vos chances, mais vous avez besoin de contenu de qualité, d'une implémentation correcte et de pages bien classées pour les requêtes pertinentes. Il faut généralement 2 à 4 semaines pour voir les résultats enrichis après l'implémentation.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Y a-t-il des directives Google à suivre pour le schéma FAQ ?</h3>
@@ -180,7 +180,7 @@ R : Copiez le code JSON-LD généré et collez-le dans la section &lt;head&gt; d
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Oui. Utilisez le balisage FAQ uniquement pour du vrai contenu Q&R visible sur la page. Ne l'utilisez pas à des fins publicitaires ou promotionnelles. Chaque question ne doit avoir qu'une seule réponse. Évitez de dupliquer les FAQ sur plusieurs pages. Les questions doivent refléter les vraies requêtes des utilisateurs, et les réponses doivent être précises et utiles.</p>
                     </div>
                 </div>

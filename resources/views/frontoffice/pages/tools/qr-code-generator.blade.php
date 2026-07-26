@@ -179,7 +179,7 @@
                 </div>
                 <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
@@ -195,13 +195,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_28') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
@@ -217,13 +216,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_30') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
@@ -239,13 +237,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_32') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
@@ -261,13 +258,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_34') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
@@ -283,13 +279,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_36') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
@@ -305,13 +300,12 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_38') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
-                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span>
@@ -327,8 +321,7 @@
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
                         </button>
-                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
-                            style="padding-left:3.5rem">
+                        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                             <p>{{ __('tools/qr-code-generator.text_40') }}</p>
                         </div>
                     </div>

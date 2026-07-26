@@ -64,7 +64,7 @@
         <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi la hiérarchie des titres est-elle importante pour le SEO ?</h3>
@@ -73,11 +73,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Une hiérarchie de titres appropriée (H1 → H2 → H3) aide les moteurs de recherche à comprendre la structure de votre contenu et sa pertinence thématique. Elle améliore également l'expérience utilisateur en rendant votre contenu scannable, ce qui peut augmenter le temps passé sur la page et réduire le taux de rebond — deux signaux de classement importants pour Google.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Combien de balises H1 par page ?</h3>
@@ -86,11 +86,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Vous devriez avoir exactement UNE balise H1 par page. Le H1 doit représenter le sujet principal ou le titre de la page. Avoir plusieurs H1 confond les moteurs de recherche sur l'objectif principal de votre contenu et dilue la valeur SEO de votre mot-clé principal.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Que se passe-t-il si je saute des niveaux (ex. : H1 → H3) ?</h3>
@@ -99,11 +99,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Sauter des niveaux de titres crée une structure de contenu illogique qui confond à la fois les utilisateurs et les moteurs de recherche. Cela crée également des problèmes d'accessibilité pour les utilisateurs de lecteurs d'écran qui s'appuient sur la hiérarchie des titres pour naviguer dans le contenu. Suivez toujours l'ordre séquentiel : H1 → H2 → H3 → H4.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Dois-je inclure des mots-clés dans mes titres ?</h3>
@@ -112,11 +112,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Oui, mais naturellement. Incluez vos mots-clés cibles dans les titres (surtout H1 et H2) là où ils ont du sens et décrivent précisément le contenu. Évitez le bourrage de mots-clés — les titres doivent se lire naturellement et apporter de la valeur aux utilisateurs d'abord, le SEO ensuite.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Comment les titres aident-ils l'accessibilité ?</h3>
@@ -125,11 +125,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Les utilisateurs de lecteurs d'écran s'appuient sur la structure des titres pour naviguer et comprendre le contenu web. Une hiérarchie de titres appropriée leur permet de passer d'une section à l'autre efficacement et de comprendre la relation entre les différents blocs de contenu. Cela rend votre site plus inclusif et améliore l'expérience utilisateur globale.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les erreurs courantes de structure de titres ?</h3>
@@ -138,11 +138,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Les erreurs les plus courantes sont : utiliser plusieurs H1, sauter des niveaux de titres, utiliser des titres pour le style au lieu de la signification sémantique, n'avoir aucun titre, et utiliser trop de titres de bas niveau (H5, H6). Ces problèmes nuisent à la fois aux performances SEO et à l'expérience utilisateur.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Comment corriger les problèmes de structure de titres ?</h3>
@@ -151,7 +151,7 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>D'abord, assurez-vous d'avoir exactement un H1. Ensuite, vérifiez que tous les titres suivent un ordre séquentiel sans sauter de niveaux. Passez en revue chaque titre pour vous assurer qu'il décrit précisément le contenu en dessous et inclut des mots-clés pertinents naturellement. Enfin, utilisez cet outil régulièrement pour détecter les problèmes avant qu'ils n'impactent votre classement.</p>
             </div>
         </div>

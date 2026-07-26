@@ -22,6 +22,7 @@ return [
     'text_12' => 'Newsletter par E-mail',
     'text_13' => 'Publication Réseaux Sociaux',
     'text_14' => 'Réinitialiser le Formulaire',
+    'generate_button' => 'Générer l\'URL UTM',
     'text_15' => 'Comment Utiliser les Paramètres UTM',
     'text_16' => 'Que sont les Paramètres UTM ?',
     'text_17' => 'Référence des Paramètres',

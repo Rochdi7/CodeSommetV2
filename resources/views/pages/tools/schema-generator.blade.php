@@ -84,7 +84,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le schema markup (JSON-LD) et pourquoi est-il important pour le SEO ?</h3>
@@ -93,11 +93,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Le schema markup, spécifiquement JSON-LD (JavaScript Object Notation for Linked Data), est une donnée structurée qui aide les moteurs de recherche à mieux comprendre votre contenu. Il indique à Google exactement de quoi parle votre page - qu'il s'agisse d'un article, d'un produit, d'une entreprise ou d'un avis. Cela améliore vos chances d'apparaître dans les résultats enrichis (extraits en vedette, panneaux de connaissances) et augmente les taux de clics en affichant des informations améliorées comme les étoiles, les prix et les images directement dans les résultats de recherche.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment implémenter le schema markup sur mon site web ?</h3>
@@ -106,7 +106,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>L'implémentation est simple : copiez le code HTML généré et collez-le dans la section
 
                             <head> de votre page web. Pour WordPress, utilisez des plugins comme 'Insert Headers and Footers' ou ajoutez au header.php de votre thème. Pour Next.js/React, ajoutez à votre composant Head ou utilisez dangerouslySetInnerHTML. Pour les sites HTML, collez directement dans la balise
@@ -115,7 +115,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment valider mon schema markup après l'avoir ajouté à mon site ?</h3>
@@ -124,11 +124,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Utilisez le test des résultats enrichis de Google (search.google.com/test/rich-results) et le validateur Schema.org (validator.schema.org) pour valider votre balisage. Collez l'URL de votre page ou le code schema directement dans ces outils. Ils vérifieront les erreurs, montreront quels résultats enrichis vous êtes éligible et fourniront des avertissements pour les champs optionnels manquants. Il est recommandé de valider avant et après l'implémentation pour détecter les problèmes rapidement.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Le schema markup améliorera-t-il directement mon classement dans les recherches ?</h3>
@@ -137,11 +137,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Le schema markup n'améliore pas directement le classement en tant que facteur de classement, mais il améliore significativement la visibilité et les taux de clics (CTR). En apparaissant comme extraits enrichis avec des informations améliorées (notes, prix, images), votre résultat de recherche devient plus attrayant, entraînant plus de clics. Un CTR plus élevé signale à Google que votre contenu est précieux, ce qui peut indirectement améliorer le classement au fil du temps. Considérez le schema comme un moyen de faire ressortir votre annonce dans une page de résultats de recherche encombrée.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser plusieurs types de schema sur la même page ?</h3>
@@ -150,7 +150,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Oui ! C'est courant et recommandé d'utiliser plusieurs types de schema sur une seule page lorsque c'est approprié. Par exemple, une page de billet de blog pourrait inclure à la fois le schema Article (pour le contenu du billet) et le schema Organization (pour l'éditeur). Une page produit e-commerce pourrait combiner le schema Product avec le schema Review et le schema BreadcrumbList pour la navigation. Assurez-vous simplement que chaque bloc de schema est séparé et valide, et testez la page entière avec le test des résultats enrichis de Google pour confirmer que tous les schemas sont reconnus.</p>
                     </div>
                 </div>

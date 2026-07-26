@@ -85,7 +85,11 @@
             });
         }
 
-        {NEW_STR}
+        function escapeHtml(str) {
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
 
         CodeSommetTools.initUsageCounter('meta-refresh-generator', 'redirect pages generated');
     });

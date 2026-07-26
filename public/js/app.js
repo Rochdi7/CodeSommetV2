@@ -1245,25 +1245,68 @@
     (function () {
         if (window.location.pathname.indexOf('/services/') === 0) return;
 
-        // Generic FAQ answers keyed by question pattern
+        // Accent-insensitive matching (same approach as the services FAQ block):
+        // questions are French (sometimes half-English), so match normalized
+        // French fragments first with English fallbacks.
+        function normalizeText(value) {
+            return (value || '')
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[̀-ͯ]/g, '')
+                .replace(/[^a-z0-9]+/g, ' ')
+                .trim();
+        }
+
         var faqAnswers = {
-            'why choose': 'We combine cutting-edge AI technology with premium design and rapid delivery. Unlike traditional agencies that take months, we deliver in 7-10 days with unlimited revisions. Our full-stack expertise covers everything from custom dashboards to AI chatbots, ensuring your business gets a competitive edge with modern web solutions.',
-            'startups': 'Absolutely! We work with businesses of all sizes, from early-stage startups to established enterprises. Our flexible pricing model and retainer plans are designed to scale with your growth. Many of our startup clients appreciate our fast turnaround times and the ability to pause or cancel anytime.',
-            'technologies': 'We use the latest modern technologies including Next.js, React, TypeScript, Node.js, and Laravel for web development. For AI features, we integrate OpenAI, custom chatbots, and intelligent automation. Our tech stack is chosen to ensure fast performance, excellent SEO, and scalability for your specific needs.',
-            'integrate': 'Yes, we specialize in integrating with existing systems including CRMs, ERPs, payment gateways, booking systems, and third-party APIs. Whether you use Salesforce, HubSpot, Stripe, or custom internal tools, we ensure seamless integration with your new website while maintaining data integrity.',
-            'unlimited revision': 'Our unlimited revision model means exactly that - we keep refining until you are 100% satisfied. There are no caps on the number of changes you can request. Each revision is typically turned around within 48-72 hours. This ensures your website perfectly matches your vision without any additional costs.',
-            'ongoing support': 'Yes, we provide comprehensive ongoing support including premium hosting, maintenance, security updates, performance monitoring, and content updates. Our retainer plans include real-time collaboration on Slack so you can reach us anytime. We also offer dedicated support for bug fixes and feature enhancements post-launch.'
+            whyChoose: 'Nous combinons technologie IA de pointe, design premium et livraison rapide. Là où les agences traditionnelles prennent des mois, nous livrons en 7 à 10 jours avec des révisions illimitées. Notre expertise full-stack couvre tout, des tableaux de bord sur mesure aux chatbots IA, pour donner à votre entreprise un vrai avantage concurrentiel.',
+            startups: 'Absolument ! Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
+            technologies: 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons OpenAI, des chatbots sur mesure et des automatisations intelligentes. Notre stack technique garantit des performances rapides, un excellent SEO et une vraie évolutivité.',
+            integrate: 'Oui, nous sommes spécialisés dans l\'intégration avec vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',
+            revisions: 'Notre modèle de révisions illimitées signifie exactement cela : nous affinons jusqu\'à ce que vous soyez satisfait à 100 %. Aucune limite au nombre de modifications demandées, chaque révision étant généralement traitée sous 48 à 72 heures, sans coût supplémentaire.',
+            support: 'Oui, nous proposons un support continu complet : hébergement premium, maintenance, mises à jour de sécurité, surveillance des performances et mises à jour de contenu. Nos forfaits incluent une collaboration en temps réel sur Slack, ainsi que la correction de bugs et les évolutions après le lancement.',
+            remote: 'Notre équipe travaille à distance et accompagne des clients dans le monde entier. Tout se passe en ligne : appels vidéo, collaboration sur Slack et suivi de projet en temps réel, ce qui nous permet de rester très réactifs quel que soit votre fuseau horaire.',
+            payment: 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
+            compliance: 'Nous concevons des sites conformes aux bonnes pratiques et réglementations applicables, notamment le RGPD pour les données personnelles : consentement aux cookies, politique de confidentialité et sécurisation des données. Pour des exigences sectorielles ou locales spécifiques, nous adaptons la solution avec vous.',
+            speed: 'La plupart des sites web sont livrés en 7 à 10 jours après validation du périmètre. Les plateformes plus complexes prennent généralement de 3 à 6 semaines. Nous pouvons aussi lancer une première version rapidement puis itérer par étapes.'
         };
 
         function findAnswer(questionText) {
-            var q = questionText.toLowerCase();
-            if (q.indexOf('why choose') !== -1) return faqAnswers['why choose'];
-            if (q.indexOf('startup') !== -1 || q.indexOf('early-stage') !== -1) return faqAnswers['startups'];
-            if (q.indexOf('technolog') !== -1) return faqAnswers['technologies'];
-            if (q.indexOf('integrate') !== -1 || q.indexOf('existing system') !== -1) return faqAnswers['integrate'];
-            if (q.indexOf('unlimited revision') !== -1) return faqAnswers['unlimited revision'];
-            if (q.indexOf('ongoing support') !== -1 || q.indexOf('after launch') !== -1) return faqAnswers['ongoing support'];
-            return 'Contact us for more details about this topic. We\'d love to discuss your specific needs and how we can help your business grow.';
+            var q = normalizeText(questionText);
+            var rules = [
+                { fragments: ['pourquoi choisir'], answer: faqAnswers.whyChoose },
+                { fragments: ['why choose'], answer: faqAnswers.whyChoose },
+                { fragments: ['bureau'], answer: faqAnswers.remote },
+                { fragments: ['a distance'], answer: faqAnswers.remote },
+                { fragments: ['remote'], answer: faqAnswers.remote },
+                { fragments: ['paiement'], answer: faqAnswers.payment },
+                { fragments: ['payment'], answer: faqAnswers.payment },
+                { fragments: ['conformite'], answer: faqAnswers.compliance },
+                { fragments: ['lois'], answer: faqAnswers.compliance },
+                { fragments: ['rgpd'], answer: faqAnswers.compliance },
+                { fragments: ['compliance'], answer: faqAnswers.compliance },
+                { fragments: ['quelle vitesse'], answer: faqAnswers.speed },
+                { fragments: ['rapidement', 'lancer'], answer: faqAnswers.speed },
+                { fragments: ['delai', 'livraison'], answer: faqAnswers.speed },
+                { fragments: ['how fast'], answer: faqAnswers.speed },
+                { fragments: ['startup'], answer: faqAnswers.startups },
+                { fragments: ['early stage'], answer: faqAnswers.startups },
+                { fragments: ['technolog'], answer: faqAnswers.technologies },
+                { fragments: ['integr', 'systemes existants'], answer: faqAnswers.integrate },
+                { fragments: ['integrate'], answer: faqAnswers.integrate },
+                { fragments: ['revisions illimitees'], answer: faqAnswers.revisions },
+                { fragments: ['unlimited revision'], answer: faqAnswers.revisions },
+                { fragments: ['support continu'], answer: faqAnswers.support },
+                { fragments: ['apres le lancement'], answer: faqAnswers.support },
+                { fragments: ['ongoing support'], answer: faqAnswers.support },
+                { fragments: ['after launch'], answer: faqAnswers.support }
+            ];
+            for (var i = 0; i < rules.length; i++) {
+                var matches = rules[i].fragments.every(function (fragment) {
+                    return q.indexOf(fragment) !== -1;
+                });
+                if (matches) return rules[i].answer;
+            }
+            return 'Contactez-nous pour en discuter en détail. Nous serons ravis d\'échanger sur vos besoins spécifiques et sur la façon dont nous pouvons aider votre entreprise à grandir.';
         }
 
         var faqContainers = document.querySelectorAll('.max-w-4xl.mx-auto.bg-white.rounded-2xl.border');
@@ -1870,6 +1913,31 @@
                     }
                     btn.style.backgroundColor = '';
                 }
+            });
+        });
+    })();
+
+
+    /* ── Case-study screenshot tabs (our-work pages) ─────────────────── */
+    /* The per-tab screenshot assets from the original site were not exported,
+     * so the tabs only reflect the active selection state. */
+    (function () {
+        if (window.location.pathname.indexOf('/our-work/') !== 0) return;
+
+        var containers = document.querySelectorAll('div.flex.justify-center.gap-2.mb-8.flex-wrap');
+        containers.forEach(function (container) {
+            var btns = container.querySelectorAll('button');
+            if (btns.length < 2) return;
+
+            btns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    btns.forEach(function (b) {
+                        b.classList.remove('bg-[#00AEEF]', 'text-white', 'shadow-md');
+                        b.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                    });
+                    btn.classList.add('bg-[#00AEEF]', 'text-white', 'shadow-md');
+                    btn.classList.remove('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                });
             });
         });
     })();

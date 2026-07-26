@@ -112,7 +112,11 @@
                 '<div class="text-sm text-gray-600 mt-1">' + label + '</div></div>';
         }
 
-        {NEW_STR}
+        function escapeHtml(str) {
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
 
         CodeSommetTools.initUsageCounter('duplicate-content-checker', 'content comparisons performed');
     });

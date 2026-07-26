@@ -80,10 +80,14 @@
                                 class="text-sm font-medium text-[var(--text-secondary)]">{{ __('our-work.text_4') }}</span>
                         </div>
                     </div>
-                    <div class="flex justify-center lg:justify-start gap-3 flex-wrap"><button
+                    <div id="work-filters" class="flex justify-center lg:justify-start gap-3 flex-wrap"><button
+                            data-filter="all"
                             class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]">All</button><button
+                            data-filter="technology"
                             class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Technologie</button><button
+                            data-filter="education"
                             class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">{{ __('our-work.text_5') }}</button><button
+                            data-filter="healthcare"
                             class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">{{ __('our-work.text_6') }}</button>
                     </div>
                 </div>
@@ -97,8 +101,8 @@
     </section>
     <section class="py-20 bg-[#F5F5F5]">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
-                <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block"
+            <div id="work-grid" class="grid md:grid-cols-2 gap-8 lg:gap-10">
+                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="technology"><a class="block"
                         href="{{ route('case-study', 'glamworlds') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -119,7 +123,7 @@
                             </div>
                         </div>
                     </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block"
+                <div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="technology"><a class="block"
                         href="{{ route('case-study', 'mon-asso') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
@@ -140,7 +144,7 @@
                             </div>
                         </div>
                     </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block"
+                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="technology"><a class="block"
                         href="{{ route('case-study', 'morocco-quest') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
@@ -162,7 +166,7 @@
                             </div>
                         </div>
                     </a></div>
-<div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block"
+<div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="education"><a class="block"
                         href="{{ route('case-study', 'gls-sprachenzentrum') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
@@ -184,7 +188,7 @@
                                     {{ __('our-work.text_15') }}</p>
                             </div>
                         </div>
-                    </a></div>                <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block"
+                    </a></div>                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="healthcare"><a class="block"
                         href="{{ route('case-study', 'dental-pro') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
@@ -207,7 +211,7 @@
                             </div>
                         </div>
                     </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block"
+                <div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="technology"><a class="block"
                         href="{{ route('case-study', 'hssabek') }}">
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
@@ -1020,4 +1024,44 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var grid = document.getElementById('work-grid');
+            var filterBtns = document.querySelectorAll('#work-filters button[data-filter]');
+            var workCards = grid.querySelectorAll(':scope > div[data-category]');
+
+            var activeClass =
+                'px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]';
+            var inactiveClass =
+                'px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]';
+
+            function filterCards(activeFilter) {
+                workCards.forEach(function(card) {
+                    var category = card.getAttribute('data-category') || '';
+                    if (activeFilter === 'all' || category === activeFilter) {
+                        card.style.display = '';
+                        // Override scroll-animation initial state so re-shown cards are visible
+                        card.style.opacity = '1';
+                        card.style.transform = 'none';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            function setActiveButton(btn) {
+                filterBtns.forEach(function(b) {
+                    b.className = inactiveClass;
+                });
+                btn.className = activeClass;
+            }
+
+            filterBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    setActiveButton(btn);
+                    filterCards(btn.getAttribute('data-filter'));
+                });
+            });
+        });
+    </script>
 @endsection
