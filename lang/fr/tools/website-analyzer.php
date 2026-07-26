@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Analyseur de Site Web - Outil Gratuit d\'Audit SEO & Performance | CodeSommet',
-    'meta_description' => 'Analyse complète de site web avec plus de 40 vérifications automatisées. Obtenez un audit SEO instantané, les Core Web Vitals, une analyse du design et un plan d\'amélioration personnalisé. 100% gratuit, aucune inscription requise.',
+    'meta_description' => 'Auditez votre site gratuitement : plus de 40 vérifications SEO, performance, sécurité et accessibilité, avec un score global et des conseils concrets.',
     'meta_keywords' => 'analyseur de site web,outil audit site web,vérificateur SEO,analyseur performance,test vitesse site web,analyse automatisée site web,audit SEO gratuit,vérificateur vitesse page,bilan santé site web,Core Web Vitals,analyse design,audit sécurité',
     'og_title' => 'Analyseur de Site Web - 40+ Vérifications pour SEO, Performance & Design',
     'og_description' => 'Audit complet et gratuit de site web avec analyse avancée. Vérifiez le SEO, la performance, le design et la sécurité en 30 secondes. Obtenez un plan d\'amélioration personnalisé.',

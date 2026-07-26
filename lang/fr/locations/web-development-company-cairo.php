@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web au Caire, Égypte | CodeSommet',
-    'meta_description' => 'Sites web et plateformes pour les entreprises du Caire : développement sur mesure, e-commerce et SEO, livrés à distance par l\'agence CodeSommet.',
+    'meta_description' => 'Du Caire, collaborez à distance avec CodeSommet : conception de sites, plateformes e-commerce et référencement pour les entreprises égyptiennes.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web au Caire, Égypte | CodeSommet',
     'og_description' => 'Sites web et plateformes pour les entreprises du Caire : développement sur mesure, e-commerce et SEO, livrés à distance par l\'agence CodeSommet.',

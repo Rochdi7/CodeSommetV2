@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Contactez-Nous - Obtenez Votre Appel Stratégique Gratuit | CodeSommet',
-    'meta_description' => 'Contactez CodeSommet pour le développement web propulsé par l\'IA au Maroc. Réservez un appel découverte gratuit ou contactez-nous par email, WhatsApp. Temps de réponse de 24 heures garanti.',
+    'meta_description' => 'Contactez CodeSommet pour le développement web propulsé par l\'IA au Maroc. Réservez un appel découverte gratuit ou écrivez-nous par e-mail ou WhatsApp. Réponse rapide sous 24 heures.',
     'meta_keywords' => 'contact CodeSommet,devis développement web Maroc,embaucher développeurs web,consultation développement IA,appel stratégique gratuit,demande développement web',
     'og_title' => 'Contactez-Nous - CodeSommet',
     'og_description' => 'Contactez CodeSommet pour le développement web propulsé par l\'IA au Maroc. Réservez un appel découverte gratuit ou contactez-nous par email, WhatsApp. Temps de réponse de 24 heures.',

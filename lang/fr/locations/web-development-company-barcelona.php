@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Barcelone, Espagne | CodeSommet',
-    'meta_description' => 'Création de sites web pour les entreprises de Barcelone : développement sur mesure, e-commerce et plateformes, livrés à distance par CodeSommet.',
+    'meta_description' => 'Entreprises de Barcelone : confiez votre projet web à CodeSommet — sites élégants, boutiques en ligne et outils métier développés à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web à Barcelone, Espagne | CodeSommet',
     'og_description' => 'Création de sites web pour les entreprises de Barcelone : développement sur mesure, e-commerce et plateformes, livrés à distance par CodeSommet.',

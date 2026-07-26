@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateformes SaaS | Logiciels B2B & Applications Cloud | CodeSommet',
-    'meta_description' => 'Développement spécialisé de plateformes SaaS. Plus de 50 plateformes logicielles B2B créées avec tableaux de bord utilisateurs, panneaux dadministration, intégrations API et facturation par abonnement. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Plateformes SaaS & Logiciels B2B | CodeSommet',
+    'meta_description' => 'Développement spécialisé de plateformes SaaS : tableaux de bord utilisateurs, panneaux d\'administration, intégrations API et facturation par abonnement. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement plateforme saas,développement logiciel b2b,développement application cloud,développement tableau de bord saas,système facturation abonnement,plateforme intégration api,saas marque blanche',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Industrie Spécialisée',
-    'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_1' => 'NOUS CRÉONS DES PLATEFORMES SAAS QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
     'text_3' => '50+ clients dans',
     'text_4' => 'Adopté par les',

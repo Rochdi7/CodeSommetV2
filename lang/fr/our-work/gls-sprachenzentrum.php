@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Étude de Cas GLS Sprachenzentrum - Study Abroad Ausbildung | CodeSommet',
-    'meta_description' => 'Plateforme d\'études à l\'étranger sans commission avec 14 outils IA, automatisation e-mail et 88% de taux de réussite. Desservant plus de 51 pays avec Next.js 15.3.2, OpenAI GPT-4 et une architecture de base de données sophistiquée.',
+    'meta_description' => 'Étude de cas GLS Sprachenzentrum : plateforme d\'études à l\'étranger avec outils IA, automatisation e-mail et parcours de candidature complet.',
     'meta_keywords' => 'plateforme études à l\'étranger,moteur de recommandation IA,développement automatisation e-mail,SaaS Next.js 15,plateforme multi-pays,technologie éducative',
     'og_title' => 'Étude de Cas GLS Sprachenzentrum - Study Abroad Ausbildung',
     'og_description' => 'Plateforme d\'études à l\'étranger sans commission avec 14 outils IA, automatisation e-mail et 88% de taux de réussite. Desservant plus de 51 pays avec Next.js 15.3.2, OpenAI GPT-4 et une architecture de base de données sophistiquée.',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Dublin, Irlande | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises de Dublin : tableaux de bord SaaS, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',
+    'meta_description' => 'Pour les entreprises de Dublin, CodeSommet crée tableaux de bord SaaS, sites corporate et boutiques en ligne — collaboration 100 % à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web à Dublin, Irlande | CodeSommet',
     'og_description' => 'Développement web pour les entreprises de Dublin : tableaux de bord SaaS, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',

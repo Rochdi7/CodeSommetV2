@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Générateur Robots.txt - Créateur de Fichier Robots Gratuit | CodeSommet',
-    'meta_description' => 'Générez des fichiers robots.txt conformes pour contrôler l\'exploration des moteurs de recherche sur votre site web. Ajoutez des règles user-agent personnalisées, des chemins disallow/allow, des délais de crawl et des URL de sitemap avec notre outil gratuit.',
+    'meta_description' => 'Générez un fichier robots.txt conforme en quelques clics : règles par robot, chemins bloqués et référence sitemap incluse. Outil gratuit.',
     'meta_keywords' => 'robots txt generator,robots.txt creator,robots file,crawl rules,search engine robots,robots.txt builder,robots.txt validator,user agent rules,disallow rules,sitemap url,crawl delay,googlebot rules,seo robots file',
     'og_title' => 'Générateur Robots.txt - Créateur de Fichier Robots Gratuit',
     'og_description' => 'Générez des fichiers robots.txt conformes pour contrôler l\'exploration des moteurs de recherche sur votre site web. Ajoutez des règles user-agent personnalisées, des chemins disallow/allow, des délais de crawl et des URL de sitemap avec notre outil gratuit.',

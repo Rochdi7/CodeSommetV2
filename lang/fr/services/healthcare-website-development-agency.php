@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web de Santé | Portails Patients & Plateformes de Télémédecine | CodeSommet',
-    'meta_description' => 'Développement de sites web de santé spécialisé. Plus de 30 plateformes de santé construites incluant des portails patients, des systèmes de télémédecine et la prise de rendez-vous. Conformes HIPAA, fonctionnalités alimentées par l\'IA. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Sites Web Santé & Télémédecine | CodeSommet',
+    'meta_description' => 'Développement de sites web de santé : portails patients, systèmes de télémédecine et prise de rendez-vous, conformes HIPAA et enrichis de fonctionnalités IA. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement site web santé,développement portail patient,plateforme de télémédecine,conception site web médical,développement site web hôpital,site web clinique,CRM santé,système de prise de rendez-vous',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Santé et Médical',
     'text_1' => 'Industrie Spécialisée',
-    'text_2' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_2' => 'NOUS CRÉONS DES SITES WEB DE SANTÉ QUI GÉNÈRENT DES',
     'text_3' => 'Basé dans le secteur',
     'text_4' => 'Santé et Médical',
     'text_5' => 'Santé et Médical',

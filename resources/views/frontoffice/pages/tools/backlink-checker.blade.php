@@ -31,9 +31,9 @@
             <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a
                     class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a
                     class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span
-                    class="text-black font-medium">Backlink Checker</span></nav>
+                    class="text-black font-medium">Vérificateur de Backlinks</span></nav>
             <div class="mb-8">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Backlink Checker</h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">Vérificateur de Backlinks</h1>
                 <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                     {{ __('tools/backlink-checker.text_0') }}</p>
             </div>
@@ -69,7 +69,7 @@
                 <div class="space-y-2"><label
                         class="block text-sm font-medium text-black">{{ __('tools/backlink-checker.label_134') }}<span
                             class="text-[#00AEEF] ml-1">*</span></label>
-                    <div class="relative"><input type="url" placeholder="example.com or https://example.com"
+                    <div class="relative"><input type="url" placeholder="exemple : https://example.com"
                             required=""
                             class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                             value="" /></div>
@@ -100,7 +100,7 @@
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">1</span>
                         </div>
@@ -115,12 +115,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_10') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">2</span>
                         </div>
@@ -135,12 +136,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_12') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">3</span>
                         </div>
@@ -155,12 +157,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_14') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">4</span>
                         </div>
@@ -175,12 +178,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_16') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">5</span>
                         </div>
@@ -195,12 +199,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_18') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">6</span>
                         </div>
@@ -215,12 +220,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_20') }}</p>
                     </div>
                 </div>
                 <div class="border-b border-gray-200 last:border-0"><button
-                        class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                        class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">7</span>
                         </div>
@@ -235,7 +241,8 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                        style="padding-left:3.5rem">
                         <p>{{ __('tools/backlink-checker.text_22') }}</p>
                     </div>
                 </div>

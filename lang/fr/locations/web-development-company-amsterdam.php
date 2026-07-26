@@ -2,11 +2,11 @@
 
 return [
     'title' => 'Développement Web à Amsterdam, Pays-Bas | CodeSommet',
-    'meta_description' => 'Associez-vous au studio de développement web leader d\'Amsterdam pour des sites web alimentés par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes axées sur la conversion pour la fintech, les startups tech et les secteurs de la santé.',
+    'meta_description' => 'Développement web pour les entreprises d\'Amsterdam : plateformes fintech, sites pour startups tech et santé, orientés conversion et livrés à distance par CodeSommet.',
     'meta_keywords' => 'web development Morocco,AI web development agency,Next.js development agency,dashboard development,SaaS development,education website development,healthcare website development,React development Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency Morocco',
     'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => '50+ clients à',

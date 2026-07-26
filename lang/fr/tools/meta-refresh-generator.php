@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Générateur Meta Refresh - Outil de Redirection Automatique Gratuit | CodeSommet',
-    'meta_description' => 'Générez des balises de redirection meta refresh HTML avec des délais personnalisés. Outil gratuit pour créer des redirections automatiques de pages avec des comptes à rebours. Parfait pour les redirections temporaires et les pages de campagne.',
+    'meta_description' => 'Générez une balise meta refresh avec le délai de votre choix pour créer une redirection HTML simple, sans configuration serveur.',
     'meta_keywords' => 'meta refresh,auto redirect,HTML redirect,meta refresh generator,page redirect,refresh tag',
     'og_title' => 'Générateur Meta Refresh - Outil de Redirection Automatique Gratuit',
     'og_description' => 'Générez des balises de redirection meta refresh HTML avec des délais personnalisés. Outil gratuit pour créer des redirections automatiques de pages avec des comptes à rebours.',

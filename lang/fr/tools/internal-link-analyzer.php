@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Analyseur de Liens Internes - Outil Gratuit de Structure de Liens | CodeSommet',
-    'meta_description' => 'Analysez la structure de liens internes de votre site web pour le SEO. Trouvez les liens cassés, les pages orphelines, les problèmes de profondeur de liens et optimisez l\'architecture de votre site. Outil gratuit avec une analyse détaillée des liens et des recommandations concrètes.',
+    'meta_description' => 'Cartographiez les liens internes d\'une page : nombre de liens, ancres et pages orphelines potentielles, pour renforcer votre maillage interne.',
     'meta_keywords' => 'internal link analyzer,link structure,internal linking,SEO links,link checker,site architecture,orphan pages,link depth,broken links,link equity,site structure,internal link checker',
     'og_title' => 'Analyseur de Liens Internes - Outil Gratuit de Structure de Liens',
     'og_description' => 'Analysez la structure de liens internes de votre site web pour le SEO. Trouvez les liens cassés, les pages orphelines et optimisez l\'architecture de votre site avec une analyse détaillée des liens.',

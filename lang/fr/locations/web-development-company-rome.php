@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Rome, Italie | CodeSommet',
-    'meta_description' => 'Sites web professionnels pour les entreprises de Rome : développement sur mesure, e-commerce et SEO, réalisés à distance par l\'agence CodeSommet.',
+    'meta_description' => 'CodeSommet accompagne les entreprises de Rome dans la création de sites professionnels, boutiques e-commerce et outils sur mesure, avec SEO inclus.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
     'og_description' => 'Sites web professionnels pour les entreprises de Rome : développement sur mesure, e-commerce et SEO, réalisés à distance par l\'agence CodeSommet.',

@@ -6,11 +6,11 @@
     'use strict';
 
     var AI_TOOLS = {
-        'blog-title-generator': { title: 'Blog Title Generator', action: 'Generate Titles', actionText: 'titles generated', inputLabel: 'Topic or Keyword', inputPlaceholder: 'Enter your blog topic or keyword...' },
-        'chatbot-script-generator': { title: 'Chatbot Script', action: 'Generate Script', actionText: 'scripts generated', inputLabel: 'Industry', inputPlaceholder: 'e.g., Healthcare, E-commerce, SaaS...' },
-        'landing-page-generator': { title: 'Landing Page', action: 'Generate Copy', actionText: 'pages generated', inputLabel: 'Product/Service', inputPlaceholder: 'Describe your product or service...' },
-        'meta-tag-generator': { title: 'Meta Tag Generator', action: 'Generate Tags', actionText: 'meta tags generated', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'color-palette-generator': { title: 'Color Palette', action: 'Extract Colors', actionText: 'palettes generated', inputLabel: 'Upload Image', inputType: 'file' }
+        'blog-title-generator': { title: 'Blog Title Generator', action: 'Generate Titles', actionText: 'titres générés', inputLabel: 'Sujet ou mot-clé', inputPlaceholder: 'Enter your blog topic or keyword...' },
+        'chatbot-script-generator': { title: 'Chatbot Script', action: 'Generate Script', actionText: 'scripts générés', inputLabel: 'Secteur d\'activité', inputPlaceholder: 'e.g., Healthcare, E-commerce, SaaS...' },
+        'landing-page-generator': { title: 'Landing Page', action: 'Generate Copy', actionText: 'pages générées', inputLabel: 'Produit ou service', inputPlaceholder: 'Describe your product or service...' },
+        'meta-tag-generator': { title: 'Meta Tag Generator', action: 'Generate Tags', actionText: 'balises méta générées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'color-palette-generator': { title: 'Color Palette', action: 'Extract Colors', actionText: 'palettes générées', inputLabel: 'Image à importer', inputType: 'file' }
     };
 
     CodeSommetTools.onReady(function () {
@@ -36,7 +36,7 @@
 
             if (slug === 'color-palette-generator' && fileInput) {
                 if (!fileInput.files || !fileInput.files[0]) {
-                    CodeSommetTools.showError('Please upload an image');
+                    CodeSommetTools.showError('Veuillez importer une image');
                     return;
                 }
                 handleFileUpload(fileInput.files[0], slug, config);
@@ -45,7 +45,7 @@
 
             inputValue = mainInput ? mainInput.value.trim() : '';
             if (!inputValue) {
-                CodeSommetTools.showError('Please enter ' + config.inputLabel.toLowerCase());
+                CodeSommetTools.showError('Veuillez saisir : ' + config.inputLabel);
                 return;
             }
 

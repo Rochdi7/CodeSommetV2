@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Développement Web à Lisbonnene, Portugal | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises de Lisbonnene : sites modernes, e-commerce et plateformes sur mesure, livrés à distance par l\'agence CodeSommet.',
+    'title' => 'Développement Web à Lisbonne, Portugal | CodeSommet',
+    'meta_description' => 'Lisbonne : création de sites modernes, boutiques en ligne et plateformes sur mesure par CodeSommet, avec un interlocuteur unique à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Développement Web à Lisbonnene, Portugal | CodeSommet',
-    'og_description' => 'Développement web pour les entreprises de Lisbonnene : sites modernes, e-commerce et plateformes sur mesure, livrés à distance par l\'agence CodeSommet.',
-    'twitter_description' => 'Développement web pour les entreprises de Lisbonnene : sites modernes, e-commerce et plateformes sur mesure.',
+    'og_title' => 'Développement Web à Lisbonne, Portugal | CodeSommet',
+    'og_description' => 'Développement web pour les entreprises de Lisbonne : sites modernes, e-commerce et plateformes sur mesure, livrés à distance par l\'agence CodeSommet.',
+    'twitter_description' => 'Développement web pour les entreprises de Lisbonne : sites modernes, e-commerce et plateformes sur mesure.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => '50+ clients à',

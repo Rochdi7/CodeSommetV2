@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Vérificateur de Backlinks - Outil Gratuit d\'Analyse de Backlinks | CodeSommet',
-    'meta_description' => 'Analysez le profil de backlinks de votre site web gratuitement. Vérifiez la qualité des backlinks, identifiez les liens dofollow vs nofollow, détectez les backlinks toxiques et surveillez vos efforts de création de liens avec notre outil complet de vérification de backlinks.',
+    'meta_description' => 'Analysez gratuitement le profil de backlinks d\'un domaine : liens entrants, domaines référents et qualité des liens, en quelques secondes.',
     'meta_keywords' => 'backlink checker,backlink analyzer,link analysis,backlink profile,SEO backlinks,inbound links,link building tool,backlink audit,dofollow backlinks,nofollow backlinks,toxic backlinks,link quality checker',
     'og_title' => 'Vérificateur de Backlinks - Outil Gratuit d\'Analyse de Backlinks',
     'og_description' => 'Analysez le profil de backlinks de votre site web gratuitement. Vérifiez la qualité des backlinks, identifiez les liens dofollow vs nofollow, détectez les backlinks toxiques et surveillez vos efforts de création de liens.',

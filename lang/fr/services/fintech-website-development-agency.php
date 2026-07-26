@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web FinTech | Conception Web de Services Financiers | CodeSommet',
-    'meta_description' => 'Développement de sites web FinTech spécialisé. Plus de 35 sites web de services financiers construits avec des intégrations de paiement sécurisées, des designs conformes à la réglementation et des pages de destination optimisées pour la conversion. Contactez-nous pour les tarifs.',
+    'title' => 'Création de Sites Web FinTech & Services Financiers | CodeSommet',
+    'meta_description' => 'Développement de sites web FinTech : intégrations de paiement sécurisées, designs conformes à la réglementation et pages optimisées pour la conversion. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement site web fintech,conception site web services financiers,page de destination fintech,développement site bancaire,conception site web financier,agence de conception web fintech,site web société de paiement,développement site web néobanque',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Industrie Spécialisée',
-    'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_1' => 'NOUS CRÉONS DES SITES WEB FINTECH QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
     'text_3' => 'Adopté par les',
     'text_4' => 'Plus de',

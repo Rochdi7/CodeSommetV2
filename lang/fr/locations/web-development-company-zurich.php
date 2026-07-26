@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Zurich, Suisse | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises de Zurich : plateformes FinTech, sites corporate et tableaux de bord sur mesure, livrés à distance par CodeSommet.',
+    'meta_description' => 'CodeSommet réalise pour les sociétés de Zurich des plateformes FinTech et des sites corporate exigeants, développés et maintenus à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
     'og_description' => 'Développement web pour les entreprises de Zurich : plateformes FinTech, sites corporate et tableaux de bord sur mesure, livrés à distance par CodeSommet.',

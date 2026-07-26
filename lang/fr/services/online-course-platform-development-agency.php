@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateformes de Cours en Ligne | Sites Web de Cours Sur Mesure | CodeSommet',
-    'meta_description' => 'Développement de plateformes de cours en ligne sur mesure pour coachs, créateurs et éducateurs. Plus de 30 sites de cours créés avec hébergement vidéo, intégration de paiement et engagement étudiant. Libérez-vous de Teachable. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Plateformes de Cours en Ligne | CodeSommet',
+    'meta_description' => 'Développement de plateformes de cours en ligne pour coachs, créateurs et éducateurs : hébergement vidéo, paiements intégrés et engagement étudiant. Une alternative sur mesure à Teachable. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement plateforme cours en ligne,développement site de cours,alternative teachable,alternative kajabi,plateforme de cours sur mesure,site créateur de cours,plateforme apprentissage en ligne,développement site d\'adhésion',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Industrie Spécialisée',
-    'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_1' => 'NOUS CRÉONS DES PLATEFORMES DE COURS EN LIGNE QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
     'text_3' => '50+ clients dans',
     'text_4' => 'Pourquoi Nous Choisir',

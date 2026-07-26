@@ -12,26 +12,26 @@
 
     // Map tool slugs to their configurations
     var TOOL_CONFIG = {
-        'website-analyzer': { title: 'Website Analyzer', action: 'Analyze Website', actionText: 'websites analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'heading-analyzer': { title: 'Heading Analyzer', action: 'Analyze Headings', actionText: 'pages analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'keyword-density-analyzer': { title: 'Keyword Density', action: 'Analyze Keywords', actionText: 'pages analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'broken-link-checker': { title: 'Broken Link Checker', action: 'Check Links', actionText: 'pages scanned', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'redirect-checker': { title: 'Redirect Checker', action: 'Check Redirects', actionText: 'URLs checked', inputLabel: 'URL to Check', inputPlaceholder: 'https://example.com/old-page' },
-        'backlink-checker': { title: 'Backlink Checker', action: 'Check Backlinks', actionText: 'domains analyzed', inputLabel: 'Domain', inputPlaceholder: 'example.com' },
-        'ssl-certificate-checker': { title: 'SSL Checker', action: 'Check SSL', actionText: 'certificates checked', inputLabel: 'Domain', inputPlaceholder: 'example.com' },
-        'mobile-friendly-test': { title: 'Mobile Friendly', action: 'Test Mobile', actionText: 'pages tested', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'core-web-vitals-checker': { title: 'Core Web Vitals', action: 'Check Vitals', actionText: 'pages analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'domain-authority-checker': { title: 'Domain Authority', action: 'Check Authority', actionText: 'domains checked', inputLabel: 'Domain', inputPlaceholder: 'example.com' },
-        'domain-health-checker': { title: 'Domain Health', action: 'Check Health', actionText: 'domains checked', inputLabel: 'Domain', inputPlaceholder: 'example.com' },
-        'canonical-checker': { title: 'Canonical Checker', action: 'Check Canonical', actionText: 'pages checked', inputLabel: 'Page URL', inputPlaceholder: 'https://example.com/page' },
-        'image-alt-analyzer': { title: 'Image Alt Analyzer', action: 'Analyze Images', actionText: 'pages scanned', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'image-compression-analyzer': { title: 'Image Compression', action: 'Analyze Images', actionText: 'pages analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'internal-link-analyzer': { title: 'Internal Links', action: 'Analyze Links', actionText: 'pages analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'page-speed-analyzer': { title: 'Page Speed', action: 'Analyze Speed', actionText: 'pages analyzed', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'robots-validator': { title: 'Robots Validator', action: 'Validate', actionText: 'files validated', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'sitemap-validator': { title: 'Sitemap Validator', action: 'Validate', actionText: 'sitemaps validated', inputLabel: 'Sitemap URL', inputPlaceholder: 'https://example.com/sitemap.xml' },
-        'website-readiness-checker': { title: 'Website Readiness', action: 'Check Readiness', actionText: 'websites checked', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' },
-        'og-preview-generator': { title: 'OG Preview', action: 'Preview', actionText: 'previews generated', inputLabel: 'Website URL', inputPlaceholder: 'https://example.com' }
+        'website-analyzer': { title: 'Website Analyzer', action: 'Analyze Website', actionText: 'sites analysés', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'heading-analyzer': { title: 'Heading Analyzer', action: 'Analyze Headings', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'keyword-density-analyzer': { title: 'Keyword Density', action: 'Analyze Keywords', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'broken-link-checker': { title: 'Broken Link Checker', action: 'Check Links', actionText: 'pages scannées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'redirect-checker': { title: 'Redirect Checker', action: 'Check Redirects', actionText: 'URL vérifiées', inputLabel: 'URL à vérifier', inputPlaceholder: 'https://example.com/old-page' },
+        'backlink-checker': { title: 'Backlink Checker', action: 'Check Backlinks', actionText: 'domaines analysés', inputLabel: 'Domaine', inputPlaceholder: 'example.com' },
+        'ssl-certificate-checker': { title: 'SSL Checker', action: 'Check SSL', actionText: 'certificats vérifiés', inputLabel: 'Domaine', inputPlaceholder: 'example.com' },
+        'mobile-friendly-test': { title: 'Mobile Friendly', action: 'Test Mobile', actionText: 'pages testées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'core-web-vitals-checker': { title: 'Core Web Vitals', action: 'Check Vitals', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'domain-authority-checker': { title: 'Domain Authority', action: 'Check Authority', actionText: 'domaines vérifiés', inputLabel: 'Domaine', inputPlaceholder: 'example.com' },
+        'domain-health-checker': { title: 'Domain Health', action: 'Check Health', actionText: 'domaines vérifiés', inputLabel: 'Domaine', inputPlaceholder: 'example.com' },
+        'canonical-checker': { title: 'Canonical Checker', action: 'Check Canonical', actionText: 'pages vérifiées', inputLabel: 'URL de la page', inputPlaceholder: 'https://example.com/page' },
+        'image-alt-analyzer': { title: 'Image Alt Analyzer', action: 'Analyze Images', actionText: 'pages scannées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'image-compression-analyzer': { title: 'Image Compression', action: 'Analyze Images', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'internal-link-analyzer': { title: 'Internal Links', action: 'Analyze Links', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'page-speed-analyzer': { title: 'Page Speed', action: 'Analyze Speed', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'robots-validator': { title: 'Robots Validator', action: 'Validate', actionText: 'fichiers validés', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'sitemap-validator': { title: 'Sitemap Validator', action: 'Validate', actionText: 'sitemaps validés', inputLabel: 'URL du sitemap', inputPlaceholder: 'https://example.com/sitemap.xml' },
+        'website-readiness-checker': { title: 'Website Readiness', action: 'Check Readiness', actionText: 'sites vérifiés', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
+        'og-preview-generator': { title: 'OG Preview', action: 'Preview', actionText: 'aperçus générés', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' }
     };
 
     CodeSommetTools.onReady(function () {
@@ -51,7 +51,7 @@
         actionBtn.addEventListener('click', function () {
             CodeSommetTools.hideError();
             var url = urlInput ? urlInput.value.trim() : '';
-            if (!url) { CodeSommetTools.showError('Please enter a ' + config.inputLabel.toLowerCase()); return; }
+            if (!url) { CodeSommetTools.showError('Veuillez saisir : ' + config.inputLabel); return; }
 
             if (!url.startsWith('http://') && !url.startsWith('https://') && !slug.includes('domain') && !slug.includes('backlink') && !slug.includes('ssl')) {
                 url = 'https://' + url;
@@ -67,7 +67,7 @@
             .then(function (res) {
                 return res.text().then(function (text) {
                     var json = parseJsonSafe(text);
-                    if (!res.ok) throw new Error(json.error || json.message || 'Analysis failed');
+                    if (!res.ok) throw new Error(json.error || json.message || 'L\'analyse a échoué');
                     return json;
                 });
             })
@@ -78,7 +78,7 @@
             })
             .catch(function (err) {
                 CodeSommetTools.setLoading(false);
-                CodeSommetTools.showError(err.message || 'Failed to analyze. Please check the URL and try again.');
+                CodeSommetTools.showError(err.message || 'Analyse impossible. Vérifiez l\'URL et réessayez.');
             });
         });
 

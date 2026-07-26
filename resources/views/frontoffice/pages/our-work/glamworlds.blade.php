@@ -6,6 +6,8 @@
 @section('og_title', __('our-work/glamworlds.og_title'))
 @section('og_description', __('our-work/glamworlds.og_description'))
 @section('twitter_description', __('our-work/glamworlds.twitter_description'))
+{{-- Noindex temporaire : le contenu de cette étude de cas décrit un autre projet (voir SEO_CANNIBALIZATION_REPORT.md §4). Retirer après correction du contenu. --}}
+@section('robots', 'noindex, follow')
 
 @section('content')
     <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">

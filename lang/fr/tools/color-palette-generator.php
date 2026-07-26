@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Générateur de Palette de Couleurs - Outil de Schéma de Couleurs Gratuit | CodeSommet',
-    'meta_description' => 'Générez de belles palettes de couleurs à partir d\'images avec notre générateur alimenté par l\'IA. Extrayez des schémas de couleurs, obtenez des codes hex, valeurs RGB et scores d\'accessibilité. Parfait pour les designers et développeurs web.',
+    'meta_description' => 'Extrayez une palette de couleurs harmonieuse depuis n\'importe quelle image et récupérez les codes HEX prêts à l\'emploi. Outil gratuit.',
     'meta_keywords' => 'color palette generator,color scheme,color picker,image color extractor,color palette tool,design colors,hex color codes,RGB color values,color harmony,brand colors,accessible color palette,WCAG color contrast,color theory,complementary colors',
     'og_title' => 'Générateur de Palette de Couleurs - Outil Gratuit',
     'og_description' => 'Générez de belles palettes de couleurs à partir d\'images avec notre générateur alimenté par l\'IA. Extrayez des schémas de couleurs, codes hex, valeurs RGB et scores d\'accessibilité.',

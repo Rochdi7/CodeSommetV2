@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Bruxelles, Belgique | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises de Bruxelles : plateformes FinTech, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',
+    'meta_description' => 'Entreprises de Bruxelles : plateformes FinTech, sites institutionnels et e-commerce développés sur mesure et à distance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web à Bruxelles, Belgique | CodeSommet',
     'og_description' => 'Développement web pour les entreprises de Bruxelles : plateformes FinTech, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',
