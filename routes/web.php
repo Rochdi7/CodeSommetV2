@@ -13,6 +13,8 @@ use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsletterAdminController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\BlogController;
 
 /*
@@ -126,7 +128,21 @@ Route::group([], function () {
     Route::get('/blog/{slug}', [BlogController::class, 'show'])->where('slug', '[a-z0-9\-]+')->name('blog.show');
 
     // ─── Newsletter (Public) ────────────────────────────────────────────────
-    Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
+    Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
+        ->middleware('throttle:newsletter')
+        ->name('newsletter.subscribe');
+
+    // ─── Contact (Public) ────────────────────────────────────────────────────
+    Route::post('/contact', [ContactController::class, 'store'])
+        ->middleware('throttle:contact')
+        ->name('contact.store');
+
+    // ─── Quote Request (Public, JSON from same-origin frontend) ───────────────
+    // Registered on the web guard so it is CSRF-protected. Kept at /api/get-quote
+    // to match the existing frontend fetch URL.
+    Route::post('/api/get-quote', [QuoteRequestController::class, 'store'])
+        ->middleware('throttle:quote')
+        ->name('quote.store');
 });
 
 // ─── Admin Authentication (NOT localized) ───────────────────────────────────
