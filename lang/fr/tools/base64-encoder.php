@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Encodeur/Décodeur Base64 - Outil Base64 Gratuit | CodeSommet',
-    'meta_description' => 'Encodez et décodez des chaînes Base64 instantanément avec notre convertisseur Base64 gratuit. Convertissez du texte, des URL et des données binaires au format Base64 et inversement. Outil essentiel pour les développeurs web, l\'intégration API et la transmission de données.',
+    'meta_description' => 'Encodez et décodez du texte ou des fichiers en Base64 instantanément, directement dans votre navigateur. Outil gratuit et sans inscription.',
     'meta_keywords' => 'base64 encoder,base64 decoder,base64 converter,encode base64,decode base64,base64 tool,base64 online,text to base64,base64 to text,free base64 encoder,base64 generator,url safe base64,base64 encoding tool,binary to text converter',
     'og_title' => 'Encodeur/Décodeur Base64 - Outil Base64 Gratuit',
     'og_description' => 'Encodez et décodez des chaînes Base64 instantanément avec notre convertisseur Base64 gratuit. Convertissez du texte, des URL et des données binaires au format Base64 pour le développement web et l\'intégration API.',

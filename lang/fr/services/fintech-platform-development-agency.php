@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateforme FinTech | Solutions Bancaires & de Paiement | CodeSommet',
-    'meta_description' => 'Développement de plateformes FinTech spécialisé. Plus de 35 plateformes financières construites avec passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Plateformes FinTech & Paiement | CodeSommet',
+    'meta_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement plateforme fintech,développement passerelle de paiement,développement logiciel bancaire,développement plateforme de trading,système de vérification KYC,tableau de bord analytique financier,développement portefeuille numérique',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Industrie Spécialisée',
-    'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_1' => 'NOUS CRÉONS DES PLATEFORMES FINTECH QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
     'text_3' => 'Adopté par les',
     'text_4' => 'Plus de',

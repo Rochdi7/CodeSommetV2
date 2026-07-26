@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web de Conseil en Immigration | Suivi de Dossiers Visa & Gestion de Documents | CodeSommet',
+    'title' => 'Sites Web pour Cabinets de Conseil en Immigration | CodeSommet',
     'meta_description' => 'Sites web d\'immigration personnalisés avec suivi de dossiers, gestion de documents, calculateurs d\'éligibilité et portails clients. Lancez votre plateforme de conseil en visa en 7-10 jours.',
     'meta_keywords' => 'site web conseil en immigration,développement site web conseil en visa,suivi de dossiers immigration,portail de demande de visa,CRM immigration,gestion de documents visa',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Industrie Spécialisée',
-    'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_1' => 'NOUS CRÉONS DES SITES WEB D\'IMMIGRATION QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
     'text_3' => 'Adopté par les',
     'text_4' => 'Plus de',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Vérificateur de Liens Brisés - Détecteur de Liens Morts Gratuit | CodeSommet',
-    'meta_description' => 'Trouvez et corrigez les liens brisés, les URL mortes et les erreurs 404 sur votre site web. Outil gratuit de vérification de liens brisés pour améliorer le SEO, l\'expérience utilisateur et maintenir un site web sain. Scannez n\'importe quelle page instantanément.',
+    'meta_description' => 'Détectez les liens brisés et les erreurs 404 de votre site en un clic. Rapport clair pour corriger vos URL mortes et préserver votre SEO.',
     'meta_keywords' => 'broken link checker,dead link finder,404 checker,link validator,broken URL checker,link tester',
     'og_title' => 'Vérificateur de Liens Brisés - Détecteur de Liens Morts Gratuit',
     'og_description' => 'Trouvez et corrigez les liens brisés, les URL mortes et les erreurs 404 sur votre site web. Outil gratuit de vérification de liens brisés pour améliorer le SEO, l\'expérience utilisateur et maintenir un site web sain. Scannez n\'importe quelle page instantanément.',

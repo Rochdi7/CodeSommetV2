@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Préparation de Site Web - Outil Gratuit de Checklist de Lancement | CodeSommet',
-    'meta_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne. Checklist pré-lancement complète avec des recommandations concrètes.',
+    'title' => 'Vérificateur de Préparation de Site Web Gratuit | CodeSommet',
+    'meta_description' => 'Vérifiez que votre site est prêt pour le lancement : SEO, sécurité, performance et accessibilité passés en revue par une checklist automatisée.',
     'meta_keywords' => 'website readiness checker,launch checklist,website audit,pre-launch check,website launch,readiness tool,seo audit,website health check,pre-launch audit,website launch checklist',
     'og_title' => 'Vérificateur de Préparation de Site Web - Outil Gratuit de Checklist',
     'og_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne.',

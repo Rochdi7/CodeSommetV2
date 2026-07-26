@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Minificateur HTML/CSS/JS - Compresseur de Code Gratuit | CodeSommet',
-    'meta_description' => 'Outil gratuit de minification HTML, CSS et JavaScript en ligne. Compressez et optimisez votre code pour des temps de chargement plus rapides, un meilleur classement SEO et de meilleures performances. Réduisez la taille des fichiers de 30 à 50% instantanément.',
+    'meta_description' => 'Minifiez votre code HTML, CSS et JavaScript en ligne pour alléger vos pages et accélérer leur chargement. Outil gratuit, sans inscription.',
     'meta_keywords' => 'HTML minifier,CSS minifier,JS minifier,code compressor,minify code,code optimizer,HTML compressor,CSS compressor,JavaScript minifier,code minification,web performance,optimize code,reduce file size,compress HTML,compress CSS,compress JavaScript',
     'og_title' => 'Minificateur HTML/CSS/JS - Compresseur de Code Gratuit',
     'og_description' => 'Outil gratuit de minification HTML, CSS et JavaScript en ligne. Compressez et optimisez votre code pour des temps de chargement plus rapides, un meilleur classement SEO et de meilleures performances. Réduisez la taille des fichiers de 30 à 50% instantanément.',

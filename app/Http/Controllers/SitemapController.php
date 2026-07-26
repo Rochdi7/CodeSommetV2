@@ -71,8 +71,13 @@ class SitemapController extends Controller
             $paths[] = '/tools/'.basename($file, '.blade.php');
         }
 
+        $noindexedCaseStudies = config('pages.noindexed_case_studies', []);
         foreach (File::glob(resource_path('views/frontoffice/pages/our-work/*.blade.php')) as $file) {
-            $paths[] = '/our-work/'.basename($file, '.blade.php');
+            $slug = basename($file, '.blade.php');
+            if (in_array($slug, $noindexedCaseStudies, true)) {
+                continue;
+            }
+            $paths[] = '/our-work/'.$slug;
         }
 
         return $paths;

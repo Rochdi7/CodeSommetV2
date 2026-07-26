@@ -201,7 +201,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Tangier</h3>
+                                                Tanger</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_424') }}</span><span>Maroc</span></p>
                                         </div>
@@ -309,7 +309,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Riyadh</h3>
+                                                Riyad</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_427') }}</span><span>Arabie Saoudite</span></p>
                                         </div>
@@ -493,7 +493,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Barcelona</h3>
+                                                Barcelone</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_432') }}</span><span>Spain</span></p>
                                         </div>
@@ -526,7 +526,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Lisbon</h3>
+                                                Lisbonne</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_433') }}</span><span>Portugal</span></p>
                                         </div>
@@ -699,7 +699,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Brussels</h3>
+                                                Bruxelles</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_438') }}</span><span>Belgique</span></p>
                                         </div>
@@ -732,7 +732,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Copenhagen</h3>
+                                                Copenhague</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_439') }}</span><span>Danemark</span></p>
                                         </div>
@@ -798,7 +798,7 @@
                                         <div>
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                London</h3>
+                                                Londres</h3>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_441') }}</span><span>Royaume-Uni</span></p>
                                         </div>

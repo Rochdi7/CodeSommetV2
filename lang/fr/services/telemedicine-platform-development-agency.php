@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateforme de Télémédecine : Applications de Téléconsultation | CodeSommet',
+    'title' => 'Développement de Plateformes de Télémédecine | CodeSommet',
     'meta_description' => 'Développement d\'applications de télémédecine complètes : consultations vidéo, dossiers patients, ordonnances et paiements, dans le respect des exigences de confidentialité santé.',
     'meta_keywords' => 'développement plateforme télémédecine,agence plateforme télésanté,développement plateforme soins virtuels,plateforme consultation médicale en ligne,développement logiciel télésanté,plateforme consultation vidéo,surveillance patient à distance,développement plateforme santé,plateforme conforme HIPAA',
     'og_title' => 'Développement de Plateforme de Télémédecine : Applications de Téléconsultation | CodeSommet',
-    'og_description' => 'Agence de développement de plateformes de télémédecine premium spécialisée dans les solutions de soins virtuels alimentées par l\'IA, les tableaux de bord intelligents et les plateformes de télésanté conformes HIPAA. Plus de 20 plateformes livrées.',
-    'twitter_description' => 'Agence de développement de plateformes de télémédecine premium spécialisée dans les solutions de soins virtuels alimentées par l\'IA, conformes HIPAA. Plus de 20 plateformes livrées.',
+    'og_description' => 'Développement de plateformes de télémédecine : solutions de soins virtuels alimentées par l\'IA, tableaux de bord intelligents et télésanté conforme HIPAA.',
+    'twitter_description' => 'Développement de plateformes de télémédecine : soins virtuels alimentés par l\'IA, conformes HIPAA.',
     'text_0' => 'Télémédecine & Virtual Care',
     'text_1' => 'Industrie Spécialisée',
-    'text_2' => 'NOUS CONSTRUISONS DES PLATEFORMES QUI',
+    'text_2' => 'NOUS CONSTRUISONS DES',
     'text_3' => 'Basé dans le secteur',
     'text_4' => '50+ clients dans',
     'text_5' => 'Télémédecine & Virtual Care',

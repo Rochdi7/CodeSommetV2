@@ -19,6 +19,9 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/components.css') }}" />
+
+    {{-- Données structurées globales (Organization, WebSite) --}}
+    @include('frontoffice.partials.structured-data')
 </head>
 
 <body class="antialiased">

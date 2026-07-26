@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Hssabek - Plateforme SaaS de Facturation et Gestion Commerciale | CodeSommet',
+    'title' => 'Étude de Cas Hssabek - SaaS de Facturation | CodeSommet',
     'meta_description' => 'Plateforme SaaS de facturation complète : devis, factures, clients, produits et stock centralisés, avec tableaux de bord analytiques en temps réel, gestion multi-utilisateurs et suivi des encaissements.',
     'meta_keywords' => 'plateforme de facturation,logiciel de devis,gestion commerciale,SaaS facturation Maroc,gestion de stock,suivi des encaissements,tableau de bord analytique',
     'og_title' => 'Étude de Cas Hssabek - Plateforme SaaS de Facturation et Gestion Commerciale',

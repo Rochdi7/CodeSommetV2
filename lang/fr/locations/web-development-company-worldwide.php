@@ -6,7 +6,7 @@ return [
     'meta_keywords' => 'développement web mondial, agence de développement web ? distance, services de développement web globaux, développement web IA, développement Next.js, développement SaaS, développement de tableaux de bord, agence web Maroc',
     'og_title' => 'CodeSommet — Nous Vous Accompagnons Où Que Vous Soyez',
     'og_description' => 'Agence premium de développement web basée au Maroc, livrant des sites web alimentés par l\'IA, des tableaux de bord intelligents et des plateformes SaaS ? des clients sur tous les continents.',
-    'twitter_description' => 'Agence premium de développement web au service de clients dans le monde entier. Sites web alimentés par l\'IA, tableaux de bord et plateformes SaaS. Plus de 50 projets livrés ? l\'échelle internationale.',
+    'twitter_description' => 'Agence de développement web au service de clients dans le monde entier : sites alimentés par l\'IA, tableaux de bord et plateformes SaaS, livrés à distance.',
     'text_0' => 'Nous acceptons des projets dans le monde entier',
     'text_1' => 'Basé au Maroc',
     'text_2' => 'Projets Livrés',

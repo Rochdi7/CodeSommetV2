@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Nos Projets - CodeSommet Portfolio | Education, Healthcare & SaaS Projets | CodeSommet',
-    'meta_description' => 'Découvrez notre portfolio de sites web propulsés par l\'IA et de tableaux de bord pour les secteurs de l\'éducation, de la santé et du SaaS. Plus de 5 projets réussis avec des augmentations de leads de 180% à 500%.',
+    'title' => 'Nos Projets & Études de Cas : Éducation, Santé, SaaS | CodeSommet',
+    'meta_description' => 'Découvrez notre portfolio : sites web propulsés par l\'IA, tableaux de bord et plateformes pour l\'éducation, la santé et le SaaS, avec études de cas détaillées.',
     'meta_keywords' => 'portfolio, études de cas, projets de développement web, plateformes éducatives, sites web santé, développement SaaS',
     'og_title' => 'Nos Projets - CodeSommet Portfolio',
-    'og_description' => 'Découvrez notre portfolio de sites web propulsés par l\'IA et de tableaux de bord pour les secteurs de l\'éducation, de la santé et du SaaS.',
-    'twitter_description' => 'Découvrez notre portfolio de sites web propulsés par l\'IA et de tableaux de bord pour les secteurs de l\'éducation, de la santé et du SaaS.',
+    'og_description' => 'Découvrez notre portfolio : sites web propulsés par l\'IA, tableaux de bord et plateformes pour l\'éducation, la santé et le SaaS, avec études de cas détaillées.',
+    'twitter_description' => 'Portfolio CodeSommet : sites web propulsés par l\'IA, tableaux de bord et plateformes pour l\'éducation, la santé et le SaaS.',
     'text_0' => '50+ Projets Réussis',
     'text_1' => 'Nos Projets Qui',
     'text_2' => 'Génèrent de Vrais Résultats',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Étude de Cas Dental Pro - Boutique Médicale | CodeSommet',
-    'meta_description' => 'Plateforme de santé full-stack convertissant plus de 100K abonnés sur les réseaux sociaux en système de réservation professionnel. Comprend des rendez-vous en temps réel, des paiements UPI, la génération de contenu IA et l\'intégration Instagram.',
+    'meta_description' => 'Étude de cas Dental Pro : plateforme de santé full-stack transformant une large audience sociale en réservations, avec boutique et prise de rendez-vous.',
     'meta_keywords' => 'développement site web santé,plateforme réservation médicale,développement système rendez-vous,application React santé,Supabase temps réel,technologie de santé',
     'og_title' => 'Étude de Cas Dental Pro - Boutique Médicale',
     'og_description' => 'Plateforme de santé full-stack convertissant plus de 100K abonnés sur les réseaux sociaux en système de réservation professionnel. Comprend des rendez-vous en temps réel, des paiements UPI, la génération de contenu IA et l\'intégration Instagram.',

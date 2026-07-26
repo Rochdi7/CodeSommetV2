@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Études à l\'Étranger | Plateformes de Conseil en Visa | CodeSommet',
-    'meta_description' => 'Développement spécialisé de sites web d\'études à l\'étranger pour les cabinets de conseil en Éducation internationale. Plus de 40 plateformes créées avec portails étudiants, suivi de visa et chatbots multilingues. Contactez-nous pour les tarifs.',
+    'title' => 'Création de Sites Web Études à l\'Étranger | CodeSommet',
+    'meta_description' => 'Développement de sites web d\'études à l\'étranger pour les cabinets de conseil en éducation internationale : portails étudiants, suivi de visa et chatbots multilingues. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement site web études à l\'étranger,site web conseil en visa,plateforme éducation internationale,CRM études à l\'étranger,développement portail étudiant,système suivi de visa,site web conseil en éducation',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Études à l\'Étranger & Conseil en Visa',
     'text_1' => 'Industrie Spécialisée',
-    'text_2' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_2' => 'NOUS CRÉONS DES SITES WEB ÉTUDES À L\'ÉTRANGER QUI GÉNÈRENT DES',
     'text_3' => 'Basé dans le secteur',
     'text_4' => '50+ clients dans',
     'text_5' => 'Pourquoi Nous Choisir',

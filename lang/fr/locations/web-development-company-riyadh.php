@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Riyad, Arabie Saoudite | CodeSommet',
-    'meta_description' => 'Création de sites web et plateformes pour les entreprises de Riyad : développement sur mesure, e-commerce et SEO, livrés à distance par CodeSommet.',
+    'meta_description' => 'Votre partenaire digital pour Riyad : CodeSommet conçoit sites vitrines, boutiques en ligne et plateformes métier, avec un accompagnement SEO complet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web à Riyad, Arabie Saoudite | CodeSommet',
     'og_description' => 'Création de sites web et plateformes pour les entreprises de Riyad : développement sur mesure, e-commerce et SEO, livrés à distance par CodeSommet.',

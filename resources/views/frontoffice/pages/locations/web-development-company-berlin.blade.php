@@ -2138,7 +2138,7 @@
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        London</h3>
+                                        Londres</h3>
                                     <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Royaume-Uni
                                     </p>
                                 </div>
@@ -2304,7 +2304,7 @@
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Copenhagen</h3>
+                                        Copenhague</h3>
                                     <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Danemark</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

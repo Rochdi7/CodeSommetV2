@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Immobiliers | Experts en Portails et Plateformes d\'Annonces | CodeSommet',
+    'title' => 'Développement de Sites Web Immobiliers & Portails | CodeSommet',
     'meta_description' => 'Sites web immobiliers sur mesure avec recherche avancée de biens, visites virtuelles, tableaux de bord agents et gestion des leads. Lancez votre plateforme immobilière en 7 ? 10 jours.',
     'meta_keywords' => 'développement site web immobilier,développement portail immobilier,plateforme visite virtuelle,tableau de bord agent,intégration MLS,CRM immobilier,site annonces immobilières',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Industrie Spécialisée',
-    'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_1' => 'NOUS CRÉONS DES SITES WEB IMMOBILIERS QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
     'text_3' => '50+ clients dans',
     'text_4' => 'Pourquoi Nous Choisir',

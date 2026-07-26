@@ -184,4 +184,25 @@ class SeoMetadataTest extends TestCase
         $this->get('/web-development-company/doha')->assertNotFound();
         $this->get('/web-development-company/kuwait-city')->assertNotFound();
     }
+
+    public function test_mismatched_case_studies_are_noindexed_and_out_of_sitemap(): void
+    {
+        foreach (config('pages.noindexed_case_studies') as $slug) {
+            $this->get("/our-work/{$slug}")
+                ->assertOk()
+                ->assertSee('noindex, follow', false);
+        }
+
+        $xml = $this->get('/sitemap.xml')->getContent();
+        foreach (config('pages.noindexed_case_studies') as $slug) {
+            $this->assertStringNotContainsString("/our-work/{$slug}<", $xml, "Sitemap contient la page noindexée {$slug}");
+        }
+    }
+
+    public function test_get_quote_has_organization_schema(): void
+    {
+        $html = $this->get('/get-quote')->getContent();
+        $this->assertStringContainsString('"@type":"Organization"', $html);
+        $this->assertStringContainsString('"@type":"WebSite"', $html);
+    }
 }

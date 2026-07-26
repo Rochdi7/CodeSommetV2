@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Copenhague, Danemark | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises de Copenhague : plateformes SaaS, sites corporate et tableaux de bord sur mesure, livrés à distance par CodeSommet.',
+    'meta_description' => 'À Copenhague, CodeSommet conçoit des plateformes SaaS et des sites d\'entreprise épurés, développés à distance avec un haut niveau de finition.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web à Copenhague, Danemark | CodeSommet',
     'og_description' => 'Développement web pour les entreprises de Copenhague : plateformes SaaS, sites corporate et tableaux de bord sur mesure, livrés à distance par CodeSommet.',

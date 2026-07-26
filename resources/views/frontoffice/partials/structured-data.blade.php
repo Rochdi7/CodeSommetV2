@@ -100,7 +100,8 @@
     } elseif ($sdRouteName === 'location' && ($sdCity = $sdRoute->parameter('city'))) {
         $sdLeaf = $sdShortTitle(__("locations/web-development-company-{$sdCity}.title"), $sdCity);
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Localisations', $sdSiteUrl.'/locations'], [$sdLeaf, $sdPageUrl]];
-    } elseif ($sdRouteName === 'case-study' && ($sdSlug = $sdRoute->parameter('slug'))) {
+    } elseif ($sdRouteName === 'case-study' && ($sdSlug = $sdRoute->parameter('slug'))
+        && ! in_array($sdSlug, config('pages.noindexed_case_studies', []), true)) {
         $sdLeaf = $sdShortTitle(__("our-work/{$sdSlug}.title"), $sdSlug);
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Nos Projets', $sdSiteUrl.'/our-work'], [$sdLeaf, $sdPageUrl]];
     } elseif ($sdRouteName === 'blog.show' && isset($post)) {

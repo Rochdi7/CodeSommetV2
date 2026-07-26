@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Éducatifs | Études à l\'Étranger & Plateformes E-Learning | CodeSommet',
-    'meta_description' => 'Développement de sites web éducatifs spécialisé. Plus de 40 plateformes éducatives construites, incluant des portails d\'études à l\'étranger, des systèmes LMS et des tableaux de bord étudiants. Fonctionnalités alimentées par l\'IA, optimisation de la génération de leads. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Sites Web Éducatifs & E-Learning | CodeSommet',
+    'meta_description' => 'Développement de sites web éducatifs : portails d\'études à l\'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement site web éducatif,site études à l\'étranger,développement plateforme e-learning,développement portail étudiant,CRM éducation,plateforme de cours en ligne,site école de langues,développement site université',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Éducation et EdTech',
     'text_1' => 'Industrie Spécialisée',
-    'text_2' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_2' => 'NOUS CRÉONS DES SITES WEB ÉDUCATIFS QUI GÉNÈRENT DES',
     'text_3' => 'Basé dans le secteur',
     'text_4' => 'Éducation et EdTech',
     'text_5' => 'Éducation et EdTech',

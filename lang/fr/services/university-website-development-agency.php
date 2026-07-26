@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Universitaires | Design Web pour l\'Enseignement Supérieur | CodeSommet',
-    'meta_description' => 'Développement de sites web universitaires sur mesure pour les admissions, portails étudiants et gestion de campus. Plus de 15 sites web d\'enseignement supérieur créés avec systèmes d\'inscription, catalogues de cours et portails enseignants. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Sites Web Universitaires | CodeSommet',
+    'meta_description' => 'Développement de sites web universitaires sur mesure : admissions, portails étudiants, catalogues de cours, portails enseignants et gestion de campus. Contactez-nous pour les tarifs.',
     'meta_keywords' => 'développement site web universitaire,design web enseignement supérieur,développement site web collège,développement portail étudiant,site web admissions,système gestion campus,système inscription universitaire,développement site web académique',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
+    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
     'text_0' => 'Universités & Enseignement Supérieur',
     'text_1' => 'Industrie Spécialisée',
-    'text_2' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT DES',
+    'text_2' => 'NOUS CRÉONS DES SITES WEB UNIVERSITAIRES QUI GÉNÈRENT DES',
     'text_3' => 'Basé dans le secteur',
     'text_4' => '50+ clients dans',
     'text_5' => 'Pourquoi Nous Choisir',

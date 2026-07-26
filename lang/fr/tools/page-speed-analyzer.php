@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Analyseur de Vitesse de Page - Test de Vitesse de Site Gratuit | CodeSommet',
-    'meta_description' => 'Analysez la vitesse de chargement de votre site web, les Core Web Vitals et les métriques de performance. Obtenez des informations détaillées sur LCP, FID, CLS et des recommandations concrètes pour améliorer la vitesse et le classement SEO.',
+    'meta_description' => 'Testez la vitesse de chargement d\'une page et identifiez les optimisations prioritaires : poids, requêtes et bonnes pratiques de performance.',
     'meta_keywords' => 'analyseur vitesse page,test vitesse site web,Core Web Vitals,insights vitesse page,analyseur performance,vérificateur vitesse,LCP,FID,CLS,performance SEO',
     'og_title' => 'Analyseur de Vitesse de Page - Test de Vitesse Gratuit',
     'og_description' => 'Analysez la vitesse de chargement et les Core Web Vitals avec des informations détaillées sur les performances',

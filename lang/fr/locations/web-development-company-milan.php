@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Milan, Italie | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises de Milan : sites vitrines, e-commerce et plateformes métier sur mesure, livrés à distance par CodeSommet.',
+    'meta_description' => 'Les entreprises de Milan font appel à CodeSommet pour créer sites vitrines, e-commerce et plateformes métier au design soigné, à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Développement Web à Milan, Italie | CodeSommet',
     'og_description' => 'Développement web pour les entreprises de Milan : sites vitrines, e-commerce et plateformes métier sur mesure, livrés à distance par CodeSommet.',

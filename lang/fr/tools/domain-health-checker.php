@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Vérificateur de Santé de Domaine - Testeur DNS & SSL Gratuit | CodeSommet',
-    'meta_description' => 'Vérificateur de santé de domaine gratuit pour analyser la configuration DNS, le certificat SSL, la réponse serveur et la santé du site. Vérifiez le score SEO technique, la sécurité HTTPS, la compatibilité mobile et les Core Web Vitals en quelques secondes.',
+    'meta_description' => 'Contrôlez la santé d\'un domaine : DNS, certificat SSL, temps de réponse serveur et configuration e-mail, dans un rapport unique et gratuit.',
     'meta_keywords' => 'domain health checker,DNS checker,SSL checker,domain analyzer,website health,server status,domain tester,SSL certificate checker,DNS lookup tool,website uptime checker,domain security checker,HTTPS checker,domain monitoring tool,website health analyzer,technical SEO checker',
     'og_title' => 'Vérificateur de Santé de Domaine - Testeur DNS & SSL Gratuit',
     'og_description' => 'Vérificateur de santé de domaine gratuit pour analyser la configuration DNS, le certificat SSL et la santé du site. Vérifiez le score SEO technique et la sécurité en secondes.',
