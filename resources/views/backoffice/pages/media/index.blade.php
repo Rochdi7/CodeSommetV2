@@ -170,29 +170,40 @@
         const grid = document.getElementById('mediaGrid');
         if (!grid) { location.reload(); return; }
         const sizeKb = m.size ? Math.round(m.size / 1024) + ' Ko' : '';
+        // Encode ALL five HTML-significant characters, safe for both text and
+        // double-quoted attribute contexts.
+        const esc = (v) => String(v == null ? '' : v)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        const url = esc(m.url);
+        const name = esc(m.original_name);
+        const altText = esc(m.alt || m.original_name);
+        // For the onclick JS-string context, use a JSON-encoded literal.
+        const urlJs = JSON.stringify(String(m.url ?? ''));
+        const idNum = Number(m.id) || 0;
         const card = document.createElement('div');
         card.className = 'admin-card group relative overflow-hidden';
         card.style.borderRadius = '10px';
-        card.dataset.id = m.id;
+        card.dataset.id = idNum;
         card.innerHTML = `
             <div class="relative aspect-square overflow-hidden bg-gray-50">
-                <img src="${m.url}" alt="${m.alt || m.original_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                <div class="absolute top-2 left-2 bg-black/50 text-white text-[9px] font-mono px-1.5 py-0.5 rounded select-all">${m.short_uuid}</div>
+                <img src="${url}" alt="${altText}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                <div class="absolute top-2 left-2 bg-black/50 text-white text-[9px] font-mono px-1.5 py-0.5 rounded select-all">${esc(m.short_uuid)}</div>
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
-                    <a href="${m.url}" target="_blank" class="p-2 bg-white rounded-lg shadow text-gray-700 hover:text-[#00AEEF] transition-colors" title="Voir en taille réelle" onclick="event.stopPropagation()">
+                    <a href="${url}" target="_blank" class="p-2 bg-white rounded-lg shadow text-gray-700 hover:text-[#00AEEF] transition-colors" title="Voir en taille réelle" onclick="event.stopPropagation()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
                     </a>
-                    <button type="button" onclick="copyUrl('${m.url}', this)" class="p-2 bg-white rounded-lg shadow text-gray-700 hover:text-[#00AEEF] transition-colors" title="Copier l'URL">
+                    <button type="button" onclick="copyUrl(${esc(urlJs)}, this)" class="p-2 bg-white rounded-lg shadow text-gray-700 hover:text-[#00AEEF] transition-colors" title="Copier l'URL">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
                     </button>
-                    <button type="button" onclick="deleteMedia(${m.id}, this)" class="p-2 bg-white rounded-lg shadow text-red-400 hover:text-red-600 hover:bg-red-50 transition-colors" title="Supprimer">
+                    <button type="button" onclick="deleteMedia(${idNum}, this)" class="p-2 bg-white rounded-lg shadow text-red-400 hover:text-red-600 hover:bg-red-50 transition-colors" title="Supprimer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="m19 6-.867 12.142A2 2 0 0 1 16.138 20H7.862a2 2 0 0 1-1.995-1.858L5 6"/><path d="M10 11v6m4-6v6"/><path d="M9 6V4h6v2"/></svg>
                     </button>
                 </div>
             </div>
             <div class="px-3 py-2">
-                <p class="text-xs font-medium text-[var(--text-primary)] truncate" title="${m.original_name}">${m.original_name}</p>
-                <p class="text-[10px] text-[var(--text-tertiary)] mt-0.5">${sizeKb}</p>
+                <p class="text-xs font-medium text-[var(--text-primary)] truncate" title="${name}">${name}</p>
+                <p class="text-[10px] text-[var(--text-tertiary)] mt-0.5">${esc(sizeKb)}</p>
             </div>`;
         grid.prepend(card);
     }
