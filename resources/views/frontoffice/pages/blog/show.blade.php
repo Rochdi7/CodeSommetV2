@@ -10,30 +10,27 @@
 @endif
 
 @section('structured_data')
+@php
+    $blogSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BlogPosting',
+        'headline' => $post->title,
+        'description' => $post->excerpt,
+        'author' => ['@type' => 'Person', 'name' => $post->author],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'CodeSommet',
+            'logo' => ['@type' => 'ImageObject', 'url' => asset('logo.svg')],
+        ],
+        'datePublished' => $post->published_at?->toIso8601String(),
+        'dateModified' => $post->updated_at->toIso8601String(),
+    ];
+    if ($post->featured_image) {
+        $blogSchema['image'] = asset('storage/' . $post->featured_image);
+    }
+@endphp
 <script type="application/ld+json">
-{
-    "@@context": "https://schema.org",
-    "@@type": "BlogPosting",
-    "headline": "{{ $post->title }}",
-    "description": "{{ $post->excerpt }}",
-    "author": {
-        "@@type": "Person",
-        "name": "{{ $post->author }}"
-    },
-    "publisher": {
-        "@@type": "Organization",
-        "name": "CodeSommet",
-        "logo": {
-            "@@type": "ImageObject",
-            "url": "{{ asset('logo.svg') }}"
-        }
-    },
-    "datePublished": "{{ $post->published_at?->toIso8601String() }}",
-    "dateModified": "{{ $post->updated_at->toIso8601String() }}"
-    @if($post->featured_image)
-    ,"image": "{{ asset('storage/' . $post->featured_image) }}"
-    @endif
-}
+{!! json_encode($blogSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
 @endsection
 

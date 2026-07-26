@@ -7,7 +7,6 @@ use App\Models\BlogPost;
 use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 
 class BlogPostController extends Controller
 {
@@ -88,7 +87,9 @@ class BlogPostController extends Controller
 
         return $request->validate([
             'title'                      => 'required|string|max:255',
-            'slug'                       => 'nullable|string|max:255|' . $uniqueSlug,
+            // Custom slugs must match the public route regex so the post is
+            // always reachable; uniqueness is enforced here and in prepare().
+            'slug'                       => 'nullable|string|max:255|regex:/^[a-z0-9-]+$/|' . $uniqueSlug,
             'excerpt'                    => 'nullable|string|max:500',
             'content'                    => 'required|string',
             'featured_image'             => 'nullable|image|max:5120',
@@ -114,9 +115,20 @@ class BlogPostController extends Controller
     {
         unset($validated['tag_ids']);
 
-        // Optional fields are absent from $validated when left blank.
-        $validated['slug']   = empty($validated['slug']) ? Str::slug($validated['title']) : $validated['slug'];
+        // Optional fields are absent from $validated when left blank. Always
+        // resolve to a collision-free slug (auto from title, or de-duplicated
+        // custom slug) so a duplicate title never triggers a DB unique error.
+        $ignoreId = $post?->id;
+        $validated['slug'] = empty($validated['slug'])
+            ? BlogPost::uniqueSlug($validated['title'], $ignoreId)
+            : BlogPost::uniqueSlug($validated['slug'], $ignoreId);
         $validated['author'] = empty($validated['author']) ? 'CodeSommet' : $validated['author'];
+
+        // Sanitize rich-text content: keep formatting, strip scripts / event
+        // handlers / javascript: URLs / iframes.
+        if (isset($validated['content'])) {
+            $validated['content'] = $this->sanitizeHtml($validated['content']);
+        }
 
         if ($request->hasFile('featured_image')) {
             $validated['featured_image'] = $request->file('featured_image')->store('blog', 'public');
@@ -128,10 +140,40 @@ class BlogPostController extends Controller
         }
         unset($validated['featured_image_path']);
 
-        if ($validated['status'] === 'published' && ! $post?->published_at) {
-            $validated['published_at'] = now();
+        if ($validated['status'] === 'published') {
+            // Set publish time only on first publish; keep it stable afterwards.
+            if (! $post?->published_at) {
+                $validated['published_at'] = now();
+            }
+        } else {
+            // Reverting to draft clears the publish timestamp so a later
+            // re-publish gets a fresh, correctly-ordered date.
+            $validated['published_at'] = null;
         }
 
         return $validated;
+    }
+
+    /**
+     * Conservatively sanitize rich-text HTML: preserve formatting but remove
+     * active-content vectors. This is intentionally allowlist-adjacent and
+     * defensive; a dedicated library can replace it later.
+     */
+    private function sanitizeHtml(string $html): string
+    {
+        // Remove entire dangerous elements (with content).
+        $html = preg_replace('#<(script|style|iframe|object|embed|form|noscript)\b[^>]*>.*?</\1>#is', '', $html) ?? $html;
+        // Remove self-closing / unclosed dangerous tags.
+        $html = preg_replace('#<(script|style|iframe|object|embed|form|noscript|link|meta)\b[^>]*/?>#is', '', $html) ?? $html;
+        // Strip inline event handlers: on*="..." / on*='...' / on*=value.
+        $html = preg_replace('#\son[a-z]+\s*=\s*"(?:[^"]*)"#is', '', $html) ?? $html;
+        $html = preg_replace("#\son[a-z]+\s*=\s*'(?:[^']*)'#is", '', $html) ?? $html;
+        $html = preg_replace('#\son[a-z]+\s*=\s*[^\s>]+#is', '', $html) ?? $html;
+        // Neutralize javascript:/vbscript:/data: URLs in href/src/style.
+        $html = preg_replace('#(href|src|xlink:href)\s*=\s*(["\'])\s*(?:javascript|vbscript|data)\s*:[^"\']*\2#is', '$1=$2#$2', $html) ?? $html;
+        // Remove CSS expression()/behavior and url(javascript:) in style attrs.
+        $html = preg_replace('#\sstyle\s*=\s*(["\'])[^"\']*(?:expression|javascript:|behavior)[^"\']*\1#is', '', $html) ?? $html;
+
+        return $html;
     }
 }

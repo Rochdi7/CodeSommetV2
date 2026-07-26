@@ -6,10 +6,29 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Str;
 
 class BlogPost extends Model
 {
     use HasFactory;
+
+    /**
+     * Build a slug that does not collide with an existing post. Mirrors the
+     * Category/Tag helpers. The base is constrained to the public route regex
+     * ([a-z0-9-]+) via Str::slug so a saved post is always reachable.
+     */
+    public static function uniqueSlug(string $source, ?int $ignoreId = null): string
+    {
+        $base = Str::slug($source) ?: 'article';
+        $slug = $base;
+        $i = 2;
+
+        while (static::where('slug', $slug)->when($ignoreId, fn ($q) => $q->where('id', '!=', $ignoreId))->exists()) {
+            $slug = $base . '-' . $i++;
+        }
+
+        return $slug;
+    }
 
     protected $fillable = [
         'title',
