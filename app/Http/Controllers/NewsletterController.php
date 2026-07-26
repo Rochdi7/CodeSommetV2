@@ -11,18 +11,13 @@ class NewsletterController extends Controller
 {
     public function subscribe(Request $request): JsonResponse
     {
-        // Check for duplicate before validation to return friendly message
-        if (NewsletterSubscriber::where('email', $request->input('email'))->exists()) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Vous êtes déjà inscrit(e) à notre newsletter.',
-            ]);
-        }
-
+        // Validate FIRST. No `unique` rule here — existence is handled below with
+        // an identical response, so the endpoint is not an enumeration oracle.
         try {
             $validated = $request->validate([
-                'email' => 'required|email|unique:newsletter_subscribers,email',
-                'name'  => 'nullable|string|max:255',
+                'email'   => 'required|email:rfc|max:255',
+                'name'    => 'nullable|string|max:255',
+                'website' => 'nullable|size:0', // honeypot
             ]);
         } catch (ValidationException $e) {
             return response()->json([
@@ -32,14 +27,22 @@ class NewsletterController extends Controller
             ], 422);
         }
 
-        NewsletterSubscriber::create([
-            'email'         => $validated['email'],
-            'name'          => $validated['name'] ?? null,
-            'source'        => $request->input('source', 'website'),
-            'ip_address'    => $request->ip(),
-            'is_confirmed'  => true,
-            'subscribed_at' => now(),
-        ]);
+        // Constrain the free-form source to a short safe token.
+        $source = substr((string) $request->input('source', 'website'), 0, 100);
+
+        // Create only if new; otherwise no-op. The response is identical either
+        // way so an attacker cannot tell whether the address already exists.
+        $existing = NewsletterSubscriber::where('email', $validated['email'])->first();
+        if (! $existing) {
+            NewsletterSubscriber::create([
+                'email'         => $validated['email'],
+                'name'          => $validated['name'] ?? null,
+                'source'        => $source,
+                'ip_address'    => $request->ip(),
+                'is_confirmed'  => true,
+                'subscribed_at' => now(),
+            ]);
+        }
 
         return response()->json([
             'success' => true,
