@@ -14,9 +14,22 @@ class FinanceController extends Controller
 {
     public function index(Request $request)
     {
-        // Date range filter
-        $startDate = $request->get('start_date', Carbon::now()->startOfYear()->toDateString());
-        $endDate = $request->get('end_date', Carbon::now()->toDateString());
+        // Validate the date range so a crafted range cannot drive an unbounded
+        // month loop (DoS). Fall back to safe defaults on validation failure.
+        $validated = $request->validate([
+            'start_date' => 'nullable|date',
+            'end_date'   => 'nullable|date|after_or_equal:start_date',
+        ]);
+
+        $startDate = $validated['start_date'] ?? Carbon::now()->startOfYear()->toDateString();
+        $endDate = $validated['end_date'] ?? Carbon::now()->toDateString();
+
+        // Hard cap the span at 60 months regardless of input.
+        $rangeStart = Carbon::parse($startDate);
+        $rangeEnd = Carbon::parse($endDate);
+        if ($rangeStart->diffInMonths($rangeEnd) > 60) {
+            $startDate = $rangeEnd->copy()->subMonths(60)->toDateString();
+        }
 
         // Revenue stats
         $totalRevenue = Payment::where('status', 'paid')
