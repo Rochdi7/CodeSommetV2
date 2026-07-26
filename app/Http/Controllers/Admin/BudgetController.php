@@ -5,11 +5,30 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\BudgetEntry;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class BudgetController extends Controller
 {
-    private const PIN = '1234';
     private const SETTINGS_PATH = 'budget_settings.json';
+
+    /**
+     * True if the budget is currently unlocked and the unlock has not expired.
+     */
+    private function isUnlocked(): bool
+    {
+        if (! session('budget_unlocked')) {
+            return false;
+        }
+        $ttl = (int) config('budget.unlock_ttl', 15);
+        $unlockedAt = (int) session('budget_unlocked_at', 0);
+        if ($ttl > 0 && $unlockedAt > 0 && (time() - $unlockedAt) > ($ttl * 60)) {
+            session()->forget(['budget_unlocked', 'budget_unlocked_at']);
+
+            return false;
+        }
+
+        return true;
+    }
 
     // ── Salary helpers ─────────────────────────────────────────────────────────
 
@@ -49,7 +68,7 @@ class BudgetController extends Controller
 
     public function showLock()
     {
-        if (session('budget_unlocked')) {
+        if ($this->isUnlocked()) {
             return redirect()->route('admin.budget.index');
         }
         return view('backoffice.pages.budget.lock');
@@ -57,16 +76,22 @@ class BudgetController extends Controller
 
     public function unlock(Request $request)
     {
-        if ($request->input('pin') === self::PIN) {
-            session(['budget_unlocked' => true]);
+        $request->validate(['pin' => ['required', 'string', 'max:100']]);
+
+        if (Hash::check($request->input('pin'), (string) config('budget.pin_hash'))) {
+            $request->session()->regenerate();
+            session(['budget_unlocked' => true, 'budget_unlocked_at' => time()]);
+
             return redirect()->route('admin.budget.index');
         }
+
         return back()->withErrors(['pin' => 'Code incorrect. Réessayez.']);
     }
 
     public function lock()
     {
-        session()->forget('budget_unlocked');
+        session()->forget(['budget_unlocked', 'budget_unlocked_at']);
+
         return redirect()->route('admin.budget.lock');
     }
 
@@ -74,7 +99,7 @@ class BudgetController extends Controller
 
     public function index(Request $request)
     {
-        if (! session('budget_unlocked')) {
+        if (! $this->isUnlocked()) {
             return redirect()->route('admin.budget.lock');
         }
 
@@ -166,7 +191,7 @@ class BudgetController extends Controller
 
     public function startTracking(Request $request)
     {
-        if (! session('budget_unlocked')) {
+        if (! $this->isUnlocked()) {
             return redirect()->route('admin.budget.lock');
         }
         // Default to current month, but allow choosing a past month
@@ -179,7 +204,7 @@ class BudgetController extends Controller
 
     public function saveSalary(Request $request)
     {
-        if (! session('budget_unlocked')) {
+        if (! $this->isUnlocked()) {
             return redirect()->route('admin.budget.lock');
         }
 
@@ -193,7 +218,7 @@ class BudgetController extends Controller
 
     public function store(Request $request)
     {
-        if (! session('budget_unlocked')) {
+        if (! $this->isUnlocked()) {
             return redirect()->route('admin.budget.lock');
         }
 
@@ -215,7 +240,7 @@ class BudgetController extends Controller
 
     public function destroy(Request $request, BudgetEntry $entry)
     {
-        if (! session('budget_unlocked')) {
+        if (! $this->isUnlocked()) {
             return redirect()->route('admin.budget.lock');
         }
 

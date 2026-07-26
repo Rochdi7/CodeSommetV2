@@ -148,7 +148,9 @@ Route::group([], function () {
 // ─── Admin Authentication (NOT localized) ───────────────────────────────────
 
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
-Route::post('/admin/login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
+Route::post('/admin/login', [AdminLoginController::class, 'login'])
+    ->middleware('throttle:admin-login')
+    ->name('admin.login.submit');
 Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 
 Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(function () {
@@ -189,7 +191,7 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
 
     // Personal Budget
     Route::get('/budget/lock',      [BudgetController::class, 'showLock'])->name('budget.lock');
-    Route::post('/budget/unlock',   [BudgetController::class, 'unlock'])->name('budget.unlock');
+    Route::post('/budget/unlock',   [BudgetController::class, 'unlock'])->middleware('throttle:budget-unlock')->name('budget.unlock');
     Route::post('/budget/lock',     [BudgetController::class, 'lock'])->name('budget.lock.out');
     Route::post('/budget/salary',   [BudgetController::class, 'saveSalary'])->name('budget.salary');
     Route::post('/budget/start',    [BudgetController::class, 'startTracking'])->name('budget.start');
