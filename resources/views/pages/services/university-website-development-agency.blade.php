@@ -880,15 +880,14 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">ÉTUDES À
-                                            L'ÉTRANGER</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">SaaS</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>+60% Candidatures</span></div>
+                                            </svg>Plus de 50 associations gérées</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
@@ -907,15 +906,14 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">CONSEIL EN
-                                            ÉDUCATION</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>+45% de Génération de Prospects</span></div>
+                                            </svg>Plus de 300 étudiants inscrits</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
@@ -934,15 +932,14 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">FORMATION
-                                            PROFESSIONNELLE</span></div>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Tourisme</span></div>
                                     <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span
                                             class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg
                                                 class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                                                 stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                                     d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>+240% Inscriptions</span></div>
+                                            </svg>Plus de 800 voyageurs accompagnés</span></div>
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>

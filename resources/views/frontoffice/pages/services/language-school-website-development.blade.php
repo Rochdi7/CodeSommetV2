@@ -925,7 +925,7 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">ÉCOLE DE LANGUES</span>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
                                     </div>
                                 </div>
                                 <div class="px-5 py-4">
@@ -944,7 +944,7 @@
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full border border-white/30">
-                                        <span class="text-xs font-bold text-white tracking-wide uppercase">PLATEFORME SAAS</span>
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">SaaS</span>
                                     </div>
                                 </div>
                                 <div class="px-5 py-4">
@@ -2227,7 +2227,7 @@
                                         {{ __('services/language-school-website-development-agency.qb_2163') }}
                                     </blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
-                                            src="{{ asset('images/testimonials/dental-pro.png') }}"
+                                            src="{{ asset('images/testimonials/dental-pro.webp') }}"
                                             alt="Samir"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">

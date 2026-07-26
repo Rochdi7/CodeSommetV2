@@ -690,7 +690,7 @@
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Germany</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
                         </a></div>
@@ -717,8 +717,7 @@
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Bangalore,
-                                        India</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Allemagne</p>
                                 </div>
                             </div>
                         </a></div>                    <div><a class="block" href="{{ route('case-study', 'dental-pro') }}">
@@ -744,8 +743,7 @@
                                 </div>
                                 <div class="px-5 py-4">
                                     <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
-                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Hubli, India
-                                    </p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Inde</p>
                                 </div>
                             </div>
                         </a></div>
@@ -789,7 +787,7 @@
                             alt="{{ __('locations/web-development-company-new-york.attr_1663') }}" decoding="async"
                             class="object-contain"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            sizes="100vw" src="{{ asset('images/success-story-fintech2093.jpeg') }}" /></div>
+                            sizes="100vw" src="{{ asset('images/success-story-fintech2093.webp') }}" /></div>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-8 mb-12">
                     <div
@@ -1818,7 +1816,7 @@
                                     <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
                                         {{ __('locations/web-development-company-new-york.qb_2265') }}</blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
-                                            src="{{ asset('images/testimonials/dental-pro.png') }}"
+                                            src="{{ asset('images/testimonials/dental-pro.webp') }}"
                                             alt="Samir"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">

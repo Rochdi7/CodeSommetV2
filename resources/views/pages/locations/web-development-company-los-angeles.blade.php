@@ -507,12 +507,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>2 000+ étudiants admis</span></div>
+                                        </svg>Plus de 300 étudiants inscrits</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Bangalore,
-                                    India</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Allemagne</p>
                             </div>
                         </div>
                     </a></div>                <div><a class="block" href="{{ route('case-study', 'dental-pro') }}">
@@ -523,12 +522,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>5 000+ inscriptions de patients</span></div>
+                                        </svg>Plus de 2 000 rendez-vous réservés</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Hubli, India
-                                </p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Inde</p>
                             </div>
                         </div>
                     </a></div>
@@ -536,15 +534,15 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Tourisme</span>
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>500+ placements réussis</span></div>
+                                        </svg>Plus de 800 voyageurs accompagnés</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Germany</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                             </div>
                         </div>
                     </a></div>
@@ -577,7 +575,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 </div>
             </div>
             <div class="relative w-full max-w-5xl mx-auto mb-12">
-                <div class="relative aspect-[16/9]"><img alt="How We Built a Creator Platform Serving 50,000+ Influencers" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/success-story-professional-servicesc58f.jpeg') }}" />
+                <div class="relative aspect-[16/9]"><img alt="How We Built a Creator Platform Serving 50,000+ Influencers" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/success-story-professional-servicesc58f.webp') }}" />
                 </div>
             </div>
             <div class="grid lg:grid-cols-2 gap-8 mb-12">

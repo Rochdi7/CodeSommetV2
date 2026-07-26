@@ -17,10 +17,10 @@
                         <div class="relative h-full">
                             <div class="flex h-full gap-2 md:gap-3 px-4 md:px-8">
                                 <div class="flex-1 relative overflow-hidden flex flex-col justify-end" style="border-radius: 5px 5px 0px 0px; line-height: 0;">
-                                    <img alt="Morocco Quest DMC maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/morocco-quest-top.png') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
+                                    <img alt="Morocco Quest DMC maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/morocco-quest-top.webp') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
                                 </div>
                                 <div class="flex-1 relative overflow-hidden" style="border-radius: 0px 0px 5px 5px; line-height: 0;">
-                                    <img alt="Morocco Quest DMC maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/morocco-quest-bottom.png') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
+                                    <img alt="Morocco Quest DMC maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/morocco-quest-bottom.webp') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
                                 </div>
                             </div>
                         </div>
@@ -48,10 +48,10 @@
                         <div class="relative h-full">
                             <div class="flex h-full gap-2 md:gap-3 px-4 md:px-8">
                                 <div class="flex-1 relative overflow-hidden flex flex-col justify-end" style="border-radius: 5px 5px 0px 0px; line-height: 0;">
-                                    <img alt="Dental Pro maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/dental-pro-top.png') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
+                                    <img alt="Dental Pro maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/dental-pro-top.webp') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
                                 </div>
                                 <div class="flex-1 relative overflow-hidden" style="border-radius: 0px 0px 5px 5px; line-height: 0;">
-                                    <img alt="Dental Pro maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/dental-pro-bottom.png') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
+                                    <img alt="Dental Pro maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/dental-pro-bottom.webp') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                             <p class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">"CodeSommet a développé l'ensemble de notre plateforme e-commerce. Le site est rapide, sécurisé et parfaitement optimisé. Grâce à leur structuration produit et à leurs optimisations de conversion, nos ventes ont fortement augmenté."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <img src="{{ asset('images/testimonials/dental-pro.png') }}" alt="Samir, Fondateur de Dental Pro" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
+                            <img src="{{ asset('images/testimonials/dental-pro.webp') }}" alt="Samir, Fondateur de Dental Pro" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">Samir</p>
                                 <p class="text-xs md:text-sm text-[var(--text-secondary)] leading-tight">Fondateur &bull; Dental Pro</p>
@@ -79,10 +79,10 @@
                         <div class="relative h-full">
                             <div class="flex h-full gap-2 md:gap-3 px-4 md:px-8">
                                 <div class="flex-1 relative overflow-hidden flex flex-col justify-end" style="border-radius: 5px 5px 0px 0px; line-height: 0;">
-                                    <img alt="GLS Sprachenzentrum maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/gls-top.png') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
+                                    <img alt="GLS Sprachenzentrum maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/gls-top.webp') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
                                 </div>
                                 <div class="flex-1 relative overflow-hidden" style="border-radius: 0px 0px 5px 5px; line-height: 0;">
-                                    <img alt="GLS Sprachenzentrum maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/gls-bottom.png') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
+                                    <img alt="GLS Sprachenzentrum maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/gls-bottom.webp') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
                                 </div>
                             </div>
                         </div>
@@ -110,10 +110,10 @@
                         <div class="relative h-full">
                             <div class="flex h-full gap-2 md:gap-3 px-4 md:px-8">
                                 <div class="flex-1 relative overflow-hidden flex flex-col justify-end" style="border-radius: 5px 5px 0px 0px; line-height: 0;">
-                                    <img alt="Local Morocco Tours maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/local-morocco-tours-top.png') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
+                                    <img alt="Local Morocco Tours maquette du haut" class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy" src="{{ asset('mockups/local-morocco-tours-top.webp') }}" style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
                                 </div>
                                 <div class="flex-1 relative overflow-hidden" style="border-radius: 0px 0px 5px 5px; line-height: 0;">
-                                    <img alt="Local Morocco Tours maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/local-morocco-tours-bottom.png') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
+                                    <img alt="Local Morocco Tours maquette du bas" class="w-full h-auto testimonial-img-bottom" loading="lazy" src="{{ asset('mockups/local-morocco-tours-bottom.webp') }}" style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
                                 </div>
                             </div>
                         </div>

@@ -463,7 +463,7 @@
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <img src="{{ asset('mockups/gls-top.png') }}" alt="Accueil"
+                    <img src="{{ asset('mockups/gls-top.webp') }}" alt="Accueil"
                         class="w-full h-full object-cover" />
                 </div>
             </div>
