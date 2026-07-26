@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Vérificateur de Liens Nofollow - Outil Gratuit d\'Attribut Nofollow | CodeSommet',
-    'meta_description' => 'Gratuit nofollow link checker tool to analyze rel=\'nofollow\', rel=\'sponsored\', and rel=\'ugc\' attributes on any webpage. Check which links pass authority, identify dofollow vs nofollow links, and optimize your link equity distribution for better SEO.',
+    'meta_description' => 'Vérificateur de liens nofollow gratuit : analysez les attributs rel=\'nofollow\', rel=\'sponsored\' et rel=\'ugc\' de n\'importe quelle page et repérez les liens qui transmettent l\'autorité.',
     'meta_keywords' => 'nofollow link checker,nofollow attribute,link equity,follow nofollow,rel nofollow,link checker',
     'og_title' => 'Vérificateur de Liens Nofollow - Outil Gratuit d\'Attribut Nofollow',
     'og_description' => 'Gratuit nofollow link checker tool to analyze rel=\'nofollow\', rel=\'sponsored\', and rel=\'ugc\' attributes on any webpage. Check which links pass authority, identify dofollow vs nofollow links, and optimize your link equity distribution for better SEO.',

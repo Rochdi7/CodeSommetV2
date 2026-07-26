@@ -86,9 +86,9 @@
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
                                             class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">CROISSANCE
-                                            COMMERCIALE DUBAI</span><span
+                                            COMMERCIALE À DUBAÏ</span><span
                                             class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">CROISSANCE
-                                            COMMERCIALE DUBAI</span></span></span></h1>
+                                            COMMERCIALE À DUBAÏ</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-dubai.ml_1072') }}</p>

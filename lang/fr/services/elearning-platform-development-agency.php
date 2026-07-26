@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Agence de Développement de Plateforme E-Learning | LMS & Logiciel d\'Apprentissage en Ligne | CodeSommet',
-    'meta_description' => 'Développement de plateformes e-learning personnalisées. Plus de 25 systèmes de gestion d\'apprentissage, marketplaces de cours et plateformes d\'engagement étudiant construits. Fonctionnalités alimentées par l\'IA, gamification, analytique. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Plateforme E-Learning : LMS sur Mesure pour Organisations | CodeSommet',
+    'meta_description' => 'Création de plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants et certification.',
     'meta_keywords' => 'développement plateforme elearning,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',
-    'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
+    'og_title' => 'Développement de Plateforme E-Learning : LMS sur Mesure | CodeSommet',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
     'text_0' => 'Industrie Spécialisée',

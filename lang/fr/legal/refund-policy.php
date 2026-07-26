@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet',
-    'meta_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
+    'title' => 'Politique de Remboursement et d\'Annulation | CodeSommet',
+    'meta_description' => 'Modalités de remboursement et d\'annulation des projets CodeSommet : conditions applicables aux acomptes, jalons de paiement et arrêt de prestation.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_title' => 'Politique de Remboursement et d\'Annulation | CodeSommet',
+    'og_description' => 'Modalités de remboursement et d\'annulation des projets CodeSommet : conditions applicables aux acomptes, jalons de paiement et arrêt de prestation.',
+    'twitter_description' => 'Modalités de remboursement et d\'annulation des projets CodeSommet : acomptes, jalons de paiement, arrêt de prestation.',
     'text_0' => 'Dernière mise à jour : Janvier 2026',
     'text_1' => 'Des conditions de remboursement claires et transparentes pour tous nos services. Votre satisfaction est notre priorité.',
     'text_2' => 'Notre engagement d\'équité',

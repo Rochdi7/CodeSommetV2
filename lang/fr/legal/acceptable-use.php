@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet',
-    'meta_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
+    'title' => 'Politique d\'Utilisation Acceptable | CodeSommet',
+    'meta_description' => 'Règles d\'utilisation acceptable des services et outils CodeSommet : usages autorisés, usages interdits et mesures en cas d\'abus.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_title' => 'Politique d\'Utilisation Acceptable | CodeSommet',
+    'og_description' => 'Règles d\'utilisation acceptable des services et outils CodeSommet : usages autorisés, usages interdits et mesures en cas d\'abus.',
+    'twitter_description' => 'Règles d\'utilisation acceptable des services et outils CodeSommet : usages autorisés, interdits et mesures en cas d\'abus.',
     'text_0' => 'Dernière mise à jour : Janvier 2026',
     'text_1' => 'Directives pour une utilisation responsable et légale des services et de la plateforme de CodeSommet.',
     'text_2' => 'Utilisations autorisées',

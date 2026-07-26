@@ -2,11 +2,11 @@
 
 return [
     'title' => 'Vérificateur de Préparation de Site Web - Outil Gratuit de Checklist de Lancement | CodeSommet',
-    'meta_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'\'\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne. Checklist pré-lancement complète avec des recommandations concrètes.',
+    'meta_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne. Checklist pré-lancement complète avec des recommandations concrètes.',
     'meta_keywords' => 'website readiness checker,launch checklist,website audit,pre-launch check,website launch,readiness tool,seo audit,website health check,pre-launch audit,website launch checklist',
     'og_title' => 'Vérificateur de Préparation de Site Web - Outil Gratuit de Checklist',
-    'og_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'\'\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne.',
-    'twitter_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'\'\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité.',
+    'og_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité avant la mise en ligne.',
+    'twitter_description' => 'Vérifiez la préparation au lancement de votre site web avec notre outil d\'audit gratuit en 14 points. Analysez la configuration SEO, les analyses, les performances et la sécurité.',
     'text_0' => 'Vérificateur de Préparation du Site Web',
     'text_1' => 'Vérificateur de Préparation du Site Web',
     'text_2' => 'Analyse complète en 14 points à travers les catégories SEO, Croissance, Performance et Sécurité - entièrement gratuit',

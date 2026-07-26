@@ -44,7 +44,7 @@
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="{{ route('locations') }}">Emplacements</a><span>/</span><span
-                                class="text-gray-600">Cairo</span></nav>
+                                class="text-gray-600">Le Caire</span></nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -52,7 +52,7 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Cairo<!-- --> Projets</span><span
+                                    les <!-- -->Le Caire<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -64,7 +64,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/70">{{ __('locations/web-development-company-cairo.text_474') }}<!-- -->
-                                    <!-- -->Cairo<!-- -->,
+                                    <!-- -->Le Caire<!-- -->,
                                     <!-- -->{{ __('locations/web-development-company-cairo.text_0') }}</span>
                             </div>
                         </div>
@@ -86,9 +86,9 @@
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
                                             class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">CROISSANCE
-                                            DES ENTREPRISES AU CAIRO</span><span
+                                            DES ENTREPRISES AU CAIRE</span><span
                                             class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">CROISSANCE
-                                            DES ENTREPRISES AU CAIRO</span></span></span></h1>
+                                            DES ENTREPRISES AU CAIRE</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-cairo.ml_880') }}</p>
@@ -118,7 +118,7 @@
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
                                 href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir le Portfolio
-                                    Cairo</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    Le Caire</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
@@ -130,7 +130,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-cairo.text_2') }}
-                                    <!-- -->Cairo</span>
+                                    <!-- -->Le Caire</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -141,7 +141,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-cairo.text_3') }}
-                                    <!-- -->Cairo<!-- --></span>
+                                    <!-- -->Le Caire<!-- --></span>
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.text_4') }}
-                        <!-- -->Cairo<!-- -->?
+                        <!-- -->Le Caire<!-- -->?
                     </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-cairo.sw_2862') }}</p>
@@ -365,7 +365,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.text_5') }}
-                        <!-- -->Cairo<!-- --> Entreprises
+                        <!-- -->Le Caire<!-- --> Entreprises
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -385,7 +385,7 @@
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
-                        <!-- -->Cairo<!-- -->{{ __('locations/web-development-company-cairo.ml_891') }}
+                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_891') }}
                     </p>
                 </div>
             </div>
@@ -409,11 +409,11 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Cairo<!-- -->
+                        style="font-family:var(--font-heading)">Le Caire<!-- -->
                         {{ __('locations/web-development-company-cairo.text_7') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-cairo.text_8') }}
-                        <!-- -->Cairo<!-- -->{{ __('locations/web-development-company-cairo.ml_892') }}
+                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_892') }}
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -656,14 +656,14 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>{{ __('locations/web-development-company-cairo.text_13') }} <!-- -->Cairo
+                        </svg>{{ __('locations/web-development-company-cairo.text_13') }} <!-- -->Le Caire
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-cairo.text_14') }} <!-- -->Cairo</h2>
+                        {{ __('locations/web-development-company-cairo.text_14') }} <!-- -->Le Caire</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
                         comment nous avons aidé les entreprises à
-                        <!-- -->Cairo<!-- -->{{ __('locations/web-development-company-cairo.ml_904') }}
+                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_904') }}
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
@@ -1308,11 +1308,11 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Cairo<!-- -->
+                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Le Caire<!-- -->
                         {{ __('locations/web-development-company-cairo.text_45') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-cairo.text_46') }}
-                        <!-- -->Cairo<!-- -->{{ __('locations/web-development-company-cairo.ml_931') }}
+                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_931') }}
                     </p>
                 </div>
                 <div class="max-w-5xl mx-auto">
@@ -1327,11 +1327,11 @@
                                         class="inline-flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full max-w-full">
                                         <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                             class="font-bold text-xs md:text-sm text-[#00AEEF] text-center leading-tight break-words">CodeSommet
-                                            <!-- -->Cairo</span>
+                                            <!-- -->Le Caire</span>
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Cairo<!-- --> Agences</div>
+                                    Autres <!-- -->Le Caire<!-- --> Agences</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1557,7 +1557,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-cairo.text_52') }} <!-- -->Cairo<!-- -->
+                            </svg>{{ __('locations/web-development-company-cairo.text_52') }} <!-- -->Le Caire<!-- -->
                             Entreprises
                         </div>
                     </div>
@@ -1579,11 +1579,11 @@
                         </svg>{{ __('locations/web-development-company-cairo.ml_942') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Quoi <!-- -->Cairo<!-- -->
+                        style="font-family:var(--font-heading)">Quoi <!-- -->Le Caire<!-- -->
                         {{ __('locations/web-development-company-cairo.text_53') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
                         Écoutez les entreprises de
-                        <!-- -->Cairo<!-- -->{{ __('locations/web-development-company-cairo.ml_943') }}
+                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_943') }}
                     </p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
@@ -2008,7 +2008,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Avez-vous un bureau physique au
-                                    Cairo ?</h3>
+                                    Le Caire ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2042,7 +2042,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quels modes de paiement
-                                    acceptez-vous au Cairo ?</h3>
+                                    acceptez-vous au Caire ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2108,7 +2108,7 @@
                         {{ __('locations/web-development-company-cairo.text_57') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Cairo<!-- --> {{ __('locations/web-development-company-cairo.text_58') }}<svg
+                        notre <!-- -->Le Caire<!-- --> {{ __('locations/web-development-company-cairo.text_58') }}<svg
                             class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

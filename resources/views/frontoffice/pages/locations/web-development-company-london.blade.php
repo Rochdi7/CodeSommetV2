@@ -44,7 +44,7 @@
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="{{ route('locations') }}">Emplacements</a><span>/</span><span
-                                class="text-gray-600">London</span></nav>
+                                class="text-gray-600">Londres</span></nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -52,7 +52,7 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->London<!-- --> Projets</span><span
+                                    les <!-- -->Londres<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -64,7 +64,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/70">{{ __('locations/web-development-company-london.text_666') }}<!-- -->
-                                    <!-- -->London<!-- -->, <!-- -->United Kingdom</span>
+                                    <!-- -->Londres<!-- -->, <!-- -->United Kingdom</span>
                             </div>
                         </div>
                         <div class="space-y-6">
@@ -129,7 +129,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-london.text_1') }}
-                                    <!-- -->London</span>
+                                    <!-- -->Londres</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -140,7 +140,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-london.text_2') }}
-                                    <!-- -->London<!-- --></span>
+                                    <!-- -->Londres<!-- --></span>
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">{{ __('locations/web-development-company-london.text_3') }}
-                        <!-- -->London<!-- --> ?
+                        <!-- -->Londres<!-- --> ?
                     </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-london.sw_3055') }}</p>
@@ -364,7 +364,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-london.text_5') }} <!-- -->London<!-- --></h2>
+                        {{ __('locations/web-development-company-london.text_5') }} <!-- -->Londres<!-- --></h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -383,7 +383,7 @@
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->London<!-- -->{{ __('locations/web-development-company-london.ml_1083') }}
+                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1083') }}
                     </p>
                 </div>
             </div>
@@ -407,10 +407,10 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">London<!-- -->
+                        style="font-family:var(--font-heading)">Londres<!-- -->
                         {{ __('locations/web-development-company-london.text_7') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans les secteurs clés de
-                        <!-- -->London<!-- -->{{ __('locations/web-development-company-london.ml_1084') }}
+                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1084') }}
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -654,14 +654,14 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>{{ __('locations/web-development-company-london.text_12') }} <!-- -->London
+                        </svg>{{ __('locations/web-development-company-london.text_12') }} <!-- -->Londres
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-london.text_13') }} <!-- -->London</h2>
+                        {{ __('locations/web-development-company-london.text_13') }} <!-- -->Londres</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, des résultats concrets.
                         Découvrez comment nous avons aidé des entreprises de
-                        <!-- -->London<!-- -->{{ __('locations/web-development-company-london.ml_1096') }}
+                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1096') }}
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
@@ -1301,11 +1301,11 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->London<!-- -->
+                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Londres<!-- -->
                         {{ __('locations/web-development-company-london.text_40') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-london.text_41') }}
-                        <!-- -->London<!-- -->{{ __('locations/web-development-company-london.ml_1123') }}
+                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1123') }}
                     </p>
                 </div>
                 <div class="max-w-5xl mx-auto">
@@ -1320,11 +1320,11 @@
                                         class="inline-flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full max-w-full">
                                         <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                             class="font-bold text-xs md:text-sm text-[#00AEEF] text-center leading-tight break-words">CodeSommet
-                                            <!-- -->London</span>
+                                            <!-- -->Londres</span>
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres Agences de <!-- -->London<!-- --></div>
+                                    Autres Agences de <!-- -->Londres<!-- --></div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1548,7 +1548,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-london.text_44') }} <!-- -->London<!-- -->
+                            </svg>{{ __('locations/web-development-company-london.text_44') }} <!-- -->Londres<!-- -->
                         </div>
                     </div>
                 </div>
@@ -1570,10 +1570,10 @@
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-london.text_45') }} <!-- -->London<!-- --> Disent de
+                        {{ __('locations/web-development-company-london.text_45') }} <!-- -->Londres<!-- --> Disent de
                         Nous</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne nous croyez pas sur parole. Écoutez les
-                        entreprises de <!-- -->London<!-- --> {{ __('locations/web-development-company-london.text_46') }}
+                        entreprises de <!-- -->Londres<!-- --> {{ __('locations/web-development-company-london.text_46') }}
                     </p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
@@ -2031,7 +2031,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quelles technologies utilisez-vous
-                                    pour les projets de London ?</h3>
+                                    pour les projets de Londres ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"

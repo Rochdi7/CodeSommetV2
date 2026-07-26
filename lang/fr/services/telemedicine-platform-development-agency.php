@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateforme de Télémédecine | Plateformes de Soins Virtuels | CodeSommet',
-    'meta_description' => 'Agence spécialisée dans le développement de plateformes de télémédecine. Plus de 20 plateformes de soins virtuels créées avec consultations vidéo, portails patients et conformité HIPAA. Solutions de télésanté personnalisées. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Plateforme de Télémédecine : Applications de Téléconsultation | CodeSommet',
+    'meta_description' => 'Développement d\'applications de télémédecine complètes : consultations vidéo, dossiers patients, ordonnances et paiements, dans le respect des exigences de confidentialité santé.',
     'meta_keywords' => 'développement plateforme télémédecine,agence plateforme télésanté,développement plateforme soins virtuels,plateforme consultation médicale en ligne,développement logiciel télésanté,plateforme consultation vidéo,surveillance patient à distance,développement plateforme santé,plateforme conforme HIPAA',
-    'og_title' => 'CodeSommet - Agence de Développement de Plateformes de Télémédecine | Maroc',
+    'og_title' => 'Développement de Plateforme de Télémédecine : Applications de Téléconsultation | CodeSommet',
     'og_description' => 'Agence de développement de plateformes de télémédecine premium spécialisée dans les solutions de soins virtuels alimentées par l\'IA, les tableaux de bord intelligents et les plateformes de télésanté conformes HIPAA. Plus de 20 plateformes livrées.',
     'twitter_description' => 'Agence de développement de plateformes de télémédecine premium spécialisée dans les solutions de soins virtuels alimentées par l\'IA, conformes HIPAA. Plus de 20 plateformes livrées.',
     'text_0' => 'Télémédecine & Virtual Care',

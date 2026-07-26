@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Générateur de Slug URL - Créateur d\'\'\'URL SEO-Friendly Gratuit | CodeSommet',
-    'meta_description' => 'Générez des slugs d\'\'\'URL optimisés pour le SEO instantanément. Convertissez les titres en URL propres et lisibles. Générateur de slug URL gratuit avec formatage automatique.',
+    'title' => 'Générateur de Slug URL - Créateur d\'URL SEO-Friendly Gratuit | CodeSommet',
+    'meta_description' => 'Générez des slugs d\'URL optimisés pour le SEO instantanément. Convertissez les titres en URL propres et lisibles. Générateur de slug URL gratuit avec formatage automatique.',
     'meta_keywords' => 'URL slug generator,SEO URL,permalink generator,URL formatter,slug creator,SEO-friendly URLs',
-    'og_title' => 'Générateur de Slug URL - Créateur d\'\'\'URL SEO-Friendly Gratuit',
-    'og_description' => 'Convertissez les titres en slugs d\'\'\'URL propres et optimisés SEO instantanément',
-    'twitter_description' => 'Convertissez les titres en slugs d\'\'\'URL propres et optimisés SEO instantanément',
+    'og_title' => 'Générateur de Slug URL - Créateur d\'URL SEO-Friendly Gratuit',
+    'og_description' => 'Convertissez les titres en slugs d\'URL propres et optimisés SEO instantanément',
+    'twitter_description' => 'Convertissez les titres en slugs d\'URL propres et optimisés SEO instantanément',
     'text_0' => 'Générateur de Slug URL',
     'text_1' => 'Générateur de Slug URL',
     'text_2' => 'Générez des slugs d\'URL optimisés SEO à partir de titres. Supprimez les mots vides, gérez les caractères spéciaux et suivez les meilleures pratiques pour des URL propres.',

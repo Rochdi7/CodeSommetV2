@@ -40,6 +40,6 @@ return [
     'label_129' => 'URL du Site Web',
     'text_130' => 'Analyseur de Texte Alt d\'Image',
     'text_131' => 'Analyseur de Texte Alt d\'Image',
-    'text_132' => 'Quand dois-je utiliser un texte alt vide (alt=\'\') ?',
+    'text_132' => 'Quand dois-je utiliser un texte alt vide (alt=\') ?',
     'text_133' => 'Le texte alt manquant affecte-t-il mon classement Google ?',
 ];

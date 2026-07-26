@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Développement Web à Dublin, Ireland | CodeSommet',
-    'meta_description' => 'Associez-vous au studio de développement web leader de Dublin pour des sites web alimentés par l\'IA et des tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes orientées conversion pour les startups technologiques, la finance et la santé dans le Silicon Docks d\'Ireland.',
+    'title' => 'Développement Web à Dublin, Irlande | CodeSommet',
+    'meta_description' => 'Développement web pour les entreprises de Dublin : tableaux de bord SaaS, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_title' => 'Développement Web à Dublin, Irlande | CodeSommet',
+    'og_description' => 'Développement web pour les entreprises de Dublin : tableaux de bord SaaS, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',
+    'twitter_description' => 'Développement web pour les entreprises de Dublin : tableaux de bord SaaS et sites sur mesure, livrés à distance.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => '50+ clients à',
