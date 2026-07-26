@@ -14,7 +14,7 @@
     <meta property="og:description"
         content="Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="canonical" href="{{ rtrim(config('app.url'), '/') }}/get-quote" />
     <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-96x96.png') }}" sizes="96x96" />
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
