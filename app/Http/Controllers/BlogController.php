@@ -17,12 +17,17 @@ class BlogController extends Controller
         }
 
         if ($request->filled('search')) {
-            $search = $request->search;
-            $query->where(function ($q) use ($search) {
-                $q->where('title', 'like', "%{$search}%")
-                  ->orWhere('excerpt', 'like', "%{$search}%")
-                  ->orWhere('content', 'like', "%{$search}%");
-            });
+            // Bound the term and escape LIKE wildcards so a lone "%"/"_" cannot
+            // force a full-table scan across the content longText column.
+            $search = mb_substr((string) $request->search, 0, 100);
+            if (mb_strlen(trim($search)) >= 2) {
+                $escaped = addcslashes($search, '%_\\');
+                $query->where(function ($q) use ($escaped) {
+                    $q->where('title', 'like', "%{$escaped}%")
+                      ->orWhere('excerpt', 'like', "%{$escaped}%")
+                      ->orWhere('content', 'like', "%{$escaped}%");
+                });
+            }
         }
 
         $posts = $query->paginate(9)->withQueryString();
