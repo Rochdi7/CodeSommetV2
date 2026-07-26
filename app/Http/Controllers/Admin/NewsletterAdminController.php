@@ -70,14 +70,30 @@ class NewsletterAdminController extends Controller
 
             foreach ($subscribers as $sub) {
                 fputcsv($handle, [
-                    $sub->email,
-                    $sub->name ?? '',
-                    $sub->source ?? '',
+                    $this->csvSafe($sub->email),
+                    $this->csvSafe($sub->name ?? ''),
+                    $this->csvSafe($sub->source ?? ''),
                     $sub->subscribed_at ? $sub->subscribed_at->format('d/m/Y H:i') : '',
                 ]);
             }
 
             fclose($handle);
         }, 200, $headers);
+    }
+
+    /**
+     * Neutralize spreadsheet formula injection. Cells beginning with a formula
+     * trigger (= + - @, tab, CR) are prefixed with a single quote so Excel /
+     * LibreOffice / Sheets treat them as text.
+     */
+    private function csvSafe(?string $value): string
+    {
+        $value = (string) $value;
+
+        if ($value !== '' && in_array($value[0], ['=', '+', '-', '@', "\t", "\r"], true)) {
+            return "'" . $value;
+        }
+
+        return $value;
     }
 }
