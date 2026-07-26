@@ -355,26 +355,50 @@
                                 {{ __('contact.text_168') }}</h2>
                             <p class="text-sm sm:text-base text-[var(--text-secondary)]">{{ __('contact.text_23') }}</p>
                         </div>
-                        <form class="space-y-4 sm:space-y-6">
+                        @if (session('contact_success'))
+                            <div class="mb-4 rounded-lg bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-800">
+                                {{ session('contact_success') }}
+                            </div>
+                        @endif
+                        @if (session('contact_error'))
+                            <div class="mb-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800">
+                                {{ session('contact_error') }}
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="mb-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800">
+                                <ul class="list-disc list-inside space-y-1">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form class="space-y-4 sm:space-y-6" method="POST" action="{{ route('contact.store') }}">
+                            @csrf
+                            {{-- Honeypot: hidden from users, bots fill it. --}}
+                            <div style="position:absolute;left:-9999px" aria-hidden="true">
+                                <label>Ne pas remplir<input type="text" name="website" tabindex="-1" autocomplete="off" value="" /></label>
+                            </div>
                             <div><label for="name"
                                     class="block text-sm font-medium text-[var(--text-primary)] mb-2">{{ __('contact.label_162') }}
                                     <span class="text-[#00AEEF]">*</span></label><input type="text" id="name"
                                     class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors"
                                     style="border-radius:10px" placeholder="Jean Dupont" name="name"
-                                    value="" /></div>
+                                    value="{{ old('name') }}" /></div>
                             <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
                                 <div><label for="email"
                                         class="block text-sm font-medium text-[var(--text-primary)] mb-2">{{ __('contact.label_163') }}
                                         <span class="text-[#00AEEF]">*</span></label><input type="email" id="email"
                                         class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors"
                                         style="border-radius:10px" placeholder="{{ __('contact.placeholder_54') }}"
-                                        name="email" value="" /></div>
+                                        name="email" value="{{ old('email') }}" /></div>
                                 <div><label for="phone"
                                         class="block text-sm font-medium text-[var(--text-primary)] mb-2">{{ __('contact.text_24') }}</label><input
                                         type="tel" id="phone"
                                         class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors"
                                         style="border-radius:10px" placeholder="+212 6 XX XX XX XX" name="phone"
-                                        value="" /></div>
+                                        value="{{ old('phone') }}" /></div>
                             </div>
                             <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
                                 <div><label for="company"
@@ -382,7 +406,7 @@
                                         type="text" id="company"
                                         class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors"
                                         style="border-radius:10px" placeholder="{{ __('contact.placeholder_55') }}"
-                                        name="company" value="" /></div>
+                                        name="company" value="{{ old('company') }}" /></div>
                                 <div><label for="budget"
                                         class="block text-sm font-medium text-[var(--text-primary)] mb-2">{{ __('contact.label_164') }}</label><select
                                         id="budget" name="budget"
@@ -417,7 +441,7 @@
                                     <span class="text-[#00AEEF]">*</span></label>
                                 <textarea id="message" name="message" rows="5"
                                     class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors resize-none"
-                                    style="border-radius:10px" placeholder="{{ __('contact.placeholder_56') }}"></textarea>
+                                    style="border-radius:10px" placeholder="{{ __('contact.placeholder_56') }}">{{ old('message') }}</textarea>
                                 <p class="mt-1 text-xs text-[var(--text-secondary)]">{{ __('contact.text_36') }}</p>
                             </div><button type="submit"
                                 class="w-full group relative inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full overflow-hidden transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
