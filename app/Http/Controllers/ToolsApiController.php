@@ -810,7 +810,7 @@ class ToolsApiController extends Controller
         try {
             $resp = $this->fetcher->get($url, 10);
             $accessible = $resp->successful();
-            $html = $accessible ? $resp->body() : '';
+            $html = $accessible ? $this->fetcher->cappedBody($resp) : '';
         } catch (\Throwable $e) {
             $accessible = false;
             $html = '';
@@ -825,13 +825,13 @@ class ToolsApiController extends Controller
         else { $checks[] = ['name' => 'HTTPS', 'status' => 'fail', 'message' => 'HTTPS not enabled']; }
 
         // Check robots.txt
-        try { $robotsResp = $this->fetcher->get($url . '/robots.txt', 5); $hasRobots = $robotsResp->successful() && strlen($robotsResp->body()) > 5; }
+        try { $robotsResp = $this->fetcher->get($url . '/robots.txt', 5); $hasRobots = $robotsResp->successful() && strlen($this->fetcher->cappedBody($robotsResp)) > 5; }
         catch (\Throwable $e) { $hasRobots = false; }
         if ($hasRobots) { $score += 10; $checks[] = ['name' => 'Robots.txt', 'status' => 'pass', 'message' => 'robots.txt found']; }
         else { $checks[] = ['name' => 'Robots.txt', 'status' => 'warning', 'message' => 'No robots.txt found']; }
 
         // Check sitemap
-        try { $smResp = $this->fetcher->get($url . '/sitemap.xml', 5); $hasSitemap = $smResp->successful() && str_contains($smResp->body(), '<urlset'); }
+        try { $smResp = $this->fetcher->get($url . '/sitemap.xml', 5); $hasSitemap = $smResp->successful() && str_contains($this->fetcher->cappedBody($smResp), '<urlset'); }
         catch (\Throwable $e) { $hasSitemap = false; }
         if ($hasSitemap) { $score += 10; $checks[] = ['name' => 'Sitemap', 'status' => 'pass', 'message' => 'sitemap.xml found']; }
         else { $checks[] = ['name' => 'Sitemap', 'status' => 'warning', 'message' => 'No sitemap.xml found']; }
@@ -911,7 +911,7 @@ class ToolsApiController extends Controller
         try {
             $resp = $this->fetcher->get($robotsUrl, 10);
             if (!$resp->successful()) throw new \Exception("robots.txt not found (HTTP {$resp->status()})");
-            $content = $resp->body();
+            $content = $this->fetcher->cappedBody($resp);
         } catch (\Throwable $e) {
             return response()->json(['passed' => false, 'issues' => [['type' => 'error', 'message' => 'robots.txt could not be retrieved.']]]);
         }
@@ -951,7 +951,7 @@ class ToolsApiController extends Controller
             return response()->json(['passed' => false, 'issues' => [['type' => 'error', 'message' => "Sitemap not found at {$url}"]]]);
         }
 
-        $body = $resp->body();
+        $body = $this->fetcher->cappedBody($resp);
         $issues = [];
 
         if (!str_contains($body, '<urlset') && !str_contains($body, '<sitemapindex')) {
