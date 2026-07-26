@@ -1409,6 +1409,34 @@ button.text-white:hover svg {
     50%      { transform: translate3d(-8%, 6%, 0); }
 }
 
+/* Column sizing. The right-hand block holds the countdown + fine print and
+   would otherwise claim most of the row, squeezing the copy to ~100px. Cap it
+   and let the middle column actually take the remaining space. */
+@media (min-width: 1024px) {
+    .promo-offer__grid > :nth-child(1) { flex: 0 0 auto; }
+    .promo-offer__grid > :nth-child(2) { flex: 1 1 auto; min-width: 0; }
+    .promo-offer__grid > :nth-child(3) { flex: 0 0 auto; max-width: 21rem; }
+}
+
+/* main.css sets global colours for h1–h6 and p with a specificity that beats
+   utility classes like .text-white/85, which repainted this copy grey.
+   Re-assert white inside the banner. */
+.promo-offer h2,
+.promo-offer p,
+.promo-offer div,
+.promo-offer span,
+.promo-offer a.promo-offer__cta:hover {
+    color: inherit;
+}
+
+.promo-offer {
+    color: #fff;
+}
+
+.promo-offer .promo-offer__cta {
+    color: #0071BC;
+}
+
 .promo-offer__badge {
     display: inline-flex;
     align-items: center;

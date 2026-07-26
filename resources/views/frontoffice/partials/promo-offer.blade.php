@@ -33,7 +33,7 @@
                         class="font-heading font-semibold tracking-tight text-2xl md:text-3xl mt-3 mb-1.5 text-white">
                         Lancez votre site avec 30&nbsp;% de réduction
                     </h2>
-                    <p class="font-body text-sm md:text-base leading-relaxed text-white/85">
+                    <p class="promo-offer__lead font-body text-sm md:text-base leading-relaxed">
                         Site vitrine, e-commerce ou plateforme sur mesure — bénéficiez de 30&nbsp;% sur votre
                         premier projet. Devis gratuit sous 24&nbsp;h, sans engagement.
                     </p>
