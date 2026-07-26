@@ -11,4 +11,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/tools/{slug}', [ToolsApiController::class, 'handle'])
-    ->where('slug', '[a-z0-9-]+');
+    ->where('slug', '[a-z0-9-]+')
+    ->middleware('throttle:tools-api');

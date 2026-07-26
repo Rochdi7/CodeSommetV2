@@ -2,13 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Services\SafeHttpFetcher;
+use App\Services\SafeUrlValidator;
+use App\Services\UnsafeUrlException;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Http;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
 class ToolsApiController extends Controller
 {
+    public function __construct(
+        private SafeHttpFetcher $fetcher,
+        private SafeUrlValidator $urlValidator,
+    ) {
+    }
+
     /**
      * Route all tool requests to the appropriate handler method.
      */
@@ -16,41 +24,82 @@ class ToolsApiController extends Controller
     {
         $method = 'handle' . str_replace('-', '', ucwords($slug, '-'));
 
-        if (method_exists($this, $method)) {
-            try {
-                return $this->$method($request);
-            } catch (\Throwable $e) {
-                Log::error("Tool API error [{$slug}]: " . $e->getMessage());
-                return response()->json(['error' => 'Analysis failed: ' . $e->getMessage()], 500);
-            }
+        if (! method_exists($this, $method)) {
+            return response()->json(['error' => 'Tool not found'], 404);
         }
 
-        return response()->json(['error' => 'Tool not found'], 404);
+        try {
+            return $this->$method($request);
+        } catch (UnsafeUrlException $e) {
+            // Rejected before any request left the server. Do not leak the reason.
+            Log::warning("Tool API blocked unsafe URL [{$slug}]: " . $e->getMessage());
+
+            return response()->json([
+                'error' => 'The submitted URL could not be analyzed. Please provide a valid public website URL.',
+            ], 422);
+        } catch (\Throwable $e) {
+            Log::error("Tool API error [{$slug}]: " . $e->getMessage(), ['exception' => $e]);
+
+            return response()->json([
+                'error' => 'Analysis failed. Please verify the submitted URL and try again.',
+            ], 500);
+        }
     }
 
     // ─── Helpers ──────────────────────────────────────────────────────
 
     /**
-     * Fetch a URL and return the HTML body.
+     * Read and validate a required URL input, returning a normalized,
+     * SSRF-checked URL. Throws UnsafeUrlException (→ 422) on bad input.
      */
-    private function fetchUrl(string $url, int $timeout = 15): string
+    private function requireUrl(Request $request, string ...$keys): string
     {
-        $response = Http::timeout($timeout)
-            ->withHeaders([
-                'User-Agent' => 'Mozilla/5.0 (compatible; CodeSommetBot/1.0; +https://codesommet.com)',
-                'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            ])
-            ->get($url);
-
-        if (!$response->successful()) {
-            throw new \Exception("Failed to fetch URL (HTTP {$response->status()})");
+        $keys = $keys ?: ['url'];
+        $raw = '';
+        foreach ($keys as $key) {
+            $val = $request->input($key);
+            if (is_string($val) && trim($val) !== '') {
+                $raw = trim($val);
+                break;
+            }
         }
 
-        return $response->body();
+        if ($raw === '') {
+            throw new UnsafeUrlException('No URL provided.');
+        }
+
+        $normalized = $this->normalizeUrl($raw);
+
+        // Validate now so a bad host fails fast and consistently as 422,
+        // before any handler-specific logic runs.
+        $this->urlValidator->validate($normalized);
+
+        return $normalized;
     }
 
     /**
-     * Ensure URL has protocol.
+     * Extract and validate a bare hostname (no scheme/path) for tools that
+     * connect by host (e.g. the SSL checker).
+     */
+    private function requireHost(Request $request, string ...$keys): string
+    {
+        $url = $this->requireUrl($request, ...$keys);
+
+        return parse_url($url, PHP_URL_HOST) ?: throw new UnsafeUrlException('Invalid host.');
+    }
+
+    /**
+     * Fetch a URL and return the (size-capped) HTML body via the SSRF-safe fetcher.
+     */
+    private function fetchUrl(string $url, int $timeout = 15): string
+    {
+        return $this->fetcher->getBody($url, $timeout, [
+            'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        ]);
+    }
+
+    /**
+     * Ensure URL has protocol. Validation happens separately in requireUrl().
      */
     private function normalizeUrl(string $url): string
     {
@@ -67,7 +116,7 @@ class ToolsApiController extends Controller
      */
     public function handleWebsiteAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         $checks = [];
@@ -235,7 +284,7 @@ class ToolsApiController extends Controller
      */
     public function handleHeadingAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         preg_match_all('/<h([1-6])[^>]*>(.*?)<\/h[1-6]>/is', $html, $matches, PREG_SET_ORDER);
@@ -285,7 +334,7 @@ class ToolsApiController extends Controller
      */
     public function handleKeywordDensityAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         // Strip HTML to get text. strip_tags() removes the tags but keeps the
@@ -375,7 +424,7 @@ class ToolsApiController extends Controller
      */
     public function handleBrokenLinkChecker(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
         $parsedBase = parse_url($url);
         $baseDomain = $parsedBase['host'] ?? '';
@@ -387,7 +436,8 @@ class ToolsApiController extends Controller
         $results = [];
         $stats = ['total' => 0, 'working' => 0, 'broken' => 0, 'redirects' => 0, 'internal' => 0, 'external' => 0];
 
-        foreach (array_slice($links, 0, 50) as $link) {
+        // Cap total outbound fetches to limit amplification/DoS.
+        foreach (array_slice($links, 0, 25) as $link) {
             // Resolve relative URLs
             if (str_starts_with($link, '/')) {
                 $link = $baseScheme . '://' . $baseDomain . $link;
@@ -402,10 +452,12 @@ class ToolsApiController extends Controller
             $stats['total']++;
 
             try {
+                // Validate each discovered link before requesting it, so a page
+                // cannot make us probe internal/loopback/metadata addresses.
+                $this->urlValidator->validate($link);
+
                 $start = microtime(true);
-                $resp = Http::timeout(8)->withOptions(['allow_redirects' => false])
-                    ->withHeaders(['User-Agent' => 'CodeSommetBot/1.0'])
-                    ->get($link);
+                $resp = $this->fetcher->get($link, 8);
                 $time = round((microtime(true) - $start) * 1000);
                 $code = $resp->status();
 
@@ -425,11 +477,16 @@ class ToolsApiController extends Controller
                     'type' => $type, 'responseTime' => $time,
                     'redirectUrl' => $resp->header('Location'),
                 ];
+            } catch (UnsafeUrlException $e) {
+                // Skip disallowed targets silently — do not report them as broken
+                // and do not reveal internal reachability.
+                $stats[$type]--;
+                $stats['total']--;
             } catch (\Throwable $e) {
                 $stats['broken']++;
                 $results[] = [
                     'url' => $link, 'status' => 'error', 'statusCode' => 0,
-                    'type' => $type, 'errorMessage' => $e->getMessage(),
+                    'type' => $type,
                 ];
             }
         }
@@ -447,7 +504,7 @@ class ToolsApiController extends Controller
      */
     public function handleRedirectChecker(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $chain = [];
         $currentUrl = $url;
         $totalTime = 0;
@@ -463,9 +520,11 @@ class ToolsApiController extends Controller
 
             $start = microtime(true);
             try {
-                $resp = Http::timeout(10)->withOptions(['allow_redirects' => false])
-                    ->withHeaders(['User-Agent' => 'CodeSommetBot/1.0'])
-                    ->get($currentUrl);
+                // Validate each hop; a redirect into an internal host is rejected.
+                $resp = $this->fetcher->getNoRedirect($currentUrl, 10);
+            } catch (UnsafeUrlException $e) {
+                $chain[] = ['url' => $currentUrl, 'statusCode' => 0, 'redirectType' => 'blocked', 'timestamp' => 0];
+                break;
             } catch (\Throwable $e) {
                 $chain[] = ['url' => $currentUrl, 'statusCode' => 0, 'redirectType' => 'error', 'timestamp' => 0];
                 break;
@@ -514,7 +573,7 @@ class ToolsApiController extends Controller
      */
     public function handleOgPreviewGenerator(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         $og = [];
@@ -563,12 +622,19 @@ class ToolsApiController extends Controller
      */
     public function handleSslCertificateChecker(Request $request): JsonResponse
     {
-        $domain = preg_replace('#^https?://#', '', $request->input('url', $request->input('domain', '')));
-        $domain = rtrim($domain, '/');
-        $domain = explode('/', $domain)[0];
+        // Validated public host only — prevents connecting to internal hosts.
+        $domain = $this->requireHost($request, 'url', 'domain');
+        $resolved = $this->urlValidator->validate('https://' . $domain);
+        $connectTarget = $resolved['ips'][0] ?? $domain;
 
-        $context = stream_context_create(['ssl' => ['capture_peer_cert' => true, 'verify_peer' => false]]);
-        $client = @stream_socket_client("ssl://{$domain}:443", $errno, $errstr, 10, STREAM_CLIENT_CONNECT, $context);
+        $context = stream_context_create(['ssl' => [
+            'capture_peer_cert' => true,
+            'verify_peer' => false,
+            // Pin the connection to the validated IP but present the real SNI/host.
+            'peer_name' => $domain,
+            'SNI_enabled' => true,
+        ]]);
+        $client = @stream_socket_client("ssl://{$connectTarget}:443", $errno, $errstr, 10, STREAM_CLIENT_CONNECT, $context);
 
         if (!$client) {
             return response()->json([
@@ -619,7 +685,7 @@ class ToolsApiController extends Controller
      */
     public function handleCanonicalChecker(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         preg_match_all('/<link\s+[^>]*rel=["\']canonical["\']\s+[^>]*href=["\'](.*?)["\']/is', $html, $matches);
@@ -655,7 +721,7 @@ class ToolsApiController extends Controller
      */
     public function handleImageAltAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         // Parse base URL for resolving relative paths
@@ -734,8 +800,7 @@ class ToolsApiController extends Controller
      */
     public function handleDomainHealthChecker(Request $request): JsonResponse
     {
-        $domain = preg_replace('#^https?://#', '', $request->input('url', $request->input('domain', '')));
-        $domain = rtrim(explode('/', $domain)[0], '/');
+        $domain = $this->requireHost($request, 'url', 'domain');
         $url = 'https://' . $domain;
 
         $score = 0;
@@ -743,9 +808,9 @@ class ToolsApiController extends Controller
 
         // Check domain accessible
         try {
-            $resp = Http::timeout(10)->get($url);
+            $resp = $this->fetcher->get($url, 10);
             $accessible = $resp->successful();
-            $html = $resp->body();
+            $html = $accessible ? $resp->body() : '';
         } catch (\Throwable $e) {
             $accessible = false;
             $html = '';
@@ -760,13 +825,13 @@ class ToolsApiController extends Controller
         else { $checks[] = ['name' => 'HTTPS', 'status' => 'fail', 'message' => 'HTTPS not enabled']; }
 
         // Check robots.txt
-        try { $robotsResp = Http::timeout(5)->get($url . '/robots.txt'); $hasRobots = $robotsResp->successful() && strlen($robotsResp->body()) > 5; }
+        try { $robotsResp = $this->fetcher->get($url . '/robots.txt', 5); $hasRobots = $robotsResp->successful() && strlen($robotsResp->body()) > 5; }
         catch (\Throwable $e) { $hasRobots = false; }
         if ($hasRobots) { $score += 10; $checks[] = ['name' => 'Robots.txt', 'status' => 'pass', 'message' => 'robots.txt found']; }
         else { $checks[] = ['name' => 'Robots.txt', 'status' => 'warning', 'message' => 'No robots.txt found']; }
 
         // Check sitemap
-        try { $smResp = Http::timeout(5)->get($url . '/sitemap.xml'); $hasSitemap = $smResp->successful() && str_contains($smResp->body(), '<urlset'); }
+        try { $smResp = $this->fetcher->get($url . '/sitemap.xml', 5); $hasSitemap = $smResp->successful() && str_contains($smResp->body(), '<urlset'); }
         catch (\Throwable $e) { $hasSitemap = false; }
         if ($hasSitemap) { $score += 10; $checks[] = ['name' => 'Sitemap', 'status' => 'pass', 'message' => 'sitemap.xml found']; }
         else { $checks[] = ['name' => 'Sitemap', 'status' => 'warning', 'message' => 'No sitemap.xml found']; }
@@ -806,7 +871,7 @@ class ToolsApiController extends Controller
      */
     public function handleInternalLinkAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
         $parsed = parse_url($url);
         $baseDomain = $parsed['host'] ?? '';
@@ -840,15 +905,15 @@ class ToolsApiController extends Controller
      */
     public function handleRobotsValidator(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $robotsUrl = rtrim($url, '/') . '/robots.txt';
 
         try {
-            $resp = Http::timeout(10)->get($robotsUrl);
+            $resp = $this->fetcher->get($robotsUrl, 10);
             if (!$resp->successful()) throw new \Exception("robots.txt not found (HTTP {$resp->status()})");
             $content = $resp->body();
         } catch (\Throwable $e) {
-            return response()->json(['passed' => false, 'issues' => [['type' => 'error', 'message' => $e->getMessage()]]]);
+            return response()->json(['passed' => false, 'issues' => [['type' => 'error', 'message' => 'robots.txt could not be retrieved.']]]);
         }
 
         $issues = [];
@@ -878,10 +943,10 @@ class ToolsApiController extends Controller
      */
     public function handleSitemapValidator(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         if (!str_contains($url, 'sitemap')) $url = rtrim($url, '/') . '/sitemap.xml';
 
-        $resp = Http::timeout(15)->get($url);
+        $resp = $this->fetcher->get($url, 15);
         if (!$resp->successful()) {
             return response()->json(['passed' => false, 'issues' => [['type' => 'error', 'message' => "Sitemap not found at {$url}"]]]);
         }
@@ -929,7 +994,7 @@ class ToolsApiController extends Controller
      */
     public function handleMobileFriendlyTest(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         $score = 0; $checks = [];
@@ -981,7 +1046,7 @@ class ToolsApiController extends Controller
      */
     public function handleCoreWebVitalsChecker(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $start = microtime(true);
         $html = $this->fetchUrl($url);
         $loadTime = round((microtime(true) - $start) * 1000);
@@ -1030,7 +1095,7 @@ class ToolsApiController extends Controller
      */
     public function handleImageCompressionAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', ''));
+        $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
         $parsed = parse_url($url);
@@ -1214,7 +1279,7 @@ class ToolsApiController extends Controller
      */
     public function handleMetaTagGenerator(Request $request): JsonResponse
     {
-        $url = $this->normalizeUrl($request->input('url', $request->input('input', '')));
+        $url = $this->requireUrl($request, 'url', 'input');
         $html = $this->fetchUrl($url);
 
         // Extract current title and description
