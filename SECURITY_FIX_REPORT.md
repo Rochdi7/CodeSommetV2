@@ -4,7 +4,25 @@
 **Engineer role:** Senior Laravel security / QA / architecture
 **Source audit:** `CODE_AUDIT_REPORT.md`
 **Branch:** work committed as 10 focused commits `05e221a … 73407f8` on top of `edb489c`
-**Result:** All Critical and High findings fixed or documented; **95 tests pass (214 assertions, 0 failures)**; no production data modified.
+**Result (remediation pass):** All 4 Critical fixed; **11 of 12 High fixed**, with H-12 (dependency advisories) deferred at the time of this pass; **95 tests pass**; no production data modified.
+
+> **Correction (2026-07-27, verification phase):** an earlier draft of this
+> report stated "all twelve High findings were remediated." That was **not
+> accurate at the time** — H-12 (25 dependency advisories) was deferred. The
+> accurate remediation-pass count is:
+>
+> ```
+> Critical fixed:   4 of 4
+> High fixed:       11 of 12
+> High unresolved:  H-12 dependency advisories (deferred, then resolved separately)
+> ```
+>
+> **H-12 has since been fully resolved** during the verification phase
+> (`composer update` in controlled groups → `composer audit` = 0 advisories,
+> 108 tests pass). See `DEPENDENCY_SECURITY_REPORT.md` and
+> `FINAL_SECURITY_VERIFICATION_REPORT.md`. The project should not be treated as
+> "fully remediated" on the basis of this report alone — read it together with
+> the final verification report.
 
 ---
 
@@ -110,6 +128,18 @@ Every Critical/High finding was re-checked against the live code before fixing. 
 
 All migrations are additive; none drop or reset data. The SQLite DB was backed up to `database/database.before-security-fixes.sqlite` first.
 
+**Migration timestamp investigation (verification phase):** the four migrations
+carry `2026_08_01_*` prefixes although they were authored 2026-07-26/27. This is
+**intentional and correct**, not a bug: Laravel orders migrations
+lexicographically by filename, and `2026_08_01` sorts *after* every pre-existing
+`2026_03_*`/`2026_07_*` migration, guaranteeing these run **last** (the unique-index
+migration must run after all rows exist). **They were NOT renamed** because they
+are already deployed to `origin` (`origin/security-fixes` = `73407f8` contains
+`000001`–`000003`, and `main`/other branches may have applied them). Renaming a
+deployed migration changes its identity, causing it to **re-run** on environments
+that already ran the old name → "table/index already exists" failures. Per policy,
+deployed migrations are left as-is.
+
 ---
 
 ## 7. Automated Tests Added
@@ -158,10 +188,11 @@ The single warning is a PHPUnit metadata deprecation (`@dataProvider` annotation
 
 | Item | Status | Reason |
 |---|---|---|
-| **H-12 dependency updates** | Deferred | Requires `composer update` + reviewed lockfile diff. Now safe to run given the new test suite. Run `composer update guzzlehttp/guzzle guzzlehttp/psr7 symfony/* laravel/framework` then `composer audit`, re-run `php artisan test`. |
+| **H-12 dependency updates** | **RESOLVED (verification phase)** | Done via controlled `composer update` (Laravel → Guzzle/PSR-7 → symfony/yaml). `composer audit` = 0 advisories; 108 tests pass. See `DEPENDENCY_SECURITY_REPORT.md`. |
 | **L-01 `$guarded=[]` → `$fillable`** on Project/Payment/Expense | Deferred | Latent (no `$request->all()` call site). Converting risks silently dropping a legitimate column. `is_super_admin` (the real risk) is fixed. |
 | **M-16 N+1 query refactors** | Partially deferred | Indexes added (M-17); collapsing per-day/per-month aggregate loops into `GROUP BY` was deferred to avoid changing displayed dashboard values without a visual diff. |
-| **XML sitemap** | Deferred | robots.txt now references `/sitemap.xml` and disallows admin; generating the sitemap is a feature-level SEO task. |
+| **XML sitemap** | **RESOLVED** | `SitemapController` + `/sitemap.xml` implemented; excludes admin/preview/api/draft/future; every listed URL verified 200. |
+| **HTML sanitizer (regex)** | **RESOLVED (verification phase)** | Replaced with HTMLPurifier allowlist; 14 malformed/encoded payloads neutralized. |
 | **CSP enforcement** | Report-Only | Ships as `Content-Security-Policy-Report-Only`; flip `CSP_ENFORCE=true` after verifying no console violations across pages (Cal.com + GA origins are allowlisted). |
 | **Blog HTML sanitizer** | Regex-based | Conservative and tested, but a dedicated library (e.g. HTMLPurifier) is stronger; add via composer in the dependency pass. |
 | **Mail delivery** | Config | `MAIL_MAILER=log`; contact/quote persist regardless. Configure a real provider for notifications. |
@@ -227,7 +258,7 @@ Browser-only checks (no automation available in this environment):
 | H-09 | Newsletter oracle | **Fixed** (tested) |
 | H-10 | Security headers | **Fixed** (tested) |
 | H-11 | `.env.example` debug | **Fixed** |
-| H-12 | 25 dependency advisories | **Deferred** (safe to run now; §11) |
+| H-12 | 25 dependency advisories | **RESOLVED** (verification phase → 0 advisories) |
 | M-01…M-06 | Invoice/schedule/overpay/enum | **Fixed** (tested) |
 | M-07 | Finance loop DoS | **Fixed** (tested) |
 | M-08 | Blog slug 500 | **Fixed** (tested) |
