@@ -61,7 +61,7 @@
             {{-- Category Badge --}}
             <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20 mb-6" style="transform:scale(0.9)">
                 <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div>
-                <span class="text-sm font-semibold text-[#00AEEF]">{{ ucfirst($post->category) }}</span>
+                <span class="text-sm font-semibold text-[#00AEEF]">{{ $post->category?->name ?? 'Général' }}</span>
             </div>
 
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style="font-family:var(--font-heading)">{{ $post->title }}</h1>
@@ -94,12 +94,12 @@
             </div>
 
             {{-- Tags --}}
-            @if($post->tags && count($post->tags) > 0)
+            @if($post->tags->isNotEmpty())
             <div class="flex flex-wrap justify-center gap-2 mb-8">
                 @foreach($post->tags as $tag)
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#00AEEF]"></span>
-                    {{ $tag }}
+                    {{ $tag->name }}
                 </span>
                 @endforeach
             </div>
@@ -113,7 +113,17 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[900px]">
         <div class="rounded-3xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
             @if($post->featured_image)
-            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}" class="w-full h-auto object-cover" loading="eager" />
+            <figure>
+                <img src="{{ asset('storage/' . $post->featured_image) }}"
+                     alt="{{ $post->image_alt }}"
+                     @if($post->featured_image_description) title="{{ $post->featured_image_description }}" @endif
+                     class="w-full h-auto object-cover" loading="eager" />
+                @if($post->featured_image_caption)
+                <figcaption class="px-5 py-3 text-xs text-[var(--text-tertiary)] bg-gray-50 text-center">
+                    {{ $post->featured_image_caption }}
+                </figcaption>
+                @endif
+            </figure>
             @else
             <div class="w-full aspect-[16/8] bg-gradient-to-br from-[#00AEEF]/20 via-[#0071BC]/10 to-[#00AEEF]/5 flex items-center justify-center">
                 <div class="text-center space-y-4">
@@ -142,11 +152,11 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[860px]">
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
             {{-- Tags --}}
-            @if($post->tags && count($post->tags) > 0)
+            @if($post->tags->isNotEmpty())
             <div class="flex flex-wrap gap-2">
                 @foreach($post->tags as $tag)
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-xs font-medium text-[var(--text-secondary)]">
-                    #{{ $tag }}
+                    #{{ $tag->name }}
                 </span>
                 @endforeach
             </div>
@@ -215,14 +225,14 @@
                                 </div>
                                 @endif
                                 <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ $related->category }}</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ $related->category?->name ?? 'Général' }}</span>
                                 </div>
                             </div>
                             <div class="px-5 py-4">
                                 <div class="flex items-center gap-3 mb-3">
                                     <span class="text-xs text-[var(--text-tertiary)]">{{ $related->formatted_date }}</span>
                                     <span class="text-[var(--text-tertiary)]">&middot;</span>
-                                    <span class="text-xs text-[var(--text-tertiary)]">{{ $related->{{ __('blog/show.text_102') }}</span>
+                                    <span class="text-xs text-[var(--text-tertiary)]">{{ $related->read_time }} {{ __('blog/show.text_102') }}</span>
                                 </div>
                                 <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">{{ $related->title }}</h3>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2">{{ $related->excerpt }}</p>

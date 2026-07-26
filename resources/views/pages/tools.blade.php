@@ -44,7 +44,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg></a><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="{{ route('contact') }}">Besoin d'une Solution Sur Mesure ?</a></div>
                 </div>
-                <div class="relative flex items-center justify-center"><img src="{{ asset('images/our-work/tools-hero.webp') }}" alt="Outils SEO et IA Gratuits" class="w-full h-auto max-w-lg mx-auto" /></div>
+                <div class="relative flex items-center justify-center"><img src="{{ asset('images/new-flyers/free-seo-web-development-tools.webp') }}" alt="Outils SEO et IA Gratuits" class="w-full h-auto max-w-lg mx-auto" /></div>
             </div>
             <div class="space-y-4" id="tools">
                 <div class="relative max-w-3xl mx-auto group">

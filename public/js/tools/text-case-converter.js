@@ -7,8 +7,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('text case')) return;
-
+        if (!CodeSommetTools.isTool('text-case-converter')) return;
         var textarea = toolSection.querySelector('textarea');
         if (!textarea) return;
 

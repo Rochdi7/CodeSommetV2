@@ -56,7 +56,7 @@
                 <div class="flex justify-center lg:justify-start gap-3 flex-wrap"><button class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]">All</button><button class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Technologie</button><button class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Éducation</button><button class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]">Santé</button></div>
             </div>
             <div class="hidden lg:flex relative h-[400px] items-center justify-center" style="transform:scale(0.95)">
-                <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div><img src="{{ asset('images/our-work-hero.webp') }}" alt="Nos Projets Showcase" class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
+                <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div><img src="{{ asset('images/new-flyers/web-development-case-studies-presentation.webp') }}" alt="Nos Projets Showcase" class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
             </div>
         </div>
     </div>
@@ -66,7 +66,7 @@
         <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
             <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'glamworlds') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/glamworlds/glamworlds-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Beauté</span></div>
                         </div>
                         <div class="px-5 py-4">
@@ -78,7 +78,7 @@
                 </a></div>
             <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'mon-asso') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">SaaS</span></div>
                         </div>
                         <div class="px-5 py-4">
@@ -90,7 +90,7 @@
                 </a></div>
             <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'morocco-quest') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Tourisme</span></div>
                         </div>
                         <div class="px-5 py-4">
@@ -100,21 +100,20 @@
                         </div>
                     </div>
                 </a></div>
-            <div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'project-azubi') }}">
+<div style="opacity:0;transform:translateY(30px)" data-delay="2"><a class="block" href="{{ route('case-study', 'gls-sprachenzentrum') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/project-azubi/project-azubi-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span></div>
                         </div>
                         <div class="px-5 py-4">
-                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Project Azubi</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Study Abroad Ausbildung</p>
+                            <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">École de Langue Allemande</p>
                             <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme complète d'études à l'étranger démocratisant l'éducation internationale avec un modèle sans commission, desservant plus de 51 pays avec 14 outils propulsés par l'IA, l'automatisation des emails et un taux de réussite d'admission de 88%</p>
                         </div>
                     </div>
-                </a></div>
-            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'dental-pro') }}">
+                </a></div>            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'dental-pro') }}">
                     <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/dental-pro/dental-pro-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                             <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30"><span class="text-xs font-bold text-white tracking-wide uppercase">Santé</span></div>
                         </div>
                         <div class="px-5 py-4">

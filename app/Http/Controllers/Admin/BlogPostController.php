@@ -4,40 +4,16 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\BlogPost;
+use App\Models\Category;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 class BlogPostController extends Controller
 {
-    public static array $categories = [
-        'general'         => 'Général',
-        'web-development' => 'Développement Web',
-        'design'          => 'Design & UX',
-        'seo'             => 'SEO & Marketing',
-        'technology'      => 'Technologie',
-        'business'        => 'Business & Stratégie',
-        'tutorials'       => 'Tutoriels',
-        'case-studies'    => 'Études de cas',
-        'news'            => 'Actualités',
-        'other'           => 'Autre',
-    ];
-
-    public static array $categoryColors = [
-        'general'         => '#6B7280',
-        'web-development' => '#00AEEF',
-        'design'          => '#EC4899',
-        'seo'             => '#22C55E',
-        'technology'      => '#7D53FF',
-        'business'        => '#F59E0B',
-        'tutorials'       => '#14B8A6',
-        'case-studies'    => '#0EA5E9',
-        'news'            => '#EF4444',
-        'other'           => '#9CA3AF',
-    ];
-
     public function index(Request $request)
     {
-        $query = BlogPost::orderByDesc('created_at');
+        $query = BlogPost::with(['category', 'tags'])->orderByDesc('created_at');
 
         if ($request->filled('search')) {
             $query->where('title', 'like', '%' . $request->search . '%');
@@ -48,120 +24,114 @@ class BlogPostController extends Controller
         }
 
         if ($request->filled('category')) {
-            $query->where('category', $request->category);
+            $query->where('category_id', $request->category);
         }
 
-        $posts = $query->paginate(15);
-        $categories = self::$categories;
+        $posts      = $query->paginate(15)->withQueryString();
+        $categories = Category::orderBy('name')->get();
 
         return view('backoffice.pages.blog.index', compact('posts', 'categories'));
     }
 
     public function create()
     {
-        $categories = self::$categories;
-        return view('backoffice.pages.blog.create', compact('categories'));
+        return view('backoffice.pages.blog.create', [
+            'categories' => Category::orderBy('name')->get(),
+            'tags'       => Tag::orderBy('name')->get(),
+        ]);
     }
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'title'                => 'required|string|max:255',
-            'slug'                 => 'nullable|string|max:255|unique:blog_posts,slug',
-            'excerpt'              => 'nullable|string|max:500',
-            'content'              => 'required|string',
-            'featured_image'       => 'nullable|image|max:5120',
-            'featured_image_path'  => 'nullable|string',
-            'category'             => 'required|string|max:100',
-            'category_custom'      => 'nullable|string|max:100',
-            'tags'                 => 'nullable|string',
-            'author'               => 'nullable|string|max:255',
-            'read_time'            => 'nullable|string|max:50',
-            'meta_title'           => 'nullable|string|max:255',
-            'meta_description'     => 'nullable|string|max:500',
-            'status'               => 'required|in:draft,published',
-        ]);
+        $validated = $this->validated($request);
 
-        if ($validated['category'] === 'other' && ! empty($validated['category_custom'])) {
-            $validated['category'] = Str::slug($validated['category_custom']);
-        }
-        unset($validated['category_custom']);
+        $post = BlogPost::create($this->prepare($validated, $request));
+        $post->tags()->sync($validated['tag_ids'] ?? []);
 
-        $validated['slug']   = $validated['slug'] ?: Str::slug($validated['title']);
-        $validated['tags']   = $validated['tags'] ? array_map('trim', explode(',', $validated['tags'])) : null;
-        $validated['author'] = $validated['author'] ?: 'CodeSommet';
-
-        if ($request->hasFile('featured_image')) {
-            $validated['featured_image'] = $request->file('featured_image')->store('blog', 'public');
-        } elseif (! empty($validated['featured_image_path'])) {
-            $validated['featured_image'] = $validated['featured_image_path'];
-        }
-        unset($validated['featured_image_path']);
-
-        if ($validated['status'] === 'published') {
-            $validated['published_at'] = now();
-        }
-
-        BlogPost::create($validated);
-
-        return redirect()->route('admin.blog.index')->with('success', 'Article créé avec succès.');
+        return redirect()->route('admin.blog.index')
+            ->with('success', 'Article créé avec succès.');
     }
 
     public function edit(BlogPost $blog)
     {
-        $categories = self::$categories;
-        return view('backoffice.pages.blog.edit', ['post' => $blog, 'categories' => $categories]);
+        $blog->load('tags');
+
+        return view('backoffice.pages.blog.edit', [
+            'post'       => $blog,
+            'categories' => Category::orderBy('name')->get(),
+            'tags'       => Tag::orderBy('name')->get(),
+        ]);
     }
 
     public function update(Request $request, BlogPost $blog)
     {
-        $validated = $request->validate([
-            'title'                => 'required|string|max:255',
-            'slug'                 => 'nullable|string|max:255|unique:blog_posts,slug,' . $blog->id,
-            'excerpt'              => 'nullable|string|max:500',
-            'content'              => 'required|string',
-            'featured_image'       => 'nullable|image|max:5120',
-            'featured_image_path'  => 'nullable|string',
-            'category'             => 'required|string|max:100',
-            'category_custom'      => 'nullable|string|max:100',
-            'tags'                 => 'nullable|string',
-            'author'               => 'nullable|string|max:255',
-            'read_time'            => 'nullable|string|max:50',
-            'meta_title'           => 'nullable|string|max:255',
-            'meta_description'     => 'nullable|string|max:500',
-            'status'               => 'required|in:draft,published',
+        $validated = $this->validated($request, $blog);
+
+        $blog->update($this->prepare($validated, $request, $blog));
+        $blog->tags()->sync($validated['tag_ids'] ?? []);
+
+        return redirect()->route('admin.blog.index')
+            ->with('success', 'Article mis à jour avec succès.');
+    }
+
+    public function destroy(BlogPost $blog)
+    {
+        $blog->delete();
+
+        return redirect()->route('admin.blog.index')
+            ->with('success', 'Article supprimé avec succès.');
+    }
+
+    private function validated(Request $request, ?BlogPost $post = null): array
+    {
+        $uniqueSlug = 'unique:blog_posts,slug' . ($post ? ',' . $post->id : '');
+
+        return $request->validate([
+            'title'                      => 'required|string|max:255',
+            'slug'                       => 'nullable|string|max:255|' . $uniqueSlug,
+            'excerpt'                    => 'nullable|string|max:500',
+            'content'                    => 'required|string',
+            'featured_image'             => 'nullable|image|max:5120',
+            'featured_image_path'        => 'nullable|string',
+            'featured_image_alt'         => 'nullable|string|max:255',
+            'featured_image_caption'     => 'nullable|string|max:255',
+            'featured_image_description' => 'nullable|string|max:1000',
+            'category_id'                => 'required|exists:categories,id',
+            'tag_ids'                    => 'nullable|array',
+            'tag_ids.*'                  => 'integer|exists:tags,id',
+            'author'                     => 'nullable|string|max:255',
+            'read_time'                  => 'nullable|string|max:50',
+            'meta_title'                 => 'nullable|string|max:255',
+            'meta_description'           => 'nullable|string|max:500',
+            'status'                     => 'required|in:draft,published',
         ]);
+    }
 
-        if ($validated['category'] === 'other' && ! empty($validated['category_custom'])) {
-            $validated['category'] = Str::slug($validated['category_custom']);
-        }
-        unset($validated['category_custom']);
+    /**
+     * Turn validated input into the attribute array stored on the post.
+     */
+    private function prepare(array $validated, Request $request, ?BlogPost $post = null): array
+    {
+        unset($validated['tag_ids']);
 
-        $validated['slug']   = $validated['slug'] ?: Str::slug($validated['title']);
-        $validated['tags']   = $validated['tags'] ? array_map('trim', explode(',', $validated['tags'])) : null;
-        $validated['author'] = $validated['author'] ?: 'CodeSommet';
+        // Optional fields are absent from $validated when left blank.
+        $validated['slug']   = empty($validated['slug']) ? Str::slug($validated['title']) : $validated['slug'];
+        $validated['author'] = empty($validated['author']) ? 'CodeSommet' : $validated['author'];
 
         if ($request->hasFile('featured_image')) {
             $validated['featured_image'] = $request->file('featured_image')->store('blog', 'public');
         } elseif (! empty($validated['featured_image_path'])) {
             $validated['featured_image'] = $validated['featured_image_path'];
         } else {
+            // Nothing new was chosen — keep whatever the post already had.
             unset($validated['featured_image']);
         }
         unset($validated['featured_image_path']);
 
-        if ($validated['status'] === 'published' && !$blog->published_at) {
+        if ($validated['status'] === 'published' && ! $post?->published_at) {
             $validated['published_at'] = now();
         }
 
-        $blog->update($validated);
-
-        return redirect()->route('admin.blog.index')->with('success', 'Article mis à jour avec succès.');
-    }
-
-    public function destroy(BlogPost $blog)
-    {
-        $blog->delete();
-        return redirect()->route('admin.blog.index')->with('success', 'Article supprimé avec succès.');
+        return $validated;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Redirections - Test des Redirections 301 \'Redirect Checker - Test 301 & 302 Redirects | CodeSommet\' 302 | CodeSommet',
+    'title' => 'Vérificateur de Redirections - Test des Redirections 301 et 302 | CodeSommet',
     'meta_description' => 'Vérifiez les redirections HTTP (301, 302, 307, 308) et les chaînes de redirection. Validez les redirections d\'\'\'URL et corrigez les problèmes SEO. Outil gratuit de test de redirections.',
     'meta_keywords' => 'redirect checker,301 redirect,302 redirect,redirect chain,URL redirect tester,HTTP redirect tool',
     'og_title' => 'Vérificateur de Redirections - Test 301 \'Redirect Checker - Test 301 & 302 Redirects\' 302',

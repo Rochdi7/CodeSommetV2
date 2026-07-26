@@ -7,8 +7,9 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('html') && !document.title.toLowerCase().includes('css/js')) return;
-        if (document.title.toLowerCase().includes('css minif')) return;
+        // Gate on the URL slug, not the (translated) title — an exact slug match
+        // also removes the need to exclude the css-minifier page by name.
+        if (!CodeSommetTools.isTool('html-minifier')) return;
 
         var textarea = toolSection.querySelector('textarea');
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');

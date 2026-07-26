@@ -370,17 +370,17 @@
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
-                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('locations/web-development-company-cairo.text_6') }}</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
-                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
-                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
+                            <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
                         </div>
                     </div>
@@ -426,7 +426,7 @@
                                         class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
                                         <img alt="FinTech illustration" loading="lazy" width="500" height="500"
                                             decoding="async" class="w-full h-full object-contain object-bottom px-4"
-                                            src="{{ asset('images/fintech35b6.jpeg') }}" style="color: transparent;">
+                                            src="{{ asset('images/new-flyers/fintech-website-development-secure-payments.webp') }}" style="color: transparent;">
                                     </div>
                                 </div>
                                 <div class="px-5 py-4 flex flex-col flex-grow">
@@ -466,7 +466,7 @@
                                         <img alt="Legal Practice illustration" loading="lazy" width="500"
                                             height="500" decoding="async"
                                             class="w-full h-full object-contain object-bottom px-4"
-                                            src="{{ asset('images/legal-practice569f.jpeg') }}"
+                                            src="{{ asset('images/new-flyers/legal-practice-website-development.webp') }}"
                                             style="color: transparent;">
                                     </div>
                                 </div>
@@ -502,7 +502,7 @@
                                         <img alt="Consulting Firms illustration" loading="lazy" width="500"
                                             height="500" decoding="async"
                                             class="w-full h-full object-contain object-bottom px-4"
-                                            src="{{ asset('images/consultingc465.jpeg') }}" style="color: transparent;">
+                                            src="{{ asset('images/new-flyers/consulting-firm-website-development.webp') }}" style="color: transparent;">
                                     </div>
                                 </div>
                                 <div class="px-5 py-4 flex flex-col flex-grow">
@@ -536,7 +536,7 @@
                                         class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
                                         <img alt="Healthcare illustration" loading="lazy" width="500" height="500"
                                             decoding="async" class="w-full h-full object-contain object-bottom px-4"
-                                            src="{{ asset('images/healthcareec28.jpeg') }}" style="color: transparent;">
+                                            src="{{ asset('images/new-flyers/healthcare-website-development-doctor.webp') }}" style="color: transparent;">
                                     </div>
                                 </div>
                                 <div class="px-5 py-4 flex flex-col flex-grow">
@@ -572,7 +572,7 @@
                                         class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
                                         <img alt="Real Estate illustration" loading="lazy" width="500" height="500"
                                             decoding="async" class="w-full h-full object-contain object-bottom px-4"
-                                            src="{{ asset('images/real-estate42b6.jpeg') }}" style="color: transparent;">
+                                            src="{{ asset('images/new-flyers/real-estate-website-development.webp') }}" style="color: transparent;">
                                     </div>
                                 </div>
                                 <div class="px-5 py-4 flex flex-col flex-grow">
@@ -606,7 +606,7 @@
                                         <img alt="SaaS Platforms illustration" loading="lazy" width="500"
                                             height="500" decoding="async"
                                             class="w-full h-full object-contain object-bottom px-4"
-                                            src="{{ asset('images/saas-platforms65bf.jpeg') }}"
+                                            src="{{ asset('images/new-flyers/saas-platform-development.webp') }}"
                                             style="color: transparent;">
                                     </div>
                                 </div>
@@ -671,8 +671,8 @@
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('images/our-work/glamworlds/glamworlds-hero.mp4') }}"
-                                        autoPlay="" loop="" muted="" playsInline=""
+                                        src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}"
+                                        autoplay loop muted playsinline webkit-playsinline
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -698,8 +698,8 @@
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay=""
-                                        loop="" muted="" playsInline=""
+                                        src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay
+                                        loop muted playsinline webkit-playsinline
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -726,8 +726,8 @@
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}"
-                                        autoPlay="" loop="" muted="" playsInline=""
+                                        src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
+                                        autoplay loop muted playsinline webkit-playsinline
                                         class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
@@ -792,7 +792,7 @@
                             alt="{{ __('locations/web-development-company-cairo.attr_1459') }}" decoding="async"
                             class="object-contain"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            sizes="100vw" src="{{ asset('images/success-story-proptech64d2.jpeg') }}" /></div>
+                            sizes="100vw" src="{{ asset('images/new-flyers/proptech-real-estate-platform-development.webp') }}" /></div>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-8 mb-12">
                     <div
@@ -1073,11 +1073,11 @@
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-3"><a
-                                    class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight"
+                                    class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors"
                                     href="{{ route('get-quote') }}">{{ __('locations/web-development-company-cairo.text_31') }}</a><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                                    class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Connectez-vous
                                     sur WhatsApp</a></div>
                         </div>
                     </div>
@@ -1236,10 +1236,10 @@
                                     data-cal-link="code-sommet/new-client-meeting"
                                     data-cal-namespace="new-client-meeting"
                                     data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
-                                    class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">{{ __('locations/web-development-company-cairo.ml_926') }}</button><a
+                                    class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">{{ __('locations/web-development-company-cairo.ml_926') }}</button><a
                                     href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                                    class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Connectez-vous
                                     sur WhatsApp</a></div>
                         </div>
                     </div>
@@ -1327,15 +1327,15 @@
                                     {{ __('locations/web-development-company-cairo.ml_932') }}</div>
                                 <div class="p-3 md:p-4 text-center">
                                     <div
-                                        class="inline-flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full">
-                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span
-                                            class="font-bold text-xs md:text-sm text-[#00AEEF] whitespace-nowrap">CodeSommet
+                                        class="inline-flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full max-w-full">
+                                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
+                                            class="font-bold text-xs md:text-sm text-[#00AEEF] text-center leading-tight break-words">CodeSommet
                                             <!-- -->Cairo</span>
                                     </div>
                                 </div>
-                                <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
-                                    Other <!-- -->Cairo<!-- --> Agences</div>
-                                <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm">
+                                <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
+                                    Autres <!-- -->Cairo<!-- --> Agences</div>
+                                <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
                             <div
@@ -1669,23 +1669,13 @@
                                     <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
                                         {{ __('locations/web-development-company-cairo.qb_2059') }}</blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
-                                            src="{{ asset('images/testimonials/mohammed-al-raba.webp') }}"
-                                            alt="Mohammed GlamWorlds"
+                                            src="{{ asset('images/testimonials/mohammed-chajia.webp') }}"
+                                            alt="Mohammed Chajia"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
-                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed GlamWorlds</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">
-                                                {{ __('locations/web-development-company-cairo.text_54') }}</div>
-                                            <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
-                                                    <path
-                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                                    </path>
-                                                    <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>Maroc</span></div>
+                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">Mohammed Chajia</div>
+                                            
+                                            
                                         </div>
                                     </div>
                                     <div
@@ -1755,23 +1745,13 @@
                                     <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
                                         {{ __('locations/web-development-company-cairo.qb_2060') }}</blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
-                                            src="{{ asset('images/testimonials/sarah-al-mansouri.webp') }}"
-                                            alt="Dr. Sarah Al-Mansouri"
+                                            src="{{ asset('images/testimonials/mounira-kajia.webp') }}"
+                                            alt="Mounira Kajia"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
-                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">Dr. Sarah Al-Mansouri</div>
-                                            <div class="text-sm text-[#0F0F0F]/60 mb-2">
-                                                {{ __('locations/web-development-company-cairo.ml_944') }}</div>
-                                            <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
-                                                    <path
-                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                                    </path>
-                                                    <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>Dubai Healthcare City, EAU</span></div>
+                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">Mounira Kajia</div>
+                                            
+                                            
                                         </div>
                                     </div>
                                     <div
@@ -1844,23 +1824,14 @@
                                     <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
                                         {{ __('locations/web-development-company-cairo.qb_2061') }}</blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
-                                            src="{{ asset('images/testimonials/james-thornton.webp') }}"
-                                            alt="James Thornton"
+                                            src="{{ asset('images/testimonials/dental-pro.png') }}"
+                                            alt="Samir"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
-                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">James Thornton</div>
+                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">Samir</div>
                                             <div class="text-sm text-[#0F0F0F]/60 mb-2">
                                                 {{ __('locations/web-development-company-cairo.text_55') }}</div>
-                                            <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
-                                                    <path
-                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                                    </path>
-                                                    <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>London, UK</span></div>
+                                            
                                         </div>
                                     </div>
                                     <div
@@ -1930,23 +1901,14 @@
                                     <blockquote class="text-[#0F0F0F]/80 leading-relaxed mb-6 text-base">
                                         {{ __('locations/web-development-company-cairo.qb_2062') }}</blockquote>
                                     <div class="flex items-start gap-4 pt-6 border-t border-[#0F0F0F]/5"><img
-                                            src="{{ asset('images/testimonials/fatima-benali.webp') }}"
-                                            alt="Fatima Zahra Benali"
+                                            src="{{ asset('images/testimonials/gls-ceo.webp') }}"
+                                            alt="GLS"
                                             class="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-[#00AEEF]/20" />
                                         <div class="flex-1 min-w-0">
-                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">Fatima Zahra Benali</div>
+                                            <div class="font-semibold text-[#0F0F0F] mb-0.5">GLS</div>
                                             <div class="text-sm text-[#0F0F0F]/60 mb-2">
                                                 {{ __('locations/web-development-company-cairo.ml_945') }}</div>
-                                            <div class="flex items-center gap-1.5 text-xs text-[#0F0F0F]/50"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-map-pin w-3.5 h-3.5" aria-hidden="true">
-                                                    <path
-                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                                    </path>
-                                                    <circle cx="12" cy="10" r="3"></circle>
-                                                </svg><span>Marrakech, Morocco</span></div>
+                                            
                                         </div>
                                     </div>
                                     <div

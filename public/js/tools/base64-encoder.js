@@ -7,8 +7,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('base64')) return;
-
+        if (!CodeSommetTools.isTool('base64-encoder')) return;
         // Find elements
         var textarea = toolSection.querySelector('textarea');
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');

@@ -38,8 +38,8 @@ return [
     'text_28' => 'Ans d\'Expérience',
     'text_29' => 'Projets Livrés',
     'text_30' => 'Services Proposés',
-    'text_31' => 'Notre Bureau au Maroc',
-    'text_32' => 'Basés au Maroc, nous apportons une expertise locale et une qualité internationale à chaque projet.',
+    'text_31' => 'Notre Bureau à Marrakech',
+    'text_32' => 'Basés à Marrakech, nous apportons une expertise locale et une qualité internationale à chaque projet.',
     'text_33' => 'Siège Social',
     'text_34' => 'Vous avez un projet en tête ?',
     'text_35' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
@@ -93,5 +93,5 @@ return [
     'attr_1578' => 'Événement en Plein Air de l\'Équipe CodeSommet',
     'attr_1579' => 'Cérémonie de Remise de Prix de l\'Équipe CodeSommet',
     'attr_1580' => 'Sortie Piscine de l\'Équipe CodeSommet',
-    'attr_1581' => 'Arrière-plan du bureau au Maroc',
+    'attr_1581' => 'Mosquée Koutoubia à Marrakech, arrière-plan du bureau CodeSommet',
 ];

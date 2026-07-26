@@ -49,10 +49,7 @@
                                 un professionnalisme exceptionnel. Les résultats ont dépassé nos attentes."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                                style="background: linear-gradient(to right bottom, rgb(219, 234, 254), rgb(248, 250, 252));">
-                                <span class="text-white font-semibold text-sm md:text-base">MA</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/mounira-kajia.webp') }}" alt="Mounir Akajia, Fondateur de Morocco Quest DMC" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p
                                     class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">
@@ -100,10 +97,7 @@
                                 optimisations de conversion, nos ventes ont fortement augmenté."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                                style="background: linear-gradient(to right bottom, rgb(254, 215, 170), rgb(255, 251, 245));">
-                                <span class="text-white font-semibold text-sm md:text-base">S</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/dental-pro.png') }}" alt="Samir, Fondateur de Dental Pro" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p
                                     class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">
@@ -151,10 +145,7 @@
                                 le Maroc. Très professionnel et absolument recommandable."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                                style="background: linear-gradient(to right bottom, rgb(233, 213, 255), rgb(253, 252, 255));">
-                                <span class="text-white font-semibold text-sm md:text-base">R</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/gls-ceo.webp') }}" alt="Rafiq, Administration de GLS Sprachenzentrum" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p
                                     class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">
@@ -203,10 +194,7 @@
                                 nous a apporté beaucoup plus de demandes."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                                style="background: linear-gradient(to right bottom, rgb(187, 247, 208), rgb(248, 255, 250));">
-                                <span class="text-white font-semibold text-sm md:text-base">M</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" alt="Mohammed, Guide et Propritaire de Local Morocco Tours" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p
                                     class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">
@@ -219,7 +207,7 @@
                 </div>
             </div>
 
-            {{-- Card 5: Baalili Tours --}}
+            {{-- Card 5: Authentic Morocco Adventures --}}
             <div class="block">
                 <div class="testimonial-card flex-shrink-0 w-[340px] md:w-[450px] bg-[#FEFEFE] rounded-3xl overflow-hidden my-2 p-2 transition-all duration-300 hover:-translate-y-2"
                     style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 40px, rgba(0, 0, 0, 0.06) 0px 2px 8px;">
@@ -229,16 +217,16 @@
                             <div class="flex h-full gap-2 md:gap-3 px-4 md:px-8">
                                 <div class="flex-1 relative overflow-hidden flex flex-col justify-end"
                                     style="border-radius: 5px 5px 0px 0px; line-height: 0;">
-                                    <img alt="Baalili Tours maquette du haut"
+                                    <img alt="Authentic Morocco Adventures maquette du haut"
                                         class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy"
-                                        src="{{ asset('mockups/baalili-tours-top.png') }}"
+                                        src="{{ asset('mockups/authentic-morocco-adventures-top.png') }}"
                                         style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
                                 </div>
                                 <div class="flex-1 relative overflow-hidden"
                                     style="border-radius: 0px 0px 5px 5px; line-height: 0;">
-                                    <img alt="Baalili Tours maquette du bas"
+                                    <img alt="Authentic Morocco Adventures maquette du bas"
                                         class="w-full h-auto testimonial-img-bottom" loading="lazy"
-                                        src="{{ asset('mockups/baalili-tours-bottom.png') }}"
+                                        src="{{ asset('mockups/authentic-morocco-adventures-bottom.png') }}"
                                         style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
                                 </div>
                             </div>
@@ -250,21 +238,21 @@
                                 style="border-radius: 0px 0px 4px; left: 14px; bottom: -3px;"></div>
                             <p
                                 class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">
-                                "CodeSommet a entièrement repensé notre site Baalili Tours. Le design est désormais
-                                moderne, mieux structuré et bien plus professionnel. Les performances du site se sont
-                                considérablement améliorées."</p>
+                                "CodeSommet a entièrement repensé notre site Authentic Morocco Adventures. Le design est
+                                désormais moderne, mieux structuré et bien plus professionnel. Les performances du site
+                                se sont considérablement améliorées."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
                             <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                                style="background: linear-gradient(to right bottom, rgb(254, 226, 226), rgb(255, 251, 251));">
-                                <span class="text-white font-semibold text-sm md:text-base">B</span>
+                                style="background: linear-gradient(to right bottom, #00AEEF, #0071BC);">
+                                <span class="text-white font-semibold text-sm md:text-base">AM</span>
                             </div>
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p
                                     class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">
-                                    Baalili</p>
+                                    Authentic Morocco Adventures</p>
                                 <p class="text-xs md:text-sm text-[var(--text-secondary)] leading-tight">Guide &
-                                    Fondateur &bull; Baalili Tours</p>
+                                    Fondateur</p>
                             </div>
                         </div>
                     </div>

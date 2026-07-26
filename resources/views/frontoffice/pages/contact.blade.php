@@ -160,7 +160,7 @@
                     <div class="hidden lg:flex relative h-[400px] items-center justify-center"
                         style="transform:scale(0.95)">
                         <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div>
-                        <img src="{{ asset('images/contact-hero.webp') }}" alt="Contactez CodeSommet"
+                        <img src="{{ asset('images/new-flyers/contact-web-development-agency.webp') }}" alt="Contactez CodeSommet"
                             class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
                     </div>
                 </div>
@@ -259,7 +259,7 @@
                             class="object-cover transition-transform duration-500 group-hover:scale-105 z-0"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                            src="https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" />
+                            src="{{ asset('images/marrakech-koutoubia-mosque-morocco-office.webp') }}" />
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/90 z-10">
                         </div>
                         <div class="relative z-20 p-5 md:p-6 flex flex-col h-full justify-end text-white">

@@ -31,9 +31,7 @@
                             <p class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">"Travailler avec CodeSommet a complètement transformé notre présence en ligne. Au-delà de la création d'un site moderne et rapide, ils ont géré toute notre stratégie SEO avec un professionnalisme exceptionnel. Les résultats ont dépassé nos attentes."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background: linear-gradient(to right bottom, rgb(219, 234, 254), rgb(248, 250, 252));">
-                                <span class="text-white font-semibold text-sm md:text-base">MA</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/mounira-kajia.webp') }}" alt="Mounir Akajia, Fondateur de Morocco Quest DMC" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">Mounir Akajia</p>
                                 <p class="text-xs md:text-sm text-[var(--text-secondary)] leading-tight">Fondateur &bull; Morocco Quest DMC</p>
@@ -64,9 +62,7 @@
                             <p class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">"CodeSommet a développé l'ensemble de notre plateforme e-commerce. Le site est rapide, sécurisé et parfaitement optimisé. Grâce à leur structuration produit et à leurs optimisations de conversion, nos ventes ont fortement augmenté."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background: linear-gradient(to right bottom, rgb(254, 215, 170), rgb(255, 251, 245));">
-                                <span class="text-white font-semibold text-sm md:text-base">S</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/dental-pro.png') }}" alt="Samir, Fondateur de Dental Pro" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">Samir</p>
                                 <p class="text-xs md:text-sm text-[var(--text-secondary)] leading-tight">Fondateur &bull; Dental Pro</p>
@@ -97,9 +93,7 @@
                             <p class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">"Notre site est désormais moderne, rapide et parfaitement adapté aux étudiants à travers le Maroc. Très professionnel et absolument recommandable."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background: linear-gradient(to right bottom, rgb(233, 213, 255), rgb(253, 252, 255));">
-                                <span class="text-white font-semibold text-sm md:text-base">R</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/gls-ceo.webp') }}" alt="Rafiq, Administration de GLS Sprachenzentrum" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">Rafiq</p>
                                 <p class="text-xs md:text-sm text-[var(--text-secondary)] leading-tight">Administration &bull; GLS Sprachenzentrum</p>
@@ -130,9 +124,7 @@
                             <p class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">"Merci à CodeSommet d'avoir développé notre site Local Morocco Tours. Le design est moderne, rapide et parfaitement adapté aux besoins des voyageurs. L'optimisation SEO nous a apporté beaucoup plus de demandes."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background: linear-gradient(to right bottom, rgb(187, 247, 208), rgb(248, 255, 250));">
-                                <span class="text-white font-semibold text-sm md:text-base">M</span>
-                            </div>
+                            <img src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" alt="Mohammed, Guide &amp; Propriétaire de Local Morocco Tours" loading="lazy" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">
                                 <p class="font-semibold text-[var(--text-primary)] text-sm md:text-base leading-tight mb-0.5">Mohammed</p>
                                 <p class="text-xs md:text-sm text-[var(--text-secondary)] leading-tight">Guide & Propriétaire &bull; Local Morocco Tours</p>
@@ -163,7 +155,7 @@
                             <p class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">"CodeSommet a entièrement repensé notre site Baalili Tours. Le design est désormais moderne, mieux structuré et bien plus professionnel. Les performances du site se sont considérablement améliorées."</p>
                         </div>
                         <div class="flex items-start gap-2.5 md:gap-3">
-                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background: linear-gradient(to right bottom, rgb(254, 226, 226), rgb(255, 251, 251));">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 border border-[#0F0F0F]/5" style="background: linear-gradient(to right bottom, #00AEEF, #0071BC);">
                                 <span class="text-white font-semibold text-sm md:text-base">B</span>
                             </div>
                             <div class="flex flex-col justify-center min-h-[40px] md:min-h-[48px]">

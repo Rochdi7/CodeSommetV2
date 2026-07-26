@@ -100,7 +100,7 @@
                             </svg></a></div>
                 </div>
                 <div class="hidden lg:flex relative h-[400px] items-center justify-center" style="transform:scale(0.95)">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div><img src="{{ asset('images/contact-hero.webp') }}" alt="Contactez CodeSommet" class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div><img src="{{ asset('images/new-flyers/contact-web-development-agency.webp') }}" alt="Contactez CodeSommet" class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
                 <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Basés au Maroc, nous apportons une expertise locale et des standards internationaux à chaque projet que nous entreprenons.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto" style="opacity:0;transform:translateY(30px)" data-delay="1">
-                <div class="bg-[var(--bg-primary)] p-4 relative overflow-hidden group border-none shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg aspect-[5/7]"><img alt="Arrière-plan du bureau au Maroc" loading="lazy" decoding="async" class="object-cover transition-transform duration-500 group-hover:scale-105 z-0" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" src="https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" />
+                <div class="bg-[var(--bg-primary)] p-4 relative overflow-hidden group border-none shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg aspect-[5/7]"><img alt="Arrière-plan du bureau au Maroc" loading="lazy" decoding="async" class="object-cover transition-transform duration-500 group-hover:scale-105 z-0" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" src="{{ asset('images/marrakech-koutoubia-mosque-morocco-office.webp') }}" />
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/90 z-10"></div>
                     <div class="relative z-20 p-5 md:p-6 flex flex-col h-full justify-end text-white">
                         <div>
@@ -206,7 +206,7 @@
                     <form class="space-y-4 sm:space-y-6">
                         <div><label for="name" class="block text-sm font-medium text-[var(--text-primary)] mb-2">Nom Complet <span class="text-[#00AEEF]">*</span></label><input type="text" id="name" class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors" style="border-radius:10px" placeholder="Jean Dupont" name="name" value="" /></div>
                         <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
-                            <div><label for="email" class="block text-sm font-medium text-[var(--text-primary)] mb-2">Adresse Email <span class="text-[#00AEEF]">*</span></label><input type="email" id="email" class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors" style="border-radius:10px" placeholder="jean@@entreprise.com" name="email" value="" /></div>
+                            <div><label for="email" class="block text-sm font-medium text-[var(--text-primary)] mb-2">Adresse Email <span class="text-[#00AEEF]">*</span></label><input type="email" id="email" class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors" style="border-radius:10px" placeholder="jean@entreprise.com" name="email" value="" /></div>
                             <div><label for="phone" class="block text-sm font-medium text-[var(--text-primary)] mb-2">Numéro de Téléphone</label><input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors" style="border-radius:10px" placeholder="+212 6 XX XX XX XX" name="phone" value="" /></div>
                         </div>
                         <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">

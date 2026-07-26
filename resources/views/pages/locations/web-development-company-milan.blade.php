@@ -321,7 +321,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
                             <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
                                 <div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
-                                    <img alt="Illustration FinTech" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/fintech35b6.jpeg') }}" style="color: transparent;">
+                                    <img alt="Illustration FinTech" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/new-flyers/fintech-website-development-secure-payments.webp') }}" style="color: transparent;">
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
@@ -348,7 +348,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
                             <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
                                 <div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
-                                    <img alt="Illustration Cabinet Juridique" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/legal-practice569f.jpeg') }}" style="color: transparent;">
+                                    <img alt="Illustration Cabinet Juridique" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/new-flyers/legal-practice-website-development.webp') }}" style="color: transparent;">
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
@@ -374,7 +374,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
                             <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
                                 <div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
-                                    <img alt="Illustration Cabinets de Conseil" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/consultingc465.jpeg') }}" style="color: transparent;">
+                                    <img alt="Illustration Cabinets de Conseil" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/new-flyers/consulting-firm-website-development.webp') }}" style="color: transparent;">
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
@@ -400,7 +400,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
                             <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
                                 <div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
-                                    <img alt="Illustration Santé" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/healthcareec28.jpeg') }}" style="color: transparent;">
+                                    <img alt="Illustration Santé" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/new-flyers/healthcare-website-development-doctor.webp') }}" style="color: transparent;">
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
@@ -428,7 +428,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
                             <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
                                 <div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
-                                    <img alt="Illustration Immobilier" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/real-estate42b6.jpeg') }}" style="color: transparent;">
+                                    <img alt="Illustration Immobilier" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/new-flyers/real-estate-website-development.webp') }}" style="color: transparent;">
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
@@ -453,7 +453,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="flex-shrink-0 w-full h-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 flex flex-col cursor-pointer">
                             <div class="relative h-72 overflow-hidden rounded-[14px] bg-[#F3F4F6] flex-shrink-0">
                                 <div class="absolute top-0 left-0 right-0 h-[115%] flex items-end justify-center translate-y-[10%]">
-                                    <img alt="Illustration Plateformes SaaS" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/saas-platforms65bf.jpeg') }}" style="color: transparent;">
+                                    <img alt="Illustration Plateformes SaaS" loading="lazy" width="500" height="500" decoding="async" class="w-full h-full object-contain object-bottom px-4" src="{{ asset('images/new-flyers/saas-platform-development.webp') }}" style="color: transparent;">
                                 </div>
                             </div>
                             <div class="px-5 py-4 flex flex-col flex-grow">
@@ -501,7 +501,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
             <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                 <div><a class="block" href="{{ route('case-study', 'glamworlds') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/glamworlds/glamworlds-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">Technologie</span>
                                 </div>
@@ -518,7 +518,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     </a></div>
                 <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
                                 </div>
@@ -534,7 +534,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                     </a></div>
                 <div><a class="block" href="{{ route('case-study', 'morocco-quest') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('images/our-work/morocco-quest/morocco-quest-hero.mp4') }}" autoPlay="" loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
                                 </div>
@@ -576,7 +576,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                 </div>
             </div>
             <div class="relative w-full max-w-5xl mx-auto mb-12">
-                <div class="relative aspect-[16/9]"><img alt="Comment Nous Avons Aidé une Plateforme Immobilière de Milan à Générer 250+ Prospects Qualifiés par Mois" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/success-story-proptech64d2.jpeg') }}" /></div>
+                <div class="relative aspect-[16/9]"><img alt="Comment Nous Avons Aidé une Plateforme Immobilière de Milan à Générer 250+ Prospects Qualifiés par Mois" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/new-flyers/proptech-real-estate-platform-development.webp') }}" /></div>
             </div>
             <div class="grid lg:grid-cols-2 gap-8 mb-12">
                 <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
@@ -759,7 +759,7 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                     projet</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 px-4 py-3.5 rounded-full bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors text-center leading-tight" href="{{ route('get-quote') }}">Obtenir un Devis Sur Mesure</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><a class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors" href="{{ route('get-quote') }}">Obtenir un Devis Sur Mesure</a><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>
@@ -838,8 +838,8 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                                 <p class="text-black/60 text-sm mt-2">Pause ou annulation à tout moment</p>
                             </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 px-4 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors text-center leading-tight">Réserver
-                                un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-3.5 rounded-full border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors text-center inline-flex items-center justify-center leading-tight">Connectez-vous
+                        <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">Réserver
+                                un Appel Découverte</button><a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services." target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Connectez-vous
                                 sur WhatsApp</a></div>
                     </div>
                 </div>

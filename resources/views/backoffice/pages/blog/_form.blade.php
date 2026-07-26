@@ -54,38 +54,49 @@
                     </select>
                 </div>
 
+                @php
+                    $selectedCategoryId = old('category_id', $post->category_id ?? null);
+                    $selectedTagIds     = collect(old('tag_ids', isset($post) ? $post->tags->pluck('id')->all() : []))
+                                            ->map(fn ($id) => (int) $id)->all();
+                @endphp
+
                 <div>
-                    <label class="admin-label">Catégorie *</label>
-                    <select name="category" id="blogCategory" class="admin-input admin-select2" required onchange="toggleBlogCatCustom(this.value)">
-                        @foreach($categories as $val => $label)
-                        <option value="{{ $val }}" {{ old('category', $post->category ?? 'general') === $val ? 'selected' : '' }}>{{ $label }}</option>
+                    <div class="flex items-center justify-between mb-1.5">
+                        <label class="admin-label mb-0">Catégorie *</label>
+                        <a href="{{ route('admin.categories.index') }}" target="_blank"
+                           class="text-[10px] text-[#00AEEF] hover:underline">Gérer</a>
+                    </div>
+                    <select name="category_id" id="blogCategory" class="admin-input admin-select2-tags" required>
+                        <option value=""></option>
+                        @foreach($categories as $category)
+                        <option value="{{ $category->id }}" {{ (int) $selectedCategoryId === $category->id ? 'selected' : '' }}>
+                            {{ $category->name }}
+                        </option>
                         @endforeach
                     </select>
-                    @error('category') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
+                    <p class="text-[10px] text-[var(--text-tertiary)] mt-1">
+                        Tapez un nom absent de la liste pour créer une nouvelle catégorie.
+                    </p>
+                    @error('category_id') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
                 </div>
-                <div id="blogCatCustomWrap" style="display:none">
-                    <label class="admin-label">Précisez la catégorie *</label>
-                    <input type="text" name="category_custom" id="blogCatCustomInput" class="admin-input"
-                           value="{{ old('category_custom', isset($post) && !array_key_exists($post->category ?? '', $categories) ? $post->category : '') }}"
-                           placeholder="Ex: Freelance, Productivité..." />
-                </div>
-
-                <script>
-                function toggleBlogCatCustom(val) {
-                    const wrap = document.getElementById('blogCatCustomWrap');
-                    const inp  = document.getElementById('blogCatCustomInput');
-                    if (val === 'other') { wrap.style.display = 'block'; inp.required = true; }
-                    else                 { wrap.style.display = 'none';  inp.required = false; }
-                }
-                document.addEventListener('DOMContentLoaded', function () {
-                    toggleBlogCatCustom(document.getElementById('blogCategory').value);
-                });
-                </script>
 
                 <div>
-                    <label class="admin-label">Tags</label>
-                    <input type="text" name="tags" value="{{ old('tags', isset($post) && $post->tags ? implode(', ', $post->tags) : '') }}" class="admin-input" placeholder="tag1, tag2, tag3" />
-                    <p class="text-[10px] text-[var(--text-tertiary)] mt-1">Séparés par des virgules</p>
+                    <div class="flex items-center justify-between mb-1.5">
+                        <label class="admin-label mb-0">Tags</label>
+                        <a href="{{ route('admin.tags.index') }}" target="_blank"
+                           class="text-[10px] text-[#00AEEF] hover:underline">Gérer</a>
+                    </div>
+                    <select name="tag_ids[]" id="blogTags" class="admin-input admin-select2-tags" multiple>
+                        @foreach($tags as $tag)
+                        <option value="{{ $tag->id }}" {{ in_array($tag->id, $selectedTagIds, true) ? 'selected' : '' }}>
+                            {{ $tag->name }}
+                        </option>
+                        @endforeach
+                    </select>
+                    <p class="text-[10px] text-[var(--text-tertiary)] mt-1">
+                        Sélection multiple. Tapez un nom absent de la liste pour créer un nouveau tag.
+                    </p>
+                    @error('tag_ids') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
                 </div>
 
                 <div class="pt-2 border-t border-gray-100">
@@ -127,6 +138,34 @@
                     </div>
                     <p class="text-[10px] text-[var(--text-tertiary)] mt-1">JPG, PNG, WEBP. Max 5 Mo.</p>
                     @error('featured_image') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
+                </div>
+
+                <div class="pt-3 border-t border-gray-100 space-y-4">
+                    <div>
+                        <label class="admin-label">Texte alternatif (alt)</label>
+                        <input type="text" name="featured_image_alt"
+                               value="{{ old('featured_image_alt', $post->featured_image_alt ?? '') }}"
+                               class="admin-input" placeholder="Décrit l'image pour le SEO et l'accessibilité" />
+                        <p class="text-[10px] text-[var(--text-tertiary)] mt-1">
+                            Laissez vide pour utiliser le titre de l'article.
+                        </p>
+                        @error('featured_image_alt') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
+                    </div>
+
+                    <div>
+                        <label class="admin-label">Légende (caption)</label>
+                        <input type="text" name="featured_image_caption"
+                               value="{{ old('featured_image_caption', $post->featured_image_caption ?? '') }}"
+                               class="admin-input" placeholder="Texte affiché sous l'image" />
+                        @error('featured_image_caption') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
+                    </div>
+
+                    <div>
+                        <label class="admin-label">Description</label>
+                        <textarea name="featured_image_description" class="admin-input" rows="3"
+                                  placeholder="Description longue de l'image (optionnel)">{{ old('featured_image_description', $post->featured_image_description ?? '') }}</textarea>
+                        @error('featured_image_description') <p class="text-xs text-red-500 mt-1">{{ $message }}</p> @enderror
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,6 +275,54 @@
     font-size: 13px;
     outline: none;
 }
+/* Multi-select (tags) */
+.select2-container--default .select2-selection--multiple {
+    min-height: 40px;
+    padding: 4px 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: white;
+    font-size: 13px;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default.select2-container--open .select2-selection--multiple {
+    border-color: #00AEEF;
+    box-shadow: 0 0 0 3px rgba(0,174,239,0.1);
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: rgba(0,174,239,0.1);
+    border: 1px solid rgba(0,174,239,0.25);
+    border-radius: 6px;
+    color: #0071BC;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 8px 3px 6px;
+    margin: 3px 4px 3px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #0071BC;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+    padding: 0 2px;
+    order: 2;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    background: transparent;
+    color: #EF4444;
+}
+.select2-container--default .select2-search--inline .select2-search__field {
+    margin-top: 6px;
+    font-size: 13px;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: var(--text-tertiary, #9CA3AF);
+}
 /* CKEditor border match */
 .ck-editor__editable_inline {
     min-height: 380px;
@@ -253,7 +340,8 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 {{-- Select2 JS --}}
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-{{-- CKEditor 5 CDN (UMD build) --}}
+{{-- CKEditor 5 — free open-source (GPL) build from the official CDN --}}
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.css" />
 <script src="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.umd.js"></script>
 
 <script>
@@ -261,38 +349,87 @@ document.addEventListener('DOMContentLoaded', function () {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
 
     // ── CKEditor 5 ──────────────────────────────────────────────────────────
-    const { ClassicEditor, Essentials, Paragraph, Bold, Italic, Link,
-            BulletedList, NumberedList, BlockQuote, Heading,
-            Table, TableToolbar, MediaEmbed, Undo } = CKEDITOR;
+    const { ClassicEditor, Essentials, Paragraph, Bold, Italic, Underline, Strikethrough,
+            Code, CodeBlock, Link, List, BlockQuote, Heading, HorizontalLine,
+            Table, TableToolbar, TableProperties, TableCellProperties, MediaEmbed,
+            Image, ImageToolbar, ImageCaption, ImageStyle, ImageResize, ImageUpload,
+            SimpleUploadAdapter, Autoformat, PasteFromOffice, SourceEditing,
+            Alignment, Indent, RemoveFormat, WordCount, Undo } = CKEDITOR;
 
     ClassicEditor
         .create(document.getElementById('blogEditor'), {
+            // Free open-source (GPL) usage. Not enforced in this version — it only
+            // affects the "Powered by CKEditor" badge.
+            licenseKey: 'GPL',
             plugins: [
-                Essentials, Paragraph, Bold, Italic, Link,
-                BulletedList, NumberedList, BlockQuote, Heading,
-                Table, TableToolbar, MediaEmbed, Undo,
+                Essentials, Paragraph, Bold, Italic, Underline, Strikethrough,
+                Code, CodeBlock, Link, List, BlockQuote, Heading, HorizontalLine,
+                Table, TableToolbar, TableProperties, TableCellProperties, MediaEmbed,
+                Image, ImageToolbar, ImageCaption, ImageStyle, ImageResize, ImageUpload,
+                SimpleUploadAdapter, Autoformat, PasteFromOffice, SourceEditing,
+                Alignment, Indent, RemoveFormat, WordCount, Undo,
             ],
             toolbar: {
                 items: [
+                    'undo', 'redo', '|',
                     'heading', '|',
-                    'bold', 'italic', 'link', '|',
-                    'bulletedList', 'numberedList', '|',
-                    'blockQuote', 'insertTable', 'mediaEmbed', '|',
-                    'undo', 'redo',
+                    'bold', 'italic', 'underline', 'strikethrough', 'removeFormat', '|',
+                    'link', 'uploadImage', 'insertTable', 'mediaEmbed', 'blockQuote', 'codeBlock', '|',
+                    'bulletedList', 'numberedList', 'outdent', 'indent', 'alignment', '|',
+                    'horizontalLine', 'code', '|',
+                    'sourceEditing',
+                ],
+                shouldNotGroupWhenFull: true,
+            },
+            heading: {
+                options: [
+                    { model: 'paragraph', title: 'Paragraphe', class: 'ck-heading_paragraph' },
+                    { model: 'heading2', view: 'h2', title: 'Titre 2', class: 'ck-heading_heading2' },
+                    { model: 'heading3', view: 'h3', title: 'Titre 3', class: 'ck-heading_heading3' },
+                    { model: 'heading4', view: 'h4', title: 'Titre 4', class: 'ck-heading_heading4' },
+                ],
+            },
+            image: {
+                toolbar: [
+                    'imageStyle:inline', 'imageStyle:block', 'imageStyle:side', '|',
+                    'toggleImageCaption', 'imageTextAlternative', '|',
+                    'resizeImage',
                 ],
             },
             table: {
-                contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
+                contentToolbar: [
+                    'tableColumn', 'tableRow', 'mergeTableCells',
+                    'tableProperties', 'tableCellProperties',
+                ],
             },
-            initialData: document.getElementById('blogContent').value,
+            // Inline images go through the same media library endpoint as the
+            // featured image, so everything lands in storage/app/public/media.
+            simpleUpload: {
+                uploadUrl: '{{ route('admin.media.upload') }}',
+                withCredentials: true,
+                headers: { 'X-CSRF-TOKEN': csrfToken, 'Accept': 'application/json' },
+            },
+            link: {
+                addTargetToExternalLinks: true,
+                defaultProtocol: 'https://',
+            },
+            placeholder: "Rédigez le contenu de l'article…",
         })
         .then(editor => {
             window._blogEditor = editor;
-            // Sync to hidden textarea before form submit
-            const form = document.getElementById('blogContent').closest('form');
+
+            const textarea = document.getElementById('blogContent');
+
+            // Keep the hidden textarea in sync so validation errors and normal
+            // submits both carry the latest content.
+            editor.model.document.on('change:data', function () {
+                textarea.value = editor.getData();
+            });
+
+            const form = textarea.closest('form');
             if (form) {
                 form.addEventListener('submit', function () {
-                    document.getElementById('blogContent').value = editor.getData();
+                    textarea.value = editor.getData();
                 });
             }
         })
@@ -300,6 +437,83 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ── Select2 ─────────────────────────────────────────────────────────────
     $('.admin-select2').select2({ width: '100%', minimumResultsForSearch: 5 });
+
+    // ── Select2 with inline creation (category + tags) ───────────────────────
+    // "tags: true" lets the user type a value that is not in the list. The new
+    // option carries a negative placeholder id until the API returns a real one.
+    function initCreatableSelect(selector, endpoint, placeholder) {
+        const $el = $(selector);
+
+        $el.select2({
+            width: '100%',
+            tags: true,
+            placeholder: placeholder,
+            allowClear: !$el.prop('multiple'),
+            createTag: function (params) {
+                const term = $.trim(params.term);
+                if (term === '') return null;
+
+                // Do not offer to create when an existing option already matches.
+                const exists = $el.find('option').toArray().some(function (o) {
+                    return o.text.toLowerCase() === term.toLowerCase();
+                });
+                if (exists) return null;
+
+                return { id: 'new:' + term, text: term + ' (nouveau)', newTag: true };
+            },
+        });
+
+        // When a brand-new value is picked, persist it and swap in the real id.
+        $el.on('select2:select', function (e) {
+            const data = e.params.data;
+            if (!data.newTag) return;
+
+            const name = data.id.slice(4); // strip the "new:" prefix
+
+            fetch(endpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken,
+                },
+                body: JSON.stringify({ name: name }),
+            })
+                .then(r => {
+                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                    return r.json();
+                })
+                .then(created => {
+                    // Remove the temporary option, add the persisted one.
+                    $el.find('option[value="' + data.id + '"]').remove();
+
+                    if ($el.find('option[value="' + created.id + '"]').length === 0) {
+                        $el.append(new Option(created.name, created.id, false, false));
+                    }
+
+                    const current = ($el.val() || []);
+                    if ($el.prop('multiple')) {
+                        const next = current.filter(v => v !== data.id).concat(String(created.id));
+                        $el.val(next).trigger('change');
+                    } else {
+                        $el.val(String(created.id)).trigger('change');
+                    }
+                })
+                .catch(() => {
+                    // Roll back the temporary option so nothing invalid is submitted.
+                    $el.find('option[value="' + data.id + '"]').remove();
+                    if ($el.prop('multiple')) {
+                        $el.val(($el.val() || []).filter(v => v !== data.id)).trigger('change');
+                    } else {
+                        $el.val(null).trigger('change');
+                    }
+                    alert('Impossible de créer « ' + name +' ». Veuillez réessayer.');
+                });
+        });
+    }
+
+    initCreatableSelect('#blogCategory', '{{ route('admin.categories.quick') }}', 'Choisir ou créer une catégorie');
+    initCreatableSelect('#blogTags',     '{{ route('admin.tags.quick') }}',      'Choisir ou créer des tags');
 
     // ── Media Picker ─────────────────────────────────────────────────────────
     let _pickerTarget = null;

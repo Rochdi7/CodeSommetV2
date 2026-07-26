@@ -288,13 +288,23 @@ class ToolsApiController extends Controller
         $url = $this->normalizeUrl($request->input('url', ''));
         $html = $this->fetchUrl($url);
 
-        // Strip HTML to get text
-        $text = strip_tags($html);
+        // Strip HTML to get text. strip_tags() removes the tags but keeps the
+        // *contents* of <script>/<style>, which would leak CSS and JS source
+        // into the keyword list — drop those blocks first.
+        $text = preg_replace('#<(script|style|noscript|template)\b[^>]*>.*?</\1>#is', ' ', $html);
+        $text = preg_replace('#<!--.*?-->#s', ' ', $text);
+        // Insert a space where each tag was, so "…domain</h1><p>This…" does not
+        // collapse into the fused pseudo-word "domainthis".
+        $text = preg_replace('#<[^>]+>#', ' ', $text);
+        $text = strip_tags($text);
+        $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
         $text = preg_replace('/\s+/', ' ', $text);
-        $text = strtolower(trim($text));
+        $text = mb_strtolower(trim($text), 'UTF-8');
 
-        $words = preg_split('/\s+/', $text);
-        $words = array_values(array_filter($words, fn($w) => strlen($w) > 2));
+        // Keep only real words (letters, incl. accents) — strips punctuation and
+        // stray markup fragments that would otherwise rank as "keywords".
+        $words = preg_split('/[^\p{L}\p{N}\'-]+/u', $text, -1, PREG_SPLIT_NO_EMPTY);
+        $words = array_values(array_filter($words, fn($w) => mb_strlen($w, 'UTF-8') > 2));
         $totalWords = count($words);
         $uniqueWords = count(array_unique($words));
 
@@ -305,10 +315,11 @@ class ToolsApiController extends Controller
         // Single word frequency
         $freq = array_count_values(array_filter($words, fn($w) => !in_array($w, $stopWords)));
         arsort($freq);
+        $topFreq = array_slice($freq, 0, 20, true);
         $singleWords = array_map(fn($w, $c) => [
             'keyword' => $w, 'count' => $c,
             'density' => round(($c / max($totalWords, 1)) * 100, 2)
-        ], array_keys(array_slice($freq, 0, 20)), array_slice($freq, 0, 20));
+        ], array_keys($topFreq), array_values($topFreq));
 
         // Two-word phrases
         $twoWord = [];
@@ -319,10 +330,11 @@ class ToolsApiController extends Controller
             }
         }
         arsort($twoWord);
+        $topTwoWord = array_slice($twoWord, 0, 15, true);
         $twoWordPhrases = array_map(fn($p, $c) => [
             'keyword' => $p, 'count' => $c,
             'density' => round(($c / max($totalWords, 1)) * 100, 2)
-        ], array_keys(array_slice($twoWord, 0, 15)), array_slice($twoWord, 0, 15));
+        ], array_keys($topTwoWord), array_values($topTwoWord));
 
         // Three-word phrases
         $threeWord = [];
@@ -331,15 +343,20 @@ class ToolsApiController extends Controller
             $threeWord[$phrase] = ($threeWord[$phrase] ?? 0) + 1;
         }
         arsort($threeWord);
+        $topThreeWord = array_slice($threeWord, 0, 10, true);
         $threeWordPhrases = array_map(fn($p, $c) => [
             'keyword' => $p, 'count' => $c,
             'density' => round(($c / max($totalWords, 1)) * 100, 2)
-        ], array_keys(array_slice($threeWord, 0, 10, true)), array_values(array_slice($threeWord, 0, 10, true)));
+        ], array_keys($topThreeWord), array_values($topThreeWord));
 
+        // Density is only meaningful on a reasonable amount of copy — on a 20-word
+        // page a single mention is >3% and would be flagged as stuffing.
         $warnings = [];
-        foreach ($singleWords as $kw) {
-            if ($kw['density'] > 3) {
-                $warnings[] = "Keyword \"{$kw['keyword']}\" appears {$kw['count']} times ({$kw['density']}%) — possible stuffing";
+        if ($totalWords >= 100) {
+            foreach ($singleWords as $kw) {
+                if ($kw['density'] > 3 && $kw['count'] >= 3) {
+                    $warnings[] = "Keyword \"{$kw['keyword']}\" appears {$kw['count']} times ({$kw['density']}%) — possible stuffing";
+                }
             }
         }
 
@@ -1206,10 +1223,16 @@ class ToolsApiController extends Controller
         $currentTitle = trim($titleMatch[1] ?? '');
         $currentDesc = trim($descMatch[1] ?? '');
 
-        // Extract page text for keyword detection
-        $text = strip_tags(preg_replace('/<(script|style)[^>]*>.*?<\/\1>/is', '', $html));
-        $text = strtolower(preg_replace('/\s+/', ' ', $text));
-        $words = array_filter(preg_split('/\s+/', $text), fn($w) => strlen($w) > 3);
+        // Extract page text for keyword detection. Drop script/style bodies, then
+        // replace each remaining tag with a space so words either side of a tag
+        // boundary ("…domain</h1><p>This…") don't fuse into "domainthis".
+        $text = preg_replace('#<(script|style|noscript|template)\b[^>]*>.*?</\1>#is', ' ', $html);
+        $text = preg_replace('#<!--.*?-->#s', ' ', $text);
+        $text = strip_tags(preg_replace('#<[^>]+>#', ' ', $text));
+        $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $text = mb_strtolower(preg_replace('/\s+/', ' ', $text), 'UTF-8');
+        $words = preg_split('/[^\p{L}\p{N}\'-]+/u', $text, -1, PREG_SPLIT_NO_EMPTY);
+        $words = array_filter($words, fn($w) => mb_strlen($w, 'UTF-8') > 3);
         $stopWords = ['that', 'this', 'with', 'from', 'your', 'have', 'more', 'will', 'been', 'about', 'their', 'them', 'would'];
         $words = array_filter($words, fn($w) => !in_array($w, $stopWords));
         $freq = array_count_values($words);
@@ -1218,22 +1241,28 @@ class ToolsApiController extends Controller
 
         // Generate optimized versions
         $domain = parse_url($url, PHP_URL_HOST) ?? '';
+        // Use mb_* — strlen/substr count bytes, so an accented title would be
+        // measured wrong and could be cut mid-character into a mojibake byte.
         $optimizedTitle = $currentTitle ?: ucwords(str_replace(['.com', '.net', '.org', 'www.'], '', $domain)) . ' — Official Website';
-        if (strlen($optimizedTitle) > 60) $optimizedTitle = substr($optimizedTitle, 0, 57) . '...';
+        if (mb_strlen($optimizedTitle, 'UTF-8') > 60) $optimizedTitle = mb_substr($optimizedTitle, 0, 57, 'UTF-8') . '...';
 
         $optimizedDesc = $currentDesc ?: 'Discover what ' . $domain . ' has to offer. Visit us for the latest information, services, and resources.';
-        if (strlen($optimizedDesc) > 160) $optimizedDesc = substr($optimizedDesc, 0, 157) . '...';
+        if (mb_strlen($optimizedDesc, 'UTF-8') > 160) $optimizedDesc = mb_substr($optimizedDesc, 0, 157, 'UTF-8') . '...';
 
-        $htmlCode = "<title>{$optimizedTitle}</title>\n" .
-            "<meta name=\"description\" content=\"{$optimizedDesc}\">\n" .
-            "<meta name=\"keywords\" content=\"{$topKeywords}\">\n" .
-            "<meta property=\"og:title\" content=\"{$optimizedTitle}\">\n" .
-            "<meta property=\"og:description\" content=\"{$optimizedDesc}\">\n" .
-            "<meta property=\"og:url\" content=\"{$url}\">\n" .
+        // Escape before interpolating — an apostrophe or quote in the source title
+        // would otherwise terminate the content="" attribute and emit broken tags.
+        $e = fn(string $v): string => htmlspecialchars($v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+        $htmlCode = "<title>{$e($optimizedTitle)}</title>\n" .
+            "<meta name=\"description\" content=\"{$e($optimizedDesc)}\">\n" .
+            "<meta name=\"keywords\" content=\"{$e($topKeywords)}\">\n" .
+            "<meta property=\"og:title\" content=\"{$e($optimizedTitle)}\">\n" .
+            "<meta property=\"og:description\" content=\"{$e($optimizedDesc)}\">\n" .
+            "<meta property=\"og:url\" content=\"{$e($url)}\">\n" .
             "<meta property=\"og:type\" content=\"website\">\n" .
             "<meta name=\"twitter:card\" content=\"summary_large_image\">\n" .
-            "<meta name=\"twitter:title\" content=\"{$optimizedTitle}\">\n" .
-            "<meta name=\"twitter:description\" content=\"{$optimizedDesc}\">";
+            "<meta name=\"twitter:title\" content=\"{$e($optimizedTitle)}\">\n" .
+            "<meta name=\"twitter:description\" content=\"{$e($optimizedDesc)}\">";
 
         return response()->json([
             'title' => $optimizedTitle,
@@ -1241,8 +1270,8 @@ class ToolsApiController extends Controller
             'keywords' => $topKeywords,
             'htmlCode' => $htmlCode,
             'stats' => [
-                'titleLength' => strlen($optimizedTitle) . '/60',
-                'descLength' => strlen($optimizedDesc) . '/160',
+                'titleLength' => mb_strlen($optimizedTitle, 'UTF-8') . '/60',
+                'descLength' => mb_strlen($optimizedDesc, 'UTF-8') . '/160',
                 'keywordsFound' => count(array_slice(array_keys($freq), 0, 8)),
             ],
         ]);

@@ -7,9 +7,10 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('schema markup') && !document.title.toLowerCase().includes('schema generator')) return;
-        // Avoid conflicts with local-business and faq schema
-        if (document.title.toLowerCase().includes('local business') || document.title.toLowerCase().includes('faq')) return;
+        // Gate on the URL slug, not the (translated) title. An exact slug match
+        // also keeps this off the local-business-schema and faq-schema pages,
+        // which the previous title exclusions were working around.
+        if (!CodeSommetTools.isTool('schema-generator')) return;
 
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');
         if (!actionBtn) return;

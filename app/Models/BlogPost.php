@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class BlogPost extends Model
 {
@@ -15,8 +17,10 @@ class BlogPost extends Model
         'excerpt',
         'content',
         'featured_image',
-        'category',
-        'tags',
+        'featured_image_alt',
+        'featured_image_caption',
+        'featured_image_description',
+        'category_id',
         'author',
         'author_avatar',
         'read_time',
@@ -27,9 +31,34 @@ class BlogPost extends Model
     ];
 
     protected $casts = [
-        'tags' => 'array',
         'published_at' => 'datetime',
     ];
+
+    public function category(): BelongsTo
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function tags(): BelongsToMany
+    {
+        return $this->belongsToMany(Tag::class);
+    }
+
+    /**
+     * Display name for the category, falling back to the legacy slug column.
+     */
+    public function getCategoryNameAttribute(): string
+    {
+        return $this->category?->name ?? 'Général';
+    }
+
+    /**
+     * Alt text for the featured image, falling back to the post title.
+     */
+    public function getImageAltAttribute(): string
+    {
+        return $this->featured_image_alt ?: $this->title;
+    }
 
     public function scopePublished($query)
     {

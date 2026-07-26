@@ -86,7 +86,7 @@ e-commerce, applications mobiles & SaaS. Plus de 50 projets livrés.')
                 </div>
                 <div class="hidden lg:flex relative h-[400px] items-center justify-center" style="transform:scale(0.95)">
                     <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div>
-                    <img src="{{ asset('images/about-hero.webp') }}" alt="À Propos de CodeSommet" class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
+                    <img src="{{ asset('images/new-flyers/responsive-web-design-developer.webp') }}" alt="À Propos de CodeSommet" class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@ e-commerce, applications mobiles & SaaS. Plus de 50 projets livrés.')
     <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="relative h-[400px] lg:h-[500px] flex items-center justify-center" style="opacity:0;transform:translateY(30px)"><img src="{{ asset('images/about-mission-team-collaboration.webp') }}" alt="Collaboration de l'équipe CodeSommet" class="w-full h-full object-contain" /></div>
+                <div class="relative h-[400px] lg:h-[500px] flex items-center justify-center" style="opacity:0;transform:translateY(30px)"><img src="{{ asset('images/new-flyers/web-agency-team-working.webp') }}" alt="Collaboration de l'équipe CodeSommet" class="w-full h-full object-contain" /></div>
                 <div style="opacity:0;transform:translateY(30px)">
                     <div class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-4 h-4 mr-2" aria-hidden="true">

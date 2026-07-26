@@ -112,7 +112,7 @@
                     <div class="hidden lg:flex relative h-[400px] items-center justify-center"
                         style="transform:scale(0.95)">
                         <div class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/5 to-transparent rounded-3xl"></div>
-                        <img src="{{ asset('images/about-hero.webp') }}" alt="{{ __('about.attr_1570') }}"
+                        <img src="{{ asset('images/new-flyers/responsive-web-design-developer.webp') }}" alt="{{ __('about.attr_1570') }}"
                             class="relative w-full max-w-md object-contain drop-shadow-2xl" loading="eager" />
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div class="relative h-[400px] lg:h-[500px] flex items-center justify-center"
                         style="opacity:0;transform:translateY(30px)"><img
-                            src="{{ asset('images/about-mission-team-collaboration.webp') }}"
+                            src="{{ asset('images/new-flyers/web-agency-team-working.webp') }}"
                             alt="{{ __('about.attr_1571') }}" class="w-full h-full object-contain" /></div>
                     <div style="opacity:0;transform:translateY(30px)">
                         <div
@@ -473,164 +473,8 @@
         </section>
         <section class="w-full py-24 md:py-32 bg-white">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-                <div class="text-center mb-12" style="opacity:0;transform:translateY(30px)">
-                    <div
-                        class="inline-flex items-center rounded-full font-medium transition-all duration-200 bg-[var(--color-primary-orange)]/10 text-[var(--color-primary-orange)] border border-[var(--color-primary-orange)]/20 text-xs px-3 py-1 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-users w-4 h-4 mr-2" aria-hidden="true">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
-                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                        </svg>{{ __('about.ml_1067') }}
-                    </div>
-                    <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('about.text_22') }}</h2>
-                    <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-3xl mx-auto">
-                        {{ __('about.text_23') }} <a href="{{ route('contact') }}"
-                            class="text-[#00AEEF] hover:underline">{{ __('about.text_141') }}</a>.</p>
-                </div>
                 <div class="space-y-8">
-                    <div class="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl group"
-                        style="opacity:0;transform:translateY(30px)"><img alt="{{ __('about.attr_1572') }}"
-                            decoding="async"
-                            class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                            src="{{ asset('images/codesommet-team-professional54b7.jpeg') }}" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                        <div class="absolute bottom-8 left-8 right-8 text-white">
-                            <div class="flex items-center gap-2 mb-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-users w-5 h-5 text-white"
-                                    aria-hidden="true">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                    <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                </svg><span
-                                    class="text-sm font-medium uppercase tracking-wide text-white">{{ __('about.text_24') }}</span>
-                            </div>
-                            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white"
-                                style="font-family:var(--font-heading)">{{ __('about.text_25') }}</h3>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
-                        style="opacity:0;transform:translateY(30px)">
-                        <div
-                            class="relative h-[300px] md:h-[400px] lg:col-span-2 rounded-2xl overflow-hidden shadow-lg group lg:row-start-1">
-                            <img alt="{{ __('about.attr_1573') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
-                                src="{{ asset('images/codesommet-team-awardsfc1b.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-[#00AEEF]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                            <div
-                                class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-award w-4 h-4 text-[#00AEEF]" aria-hidden="true">
-                                    <path
-                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
-                                    </path>
-                                    <circle cx="12" cy="8" r="6"></circle>
-                                </svg><span class="text-sm font-semibold text-[#0F0F0F]">{{ __('about.text_26') }}</span>
-                            </div>
-                        </div>
-                        <div
-                            class="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg group lg:row-start-1">
-                            <img alt="{{ __('about.attr_1574') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
-                                src="{{ asset('images/codesommet-team-workingfdee.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-                        <div class="relative h-[250px] md:h-[300px] rounded-2xl overflow-hidden shadow-lg group"><img
-                                alt="{{ __('about.attr_1575') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
-                                src="{{ asset('images/codesommet-team-celebration-cups2e44.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-                        <div
-                            class="relative h-[250px] md:h-[300px] lg:col-span-2 rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="{{ __('about.attr_1576') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
-                                src="{{ asset('images/codesommet-team-adventure4fe2.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                            <div
-                                class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-heart w-4 h-4 text-[#00AEEF]" aria-hidden="true">
-                                    <path
-                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
-                                    </path>
-                                </svg><span class="text-sm font-semibold text-[#0F0F0F]">{{ __('about.text_27') }}</span>
-                            </div>
-                        </div>
-                        <div
-                            class="relative h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="{{ __('about.attr_1577') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
-                                src="{{ asset('images/codesommet-team-pizzaca59.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-                        <div
-                            class="relative h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="{{ __('about.attr_1578') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
-                                src="{{ asset('images/codesommet-team-outdoor9dbc.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-                        <div
-                            class="relative h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="{{ __('about.attr_1579') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
-                                src="{{ asset('images/codesommet-team-awards-23701.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-                        <div
-                            class="relative h-[300px] md:h-[350px] lg:h-[400px] lg:col-span-3 rounded-2xl overflow-hidden shadow-lg group">
-                            <img alt="{{ __('about.attr_1580') }}" loading="lazy" decoding="async"
-                                class="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
-                                src="{{ asset('images/codesommet-team-outing-poolc4f7.jpeg') }}" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-4"
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
                         style="opacity:0;transform:translateY(30px)">
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
@@ -683,7 +527,7 @@
                             class="object-cover transition-transform duration-500 group-hover:scale-105 z-0"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                             sizes="(max-width: 640px) 100vw, 100vw"
-                            src="{{ asset('images/photo-1512453979798-5ea266f8880c891b.jpeg') }}" />
+                            src="{{ asset('images/marrakech-koutoubia-mosque-morocco-office.webp') }}" />
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/90 z-10">
                         </div>
                         <div class="relative z-20 p-5 md:p-6 flex flex-col h-full justify-end text-white">
@@ -692,9 +536,9 @@
                                         aria-label="Drapeau du Maroc">&#x1F1F2;&#x1F1E6;</span>
                                     <div>
                                         <h3 class="text-lg md:text-xl font-semibold mb-1.5 text-white drop-shadow-lg">
-                                            Maroc (Bureau Principal)</h3>
+                                            Marrakech (Bureau Principal)</h3>
                                         <address class="not-italic text-gray-200 text-xs md:text-sm leading-snug"><span
-                                                class="block">Maroc</span><span
+                                                class="block">Marrakech, Maroc</span><span
                                                 class="block">{{ __('about.text_33') }}</span>
                                         </address>
                                     </div>

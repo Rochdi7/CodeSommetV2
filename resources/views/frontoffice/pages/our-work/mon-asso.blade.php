@@ -116,8 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pt-2 md:pt-4"><a href="https://www.msingermany.co.in/" target="_blank"
-                            rel="noopener noreferrer" class="block w-full"><button
+                    <div class="pt-2 md:pt-4"><a href="#" class="block w-full"><button
                                 class="inline-flex items-center justify-center cursor-pointer disabled:pointer-events-none disabled:opacity-50 overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] rounded-full group relative w-full bg-gradient-to-r from-[#00AEEF] to-[#0071BC] text-white hover:shadow-[0_8px_30px_rgba(0,174,239,0.4)] transition-all duration-300 text-base md:text-lg px-6 py-3.5 md:py-4 h-auto font-semibold"
                                 tabindex="0"><span>{{ __('our-work/mon-asso.text_145') }}</span><svg
                                     class="w-5 h-5 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform"
@@ -132,8 +131,8 @@
                     </div>
                     <div
                         class="relative aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 md:border-2 shadow-xl md:shadow-2xl">
-                        <video src="{{ asset('images/our-work/mon-asso/mon-asso-hero.mp4') }}" autoPlay=""
-                            loop="" muted="" playsInline="" class="w-full h-full object-cover"></video>
+                        <video src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay
+                            loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                     </div>
                 </div>
             </div>
@@ -442,8 +441,8 @@
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <img src="{{ asset('images/our-work/mon-asso/homepage.webp') }}" alt="Accueil"
-                        class="w-full h-full object-cover" />
+                    <video src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay loop muted
+                        playsinline class="w-full h-full object-cover"></video>
                 </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
@@ -681,12 +680,11 @@
                                         class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
                                         <span class="text-white font-bold text-base md:text-lg">U</span>
                                     </div>
-                                    <div>
+<div>
                                         <p class="font-bold text-white text-sm md:text-base">Uday Yatnalli</p>
-                                        <p class="text-white/90 text-xs md:text-sm">Fondateur, Mon Asso (Project Azubi
+                                        <p class="text-white/90 text-xs md:text-sm">Fondateur, Mon Asso (GLS Sprachenzentrum
                                             Learning Solutions)</p>
-                                    </div>
-                                </div>
+                                    </div>                                </div>
                             </div>
                         </div>
                     </div>

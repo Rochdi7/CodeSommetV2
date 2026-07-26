@@ -7,8 +7,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var toolSection = document.querySelector('section.max-w-5xl');
         if (!toolSection) return;
-        if (!document.title.toLowerCase().includes('utm')) return;
-
+        if (!CodeSommetTools.isTool('utm-builder')) return;
         // Find all input fields
         var inputs = toolSection.querySelectorAll('input[type="text"], input[type="url"]');
         var actionBtn = toolSection.querySelector('button[class*="bg-gradient"], button.w-full');

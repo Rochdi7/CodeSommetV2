@@ -274,11 +274,13 @@
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 {{-- Project 1 --}}
-                <div class="group bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
-                    <div class="aspect-[16/10] bg-gradient-to-br from-[#00AEEF]/10 to-[#00AEEF]/5 flex items-center justify-center p-6">
-                        <div class="text-center">
-                            <div class="text-4xl mb-2">🎓</div>
-                            <span class="text-sm font-medium text-[#00AEEF]">{{ __('locations/web-development-company-worldwide.text_32') }}</span>
+                <a href="{{ route('case-study', 'mon-asso') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
+                    <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
+                        <video src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}"
+                            autoplay loop muted playsinline preload="metadata"
+                            class="w-full h-full object-cover"></video>
+                        <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                            <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-worldwide.text_32') }}</span>
                         </div>
                     </div>
                     <div class="p-6">
@@ -286,13 +288,15 @@
                         <p class="text-sm text-[#0F0F0F]/60 leading-relaxed mb-3">{{ __('locations/web-development-company-worldwide.text_33') }}</p>
                         <span class="text-xs text-[#0F0F0F]/40">{{ __('locations/web-development-company-worldwide.text_34') }}</span>
                     </div>
-                </div>
+                </a>
                 {{-- Project 2 --}}
-                <div class="group bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
-                    <div class="aspect-[16/10] bg-gradient-to-br from-[#FF6B35]/10 to-[#FF6B35]/5 flex items-center justify-center p-6">
-                        <div class="text-center">
-                            <div class="text-4xl mb-2">🏢</div>
-                            <span class="text-sm font-medium text-[#FF6B35]">Technologie</span>
+                <a href="{{ route('case-study', 'glamworlds') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
+                    <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
+                        <video src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}"
+                            autoplay loop muted playsinline preload="metadata"
+                            class="w-full h-full object-cover"></video>
+                        <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                            <span class="text-xs font-bold text-white tracking-wide uppercase">Technologie</span>
                         </div>
                     </div>
                     <div class="p-6">
@@ -300,13 +304,15 @@
                         <p class="text-sm text-[#0F0F0F]/60 leading-relaxed mb-3">{{ __('locations/web-development-company-worldwide.text_35') }}</p>
                         <span class="text-xs text-[#0F0F0F]/40">{{ __('locations/web-development-company-worldwide.text_36') }}</span>
                     </div>
-                </div>
+                </a>
                 {{-- Project 3 --}}
-                <div class="group bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
-                    <div class="aspect-[16/10] bg-gradient-to-br from-[#22C55E]/10 to-[#22C55E]/5 flex items-center justify-center p-6">
-                        <div class="text-center">
-                            <div class="text-4xl mb-2">{{ __('locations/web-development-company-worldwide.text_449') }}</div>
-                            <span class="text-sm font-medium text-[#22C55E]">{{ __('locations/web-development-company-worldwide.text_37') }}</span>
+                <a href="{{ route('case-study', 'morocco-quest') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
+                    <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
+                        <video src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
+                            autoplay loop muted playsinline preload="metadata"
+                            class="w-full h-full object-cover"></video>
+                        <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                            <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-worldwide.text_37') }}</span>
                         </div>
                     </div>
                     <div class="p-6">
@@ -314,7 +320,7 @@
                         <p class="text-sm text-[#0F0F0F]/60 leading-relaxed mb-3">{{ __('locations/web-development-company-worldwide.text_38') }}</p>
                         <span class="text-xs text-[#0F0F0F]/40">{{ __('locations/web-development-company-worldwide.text_39') }}</span>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="text-center mt-12">
                 <a href="{{ route('our-work') }}" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#0F0F0F] text-white font-medium text-sm hover:bg-[#0F0F0F]/90 transition-all duration-200">
@@ -337,7 +343,7 @@
                 <span class="inline-block px-4 py-1.5 bg-[#F59E0B]/10 text-[#F59E0B] text-xs font-semibold uppercase tracking-wider rounded-full mb-4">FAQ</span>
                 <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('locations/web-development-company-worldwide.text_40') }}</h2>
             </div>
-            <div class="max-w-3xl mx-auto space-y-4">
+            <div class="max-w-3xl mx-auto space-y-3">
                 @php
                 $faqs = [
                 ['q' => __('locations/web-development-company-worldwide.faq_q1'), 'a' => __('locations/web-development-company-worldwide.faq_a1')],
@@ -349,15 +355,15 @@
                 ];
                 @endphp
                 @foreach($faqs as $faq)
-                <details class="group bg-[#F8F8F8] rounded-xl border border-[#E8E8E8]">
-                    <summary class="flex items-center justify-between cursor-pointer px-6 py-5 text-left">
-                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-0 pr-4">{{ $faq['q'] }}</h3>
+                <details class="group bg-[#F8F8F8] rounded-xl border border-[#E8E8E8] transition-colors duration-200 hover:border-[#DCDCDC] open:bg-white">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-5 sm:px-6 py-4 sm:py-5 text-left list-none [&::-webkit-details-marker]:hidden">
+                        <h3 class="text-base sm:text-lg font-semibold text-[#0F0F0F] leading-snug mb-0">{{ $faq['q'] }}</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#0F0F0F]/40 flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </summary>
-                    <div class="px-6 pb-5">
-                        <p class="text-sm text-[#0F0F0F]/60 leading-relaxed">{{ $faq['a'] }}</p>
+                    <div class="px-5 sm:px-6 pt-4 pb-5 sm:pb-6 border-t border-[#E8E8E8]">
+                        <p class="text-[15px] text-[#0F0F0F]/60 leading-[1.7]">{{ $faq['a'] }}</p>
                     </div>
                 </details>
                 @endforeach
