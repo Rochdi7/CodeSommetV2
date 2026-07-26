@@ -90,7 +90,7 @@
         <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'un certificat SSL et pourquoi est-il important ?</h3>
@@ -99,11 +99,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Un certificat SSL/TLS chiffre les données transmises entre votre site web et les visiteurs, protégeant les informations sensibles comme les mots de passe et les détails de paiement. C'est essentiel pour la sécurité, la confiance des utilisateurs et le SEO - Google marque les sites HTTP comme 'Non sécurisé' et utilise HTTPS comme facteur de classement. Tous les sites web modernes doivent avoir un certificat SSL valide.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence dois-je vérifier mon certificat SSL ?</h3>
@@ -112,11 +112,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Vérifiez votre certificat SSL mensuellement, surtout 60 à 90 jours avant l'expiration. De nombreux certificats sont valides pendant 90 jours (Let's Encrypt) ou 1 an. Configurez un suivi automatisé ou un renouvellement pour éviter l'expiration, qui cause des avertissements de navigateur et brise la confiance des utilisateurs. La plupart des hébergeurs proposent le renouvellement automatique des certificats SSL.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Que signifie 'chaîne de certificat invalide' ?</h3>
@@ -125,11 +125,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>La validation de la chaîne de certificat garantit que votre certificat SSL est correctement lié à une Autorité de Certification (CA) de confiance. Une chaîne invalide signifie que des certificats intermédiaires sont manquants ou mal configurés. Cela provoque des avertissements de sécurité du navigateur même si votre certificat est valide. Contactez votre fournisseur SSL ou votre hébergeur pour corriger les problèmes de chaîne de certificat.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Un certificat SSL auto-signé est-il sûr à utiliser ?</h3>
@@ -138,11 +138,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Les certificats auto-signés fournissent le chiffrement mais ne sont pas approuvés par les navigateurs - les visiteurs voient des avertissements de sécurité effrayants. Ils conviennent pour les tests internes ou les environnements de développement, mais N'utilisez JAMAIS de certificats auto-signés sur des sites web publics. Utilisez des certificats gratuits de Let's Encrypt ou des certificats payants d'autorités de certification de confiance (DigiCert, Sectigo, GlobalSign) pour les sites de production.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quelle version du protocole SSL/TLS dois-je utiliser ?</h3>
@@ -151,11 +151,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Utilisez TLS 1.2 ou TLS 1.3 (la dernière et la plus sécurisée). Les anciens protocoles (SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1) ont des vulnérabilités connues et sont obsolètes. Les navigateurs et serveurs modernes supportent TLS 1.2+ par défaut. Désactivez les anciens protocoles dans la configuration de votre serveur pour maintenir une sécurité forte.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Mon certificat SSL expire bientôt - que dois-je faire ?</h3>
@@ -164,7 +164,7 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                 <p>Renouvelez votre certificat immédiatement s'il expire dans moins de 30 jours. La plupart des fournisseurs SSL envoient des rappels de renouvellement 60 à 90 jours avant l'expiration. Si vous utilisez Let's Encrypt, activez le renouvellement automatique via Certbot. Si vous utilisez un certificat payant, renouvelez auprès de votre fournisseur. Après le renouvellement, mettez à jour la configuration de votre serveur et vérifiez que le nouveau certificat est actif.</p>
             </div>
         </div>

@@ -103,7 +103,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'un générateur de balises méta et pourquoi en ai-je besoin ?</h3>
@@ -112,11 +112,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Un générateur de balises méta crée des balises de titre, méta descriptions et balises Open Graph optimisées SEO pour votre site web. These tags help search engines understand your content and improve how your pages appear in search results and social media shares, ultimately driving more organic traffic to your site.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment utiliser le Générateur de Balises Méta ?</h3>
@@ -125,14 +125,14 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Entrez simplement l'URL de votre site web dans le champ de saisie et cliquez sur 'Générer les Balises Méta'. Our AI will analyze your page content, extract relevant information, and create optimized meta tags. You can then copy the generated HTML code and paste it into your website's
 
                             <head> section.
                         </p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les limites de caractères idéales pour les balises méta ?</h3>
@@ -141,11 +141,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les balises de titre doivent faire 50-60 caractères pour éviter la troncature dans les résultats de recherche. Les méta descriptions doivent faire 150-160 caractères for optimal display. Our generator automatically ensures your tags stay within these limits while maximizing keyword relevance and readability.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Que sont les balises Open Graph et pourquoi sont-elles importantes ?</h3>
@@ -154,11 +154,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les balises Open Graph contrôlent l'apparence de votre page lorsqu'elle est partagée sur les plateformes de réseaux sociaux like Facebook, LinkedIn, and Twitter. They include a title, description, and image that make your content more attractive and clickable. Our generator creates complete Open Graph and Twitter Card tags for maximum social media visibility.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les erreurs courantes de balises méta à éviter ?</h3>
@@ -167,11 +167,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les erreurs courantes incluent : utiliser des balises dupliquées sur plusieurs pages, keyword stuffing, exceeding character limits, missing Open Graph tags, and not including target keywords. Our AI-powered generator automatically avoids these pitfalls by analyzing your content and creating unique, optimized tags for each page.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence dois-je mettre à jour mes balises méta ?</h3>
@@ -180,11 +180,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Mettez à jour les balises méta chaque fois que vous modifiez significativement le contenu de votre page, rebrand, target new keywords, or notice declining search performance. Regular updates (every 3-6 months) help keep your SEO strategy aligned with current search trends and user intent.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je personnaliser les balises méta générées ?</h3>
@@ -193,7 +193,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Absolument ! Les balises générées sont un point de départ optimisé pour les bonnes pratiques SEO. You can copy them and make any adjustments needed to match your brand voice, target specific keywords, or emphasize particular features. The HTML code is fully editable and ready to implement.</p>
                     </div>
                 </div>

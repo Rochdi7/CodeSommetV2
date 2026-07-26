@@ -63,7 +63,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'un slug URL et pourquoi est-il important pour le SEO ?</h3>
@@ -72,11 +72,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>La longueur idéale d'un slug URL est de 3 à 5 mots ou 30 à 60 caractères. Les slugs plus courts sont plus faciles à lire, partager et mémoriser, tout en étant suffisamment descriptifs pour le SEO. Évitez les slugs extrêmement longs qui incluent chaque mot de votre titre, car ils peuvent paraître spammeurs et sont plus difficiles à traiter pour les utilisateurs. Notre outil suggère automatiquement des longueurs optimisées basées sur les meilleures pratiques.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Dois-je utiliser des tirets ou des tirets bas dans les slugs URL ?</h3>
@@ -85,7 +85,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button></div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la longueur idéale pour un slug URL ?</h3>
@@ -94,7 +94,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button></div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment gérer les caractères spéciaux et les mots vides ?</h3>
@@ -103,11 +103,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Changer un slug URL existant peut impacter le SEO s'il n'est pas fait correctement. Si vous devez changer un slug, implémentez toujours une redirection 301 de l'ancienne URL vers la nouvelle pour préserver l'équité des liens et éviter les liens cassés. Informez les moteurs de recherche du changement et surveillez le trafic pour détecter d'éventuelles baisses. Ne changez les slugs que si c'est absolument nécessaire, car les URL établies avec des backlinks ont accumulé de la valeur SEO.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Où placer les mots-clés dans mon slug URL ?</h3>
@@ -116,7 +116,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button></div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je changer un slug URL existant sans nuire au SEO ?</h3>
@@ -125,7 +125,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button></div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelles sont les différentes variantes de slug et quand les utiliser ?</h3>
@@ -134,7 +134,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Notre outil fournit trois variantes : Standard (recommandé pour la plupart des cas) supprime les mots vides tout en gardant les premier et dernier mots pour le contexte ; SEO Strict optimise agressivement avec une limite de 60 caractères et une suppression maximale des mots vides pour les mots-clés compétitifs ; Conserver Tous les Mots garde chaque mot pour quand la formulation exacte compte, comme les noms de marque ou les termes juridiques. Choisissez selon votre contenu spécifique et vos objectifs SEO.</p>
                     </div>
                 </div>

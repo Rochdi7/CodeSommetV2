@@ -132,7 +132,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'une redirection meta refresh et comment fonctionne-t-elle ?</h3>
@@ -141,13 +141,13 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Une redirection meta refresh est une redirection HTML qui utilise une balise
                             <meta> dans la section head de la page to automatically redirect users to another URL after a specified delay. Unlike server-side redirects (301/302), meta refresh happens in the browser after the page loads. The browser reads the meta tag, waits for the delay, and then navigates to the destination URL.
                         </p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quand dois-je utiliser les redirections meta refresh au lieu des redirections 301 ?</h3>
@@ -156,11 +156,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Utilisez les redirections meta refresh uniquement lorsque vous n'avez pas accès au serveur (like static hosting platforms) or want users to see a 'redirecting...' message. For SEO purposes, always prefer 301 redirects as they pass link equity (PageRank) to the new URL. Meta refresh redirects may not preserve SEO value and can be treated as soft 301s by search engines, but results vary.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quel est le meilleur réglage de délai pour une redirection meta refresh ?</h3>
@@ -169,11 +169,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Le délai recommandé est de 5 secondes, donnant aux utilisateurs le temps de lire le message de redirection and understand what's happening. Use 0 seconds (instant) only when the redirect is purely technical. Avoid delays over 10 seconds as users may navigate away or think the page is broken. Always include a manual 'click here' fallback link for accessibility.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Les redirections meta refresh nuisent-elles au SEO ?</h3>
@@ -182,11 +182,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Oui, les redirections meta refresh peuvent avoir un impact négatif sur le SEO. Search engines like Google may not pass full link equity through meta refresh redirects, and they're considered a less reliable signal than server-side 301 redirects. Google generally treats 0-second meta refresh redirects similarly to 301s, but delays over 5 seconds may be ignored completely. For permanent moves, always use 301 redirects.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les redirections meta refresh et JavaScript ?</h3>
@@ -195,11 +195,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les redirections meta refresh fonctionnent même avec JavaScript désactivé and are defined in HTML, making them more reliable for older browsers. JavaScript redirects (window.location.href) execute faster, offer more control (like conditional redirects), and work better with modern web apps. However, JavaScript redirects fail if JavaScript is disabled, while meta refresh continues to work.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser les redirections meta refresh pour les utilisateurs mobiles ?</h3>
@@ -208,11 +208,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Oui, les redirections meta refresh fonctionnent sur tous les navigateurs et appareils mobiles. They're a good option for redirecting mobile users to app download pages or mobile-optimized sites when server-side redirects aren't available. However, ensure the redirect page loads quickly and the fallback link is easily clickable on mobile screens for better user experience.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quels sont les meilleurs cas d'utilisation pour les redirections meta refresh ?</h3>
@@ -221,7 +221,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les cas d'utilisation valides incluent : les pages d'atterrissage de campagne temporaires with countdown timers, client-side redirects on static hosting platforms (GitHub Pages, Netlify without server access), affiliate link redirect pages, 'thank you' pages that redirect after showing a message, and maintenance pages that redirect after a specific time. Avoid using them for permanent SEO redirects or critical navigation paths.</p>
                     </div>
                 </div>

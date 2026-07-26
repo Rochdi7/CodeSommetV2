@@ -90,7 +90,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi aurais-je besoin de convertir du HTML en texte brut ?</h3>
@@ -99,11 +99,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>La conversion du HTML en texte brut est essentielle pour le marketing par e-mail (de nombreux clients de messagerie préfèrent les versions en texte brut), l'analyse de contenu, l'extraction de données, la création de versions accessibles pour les lecteurs d'écran et lorsque vous devez copier du contenu sans formatage. C'est également utile pour l'analyse SEO et le comptage de mots sans interférence de balisage.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">En quoi cela diffère-t-il de la simple suppression des balises HTML ?</h3>
@@ -112,11 +112,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Notre convertisseur préserve intelligemment la structure et le sens, il ne se contente pas de supprimer les balises. Il maintient les sauts de paragraphe, convertit les listes en puces, préserve les URL des liens dans un format lisible et nettoie les espaces blancs inutiles. La simple suppression de balises aboutit souvent à un texte illisible sans espacement ni structure.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Le convertisseur préservera-t-il le formatage et la structure de mon contenu ?</h3>
@@ -125,11 +125,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Oui, l'outil maintient la structure logique du document. Les paragraphes restent séparés, les listes sont converties en puces (•), les liens sont préservés au format « Texte (URL) », et les titres maintiennent leur hiérarchie grâce aux sauts de ligne. Utilisez l'option « Préserver les espaces blancs » si vous avez besoin de conserver un espacement supplémentaire.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Que devient les images et médias dans le HTML ?</h3>
@@ -138,11 +138,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les images et éléments multimédias sont supprimés de la sortie car ils ne peuvent pas être représentés en texte brut. Cependant, si les images ont un texte alt, ce texte descriptif est conservé. L'outil se concentre sur l'extraction de contenu textuel lisible et exploitable qui a du sens sans éléments visuels.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser ceci pour des campagnes de marketing par e-mail ?</h3>
@@ -151,11 +151,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Absolument ! La plupart des fournisseurs de services de messagerie exigent à la fois des versions HTML et texte brut des e-mails. Notre convertisseur crée des versions en texte brut propres et lisibles qui maintiennent la structure et les liens, garantissant que vos e-mails passent les filtres anti-spam et s'affichent correctement pour les destinataires qui préfèrent les e-mails texte uniquement.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment puis-je utiliser cet outil pour l'extraction de données ou le web scraping ?</h3>
@@ -164,11 +164,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Cet outil est parfait pour extraire du contenu textuel propre des pages HTML pour l'analyse, le traitement du langage naturel ou l'exploration de données. Il supprime tout le bruit de balisage et vous donne du texte pur avec une structure maintenue, ce qui le rend idéal pour l'analyse de sentiments, la recherche de mots-clés ou les audits de contenu.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Y a-t-il une limite de caractères pour la conversion HTML ?</h3>
@@ -177,7 +177,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>L'outil peut gérer efficacement de grands documents HTML. Cependant, pour des performances optimales et un traitement rapide, nous recommandons de garder les conversions individuelles sous 1 Mo. Pour les documents extrêmement volumineux, envisagez de les diviser en sections plus petites avant la conversion.</p>
                     </div>
                 </div>

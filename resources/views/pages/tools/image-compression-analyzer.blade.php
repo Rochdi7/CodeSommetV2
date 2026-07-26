@@ -81,7 +81,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi la compression d'images est-elle importante pour le SEO ?</h3>
@@ -90,11 +90,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>La compression d'images a un impact direct sur la vitesse de chargement des pages, qui est un facteur de classement essentiel pour Google. Les pages qui se chargent plus rapidement améliorent l'expérience utilisateur, réduisent le taux de rebond et augmentent le temps passé sur le site — tous des signaux qui boostent les performances SEO. Les Core Web Vitals de Google (LCP, CLS, FID) pénalisent fortement le chargement lent des images.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les formats WebP, JPEG et PNG ?</h3>
@@ -103,11 +103,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Le JPEG est idéal pour les photos avec compression avec perte. Le PNG utilise une compression sans perte idéale pour les graphiques avec transparence. WebP est un format moderne offrant des tailles de fichiers 25-35 % plus petites que le JPEG et 60-80 % plus petites que le PNG avec une qualité similaire. WebP prend en charge la compression avec et sans perte ainsi que la transparence, ce qui en fait le meilleur choix pour la plupart des images web.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment équilibrer la qualité d'image avec la taille du fichier ?</h3>
@@ -116,11 +116,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Utilisez une qualité de 80-85 % pour JPEG et WebP — l'oeil humain peut à peine détecter la différence avec 100 %, mais les tailles de fichiers sont 3 à 5 fois plus petites. Pour les images hero, vous pouvez aller jusqu'à 90 %. Compressez toujours avant de télécharger, et utilisez des outils comme TinyPNG, Squoosh ou ImageOptim pour trouver l'équilibre optimal.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le lazy loading et dois-je l'utiliser ?</h3>
@@ -129,11 +129,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Oui, absolument. Les CDN comme Cloudflare, Cloudinary ou imgix servent les images depuis des serveurs géographiquement distribués plus proches de vos utilisateurs, réduisant la latence. De nombreux CDN offrent également la conversion automatique de format (servant WebP aux navigateurs compatibles), la génération d'images responsives et la compression à la volée, vous faisant économiser des heures d'optimisation manuelle.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Dois-je utiliser un CDN pour les images ?</h3>
@@ -142,7 +142,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button></div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle taille dois-je donner aux images responsives ?</h3>
@@ -151,11 +151,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Ne servez jamais une image de 4000px pour un conteneur de 400px. Utilisez l'attribut srcset pour fournir plusieurs tailles (par exemple, 400w, 800w, 1200w, 1600w) et laissez les navigateurs choisir la version optimale. Redimensionnez les images à leurs dimensions d'affichage maximales — par exemple, si votre image hero s'affiche à 1920px maximum, ne téléchargez pas une version de 4000px.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quels sont les meilleurs outils gratuits de compression d'images ?</h3>
@@ -164,7 +164,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les meilleurs outils incluent TinyPNG (compression par lots PNG/JPEG), Squoosh (conversion WebP avec aperçu de qualité), ImageOptim (application Mac pour compression sans perte), et Sharp (bibliothèque Node.js pour l'automatisation). Pour le traitement en masse, envisagez le niveau gratuit de Cloudinary ou l'automatisation de build avec Sharp dans votre pipeline de build.</p>
                     </div>
                 </div>

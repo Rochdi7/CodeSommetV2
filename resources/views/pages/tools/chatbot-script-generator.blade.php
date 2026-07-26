@@ -99,7 +99,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce qu'un script de conversation chatbot et pourquoi en ai-je besoin ?</h3>
@@ -108,11 +108,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Un script de conversation chatbot est un cadre structuré qui définit comment votre chatbot IA doit répondre aux requêtes des utilisateurs, gérer les différents chemins de conversation et guider les utilisateurs vers des objectifs spécifiques. Il comprend des messages de bienvenue, des réponses aux intentions, des flux de qualification de prospects et des stratégies de repli. Un script bien conçu garantit des interactions cohérentes et professionnelles alignées avec la voix de votre marque et vos objectifs commerciaux.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment les flux de conversation et la logique de branchement améliorent-ils mon chatbot ?</h3>
@@ -121,11 +121,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les flux de conversation avec logique de branchement permettent à votre chatbot de gérer plusieurs sujets et intentions utilisateur de manière intelligente. Au lieu de réponses rigides et linéaires, votre bot peut comprendre le contexte, poser des questions de suivi et guider les utilisateurs vers différents chemins selon leurs besoins. Cela crée des conversations plus naturelles et semblables à celles des humains, améliorant significativement la satisfaction utilisateur et les taux de conversion.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que la qualification de prospects et comment le chatbot la réalise-t-il ?</h3>
@@ -134,11 +134,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>La qualification de prospects est le processus de détermination si un visiteur est un client potentiel intéressant à poursuivre. Le chatbot pose des questions ciblées (comme le budget, le calendrier, la taille de l'entreprise ou les besoins spécifiques) pour recueillir des informations clés et noter les prospects automatiquement. Cela aide votre équipe commerciale à prioriser les prospects de haute qualité et fait gagner du temps en filtrant les prospects non qualifiés avant qu'une intervention humaine ne soit nécessaire.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je personnaliser le script pour mon industrie ?</h3>
@@ -147,11 +147,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Absolument ! Notre générateur crée des scripts spécifiques à l'industrie adaptés à votre secteur d'activité. Par exemple, les chatbots de santé se concentrent sur la prise de rendez-vous et le triage des symptômes, tandis que les bots e-commerce gèrent les recommandations de produits et le suivi des commandes. Vous pouvez également ajuster le ton (professionnel, amical, décontracté, formel) et l'objectif principal pour correspondre à votre cas d'utilisation et à la personnalité de votre marque.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelles plateformes chatbot sont compatibles avec ces scripts ?</h3>
@@ -160,11 +160,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Les scripts générés fonctionnent avec la plupart des plateformes chatbot modernes, notamment Dialogflow, Botpress, Landbot, ManyChat, Chatfuel, Rasa, Microsoft Bot Framework et les solutions personnalisées. Le script fournit une structure agnostique de plateforme avec des intentions, des phrases d'entraînement et des réponses qui peuvent être adaptées à n'importe quel moteur NLP ou constructeur de conversation.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment implémenter le script généré dans ma plateforme chatbot ?</h3>
@@ -173,11 +173,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>L'implémentation dépend de votre plateforme, mais implique généralement de copier les intentions dans votre constructeur de bot, d'ajouter des phrases d'entraînement pour former votre moteur NLP, de configurer les réponses rapides et de mettre en place les flux de conversation. La plupart des plateformes disposent d'éditeurs visuels ou de fonctionnalités d'importation JSON. Nous recommandons de tester chaque intention minutieusement, en commençant par le message de bienvenue et les requêtes utilisateur les plus courantes avant le déploiement en production.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment tester et optimiser mon chatbot après l'implémentation ?</h3>
@@ -186,7 +186,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
+                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                         <p>Commencez par tester manuellement tous les chemins de conversation avec de vrais membres de l'équipe jouant différents rôles d'utilisateurs. Ensuite, déployez auprès d'un petit segment d'utilisateurs et surveillez les analyses : suivez les taux d'achèvement, la fréquence des replis, les déclencheurs de transfert et les scores de satisfaction utilisateur. Utilisez les journaux de conversation pour identifier les lacunes dans les phrases d'entraînement ou les intentions manquantes. Affinez continuellement les réponses en fonction des interactions réelles des utilisateurs et ajoutez de nouvelles intentions à mesure que des modèles émergent.</p>
                     </div>
                 </div>
