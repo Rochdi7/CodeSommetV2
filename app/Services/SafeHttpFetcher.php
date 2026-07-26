@@ -103,27 +103,54 @@ class SafeHttpFetcher
         $port = $parts['port'] ?? ($scheme === 'https' ? 443 : 80);
         $pinnedIp = $validated['ips'][0] ?? null;
 
+        // IP pinning (which closes the DNS-rebinding window) requires the cURL
+        // transport. If cURL is unavailable the PHP stream handler would ignore
+        // CURLOPT_RESOLVE and re-resolve the host, so we fail closed instead.
+        if (! extension_loaded('curl')) {
+            throw new UnsafeUrlException('Safe fetching requires the cURL extension.');
+        }
+
+        $curl = [
+            CURLOPT_PROXY => '',
+            // Advertise identity so a gzip-bomb is less trivial; the capped
+            // read is the real defence.
+            CURLOPT_ENCODING => 'identity',
+        ];
+        if ($pinnedIp) {
+            $curl[CURLOPT_RESOLVE] = ["{$validated['host']}:{$port}:{$pinnedIp}"];
+        }
+
         return Http::withHeaders($headers)
             ->connectTimeout(self::CONNECT_TIMEOUT)
             ->timeout($timeout)
             ->withOptions([
                 'allow_redirects' => false,
                 'stream' => true,
-                'curl' => $pinnedIp
-                    ? [CURLOPT_RESOLVE => ["{$validated['host']}:{$port}:{$pinnedIp}"]]
-                    : [],
+                // Explicitly disable proxying so HTTP(S)_PROXY env vars cannot
+                // route around the pinned IP and re-introduce SSRF.
+                'proxy' => '',
+                'curl' => $curl,
             ])
             ->get($validated['url']);
     }
 
     /**
-     * Read at most MAX_BYTES from the streamed response body.
+     * Read at most MAX_BYTES from a streamed response body. Public so callers
+     * that hold a Response (e.g. multi-fetch tools) can cap it too.
      */
-    private function cappedBody(Response $response): string
+    public function cappedBody(Response $response): string
     {
-        $body = $response->toPsrResponse()->getBody();
+        $stream = $response->toPsrResponse()->getBody();
+        $buffer = '';
+        while (! $stream->eof() && strlen($buffer) < self::MAX_BYTES) {
+            $chunk = $stream->read(self::MAX_BYTES - strlen($buffer));
+            if ($chunk === '') {
+                break;
+            }
+            $buffer .= $chunk;
+        }
 
-        return $body->read(self::MAX_BYTES);
+        return $buffer;
     }
 
     /**
