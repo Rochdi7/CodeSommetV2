@@ -535,16 +535,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     grid.innerHTML = '<p class="col-span-full text-center text-sm text-gray-400 py-10">Aucune image disponible. Uploadez d\'abord des images dans la médiathèque.</p>';
                     return;
                 }
+                const esc = (v) => String(v == null ? '' : v)
+                    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
                 data.media.forEach(m => {
                     const item = document.createElement('div');
                     item.className = 'relative cursor-pointer group rounded-lg overflow-hidden border-2 border-transparent hover:border-[#00AEEF] transition-all';
                     item.style.aspectRatio = '1';
+                    const url = esc(m.url);
+                    const name = esc(m.original_name);
+                    const altText = esc(m.alt || m.original_name);
                     item.innerHTML = `
-                        <img src="${m.url}" alt="${m.alt || m.original_name}"
+                        <img src="${url}" alt="${altText}"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-[#00AEEF]/10 transition-all"></div>
                         <div class="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-[9px] px-1.5 py-1 truncate opacity-0 group-hover:opacity-100 transition-opacity">
-                            ${m.original_name}
+                            ${name}
                         </div>`;
                     item.addEventListener('click', () => selectMedia(m.url, m.path));
                     grid.appendChild(item);
