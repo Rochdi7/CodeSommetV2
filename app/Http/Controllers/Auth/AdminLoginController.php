@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 
 class AdminLoginController extends Controller
 {
@@ -28,6 +30,8 @@ class AdminLoginController extends Controller
             'password.required' => 'Le mot de passe est obligatoire.',
         ]);
 
+        $throttleKey = $request->ip() . '|' . strtolower((string) $request->input('email'));
+
         if (Auth::attempt($credentials, $request->boolean('remember'))) {
             if (! Auth::user()->is_super_admin) {
                 Auth::logout();
@@ -39,10 +43,14 @@ class AdminLoginController extends Controller
                 ])->onlyInput('email');
             }
 
+            // Successful admin login: clear the rate-limit counter.
+            RateLimiter::clear('admin-login:' . $throttleKey);
             $request->session()->regenerate();
 
             return redirect()->intended(route('admin.dashboard'));
         }
+
+        Log::warning('Failed admin login attempt', ['email' => $request->input('email'), 'ip' => $request->ip()]);
 
         return back()->withErrors([
             'email' => 'Les identifiants fournis sont incorrects.',
