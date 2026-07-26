@@ -296,7 +296,7 @@
                             autoplay loop muted playsinline preload="metadata"
                             class="w-full h-full object-cover"></video>
                         <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                            <span class="text-xs font-bold text-white tracking-wide uppercase">Technologie</span>
+                            <span class="text-xs font-bold text-white tracking-wide uppercase">Beauté</span>
                         </div>
                     </div>
                     <div class="p-6">

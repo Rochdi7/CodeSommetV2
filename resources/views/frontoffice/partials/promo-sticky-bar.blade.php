@@ -10,7 +10,7 @@
 
     <p class="promo-bar__text relative z-[1]">
         <span class="promo-bar__hl">-30&nbsp;%</span> sur votre premier projet
-        <span class="promo-bar__sub text-white/70">— devis gratuit sous 24&nbsp;h, jusqu'au
+        <span class="promo-bar__sub">— devis gratuit sous 24&nbsp;h, jusqu'au
             {{ $barEndLabel }}</span>
     </p>
 

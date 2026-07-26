@@ -41,7 +41,7 @@
                             </svg></a><a class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors" href="{{ route('our-work') }}">Voir le Portfolio</a></div>
                 </div>
                 <div class="relative">
-                    <div class="relative w-full aspect-[3/2] lg:aspect-auto lg:h-[500px]"><img alt="Global développement web services" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/locations-hub-hero0f60.jpeg') }}" /></div>
+                    <div class="relative w-full aspect-[3/2] lg:aspect-auto lg:h-[500px]"><img alt="Global développement web services" decoding="async" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="{{ asset('images/locations-hub-hero0f60.webp') }}" /></div>
                 </div>
             </div>
         </div>

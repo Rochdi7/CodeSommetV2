@@ -68,7 +68,7 @@
                         <div class="relative w-full aspect-[3/2] lg:aspect-auto lg:h-[500px]"><img
                                 alt="{{ __('locations.attr_954') }}" decoding="async" class="object-contain"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="100vw" src="{{ asset('images/locations-hub-hero0f60.jpeg') }}" /></div>
+                                sizes="100vw" src="{{ asset('images/locations-hub-hero0f60.webp') }}" /></div>
                     </div>
                 </div>
             </div>

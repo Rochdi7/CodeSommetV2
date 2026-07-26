@@ -284,143 +284,143 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
         <div class="jsx-2447671171 absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#F5F5F5] via-[#F5F5F5]/80 to-transparent z-10 pointer-events-none">
         </div>
         <div style="cursor:grab" class="jsx-2447671171 overflow-x-auto overflow-y-hidden scrollbar-hide">
-            <div style="gap:24px;animation:heroScroll 8s linear infinite" class="jsx-2447671171 flex items-center will-change-transform">
+            <div style="gap:24px;animation:heroScroll 5s linear infinite" class="jsx-2447671171 flex items-center will-change-transform">
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.jpeg') }}" />
+                        <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Tableau de bord fintech moderne avec analytiques en temps réel et traitement des paiements" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/fintech-hero835e.jpeg') }}" />
+                        <img alt="Tableau de bord fintech moderne avec analytiques en temps réel et traitement des paiements" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/fintech-hero835e.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Site web de prestataire de santé avec prise de rendez-vous et gestion des patients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.jpeg') }}" />
+                        <img alt="Site web de prestataire de santé avec prise de rendez-vous et gestion des patients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Tableau de bord SaaS entreprise avec visualisation de données et gestion des utilisateurs" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.jpeg') }}" />
+                        <img alt="Tableau de bord SaaS entreprise avec visualisation de données et gestion des utilisateurs" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Plateforme e-commerce avec catalogue produits, panier et paiement sécurisé" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.jpeg') }}" />
+                        <img alt="Plateforme e-commerce avec catalogue produits, panier et paiement sécurisé" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Site web de services professionnels présentant expertise et témoignages clients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/professional-services-hero4f40.jpeg') }}" />
+                        <img alt="Site web de services professionnels présentant expertise et témoignages clients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/professional-services-hero4f40.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Système de gestion d'apprentissage EdTech avec cours interactifs et suivi de progression" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/edtech-herodbd9.jpeg') }}" />
+                        <img alt="Système de gestion d'apprentissage EdTech avec cours interactifs et suivi de progression" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/edtech-herodbd9.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Intégration de chatbot IA avec capacités de traitement du langage naturel" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ai-heroc6fe.jpeg') }}" />
+                        <img alt="Intégration de chatbot IA avec capacités de traitement du langage naturel" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ai-heroc6fe.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Plateforme SaaS avec gestion des abonnements et architecture multi-tenant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-herod5d6.jpeg') }}" />
+                        <img alt="Plateforme SaaS avec gestion des abonnements et architecture multi-tenant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-herod5d6.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Solution technologique de santé conforme HIPAA avec dossiers médicaux électroniques" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-heroeb9b.jpeg') }}" />
+                        <img alt="Solution technologique de santé conforme HIPAA avec dossiers médicaux électroniques" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-heroeb9b.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.jpeg') }}" />
+                        <img alt="Plateforme éducative d'études à l'étranger avec recommandations IA et portail étudiant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Tableau de bord fintech moderne avec analytiques en temps réel et traitement des paiements" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/fintech-hero835e.jpeg') }}" />
+                        <img alt="Tableau de bord fintech moderne avec analytiques en temps réel et traitement des paiements" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/fintech-hero835e.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Site web de prestataire de santé avec prise de rendez-vous et gestion des patients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.jpeg') }}" />
+                        <img alt="Site web de prestataire de santé avec prise de rendez-vous et gestion des patients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Tableau de bord SaaS entreprise avec visualisation de données et gestion des utilisateurs" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.jpeg') }}" />
+                        <img alt="Tableau de bord SaaS entreprise avec visualisation de données et gestion des utilisateurs" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Plateforme e-commerce avec catalogue produits, panier et paiement sécurisé" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.jpeg') }}" />
+                        <img alt="Plateforme e-commerce avec catalogue produits, panier et paiement sécurisé" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Site web de services professionnels présentant expertise et témoignages clients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/professional-services-hero4f40.jpeg') }}" />
+                        <img alt="Site web de services professionnels présentant expertise et témoignages clients" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/professional-services-hero4f40.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Système de gestion d'apprentissage EdTech avec cours interactifs et suivi de progression" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/edtech-herodbd9.jpeg') }}" />
+                        <img alt="Système de gestion d'apprentissage EdTech avec cours interactifs et suivi de progression" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/edtech-herodbd9.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Intégration de chatbot IA avec capacités de traitement du langage naturel" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ai-heroc6fe.jpeg') }}" />
+                        <img alt="Intégration de chatbot IA avec capacités de traitement du langage naturel" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/ai-heroc6fe.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Plateforme SaaS avec gestion des abonnements et architecture multi-tenant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-herod5d6.jpeg') }}" />
+                        <img alt="Plateforme SaaS avec gestion des abonnements et architecture multi-tenant" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/saas-herod5d6.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
                 </div>
                 <div style="height:320px;width:480px" class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                     <div class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-                        <img alt="Solution technologique de santé conforme HIPAA avec dossiers médicaux électroniques" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-heroeb9b.jpeg') }}" />
+                        <img alt="Solution technologique de santé conforme HIPAA avec dossiers médicaux électroniques" loading="lazy" decoding="async" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="480px" src="{{ asset('images/healthcare-heroeb9b.webp') }}" />
                         <div class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
@@ -441,7 +441,7 @@ $showSquareBanners = ($homeAd1 && $homeAd1->is_active) || ($homeAd2 && $homeAd2-
             <div class="flex-shrink-0 w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5" style="opacity:0;transform:translateY(30px)" data-delay="1">
                 <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                     <div class="absolute inset-0 flex items-start justify-center overflow-hidden px-8 pt-2.5">
-                        <div class="flex items-center justify-center relative" style="z-index:10"><img src="{{ asset('mockups/glamworlds-top.png') }}" alt="50+ Projets Livrés" class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]" style="min-height:150%" loading="lazy" /></div>
+                        <div class="flex items-center justify-center relative" style="z-index:10"><img src="{{ asset('mockups/glamworlds-top.webp') }}" alt="50+ Projets Livrés" class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]" style="min-height:150%" loading="lazy" /></div>
                     </div>
                 </div>
                 <div class="px-5 py-4">

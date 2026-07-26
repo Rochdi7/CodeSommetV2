@@ -117,6 +117,9 @@
     {{-- Boutons flottants (WhatsApp + retour en haut) --}}
     @include('frontoffice.partials.floating-actions')
 
+    {{-- Pop-up d'offre : -30% sur le premier projet --}}
+    @include('frontoffice.partials.promo-popup')
+
     {{-- JS principal --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/custom-select.js') }}" defer></script>

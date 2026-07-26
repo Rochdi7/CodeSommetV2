@@ -2482,8 +2482,104 @@
         }
     }
 
+    /* ── Offer pop-up (Temu-style) ──────────────────────────────────────
+       Shown after a short delay. Once the visitor closes it, it stays gone
+       until they have navigated PAGES_BEFORE_REOPEN more pages — the counter
+       lives in sessionStorage, so it also resets when the tab is closed.
+       ─────────────────────────────────────────────────────────────────── */
+    function initPopup() {
+        var modal = document.getElementById('promoModal');
+        if (!modal) { return; }
+
+        var PAGES_KEY = 'cs_promo_modal_pages';   // pages viewed since dismissal
+        var CLOSED_KEY = 'cs_promo_modal_closed'; // '1' while suppressed
+        var PAGES_BEFORE_REOPEN = 5;
+        var OPEN_DELAY = 1200;
+
+        var store = null;
+        try { store = window.sessionStorage; } catch (e) { /* private mode */ }
+
+        function get(key) {
+            try { return store ? store.getItem(key) : null; } catch (e) { return null; }
+        }
+        function set(key, val) {
+            try { if (store) { store.setItem(key, val); } } catch (e) { /* ignore */ }
+        }
+
+        /* Count this page view and decide whether the pop-up may open. */
+        function isSuppressed() {
+            if (get(CLOSED_KEY) !== '1') { return false; }
+
+            var seen = parseInt(get(PAGES_KEY) || '0', 10) + 1;
+
+            if (seen >= PAGES_BEFORE_REOPEN) {
+                // Quota reached — clear the block so the offer shows again.
+                set(CLOSED_KEY, '0');
+                set(PAGES_KEY, '0');
+                return false;
+            }
+
+            set(PAGES_KEY, String(seen));
+            return true;
+        }
+
+        if (isSuppressed()) { return; }
+
+        var lastFocus = null;
+
+        function open() {
+            lastFocus = document.activeElement;
+            modal.hidden = false;
+            // Force a reflow so the transition runs from the hidden state.
+            void modal.offsetWidth;
+            modal.classList.add('is-visible');
+            document.body.classList.add('has-promo-modal');
+
+            var cta = modal.querySelector('.promo-modal__cta');
+            if (cta) { cta.focus(); }
+
+            document.addEventListener('keydown', onKeydown);
+        }
+
+        function close() {
+            modal.classList.remove('is-visible');
+            document.body.classList.remove('has-promo-modal');
+            document.removeEventListener('keydown', onKeydown);
+
+            // Suppress until PAGES_BEFORE_REOPEN more pages have been viewed.
+            set(CLOSED_KEY, '1');
+            set(PAGES_KEY, '0');
+
+            if (lastFocus && typeof lastFocus.focus === 'function') { lastFocus.focus(); }
+
+            setTimeout(function () { modal.hidden = true; }, 400);
+        }
+
+        function onKeydown(e) {
+            if (e.key === 'Escape' || e.keyCode === 27) { close(); }
+        }
+
+        var closers = modal.querySelectorAll('[data-promo-close]');
+        for (var i = 0; i < closers.length; i++) {
+            closers[i].addEventListener('click', close);
+        }
+
+        // Following the CTA counts as a dismissal — don't re-nag on the
+        // quote page.
+        var ctaLink = modal.querySelector('.promo-modal__cta');
+        if (ctaLink) {
+            ctaLink.addEventListener('click', function () {
+                set(CLOSED_KEY, '1');
+                set(PAGES_KEY, '0');
+            });
+        }
+
+        setTimeout(open, OPEN_DELAY);
+    }
+
     function init() {
         initCountdown();
+        initPopup();
         initBar();
     }
 

@@ -236,10 +236,19 @@ html {
     to   { transform: translateX(-50%); }
 }
 .hero-scroll-container {
-    animation: heroScroll 25s linear infinite;
+    animation: heroScroll 5s linear infinite;
 }
-.hero-scroll-container:hover {
+/* The markup sets `animation:heroScroll …` inline rather than via the class
+   above, so target that element too — otherwise hover-pause never applies. */
+.hero-scroll-container:hover,
+[style*="heroScroll"]:hover {
     animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+    .hero-scroll-container,
+    [style*="heroScroll"] {
+        animation: none !important;
+    }
 }
 
 /* ── Scroll-left / Scroll-right (feature carousels) ──────────────────── */
@@ -289,6 +298,24 @@ html {
 }
 .testimonial-card:hover .testimonial-img-bottom {
     transform: translateY(20px) !important;
+}
+
+/* ── Testimonials auto-scroller (infinite horizontal marquee) ─────────── */
+@keyframes testimonialScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+.testimonial-scroll-container {
+    animation: testimonialScroll 60s linear infinite;
+    width: max-content;
+}
+.testimonial-scroll-container:hover {
+    animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+    .testimonial-scroll-container {
+        animation: none;
+    }
 }
 
 /* Hide scrollbar for testimonials horizontal scroll */
@@ -1437,6 +1464,15 @@ button.text-white:hover svg {
     color: #0071BC;
 }
 
+/* Muted copy — opacity instead of text-white/xx, which the global rules beat */
+.promo-offer .promo-offer__lead {
+    opacity: .9;
+}
+
+.promo-offer .promo-offer__terms {
+    opacity: .72;
+}
+
 .promo-offer__badge {
     display: inline-flex;
     align-items: center;
@@ -1534,6 +1570,200 @@ button.text-white:hover svg {
     transform: translateX(3px);
 }
 
+/* ═══ 1b. Offer pop-up (Temu-style modal) ═══
+   Markup: frontoffice/partials/promo-popup.blade.php
+   Behaviour: public/js/app.js → promo IIFE (initPopup).
+   Re-uses .promo-sheen, .promo-offer__badge, .promo-offer__dot,
+   .promo-offer__figure, .promo-count* and .promo-offer__cta from the strip. */
+.promo-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+.promo-modal[hidden] {
+    display: none;
+}
+
+.promo-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 20, 34, .62);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.promo-modal.is-visible .promo-modal__overlay {
+    opacity: 1;
+}
+
+.promo-modal__dialog {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 27rem;
+    max-height: calc(100vh - 2.5rem);
+    overflow-y: auto;
+    border-radius: 1.25rem;
+    background: linear-gradient(150deg, #00AEEF 0%, #0071BC 55%, #7D53FF 100%);
+    color: #fff;
+    box-shadow: 0 30px 70px -20px rgba(0, 40, 80, .65);
+    opacity: 0;
+    transform: translateY(18px) scale(.94);
+    transition: opacity .35s cubic-bezier(0.22, 1, 0.36, 1),
+                transform .35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.promo-modal.is-visible .promo-modal__dialog {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Same white-text guard the strip needs — main.css repaints h2/p otherwise. */
+.promo-modal__dialog h2,
+.promo-modal__dialog p,
+.promo-modal__dialog div,
+.promo-modal__dialog span {
+    color: inherit;
+}
+
+.promo-modal__close {
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, .22);
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.promo-modal__close:hover {
+    background: rgba(0, 0, 0, .38);
+    transform: rotate(90deg);
+}
+
+.promo-modal__body {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 1.75rem 1.5rem;
+    text-align: center;
+}
+
+.promo-modal__figure-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .85rem;
+    margin: 1rem 0 .25rem;
+}
+
+.promo-modal__figure-note {
+    font-size: .8125rem;
+    line-height: 1.25;
+    font-weight: 500;
+    text-align: left;
+    opacity: .95;
+}
+
+.promo-modal__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 1.2;
+    margin: .5rem 0 .5rem;
+    color: #fff;
+}
+
+.promo-modal__lead {
+    font-size: .875rem;
+    line-height: 1.55;
+    opacity: .9;
+    margin: 0 0 1.15rem;
+}
+
+.promo-modal__countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    margin-bottom: 1.25rem;
+}
+
+.promo-modal__cta {
+    width: 100%;
+    justify-content: center;
+}
+
+.promo-modal__dismiss {
+    display: block;
+    width: 100%;
+    margin-top: .75rem;
+    padding: .3rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    opacity: .72;
+    font-size: .8125rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    transition: opacity .2s ease;
+}
+
+.promo-modal__dismiss:hover {
+    opacity: 1;
+}
+
+.promo-modal__terms {
+    margin: .9rem 0 0;
+    font-size: .6875rem;
+    line-height: 1.4;
+    opacity: .68;
+}
+
+/* Lock background scroll while the pop-up is open. */
+body.has-promo-modal {
+    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    .promo-modal__body {
+        padding: 1.75rem 1.25rem 1.25rem;
+    }
+    .promo-modal__title {
+        font-size: 1.3125rem;
+    }
+    .promo-modal__countdown {
+        gap: .3rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-modal__overlay,
+    .promo-modal__dialog {
+        transition-duration: .01s;
+    }
+    .promo-modal__dialog {
+        transform: none;
+    }
+    .promo-modal__close:hover {
+        transform: none;
+    }
+}
+
 /* ═══ 2. Sticky bottom bar ═══ */
 .promo-bar {
     position: fixed;
@@ -1557,9 +1787,21 @@ button.text-white:hover svg {
     transform: translateY(0);
 }
 
-.promo-bar__text {
+/* main.css styles `p` globally with a specificity utilities can't beat, which
+   rendered this grey on the dark bar. Force white here. */
+.promo-bar .promo-bar__text,
+.promo-bar .promo-bar__text span {
+    color: #fff;
     font-size: .875rem;
     line-height: 1.35;
+}
+
+.promo-bar .promo-bar__text .promo-bar__hl {
+    color: #00AEEF;
+}
+
+.promo-bar .promo-bar__text .promo-bar__sub {
+    opacity: .72;
 }
 
 .promo-bar__hl {

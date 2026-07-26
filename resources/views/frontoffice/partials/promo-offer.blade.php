@@ -61,7 +61,7 @@
                         </svg>
                     </a>
 
-                    <p class="text-[0.6875rem] leading-snug text-white/70 max-w-[15rem] lg:text-right">
+                    <p class="promo-offer__terms text-[0.6875rem] leading-snug max-w-[15rem] lg:text-right">
                         Offre réservée aux nouveaux clients, valable jusqu'au {{ $promoEndLabel }}.
                         Non cumulable avec d'autres offres.
                     </p>

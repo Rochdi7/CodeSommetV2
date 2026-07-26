@@ -641,12 +641,11 @@ les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets li
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                                 <div class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">PLATEFORME DE
-                                        TÉLÉMÉDECINE</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Santé</span>
                                 </div>
                                 <div class="absolute top-5 left-5 px-3 py-1.5 bg-[#22C55E] rounded-full"><span class="text-xs font-bold text-white tracking-wide flex items-center gap-1.5"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                        </svg>+500% de Visites Virtuelles</span></div>
+                                        </svg>Plus de 2 000 rendez-vous réservés</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
