@@ -13,13 +13,33 @@
         if (!textarea || !actionBtn) return;
         actionBtn.id = 'tool-action-btn';
 
+        var sampleBtn = document.getElementById('tool-sample-btn');
+        var clearBtn = document.getElementById('tool-clear-btn');
+
+        if (sampleBtn) {
+            sampleBtn.addEventListener('click', function () {
+                CodeSommetTools.hideError();
+                textarea.value = sampleBtn.getAttribute('data-sample') || '';
+                textarea.focus();
+            });
+        }
+
+        if (clearBtn) {
+            clearBtn.addEventListener('click', function () {
+                CodeSommetTools.hideError();
+                textarea.value = '';
+                var results = document.getElementById('tool-results');
+                if (results) results.remove();
+            });
+        }
+
         actionBtn.addEventListener('click', function () {
             CodeSommetTools.hideError();
             var input = textarea.value.trim();
-            if (!input) { CodeSommetTools.showError('Please enter your FAQ content'); return; }
+            if (!input) { CodeSommetTools.showError('Veuillez saisir votre contenu FAQ'); return; }
 
             var faqs = parseFaqs(input);
-            if (faqs.length === 0) { CodeSommetTools.showError('No Q&A pairs detected. Use formats like "Q: question\\nA: answer" or numbered lists.'); return; }
+            if (faqs.length === 0) { CodeSommetTools.showError('Aucune paire question/réponse détectée. Utilisez un format comme "Q : question" suivi de "R : réponse", ou une liste numérotée.'); return; }
 
             CodeSommetTools.incrementUsage('faq-schema-generator');
             var schema = generateSchema(faqs);
@@ -29,7 +49,7 @@
         function parseFaqs(text) {
             var faqs = [];
             // Try Q:/A: format
-            var qaRegex = /(?:^|\n)\s*(?:Q|Question)\s*[:：]\s*(.+?)\s*\n\s*(?:A|Answer)\s*[:：]\s*(.+?)(?=\n\s*(?:Q|Question)\s*[:：]|$)/gis;
+            var qaRegex = /(?:^|\n)\s*(?:Q|Question)\s*[:：]\s*(.+?)\s*\n\s*(?:A|R|Answer|R[ée]ponse)\s*[:：]\s*(.+?)(?=\n\s*(?:Q|Question)\s*[:：]|$)/gis;
             var match;
             while ((match = qaRegex.exec(text)) !== null) {
                 faqs.push({ question: match[1].trim(), answer: match[2].trim() });
@@ -115,7 +135,11 @@
         function statCard(v, l) {
             return '<div class="bg-[#F8F8F8] p-4 rounded-lg border border-gray-200"><div class="text-2xl font-bold text-[#00AEEF]">' + v + '</div><div class="text-sm text-gray-600 mt-1">' + l + '</div></div>';
         }
-        {NEW_S}
+        function escapeHtml(str) {
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
 
         CodeSommetTools.initUsageCounter('faq-schema-generator', 'FAQ schemas generated');
     });

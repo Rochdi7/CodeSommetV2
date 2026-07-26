@@ -76,7 +76,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment l'IA extrait-elle les couleurs de mon image de marque ?</h3>
@@ -85,11 +85,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Notre IA utilise la vision par ordinateur avancée pour analyser votre image téléchargée, identifiant les couleurs dominantes, leur fréquence et leurs modèles de distribution. Elle génère ensuite une palette de couleurs harmonieuse basée sur les principes de la théorie des couleurs comme les schémas complémentaires, analogues et triadiques. L'IA évalue également l'accessibilité de chaque couleur et fournit des recommandations d'utilisation basées sur les meilleures pratiques de design modernes.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les formats hex, RGB et HSL ?</h3>
@@ -98,11 +98,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Les codes hex (#FF6500) sont des représentations hexadécimales couramment utilisées en web design et CSS. RGB (Rouge, Vert, Bleu) affiche la couleur sous forme de valeurs lumineuses de 0 à 255 pour chaque canal. HSL (Teinte, Saturation, Luminosité) est plus intuitif pour les designers, représentant la couleur par son angle de teinte (0-360\xb0), son pourcentage de saturation et son pourcentage de luminosité. Tous les formats représentent la même couleur, juste de manières différentes.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Que signifie la conformité WCAG AA pour ma palette ?</h3>
@@ -111,11 +111,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>WCAG (Web Content Accessibility Guidelines) AA est la norme pour le web design accessible. Elle exige un ratio de contraste d'au moins 4.5:1 pour le texte normal et 3:1 pour le texte large par rapport à l'arrière-plan. Notre outil vérifie automatiquement si chaque couleur respecte ces normes lorsqu'elle est associée à du texte blanc ou noir, garantissant que votre site web est accessible aux utilisateurs ayant des déficiences visuelles.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment choisir les couleurs primaire, secondaire et accent ?</h3>
@@ -124,11 +124,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Suivez la règle 60-30-10 : utilisez votre couleur primaire pour 60 % du design (arrière-plans, sections principales), la couleur secondaire pour 30 % (éléments de soutien, cartes), et la couleur d'accent pour 10 % (boutons, CTA, surbrillances). Notre outil fournit des recommandations spécifiques pour chaque couleur basées sur la psychologie, le contraste et les principes de hiérarchie visuelle.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser ces palettes pour l'impression ou seulement le web ?</h3>
@@ -137,11 +137,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Bien que notre outil fournisse des formats optimisés pour le web (hex, RGB, HSL, CSS, Tailwind), vous pouvez absolument utiliser ces couleurs pour l'impression. Pour l'impression professionnelle, vous devrez convertir les valeurs RGB en CMYK en utilisant un logiciel de design comme Adobe Photoshop ou Illustrator. Notez que les couleurs peuvent apparaître légèrement différentes à l'impression par rapport à l'écran en raison des différences d'espace colorimétrique.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Que sont les règles d'harmonie des couleurs et pourquoi comptent-elles ?</h3>
@@ -150,11 +150,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>L'harmonie des couleurs fait référence à des combinaisons de couleurs esthétiquement agréables basées sur leur position sur le cercle chromatique. Les schémas courants incluent complémentaire (couleurs opposées), analogue (couleurs adjacentes), triadique (espacées uniformément) et monochromatique (variations d'une seule teinte). Les palettes harmonieuses créent un équilibre visuel, évoquent des émotions spécifiques et rendent votre design professionnel et cohérent.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Comment tester ma palette avant de l'implémenter sur mon site ?</h3>
@@ -163,7 +163,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Utilisez d'abord les variables CSS ou la configuration Tailwind générées dans un environnement de staging. Testez avec du contenu réel, différentes tailles d'écran et conditions d'éclairage. Vérifiez le contraste avec des outils comme WebAIM Contrast Checker, et prévisualisez votre palette sur des maquettes avec Figma ou Adobe XD. Envisagez des tests A/B avec différents schémas de couleurs pour voir lequel fonctionne le mieux avec votre audience.</p>
                     </div>
                 </div>

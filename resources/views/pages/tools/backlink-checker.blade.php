@@ -69,7 +69,7 @@
             <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
         </div>
         <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le Domain Authority (DA) et pourquoi est-ce important ?</h3>
@@ -78,11 +78,11 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>Le Domain Authority est un score (0-100) développé par Moz qui prédit la capacité d'un site web à se positionner dans les moteurs de recherche. Il est basé sur la qualité des backlinks, le nombre de domaines référents et d'autres facteurs. Un DA plus élevé signifie un meilleur potentiel SEO. DA 60+ est excellent, 40-60 est bon, 20-40 est moyen, et en dessous de 20 nécessite une amélioration.</p>
                 </div>
             </div>
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Comment cet outil analyse-t-il les backlinks ?</h3>
@@ -91,11 +91,11 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>Notre vérificateur de backlinks utilise l'index web leader de Moz pour fournir une analyse complète en deux étapes : d'abord, vous obtenez un accès instantané aux métriques Domain Authority, Page Authority, Spam Score et MozRank. Ensuite, vous pouvez optionnellement consulter des données détaillées sur les backlinks, y compris les 10 meilleurs backlinks, la distribution des textes d'ancrage et l'analyse des domaines référents.</p>
                 </div>
             </div>
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre le Page Authority et le Domain Authority ?</h3>
@@ -104,11 +104,11 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>Le Domain Authority (DA) mesure la force de classement d'un domaine/site web entier, tandis que le Page Authority (PA) mesure le potentiel de classement d'une seule page. Un site web peut avoir un DA élevé mais les pages individuelles peuvent avoir des scores PA variables. Les deux utilisent une échelle de 0 à 100 et sont calculés en utilisant les backlinks, le MozRank et d'autres facteurs.</p>
                 </div>
             </div>
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que le Spam Score et comment est-il calculé ?</h3>
@@ -117,11 +117,11 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>Le Spam Score (0-100%) représente le pourcentage de sites ayant des caractéristiques similaires que Moz a signalés comme spam ou pénalisés par Google. 0-5% est un risque très faible (excellent), 6-15% est un risque faible (acceptable), 16-30% est un risque moyen (prudence), et 31%+ est un risque élevé (probablement problématique). Il est basé sur 27 indicateurs de spam courants.</p>
                 </div>
             </div>
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi devrais-je vérifier les backlinks régulièrement ?</h3>
@@ -130,11 +130,11 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>La surveillance régulière des backlinks vous aide à : (1) Suivre les progrès SEO et les efforts de création de liens, (2) Identifier les liens toxiques ou spam qui pourraient nuire au classement, (3) Découvrir de nouvelles opportunités de backlinks, (4) Surveiller les profils de liens des concurrents, (5) Détecter les attaques de SEO négatif, et (6) Mesurer l'impact des campagnes RP et du marketing de contenu.</p>
                 </div>
             </div>
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Comment puis-je améliorer mon score de Domain Authority ?</h3>
@@ -143,11 +143,11 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>Concentrez-vous sur l'obtention de backlinks de haute qualité provenant de sites web faisant autorité dans votre niche. Les stratégies incluent : créer du contenu exceptionnel et partageable, publier des articles invités sur des sites réputés, être présenté dans des publications spécialisées, établir des relations avec des influenceurs, corriger les liens brisés et supprimer les backlinks toxiques. L'amélioration du DA prend du temps (minimum 3-6 mois).</p>
                 </div>
             </div>
-            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+            <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                     <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-base md:text-lg font-semibold text-black">Que dois-je faire si j'ai un Spam Score élevé ?</h3>
@@ -156,7 +156,7 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg></div>
                 </button>
-                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                     <p>D'abord, auditez votre profil de backlinks en utilisant cet outil ou Google Search Console. Identifiez les liens toxiques provenant d'annuaires spam, de sites de faible qualité ou de domaines pénalisés. Supprimez ces liens en contactant les webmasters ou utilisez l'outil de désaveu de Google. Concentrez-vous sur la création de backlinks de qualité à l'avenir. Un spam score supérieur à 30% nécessite une action immédiate.</p>
                 </div>
             </div>

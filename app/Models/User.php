@@ -22,6 +22,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+    ];
+
+    /**
+     * Privilege flag is never mass-assignable; set it explicitly (e.g. in a
+     * seeder or via ->forceFill) to avoid privilege escalation.
+     */
+    protected $guarded = [
         'is_super_admin',
     ];
 

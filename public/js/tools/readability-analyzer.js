@@ -33,12 +33,12 @@
         actionBtn.addEventListener('click', function () {
             CodeSommetTools.hideError();
             if (inputMode === 'url') {
-                CodeSommetTools.showError('URL analysis requires server-side processing. Please paste text directly.');
+                CodeSommetTools.showError('L\'analyse par URL nécessite un traitement côté serveur. Veuillez coller votre texte directement.');
                 return;
             }
             var text = textarea.value.trim();
-            if (!text) { CodeSommetTools.showError('Please paste some text'); return; }
-            if (text.split(/\s+/).length < 30) { CodeSommetTools.showError('Please enter at least 30 words for accurate analysis'); return; }
+            if (!text) { CodeSommetTools.showError('Veuillez coller un texte'); return; }
+            if (text.split(/\s+/).length < 30) { CodeSommetTools.showError('Veuillez saisir au moins 30 mots pour une analyse précise'); return; }
 
             var scores = analyzeReadability(text);
             CodeSommetTools.incrementUsage('readability-analyzer');

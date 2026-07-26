@@ -64,7 +64,7 @@
         <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
     </div>
     <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Que sont les liens brisés et pourquoi nuisent-ils au SEO ?</h3>
@@ -73,11 +73,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Les liens brisés sont des hyperliens menant vers des pages inexistantes (erreurs 404), entraînant une mauvaise expérience utilisateur. Ils nuisent au SEO car les moteurs de recherche les considèrent comme des signes d'un site web obsolète et mal entretenu. Les liens brisés gaspillent le budget d'exploration, réduisent l'autorité de la page et augmentent le taux de rebond, ce qui impacte négativement votre classement dans les recherches.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">À quelle fréquence dois-je vérifier les liens brisés sur mon site ?</h3>
@@ -86,11 +86,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Pour la plupart des sites web, des analyses mensuelles sont suffisantes. Cependant, les sites à fort trafic avec des mises à jour fréquentes devraient vérifier chaque semaine. Les sites e-commerce devraient scanner avant les grands événements de vente. Après des migrations ou refontes de sites, vérifiez immédiatement puis à nouveau après 2 semaines pour détecter les problèmes manqués.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre les liens brisés internes et externes ?</h3>
@@ -99,11 +99,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Les liens brisés internes pointent vers des pages de votre propre domaine qui n'existent plus, souvent causés par des pages supprimées ou des changements d'URL. Les liens brisés externes pointent vers des sites tiers qui ont déplacé ou supprimé du contenu. Alors que vous pouvez corriger les liens internes en mettant à jour les URL ou en créant des redirections, les liens brisés externes nécessitent de remplacer le lien par une alternative fonctionnelle ou de le supprimer entièrement.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Comment corriger les erreurs 404 trouvées par cet outil ?</h3>
@@ -112,11 +112,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Pour les erreurs 404 internes, soit restaurez la page manquante, configurez une redirection 301 vers le nouvel emplacement, ou mettez à jour tous les liens pointant vers elle. Pour les 404 externes, recherchez l'URL mise à jour via la Wayback Machine, contactez le propriétaire du site, ou remplacez le lien par une ressource similaire. Vérifiez toujours la correction en recontrôlant le statut du lien.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Que sont les chaînes de redirection et pourquoi les corriger ?</h3>
@@ -125,11 +125,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Les chaînes de redirection se produisent lorsqu'une URL redirige vers une autre URL, qui redirige à son tour (A → B → C). Elles ralentissent le temps de chargement des pages et gaspillent l'équité des liens. Corrigez-les en mettant à jour le lien original pour pointer directement vers la destination finale (A → C), éliminant les redirections intermédiaires.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Puis-je automatiser la surveillance des liens brisés ?</h3>
@@ -138,11 +138,11 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Oui, vous pouvez utiliser des outils comme Google Search Console (gratuit), Screaming Frog (crawler de bureau), ou des services comme Ahrefs et SEMrush (payants) pour la surveillance automatisée. Configurez des analyses automatiques hebdomadaires ou mensuelles et des alertes par e-mail lorsque des liens brisés sont détectés, garantissant que vous repérez les problèmes avant qu'ils n'impactent le SEO.</p>
             </div>
         </div>
-        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+        <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                 <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                 <div class="flex-1 min-w-0">
                     <h3 class="text-base md:text-lg font-semibold text-black">Les liens brisés affectent-ils mon classement Google ?</h3>
@@ -151,7 +151,7 @@
                         <path d="m6 9 6 6 6-6"></path>
                     </svg></div>
             </button>
-            <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+            <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                 <p>Oui, les liens brisés nuisent indirectement au classement en dégradant les signaux d'expérience utilisateur comme le taux de rebond et le temps passé sur le site. Bien que Google ne pénalise pas directement les liens brisés individuels, un excès d'erreurs 404 signale une mauvaise maintenance et qualité du site. De plus, les liens internes brisés empêchent les moteurs de recherche de découvrir et d'indexer les pages importantes, réduisant l'efficacité globale d'exploration de votre site.</p>
             </div>
         </div>

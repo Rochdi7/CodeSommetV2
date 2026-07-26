@@ -85,7 +85,7 @@
                 <p class="text-sm md:text-base text-gray-600">Questions courantes sur cet outil et comment l'utiliser efficacement</p>
             </div>
             <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">1</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que l'encodage Base64 et pourquoi est-il utilisé ?</h3>
@@ -94,11 +94,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Base64 est un schéma d'encodage binaire vers texte qui convertit les données binaires en format texte ASCII en utilisant 64 caractères (A-Z, a-z, 0-9, +, /). Il est essentiel pour transmettre des données binaires via des protocoles textuels comme HTTP, email (MIME) et les API JSON. Les utilisations courantes incluent l'intégration d'images en HTML/CSS sous forme de data URI, l'encodage des pièces jointes d'e-mails, les en-têtes d'authentification API et la transmission sécurisée de données complexes dans les URL.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">2</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">L'encodage Base64 est-il une forme de chiffrement ou sécurisé ?</h3>
@@ -107,11 +107,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Non, Base64 n'est PAS du chiffrement ni une mesure de sécurité. C'est simplement un format d'encodage qui rend les données binaires compatibles avec le texte. N'importe qui peut facilement décoder des chaînes Base64, donc ne l'utilisez jamais pour masquer des informations sensibles comme des mots de passe ou des clés API. Pour la sécurité, utilisez des algorithmes de chiffrement appropriés comme AES-256, RSA, ou des algorithmes de hachage comme bcrypt/SHA-256.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Pourquoi l'encodage Base64 augmente-t-il la taille des fichiers ?</h3>
@@ -120,11 +120,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>L'encodage Base64 augmente la taille des fichiers d'environ 33 % car il représente 3 octets de données binaires en utilisant 4 caractères ASCII. Ce surcoût est le compromis pour rendre les données binaires compatibles avec les protocoles textuels. Par exemple, une image de 300 Ko devient environ 400 Ko une fois encodée en Base64.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quand dois-je utiliser l'encodage Base64 pour les images ?</h3>
@@ -133,11 +133,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Utilisez Base64 pour les images lorsque vous avez besoin de data URI en ligne dans HTML/CSS pour de petites icônes ou logos (moins de 10 Ko) afin de réduire les requêtes HTTP et améliorer la vitesse de chargement initiale. Évitez Base64 pour les grandes images car cela augmente la taille du fichier, empêche la mise en cache du navigateur et alourdit vos fichiers HTML/CSS. Pour les sites web en production, servez les images comme des fichiers séparés avec des en-têtes de cache appropriés.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Qu'est-ce que l'encodage Base64 sécurisé pour les URL ?</h3>
@@ -146,11 +146,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Le Base64 sécurisé pour les URL remplace les caractères standard '+' et '/' par '-' et '_' respectivement, et supprime les caractères de remplissage '='. Cela évite les problèmes lorsque les chaînes Base64 sont utilisées dans les URL, où '+' et '/' ont des significations spéciales. Il est couramment utilisé pour les jetons JWT, les raccourcisseurs d'URL et les paramètres API.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">L'encodage Base64 peut-il corrompre mes données ?</h3>
@@ -159,11 +159,11 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>Non, l'encodage/décodage Base64 est un processus sans perte. Vos données originales restent parfaitement intactes lorsqu'elles sont correctement encodées et décodées. Cependant, des erreurs d'encodage peuvent survenir si vous essayez d'encoder des caractères UTF-8 invalides ou de décoder des chaînes Base64 mal formées. Cet outil gère l'encodage UTF-8 automatiquement pour éviter la corruption.</p>
                     </div>
                 </div>
-                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
                         <div class="flex-1 min-w-0">
                             <h3 class="text-base md:text-lg font-semibold text-black">Quels sont les cas d'utilisation courants du Base64 en développement web ?</h3>
@@ -172,7 +172,7 @@
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
                     </button>
-                    <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                    <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
                         <p>En développement web, Base64 est utilisé pour : intégrer de petites images/polices sous forme de data URI en CSS, encoder les en-têtes d'authentification HTTP Basic (nom d'utilisateur:mot de passe), stocker des données binaires dans les API JSON, créer des URL de données pour le téléchargement de fichiers, encoder les jetons JWT pour l'authentification, et transmettre des fichiers binaires dans les pièces jointes d'e-mails (encodage MIME). C'est un outil fondamental pour gérer les données binaires dans les protocoles web textuels.</p>
                     </div>
                 </div>

@@ -30,7 +30,7 @@
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Analysez la lisibilité de votre contenu à l'aide de plusieurs algorithmes. Obtenez des niveaux de lecture, des scores de lisibilité et des conseils pratiques pour rendre votre écriture plus claire et plus accessible.to users with disabilities, which aligns with Google's emphasis on inclusive web experiences.</p>
         </div>
     </div>
-    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
             <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">3</span></div>
             <div class="flex-1 min-w-0">
                 <h3 class="text-base md:text-lg font-semibold text-black">Quelle est la différence entre Flesch Reading Ease et Flesch-Kincaid Grade ?</h3>
@@ -39,11 +39,11 @@
                     <path d="m6 9 6 6 6-6"></path>
                 </svg></div>
         </button>
-        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
             <p>Flesch Reading Ease utilise une échelle de 0 à 100 où des scores plus élevés signifient une lecture plus facile. Flesch-Kincaid Grade montre le niveau scolaire américain nécessaire pour comprendre le texte (ex. : 8.0 = 4ème). Ils sont calculés différemment mais mesurent tous deux la lisibilité - utilisez Reading Ease pour une évaluation rapide et Grade Level pour cibler des niveaux d'éducation spécifiques.</p>
         </div>
     </div>
-    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
             <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">4</span></div>
             <div class="flex-1 min-w-0">
                 <h3 class="text-base md:text-lg font-semibold text-black">Dois-je toujours viser le score de lisibilité le plus élevé ?</h3>
@@ -52,11 +52,11 @@
                     <path d="m6 9 6 6 6-6"></path>
                 </svg></div>
         </button>
-        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
             <p>Pas nécessairement. Équilibrez la lisibilité avec l'expertise de votre audience. Les blogs techniques, le contenu académique et la rédaction juridique peuvent nécessiter un langage complexe. L'essentiel est d'adapter la complexité de votre contenu à votre public cible - ne simplifiez pas excessivement le contenu expert, mais ne compliquez pas inutilement le contenu grand public.</p>
         </div>
     </div>
-    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
             <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">5</span></div>
             <div class="flex-1 min-w-0">
                 <h3 class="text-base md:text-lg font-semibold text-black">Comment améliorer mon score de lisibilité sans simplifier le contenu ?</h3>
@@ -65,11 +65,11 @@
                     <path d="m6 9 6 6 6-6"></path>
                 </svg></div>
         </button>
-        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
             <p>Divisez les longues phrases en phrases plus courtes, utilisez la voix active au lieu de la voix passive, remplacez le jargon par un langage simple lorsque c'est possible, et ajoutez des phrases de transition pour la fluidité. Vous pouvez maintenir la profondeur et l'expertise tout en améliorant la clarté - c'est une question de structure et de choix de mots, pas de qualité du contenu.</p>
         </div>
     </div>
-    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
             <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">6</span></div>
             <div class="flex-1 min-w-0">
                 <h3 class="text-base md:text-lg font-semibold text-black">Que signifient les 'mots complexes' dans l'analyse de lisibilité ?</h3>
@@ -78,11 +78,11 @@
                     <path d="m6 9 6 6 6-6"></path>
                 </svg></div>
         </button>
-        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
             <p>Les mots complexes sont généralement définis comme des mots de 3 syllabes ou plus. Bien que tous les mots longs ne soient pas difficiles, ils nécessitent généralement plus d'effort cognitif pour être traités. L'outil les met en évidence pour que vous puissiez décider si des alternatives plus simples existent sans changer votre sens ou sacrifier la précision.</p>
         </div>
     </div>
-    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+    <div class="border-b border-gray-200 last:border-0"><button class="w-full py-5 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
             <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center"><span class="text-sm font-bold text-[#00AEEF]">7</span></div>
             <div class="flex-1 min-w-0">
                 <h3 class="text-base md:text-lg font-semibold text-black">Puis-je utiliser cet outil pour vérifier la lisibilité dans d'autres langues que l'anglais ?</h3>
@@ -91,7 +91,7 @@
                     <path d="m6 9 6 6 6-6"></path>
                 </svg></div>
         </button>
-        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+        <div class="faq-answer hidden pr-4 pb-6 pt-1 pl-4 sm:pl-14 text-sm md:text-[15px] text-gray-700 leading-[1.7]">
             <p>Actuellement, cet outil est optimisé pour le contenu en anglais uniquement. Les algorithmes (Flesch, SMOG, Coleman-Liau) sont basés sur les modèles de la langue anglaise comme le nombre de syllabes et la structure des phrases, qui ne se traduisent pas précisément dans d'autres langues. Pour le contenu non anglais, recherchez des outils de lisibilité spécifiques à la langue.</p>
         </div>
     </div>

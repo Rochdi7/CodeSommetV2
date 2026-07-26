@@ -120,7 +120,11 @@
             });
         }
 
-        {NEW_STR}
+        function escapeHtml(str) {
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
         function escapeAttr(str) { return str.replace(/"/g, '&quot;'); }
 
         CodeSommetTools.initUsageCounter('url-slug-generator', 'slugs generated');

@@ -16,24 +16,37 @@
         if (!actionBtn) return;
         actionBtn.id = 'tool-action-btn';
 
-        var selects = toolSection.querySelectorAll('select');
-        var schemaTypeSelect = selects[0];
+        // Schema type selector buttons (no <select> on this page)
+        var typeButtons = toolSection.querySelectorAll('button[data-schema-type]');
+        var selectedType = 'Article';
+        typeButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                selectedType = btn.getAttribute('data-schema-type');
+                typeButtons.forEach(function (b) {
+                    var active = b === btn;
+                    b.classList.toggle('bg-[#00AEEF]', active);
+                    b.classList.toggle('text-white', active);
+                    b.classList.toggle('bg-gray-100', !active);
+                    b.classList.toggle('text-gray-700', !active);
+                    b.classList.toggle('hover:bg-gray-200', !active);
+                });
+            });
+        });
 
-        function getInputValue(labelText) {
-            var labels = toolSection.querySelectorAll('label');
-            for (var i = 0; i < labels.length; i++) {
-                if (labels[i].textContent.toLowerCase().includes(labelText.toLowerCase())) {
-                    var container = labels[i].closest('.space-y-2, .space-y-1');
-                    var input = container?.querySelector('input, select, textarea');
-                    return input ? input.value.trim() : '';
-                }
-            }
-            return '';
+        // Form inputs, in DOM order: titre, description, URL de l'image,
+        // date de publication, nom de l'auteur, nom de l'éditeur, URL du logo
+        function getFieldValues() {
+            var inputs = toolSection.querySelectorAll('.space-y-4 input');
+            function val(i) { return inputs[i] ? inputs[i].value.trim() : ''; }
+            return {
+                title: val(0), description: val(1), image: val(2),
+                date: val(3), author: val(4), publisher: val(5), logo: val(6)
+            };
         }
 
         actionBtn.addEventListener('click', function () {
             CodeSommetTools.hideError();
-            var type = schemaTypeSelect ? schemaTypeSelect.value : 'Article';
+            var type = selectedType;
             var schema = buildSchema(type);
             if (!schema) return;
 
@@ -44,26 +57,65 @@
         });
 
         function buildSchema(type) {
+            var f = getFieldValues();
             var schema = { '@context': 'https://schema.org', '@type': type };
+            var person = f.author ? { '@type': 'Person', name: f.author } : null;
+            var org = null;
+            if (f.publisher || f.logo) {
+                org = { '@type': 'Organization' };
+                if (f.publisher) org.name = f.publisher;
+                if (f.logo) org.logo = { '@type': 'ImageObject', url: f.logo };
+            }
 
-            // Gather all visible inputs
-            var allInputs = toolSection.querySelectorAll('input:not([type="hidden"]), textarea');
-            allInputs.forEach(function (inp) {
-                var label = inp.closest('.space-y-2, .space-y-1')?.querySelector('label');
-                if (!label || !inp.value.trim()) return;
-                var key = label.textContent.trim().replace(/\s*\*$/, '');
-                schema[toCamelCase(key)] = inp.value.trim();
-            });
+            switch (type) {
+                case 'Article':
+                    if (f.title) schema.headline = f.title;
+                    if (f.description) schema.description = f.description;
+                    if (f.image) schema.image = f.image;
+                    if (f.date) schema.datePublished = f.date;
+                    if (person) schema.author = person;
+                    if (org) schema.publisher = org;
+                    break;
+                case 'Product':
+                    if (f.title) schema.name = f.title;
+                    if (f.description) schema.description = f.description;
+                    if (f.image) schema.image = f.image;
+                    if (f.date) schema.releaseDate = f.date;
+                    if (f.publisher) schema.brand = { '@type': 'Brand', name: f.publisher };
+                    break;
+                case 'Organization':
+                case 'LocalBusiness':
+                    if (f.title) schema.name = f.title;
+                    if (f.description) schema.description = f.description;
+                    if (f.image) schema.image = f.image;
+                    if (f.logo) schema.logo = f.logo;
+                    if (f.date) schema.foundingDate = f.date;
+                    if (person) schema.founder = person;
+                    break;
+                case 'Review':
+                    if (f.title) schema.itemReviewed = { '@type': 'Thing', name: f.title };
+                    if (f.description) schema.reviewBody = f.description;
+                    if (f.image) schema.image = f.image;
+                    if (f.date) schema.datePublished = f.date;
+                    if (person) schema.author = person;
+                    if (org) schema.publisher = org;
+                    break;
+                case 'WebSite':
+                    if (f.title) schema.name = f.title;
+                    if (f.description) schema.description = f.description;
+                    if (f.image) schema.image = f.image;
+                    if (org) schema.publisher = org;
+                    break;
+                default:
+                    if (f.title) schema.name = f.title;
+                    if (f.description) schema.description = f.description;
+            }
 
             if (Object.keys(schema).length <= 2) {
-                CodeSommetTools.showError('Please fill in at least one field');
+                CodeSommetTools.showError('Veuillez remplir au moins un champ');
                 return null;
             }
             return schema;
-        }
-
-        function toCamelCase(str) {
-            return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function (m, c) { return c.toUpperCase(); });
         }
 
         function showResult(htmlCode, jsonStr, type) {
@@ -73,8 +125,8 @@
             var html = '<div id="tool-results" class="space-y-6 mt-8">' +
                 '<div class="rounded-2xl border-2 p-6 bg-green-50 border-green-200">' +
                 '<div class="flex items-center gap-3"><svg class="w-6 h-6 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>' +
-                '<div><h3 class="font-semibold text-green-900">' + type + ' Schema Generated</h3>' +
-                '<p class="text-sm text-green-700">Add this code to the &lt;head&gt; section of your webpage</p></div></div></div>' +
+                '<div><h3 class="font-semibold text-green-900">Schema ' + type + ' généré</h3>' +
+                '<p class="text-sm text-green-700">Ajoutez ce code dans la section &lt;head&gt; de votre page</p></div></div></div>' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
                 '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">JSON-LD Code</h3>' +
                 '<div class="flex gap-2">' +
@@ -90,7 +142,11 @@
             document.getElementById('download-btn')?.addEventListener('click', function () { CodeSommetTools.downloadFile(jsonStr, 'schema.json', 'application/json'); });
         }
 
-        {NEW_S}
+        function escapeHtml(str) {
+            return String(str == null ? '' : str)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
 
         CodeSommetTools.initUsageCounter('schema-generator', 'schema markups generated');
     });
