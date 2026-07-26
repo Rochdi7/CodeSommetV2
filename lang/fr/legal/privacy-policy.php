@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet',
-    'meta_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
+    'title' => 'Politique de Confidentialité | CodeSommet',
+    'meta_description' => 'Comment CodeSommet collecte, utilise et protège vos données personnelles : cookies, formulaires, newsletter, analytics et vos droits en matière de vie privée.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_title' => 'Politique de Confidentialité | CodeSommet',
+    'og_description' => 'Comment CodeSommet collecte, utilise et protège vos données personnelles : cookies, formulaires, newsletter, analytics et vos droits en matière de vie privée.',
+    'twitter_description' => 'Comment CodeSommet collecte, utilise et protège vos données personnelles, et vos droits en matière de vie privée.',
     'text_0' => 'Dernière mise à jour : Janvier 2026',
     'text_1' => 'Politique de Confidentialité',
     'text_2' => 'Votre vie privée nous tient à cœur. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.',

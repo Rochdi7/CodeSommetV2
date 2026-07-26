@@ -2,11 +2,11 @@
 
 return [
     'title' => 'Développement Web à Zurich, Suisse | CodeSommet',
-    'meta_description' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web propulsés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
+    'meta_description' => 'Développement web pour les entreprises de Zurich : plateformes FinTech, sites corporate et tableaux de bord sur mesure, livrés à distance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. 50+ projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. 50+ projets livrés.',
+    'og_description' => 'Développement web pour les entreprises de Zurich : plateformes FinTech, sites corporate et tableaux de bord sur mesure, livrés à distance par CodeSommet.',
+    'twitter_description' => 'Développement web pour les entreprises de Zurich : FinTech, sites corporate et tableaux de bord sur mesure.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => 'Livraison en 7 à 10 jours',

@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web de Télémédecine | Plateformes de Soins Virtuels | CodeSommet',
-    'meta_description' => 'Développement spécialisé de plateformes de télémédecine. Plus de 20 plateformes de soins virtuels créées avec consultations vidéo, portails patients et conformité HIPAA. Contactez-nous pour les tarifs.',
+    'title' => 'Création de Site Web de Télémédecine pour Cabinets & Cliniques | CodeSommet',
+    'meta_description' => 'Sites web de télémédecine pour cabinets et cliniques : présentation des soins, prise de rendez-vous en ligne et parcours patient clair, optimisés pour le référencement local.',
     'meta_keywords' => 'développement site web télémédecine,plateforme soins virtuels,consultation médicale en ligne,développement logiciel télésanté,plateforme consultation vidéo,surveillance patient à distance,développement application santé,plateforme conforme HIPAA',
-    'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
+    'og_title' => 'Création de Site Web de Télémédecine pour Cabinets & Cliniques | CodeSommet',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
     'text_0' => 'Télémédecine & Virtual Care',

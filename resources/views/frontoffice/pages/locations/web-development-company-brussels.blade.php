@@ -44,7 +44,7 @@
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="{{ route('locations') }}">Emplacements</a><span>/</span><span
-                                class="text-gray-600">Brussels</span></nav>
+                                class="text-gray-600">Bruxelles</span></nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -52,7 +52,7 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Brussels<!-- --> Projets</span><span
+                                    les <!-- -->Bruxelles<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -64,7 +64,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/70">{{ __('locations/web-development-company-brussels.text_472') }}<!-- -->
-                                    <!-- -->Brussels<!-- -->, <!-- -->Belgique</span>
+                                    <!-- -->Bruxelles<!-- -->, <!-- -->Belgique</span>
                             </div>
                         </div>
                         <div class="space-y-6">
@@ -129,7 +129,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-brussels.text_1') }}
-                                    <!-- -->Brussels</span>
+                                    <!-- -->Bruxelles</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -140,7 +140,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-brussels.text_2') }}
-                                    <!-- -->Brussels<!-- --></span>
+                                    <!-- -->Bruxelles<!-- --></span>
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-brussels.text_3') }} <!-- -->Brussels<!-- -->?
+                        {{ __('locations/web-development-company-brussels.text_3') }} <!-- -->Bruxelles<!-- -->?
                     </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-brussels.sw_2864') }}</p>
@@ -364,7 +364,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-brussels.text_5') }} <!-- -->Brussels<!-- --> Entreprises
+                        {{ __('locations/web-development-company-brussels.text_5') }} <!-- -->Bruxelles<!-- --> Entreprises
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -384,7 +384,7 @@
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
-                        <!-- -->Brussels<!-- -->{{ __('locations/web-development-company-brussels.ml_889') }}
+                        <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_889') }}
                     </p>
                 </div>
             </div>
@@ -408,10 +408,10 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Brussels<!-- -->
+                        style="font-family:var(--font-heading)">Bruxelles<!-- -->
                         {{ __('locations/web-development-company-brussels.text_7') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans
-                        <!-- -->Brussels<!-- -->{{ __('locations/web-development-company-brussels.ml_890') }}
+                        <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_890') }}
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -654,14 +654,14 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>{{ __('locations/web-development-company-brussels.text_12') }} <!-- -->Brussels
+                        </svg>{{ __('locations/web-development-company-brussels.text_12') }} <!-- -->Bruxelles
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-brussels.text_13') }} <!-- -->Brussels</h2>
+                        {{ __('locations/web-development-company-brussels.text_13') }} <!-- -->Bruxelles</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
                         comment nous avons aidé les entreprises à
-                        <!-- -->Brussels<!-- -->{{ __('locations/web-development-company-brussels.ml_902') }}
+                        <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_902') }}
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
@@ -1309,11 +1309,11 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Brussels<!-- -->
+                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Bruxelles<!-- -->
                         {{ __('locations/web-development-company-brussels.text_46') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-brussels.text_47') }}
-                        <!-- -->Brussels<!-- -->{{ __('locations/web-development-company-brussels.ml_930') }}
+                        <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_930') }}
                     </p>
                 </div>
                 <div class="max-w-5xl mx-auto">
@@ -1328,11 +1328,11 @@
                                         class="inline-flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full max-w-full">
                                         <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                             class="font-bold text-xs md:text-sm text-[#00AEEF] text-center leading-tight break-words">CodeSommet
-                                            <!-- -->Brussels</span>
+                                            <!-- -->Bruxelles</span>
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Brussels<!-- --> Agences</div>
+                                    Autres <!-- -->Bruxelles<!-- --> Agences</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1558,7 +1558,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-brussels.text_53') }} <!-- -->Brussels<!-- -->
+                            </svg>{{ __('locations/web-development-company-brussels.text_53') }} <!-- -->Bruxelles<!-- -->
                             Entreprises
                         </div>
                     </div>
@@ -1580,11 +1580,11 @@
                         </svg>{{ __('locations/web-development-company-brussels.ml_941') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Quoi <!-- -->Brussels<!-- --> Nos Clients Disent de Nous
+                        style="font-family:var(--font-heading)">Quoi <!-- -->Bruxelles<!-- --> Nos Clients Disent de Nous
                     </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
                         Écoutez les entreprises de
-                        <!-- -->Brussels<!-- -->{{ __('locations/web-development-company-brussels.ml_942') }}
+                        <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_942') }}
                     </p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
@@ -2109,7 +2109,7 @@
                         {{ __('locations/web-development-company-brussels.text_57') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Brussels<!-- --> {{ __('locations/web-development-company-brussels.text_58') }}<svg
+                        notre <!-- -->Bruxelles<!-- --> {{ __('locations/web-development-company-brussels.text_58') }}<svg
                             class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

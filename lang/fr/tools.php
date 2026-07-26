@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet',
-    'meta_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site web éducation,développement site web santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'title' => 'Outils SEO & IA Gratuits en Ligne : Analyse, Audit, Générateurs | CodeSommet',
+    'meta_description' => 'Plus de 40 outils SEO et IA gratuits : audit de site, vérificateur de liens brisés, générateurs de schémas, minificateurs, analyseurs de performance. Sans inscription.',
+    'meta_keywords' => 'outils SEO gratuits,audit SEO en ligne,vérificateur liens brisés,générateur schema,analyseur site web,outils webmaster gratuits',
+    'og_title' => 'Outils SEO & IA Gratuits en Ligne | CodeSommet',
+    'og_description' => 'Plus de 40 outils SEO et IA gratuits : audit de site, vérificateur de liens brisés, générateurs de schémas, minificateurs, analyseurs de performance. Sans inscription.',
+    'twitter_description' => 'Plus de 40 outils SEO et IA gratuits : audit de site, liens brisés, schémas, minificateurs, performance. Sans inscription.',
     'text_0' => 'Pour Votre Site Web',
     'text_1' => 'Parcourir les Outils',
     'text_2' => 'Besoin d\'une Solution Sur Mesure ?',

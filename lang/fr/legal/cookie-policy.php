@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc | CodeSommet',
-    'meta_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
+    'title' => 'Politique de Cookies | CodeSommet',
+    'meta_description' => 'Les cookies utilisés sur codesommet.com : cookies techniques, mesure d\'audience Google Analytics, durées de conservation et gestion de vos préférences.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence de Développement Web Propulsée par l\'IA | Maroc',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web propulsés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_title' => 'Politique de Cookies | CodeSommet',
+    'og_description' => 'Les cookies utilisés sur codesommet.com : cookies techniques, mesure d\'audience Google Analytics, durées de conservation et gestion de vos préférences.',
+    'twitter_description' => 'Les cookies utilisés sur codesommet.com : cookies techniques, mesure d\'audience, durées de conservation et préférences.',
     'text_0' => 'Dernière mise à jour : Janvier 2026',
     'text_1' => 'Découvrez comment nous utilisons les cookies et les technologies similaires pour améliorer votre expérience de navigation.',
     'text_2' => 'Que sont les cookies',

@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateforme EdTech | LMS & Logiciel d\'Apprentissage en Ligne | CodeSommet',
-    'meta_description' => 'Développement de plateformes EdTech personnalisées. Plus de 25 systèmes de gestion d\'apprentissage, marketplaces de cours et plateformes d\'engagement étudiant construits. Fonctionnalités alimentées par l\'IA, gamification, analytique. Contactez-nous pour les tarifs.',
+    'title' => 'Développement de Plateforme EdTech pour Éditeurs & Startups Éducatives | CodeSommet',
+    'meta_description' => 'Développement de produits EdTech B2B : LMS commercialisables, marketplaces de cours et plateformes d\'engagement étudiant, conçus pour les éditeurs et startups éducatives.',
     'meta_keywords' => 'développement plateforme edtech,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',
-    'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
+    'og_title' => 'Développement de Plateforme EdTech pour Éditeurs & Startups Éducatives | CodeSommet',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
     'text_0' => 'Industrie Spécialisée',

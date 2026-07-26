@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'Développement Web au Maroc | CodeSommet',
-    'meta_description' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
+    'title' => 'Développement Web à Lagos, Nigeria | CodeSommet',
+    'meta_description' => 'Développement web pour les entreprises de Lagos : sites sur mesure, e-commerce et plateformes métier, livrés à distance par l\'agence CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement expert Next.js pour l\'éducation, la santé et les entreprises. Plus de 50 projets livrés.',
-    'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Plus de 50 projets livrés.',
+    'og_title' => 'Développement Web à Lagos, Nigeria | CodeSommet',
+    'og_description' => 'Développement web pour les entreprises de Lagos : sites sur mesure, e-commerce et plateformes métier, livrés à distance par l\'agence CodeSommet.',
+    'twitter_description' => 'Développement web pour les entreprises de Lagos : sites sur mesure, e-commerce et plateformes métier.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => '50+ clients à',

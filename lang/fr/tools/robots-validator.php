@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Validateur Robots.txt - Vérificateur Robots.txt Gratuit | CodeSommet',
-    'meta_description' => 'Validez votre fichier robots.txt pour les erreurs de syntaxe. Vérifiez les directives de crawl, testez le blocage d\'\'\'URL et assurez un accès correct aux moteurs de recherche. Outil gratuit.',
+    'meta_description' => 'Validez votre fichier robots.txt pour les erreurs de syntaxe. Vérifiez les directives de crawl, testez le blocage d\'URL et assurez un accès correct aux moteurs de recherche. Outil gratuit.',
     'meta_keywords' => 'robots txt validator,robots.txt checker,robots.txt tester,crawl validation,SEO robots,search engine crawling',
     'og_title' => 'Validateur Robots.txt - Vérificateur Gratuit',
     'og_description' => 'Validez la syntaxe robots.txt et testez les directives de crawl instantanément',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Générateur de QR Code - Créateur de QR Code Gratuit | CodeSommet',
-    'meta_description' => 'Générez des QR codes personnalisables instantanément avec notre générateur de QR code gratuit. Créez des QR codes pour les URL, le texte, les numéros de téléphone et plus encore. Téléchargez des QR codes haute qualité pour impression ou usage numérique avec support de correction d\'\'\'erreurs.',
+    'meta_description' => 'Générez des QR codes personnalisables instantanément avec notre générateur de QR code gratuit. Créez des QR codes pour les URL, le texte, les numéros de téléphone et plus encore. Téléchargez des QR codes haute qualité pour impression ou usage numérique avec support de correction d\'erreurs.',
     'meta_keywords' => 'QR code generator,QR code creator,custom QR code,QR code maker,free QR generator,QR code tool,create QR code,generate QR code online,QR code builder,printable QR code,URL QR code,QR code download,error correction QR,high quality QR code',
     'og_title' => 'Générateur de QR Code - Créateur de QR Code Gratuit',
     'og_description' => 'Générez des QR codes personnalisables instantanément avec notre générateur gratuit. Créez des QR codes pour les URL, le texte, les numéros de téléphone et plus encore. Téléchargez des QR codes haute qualité.',

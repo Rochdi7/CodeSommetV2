@@ -44,7 +44,7 @@
                                     </path>
                                 </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="{{ route('locations') }}">Emplacements</a><span>/</span><span
-                                class="text-gray-600">Barcelona</span></nav>
+                                class="text-gray-600">Barcelone</span></nav>
                         <div class="flex justify-center">
                             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#22C55E]/10 rounded-full">
                                 <div class="relative">
@@ -52,7 +52,7 @@
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
                                 </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Barcelona<!-- --> Projets</span><span
+                                    les <!-- -->Barcelone<!-- --> Projets</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -64,7 +64,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/70">{{ __('locations/web-development-company-barcelona.text_470') }}<!-- -->
-                                    <!-- -->Barcelona<!-- -->, <!-- -->Espagne</span>
+                                    <!-- -->Barcelone<!-- -->, <!-- -->Espagne</span>
                             </div>
                         </div>
                         <div class="space-y-6">
@@ -116,7 +116,7 @@
                                 </svg></a><a
                                 class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0F0F0F]/20 hover:border-[#00AEEF] hover:bg-[#00AEEF]/5 transition-all w-full sm:w-auto"
                                 href="#portfolio"><span class="text-[15px] font-semibold text-[#0F0F0F]">Voir le Portfolio
-                                    Barcelona</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    Barcelone</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
                                     class="lucide lucide-arrow-right w-5 h-5 text-[#0F0F0F] group-hover:translate-x-1 transition-transform"
@@ -128,7 +128,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-barcelona.text_1') }}
-                                    <!-- -->Barcelona</span>
+                                    <!-- -->Barcelone</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -139,7 +139,7 @@
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
                                     class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-barcelona.text_2') }}
-                                    <!-- -->Barcelona<!-- --></span>
+                                    <!-- -->Barcelone<!-- --></span>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-barcelona.text_3') }} <!-- -->Barcelona<!-- -->?
+                        {{ __('locations/web-development-company-barcelona.text_3') }} <!-- -->Barcelone<!-- -->?
                     </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-barcelona.sw_2862') }}</p>
@@ -363,7 +363,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-barcelona.text_4') }} <!-- -->Barcelona<!-- -->
+                        {{ __('locations/web-development-company-barcelona.text_4') }} <!-- -->Barcelone<!-- -->
                         Entreprises</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -383,7 +383,7 @@
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
-                        <!-- -->Barcelona<!-- -->{{ __('locations/web-development-company-barcelona.ml_889') }}
+                        <!-- -->Barcelone<!-- -->{{ __('locations/web-development-company-barcelona.ml_889') }}
                     </p>
                 </div>
             </div>
@@ -407,10 +407,10 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Barcelona<!-- -->
+                        style="font-family:var(--font-heading)">Barcelone<!-- -->
                         {{ __('locations/web-development-company-barcelona.text_6') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans
-                        <!-- -->Barcelona<!-- -->{{ __('locations/web-development-company-barcelona.ml_890') }}
+                        <!-- -->Barcelone<!-- -->{{ __('locations/web-development-company-barcelona.ml_890') }}
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -653,14 +653,14 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>{{ __('locations/web-development-company-barcelona.text_11') }} <!-- -->Barcelona
+                        </svg>{{ __('locations/web-development-company-barcelona.text_11') }} <!-- -->Barcelone
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-barcelona.text_12') }} <!-- -->Barcelona</h2>
+                        {{ __('locations/web-development-company-barcelona.text_12') }} <!-- -->Barcelone</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
                         comment nous avons aidé les entreprises à
-                        <!-- -->Barcelona<!-- -->{{ __('locations/web-development-company-barcelona.ml_902') }}</p>
+                        <!-- -->Barcelone<!-- -->{{ __('locations/web-development-company-barcelona.ml_902') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><a class="block" href="{{ route('case-study', 'glamworlds') }}">
@@ -1308,11 +1308,11 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Barcelona<!-- -->
+                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Barcelone<!-- -->
                         {{ __('locations/web-development-company-barcelona.text_43') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-barcelona.text_44') }}
-                        <!-- -->Barcelona<!-- -->{{ __('locations/web-development-company-barcelona.ml_929') }}</p>
+                        <!-- -->Barcelone<!-- -->{{ __('locations/web-development-company-barcelona.ml_929') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1326,11 +1326,11 @@
                                         class="inline-flex items-center justify-center gap-1 md:gap-2 px-2 md:px-3 py-1 md:py-1.5 bg-[#00AEEF]/10 rounded-full max-w-full">
                                         <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
                                             class="font-bold text-xs md:text-sm text-[#00AEEF] text-center leading-tight break-words">CodeSommet
-                                            <!-- -->Barcelona</span>
+                                            <!-- -->Barcelone</span>
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Barcelona<!-- --> Agences</div>
+                                    Autres <!-- -->Barcelone<!-- --> Agences</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1557,7 +1557,7 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>{{ __('locations/web-development-company-barcelona.text_50') }}
-                            <!-- -->Barcelona<!-- --> Entreprises
+                            <!-- -->Barcelone<!-- --> Entreprises
                         </div>
                     </div>
                 </div>
@@ -1578,11 +1578,11 @@
                         </svg>{{ __('locations/web-development-company-barcelona.ml_940') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Quoi <!-- -->Barcelona<!-- --> Nos Clients Disent de Nous
+                        style="font-family:var(--font-heading)">Quoi <!-- -->Barcelone<!-- --> Nos Clients Disent de Nous
                     </h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
                         Écoutez les entreprises de
-                        <!-- -->Barcelona<!-- -->{{ __('locations/web-development-company-barcelona.ml_941') }}</p>
+                        <!-- -->Barcelone<!-- -->{{ __('locations/web-development-company-barcelona.ml_941') }}</p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -2106,7 +2106,7 @@
                         {{ __('locations/web-development-company-barcelona.text_54') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Barcelona<!-- -->
+                        notre <!-- -->Barcelone<!-- -->
                         {{ __('locations/web-development-company-barcelona.text_55') }}<svg class="w-4 h-4"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
