@@ -6,9 +6,9 @@
     'use strict';
 
     var AI_TOOLS = {
-        'blog-title-generator': { title: 'Blog Title Generator', action: 'Generate Titles', actionText: 'titres générés', inputLabel: 'Sujet ou mot-clé', inputPlaceholder: 'Enter your blog topic or keyword...' },
-        'chatbot-script-generator': { title: 'Chatbot Script', action: 'Generate Script', actionText: 'scripts générés', inputLabel: 'Secteur d\'activité', inputPlaceholder: 'e.g., Healthcare, E-commerce, SaaS...' },
-        'landing-page-generator': { title: 'Landing Page', action: 'Generate Copy', actionText: 'pages générées', inputLabel: 'Produit ou service', inputPlaceholder: 'Describe your product or service...' },
+        'blog-title-generator': { title: 'Blog Title Generator', action: 'Generate Titles', actionText: 'titres générés', inputLabel: 'Sujet ou mot-clé', inputPlaceholder: 'Saisissez le sujet ou le mot-clé de votre article…' },
+        'chatbot-script-generator': { title: 'Chatbot Script', action: 'Generate Script', actionText: 'scripts générés', inputLabel: 'Secteur d\'activité', inputPlaceholder: 'ex. : santé, e-commerce, SaaS…' },
+        'landing-page-generator': { title: 'Landing Page', action: 'Generate Copy', actionText: 'pages générées', inputLabel: 'Produit ou service', inputPlaceholder: 'Décrivez votre produit ou service…' },
         'meta-tag-generator': { title: 'Meta Tag Generator', action: 'Generate Tags', actionText: 'balises méta générées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
         'color-palette-generator': { title: 'Color Palette', action: 'Extract Colors', actionText: 'palettes générées', inputLabel: 'Image à importer', inputType: 'file' }
     };
@@ -74,7 +74,7 @@
             .then(function (res) {
                 return res.text().then(function (text) {
                     var json = parseJsonSafe(text);
-                    if (!res.ok) throw new Error(json.error || json.message || 'Generation failed');
+                    if (!res.ok) throw new Error(json.error || json.message || 'La génération a échoué');
                     return json;
                 });
             })
@@ -85,7 +85,7 @@
             })
             .catch(function (err) {
                 CodeSommetTools.setLoading(false);
-                CodeSommetTools.showError(err.message || 'Failed to generate. Please try again.');
+                CodeSommetTools.showError(err.message || 'La génération a échoué. Veuillez réessayer.');
             });
         });
 
@@ -136,7 +136,7 @@
         // Blog titles
         if (data.titles && data.titles.length > 0) {
             html += '<div class="bg-white rounded-xl border border-gray-100 p-6">' +
-                '<h3 class="text-lg font-bold text-black mb-4">Generated Titles</h3><div class="space-y-3">';
+                '<h3 class="text-lg font-bold text-black mb-4">Titres générés</h3><div class="space-y-3">';
             data.titles.forEach(function (t, i) {
                 html += '<div class="flex items-start gap-3 p-4 bg-[#F8F8F8] rounded-lg hover:bg-[#00AEEF]/5 transition-colors">' +
                     '<span class="w-8 h-8 bg-[#00AEEF] text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">' + (i + 1) + '</span>' +
@@ -144,27 +144,27 @@
                     (t.seoScore ? '<div class="flex gap-4 mt-2 text-xs text-gray-600"><span>SEO: ' + t.seoScore + '/100</span>' +
                     (t.emotionalHook ? '<span>' + t.emotionalHook + '</span>' : '') +
                     (t.ctrEstimate ? '<span>CTR: ' + t.ctrEstimate + '</span>' : '') + '</div>' : '') +
-                    '</div><button class="copy-title flex-shrink-0 px-3 py-1 text-xs rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors" data-text="' + escapeAttr(t.title || t) + '">Copy</button></div>';
+                    '</div><button class="copy-title flex-shrink-0 px-3 py-1 text-xs rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors" data-text="' + escapeAttr(t.title || t) + '">Copier</button></div>';
             });
             html += '</div></div>';
         }
 
         // Meta tags
         if (data.title && data.description && !data.titles) {
-            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Generated Meta Tags</h3><div class="space-y-4">' +
-                '<div class="p-4 bg-[#F8F8F8] rounded-lg"><label class="text-xs font-medium text-gray-500">Title Tag (' + (data.title || '').length + ' chars)</label>' +
+            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Balises méta générées</h3><div class="space-y-4">' +
+                '<div class="p-4 bg-[#F8F8F8] rounded-lg"><label class="text-xs font-medium text-gray-500">Balise title (' + (data.title || '').length + ' caractères)</label>' +
                 '<p class="font-semibold text-black mt-1">' + escapeHtml(data.title) + '</p></div>' +
-                '<div class="p-4 bg-[#F8F8F8] rounded-lg"><label class="text-xs font-medium text-gray-500">Meta Description (' + (data.description || '').length + ' chars)</label>' +
+                '<div class="p-4 bg-[#F8F8F8] rounded-lg"><label class="text-xs font-medium text-gray-500">Meta description (' + (data.description || '').length + ' caractères)</label>' +
                 '<p class="text-sm text-gray-700 mt-1">' + escapeHtml(data.description) + '</p></div>';
-            if (data.keywords) html += '<div class="p-4 bg-[#F8F8F8] rounded-lg"><label class="text-xs font-medium text-gray-500">Keywords</label><p class="text-sm text-gray-700 mt-1">' + escapeHtml(data.keywords) + '</p></div>';
+            if (data.keywords) html += '<div class="p-4 bg-[#F8F8F8] rounded-lg"><label class="text-xs font-medium text-gray-500">Mots-clés</label><p class="text-sm text-gray-700 mt-1">' + escapeHtml(data.keywords) + '</p></div>';
             if (data.htmlCode) html += '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto"><pre class="text-xs text-[#0F0F0F] font-mono whitespace-pre">' + escapeHtml(data.htmlCode) + '</pre></div>' +
-                '<button id="copy-meta-btn" class="px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy HTML Code</button>';
+                '<button id="copy-meta-btn" class="px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier le code HTML</button>';
             html += '</div></div>';
         }
 
         // Color palette
         if (data.colors && data.colors.length > 0) {
-            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Color Palette</h3>' +
+            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Palette de couleurs</h3>' +
                 '<div class="grid grid-cols-2 md:grid-cols-3 gap-4">';
             data.colors.forEach(function (c) {
                 html += '<div class="rounded-xl overflow-hidden border border-gray-200">' +
@@ -181,8 +181,8 @@
         if (data.content || data.script || data.copy) {
             var content = data.content || data.script || data.copy;
             html += '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
-                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Generated Content</h3>' +
-                '<button id="copy-content-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy</button></div>' +
+                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Contenu généré</h3>' +
+                '<button id="copy-content-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier</button></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200">' +
                 '<div class="prose prose-sm max-w-none text-[#0F0F0F]">' + (typeof content === 'string' ? escapeHtml(content).replace(/\n/g, '<br>') : '<pre>' + escapeHtml(JSON.stringify(content, null, 2)) + '</pre>') + '</div></div></div></div>';
         }
@@ -194,8 +194,30 @@
 
         html += '</div>';
 
-        var container = document.querySelector('section.max-w-5xl .space-y-6.mb-8, section.max-w-5xl .space-y-6');
-        if (container) container.insertAdjacentHTML('afterend', html);
+        // Les pages n'utilisent pas toutes le même conteneur de formulaire
+        // (.space-y-6 ici, .space-y-8 là). Chercher une seule de ces classes
+        // faisait disparaître silencieusement un résultat pourtant calculé :
+        // l'API répondait 200 et rien ne s'affichait. On essaie donc les
+        // variantes connues, puis on se rabat sur le bloc du bouton d'action.
+        var toolSection = document.querySelector('section.max-w-5xl') || document.querySelector('section.max-w-4xl');
+        var container = toolSection && (
+            toolSection.querySelector('.space-y-6.mb-8') ||
+            toolSection.querySelector('.space-y-6') ||
+            toolSection.querySelector('.space-y-8') ||
+            toolSection.querySelector('.space-y-4')
+        );
+
+        if (!container) {
+            var btn = document.getElementById('tool-action-btn');
+            container = btn ? (btn.closest('.space-y-4, .space-y-6, .space-y-8') || btn.parentElement) : null;
+        }
+        if (!container) container = toolSection;
+
+        if (container) {
+            container.insertAdjacentHTML('afterend', html);
+            var resultsEl = document.getElementById('tool-results');
+            if (resultsEl) resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
 
         // Copy handlers
         document.querySelectorAll('.copy-title').forEach(function (btn) {
@@ -230,7 +252,7 @@
         var idx = text.indexOf('{');
         if (idx > 0) text = text.substring(idx);
         try { return JSON.parse(text); }
-        catch (e) { throw new Error('Invalid response from server'); }
+        catch (e) { throw new Error('Réponse invalide du serveur'); }
     }
 
     function toCamelCase(str) { return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function (m, c) { return c.toUpperCase(); }); }

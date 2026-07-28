@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Étude de Cas Morocco Quest - Agence Touristique en Ligne | CodeSommet')
-@section('meta_description', 'Plateforme EdTech SaaS complète connectant les étudiants à la formation professionnelle allemande. Comprend un chatbot IA (GPT-4), un système d\'apprentissage en 3 phases, la gamification et une formation culturelle desservant plus de 9 pays.')
-@section('meta_keywords', 'développement EdTech SaaS,intégration chatbot IA,plateforme apprentissage GPT-4,application apprentissage allemand,développement gamification,plateforme EdTech Next.js')
-@section('og_title', 'Étude de Cas Morocco Quest - Agence Touristique en Ligne')
-@section('og_description', 'Plateforme EdTech SaaS complète connectant les étudiants à la formation professionnelle allemande. Comprend un chatbot IA (GPT-4), un système d\'apprentissage en 3 phases, la gamification et une formation culturelle desservant plus de 9 pays.')
-@section('twitter_description', 'Plateforme EdTech SaaS complète connectant les étudiants à la formation professionnelle allemande. Comprend un chatbot IA (GPT-4), un système d\'apprentissage en 3 phases, la gamification et une formation culturelle desservant plus de 9 pays.')
+@section('title', 'Étude de Cas Morocco Quest - Agence de Voyage de Luxe | CodeSommet')
+@section('meta_description', 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le désert du Sahara et expériences sur mesure. Laravel + panneau d\'administration Filament.')
+@section('meta_keywords', 'développement site agence de voyage,circuits privés Maroc,voyage de luxe Sahara,plateforme réservation Laravel,panneau administration Filament,site web tourisme sur mesure')
+@section('og_title', 'Étude de Cas Morocco Quest - Agence de Voyage de Luxe')
+@section('og_description', 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le désert du Sahara et expériences sur mesure. Laravel + panneau d\'administration Filament.')
+@section('twitter_description', 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le désert du Sahara et expériences sur mesure. Laravel + panneau d\'administration Filament.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -31,11 +31,11 @@
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
             <div class="space-y-4 md:space-y-6">
                 <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20" style="transform:scale(0.9)">
-                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Éducation</span>
+                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Voyage &amp; Tourisme</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style="font-family:var(--font-heading)">Morocco Quest</h1>
-                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Agence Touristique</p>
-                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">La première place de marché d&#x27;agrégation d&#x27;emplois en Allemagne connectant les étudiants internationaux à plus de 25 000 postes d&#x27;Ausbildung réels d&#x27;entreprises allemandes vérifiées, avec des outils de préparation alimentés par l&#x27;IA, une architecture de plateforme bilatérale et une portée mondiale dans 223 pays</p>
+                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Agence de Voyage de Luxe</p>
+                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Une application Laravel de niveau production pour une agence de voyage de luxe au Maroc : circuits privés, aventures dans le désert du Sahara, voyages culturels et expériences sur mesure, des souks de Marrakech aux dunes de Merzouga, pensés pour les voyageurs internationaux en quête de rencontres authentiques et raffinées</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                     <div class="group relative p-4 bg-white rounded-2xl border border-gray-100 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-center gap-3">
@@ -58,7 +58,7 @@
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                 </svg></div>
                             <div class="min-w-0">
-                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance des Prospects</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance des Demandes</p>
                                 <p class="text-sm font-bold text-gray-900 truncate">26.4x</p>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Le Défi</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Les étudiants internationaux faisaient face à un accès fragmenté aux opportunités d&#x27;Ausbildung en Allemagne sans plateforme centralisée offrant de vrais emplois, une préparation complète et des connexions avec les employeurs. Le défi était de construire une place de marché bilatérale évolutive agrégeant des milliers de postes réels depuis les sites web d&#x27;entreprises allemandes, de créer des systèmes d&#x27;apprentissage sophistiqués alimentés par l&#x27;IA (allemand A1-B2, préparation aux entretiens, intégration culturelle), de développer des plateformes séparées pour les étudiants et les employeurs avec une localisation allemande complète, d&#x27;implémenter un scoring de force de profil pour améliorer le matching d&#x27;emplois, et d&#x27;atteindre une croissance organique via le SEO pour toucher les étudiants mondialement tout en maintenant 277 routes API dans une architecture de production.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">L&#x27;agence vendait des circuits privés et des expériences sur mesure haut de gamme, mais sa présence en ligne ne reflétait ni le raffinement de ses prestations ni la diversité de son offre. Les voyageurs internationaux ne pouvaient ni parcourir clairement le catalogue de circuits et d&#x27;activités, ni comprendre le déroulé d&#x27;un itinéraire, ni formuler une demande personnalisée sans échanges interminables par e-mail. Côté interne, chaque ajout de circuit, chaque mise à jour de tarif ou chaque publication d&#x27;article de blog nécessitait l&#x27;intervention d&#x27;un développeur, ce qui figeait le contenu et ralentissait le rythme commercial. Le défi consistait donc à construire une vitrine publique à fort taux de conversion, capable de mettre en scène les destinations marocaines avec une qualité éditoriale et visuelle à la hauteur du positionnement luxe, tout en dotant une équipe non technique d&#x27;un back-office lui permettant de gérer seule circuits, activités, contenus, demandes et réservations, sur une base technique robuste, rapide et prête pour la production.</p>
             </div>
             <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <div class="flex items-center gap-3 mb-6">
@@ -117,7 +117,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Notre Solution</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">We developed a sophisticated three-platform marketplace ecosystem: (1) Student Platform with AI-powered German learning hub (1,000+ vocabulary, Gemini 2.0 Flash chatbot, spaced repetition system), ElevenLabs voice-based interview preparation with culturally-aware AI personalities reflecting German Direktheit communication styles, video introduction studio with AI quality analysis, CV/resume builder with intelligent parsing, profile strength scoring system (0-100 across 8 categories), and public student profiles with custom URLs; (2) Plateforme Employeur (100% German) with progressive trust model, job posting management, automated application notifications, claim verification system for company profiles; (3) Tableau de Bord Admin with employer vetting, job import management, and complete audit logging. Implemented job scraping system using Firecrawl AI to aggregate 25,000+ real positions from verified German companies with automatic DE→EN translation via Gemini, content hashing to optimize translation costs, and external application URLs linking directly to company career portals. Built comprehensive SEO strategy achieving first-page Google rankings (position 7.1 average) with 37,300 organic clicks from 1.24M impressions across 223 countries, 63.8% mobile traffic, and 26.4x signup growth in 6 months.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé une application Laravel de niveau production articulée autour de deux univers complémentaires : (1) une vitrine publique orientée conversion, avec un catalogue structuré de circuits privés, d&#x27;excursions dans le désert du Sahara et de voyages culturels, des fiches détaillées présentant itinéraire, durée, points forts et galerie photo, des pages d&#x27;expériences sur mesure invitant le visiteur à composer son propre voyage, un blog éditorial nourrissant la découverte des destinations et le référencement naturel, ainsi qu&#x27;un parcours de demande et de réservation simplifié pensé pour une audience internationale et une navigation majoritairement mobile ; (2) un panneau d&#x27;administration Filament complet, permettant au personnel non technique de créer et de modifier circuits et activités, d&#x27;orchestrer les médias, de publier des articles de blog, de suivre chaque demande entrante et de gérer les réservations, sans jamais toucher au code. L&#x27;ensemble repose sur une architecture Laravel soignée : contenus modélisés proprement, images optimisées, temps de chargement inférieur à 1,5 seconde et interface entièrement responsive. Résultat : un site qui convertit le trafic en demandes qualifiées et une équipe autonome au quotidien.</p>
             </div>
         </div>
         <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -128,7 +128,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Place de marché d'emplois avec 25 000+ postes d'Ausbildung réels d'entreprises allemandes vérifiées</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Catalogue de circuits privés et d'itinéraires sur mesure à travers tout le Maroc</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -136,7 +136,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Système de scraping alimenté par Firecrawl AI avec traduction automatique DE→EN via Gemini 2.5 Flash</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Excursions dans le désert du Sahara et bivouacs de luxe dans les dunes de Merzouga</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -144,7 +144,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Architecture à trois plateformes : Tableau de bord étudiant (anglais), portail employeur (allemand), gestion admin</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Voyages culturels autour de Marrakech, de ses souks et des cités impériales</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -152,7 +152,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Système de scoring de force de profil (0-100 sur 8 catégories) avec identification de gains rapides</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Pages d'expériences sur mesure permettant au voyageur de composer son propre séjour</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -160,7 +160,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Apprentissage de l'allemand alimenté par l'IA avec chatbot Gemini 2.0 Flash et 1 000+ vocabulaire professionnel</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Système de demandes personnalisées avec formulaires qualifiés et suivi centralisé</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -168,7 +168,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Préparation aux entretiens vocale via ElevenLabs avec personnalités IA culturellement adaptées (Direktheit allemand)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion des réservations de bout en bout depuis le back-office</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -176,7 +176,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Studio de vidéo d'introduction avec analyse qualité IA (éclairage, audio, évaluation de la prononciation)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Panneau d'administration Filament complet pour piloter l'ensemble du contenu</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -184,7 +184,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Constructeur CV intelligent avec analyse IA et export multi-format (PDF/Word)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion autonome des circuits et activités par le staff non technique, sans code</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -192,7 +192,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Profils étudiants publics avec URLs personnalisées, 10 contrôles de confidentialité et partage social</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Blog éditorial sur les destinations marocaines, publié directement par l'équipe</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -200,7 +200,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Modèle de confiance employeur progressif avec système de revendication de profil et vérification automatisée</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Fiches circuits détaillées : itinéraire, durée, temps forts et galerie photo</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -208,7 +208,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Hub de documentation complet avec recherche, favoris et collecte de retours</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Vitrine publique optimisée conversion avec appels à l'action et parcours de demande fluide</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -216,7 +216,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Intégration Stripe avec système d'abonnement Pro (modèle freemium avec accès par fonctionnalités)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Expérience pensée pour les voyageurs internationaux, du premier clic à la réservation</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -224,7 +224,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Optimisation SEO atteignant 37 300 clics organiques sur 1,24M impressions (classements en première page)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Optimisation SEO des pages circuits et destinations pour capter la recherche organique</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -232,7 +232,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Portée mondiale dans 223 pays avec design mobile-first (63,8% de trafic mobile)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Design responsive soigné, du grand écran au mobile en déplacement</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -240,7 +240,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Intégration analytique PostHog avec proxy inverse et gestion du consentement cookies</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Médias optimisés et chargement rapide au service d'une navigation haut de gamme</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -248,7 +248,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">277 routes API avec limitation de débit, journalisation d'audit et gestion d'erreurs de production</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Architecture Laravel de niveau production : sécurité, performance et maintenabilité</p>
                     </div>
                 </div>
             </div>
@@ -273,7 +273,7 @@
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>backend
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Supabase PostgreSQL</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">50+ Tables avec RLS</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Vercel Edge Functions</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">277 Routes API</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Puppeteer PDF Generation</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Supabase PostgreSQL</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Base de Données Relationnelle</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Vercel Edge Functions</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">277 Routes API</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Puppeteer PDF Generation</span></div>
                 </div>
                 <div>
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -291,9 +291,9 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3" style="font-family:var(--font-heading)">Aperçu de l'Interface</h2>
             <p class="text-gray-600 text-base md:text-lg">Captures d'écran à venir</p>
         </div>
-        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Place de Marché</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord Étudiant</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Hub d'Apprentissage Allemand</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Préparation aux Entretiens</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Plateforme Employeur</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord Admin</button></div>
+        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Catalogue de Circuits</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Fiche Circuit</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Expériences sur Mesure</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Demandes &amp; Réservations</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Blog &amp; Destinations</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord Admin</button></div>
         <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
-            <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/morocco-quest/homepage.webp') }}" alt="Place de Marché" class="w-full h-full object-cover" /></div>
+            <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/morocco-quest/homepage.webp') }}" alt="Catalogue de Circuits" class="w-full h-full object-cover" /></div>
         </div>
         <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
             <div class="bg-[#F5F5F5] rounded-2xl md:rounded-3xl p-6 md:p-8 text-center">
@@ -344,7 +344,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">26.4x</p>
-                            <p class="text-xs text-gray-600 font-medium">Augmentation des Prospects</p>
+                            <p class="text-xs text-gray-600 font-medium">Augmentation des Demandes</p>
                         </div>
                     </div>
                 </div>
@@ -396,7 +396,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight"></p>
-                            <p class="text-xs text-gray-600 font-medium">Placements</p>
+                            <p class="text-xs text-gray-600 font-medium">Réservations</p>
                         </div>
                     </div>
                 </div>
@@ -435,11 +435,11 @@
                         <div class="px-5 md:px-6 py-6 md:py-7"><svg class="w-8 h-8 md:w-10 md:h-10 text-white/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
                             </svg>
-                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a construit la première place de marché d&#x27;agrégation d&#x27;emplois complète d&#x27;Allemagne pour l&#x27;Ausbildung. L&#x27;architecture à trois plateformes avec des outils de préparation alimentés par l&#x27;IA, le scraping d&#x27;emplois en temps réel de plus de 25 000 postes, et le système sophistiqué de vérification des employeurs ont transformé la façon dont les étudiants internationaux accèdent à la formation professionnelle allemande. Notre croissance de 26,4x en 6 mois et les classements en première page Google dans 223 pays prouvent l&#x27;impact mondial de la plateforme.<!-- -->&quot;</blockquote>
+                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a donné à notre agence la vitrine que nos voyages méritaient. Nos circuits privés, nos nuits dans le désert et nos expériences sur mesure sont enfin présentés avec le raffinement attendu par nos clients internationaux, et le site transforme réellement les visiteurs en demandes sérieuses. Le panneau d&#x27;administration a tout changé pour nous : nous ajoutons un circuit, mettons à jour une activité ou publions un article sans jamais dépendre d&#x27;un développeur. Notre croissance de 26,4x sur les demandes en six mois parle d&#x27;elle-même.<!-- -->&quot;</blockquote>
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">U</span></div>
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">M</span></div>
                                 <div>
-                                    <p class="font-bold text-white text-sm md:text-base">Uday Yatnalli</p>
+                                    <p class="font-bold text-white text-sm md:text-base">Mounir Akajia</p>
                                     <p class="text-white/90 text-xs md:text-sm">Fondateur, Morocco Quest</p>
                                 </div>
                             </div>

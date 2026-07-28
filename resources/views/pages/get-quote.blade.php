@@ -213,7 +213,7 @@
                                 <label class="block text-xs font-medium text-[var(--text-primary)] mb-2">Fonctionnalit&#x00E9;s cl&#x00E9;s requises</label>
                                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="featuresGrid">
                                     @php
-                                    $features = ['Chatbot IA','Blog/CMS','E-commerce','Formulaires de contact','SEO','Analytique','Multilingue','Int&#x00E9;gration de paiement','Authentification','Tableau de bord admin','API personnalis&#x00E9;e','Syst&#x00E8;me de r&#x00E9;servation'];
+                                    $features = ['Chatbot IA','Blog/CMS','E-commerce','Formulaires de contact','SEO','Analytique','Multilingue','Intégration de paiement','Authentification','Tableau de bord admin','API personnalisée','Système de réservation'];
                                     @endphp
                                     @foreach($features as $feature)
                                     <button type="button" onclick="toggleFeature(this)" data-feature="{{ $feature }}" class="feature-btn flex items-center gap-1.5 px-2.5 py-1.5 border text-xs font-medium transition-all duration-150 border-gray-200 bg-white text-gray-600 hover:border-gray-300" style="border-radius:6px">
@@ -259,12 +259,13 @@
                             <div>
                                 <label for="howFoundUs" class="block text-xs font-medium text-[var(--text-primary)] mb-1.5">Comment nous avez-vous trouv&#x00E9;s ?</label>
                                 <select id="howFoundUs" name="howFoundUs" class="w-full px-3.5 py-2 text-sm border border-gray-200 bg-white focus:outline-none focus:ring-1 focus:ring-[#00AEEF]/30 focus:border-[#00AEEF] transition-all duration-150" style="border-radius:8px">
-                                    <option value="">S&#x00E9;lectionner une option</option>
+                                    <option value="">Sélectionner une option</option>
                                     <option value="Google Search">Recherche Google</option>
-                                    <option value="Social Media">R&#x00E9;seaux sociaux</option>
+                                    <option value="Social Media">Réseaux sociaux</option>
                                     <option value="Referral">Recommandation</option>
                                     <option value="LinkedIn">LinkedIn</option>
                                     <option value="Instagram">Instagram</option>
+                                    <option value="Facebook">Facebook</option>
                                     <option value="Clutch / Directory">Clutch / Annuaire</option>
                                     <option value="Other">Autre</option>
                                 </select>

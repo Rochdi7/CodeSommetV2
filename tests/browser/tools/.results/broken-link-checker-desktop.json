@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Liens Cassés",
+  "slug": "broken-link-checker",
+  "url": "/tools/broken-link-checker",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "100/100Analyse réussie1Total1Working0Broken0Redirects0Internal1ExternalLinks (1)URLStatusTypehttps://iana.org/domains/exampleworkingexternal",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "100/100Analyse réussie1Total1Working0Broken0Redirects0Internal1ExternalLinks (1)URLStatusTypehttps://iana.org/domains/exampleworkingexternal"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

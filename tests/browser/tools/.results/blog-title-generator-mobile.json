@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Titres de Blog IA",
+  "slug": "blog-title-generator",
+  "url": "/tools/blog-title-generator",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : Sujet ou mot-clé",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Titres générés1La stratégie Marketing Digital qui a doublé nos résultatsSEO: 92/100CrainteCTR: 5.8%Copier2Marketing Digital : tout ce qu'il faut savoir avant de se lancerSEO: 91/100AspirationCTR: 3%Copier3Arrêtez de mal aborder Marketing Digital — voici la bonne approcheSEO: 91/100UrgenceCTR: 4.3%Copier4Comment Marketing Digital nous a permis d'augmenter le chiffre d'affaires de 304 %SEO: 89/100CuriositéCTR: 3.5%Copier59 méthodes éprouvées pour Marketing Digital (qui fonctionnent vraiment)SEO: 85/100BénéficeCTR: 3.3%Copier6Marketing Digital en toute simplicité : une méthode pas à pasSEO: 85/100BénéficeCTR: 5.6%Copier77 erreurs de Marketing Digital que vous commettez sans le savoirSEO: 84/100CuriositéCTR: 5.5%Copier8Comment Marketing Digital : le guide complet pour débuterSEO: 74/100CuriositéCTR: 4.3%Copier9Pourquoi la plupart échouent avec Marketing Digital (et comment y remédier)SEO: 72/100CrainteCTR: 3.2%Copier10Le secret de Marketing Digital que les experts ne partagent pasSEO: 72/100UrgenceCTR: 6.3%Copier",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : Sujet ou mot-clé",
+    "otherOutput": "Titres générés1La stratégie Marketing Digital qui a doublé nos résultatsSEO: 92/100CrainteCTR: 5.8%Copier2Marketing Digital : tout ce qu'il faut savoir avant de se lancerSEO: 91/100AspirationCTR: 3%Copier3Arrêtez de mal aborder Marketing Digital — voici la bonne approcheSEO: 91/100UrgenceCTR: 4.3%Copier4Comment Marketing Digital nous a permis d'augmenter le chiffre d'affaires de 304 %SEO: 89/100CuriositéCTR: 3.5%Copier59 méthodes éprouvées pour Marketing Digital (qui fonctionnent vraiment)SEO: 85/100BénéficeCTR: 3.3%Copier6Marketing Digital en toute simplicité : une méthode pas à pasSEO: 85/100BénéficeCTR: 5.6%Copier77 erreurs de Marketing Digital que vous commettez sans le savoirSEO: 84/100CuriositéCTR: 5.5%Copier8Comment Marketing Digital : le guide complet pour débuterSEO: 74/100CuriositéCTR: 4.3%Copier9Pourquoi la plupart échouent avec Marketing Digital (et comment y remédier)SEO: 72/100CrainteCTR: 3.2%Copier10Le secret de Marketing Digital que les experts ne partagent pasSEO: 72/100UrgenceCTR: 6.3%Copier"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

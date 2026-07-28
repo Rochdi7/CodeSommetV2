@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Slug URL",
+  "slug": "url-slug-generator",
+  "url": "/tools/url-slug-generator",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir un titre ou un texte",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "StandardDirect conversion - preserves all words Copier/mon-article-genial-a-lire25 characters5 wordsSEO OptimizedStop words removed, keeps first/last word Copier/mon-article-genial-lire23 characters4 wordsStrictAggressive optimization, max 60 characters Copier/mon-article-genial-lire23 characters4 words",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir un titre ou un texte",
+    "otherOutput": "StandardDirect conversion - preserves all words Copier/mon-article-genial-a-lire25 characters5 wordsSEO OptimizedStop words removed, keeps first/last word Copier/mon-article-genial-lire23 characters4 wordsStrictAggressive optimization, max 60 characters Copier/mon-article-genial-lire23 characters4 words"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

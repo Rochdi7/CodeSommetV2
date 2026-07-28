@@ -55,7 +55,7 @@
             CodeSommetTools.hideError();
             var input = textarea.value.trim();
             if (!input) {
-                CodeSommetTools.showError('Please enter some JSON');
+                CodeSommetTools.showError('Veuillez saisir du JSON');
                 return;
             }
 
@@ -104,7 +104,7 @@
             removeResults();
             var inputSize = new Blob([input]).size;
             var resultSize = new Blob([result]).size;
-            var titles = { format: 'Formatted JSON', minify: 'Minified JSON', validate: 'Valid JSON (Formatted)' };
+            var titles = { format: 'JSON formaté', minify: 'JSON minifié', validate: 'JSON valide (formaté)' };
             var reduction = mode === 'minify' && inputSize > 0 ? '<span>Reduced by ' + Math.round((1 - resultSize / inputSize) * 100) + '%</span>' : '';
 
             var html = '<div id="tool-results" class="space-y-6 mt-8">';
@@ -113,14 +113,14 @@
                 html += '<div class="rounded-2xl border-2 p-8 bg-green-50 border-green-200">' +
                     '<div class="flex items-start gap-3">' +
                     '<svg class="w-6 h-6 text-green-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>' +
-                    '<h3 class="text-lg font-semibold text-green-900">Valid JSON</h3></div></div>';
+                    '<h3 class="text-lg font-semibold text-green-900">JSON valide</h3></div></div>';
             }
 
             html += '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
                 '<div class="flex items-center justify-between">' +
                 '<h3 class="text-lg font-semibold text-[#0F0F0F]">' + titles[mode] + '</h3>' +
                 '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">' +
-                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button>' +
                 '</div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto">' +
                 '<pre class="text-sm text-[#0F0F0F] font-mono whitespace-pre">' + escapeHtml(result) + '</pre>' +
@@ -131,7 +131,7 @@
 
             // Stats
             html += '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8">' +
-                '<h3 class="text-lg font-semibold text-[#0F0F0F] mb-6">JSON Statistics</h3>' +
+                '<h3 class="text-lg font-semibold text-[#0F0F0F] mb-6">Statistiques JSON</h3>' +
                 '<div class="grid grid-cols-2 md:grid-cols-4 gap-4">' +
                 statCard(stats.keys, 'Keys') + statCard(stats.arrays, 'Arrays') +
                 statCard(stats.objects, 'Objects') + statCard(stats.size, 'Size') +

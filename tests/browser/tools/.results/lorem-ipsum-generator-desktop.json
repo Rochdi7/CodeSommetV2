@@ -1,0 +1,31 @@
+{
+  "name": "Générateur de Lorem Ipsum",
+  "slug": "lorem-ipsum-generator",
+  "url": "/tools/lorem-ipsum-generator",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "fail",
+  "bugs": [
+    "Empty input produced a result instead of a validation message."
+  ],
+  "emptyResult": {
+    "hasResultsNode": true,
+    "resultText": "Lorem Ipsum généré CopierLorem ipsum dolor sit amet, consectetur adipiscing elit. Est fugiat anim nostrud non dolore reprehenderit aute duis incididunt velit nisi nostrud minim elit. Enim do anim elit labore adipiscing velit ea consectetur. Magna laborum ipsum id. Adipiscing duis sed lorem aliqua commodo ex aute laboris eiusmod excepteur. Voluptate excepteur et reprehenderit labore fugiat. Pariatur anim ad ut amet.\n\nConsequat duis non veniam ut reprehenderit occaecat proident sit lorem. Enim. Ad sit voluptate. Reprehenderit excepteur ipsum non sunt duis. Quis ullamco ex aute anim do cillum sunt lorem cupidatat. In pariatur laborum esse sed tempor labore tempor minim est. Officia adipiscing ipsum amet. Excepteur. Ut nulla dolore in ipsum.\n\nEt voluptate sint duis anim voluptate enim eiusmod. Consectetur velit et. Id adipiscing tempor. Aute ad. Dolor sit sunt officia duis dolore sint est commodo tempor laborum sunt ex dolore. Deserunt consequat sit cillum officia est. Esse excepteur laboris eiusmod eiusmod consequat nostrud cillum lorem laboris voluptate occaecat. Est esse.3Paragraphs158Words1,062Characters",
+    "errorVisible": false,
+    "errorText": "",
+    "otherOutput": "Lorem Ipsum généré CopierLorem ipsum dolor sit amet, consectetur adipiscing elit. Est fugiat anim nostrud non dolore reprehenderit aute duis incididunt velit nisi nostrud minim elit. Enim do anim elit labore adipiscing velit ea consectetur. Magna laborum ipsum id. Adipiscing duis sed lorem aliqua commodo ex aute laboris eiusmod excepteur. Voluptate excepteur et reprehenderit labore fugiat. Pariatur anim ad ut amet.\n\nConsequat duis non veniam ut reprehenderit occaecat proident sit lorem. Enim. Ad sit voluptate. Reprehenderit excepteur ipsum non sunt duis. Quis ullamco ex aute anim do cillum sunt lorem cupidatat. In pariatur laborum esse sed tempor labore tempor minim est. Officia adipiscing ipsum amet. Excepteur. Ut nulla dolore in ipsum.\n\nEt voluptate sint duis anim voluptate enim eiusmod. Consectetur velit et. Id adipiscing tempor. Aute ad. Dolor sit sunt officia duis dolore sint est commodo tempor laborum sunt ex dolore. Deserunt consequat sit cillum officia est. Esse excepteur laboris eiusmod eiusmod consequat nostrud cillum lorem laboris voluptate occaecat. Est esse.3Paragraphs158Words1,062Characters\nCopier"
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Lorem Ipsum généré CopierLorem ipsum dolor sit amet, consectetur adipiscing elit. Laborum aliquip pariatur enim deserunt proident elit minim nostrud ex nisi consequat. Ex exercitation tempor ut magna elit enim sed pariatur lorem. Labore nisi enim esse occaecat. Incididunt adipiscing amet. Et deserunt id id esse consectetur non minim veniam. Tempor cupidatat laborum consectetur qui veniam. Consectetur elit lorem adipiscing in.\n\nLabore commodo esse laboris in commodo labore sit sed ipsum. Cillum ipsum mollit ullamco pariatur. Officia in excepteur eiusmod sed pariatur nostrud. Sunt minim. In sunt enim ad. Sunt ex. Sed eiusmod dolore. Aliquip dolor excepteur proident nostrud aliquip sit. Incididunt sed labore laboris quis reprehenderit enim reprehenderit reprehenderit ea.\n\nCupidatat reprehenderit anim velit laborum culpa in velit esse sed tempor. Sunt consequat ex aliquip consequat enim fugiat. Velit ut mollit sed consequat ut qui id officia consectetur occaecat esse. Ipsum in. Occaecat enim ut nisi. Esse sunt amet dolore. Ad cupidatat qui consectetur. In tempor adipiscing ullamco. Enim laborum.3Paragraphs158Words1,083Characters",
+    "errorVisible": false,
+    "errorText": "",
+    "otherOutput": "Lorem Ipsum généré CopierLorem ipsum dolor sit amet, consectetur adipiscing elit. Laborum aliquip pariatur enim deserunt proident elit minim nostrud ex nisi consequat. Ex exercitation tempor ut magna elit enim sed pariatur lorem. Labore nisi enim esse occaecat. Incididunt adipiscing amet. Et deserunt id id esse consectetur non minim veniam. Tempor cupidatat laborum consectetur qui veniam. Consectetur elit lorem adipiscing in.\n\nLabore commodo esse laboris in commodo labore sit sed ipsum. Cillum ipsum mollit ullamco pariatur. Officia in excepteur eiusmod sed pariatur nostrud. Sunt minim. In sunt enim ad. Sunt ex. Sed eiusmod dolore. Aliquip dolor excepteur proident nostrud aliquip sit. Incididunt sed labore laboris quis reprehenderit enim reprehenderit reprehenderit ea.\n\nCupidatat reprehenderit anim velit laborum culpa in velit esse sed tempor. Sunt consequat ex aliquip consequat enim fugiat. Velit ut mollit sed consequat ut qui id officia consectetur occaecat esse. Ipsum in. Occaecat enim ut nisi. Esse sunt amet dolore. Ad cupidatat qui consectetur. In tempor adipiscing ullamco. Enim laborum.3Paragraphs158Words1,083Characters\nCopier"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

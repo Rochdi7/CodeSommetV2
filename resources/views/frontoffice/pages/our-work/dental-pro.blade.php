@@ -427,7 +427,7 @@
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">Apify Scrapers</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">UPI Payment</span><span
+                                style="transform:scale(0.9)">Paiement en ligne</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">DataFast Analytics</span></div>
                     </div>
@@ -448,7 +448,7 @@
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/dental-pro.text_149') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Calculateur IMC</button><button
+                    style="transform:scale(0.95)">Fiche Produit</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/dental-pro.text_150') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -623,7 +623,7 @@
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">500+ patients</p>
+                                <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">500+ références</p>
                                 <p class="text-xs text-gray-600 font-medium">{{ __('our-work/dental-pro.text_32') }}</p>
                             </div>
                         </div>
@@ -652,8 +652,8 @@
                 </div>
                 <div class="max-w-4xl mx-auto mt-16 mb-12">
                     <div
-                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-10 border-2 border-[#00AEEF]/20 text-center">
-                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#00AEEF]/10 mb-5">
+                        class="analyzer-cta rounded-3xl p-8 md:p-10 text-center">
+                        <div class="analyzer-cta__icon inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-[#00AEEF]"
@@ -664,9 +664,9 @@
                                 <path d="M8 17v-3"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[var(--text-primary)]"
+                        <h3 class="analyzer-cta__title text-2xl md:text-3xl font-bold mb-3"
                             style="font-family:var(--font-heading)">{{ __('our-work/dental-pro.text_34') }}</h3>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                        <p class="analyzer-cta__text text-base md:text-lg mb-6 max-w-2xl mx-auto">
                             {{ __('our-work/dental-pro.text_35') }} <!-- -->Dental
                             Pro<!-- -->{{ __('our-work/dental-pro.text_36') }}</p><a
                             class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105 text-sm md:text-base"
@@ -699,7 +699,7 @@
                                         <span class="text-white font-bold text-base md:text-lg">D</span>
                                     </div>
                                     <div>
-                                        <p class="font-bold text-white text-sm md:text-base">Dr. Geeta S K</p>
+                                        <p class="font-bold text-white text-sm md:text-base">Samir</p>
                                         <p class="text-white/90 text-xs md:text-sm">
                                             {{ __('our-work/dental-pro.text_38') }}</p>
                                     </div>

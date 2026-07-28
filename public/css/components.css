@@ -1896,3 +1896,97 @@ body.has-promo-bar .fab-stack {
         transform: none;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Analyzer CTA card ("Comparez les Performances de Votre Site Web")
+   ───────────────────────────────────────────────────────────────────────
+   Bug: the card paints a hardcoded light gradient (to-orange-50) that does
+   NOT flip in dark mode, while its copy uses var(--text-secondary), which
+   DOES flip to rgba(248,248,248,.7). Result: near-white text on a near-white
+   panel — the paragraph was effectively invisible (see [data-theme=dark]).
+
+   Fix: make the surface theme-aware so it stays a real card in both themes,
+   and pin the copy to tokens that always contrast with it. Scoped to this
+   card only, so no other .to-orange-50 surface is affected.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.analyzer-cta {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: linear-gradient(140deg, rgba(0, 174, 239, .06) 0%, #FFF7ED 100%);
+    border: 1px solid rgba(0, 174, 239, .22);
+    box-shadow:
+        0 1px 2px rgba(16, 24, 40, .04),
+        0 12px 32px -12px rgba(0, 174, 239, .28);
+    transition: transform .3s cubic-bezier(.4, 0, .2, 1),
+                box-shadow .3s cubic-bezier(.4, 0, .2, 1),
+                border-color .3s ease;
+}
+
+/* Soft brand glow, kept behind content and out of the a11y tree. */
+.analyzer-cta::before {
+    content: "";
+    position: absolute;
+    inset: -40% 30% auto -20%;
+    height: 320px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 174, 239, .18) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.analyzer-cta:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 174, 239, .38);
+    box-shadow:
+        0 1px 2px rgba(16, 24, 40, .04),
+        0 20px 44px -14px rgba(0, 174, 239, .38);
+}
+
+/* Copy: explicit colours so contrast never depends on the flipped token. */
+.analyzer-cta__title { color: #0B1B2B; letter-spacing: -.01em; }
+
+.analyzer-cta__text {
+    color: #47566B;              /* ~7.2:1 on the light surface */
+    text-wrap: pretty;
+}
+
+/* Icon tile */
+.analyzer-cta__icon {
+    background: rgba(0, 174, 239, .12);
+    box-shadow: inset 0 0 0 1px rgba(0, 174, 239, .18);
+}
+
+/* ── Dark theme ──────────────────────────────────────────────────────── */
+[data-theme="dark"] .analyzer-cta {
+    background: linear-gradient(140deg, rgba(0, 174, 239, .10) 0%, rgba(26, 26, 26, .92) 100%);
+    border-color: rgba(0, 174, 239, .30);
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, .5),
+        0 16px 40px -16px rgba(0, 0, 0, .7);
+}
+
+[data-theme="dark"] .analyzer-cta::before {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 174, 239, .22) 0%, transparent 70%);
+}
+
+[data-theme="dark"] .analyzer-cta:hover {
+    border-color: rgba(0, 174, 239, .48);
+}
+
+[data-theme="dark"] .analyzer-cta__title { color: #F8F8F8; }
+[data-theme="dark"] .analyzer-cta__text  { color: rgba(248, 248, 248, .78); }
+
+[data-theme="dark"] .analyzer-cta__icon {
+    background: rgba(0, 174, 239, .18);
+    box-shadow: inset 0 0 0 1px rgba(0, 174, 239, .28);
+}
+
+/* ── Motion / a11y ───────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .analyzer-cta,
+    .analyzer-cta:hover {
+        transform: none;
+        transition: none;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Balises Meta IA",
+  "slug": "meta-tag-generator",
+  "url": "/tools/meta-tag-generator",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Balises méta généréesBalise title (14 caractères)Example DomainMeta description (101 caractères)Discover what example.com has to offer. Visit us for the latest information, services, and resources.Mots-clésdomain, example, documentation, examples, without, needing, permission, avoid<title>Example Domain</title>\n<meta name=\"description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">\n<meta name=\"keywords\" content=\"domain, example, documentation, examples, without, needing, permission, avoid\">\n<meta property=\"og:title\" content=\"Example Domain\">\n<meta property=\"og:description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">\n<meta property=\"og:url\" content=\"https://example.com\">\n<meta property=\"og:type\" content=\"website\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Example Domain\">\n<meta name=\"twitter:description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">Copier le code HTML",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "Balises méta généréesBalise title (14 caractères)Example DomainMeta description (101 caractères)Discover what example.com has to offer. Visit us for the latest information, services, and resources.Mots-clésdomain, example, documentation, examples, without, needing, permission, avoid<title>Example Domain</title>\n<meta name=\"description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">\n<meta name=\"keywords\" content=\"domain, example, documentation, examples, without, needing, permission, avoid\">\n<meta property=\"og:title\" content=\"Example Domain\">\n<meta property=\"og:description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">\n<meta property=\"og:url\" content=\"https://example.com\">\n<meta property=\"og:type\" content=\"website\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Example Domain\">\n<meta name=\"twitter:description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">Copier le code HTML\n<title>Example Domain</title>\n<meta name=\"description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">\n<meta name=\"keywords\" content=\"domain, example, documentation, examples, without, needing, permission, avoid\">\n<meta property=\"og:title\" content=\"Example Domain\">\n<meta property=\"og:description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">\n<meta property=\"og:url\" content=\"https://example.com\">\n<meta property=\"og:type\" content=\"website\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Example Domain\">\n<meta name=\"twitter:description\" content=\"Discover what example.com has to offer. Visit us for the latest information, services, and resources.\">"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

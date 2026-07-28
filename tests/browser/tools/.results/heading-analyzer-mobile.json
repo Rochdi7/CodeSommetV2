@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Structure de Titres",
+  "slug": "heading-analyzer",
+  "url": "/tools/heading-analyzer",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "100/100Analyse réussie1H1 Count0H2 Count0H3 Count0H4 Count0H5 Count0H6 Count1TotalStructure des titresH1Example Domain",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "100/100Analyse réussie1H1 Count0H2 Count0H3 Count0H4 Count0H5 Count0H6 Count1TotalStructure des titresH1Example Domain"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -116,7 +116,7 @@
             // Main score
             html += '<div class="rounded-2xl border-2 p-8 bg-' + color + '-50 border-' + color + '-200 text-center">' +
                 '<div class="text-6xl font-bold text-' + color + '-600 mb-2">' + s.flesch + '</div>' +
-                '<div class="text-lg font-semibold text-' + color + '-900">Flesch Reading Ease</div>' +
+                '<div class="text-lg font-semibold text-' + color + '-900">Indice de lisibilité Flesch</div>' +
                 '<div class="text-sm text-' + color + '-700 mt-1">' + s.gradeLevel + '</div></div>';
 
             // Score cards
@@ -129,7 +129,7 @@
 
             // Stats
             html += '<div class="grid md:grid-cols-2 gap-6">' +
-                '<div class="bg-[#F8F8F8] rounded-xl p-6"><h3 class="text-lg font-bold text-black mb-4">Text Statistics</h3><div class="space-y-3">' +
+                '<div class="bg-[#F8F8F8] rounded-xl p-6"><h3 class="text-lg font-bold text-black mb-4">Statistiques du texte</h3><div class="space-y-3">' +
                 statRow('Words', s.wordCount) +
                 statRow('Sentences', s.sentenceCount) +
                 statRow('Avg Words/Sentence', s.avgWordsPerSentence) +

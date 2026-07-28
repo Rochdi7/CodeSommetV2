@@ -1,0 +1,31 @@
+{
+  "name": "Générateur Robots.txt",
+  "slug": "robots-txt-generator",
+  "url": "/tools/robots-txt-generator",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "fail",
+  "bugs": [
+    "Empty input produced a result instead of a validation message."
+  ],
+  "emptyResult": {
+    "hasResultsNode": true,
+    "resultText": "Robots.txt généréCopierTéléchargerUser-agent: *\nDisallow: /private/\nAllow: /public/\nTéléversez ce fichier à la racine de votre site (ex. : https://votresite.com/robots.txt)",
+    "errorVisible": false,
+    "errorText": "",
+    "otherOutput": "Robots.txt généréCopierTéléchargerUser-agent: *\nDisallow: /private/\nAllow: /public/\nTéléversez ce fichier à la racine de votre site (ex. : https://votresite.com/robots.txt)\nCopier\nTélécharger\nUser-agent: *\nDisallow: /private/\nAllow: /public/"
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Robots.txt généréCopierTéléchargerUser-agent: *\nDisallow: /admin/\nDisallow: /private/\nAllow: /tmp/\n\nSitemap: https://example.com/sitemap.xmlTéléversez ce fichier à la racine de votre site (ex. : https://votresite.com/robots.txt)",
+    "errorVisible": false,
+    "errorText": "",
+    "otherOutput": "Robots.txt généréCopierTéléchargerUser-agent: *\nDisallow: /admin/\nDisallow: /private/\nAllow: /tmp/\n\nSitemap: https://example.com/sitemap.xmlTéléversez ce fichier à la racine de votre site (ex. : https://votresite.com/robots.txt)\nCopier\nTélécharger\nUser-agent: *\nDisallow: /admin/\nDisallow: /private/\nAllow: /tmp/\n\nSitemap: https://example.com/sitemap.xml"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -28,7 +28,7 @@ return [
     'text_18' => 'Quelle est la différence entre og:image et twitter:image ?',
     'text_19' => 'og:image est l\'image Open Graph standard utilisée par Facebook, LinkedIn, WhatsApp et la plupart des plateformes. twitter:image is Twitter\'s specific tag for Twitter Cards. If twitter:image is not set, Twitter will fall back to og:image. Use both tags if you want different images for Twitter versus other platforms, or just set og:image if you want the same image everywhere.',
     'text_20' => 'À quelle fréquence dois-je mettre à jour mes balises Open Graph ?',
-    'text_21' => 'Mettez à jour les balises OG chaque fois que le contenu de votre page change significativement, you refresh visuals for seasonal campaigns, or you\'re not getting the engagement you expect. After updating tags, use platform debuggers to clear their cache so the new preview shows immediately. For blog posts and time-sensitive content, ensure OG tags are set correctly before sharing to avoid having to recache.',
+    'text_21' => 'Mettez à jour les balises OG chaque fois que le contenu de votre page change significativement, que vous renouvelez vos visuels pour une campagne saisonnière ou que l\'engagement obtenu n\'est pas à la hauteur de vos attentes. Après modification, utilisez les outils de débogage des plateformes pour vider leur cache afin que le nouvel aperçu s\'affiche immédiatement. Pour les articles de blog et les contenus sensibles au temps, vérifiez que les balises OG sont correctes avant tout partage, afin d\'éviter d\'avoir à forcer une remise en cache.',
     'text_22' => 'Vous avez encore des questions ?',
     'text_23' => 'Contactez notre équipe pour obtenir de l\'aide',
     'text_24' => 'Outils Connexes Qui Pourraient Vous Intéresser',

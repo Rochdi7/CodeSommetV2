@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Étude de Cas GLS Sprachenzentrum - Study Abroad Ausbildung | CodeSommet')
-@section('meta_description', 'Plateforme d\'études à l\'étranger sans commission avec 14 outils IA, automatisation e-mail et 88% de taux de réussite. Desservant plus de 51 pays avec Next.js 15.3.2, OpenAI GPT-4 et une architecture de base de données sophistiquée.')
-@section('meta_keywords', 'plateforme études à l\'étranger,moteur de recommandation IA,développement automatisation e-mail,SaaS Next.js 15,plateforme multi-pays,technologie éducative')
-@section('og_title', 'Étude de Cas GLS Sprachenzentrum - Study Abroad Ausbildung')
-@section('og_description', 'Plateforme d\'études à l\'étranger sans commission avec 14 outils IA, automatisation e-mail et 88% de taux de réussite. Desservant plus de 51 pays avec Next.js 15.3.2, OpenAI GPT-4 et une architecture de base de données sophistiquée.')
-@section('twitter_description', 'Plateforme d\'études à l\'étranger sans commission avec 14 outils IA, automatisation e-mail et 88% de taux de réussite. Desservant plus de 51 pays avec Next.js 15.3.2, OpenAI GPT-4 et une architecture de base de données sophistiquée.')
+@section('title', 'Étude de Cas GLS Sprachenzentrum - École de Langue Allemande | CodeSommet')
+@section('meta_description', 'Étude de cas GLS Sprachenzentrum : site bilingue FR/EN et tableau de bord de gestion pour école de langue allemande (CRM, paie, certificats).')
+@section('meta_keywords', 'plateforme école de langue,site bilingue FR EN,tableau de bord de gestion scolaire,CRM étudiant,automatisation de la paie,vérification de certificats QR code,cours d\'allemand A1 C1')
+@section('og_title', 'Étude de Cas GLS Sprachenzentrum - École de Langue Allemande')
+@section('og_description', 'Application web à double vocation pour une école de langue allemande : site vitrine bilingue FR/EN orienté conversion et tableau de bord d\'administration à rôles couvrant cours, inscriptions, CRM, paie, encaissement et contrôle d\'accès.')
+@section('twitter_description', 'Application web à double vocation pour une école de langue allemande : site vitrine bilingue FR/EN orienté conversion et tableau de bord d\'administration à rôles couvrant cours, inscriptions, CRM, paie, encaissement et contrôle d\'accès.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -34,8 +34,8 @@
                     <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Éducation</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style="font-family:var(--font-heading)">GLS Sprachenzentrum</h1>
-                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Study Abroad Ausbildung</p>
-                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Plateforme complète d'études à l'étranger démocratisant l'éducation internationale avec un modèle sans commission, desservant plus de 51 pays avec 14 outils alimentés par l'IA, l'automatisation e-mail et un taux de réussite d'admission de 88%</p>
+                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Deutsch Sprachenzentrum</p>
+                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Application web à double vocation pour une école de langue allemande : un site vitrine bilingue FR/EN orienté conversion et un tableau de bord d'administration à rôles qui pilote tout le quotidien du centre, du premier clic publicitaire jusqu'au certificat de l'étudiant</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                     <div class="group relative p-4 bg-white rounded-2xl border border-gray-100 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-center gap-3">
@@ -105,7 +105,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Le Défi</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">GLS Sprachenzentrum avait besoin de consolider sa présence numérique fragmentée en une seule plateforme complète tout en rivalisant dans un marché saturé dominé par des consultants à commission. Le défi était de créer une expérience de marque unifiée dans plus de 51 pays, de construire 14 outils spécialisés pour un accompagnement personnalisé, d&#x27;implémenter une automatisation e-mail sophistiquée, de gérer une base de données complexe de plus de 24 universités et 48+ programmes, tout en mettant en avant leur modèle éthique sans commission et leur taux de réussite de 88% leader du secteur dans les admissions aux universités publiques allemandes.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">GLS Sprachenzentrum pilotait ses centres avec des outils dispersés : fichiers de présence, plannings papier, calculs de paie manuels, suivi des paiements et des impayés sur tableur, et un site vitrine incapable de capter et de qualifier les demandes d&#x27;inscription. Il fallait réunir deux mondes dans une seule application : d&#x27;un côté un site public bilingue FR/EN, rapide et optimisé pour la conversion, présentant les niveaux A1 à C1, les cours intensifs et en ligne, les centres et le programme Studienkolleg ; de l&#x27;autre un back-office à permissions capable de gérer groupes, professeurs, plannings, rapports pédagogiques, CRM étudiant, paie, encaissement et contrôle d&#x27;accès physique, avec des données cloisonnées par centre et un suivi fiable à l&#x27;heure de Casablanca.</p>
             </div>
             <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <div class="flex items-center gap-3 mb-6">
@@ -117,7 +117,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Notre Solution</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé une plateforme sophistiquée Next.js 15.3.2 avec une intégration IA avancée et une gestion de contenu complète. La solution propose 14 outils interactifs dont un outil de recommandation de destinations alimenté par l&#x27;IA analysant 2000+ résultats réels, un outil de recherche de programmes dynamique avec 48+ programmes, un explorateur d&#x27;universités couvrant 24 universités dans 8 pays, et des calculateurs spécialisés (ROI, coût de la vie, vérificateur de conditions). Nous avons construit un système de blog à 6 tables avec génération automatique de contenu via Cloud Functions, un système de marketing par e-mail à 5 tables avec Resend API supportant les campagnes drip et la segmentation, et des plateformes complètes par pays avec 5 catégories de routes imbriquées (admissions, explorer, finances, pré-départ, post-arrivée). Nous avons implémenté un design dark mode-first avec une voix conversationnelle inspirée de CodeFast, l&#x27;ISR avec revalidation d&#x27;1 heure, et une optimisation SEO complète avec données structurées JSON-LD.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons livré une plateforme unique articulée en deux espaces. Le frontoffice bilingue FR/EN gère le routage automatique de la locale et un contenu multilingue de bout en bout (noms de cours, niveaux, blog) : pages de niveaux CEFR A1&rarr;C1, cours intensifs et en ligne, pages de centres affichant les groupes ouverts et leurs disponibilités en temps réel, programme Studienkolleg, tarifs transparents, blog catégorisé, témoignages d&#x27;étudiants et pôles d&#x27;information examens (GLS, &Ouml;SD, Goethe). La captation de prospects s&#x27;appuie sur l&#x27;inscription en ligne et les formulaires GLS avec confirmation e-mail instantanée, la candidature à un groupe ouvert, la réservation de consultation gratuite, la newsletter et des landing pages publicitaires (Meta, Google, TikTok) volontairement non mises en cache pour que le tracking de conversion se déclenche toujours. Des outils interactifs complètent le parcours : quiz &laquo; Découvrez votre niveau &raquo;, vérification publique de l&#x27;authenticité des certificats, demandes d&#x27;attestation en ligne et suivi de traduction par référence. Côté backoffice, un système de rôles et permissions avec vérification e-mail, réinitialisation de mot de passe, protection contre les conflits de session et cloisonnement des données par centre encadre l&#x27;ensemble : gestion des groupes, professeurs et centres, plannings exportables en PDF, rapports pédagogiques hebdomadaires avec grille par compétence (Lesen &middot; H&ouml;ren &middot; Grammatik &middot; Schreiben &middot; Sprechen) et pièces jointes, suivi de niveau, génération de certificats avec lien public à jeton et QR code, CMS de blog, gestion du quiz, de la newsletter, des campagnes WhatsApp et des commandes de traduction. Le CRM synchronise étudiants, classes, inscriptions et présences depuis les systèmes de l&#x27;école, suit les paiements, allocations et recouvrements, calcule un score de churn pour repérer les étudiants à risque et alimente les tableaux de bord agents, relances et rapports quotidiens. La paie est automatisée par import des présences (professeurs, périodes horaires, personnel CRM) avec journal de statuts, piste d&#x27;audit et gestion des primes, l&#x27;encaissement couvre recettes, dépenses par site, impayés et recouvrement, et l&#x27;intégration native Hikvision assure le contrôle d&#x27;accès et la présence physique (appareils, personnes, alarmes, webhooks, journaux). Le tout est complété par la mise en cache des réponses, la génération automatique du sitemap, les balises SEO et données structurées Schema.org, une limitation anti-spam sur les formulaires publics et des rapports automatisés récurrents avec suivi des envois.</p>
             </div>
         </div>
         <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -128,7 +128,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">14 outils interactifs alimentés par l'IA (outil de destinations, calculateur ROI, coût de la vie, vérificateur de conditions, générateur de planning)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Site public bilingue FR/EN avec routage automatique de la locale et contenu multilingue (cours, niveaux, blog)</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -136,7 +136,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Base de données universitaire complète (24 universités, 48+ programmes dans 8 pays)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Pages de niveaux CEFR A1&rarr;C1, cours intensifs et en ligne, pages de centres avec groupes ouverts et disponibilités en direct</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -144,7 +144,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Plateformes dynamiques par pays couvrant 51+ pays avec routage imbriqué en 5 sections</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Inscription en ligne et candidature à un groupe avec confirmation e-mail instantanée, réservation de consultation et landing pages publicitaires non mises en cache</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -152,7 +152,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Recommandation de destinations IA analysant 2000+ résultats d'admissions réels avec visualisations en graphiques radar</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Quiz interactif &laquo; Découvrez votre niveau &raquo; orientant chaque visiteur vers son niveau CEFR</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -160,7 +160,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Système d'automatisation e-mail sophistiqué (campagnes, séquences, modèles, suivi d'événements via Resend API)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Vérification publique des certificats par QR code et lien à jeton unique, plus demandes d'attestation en ligne</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -168,7 +168,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Système de blog à 6 tables avec génération automatique de contenu via Cloud Functions et optimisation SEO</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">CRM étudiant complet : classes, inscriptions et présences synchronisées, paiements, recouvrement, score de churn et relances</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -176,7 +176,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Architecture de base de données avancée (20+ tables interconnectées avec Row-Level Security et optimisation JSONB)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Automatisation de la paie par import des présences (professeurs, périodes horaires, personnel CRM) avec primes et piste d'audit</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -184,7 +184,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Modèle éthique sans commission avec philosophie d'admissions basée sur le mérite</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Module financier d'encaissement : recettes, dépenses par site, impayés, recouvrement et tableau de bord consolidé</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -192,7 +192,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Design dark mode-first avec ton conversationnel et accents typographiques manuscrits</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Intégration native Hikvision pour la présence et le contrôle d'accès physique (appareils, alarmes, webhooks, journaux d'activité)</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -200,7 +200,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Optimisation des performances : revalidation ISR 1 heure, récupération de données parallèle, images WebP via Google Cloud Storage</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Rapports pédagogiques hebdomadaires par compétence (Lesen &middot; H&ouml;ren &middot; Grammatik &middot; Schreiben &middot; Sprechen), plannings exportables en PDF et rapports automatisés récurrents</p>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3" style="font-family:var(--font-heading)">Aperçu de l'Interface</h2>
             <p class="text-gray-600 text-base md:text-lg">Captures d'écran à venir</p>
         </div>
-        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Détail Université</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Recherche de Programmes</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Portail Emploi IA</button></div>
+        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Détail Niveau</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Recherche de Cours</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord Admin</button></div>
         <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
             <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/gls-sprachenzentrum/homepage.webp') }}" alt="Accueil" class="w-full h-full object-cover" /></div>
         </div>
@@ -348,7 +348,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">2000+</p>
-                            <p class="text-xs text-gray-600 font-medium">Étudiants Admis</p>
+                            <p class="text-xs text-gray-600 font-medium">Étudiants Suivis</p>
                         </div>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">88%</p>
-                            <p class="text-xs text-gray-600 font-medium">Taux de Réussite</p>
+                            <p class="text-xs text-gray-600 font-medium">Processus Automatisés</p>
                         </div>
                     </div>
                 </div>
@@ -387,12 +387,12 @@
                         <div class="px-5 md:px-6 py-6 md:py-7"><svg class="w-8 h-8 md:w-10 md:h-10 text-white/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
                             </svg>
-                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a transformé notre vision de démocratisation de l&#x27;éducation internationale en une réalité numérique sophistiquée. Les outils alimentés par l&#x27;IA, la couverture complète des pays et le système d&#x27;e-mail automatisé ont considérablement fait évoluer nos opérations tout en maintenant notre approche personnalisée basée sur le mérite. Le modèle sans commission est désormais clairement communiqué, et notre taux de réussite de 88% parle de lui-même.<!-- -->&quot;</blockquote>
+                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a réuni notre site public et toute notre gestion interne dans une seule plateforme. Les inscriptions arrivent directement en ligne, les plannings et les rapports hebdomadaires de nos professeurs sont centralisés, la paie se calcule automatiquement à partir des présences et nos certificats sont vérifiables par QR code. Nos équipes ont enfin une vision claire de chaque centre, du premier contact jusqu&#x27;au certificat.<!-- -->&quot;</blockquote>
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">U</span></div>
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">R</span></div>
                                 <div>
-                                    <p class="font-bold text-white text-sm md:text-base">Uday Yatnalli</p>
-                                    <p class="text-white/90 text-xs md:text-sm">Fondateur &amp; PDG, GLS Sprachenzentrum</p>
+                                    <p class="font-bold text-white text-sm md:text-base">Rafiq</p>
+                                    <p class="text-white/90 text-xs md:text-sm">Administration, GLS Sprachenzentrum</p>
                                 </div>
                             </div>
                         </div>

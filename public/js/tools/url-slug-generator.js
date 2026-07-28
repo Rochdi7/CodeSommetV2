@@ -19,7 +19,7 @@
             CodeSommetTools.hideError();
             var text = input.value.trim();
             if (!text) {
-                CodeSommetTools.showError('Please enter a title or text');
+                CodeSommetTools.showError('Veuillez saisir un titre ou un texte');
                 return;
             }
 
@@ -45,8 +45,26 @@
             }
         });
 
+        /* Translittère les caractères accentués vers leur équivalent ASCII.
+         * Sans cette étape, `[^\w\s-]` supprimait purement et simplement les
+         * lettres accentuées : « Mon Article Génial à Lire » devenait
+         * « mon-article-gnial-lire » — un slug amputé, sur un site français.
+         * NFD sépare la lettre de son diacritique, que l'on retire ensuite. */
+        function deaccent(text) {
+            return String(text)
+                .normalize('NFD')
+                .replace(/[̀-ͯ]/g, '')
+                // Ligatures et caractères sans décomposition NFD.
+                .replace(/œ/gi, 'oe')
+                .replace(/æ/gi, 'ae')
+                .replace(/ø/gi, 'o')
+                .replace(/ß/g, 'ss')
+                .replace(/đ/gi, 'd')
+                .replace(/ł/gi, 'l');
+        }
+
         function basicSlug(text) {
-            return text.toLowerCase()
+            return deaccent(text).toLowerCase()
                 .replace(/[^\w\s-]/g, '')
                 .replace(/\s+/g, '-')
                 .replace(/-+/g, '-')
@@ -57,7 +75,7 @@
             var standard = basicSlug(text);
 
             // Optimized: remove stop words but keep first and last
-            var words = text.toLowerCase().replace(/[^\w\s]/g, '').split(/\s+/);
+            var words = deaccent(text).toLowerCase().replace(/[^\w\s]/g, '').split(/\s+/);
             var filtered = words.filter(function (w, i) {
                 return i === 0 || i === words.length - 1 || !stopWords.includes(w);
             });
@@ -92,7 +110,7 @@
                     '<div><span class="text-sm font-semibold text-[#00AEEF]">' + s.label + '</span>' +
                     '<span class="text-xs text-gray-500 ml-2">' + s.desc + '</span></div>' +
                     '<button class="copy-slug-btn flex items-center gap-2 px-3 py-1 text-xs font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors" data-slug="' + escapeAttr(s.slug) + '">' +
-                    '<svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button></div>' +
+                    '<svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button></div>' +
                     '<div class="bg-[#F8F8F8] rounded-lg p-3 border border-gray-200">' +
                     '<span class="font-mono text-sm text-[#0F0F0F] break-all">/' + escapeHtml(s.slug) + '</span></div>' +
                     '<div class="flex gap-4 mt-2 text-xs text-gray-500">' +

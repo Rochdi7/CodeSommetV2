@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Schema FAQ",
+  "slug": "faq-schema-generator",
+  "url": "/tools/faq-schema-generator",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir votre contenu FAQ",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "2FAQs Detected29Avg Question Length61Avg Answer LengthAperçu de la FAQ1Quelle est votre garantie ?Nous offrons une garantie de 30 jours satisfait ou remboursé.2Livrez-vous à l'international ?Oui, nous livrons dans toute l'Europe et en Afrique du Nord.Code Schema JSON-LDCopier le HTMLCopier le JSON<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quelle est votre garantie ?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Nous offrons une garantie de 30 jours satisfait ou remboursé.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Livrez-vous à l'international ?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Oui, nous livrons dans toute l'Europe et en Afrique du Nord.\"\n      }\n    }\n  ]\n}\n</script>",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir votre contenu FAQ",
+    "otherOutput": "2FAQs Detected29Avg Question Length61Avg Answer LengthAperçu de la FAQ1Quelle est votre garantie ?Nous offrons une garantie de 30 jours satisfait ou remboursé.2Livrez-vous à l'international ?Oui, nous livrons dans toute l'Europe et en Afrique du Nord.Code Schema JSON-LDCopier le HTMLCopier le JSON<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quelle est votre garantie ?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Nous offrons une garantie de 30 jours satisfait ou remboursé.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Livrez-vous à l'international ?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Oui, nous livrons dans toute l'Europe et en Afrique du Nord.\"\n      }\n    }\n  ]\n}\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quelle est votre garantie ?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Nous offrons une garantie de 30 jours satisfait ou remboursé.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Livrez-vous à l'international ?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Oui, nous livrons dans toute l'Europe et en Afrique du Nord.\"\n      }\n    }\n  ]\n}\n</script>"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

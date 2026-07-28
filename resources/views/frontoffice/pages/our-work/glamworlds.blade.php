@@ -6,8 +6,6 @@
 @section('og_title', __('our-work/glamworlds.og_title'))
 @section('og_description', __('our-work/glamworlds.og_description'))
 @section('twitter_description', __('our-work/glamworlds.twitter_description'))
-{{-- Noindex temporaire : le contenu de cette étude de cas décrit un autre projet (voir SEO_CANNIBALIZATION_REPORT.md §4). Retirer après correction du contenu. --}}
-@section('robots', 'noindex, follow')
 
 @section('content')
     <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -45,7 +43,7 @@
                     <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20"
                         style="transform:scale(0.9)">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span
-                            class="text-sm font-semibold text-[#00AEEF]">Technologie</span>
+                            class="text-sm font-semibold text-[#00AEEF]">E-commerce</span>
                     </div>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                         style="font-family:var(--font-heading)">GlamWorlds</h1>
@@ -354,13 +352,13 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Next.js 15</span><span
+                                style="transform:scale(0.9)">Shopify Liquid</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">TypeScript</span><span
+                                style="transform:scale(0.9)">JavaScript</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Tailwind CSS</span><span
+                                style="transform:scale(0.9)">CSS Responsive</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Radix UI</span></div>
+                                style="transform:scale(0.9)">Thème sur mesure</span></div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -368,11 +366,11 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Supabase</span><span
+                                style="transform:scale(0.9)">Shopify</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">PostgreSQL</span><span
+                                style="transform:scale(0.9)">Shopify Payments</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Headless CMS</span></div>
+                                style="transform:scale(0.9)">Gestion catalogue</span></div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -380,13 +378,13 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">API WhatsApp Business</span><span
+                                style="transform:scale(0.9)">Google Search Console</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">Google Analytics 4</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">Microsoft Clarity</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Email Notifications</span></div>
+                                style="transform:scale(0.9)">Emails transactionnels</span></div>
                     </div>
                 </div>
             </div>
@@ -403,7 +401,7 @@
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md"
                     style="transform:scale(0.95)">Accueil</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Catalogue Produits</button><button
+                    style="transform:scale(0.95)">Fiches Produits</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/glamworlds.text_143') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -604,8 +602,8 @@
                 </div>
                 <div class="max-w-4xl mx-auto mt-16 mb-12">
                     <div
-                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-10 border-2 border-[#00AEEF]/20 text-center">
-                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#00AEEF]/10 mb-5">
+                        class="analyzer-cta rounded-3xl p-8 md:p-10 text-center">
+                        <div class="analyzer-cta__icon inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-[#00AEEF]"
@@ -616,9 +614,9 @@
                                 <path d="M8 17v-3"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[var(--text-primary)]"
+                        <h3 class="analyzer-cta__title text-2xl md:text-3xl font-bold mb-3"
                             style="font-family:var(--font-heading)">{{ __('our-work/glamworlds.text_27') }}</h3>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                        <p class="analyzer-cta__text text-base md:text-lg mb-6 max-w-2xl mx-auto">
                             {{ __('our-work/glamworlds.text_28') }}
                             <!-- -->GlamWorlds<!-- -->{{ __('our-work/glamworlds.text_29') }}
                         </p><a

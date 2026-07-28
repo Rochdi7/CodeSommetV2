@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Étude de Cas GlamWorlds - Boutique Beauté en Ligne | CodeSommet')
-@section('meta_description', 'Comment nous avons créé un site web B2B professionnel pour GlamWorlds, distributeur leader d\'onduleurs et d\'infrastructures IT, atteignant une augmentation de 180% des prospects avec Next.js 15, Supabase CMS et l\'intégration WhatsApp.')
-@section('meta_keywords', 'développement site web B2B,site web distributeur onduleurs,site web infrastructure IT,plateforme B2B Next.js,site web entreprise tech,développement catalogue produits')
-@section('og_title', 'Étude de Cas GlamWorlds - Boutique Beauté en Ligne')
-@section('og_description', 'Comment nous avons créé un site web B2B professionnel pour GlamWorlds, distributeur leader d\'onduleurs et d\'infrastructures IT, atteignant une augmentation de 180% des prospects avec Next.js 15, Supabase CMS et l\'intégration WhatsApp.')
-@section('twitter_description', 'Comment nous avons créé un site web B2B professionnel pour GlamWorlds, distributeur leader d\'onduleurs et d\'infrastructures IT, atteignant une augmentation de 180% des prospects avec Next.js 15, Supabase CMS et l\'intégration WhatsApp.')
+@section('title', 'Étude de Cas GlamWorlds - Boutique Shopify de Lunettes de Luxe | CodeSommet')
+@section('meta_description', 'Comment nous avons créé la boutique Shopify de GlamWorlds, spécialiste des lunettes de soleil de luxe, avec un SEO technique avancé et une expérience d\'achat premium.')
+@section('meta_keywords', 'boutique Shopify lunettes de luxe,e-commerce lunettes de soleil,création boutique Shopify,SEO Shopify,référencement e-commerce,fiches produits optimisées')
+@section('og_title', 'Étude de Cas GlamWorlds - Boutique Shopify de Lunettes de Luxe')
+@section('og_description', 'Comment nous avons créé la boutique Shopify de GlamWorlds, spécialiste des lunettes de soleil de luxe, avec un SEO technique avancé, des fiches produits optimisées et une expérience d\'achat premium sur mobile comme sur bureau.')
+@section('twitter_description', 'Comment nous avons créé la boutique Shopify de GlamWorlds, spécialiste des lunettes de soleil de luxe, avec un SEO technique avancé, des fiches produits optimisées et une expérience d\'achat premium sur mobile comme sur bureau.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -31,11 +31,11 @@
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
             <div class="space-y-4 md:space-y-6">
                 <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20" style="transform:scale(0.9)">
-                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Technologie</span>
+                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">E-commerce</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style="font-family:var(--font-heading)">GlamWorlds</h1>
-                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Boutique Beauté</p>
-                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Refonte complète du site web pour le distributeur de confiance de systèmes onduleurs, solutions de recharge EV et produits d&#x27;infrastructure IT</p>
+                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Boutique Lunettes de Luxe</p>
+                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Création complète d&#x27;une boutique Shopify pour une maison de lunettes de soleil haut de gamme, pensée pour le référencement naturel et l&#x27;expérience d&#x27;achat premium</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                     <div class="group relative p-4 bg-white rounded-2xl border border-gray-100 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-center gap-3">
@@ -58,7 +58,7 @@
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                 </svg></div>
                             <div class="min-w-0">
-                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance des Prospects</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance du Trafic Organique</p>
                                 <p class="text-sm font-bold text-gray-900 truncate">180%</p>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Le Défi</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">GlamWorlds, un distributeur B2B de confiance de solutions informatiques et d&#x27;alimentation électrique, avait besoin d&#x27;une refonte professionnelle de son site web pour mieux présenter sa gamme complète de produits incluant les systèmes onduleurs, les solutions de recharge EV et l&#x27;infrastructure IT. Leur site web existant ne communiquait pas efficacement leur expertise avec des marques mondiales comme Eaton, APC by Schneider Electric et Tripp-Lite, et n&#x27;optimisait pas la génération de prospects B2B auprès des responsables IT, des gestionnaires d&#x27;installations et des opérateurs de centres de données.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">GlamWorlds, maison spécialisée dans les lunettes de soleil et montures de luxe, avait besoin d&#x27;une boutique en ligne à la hauteur de ses produits. La vitrine existante ne mettait pas en valeur le raffinement des collections, souffrait de fiches produits pauvres et d&#x27;un parcours d&#x27;achat peu fluide sur mobile. Surtout, elle était quasi invisible sur les requêtes concurrentielles liées aux lunettes haut de gamme : pas de structure de collections claire, aucune donnée structurée, et un contenu insuffisant pour se positionner face aux grandes enseignes.</p>
             </div>
             <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <div class="flex items-center gap-3 mb-6">
@@ -117,7 +117,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Notre Solution</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé un site web B2B moderne, mobile-first, utilisant Next.js 15 avec un système complet de catalogue produits, un CMS headless pour une gestion de contenu facile, et des flux de génération de prospects optimisés. La plateforme propose des spécifications produits détaillées, des solutions sectorielles, l&#x27;intégration WhatsApp pour des demandes rapides, et une bibliothèque de ressources. Nous avons mis en œuvre des principes de design professionnel reflétant l&#x27;expertise technologique tout en maintenant la confiance et la fiabilité grâce à une hiérarchie visuelle forte et un espacement cohérent.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons conçu et développé une boutique Shopify sur mesure, mobile-first, entièrement pensée pour la conversion et le référencement. Chaque fiche produit a été retravaillée avec une présentation visuelle soignée, des descriptions rédigées pour les requêtes à forte intention et des données structurées produit. Nous avons construit une architecture de collections optimisée, réglé le SEO technique (balises, maillage interne, vitesse, images), et fluidifié le tunnel d&#x27;achat jusqu&#x27;au paiement sécurisé. Le tout dans une direction artistique élégante qui reflète le positionnement luxe de la marque.</p>
             </div>
         </div>
         <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -128,7 +128,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Catalogue produits complet (Onduleurs, Chargeurs EV, Infrastructure Énergétique)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Catalogue complet de lunettes de luxe (solaires, optiques, éditions limitées)</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -136,7 +136,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Vitrine de solutions sectorielles</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Vitrine des collections signature</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -144,7 +144,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Formulaires de génération de prospects B2B avec sélection du type de service</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Tunnel d&#x27;achat fluide avec paiement sécurisé Shopify</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -152,7 +152,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Intégration WhatsApp Business pour un support instantané</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Fiches produits enrichies : zoom haute définition, variantes et guide des tailles</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -160,7 +160,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Bibliothèque de ressources techniques et téléchargements</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Pages collections optimisées avec filtres par style, forme et matière</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -176,7 +176,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">SEO optimisé avec données structurées</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">SEO optimisé avec données structurées produit</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -184,7 +184,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Témoignages clients et études de cas</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Avis clients et preuves sociales sur les pages produits</p>
                     </div>
                 </div>
             </div>
@@ -203,19 +203,19 @@
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>frontend
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Next.js 15</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">TypeScript</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Tailwind CSS</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Radix UI</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Shopify Liquid</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">JavaScript</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">CSS Responsive</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Thème sur mesure</span></div>
                 </div>
                 <div>
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>backend
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Supabase</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">PostgreSQL</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Headless CMS</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Shopify</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Shopify Payments</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Gestion catalogue</span></div>
                 </div>
                 <div>
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>intégrations
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">API WhatsApp Business</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Google Analytics 4</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Microsoft Clarity</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Email Notifications</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Google Search Console</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Google Analytics 4</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Microsoft Clarity</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Emails transactionnels</span></div>
                 </div>
             </div>
         </div>
@@ -227,7 +227,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3" style="font-family:var(--font-heading)">Aperçu de l'Interface</h2>
             <p class="text-gray-600 text-base md:text-lg">Captures d'écran à venir</p>
         </div>
-        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Catalogue Produits</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Page Solutions</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Contact &amp; Support</button></div>
+        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Fiches Produits</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Page Collections</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Contact &amp; Support</button></div>
         <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
             <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/glamworlds/homepage.webp') }}" alt="Accueil" class="w-full h-full object-cover" /></div>
         </div>
@@ -280,7 +280,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">180%</p>
-                            <p class="text-xs text-gray-600 font-medium">Augmentation des Prospects</p>
+                            <p class="text-xs text-gray-600 font-medium">Augmentation du Trafic Organique</p>
                         </div>
                     </div>
                 </div>
@@ -345,7 +345,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">3x augmentation</p>
-                            <p class="text-xs text-gray-600 font-medium">Plus de Demandes</p>
+                            <p class="text-xs text-gray-600 font-medium">Plus de Commandes</p>
                         </div>
                     </div>
                 </div>
@@ -371,7 +371,7 @@
                         <div class="px-5 md:px-6 py-6 md:py-7"><svg class="w-8 h-8 md:w-10 md:h-10 text-white/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
                             </svg>
-                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a livré un site web professionnel qui représente parfaitement notre position en tant que fournisseur leader de solutions technologiques. La nouvelle plateforme a considérablement amélioré la qualité de nos prospects et l&#x27;engagement client.<!-- -->&quot;</blockquote>
+                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a créé une boutique qui rend enfin justice à nos collections. Nos lunettes sont mises en valeur comme en boutique physique, le parcours d&#x27;achat est fluide, et nous apparaissons désormais sur des recherches où nous étions totalement absents.<!-- -->&quot;</blockquote>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">M</span></div>
                                 <div>

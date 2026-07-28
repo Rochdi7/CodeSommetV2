@@ -36,7 +36,7 @@
             var wordsPerParagraph = wordsInput ? parseInt(wordsInput.value) || 50 : 50;
 
             if (numParagraphs < 1 || numParagraphs > 100) {
-                CodeSommetTools.showError('Please enter between 1 and 100 paragraphs');
+                CodeSommetTools.showError('Veuillez saisir un nombre de paragraphes compris entre 1 et 100');
                 return;
             }
 
@@ -87,10 +87,10 @@
             var html = '<div id="tool-results" class="space-y-6 mt-8">' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
                 '<div class="flex items-center justify-between">' +
-                '<h3 class="text-lg font-semibold text-[#0F0F0F]">Generated Lorem Ipsum</h3>' +
+                '<h3 class="text-lg font-semibold text-[#0F0F0F]">Lorem Ipsum généré</h3>' +
                 '<div class="flex gap-2">' +
                 '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">' +
-                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button>' +
                 '</div></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200">' +
                 '<p class="text-sm text-[#0F0F0F] whitespace-pre-wrap leading-relaxed">' + escapeHtml(text) + '</p></div>' +

@@ -128,11 +128,11 @@
                 '<div><h3 class="font-semibold text-green-900">Schema ' + type + ' généré</h3>' +
                 '<p class="text-sm text-green-700">Ajoutez ce code dans la section &lt;head&gt; de votre page</p></div></div></div>' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
-                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">JSON-LD Code</h3>' +
+                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Code JSON-LD</h3>' +
                 '<div class="flex gap-2">' +
-                '<button id="copy-html-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy HTML</button>' +
-                '<button id="copy-json-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy JSON</button>' +
-                '<button id="download-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Download</button></div></div>' +
+                '<button id="copy-html-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier le HTML</button>' +
+                '<button id="copy-json-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier le JSON</button>' +
+                '<button id="download-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Télécharger</button></div></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto">' +
                 '<pre class="text-sm text-[#0F0F0F] font-mono whitespace-pre">' + escapeHtml(htmlCode) + '</pre></div></div></div></div>';
 

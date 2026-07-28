@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Balisage Schema",
+  "slug": "schema-generator",
+  "url": "/tools/schema-generator",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez remplir au moins un champ",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Schema Article généréAjoutez ce code dans la section <head> de votre pageCode JSON-LDCopier le HTMLCopier le JSONTélécharger<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"CodeSommet\"\n}\n</script>",
+    "errorVisible": false,
+    "errorText": "Veuillez remplir au moins un champ",
+    "otherOutput": "Schema Article généréAjoutez ce code dans la section <head> de votre pageCode JSON-LDCopier le HTMLCopier le JSONTélécharger<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"CodeSommet\"\n}\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"CodeSommet\"\n}\n</script>"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

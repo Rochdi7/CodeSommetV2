@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Liens Internes",
+  "slug": "internal-link-analyzer",
+  "url": "/tools/internal-link-analyzer",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "100/100Analyse réussie1Total0Internal1External0Unique Internal",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "100/100Analyse réussie1Total0Internal1External0Unique Internal"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Convertisseur HTML vers Texte Brut",
+  "slug": "html-to-text",
+  "url": "/tools/html-to-text",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir du HTML",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "50 BHTML Size35 BText Size3Words2LinesTexte brut obtenuCopierTitre\nParagraphe accentué : éèàReduced by 30%",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir du HTML",
+    "otherOutput": "50 BHTML Size35 BText Size3Words2LinesTexte brut obtenuCopierTitre\nParagraphe accentué : éèàReduced by 30%\nCopier\nTitre\nParagraphe accentué : éèà"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

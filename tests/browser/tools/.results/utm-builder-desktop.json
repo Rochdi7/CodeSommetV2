@@ -1,0 +1,29 @@
+{
+  "name": "Constructeur de Paramètres UTM",
+  "slug": "utm-builder",
+  "url": "/tools/utm-builder",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir l’URL du site web",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "URL UTM Générée Copierhttps://example.com/page?utm_source=google&utm_medium=cpc&utm_campaign=promo_ete80 caractères",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir l’URL du site web",
+    "otherOutput": "URL UTM Générée Copierhttps://example.com/page?utm_source=google&utm_medium=cpc&utm_campaign=promo_ete80 caractères\nCopier"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

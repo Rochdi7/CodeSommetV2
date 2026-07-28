@@ -370,7 +370,7 @@
                         <div class="space-y-2">
                             <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="bed6dbd2d2d1feced7d5dfcdcdd1cdcacbdad7d190ddd1d3">[email&#160;protected]</span></a></p>
                             <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>WhatsApp :</strong> <a href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                         </div>
                         <div>
                             <p><strong>Siège social :</strong> Maroc</p>

@@ -8,6 +8,13 @@
 @section('twitter_description', __('tools.twitter_description'))
 
 @section('content')
+    @php
+        // Nombre d'outils réellement disponibles : compté depuis les vues routées
+        // (resources/views/frontoffice/pages/tools/*.blade.php), qui sont la source
+        // de vérité de la route `tool`. Évite tout compteur codé en dur qui dérive
+        // dès qu'un outil est ajouté ou retiré.
+        $toolsCount = \App\Support\ToolsCatalog::count();
+    @endphp
     <div class="min-h-screen bg-white">
         <section class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-16 bg-white">
             <div class="absolute inset-0 pointer-events-none" style="z-index:0">
@@ -42,7 +49,7 @@
                                 <path
                                     d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                 </path>
-                            </svg><span class="text-sm font-medium text-[#00AEEF]">45<!-- --> Outils Gratuits
+                            </svg><span class="text-sm font-medium text-[#00AEEF]">{{ $toolsCount }}<!-- --> Outils Gratuits
                                 Disponibles</span>
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
@@ -80,10 +87,10 @@
                                 <path d="m21 21-4.34-4.34"></path>
                                 <circle cx="11" cy="11" r="8"></circle>
                             </svg><input id="tools-search" type="text"
-                                placeholder="Rechercher parmi 45 outils gratuits..."
+                                placeholder="Rechercher parmi {{ $toolsCount }} outils gratuits..."
                                 class="flex-1 px-4 py-4 bg-transparent focus:outline-none text-[#0F0F0F] placeholder-gray-400 text-base"
                                 value="" />
-                            <div id="tools-count" class="text-gray-400 px-5 py-4 text-sm">45</div>
+                            <div id="tools-count" class="text-gray-400 px-5 py-4 text-sm">{{ $toolsCount }}</div>
                         </div>
                     </div>
                     <div id="tools-filters" class="flex flex-wrap items-center justify-center gap-2 max-w-3xl mx-auto">
@@ -463,6 +470,36 @@
                             <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_11') }}</h3>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_554') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a><a href="{{ route('tool', 'domain-authority-checker') }}" data-category="seo">
+                        <div
+                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-shield-check h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_domain_authority') }}</h3>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_domain_authority') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"

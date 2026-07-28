@@ -37,10 +37,21 @@ class AppServiceProvider extends ServiceProvider
      */
     private function configureRateLimiters(): void
     {
-        // Public Tools API — outbound-HTTP tools, keyed per IP.
-        RateLimiter::for('tools-api', fn (Request $request) => Limit::perMinute(20)->by($request->ip()));
+        // API publique des outils, par IP. Les outils qui émettent une rafale de
+        // requêtes sortantes par appel (jusqu'à 25 pour le vérificateur de liens)
+        // reçoivent un budget bien plus strict, sans quoi l'endpoint peut servir
+        // d'amplificateur : 20 appels/min × 25 requêtes = 500 requêtes sortantes.
+        // Le quota est compté séparément pour chaque famille (clé distincte),
+        // de sorte qu'un outil lourd n'épuise pas le quota des outils légers.
+        RateLimiter::for('tools-api', function (Request $request) {
+            $slug = (string) $request->route('slug');
 
-        // Broken-link checker fans out to many outbound requests: stricter.
+            return in_array($slug, \App\Http\Controllers\ToolsApiController::HEAVY_TOOLS, true)
+                ? Limit::perMinute(5)->by('tools-heavy|' . $request->ip())
+                : Limit::perMinute(20)->by('tools|' . $request->ip());
+        });
+
+        // Conservé pour un usage explicite via `throttle:tools-api-heavy`.
         RateLimiter::for('tools-api-heavy', fn (Request $request) => Limit::perMinute(5)->by($request->ip()));
 
         // Admin login — per IP + submitted email.

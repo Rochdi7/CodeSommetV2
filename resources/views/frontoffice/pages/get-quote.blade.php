@@ -320,11 +320,11 @@
                                                 'SEO',
                                                 'Analytique',
                                                 'Multilingue',
-                                                'Int&#x00E9;gration de paiement',
+                                                'Intégration de paiement',
                                                 'Authentification',
                                                 'Tableau de bord admin',
-                                                'API personnalis&#x00E9;e',
-                                                'Syst&#x00E8;me de r&#x00E9;servation',
+                                                'API personnalisée',
+                                                'Système de réservation',
                                             ];
                                         @endphp
                                         @foreach ($features as $feature)
@@ -401,6 +401,7 @@
                                         <option value="Referral">{{ __('get-quote.opt_141') }}</option>
                                         <option value="LinkedIn">{{ __('get-quote.opt_369') }}</option>
                                         <option value="Instagram">{{ __('get-quote.opt_370') }}</option>
+                                        <option value="Facebook">{{ __('get-quote.opt_371') }}</option>
                                         <option value="Clutch / Directory">{{ __('get-quote.opt_142') }}</option>
                                         <option value="Other">{{ __('get-quote.opt_143') }}</option>
                                     </select>
@@ -529,6 +530,14 @@
             if (inputEl) {
                 inputEl.classList.add('border-red-400');
             }
+        }
+
+        // Map a Laravel 422 validation payload back onto the form fields.
+        function showFieldErrors(errors) {
+            Object.keys(errors).forEach(function(field) {
+                var msg = Array.isArray(errors[field]) ? errors[field][0] : errors[field];
+                showError(field.split('.')[0], msg);
+            });
         }
 
         function validateStep(step) {
@@ -726,6 +735,10 @@
         function submitForm() {
             if (!validateStep(currentStep)) return;
 
+            // Clear any error from a previous attempt.
+            document.getElementById('submitError').classList.add('hidden');
+            clearErrors();
+
             var submitBtn = document.getElementById('submitBtn');
             submitBtn.disabled = true;
             submitBtn.style.opacity = '0.7';
@@ -761,9 +774,43 @@
                     body: JSON.stringify(data)
                 })
                 .then(function(res) {
-                    return res.json().then(function(json) {
-                        if (!res.ok) throw new Error(json.error ||
-                            '\u00c9chec de l\u2019envoi de la demande de devis');
+                    // Parse defensively: a 500/419/502 may return an HTML page, not JSON.
+                    return res.text().then(function(body) {
+                        var json = null;
+                        try {
+                            json = body ? JSON.parse(body) : null;
+                        } catch (e) {
+                            json = null;
+                        }
+
+                        if (!res.ok) {
+                            var msg;
+                            if (res.status === 419) {
+                                msg =
+                                    'Votre session a expir\u00e9. Veuillez recharger la page puis r\u00e9essayer.';
+                            } else if (res.status === 429) {
+                                msg =
+                                    'Trop de demandes envoy\u00e9es. Veuillez patienter quelques minutes.';
+                            } else if (res.status === 422 && json && json.errors) {
+                                showFieldErrors(json.errors);
+                                msg = json.message ||
+                                    'Veuillez corriger les champs indiqu\u00e9s.';
+                            } else if (json && json.error) {
+                                msg = json.error;
+                            } else {
+                                msg = '\u00c9chec de l\u2019envoi (erreur ' + res.status +
+                                    '). Veuillez r\u00e9essayer ou nous \u00e9crire \u00e0 codesommet@gmail.com.';
+                            }
+                            throw new Error(msg);
+                        }
+
+                        // A 2xx that is not the expected JSON payload is NOT a success.
+                        if (!json || json.success !== true) {
+                            throw new Error(
+                                'R\u00e9ponse inattendue du serveur. Votre demande n\u2019a peut-\u00eatre pas \u00e9t\u00e9 enregistr\u00e9e \u2014 veuillez nous \u00e9crire \u00e0 codesommet@gmail.com.'
+                            );
+                        }
+
                         // Show success
                         document.getElementById('quoteForm').classList.add('hidden');
                         document.getElementById('successMessage').classList.remove('hidden');
@@ -772,8 +819,16 @@
                 .catch(function(err) {
                     var errorBanner = document.getElementById('submitError');
                     var errorText = document.getElementById('submitErrorText');
-                    errorText.textContent = err.message || '\u00c9chec de l\u2019envoi. Veuillez r\u00e9essayer.';
+                    // TypeError from fetch() means the request never reached the server.
+                    var msg = (err instanceof TypeError) ?
+                        'Connexion au serveur impossible. V\u00e9rifiez votre connexion internet et r\u00e9essayez.' :
+                        (err.message || '\u00c9chec de l\u2019envoi. Veuillez r\u00e9essayer.');
+                    errorText.textContent = msg;
                     errorBanner.classList.remove('hidden');
+                    errorBanner.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
                     submitBtn.disabled = false;
                     submitBtn.style.opacity = '1';
                     submitBtn.style.cursor = 'pointer';

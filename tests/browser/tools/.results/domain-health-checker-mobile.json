@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Santé du Domaine",
+  "slug": "domain-health-checker",
+  "url": "/tools/domain-health-checker",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : Domaine",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "DProblèmes détectés50/100Score8Checks Runexample.comDomainProblèmes détectéswarningNo robots.txt foundwarningNo sitemap.xml foundwarningNo meta descriptionwarningNo OG tagsRecommandationsImprove: No robots.txt foundImprove: No sitemap.xml foundImprove: No meta descriptionImprove: No OG tags",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : Domaine",
+    "otherOutput": "DProblèmes détectés50/100Score8Checks Runexample.comDomainProblèmes détectéswarningNo robots.txt foundwarningNo sitemap.xml foundwarningNo meta descriptionwarningNo OG tagsRecommandationsImprove: No robots.txt foundImprove: No sitemap.xml foundImprove: No meta descriptionImprove: No OG tags"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

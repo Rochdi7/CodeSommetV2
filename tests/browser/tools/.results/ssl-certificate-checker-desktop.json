@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Certificat SSL",
+  "slug": "ssl-certificate-checker",
+  "url": "/tools/ssl-certificate-checker",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : Domaine",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "AAnalyse réussieexample.comDomaintrueSsl EnabledSSL CorporationIssuer2026-05-31Valid From2026-08-29Valid To32Days Remaining",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : Domaine",
+    "otherOutput": "AAnalyse réussieexample.comDomaintrueSsl EnabledSSL CorporationIssuer2026-05-31Valid From2026-08-29Valid To32Days Remaining"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

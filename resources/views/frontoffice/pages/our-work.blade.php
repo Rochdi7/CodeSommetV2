@@ -133,7 +133,7 @@
                                     class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">SaaS</span></div>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.monasso_tag') }}</span></div>
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
@@ -154,7 +154,7 @@
                                     class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">Tourisme</span>
+                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.morocco_quest_tag') }}</span>
                                 </div>
                             </div>
                             <div class="px-5 py-4">
@@ -182,8 +182,8 @@
                             </div>
                             <div class="px-5 py-4">
                                 <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Study Abroad
-                                    Ausbildung</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
+                                    {{ __('our-work.gls_subtitle') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
                                     {{ __('our-work.text_15') }}</p>
                             </div>
@@ -240,9 +240,9 @@
     <section class="py-16 md:py-20 bg-white">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-12 border-2 border-[#00AEEF]/20 text-center"
+                <div class="analyzer-cta rounded-3xl p-8 md:p-12 text-center"
                     style="opacity:0;transform:translateY(30px)">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#00AEEF]/10 mb-6"><svg
+                    <div class="analyzer-cta__icon inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6"><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-globe w-8 h-8 text-[#00AEEF]"
@@ -251,9 +251,9 @@
                             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                             <path d="M2 12h20"></path>
                         </svg></div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-primary)]"
+                    <h2 class="analyzer-cta__title text-3xl md:text-4xl font-bold mb-4"
                         style="font-family:var(--font-heading)">{{ __('our-work.text_19') }}</h2>
-                    <p class="text-lg text-[var(--text-secondary)] mb-8 max-w-2xl mx-auto">{{ __('our-work.text_20') }}
+                    <p class="analyzer-cta__text text-lg mb-8 max-w-2xl mx-auto">{{ __('our-work.text_20') }}
                     </p><a
                         class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105"
                         href="{{ route('tool', 'website-analyzer') }}"><span>{{ __('our-work.text_21') }}</span><svg

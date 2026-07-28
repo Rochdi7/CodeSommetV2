@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Sitemap XML",
+  "slug": "xml-sitemap-generator",
+  "url": "/tools/xml-sitemap-generator",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir au moins une URL (une par ligne)",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "1URLs in Sitemap260 BFile SizeGenerated XML Sitemap Copier Télécharger le .xml<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://example.com</loc>\n    <lastmod>2026-07-28</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n</urlset>",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir au moins une URL (une par ligne)",
+    "otherOutput": "1URLs in Sitemap260 BFile SizeGenerated XML Sitemap Copier Télécharger le .xml<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://example.com</loc>\n    <lastmod>2026-07-28</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n</urlset>\nCopier\nTélécharger le .xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://example.com</loc>\n    <lastmod>2026-07-28</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n</urlset>"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -22,13 +22,13 @@
             CodeSommetTools.hideError();
             var input = textarea.value.trim();
             if (!input) {
-                CodeSommetTools.showError('Please enter at least one URL (one per line)');
+                CodeSommetTools.showError('Veuillez saisir au moins une URL (une par ligne)');
                 return;
             }
 
             var urls = input.split('\n').map(function (u) { return u.trim(); }).filter(function (u) { return u.length > 0; });
             if (urls.length === 0) {
-                CodeSommetTools.showError('Please enter at least one valid URL');
+                CodeSommetTools.showError('Veuillez saisir au moins une URL valide');
                 return;
             }
 
@@ -48,7 +48,7 @@
             });
 
             if (validUrls.length === 0) {
-                CodeSommetTools.showError('No valid URLs found. Please check your input.');
+                CodeSommetTools.showError('Aucune URL valide trouvée. Vérifiez votre saisie.');
                 return;
             }
 
@@ -89,9 +89,9 @@
                 '<h3 class="text-lg font-semibold text-[#0F0F0F]">Generated XML Sitemap</h3>' +
                 '<div class="flex gap-2">' +
                 '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">' +
-                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button>' +
                 '<button id="download-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">' +
-                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download .xml</button>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Télécharger le .xml</button>' +
                 '</div></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto">' +
                 '<pre class="text-sm text-[#0F0F0F] font-mono whitespace-pre">' + escapeHtml(xml) + '</pre></div>' +

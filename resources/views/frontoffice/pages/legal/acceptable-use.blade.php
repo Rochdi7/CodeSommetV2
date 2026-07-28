@@ -821,7 +821,8 @@
                                 </p>
                                 <p><strong>{{ __('legal/acceptable-use.text_121') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                                <p><strong>{{ __('legal/acceptable-use.text_122') }}</strong> <a href="tel:+212632582096"
+                                <p><strong>{{ __('legal/acceptable-use.text_122') }}</strong> <a
+                                        href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                             </div>
                             <div>

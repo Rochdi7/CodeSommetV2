@@ -246,7 +246,7 @@
                         <ul class="space-y-2">
                             <li><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="0169646d6d6e4171686a6072726e72757465686e2f626e6c">[email&#160;protected]</span></a></li>
                             <li><strong>Téléphone :</strong> +212 6 32 58 20 96</li>
-                            <li><strong>Téléphone :</strong> +212 6 32 58 20 96</li>
+                            <li><strong>WhatsApp :</strong> <a href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></li>
                         </ul>
                         <p class="mt-3 text-sm">Nous répondrons à votre demande dans un délai de 30 jours.</p>
                     </div>
@@ -332,7 +332,7 @@
                         <div class="space-y-2">
                             <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="5f373a3333301f2f36343e2c2c302c2b2a3b3630713c3032">[email&#160;protected]</span></a></p>
                             <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>WhatsApp :</strong> <a href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                         </div>
                         <div>
                             <p><strong>Siège social :</strong> Maroc</p>

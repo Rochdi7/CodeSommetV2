@@ -23,55 +23,14 @@ window.CodeSommetTools.onReady = function (fn) {
 (function () {
     'use strict';
 
-    /* ── FAQ Accordion ─────────────────────────────────────────────────── */
-    function initFaqAccordion() {
-        // Find the FAQ heading to reliably locate the FAQ section
-        var faqHeadings = document.querySelectorAll('h3');
-        var faqSection = null;
-        for (var i = 0; i < faqHeadings.length; i++) {
-            if (faqHeadings[i].textContent.trim() === 'Frequently Asked Questions') {
-                // The FAQ container is the nearest parent with bg-white rounded-lg
-                faqSection = faqHeadings[i].closest('.bg-gradient-to-br, .bg-white');
-                if (faqSection) {
-                    // Look for the white card that holds the FAQ items
-                    var card = faqSection.querySelector('.bg-white.rounded-lg.border');
-                    if (card) faqSection = card;
-                }
-                break;
-            }
-        }
-        if (!faqSection) return;
-
-        var faqItems = faqSection.querySelectorAll('.border-b.border-gray-200');
-        faqItems.forEach(function (item) {
-            var btn = item.querySelector('button');
-            if (!btn) return;
-
-            var answer = item.querySelector('.faq-answer');
-            if (!answer) return; // answer content must be in the HTML
-
-            btn.addEventListener('click', function () {
-                var isOpen = !answer.classList.contains('hidden');
-                // Close all
-                faqSection.querySelectorAll('.faq-answer').forEach(function (a) {
-                    a.classList.add('hidden');
-                });
-                faqSection.querySelectorAll('button svg.lucide-chevron-down').forEach(function (svg) {
-                    svg.style.transform = 'rotate(0deg)';
-                    svg.style.transition = 'transform 0.2s ease';
-                });
-                // Open clicked if was closed
-                if (!isOpen) {
-                    answer.classList.remove('hidden');
-                    var chevron = btn.querySelector('svg.lucide-chevron-down');
-                    if (chevron) {
-                        chevron.style.transform = 'rotate(180deg)';
-                        chevron.style.transition = 'transform 0.2s ease';
-                    }
-                }
-            });
-        });
-    }
+    /* ── FAQ Accordion ─────────────────────────────────────────────────────
+     * Volontairement absent ici. L'accordéon FAQ des pages /tools/ est déjà
+     * géré par public/js/app.js ("Tool FAQ Accordion"), chargé sur toutes les
+     * pages. Un second gestionnaire était attaché ici : les deux réagissaient
+     * au même clic et le dernier refermait aussitôt la réponse ouverte par le
+     * premier — l'accordéon paraissait donc inerte. Ne pas réintroduire de
+     * gestionnaire FAQ dans ce fichier.
+     */
 
     /* ── Scroll-to-tool CTA (e.g. "Scroll up to start") ────────────────
      * Buttons carrying [data-scroll-to-tool] scroll back to the tool form
@@ -158,17 +117,109 @@ window.CodeSommetTools.onReady = function (fn) {
         }
     };
 
+    /* ── Field lookup by label ────────────────────────────────────────────
+     * Tool scripts locate their inputs by reading the <label> next to them.
+     * The interface is French, so matching on English text alone silently
+     * returns '' for every field and the tool appears broken. Match on a list
+     * of accepted terms instead, ignoring case, accents and punctuation, and
+     * accept both the French and English wording.
+     */
+    CodeSommetTools.normalizeLabel = function (str) {
+        return String(str == null ? '' : str)
+            .normalize('NFD')
+            .replace(/[̀-ͯ]/g, '')  // strip accents: "Téléphone" → "Telephone"
+            .replace(/['’]/g, ' ')            // "Nom de l'Entreprise" → "… l entreprise"
+            .replace(/\s+/g, ' ')
+            .trim()
+            .toLowerCase();
+    };
+
+    /**
+     * Value of the field whose label matches any of `terms`.
+     * @param {Element} scope    container to search within
+     * @param {string|string[]} terms  accepted label fragments (FR and/or EN)
+     * @returns {string} trimmed value, or '' when no field matches
+     */
+    CodeSommetTools.fieldByLabel = function (scope, terms) {
+        if (!scope) return '';
+        var wanted = (Array.isArray(terms) ? terms : [terms])
+            .map(CodeSommetTools.normalizeLabel)
+            .filter(Boolean);
+        if (!wanted.length) return '';
+
+        var labels = scope.querySelectorAll('label');
+        for (var i = 0; i < labels.length; i++) {
+            var text = CodeSommetTools.normalizeLabel(labels[i].textContent);
+            for (var j = 0; j < wanted.length; j++) {
+                if (text.indexOf(wanted[j]) === -1) continue;
+
+                // Several tool pages render the label with neither a for=
+                // attribute nor a .space-y-* wrapper, so try progressively
+                // looser associations rather than giving up.
+                var input = null;
+
+                // 1. Explicit for="id".
+                var forId = labels[i].getAttribute('for');
+                if (forId && window.CSS && CSS.escape) {
+                    input = scope.querySelector('#' + CSS.escape(forId));
+                }
+
+                // 2. A field inside the usual wrapper.
+                if (!input) {
+                    var container = labels[i].closest('.space-y-2, .space-y-1');
+                    input = container ? container.querySelector('input, select, textarea') : null;
+                }
+
+                // 3. The next field after the label in document order.
+                if (!input) {
+                    var node = labels[i];
+                    while (node && !input) {
+                        var sib = node.nextElementSibling;
+                        while (sib && !input) {
+                            input = sib.matches('input, select, textarea')
+                                ? sib
+                                : sib.querySelector('input, select, textarea');
+                            sib = sib.nextElementSibling;
+                        }
+                        node = node.parentElement;
+                        // Don't wander outside the field group.
+                        if (node === scope) break;
+                    }
+                }
+
+                if (input) return (input.value || '').trim();
+            }
+        }
+        return '';
+    };
+
     /* ── Copy to Clipboard ────────────────────────────────────────────── */
     CodeSommetTools.copyToClipboard = function (text, btn) {
-        navigator.clipboard.writeText(text).then(function () {
-            var orig = btn.innerHTML;
-            btn.innerHTML = '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Copied!';
-            btn.classList.add('bg-green-500', 'text-white');
+        if (!btn) return;
+        var orig = btn.innerHTML;
+
+        function flash(label, ok) {
+            btn.innerHTML = ok
+                ? '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ' + label
+                : label;
+            btn.classList.add(ok ? 'bg-green-500' : 'bg-red-500', 'text-white');
             setTimeout(function () {
                 btn.innerHTML = orig;
-                btn.classList.remove('bg-green-500', 'text-white');
+                btn.classList.remove('bg-green-500', 'bg-red-500', 'text-white');
             }, 2000);
-        });
+        }
+
+        // navigator.clipboard rejette hors contexte sécurisé ou si l'utilisateur
+        // refuse la permission. Sans .catch(), l'échec était silencieux et le
+        // bouton restait figé : on informe explicitement l'utilisateur.
+        if (!navigator.clipboard || !navigator.clipboard.writeText) {
+            flash('Copie indisponible', false);
+            return;
+        }
+        navigator.clipboard.writeText(text).then(
+            function () { flash('Copié !', true); },
+            function () { flash('Échec de la copie', false); }
+        );
     };
 
     /* ── Download File ────────────────────────────────────────────────── */
@@ -238,7 +289,7 @@ window.CodeSommetTools.onReady = function (fn) {
         if (isLoading) {
             btn._origText = btn.innerHTML;
             btn.disabled = true;
-            btn.innerHTML = '<svg class="animate-spin mr-2 h-4 w-4 inline" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Processing...';
+            btn.innerHTML = '<svg class="animate-spin mr-2 h-4 w-4 inline" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Traitement en cours…';
         } else {
             btn.disabled = false;
             if (btn._origText) btn.innerHTML = btn._origText;
@@ -440,7 +491,6 @@ window.CodeSommetTools.onReady = function (fn) {
 
     /* ── Init on DOMContentLoaded ─────────────────────────────────────── */
     function _initAll() {
-        initFaqAccordion();
         initAutoTabs();
         initScrollToToolButtons();
     }

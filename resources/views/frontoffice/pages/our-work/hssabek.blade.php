@@ -110,7 +110,7 @@
                                     </svg>
                                 </div>
                                 <div class="min-w-0">
-                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Documents Émis</p>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Documents Commerciaux Émis</p>
                                     <p class="text-sm font-bold text-gray-900 truncate">10 000+</p>
                                 </div>
                             </div>
@@ -386,9 +386,9 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Blade / Tailwind CSS</span><span
+                                style="transform:scale(0.9)">Blade / Bootstrap 5</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">JavaScript</span><span
+                                style="transform:scale(0.9)">jQuery / DataTables</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">Design Responsive</span></div>
                     </div>
@@ -398,11 +398,11 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Laravel</span><span
+                                style="transform:scale(0.9)">Laravel 12 / PHP 8.2+</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">{{ __('our-work/hssabek.text_22') }}</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">MySQL</span></div>
+                                style="transform:scale(0.9)">MySQL / MariaDB</span></div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -410,13 +410,13 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Suivi des Encaissements</span><span
+                                style="transform:scale(0.9)">Laravel Sanctum</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">{{ __('our-work/hssabek.text_147') }}</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
                                 style="transform:scale(0.9)">{{ __('our-work/hssabek.text_23') }}</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Export Comptable</span></div>
+                                style="transform:scale(0.9)">Maatwebsite Excel</span></div>
                     </div>
                 </div>
             </div>
@@ -433,11 +433,11 @@
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md"
                     style="transform:scale(0.95)">Tableau de Bord</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Factures</button><button
+                    style="transform:scale(0.95)">Factures & Devis</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/hssabek.text_148') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Clients</button></div>
+                    style="transform:scale(0.95)">Clients & Fournisseurs</button></div>
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
@@ -564,7 +564,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">10 000+</p>
-                                <p class="text-xs text-gray-600 font-medium">Documents Émis</p>
+                                <p class="text-xs text-gray-600 font-medium">Documents Commerciaux Émis</p>
                             </div>
                         </div>
                     </div>
@@ -606,8 +606,8 @@
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">5 000+ admissions</p>
-                                <p class="text-xs text-gray-600 font-medium">Candidatures</p>
+                                <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">5 000+</p>
+                                <p class="text-xs text-gray-600 font-medium">Lignes de Stock Suivies</p>
                             </div>
                         </div>
                     </div>
@@ -634,8 +634,8 @@
                 </div>
                 <div class="max-w-4xl mx-auto mt-16 mb-12">
                     <div
-                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-10 border-2 border-[#00AEEF]/20 text-center">
-                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#00AEEF]/10 mb-5">
+                        class="analyzer-cta rounded-3xl p-8 md:p-10 text-center">
+                        <div class="analyzer-cta__icon inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-[#00AEEF]"
@@ -646,9 +646,9 @@
                                 <path d="M8 17v-3"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[var(--text-primary)]"
+                        <h3 class="analyzer-cta__title text-2xl md:text-3xl font-bold mb-3"
                             style="font-family:var(--font-heading)">{{ __('our-work/hssabek.text_33') }}</h3>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                        <p class="analyzer-cta__text text-base md:text-lg mb-6 max-w-2xl mx-auto">
                             {{ __('our-work/hssabek.text_34') }} <!-- -->Hssabek<!-- -->{{ __('our-work/hssabek.text_35') }}</p><a
                             class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105 text-sm md:text-base"
                             href="/tools/website-analyzer"><span>{{ __('our-work/hssabek.text_151') }}</span><svg
@@ -680,8 +680,8 @@
                                         <span class="text-white font-bold text-base md:text-lg">H</span>
                                     </div>
 <div>
-                                        <p class="font-bold text-white text-sm md:text-base">Équipe Hssabek</p>
-                                        <p class="text-white/90 text-xs md:text-sm">Direction, Hssabek</p>
+                                        <p class="font-bold text-white text-sm md:text-base">Gérant d'une PME cliente</p>
+                                        <p class="text-white/90 text-xs md:text-sm">Utilisateur Hssabek</p>
                                     </div>                                </div>
                             </div>
                         </div>
@@ -732,7 +732,7 @@
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
-                        <p class="text-sm font-semibold text-gray-700 hidden md:block">Suivant Project</p>
+                        <p class="text-sm font-semibold text-gray-700 hidden md:block">Projet Suivant</p>
                     </div>
                 </a></div>
         </div>

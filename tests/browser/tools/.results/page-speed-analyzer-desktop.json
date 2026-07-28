@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Vitesse de Page",
+  "slug": "page-speed-analyzer",
+  "url": "/tools/page-speed-analyzer",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "AAnalyse réussie663msResponse Time1KBPage Size0Images0Scripts0Stylesheets",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "AAnalyse réussie663msResponse Time1KBPage Size0Images0Scripts0Stylesheets"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

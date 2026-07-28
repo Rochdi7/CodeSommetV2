@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Contenu Dupliqué",
+  "slug": "duplicate-content-checker",
+  "url": "/tools/duplicate-content-checker",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez remplir les deux champs de texte",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "56%Moderate Similarity16Words (Text 1)14Words (Text 2)10Common Words6Matching PhrasesExpressions communesceci est unest un texteun texte detexte de testde test pourtest pour la",
+    "errorVisible": false,
+    "errorText": "Veuillez remplir les deux champs de texte",
+    "otherOutput": "56%Moderate Similarity16Words (Text 1)14Words (Text 2)10Common Words6Matching PhrasesExpressions communesceci est unest un texteun texte detexte de testde test pourtest pour la"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

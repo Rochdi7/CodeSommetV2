@@ -11,6 +11,21 @@ use Illuminate\Support\Facades\Log;
 
 class ToolsApiController extends Controller
 {
+    /**
+     * Outils dont un seul appel déclenche plusieurs requêtes sortantes
+     * (liens de la page, robots.txt, sitemap…). Soumis au limiteur strict
+     * `tools-api-heavy` dans routes/api.php pour éviter l'amplification.
+     *
+     * @var list<string>
+     */
+    public const HEAVY_TOOLS = [
+        'broken-link-checker',
+        'redirect-checker',
+        'domain-health-checker',
+        'domain-authority-checker',
+        'website-readiness-checker',
+    ];
+
     public function __construct(
         private SafeHttpFetcher $fetcher,
         private SafeUrlValidator $urlValidator,
@@ -1169,17 +1184,18 @@ class ToolsApiController extends Controller
         $topic = $request->input('input', '');
         if (!$topic) return response()->json(['error' => 'Please enter a topic'], 422);
 
+        // Site francophone : les titres proposés doivent être en français.
         $templates = [
-            '{n} Proven Ways to {topic} (That Actually Work in 2025)',
-            'How to {topic}: The Complete Guide for Beginners',
-            'The Ultimate {topic} Strategy That Doubled Our Results',
-            '{topic}: Everything You Need to Know Before Getting Started',
-            'Why Most People Fail at {topic} (And How to Fix It)',
-            'The Secret to {topic} That Experts Won\'t Tell You',
-            '{n} {topic} Mistakes You\'re Making Right Now',
-            '{topic} Made Simple: A Step-by-Step Framework',
-            'Stop Doing {topic} Wrong — Here\'s the Right Way',
-            'How We Used {topic} to Grow Revenue by {p}%',
+            '{n} méthodes éprouvées pour {topic} (qui fonctionnent vraiment)',
+            'Comment {topic} : le guide complet pour débuter',
+            'La stratégie {topic} qui a doublé nos résultats',
+            '{topic} : tout ce qu\'il faut savoir avant de se lancer',
+            'Pourquoi la plupart échouent avec {topic} (et comment y remédier)',
+            'Le secret de {topic} que les experts ne partagent pas',
+            '{n} erreurs de {topic} que vous commettez sans le savoir',
+            '{topic} en toute simplicité : une méthode pas à pas',
+            'Arrêtez de mal aborder {topic} — voici la bonne approche',
+            'Comment {topic} nous a permis d\'augmenter le chiffre d\'affaires de {p} %',
         ];
 
         $titles = [];
@@ -1193,7 +1209,7 @@ class ToolsApiController extends Controller
             $titles[] = [
                 'title' => $title,
                 'seoScore' => rand(72, 95),
-                'emotionalHook' => ['Curiosity', 'Urgency', 'Benefit', 'Fear', 'Aspiration'][rand(0, 4)],
+                'emotionalHook' => ['Curiosité', 'Urgence', 'Bénéfice', 'Crainte', 'Aspiration'][rand(0, 4)],
                 'ctrEstimate' => rand(28, 65) / 10 . '%',
             ];
         }
@@ -1212,27 +1228,28 @@ class ToolsApiController extends Controller
         $tone = $request->input('tone', $request->input('option', 'professional'));
         $goal = $request->input('mainGoal', 'Lead Generation');
 
+        // Script de conversation en français (site francophone).
         $greeting = $tone === 'casual'
-            ? "Hey there! 👋 Welcome! How can I help you today?"
-            : "Welcome! I'm here to assist you. How can I help you today?";
+            ? "Bonjour 👋 Bienvenue ! Comment puis-je vous aider aujourd'hui ?"
+            : "Bienvenue ! Je suis là pour vous accompagner. Comment puis-je vous aider ?";
 
         $script = [
             'welcomeMessage' => $greeting,
             'industry' => $industry,
             'tone' => $tone,
-            'quickReplies' => ['Learn about our services', 'Get a quote', 'Talk to a human', 'FAQs'],
+            'quickReplies' => ['Découvrir nos services', 'Demander un devis', 'Parler à un conseiller', 'Questions fréquentes'],
             'intents' => [
-                ['name' => 'Pricing Inquiry', 'phrases' => ['How much does it cost?', 'What are your prices?', 'Pricing info'], 'response' => "Great question! Our pricing depends on your specific needs. Could you tell me a bit more about what you're looking for? Or I can connect you with our team for a detailed quote."],
-                ['name' => 'Service Info', 'phrases' => ['What services do you offer?', 'Tell me about your services', 'What do you do?'], 'response' => "We offer a range of {$industry} solutions tailored to your needs. Would you like to know more about a specific service, or shall I give you an overview?"],
-                ['name' => 'Support', 'phrases' => ['I need help', 'Support please', 'Having an issue'], 'response' => "I'm sorry to hear you're having trouble. Let me connect you with our support team right away. Could you briefly describe the issue?"],
+                ['name' => 'Demande de tarif', 'phrases' => ['Combien ça coûte ?', 'Quels sont vos tarifs ?', 'Informations tarifaires'], 'response' => "Très bonne question ! Nos tarifs dépendent de vos besoins précis. Pouvez-vous m'en dire un peu plus sur votre projet ? Je peux aussi vous mettre en relation avec notre équipe pour un devis détaillé."],
+                ['name' => 'Informations services', 'phrases' => ['Quels services proposez-vous ?', 'Parlez-moi de vos services', 'Que faites-vous ?'], 'response' => "Nous proposons une gamme de solutions {$industry} adaptées à vos besoins. Souhaitez-vous en savoir plus sur un service en particulier, ou préférez-vous une présentation générale ?"],
+                ['name' => 'Assistance', 'phrases' => ['J\'ai besoin d\'aide', 'Assistance s\'il vous plaît', 'Je rencontre un problème'], 'response' => "Je suis désolé d'apprendre que vous rencontrez un problème. Je vous mets en relation avec notre équipe support. Pouvez-vous décrire brièvement la difficulté ?"],
             ],
             'leadQualification' => [
-                'question1' => 'What is your company name?',
-                'question2' => 'How many employees do you have?',
-                'question3' => 'What is your primary goal?',
+                'question1' => 'Quel est le nom de votre entreprise ?',
+                'question2' => 'Combien de collaborateurs compte-t-elle ?',
+                'question3' => 'Quel est votre objectif principal ?',
             ],
-            'fallbackMessage' => "I'm not sure I understand. Would you like me to connect you with a human agent?",
-            'handoffTriggers' => ['talk to human', 'speak to someone', 'real person', 'agent'],
+            'fallbackMessage' => "Je ne suis pas certain de bien comprendre. Souhaitez-vous que je vous mette en relation avec un conseiller ?",
+            'handoffTriggers' => ['parler à un humain', 'parler à quelqu\'un', 'vraie personne', 'conseiller', 'agent'],
         ];
 
         return response()->json(['content' => json_encode($script, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES)]);
@@ -1246,30 +1263,33 @@ class ToolsApiController extends Controller
         $product = $request->input('input', 'Your Product');
         $description = $request->input('whatDoesItDo', '');
 
-        $copy = "# {$product} — Landing Page Copy\n\n";
-        $copy .= "## Hero Section\n";
-        $copy .= "**Headline:** Transform Your Business with {$product}\n";
-        $copy .= "**Subheadline:** The all-in-one solution that helps you save time, reduce costs, and scale faster.\n";
-        $copy .= "**CTA Button:** Get Started Free →\n\n";
+        // Trame de page d'atterrissage en français (site francophone).
+        // Les chiffres sont présentés comme des exemples à remplacer, jamais
+        // comme des statistiques réelles attribuées au produit de l'utilisateur.
+        $copy = "# {$product} — Trame de page d'atterrissage\n\n";
+        $copy .= "## Section héros\n";
+        $copy .= "**Titre :** Transformez votre activité avec {$product}\n";
+        $copy .= "**Sous-titre :** La solution tout-en-un pour gagner du temps, réduire vos coûts et accélérer votre croissance.\n";
+        $copy .= "**Bouton d'action :** Commencer gratuitement →\n\n";
 
-        $copy .= "## Problem Section\n";
-        $copy .= "Are you tired of juggling multiple tools? Struggling with inefficiency? You're not alone. Most businesses waste 40% of their time on manual tasks.\n\n";
+        $copy .= "## Section problème\n";
+        $copy .= "Vous jonglez entre trop d'outils ? Vous perdez du temps sur des tâches manuelles ? Vous n'êtes pas seul : décrivez ici le problème concret que rencontre votre audience.\n\n";
 
-        $copy .= "## Solution Section\n";
-        $copy .= "{$product} eliminates the complexity. " . ($description ?: "Our platform automates your workflow so you can focus on what matters.") . "\n\n";
+        $copy .= "## Section solution\n";
+        $copy .= "{$product} supprime cette complexité. " . ($description ?: "Notre plateforme automatise votre flux de travail pour que vous puissiez vous concentrer sur l'essentiel.") . "\n\n";
 
-        $copy .= "## Key Features\n";
-        $copy .= "✅ **Easy Setup** — Get started in under 5 minutes\n";
-        $copy .= "✅ **Powerful Analytics** — Track everything that matters\n";
-        $copy .= "✅ **24/7 Support** — We're always here to help\n";
-        $copy .= "✅ **Integrations** — Works with your existing tools\n\n";
+        $copy .= "## Fonctionnalités clés\n";
+        $copy .= "✅ **Prise en main immédiate** — opérationnel en quelques minutes\n";
+        $copy .= "✅ **Analyses détaillées** — suivez les indicateurs qui comptent\n";
+        $copy .= "✅ **Support réactif** — une équipe disponible pour vous accompagner\n";
+        $copy .= "✅ **Intégrations** — compatible avec vos outils existants\n\n";
 
-        $copy .= "## Social Proof\n";
-        $copy .= "\"Since switching to {$product}, we've seen a 3x increase in productivity.\" — Happy Customer\n\n";
+        $copy .= "## Preuve sociale\n";
+        $copy .= "_À remplacer par un témoignage client authentique._ Exemple de format : « Depuis que nous utilisons {$product}, notre productivité a nettement progressé. » — Prénom N., fonction, entreprise\n\n";
 
-        $copy .= "## Pricing CTA\n";
-        $copy .= "**Ready to get started?** Join 10,000+ businesses that trust {$product}.\n";
-        $copy .= "**[Start Your Free Trial]** — No credit card required.\n";
+        $copy .= "## Appel à l'action final\n";
+        $copy .= "**Prêt à vous lancer ?** Rejoignez les entreprises qui font confiance à {$product}.\n";
+        $copy .= "**[Démarrer l'essai gratuit]** — sans carte bancaire.\n";
 
         return response()->json(['content' => $copy]);
     }

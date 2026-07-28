@@ -9,7 +9,12 @@ return [
     'twitter_description' => 'Analysez la lisibilité et améliorez la compréhension du contenu',
     'text_0' => 'Analyseur de Score de Lisibilité',
     'text_1' => 'Analyseur de Score de Lisibilité',
-    'text_2' => 'Analysez la lisibilité de votre contenu à l\'aide de plusieurs algorithmes. Obtenez des niveaux de lecture, des scores de lisibilité et des conseils pratiques pour rendre votre écriture plus claire et plus accessible.to users with disabilities, which aligns with Google\'s emphasis on inclusive web experiences.',
+    'text_2' => 'Analysez la lisibilité de votre contenu à l\'aide de plusieurs algorithmes. Obtenez des niveaux de lecture, des scores de lisibilité et des conseils pratiques pour rendre votre écriture plus claire et plus accessible, y compris pour les personnes en situation de handicap — ce qui rejoint l\'importance accordée par Google à des expériences web inclusives.',
+
+    // Formulaire de l'outil
+    'label_input' => 'Votre texte',
+    'placeholder_input' => 'Collez ici le texte à analyser (au moins 30 mots pour un résultat fiable)...',
+    'action_analyze' => 'Analyser la lisibilité',
     'text_3' => 'Quelle est la différence entre Flesch Reading Ease et Flesch-Kincaid Grade ?',
     'text_4' => 'Flesch Reading Ease utilise une échelle de 0 à 100 où des scores plus élevés signifient une lecture plus facile. Flesch-Kincaid Grade montre le niveau scolaire américain nécessaire pour comprendre le texte (ex. : 8.0 = 4ème). Ils sont calculés différemment mais mesurent tous deux la lisibilité - utilisez Reading Ease pour une évaluation rapide et Grade Level pour cibler des niveaux d\'éducation spécifiques.',
     'text_5' => 'Dois-je toujours viser le score de lisibilité le plus élevé ?',

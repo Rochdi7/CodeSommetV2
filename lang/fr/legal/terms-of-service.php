@@ -232,7 +232,7 @@ return [
     'text_222' => 'Si vous avez des questions ou des préoccupations concernant ces Conditions d\'Utilisation, veuillez nous contacter :',
     'text_223' => 'Agence Premium de Développement Web',
     'text_224' => 'Téléphone :',
-    'text_225' => 'Téléphone :',
+    'text_225' => 'WhatsApp :',
     'text_226' => 'Siège social :',
     'text_227' => 'Opérations :',
     'text_228' => 'Pour les demandes juridiques, veuillez inclure "Juridique - Conditions d\'Utilisation" dans l\'objet de votre e-mail.',

@@ -44,15 +44,10 @@ return [
         'tunis', 'cairo', 'lagos',
     ],
 
-    // Études de cas temporairement noindexées : leur contenu décrit un autre
-    // projet que celui du titre (mélange de contenus — correction métier requise,
-    // voir SEO_CANNIBALIZATION_REPORT.md §4). Exclues du sitemap et du schéma
-    // par page tant qu'elles ne sont pas corrigées.
-    'noindexed_case_studies' => [
-        'mon-asso',
-        'morocco-quest',
-        'glamworlds',
-    ],
+    // Études de cas noindexées (exclues du sitemap et du schéma par page).
+    // Le contenu de mon-asso, morocco-quest et glamworlds a été corrigé pour
+    // décrire les projets réels : le noindex temporaire a donc été levé.
+    'noindexed_case_studies' => [],
 
     'legal' => [
         'privacy-policy',

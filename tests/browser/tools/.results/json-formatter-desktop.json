@@ -1,0 +1,29 @@
+{
+  "name": "Formateur/Validateur JSON",
+  "slug": "json-formatter",
+  "url": "/tools/json-formatter",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir du JSON",
+    "otherOutput": "{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"city\": \"NYC\"\n}"
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "JSON formaté Copier{\n  \"name\": \"CodeSommet\",\n  \"active\": true\n}44 BStatistiques JSON2Keys0Arrays1Objects44 BSize",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir du JSON",
+    "otherOutput": "JSON formaté Copier{\n  \"name\": \"CodeSommet\",\n  \"active\": true\n}44 BStatistiques JSON2Keys0Arrays1Objects44 BSize\nCopier\n{\n  \"name\": \"CodeSommet\",\n  \"active\": true\n}\n{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"city\": \"NYC\"\n}"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

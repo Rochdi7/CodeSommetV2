@@ -27,10 +27,10 @@
                 toggleBtns[1].classList.remove('bg-[#00AEEF]', 'text-white', 'shadow-md');
                 toggleBtns[1].classList.add('text-[#0F0F0F]', 'hover:bg-gray-50');
                 textarea.value = '';
-                textarea.placeholder = 'Type or paste your text here...';
+                textarea.placeholder = 'Saisissez ou collez votre texte ici…';
                 removeResults();
-                updateLabel('Enter Text to Encode');
-                updateBtnText('Encode to Base64');
+                updateLabel('Texte à encoder');
+                updateBtnText('Encoder en Base64');
             });
             toggleBtns[1].addEventListener('click', function () {
                 if (mode === 'decode') return;
@@ -40,10 +40,10 @@
                 toggleBtns[0].classList.remove('bg-[#00AEEF]', 'text-white', 'shadow-md');
                 toggleBtns[0].classList.add('text-[#0F0F0F]', 'hover:bg-gray-50');
                 textarea.value = '';
-                textarea.placeholder = 'Paste your Base64 encoded string here...';
+                textarea.placeholder = 'Collez votre chaîne encodée en Base64 ici…';
                 removeResults();
-                updateLabel('Enter Base64 String to Decode');
-                updateBtnText('Decode from Base64');
+                updateLabel('Chaîne Base64 à décoder');
+                updateBtnText('Décoder depuis le Base64');
             });
         }
 
@@ -62,7 +62,7 @@
         // Character counter
         textarea.addEventListener('input', function () {
             var counter = textarea.closest('.space-y-6')?.querySelector('.text-xs.text-gray-500');
-            if (counter) counter.textContent = textarea.value.length + ' characters';
+            if (counter) counter.textContent = textarea.value.length + ' caractères';
         });
 
         // Main action
@@ -70,7 +70,7 @@
             CodeSommetTools.hideError();
             var input = textarea.value.trim();
             if (!input) {
-                CodeSommetTools.showError('Please enter some text');
+                CodeSommetTools.showError('Veuillez saisir du texte');
                 return;
             }
 
@@ -82,7 +82,7 @@
                     result = decodeURIComponent(escape(atob(input)));
                 }
             } catch (e) {
-                CodeSommetTools.showError(mode === 'encode' ? 'Failed to encode text. Please check your input.' : 'Invalid Base64 string. Please check your input.');
+                CodeSommetTools.showError(mode === 'encode' ? 'Échec de l’encodage. Vérifiez votre saisie.' : 'Chaîne Base64 invalide. Vérifiez votre saisie.');
                 return;
             }
 
@@ -102,21 +102,21 @@
             removeResults();
             var inputLen = input.length;
             var resultLen = result.length;
-            var sizeInfo = mode === 'encode' ? '<span>Size increase: ' + Math.round((resultLen / inputLen - 1) * 100) + '%</span>' : '';
+            var sizeInfo = mode === 'encode' ? '<span>Augmentation de taille : ' + Math.round((resultLen / inputLen - 1) * 100) + ' %</span>' : '';
 
             var html = '<div id="tool-results" class="space-y-6 mt-8">' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8">' +
                 '<div class="space-y-4">' +
                 '<div class="flex items-center justify-between">' +
-                '<h3 class="text-lg font-semibold text-[#0F0F0F]">' + (mode === 'encode' ? 'Base64 Encoded Result' : 'Decoded Text') + '</h3>' +
+                '<h3 class="text-lg font-semibold text-[#0F0F0F]">' + (mode === 'encode' ? 'Résultat encodé en Base64' : 'Texte décodé') + '</h3>' +
                 '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">' +
-                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button>' +
                 '</div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200">' +
                 '<p class="text-sm text-[#0F0F0F] font-mono break-all whitespace-pre-wrap">' + escapeHtml(result) + '</p>' +
                 '</div>' +
                 '<div class="flex items-center justify-between text-xs text-gray-500">' +
-                '<span>' + resultLen + ' characters</span>' + sizeInfo +
+                '<span>' + resultLen + ' caractères</span>' + sizeInfo +
                 '</div></div></div></div>';
 
             actionBtn.closest('.space-y-8, .space-y-6').insertAdjacentHTML('beforeend', html);
@@ -137,6 +137,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('base64-encoder', 'Base64 operations completed');
+        CodeSommetTools.initUsageCounter('base64-encoder', 'conversions Base64 réalisées');
     });
 })();

@@ -17,7 +17,7 @@
             CodeSommetTools.hideError();
             var input = textarea.value.trim();
             if (!input) {
-                CodeSommetTools.showError('Please enter some CSS code');
+                CodeSommetTools.showError('Veuillez saisir du code CSS');
                 return;
             }
 
@@ -57,9 +57,9 @@
                 '</div>' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
                 '<div class="flex items-center justify-between">' +
-                '<h3 class="text-lg font-semibold text-[#0F0F0F]">Minified CSS</h3>' +
+                '<h3 class="text-lg font-semibold text-[#0F0F0F]">CSS minifié</h3>' +
                 '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">' +
-                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button></div>' +
+                '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto">' +
                 '<pre class="text-sm text-[#0F0F0F] font-mono whitespace-pre-wrap break-all">' + escapeHtml(result) + '</pre></div>' +
                 '</div></div></div>';

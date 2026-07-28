@@ -1,0 +1,29 @@
+{
+  "name": "Encodeur/Décodeur Base64",
+  "slug": "base64-encoder",
+  "url": "/tools/base64-encoder",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir du texte",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Résultat encodé en Base64 CopierQm9uam91ciBDb2RlU29tbWV024 caractèresAugmentation de taille : 33 %",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir du texte",
+    "otherOutput": "Résultat encodé en Base64 CopierQm9uam91ciBDb2RlU29tbWV024 caractèresAugmentation de taille : 33 %\nCopier"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

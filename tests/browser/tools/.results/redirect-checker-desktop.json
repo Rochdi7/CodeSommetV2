@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Redirections",
+  "slug": "redirect-checker",
+  "url": "/tools/redirect-checker",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL à vérifier",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Chaîne de redirection1https://example.comStatus: 200 • 689msRésultats de l’analyse{\n  \"validation\": {\n    \"severity\": \"success\",\n    \"passed\": true,\n    \"recommendations\": [\n      \"Redirect chain looks healthy.\"\n    ]\n  },\n  \"hasLoop\": false,\n  \"totalHops\": 1,\n  \"totalTime\": 689,\n  \"finalUrl\": \"https://example.com\",\n  \"redirectChain\": [\n    {\n      \"url\": \"https://example.com\",\n      \"statusCode\": 200,\n      \"redirectType\": \"Final\",\n      \"timestamp\": 689,\n      \"location\": \"\"\n    }\n  ]\n}",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL à vérifier",
+    "otherOutput": "Chaîne de redirection1https://example.comStatus: 200 • 689msRésultats de l’analyse{\n  \"validation\": {\n    \"severity\": \"success\",\n    \"passed\": true,\n    \"recommendations\": [\n      \"Redirect chain looks healthy.\"\n    ]\n  },\n  \"hasLoop\": false,\n  \"totalHops\": 1,\n  \"totalTime\": 689,\n  \"finalUrl\": \"https://example.com\",\n  \"redirectChain\": [\n    {\n      \"url\": \"https://example.com\",\n      \"statusCode\": 200,\n      \"redirectType\": \"Final\",\n      \"timestamp\": 689,\n      \"location\": \"\"\n    }\n  ]\n}\n{\n  \"validation\": {\n    \"severity\": \"success\",\n    \"passed\": true,\n    \"recommendations\": [\n      \"Redirect chain looks healthy.\"\n    ]\n  },\n  \"hasLoop\": false,\n  \"totalHops\": 1,\n  \"totalTime\": 689,\n  \"finalUrl\": \"https://example.com\",\n  \"redirectChain\": [\n    {\n      \"url\": \"https://example.com\",\n      \"statusCode\": 200,\n      \"redirectType\": \"Final\",\n      \"timestamp\": 689,\n      \"location\": \"\"\n    }\n  ]\n}"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

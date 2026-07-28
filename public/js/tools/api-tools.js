@@ -122,25 +122,30 @@
             var score = data.score || (data.passed ? 100 : 0);
             var color = score >= 80 ? 'green' : score >= 50 ? 'yellow' : 'red';
             var grade = data.grade || (score >= 90 ? 'A' : score >= 80 ? 'B' : score >= 60 ? 'C' : score >= 40 ? 'D' : 'F');
+            // `grade` provient de la réponse : l'échapper comme tout le reste.
             html += '<div class="rounded-2xl border-2 p-8 bg-' + color + '-50 border-' + color + '-200 text-center">' +
-                '<div class="text-5xl font-bold text-' + color + '-600 mb-2">' + (data.grade ? grade : score + '/100') + '</div>' +
-                '<div class="text-lg font-semibold text-' + color + '-900">' + escapeHtml(data.message || (data.passed ? 'Passed' : 'Issues Found')) + '</div></div>';
+                '<div class="text-5xl font-bold text-' + color + '-600 mb-2">' + escapeHtml(data.grade ? grade : score + '/100') + '</div>' +
+                '<div class="text-lg font-semibold text-' + color + '-900">' + escapeHtml(data.message || (data.passed ? 'Analyse réussie' : 'Problèmes détectés')) + '</div></div>';
         }
 
         // Stats grid
+        // Clés ET valeurs viennent de la réponse serveur : les deux doivent être
+        // échappées. Elles ne l'étaient pas, alors que tous les autres champs du
+        // rendu passaient par escapeHtml() — une valeur de `stats` porteuse de
+        // balisage était donc interprétée comme du HTML.
         if (data.stats) {
             html += '<div class="grid grid-cols-2 md:grid-cols-4 gap-4">';
             Object.entries(data.stats).forEach(function (entry) {
                 html += '<div class="bg-[#F8F8F8] p-4 rounded-lg border border-gray-200">' +
-                    '<div class="text-2xl font-bold text-[#00AEEF]">' + entry[1] + '</div>' +
-                    '<div class="text-sm text-gray-600 mt-1">' + formatLabel(entry[0]) + '</div></div>';
+                    '<div class="text-2xl font-bold text-[#00AEEF]">' + escapeHtml(entry[1]) + '</div>' +
+                    '<div class="text-sm text-gray-600 mt-1">' + escapeHtml(formatLabel(entry[0])) + '</div></div>';
             });
             html += '</div>';
         }
 
         // Warnings
         if (data.warnings && data.warnings.length > 0) {
-            html += '<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6"><h3 class="font-bold text-yellow-900 mb-3">Warnings</h3><ul class="space-y-2">';
+            html += '<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6"><h3 class="font-bold text-yellow-900 mb-3">Avertissements</h3><ul class="space-y-2">';
             data.warnings.forEach(function (w) {
                 html += '<li class="text-sm text-yellow-800 flex items-start gap-2"><svg class="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>' + escapeHtml(typeof w === 'string' ? w : w.message || JSON.stringify(w)) + '</li>';
             });
@@ -149,7 +154,7 @@
 
         // Issues
         if (data.issues && data.issues.length > 0) {
-            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Issues Found</h3><div class="space-y-3">';
+            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Problèmes détectés</h3><div class="space-y-3">';
             data.issues.forEach(function (issue) {
                 var severity = issue.type || issue.severity || 'warning';
                 var sColor = severity === 'error' ? 'red' : 'yellow';
@@ -162,7 +167,7 @@
 
         // Recommendations
         if (data.recommendations && data.recommendations.length > 0) {
-            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Recommendations</h3><div class="space-y-2">';
+            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Recommandations</h3><div class="space-y-2">';
             data.recommendations.forEach(function (rec) {
                 html += '<div class="flex items-start gap-2 p-3 bg-blue-50 rounded-lg"><svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>' +
                     '<p class="text-sm text-blue-900">' + escapeHtml(typeof rec === 'string' ? rec : rec.message || JSON.stringify(rec)) + '</p></div>';
@@ -190,7 +195,7 @@
         // Raw data fallback
         if (!data.stats && !data.issues && !data.warnings && !data.score && !data.passed) {
             html += '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
-                '<h3 class="text-lg font-semibold text-[#0F0F0F]">Analysis Results</h3>' +
+                '<h3 class="text-lg font-semibold text-[#0F0F0F]">Résultats de l’analyse</h3>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto">' +
                 '<pre class="text-sm text-[#0F0F0F] font-mono whitespace-pre-wrap">' + escapeHtml(JSON.stringify(data, null, 2)) + '</pre></div></div></div>';
         }
@@ -213,11 +218,11 @@
 
     function renderOgPreview(og) {
         var html = '<div class="bg-white rounded-xl border border-gray-100 p-6">' +
-            '<h3 class="text-lg font-bold text-black mb-4">Open Graph Preview</h3>';
+            '<h3 class="text-lg font-bold text-black mb-4">Aperçu Open Graph</h3>';
         // Social card preview
         html += '<div class="max-w-lg mx-auto border border-gray-200 rounded-xl overflow-hidden mb-6">';
         if (og.image) {
-            html += '<div class="aspect-[1.91/1] bg-gray-100"><img src="' + escapeHtml(og.image) + '" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML=\'<div class=\\\'flex items-center justify-center h-full text-gray-400 text-sm\\\'>No image preview</div>\'" /></div>';
+            html += '<div class="aspect-[1.91/1] bg-gray-100"><img src="' + escapeHtml(og.image) + '" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML=\'<div class=\\\'flex items-center justify-center h-full text-gray-400 text-sm\\\'>Aucun aperçu d’image</div>\'" /></div>';
         } else {
             html += '<div class="aspect-[1.91/1] bg-gray-100 flex items-center justify-center text-gray-400 text-sm">No og:image set</div>';
         }
@@ -255,16 +260,16 @@
             '<h3 class="text-lg font-bold text-black mb-4">Images (' + images.length + ')</h3>' +
             '<table class="w-full text-sm"><thead><tr class="border-b border-gray-200">' +
             '<th class="text-left py-2 px-2 w-8">#</th>' +
-            '<th class="text-left py-2 px-2">Image URL</th>' +
-            '<th class="text-left py-2 px-2">Alt Text</th>' +
+            '<th class="text-left py-2 px-2">URL de l’image</th>' +
+            '<th class="text-left py-2 px-2">Texte alternatif</th>' +
             '<th class="text-left py-2 px-2 w-24">Status</th></tr></thead><tbody>';
         images.forEach(function (img, i) {
             var statusColor = img.status === 'good' ? 'green' : img.status === 'empty' ? 'yellow' : 'red';
             var statusLabel = img.status === 'good' ? 'Good' : img.status === 'empty' ? 'Empty' : 'Missing';
             var altDisplay = img.status === 'good' ? escapeHtml(img.alt || '') :
                 img.status === 'empty' ? '<span class="text-yellow-600 italic">alt=""</span>' :
-                '<span class="text-red-600 italic">No alt attribute</span>';
-            var urlDisplay = img.url ? escapeHtml(img.url) : '<span class="text-gray-400 italic">No src</span>';
+                '<span class="text-red-600 italic">Attribut alt absent</span>';
+            var urlDisplay = img.url ? escapeHtml(img.url) : '<span class="text-gray-400 italic">Attribut src absent</span>';
             html += '<tr class="border-b border-gray-100 hover:bg-gray-50">' +
                 '<td class="py-2 px-2 text-gray-400 text-xs">' + (i + 1) + '</td>' +
                 '<td class="py-2 px-2 font-mono text-xs break-all max-w-[350px]">' + urlDisplay + '</td>' +
@@ -294,12 +299,15 @@
 
     function renderHeadingsTree(headings) {
         var html = '<div class="bg-white rounded-xl border border-gray-100 p-6">' +
-            '<h3 class="text-lg font-bold text-black mb-4">Heading Structure</h3><div class="space-y-2">';
+            '<h3 class="text-lg font-bold text-black mb-4">Structure des titres</h3><div class="space-y-2">';
         headings.forEach(function (h) {
-            var indent = (h.level - 1) * 1.5;
-            var color = h.level === 1 ? '#00AEEF' : h.level === 2 ? '#0F0F0F' : '#666';
+            // `level` vient de la réponse serveur : le ramener à un entier 1-6
+            // avant de l'injecter, plutôt que de faire confiance à sa forme.
+            var level = Math.min(6, Math.max(1, parseInt(h.level, 10) || 1));
+            var indent = (level - 1) * 1.5;
+            var color = level === 1 ? '#00AEEF' : level === 2 ? '#0F0F0F' : '#666';
             html += '<div style="padding-left:' + indent + 'rem" class="flex items-center gap-2">' +
-                '<span class="px-2 py-0.5 rounded bg-gray-100 text-xs font-bold" style="color:' + color + '">H' + h.level + '</span>' +
+                '<span class="px-2 py-0.5 rounded bg-gray-100 text-xs font-bold" style="color:' + color + '">H' + level + '</span>' +
                 '<span class="text-sm text-gray-800">' + escapeHtml(h.text || '') + '</span></div>';
         });
         html += '</div></div>';
@@ -308,7 +316,7 @@
 
     function renderRedirectChain(chain) {
         var html = '<div class="bg-white rounded-xl border border-gray-100 p-6">' +
-            '<h3 class="text-lg font-bold text-black mb-4">Redirect Chain</h3><div class="space-y-3">';
+            '<h3 class="text-lg font-bold text-black mb-4">Chaîne de redirection</h3><div class="space-y-3">';
         chain.forEach(function (step, i) {
             html += '<div class="flex items-center gap-3 p-3 bg-[#F8F8F8] rounded-lg">' +
                 '<span class="w-8 h-8 bg-[#00AEEF] text-white rounded-full flex items-center justify-center text-sm font-bold">' + (i + 1) + '</span>' +
@@ -327,7 +335,7 @@
         var idx = text.indexOf('{');
         if (idx > 0) text = text.substring(idx);
         try { return JSON.parse(text); }
-        catch (e) { throw new Error('Invalid response from server'); }
+        catch (e) { throw new Error('Réponse invalide du serveur'); }
     }
 
     function formatLabel(key) {
