@@ -74,15 +74,15 @@
             if (inputMode === 'url') {
                 var urlEl = document.getElementById('url-input');
                 if (!urlEl || !urlEl.value.trim()) {
-                    CodeSommetTools.showError('Please enter a URL');
+                    CodeSommetTools.showError('Veuillez saisir une URL');
                     return;
                 }
-                CodeSommetTools.showError('URL analysis requires a server-side proxy. Please paste text directly for now.');
+                CodeSommetTools.showError('L’analyse par URL nécessite un traitement côté serveur. Veuillez coller votre texte directement.');
                 return;
             }
 
             if (!text.trim()) {
-                CodeSommetTools.showError('Please paste some text');
+                CodeSommetTools.showError('Veuillez coller un texte');
                 return;
             }
 
@@ -151,7 +151,7 @@
             var html = '<div id="tool-results" class="space-y-8 mt-8">';
 
             // Export button
-            html += '<div class="flex justify-end"><button id="export-csv-btn" class="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">Export to CSV</button></div>';
+            html += '<div class="flex justify-end"><button id="export-csv-btn" class="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">Exporter en CSV</button></div>';
 
             // Main stats
             html += '<div class="grid grid-cols-2 md:grid-cols-4 gap-4">';
@@ -163,7 +163,7 @@
 
             // Text Stats + Platform Limits
             html += '<div class="grid md:grid-cols-2 gap-6">';
-            html += '<div class="bg-[#F8F8F8] rounded-xl p-6"><h3 class="text-lg font-bold text-black mb-4">Text Statistics</h3><div class="space-y-3">';
+            html += '<div class="bg-[#F8F8F8] rounded-xl p-6"><h3 class="text-lg font-bold text-black mb-4">Statistiques du texte</h3><div class="space-y-3">';
             html += statRow('Paragraphs', s.paragraphs);
             html += statRow('Lines', s.lines);
             html += statRow('Avg Word Length', s.avgWordLength + ' chars');
@@ -171,7 +171,7 @@
             html += statRow('Longest Word', s.longestWord);
             html += '</div></div>';
 
-            html += '<div class="bg-[#F8F8F8] rounded-xl p-6"><h3 class="text-lg font-bold text-black mb-4">Platform Character Limits</h3><div class="space-y-3">';
+            html += '<div class="bg-[#F8F8F8] rounded-xl p-6"><h3 class="text-lg font-bold text-black mb-4">Limites de caractères par plateforme</h3><div class="space-y-3">';
             html += limitRow('Twitter/X Post', s.platformLimits.twitter);
             html += limitRow('Meta Description', s.platformLimits.metaDescription);
             html += limitRow('H1 Tag', s.platformLimits.h1Tag);

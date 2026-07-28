@@ -38,7 +38,7 @@
         actionBtn.addEventListener('click', function () {
             CodeSommetTools.hideError();
             var input = textarea.value.trim();
-            if (!input) { CodeSommetTools.showError('Please enter some code'); return; }
+            if (!input) { CodeSommetTools.showError('Veuillez saisir du code'); return; }
 
             var result;
             if (mode === 'css') result = minifyCSS(input);
@@ -96,8 +96,8 @@
                 statCard(percent + '%', 'Reduction') +
                 '</div>' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
-                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Minified Code</h3>' +
-                '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy</button></div>' +
+                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Code minifié</h3>' +
+                '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier</button></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200 overflow-x-auto">' +
                 '<pre class="text-sm text-[#0F0F0F] font-mono whitespace-pre-wrap break-all">' + escapeHtml(result) + '</pre></div></div></div></div>';
 

@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Pages d’Atterrissage IA",
+  "slug": "landing-page-generator",
+  "url": "/tools/landing-page-generator",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : Produit ou service",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Contenu généréCopier# Assistant Email IA — Trame de page d'atterrissage## Section héros**Titre :** Transformez votre activité avec Assistant Email IA**Sous-titre :** La solution tout-en-un pour gagner du temps, réduire vos coûts et accélérer votre croissance.**Bouton d'action :** Commencer gratuitement →## Section problèmeVous jonglez entre trop d'outils ? Vous perdez du temps sur des tâches manuelles ? Vous n'êtes pas seul : décrivez ici le problème concret que rencontre votre audience.## Section solutionAssistant Email IA supprime cette complexité. Notre plateforme automatise votre flux de travail pour que vous puissiez vous concentrer sur l'essentiel.## Fonctionnalités clés✅ **Prise en main immédiate** — opérationnel en quelques minutes✅ **Analyses détaillées** — suivez les indicateurs qui comptent✅ **Support réactif** — une équipe disponible pour vous accompagner✅ **Intégrations** — compatible avec vos outils existants## Preuve sociale_À remplacer par un témoignage client authentique._ Exemple de format : « Depuis que nous utilisons Assistant Email IA, notre productivité a nettement progressé. » — Prénom N., fonction, entreprise## Appel à l'action final**Prêt à vous lancer ?** Rejoignez les entreprises qui font confiance à Assistant Email IA.**[Démarrer l'essai gratuit]** — sans carte bancaire.",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : Produit ou service",
+    "otherOutput": "Contenu généréCopier# Assistant Email IA — Trame de page d'atterrissage## Section héros**Titre :** Transformez votre activité avec Assistant Email IA**Sous-titre :** La solution tout-en-un pour gagner du temps, réduire vos coûts et accélérer votre croissance.**Bouton d'action :** Commencer gratuitement →## Section problèmeVous jonglez entre trop d'outils ? Vous perdez du temps sur des tâches manuelles ? Vous n'êtes pas seul : décrivez ici le problème concret que rencontre votre audience.## Section solutionAssistant Email IA supprime cette complexité. Notre plateforme automatise votre flux de travail pour que vous puissiez vous concentrer sur l'essentiel.## Fonctionnalités clés✅ **Prise en main immédiate** — opérationnel en quelques minutes✅ **Analyses détaillées** — suivez les indicateurs qui comptent✅ **Support réactif** — une équipe disponible pour vous accompagner✅ **Intégrations** — compatible avec vos outils existants## Preuve sociale_À remplacer par un témoignage client authentique._ Exemple de format : « Depuis que nous utilisons Assistant Email IA, notre productivité a nettement progressé. » — Prénom N., fonction, entreprise## Appel à l'action final**Prêt à vous lancer ?** Rejoignez les entreprises qui font confiance à Assistant Email IA.**[Démarrer l'essai gratuit]** — sans carte bancaire."
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

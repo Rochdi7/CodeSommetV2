@@ -1,0 +1,29 @@
+{
+  "name": "Aperçu Open Graph",
+  "slug": "og-preview-generator",
+  "url": "/tools/og-preview-generator",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "2Total Tags2WarningsAperçu Open GraphNo og:image sethttps://example.comExample DomainNo descriptionMissing og:descriptionMissing og:image — social shares will have no preview imageog:titleExample Domainog:descriptionMissingog:imageMissingog:typewebsiteog:site_nameMissingog:urlhttps://example.comtwitter:imageMissing",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "2Total Tags2WarningsAperçu Open GraphNo og:image sethttps://example.comExample DomainNo descriptionMissing og:descriptionMissing og:image — social shares will have no preview imageog:titleExample Domainog:descriptionMissingog:imageMissingog:typewebsiteog:site_nameMissingog:urlhttps://example.comtwitter:imageMissing"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

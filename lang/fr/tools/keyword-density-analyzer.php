@@ -26,7 +26,7 @@ return [
     'text_16' => 'Que sont les mots-clés LSI et quel est leur rapport avec la densité de mots-clés ?',
     'text_17' => 'Les mots-clés LSI (Latent Semantic Indexing) sont des termes sémantiquement liés à votre mot-clé principal. Using LSI keywords naturally improves your content\'s topical authority without artificially inflating your primary keyword density, which helps avoid over-optimization penalties.',
     'text_18' => 'À quelle fréquence dois-je analyser ma densité de mots-clés ?',
-    'text_19' => 'Analysez la densité de mots-clés chaque fois que vous publiez du nouveau contenu or make significant updates to existing pages. Regular analysis helps identify over-optimization issues, ensures natural keyword distribution, and validates that your content aligns with target search queries.',
+    'text_19' => 'Analysez la densité de mots-clés chaque fois que vous publiez du nouveau contenu ou que vous modifiez significativement des pages existantes. Une analyse régulière permet de repérer les problèmes de sur-optimisation, d\'assurer une répartition naturelle des mots-clés et de vérifier que votre contenu correspond bien aux requêtes ciblées.',
     'text_20' => 'Ma densité de mots-clés est supérieure à 3% - comment la corriger ?',
     'text_21' => 'Remplacez certaines occurrences de mots-clés par des synonymes, des pronoms ou des termes connexes. Expand your content to dilute keyword concentration naturally. Focus on answering user questions comprehensively rather than repeating the same keyword. Use variations and long-tail versions of your target keyword.',
     'text_22' => 'Vous avez encore des questions ?',

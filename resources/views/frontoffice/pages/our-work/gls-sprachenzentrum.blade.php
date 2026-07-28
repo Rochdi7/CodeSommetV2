@@ -47,7 +47,7 @@
                     </div>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                         style="font-family:var(--font-heading)">GLS Sprachenzentrum</h1>
-                    <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Study Abroad Ausbildung</p>
+                    <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Deutsch Sprachenzentrum</p>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">
                         {{ __('our-work/gls-sprachenzentrum.text_2') }}</p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
@@ -459,7 +459,7 @@
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/gls-sprachenzentrum.text_146') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Portail Emploi IA</button></div>
+                    style="transform:scale(0.95)">Tableau de Bord Admin</button></div>
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
@@ -661,8 +661,8 @@
                 </div>
                 <div class="max-w-4xl mx-auto mt-16 mb-12">
                     <div
-                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-10 border-2 border-[#00AEEF]/20 text-center">
-                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#00AEEF]/10 mb-5">
+                        class="analyzer-cta rounded-3xl p-8 md:p-10 text-center">
+                        <div class="analyzer-cta__icon inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-[#00AEEF]"
@@ -673,9 +673,9 @@
                                 <path d="M8 17v-3"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[var(--text-primary)]"
+                        <h3 class="analyzer-cta__title text-2xl md:text-3xl font-bold mb-3"
                             style="font-family:var(--font-heading)">{{ __('our-work/gls-sprachenzentrum.text_32') }}</h3>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                        <p class="analyzer-cta__text text-base md:text-lg mb-6 max-w-2xl mx-auto">
                             {{ __('our-work/gls-sprachenzentrum.text_33') }} <!-- -->GLS
                             Sprachenzentrum<!-- -->{{ __('our-work/gls-sprachenzentrum.text_34') }}</p><a
                             class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105 text-sm md:text-base"
@@ -705,11 +705,11 @@
                                 <div class="flex items-center gap-3">
                                     <div
                                         class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                                        <span class="text-white font-bold text-base md:text-lg">U</span>
+                                        <span class="text-white font-bold text-base md:text-lg">R</span>
                                     </div>
                                     <div>
-                                        <p class="font-bold text-white text-sm md:text-base">Uday Yatnalli</p>
-                                        <p class="text-white/90 text-xs md:text-sm">Fondateur &amp; PDG, GLS Sprachenzentrum</p>
+                                        <p class="font-bold text-white text-sm md:text-base">Rafiq</p>
+                                        <p class="text-white/90 text-xs md:text-sm">Administration, GLS Sprachenzentrum</p>
                                     </div>
                                 </div>
                             </div>

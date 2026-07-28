@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Densité de Mots-Clés",
+  "slug": "keyword-density-analyzer",
+  "url": "/tools/keyword-density-analyzer",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "100/100Analyse réussie18Total Words14Unique Words142Content Length",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "100/100Analyse réussie18Total Words14Unique Words142Content Length"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

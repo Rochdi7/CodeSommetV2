@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Score de Lisibilité",
+  "slug": "readability-analyzer",
+  "url": "/tools/readability-analyzer",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez coller un texte",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "60.5Indice de lisibilité Flesch8th-9th Grade (Standard)7.2Flesch-Kincaid Grade9.9SMOG Index9.6Coleman-Liau1 minReading TimeStatistiques du texteWords47Sentences5Avg Words/Sentence9.4Complex Words7 (15%)Recommendations• Good readability! Content is accessible to a wide audience",
+    "errorVisible": false,
+    "errorText": "Veuillez coller un texte",
+    "otherOutput": "60.5Indice de lisibilité Flesch8th-9th Grade (Standard)7.2Flesch-Kincaid Grade9.9SMOG Index9.6Coleman-Liau1 minReading TimeStatistiques du texteWords47Sentences5Avg Words/Sentence9.4Complex Words7 (15%)Recommendations• Good readability! Content is accessible to a wide audience"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

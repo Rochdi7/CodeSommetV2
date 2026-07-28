@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Balises Hreflang",
+  "slug": "hreflang-generator",
+  "url": "/tools/hreflang-generator",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez ajouter au moins 2 versions linguistiques avec leur code de langue et leur URL",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Balise x-default manquante. Recommandée comme langue de repli.2Versions linguistiquesNonBalise x-defaultBalises HTML (pour <head>)Copier<link rel=\"alternate\" hreflang=\"fr-FR\" href=\"https://example.com/fr/page\" />\n<link rel=\"alternate\" hreflang=\"en-US\" href=\"https://example.com/en/page\" />En-têtes HTTP (alternative)CopierLink: <https://example.com/fr/page>; rel=\"alternate\"; hreflang=\"fr-FR\"\nLink: <https://example.com/en/page>; rel=\"alternate\"; hreflang=\"en-US\"",
+    "errorVisible": false,
+    "errorText": "Veuillez ajouter au moins 2 versions linguistiques avec leur code de langue et leur URL",
+    "otherOutput": "Balise x-default manquante. Recommandée comme langue de repli.2Versions linguistiquesNonBalise x-defaultBalises HTML (pour <head>)Copier<link rel=\"alternate\" hreflang=\"fr-FR\" href=\"https://example.com/fr/page\" />\n<link rel=\"alternate\" hreflang=\"en-US\" href=\"https://example.com/en/page\" />En-têtes HTTP (alternative)CopierLink: <https://example.com/fr/page>; rel=\"alternate\"; hreflang=\"fr-FR\"\nLink: <https://example.com/en/page>; rel=\"alternate\"; hreflang=\"en-US\"\n<link rel=\"alternate\" hreflang=\"fr-FR\" href=\"https://example.com/fr/page\" />\n<link rel=\"alternate\" hreflang=\"en-US\" href=\"https://example.com/en/page\" />\nLink: <https://example.com/fr/page>; rel=\"alternate\"; hreflang=\"fr-FR\"\nLink: <https://example.com/en/page>; rel=\"alternate\"; hreflang=\"en-US\""
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

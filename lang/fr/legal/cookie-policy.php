@@ -116,7 +116,7 @@ return [
     'text_106' => 'Si vous avez des questions ou des préoccupations concernant notre utilisation des cookies, veuillez nous contacter :',
     'text_107' => 'Agence Premium de Développement Web',
     'text_108' => 'Téléphone :',
-    'text_109' => 'Téléphone :',
+    'text_109' => 'WhatsApp :',
     'text_110' => 'Siège social :',
     'text_111' => 'Opérations :',
     'text_112' => 'Pour les demandes relatives aux cookies, veuillez inclure "Politique de Cookies" dans l\'objet de votre e-mail.',

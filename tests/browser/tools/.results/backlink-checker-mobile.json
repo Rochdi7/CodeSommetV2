@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Backlinks",
+  "slug": "backlink-checker",
+  "url": "/tools/backlink-checker",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : Domaine",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "50/100Basic domain analysis (full backlink data requires Moz API key)example.comDomainConfigure MOZ_API_KEY in .env for full backlink analysisNoteRecommandationsAdd MOZ_ACCESS_ID and MOZ_SECRET_KEY to .env for Domain Authority, Page Authority, and backlink dataAlternative: integrate Ahrefs or Majestic API for comprehensive backlink analysis",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : Domaine",
+    "otherOutput": "50/100Basic domain analysis (full backlink data requires Moz API key)example.comDomainConfigure MOZ_API_KEY in .env for full backlink analysisNoteRecommandationsAdd MOZ_ACCESS_ID and MOZ_SECRET_KEY to .env for Domain Authority, Page Authority, and backlink dataAlternative: integrate Ahrefs or Majestic API for comprehensive backlink analysis"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

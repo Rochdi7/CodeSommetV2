@@ -1,0 +1,29 @@
+{
+  "name": "Validateur Robots.txt",
+  "slug": "robots-validator",
+  "url": "/tools/robots-validator",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "0/100Problèmes détectésProblèmes détectéserrorrobots.txt could not be retrieved.",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "0/100Problèmes détectésProblèmes détectéserrorrobots.txt could not be retrieved."
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

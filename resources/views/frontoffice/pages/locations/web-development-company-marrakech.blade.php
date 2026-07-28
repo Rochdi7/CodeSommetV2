@@ -1251,8 +1251,8 @@
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="max-w-4xl mx-auto">
                     <div
-                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-12 border-2 border-[#00AEEF]/20 text-center">
-                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#00AEEF]/10 mb-6">
+                        class="analyzer-cta rounded-3xl p-8 md:p-12 text-center">
+                        <div class="analyzer-cta__icon inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"
@@ -1262,10 +1262,10 @@
                                 <path d="M2 12h20"></path>
                             </svg>
                         </div>
-                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[var(--text-primary)]"
+                        <h2 class="analyzer-cta__title text-2xl md:text-3xl lg:text-4xl font-bold mb-4"
                             style="font-family:var(--font-heading)">
                             {{ __('locations/web-development-company-marrakech.text_37') }}</h2>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                        <p class="analyzer-cta__text text-base md:text-lg mb-6 max-w-2xl mx-auto">
                             {{ __('locations/web-development-company-marrakech.ml_1119') }}</p>
                         <div class="flex flex-wrap gap-3 justify-center mb-4">
                             <div class="flex items-center gap-2 text-sm text-[var(--text-secondary)]">

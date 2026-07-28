@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Étude de Cas Dental Pro - Boutique Médicale | CodeSommet')
-@section('meta_description', 'Plateforme de santé full-stack convertissant plus de 100K abonnés sur les réseaux sociaux en système de réservation professionnel. Comprend des rendez-vous en temps réel, des paiements UPI, la génération de contenu IA et l\'intégration Instagram.')
-@section('meta_keywords', 'développement site web santé,plateforme réservation médicale,développement système rendez-vous,application React santé,Supabase temps réel,technologie de santé')
-@section('og_title', 'Étude de Cas Dental Pro - Boutique Médicale')
-@section('og_description', 'Plateforme de santé full-stack convertissant plus de 100K abonnés sur les réseaux sociaux en système de réservation professionnel. Comprend des rendez-vous en temps réel, des paiements UPI, la génération de contenu IA et l\'intégration Instagram.')
-@section('twitter_description', 'Plateforme de santé full-stack convertissant plus de 100K abonnés sur les réseaux sociaux en système de réservation professionnel. Comprend des rendez-vous en temps réel, des paiements UPI, la génération de contenu IA et l\'intégration Instagram.')
+@section('title', 'Étude de Cas Dental Pro - E-commerce & CMS Dentaire | CodeSommet')
+@section('meta_description', 'Étude de cas Dental Pro : plateforme e-commerce et CMS pour le secteur dentaire, avec vitrine client, catalogue produits, blog et backoffice unifié.')
+@section('meta_keywords', 'développement e-commerce dentaire,plateforme CMS dentaire,boutique en ligne matériel dentaire,backoffice administration,système de réservation en ligne,catalogue produits dentaires')
+@section('og_title', 'Étude de Cas Dental Pro - E-commerce & CMS Dentaire')
+@section('og_description', 'Plateforme e-commerce et de gestion de contenu conçue pour le secteur dentaire. Vitrine client soignée, catalogue produits, publication d\'articles, réservations en ligne et backoffice unifié pour piloter toute la présence digitale depuis un seul tableau de bord.')
+@section('twitter_description', 'Plateforme e-commerce et de gestion de contenu conçue pour le secteur dentaire. Vitrine client soignée, catalogue produits, publication d\'articles, réservations en ligne et backoffice unifié pour piloter toute la présence digitale depuis un seul tableau de bord.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -31,11 +31,11 @@
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
             <div class="space-y-4 md:space-y-6">
                 <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20" style="transform:scale(0.9)">
-                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Santé</span>
+                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">E-commerce &amp; CMS</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style="font-family:var(--font-heading)">Dental Pro</h1>
-                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Boutique Médicale</p>
-                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Système complet de réservation de rendez-vous médicaux pour Dr. Geeta S K, convertissant plus de 100K abonnés sur les réseaux sociaux en une plateforme de santé numérique professionnelle avec réservation en temps réel et contenu généré par IA</p>
+                <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Boutique Dentaire en Ligne</p>
+                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Plateforme e-commerce et de gestion de contenu complète pour le secteur dentaire : une vitrine client soignée pour présenter les produits et publier des articles, adossée à un backoffice puissant qui pilote commandes, contenus et réservations depuis un seul tableau de bord</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                     <div class="group relative p-4 bg-white rounded-2xl border border-gray-100 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-center gap-3">
@@ -58,7 +58,7 @@
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                 </svg></div>
                             <div class="min-w-0">
-                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance des Prospects</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance des Commandes</p>
                                 <p class="text-sm font-bold text-gray-900 truncate">500+</p>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Le Défi</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Dr. Geeta S K, gynécologue et spécialiste de la fertilité, avait une audience massive sur les réseaux sociaux (100K+ abonnés Instagram, 20K+ abonnés YouTube) mais manquait d&#x27;un système de réservation professionnel. Les patients devaient envoyer des messages sur Instagram ou appeler, créant une charge administrative et des opportunités de réservation manquées. Le défi était de convertir cette audience engagée en un système de réservation de rendez-vous rationalisé tout en maintenant la touche personnelle qui a bâti son succès sur les réseaux sociaux.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Dental Pro devait réunir dans un seul outil ce qui était jusque-là éclaté : un catalogue de produits dentaires, un espace éditorial pour publier des articles, et une prise de réservations en ligne. Les équipes jonglaient entre plusieurs interfaces, sans vision consolidée des commandes ni possibilité de mettre à jour rapidement les fiches produits ou les contenus. Le défi était de bâtir une plateforme e-commerce et CMS à la hauteur des standards du secteur dentaire &mdash; cliniques, distributeurs de matériel et marques de santé &mdash; avec une vitrine irréprochable côté client et une administration réellement utilisable au quotidien.</p>
             </div>
             <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <div class="flex items-center gap-3 mb-6">
@@ -117,7 +117,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Notre Solution</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé une plateforme de santé complète basée sur React avec réservation de rendez-vous en temps réel, flux de consultation spécifiques aux services, intégration de paiement UPI et un système de génération de contenu alimenté par l&#x27;IA. La plateforme comprend un tableau de bord administrateur professionnel pour la gestion des rendez-vous, des confirmations par e-mail automatisées, l&#x27;intégration dynamique des flux Instagram/YouTube, et un système de blog optimisé SEO avec génération automatique de contenu ciblant les mots-clés locaux. Construit avec React 18, TypeScript, Vite et Supabase pour les capacités temps réel.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé une plateforme complète associant une vitrine e-commerce performante et un backoffice d&#x27;administration unifié. Côté client : catalogue de produits dentaires avec fiches détaillées, tunnel d&#x27;achat fluide, blog éditorial optimisé SEO et système de réservation en ligne. Côté administration : un tableau de bord unique permettant de gérer produits, stocks, commandes, articles et réservations, avec gestion des rôles et suivi de l&#x27;activité en temps réel. L&#x27;ensemble est construit sur React 18, TypeScript, Vite et Supabase, pour une interface responsive, rapide et évolutive.</p>
             </div>
         </div>
         <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -128,7 +128,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Réservation de rendez-vous en temps réel avec disponibilité des créneaux</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Catalogue de produits dentaires avec fiches détaillées</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -136,7 +136,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Flux de réservation spécifiques (4 types de consultation)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Boutique en ligne et tunnel d&#x27;achat optimisé</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -144,7 +144,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Intégration de paiement UPI avec QR codes dynamiques</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion des commandes et suivi des statuts</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -152,7 +152,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Tableau de bord administrateur avec suivi des rendez-vous en direct</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Backoffice unifié avec tableau de bord unique</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -160,7 +160,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Génération de blog alimentée par IA (Claude Sonnet 4)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion de contenu (CMS) et publication d&#x27;articles</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -168,7 +168,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Intégration dynamique des flux Instagram &amp; YouTube</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Système de réservation en ligne intégré</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -176,7 +176,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Confirmations par e-mail automatisées via Resend API</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion des stocks, catégories et mises en avant</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -184,7 +184,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Optimisation SEO locale avec données structurées</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Optimisation SEO avec données structurées</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -192,7 +192,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Design responsive mobile-first avec thème médical</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Design responsive mobile-first au ton professionnel</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -200,7 +200,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Calendrier de contenu automatisé avec GitHub Actions</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Performances soignées et temps de chargement maîtrisés</p>
                     </div>
                 </div>
             </div>
@@ -231,7 +231,7 @@
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>intégrations
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Resend API</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">OpenRouter (Claude)</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">FAL AI</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Apify Scrapers</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">UPI Payment</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">DataFast Analytics</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Resend API</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">OpenRouter (Claude)</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">FAL AI</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Apify Scrapers</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Paiement en ligne</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">DataFast Analytics</span></div>
                 </div>
             </div>
         </div>
@@ -243,9 +243,9 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3" style="font-family:var(--font-heading)">Aperçu de l'Interface</h2>
             <p class="text-gray-600 text-base md:text-lg">Captures d'écran à venir</p>
         </div>
-        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil &amp; Réservation</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord Admin</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Calculateur IMC</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Suivi d'Ovulation</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Pages de Services</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Système de Blog</button></div>
+        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil &amp; Boutique</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord Admin</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Fiche Produit</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Gestion des Commandes</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Pages Produits</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Système de Blog</button></div>
         <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
-            <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/dental-pro/homepage.webp') }}" alt="Accueil &amp; Réservation" class="w-full h-full object-cover" /></div>
+            <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/dental-pro/homepage.webp') }}" alt="Accueil &amp; Boutique" class="w-full h-full object-cover" /></div>
         </div>
         <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
             <div class="bg-[#F5F5F5] rounded-2xl md:rounded-3xl p-6 md:p-8 text-center">
@@ -296,7 +296,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">500+</p>
-                            <p class="text-xs text-gray-600 font-medium">Augmentation des Prospects</p>
+                            <p class="text-xs text-gray-600 font-medium">Commandes Traitées</p>
                         </div>
                     </div>
                 </div>
@@ -347,8 +347,8 @@
                                 <circle cx="4" cy="20" r="2"></circle>
                             </svg></div>
                         <div class="flex-1 min-w-0">
-                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">500+ patients</p>
-                            <p class="text-xs text-gray-600 font-medium">Médecins</p>
+                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">500+ références</p>
+                            <p class="text-xs text-gray-600 font-medium">Références Produits</p>
                         </div>
                     </div>
                 </div>
@@ -360,7 +360,7 @@
                                 <line x1="12" x2="12" y1="17" y2="21"></line>
                             </svg></div>
                         <div class="flex-1 min-w-0">
-                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">100K+ abonnés</p>
+                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">Note client</p>
                             <p class="text-xs text-gray-600 font-medium">Satisfaction</p>
                         </div>
                     </div>
@@ -387,12 +387,12 @@
                         <div class="px-5 md:px-6 py-6 md:py-7"><svg class="w-8 h-8 md:w-10 md:h-10 text-white/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
                             </svg>
-                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->La plateforme a transformé ma façon de me connecter avec les patients. Mes 100K+ abonnés Instagram réservent désormais facilement leurs rendez-vous en ligne. Le système de blog automatisé attire de nouveaux patients grâce au SEO tandis que la réservation en temps réel élimine les maux de tête administratifs. C&#x27;est exactement ce dont mon cabinet avait besoin.<!-- -->&quot;</blockquote>
+                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->La plateforme a changé notre façon de travailler. La boutique met enfin nos produits en valeur comme ils le méritent, et le backoffice nous permet de tout piloter &mdash; catalogue, commandes, articles et réservations &mdash; depuis un seul tableau de bord. Nos clients trouvent ce qu&#x27;ils cherchent en quelques clics, et nous mettons le site à jour nous-mêmes en quelques minutes.<!-- -->&quot;</blockquote>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">D</span></div>
                                 <div>
-                                    <p class="font-bold text-white text-sm md:text-base">Dr. Geeta S K</p>
-                                    <p class="text-white/90 text-xs md:text-sm">Gynécologue &amp; Spécialiste de la Fertilité, Dental Pro</p>
+                                    <p class="font-bold text-white text-sm md:text-base">Samir</p>
+                                    <p class="text-white/90 text-xs md:text-sm">Fondateur, Dental Pro</p>
                                 </div>
                             </div>
                         </div>

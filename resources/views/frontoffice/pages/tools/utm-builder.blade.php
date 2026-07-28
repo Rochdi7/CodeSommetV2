@@ -49,7 +49,7 @@
     </section>
     <section class="max-w-5xl mx-auto px-4 py-12">
         <div class="space-y-8">
-            <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
+            <div id="utm-form-card" class="bg-white rounded-2xl border-2 border-gray-200 p-8">
                 <h3 class="text-lg font-semibold text-gray-900 mb-6">{{ __('tools/utm-builder.text_4') }}</h3>
                 <div class="space-y-6">
                     <div class="space-y-2"><label
@@ -64,7 +64,7 @@
                                     <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
                                     <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                     <line x1="8" x2="16" y1="12" y2="12"></line>
-                                </svg></div><input type="url" placeholder="https://example.com/page" required=""
+                                </svg></div><input type="url" id="utm-url" placeholder="https://example.com/page" required=""
                                 class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11"
                                 value="" />
                         </div>
@@ -75,7 +75,7 @@
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_149') }}<span
                                     class="text-[#00AEEF] ml-1">*</span></label>
-                            <div class="relative"><input type="text" placeholder="google" required=""
+                            <div class="relative"><input type="text" id="utm-source" placeholder="google" required=""
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_7') }}</p>
@@ -83,7 +83,7 @@
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_150') }}<span
                                     class="text-[#00AEEF] ml-1">*</span></label>
-                            <div class="relative"><input type="text" placeholder="cpc" required=""
+                            <div class="relative"><input type="text" id="utm-medium" placeholder="cpc" required=""
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_154') }}</p>
@@ -91,7 +91,7 @@
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_151') }}<span
                                     class="text-[#00AEEF] ml-1">*</span></label>
-                            <div class="relative"><input type="text" placeholder="summer_sale" required=""
+                            <div class="relative"><input type="text" id="utm-campaign" placeholder="summer_sale" required=""
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_155') }}</p>
@@ -101,14 +101,14 @@
                         <p class="text-sm font-medium text-gray-900">{{ __('tools/utm-builder.text_8') }}</p>
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_152') }}</label>
-                            <div class="relative"><input type="text" placeholder="ai+websites"
+                            <div class="relative"><input type="text" id="utm-term" placeholder="ai+websites"
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_9') }}</p>
                         </div>
                         <div class="space-y-2"><label
                                 class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_153') }}</label>
-                            <div class="relative"><input type="text" placeholder="ad_variant_1"
+                            <div class="relative"><input type="text" id="utm-content" placeholder="ad_variant_1"
                                     class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60"
                                     value="" /></div>
                             <p class="text-sm text-gray-500">{{ __('tools/utm-builder.text_10') }}</p>
@@ -116,14 +116,26 @@
                     </div>
                     <div class="pt-4 border-t border-gray-200">
                         <p class="text-sm font-medium text-gray-900 mb-3">{{ __('tools/utm-builder.text_11') }}</p>
-                        <div class="flex flex-wrap gap-2"><button
+                        <div class="flex flex-wrap gap-2"><button type="button" data-utm-preset
+                                data-utm-source="google" data-utm-medium="cpc" data-utm-campaign="google_ads"
                                 class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">Campagne
-                                Google Ads</button><button
-                                class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_12') }}</button><button
+                                Google Ads</button><button type="button" data-utm-preset
+                                data-utm-source="newsletter" data-utm-medium="email" data-utm-campaign="newsletter"
+                                class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_12') }}</button><button type="button" data-utm-preset
+                                data-utm-source="facebook" data-utm-medium="social" data-utm-campaign="social_post"
                                 class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">{{ __('tools/utm-builder.text_13') }}</button>
                         </div>
                     </div>
-                    <div class="flex gap-3"><button
+                    <div class="flex gap-3"><button id="utm-generate-btn" type="button"
+                            class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full flex-1"
+                            tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-2 mr-2 h-4 w-4"
+                                aria-hidden="true">
+                                <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+                                <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+                                <line x1="8" x2="16" y1="12" y2="12"></line>
+                            </svg>{{ __('tools/utm-builder.action_generate') }}</button><button id="utm-reset-btn" type="button"
                             class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] border border-[var(--border-default)] text-[var(--text-primary)] bg-transparent hover:border-[var(--color-primary-orange)] hover:text-[var(--color-primary-orange)] hover:bg-[var(--hover-primary)] h-10 px-6 text-base rounded-full flex-1"
                             tabindex="0">{{ __('tools/utm-builder.text_14') }}</button></div>
                 </div>

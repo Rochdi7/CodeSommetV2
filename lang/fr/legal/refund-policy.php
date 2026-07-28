@@ -154,7 +154,7 @@ return [
     'text_144' => 'Si vous avez des questions sur notre politique de remboursement, avez besoin de demander un remboursement ou souhaitez discuter de votre situation spécifique, veuillez nous contacter :',
     'text_145' => 'Agence Premium de Développement Web',
     'text_146' => 'Téléphone :',
-    'text_147' => 'Téléphone :',
+    'text_147' => 'WhatsApp :',
     'text_148' => 'Siège social :',
     'text_149' => 'Opérations :',
     'text_150' => 'Pour les demandes de remboursement, veuillez utiliser l\'objet "Demande de remboursement - [Votre nom]" pour un traitement plus rapide.',

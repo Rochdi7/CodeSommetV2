@@ -1,0 +1,29 @@
+{
+  "name": "Validateur de Sitemap",
+  "slug": "sitemap-validator",
+  "url": "/tools/sitemap-validator",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du sitemap",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "0/100Problèmes détectésProblèmes détectéserrorSitemap not found at https://example.com/sitemap.xml",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du sitemap",
+    "otherOutput": "0/100Problèmes détectésProblèmes détectéserrorSitemap not found at https://example.com/sitemap.xml"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

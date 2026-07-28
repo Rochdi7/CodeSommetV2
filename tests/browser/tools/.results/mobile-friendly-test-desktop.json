@@ -1,0 +1,29 @@
+{
+  "name": "Test de Compatibilité Mobile",
+  "slug": "mobile-friendly-test",
+  "url": "/tools/mobile-friendly-test",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "BAnalyse réussie80/100Score4Checks Run",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "BAnalyse réussie80/100Score4Checks Run"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

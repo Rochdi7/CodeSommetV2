@@ -17,7 +17,7 @@
             CodeSommetTools.hideError();
             var html = textarea.value.trim();
             if (!html) {
-                CodeSommetTools.showError('Please paste some HTML code');
+                CodeSommetTools.showError('Veuillez coller du code HTML');
                 return;
             }
 
@@ -88,8 +88,8 @@
             if (r.links.length > 0) {
                 html += '<div class="bg-white rounded-xl border border-gray-100 p-6 overflow-x-auto">' +
                     '<div class="flex items-center justify-between mb-4">' +
-                    '<h3 class="text-lg font-bold text-black">Link Analysis</h3>' +
-                    '<button id="export-csv-btn" class="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 text-sm font-medium text-gray-700">Export CSV</button></div>' +
+                    '<h3 class="text-lg font-bold text-black">Analyse des liens</h3>' +
+                    '<button id="export-csv-btn" class="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 text-sm font-medium text-gray-700">Exporter en CSV</button></div>' +
                     '<table class="w-full text-sm"><thead><tr class="border-b border-gray-200">' +
                     '<th class="text-left py-3 px-2 font-medium text-gray-600">URL</th>' +
                     '<th class="text-left py-3 px-2 font-medium text-gray-600">Text</th>' +

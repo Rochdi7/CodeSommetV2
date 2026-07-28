@@ -1,0 +1,939 @@
+[
+  {
+    "name": "Analyseur de Site Web",
+    "slug": "website-analyzer",
+    "url": "/tools/website-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Structure de Titres",
+    "slug": "heading-analyzer",
+    "url": "/tools/heading-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Densité de Mots-Clés",
+    "slug": "keyword-density-analyzer",
+    "url": "/tools/keyword-density-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-05 : FAQ traduite",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Liens Cassés",
+    "slug": "broken-link-checker",
+    "url": "/tools/broken-link-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-04 : débit limité à 5/min",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Redirections",
+    "slug": "redirect-checker",
+    "url": "/tools/redirect-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-04 : débit limité à 5/min",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Backlinks",
+    "slug": "backlink-checker",
+    "url": "/tools/backlink-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Certificat SSL",
+    "slug": "ssl-certificate-checker",
+    "url": "/tools/ssl-certificate-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Test de Compatibilité Mobile",
+    "slug": "mobile-friendly-test",
+    "url": "/tools/mobile-friendly-test",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-05 : 3 FAQ traduites",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur Core Web Vitals",
+    "slug": "core-web-vitals-checker",
+    "url": "/tools/core-web-vitals-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur d’Autorité de Domaine",
+    "slug": "domain-authority-checker",
+    "url": "/tools/domain-authority-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-01 : carte ajoutée sur /tools",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Santé du Domaine",
+    "slug": "domain-health-checker",
+    "url": "/tools/domain-health-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-04 : débit limité à 5/min",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur d’URL Canonique",
+    "slug": "canonical-checker",
+    "url": "/tools/canonical-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Texte Alt d’Images",
+    "slug": "image-alt-analyzer",
+    "url": "/tools/image-alt-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Compression d’Images",
+    "slug": "image-compression-analyzer",
+    "url": "/tools/image-compression-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Liens Internes",
+    "slug": "internal-link-analyzer",
+    "url": "/tools/internal-link-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Vitesse de Page",
+    "slug": "page-speed-analyzer",
+    "url": "/tools/page-speed-analyzer",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Validateur Robots.txt",
+    "slug": "robots-validator",
+    "url": "/tools/robots-validator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Validateur de Sitemap",
+    "slug": "sitemap-validator",
+    "url": "/tools/sitemap-validator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Préparation du Site",
+    "slug": "website-readiness-checker",
+    "url": "/tools/website-readiness-checker",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-04 : débit limité à 5/min",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Aperçu Open Graph",
+    "slug": "og-preview-generator",
+    "url": "/tools/og-preview-generator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-05 : FAQ traduite",
+      "BUG-02 : libellés FR",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Balises Meta IA",
+    "slug": "meta-tag-generator",
+    "url": "/tools/meta-tag-generator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-11 : rendu du résultat",
+      "BUG-05 : FAQ traduites",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Titres de Blog IA",
+    "slug": "blog-title-generator",
+    "url": "/tools/blog-title-generator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-11 : rendu du résultat",
+      "BUG-12 : trames en français",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Scripts Chatbot IA",
+    "slug": "chatbot-script-generator",
+    "url": "/tools/chatbot-script-generator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-12 : script généré en français",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Pages d’Atterrissage IA",
+    "slug": "landing-page-generator",
+    "url": "/tools/landing-page-generator",
+    "type": "api",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-12 : trame FR, chiffres inventés retirés",
+      "BUG-15 : XSS corrigée dans le rendu des résultats (stats, grade)",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Encodeur/Décodeur Base64",
+    "slug": "base64-encoder",
+    "url": "/tools/base64-encoder",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Formateur/Validateur JSON",
+    "slug": "json-formatter",
+    "url": "/tools/json-formatter",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Minificateur CSS",
+    "slug": "css-minifier",
+    "url": "/tools/css-minifier",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Minificateur HTML/CSS/JS",
+    "slug": "html-minifier",
+    "url": "/tools/html-minifier",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Convertisseur HTML vers Texte Brut",
+    "slug": "html-to-text",
+    "url": "/tools/html-to-text",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Convertisseur de Casse de Texte",
+    "slug": "text-case-converter",
+    "url": "/tools/text-case-converter",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [
+      "Empty input produced a result instead of a validation message."
+    ],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS",
+    "notes": "Saisie vide → résultat : comportement voulu (valeurs par défaut ou conteneur masqué), vérifié manuellement."
+  },
+  {
+    "name": "Compteur de Mots et Caractères",
+    "slug": "word-counter",
+    "url": "/tools/word-counter",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Analyseur de Score de Lisibilité",
+    "slug": "readability-analyzer",
+    "url": "/tools/readability-analyzer",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-06 : formulaire manquant ajouté",
+      "BUG-05 : fragment anglais retiré",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Lorem Ipsum",
+    "slug": "lorem-ipsum-generator",
+    "url": "/tools/lorem-ipsum-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [
+      "Empty input produced a result instead of a validation message."
+    ],
+    "fixes": [
+      "BUG-05 : 4 FAQ traduites",
+      "BUG-02 : libellés FR",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS",
+    "notes": "Saisie vide → résultat : comportement voulu (valeurs par défaut ou conteneur masqué), vérifié manuellement."
+  },
+  {
+    "name": "Générateur de Slug URL",
+    "slug": "url-slug-generator",
+    "url": "/tools/url-slug-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-14 : translittération des accents",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Code QR",
+    "slug": "qr-code-generator",
+    "url": "/tools/qr-code-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Palette de Couleurs",
+    "slug": "color-palette-generator",
+    "url": "/tools/color-palette-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-02 : libellés FR + pluriels",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Constructeur de Paramètres UTM",
+    "slug": "utm-builder",
+    "url": "/tools/utm-builder",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-08 : identifiants de champs + bouton de génération",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Balisage Schema",
+    "slug": "schema-generator",
+    "url": "/tools/schema-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Schema FAQ",
+    "slug": "faq-schema-generator",
+    "url": "/tools/faq-schema-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Schema Entreprise Locale",
+    "slug": "local-business-schema",
+    "url": "/tools/local-business-schema",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-07 : recherche de champs FR/EN",
+      "BUG-05 : FAQ traduites",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Balises Hreflang",
+    "slug": "hreflang-generator",
+    "url": "/tools/hreflang-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-09 : identifiants requis + data-remove-row",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur de Sitemap XML",
+    "slug": "xml-sitemap-generator",
+    "url": "/tools/xml-sitemap-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Générateur Robots.txt",
+    "slug": "robots-txt-generator",
+    "url": "/tools/robots-txt-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [
+      "Empty input produced a result instead of a validation message."
+    ],
+    "fixes": [
+      "BUG-10 : identifiants requis + data-remove-row",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS",
+    "notes": "Saisie vide → résultat : comportement voulu (valeurs par défaut ou conteneur masqué), vérifié manuellement."
+  },
+  {
+    "name": "Générateur de Redirection Meta Refresh",
+    "slug": "meta-refresh-generator",
+    "url": "/tools/meta-refresh-generator",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-05 : 3 FAQ traduites",
+      "BUG-02 : libellés FR",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Liens Nofollow",
+    "slug": "nofollow-link-checker",
+    "url": "/tools/nofollow-link-checker",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-05 : 7 FAQ traduites",
+      "BUG-02 : libellés FR",
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  },
+  {
+    "name": "Vérificateur de Contenu Dupliqué",
+    "slug": "duplicate-content-checker",
+    "url": "/tools/duplicate-content-checker",
+    "type": "client",
+    "desktop": "pass",
+    "mobile": "pass",
+    "validInput": "pass",
+    "invalidInput": "pass",
+    "xss": "pass",
+    "network": "pass",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "bugs": [],
+    "fixes": [
+      "BUG-13 : accordéon FAQ (gestionnaire dupliqué retiré)"
+    ],
+    "status": "PASS"
+  }
+]

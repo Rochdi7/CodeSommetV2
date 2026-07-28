@@ -59,11 +59,11 @@
 
         function handleFile(file) {
             if (!file.type.startsWith('image/')) {
-                CodeSommetTools.showError('Please upload an image file (JPG, PNG, WebP, SVG)');
+                CodeSommetTools.showError('Veuillez importer un fichier image (JPG, PNG, WebP, SVG)');
                 return;
             }
             if (file.size > 5 * 1024 * 1024) {
-                CodeSommetTools.showError('File too large. Maximum size is 5MB.');
+                CodeSommetTools.showError('Fichier trop volumineux. Taille maximale : 5 Mo.');
                 return;
             }
             selectedFile = file;
@@ -101,7 +101,7 @@
         // Generate button click
         generateBtn.addEventListener('click', function () {
             if (!selectedFile) {
-                CodeSommetTools.showError('Please upload an image first');
+                CodeSommetTools.showError('Veuillez d’abord importer une image');
                 return;
             }
             CodeSommetTools.hideError();
@@ -124,7 +124,7 @@
                 };
                 img.onerror = function () {
                     CodeSommetTools.setLoading(false);
-                    CodeSommetTools.showError('Failed to load image');
+                    CodeSommetTools.showError('Impossible de charger l’image');
                 };
                 img.src = e.target.result;
             };
@@ -255,7 +255,7 @@
         }
 
         function getColorUsage(idx) {
-            var usages = ['Primary Brand Color', 'Secondary Color', 'Accent Color', 'Background Tint', 'Text/UI Color', 'Highlight Color'];
+            var usages = ['Couleur principale de marque', 'Couleur secondaire', 'Couleur d’accentuation', 'Teinte de fond', 'Couleur de texte / UI', 'Couleur de mise en avant'];
             return usages[idx] || 'Supporting Color';
         }
 
@@ -267,14 +267,14 @@
 
             // Image + palette preview
             html += '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8">' +
-                '<h3 class="text-lg font-bold text-black mb-6">Extracted Color Palette</h3>' +
+                '<h3 class="text-lg font-bold text-black mb-6">Palette de couleurs extraite</h3>' +
                 '<div class="flex gap-6 flex-col md:flex-row">' +
                 '<img src="' + imageSrc + '" class="w-32 h-32 rounded-xl object-cover border border-gray-200 flex-shrink-0">' +
                 '<div class="flex-1"><div class="flex rounded-xl overflow-hidden h-20 shadow-sm">';
             colors.forEach(function (c) {
                 html += '<div class="flex-1" style="background-color:' + c.hex + '" title="' + c.hex + '"></div>';
             });
-            html += '</div><p class="text-sm text-gray-500 mt-2">' + colors.length + ' colors extracted</p></div></div></div>';
+            html += '</div><p class="text-sm text-gray-500 mt-2">' + colors.length + (colors.length > 1 ? ' couleurs extraites' : ' couleur extraite') + '</p></div></div></div>';
 
             // Color cards
             html += '<div class="grid grid-cols-2 md:grid-cols-3 gap-4">';
@@ -285,11 +285,11 @@
                     '<span class="text-xs font-bold px-2 py-1 rounded-full" style="color:' + textColor + ';background:rgba(0,0,0,0.2)">' + c.name + '</span></div>' +
                     '<div class="p-4 space-y-2">' +
                     '<div class="flex items-center justify-between"><span class="font-mono text-sm font-bold">' + c.hex.toUpperCase() + '</span>' +
-                    '<button class="copy-color-btn text-xs px-2 py-1 rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors" data-color="' + c.hex + '">Copy</button></div>' +
+                    '<button class="copy-color-btn text-xs px-2 py-1 rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors" data-color="' + c.hex + '">Copier</button></div>' +
                     '<div class="text-xs text-gray-500 space-y-1">' +
                     '<div>RGB: ' + c.rgb.join(', ') + '</div>' +
                     '<div>HSL: ' + c.hsl[0] + '°, ' + c.hsl[1] + '%, ' + c.hsl[2] + '%</div>' +
-                    '<div>Contrast: ' + c.contrast + ':1 <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ' +
+                    '<div>Contraste : ' + c.contrast + ':1 <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ' +
                     (c.wcag === 'AA Pass' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700') + '">' + c.wcag + '</span></div>' +
                     '<div class="text-gray-400">' + c.usage + '</div>' +
                     '</div></div></div>';
@@ -314,12 +314,12 @@
 
             html += '<div class="grid md:grid-cols-2 gap-4">' +
                 '<div class="bg-white rounded-xl border border-gray-200 p-6"><div class="flex items-center justify-between mb-3">' +
-                '<h4 class="font-bold text-black">CSS Variables</h4>' +
-                '<button id="copy-css-btn" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy</button></div>' +
+                '<h4 class="font-bold text-black">Variables CSS</h4>' +
+                '<button id="copy-css-btn" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier</button></div>' +
                 '<pre class="text-xs font-mono bg-[#F8F8F8] rounded-lg p-3 border border-gray-200 overflow-x-auto">' + escapeHtml(cssVars) + '</pre></div>' +
                 '<div class="bg-white rounded-xl border border-gray-200 p-6"><div class="flex items-center justify-between mb-3">' +
-                '<h4 class="font-bold text-black">Tailwind Config</h4>' +
-                '<button id="copy-tw-btn" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy</button></div>' +
+                '<h4 class="font-bold text-black">Configuration Tailwind</h4>' +
+                '<button id="copy-tw-btn" class="text-xs px-3 py-1 rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier</button></div>' +
                 '<pre class="text-xs font-mono bg-[#F8F8F8] rounded-lg p-3 border border-gray-200 overflow-x-auto">' + escapeHtml(tailwind) + '</pre></div></div>';
 
             html += '</div>';

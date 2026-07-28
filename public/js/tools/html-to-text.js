@@ -16,7 +16,7 @@
         actionBtn.addEventListener('click', function () {
             CodeSommetTools.hideError();
             var html = textarea.value.trim();
-            if (!html) { CodeSommetTools.showError('Please enter some HTML'); return; }
+            if (!html) { CodeSommetTools.showError('Veuillez saisir du HTML'); return; }
 
             var result = convertHtmlToText(html);
             CodeSommetTools.incrementUsage('html-to-text');
@@ -76,8 +76,8 @@
                 statCard(lines, 'Lines') +
                 '</div>' +
                 '<div class="bg-white rounded-2xl border-2 border-gray-200 p-8"><div class="space-y-4">' +
-                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Plain Text Output</h3>' +
-                '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copy</button></div>' +
+                '<div class="flex items-center justify-between"><h3 class="text-lg font-semibold text-[#0F0F0F]">Texte brut obtenu</h3>' +
+                '<button id="copy-result-btn" class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors">Copier</button></div>' +
                 '<div class="bg-[#F8F8F8] rounded-lg p-4 border border-gray-200">' +
                 '<pre class="text-sm text-[#0F0F0F] whitespace-pre-wrap">' + escapeHtml(result) + '</pre></div>' +
                 '<div class="text-xs text-gray-500">Reduced by ' + Math.round((1 - resultSize / origSize) * 100) + '%</div>' +

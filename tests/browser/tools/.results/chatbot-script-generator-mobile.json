@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Scripts Chatbot IA",
+  "slug": "chatbot-script-generator",
+  "url": "/tools/chatbot-script-generator",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : Secteur d'activité",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Contenu généréCopier{    \"welcomeMessage\": \"Bienvenue ! Je suis l\\u00e0 pour vous accompagner. Comment puis-je vous aider ?\",    \"industry\": \"E-commerce\",    \"tone\": null,    \"quickReplies\": [        \"D\\u00e9couvrir nos services\",        \"Demander un devis\",        \"Parler \\u00e0 un conseiller\",        \"Questions fr\\u00e9quentes\"    ],    \"intents\": [        {            \"name\": \"Demande de tarif\",            \"phrases\": [                \"Combien \\u00e7a co\\u00fbte ?\",                \"Quels sont vos tarifs ?\",                \"Informations tarifaires\"            ],            \"response\": \"Tr\\u00e8s bonne question ! Nos tarifs d\\u00e9pendent de vos besoins pr\\u00e9cis. Pouvez-vous m'en dire un peu plus sur votre projet ? Je peux aussi vous mettre en relation avec notre \\u00e9quipe pour un devis d\\u00e9taill\\u00e9.\"        },        {            \"name\": \"Informations services\",            \"phrases\": [                \"Quels services proposez-vous ?\",                \"Parlez-moi de vos services\",                \"Que faites-vous ?\"            ],            \"response\": \"Nous proposons une gamme de solutions E-commerce adapt\\u00e9es \\u00e0 vos besoins. Souhaitez-vous en savoir plus sur un service en particulier, ou pr\\u00e9f\\u00e9rez-vous une pr\\u00e9sentation g\\u00e9n\\u00e9rale ?\"        },        {            \"name\": \"Assistance\",            \"phrases\": [                \"J'ai besoin d'aide\",                \"Assistance s'il vous pla\\u00eet\",                \"Je rencontre un probl\\u00e8me\"            ],            \"response\": \"Je suis d\\u00e9sol\\u00e9 d'apprendre que vous rencontrez un probl\\u00e8me. Je vous mets en relation avec notre \\u00e9quipe support. Pouvez-vous d\\u00e9crire bri\\u00e8vement la difficult\\u00e9 ?\"        }    ],    \"leadQualification\": {        \"question1\": \"Quel est le nom de votre entreprise ?\",        \"question2\": \"Combien de collaborateurs compte-t-elle ?\",        \"question3\": \"Quel est votre objectif principal ?\"    },    \"fallbackMessage\": \"Je ne suis pas certain de bien comprendre. Souhaitez-vous que je vous mette en relation avec un conseiller ?\",    \"handoffTriggers\": [        \"parler \\u00e0 un humain\",        \"parler \\u00e0 quelqu'un\",        \"vraie personne\",        \"conseiller\",        \"agent\"    ]}",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : Secteur d'activité",
+    "otherOutput": "Contenu généréCopier{    \"welcomeMessage\": \"Bienvenue ! Je suis l\\u00e0 pour vous accompagner. Comment puis-je vous aider ?\",    \"industry\": \"E-commerce\",    \"tone\": null,    \"quickReplies\": [        \"D\\u00e9couvrir nos services\",        \"Demander un devis\",        \"Parler \\u00e0 un conseiller\",        \"Questions fr\\u00e9quentes\"    ],    \"intents\": [        {            \"name\": \"Demande de tarif\",            \"phrases\": [                \"Combien \\u00e7a co\\u00fbte ?\",                \"Quels sont vos tarifs ?\",                \"Informations tarifaires\"            ],            \"response\": \"Tr\\u00e8s bonne question ! Nos tarifs d\\u00e9pendent de vos besoins pr\\u00e9cis. Pouvez-vous m'en dire un peu plus sur votre projet ? Je peux aussi vous mettre en relation avec notre \\u00e9quipe pour un devis d\\u00e9taill\\u00e9.\"        },        {            \"name\": \"Informations services\",            \"phrases\": [                \"Quels services proposez-vous ?\",                \"Parlez-moi de vos services\",                \"Que faites-vous ?\"            ],            \"response\": \"Nous proposons une gamme de solutions E-commerce adapt\\u00e9es \\u00e0 vos besoins. Souhaitez-vous en savoir plus sur un service en particulier, ou pr\\u00e9f\\u00e9rez-vous une pr\\u00e9sentation g\\u00e9n\\u00e9rale ?\"        },        {            \"name\": \"Assistance\",            \"phrases\": [                \"J'ai besoin d'aide\",                \"Assistance s'il vous pla\\u00eet\",                \"Je rencontre un probl\\u00e8me\"            ],            \"response\": \"Je suis d\\u00e9sol\\u00e9 d'apprendre que vous rencontrez un probl\\u00e8me. Je vous mets en relation avec notre \\u00e9quipe support. Pouvez-vous d\\u00e9crire bri\\u00e8vement la difficult\\u00e9 ?\"        }    ],    \"leadQualification\": {        \"question1\": \"Quel est le nom de votre entreprise ?\",        \"question2\": \"Combien de collaborateurs compte-t-elle ?\",        \"question3\": \"Quel est votre objectif principal ?\"    },    \"fallbackMessage\": \"Je ne suis pas certain de bien comprendre. Souhaitez-vous que je vous mette en relation avec un conseiller ?\",    \"handoffTriggers\": [        \"parler \\u00e0 un humain\",        \"parler \\u00e0 quelqu'un\",        \"vraie personne\",        \"conseiller\",        \"agent\"    ]}"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

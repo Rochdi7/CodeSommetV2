@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Compression d’Images",
+  "slug": "image-compression-analyzer",
+  "url": "/tools/image-compression-analyzer",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "100/100Analyse réussie0Total0Modern Format0Legacy FormatRecommandationsAll images use modern formats",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "100/100Analyse réussie0Total0Modern Format0Legacy FormatRecommandationsAll images use modern formats"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

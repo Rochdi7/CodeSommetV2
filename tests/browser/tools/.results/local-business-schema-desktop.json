@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Schema Entreprise Locale",
+  "slug": "local-business-schema",
+  "url": "/tools/local-business-schema",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir le nom de l’entreprise",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Schema généré avec succèsAjoutez ce code dans la section <head> de votre pageCode Schema JSON-LDCopier le HTMLCopier le JSON<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"CodeSommet\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"12 rue de la Paix\",\n    \"addressLocality\": \"Casablanca\",\n    \"addressRegion\": \"Casablanca-Settat\",\n    \"postalCode\": \"20000\",\n    \"addressCountry\": \"Maroc\"\n  },\n  \"telephone\": \"+212-522-000-000\",\n  \"url\": \"https://codesommet.com\"\n}\n</script>",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir le nom de l’entreprise",
+    "otherOutput": "Schema généré avec succèsAjoutez ce code dans la section <head> de votre pageCode Schema JSON-LDCopier le HTMLCopier le JSON<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"CodeSommet\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"12 rue de la Paix\",\n    \"addressLocality\": \"Casablanca\",\n    \"addressRegion\": \"Casablanca-Settat\",\n    \"postalCode\": \"20000\",\n    \"addressCountry\": \"Maroc\"\n  },\n  \"telephone\": \"+212-522-000-000\",\n  \"url\": \"https://codesommet.com\"\n}\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"CodeSommet\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"12 rue de la Paix\",\n    \"addressLocality\": \"Casablanca\",\n    \"addressRegion\": \"Casablanca-Settat\",\n    \"postalCode\": \"20000\",\n    \"addressCountry\": \"Maroc\"\n  },\n  \"telephone\": \"+212-522-000-000\",\n  \"url\": \"https://codesommet.com\"\n}\n</script>"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

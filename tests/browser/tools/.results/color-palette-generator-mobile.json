@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Palette de Couleurs",
+  "slug": "color-palette-generator",
+  "url": "/tools/color-palette-generator",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez d’abord importer une image",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Palette de couleurs extraite2 couleurs extraitesRed#DC143CCopierRGB: 220, 20, 60HSL: 348°, 83%, 47%Contraste : 4.99:1 AA PassCouleur principale de marqueBlue#1E90FFCopierRGB: 30, 144, 255HSL: 210°, 100%, 56%Contraste : 3.24:1 AA FailCouleur secondaireVariables CSSCopier:root {\n  --color-primary: #dc143c;\n  --color-secondary: #1e90ff;\n}Configuration TailwindCopiercolors: {\n  'primary': '#dc143c',\n  'secondary': '#1e90ff',\n}",
+    "errorVisible": false,
+    "errorText": "Veuillez d’abord importer une image",
+    "otherOutput": "Palette de couleurs extraite2 couleurs extraitesRed#DC143CCopierRGB: 220, 20, 60HSL: 348°, 83%, 47%Contraste : 4.99:1 AA PassCouleur principale de marqueBlue#1E90FFCopierRGB: 30, 144, 255HSL: 210°, 100%, 56%Contraste : 3.24:1 AA FailCouleur secondaireVariables CSSCopier:root {\n  --color-primary: #dc143c;\n  --color-secondary: #1e90ff;\n}Configuration TailwindCopiercolors: {\n  'primary': '#dc143c',\n  'secondary': '#1e90ff',\n}\n:root {\n  --color-primary: #dc143c;\n  --color-secondary: #1e90ff;\n}\ncolors: {\n  'primary': '#dc143c',\n  'secondary': '#1e90ff',\n}"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -71,8 +71,8 @@
                         </div>
                         <div class="px-5 py-4">
                             <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Boutique Beauté</p>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Refonte complète du site web pour un distributeur de confiance de systèmes UPS, solutions de recharge VE et produits d'infrastructure IT</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">E-commerce Shopify — Lunettes de Luxe</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Boutique e-commerce Shopify dédiée à la vente de lunettes de luxe : fiches produits optimisées, parcours d'achat fluide, paiement sécurisé et référencement naturel travaillé en profondeur pour capter le trafic qualifié sur les requêtes lunettes haut de gamme</p>
                         </div>
                     </div>
                 </a></div>
@@ -83,8 +83,8 @@
                         </div>
                         <div class="px-5 py-4">
                             <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Solution SaaS</p>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme leader de conseil en études à l'étranger construite sur Webflow, spécialisée exclusivement dans les universités publiques allemandes avec plus de 1 000 étudiants servis, un célèbre calculateur de notes et un taux de réussite visa de 90-95%</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">SaaS de Gestion Associative</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme SaaS moderne et responsive développée sous Laravel pour simplifier la gestion des associations à but non lucratif : membres, réunions, cotisations, événements, documents, dépenses et statistiques centralisés, avec architecture modulaire, tableaux de bord dynamiques, gestion des rôles et permissions et panneau d'administration intuitif</p>
                         </div>
                     </div>
                 </a></div>
@@ -95,8 +95,8 @@
                         </div>
                         <div class="px-5 py-4">
                             <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Agence Touristique</p>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Première place de marché d'agrégation d'emplois en Allemagne connectant les étudiants internationaux à plus de 25 000 postes d'Ausbildung réels auprès d'entreprises allemandes vérifiées, avec des outils de préparation propulsés par l'IA, une architecture de plateforme bilatérale et une portée mondiale dans 223 pays</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Agence de Voyage de Luxe</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Application Laravel de production pour une agence de voyage de luxe : circuits privés, aventures dans le désert du Sahara, voyages culturels et expériences sur mesure à travers le Maroc, associant une vitrine publique à fort taux de conversion à un panneau d'administration Filament permettant aux équipes non techniques de gérer circuits, activités, articles, demandes et réservations sans toucher au code</p>
                         </div>
                     </div>
                 </a></div>
@@ -107,8 +107,8 @@
                         </div>
                         <div class="px-5 py-4">
                             <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">École de Langue Allemande</p>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme complète d'études à l'étranger démocratisant l'éducation internationale avec un modèle sans commission, desservant plus de 51 pays avec 14 outils propulsés par l'IA, l'automatisation des emails et un taux de réussite d'admission de 88%</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">École de Langue Allemande &amp; CRM</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Application web à double usage pour une école de langue allemande : site vitrine bilingue FR/EN optimisé pour la conversion (niveaux A1 à C1, inscriptions en ligne, quiz de niveau interactif, vérification de certificats, blog SEO) et tableau de bord d'administration par rôles couvrant groupes, plannings, présences, CRM étudiant, automatisation de la paie, finance, intégration Hikvision et reporting complet</p>
                         </div>
                     </div>
                 </a></div>            <div style="opacity:0;transform:translateY(30px)" data-delay="1"><a class="block" href="{{ route('case-study', 'dental-pro') }}">
@@ -118,8 +118,8 @@
                         </div>
                         <div class="px-5 py-4">
                             <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">Boutique Médicale</p>
-                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Système complet de réservation de rendez-vous médicaux pour Dr. Geeta S K, convertissant plus de 100K abonnés sur les réseaux sociaux en une plateforme de santé numérique professionnelle avec réservation en temps réel et contenu propulsé par l'IA</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">E-commerce &amp; CMS Dentaire</p>
+                            <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Plateforme e-commerce et de gestion de contenu sur mesure pour le secteur dentaire : vitrine client soignée pour présenter les produits, publier des articles et prendre des réservations, adossée à un backoffice puissant permettant aux cliniques, distributeurs de matériel dentaire et marques de santé de piloter toute leur présence digitale depuis un seul tableau de bord</p>
                         </div>
                     </div>
                 </a></div>

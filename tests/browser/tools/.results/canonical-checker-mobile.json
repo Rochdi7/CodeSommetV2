@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur d’URL Canonique",
+  "slug": "canonical-checker",
+  "url": "/tools/canonical-checker",
+  "type": "api",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL de la page",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "0/100Problèmes détectésCanonicalhttps://example.comUrlfalseIs Self ReferencingProblèmes détectéserrorNo canonical tag found",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL de la page",
+    "otherOutput": "0/100Problèmes détectésCanonicalhttps://example.comUrlfalseIs Self ReferencingProblèmes détectéserrorNo canonical tag found"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

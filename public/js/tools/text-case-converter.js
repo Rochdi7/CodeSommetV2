@@ -42,7 +42,7 @@
             }
 
             CodeSommetTools.incrementUsage('text-case-converter');
-            var html = '<h3 class="text-lg font-bold text-black mb-4">Converted Results</h3>' +
+            var html = '<h3 class="text-lg font-bold text-black mb-4">Résultats convertis</h3>' +
                 '<div class="grid md:grid-cols-2 gap-4">';
 
             conversions.forEach(function (c) {
@@ -51,7 +51,7 @@
                     '<div class="flex items-center justify-between mb-2">' +
                     '<span class="text-sm font-semibold text-[#00AEEF]">' + c.label + '</span>' +
                     '<button class="copy-btn flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-full bg-gray-100 hover:bg-[#00AEEF] hover:text-white transition-colors" data-copy="' + escapeAttr(result) + '">' +
-                    '<svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy</button>' +
+                    '<svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier</button>' +
                     '</div>' +
                     '<p class="text-sm text-[#0F0F0F] font-mono break-all">' + escapeHtml(result) + '</p>' +
                     '</div>';
@@ -65,7 +65,7 @@
             var charsNoSpaces = text.replace(/\s/g, '').length;
             html += '<div class="grid grid-cols-3 gap-4 mt-4">' +
                 '<div class="bg-[#F8F8F8] p-3 rounded-lg text-center"><div class="text-xl font-bold text-[#00AEEF]">' + chars + '</div><div class="text-xs text-gray-600">Characters</div></div>' +
-                '<div class="bg-[#F8F8F8] p-3 rounded-lg text-center"><div class="text-xl font-bold text-[#00AEEF]">' + charsNoSpaces + '</div><div class="text-xs text-gray-600">No Spaces</div></div>' +
+                '<div class="bg-[#F8F8F8] p-3 rounded-lg text-center"><div class="text-xl font-bold text-[#00AEEF]">' + charsNoSpaces + '</div><div class="text-xs text-gray-600">Sans espaces</div></div>' +
                 '<div class="bg-[#F8F8F8] p-3 rounded-lg text-center"><div class="text-xl font-bold text-[#00AEEF]">' + words + '</div><div class="text-xs text-gray-600">Words</div></div>' +
                 '</div>';
 

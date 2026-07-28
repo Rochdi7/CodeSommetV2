@@ -129,7 +129,7 @@ return [
     'text_119' => 'Si vous avez des questions sur cette Politique d\'Utilisation Acceptable ou avez besoin de précisions sur ce qui est autorisé, veuillez nous contacter :',
     'text_120' => 'Agence Premium de Développement Web',
     'text_121' => 'Téléphone :',
-    'text_122' => 'Téléphone :',
+    'text_122' => 'WhatsApp :',
     'text_123' => 'Siège social :',
     'text_124' => 'Opérations :',
     'text_125' => 'Pour les demandes relatives à cette politique, veuillez inclure "Politique d\'Utilisation Acceptable" dans l\'objet de votre e-mail.',

@@ -1,0 +1,29 @@
+{
+  "name": "Analyseur de Site Web",
+  "slug": "website-analyzer",
+  "url": "/tools/website-analyzer",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "CNeeds improvement62/100Score9Total Checks5Passed2Warnings2Failed0Internal Links1External LinksProblèmes détectéswarningTitle is 14 chars (optimal: 30-60)warningMissing meta descriptionwarningMissing Open Graph tagswarningNo canonical tag foundRecommandationsImprove: Title is 14 chars (optimal: 30-60)Fix: Missing meta descriptionFix: Missing Open Graph tagsImprove: No canonical tag found",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "CNeeds improvement62/100Score9Total Checks5Passed2Warnings2Failed0Internal Links1External LinksProblèmes détectéswarningTitle is 14 chars (optimal: 30-60)warningMissing meta descriptionwarningMissing Open Graph tagswarningNo canonical tag foundRecommandationsImprove: Title is 14 chars (optimal: 30-60)Fix: Missing meta descriptionFix: Missing Open Graph tagsImprove: No canonical tag found"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

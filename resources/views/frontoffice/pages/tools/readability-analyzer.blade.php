@@ -142,6 +142,25 @@
         </div>
         </div>
     </section>
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <div class="space-y-6 mb-8">
+            <div class="space-y-4">
+                <div class="space-y-2"><label
+                        class="block text-sm font-medium text-black" for="readability-input">{{ __('tools/readability-analyzer.label_input') }}<span
+                            class="text-[#00AEEF] ml-1">*</span></label>
+                    <textarea id="readability-input" placeholder="{{ __('tools/readability-analyzer.placeholder_input') }}" rows="8"
+                        class="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed resize-y"></textarea>
+                </div><button
+                    class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full"
+                    tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-book-open mr-2 h-4 w-4" aria-hidden="true">
+                        <path d="M12 7v14"></path>
+                        <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+                    </svg>{{ __('tools/readability-analyzer.action_analyze') }}</button>
+            </div>
+        </div>
+    </section>
     <section class="py-16 bg-white border-t border-gray-100">
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-10">

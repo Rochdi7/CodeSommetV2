@@ -1,0 +1,31 @@
+{
+  "name": "Convertisseur de Casse de Texte",
+  "slug": "text-case-converter",
+  "url": "/tools/text-case-converter",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "fail",
+  "bugs": [
+    "Empty input produced a result instead of a validation message."
+  ],
+  "emptyResult": {
+    "hasResultsNode": true,
+    "resultText": "",
+    "errorVisible": false,
+    "errorText": "",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Résultats convertisUPPERCASE CopierBONJOUR LE MONDE ÉÈÀlowercase Copierbonjour le monde éèàTitle Case CopierBonjour Le Monde éèàSentence case CopierBonjour le monde éèàcamelCase CopierbonjourLeMondeéèàsnake_case Copierbonjour_le_monde_éèà20Characters17Sans espaces3Words",
+    "errorVisible": false,
+    "errorText": "",
+    "otherOutput": "Résultats convertisUPPERCASE CopierBONJOUR LE MONDE ÉÈÀlowercase Copierbonjour le monde éèàTitle Case CopierBonjour Le Monde éèàSentence case CopierBonjour le monde éèàcamelCase CopierbonjourLeMondeéèàsnake_case Copierbonjour_le_monde_éèà20Characters17Sans espaces3Words"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur de Liens Nofollow",
+  "slug": "nofollow-link-checker",
+  "url": "/tools/nofollow-link-checker",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez coller du code HTML",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "2Total Links1 (50%)Dofollow1Nofollow2 / 0External / InternalAnalyse des liensExporter en CSVURLTextRelTypeStatushttps://a.comAnofollowExternalNofollowhttps://b.comBnoneExternalDofollow",
+    "errorVisible": false,
+    "errorText": "Veuillez coller du code HTML",
+    "otherOutput": "2Total Links1 (50%)Dofollow1Nofollow2 / 0External / InternalAnalyse des liensExporter en CSVURLTextRelTypeStatushttps://a.comAnofollowExternalNofollowhttps://b.comBnoneExternalDofollow"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

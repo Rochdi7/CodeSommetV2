@@ -1,0 +1,29 @@
+{
+  "name": "Vérificateur Core Web Vitals",
+  "slug": "core-web-vitals-checker",
+  "url": "/tools/core-web-vitals-checker",
+  "type": "api",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "AAnalyse réussie672msResponse Time1KBPage Size0Images0Scripts0Stylesheets",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir : URL du site",
+    "otherOutput": "AAnalyse réussie672msResponse Time1KBPage Size0Images0Scripts0Stylesheets"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

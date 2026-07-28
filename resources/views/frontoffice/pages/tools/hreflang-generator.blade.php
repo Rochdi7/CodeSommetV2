@@ -55,7 +55,7 @@
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">Versions Linguistiques</h3>
                         <p class="text-sm text-gray-600 mb-4">{{ __('tools/hreflang-generator.text_4') }}</p>
                     </div>
-                    <div class="space-y-3">
+                    <div class="space-y-3" id="hreflang-rows">
                         <div class="flex items-start gap-3">
                             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div><input type="url" placeholder="https://example.com/en/page"
@@ -65,7 +65,7 @@
                                         placeholder="{{ __('tools/hreflang-generator.placeholder_142') }}"
                                         class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
                                         value="" /></div>
-                            </div><button
+                            </div><button type="button" data-remove-row aria-label="Supprimer cette version linguistique"
                                 class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -87,7 +87,7 @@
                                         placeholder="{{ __('tools/hreflang-generator.placeholder_143') }}"
                                         class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
                                         value="" /></div>
-                            </div><button
+                            </div><button type="button" data-remove-row aria-label="Supprimer cette version linguistique"
                                 class="p-3 rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-red-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -100,14 +100,14 @@
                                     <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                                 </svg></button>
                         </div>
-                    </div><button
+                    </div><button type="button" id="hreflang-add-btn"
                         class="w-full py-3 px-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-[#00AEEF] hover:bg-orange-50 transition-colors flex items-center justify-center gap-2 text-sm font-medium text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-plus w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
-                        </svg>{{ __('tools/hreflang-generator.text_5') }}</button><button
+                        </svg>{{ __('tools/hreflang-generator.text_5') }}</button><button type="button" id="tool-action-btn"
                         class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full"
                         tabindex="0">{{ __('tools/hreflang-generator.text_6') }}</button>
                 </div>

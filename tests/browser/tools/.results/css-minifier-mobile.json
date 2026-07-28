@@ -1,0 +1,29 @@
+{
+  "name": "Minificateur CSS",
+  "slug": "css-minifier",
+  "url": "/tools/css-minifier",
+  "type": "client",
+  "viewport": "mobile",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir du code CSS",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "35 BOriginal Size24 BMinified Size11 BBytes Saved31%ReductionCSS minifié Copierbody{color:red;margin:0}",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir du code CSS",
+    "otherOutput": "35 BOriginal Size24 BMinified Size11 BBytes Saved31%ReductionCSS minifié Copierbody{color:red;margin:0}\nCopier\nbody{color:red;margin:0}"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

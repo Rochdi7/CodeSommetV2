@@ -1,0 +1,29 @@
+{
+  "name": "Générateur de Code QR",
+  "slug": "qr-code-generator",
+  "url": "/tools/qr-code-generator",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez saisir une URL ou un texte",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Code QR généré Télécharger le PNGCopier l’URLSize256x256 pxContenthttps://codesommet.com",
+    "errorVisible": false,
+    "errorText": "Veuillez saisir une URL ou un texte",
+    "otherOutput": "Code QR généré Télécharger le PNGCopier l’URLSize256x256 pxContenthttps://codesommet.com"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

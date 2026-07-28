@@ -22,7 +22,7 @@
             var text2 = textarea2.value.trim();
 
             if (!text1 || !text2) {
-                CodeSommetTools.showError('Please enter text in both fields');
+                CodeSommetTools.showError('Veuillez remplir les deux champs de texte');
                 return;
             }
 
@@ -93,7 +93,7 @@
             // Matching phrases
             if (r.matchingPhrases.length > 0) {
                 html += '<div class="bg-white rounded-xl border border-gray-100 p-6">' +
-                    '<h3 class="text-lg font-bold text-black mb-4">Matching Phrases</h3>' +
+                    '<h3 class="text-lg font-bold text-black mb-4">Expressions communes</h3>' +
                     '<div class="flex flex-wrap gap-2">';
                 r.matchingPhrases.forEach(function (p) {
                     html += '<span class="px-3 py-1 bg-' + color + '-50 text-' + color + '-700 rounded-full text-sm font-medium">' + escapeHtml(p) + '</span>';

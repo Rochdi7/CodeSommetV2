@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('title', 'Étude de Cas Mon Asso - Solution SaaS de Gestion Associative | CodeSommet')
-@section('meta_description', 'Plateforme leader d\'admission dans les universités allemandes construite sur Webflow, avec le célèbre calculateur de notes, 5 outils spécialisés, un portail étudiant et un taux de réussite visa de 90-95% desservant plus de 1 000 étudiants.')
-@section('meta_keywords', 'développement plateforme éducative,admissions universités allemandes,développement Webflow,développement portail étudiant,outil calculateur notes,site web éducation')
+@section('meta_description', 'Plateforme SaaS Laravel de gestion d\'associations : membres, réunions, cotisations, événements, documents, dépenses et statistiques réunis dans un seul espace.')
+@section('meta_keywords', 'logiciel gestion association,SaaS associatif,gestion des adhérents,gestion des cotisations,développement Laravel,plateforme de gestion à but non lucratif')
 @section('og_title', 'Étude de Cas Mon Asso - Solution SaaS de Gestion Associative')
-@section('og_description', 'Plateforme leader d\'admission dans les universités allemandes construite sur Webflow, avec le célèbre calculateur de notes, 5 outils spécialisés, un portail étudiant et un taux de réussite visa de 90-95% desservant plus de 1 000 étudiants.')
-@section('twitter_description', 'Plateforme leader d\'admission dans les universités allemandes construite sur Webflow, avec le célèbre calculateur de notes, 5 outils spécialisés, un portail étudiant et un taux de réussite visa de 90-95% desservant plus de 1 000 étudiants.')
+@section('og_description', 'Plateforme SaaS Laravel de gestion d\'associations : membres, réunions, cotisations, événements, documents, dépenses et statistiques réunis dans un seul espace.')
+@section('twitter_description', 'Plateforme SaaS Laravel de gestion d\'associations : membres, réunions, cotisations, événements, documents, dépenses et statistiques réunis dans un seul espace.')
 
 @section('content')
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -31,11 +31,11 @@
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
             <div class="space-y-4 md:space-y-6">
                 <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#00AEEF]/10 to-[#0071BC]/10 rounded-full border border-[#00AEEF]/20" style="transform:scale(0.9)">
-                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Éducation</span>
+                    <div class="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse"></div><span class="text-sm font-semibold text-[#00AEEF]">Associatif</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style="font-family:var(--font-heading)">Mon Asso</h1>
                 <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Solution SaaS</p>
-                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Plateforme leader de conseil en études à l'étranger construite sur Webflow, spécialisée exclusivement dans les universités publiques allemandes avec plus de 1 000 étudiants servis, le célèbre calculateur de notes et un taux de réussite visa de 90-95%</p>
+                <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">Plateforme SaaS moderne et responsive développée sous Laravel pour simplifier la gestion des associations à but non lucratif : membres, réunions, cotisations, événements, documents, dépenses et statistiques réunis dans un seul espace</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                     <div class="group relative p-4 bg-white rounded-2xl border border-gray-100 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">
                         <div class="flex items-center gap-3">
@@ -58,7 +58,7 @@
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                 </svg></div>
                             <div class="min-w-0">
-                                <p class="text-xs text-gray-500 uppercase tracking-wide">Croissance des Prospects</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-wide">Membres Gérés</p>
                                 <p class="text-sm font-bold text-gray-900 truncate">1 000+</p>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Le Défi</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Les étudiants faisaient face à des processus complexes et confus pour postuler aux universités publiques allemandes sans ressource centralisée offrant des outils, des conseils et un suivi transparent des candidatures. Le défi était d&#x27;établir une plateforme spécialisée se concentrant exclusivement sur les admissions dans les universités publiques allemandes, de bâtir la confiance en tant que marque phare, et de créer des outils de calcul complets (notamment le célèbre German Grade Calculator utilisant la Formule Bavaroise Modifiée) tout en gérant plus de 1 000 étudiants avec un accompagnement de bout en bout, de la candidature à l&#x27;approbation du visa.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Les associations à but non lucratif pilotaient leur quotidien à travers des tableurs dispersés, des fichiers d&#x27;adhérents dupliqués, des convocations envoyées à la main et des cotisations suivies sur papier. Aucun outil ne centralisait les membres, les réunions, les événements, les documents et les dépenses, ce qui rendait le suivi des impayés, la préparation des assemblées générales et la production des bilans à la fois longue et source d&#x27;erreurs. Le défi était de concevoir une plateforme SaaS unique, capable de couvrir tous ces métiers associatifs, tout en restant assez simple pour des bureaux bénévoles au profil non technique et assez souple pour s&#x27;adapter à des associations de tailles très différentes.</p>
             </div>
             <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <div class="flex items-center gap-3 mb-6">
@@ -117,7 +117,7 @@
                         </svg></div>
                     <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">Notre Solution</h3>
                 </div>
-                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé une plateforme complète basée sur Webflow avec 5 outils de calcul spécialisés (German Grade Calculator utilisant la Formule Bavaroise Modifiée, Calculateur de Crédits ECTS, convertisseur TOEFL-IELTS, Calculateur de Score IELTS Global, Quiz d&#x27;Éligibilité APS), une base de données complète d&#x27;universités et de programmes avec filtrage avancé, un portail étudiant à la pointe (student.msingermany.co.in) avec suivi des candidatures en temps réel, une application mobile Android native avec fonctionnalités sociales (liste d&#x27;amis, messagerie, salons de discussion), et trois niveaux de forfaits (Value ₹49 999, Standard ₹49 999, Premium ₹1 69 999 avec garantie d&#x27;admission). Nous avons construit une bibliothèque de ressources éducatives complète, un système de préparation de documents, et un support post-admission incluant l&#x27;accompagnement visa et l&#x27;aide au logement.</p>
+                <p class="text-gray-700 leading-relaxed text-[15px]">Nous avons développé une plateforme SaaS complète sous Laravel, bâtie sur une architecture modulaire dans laquelle chaque métier associatif dispose de son propre module : gestion des membres et des adhésions, organisation des réunions avec convocations et procès-verbaux, suivi des cotisations et des relances, planification des événements et des inscriptions, gestion électronique des documents, saisie et catégorisation des dépenses, et statistiques consolidées. L&#x27;ensemble est piloté depuis un panneau d&#x27;administration clair, avec des tableaux de bord dynamiques qui restituent en temps réel l&#x27;état des adhésions, de la trésorerie et de la participation. Un système de rôles et de permissions granulaire encadre les accès du bureau, des responsables de commission et des simples adhérents, et l&#x27;interface entièrement responsive reste utilisable aussi bien sur ordinateur qu&#x27;en réunion depuis un mobile.</p>
             </div>
         </div>
         <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -128,7 +128,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Célèbre German Grade Calculator utilisant la Formule Bavaroise Modifiée (outil phare)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion complète des membres et des adhésions (fiches, statuts, historique)</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -136,7 +136,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">5 calculateurs spécialisés (Notes, ECTS, TOEFL-IELTS, IELTS Global, Éligibilité APS)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Module de réunions avec convocations, ordres du jour et procès-verbaux</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -144,7 +144,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Base de données universitaire complète avec 100+ programmes et filtrage avancé</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Suivi des cotisations avec échéances, relances et état des impayés</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -152,7 +152,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Portail étudiant à la pointe avec suivi des candidatures en temps réel</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Tableaux de bord dynamiques avec indicateurs en temps réel</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -160,7 +160,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Application mobile Android native avec fonctionnalités sociales (amis, messagerie, salons)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion des rôles et permissions par profil (bureau, commissions, adhérents)</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -168,7 +168,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Trois niveaux de forfaits avec garantie d'admission Premium (remboursement ₹50 000)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Planification des événements et gestion des inscriptions des participants</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -176,7 +176,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Système de préparation de documents (SOP, LOR, CV, essais, lettres de motivation)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Gestion électronique des documents (statuts, PV, rapports, justificatifs)</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -184,7 +184,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Bibliothèque de ressources éducatives complète et guides étape par étape</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Suivi des dépenses par catégorie et vision consolidée du budget</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -192,7 +192,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Intégration support WhatsApp multi-départements</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Module de statistiques et rapports exportables pour l'assemblée générale</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100" style="transform:scale(0.95)">
@@ -200,7 +200,7 @@
                         <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg></div>
-                        <p class="text-sm text-gray-700 leading-relaxed">Support post-admission (réservation créneaux visa, hébergement, coaching en langue allemande)</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Panneau d'administration intuitif et architecture modulaire évolutive</p>
                     </div>
                 </div>
             </div>
@@ -219,13 +219,13 @@
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>frontend
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Webflow CMS</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">JavaScript</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Design Responsive</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Blade / Tailwind CSS</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">JavaScript</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Design Responsive</span></div>
                 </div>
                 <div>
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div>backend
                     </h4>
-                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Webflow Backend</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Portail Étudiant Personnalisé</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Application Mobile (Android)</span></div>
+                    <div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Laravel</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Espace Membre Personnalisé</span><span class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200" style="transform:scale(0.9)">Rôles &amp; Permissions</span></div>
                 </div>
                 <div>
                     <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -243,7 +243,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3" style="font-family:var(--font-heading)">Aperçu de l'Interface</h2>
             <p class="text-gray-600 text-base md:text-lg">Captures d'écran à venir</p>
         </div>
-        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">German Grade Calculator</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Tarification</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Contact</button></div>
+        <div class="flex justify-center gap-2 mb-8 flex-wrap"><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md" style="transform:scale(0.95)">Accueil</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Tableau de Bord</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Gestion des Cotisations</button><button class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200" style="transform:scale(0.95)">Contact</button></div>
         <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
             <div class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]"><img src="{{ asset('images/our-work/mon-asso/homepage.webp') }}" alt="Accueil" class="w-full h-full object-cover" /></div>
         </div>
@@ -296,7 +296,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">1 000+</p>
-                            <p class="text-xs text-gray-600 font-medium">Augmentation des Prospects</p>
+                            <p class="text-xs text-gray-600 font-medium">Membres Gérés</p>
                         </div>
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                             </svg></div>
                         <div class="flex-1 min-w-0">
                             <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">50-70%</p>
-                            <p class="text-xs text-gray-600 font-medium">Taux de Conversion</p>
+                            <p class="text-xs text-gray-600 font-medium">Temps Administratif Économisé</p>
                         </div>
                     </div>
                 </div>
@@ -347,8 +347,8 @@
                                 <circle cx="4" cy="20" r="2"></circle>
                             </svg></div>
                         <div class="flex-1 min-w-0">
-                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">5 000+ admissions</p>
-                            <p class="text-xs text-gray-600 font-medium">Candidatures</p>
+                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">5 000+ opérations</p>
+                            <p class="text-xs text-gray-600 font-medium">Cotisations Traitées</p>
                         </div>
                     </div>
                 </div>
@@ -360,8 +360,8 @@
                                 <line x1="12" x2="12" y1="17" y2="21"></line>
                             </svg></div>
                         <div class="flex-1 min-w-0">
-                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">90-95% taux visa</p>
-                            <p class="text-xs text-gray-600 font-medium">Gain d'Efficacité</p>
+                            <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">90-95% d'adoption</p>
+                            <p class="text-xs text-gray-600 font-medium">Adoption de la Plateforme</p>
                         </div>
                     </div>
                 </div>
@@ -387,12 +387,12 @@
                         <div class="px-5 md:px-6 py-6 md:py-7"><svg class="w-8 h-8 md:w-10 md:h-10 text-white/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
                             </svg>
-                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a construit la plateforme la plus complète pour les admissions dans les universités publiques allemandes. Le célèbre German Grade Calculator et les outils spécialisés ont fait de nous la référence pour les étudiants. Notre programme de garantie d&#x27;admission avec suivi en temps réel a révolutionné l&#x27;expérience des étudiants dans le processus de candidature, et notre taux de réussite visa de 90-95% parle de lui-même.<!-- -->&quot;</blockquote>
+                            <blockquote class="text-base md:text-lg text-white leading-relaxed mb-6 font-normal italic">&quot;<!-- -->CodeSommet a réuni dans une seule plateforme tout ce que notre association gérait auparavant sur une dizaine de fichiers. Les adhésions, les cotisations, les convocations aux réunions et le suivi des dépenses sont enfin au même endroit, et les tableaux de bord nous donnent une vision immédiate de la situation. La gestion des rôles permet à chaque membre du bureau d&#x27;accéder exactement à ce dont il a besoin, et la préparation de notre assemblée générale nous prend désormais quelques heures au lieu de plusieurs semaines.<!-- -->&quot;</blockquote>
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">U</span></div>
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"><span class="text-white font-bold text-base md:text-lg">M</span></div>
 <div>
-                                    <p class="font-bold text-white text-sm md:text-base">Uday Yatnalli</p>
-                                    <p class="text-white/90 text-xs md:text-sm">Fondateur, Mon Asso (GLS Sprachenzentrum Learning Solutions)</p>
+                                    <p class="font-bold text-white text-sm md:text-base">Mon Asso</p>
+                                    <p class="text-white/90 text-xs md:text-sm">Président d'association, utilisateur de Mon Asso</p>
                                 </div>                            </div>
                         </div>
                     </div>

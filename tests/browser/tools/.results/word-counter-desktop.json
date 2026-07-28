@@ -1,0 +1,29 @@
+{
+  "name": "Compteur de Mots et Caractères",
+  "slug": "word-counter",
+  "url": "/tools/word-counter",
+  "type": "client",
+  "viewport": "desktop",
+  "http": 200,
+  "formVisible": true,
+  "validInput": "pass",
+  "emptyInput": "pass",
+  "bugs": [],
+  "emptyResult": {
+    "hasResultsNode": false,
+    "resultText": "",
+    "errorVisible": true,
+    "errorText": "Veuillez coller un texte",
+    "otherOutput": ""
+  },
+  "validResult": {
+    "hasResultsNode": true,
+    "resultText": "Exporter en CSVWords14Characters6755 without spacesSentences2Reading Time1 min1 min speakingStatistiques du texteParagraphs1Lines1Avg Word Length3.7 charsAvg Sentence Length7 wordsLongest WordcomptageLimites de caractères par plateformeTwitter/X Post67/280Meta Description67/160H1 Tag67/70Twitter Bio67/160 Top 10 Keywords1bonjour1×7.1%2monde1×7.1%3ceci1×7.1%4est1×7.1%5test1×7.1%6comptage1×7.1%7mots1×7.1%8fran1×7.1%9ais1×7.1%",
+    "errorVisible": false,
+    "errorText": "Veuillez coller un texte",
+    "otherOutput": "Exporter en CSVWords14Characters6755 without spacesSentences2Reading Time1 min1 min speakingStatistiques du texteParagraphs1Lines1Avg Word Length3.7 charsAvg Sentence Length7 wordsLongest WordcomptageLimites de caractères par plateformeTwitter/X Post67/280Meta Description67/160H1 Tag67/70Twitter Bio67/160 Top 10 Keywords1bonjour1×7.1%2monde1×7.1%3ceci1×7.1%4est1×7.1%5test1×7.1%6comptage1×7.1%7mots1×7.1%8fran1×7.1%9ais1×7.1%"
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": []
+}

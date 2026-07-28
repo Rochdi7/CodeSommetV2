@@ -6,8 +6,6 @@
 @section('og_title', __('our-work/morocco-quest.og_title'))
 @section('og_description', __('our-work/morocco-quest.og_description'))
 @section('twitter_description', __('our-work/morocco-quest.twitter_description'))
-{{-- Noindex temporaire : le contenu de cette étude de cas décrit un autre projet (voir SEO_CANNIBALIZATION_REPORT.md §4). Retirer après correction du contenu. --}}
-@section('robots', 'noindex, follow')
 
 @section('content')
     <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
@@ -580,11 +578,11 @@
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/morocco-quest.text_32') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Hub d'Apprentissage Allemand</button><button
+                    style="transform:scale(0.95)">Expériences sur Mesure</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/morocco-quest.text_33') }}</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Plateforme Employeur</button><button
+                    style="transform:scale(0.95)">Blog & Destinations</button><button
                     class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
                     style="transform:scale(0.95)">{{ __('our-work/morocco-quest.text_154') }}</button></div>
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
@@ -759,7 +757,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight"></p>
-                                <p class="text-xs text-gray-600 font-medium">Placements</p>
+                                <p class="text-xs text-gray-600 font-medium">Réservations</p>
                             </div>
                         </div>
                     </div>
@@ -786,8 +784,8 @@
                 </div>
                 <div class="max-w-4xl mx-auto mt-16 mb-12">
                     <div
-                        class="bg-gradient-to-br from-[#00AEEF]/5 to-orange-50 rounded-3xl p-8 md:p-10 border-2 border-[#00AEEF]/20 text-center">
-                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#00AEEF]/10 mb-5">
+                        class="analyzer-cta rounded-3xl p-8 md:p-10 text-center">
+                        <div class="analyzer-cta__icon inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-[#00AEEF]"
@@ -798,9 +796,9 @@
                                 <path d="M8 17v-3"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[var(--text-primary)]"
+                        <h3 class="analyzer-cta__title text-2xl md:text-3xl font-bold mb-3"
                             style="font-family:var(--font-heading)">{{ __('our-work/morocco-quest.text_40') }}</h3>
-                        <p class="text-base md:text-lg text-[var(--text-secondary)] mb-6 max-w-2xl mx-auto">
+                        <p class="analyzer-cta__text text-base md:text-lg mb-6 max-w-2xl mx-auto">
                             {{ __('our-work/morocco-quest.text_41') }} <!-- -->Morocco
                             Quest<!-- -->{{ __('our-work/morocco-quest.text_42') }}</p><a
                             class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#00AEEF] hover:bg-[#0071BC] text-white font-medium transition-all shadow-[0_4px_20px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:scale-105 text-sm md:text-base"
@@ -830,10 +828,10 @@
                                 <div class="flex items-center gap-3">
                                     <div
                                         class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                                        <span class="text-white font-bold text-base md:text-lg">U</span>
+                                        <span class="text-white font-bold text-base md:text-lg">M</span>
                                     </div>
                                     <div>
-                                        <p class="font-bold text-white text-sm md:text-base">Uday Yatnalli</p>
+                                        <p class="font-bold text-white text-sm md:text-base">Mounir Akajia</p>
                                         <p class="text-white/90 text-xs md:text-sm">Fondateur, Morocco Quest</p>
                                     </div>
                                 </div>

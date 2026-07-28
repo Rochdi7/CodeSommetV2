@@ -556,7 +556,7 @@
                         <div class="space-y-2">
                             <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com" class="text-[#00AEEF] hover:underline"><span class="__cf_email__" data-cfemail="c1a9a4adadae81b1a8aaa0b2b2aeb2b5b4a5a8aeefa2aeac">[email&#160;protected]</span></a></p>
                             <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
+                            <p><strong>WhatsApp :</strong> <a href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer" class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                         </div>
                         <div>
                             <p><strong>Siège social :</strong> Maroc</p>
