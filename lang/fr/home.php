@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'meta_description' => 'CodeSommet est une agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. Demandez votre devis gratuit.',
+    'title' => 'Agence Web Maroc — Sites & SaaS sur Mesure | CodeSommet',
+    'meta_description' => 'Agence web basée au Maroc : sites sur mesure, e-commerce et SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
     'meta_keywords' => 'développement web Maroc,agence digitale Maroc,design UI UX,agence branding,services SEO,développement e-commerce,développement applications mobiles,développement SaaS,design web Maroc,développement React,développement Next.js,solutions web sur mesure',
-    'og_title' => 'CodeSommet - Agence Digitale | Développement Web, Design & SEO',
-    'og_description' => 'CodeSommet est une agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS. Demandez votre devis gratuit.',
-    'twitter_description' => 'Agence digitale basée au Maroc spécialisée en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS.',
+    'og_title' => 'Agence Web Maroc — Sites & SaaS sur Mesure | CodeSommet',
+    'og_description' => 'Agence web basée au Maroc : sites sur mesure, e-commerce et SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
+    'twitter_description' => 'Agence web basée au Maroc : sites sur mesure, e-commerce et SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
     'text_0' => 'Nous Acceptons Maintenant les Nouveaux Projets',
     'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_2' => '50+ Projets Livrés',

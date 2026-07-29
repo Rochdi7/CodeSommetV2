@@ -108,6 +108,21 @@
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Blog', $sdSiteUrl.'/blog'], [$post->title, $sdPageUrl]];
     }
 
+    if ($sdRouteName === 'home') {
+        $sdSchemas[] = [
+            '@context' => 'https://schema.org',
+            '@type' => 'WebPage',
+            '@id' => $sdSiteUrl.'/#webpage',
+            'url' => $sdSiteUrl.'/',
+            'name' => __('home.title'),
+            'description' => __('home.meta_description'),
+            'isPartOf' => ['@id' => $sdSiteUrl.'/#website'],
+            'about' => ['@id' => $sdOrgId],
+            'inLanguage' => 'fr',
+            'primaryImageOfPage' => asset('heros/saas-hero.webp'),
+        ];
+    }
+
     if ($sdCrumbs) {
         $sdSchemas[] = [
             '@context' => 'https://schema.org',
