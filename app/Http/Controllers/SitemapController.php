@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\BlogPost;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 
 /**
  * Sitemap XML dynamique.
@@ -18,33 +20,21 @@ class SitemapController extends Controller
     public function index(): Response
     {
         $base = rtrim(config('app.url'), '/');
-        $entries = [];
+        $sitemap = Sitemap::create();
 
         foreach ($this->staticPaths() as $path) {
-            $entries[] = ['loc' => $base.$path];
+            $sitemap->add(Url::create($base.$path));
         }
 
         // Articles publiés — lastmod réel (date de dernière modification).
         foreach (BlogPost::published()->orderByDesc('published_at')->get(['slug', 'updated_at']) as $post) {
-            $entries[] = [
-                'loc' => $base.'/blog/'.$post->slug,
-                'lastmod' => $post->updated_at?->toDateString(),
-            ];
+            $sitemap->add(
+                Url::create($base.'/blog/'.$post->slug)
+                    ->setLastModificationDate($post->updated_at ?? now())
+            );
         }
 
-        $xml = '<?xml version="1.0" encoding="UTF-8"?>'."\n";
-        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'."\n";
-        foreach ($entries as $entry) {
-            $xml .= "  <url>\n";
-            $xml .= '    <loc>'.e($entry['loc'])."</loc>\n";
-            if (! empty($entry['lastmod'])) {
-                $xml .= '    <lastmod>'.e($entry['lastmod'])."</lastmod>\n";
-            }
-            $xml .= "  </url>\n";
-        }
-        $xml .= '</urlset>';
-
-        return response($xml, 200, ['Content-Type' => 'application/xml; charset=UTF-8']);
+        return response($sitemap->render(), 200, ['Content-Type' => 'application/xml; charset=UTF-8']);
     }
 
     /**
