@@ -80,6 +80,7 @@
                                         id="hero-rotating-sizer">IMAGE DE MARQUE</span><span
                                         class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]"
                                         id="hero-rotating-text">CROISSANCE</span></span></span></h1>
+                        <span class="sr-only">Croissance, résultats, conversions, prospects, ventes et image de marque : CodeSommet conçoit des sites web qui transforment vos visiteurs en clients.</span>
                         <p
                             class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('home.ml_524') }}</p>
@@ -155,7 +156,7 @@
                         class="absolute inset-0 bg-gradient-to-br from-[var(--color-primary-orange)]/5 to-transparent rounded-3xl">
                     </div><img src="{{ asset('images/hero-image-1.webp') }}" alt="{{ __('home.attr_1058') }}"
                         class="relative w-full max-w-lg object-contain animate-float drop-shadow-2xl" loading="eager"
-                        fetchPriority="high" />
+                        fetchPriority="high" width="900" height="900" />
                 </div>
             </div>
             <div class="mt-8 lg:mt-12 relative">
@@ -276,122 +277,122 @@
                         {{-- Set 1 --}}
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="112" height="66"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/Glamworlds.webp') }}" alt="Logo de Glamworlds, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/Glamworlds.webp') }}" alt="Logo de Glamworlds, client de CodeSommet" loading="lazy" width="41" height="41"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/LocalMoroccoTours_bg.webp') }}" alt="Logo de Local Morocco Tours, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="112" height="28" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy" width="112" height="31"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/discovermorocco.webp') }}" alt="Logo de Discover Morocco, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="112" height="52" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/locationbuggy.webp') }}" alt="Logo de Location Buggy, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="41" height="41" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/monasso.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/monasso.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy" width="130" height="30"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/moroccoquest.webp') }}" alt="Logo de Morocco Quest DMC, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="112" height="36" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy" width="112" height="41"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/wmcars.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/wmcars.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy" width="112" height="35"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         {{-- Set 2 (duplicate for seamless infinite scroll) --}}
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="112" height="66"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/Glamworlds.webp') }}" alt="Logo de Glamworlds, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/Glamworlds.webp') }}" alt="Logo de Glamworlds, client de CodeSommet" loading="lazy" width="41" height="41"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/LocalMoroccoTours_bg.webp') }}" alt="Logo de Local Morocco Tours, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="112" height="28" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy" width="112" height="31"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/discovermorocco.webp') }}" alt="Logo de Discover Morocco, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="112" height="52" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/locationbuggy.webp') }}" alt="Logo de Location Buggy, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="41" height="41" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/monasso.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/monasso.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy" width="130" height="30"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/moroccoquest.webp') }}" alt="Logo de Morocco Quest DMC, client de CodeSommet"
-                                loading="lazy" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                loading="lazy" width="112" height="36" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy" width="112" height="41"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/wmcars.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy"
+                            <img src="{{ asset('images/partners/wmcars.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy" width="112" height="35"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
@@ -421,7 +422,7 @@
                                 class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                                 <span
                                     class="inline-flex items-center gap-1.5 text-white text-xs font-semibold tracking-wide uppercase">
-                                    En savoir plus
+                                    Découvrir nos services digitaux
                                     <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path d="M5 12h14M12 5l7 7-7 7" />
@@ -737,7 +738,7 @@
                             <div class="flex items-center justify-center relative" style="z-index:10"><img
                                     src="{{ asset('mockups/dental-pro-top.webp') }}" alt="{{ __('home.attr_1077') }}"
                                     class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]"
-                                    style="min-height:150%" loading="lazy" /></div>
+                                    style="min-height:150%" loading="lazy" width="640" height="983" /></div>
                         </div>
                     </div>
                     <div class="px-5 py-4">
@@ -2346,7 +2347,7 @@
                     <div
                         class="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_10') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_10') }}</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_547') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2360,7 +2361,7 @@
                     <div
                         class="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_11') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_11') }}</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_548') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2374,7 +2375,7 @@
                     <div
                         class="bg-gradient-to-br from-green-50 to-emerald-50 border-green-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_12') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_12') }}</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_549') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2388,7 +2389,7 @@
                     <div
                         class="bg-gradient-to-br from-orange-50 to-amber-50 border-orange-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_13') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_13') }}</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_550') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2402,7 +2403,7 @@
                     <div
                         class="bg-gradient-to-br from-teal-50 to-cyan-50 border-teal-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Expertise Sectorielle</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">Expertise Sectorielle</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_551') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2416,7 +2417,7 @@
                     <div
                         class="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_122') }}</h3>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_122') }}</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_552') }}</p>
                         </div>
                         <div class="flex justify-center">

@@ -19,7 +19,7 @@
                             <div class="relative" style="height: 320px;">
                                 {{-- Retainer card (behind, tilted) --}}
                                 <div id="mob-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-2xl border border-gray-200 shadow-lg" style="width: 200px; height: 270px; padding: 16px; transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(0.9); opacity: 0;">
-                                    <h3 class="font-semibold mb-3 italic text-base" style="font-family: var(--font-heading);">Retainer</h3>
+                                    <h3 class="font-semibold mb-3 italic text-base" style="font-family: var(--font-heading);" aria-hidden="true">Retainer</h3>
                                     <div class="space-y-1.5 text-xs text-gray-600">
                                         <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">1 projet actif</div>
                                         <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
@@ -37,7 +37,7 @@
                                             </svg>
                                             <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                         </div>
-                                        <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);">Développement de Site Web</h3>
+                                        <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);" aria-hidden="true">Développement de Site Web</h3>
                                         <div class="space-y-1.5 text-xs">
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
@@ -60,7 +60,7 @@
                                             </svg>
                                         </div>
                                         <div class="text-center space-y-2">
-                                            <h3 class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);">Vous avez fait<br>votre part</h3>
+                                            <h3 class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);" aria-hidden="true">Vous avez fait<br>votre part</h3>
                                             <div class="bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2">
                                                 <p class="text-white font-medium text-sm">C'est notre tour maintenant</p>
                                             </div>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Choisissez Votre Formule</h3>
+                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);" aria-hidden="true">Choisissez Votre Formule</h3>
                     <p class="text-base text-gray-600 leading-relaxed">Sélectionnez Développement de Site Web ou le forfait mensuel adapté à vos besoins</p>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                 <div class="mb-6 overflow-hidden relative" style="height: 400px;">
                     <div class="max-w-full mx-auto absolute inset-0 flex items-center justify-center" style="max-width: 300px;">
                         <div id="mob-backlog-card" class="bg-white rounded-2xl shadow-xl border border-gray-200 w-full p-5" style="transform: rotate(-3deg);">
-                            <h3 class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);">Vos Tâches de Design</h3>
+                            <h3 class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);" aria-hidden="true">Vos Tâches de Design</h3>
                             <div id="mob-backlog-list" class="space-y-2 relative">
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Soumettez Votre Demande</h3>
+                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);" aria-hidden="true">Soumettez Votre Demande</h3>
                     <p class="text-base text-gray-600 leading-relaxed">Partagez vos besoins et nous prioriserons vos tâches</p>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);">Tâches du Projet</h3>
+                                    <h3 class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);" aria-hidden="true">Tâches du Projet</h3>
                                     <p class="text-xs text-gray-500">Vos tâches de design</p>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Regardez-nous Livrer</h3>
+                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);" aria-hidden="true">Regardez-nous Livrer</h3>
                     <p class="text-base text-gray-600 leading-relaxed">Suivez l'avancement en temps réel pendant que nous réalisons votre projet</p>
                 </div>
             </div>
@@ -401,14 +401,14 @@ $comparisons = [
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-black" aria-hidden="true">
                                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                             </svg>
-                            <h3 class="text-lg font-bold" style="font-family: var(--font-heading);">CodeSommet</h3>
+                            <h3 class="text-lg font-bold" style="font-family: var(--font-heading);" aria-hidden="true">CodeSommet</h3>
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold" style="font-family: var(--font-heading);">Designer à temps plein</h3>
+                        <h3 class="text-lg font-bold" style="font-family: var(--font-heading);" aria-hidden="true">Designer à temps plein</h3>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold" style="font-family: var(--font-heading);">Autres agences</h3>
+                        <h3 class="text-lg font-bold" style="font-family: var(--font-heading);" aria-hidden="true">Autres agences</h3>
                     </div>
                 </div>
                 {{-- Table body --}}
@@ -539,7 +539,7 @@ $comparisons = [
             @endphp
 
             @foreach($problems as $item)
-            <div class="relative h-[180px] flip-card group">
+            <article class="relative h-[180px] flip-card group">
                 <div class="relative w-full h-full flip-card-inner">
                     {{-- Front: Problem --}}
                     <div class="absolute inset-0 w-full h-full bg-white rounded-2xl flip-card-front">
@@ -571,7 +571,7 @@ $comparisons = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             @endforeach
         </div>
     </div>
@@ -670,7 +670,7 @@ $comparisons = [
                             </div>
                             <h3 class="text-3xl md:text-4xl font-bold text-black">Retainer <span id="retainer-social-label" class="text-[var(--color-primary-orange)] hidden">+Social</span></h3>
                         </div>
-                        <button id="retainer-toggle-btn" onclick="toggleRetainerSocial()" class="flex items-center rounded-full transition-all duration-400 ease-out gap-0 p-0 bg-transparent" style="margin-top: 9px;">
+                        <button id="retainer-toggle-btn" onclick="toggleRetainerSocial()" role="switch" aria-checked="false" aria-label="Inclure les Réseaux Sociaux" class="flex items-center rounded-full transition-all duration-400 ease-out gap-0 p-0 bg-transparent" style="margin-top: 9px;">
                             <div id="retainer-toggle-track" class="relative rounded-full transition-all duration-400 ease-out w-14 h-7 bg-black/20">
                                 <div id="retainer-toggle-dot" class="absolute top-0.5 w-6 h-6 rounded-full bg-white transition-all duration-400 ease-out left-0.5"></div>
                             </div>
@@ -772,9 +772,11 @@ $comparisons = [
                     // Price elements removed - no longer showing specific amounts
 
                     const isActive = inner.classList.contains('border-[var(--color-primary-orange)]');
+                    const toggleBtn = document.getElementById('retainer-toggle-btn');
 
                     if (!isActive) {
                         // Activate social
+                        toggleBtn.setAttribute('aria-checked', 'true');
                         inner.classList.remove('border-transparent');
                         inner.classList.add('border-[var(--color-primary-orange)]');
                         glow.classList.remove('opacity-0');
@@ -797,6 +799,7 @@ $comparisons = [
                         socialFeatures.classList.remove('hidden');
                     } else {
                         // Deactivate social
+                        toggleBtn.setAttribute('aria-checked', 'false');
                         inner.classList.add('border-transparent');
                         inner.classList.remove('border-[var(--color-primary-orange)]');
                         glow.classList.add('opacity-0');

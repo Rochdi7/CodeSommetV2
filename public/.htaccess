@@ -5,6 +5,11 @@
 
     RewriteEngine On
 
+    # Canonical host: redirect www to the apex domain (no-op today since
+    # www.codesommet.com has no DNS record, kept as insurance if that changes).
+    RewriteCond %{HTTP_HOST} ^www\.codesommet\.com$ [NC]
+    RewriteRule ^(.*)$ https://codesommet.com/$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -22,4 +27,12 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+</IfModule>
+
+# Compress dynamic HTML/JSON responses. Static assets (css/js/fonts) are
+# already served brotli-compressed by LiteSpeed directly; this only covers
+# the PHP-rendered HTML document, which currently returns uncompressed
+# (verified via curl --compressed against the live homepage).
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/json application/xml
 </IfModule>
