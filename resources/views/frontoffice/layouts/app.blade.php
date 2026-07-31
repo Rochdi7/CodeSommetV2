@@ -54,6 +54,10 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/components.css') }}" />
 
+    {{-- Toastr (notifications) --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/toastr-theme.css') }}" />
+
     {{-- Google Analytics --}}
     <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K" as="script" />
     <link rel="preload" href="{{ asset('scripts/google-analytics.js') }}" as="script" />
@@ -102,6 +106,11 @@
 
     {{-- Pop-up d'offre : -30% sur le premier projet --}}
     @include('frontoffice.partials.promo-popup')
+
+    {{-- Toastr (notifications) --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="{{ asset('js/toastr-init.js') }}"></script>
 
     {{-- JS principal --}}
     <script src="{{ asset('js/app.js') }}" defer></script>

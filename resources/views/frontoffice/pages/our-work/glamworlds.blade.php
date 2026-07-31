@@ -162,7 +162,12 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/glamworlds.text_6') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px]">{{ __('our-work/glamworlds.text_7') }}</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/glamworlds.text_7') }}</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.defi_bullet_1') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.defi_bullet_2') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.defi_bullet_3') }}</span></li>
+                    </ul>
                 </div>
                 <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                     <div class="flex items-center gap-3 mb-6">
@@ -183,7 +188,13 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/glamworlds.text_8') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px]">{{ __('our-work/glamworlds.text_9') }}</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/glamworlds.text_9') }}</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.solution_bullet_1') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.solution_bullet_2') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.solution_bullet_3') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.solution_bullet_4') }}</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -397,20 +408,11 @@
                     style="font-family:var(--font-heading)">{{ __('our-work/glamworlds.text_17') }}</h2>
                 <p class="text-gray-600 text-base md:text-lg">{{ __('our-work/glamworlds.text_18') }}</p>
             </div>
-            <div class="flex justify-center gap-2 mb-8 flex-wrap"><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md"
-                    style="transform:scale(0.95)">Accueil</button><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Fiches Produits</button><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">{{ __('our-work/glamworlds.text_143') }}</button><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Contact &amp; Support</button></div>
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
-                    class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <img src="{{ asset('mockups/glamworlds-top.webp') }}" alt="Accueil"
-                        class="w-full h-full object-cover" />
+                    class="relative aspect-video rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+                    <video src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay
+                        loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                 </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
@@ -863,7 +865,7 @@
                             <div class="flex items-center justify-center gap-0">
                                 <section class="flex items-center overflow-hidden"
                                     style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
-                                    <ul class="flex items-center gap-3 list-none m-0 p-0"
+                                    <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left"
                                         style="position:relative;flex-direction:row;will-change:transform">
                                         <li class="flex-shrink-0">
                                             <div
@@ -1107,7 +1109,7 @@
                                 </div>
                                 <section class="flex items-center overflow-hidden"
                                     style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
-                                    <ul class="flex items-center gap-3 list-none m-0 p-0"
+                                    <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right"
                                         style="position:relative;flex-direction:row;will-change:transform">
                                         <li class="flex-shrink-0">
                                             <div

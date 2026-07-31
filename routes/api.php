@@ -22,3 +22,16 @@ use Illuminate\Support\Facades\Route;
 Route::post('/tools/{slug}', [ToolsApiController::class, 'handle'])
     ->where('slug', '[a-z0-9-]+')
     ->middleware('throttle:tools-api');
+
+/*
+ * Real, server-side "N scans performed" counter shown on tool pages.
+ * GET reads the current count on page load; POST increments it once per
+ * scan action. Separate throttle bucket so counter traffic never eats into
+ * the scan endpoint's budget.
+ */
+Route::get('/tools/{slug}/usage', [ToolsApiController::class, 'usageShow'])
+    ->where('slug', '[a-z0-9-]+')
+    ->middleware('throttle:tools-usage');
+Route::post('/tools/{slug}/usage', [ToolsApiController::class, 'usageIncrement'])
+    ->where('slug', '[a-z0-9-]+')
+    ->middleware('throttle:tools-usage');

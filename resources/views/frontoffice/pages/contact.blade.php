@@ -355,25 +355,6 @@
                                 {{ __('contact.text_168') }}</h2>
                             <p class="text-sm sm:text-base text-[var(--text-secondary)]">{{ __('contact.text_23') }}</p>
                         </div>
-                        @if (session('contact_success'))
-                            <div class="mb-4 rounded-lg bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-800">
-                                {{ session('contact_success') }}
-                            </div>
-                        @endif
-                        @if (session('contact_error'))
-                            <div class="mb-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800">
-                                {{ session('contact_error') }}
-                            </div>
-                        @endif
-                        @if ($errors->any())
-                            <div class="mb-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800">
-                                <ul class="list-disc list-inside space-y-1">
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
                         <form class="space-y-4 sm:space-y-6" method="POST" action="{{ route('contact.store') }}">
                             @csrf
                             {{-- Honeypot: hidden from users, bots fill it. --}}
@@ -1318,3 +1299,29 @@
             </div>
         </div>
     @endsection
+
+    @push('scripts')
+        @if (session('contact_success'))
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    toastr.success(@json(session('contact_success')), 'Message envoyé !');
+                });
+            </script>
+        @endif
+        @if (session('contact_error'))
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    toastr.error(@json(session('contact_error')), 'Erreur');
+                });
+            </script>
+        @endif
+        @if ($errors->any())
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    @foreach ($errors->all() as $error)
+                        toastr.error(@json($error), 'Erreur');
+                    @endforeach
+                });
+            </script>
+        @endif
+    @endpush

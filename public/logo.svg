@@ -1,35 +1,101 @@
-<svg width="200" height="150" viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 45 22 A 20 20 0 1 0 45 58" 
-        fill="none" 
-        stroke="#1A1A1B" 
-        stroke-width="12" 
-        stroke-linecap="round"
-        stroke-dasharray="100"
-        stroke-dashoffset="100">
-    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="0.8s" fill="freeze" />
-  </path>
+<svg width="220" height="150" viewBox="0 0 170 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="csShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1"    stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
 
-  <path d="M 100 22 H 75 V 38" 
-        fill="none" 
-        stroke="#00AEEF" 
-        stroke-width="12" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"
-        opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.5s" fill="freeze" />
-    <animateTransform attributeName="transform" type="translate" from="10 0" to="0 0" dur="0.6s" begin="0.5s" fill="freeze" />
-    <animate attributeName="stroke" values="#00AEEF;#0071BC;#00AEEF" dur="3s" repeatCount="indefinite" />
-  </path>
+    <mask id="csShineMask" maskUnits="userSpaceOnUse" x="0" y="0" width="170" height="80">
+      <rect y="-5" width="55" height="90" fill="url(#csShine)" x="-70">
+        <animate attributeName="x"
+                 values="-70;-70;185;185"
+                 keyTimes="0;0.30;0.62;1"
+                 dur="5.5s" begin="1.9s" repeatCount="indefinite"
+                 calcMode="spline"
+                 keySplines="0 0 1 1; 0.33 0 0.15 1; 0 0 1 1"/>
+      </rect>
+    </mask>
+  </defs>
 
-  <path d="M 75 58 H 100 V 42" 
-        fill="none" 
-        stroke="#0071BC" 
-        stroke-width="12" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"
-        opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.8s" fill="freeze" />
-    <animateTransform attributeName="transform" type="translate" from="0 5" to="0 0" dur="0.6s" begin="0.8s" fill="freeze" />
-    <animate attributeName="stroke" values="#0071BC;#00AEEF;#0071BC" dur="3s" repeatCount="indefinite" />
-  </path>
+  <g transform="translate(90 40)">
+    <!-- idle breathe -->
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+                        values="1;1.015;1"
+                        dur="4.5s" begin="2.1s" repeatCount="indefinite"
+                        calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+      <!-- assembly pop -->
+      <g>
+        <animateTransform attributeName="transform" type="scale"
+                          values="1;1.05;0.99;1"
+                          keyTimes="0;0.45;0.75;1"
+                          dur="0.55s" begin="1.62s" fill="freeze"
+                          calcMode="spline"
+                          keySplines="0.2 0.8 0.3 1; 0.4 0 0.4 1; 0.3 0 0.2 1"/>
+        <g transform="translate(-90 -40)">
+
+          <!-- ============ C ============ -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate"
+                              from="-12 70 40" to="0 70 40"
+                              dur="0.95s" fill="freeze"
+                              calcMode="spline" keySplines="0.16 1 0.3 1"/>
+            <path d="M61 22 A20 20 0 1 0 61 58"
+                  fill="none" stroke="#1A1A1B" stroke-width="12" stroke-linecap="round"
+                  stroke-dasharray="81" stroke-dashoffset="81">
+              <animate attributeName="stroke-dashoffset"
+                       from="81" to="0"
+                       dur="0.95s" fill="freeze"
+                       calcMode="spline" keySplines="0.16 1 0.3 1"/>
+            </path>
+          </g>
+
+          <!-- ======= M — left stroke ======= -->
+          <path d="M82 58 L96 22 L110 58"
+                fill="none" stroke="#00AEEF" stroke-width="12"
+                stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="78" stroke-dashoffset="78">
+            <animate attributeName="stroke-dashoffset"
+                     from="78" to="0"
+                     dur="0.6s" begin="0.75s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1"/>
+            <animate attributeName="stroke"
+                     values="#00AEEF;#0071BC;#00AEEF"
+                     dur="3s" begin="1.70s" repeatCount="indefinite"
+                     calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+          </path>
+
+          <!-- ======= M — right stroke ======= -->
+          <path d="M110 58 L124 22 L138 58"
+                fill="none" stroke="#0071BC" stroke-width="12"
+                stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="78" stroke-dashoffset="78">
+            <animate attributeName="stroke-dashoffset"
+                     from="78" to="0"
+                     dur="0.6s" begin="1.10s" fill="freeze"
+                     calcMode="spline" keySplines="0.22 1 0.36 1"/>
+            <animate attributeName="stroke"
+                     values="#0071BC;#00AEEF;#0071BC"
+                     dur="3s" begin="1.70s" repeatCount="indefinite"
+                     calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+          </path>
+
+          <!-- ======= specular sweep overlay ======= -->
+          <g mask="url(#csShineMask)" opacity="0.7" style="pointer-events:none">
+            <path d="M61 22 A20 20 0 1 0 61 58"
+                  fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+            <path d="M82 58 L96 22 L110 58"
+                  fill="none" stroke="#fff" stroke-width="12"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M110 58 L124 22 L138 58"
+                  fill="none" stroke="#fff" stroke-width="12"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>

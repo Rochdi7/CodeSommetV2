@@ -12,15 +12,14 @@
             {{ $btnText ?? "S'inscrire" }}
         </button>
     </form>
-    <div id="newsletter-msg-{{ $id ?? 'default' }}" class="hidden mt-2 text-xs text-red-500"></div>
 </div>
 <script>
 function submitNewsletter(e, formId) {
     e.preventDefault();
     const form = document.getElementById('newsletter-form-' + formId);
-    const msg = document.getElementById('newsletter-msg-' + formId);
     const success = document.getElementById('newsletter-success-' + formId);
     const btn = form.querySelector('button[type="submit"]');
+    const originalBtnText = btn.textContent;
     btn.disabled = true; btn.textContent = '...';
     const data = new FormData(form);
     fetch('{{ route("newsletter.subscribe") }}', {
@@ -28,8 +27,17 @@ function submitNewsletter(e, formId) {
         headers: { 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content, 'Accept': 'application/json' },
         body: data
     }).then(r => r.json()).then(res => {
-        if (res.success) { form.classList.add('hidden'); success.classList.remove('hidden'); msg.classList.add('hidden'); }
-        else { msg.textContent = res.message || 'Une erreur est survenue.'; msg.classList.remove('hidden'); btn.disabled = false; btn.textContent = "{{ $btnText ?? \"S'inscrire\" }}"; }
-    }).catch(() => { msg.textContent = 'Erreur réseau.'; msg.classList.remove('hidden'); btn.disabled = false; btn.textContent = "{{ $btnText ?? \"S'inscrire\" }}"; });
+        if (res.success) {
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+            toastr.success('Vous recevrez nos prochains articles et actualités.', 'Inscription confirmée !');
+        } else {
+            toastr.error(res.message || 'Une erreur est survenue.', 'Erreur');
+            btn.disabled = false; btn.textContent = originalBtnText;
+        }
+    }).catch(() => {
+        toastr.error('Erreur réseau. Veuillez réessayer.', 'Erreur');
+        btn.disabled = false; btn.textContent = originalBtnText;
+    });
 }
 </script>

@@ -37,10 +37,10 @@
                 @php
                     $navItems = [
                         ['route' => 'home', 'label' => __('nav.home')],
+                        ['route' => 'about', 'label' => __('nav.about')],
                         ['route' => 'our-work', 'label' => __('nav.our_work')],
                         ['route' => 'tools', 'label' => __('nav.tools')],
                         ['route' => 'blog', 'label' => __('nav.blog')],
-                        ['route' => 'about', 'label' => __('nav.about')],
                         ['route' => 'contact', 'label' => __('nav.contact')],
                     ];
                 @endphp

@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\BudgetController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\MediaController;
+use App\Http\Controllers\Admin\HomeAdController;
 use App\Http\Controllers\Admin\NewsletterAdminController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ContactController;
@@ -162,6 +163,11 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     Route::post('/media/upload', [MediaController::class, 'upload'])->name('media.upload');
     Route::post('/media/{medium}', [MediaController::class, 'update'])->name('media.update');
     Route::delete('/media/{medium}', [MediaController::class, 'destroy'])->name('media.destroy');
+
+    // Home Banners (Ads)
+    Route::get('/home-ads', [HomeAdController::class, 'index'])->name('home-ads.index');
+    Route::post('/home-ads/{homeAd}', [HomeAdController::class, 'update'])->name('home-ads.update');
+    Route::post('/home-ads/{homeAd}/toggle', [HomeAdController::class, 'toggle'])->name('home-ads.toggle');
 
     // Newsletter Management
     Route::get('/newsletter/export', [NewsletterAdminController::class, 'export'])->name('newsletter.export');

@@ -1,0 +1,77 @@
+/* Toastr theme — matches CodeSommet design tokens (main.css :root) */
+
+#toast-container > div {
+    font-family: var(--font-body), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    border-radius: var(--radius-md, 0.75rem);
+    box-shadow: 0 10px 30px -10px rgba(15, 15, 15, 0.18), 0 4px 10px -2px rgba(15, 15, 15, 0.08);
+    opacity: 1;
+    padding: 14px 16px 14px 52px;
+    background-position: 16px center;
+    background-size: 20px;
+}
+
+#toast-container > div:hover {
+    box-shadow: 0 14px 34px -10px rgba(15, 15, 15, 0.22), 0 6px 14px -2px rgba(15, 15, 15, 0.1);
+}
+
+.toast-title {
+    font-family: var(--font-heading), "Satoshi", sans-serif;
+    font-weight: var(--font-semibold, 600);
+    font-size: 0.875rem;
+    margin-bottom: 2px;
+}
+
+.toast-message {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.toast-close-button {
+    font-family: inherit;
+    opacity: 0.7;
+    text-shadow: none;
+}
+
+.toast-close-button:hover,
+.toast-close-button:focus {
+    opacity: 1;
+}
+
+.toast-progress {
+    opacity: 0.3;
+}
+
+/* Status colors pulled straight from :root in main.css */
+.toast-success {
+    background-color: var(--color-success, #22C55E) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E") !important;
+}
+
+.toast-error {
+    background-color: var(--color-error, #EF4444) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' y1='8' x2='12' y2='12'/%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'/%3E%3C/svg%3E") !important;
+}
+
+.toast-warning {
+    background-color: var(--color-warning, #F59E0B) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13'/%3E%3Cline x1='12' y1='17' x2='12.01' y2='17'/%3E%3C/svg%3E") !important;
+}
+
+.toast-info {
+    background-color: var(--color-primary-orange, #00AEEF) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' y1='16' x2='12' y2='12'/%3E%3Cline x1='12' y1='8' x2='12.01' y2='8'/%3E%3C/svg%3E") !important;
+}
+
+@media (max-width: 640px) {
+    #toast-container {
+        width: calc(100% - 24px);
+        left: 12px !important;
+        right: 12px !important;
+    }
+
+    #toast-container > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

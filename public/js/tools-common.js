@@ -71,36 +71,22 @@ window.CodeSommetTools.onReady = function (fn) {
         return (Array.isArray(slugs) ? slugs : [slugs]).indexOf(current) !== -1;
     };
 
-    CodeSommetTools.getUsageCount = function (toolSlug) {
-        var key = 'tool_usage_' + toolSlug;
-        var stored = localStorage.getItem(key);
-        if (stored) return parseInt(stored);
-        var popular = ['website-analyzer', 'meta-tag-generator', 'qr-code-generator', 'utm-builder',
-            'text-case-converter', 'json-formatter', 'base64-encoder', 'lorem-ipsum-generator'];
-        var medium = ['xml-sitemap-generator', 'robots-txt-generator', 'css-minifier', 'word-counter',
-            'readability-analyzer', 'og-preview-generator', 'url-slug-generator', 'duplicate-content-checker'];
-        var low = ['domain-health-checker', 'keyword-density-analyzer', 'heading-analyzer',
-            'nofollow-link-checker', 'meta-refresh-generator', 'html-minifier', 'faq-schema-generator',
-            'schema-generator', 'local-business-schema', 'hreflang-generator'];
-        var base;
-        if (popular.includes(toolSlug)) base = Math.floor(Math.random() * 15000 + 10000);
-        else if (medium.includes(toolSlug)) base = Math.floor(Math.random() * 3000 + 5000);
-        else if (low.includes(toolSlug)) base = Math.floor(Math.random() * 2000 + 1000);
-        else base = Math.floor(Math.random() * 500 + 300);
-        localStorage.setItem(key, base.toString());
-        return base;
-    };
+    /* Real, server-side counter (see ToolsApiController::usageShow/usageIncrement).
+     * Every visitor sees the same number because it's stored in the
+     * `tool_usages` DB table, not per-browser localStorage. */
+    function setCounterText(count) {
+        var el = document.getElementById('usage-counter-value');
+        if (el) el.textContent = Math.max(0, count).toLocaleString('en-US');
+    }
 
     CodeSommetTools.incrementUsage = function (toolSlug) {
-        var key = 'tool_usage_' + toolSlug;
-        var current = parseInt(localStorage.getItem(key) || '0') + 1;
-        localStorage.setItem(key, current.toString());
-        var counterEl = document.getElementById('usage-counter-value');
-        if (counterEl) counterEl.textContent = current.toLocaleString('en-US');
+        fetch('/api/tools/' + encodeURIComponent(toolSlug) + '/usage', { method: 'POST' })
+            .then(function (res) { return res.ok ? res.json() : null; })
+            .then(function (data) { if (data && typeof data.count === 'number') setCounterText(data.count); })
+            .catch(function () { /* counter is cosmetic; ignore network failures */ });
     };
 
     CodeSommetTools.initUsageCounter = function (toolSlug, actionText) {
-        var count = CodeSommetTools.getUsageCount(toolSlug);
         var container = document.getElementById('tool-usage-counter');
         if (!container) {
             var actionBtn = document.getElementById('tool-action-btn');
@@ -109,12 +95,16 @@ window.CodeSommetTools.onReady = function (fn) {
             container.id = 'tool-usage-counter';
             container.className = 'flex items-center justify-center gap-2 text-sm text-gray-600 mt-3';
             container.innerHTML = '<svg class="w-4 h-4 text-[#00AEEF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>' +
-                '<span><span id="usage-counter-value" class="font-semibold text-[#00AEEF]">' + count.toLocaleString('en-US') + '</span> ' + actionText + '</span>';
+                '<span><span id="usage-counter-value" class="font-semibold text-[#00AEEF]">0</span> ' + actionText + '</span>';
             actionBtn.insertAdjacentElement('afterend', container);
         } else {
-            var val = container.querySelector('#usage-counter-value');
-            if (val) val.textContent = count.toLocaleString('en-US');
+            setCounterText(0);
         }
+
+        fetch('/api/tools/' + encodeURIComponent(toolSlug) + '/usage')
+            .then(function (res) { return res.ok ? res.json() : null; })
+            .then(function (data) { if (data && typeof data.count === 'number') setCounterText(data.count); })
+            .catch(function () { /* leave at 0 on failure */ });
     };
 
     /* ── Field lookup by label ────────────────────────────────────────────

@@ -54,6 +54,11 @@ class AppServiceProvider extends ServiceProvider
         // Conservé pour un usage explicite via `throttle:tools-api-heavy`.
         RateLimiter::for('tools-api-heavy', fn (Request $request) => Limit::perMinute(5)->by($request->ip()));
 
+        // Compteur d'utilisation des outils (lecture + incrément) — coût DB
+        // négligeable mais throttlé séparément pour ne pas partager le budget
+        // des vrais appels d'analyse.
+        RateLimiter::for('tools-usage', fn (Request $request) => Limit::perMinute(30)->by($request->ip()));
+
         // Admin login — per IP + submitted email.
         RateLimiter::for('admin-login', fn (Request $request) => Limit::perMinute(5)
             ->by($request->ip() . '|' . strtolower((string) $request->input('email'))));

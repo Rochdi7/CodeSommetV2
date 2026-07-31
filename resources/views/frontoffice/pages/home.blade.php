@@ -9,27 +9,10 @@
 
 @section('content')
     @php
-        // ── Bannières promo (éditables ici) ──────────────────────────────────
-        // Mets 'active' => false pour masquer une bannière.
-        // NOTE: réactiver (active => true) une fois les visuels ajoutés dans public/images/.
-        $homeAd1 = [
-            'active' => false,
-            'link'   => '#',
-            'image'  => asset('images/flyer-square-1.jpg'),
-            'alt'    => __('home.ad_alt_text'),
-        ];
-        $homeAd2 = [
-            'active' => false,
-            'link'   => '#',
-            'image'  => asset('images/flyer-square-2.jpg'),
-            'alt'    => 'CodeSommet — Nos Services',
-        ];
-        $homeAd3 = [
-            'active' => true,
-            'link'   => '#',
-            'image'  => 'https://codesommet.com/storage/blog/1767049157_695307c571de7.jpg',
-            'alt'    => 'CodeSommet — Promotion',
-        ];
+        // ── Bannières promo 1 & 2 — gérées depuis /admin/home-ads ────────────
+        // Bannière 3 est statique (voir plus bas), non gérée par l'admin.
+        $homeAd1 = \App\Models\HomeAd::where('slot', 1)->first();
+        $homeAd2 = \App\Models\HomeAd::where('slot', 2)->first();
     @endphp
     <section
         class="relative md:min-h-screen md:flex md:items-center overflow-hidden pt-28 lg:pt-32 pb-[30px] md:pb-16 bg-[var(--bg-primary)]">
@@ -76,11 +59,8 @@
                                             class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                             style="background-color:var(--color-primary-orange)"
                                             class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                        class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none"
-                                        id="hero-rotating-sizer">IMAGE DE MARQUE</span><span
                                         class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]"
-                                        id="hero-rotating-text">CROISSANCE</span></span></span></h1>
-                        <span class="sr-only">Croissance, résultats, conversions, prospects, ventes et image de marque : CodeSommet conçoit des sites web qui transforment vos visiteurs en clients.</span>
+                                        id="hero-rotating-text">DES RÉSULTATS</span></span></span></h1>
                         <p
                             class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('home.ml_524') }}</p>
@@ -404,18 +384,18 @@
 
     <!-- Promo Banners — Two Squares Side by Side -->
     @php
-        $showSquareBanners = $homeAd1['active'] || $homeAd2['active'];
+        $showSquareBanners = ($homeAd1 && $homeAd1->is_active && $homeAd1->image_path) || ($homeAd2 && $homeAd2->is_active && $homeAd2->image_path);
     @endphp
     @if ($showSquareBanners)
         <div class="w-full py-6 md:py-8 bg-white">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
-                    @if ($homeAd1['active'])
-                        <a href="{{ $homeAd1['link'] }}"
+                    @if ($homeAd1 && $homeAd1->is_active && $homeAd1->image_path)
+                        <a href="{{ $homeAd1->link_url ?: '#' }}"
                             class="promo-banner group relative block w-full overflow-hidden rounded-xl"
                             style="aspect-ratio:1/1;max-height:320px">
-                            <img src="{{ $homeAd1['image'] }}"
-                                alt="{{ $homeAd1['alt'] }}" loading="lazy" decoding="async"
+                            <img src="{{ $homeAd1->image_url }}"
+                                alt="{{ $homeAd1->alt_text ?: __('home.ad_alt_text') }}" loading="lazy" decoding="async"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/5"></div>
                             <div
@@ -431,12 +411,12 @@
                             </div>
                         </a>
                     @endif
-                    @if ($homeAd2['active'])
-                        <a href="{{ $homeAd2['link'] }}"
+                    @if ($homeAd2 && $homeAd2->is_active && $homeAd2->image_path)
+                        <a href="{{ $homeAd2->link_url ?: '#' }}"
                             class="promo-banner group relative block w-full overflow-hidden rounded-xl"
                             style="aspect-ratio:1/1;max-height:320px">
-                            <img src="{{ $homeAd2['image'] }}"
-                                alt="{{ $homeAd2['alt'] }}" loading="lazy"
+                            <img src="{{ $homeAd2->image_url }}"
+                                alt="{{ $homeAd2->alt_text ?: 'CodeSommet — Nos Services' }}" loading="lazy"
                                 decoding="async"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/5"></div>
@@ -473,7 +453,7 @@
                 class="jsx-2447671171 absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#F5F5F5] via-[#F5F5F5]/80 to-transparent z-10 pointer-events-none">
             </div>
             <div style="cursor:grab" class="jsx-2447671171 overflow-x-auto overflow-y-hidden scrollbar-hide">
-                <div style="gap:24px;animation:heroScroll 5s linear infinite"
+                <div style="gap:24px;animation:heroScroll 22s linear infinite"
                     class="jsx-2447671171 flex items-center will-change-transform">
                     <div style="height:320px;width:480px"
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
@@ -2347,7 +2327,7 @@
                     <div
                         class="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_10') }}</h3>
+                            <p class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_10') }}</p>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_547') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2361,7 +2341,7 @@
                     <div
                         class="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_11') }}</h3>
+                            <p class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_11') }}</p>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_548') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2375,7 +2355,7 @@
                     <div
                         class="bg-gradient-to-br from-green-50 to-emerald-50 border-green-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_12') }}</h3>
+                            <p class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_12') }}</p>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_549') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2389,7 +2369,7 @@
                     <div
                         class="bg-gradient-to-br from-orange-50 to-amber-50 border-orange-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_13') }}</h3>
+                            <p class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_13') }}</p>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_550') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2403,7 +2383,7 @@
                     <div
                         class="bg-gradient-to-br from-teal-50 to-cyan-50 border-teal-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">Expertise Sectorielle</h3>
+                            <p class="text-lg font-bold text-gray-900 mb-2">Expertise Sectorielle</p>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_551') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2417,7 +2397,7 @@
                     <div
                         class="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-100 border-2 rounded-2xl p-6 relative overflow-hidden">
                         <div class="relative z-10 mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-2" aria-hidden="true">{{ __('home.text_122') }}</h3>
+                            <p class="text-lg font-bold text-gray-900 mb-2">{{ __('home.text_122') }}</p>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('home.ml_552') }}</p>
                         </div>
                         <div class="flex justify-center">
@@ -2593,35 +2573,35 @@
         </div>
     </section>
 
-    <!-- Promo Banner 3 — Rectangle -->
-    @if ($homeAd3['active'])
-        <div class="w-full py-8 md:py-12 bg-[#F5F5F5]">
-            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-                <a href="{{ $homeAd3['link'] }}"
-                    class="promo-banner group relative block w-full overflow-hidden rounded-2xl"
-                    style="aspect-ratio:21/9">
-                    <img src="{{ $homeAd3['image'] }}"
-                        alt="{{ $homeAd3['alt'] }}" loading="lazy" decoding="async"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
-                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5"></div>
-                    <div
-                        class="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-                        <span
-                            class="inline-flex items-center gap-2 text-white text-sm md:text-base font-semibold tracking-wide uppercase">
-                            Voir l'offre
-                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </span>
-                    </div>
-                </a>
-            </div>
+    <!-- Promo Banner 3 — Rectangle (static, not admin-managed) -->
+    <div class="w-full py-8 md:py-12 bg-[#F5F5F5]">
+        <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+            <a href="{{ route('get-quote') }}"
+                class="promo-banner group relative block w-full overflow-hidden rounded-2xl"
+                style="aspect-ratio:21/9">
+                <img src="{{ asset('images/new-flyers/maintenance-site-web-securite-support-codesommet.webp') }}"
+                    alt="Maintenance de site web CodeSommet — sécurité, mises à jour et support réactif"
+                    loading="lazy" decoding="async"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5"></div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
+                    <span
+                        class="inline-flex items-center gap-2 text-white text-sm md:text-base font-semibold tracking-wide uppercase">
+                        Voir l'offre
+                        <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
         </div>
-    @endif
+    </div>
 
     @include('frontoffice.partials.home-testimonials')
     @include('frontoffice.partials.home-sections')
+    @include('frontoffice.partials.home-blog-carousel')
 
     {{-- Barre promo fixe (bas de page) --}}
     @include('frontoffice.partials.promo-sticky-bar')

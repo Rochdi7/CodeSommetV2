@@ -19,7 +19,7 @@
                             <div class="relative" style="height: 320px;">
                                 {{-- Retainer card (behind, tilted) --}}
                                 <div id="mob-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-2xl border border-gray-200 shadow-lg" style="width: 200px; height: 270px; padding: 16px; transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(0.9); opacity: 0;">
-                                    <h3 class="font-semibold mb-3 italic text-base" style="font-family: var(--font-heading);" aria-hidden="true">Retainer</h3>
+                                    <p class="font-semibold mb-3 italic text-base" style="font-family: var(--font-heading);">Retainer</p>
                                     <div class="space-y-1.5 text-xs text-gray-600">
                                         <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">1 projet actif</div>
                                         <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
@@ -37,7 +37,7 @@
                                             </svg>
                                             <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                         </div>
-                                        <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);" aria-hidden="true">Développement de Site Web</h3>
+                                        <p class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);">Développement de Site Web</p>
                                         <div class="space-y-1.5 text-xs">
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
@@ -60,7 +60,7 @@
                                             </svg>
                                         </div>
                                         <div class="text-center space-y-2">
-                                            <h3 class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);" aria-hidden="true">Vous avez fait<br>votre part</h3>
+                                            <p class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);">Vous avez fait<br>votre part</p>
                                             <div class="bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2">
                                                 <p class="text-white font-medium text-sm">C'est notre tour maintenant</p>
                                             </div>
@@ -78,8 +78,8 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);" aria-hidden="true">Choisissez Votre Formule</h3>
-                    <p class="text-base text-gray-600 leading-relaxed">Sélectionnez Développement de Site Web ou le forfait mensuel adapté à vos besoins</p>
+                    <p class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Choisissez Votre Formule</p>
+                    <p class="text-base text-gray-600 leading-relaxed">Site vitrine, e-commerce ou forfait mensuel : choisissez la formule qui correspond à votre projet</p>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
                 <div class="mb-6 overflow-hidden relative" style="height: 400px;">
                     <div class="max-w-full mx-auto absolute inset-0 flex items-center justify-center" style="max-width: 300px;">
                         <div id="mob-backlog-card" class="bg-white rounded-2xl shadow-xl border border-gray-200 w-full p-5" style="transform: rotate(-3deg);">
-                            <h3 class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);" aria-hidden="true">Vos Tâches de Design</h3>
+                            <p class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);">Vos Tâches de Design</p>
                             <div id="mob-backlog-list" class="space-y-2 relative">
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
@@ -132,8 +132,8 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);" aria-hidden="true">Soumettez Votre Demande</h3>
-                    <p class="text-base text-gray-600 leading-relaxed">Partagez vos besoins et nous prioriserons vos tâches</p>
+                    <p class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Soumettez Votre Demande</p>
+                    <p class="text-base text-gray-600 leading-relaxed">Décrivez ce dont vous avez besoin, nous mettons vos tâches en priorité</p>
                 </div>
             </div>
 
@@ -153,7 +153,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);" aria-hidden="true">Tâches du Projet</h3>
+                                    <p class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);">Tâches du Projet</p>
                                     <p class="text-xs text-gray-500">Vos tâches de design</p>
                                 </div>
                             </div>
@@ -188,8 +188,8 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);" aria-hidden="true">Regardez-nous Livrer</h3>
-                    <p class="text-base text-gray-600 leading-relaxed">Suivez l'avancement en temps réel pendant que nous réalisons votre projet</p>
+                    <p class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Regardez-nous Livrer</p>
+                    <p class="text-base text-gray-600 leading-relaxed">Votre projet avance, vous suivez chaque étape en direct</p>
                 </div>
             </div>
         </div>
@@ -390,126 +390,68 @@ $comparisons = [
             <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Comparez vos options et découvrez pourquoi CodeSommet offre le meilleur rapport qualité-prix. <a href="{{ route('get-quote') }}" class="text-[var(--color-primary-orange)] font-semibold hover:underline">Demandez Votre Devis Gratuit</a></p>
         </div>
 
-        {{-- Mobile: horizontal scroll table --}}
-        <div class="lg:hidden overflow-x-auto scrollbar-hide -mx-6 px-6">
-            <div class="min-w-[1000px] pb-4">
+        {{-- Single responsive table: fixed px columns + horizontal scroll on
+             mobile, fluid fr columns with no scroll on desktop. Content
+             renders once; only the grid-track sizing and scroll wrapper
+             change per breakpoint. --}}
+        <div class="overflow-x-auto lg:overflow-visible scrollbar-hide -mx-6 px-6 lg:mx-0 lg:px-0">
+            <div class="min-w-[1000px] lg:min-w-0 pb-4 lg:pb-0">
                 {{-- Column headers --}}
-                <div class="grid grid-cols-[180px_240px_260px_280px] gap-4 mb-6 pl-[20px] pr-6">
+                <div class="grid grid-cols-[180px_240px_260px_280px] lg:grid-cols-[280px_1fr_1fr_1fr] gap-4 lg:gap-6 mb-6 pl-[20px] pr-6 lg:pl-[25px] lg:pr-0">
                     <div></div>
                     <div>
                         <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-black" aria-hidden="true">
                                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                             </svg>
-                            <h3 class="text-lg font-bold" style="font-family: var(--font-heading);" aria-hidden="true">CodeSommet</h3>
+                            <h3 class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">CodeSommet</h3>
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold" style="font-family: var(--font-heading);" aria-hidden="true">Designer à temps plein</h3>
+                        <h3 class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">Designer à temps plein</h3>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold" style="font-family: var(--font-heading);" aria-hidden="true">Autres agences</h3>
+                        <h3 class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">Autres agences</h3>
                     </div>
                 </div>
                 {{-- Table body --}}
-                <div class="relative bg-gray-100 rounded-[32px] p-[5px] mr-6">
+                <div class="relative bg-gray-100 rounded-[32px] p-[5px] mr-6 lg:mr-0">
                     <div class="bg-white rounded-[27px] overflow-hidden">
                         @foreach ($comparisons as $index => $row)
-                        <div class="grid grid-cols-[180px_240px_260px_280px] gap-4">
-                            <div class="px-4 py-5 bg-gray-100 ml-[5px] {{ $index === 0 ? 'rounded-tl-[27px] mt-[5px]' : '' }} {{ $index < count($comparisons) - 1 ? 'border-b-[5px] border-white' : 'rounded-bl-[27px] mb-[5px]' }}">
-                                <p class="font-semibold text-gray-900 text-sm">{{ $row['label'] }}</p>
+                        <div class="grid grid-cols-[180px_240px_260px_280px] lg:grid-cols-[280px_1fr_1fr_1fr] gap-4 lg:gap-6">
+                            <div class="px-4 py-5 lg:px-6 lg:py-6 bg-gray-100 ml-[5px] {{ $index === 0 ? 'rounded-tl-[27px] mt-[5px]' : '' }} {{ $index < count($comparisons) - 1 ? 'border-b-[5px] border-white' : 'rounded-bl-[27px] mb-[5px]' }}">
+                                <p class="font-semibold text-gray-900 text-sm lg:text-base">{{ $row['label'] }}</p>
                             </div>
-                            <div class="px-3 py-5 bg-white">
-                                <div class="flex items-start gap-2">
+                            <div class="px-3 py-5 lg:px-4 lg:py-6 bg-white">
+                                <div class="flex items-start gap-2 lg:gap-3">
                                     <svg class="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none">
                                         <circle cx="12" cy="12" r="10" fill="#10B981" fill-opacity="0.1"></circle>
                                         <path d="M8 12.5L10.5 15L16 9.5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
-                                    <span class="text-gray-900 text-sm">{!! $row['codesommet'] !!}</span>
+                                    <span class="text-gray-900 text-sm lg:text-base">{!! $row['codesommet'] !!}</span>
                                 </div>
                             </div>
-                            <div class="px-3 py-5 bg-white">
-                                <div class="flex items-start gap-2">
+                            <div class="px-3 py-5 lg:px-4 lg:py-6 bg-white">
+                                <div class="flex items-start gap-2 lg:gap-3">
                                     <svg class="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none">
                                         <circle cx="12" cy="12" r="10" fill="#EF4444" fill-opacity="0.1"></circle>
                                         <path d="M15 9L9 15M9 9L15 15" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
-                                    <span class="text-gray-900 text-sm">{!! $row['designer'] !!}</span>
+                                    <span class="text-gray-900 text-sm lg:text-base">{!! $row['designer'] !!}</span>
                                 </div>
                             </div>
-                            <div class="px-4 py-5 bg-white">
-                                <div class="flex items-start gap-2">
+                            <div class="px-4 py-5 lg:px-4 lg:py-6 bg-white">
+                                <div class="flex items-start gap-2 lg:gap-3">
                                     <svg class="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none">
                                         <circle cx="12" cy="12" r="10" fill="#EF4444" fill-opacity="0.1"></circle>
                                         <path d="M15 9L9 15M9 9L15 15" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
-                                    <span class="text-gray-900 text-sm">{!! $row['agency'] !!}</span>
+                                    <span class="text-gray-900 text-sm lg:text-base">{!! $row['agency'] !!}</span>
                                 </div>
                             </div>
                         </div>
                         @endforeach
                     </div>
-                </div>
-            </div>
-        </div>
-
-        {{-- Desktop: full grid table --}}
-        <div class="hidden lg:block">
-            {{-- Column headers --}}
-            <div class="grid grid-cols-[280px_1fr_1fr_1fr] gap-6 mb-6 pl-[25px]">
-                <div></div>
-                <div>
-                    <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-black" aria-hidden="true">
-                            <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                        </svg>
-                        <h3 class="text-xl font-bold" style="font-family: var(--font-heading);">CodeSommet</h3>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold" style="font-family: var(--font-heading);">Designer à temps plein</h3>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold" style="font-family: var(--font-heading);">Autres agences</h3>
-                </div>
-            </div>
-            {{-- Table body --}}
-            <div class="relative bg-gray-100 rounded-[32px] p-[5px]">
-                <div class="bg-white rounded-[27px] overflow-hidden">
-                    @foreach ($comparisons as $index => $row)
-                    <div class="grid grid-cols-[280px_1fr_1fr_1fr] gap-6">
-                        <div class="px-6 py-6 bg-gray-100 ml-[5px] {{ $index === 0 ? 'rounded-tl-[27px] mt-[5px]' : '' }} {{ $index < count($comparisons) - 1 ? 'border-b-[5px] border-white' : 'rounded-bl-[27px] mb-[5px]' }}">
-                            <p class="font-semibold text-gray-900">{{ $row['label'] }}</p>
-                        </div>
-                        <div class="px-4 py-6 bg-white">
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" fill="#10B981" fill-opacity="0.1"></circle>
-                                    <path d="M8 12.5L10.5 15L16 9.5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                                <span class="text-gray-900">{!! $row['codesommet'] !!}</span>
-                            </div>
-                        </div>
-                        <div class="px-4 py-6 bg-white">
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" fill="#EF4444" fill-opacity="0.1"></circle>
-                                    <path d="M15 9L9 15M9 9L15 15" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                                <span class="text-gray-900">{!! $row['designer'] !!}</span>
-                            </div>
-                        </div>
-                        <div class="px-4 py-6 bg-white">
-                            <div class="flex items-start gap-3">
-                                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" fill="#EF4444" fill-opacity="0.1"></circle>
-                                    <path d="M15 9L9 15M9 9L15 15" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                                <span class="text-gray-900">{!! $row['agency'] !!}</span>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
                 </div>
             </div>
         </div>

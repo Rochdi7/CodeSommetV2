@@ -29,6 +29,7 @@ return [
     'opt_124' => 'Page d\'atterrissage',
     'opt_125' => 'Tableau de bord',
     'opt_126' => 'Autre',
+    'opt_377' => 'Maintenance de site web',
     'opt_127' => 'Sélectionner le secteur',
     'opt_128' => 'SaaS / Logiciel B2B',
     'opt_129' => 'E-commerce / Commerce de détail',
