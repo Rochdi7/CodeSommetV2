@@ -263,11 +263,21 @@
         }
     }
 
-    // Run after DOM is ready
+    // Run once the browser is idle: the scan only tags BELOW-fold elements
+    // for scroll-reveal (hero excluded by design), so nothing visible depends
+    // on it at first paint — running it during load showed up as the page's
+    // largest style/layout task in traces.
+    function scheduleScrollAnimations() {
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(initScrollAnimations, { timeout: 1500 });
+        } else {
+            setTimeout(initScrollAnimations, 200);
+        }
+    }
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initScrollAnimations);
+        document.addEventListener('DOMContentLoaded', scheduleScrollAnimations);
     } else {
-        initScrollAnimations();
+        scheduleScrollAnimations();
     }
 
     /* ── Process steps interactive cards ──────────────────────────────── */
@@ -2686,17 +2696,20 @@
         function open() {
             lastFocus = document.activeElement;
             modal.hidden = false;
-            // Force a reflow so the transition runs from the hidden state.
-            void modal.offsetWidth;
-            modal.classList.add('is-visible');
-            document.body.classList.add('has-promo-modal');
-
-            // Focus on the next frame: doing it synchronously here forced a
-            // second full-page layout while the class writes above were
-            // still dirty (~90 ms on this DOM).
+            // Two rAFs: the browser lays out the un-hidden modal on its own
+            // schedule, then the class writes land on the NEXT frame — the
+            // transition still starts from the hidden state, without the old
+            // `void offsetWidth` forced synchronous reflow (~117 ms on this
+            // DOM). Focus follows one more frame later, against clean layout.
             requestAnimationFrame(function () {
-                var cta = modal.querySelector('.promo-modal__cta');
-                if (cta) { cta.focus(); }
+                requestAnimationFrame(function () {
+                    modal.classList.add('is-visible');
+                    document.body.classList.add('has-promo-modal');
+                    requestAnimationFrame(function () {
+                        var cta = modal.querySelector('.promo-modal__cta');
+                        if (cta) { cta.focus(); }
+                    });
+                });
             });
 
             document.addEventListener('keydown', onKeydown);

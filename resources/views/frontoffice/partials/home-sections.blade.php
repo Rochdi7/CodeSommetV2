@@ -112,7 +112,7 @@
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
                                         <span class="text-xs font-medium text-gray-700">Optimisation SEO On-Page</span>
                                     </div>
-                                    <span class="text-xs px-2 py-0.5 rounded-full bg-[#00AEEF]/10 text-[var(--color-primary-orange)] font-medium">Urgent</span>
+                                    <span class="text-xs px-2 py-0.5 rounded-full bg-[#00AEEF]/10 text-[#0071BC] font-medium">Urgent</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
@@ -276,7 +276,7 @@
                                     <div class="backlog-box w-5 h-5 rounded border-2 border-gray-300 flex-shrink-0"></div>
                                     <span class="text-sm font-medium text-gray-700">{{ $task['title'] }}</span>
                                 </div>
-                                <span class="text-xs px-3 py-1 rounded-full {{ $task['urgent'] ? 'bg-[#00AEEF]/10 text-[var(--color-primary-orange)]' : 'bg-gray-200 text-gray-600' }} font-medium">{{ $task['tag'] }}</span>
+                                <span class="text-xs px-3 py-1 rounded-full {{ $task['urgent'] ? 'bg-[#00AEEF]/10 text-[#0071BC]' : 'bg-gray-200 text-gray-600' }} font-medium">{{ $task['tag'] }}</span>
                             </div>
                             @endforeach
                             {{-- Animated cursor --}}

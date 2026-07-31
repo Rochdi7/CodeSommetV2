@@ -519,6 +519,13 @@ html {
     color: inherit;
 }
 
+/* ── Accessible brand-blue text (AA on white/light tints) ─────────────
+   The prebuilt Tailwind sheets don't include this arbitrary value, so the
+   utility must exist here for `text-[#0071BC]` markup to take effect. */
+.text-\[\#0071BC\] {
+    color: #0071BC;
+}
+
 /* ── Preloader ───────────────────────────────────────────────────────── */
 #preloader {
     position: fixed;

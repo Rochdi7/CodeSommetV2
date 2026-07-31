@@ -137,9 +137,10 @@
     <script src="{{ asset_v('js/app.min.js') }}" defer></script>
     <script src="{{ asset_v('js/custom-select.min.js') }}" defer></script>
 
-    {{-- Preloader dismiss — à window.load OU après 2,5 s max : sur réseau lent
-         l'overlay masquait la page entière jusqu'à la fin du chargement complet
-         (16 s mesurées en throttling mobile), ruinant le Speed Index. --}}
+    {{-- Preloader dismiss — dès DOMContentLoaded : le CSS critique étant inliné,
+         la page est entièrement stylée au premier rendu, l'overlay n'a plus de
+         raison d'attendre window.load (le délai de rendu LCP mesurait ~2,45 s,
+         soit exactement l'ancien plafond). load + 2,5 s restent en filets. --}}
     <script>
         (function() {
             var done = false;
@@ -154,6 +155,11 @@
                         p.remove();
                     }, 600);
                 }
+            }
+            if (document.readyState !== 'loading') {
+                dismiss();
+            } else {
+                document.addEventListener('DOMContentLoaded', dismiss);
             }
             window.addEventListener('load', dismiss);
             setTimeout(dismiss, 2500);
