@@ -169,6 +169,17 @@ real visitors see it ~1.2 s after they first move — effectively unchanged UX.
 see the popup. Revert = replace the arm block with `setTimeout(open, OPEN_DELAY)` in
 app.js `initPopup`.
 
+### 18. REGRESSION FIX — preloader rules missing from critical CSS (83 → …)
+The 5:30 PM run dropped to 83: CLS 0.133 on `<main>`, LCP 3.6 s. Root cause: the critical-CSS
+extractor samples the live page ~2 s after `load`, by which time the preloader has
+`remove()`d itself — so every `#preloader`/`.preloader-*` rule was dropped. In production the
+preloader rendered **unstyled** (static block pushing the page down) until the async full CSS
+arrived, then everything shifted up (CLS) and the hero repainted late (LCP). The extractor
+now always keeps any rule whose selector matches /preloader/i. Regenerated; verified under
+throttling: CLS 0.0000, LCP = hero H1 at ~1.35 s.
+**Lesson: self-removing DOM (splash screens, one-shot banners) must be on the extractor's
+always-keep list — they're gone by the time the page is sampled.**
+
 ### Deliberately left as-is
 - "Improve image delivery 122 KiB": Lighthouse's insight compares file size to CSS-pixel
   dimensions (DPR-blind). At the emulated Moto G's DPR 2.625, the browser's 960w pick for a
