@@ -156,11 +156,15 @@
                     }, 600);
                 }
             }
-            if (document.readyState !== 'loading') {
-                dismiss();
-            } else {
-                document.addEventListener('DOMContentLoaded', dismiss);
-            }
+            // Ce script inline en fin de <body> s'exécute dès que le HTML est
+            // parsé — AVANT le téléchargement des scripts defer (contrairement
+            // à DOMContentLoaded, qui les attend : ~1,5 s de délai LCP en 4G
+            // lente). Deux rAF = première opportunité de peinture, page déjà
+            // entièrement stylée par le CSS critique inliné.
+            requestAnimationFrame(function() {
+                requestAnimationFrame(dismiss);
+            });
+            document.addEventListener('DOMContentLoaded', dismiss);
             window.addEventListener('load', dismiss);
             setTimeout(dismiss, 2500);
         })();
