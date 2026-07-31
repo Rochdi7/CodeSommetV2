@@ -95,7 +95,7 @@
                                                             class="text-xs font-medium text-[var(--text-secondary)]">{{ $post->author }}</span>
                                                     </div>
                                                     <span
-                                                        class="inline-flex items-center gap-1 text-xs font-semibold text-[#00AEEF] group-hover:gap-2 transition-all">
+                                                        class="inline-flex items-center gap-1 text-xs font-semibold text-[#0071BC] group-hover:gap-2 transition-all">
                                                         Lire
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"

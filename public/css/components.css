@@ -1509,18 +1509,29 @@ button.text-white:hover svg {
 }
 
 .promo-offer__dot {
+    position: relative;
     width: 6px;
     height: 6px;
     border-radius: 999px;
     background: #4ADE80;
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, .7);
+}
+
+/* Expanding pulse ring: transform/opacity on a pseudo-element instead of an
+   animated box-shadow, so the animation runs on the compositor. scale(3.67)
+   reproduces the old 8px shadow spread (6px dot → 22px ring). */
+.promo-offer__dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(74, 222, 128, .7);
     animation: promo-dot 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 }
 
 @keyframes promo-dot {
-    0%   { box-shadow: 0 0 0 0 rgba(74, 222, 128, .7); }
-    70%  { box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+    0%   { transform: scale(1);    opacity: .7; }
+    70%  { transform: scale(3.67); opacity: 0; }
+    100% { transform: scale(3.67); opacity: 0; }
 }
 
 /* The big -30% figure */
@@ -1906,7 +1917,8 @@ body.has-promo-bar .fab-stack {
 @media (prefers-reduced-motion: reduce) {
     .promo-sheen,
     .promo-offer::after,
-    .promo-offer__dot {
+    .promo-offer__dot,
+    .promo-offer__dot::after {
         animation: none;
     }
     .promo-bar {
