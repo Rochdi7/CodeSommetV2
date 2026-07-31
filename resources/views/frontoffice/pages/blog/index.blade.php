@@ -507,12 +507,14 @@
                     NE MANQUEZ AUCUN ARTICLE
                 </h2>
                 <p class="max-w-xl mx-auto text-lg" style="color:rgba(15,15,15,0.6)">{{ __('blog/index.ml_513') }}</p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto"
+                <form id="blog-newsletter-form" class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto"
                     style="width:100%">
-                    <input type="email" placeholder="{{ __('blog/index.placeholder_9') }}"
+                    @csrf
+                    <input type="hidden" name="source" value="blog-index" />
+                    <input type="email" name="email" required placeholder="{{ __('blog/index.placeholder_9') }}"
                         class="w-full sm:flex-1 h-12 px-6 rounded-full text-sm transition-all"
                         style="background:white;border:1px solid rgba(15,15,15,0.15);color:#0F0F0F;outline:none" />
-                    <button
+                    <button type="submit"
                         class="w-full sm:w-auto h-12 px-8 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 gap-2"
                         style="background:linear-gradient(to right, var(--color-primary-orange), var(--color-orange-hover));color:white;box-shadow:0 4px 16px rgba(0,174,239,0.25)">
                         S'abonner
@@ -523,7 +525,7 @@
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
                     </button>
-                </div>
+                </form>
                 <p class="text-xs" style="color:rgba(15,15,15,0.45)">{{ __('blog/index.text_8') }}</p>
             </div>
         </div>
@@ -594,3 +596,49 @@
         </style>
     </section>
 @endsection
+
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('blog-newsletter-form');
+            if (!form) return;
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = form.querySelector('button[type="submit"]');
+                var originalHtml = btn.innerHTML;
+                btn.disabled = true;
+                btn.textContent = '...';
+
+                fetch('{{ route('newsletter.subscribe') }}', {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                            'Accept': 'application/json'
+                        },
+                        body: new FormData(form)
+                    })
+                    .then(function(res) {
+                        return res.json().then(function(json) {
+                            return { ok: res.ok, json: json };
+                        });
+                    })
+                    .then(function(result) {
+                        if (result.ok && result.json && result.json.success) {
+                            toastr.success('Vous recevrez nos prochains articles et actualités.', 'Inscription confirmée !');
+                            form.reset();
+                            btn.disabled = false;
+                            btn.innerHTML = originalHtml;
+                        } else {
+                            throw new Error((result.json && result.json.message) || 'Une erreur est survenue.');
+                        }
+                    })
+                    .catch(function(err) {
+                        toastr.error(err.message || 'Erreur réseau. Veuillez réessayer.', 'Erreur');
+                        btn.disabled = false;
+                        btn.innerHTML = originalHtml;
+                    });
+            });
+        });
+    </script>
+@endpush
