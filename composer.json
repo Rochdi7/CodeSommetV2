@@ -3,7 +3,12 @@
     "name": "codesommet/codesommet",
     "type": "project",
     "description": "CodeSommet - Agence digitale au Maroc : développement web, design UI/UX, branding et SEO.",
-    "keywords": ["codesommet", "laravel", "agence-digitale", "maroc"],
+    "keywords": [
+        "codesommet",
+        "laravel",
+        "agence-digitale",
+        "maroc"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
@@ -27,7 +32,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Support/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

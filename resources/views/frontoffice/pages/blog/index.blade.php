@@ -625,8 +625,12 @@
                     })
                     .then(function(result) {
                         if (result.ok && result.json && result.json.success) {
-                            toastr.success('Vous recevrez nos prochains articles et actualités.', 'Inscription confirmée !');
-                            form.reset();
+                            if (result.json.already) {
+                                toastr.info('Cette adresse est déjà inscrite à la newsletter.', 'Déjà inscrit');
+                            } else {
+                                toastr.success('Vous recevrez nos prochains articles et actualités.', 'Inscription confirmée !');
+                                form.reset();
+                            }
                             btn.disabled = false;
                             btn.innerHTML = originalHtml;
                         } else {

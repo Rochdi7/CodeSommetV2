@@ -29,7 +29,7 @@
             <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center" href="{{ route('home') }}">
                 <div class="flex items-center gap-1">
                     <div class="w-14 h-14 flex items-center justify-center">
-                        <img src="{{ asset('logo.svg') }}" alt="CodeSommet" class="w-full h-full object-contain" />
+                        <img src="{{ asset('logo.svg') }}" alt="CodeSommet" width="220" height="150" class="w-full h-full object-contain" />
                     </div>
                     <span class="text-[var(--text-primary)] font-bold text-[20px] font-heading">CodeSommet</span>
                 </div>

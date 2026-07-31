@@ -26,7 +26,7 @@
                 <div class="space-y-6 mb-12 md:mb-0 md:max-w-sm flex-shrink-0">
                     <a class="inline-flex items-center gap-1" href="{{ route('home') }}">
                         <div class="w-10 h-10">
-                            <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet"
+                            <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet" width="220" height="150"
                                 class="w-full h-full object-contain" />
                         </div>
                         <span style="font-family:var(--font-heading)"

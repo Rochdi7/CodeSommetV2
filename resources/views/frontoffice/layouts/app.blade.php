@@ -50,17 +50,24 @@
     <link rel="apple-touch-icon" href="{{ asset('favicon/apple-touch-icon.png') }}" sizes="180x180" />
     <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}" />
 
+    {{-- Polices critiques au-dessus de la ligne de flottaison (H1 = Phudu, corps/CTA = Inter).
+         Préchargées pour supprimer la fenêtre de swap (CLS) et accélérer le LCP texte. --}}
+    <link rel="preload" href="{{ asset('fonts/phudu-latin.woff2') }}" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="{{ asset('fonts/inter-latin.woff2') }}" as="font" type="font/woff2" crossorigin />
+
     {{-- Feuilles de style --}}
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/components.css') }}" />
+    <link rel="stylesheet" href="{{ asset_v('css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset_v('css/components.css') }}" />
 
-    {{-- Toastr (notifications) --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-    <link rel="stylesheet" href="{{ asset('css/toastr-theme.css') }}" />
-
-    {{-- Google Analytics --}}
-    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K" as="script" />
-    <link rel="preload" href="{{ asset('scripts/google-analytics.js') }}" as="script" />
+    {{-- Toastr (notifications) : hors chemin critique — aucune notification ne se
+         déclenche avant interaction. Motif print→all avec repli noscript. --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+        media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="{{ asset_v('css/toastr-theme.css') }}" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+        <link rel="stylesheet" href="{{ asset_v('css/toastr-theme.css') }}" />
+    </noscript>
 
     {{-- Données structurées par page --}}
     @yield('structured_data')
@@ -107,31 +114,43 @@
     {{-- Pop-up d'offre : -30% sur le premier projet --}}
     @include('frontoffice.partials.promo-popup')
 
-    {{-- Toastr (notifications) --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="{{ asset('js/toastr-init.js') }}"></script>
+    {{-- Toastr (notifications) — defer préserve l'ordre jQuery → toastr → init
+         et libère le parseur (les notifications ne partent qu'après interaction). --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" defer></script>
+    <script src="{{ asset_v('js/toastr-init.js') }}" defer></script>
 
     {{-- JS principal --}}
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/custom-select.js') }}" defer></script>
+    <script src="{{ asset_v('js/app.js') }}" defer></script>
+    <script src="{{ asset_v('js/custom-select.js') }}" defer></script>
 
-    {{-- Preloader dismiss --}}
+    {{-- Preloader dismiss — à window.load OU après 2,5 s max : sur réseau lent
+         l'overlay masquait la page entière jusqu'à la fin du chargement complet
+         (16 s mesurées en throttling mobile), ruinant le Speed Index. --}}
     <script>
-        window.addEventListener('load', function() {
-            var p = document.getElementById('preloader');
-            if (p) {
-                p.classList.add('loaded');
-                setTimeout(function() {
-                    p.remove();
-                }, 600);
+        (function() {
+            var done = false;
+
+            function dismiss() {
+                if (done) return;
+                done = true;
+                var p = document.getElementById('preloader');
+                if (p) {
+                    p.classList.add('loaded');
+                    setTimeout(function() {
+                        p.remove();
+                    }, 600);
+                }
             }
-        });
+            window.addEventListener('load', dismiss);
+            setTimeout(dismiss, 2500);
+        })();
     </script>
 
-    {{-- Google Analytics --}}
+    {{-- Google Analytics — gtag async, initialisation locale différée
+         (le stub dataLayer dans google-analytics.js met les événements en file). --}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K"></script>
-    <script src="{{ asset('scripts/google-analytics.js') }}"></script>
+    <script src="{{ asset_v('scripts/google-analytics.js') }}" defer></script>
 
     {{-- Intégration Cal.com --}}
     @stack('scripts')

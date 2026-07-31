@@ -27,7 +27,10 @@ function submitNewsletter(e, formId) {
         headers: { 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content, 'Accept': 'application/json' },
         body: data
     }).then(r => r.json()).then(res => {
-        if (res.success) {
+        if (res.success && res.already) {
+            toastr.info('Cette adresse est déjà inscrite à la newsletter.', 'Déjà inscrit');
+            btn.disabled = false; btn.textContent = originalBtnText;
+        } else if (res.success) {
             form.classList.add('hidden');
             success.classList.remove('hidden');
             toastr.success('Vous recevrez nos prochains articles et actualités.', 'Inscription confirmée !');

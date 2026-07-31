@@ -101,6 +101,7 @@
      */
     function initScrollAnimations() {
         var animated = [];
+        var pending = [];
 
         // Is element inside a continuously animated container (marquee, logo scroll)?
         function isMarquee(el) {
@@ -114,13 +115,30 @@
             return false;
         }
 
-        // Tag element for scroll animation
+        // Tag element for scroll animation. The classList/attribute writes are
+        // DEFERRED to a single batch after the whole scan, so the geometry
+        // reads below (offsetHeight, getBoundingClientRect) never hit an
+        // invalidated layout — this scan used to be the page's main source
+        // of forced reflows.
         function tag(el, cls, delay) {
             if (el._stag || isMarquee(el)) return;
             el._stag = true;
-            el.classList.add(cls);
-            if (delay) el.setAttribute('data-delay', String(delay));
+            el._stagCls = cls;
+            pending.push([el, cls, delay]);
             animated.push(el);
+        }
+
+        // Deferred-write equivalent of el.closest('.scroll-fade') /
+        // ('.scroll-fade-left'): matches classes already in the HTML AND
+        // tags queued this run but not yet written to the DOM.
+        function insideFade(el) {
+            var p = el;
+            while (p) {
+                if (p._stagCls === 'scroll-fade' || p._stagCls === 'scroll-fade-left') return true;
+                if (p.classList && (p.classList.contains('scroll-fade') || p.classList.contains('scroll-fade-left'))) return true;
+                p = p.parentElement;
+            }
+            return false;
         }
 
         // Hero boundary — skip first section
@@ -205,7 +223,7 @@
             sec.querySelectorAll('[class*="rounded-2xl"], [class*="rounded-3xl"]').forEach(function (el) {
                 if (el.offsetHeight > 100 && el.querySelector('a, button') &&
                     !el._stag && !el.closest('[class*="grid-cols"]') &&
-                    !el.closest('.scroll-fade') && !el.closest('.scroll-fade-left')) {
+                    !insideFade(el)) {
                     tag(el, 'scroll-fade');
                 }
             });
@@ -217,6 +235,13 @@
                 el._stag = true;
                 animated.push(el);
             }
+        });
+
+        // Apply every queued class/attribute in one batch — the scan above
+        // was pure reads, so this is the first (and only) layout invalidation.
+        pending.forEach(function (t) {
+            t[0].classList.add(t[1]);
+            if (t[2]) t[0].setAttribute('data-delay', String(t[2]));
         });
 
         if (!animated.length) return;
@@ -935,31 +960,22 @@
         var borderEl = textEl ? textEl.previousElementSibling : null;
         if (!textEl || !wrapperEl) return;
 
-        // Measure a phrase's rendered width without affecting layout, using
-        // a bare offscreen node appended to <body> — deliberately kept
-        // OUTSIDE the H1/hero markup (no shared classes, no inset-0) so no
-        // measurement text ever lives inside the heading, even in a
-        // CSS-blind HTML parser, and nothing here can stretch unexpectedly.
-        var computedFont = window.getComputedStyle(textEl);
-        var measurer = document.createElement('span');
-        measurer.style.cssText = 'position:absolute;left:-9999px;top:0;white-space:nowrap;visibility:hidden;';
-        measurer.style.font = computedFont.font;
-        measurer.style.letterSpacing = computedFont.letterSpacing;
-        measurer.style.textTransform = computedFont.textTransform;
-        document.body.appendChild(measurer);
-
-        function measure(phrase) {
-            measurer.textContent = phrase;
-            return measurer.offsetWidth;
-        }
-
-        // Lock in the wrapper's initial width to match the first phrase,
-        // then allow it to animate smoothly on subsequent rotations.
-        wrapperEl.style.width = measure(phrases[idx]) + 'px';
+        // The phrase is in normal flow (whitespace-nowrap), so the wrapper
+        // auto-sizes to each phrase in the heading's real font context —
+        // no offscreen measurement, and a stale width can never make the
+        // phrase wrap and overlap the heading. The 0.3s width ease between
+        // phrases is done FLIP-style: lock the old width, swap the text,
+        // read the new natural width, ease between the two, then release
+        // back to auto so font loads and breakpoint changes stay snug.
+        wrapperEl.addEventListener('transitionend', function (e) {
+            if (e.target === wrapperEl && e.propertyName === 'width') {
+                wrapperEl.style.transition = 'none';
+                wrapperEl.style.width = '';
+            }
+        });
 
         setInterval(function () {
             idx = (idx + 1) % phrases.length;
-            var nextWidth = measure(phrases[idx]);
 
             // Fade out
             textEl.style.animation = 'none';
@@ -967,36 +983,26 @@
             if (borderEl) {
                 borderEl.style.animation = 'none';
             }
-            wrapperEl.style.transition = 'width 0.3s ease-in-out';
-            wrapperEl.style.width = nextWidth + 'px';
 
-            // Force reflow
-            void textEl.offsetWidth;
-
-            // Update text and replay animations
+            var oldWidth = wrapperEl.offsetWidth;
             textEl.textContent = phrases[idx];
+            wrapperEl.style.transition = 'none';
+            wrapperEl.style.width = '';
+            var newWidth = wrapperEl.offsetWidth;
+            if (newWidth !== oldWidth) {
+                wrapperEl.style.width = oldWidth + 'px';
+                void wrapperEl.offsetWidth;
+                wrapperEl.style.transition = 'width 0.3s ease-in-out';
+                wrapperEl.style.width = newWidth + 'px';
+            }
+
+            // Replay animations
             textEl.style.opacity = '';
             textEl.style.animation = 'textFadeIn 0.3s ease-in-out, textReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1)';
             if (borderEl) {
                 borderEl.style.animation = 'scaleIn 0.3s ease-out';
             }
         }, 5000);
-
-        // Re-measure the current phrase after viewport/font-size changes
-        // (e.g. crossing the sm:/lg: breakpoints) so the box stays snug
-        // without waiting for the next scheduled rotation.
-        var resizeTimer;
-        window.addEventListener('resize', function () {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function () {
-                computedFont = window.getComputedStyle(textEl);
-                measurer.style.font = computedFont.font;
-                measurer.style.letterSpacing = computedFont.letterSpacing;
-                measurer.style.textTransform = computedFont.textTransform;
-                wrapperEl.style.transition = 'none';
-                wrapperEl.style.width = measure(phrases[idx]) + 'px';
-            }, 150);
-        });
     })();
 
     /* ── Testimonials marquee: clone the track client-side ──────────────
@@ -2685,8 +2691,13 @@
             modal.classList.add('is-visible');
             document.body.classList.add('has-promo-modal');
 
-            var cta = modal.querySelector('.promo-modal__cta');
-            if (cta) { cta.focus(); }
+            // Focus on the next frame: doing it synchronously here forced a
+            // second full-page layout while the class writes above were
+            // still dirty (~90 ms on this DOM).
+            requestAnimationFrame(function () {
+                var cta = modal.querySelector('.promo-modal__cta');
+                if (cta) { cta.focus(); }
+            });
 
             document.addEventListener('keydown', onKeydown);
         }
