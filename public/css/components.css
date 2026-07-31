@@ -75,6 +75,15 @@ html {
 .animate-cta-marquee {
     animation: cta-marquee 20s linear infinite;
 }
+@media (max-width: 640px) {
+    .animate-marquee-left,
+    .animate-marquee-right {
+        animation-duration: 14s;
+    }
+    .animate-cta-marquee {
+        animation-duration: 9s;
+    }
+}
 
 /* ── Ping animation (green dot in badges) ─────────────────────────────── */
 @keyframes ping {
@@ -236,13 +245,19 @@ html {
     to   { transform: translateX(-50%); }
 }
 .hero-scroll-container {
-    animation: heroScroll 5s linear infinite;
+    animation: heroScroll 22s linear infinite;
 }
 /* The markup sets `animation:heroScroll …` inline rather than via the class
    above, so target that element too — otherwise hover-pause never applies. */
 .hero-scroll-container:hover,
 [style*="heroScroll"]:hover {
     animation-play-state: paused;
+}
+@media (max-width: 640px) {
+    .hero-scroll-container,
+    [style*="heroScroll"] {
+        animation-duration: 12s !important;
+    }
 }
 @media (prefers-reduced-motion: reduce) {
     .hero-scroll-container,
@@ -309,8 +324,14 @@ html {
     animation: testimonialScroll 60s linear infinite;
     width: max-content;
 }
-.testimonial-scroll-container:hover {
+.testimonial-scroll-container:hover,
+.testimonial-scroll-container.is-paused {
     animation-play-state: paused;
+}
+@media (max-width: 640px) {
+    .testimonial-scroll-container {
+        animation-duration: 26s;
+    }
 }
 @media (prefers-reduced-motion: reduce) {
     .testimonial-scroll-container {

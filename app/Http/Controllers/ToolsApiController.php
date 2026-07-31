@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ToolUsage;
 use App\Services\SafeHttpFetcher;
 use App\Services\SafeUrlValidator;
 use App\Services\UnsafeUrlException;
@@ -59,6 +60,29 @@ class ToolsApiController extends Controller
                 'error' => 'Analysis failed. Please verify the submitted URL and try again.',
             ], 500);
         }
+    }
+
+    /**
+     * Real, server-side usage counter shown under each tool's action button.
+     * Only tools with an existing Blade view can be counted, so this endpoint
+     * cannot be used to write arbitrary rows.
+     */
+    public function usageShow(string $slug): JsonResponse
+    {
+        if (! view()->exists("frontoffice.pages.tools.{$slug}")) {
+            return response()->json(['error' => 'Tool not found'], 404);
+        }
+
+        return response()->json(['slug' => $slug, 'count' => ToolUsage::countFor($slug)]);
+    }
+
+    public function usageIncrement(string $slug): JsonResponse
+    {
+        if (! view()->exists("frontoffice.pages.tools.{$slug}")) {
+            return response()->json(['error' => 'Tool not found'], 404);
+        }
+
+        return response()->json(['slug' => $slug, 'count' => ToolUsage::incrementFor($slug)]);
     }
 
     // ─── Helpers ──────────────────────────────────────────────────────

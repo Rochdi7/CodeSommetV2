@@ -162,7 +162,12 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/gls-sprachenzentrum.text_6') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px]">{{ __('our-work/gls-sprachenzentrum.text_7') }}</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/gls-sprachenzentrum.text_7') }}</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.defi_bullet_1') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.defi_bullet_2') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.defi_bullet_3') }}</span></li>
+                    </ul>
                 </div>
                 <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                     <div class="flex items-center gap-3 mb-6">
@@ -183,7 +188,13 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/gls-sprachenzentrum.text_8') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px]">{{ __('our-work/gls-sprachenzentrum.text_9') }}</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/gls-sprachenzentrum.text_9') }}</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.solution_bullet_1') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.solution_bullet_2') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.solution_bullet_3') }}</span></li>
+                        <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.solution_bullet_4') }}</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -396,17 +407,13 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Next.js 15.3.2</span><span
+                                style="transform:scale(0.9)">Laravel Blade</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">React 19</span><span
+                                style="transform:scale(0.9)">Vite 5</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">TypeScript 5.8.2</span><span
+                                style="transform:scale(0.9)">Tailwind CSS</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Tailwind CSS 3.3.0</span><span
-                                class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">shadcn/ui</span><span
-                                class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Framer Motion</span></div>
+                                style="transform:scale(0.9)">Bootstrap 5</span></div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -414,13 +421,13 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Supabase</span><span
+                                style="transform:scale(0.9)">Laravel 11</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">PostgreSQL</span><span
+                                style="transform:scale(0.9)">PHP 8.2+</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Cloud Functions</span><span
+                                style="transform:scale(0.9)">MySQL</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">ISR with Force-Static Generation</span></div>
+                                style="transform:scale(0.9)">Spatie Permission</span></div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-4 capitalize text-sm flex items-center gap-2">
@@ -428,17 +435,15 @@
                         </h4>
                         <div class="flex flex-wrap gap-2"><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">OpenAI GPT-4</span><span
+                                style="transform:scale(0.9)">Hikvision Access Control</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Resend API</span><span
+                                style="transform:scale(0.9)">DomPDF</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Google Cloud Storage</span><span
+                                style="transform:scale(0.9)">Simple QRCode</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Vercel Analytics</span><span
+                                style="transform:scale(0.9)">Laravel Excel</span><span
                                 class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Upstash Redis</span><span
-                                class="px-4 py-2 bg-gray-50 rounded-full text-sm font-medium text-gray-700 border border-gray-200 hover:border-[#00AEEF]/30 hover:bg-white transition-all duration-200"
-                                style="transform:scale(0.9)">Recharts</span></div>
+                                style="transform:scale(0.9)">WhatsApp API</span></div>
                     </div>
                 </div>
             </div>
@@ -451,20 +456,11 @@
                     style="font-family:var(--font-heading)">{{ __('our-work/gls-sprachenzentrum.text_21') }}</h2>
                 <p class="text-gray-600 text-base md:text-lg">{{ __('our-work/gls-sprachenzentrum.text_22') }}</p>
             </div>
-            <div class="flex justify-center gap-2 mb-8 flex-wrap"><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-[#00AEEF] text-white shadow-md"
-                    style="transform:scale(0.95)">Accueil</button><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">{{ __('our-work/gls-sprachenzentrum.text_23') }}</button><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">{{ __('our-work/gls-sprachenzentrum.text_146') }}</button><button
-                    class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    style="transform:scale(0.95)">Tableau de Bord Admin</button></div>
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
-                    class="relative aspect-[3/2] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <img src="{{ asset('mockups/gls-top.webp') }}" alt="Accueil"
-                        class="w-full h-full object-cover" />
+                    class="relative aspect-video rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+                    <video src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}" autoplay
+                        loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
                 </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
@@ -921,7 +917,7 @@
                             <div class="flex items-center justify-center gap-0">
                                 <section class="flex items-center overflow-hidden"
                                     style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
-                                    <ul class="flex items-center gap-3 list-none m-0 p-0"
+                                    <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left"
                                         style="position:relative;flex-direction:row;will-change:transform">
                                         <li class="flex-shrink-0">
                                             <div
@@ -1165,7 +1161,7 @@
                                 </div>
                                 <section class="flex items-center overflow-hidden"
                                     style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
-                                    <ul class="flex items-center gap-3 list-none m-0 p-0"
+                                    <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right"
                                         style="position:relative;flex-direction:row;will-change:transform">
                                         <li class="flex-shrink-0">
                                             <div

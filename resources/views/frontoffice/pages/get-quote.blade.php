@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/components.css') }}" />
 
+    {{-- Toastr (notifications) --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/toastr-theme.css') }}" />
+
     {{-- Données structurées globales (Organization, WebSite) --}}
     @include('frontoffice.partials.structured-data')
 </head>
@@ -252,6 +256,7 @@
                                             <option value="SaaS Platform">{{ __('get-quote.opt_355') }}</option>
                                             <option value="Landing Page">{{ __('get-quote.opt_124') }}</option>
                                             <option value="Dashboard">{{ __('get-quote.opt_125') }}</option>
+                                            <option value="Website Maintenance">{{ __('get-quote.opt_377') }}</option>
                                             <option value="Other">{{ __('get-quote.opt_126') }}</option>
                                         </select>
                                     </div>
@@ -408,12 +413,6 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        {{-- Error banner --}}
-                        <div class="mt-3 p-3 bg-red-50 border border-red-200 hidden" id="submitError"
-                            style="border-radius:8px">
-                            <p class="text-xs text-red-600" id="submitErrorText"></p>
                         </div>
 
                         {{-- Navigation buttons --}}
@@ -735,8 +734,6 @@
         function submitForm() {
             if (!validateStep(currentStep)) return;
 
-            // Clear any error from a previous attempt.
-            document.getElementById('submitError').classList.add('hidden');
             clearErrors();
 
             var submitBtn = document.getElementById('submitBtn');
@@ -812,23 +809,17 @@
                         }
 
                         // Show success
+                        toastr.success('Nous vous recontacterons sous 24 heures.', 'Demande envoy\u00e9e !');
                         document.getElementById('quoteForm').classList.add('hidden');
                         document.getElementById('successMessage').classList.remove('hidden');
                     });
                 })
                 .catch(function(err) {
-                    var errorBanner = document.getElementById('submitError');
-                    var errorText = document.getElementById('submitErrorText');
                     // TypeError from fetch() means the request never reached the server.
                     var msg = (err instanceof TypeError) ?
                         'Connexion au serveur impossible. V\u00e9rifiez votre connexion internet et r\u00e9essayez.' :
                         (err.message || '\u00c9chec de l\u2019envoi. Veuillez r\u00e9essayer.');
-                    errorText.textContent = msg;
-                    errorBanner.classList.remove('hidden');
-                    errorBanner.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
+                    toastr.error(msg, 'Erreur');
                     submitBtn.disabled = false;
                     submitBtn.style.opacity = '1';
                     submitBtn.style.cursor = 'pointer';
@@ -858,7 +849,6 @@
             updateButtons();
             document.getElementById('successMessage').classList.add('hidden');
             document.getElementById('quoteForm').classList.remove('hidden');
-            document.getElementById('submitError').classList.add('hidden');
             clearErrors();
         }
 
@@ -875,6 +865,12 @@
         });
     </script>
     @include('frontoffice.partials.floating-actions')
+
+    {{-- Toastr (notifications) --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="{{ asset('js/toastr-init.js') }}"></script>
+
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/custom-select.js') }}" defer></script>
 </body>

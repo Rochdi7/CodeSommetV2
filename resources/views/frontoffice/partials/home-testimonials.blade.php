@@ -80,12 +80,14 @@
     </div>
 
     <div class="w-full overflow-hidden pt-8 pb-32">
-        <div class="testimonial-scroll-container flex gap-4 md:gap-8 py-4 px-4 md:px-0">
+        <div id="testimonial-scroll-container" class="testimonial-scroll-container flex gap-4 md:gap-8 py-4 px-4 md:px-0">
 
-            {{-- Track rendered twice for a seamless -50% loop --}}
-            @for ($pass = 0; $pass < 2; $pass++)
-                @foreach ($testimonials as $t)
-                    <div class="block" @if ($pass === 1) aria-hidden="true" @endif>
+            {{-- Server-rendered once. A JS-cloned duplicate is appended after
+                 load (see app.js) so the CSS -50% marquee loop still has the
+                 double-width track it needs, without shipping the testimonial
+                 text twice in the initial HTML response. --}}
+            @foreach ($testimonials as $t)
+                    <div class="block">
                         <div class="testimonial-card flex-shrink-0 w-[340px] md:w-[450px] bg-[#FEFEFE] rounded-3xl overflow-hidden my-2 p-2 transition-all duration-300 hover:-translate-y-2"
                             style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 40px, rgba(0, 0, 0, 0.06) 0px 2px 8px;">
                             <div class="relative h-64 md:h-80 overflow-hidden transition-all duration-500 rounded-[16px]"
@@ -143,7 +145,6 @@
                         </div>
                     </div>
                 @endforeach
-            @endfor
 
         </div>
     </div>

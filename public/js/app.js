@@ -921,21 +921,45 @@
 
     /* ── Hero rotating text (every 5s) ────────────────────────────────── */
     (function () {
-        var words = [
-            'CROISSANCE',
-            'RÉSULTATS',
-            'CONVERSIONS',
-            'PROSPECTS',
-            'VENTES',
-            'IMAGE DE MARQUE'
+        var phrases = [
+            'DES RÉSULTATS',
+            'DE LA CROISSANCE',
+            'DES CONVERSIONS',
+            'PLUS DE PROSPECTS',
+            'PLUS DE VENTES',
+            'UNE IMAGE DE MARQUE FORTE'
         ];
         var idx = 0;
         var textEl = document.getElementById('hero-rotating-text');
-        var borderEl = textEl ? textEl.previousElementSibling.previousElementSibling : null;
-        if (!textEl) return;
+        var wrapperEl = document.getElementById('hero-rotating-wrapper');
+        var borderEl = textEl ? textEl.previousElementSibling : null;
+        if (!textEl || !wrapperEl) return;
+
+        // Measure a phrase's rendered width without affecting layout, using
+        // a bare offscreen node appended to <body> — deliberately kept
+        // OUTSIDE the H1/hero markup (no shared classes, no inset-0) so no
+        // measurement text ever lives inside the heading, even in a
+        // CSS-blind HTML parser, and nothing here can stretch unexpectedly.
+        var computedFont = window.getComputedStyle(textEl);
+        var measurer = document.createElement('span');
+        measurer.style.cssText = 'position:absolute;left:-9999px;top:0;white-space:nowrap;visibility:hidden;';
+        measurer.style.font = computedFont.font;
+        measurer.style.letterSpacing = computedFont.letterSpacing;
+        measurer.style.textTransform = computedFont.textTransform;
+        document.body.appendChild(measurer);
+
+        function measure(phrase) {
+            measurer.textContent = phrase;
+            return measurer.offsetWidth;
+        }
+
+        // Lock in the wrapper's initial width to match the first phrase,
+        // then allow it to animate smoothly on subsequent rotations.
+        wrapperEl.style.width = measure(phrases[idx]) + 'px';
 
         setInterval(function () {
-            idx = (idx + 1) % words.length;
+            idx = (idx + 1) % phrases.length;
+            var nextWidth = measure(phrases[idx]);
 
             // Fade out
             textEl.style.animation = 'none';
@@ -943,18 +967,70 @@
             if (borderEl) {
                 borderEl.style.animation = 'none';
             }
+            wrapperEl.style.transition = 'width 0.3s ease-in-out';
+            wrapperEl.style.width = nextWidth + 'px';
 
             // Force reflow
             void textEl.offsetWidth;
 
             // Update text and replay animations
-            textEl.textContent = words[idx];
+            textEl.textContent = phrases[idx];
             textEl.style.opacity = '';
             textEl.style.animation = 'textFadeIn 0.3s ease-in-out, textReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1)';
             if (borderEl) {
                 borderEl.style.animation = 'scaleIn 0.3s ease-out';
             }
         }, 5000);
+
+        // Re-measure the current phrase after viewport/font-size changes
+        // (e.g. crossing the sm:/lg: breakpoints) so the box stays snug
+        // without waiting for the next scheduled rotation.
+        var resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                computedFont = window.getComputedStyle(textEl);
+                measurer.style.font = computedFont.font;
+                measurer.style.letterSpacing = computedFont.letterSpacing;
+                measurer.style.textTransform = computedFont.textTransform;
+                wrapperEl.style.transition = 'none';
+                wrapperEl.style.width = measure(phrases[idx]) + 'px';
+            }, 150);
+        });
+    })();
+
+    /* ── Testimonials marquee: clone the track client-side ──────────────
+       The CSS @keyframes testimonialScroll animation moves the track from
+       translateX(0) to translateX(-50%), which requires the track to be
+       exactly double-width so the loop is seamless. The server renders the
+       testimonials once (real, unique, crawlable text); here we duplicate
+       that single track via cloneNode so the required second half exists
+       for the animation without shipping the quotes twice in the HTML
+       response. ────────────────────────────────────────────────────────── */
+    (function () {
+        var track = document.getElementById('testimonial-scroll-container');
+        if (!track) return;
+
+        var cards = Array.prototype.slice.call(track.children);
+        cards.forEach(function (card) {
+            var clone = card.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+        });
+
+        /* :hover can't pause the marquee on touch devices, so a finger
+           tapping a card to read it gets swept away mid-scroll. Pause on
+           touch and resume shortly after release. */
+        var resumeTimer;
+        track.addEventListener('touchstart', function () {
+            clearTimeout(resumeTimer);
+            track.classList.add('is-paused');
+        }, { passive: true });
+        track.addEventListener('touchend', function () {
+            resumeTimer = setTimeout(function () {
+                track.classList.remove('is-paused');
+            }, 2500);
+        }, { passive: true });
     })();
 
     /* ── Cal.com is now handled by the official embed script in cal-modal partial ── */

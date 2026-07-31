@@ -52,6 +52,13 @@
                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>',
                         ],
                         [
+                            'route' => 'about',
+                            'label' => __('nav.about'),
+                            'icon' => '<circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>',
+                        ],
+                        [
                             'route' => 'our-work',
                             'label' => __('nav.our_work'),
                             'icon' => '<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
@@ -68,13 +75,6 @@
                             'label' => __('nav.blog'),
                             'icon' => '<path d="M12 20h9"></path>
                 <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"></path>',
-                        ],
-                        [
-                            'route' => 'about',
-                            'label' => __('nav.about'),
-                            'icon' => '<circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 16v-4"></path>
-                <path d="M12 8h.01"></path>',
                         ],
                         [
                             'route' => 'contact',

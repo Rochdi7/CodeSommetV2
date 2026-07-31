@@ -34,10 +34,10 @@
                 @php
                 $navItems = [
                 ['route' => 'home', 'label' => 'Accueil'],
+                ['route' => 'about', 'label' => 'À Propos'],
                 ['route' => 'our-work', 'label' => 'Nos Projets'],
                 ['route' => 'tools', 'label' => 'Outils'],
                 ['route' => 'blog', 'label' => 'Blog'],
-                ['route' => 'about', 'label' => 'À Propos'],
                 ['route' => 'contact', 'label' => 'Contact'],
                 ];
                 @endphp
