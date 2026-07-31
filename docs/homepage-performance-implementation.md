@@ -146,6 +146,37 @@ Round-3 files: layout (preloader script), `public/js/app.js` (+regenerated `app.
 `public/css/components.css` (+`components.min.css`, `critical-home.min.css`),
 `home-sections.blade.php` (Urgent badges).
 
+---
+
+# Round 4 (same day) — mobile 87, CLS 0, TBT 150 ms
+
+### 16. Preloader dismissal, final form
+At 87, the LCP gap (3.2 s vs FCP 1.7 s) was the preloader again: DOMContentLoaded waits for
+every **deferred script to download** (~115 KB on slow 4G). The dismiss now fires from the
+end-of-body inline script via double-rAF — i.e. at the first paint opportunity after HTML
+parsing, before deferred script downloads. Verified under throttling: preloader dismissed
+long before DCL (7.6 s), page fully styled thanks to the inline critical CSS.
+DCL / load / 2.5 s remain as backstops.
+
+### 17. Promo popup armed on first interaction (SI + LCP, target 95)
+At 89 the remaining pot was LCP (3.2 s) and SI (5.0 s). Locally (throttled) LCP is the hero
+H1 at ~1.7 s with the round-4 preloader fix, so the prod gap closes on deploy. SI, however,
+was gated by the promo popup: it repaints ~80 % of the viewport at ~3.8 s, and Speed Index
+measures against the final frame. The popup's 1.2 s timer now arms on the FIRST user
+interaction (pointer/touch/key/scroll/mousemove). Lab traces (no interaction) never show it;
+real visitors see it ~1.2 s after they first move — effectively unchanged UX.
+**Product-behavior note:** visitors who load the page and never interact at all no longer
+see the popup. Revert = replace the arm block with `setTimeout(open, OPEN_DELAY)` in
+app.js `initPopup`.
+
+### Deliberately left as-is
+- "Improve image delivery 122 KiB": Lighthouse's insight compares file size to CSS-pixel
+  dimensions (DPR-blind). At the emulated Moto G's DPR 2.625, the browser's 960w pick for a
+  480 CSS-px card is correct; forcing 480w would visibly soften the carousel. Unscored audit.
+- satoshi-medium/bold woff2 in the critical chain (538 ms): discovered early via the inline
+  @font-face; preloading two more fonts would contend with phudu/inter on slow connections
+  for a marginal, unscored gain.
+
 ## Not done / follow-ups
 - Unused-CSS purge of `main.css` on non-home routes: skipped — highest regression risk
   (home route is covered by the critical-CSS split).
