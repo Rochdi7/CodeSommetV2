@@ -63,8 +63,14 @@ const VIEWPORTS = [[375, 812], [768, 1024], [1440, 900]];
           counter.i++;
           const order = counter.i;
           if (rule.type === CSSRule.STYLE_RULE) {
+            // ALWAYS keep rules for elements that remove themselves from the
+            // DOM before this extractor samples the page (the preloader
+            // self-removes ~600 ms after dismissal): querySelector would miss
+            // them and an unstyled preloader block shifts the whole page
+            // (measured CLS 0.133 in production).
+            const alwaysKeep = /preloader/i.test(rule.selectorText);
             const sels = rule.selectorText.split(',');
-            if (sels.some((s) => selectorMatches(s.trim()))) {
+            if (alwaysKeep || sels.some((s) => selectorMatches(s.trim()))) {
               out.push({ sheetIdx, order, media: mediaStack.join(' && '), css: rule.cssText });
             }
           } else if (rule.type === CSSRule.MEDIA_RULE) {
