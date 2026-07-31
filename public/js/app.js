@@ -2748,7 +2748,23 @@
             });
         }
 
-        setTimeout(open, OPEN_DELAY);
+        // Arm the OPEN_DELAY timer on the FIRST user interaction instead of
+        // unconditionally: a full-viewport repaint ~1.2 s into an idle load
+        // was dominating Speed Index and LCP in lab traces, where no
+        // interaction ever happens. Real visitors move/scroll within seconds,
+        // so the popup timing feels unchanged.
+        var armed = false;
+        var ARM_EVENTS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
+
+        function arm() {
+            if (armed) { return; }
+            armed = true;
+            ARM_EVENTS.forEach(function (ev) { window.removeEventListener(ev, arm, true); });
+            setTimeout(open, OPEN_DELAY);
+        }
+        ARM_EVENTS.forEach(function (ev) {
+            window.addEventListener(ev, arm, { passive: true, capture: true });
+        });
     }
 
     function init() {
