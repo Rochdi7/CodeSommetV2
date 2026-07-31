@@ -55,9 +55,22 @@
     <link rel="preload" href="{{ asset('fonts/phudu-latin.woff2') }}" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="{{ asset('fonts/inter-latin.woff2') }}" as="font" type="font/woff2" crossorigin />
 
-    {{-- Feuilles de style --}}
-    <link rel="stylesheet" href="{{ asset_v('css/main.css') }}" />
-    <link rel="stylesheet" href="{{ asset_v('css/components.css') }}" />
+    {{-- Feuilles de style. Accueil : CSS critique inliné (règles au-dessus de la
+         ligne de flottaison, extraites par scripts/extract-critical-css.cjs — à
+         régénérer via `npm run critical` après toute modif CSS), feuilles complètes
+         chargées hors chemin critique ; la cascade finale reste identique. --}}
+    @if (request()->routeIs('home') && is_file(public_path('css/critical-home.min.css')))
+        <style>{!! file_get_contents(public_path('css/critical-home.min.css')) !!}</style>
+        <link rel="stylesheet" href="{{ asset_v('css/main.css') }}" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" href="{{ asset_v('css/components.min.css') }}" media="print" onload="this.media='all'" />
+        <noscript>
+            <link rel="stylesheet" href="{{ asset_v('css/main.css') }}" />
+            <link rel="stylesheet" href="{{ asset_v('css/components.min.css') }}" />
+        </noscript>
+    @else
+        <link rel="stylesheet" href="{{ asset_v('css/main.css') }}" />
+        <link rel="stylesheet" href="{{ asset_v('css/components.min.css') }}" />
+    @endif
 
     {{-- Toastr (notifications) : hors chemin critique — aucune notification ne se
          déclenche avant interaction. Motif print→all avec repli noscript. --}}
@@ -121,8 +134,8 @@
     <script src="{{ asset_v('js/toastr-init.js') }}" defer></script>
 
     {{-- JS principal --}}
-    <script src="{{ asset_v('js/app.js') }}" defer></script>
-    <script src="{{ asset_v('js/custom-select.js') }}" defer></script>
+    <script src="{{ asset_v('js/app.min.js') }}" defer></script>
+    <script src="{{ asset_v('js/custom-select.min.js') }}" defer></script>
 
     {{-- Preloader dismiss — à window.load OU après 2,5 s max : sur réseau lent
          l'overlay masquait la page entière jusqu'à la fin du chargement complet
@@ -147,10 +160,31 @@
         })();
     </script>
 
-    {{-- Google Analytics — gtag async, initialisation locale différée
-         (le stub dataLayer dans google-analytics.js met les événements en file). --}}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K"></script>
+    {{-- Google Analytics — le stub dataLayer (google-analytics.js, defer) met la
+         page vue en file dès DOMContentLoaded ; la librairie gtag (159 KB, ~67 KB
+         inutilisés) se charge après window.load + idle, avec un filet à 6 s pour
+         les sessions écourtées. Rien n'est perdu : gtag rejoue la file au chargement. --}}
     <script src="{{ asset_v('scripts/google-analytics.js') }}" defer></script>
+    <script>
+        (function() {
+            function loadGtag() {
+                if (window.__gtagLoaded) return;
+                window.__gtagLoaded = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K';
+                document.head.appendChild(s);
+            }
+            window.addEventListener('load', function() {
+                if ('requestIdleCallback' in window) {
+                    requestIdleCallback(loadGtag, { timeout: 3000 });
+                } else {
+                    setTimeout(loadGtag, 1500);
+                }
+            });
+            setTimeout(loadGtag, 6000);
+        })();
+    </script>
 
     {{-- Intégration Cal.com --}}
     @stack('scripts')

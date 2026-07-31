@@ -74,10 +74,50 @@ Date: 2026-07-31 · Baseline: mobile 70 / desktop 85–94 (PSI). Companion doc: 
    same for a `.webp` and `satoshi-medium.woff2` → max-age=2592000.
 6. Re-run PSI 3× (mobile + desktop), take medians.
 
+---
+
+# Round 2 (same day) — mobile 78 → target 90
+
+After deploy, PSI read mobile 78 / desktop 96. Remaining flags addressed:
+
+### 10. Minification (esbuild devDependency, `npm run minify`)
+- `app.min.js` 145→74 KB, `custom-select.min.js` 28→12 KB, `components.min.css` 60→32 KB.
+  Layout now references the `.min` siblings via `asset_v()`. Originals kept as sources.
+- `main.css` NOT minified: esbuild raised 38 syntax warnings (Tailwind escaped selectors split
+  across lines) — mangling risk, and PSI's minify-CSS flag only covered components.css anyway.
+
+### 11. Critical CSS (the −1,120 ms render-blocking fix)
+- `scripts/extract-critical-css.cjs` (`npm run critical`): real-browser selector matching at
+  375/768/1440 px; keeps rules whose selectors (pseudos stripped) match an element intersecting
+  the first viewport ×1.25, plus all hidden (0×0) elements, :root, @keyframes, and the latin
+  @font-face set. @media ancestry preserved; source order preserved.
+- Output `public/css/critical-home.min.css` (84.7 KB raw / 13.5 KB gzip) is inlined on the
+  **home route only**; `main.css` + `components.min.css` load via `media="print"
+  onload="this.media='all'"` with `<noscript>` fallback. Other routes keep blocking links.
+- **Verified**: with both stylesheets blocked entirely, the rendered page (hero, header, CTAs,
+  fonts, promo modal) is visually identical to the full render at 390 px and 1440 px.
+- ⚠ Regenerate after any CSS change: `npm run minify && npm run critical`.
+
+### 12. Remaining PSI flags
+- 24 px avatar cluster (hero "trusted by", 6 imgs): now uses `-96w.webp` src + srcset (was 256px full files).
+- `promo-dot`: box-shadow pulse → `::after` ring with transform/opacity (compositor-friendly),
+  scale(3.67) reproduces the old 8 px spread; reduced-motion rule extended to the pseudo-element.
+- Contrast: remaining homepage `text-[#00AEEF]`-on-light instances → `#0071BC`
+  (home.blade l.816 savings label, blog-carousel "Lire l'article" link). Hover-only colors untouched.
+- gtag: now injected on `window.load` + `requestIdleCallback` (3 s idle timeout, 6 s hard
+  fallback). Page-view accuracy kept — the deferred stub queues `gtag('js'/'config')` in
+  dataLayer at DCL and the library replays the queue on arrival.
+
+### Round-2 deploy additions
+- New: `public/css/critical-home.min.css`, `public/css/components.min.css`, `public/js/app.min.js`,
+  `public/js/custom-select.min.js`, `scripts/extract-critical-css.cjs`, 6 avatar `-96w` usages.
+- Modified: layout (critical-CSS block, min refs, gtag loader), home.blade (avatars, contrast),
+  home-blog-carousel (contrast), `public/css/components.css` (promo-dot), `package.json`
+  (esbuild devDep + `minify`/`critical` scripts).
+- `npm ci && npm run minify` optional on server (minified files are committed); `view:clear` required.
+
 ## Not done / follow-ups
-- Minified `.min.css`/`.min.js` siblings (−14 KiB JS, −5 KiB CSS): pending, needs a minifier
-  (esbuild devDependency or equivalent).
-- Unused-CSS split of `main.css` (−17 KiB): deliberately skipped — highest regression risk.
-- `promo-dot` box-shadow animation → transform/opacity: pending (small).
-- gtag idle-delay (−67 KiB unused JS): deliberately conservative — left `async` as-is.
+- Unused-CSS purge of `main.css` on non-home routes: skipped — highest regression risk
+  (home route is covered by the critical-CSS split).
 - AVIF variants: GD supports it; skipped to limit scope (WebP already −60–85 %).
+- jQuery+toastr replacement with a dependency-free toast (−30 KB): touches many pages, skipped.

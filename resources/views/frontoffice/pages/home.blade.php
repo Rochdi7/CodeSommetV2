@@ -813,7 +813,7 @@
                             <div class="text-xl font-semibold text-[var(--text-primary)] mb-0 pt-2.5 pl-2.5">
                                 {{ __('home.text_4') }}</div>
                             <div class="relative w-full mb-0">
-                                <div class="text-xs text-[#00AEEF] mb-0.5 text-right">{{ __('home.text_5') }}</div><svg
+                                <div class="text-xs text-[#0071BC] mb-0.5 text-right">{{ __('home.text_5') }}</div><svg
                                     width="100%" height="6" viewBox="-20 3 350 5" class="absolute top-[20px]"
                                     preserveAspectRatio="none">
                                     <path d="M 2.33 3.5 L 340 3.5" fill="transparent" stroke="#00AEEF" stroke-width="3"
@@ -2475,15 +2475,21 @@
                                     width="32" height="32" decoding="async"
                                     class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/testimonials/mounira-kajia.webp') }}" /><img
+                                    srcset="{{ asset('images/testimonials/mounira-kajia-96w.webp') }} 96w, {{ asset('images/testimonials/mounira-kajia.webp') }} 256w"
+                                    sizes="32px"
+                                    src="{{ asset('images/testimonials/mounira-kajia-96w.webp') }}" /><img
                                     alt="{{ __('home.attr_1083') }}" loading="lazy" width="32" height="32"
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/testimonials/gls-ceo.webp') }}" /><img
+                                    srcset="{{ asset('images/testimonials/gls-ceo-96w.webp') }} 96w, {{ asset('images/testimonials/gls-ceo.webp') }} 256w"
+                                    sizes="32px"
+                                    src="{{ asset('images/testimonials/gls-ceo-96w.webp') }}" /><img
                                     alt="{{ __('home.attr_1084') }}" loading="lazy" width="32" height="32"
                                     decoding="async" class="w-8 h-8 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" />
+                                    srcset="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }} 96w, {{ asset('images/testimonials/mohammed-chajia.webp') }} 256w"
+                                    sizes="32px"
+                                    src="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }}" />
                             </div><span class="text-sm font-medium">{{ __('home.text_14') }}</span>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2583,17 +2589,23 @@
                                     width="40" height="40" decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/testimonials/mounira-kajia.webp') }}" /><img
+                                    srcset="{{ asset('images/testimonials/mounira-kajia-96w.webp') }} 96w, {{ asset('images/testimonials/mounira-kajia.webp') }} 256w"
+                                    sizes="32px"
+                                    src="{{ asset('images/testimonials/mounira-kajia-96w.webp') }}" /><img
                                     alt="{{ __('home.attr_1088') }}" loading="lazy" width="40" height="40"
                                     decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/testimonials/gls-ceo.webp') }}" /><img
+                                    srcset="{{ asset('images/testimonials/gls-ceo-96w.webp') }} 96w, {{ asset('images/testimonials/gls-ceo.webp') }} 256w"
+                                    sizes="32px"
+                                    src="{{ asset('images/testimonials/gls-ceo-96w.webp') }}" /><img
                                     alt="{{ __('home.attr_1089') }}" loading="lazy" width="40" height="40"
                                     decoding="async"
                                     class="w-10 h-10 rounded-full border-2 border-gray-900 object-cover"
                                     style="color:transparent"
-                                    src="{{ asset('images/testimonials/mohammed-chajia.webp') }}" />
+                                    srcset="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }} 96w, {{ asset('images/testimonials/mohammed-chajia.webp') }} 256w"
+                                    sizes="32px"
+                                    src="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }}" />
                             </div><span class="text-sm font-medium">{{ __('home.text_21') }}</span>
                         </div>
                         <div
