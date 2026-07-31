@@ -116,8 +116,41 @@ After deploy, PSI read mobile 78 / desktop 96. Remaining flags addressed:
   (esbuild devDep + `minify`/`critical` scripts).
 - `npm ci && npm run minify` optional on server (minified files are committed); `view:clear` required.
 
+---
+
+# Round 3 (same day) — mobile 84 → target 90
+
+PSI read mobile 84 / desktop 96. The LCP breakdown exposed the final blockers:
+
+### 13. Preloader was the LCP (render delay 2,450 ms ≈ the 2.5 s cap)
+Now dismisses on **DOMContentLoaded** (load + 2.5 s kept as backstops) — safe because the
+inline critical CSS means the first paint is already fully styled. Measured locally:
+dismissed ~600 ms after navigation.
+
+### 14. Contrast fix was a NO-OP — root cause found
+`text-[#0071BC]` is a Tailwind *arbitrary value*: the prebuilt sheets contain no such rule, so
+the earlier class rename changed nothing (axe kept failing). Fix: added the utility to
+`components.css` (`.text-\[\#0071BC\]{color:#0071BC}`). Also converted the two "Urgent"
+badges (`text-[var(--color-primary-orange)]` = cyan #00AEEF on 10 % cyan tint) to the same
+utility. Verified computed color = rgb(0,113,188) on both.
+**Lesson: any new arbitrary Tailwind class in this repo needs a matching hand-written rule.**
+
+### 15. Remaining forced reflows (150 ms + 117 ms in traces)
+- `initScrollAnimations` now runs in `requestIdleCallback` (1.5 s timeout) — it only tags
+  below-fold scroll reveals, nothing above the fold depends on it.
+- Promo modal `open()`: the `void offsetWidth` forced reflow replaced with a double-rAF
+  (browser lays out the un-hidden modal naturally; class writes land next frame; focus one
+  frame later). Transition behavior preserved, verified modal still animates open.
+
+Round-3 files: layout (preloader script), `public/js/app.js` (+regenerated `app.min.js`),
+`public/css/components.css` (+`components.min.css`, `critical-home.min.css`),
+`home-sections.blade.php` (Urgent badges).
+
 ## Not done / follow-ups
 - Unused-CSS purge of `main.css` on non-home routes: skipped — highest regression risk
   (home route is covered by the critical-CSS split).
 - AVIF variants: GD supports it; skipped to limit scope (WebP already −60–85 %).
 - jQuery+toastr replacement with a dependency-free toast (−30 KB): touches many pages, skipped.
+- `dental-pro-top-320w` flagged for a further 12 KiB: PSI's estimate assumes a DPR-1 render;
+  at mobile DPR the 320w file is already right-sized. Left as-is.
+- gtag's internal 85 ms reflow + 67 KiB unused: third-party code, already idle-loaded.
