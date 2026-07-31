@@ -909,7 +909,7 @@ $comparisons = [
                             <div class="relative z-10 flex-shrink-0" style="margin-top: 5px;">
                                 <div class="relative p-[2px] rounded-[12px]" style="background: linear-gradient(135deg, rgb(0, 174, 239), rgb(0, 113, 188), rgb(0, 136, 212)); animation: 2s ease-in-out 0s infinite normal none running pulse;">
                                     <div class="relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center">
-                                        <img alt="CodeSommet" class="h-8 w-auto" src="{{ asset('logo-white.svg') }}">
+                                        <img alt="CodeSommet" class="h-8 w-auto" width="220" height="150" src="{{ asset('logo-white.svg') }}">
                                     </div>
                                 </div>
                             </div>

@@ -30,19 +30,27 @@ class NewsletterController extends Controller
         // Constrain the free-form source to a short safe token.
         $source = substr((string) $request->input('source', 'website'), 0, 100);
 
-        // Create only if new; otherwise no-op. The response is identical either
-        // way so an attacker cannot tell whether the address already exists.
+        // Duplicate subscriptions get a distinct "already subscribed" reply.
+        // This does reveal list membership for a given address (enumeration),
+        // a trade-off accepted for clearer UX on a marketing newsletter; the
+        // throttle:newsletter middleware bounds abuse.
         $existing = NewsletterSubscriber::where('email', $validated['email'])->first();
-        if (! $existing) {
-            NewsletterSubscriber::create([
-                'email'         => $validated['email'],
-                'name'          => $validated['name'] ?? null,
-                'source'        => $source,
-                'ip_address'    => $request->ip(),
-                'is_confirmed'  => true,
-                'subscribed_at' => now(),
+        if ($existing) {
+            return response()->json([
+                'success' => true,
+                'already' => true,
+                'message' => 'Cette adresse est déjà inscrite à la newsletter.',
             ]);
         }
+
+        NewsletterSubscriber::create([
+            'email'         => $validated['email'],
+            'name'          => $validated['name'] ?? null,
+            'source'        => $source,
+            'ip_address'    => $request->ip(),
+            'is_confirmed'  => true,
+            'subscribed_at' => now(),
+        ]);
 
         return response()->json([
             'success' => true,

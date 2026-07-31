@@ -47,7 +47,7 @@
                         <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold"
                             style="font-family:var(--font-display)">{{ __('home.text_1') }}<!-- --> <span
                                 class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em"
-                                    class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"
+                                    class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-0"
                                     id="hero-rotating-wrapper"><span
                                         style="border-color:var(--color-primary-orange);z-index:1"
                                         class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span
@@ -59,7 +59,8 @@
                                             class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                             style="background-color:var(--color-primary-orange)"
                                             class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                        class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]"
+                                        style="z-index:2"
+                                        class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center whitespace-nowrap animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]"
                                         id="hero-rotating-text">DES RÉSULTATS</span></span></span></h1>
                         <p
                             class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -120,12 +121,12 @@
                         </button><a
                             class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white transition-all w-full sm:w-auto"
                             href="{{ route('tool', 'website-analyzer') }}"><span
-                                class="text-sm md:text-base font-medium text-[#00AEEF] group-hover:text-white">Analyser
+                                class="text-sm md:text-base font-medium text-[#0071BC] group-hover:text-white">Analyser
                                 Votre
                                 Site Web</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right w-4 h-4 text-[#00AEEF] group-hover:text-white"
+                                class="lucide lucide-arrow-right w-4 h-4 text-[#0071BC] group-hover:text-white"
                                 aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
@@ -134,9 +135,14 @@
                 <div class="hidden lg:flex relative h-[500px] items-center justify-center">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-[var(--color-primary-orange)]/5 to-transparent rounded-3xl">
-                    </div><img src="{{ asset('images/hero-image-1.webp') }}" alt="{{ __('home.attr_1058') }}"
-                        class="relative w-full max-w-lg object-contain animate-float drop-shadow-2xl" loading="eager"
-                        fetchPriority="high" width="900" height="900" />
+                    </div><picture>{{-- Conteneur hidden lg:flex : sous 1024px la source data-URI
+                        évite de télécharger 70 KB jamais affichés sur mobile --}}
+                        <source media="(max-width: 1023.98px)"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                        <img src="{{ asset('images/hero-image-1.webp') }}" alt="{{ __('home.attr_1058') }}"
+                            class="relative w-full max-w-lg object-contain animate-float drop-shadow-2xl" loading="eager"
+                            fetchPriority="high" width="900" height="900" />
+                    </picture>
                 </div>
             </div>
             <div class="mt-8 lg:mt-12 relative">
@@ -461,7 +467,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1059') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/study-abroad-hero2ad8-480w.webp') }} 480w, {{ asset('images/study-abroad-hero2ad8-960w.webp') }} 960w, {{ asset('images/study-abroad-hero2ad8.webp') }} 1280w"
+                                src="{{ asset('images/study-abroad-hero2ad8.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -473,7 +481,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1060') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/fintech-hero835e.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/fintech-hero835e-480w.webp') }} 480w, {{ asset('images/fintech-hero835e-960w.webp') }} 960w, {{ asset('images/fintech-hero835e.webp') }} 1280w"
+                                src="{{ asset('images/fintech-hero835e.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -485,7 +495,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1061') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/healthcare-provider-hero8f91-480w.webp') }} 480w, {{ asset('images/healthcare-provider-hero8f91-960w.webp') }} 960w, {{ asset('images/healthcare-provider-hero8f91.webp') }} 1280w"
+                                src="{{ asset('images/healthcare-provider-hero8f91.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -497,7 +509,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1062') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/saas-dashboard-hero338c-480w.webp') }} 480w, {{ asset('images/saas-dashboard-hero338c-960w.webp') }} 960w, {{ asset('images/saas-dashboard-hero338c.webp') }} 1280w"
+                                src="{{ asset('images/saas-dashboard-hero338c.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -509,7 +523,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1063') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/ecommerce-hero7b6e-480w.webp') }} 480w, {{ asset('images/ecommerce-hero7b6e-960w.webp') }} 960w, {{ asset('images/ecommerce-hero7b6e.webp') }} 1280w"
+                                src="{{ asset('images/ecommerce-hero7b6e.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -521,7 +537,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1064') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/professional-services-hero4f40.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/professional-services-hero4f40-480w.webp') }} 480w, {{ asset('images/professional-services-hero4f40-960w.webp') }} 960w, {{ asset('images/professional-services-hero4f40.webp') }} 1280w"
+                                src="{{ asset('images/professional-services-hero4f40.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -533,7 +551,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1065') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/edtech-herodbd9.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/edtech-herodbd9-480w.webp') }} 480w, {{ asset('images/edtech-herodbd9-960w.webp') }} 960w, {{ asset('images/edtech-herodbd9.webp') }} 1280w"
+                                src="{{ asset('images/edtech-herodbd9.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -545,7 +565,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1066') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/ai-heroc6fe.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/ai-heroc6fe-480w.webp') }} 480w, {{ asset('images/ai-heroc6fe-960w.webp') }} 960w, {{ asset('images/ai-heroc6fe.webp') }} 1280w"
+                                src="{{ asset('images/ai-heroc6fe.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -558,7 +580,9 @@
                             <img alt="Plateforme SaaS développée par CodeSommet, avec gestion des abonnements et architecture multi-tenant"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/saas-herod5d6.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/saas-herod5d6-480w.webp') }} 480w, {{ asset('images/saas-herod5d6-960w.webp') }} 960w, {{ asset('images/saas-herod5d6.webp') }} 1280w"
+                                src="{{ asset('images/saas-herod5d6.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -570,7 +594,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1067') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/healthcare-heroeb9b.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/healthcare-heroeb9b-480w.webp') }} 480w, {{ asset('images/healthcare-heroeb9b-960w.webp') }} 960w, {{ asset('images/healthcare-heroeb9b.webp') }} 1280w"
+                                src="{{ asset('images/healthcare-heroeb9b.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -582,7 +608,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1068') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/study-abroad-hero2ad8.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/study-abroad-hero2ad8-480w.webp') }} 480w, {{ asset('images/study-abroad-hero2ad8-960w.webp') }} 960w, {{ asset('images/study-abroad-hero2ad8.webp') }} 1280w"
+                                src="{{ asset('images/study-abroad-hero2ad8.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -594,7 +622,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1069') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/fintech-hero835e.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/fintech-hero835e-480w.webp') }} 480w, {{ asset('images/fintech-hero835e-960w.webp') }} 960w, {{ asset('images/fintech-hero835e.webp') }} 1280w"
+                                src="{{ asset('images/fintech-hero835e.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -606,7 +636,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1070') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/healthcare-provider-hero8f91.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/healthcare-provider-hero8f91-480w.webp') }} 480w, {{ asset('images/healthcare-provider-hero8f91-960w.webp') }} 960w, {{ asset('images/healthcare-provider-hero8f91.webp') }} 1280w"
+                                src="{{ asset('images/healthcare-provider-hero8f91.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -618,7 +650,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1071') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/saas-dashboard-hero338c.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/saas-dashboard-hero338c-480w.webp') }} 480w, {{ asset('images/saas-dashboard-hero338c-960w.webp') }} 960w, {{ asset('images/saas-dashboard-hero338c.webp') }} 1280w"
+                                src="{{ asset('images/saas-dashboard-hero338c.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -630,7 +664,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1072') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/ecommerce-hero7b6e.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/ecommerce-hero7b6e-480w.webp') }} 480w, {{ asset('images/ecommerce-hero7b6e-960w.webp') }} 960w, {{ asset('images/ecommerce-hero7b6e.webp') }} 1280w"
+                                src="{{ asset('images/ecommerce-hero7b6e.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -642,7 +678,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1073') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/professional-services-hero4f40.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/professional-services-hero4f40-480w.webp') }} 480w, {{ asset('images/professional-services-hero4f40-960w.webp') }} 960w, {{ asset('images/professional-services-hero4f40.webp') }} 1280w"
+                                src="{{ asset('images/professional-services-hero4f40.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -654,7 +692,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1074') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/edtech-herodbd9.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/edtech-herodbd9-480w.webp') }} 480w, {{ asset('images/edtech-herodbd9-960w.webp') }} 960w, {{ asset('images/edtech-herodbd9.webp') }} 1280w"
+                                src="{{ asset('images/edtech-herodbd9.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -666,7 +706,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1075') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/ai-heroc6fe.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/ai-heroc6fe-480w.webp') }} 480w, {{ asset('images/ai-heroc6fe-960w.webp') }} 960w, {{ asset('images/ai-heroc6fe.webp') }} 1280w"
+                                src="{{ asset('images/ai-heroc6fe.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -679,7 +721,9 @@
                             <img alt="Plateforme SaaS développée par CodeSommet, avec gestion des abonnements et architecture multi-tenant"
                                 loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/saas-herod5d6.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/saas-herod5d6-480w.webp') }} 480w, {{ asset('images/saas-herod5d6-960w.webp') }} 960w, {{ asset('images/saas-herod5d6.webp') }} 1280w"
+                                src="{{ asset('images/saas-herod5d6.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -691,7 +735,9 @@
                             class="jsx-2447671171 relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <img alt="{{ __('home.attr_1076') }}" loading="lazy" decoding="async" class="object-cover"
                                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                sizes="480px" src="{{ asset('images/healthcare-heroeb9b.webp') }}" />
+                                sizes="480px"
+                                srcset="{{ asset('images/healthcare-heroeb9b-480w.webp') }} 480w, {{ asset('images/healthcare-heroeb9b-960w.webp') }} 960w, {{ asset('images/healthcare-heroeb9b.webp') }} 1280w"
+                                src="{{ asset('images/healthcare-heroeb9b.webp') }}" />
                             <div
                                 class="jsx-2447671171 hidden md:block absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
@@ -716,6 +762,8 @@
                     <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                         <div class="absolute inset-0 flex items-start justify-center overflow-hidden px-8 pt-2.5">
                             <div class="flex items-center justify-center relative" style="z-index:10"><img
+                                    srcset="{{ asset('mockups/dental-pro-top-320w.webp') }} 320w, {{ asset('mockups/dental-pro-top.webp') }} 640w"
+                                    sizes="(min-width: 768px) 300px, 160px"
                                     src="{{ asset('mockups/dental-pro-top.webp') }}" alt="{{ __('home.attr_1077') }}"
                                     class="w-full h-auto object-contain rounded-[5px] shadow-[0_0_40px_rgba(0,0,0,0.15)]"
                                     style="min-height:150%" loading="lazy" width="640" height="983" /></div>
@@ -2334,6 +2382,8 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1078') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
+                                    srcset="{{ asset('images/benefits-ai-intelligence-224w.webp') }} 224w, {{ asset('images/benefits-ai-intelligence-512w.webp') }} 512w, {{ asset('images/benefits-ai-intelligence.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-ai-intelligence.webp') }}" />
                             </div>
                         </div>
@@ -2348,6 +2398,8 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1079') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
+                                    srcset="{{ asset('images/benefits-dashboard-design-224w.webp') }} 224w, {{ asset('images/benefits-dashboard-design-512w.webp') }} 512w, {{ asset('images/benefits-dashboard-design.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-dashboard-design.webp') }}" />
                             </div>
                         </div>
@@ -2362,6 +2414,8 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1080') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
+                                    srcset="{{ asset('images/benefits-growth-strategy-224w.webp') }} 224w, {{ asset('images/benefits-growth-strategy-512w.webp') }} 512w, {{ asset('images/benefits-growth-strategy.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-growth-strategy.webp') }}" />
                             </div>
                         </div>
@@ -2376,6 +2430,8 @@
                             <div class="w-32 h-32 opacity-90"><img alt="{{ __('home.attr_1081') }}" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
+                                    srcset="{{ asset('images/benefits-complete-solution-224w.webp') }} 224w, {{ asset('images/benefits-complete-solution-512w.webp') }} 512w, {{ asset('images/benefits-complete-solution.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-complete-solution.webp') }}" />
                             </div>
                         </div>
@@ -2390,6 +2446,8 @@
                             <div class="w-32 h-32 opacity-90"><img alt="Illustration de l'expertise sectorielle de CodeSommet dans le développement web" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
+                                    srcset="{{ asset('images/benefits-industry-expertise-224w.webp') }} 224w, {{ asset('images/benefits-industry-expertise-512w.webp') }} 512w, {{ asset('images/benefits-industry-expertise.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-industry-expertise.webp') }}" />
                             </div>
                         </div>
@@ -2404,6 +2462,8 @@
                             <div class="w-32 h-32 opacity-90"><img alt="Technologie de Pointe" loading="lazy"
                                     width="128" height="128" decoding="async" class="object-contain"
                                     style="color:transparent"
+                                    srcset="{{ asset('images/benefits-tech-stack-224w.webp') }} 224w, {{ asset('images/benefits-tech-stack-512w.webp') }} 512w, {{ asset('images/benefits-tech-stack.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-tech-stack.webp') }}" />
                             </div>
                         </div>
@@ -2451,6 +2511,8 @@
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="Intelligence IA" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
+                                    srcset="{{ asset('images/benefits-ai-intelligence-224w.webp') }} 224w, {{ asset('images/benefits-ai-intelligence-512w.webp') }} 512w, {{ asset('images/benefits-ai-intelligence.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-ai-intelligence.webp') }}" />
                             </div>
                         </div>
@@ -2466,6 +2528,8 @@
                                 class="w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
                                 <img alt="Design de tableau de bord" loading="lazy" width="160" height="160"
                                     decoding="async" class="object-contain" style="color:transparent"
+                                    srcset="{{ asset('images/benefits-dashboard-design-224w.webp') }} 224w, {{ asset('images/benefits-dashboard-design-512w.webp') }} 512w, {{ asset('images/benefits-dashboard-design.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-dashboard-design.webp') }}" />
                             </div>
                         </div>
@@ -2485,6 +2549,8 @@
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="{{ __('home.attr_1085') }}" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
+                                    srcset="{{ asset('images/benefits-growth-strategy-224w.webp') }} 224w, {{ asset('images/benefits-growth-strategy-512w.webp') }} 512w, {{ asset('images/benefits-growth-strategy.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-growth-strategy.webp') }}" />
                             </div>
                         </div>
@@ -2504,6 +2570,8 @@
                             <div class="w-64 h-64 opacity-90 group-hover:scale-110 transition-transform duration-500"><img
                                     alt="{{ __('home.attr_1086') }}" loading="lazy" width="256" height="256"
                                     decoding="async" class="object-contain" style="color:transparent"
+                                    srcset="{{ asset('images/benefits-complete-solution-224w.webp') }} 224w, {{ asset('images/benefits-complete-solution-512w.webp') }} 512w, {{ asset('images/benefits-complete-solution.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-complete-solution.webp') }}" />
                             </div>
                         </div>
@@ -2551,6 +2619,8 @@
                                 class="w-32 h-32 opacity-80 group-hover:scale-110 transition-transform duration-500 flex-shrink-0 ml-4">
                                 <img alt="Illustration de l'expertise sectorielle de CodeSommet dans le développement web" loading="lazy" width="128" height="128"
                                     decoding="async" class="object-contain" style="color:transparent"
+                                    srcset="{{ asset('images/benefits-industry-expertise-224w.webp') }} 224w, {{ asset('images/benefits-industry-expertise-512w.webp') }} 512w, {{ asset('images/benefits-industry-expertise.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
                                     src="{{ asset('images/benefits-industry-expertise.webp') }}" />
                             </div>
                         </div>
@@ -2565,7 +2635,9 @@
                             class="absolute bottom-4 right-4 w-40 h-40 opacity-80 group-hover:scale-110 transition-transform duration-500">
                             <img alt="Stack technologique" loading="lazy" width="160" height="160"
                                 decoding="async" class="object-contain" style="color:transparent"
-                                src="{{ asset('images/benefits-tech-stack.webp') }}" />
+                                srcset="{{ asset('images/benefits-tech-stack-224w.webp') }} 224w, {{ asset('images/benefits-tech-stack-512w.webp') }} 512w, {{ asset('images/benefits-tech-stack.webp') }} 800w"
+                                    sizes="(min-width: 1024px) 256px, 112px"
+                                    src="{{ asset('images/benefits-tech-stack.webp') }}" />
                         </div>
                     </div>
                 </div>

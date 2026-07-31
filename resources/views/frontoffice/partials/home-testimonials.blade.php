@@ -99,6 +99,8 @@
                                             <img alt="{{ $t['top_alt'] }}"
                                                 class="w-full h-auto flex-shrink-0 testimonial-img-top" loading="lazy"
                                                 decoding="async" width="640" height="983"
+                                                srcset="{{ asset(str_replace('.webp', '-320w.webp', $t['top'])) }} 320w, {{ asset($t['top']) }} 640w"
+                                                sizes="(min-width: 768px) 220px, 150px"
                                                 src="{{ asset($t['top']) }}"
                                                 style="border-radius: 5px 5px 0px 0px; display: block; max-height: calc(100% + 100px); box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(0px); transition: transform 2s ease-in-out;">
                                         </div>
@@ -107,6 +109,8 @@
                                             <img alt="{{ $t['bottom_alt'] }}"
                                                 class="w-full h-auto testimonial-img-bottom" loading="lazy"
                                                 decoding="async" width="640" height="991"
+                                                srcset="{{ asset(str_replace('.webp', '-320w.webp', $t['bottom'])) }} 320w, {{ asset($t['bottom']) }} 640w"
+                                                sizes="(min-width: 768px) 220px, 150px"
                                                 src="{{ asset($t['bottom']) }}"
                                                 style="border-radius: 0px 0px 5px 5px; display: block; vertical-align: top; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; transform: translateY(-20px); transition: transform 2s ease-in-out;">
                                         </div>
@@ -123,7 +127,9 @@
                                 </div>
                                 <div class="flex items-start gap-2.5 md:gap-3">
                                     @if ($t['avatar'])
-                                        <img src="{{ asset($t['avatar']) }}" alt="{{ $t['avatar_alt'] }}" loading="lazy"
+                                        <img srcset="{{ asset(str_replace('.webp', '-96w.webp', $t['avatar'])) }} 96w, {{ asset($t['avatar']) }} 256w"
+                                            sizes="48px"
+                                            src="{{ asset($t['avatar']) }}" alt="{{ $t['avatar_alt'] }}" loading="lazy"
                                             width="48" height="48"
                                             class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover flex-shrink-0 border border-[#0F0F0F]/5" />
                                     @else

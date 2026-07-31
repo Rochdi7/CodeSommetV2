@@ -36,3 +36,21 @@
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml application/json application/xml
 </IfModule>
+
+# ── Static asset caching ────────────────────────────────────────────────
+# CSS/JS are referenced with ?v=<filemtime> (asset_v() helper), so a file
+# change changes the URL: safe to cache "forever". Images and fonts are
+# unversioned; they get a long-but-revalidatable lifetime instead of the
+# host's 7-day default (OTF previously had no caching at all).
+<IfModule mod_mime.c>
+    AddType font/woff2 .woff2
+    AddType font/otf .otf
+</IfModule>
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.(webp|avif|png|jpe?g|gif|svg|ico|woff2|otf|ttf)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
