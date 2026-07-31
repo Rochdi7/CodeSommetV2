@@ -2011,3 +2011,21 @@ body.has-promo-bar .fab-stack {
         transition: none;
     }
 }
+
+/* ── Pricing card CTA buttons (mobile height fix) ─────────────────────
+   These CTAs use flex-1 (flex:1 1 0%) inside a flex-col stack, so their
+   height is driven by flex-grow distributing the parent's box, not by
+   the .h-11 rem height. Combined with html{font-size} shrinking to
+   14px under 640px, the stacked pair collapses to ~50px total instead
+   of the intended 44px each. Give them a fixed flex-basis so they stop
+   growing/shrinking with the parent and render at their intended size. */
+@media (max-width: 640px) {
+    #pricing button[data-cal-link].h-11,
+    #pricing a.h-11[href*="wa.me"],
+    #pricing a.h-11[href*="get-quote"] {
+        flex: 0 0 44px;
+        height: 44px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
