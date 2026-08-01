@@ -12,16 +12,32 @@
     const iconOpen = document.getElementById('mobile-icon-open');
     const iconClose = document.getElementById('mobile-icon-close');
 
+    var menuHideTimer = null;
+
     function closeMobileMenu() {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('is-open');
         document.body.style.overflow = '';
         menuToggle.setAttribute('aria-expanded', 'false');
         if (iconOpen) iconOpen.classList.remove('hidden');
         if (iconClose) iconClose.classList.add('hidden');
+        // Let the close transition (panel slide/fade) finish before
+        // display:none, so it doesn't just vanish.
+        clearTimeout(menuHideTimer);
+        menuHideTimer = setTimeout(function () {
+            mobileMenu.classList.add('hidden');
+        }, 340);
     }
 
     function openMobileMenu() {
+        clearTimeout(menuHideTimer);
         mobileMenu.classList.remove('hidden');
+        // .is-open one frame later so the transition runs from the
+        // closed state instead of snapping.
+        requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+                mobileMenu.classList.add('is-open');
+            });
+        });
         document.body.style.overflow = 'hidden';
         menuToggle.setAttribute('aria-expanded', 'true');
         if (iconOpen) iconOpen.classList.add('hidden');
@@ -30,7 +46,7 @@
 
     if (menuToggle && mobileMenu) {
         menuToggle.addEventListener('click', function () {
-            var isOpen = !mobileMenu.classList.contains('hidden');
+            var isOpen = mobileMenu.classList.contains('is-open');
             isOpen ? closeMobileMenu() : openMobileMenu();
         });
 

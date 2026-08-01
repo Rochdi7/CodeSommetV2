@@ -892,7 +892,7 @@ $comparisons = [
                             {{-- Left side: dashed border pills (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="will-change: transform;">
-                                    @for($i = 0; $i < 3; $i++) @foreach(['React Js', 'Laravel 11' , 'Shopify' , 'WordPress' , 'Figma' , 'Flutter' , 'MySQL' , 'Docker' ] as $kw) <li class="flex-shrink-0">
+                                    @for($i = 0; $i < 3; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full border-2 border-white/30"></div>
@@ -917,7 +917,7 @@ $comparisons = [
                             {{-- Right side: solid border pills with checkmarks (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right" style="will-change: transform;">
-                                    @for($i = 0; $i < 3; $i++) @foreach(['React Js', 'Laravel 11' , 'Shopify' , 'WordPress' , 'Figma' , 'Flutter' , 'MySQL' , 'Docker' ] as $kw) <li class="flex-shrink-0">
+                                    @for($i = 0; $i < 3; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
