@@ -258,8 +258,7 @@
                     <div
                         class="jsx-fbe667a4dcceba66 absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[var(--bg-primary)] via-[var(--bg-primary)]/80 to-transparent z-10 pointer-events-none">
                     </div>
-                    <div style="animation-duration:12s;animation-play-state:running"
-                        class="jsx-fbe667a4dcceba66 flex gap-6 md:gap-12 items-center logo-scroll-container">
+                    <div class="jsx-fbe667a4dcceba66 flex gap-6 md:gap-12 items-center logo-scroll-container">
                         {{-- Set 1 --}}
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">

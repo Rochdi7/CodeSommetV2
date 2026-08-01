@@ -51,6 +51,18 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Pre-reveal scroll animations (.scroll-fade-left/right sit at ±40px until
+   revealed) are transforms, and transformed boxes still contribute
+   scrollable overflow — every unrevealed card let the page be dragged
+   sideways on mobile. Clip the viewport's x-axis: `clip` (hidden = older-
+   browser fallback) forbids the scroll without creating a scroll
+   container, so position:sticky and fixed elements are unaffected. */
+html,
+body {
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
 /* ── Marquee animations (CTA banner) ─────────────────────────────────── */
 @keyframes marquee-left {
     0% { transform: translateX(0); }
@@ -61,10 +73,10 @@ html {
     100% { transform: translateX(0); }
 }
 .animate-marquee-left {
-    animation: marquee-left 30s linear infinite;
+    animation: marquee-left 45s linear infinite;
 }
 .animate-marquee-right {
-    animation: marquee-right 30s linear infinite;
+    animation: marquee-right 45s linear infinite;
 }
 
 /* ── CTA pill marquee (tripled items, scroll -33.333% → 0%) ─────────── */
@@ -78,10 +90,10 @@ html {
 @media (max-width: 640px) {
     .animate-marquee-left,
     .animate-marquee-right {
-        animation-duration: 14s;
+        animation-duration: 25s;
     }
     .animate-cta-marquee {
-        animation-duration: 9s;
+        animation-duration: 14s;
     }
 }
 
@@ -175,9 +187,16 @@ html {
     to   { transform: translateX(-50%); }
 }
 .logo-scroll-container {
-    animation-name: logoScroll;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    /* width:max-content: without it this flex track collapses to the
+       CONTAINER width and translateX(-50%) loops after half a viewport —
+       only the first logos ever showed (same bug as the work showcase). */
+    width: max-content;
+    animation: logoScroll 35s linear infinite;
+}
+@media (max-width: 640px) {
+    .logo-scroll-container {
+        animation-duration: 25s;
+    }
 }
 
 /* ── Hero text rotation animations ───────────────────────────────────── */
@@ -1890,6 +1909,8 @@ body.has-promo-modal {
     justify-content: center;
     gap: 1rem;
     padding: .75rem 1rem;
+    /* keep the animated sheen sweep inside the bar */
+    overflow: hidden;
     background: linear-gradient(100deg, #0F0F0F 0%, #14314a 60%, #0071BC 100%);
     color: #fff;
     box-shadow: 0 -8px 30px -12px rgba(0, 0, 0, .4);
