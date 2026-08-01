@@ -459,8 +459,8 @@
                 class="jsx-2447671171 absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#F5F5F5] via-[#F5F5F5]/80 to-transparent z-10 pointer-events-none">
             </div>
             <div style="cursor:grab" class="jsx-2447671171 overflow-x-auto overflow-y-hidden scrollbar-hide">
-                <div style="gap:24px;animation:heroScroll 22s linear infinite"
-                    class="jsx-2447671171 flex items-center will-change-transform">
+                <div id="hero-work-track" style="gap:24px"
+                    class="hero-work-track jsx-2447671171 flex items-center will-change-transform">
                     <div style="height:320px;width:480px"
                         class="jsx-2447671171 flex-shrink-0 relative group transition-transform duration-300 hover:scale-[1.02] hover:z-20">
                         <div

@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <div class="w-full overflow-hidden pt-8 pb-32">
+    <div class="w-full overflow-hidden testimonial-marquee-wrap">
         <div id="testimonial-scroll-container" class="testimonial-scroll-container flex gap-4 md:gap-8 py-4 px-4 md:px-0">
 
             {{-- Server-rendered once. A JS-cloned duplicate is appended after
