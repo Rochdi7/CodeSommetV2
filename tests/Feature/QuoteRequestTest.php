@@ -2,7 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Mail\QuoteRequestConfirmation;
+use App\Mail\QuoteRequestReceived;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\RateLimiter;
 use Tests\TestCase;
 
@@ -40,6 +43,19 @@ class QuoteRequestTest extends TestCase
             'email' => 'jean@example.com',
             'project_type' => 'website',
         ]);
+    }
+
+    public function test_valid_submission_sends_internal_notification_and_sender_confirmation(): void
+    {
+        Mail::fake();
+
+        $this->postJson('/api/get-quote', [
+            'fullName' => 'Jean Dupont',
+            'email' => 'jean@example.com',
+        ])->assertOk();
+
+        Mail::assertSent(QuoteRequestReceived::class, fn ($mail) => $mail->hasTo(config('mail.from.address')));
+        Mail::assertSent(QuoteRequestConfirmation::class, fn ($mail) => $mail->hasTo('jean@example.com'));
     }
 
     public function test_missing_required_fields_return_422(): void

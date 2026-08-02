@@ -1,46 +1,26 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Nouvelle demande de devis</title>
-</head>
-<body style="font-family: Arial, Helvetica, sans-serif; background:#f4f4f5; padding:24px; color:#111827;">
-    <table role="presentation" width="100%" style="max-width:600px; margin:0 auto; background:#ffffff; border-radius:8px; overflow:hidden;">
-        <tr>
-            <td style="background:#00AEEF; padding:20px 24px;">
-                <h1 style="margin:0; font-size:18px; color:#ffffff;">Nouvelle demande de devis</h1>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding:24px;">
-                <table role="presentation" width="100%" style="font-size:14px; line-height:1.6;">
-                    <tr><td style="padding:4px 0; color:#6b7280; width:180px;">Nom</td><td>{{ $quoteRequest->name }}</td></tr>
-                    <tr><td style="padding:4px 0; color:#6b7280;">Email</td><td><a href="mailto:{{ $quoteRequest->email }}">{{ $quoteRequest->email }}</a></td></tr>
-                    @if($quoteRequest->phone)
-                        <tr><td style="padding:4px 0; color:#6b7280;">T&eacute;l&eacute;phone</td><td>{{ $quoteRequest->phone }}</td></tr>
-                    @endif
-                    @if($quoteRequest->company)
-                        <tr><td style="padding:4px 0; color:#6b7280;">Entreprise</td><td>{{ $quoteRequest->company }}</td></tr>
-                    @endif
-                    @if($quoteRequest->project_type)
-                        <tr><td style="padding:4px 0; color:#6b7280;">Type de projet</td><td>{{ $quoteRequest->project_type }}</td></tr>
-                    @endif
-                    @if($quoteRequest->budget)
-                        <tr><td style="padding:4px 0; color:#6b7280;">Budget</td><td>{{ $quoteRequest->budget }}</td></tr>
-                    @endif
-                    @if($quoteRequest->timeline)
-                        <tr><td style="padding:4px 0; color:#6b7280;">D&eacute;lai souhait&eacute;</td><td>{{ $quoteRequest->timeline }}</td></tr>
-                    @endif
-                </table>
+<x-mail-layout :subject="'Nouvelle demande de devis - '.$quoteRequest->name" eyebrow="Demande de devis" heading="Nouvelle demande de devis" :subheading="'Reçue le '.$quoteRequest->created_at->translatedFormat('d F Y à H:i')">
 
-                @if($quoteRequest->details)
-                    <div style="margin-top:16px; padding-top:16px; border-top:1px solid #e5e7eb;">
-                        <p style="margin:0 0 6px; color:#6b7280; font-size:14px;">D&eacute;tails du projet</p>
-                        <p style="margin:0; font-size:14px; white-space:pre-line;">{{ $quoteRequest->details }}</p>
-                    </div>
-                @endif
-            </td>
-        </tr>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+        <x-mail-field-row label="Nom" :value="$quoteRequest->name" />
+        <x-mail-field-row label="Email">
+            <a href="mailto:{{ $quoteRequest->email }}" style="color:#00AEEF; text-decoration:none;">{{ $quoteRequest->email }}</a>
+        </x-mail-field-row>
+        <x-mail-field-row label="Téléphone" :value="$quoteRequest->phone" />
+        <x-mail-field-row label="Entreprise" :value="$quoteRequest->company" />
+        <x-mail-field-row label="Type de projet" :value="$quoteRequest->project_type" />
+        <x-mail-field-row label="Budget" :value="$quoteRequest->budget" />
+        <x-mail-field-row label="Délai souhaité" :value="$quoteRequest->timeline" />
     </table>
-</body>
-</html>
+
+    @if($quoteRequest->details)
+        <div style="margin-top:20px; padding:16px; background:#f8fafc; border-radius:10px; border:1px solid #eef2f7;">
+            <p style="margin:0 0 8px; font-size:12px; font-weight:600; color:#94a3b8; text-transform:uppercase; letter-spacing:0.04em;">Détails du projet</p>
+            <p style="margin:0; font-size:14px; color:#334155; line-height:1.7; white-space:pre-line;">{{ $quoteRequest->details }}</p>
+        </div>
+    @endif
+
+    <div style="margin-top:28px;">
+        <a href="mailto:{{ $quoteRequest->email }}" style="display:inline-block; background:#00AEEF; color:#ffffff; font-size:14px; font-weight:600; text-decoration:none; padding:12px 24px; border-radius:8px;">Répondre au client</a>
+    </div>
+
+</x-mail-layout>

@@ -2,9 +2,11 @@
 
 namespace Tests\Feature;
 
+use App\Mail\NewsletterWelcome;
 use App\Models\NewsletterSubscriber;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\RateLimiter;
 use Tests\TestCase;
 
@@ -31,6 +33,15 @@ class NewsletterTest extends TestCase
         $this->assertSame($new->json(), $existing->json());
         // Only one row created — the second was a silent no-op.
         $this->assertDatabaseCount('newsletter_subscribers', 1);
+    }
+
+    public function test_new_subscription_sends_welcome_email(): void
+    {
+        Mail::fake();
+
+        $this->postJson('/newsletter/subscribe', ['email' => 'welcome@example.com'])->assertOk();
+
+        Mail::assertSent(NewsletterWelcome::class, fn ($mail) => $mail->hasTo('welcome@example.com'));
     }
 
     public function test_invalid_email_returns_422_without_db_exception(): void

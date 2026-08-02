@@ -47,7 +47,7 @@
                                 <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                                 <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                             </svg><span
-                                class="text-sm font-medium text-[#00AEEF]">14<!-- -->{{ __('industries.text_1') }}</span>
+                                class="text-sm font-medium text-[#00AEEF]">16<!-- -->{{ __('industries.text_1') }}</span>
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
                             style="font-family:var(--font-heading)">{{ __('industries.text_2') }}<!-- --> <span
@@ -347,7 +347,7 @@
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
                             style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">
                             {{ __('industries.text_11') }}<span
-                                class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- -->
+                                class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->3<!-- -->
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
@@ -400,6 +400,36 @@
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
                                                 {{ __('industries.text_13') }}</h3>
+                                        </div>
+                                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a><a
+                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                href="{{ route('service', 'telemedicine-platform-development') }}">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-heart w-5 h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+                                                </path>
+                                            </svg></div>
+                                        <div>
+                                            <h3
+                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
+                                                {{ __('industries.text_123') }}</h3>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -485,7 +515,7 @@
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
                             style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Finance &amp;
-                            Professionnel<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->1<!-- -->
+                            Professionnel<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- -->
                                 <!-- -->{{ __('industries.text_119') }}<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
@@ -508,6 +538,36 @@
                                             <h3
                                                 class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
                                                 FinTech &amp; Services Financiers</h3>
+                                        </div>
+                                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a><a
+                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                href="{{ route('service', 'fintech-website-development') }}">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-dollar-sign w-5 h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                                aria-hidden="true">
+                                                <line x1="12" x2="12" y1="2" y2="22">
+                                                </line>
+                                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                            </svg></div>
+                                        <div>
+                                            <h3
+                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
+                                                {{ __('industries.text_124') }}</h3>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

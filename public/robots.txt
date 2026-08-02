@@ -4,4 +4,59 @@ Disallow: /admin/
 Disallow: /blog/preview
 Disallow: /api/
 
+# Search engine crawlers — explicit allow (redundant with the default "*"
+# rule above, but keeps intent unambiguous for operators/audits).
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI / LLM crawlers — allowed so CodeSommet content can be cited by AI
+# search and assistant products (GEO / AI discoverability).
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://codesommet.com/sitemap.xml
