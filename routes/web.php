@@ -18,6 +18,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\LlmsTxtController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::group([], function () {
 
     // ─── Sitemap XML (référencé par public/robots.txt) ──────────────────────
     Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
+    // ─── llms.txt (GEO — résumé structuré pour agents/moteurs IA) ───────────
+    Route::get('/llms.txt', [LlmsTxtController::class, 'index'])->name('llms-txt');
 
     // ─── Core Pages ─────────────────────────────────────────────────────────
     Route::view('/', 'frontoffice.pages.home')->name('home');

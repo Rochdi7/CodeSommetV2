@@ -78,9 +78,9 @@ return [
     'text_364' => 'Créez des chatbots intelligents, des flux d\'automatisation, des recherches propulsées par l\'IA et des moteurs de recommandation adaptés au public technophile de Riyad.',
     'text_365' => 'Concevez des portails utilisateurs, panneaux d\'administration, tableaux de bord analytiques et plateformes SaaS qui évoluent avec votre startup à Riyad.',
     'text_366' => 'Expertise approfondie dans l\'immobilier, la finance et l\'hôtellerie - les secteurs à la croissance la plus rapide de Riyad.',
-    'text_367' => 'Une société de gestion immobilière en pleine croissance basée à Riyad avait du mal avec le suivi manuel des prospects sur plus de 150 propriétés. Leur site web n\'avait pas de capacités de visite virtuelle, le support de la langue arabe était insuffisant, et ils ne pouvaient pas s\'intégrer aux passerelles de paiement populaires en Arabie Saoudite. Le temps de réponse aux prospects était en moyenne de 48 heures, les faisant perdre des prospects au profit de concurrents.',
-    'text_368' => 'Nous avons construit un portail immobilier personnalisé en Next.js avec recherche propulsée par l\'IA, visites virtuelles 360°, intégration WhatsApp pour les demandes instantanées et localisation arabe complète. Intégration des passerelles de paiement Network International et Telr, distribution automatisée des prospects aux agents et tableau de bord intelligent affichant les analyses de réservation en temps réel.',
-    'text_369' => 'CodeSommet a transformé la façon dont nous gérons nos propriétés en ligne. Les visites virtuelles et l\'intégration WhatsApp ont à elles seules doublé notre taux de demandes. Ils ont parfaitement compris le marché de Riyad - des passerelles de paiement à la localisation arabe.',
+    'text_367' => 'De nombreuses entreprises immobilières à Riyad s\'appuient encore sur un suivi manuel des prospects, des sites sans visite virtuelle, un support arabe limité et une intégration incomplète avec les passerelles de paiement locales. Ce type de friction ralentit la réponse aux prospects et peut faire perdre des opportunités face à des concurrents mieux équipés numériquement.',
+    'text_368' => 'Notre approche consiste à construire des portails immobiliers sur mesure en Next.js avec recherche propulsée par l\'IA, visites virtuelles 360°, intégration WhatsApp pour les demandes instantanées et localisation arabe complète. Nous intégrons les passerelles de paiement adaptées au marché saoudien, automatisons la distribution des prospects aux agents et livrons un tableau de bord affichant les analyses en temps réel.',
+    'text_369' => 'CodeSommet comprend les priorités des entreprises immobilières à Riyad. Visites virtuelles, intégration WhatsApp, passerelles de paiement locales et localisation arabe font partie des fonctionnalités que nous concevons pour aider nos clients à mieux convertir leurs visiteurs en ligne.',
     'text_370' => 'Intégration de fonctionnalités propulsées par l\'IA',
     'text_371' => 'Chatbot IA & fonctionnalités d\'automatisation',
     'text_372' => 'Révisions illimitées jusqu\'à la perfection',
@@ -121,14 +121,14 @@ return [
     'ml_1105' => 'Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel',
     'ml_1106' => 'à atteindre leurs objectifs numériques.',
     'ml_1107' => 'Étude de cas',
-    'ml_1108' => 'Comment Nous Avons Aidé une Plateforme Immobilière à Riyad à Générer 250+ Prospects Qualifiés Mensuellement',
-    'ml_1109' => 'Entreprise de gestion immobilière de taille moyenne',
+    'ml_1108' => 'Comment Nous Concevons des Plateformes Immobilières Pensées pour Générer des Prospects Qualifiés à Riyad',
+    'ml_1109' => 'Entreprises de gestion immobilière et agences du secteur',
     'ml_1110' => 'Le Défi',
-    'ml_1111' => '250+ prospects qualifiés générés mensuellement (augmentation de 4x)',
-    'ml_1112' => 'Temps de réponse aux prospects réduit de 48h à moins de 2 heures',
-    'ml_1113' => 'Les visites virtuelles ont augmenté les demandes immobilières de 180%',
-    'ml_1114' => '30% des réservations proviennent désormais de clients arabophones',
-    'ml_1115' => 'Société de Gestion Immobilière à Riyad',
+    'ml_1111' => 'Un site pensé pour convertir les visiteurs en prospects qualifiés, pas seulement pour afficher des annonces',
+    'ml_1112' => 'Une distribution automatisée des prospects aux agents pour réduire le délai de réponse',
+    'ml_1113' => 'Des visites virtuelles 360° pour donner confiance aux acheteurs avant le premier contact',
+    'ml_1114' => 'Une expérience bilingue arabe/anglais pensée pour le marché local de Riyad',
+    'ml_1115' => 'Développement Web pour le Secteur Immobilier à Riyad',
     'ml_1116' => 'Réservez un appel découverte pour discuter de vos besoins spécifiques et obtenir un devis personnalisé',
     'ml_1117' => 'Recommandé',
     'ml_1118' => 'Site web complet avec fonctionnalités IA, tableaux de bord et design premium livré en 7-10 jours.',
@@ -173,7 +173,7 @@ return [
     'ml_1157' => 'Retour à l\'accueil',
     'ml_1158' => 'Réserver un Appel Découverte',
     'ml_1159' => 'Réserver un Appel Découverte',
-    'attr_1659' => 'Comment nous avons aidé une plateforme immobilière ? Riyad ? générer plus de 250 prospects qualifiés par mois',
+    'attr_1659' => 'Comment nous concevons des plateformes immobilières pensées pour générer des prospects qualifiés à Riyad',
     'qb_2259' => '"Une collaboration professionnelle du début à la fin. Je recommande sans hésiter."',
     'qb_2260' => '"Un travail sérieux et une équipe vraiment à l\'écoute. Le résultat correspond à ce que nous avions imaginé."',
     'qb_2261' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
@@ -188,7 +188,7 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites Sur Mesure</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">

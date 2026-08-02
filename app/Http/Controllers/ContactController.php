@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactRequest;
+use App\Mail\ContactMessageConfirmation;
+use App\Mail\ContactMessageReceived;
 use App\Models\ContactMessage;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -15,7 +18,7 @@ class ContactController extends Controller
 
         // Persist first so the enquiry is never lost, even if mail fails later.
         try {
-            ContactMessage::create([
+            $contactMessage = ContactMessage::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'phone' => $data['phone'] ?? null,
@@ -35,8 +38,20 @@ class ContactController extends Controller
                 ->with('contact_error', 'Une erreur est survenue. Veuillez réessayer.');
         }
 
-        // Optional mail notification — failure must not lose the DB record.
-        // (Mail sending intentionally left as a documented, config-gated step.)
+        // Mail notifications are best-effort — the DB record above is the
+        // source of truth, so a mail failure here must not lose the enquiry
+        // or block the visitor's success response.
+        try {
+            Mail::to(config('mail.from.address'))->send(new ContactMessageReceived($contactMessage));
+        } catch (\Throwable $e) {
+            Log::error('Contact message #'.$contactMessage->id.' stored but notification email failed: '.$e->getMessage());
+        }
+
+        try {
+            Mail::to($contactMessage->email)->send(new ContactMessageConfirmation($contactMessage));
+        } catch (\Throwable $e) {
+            Log::error('Contact message #'.$contactMessage->id.' confirmation email to sender failed: '.$e->getMessage());
+        }
 
         return back()->with('contact_success', 'Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.');
     }

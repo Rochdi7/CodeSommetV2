@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewsletterWelcome;
 use App\Models\NewsletterSubscriber;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
 class NewsletterController extends Controller
@@ -43,7 +46,7 @@ class NewsletterController extends Controller
             ]);
         }
 
-        NewsletterSubscriber::create([
+        $subscriber = NewsletterSubscriber::create([
             'email'         => $validated['email'],
             'name'          => $validated['name'] ?? null,
             'source'        => $source,
@@ -51,6 +54,14 @@ class NewsletterController extends Controller
             'is_confirmed'  => true,
             'subscribed_at' => now(),
         ]);
+
+        // Best-effort welcome email — the subscription itself must not fail
+        // if mail delivery does.
+        try {
+            Mail::to($subscriber->email)->send(new NewsletterWelcome($subscriber));
+        } catch (\Throwable $e) {
+            Log::error('Newsletter subscriber #'.$subscriber->id.' welcome email failed: '.$e->getMessage());
+        }
 
         return response()->json([
             'success' => true,

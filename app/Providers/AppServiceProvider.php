@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
@@ -24,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->configureRateLimiters();
+
+        // Shared branded layout/components for transactional emails
+        // (resources/views/emails/layout.blade.php + emails/partials/*).
+        Blade::component('emails.layout', 'mail-layout');
+        Blade::component('emails.partials.field-row', 'mail-field-row');
 
         // Force HTTPS URLs in production (behind a proxy, pair with TRUSTED_PROXIES).
         if ($this->app->environment('production')) {

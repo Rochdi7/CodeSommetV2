@@ -31,5 +31,7 @@ return [
     'text_120' => 'secteur',
     'text_121' => 'Immobilier',
     'text_122' => 'Contactez-Nous',
+    'text_123' => 'Plateformes de Télémédecine',
+    'text_124' => 'FinTech & Services Financiers',
     'attr_622' => 'Services de développement web spécifiques à chaque secteur',
 ];

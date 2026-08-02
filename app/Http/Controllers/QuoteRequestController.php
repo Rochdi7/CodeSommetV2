@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreQuoteRequest;
+use App\Mail\QuoteRequestConfirmation;
 use App\Mail\QuoteRequestReceived;
 use App\Models\QuoteRequest;
 use Illuminate\Http\JsonResponse;
@@ -50,6 +51,14 @@ class QuoteRequestController extends Controller
             return response()->json([
                 'error' => 'Votre demande a été enregistrée, mais l\'envoi de l\'e-mail de confirmation a échoué. Veuillez réessayer ou nous écrire à codesommet@gmail.com.',
             ], 502);
+        }
+
+        // Best-effort auto-reply to the sender — its failure must not fail the
+        // request, since the internal notification above already succeeded.
+        try {
+            Mail::to($quoteRequest->email)->send(new QuoteRequestConfirmation($quoteRequest));
+        } catch (\Throwable $e) {
+            Log::error('Quote request #'.$quoteRequest->id.' confirmation email to sender failed: '.$e->getMessage());
         }
 
         return response()->json([
