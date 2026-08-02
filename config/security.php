@@ -17,6 +17,13 @@ return [
     |     https://cal.com / https://app.cal.com fallbacks
     |   - Google Analytics/GTM:  https://www.googletagmanager.com
     |                            https://www.google-analytics.com
+    | jQuery 3.7.1 and Toastr 2.1.4 are self-hosted under public/vendor/ (see
+    | frontoffice/layouts/app.blade.php and frontoffice/pages/get-quote.blade.php)
+    | so cdnjs.cloudflare.com / code.jquery.com are intentionally NOT in this
+    | policy — those third-party script/style loads used to be blocked by
+    | script-src/style-src and showed up as CSP violations in Chrome DevTools'
+    | Issues panel even in report-only mode. Do not add cdnjs back; if a new
+    | page needs jQuery/Toastr, reference the local copies instead.
     | `'unsafe-inline'` remains in script-src because 57 views carry inline
     | <script> blocks; migrate to nonces before removing it. `'unsafe-eval'` is
     | deliberately NOT included. See CSP_VERIFICATION_REPORT.md.

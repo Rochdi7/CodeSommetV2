@@ -73,12 +73,15 @@
     @endif
 
     {{-- Toastr (notifications) : hors chemin critique — aucune notification ne se
-         déclenche avant interaction. Motif print→all avec repli noscript. --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+         déclenche avant interaction. Motif print→all avec repli noscript.
+         Auto-hébergé (toastr 2.1.4 épinglé) : plus de dépendance à cdnjs, donc
+         plus de violation CSP script-src/style-src ni d'entrée dans le panneau
+         Chrome DevTools > Issues. --}}
+    <link rel="stylesheet" href="{{ asset_v('vendor/toastr/toastr-2.1.4.min.css') }}"
         media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{{ asset_v('css/toastr-theme.css') }}" media="print" onload="this.media='all'" />
     <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+        <link rel="stylesheet" href="{{ asset_v('vendor/toastr/toastr-2.1.4.min.css') }}" />
         <link rel="stylesheet" href="{{ asset_v('css/toastr-theme.css') }}" />
     </noscript>
 
@@ -128,9 +131,11 @@
     @include('frontoffice.partials.promo-popup')
 
     {{-- Toastr (notifications) — defer préserve l'ordre jQuery → toastr → init
-         et libère le parseur (les notifications ne partent qu'après interaction). --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" defer></script>
+         et libère le parseur (les notifications ne partent qu'après interaction).
+         jQuery 3.7.1 et toastr 2.1.4 sont auto-hébergés (public/vendor/) et
+         épinglés en version — plus de dépendance à cdnjs.cloudflare.com. --}}
+    <script src="{{ asset_v('vendor/jquery/jquery-3.7.1.min.js') }}" defer></script>
+    <script src="{{ asset_v('vendor/toastr/toastr-2.1.4.min.js') }}" defer></script>
     <script src="{{ asset_v('js/toastr-init.js') }}" defer></script>
 
     {{-- JS principal --}}
