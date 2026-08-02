@@ -620,6 +620,14 @@ body {
     color: #0071BC;
 }
 
+/* Darker brand-blue for small text on the cyan-tinted badge background
+   (bg-[#00AEEF]/10 over gray-50). #0071BC only reaches 4.46:1 there —
+   #006BB3 reaches 4.86:1 (WCAG AA ≥ 4.5:1) while staying visually
+   indistinguishable from the brand blue. Used by the "Urgent" task badges. */
+.text-\[\#006BB3\] {
+    color: #006BB3;
+}
+
 /* ── Preloader ───────────────────────────────────────────────────────── */
 #preloader {
     position: fixed;

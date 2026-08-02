@@ -112,7 +112,7 @@
                                         <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
                                         <span class="text-xs font-medium text-gray-700">Optimisation SEO On-Page</span>
                                     </div>
-                                    <span class="text-xs px-2 py-0.5 rounded-full bg-[#00AEEF]/10 text-[#0071BC] font-medium">Urgent</span>
+                                    <span class="text-xs px-2 py-0.5 rounded-full bg-[#00AEEF]/10 text-[#006BB3] font-medium">Urgent</span>
                                 </div>
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
@@ -203,7 +203,7 @@
                     <div class="relative w-full max-w-md mx-auto" style="height:450px">
                         {{-- Retainer card (behind, tilted) --}}
                         <div id="plan-card-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-3xl border border-gray-200 shadow-lg" style="width:300px;height:400px;padding:28px;transform:translateX(-90%) translateY(-35%) rotate(-8deg)">
-                            <h3 class="font-semibold mb-6 italic text-2xl" style="font-family:var(--font-heading)">Retainer</h3>
+                            <p class="font-semibold mb-6 italic text-2xl" style="font-family:var(--font-heading)">Retainer</p>
                             <div class="space-y-3 text-sm text-gray-600">
                                 <div class="py-2 px-4 bg-gray-50 rounded-xl italic">1 projet actif</div>
                                 <div class="py-2 px-4 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
@@ -221,7 +221,7 @@
                                     </svg>
                                     <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                 </div>
-                                <h3 class="font-semibold mb-6 text-white italic text-3xl" style="font-family:var(--font-heading)">Développement de Site Web</h3>
+                                <p class="font-semibold mb-6 text-white italic text-3xl" style="font-family:var(--font-heading)">Développement de Site Web</p>
                                 <div class="space-y-3 text-sm">
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
@@ -244,7 +244,7 @@
                                     </svg>
                                 </div>
                                 <div class="text-center space-y-4">
-                                    <h3 class="font-bold text-white leading-snug text-2xl" style="font-family:var(--font-heading)">Vous avez fait<br>votre part</h3>
+                                    <p class="font-bold text-white leading-snug text-2xl" style="font-family:var(--font-heading)">Vous avez fait<br>votre part</p>
                                     <div class="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4">
                                         <p class="text-white font-medium text-base">C'est notre tour maintenant</p>
                                     </div>
@@ -263,7 +263,7 @@
                 {{-- STATE 2: Design Backlogs card (Step 2) --}}
                 <div id="process-card-2" class="process-card-state absolute inset-0 flex items-center justify-center transition-all duration-700 ease-out opacity-0 pointer-events-none" style="transform:translateY(30px)">
                     <div class="bg-white rounded-3xl shadow-xl border border-gray-200 w-full max-w-md p-6" style="transform:rotate(-5deg)">
-                        <h3 class="font-semibold text-xl mb-4 text-gray-900" style="font-family:var(--font-heading)">Vos Tâches de Design</h3>
+                        <p class="font-semibold text-xl mb-4 text-gray-900" style="font-family:var(--font-heading)">Vos Tâches de Design</p>
                         <div class="space-y-3 relative backlog-list">
                             @foreach([
                             ['title' => 'Création du site vitrine', 'tag' => 'Demande', 'urgent' => false],
@@ -276,7 +276,7 @@
                                     <div class="backlog-box w-5 h-5 rounded border-2 border-gray-300 flex-shrink-0"></div>
                                     <span class="text-sm font-medium text-gray-700">{{ $task['title'] }}</span>
                                 </div>
-                                <span class="text-xs px-3 py-1 rounded-full {{ $task['urgent'] ? 'bg-[#00AEEF]/10 text-[#0071BC]' : 'bg-gray-200 text-gray-600' }} font-medium">{{ $task['tag'] }}</span>
+                                <span class="text-xs px-3 py-1 rounded-full {{ $task['urgent'] ? 'bg-[#00AEEF]/10 text-[#006BB3]' : 'bg-gray-200 text-gray-600' }} font-medium">{{ $task['tag'] }}</span>
                             </div>
                             @endforeach
                             {{-- Animated cursor --}}
@@ -300,7 +300,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-gray-900 text-base" style="font-family:var(--font-heading)">Tâches du Projet</h3>
+                                <p class="font-semibold text-gray-900 text-base" style="font-family:var(--font-heading)">Tâches du Projet</p>
                                 <p class="text-xs text-gray-500">Vos tâches de design</p>
                             </div>
                         </div>
@@ -892,7 +892,8 @@ $comparisons = [
                             {{-- Left side: dashed border pills (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="will-change: transform;">
-                                    @for($i = 0; $i < 3; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
+                                    {{-- marquee-left uses translateX(-50%): 2 copies are the minimum for a seamless loop --}}
+                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full border-2 border-white/30"></div>
@@ -917,7 +918,8 @@ $comparisons = [
                             {{-- Right side: solid border pills with checkmarks (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right" style="will-change: transform;">
-                                    @for($i = 0; $i < 3; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
+                                    {{-- marquee-right uses translateX(-50%): 2 copies are the minimum for a seamless loop --}}
+                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full bg-white flex items-center justify-center">

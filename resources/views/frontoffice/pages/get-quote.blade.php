@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/components.css') }}" />
 
-    {{-- Toastr (notifications) --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    {{-- Toastr (notifications) — auto-hébergé (2.1.4 épinglé), plus de dépendance cdnjs --}}
+    <link rel="stylesheet" href="{{ asset_v('vendor/toastr/toastr-2.1.4.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/toastr-theme.css') }}" />
 
     {{-- Données structurées globales (Organization, WebSite) --}}
@@ -866,9 +866,9 @@
     </script>
     @include('frontoffice.partials.floating-actions')
 
-    {{-- Toastr (notifications) --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    {{-- Toastr (notifications) — jQuery 3.7.1 + toastr 2.1.4 auto-hébergés (épinglés) --}}
+    <script src="{{ asset_v('vendor/jquery/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset_v('vendor/toastr/toastr-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/toastr-init.js') }}"></script>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
