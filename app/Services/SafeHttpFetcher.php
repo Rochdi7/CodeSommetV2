@@ -154,6 +154,122 @@ class SafeHttpFetcher
     }
 
     /**
+     * Vérifie plusieurs URL en parallèle et renvoie leur statut.
+     *
+     * Le vérificateur de liens émettait 25 requêtes en série, soit ~29 s au
+     * total pour ~1,17 s par lien. Les requêtes étant dominées par la latence
+     * réseau, les paralléliser divise le temps de réponse par un ordre de
+     * grandeur.
+     *
+     * SÉCURITÉ — chaque URL passe par SafeUrlValidator *avant* d'entrer dans
+     * le multi-handle, et la connexion reste épinglée sur l'IP validée via
+     * CURLOPT_RESOLVE. Les redirections ne sont pas suivies ici : on rapporte
+     * le code 3xx tel quel, ce qui supprime tout risque de redirection vers
+     * une cible interne. Le nombre de connexions simultanées est plafonné
+     * pour ne pas transformer l'outil en amplificateur.
+     *
+     * @param  list<string>  $urls
+     * @return array<string, array{status: int, error: string|null, timeMs: int, location: string|null}>
+     */
+    public function multiHead(array $urls, int $timeout = 8, int $concurrency = 8): array
+    {
+        if ($urls === []) {
+            return [];
+        }
+
+        if (! extension_loaded('curl')) {
+            throw new UnsafeUrlException('Safe fetching requires the cURL extension.');
+        }
+
+        $results = [];
+        $concurrency = max(1, min($concurrency, 12));
+
+        foreach (array_chunk(array_values($urls), $concurrency) as $batch) {
+            $multi = curl_multi_init();
+            $handles = [];
+            $started = [];
+
+            foreach ($batch as $url) {
+                try {
+                    // Validation SSRF complète, y compris résolution DNS.
+                    $validated = $this->validator->validate($url);
+                } catch (UnsafeUrlException $e) {
+                    // Cible interdite : signalée comme telle, jamais requêtée.
+                    $results[$url] = ['status' => 0, 'error' => 'blocked', 'timeMs' => 0, 'location' => null];
+
+                    continue;
+                }
+
+                $parts = parse_url($validated['url']);
+                $scheme = strtolower($parts['scheme'] ?? 'https');
+                $port = $parts['port'] ?? ($scheme === 'https' ? 443 : 80);
+                $pinnedIp = $validated['ips'][0] ?? null;
+
+                $ch = curl_init($validated['url']);
+                $opts = [
+                    CURLOPT_NOBODY => true,          // HEAD : on ne veut que le statut.
+                    CURLOPT_RETURNTRANSFER => true,
+                    CURLOPT_FOLLOWLOCATION => false, // Chaque saut serait à revalider.
+                    CURLOPT_TIMEOUT => $timeout,
+                    CURLOPT_CONNECTTIMEOUT => self::CONNECT_TIMEOUT,
+                    CURLOPT_USERAGENT => self::DEFAULT_UA,
+                    CURLOPT_PROXY => '',
+                    CURLOPT_ENCODING => 'identity',
+                    CURLOPT_SSL_VERIFYPEER => true,
+                    CURLOPT_HEADER => true,
+                ];
+                if ($pinnedIp !== null) {
+                    $opts[CURLOPT_RESOLVE] = ["{$validated['host']}:{$port}:{$pinnedIp}"];
+                }
+                curl_setopt_array($ch, $opts);
+
+                curl_multi_add_handle($multi, $ch);
+                $handles[(int) $ch] = ['handle' => $ch, 'url' => $url];
+                $started[(int) $ch] = microtime(true);
+            }
+
+            if ($handles === []) {
+                curl_multi_close($multi);
+
+                continue;
+            }
+
+            do {
+                $status = curl_multi_exec($multi, $running);
+                if ($running) {
+                    curl_multi_select($multi, 0.5);
+                }
+            } while ($running && $status === CURLM_OK);
+
+            foreach ($handles as $id => $entry) {
+                $ch = $entry['handle'];
+                $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+                $err = curl_error($ch);
+                $raw = (string) curl_multi_getcontent($ch);
+
+                $location = null;
+                if (preg_match('/^Location:\s*(.+)$/mi', $raw, $m)) {
+                    $location = trim($m[1]);
+                }
+
+                $results[$entry['url']] = [
+                    'status' => $code,
+                    'error' => $err !== '' ? $err : null,
+                    'timeMs' => (int) round((microtime(true) - $started[$id]) * 1000),
+                    'location' => $location,
+                ];
+
+                curl_multi_remove_handle($multi, $ch);
+                curl_close($ch);
+            }
+
+            curl_multi_close($multi);
+        }
+
+        return $results;
+    }
+
+    /**
      * Resolve a (possibly relative) redirect Location against the current URL.
      */
     private function resolveRedirect(string $base, string $location): string

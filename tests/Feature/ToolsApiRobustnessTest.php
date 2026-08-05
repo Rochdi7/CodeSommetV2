@@ -215,6 +215,44 @@ class ToolsApiRobustnessTest extends TestCase
         }
     }
 
+    /**
+     * La vérification parallèle des liens ne doit pas affaiblir la protection
+     * SSRF. Chaque URL passe par SafeUrlValidator avant d'entrer dans le
+     * multi-handle ; les cibles internes sont marquées « blocked » et ne font
+     * l'objet d'aucune requête.
+     */
+    public function test_parallel_link_checking_still_blocks_internal_targets(): void
+    {
+        $fetcher = $this->app->make(\App\Services\SafeHttpFetcher::class);
+
+        $internal = [
+            'http://127.0.0.1/',
+            'http://localhost/',
+            'http://169.254.169.254/latest/meta-data/',
+            'http://10.0.0.1/',
+            'http://192.168.1.1/',
+            'http://[::1]/',
+            'http://0x7f000001/',
+            'http://2130706433/',
+        ];
+
+        $results = $fetcher->multiHead($internal, 3);
+
+        foreach ($internal as $url) {
+            $result = $results[$url] ?? null;
+            $this->assertNotNull($result, "{$url} doit apparaître dans les résultats");
+            $this->assertSame('blocked', $result['error'], "{$url} doit être bloqué avant toute requête");
+            $this->assertSame(0, $result['status'], "{$url} ne doit produire aucun code HTTP");
+        }
+    }
+
+    public function test_multi_head_returns_empty_array_for_empty_input(): void
+    {
+        $fetcher = $this->app->make(\App\Services\SafeHttpFetcher::class);
+
+        $this->assertSame([], $fetcher->multiHead([]));
+    }
+
     public function test_title_scorer_is_deterministic_and_bounded(): void
     {
         $scorer = new TitleScorer();
