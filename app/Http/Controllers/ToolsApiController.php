@@ -832,9 +832,14 @@ class ToolsApiController extends Controller
         $parsed = parse_url($url);
         $baseUrl = ($parsed['scheme'] ?? 'https') . '://' . ($parsed['host'] ?? '');
 
-        preg_match_all('/<img\b([^>]*?)\/?\s*>/is', $html, $imgMatches);
+        // Les <img> à l'intérieur d'un <noscript> ou d'un <template> ne sont pas
+        // rendues : les compter gonflait artificiellement le nombre d'images
+        // « sans alt » (github.com affichait 17/24 manquants).
+        $renderable = preg_replace('#<(noscript|template)\b[^>]*>.*?</\1>#is', ' ', $html) ?? $html;
+
+        preg_match_all('/<img\b([^>]*?)\/?\s*>/is', $renderable, $imgMatches);
         $images = [];
-        $withAlt = 0; $missingAlt = 0; $emptyAlt = 0;
+        $withAlt = 0; $missingAlt = 0; $decorative = 0;
 
         foreach ($imgMatches[1] as $attrs) {
             // Try src with quotes, then unquoted, then data-src, then srcset
@@ -849,10 +854,11 @@ class ToolsApiController extends Controller
                 preg_match('/\bsrcset\s*=\s*["\']?([^\s,"\']+)/i', $attrs, $srcM);
             }
 
-            // Alt: try quoted first, then unquoted
+            // Alt: try quoted first, then unquoted (`alt=Photo` est toléré par
+            // les navigateurs et n'était pas détecté auparavant).
             preg_match('/\balt\s*=\s*["\']([^"\']*?)["\']/i', $attrs, $altM);
             if (empty($altM[0])) {
-                preg_match('/\balt\s*=\s*([^\s>]+)/i', $attrs, $altM);
+                preg_match('/\balt\s*=\s*([^\s>"\']+)/i', $attrs, $altM);
             }
 
             $src = trim($srcM[1] ?? '');
@@ -875,22 +881,63 @@ class ToolsApiController extends Controller
             $hasAlt = (bool) preg_match('/\balt\s*=/i', $attrs);
             $altText = $altM[1] ?? null;
 
-            if (!$hasAlt) { $missingAlt++; $status = 'missing'; }
-            elseif ($altText === null || trim($altText) === '') { $emptyAlt++; $status = 'empty'; }
-            else { $withAlt++; $status = 'good'; }
+            // Équivalents d'accessibilité : une image portant aria-label ou
+            // aria-labelledby possède un nom accessible, même sans alt. Une
+            // image marquée role="presentation"/"none" ou aria-hidden est
+            // décorative : l'absence de texte alternatif y est *correcte*.
+            $ariaLabel = preg_match('/\baria-label(?:ledby)?\s*=\s*["\'][^"\']+["\']/i', $attrs);
+            $isDecorative = preg_match('/\brole\s*=\s*["\'](?:presentation|none)["\']/i', $attrs)
+                || preg_match('/\baria-hidden\s*=\s*["\']true["\']/i', $attrs);
+
+            if ($isDecorative) {
+                // Décorative et correctement signalée : ni faute ni mérite.
+                $decorative++;
+                $status = 'decorative';
+            } elseif (! $hasAlt && $ariaLabel) {
+                $withAlt++;
+                $status = 'aria';
+            } elseif (! $hasAlt) {
+                $missingAlt++;
+                $status = 'missing';
+            } elseif ($altText === null || trim($altText) === '') {
+                // alt="" explicite = image décorative correctement déclarée.
+                $decorative++;
+                $status = 'empty';
+            } else {
+                $withAlt++;
+                $status = 'good';
+            }
 
             $images[] = ['src' => $displaySrc, 'alt' => $altText, 'status' => $status];
         }
 
         $total = count($images);
-        $score = $total > 0 ? round(($withAlt / $total) * 100) : 100;
+
+        // Le score porte sur les images qui *doivent* porter un texte
+        // alternatif. Une image décorative correctement déclarée (alt="" ou
+        // role="presentation") est conforme : la compter comme un échec, comme
+        // le faisait l'ancienne version, pénalisait la bonne pratique.
+        $needAlt = $total - $decorative;
+        $score = $needAlt > 0 ? (int) round(($withAlt / $needAlt) * 100) : 100;
+
+        $issues = [];
+        if ($missingAlt > 0) {
+            $issues[] = ['type' => 'error',
+                'message' => "{$missingAlt} image(s) sans attribut alt — un lecteur d'écran annoncera le nom du fichier"];
+        }
 
         return response()->json([
             'score' => $score,
-            'passed' => $missingAlt === 0 && $emptyAlt === 0,
-            'message' => $missingAlt === 0 && $emptyAlt === 0 ? 'Passed' : 'Issues Found',
-            'stats' => ['total' => $total, 'withAlt' => $withAlt, 'missingAlt' => $missingAlt, 'emptyAlt' => $emptyAlt],
-            'issues' => $missingAlt > 0 ? [['type' => 'error', 'message' => "{$missingAlt} images missing alt text"]] : [],
+            'passed' => $missingAlt === 0,
+            'message' => $missingAlt === 0 ? 'Passed' : 'Issues Found',
+            'stats' => [
+                'total' => $total,
+                'withAlt' => $withAlt,
+                'missingAlt' => $missingAlt,
+                'decorative' => $decorative,
+                'requiringAlt' => $needAlt,
+            ],
+            'issues' => $issues,
             'images' => array_map(fn($img) => [
                 'url' => $img['src'],
                 'alt' => $img['alt'] ?? '',
@@ -1236,47 +1283,120 @@ class ToolsApiController extends Controller
         $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
-        $score = 0; $checks = [];
+        $score = 0; $maxScore = 0; $checks = [];
 
-        // Viewport
-        if (preg_match('/<meta\s+name=["\']viewport["\']\s+content=["\']([^"\']+)["\']/i', $html, $vp)) {
-            $score += 30;
-            $checks[] = ['name' => 'Viewport', 'status' => 'pass', 'message' => 'Viewport tag present: ' . $vp[1]];
+        // Viewport — le seul contrôle réellement décisif pour le mobile.
+        $maxScore += 40;
+        if (preg_match('/<meta\s+[^>]*name\s*=\s*["\']viewport["\'][^>]*>/i', $html, $vpTag)) {
+            preg_match('/content\s*=\s*["\']([^"\']*)["\']/i', $vpTag[0], $vp);
+            $content = $vp[1] ?? '';
+
+            if (str_contains(strtolower($content), 'width=device-width')) {
+                $score += 40;
+                $checks[] = ['name' => 'Viewport', 'status' => 'pass', 'message' => 'Viewport correctement configuré : ' . $content];
+            } else {
+                $score += 15;
+                $checks[] = ['name' => 'Viewport', 'status' => 'warning', 'message' => 'Viewport présent mais sans width=device-width : ' . $content];
+            }
+
+            // user-scalable=no bloque le zoom : problème d'accessibilité (WCAG 1.4.4).
+            if (preg_match('/user-scalable\s*=\s*no|maximum-scale\s*=\s*1(\.0)?\b/i', $content)) {
+                $checks[] = ['name' => 'Zoom', 'status' => 'warning', 'message' => 'Le zoom est désactivé — problème d\'accessibilité (WCAG 1.4.4)'];
+            }
         } else {
-            $checks[] = ['name' => 'Viewport', 'status' => 'fail', 'message' => 'Missing viewport meta tag'];
+            $checks[] = ['name' => 'Viewport', 'status' => 'fail', 'message' => 'Balise meta viewport absente'];
         }
 
-        // Responsive CSS
-        if (preg_match('/@media/i', $html)) {
-            $score += 20;
-            $checks[] = ['name' => 'Media Queries', 'status' => 'pass', 'message' => 'CSS media queries detected'];
-        }
-
-        // Font size
-        if (!preg_match('/font-size\s*:\s*[0-9]+px/i', $html) || preg_match('/font-size\s*:\s*(1[4-9]|[2-9][0-9])px/i', $html)) {
-            $score += 20;
-            $checks[] = ['name' => 'Font Sizes', 'status' => 'pass', 'message' => 'Font sizes appear readable'];
+        // Media queries — uniquement dans le HTML inline. On ne récupère pas les
+        // feuilles externes ici, donc l'absence n'est pas pénalisée : ce serait
+        // sanctionner la bonne pratique (CSS externe). Le contrôle est reporté
+        // en information, pas en score.
+        if (preg_match('/@media[^{]*\(/i', $html)) {
+            $checks[] = ['name' => 'Media Queries', 'status' => 'pass', 'message' => 'Media queries détectées dans le HTML'];
         } else {
-            $checks[] = ['name' => 'Font Sizes', 'status' => 'warning', 'message' => 'Some fonts may be too small for mobile'];
+            $externalCss = preg_match_all('/<link\s+[^>]*stylesheet/i', $html);
+            $checks[] = ['name' => 'Media Queries', 'status' => 'pass',
+                'message' => $externalCss > 0
+                    ? "Aucune media query inline ; {$externalCss} feuille(s) CSS externe(s) non analysée(s)"
+                    : 'Aucune media query inline détectée'];
         }
 
-        // Tap targets
-        $score += 15;
-        $checks[] = ['name' => 'Tap Targets', 'status' => 'pass', 'message' => 'Basic tap target check passed'];
+        // Tailles de police — mesurées uniquement là où elles sont observables
+        // (styles inline). L'ancienne logique était inversée : elle *validait*
+        // l'absence de toute taille en px, si bien qu'un site dont tout le CSS
+        // est externe — la bonne pratique — obtenait les points sans contrôle.
+        $maxScore += 20;
+        preg_match_all('/font-size\s*:\s*([0-9.]+)px/i', $html, $fontMatches);
+        $sizes = array_map('floatval', $fontMatches[1] ?? []);
 
-        // No horizontal scroll indicators
-        if (!preg_match('/overflow-x\s*:\s*scroll/i', $html)) {
-            $score += 15;
-            $checks[] = ['name' => 'Horizontal Scroll', 'status' => 'pass', 'message' => 'No forced horizontal scrolling'];
+        if ($sizes === []) {
+            // Rien d'observable : on n'invente pas de verdict, on accorde le
+            // bénéfice du doute en le signalant explicitement.
+            $score += 20;
+            $checks[] = ['name' => 'Tailles de police', 'status' => 'pass',
+                'message' => 'Aucune taille en px dans le HTML — probablement définie en CSS externe (non analysable)'];
+        } else {
+            $tooSmall = array_values(array_filter($sizes, fn ($s) => $s < 12));
+            if ($tooSmall === []) {
+                $score += 20;
+                $checks[] = ['name' => 'Tailles de police', 'status' => 'pass',
+                    'message' => count($sizes) . ' taille(s) inline détectée(s), toutes ≥ 12px'];
+            } else {
+                $score += 8;
+                $checks[] = ['name' => 'Tailles de police', 'status' => 'warning',
+                    'message' => count($tooSmall) . ' taille(s) de police inférieure(s) à 12px — difficilement lisibles sur mobile'];
+            }
         }
+
+        // Cibles tactiles — mesurables uniquement pour les dimensions déclarées
+        // en HTML/inline. L'ancienne version accordait 15 points de façon
+        // inconditionnelle, sans aucune analyse.
+        $maxScore += 20;
+        $tapIssues = 0;
+        preg_match_all('/<(?:a|button)\b[^>]*style\s*=\s*["\'][^"\']*["\'][^>]*>/i', $html, $tapMatches);
+        foreach ($tapMatches[0] as $el) {
+            if (preg_match('/(?:width|height)\s*:\s*([0-9.]+)px/i', $el, $dim) && (float) $dim[1] < 44) {
+                $tapIssues++;
+            }
+        }
+
+        if ($tapMatches[0] === []) {
+            $score += 20;
+            $checks[] = ['name' => 'Cibles tactiles', 'status' => 'pass',
+                'message' => 'Aucune dimension inline sur les éléments interactifs — dimensionnement en CSS externe (non analysable)'];
+        } elseif ($tapIssues === 0) {
+            $score += 20;
+            $checks[] = ['name' => 'Cibles tactiles', 'status' => 'pass',
+                'message' => count($tapMatches[0]) . ' élément(s) interactif(s) inline vérifié(s), tous ≥ 44px'];
+        } else {
+            $score += 6;
+            $checks[] = ['name' => 'Cibles tactiles', 'status' => 'warning',
+                'message' => "{$tapIssues} élément(s) interactif(s) sous 44px — cible tactile trop petite (recommandation Google)"];
+        }
+
+        // Défilement horizontal forcé.
+        $maxScore += 20;
+        if (! preg_match('/overflow-x\s*:\s*scroll/i', $html)) {
+            $score += 20;
+            $checks[] = ['name' => 'Défilement horizontal', 'status' => 'pass', 'message' => 'Aucun défilement horizontal forcé'];
+        } else {
+            $checks[] = ['name' => 'Défilement horizontal', 'status' => 'warning', 'message' => 'overflow-x: scroll détecté — peut provoquer un débordement horizontal'];
+        }
+
+        $finalScore = $maxScore > 0 ? (int) round(($score / $maxScore) * 100) : 0;
 
         return response()->json([
-            'score' => min(100, $score),
-            'grade' => $this->scoreToGrade(min(100, $score)),
-            'passed' => $score >= 60,
-            'stats' => ['score' => min(100, $score) . '/100', 'checksRun' => count($checks)],
+            'score' => $finalScore,
+            'grade' => $this->scoreToGrade($finalScore),
+            'passed' => $finalScore >= 60,
+            'stats' => [
+                'score' => $finalScore . '/100',
+                'pointsEarned' => $score . '/' . $maxScore,
+                'checksRun' => count($checks),
+            ],
             'issues' => array_values(array_filter($checks, fn($c) => $c['status'] !== 'pass')),
             'recommendations' => $this->generateRecommendations($checks),
+            'limitation' => 'Analyse limitée au HTML renvoyé par le serveur : les feuilles CSS externes et les styles appliqués par JavaScript ne sont pas évalués.',
         ]);
     }
 
