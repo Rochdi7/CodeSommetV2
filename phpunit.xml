@@ -12,6 +12,19 @@
             <directory>tests/Feature</directory>
         </testsuite>
     </testsuites>
+    <groups>
+        <!--
+            Les tests @group live interrogent de vrais sites (google.com,
+            developer.mozilla.org, github.com). Ils valident la précision sur
+            le monde réel mais dépendent du réseau et de pages qui évoluent :
+            on les exclut de la suite par défaut pour qu'elle reste
+            déterministe et hors-ligne. Les lancer explicitement avec la
+            commande "php artisan test" suivie de l'option de groupe "live".
+        -->
+        <exclude>
+            <group>live</group>
+        </exclude>
+    </groups>
     <source>
         <include>
             <directory>app</directory>

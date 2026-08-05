@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ToolUsage;
+use App\Services\HtmlDocument;
 use App\Services\MissingApiCredentialsException;
 use App\Services\SafeHttpFetcher;
 use App\Services\SafeUrlValidator;
@@ -362,7 +363,54 @@ class ToolsApiController extends Controller
             }
         }
 
-        $finalScore = $maxScore > 0 ? round(($score / $maxScore) * 100) : 0;
+        // ── Données structurées (JSON-LD / microdonnées) ─────────────────
+        // Aucun outil ne les analysait jusqu'ici, alors qu'elles conditionnent
+        // l'affichage des résultats enrichis.
+        $doc = HtmlDocument::fromHtml($html);
+        $schemaTypes = $doc->schemaTypes();
+        $hasMicrodata = $doc->hasMicrodata();
+
+        $maxScore += 10;
+        if ($schemaTypes !== []) {
+            $score += 10;
+            $checks[] = ['name' => 'Données structurées', 'status' => 'pass',
+                'message' => count($schemaTypes) . ' type(s) Schema.org en JSON-LD : ' . implode(', ', array_slice($schemaTypes, 0, 5))];
+        } elseif ($hasMicrodata) {
+            $score += 6;
+            $checks[] = ['name' => 'Données structurées', 'status' => 'warning',
+                'message' => 'Microdonnées détectées, mais pas de JSON-LD (format recommandé par Google)'];
+        } else {
+            $checks[] = ['name' => 'Données structurées', 'status' => 'warning',
+                'message' => 'Aucune donnée structurée — les résultats enrichis ne pourront pas s\'afficher'];
+        }
+
+        // ── Attribut lang ────────────────────────────────────────────────
+        $maxScore += 5;
+        if (($lang = $doc->lang()) !== '') {
+            $score += 5;
+            $checks[] = ['name' => 'Langue', 'status' => 'pass', 'message' => 'Langue déclarée : ' . $lang];
+        } else {
+            $checks[] = ['name' => 'Langue', 'status' => 'warning',
+                'message' => 'Attribut lang absent sur <html> — nuit à l\'accessibilité et au ciblage linguistique'];
+        }
+
+        // ── Accessibilité des SVG inline ─────────────────────────────────
+        // Invisibles à tout contrôle fondé sur <img> : github.com en compte 121.
+        $svg = $doc->inlineSvgAccessibility();
+        $svgNeedingLabel = $svg['total'] - $svg['decorative'];
+        if ($svgNeedingLabel > 0 && $svg['accessible'] < $svgNeedingLabel) {
+            $checks[] = ['name' => 'SVG inline', 'status' => 'warning',
+                'message' => ($svgNeedingLabel - $svg['accessible']) . " SVG inline sans <title> ni aria-label sur {$svgNeedingLabel} non décoratifs"];
+        }
+
+        $finalScore = $maxScore > 0 ? (int) round(($score / $maxScore) * 100) : 0;
+
+        // Une page rendue côté client renvoie un HTML quasi vide : le score
+        // serait sévère sans que cela reflète ce que Google voit après rendu.
+        $visibleText = $doc->visibleText();
+        $textLength = mb_strlen($visibleText, 'UTF-8');
+        $scriptCount = preg_match_all('/<script\b/i', $html);
+        $likelySpa = $textLength < 500 && $scriptCount > 5;
 
         return response()->json([
             'score' => $finalScore,
@@ -371,15 +419,23 @@ class ToolsApiController extends Controller
             'message' => $finalScore >= 80 ? 'Good overall health' : ($finalScore >= 50 ? 'Needs improvement' : 'Critical issues found'),
             'stats' => [
                 'score' => $finalScore . '/100',
+                'pointsEarned' => $score . '/' . $maxScore,
                 'totalChecks' => count($checks),
                 'passed' => count(array_filter($checks, fn($c) => $c['status'] === 'pass')),
                 'warnings' => count(array_filter($checks, fn($c) => $c['status'] === 'warning')),
                 'failed' => count(array_filter($checks, fn($c) => $c['status'] === 'fail')),
                 'internalLinks' => $internalLinks,
                 'externalLinks' => $externalLinks,
+                'schemaTypes' => count($schemaTypes),
+                'inlineSvg' => $svg['total'],
+                'wordCount' => count(preg_split('/\s+/u', $visibleText, -1, PREG_SPLIT_NO_EMPTY) ?: []),
             ],
+            'schemaTypes' => $schemaTypes,
             'issues' => array_values(array_filter($checks, fn($c) => $c['status'] !== 'pass')),
             'recommendations' => $this->generateRecommendations($checks),
+            'limitation' => $likelySpa
+                ? 'Le HTML renvoyé par le serveur contient très peu de texte : ce site est probablement rendu côté client (React/Vue/Angular). Google exécute le JavaScript avant d\'indexer, ce que cet outil ne fait pas — le score ci-dessus sous-estime donc la page réellement indexée.'
+                : null,
         ]);
     }
 
@@ -792,30 +848,52 @@ class ToolsApiController extends Controller
         $url = $this->requireUrl($request);
         $html = $this->fetchUrl($url);
 
-        preg_match_all('/<link\s+[^>]*rel=["\']canonical["\']\s+[^>]*href=["\'](.*?)["\']/is', $html, $matches);
+        // Analyse DOM : l'ancien motif exigeait `rel` *avant* `href` et ratait
+        // donc `<link href="…" rel="canonical">`, pourtant du HTML valide.
+        $doc = HtmlDocument::fromHtml($html);
+        $canonicals = $doc->canonicals();
 
         $issues = [];
-        $canonical = $matches[1][0] ?? null;
+        $canonical = $canonicals[0] ?? null;
 
-        if (!$canonical) {
-            $issues[] = ['type' => 'error', 'message' => 'No canonical tag found'];
+        if ($canonical === null) {
+            $issues[] = ['type' => 'error', 'message' => 'Aucune balise canonical trouvée'];
         } else {
-            if (count($matches[1]) > 1) {
-                $issues[] = ['type' => 'error', 'message' => 'Multiple canonical tags found (' . count($matches[1]) . ')'];
+            if (count($canonicals) > 1) {
+                $issues[] = ['type' => 'error',
+                    'message' => 'Plusieurs balises canonical (' . count($canonicals) . ') — Google risque de toutes les ignorer'];
             }
-            if ($canonical === $url) {
-                // self-referencing — good
+
+            if (! preg_match('#^https?://#i', $canonical)) {
+                $issues[] = ['type' => 'warning', 'message' => 'L\'URL canonique devrait être absolue'];
             } elseif (parse_url($canonical, PHP_URL_HOST) !== parse_url($url, PHP_URL_HOST)) {
-                $issues[] = ['type' => 'warning', 'message' => 'Cross-domain canonical detected: ' . $canonical];
+                $issues[] = ['type' => 'warning', 'message' => 'Canonical inter-domaine détectée : ' . $canonical];
             }
-            if (!str_starts_with($canonical, 'http')) {
-                $issues[] = ['type' => 'warning', 'message' => 'Canonical URL should be absolute'];
+        }
+
+        // hreflang : une page traduite doit se référencer elle-même dans son
+        // jeu d'alternates, sans quoi Google ignore le groupe entier.
+        $hreflangs = $doc->hreflangs();
+        if ($hreflangs !== []) {
+            $codes = array_column($hreflangs, 'hreflang');
+            if (count($codes) !== count(array_unique($codes))) {
+                $issues[] = ['type' => 'error', 'message' => 'Codes hreflang dupliqués — chaque langue doit être unique'];
+            }
+            if (! in_array('x-default', $codes, true)) {
+                $issues[] = ['type' => 'warning', 'message' => 'Pas de hreflang x-default — recommandé pour les visiteurs hors langues déclarées'];
             }
         }
 
         return response()->json([
-            'passed' => count($issues) === 0,
-            'stats' => ['canonical' => $canonical, 'url' => $url, 'isSelfReferencing' => $canonical === $url],
+            'passed' => count(array_filter($issues, fn ($i) => $i['type'] === 'error')) === 0,
+            'stats' => [
+                'canonical' => $canonical,
+                'url' => $url,
+                'isSelfReferencing' => $canonical !== null && rtrim($canonical, '/') === rtrim($url, '/'),
+                'canonicalCount' => count($canonicals),
+                'hreflangCount' => count($hreflangs),
+            ],
+            'hreflangs' => $hreflangs,
             'issues' => $issues,
         ]);
     }
