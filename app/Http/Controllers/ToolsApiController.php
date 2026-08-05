@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\ToolUsage;
+use App\Services\MissingApiCredentialsException;
 use App\Services\SafeHttpFetcher;
 use App\Services\SafeUrlValidator;
+use App\Services\SeoApiClient;
+use App\Services\TitleScorer;
 use App\Services\UnsafeUrlException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -30,6 +33,8 @@ class ToolsApiController extends Controller
     public function __construct(
         private SafeHttpFetcher $fetcher,
         private SafeUrlValidator $urlValidator,
+        private SeoApiClient $seoApi,
+        private TitleScorer $titleScorer,
     ) {
     }
 
@@ -46,6 +51,21 @@ class ToolsApiController extends Controller
 
         try {
             return $this->$method($request);
+        } catch (MissingApiCredentialsException $e) {
+            // Le fournisseur de données tierces n'est pas configuré. On le dit
+            // explicitement plutôt que de renvoyer un chiffre inventé : 503
+            // signale une indisponibilité de configuration, pas une erreur de
+            // l'utilisateur, et le message indique quoi renseigner.
+            Log::notice("Tool API missing credentials [{$slug}]: {$e->provider}");
+
+            return response()->json([
+                'error' => "Cet outil nécessite des identifiants d'API qui ne sont pas configurés.",
+                'reason' => 'missing_api_credentials',
+                'provider' => $e->provider,
+                'requiredEnv' => $e->envKeys,
+                'documentation' => $e->docsUrl,
+                'note' => 'Aucune donnée estimée n\'est renvoyée : ces métriques ne peuvent pas être calculées à partir du HTML de la page.',
+            ], 503);
         } catch (UnsafeUrlException $e) {
             // Rejected before any request left the server. Do not leak the reason.
             Log::warning("Tool API blocked unsafe URL [{$slug}]: " . $e->getMessage());
@@ -138,6 +158,39 @@ class ToolsApiController extends Controller
     }
 
     /**
+     * Extrait le `content` d'une balise <meta>, quel que soit l'ordre des
+     * attributs et quels que soient les attributs intercalés.
+     *
+     * L'ancien motif `/<meta\s+name="x"\s+content="(.*?)"/` imposait que
+     * `content` suive immédiatement `name` : il manquait aussi bien
+     * `<meta content="…" name="description">` que
+     * `<meta name="description" data-rh="true" content="…">`, deux écritures
+     * courantes (React Helmet, Vue Meta, nombreux CMS).
+     *
+     * @param  string  $attr  'name' ou 'property'
+     */
+    private function extractMetaContent(string $html, string $key, string $attr = 'name'): string
+    {
+        // On isole d'abord la balise entière, puis on lit `content` à
+        // l'intérieur — deux passes simples valent mieux qu'un motif unique
+        // tentant de gérer toutes les permutations.
+        $tagPattern = '/<meta\s+[^>]*' . preg_quote($attr, '/')
+            . '\s*=\s*["\']' . preg_quote($key, '/') . '["\'][^>]*>/i';
+
+        if (! preg_match($tagPattern, $html, $tag)) {
+            return '';
+        }
+
+        if (! preg_match('/\bcontent\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|([^\s>]+))/i', $tag[0], $m)) {
+            return '';
+        }
+
+        $value = $m[1] !== '' ? $m[1] : ($m[2] !== '' ? $m[2] : ($m[3] ?? ''));
+
+        return trim(html_entity_decode($value, ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+    }
+
+    /**
      * Ensure URL has protocol. Validation happens separately in requireUrl().
      */
     private function normalizeUrl(string $url): string
@@ -163,11 +216,18 @@ class ToolsApiController extends Controller
         $maxScore = 0;
 
         // Title tag
+        //
+        // Longueur mesurée en *caractères* (mb_strlen), pas en octets. En UTF-8
+        // chaque lettre accentuée compte 2 octets : « Créer des sites web à
+        // Paris » faisait 41 octets pour 39 caractères, et une méta description
+        // française de 130 caractères était mesurée à 260 — donc signalée « trop
+        // longue » alors qu'elle est dans la cible. Sur un site francophone,
+        // l'écart fausse systématiquement le verdict.
         $maxScore += 10;
         preg_match('/<title[^>]*>(.*?)<\/title>/is', $html, $titleMatch);
-        $title = $titleMatch[1] ?? '';
+        $title = trim(html_entity_decode($titleMatch[1] ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8'));
         if ($title) {
-            $titleLen = strlen($title);
+            $titleLen = mb_strlen($title, 'UTF-8');
             if ($titleLen >= 30 && $titleLen <= 60) {
                 $score += 10;
                 $checks[] = ['name' => 'Title Tag', 'status' => 'pass', 'message' => "Good title length ({$titleLen} chars)"];
@@ -179,12 +239,13 @@ class ToolsApiController extends Controller
             $checks[] = ['name' => 'Title Tag', 'status' => 'fail', 'message' => 'Missing title tag'];
         }
 
-        // Meta description
+        // Meta description — tolère l'ordre des attributs et les attributs
+        // intercalés (`<meta name="description" data-x="1" content="…">`), que
+        // l'ancien motif strict `name=…\s+content=` ne détectait pas.
         $maxScore += 10;
-        preg_match('/<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']/is', $html, $descMatch);
-        $desc = $descMatch[1] ?? '';
+        $desc = $this->extractMetaContent($html, 'description');
         if ($desc) {
-            $descLen = strlen($desc);
+            $descLen = mb_strlen($desc, 'UTF-8');
             if ($descLen >= 120 && $descLen <= 160) {
                 $score += 10;
                 $checks[] = ['name' => 'Meta Description', 'status' => 'pass', 'message' => "Good length ({$descLen} chars)"];
@@ -210,9 +271,12 @@ class ToolsApiController extends Controller
             $checks[] = ['name' => 'H1 Tag', 'status' => 'warning', 'message' => "Multiple H1 tags found ({$h1Count})"];
         }
 
-        // Open Graph
+        // Open Graph — `property=` est la forme canonique, mais `name=` est très
+        // répandue et interprétée par les principaux réseaux. developer.mozilla.org
+        // publie ainsi 10 balises og: en `name=` et obtenait 0/5 avec l'ancien
+        // motif, qui n'acceptait que `property=`.
         $maxScore += 5;
-        $hasOg = (bool) preg_match('/<meta\s+property=["\']og:/i', $html);
+        $hasOg = (bool) preg_match('/<meta\s+[^>]*(?:property|name)\s*=\s*["\']og:/i', $html);
         if ($hasOg) {
             $score += 5;
             $checks[] = ['name' => 'Open Graph Tags', 'status' => 'pass', 'message' => 'OG tags present'];
@@ -220,9 +284,10 @@ class ToolsApiController extends Controller
             $checks[] = ['name' => 'Open Graph Tags', 'status' => 'fail', 'message' => 'Missing Open Graph tags'];
         }
 
-        // Canonical
+        // Canonical — accepte `<link href="…" rel="canonical">` autant que
+        // l'ordre inverse : les deux sont du HTML valide.
         $maxScore += 5;
-        $hasCanonical = (bool) preg_match('/<link\s+rel=["\']canonical["\']/i', $html);
+        $hasCanonical = (bool) preg_match('/<link\s+[^>]*rel\s*=\s*["\'][^"\']*\bcanonical\b/i', $html);
         if ($hasCanonical) {
             $score += 5;
             $checks[] = ['name' => 'Canonical Tag', 'status' => 'pass', 'message' => 'Canonical URL set'];
@@ -232,7 +297,7 @@ class ToolsApiController extends Controller
 
         // Viewport
         $maxScore += 5;
-        $hasViewport = (bool) preg_match('/<meta\s+name=["\']viewport["\']/i', $html);
+        $hasViewport = (bool) preg_match('/<meta\s+[^>]*name\s*=\s*["\']viewport["\']/i', $html);
         if ($hasViewport) {
             $score += 5;
             $checks[] = ['name' => 'Mobile Viewport', 'status' => 'pass', 'message' => 'Viewport meta tag set'];
@@ -843,6 +908,7 @@ class ToolsApiController extends Controller
         $url = 'https://' . $domain;
 
         $score = 0;
+        $maxScore = 0;
         $checks = [];
 
         // Check domain accessible
@@ -855,54 +921,134 @@ class ToolsApiController extends Controller
             $html = '';
         }
 
-        if ($accessible) { $score += 15; $checks[] = ['name' => 'Domain Accessible', 'status' => 'pass', 'message' => 'Domain is accessible']; }
-        else { $checks[] = ['name' => 'Domain Accessible', 'status' => 'fail', 'message' => 'Domain not accessible']; }
+        $maxScore += 15;
+        if ($accessible) { $score += 15; $checks[] = ['name' => 'Domain Accessible', 'status' => 'pass', 'message' => 'Domain is accessible over HTTPS']; }
+        else { $checks[] = ['name' => 'Domain Accessible', 'status' => 'fail', 'message' => 'Domain not accessible over HTTPS']; }
 
-        // HTTPS
-        $isHttps = $accessible;
-        if ($isHttps) { $score += 15; $checks[] = ['name' => 'HTTPS', 'status' => 'pass', 'message' => 'HTTPS enabled']; }
-        else { $checks[] = ['name' => 'HTTPS', 'status' => 'fail', 'message' => 'HTTPS not enabled']; }
+        // HTTPS — vérification réelle et distincte de l'accessibilité.
+        //
+        // Avant : `$isHttps = $accessible;` — l'URL étant forcée en https://,
+        // « accessible » et « HTTPS activé » étaient le *même* booléen compté
+        // deux fois (30 des 85 points pour un seul fait). On teste désormais le
+        // port 80 pour savoir si le site redirige bien HTTP → HTTPS, ce qui est
+        // la question que cette ligne prétendait poser.
+        $maxScore += 15;
+        [$httpsStatus, $httpsMessage, $httpsPoints] = $this->probeHttpToHttpsRedirect($domain, $accessible);
+        $score += $httpsPoints;
+        $checks[] = ['name' => 'HTTPS', 'status' => $httpsStatus, 'message' => $httpsMessage];
 
         // Check robots.txt
+        $maxScore += 10;
         try { $robotsResp = $this->fetcher->get($url . '/robots.txt', 5); $hasRobots = $robotsResp->successful() && strlen($this->fetcher->cappedBody($robotsResp)) > 5; }
         catch (\Throwable $e) { $hasRobots = false; }
         if ($hasRobots) { $score += 10; $checks[] = ['name' => 'Robots.txt', 'status' => 'pass', 'message' => 'robots.txt found']; }
         else { $checks[] = ['name' => 'Robots.txt', 'status' => 'warning', 'message' => 'No robots.txt found']; }
 
-        // Check sitemap
-        try { $smResp = $this->fetcher->get($url . '/sitemap.xml', 5); $hasSitemap = $smResp->successful() && str_contains($this->fetcher->cappedBody($smResp), '<urlset'); }
-        catch (\Throwable $e) { $hasSitemap = false; }
+        // Check sitemap — accepte aussi un index de sitemaps (<sitemapindex>),
+        // format parfaitement valide que l'ancienne condition rejetait.
+        $maxScore += 10;
+        try {
+            $smResp = $this->fetcher->get($url . '/sitemap.xml', 5);
+            $smBody = $smResp->successful() ? $this->fetcher->cappedBody($smResp) : '';
+            $hasSitemap = str_contains($smBody, '<urlset') || str_contains($smBody, '<sitemapindex');
+        } catch (\Throwable $e) { $hasSitemap = false; }
         if ($hasSitemap) { $score += 10; $checks[] = ['name' => 'Sitemap', 'status' => 'pass', 'message' => 'sitemap.xml found']; }
         else { $checks[] = ['name' => 'Sitemap', 'status' => 'warning', 'message' => 'No sitemap.xml found']; }
 
+        // Les contrôles on-page ne sont comptés dans le total que si le HTML a
+        // pu être récupéré. Sinon `maxScore` ne les inclut pas, et un domaine
+        // injoignable n'est pas pénalisé deux fois pour la même cause.
         if ($html) {
             // Viewport
-            if (preg_match('/<meta\s+name=["\']viewport["\']/i', $html)) { $score += 10; $checks[] = ['name' => 'Viewport', 'status' => 'pass', 'message' => 'Mobile viewport set']; }
+            $maxScore += 10;
+            if (preg_match('/<meta\s+[^>]*name=["\']viewport["\']/i', $html)) { $score += 10; $checks[] = ['name' => 'Viewport', 'status' => 'pass', 'message' => 'Mobile viewport set']; }
             else { $checks[] = ['name' => 'Viewport', 'status' => 'fail', 'message' => 'No mobile viewport']; }
 
             // Meta description
-            if (preg_match('/<meta\s+name=["\']description["\']/i', $html)) { $score += 10; $checks[] = ['name' => 'Meta Description', 'status' => 'pass', 'message' => 'Meta description present']; }
+            $maxScore += 10;
+            if (preg_match('/<meta\s+[^>]*name=["\']description["\']/i', $html)) { $score += 10; $checks[] = ['name' => 'Meta Description', 'status' => 'pass', 'message' => 'Meta description present']; }
             else { $checks[] = ['name' => 'Meta Description', 'status' => 'warning', 'message' => 'No meta description']; }
 
             // H1
-            if (preg_match('/<h1/i', $html)) { $score += 10; $checks[] = ['name' => 'H1 Tag', 'status' => 'pass', 'message' => 'H1 tag found']; }
+            $maxScore += 10;
+            if (preg_match('/<h1[\s>]/i', $html)) { $score += 10; $checks[] = ['name' => 'H1 Tag', 'status' => 'pass', 'message' => 'H1 tag found']; }
             else { $checks[] = ['name' => 'H1 Tag', 'status' => 'warning', 'message' => 'No H1 tag']; }
 
-            // OG tags
-            if (preg_match('/<meta\s+property=["\']og:/i', $html)) { $score += 5; $checks[] = ['name' => 'Open Graph', 'status' => 'pass', 'message' => 'OG tags present']; }
+            // OG tags — accepte `property=` ET `name=` (cf. developer.mozilla.org,
+            // qui publie 10 balises Open Graph en `name=` et obtenait 0/5).
+            $maxScore += 5;
+            if (preg_match('/<meta\s+[^>]*(?:property|name)\s*=\s*["\']og:/i', $html)) { $score += 5; $checks[] = ['name' => 'Open Graph', 'status' => 'pass', 'message' => 'OG tags present']; }
             else { $checks[] = ['name' => 'Open Graph', 'status' => 'warning', 'message' => 'No OG tags']; }
         }
 
-        $finalScore = min(100, $score);
+        // Score en pourcentage réel du maximum atteignable.
+        //
+        // Avant : les pondérations totalisaient 85, si bien qu'un site parfait
+        // plafonnait à 85/100 et ne pouvait jamais obtenir la note A. Le score
+        // est désormais normalisé sur le barème effectivement applicable.
+        $finalScore = $maxScore > 0 ? (int) round(($score / $maxScore) * 100) : 0;
 
         return response()->json([
             'score' => $finalScore,
             'grade' => $this->scoreToGrade($finalScore),
             'passed' => $finalScore >= 60,
-            'stats' => ['score' => $finalScore . '/100', 'checksRun' => count($checks), 'domain' => $domain],
+            'stats' => [
+                'score' => $finalScore . '/100',
+                'pointsEarned' => $score . '/' . $maxScore,
+                'checksRun' => count($checks),
+                'domain' => $domain,
+            ],
             'issues' => array_values(array_filter($checks, fn($c) => $c['status'] !== 'pass')),
             'recommendations' => $this->generateRecommendations($checks),
         ]);
+    }
+
+    /**
+     * Teste si le domaine redirige bien HTTP (port 80) vers HTTPS.
+     *
+     * Remplace l'ancien `$isHttps = $accessible;`, qui recomptait simplement
+     * l'accessibilité HTTPS. Ici on interroge réellement http:// pour distinguer
+     * trois situations bien différentes :
+     *   - redirection 3xx vers https  → configuration correcte (15 pts)
+     *   - HTTP répond 200 sans rediriger → contenu dupliqué + risque sécurité (7 pts)
+     *   - HTTP injoignable mais HTTPS OK → acceptable, souvent volontaire (12 pts)
+     *
+     * @return array{0: string, 1: string, 2: int} [status, message, points]
+     */
+    private function probeHttpToHttpsRedirect(string $domain, bool $httpsAccessible): array
+    {
+        if (! $httpsAccessible) {
+            return ['fail', 'HTTPS not available — site is not reachable over a secure connection', 0];
+        }
+
+        try {
+            // getNoRedirect() : on veut inspecter le code de statut lui-même,
+            // pas suivre la chaîne.
+            $resp = $this->fetcher->getNoRedirect('http://' . $domain, 8);
+            $status = $resp->status();
+            $location = (string) $resp->header('Location');
+
+            if ($status >= 300 && $status < 400 && $location !== '') {
+                if (str_starts_with(strtolower($location), 'https://')) {
+                    return ['pass', "HTTPS enabled with HTTP → HTTPS redirect ({$status})", 15];
+                }
+
+                return ['warning', "HTTP redirects to a non-HTTPS location ({$status})", 7];
+            }
+
+            if ($status >= 200 && $status < 300) {
+                return ['warning', 'Site also serves content over plain HTTP without redirecting — duplicate content and security risk', 7];
+            }
+
+            // HTTP renvoie une erreur alors que HTTPS fonctionne : le port 80
+            // est simplement fermé, ce qui reste une configuration valable.
+            return ['pass', 'HTTPS enabled (HTTP port not serving content)', 12];
+        } catch (UnsafeUrlException $e) {
+            // Ne devrait pas arriver : l'hôte a déjà été validé.
+            return ['pass', 'HTTPS enabled', 12];
+        } catch (\Throwable $e) {
+            return ['pass', 'HTTPS enabled (HTTP port unreachable)', 12];
+        }
     }
 
     /**
@@ -1015,8 +1161,18 @@ class ToolsApiController extends Controller
      */
     public function handleWebsiteReadinessChecker(Request $request): JsonResponse
     {
-        // Reuses domain health logic with additional checks
-        return $this->handleDomainHealthChecker($request);
+        // Partage volontairement la logique de santé du domaine : ce sont bien
+        // les mêmes contrôles de mise en production (joignabilité, HTTPS,
+        // robots, sitemap, balises essentielles). Le champ `toolContext`
+        // signale que la réponse est produite par ce moteur, plutôt que de
+        // laisser croire à deux analyses distinctes.
+        $response = $this->handleDomainHealthChecker($request);
+
+        $payload = $response->getData(true);
+        $payload['toolContext'] = 'website-readiness-checker';
+        $payload['dataSource'] = 'Contrôles de préparation au lancement (santé du domaine)';
+
+        return response()->json($payload, $response->getStatusCode());
     }
 
     /**
@@ -1024,8 +1180,52 @@ class ToolsApiController extends Controller
      */
     public function handleDomainAuthorityChecker(Request $request): JsonResponse
     {
-        // Without Moz API, provide basic domain analysis
-        return $this->handleDomainHealthChecker($request);
+        $domain = $this->requireHost($request, 'url', 'domain');
+
+        // L'autorité de domaine se calcule à partir d'un graphe de liens à
+        // l'échelle du web : elle est *impossible* à déduire du HTML d'une page.
+        // Sans fournisseur configuré, on lève MissingApiCredentialsException
+        // (→ 503) au lieu de renvoyer un score on-page déguisé en DA, ce que
+        // faisait l'ancienne implémentation.
+        $data = $this->seoApi->domainAuthority($domain);
+
+        $isTenPointScale = $data['scale'] === '0-10';
+        $normalized = $isTenPointScale
+            ? (int) round($data['authority'] * 10)
+            : (int) round($data['authority']);
+
+        $issues = [];
+        if ($normalized < 20) {
+            $issues[] = ['type' => 'warning', 'message' => 'Autorité faible — profil de liens encore peu développé.'];
+        }
+        if (($spam = $data['metrics']['spamScore'] ?? null) !== null && $spam >= 30) {
+            $issues[] = ['type' => 'error', 'message' => "Spam Score élevé ({$spam}%) — audit du profil de liens recommandé."];
+        }
+
+        return response()->json([
+            'score' => $normalized,
+            'grade' => $this->scoreToGrade($normalized),
+            'passed' => $normalized >= 30,
+            'stats' => array_filter([
+                'domain' => $domain,
+                'domainAuthority' => $isTenPointScale
+                    ? $data['authority'] . '/10'
+                    : $normalized . '/100',
+                'pageAuthority' => isset($data['metrics']['pageAuthority'])
+                    ? $data['metrics']['pageAuthority'] . '/100' : null,
+                'linkingDomains' => $data['metrics']['linkingDomains'] ?? null,
+                'totalBacklinks' => $data['metrics']['totalBacklinks'] ?? null,
+                'spamScore' => isset($data['metrics']['spamScore'])
+                    ? $data['metrics']['spamScore'] . '%' : null,
+            ], fn ($v) => $v !== null),
+            'issues' => $issues,
+            'recommendations' => [
+                'L\'autorité de domaine progresse en obtenant des liens éditoriaux depuis des sites reconnus de votre secteur.',
+                'Privilégiez la qualité et la pertinence thématique des domaines référents plutôt que leur nombre.',
+            ],
+            'dataSource' => $data['source'],
+            'fetchedAt' => $data['fetchedAt'],
+        ]);
     }
 
     /**
@@ -1086,39 +1286,135 @@ class ToolsApiController extends Controller
     public function handleCoreWebVitalsChecker(Request $request): JsonResponse
     {
         $url = $this->requireUrl($request);
-        $start = microtime(true);
-        $html = $this->fetchUrl($url);
-        $loadTime = round((microtime(true) - $start) * 1000);
+        $strategy = $request->input('strategy') === 'desktop' ? 'desktop' : 'mobile';
 
+        // LCP, INP et CLS sont des métriques de *rendu* : elles exigent un
+        // navigateur réel. L'ancienne version chronométrait la réponse de notre
+        // propre serveur et comptait des balises, ce qui n'a aucun rapport avec
+        // les Core Web Vitals et variait selon les conditions réseau.
+        // On interroge désormais PageSpeed Insights (Lighthouse + champ CrUX).
+        $psi = $this->seoApi->pageSpeed($url, $strategy);
+
+        $issues = [];
+        $recommendations = [];
+
+        // Seuils officiels Google (web.dev/vitals).
+        $thresholds = [
+            'LCP' => ['good' => 2500, 'poor' => 4000, 'unit' => 'ms', 'label' => 'Largest Contentful Paint'],
+            'INP' => ['good' => 200,  'poor' => 500,  'unit' => 'ms', 'label' => 'Interaction to Next Paint'],
+            'CLS' => ['good' => 0.1,  'poor' => 0.25, 'unit' => '',   'label' => 'Cumulative Layout Shift'],
+            'FCP' => ['good' => 1800, 'poor' => 3000, 'unit' => 'ms', 'label' => 'First Contentful Paint'],
+            'TTFB' => ['good' => 800, 'poor' => 1800, 'unit' => 'ms', 'label' => 'Time to First Byte'],
+        ];
+
+        $stats = [];
+        $fieldData = [];
+
+        foreach ($psi['field'] as $metric => $d) {
+            $p = $d['percentile'];
+            $value = $metric === 'CLS' ? round($p / 100, 3) : $p;
+            $t = $thresholds[$metric] ?? null;
+            $verdict = match ($d['category']) {
+                'FAST', 'GOOD' => 'good',
+                'AVERAGE', 'NEEDS_IMPROVEMENT' => 'needs-improvement',
+                'SLOW', 'POOR' => 'poor',
+                default => 'unknown',
+            };
+
+            $fieldData[$metric] = ['value' => $value, 'verdict' => $verdict, 'label' => $t['label'] ?? $metric];
+            $stats[$metric] = $value . ($t['unit'] ?? '');
+
+            if ($verdict === 'poor') {
+                $issues[] = ['type' => 'error', 'message' => "{$t['label']} ({$metric}) : {$value}{$t['unit']} — au-delà du seuil de {$t['poor']}{$t['unit']}"];
+            } elseif ($verdict === 'needs-improvement') {
+                $issues[] = ['type' => 'warning', 'message' => "{$t['label']} ({$metric}) : {$value}{$t['unit']} — à améliorer (cible < {$t['good']}{$t['unit']})"];
+            }
+        }
+
+        // Métriques de laboratoire — utiles quand le site n'a pas assez de
+        // trafic réel pour figurer dans CrUX.
+        $labData = [];
+        foreach ($psi['lab'] as $metric => $d) {
+            $labData[$metric] = ['value' => round($d['value'], $metric === 'CLS' ? 3 : 0), 'display' => $d['display']];
+            if (! isset($stats[$metric])) {
+                $stats[$metric] = $d['display'] ?: round($d['value']);
+            }
+        }
+
+        $score = $psi['performanceScore'] ?? 0;
+
+        if ($score < 90) {
+            $recommendations[] = 'Optimisez l\'image LCP : format moderne (WebP/AVIF), dimensions explicites et préchargement.';
+            $recommendations[] = 'Réduisez le JavaScript bloquant : code-splitting, `defer`, suppression du code inutilisé.';
+            $recommendations[] = 'Réservez l\'espace des images et publicités (width/height) pour éviter les décalages (CLS).';
+        }
+
+        return response()->json([
+            'score' => $score,
+            'grade' => $this->scoreToGrade($score),
+            'passed' => $score >= 90,
+            'stats' => array_merge([
+                'performanceScore' => $score . '/100',
+                'strategy' => $strategy,
+                'dataType' => $psi['hasFieldData'] ? 'Données terrain (utilisateurs réels)' : 'Données laboratoire (simulation)',
+            ], $stats),
+            'fieldData' => $fieldData,
+            'labData' => $labData,
+            'hasFieldData' => $psi['hasFieldData'],
+            'issues' => $issues,
+            'recommendations' => $recommendations,
+            'dataSource' => $psi['source'],
+            'fetchedAt' => $psi['fetchedAt'],
+        ]);
+    }
+
+    /**
+     * Analyse statique des freins de performance visibles dans le HTML.
+     *
+     * Ce que faisait l'ancien « Core Web Vitals Checker », mais nommé
+     * honnêtement : ce sont des *indices* tirés du balisage (poids, nombre de
+     * scripts, images sans dimensions), pas des Core Web Vitals. Sert de repli
+     * lorsque PageSpeed Insights n'est pas joignable.
+     *
+     * @return array<string, mixed>
+     */
+    private function analyzeHtmlPerformanceHints(string $html): array
+    {
         $pageSize = strlen($html);
-        preg_match_all('/<img\b/i', $html, $imgs);
+        preg_match_all('/<img\b[^>]*>/i', $html, $imgs);
         preg_match_all('/<script\b/i', $html, $scripts);
         preg_match_all('/<link\s+[^>]*stylesheet/i', $html, $css);
 
-        $score = 100;
         $issues = [];
 
-        if ($loadTime > 3000) { $score -= 30; $issues[] = ['type' => 'error', 'message' => "Slow response: {$loadTime}ms (should be under 2500ms)"]; }
-        elseif ($loadTime > 1500) { $score -= 10; $issues[] = ['type' => 'warning', 'message' => "Response time: {$loadTime}ms"]; }
+        if ($pageSize > 500000) {
+            $issues[] = ['type' => 'warning', 'message' => 'Page volumineuse : ' . round($pageSize / 1024) . ' Ko de HTML'];
+        }
+        if (count($scripts[0]) > 15) {
+            $issues[] = ['type' => 'warning', 'message' => count($scripts[0]) . ' balises <script> — envisagez un regroupement'];
+        }
 
-        if ($pageSize > 500000) { $score -= 20; $issues[] = ['type' => 'warning', 'message' => 'Large page size: ' . round($pageSize / 1024) . 'KB']; }
+        // Images sans width/height : cause directe de décalage de mise en page.
+        $noDimensions = 0;
+        foreach ($imgs[0] as $img) {
+            if (! preg_match('/\bwidth\s*=/i', $img) || ! preg_match('/\bheight\s*=/i', $img)) {
+                $noDimensions++;
+            }
+        }
+        if ($noDimensions > 0) {
+            $issues[] = ['type' => 'warning', 'message' => "{$noDimensions} image(s) sans width/height — risque de décalage (CLS)"];
+        }
 
-        if (count($scripts[0]) > 15) { $score -= 10; $issues[] = ['type' => 'warning', 'message' => count($scripts[0]) . ' scripts found — consider bundling']; }
-
-        return response()->json([
-            'score' => max(0, $score),
-            'grade' => $this->scoreToGrade(max(0, $score)),
-            'passed' => $score >= 70,
+        return [
             'stats' => [
-                'responseTime' => $loadTime . 'ms',
-                'pageSize' => round($pageSize / 1024) . 'KB',
+                'htmlSize' => round($pageSize / 1024) . ' Ko',
                 'images' => count($imgs[0]),
+                'imagesWithoutDimensions' => $noDimensions,
                 'scripts' => count($scripts[0]),
                 'stylesheets' => count($css[0]),
             ],
             'issues' => $issues,
-            'recommendations' => $score < 90 ? ['Optimize images with WebP format', 'Enable browser caching', 'Minify CSS and JavaScript'] : [],
-        ]);
+        ];
     }
 
     /**
@@ -1126,7 +1422,33 @@ class ToolsApiController extends Controller
      */
     public function handlePageSpeedAnalyzer(Request $request): JsonResponse
     {
-        return $this->handleCoreWebVitalsChecker($request);
+        $url = $this->requireUrl($request);
+        $strategy = $request->input('strategy') === 'desktop' ? 'desktop' : 'mobile';
+
+        // Chemin privilégié : données Lighthouse réelles.
+        try {
+            return $this->handleCoreWebVitalsChecker($request);
+        } catch (MissingApiCredentialsException|\RuntimeException $e) {
+            // Repli honnête : PageSpeed Insights est indisponible (pas de clé,
+            // quota atteint ou API injoignable). On renvoie une analyse
+            // statique du HTML en indiquant clairement sa nature — et sans
+            // score de performance, qu'on serait incapable de mesurer ici.
+            $html = $this->fetchUrl($url);
+            $hints = $this->analyzeHtmlPerformanceHints($html);
+
+            return response()->json([
+                'passed' => count(array_filter($hints['issues'], fn ($i) => $i['type'] === 'error')) === 0,
+                'stats' => array_merge(['strategy' => $strategy], $hints['stats']),
+                'issues' => $hints['issues'],
+                'recommendations' => [
+                    'Convertissez les images en WebP ou AVIF et servez-les en dimensions adaptées.',
+                    'Ajoutez width et height sur chaque image pour éviter les décalages de mise en page.',
+                    'Différez le JavaScript non critique avec `defer` ou `async`.',
+                ],
+                'dataSource' => 'Analyse statique du HTML',
+                'limitation' => 'Aucun score de performance n\'est calculé : mesurer LCP, INP et CLS exige un rendu navigateur. Configurez PAGESPEED_API_KEY pour obtenir les métriques réelles de Google.',
+            ]);
+        }
     }
 
     /**
@@ -1184,17 +1506,52 @@ class ToolsApiController extends Controller
      */
     public function handleBacklinkChecker(Request $request): JsonResponse
     {
-        $domain = preg_replace('#^https?://#', '', $request->input('url', $request->input('domain', '')));
-        $domain = rtrim(explode('/', $domain)[0], '/');
+        // Valide l'hôte (et bloque les cibles internes) avant tout appel sortant.
+        $domain = $this->requireHost($request, 'url', 'domain');
+
+        // Un profil de backlinks suppose un crawl à l'échelle du web. Sans
+        // fournisseur, on renvoie 503 explicite plutôt que l'ancien score
+        // codé en dur (`'score' => 50`), qui ne reposait sur aucune analyse.
+        $data = $this->seoApi->backlinks($domain);
+
+        $m = $data['metrics'];
+        $total = (int) ($m['totalBacklinks'] ?? 0);
+        $refDomains = (int) ($m['linkingDomains'] ?? 0);
+        $nofollow = (int) ($m['nofollowBacklinks'] ?? 0);
+        $dofollow = max(0, $total - $nofollow);
+
+        $issues = [];
+        if ($refDomains === 0) {
+            $issues[] = ['type' => 'warning', 'message' => 'Aucun domaine référent détecté par le fournisseur.'];
+        }
+        if ($total > 0 && $refDomains > 0 && ($total / max($refDomains, 1)) > 100) {
+            $issues[] = ['type' => 'warning', 'message' => 'Ratio liens/domaine très élevé — profil potentiellement peu diversifié.'];
+        }
+        if (($spam = $m['spamScore'] ?? null) !== null && $spam >= 30) {
+            $issues[] = ['type' => 'error', 'message' => "Spam Score de {$spam}% — vérifiez les domaines référents de faible qualité."];
+        }
 
         return response()->json([
-            'score' => 50,
-            'message' => 'Basic domain analysis (full backlink data requires Moz API key)',
-            'stats' => ['domain' => $domain, 'note' => 'Configure MOZ_API_KEY in .env for full backlink analysis'],
+            'score' => (int) round($data['scale'] === '0-10' ? $data['authority'] * 10 : $data['authority']),
+            'grade' => $this->scoreToGrade((int) round($data['scale'] === '0-10' ? $data['authority'] * 10 : $data['authority'])),
+            'passed' => $refDomains > 0,
+            'stats' => array_filter([
+                'domain' => $domain,
+                'totalBacklinks' => $total ?: null,
+                'referringDomains' => $refDomains ?: null,
+                'dofollow' => $dofollow ?: null,
+                'nofollow' => $nofollow ?: null,
+                'domainAuthority' => isset($m['domainAuthority']) ? $m['domainAuthority'] . '/100' : null,
+                'spamScore' => isset($m['spamScore']) ? $m['spamScore'] . '%' : null,
+            ], fn ($v) => $v !== null),
+            'issues' => $issues,
             'recommendations' => [
-                'Add MOZ_ACCESS_ID and MOZ_SECRET_KEY to .env for Domain Authority, Page Authority, and backlink data',
-                'Alternative: integrate Ahrefs or Majestic API for comprehensive backlink analysis',
+                'Visez des liens éditoriaux depuis des domaines thématiquement proches de votre activité.',
+                'Diversifiez les domaines référents : 10 domaines distincts pèsent plus que 100 liens d\'un même site.',
+                'Surveillez le Spam Score et désavouez les domaines toxiques via la Search Console.',
             ],
+            'dataSource' => $data['source'],
+            'fetchedAt' => $data['fetchedAt'],
         ]);
     }
 
@@ -1219,28 +1576,59 @@ class ToolsApiController extends Controller
             '{n} erreurs de {topic} que vous commettez sans le savoir',
             '{topic} en toute simplicité : une méthode pas à pas',
             'Arrêtez de mal aborder {topic} — voici la bonne approche',
-            'Comment {topic} nous a permis d\'augmenter le chiffre d\'affaires de {p} %',
+            '{topic} : le guide pratique, étape par étape',
+        ];
+
+        // Les substitutions numériques sont dérivées du sujet (hash stable) et
+        // non tirées au sort : deux appels sur le même sujet produisent des
+        // titres identiques, et aucun chiffre n'est présenté comme une donnée
+        // mesurée. `{p}` a été retiré des gabarits — annoncer « +240 % de
+        // chiffre d'affaires » sur un sujet inconnu serait une invention.
+        $seed = crc32(mb_strtolower($topic, 'UTF-8'));
+
+        // Chaque gabarit porte l'intention émotionnelle qu'il exprime
+        // réellement, au lieu d'en tirer une au hasard.
+        $hooks = [
+            'Bénéfice', 'Pédagogie', 'Preuve', 'Exhaustivité', 'Crainte',
+            'Curiosité', 'Crainte', 'Simplicité', 'Urgence', 'Preuve',
         ];
 
         $titles = [];
         $topicCap = ucwords($topic);
         foreach ($templates as $i => $tpl) {
-            $title = str_replace(
-                ['{topic}', '{n}', '{p}'],
-                [$topicCap, rand(5, 15), rand(120, 350)],
-                $tpl
-            );
+            // 5 à 15, dérivé du sujet + index : stable d'un appel à l'autre.
+            $n = 5 + (($seed + $i * 7) % 11);
+
+            $title = str_replace(['{topic}', '{n}'], [$topicCap, $n], $tpl);
+
+            $scored = $this->titleScorer->score($title);
+
             $titles[] = [
                 'title' => $title,
-                'seoScore' => rand(72, 95),
-                'emotionalHook' => ['Curiosité', 'Urgence', 'Bénéfice', 'Crainte', 'Aspiration'][rand(0, 4)],
-                'ctrEstimate' => rand(28, 65) / 10 . '%',
+                // Score déterministe et explicable (voir TitleScorer) : la même
+                // chaîne donne toujours le même résultat.
+                'seoScore' => $scored['score'],
+                'scoreBreakdown' => $scored['breakdown'],
+                'titleLength' => $scored['length'],
+                'emotionalHook' => $hooks[$i] ?? 'Bénéfice',
+                // `ctrEstimate` supprimé : le taux de clic dépend de la position
+                // SERP, de la concurrence et de l'intention de recherche —
+                // rien de tout cela n'est observable depuis la chaîne seule.
             ];
         }
 
-        usort($titles, fn($a, $b) => $b['seoScore'] - $a['seoScore']);
+        // Tri par score réel, puis par titre pour un ordre totalement stable
+        // lorsque deux titres obtiennent le même score.
+        usort($titles, fn($a, $b) => [$b['seoScore'], $a['title']] <=> [$a['seoScore'], $b['title']]);
 
-        return response()->json(['titles' => $titles]);
+        return response()->json([
+            'titles' => $titles,
+            'scoring' => [
+                'method' => 'deterministic',
+                'criteria' => ['Longueur', 'Chiffre', 'Mots à impact', 'Nombre de mots', 'Structure', 'Lisibilité'],
+                'note' => 'Score calculé à partir de critères mesurables du titre. Aucune estimation de CTR n\'est fournie car elle dépend de facteurs non observables (position SERP, concurrence, intention).',
+            ],
+        ]);
     }
 
     /**
