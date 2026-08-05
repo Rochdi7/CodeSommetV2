@@ -404,14 +404,14 @@ $comparisons = [
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-5 h-5 fill-black" aria-hidden="true">
                                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                             </svg>
-                            <h3 class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">CodeSommet</h3>
+                            <div class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">CodeSommet</div>
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">Designer à temps plein</h3>
+                        <div class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">Designer à temps plein</div>
                     </div>
                     <div>
-                        <h3 class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">Autres agences</h3>
+                        <div class="text-lg lg:text-xl font-bold" style="font-family: var(--font-heading);">Autres agences</div>
                     </div>
                 </div>
                 {{-- Table body --}}
@@ -583,7 +583,7 @@ $comparisons = [
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors" href="{{ route('get-quote') }}">Obtenez Votre Devis Gratuit</a>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Contactez-nous sur WhatsApp</a>
+                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Discuter de mon projet web</a>
                     </div>
                 </div>
             </div>
@@ -694,7 +694,7 @@ $comparisons = [
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">Réserver un Appel Découverte</button>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Contactez-nous sur WhatsApp</a>
+                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Échanger sur le retainer</a>
                     </div>
                 </div>
             </div>
@@ -809,7 +809,7 @@ $comparisons = [
                 <div class="flex flex-col items-center gap-4 md:gap-6">
                     {{-- Mobile CTAs --}}
                     <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden">
-                        <a target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#" style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
+                        <button type="button" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
                             <div class="shine-wrapper-hero">
                                 <div class="shine-element-hero"></div>
                             </div>
@@ -823,7 +823,7 @@ $comparisons = [
                                 </svg>
                             </div>
                             <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Réserver un Appel Découverte</span>
-                        </a>
+                        </button>
                         <a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto border-2 border-white/30 bg-transparent hover:bg-white/10 transition-colors" href="{{ route('tool', 'website-analyzer') }}" style="border-radius: 118px;">
                             <div class="relative z-10 flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-5 h-5 text-white" aria-hidden="true">
