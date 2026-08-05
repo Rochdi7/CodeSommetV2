@@ -33,11 +33,67 @@ class ToolsApiContentTest extends TestCase
         }
         $this->assertMatchesRegularExpression('/méthodes|guide complet|secret|erreurs/iu', $joined);
 
-        // Les accroches émotionnelles sont également localisées.
+        // Les accroches émotionnelles sont également localisées. Chaque gabarit
+        // porte désormais l'intention qu'il exprime réellement, au lieu d'une
+        // valeur tirée au sort — la liste s'est donc élargie.
         $hooks = array_unique(array_column($data['titles'], 'emotionalHook'));
         foreach ($hooks as $hook) {
-            $this->assertContains($hook, ['Curiosité', 'Urgence', 'Bénéfice', 'Crainte', 'Aspiration']);
+            $this->assertContains($hook, [
+                'Curiosité', 'Urgence', 'Bénéfice', 'Crainte', 'Aspiration',
+                'Pédagogie', 'Preuve', 'Exhaustivité', 'Simplicité',
+            ]);
         }
+    }
+
+    /**
+     * Le générateur ne doit renvoyer aucune métrique inventée : ni score SEO
+     * tiré au sort, ni estimation de taux de clic — le CTR dépend de la
+     * position SERP et de la concurrence, invisibles depuis la chaîne.
+     */
+    public function test_blog_titles_expose_no_fabricated_metrics(): void
+    {
+        $data = $this->postJson('/api/tools/blog-title-generator', ['input' => 'marketing digital'])
+            ->assertOk()
+            ->json();
+
+        foreach ($data['titles'] as $title) {
+            $this->assertArrayNotHasKey('ctrEstimate', $title);
+            $this->assertArrayHasKey('scoreBreakdown', $title);
+            $this->assertNotEmpty($title['scoreBreakdown']);
+
+            // Le score doit être la somme exacte de son propre détail.
+            $sum = array_sum(array_column($title['scoreBreakdown'], 'points'));
+            $this->assertSame($title['seoScore'], $sum, 'Le score doit égaler la somme des critères.');
+        }
+
+        $this->assertSame('deterministic', $data['scoring']['method']);
+    }
+
+    /**
+     * Deux appels identiques doivent produire exactement le même résultat.
+     * L'implémentation précédente utilisait rand(), donc chaque appel
+     * renvoyait des scores différents pour les mêmes titres.
+     */
+    public function test_blog_title_scores_are_reproducible(): void
+    {
+        $first = $this->postJson('/api/tools/blog-title-generator', ['input' => 'marketing digital'])
+            ->assertOk()->json('titles');
+
+        RateLimiter::clear('tools-api');
+
+        $second = $this->postJson('/api/tools/blog-title-generator', ['input' => 'marketing digital'])
+            ->assertOk()->json('titles');
+
+        $this->assertSame(
+            array_column($first, 'title'),
+            array_column($second, 'title'),
+            'Les titres générés doivent être stables d\'un appel à l\'autre.'
+        );
+        $this->assertSame(
+            array_column($first, 'seoScore'),
+            array_column($second, 'seoScore'),
+            'Les scores doivent être déterministes.'
+        );
     }
 
     public function test_landing_page_copy_is_french_and_invents_no_metrics(): void
