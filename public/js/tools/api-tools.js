@@ -165,12 +165,13 @@
             html += '</div></div>';
         }
 
-        // Recommendations
+        // Recommendations — accepte les deux formats : la chaîne simple
+        // historique et l'objet structuré (pourquoi / impact / priorité /
+        // difficulté / correction / exemples / documentation).
         if (data.recommendations && data.recommendations.length > 0) {
-            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Recommandations</h3><div class="space-y-2">';
+            html += '<div class="bg-white rounded-xl border border-gray-100 p-6"><h3 class="text-lg font-bold text-black mb-4">Recommandations</h3><div class="space-y-3">';
             data.recommendations.forEach(function (rec) {
-                html += '<div class="flex items-start gap-2 p-3 bg-blue-50 rounded-lg"><svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>' +
-                    '<p class="text-sm text-blue-900">' + escapeHtml(typeof rec === 'string' ? rec : rec.message || JSON.stringify(rec)) + '</p></div>';
+                html += (typeof rec === 'string') ? renderSimpleRec(rec) : renderStructuredRec(rec);
             });
             html += '</div></div>';
         }
@@ -214,6 +215,62 @@
             var resultsEl = document.getElementById('tool-results');
             if (resultsEl) resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+    }
+
+    /* Recommandation historique : une simple chaîne. */
+    function renderSimpleRec(text) {
+        return '<div class="flex items-start gap-2 p-3 bg-blue-50 rounded-lg">' +
+            '<svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>' +
+            '<p class="text-sm text-blue-900">' + escapeHtml(text) + '</p></div>';
+    }
+
+    /* Recommandation structurée : on affiche l'essentiel (problème, pourquoi,
+     * correction) et on replie le détail, pour ne pas noyer l'utilisateur. */
+    function renderStructuredRec(rec) {
+        var palette = {
+            critical: { bg: 'bg-red-50',    border: 'border-red-200',    text: 'text-red-800',    label: 'Critique' },
+            high:     { bg: 'bg-orange-50', border: 'border-orange-200', text: 'text-orange-800', label: 'Important' },
+            medium:   { bg: 'bg-yellow-50', border: 'border-yellow-200', text: 'text-yellow-800', label: 'Moyen' },
+            low:      { bg: 'bg-blue-50',   border: 'border-blue-200',   text: 'text-blue-800',   label: 'Mineur' }
+        };
+        var p = palette[rec.priority] || palette.medium;
+
+        var h = '<div class="rounded-lg border ' + p.border + ' ' + p.bg + ' p-4">';
+
+        h += '<div class="flex items-center gap-2 mb-2 flex-wrap">' +
+            '<span class="px-2 py-0.5 rounded-full text-xs font-semibold ' + p.text + ' bg-white/70">' + p.label + '</span>' +
+            '<span class="font-semibold text-sm text-black">' + escapeHtml(rec.title || rec.check || '') + '</span>';
+        if (rec.difficulty) {
+            h += '<span class="text-xs text-gray-600">difficulté : ' + escapeHtml(rec.difficulty) + '</span>';
+        }
+        h += '</div>';
+
+        if (rec.issue)  h += '<p class="text-sm text-gray-800 mb-1">' + escapeHtml(rec.issue) + '</p>';
+        if (rec.why)    h += '<p class="text-sm text-gray-700 mb-1"><strong>Pourquoi :</strong> ' + escapeHtml(rec.why) + '</p>';
+        if (rec.impact) h += '<p class="text-sm text-gray-700 mb-1"><strong>Impact SEO :</strong> ' + escapeHtml(rec.impact) + '</p>';
+        if (rec.fix)    h += '<p class="text-sm text-gray-900 mb-2"><strong>Correction :</strong> ' + escapeHtml(rec.fix) + '</p>';
+
+        if (rec.goodExample || rec.badExample) {
+            h += '<details class="mt-2"><summary class="text-xs font-medium text-gray-700 cursor-pointer hover:text-black">Voir un exemple</summary><div class="mt-2 space-y-2">';
+            if (rec.badExample) {
+                h += '<div><div class="text-xs text-red-700 font-medium mb-1">À éviter</div>' +
+                    '<pre class="text-xs bg-white border border-red-200 rounded p-2 overflow-x-auto"><code>' + escapeHtml(rec.badExample) + '</code></pre></div>';
+            }
+            if (rec.goodExample) {
+                h += '<div><div class="text-xs text-green-700 font-medium mb-1">Recommandé</div>' +
+                    '<pre class="text-xs bg-white border border-green-200 rounded p-2 overflow-x-auto"><code>' + escapeHtml(rec.goodExample) + '</code></pre></div>';
+            }
+            h += '</div></details>';
+        }
+
+        // rel="noopener" : sans lui, la page ouverte garde une référence
+        // window.opener vers la nôtre et peut la rediriger (tabnabbing).
+        if (rec.docs) {
+            h += '<a href="' + escapeHtml(rec.docs) + '" target="_blank" rel="noopener noreferrer" ' +
+                'class="inline-block mt-2 text-xs text-[#00AEEF] hover:underline">Documentation officielle →</a>';
+        }
+
+        return h + '</div>';
     }
 
     function renderOgPreview(og) {
