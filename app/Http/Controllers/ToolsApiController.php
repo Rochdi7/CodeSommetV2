@@ -8,6 +8,7 @@ use App\Services\MissingApiCredentialsException;
 use App\Services\SafeHttpFetcher;
 use App\Services\SafeUrlValidator;
 use App\Services\SeoApiClient;
+use App\Services\SeoRecommendations;
 use App\Services\TitleScorer;
 use App\Services\UnsafeUrlException;
 use Illuminate\Http\JsonResponse;
@@ -1993,16 +1994,19 @@ class ToolsApiController extends Controller
         return 'F';
     }
 
+    /**
+     * Recommandations structurées : pourquoi, impact, priorité, difficulté,
+     * correction, contre-exemple, exemple correct et lien officiel.
+     *
+     * L'ancienne version se contentait de préfixer le message du contrôle
+     * (`'Fix: ' . $message`), ce qui reformulait le problème sans jamais
+     * expliquer quoi faire.
+     *
+     * @param  list<array{name: string, status: string, message: string}>  $checks
+     * @return list<array<string, mixed>>
+     */
     private function generateRecommendations(array $checks): array
     {
-        $recs = [];
-        foreach ($checks as $c) {
-            if ($c['status'] === 'fail') {
-                $recs[] = 'Fix: ' . $c['message'];
-            } elseif ($c['status'] === 'warning') {
-                $recs[] = 'Improve: ' . $c['message'];
-            }
-        }
-        return $recs;
+        return SeoRecommendations::fromChecks($checks);
     }
 }
