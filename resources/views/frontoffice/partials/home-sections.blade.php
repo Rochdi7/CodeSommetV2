@@ -892,8 +892,10 @@ $comparisons = [
                             {{-- Left side: dashed border pills (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="will-change: transform;">
-                                    {{-- marquee-left uses translateX(-50%): 2 copies are the minimum for a seamless loop --}}
-                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
+                                    {{-- marquee-left uses translateX(-50%): 2 copies are the minimum for a seamless loop.
+                                         La 2e copie est purement décorative → aria-hidden pour ne pas dupliquer
+                                         la liste de technologies dans l'arbre d'accessibilité. --}}
+                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0" @if($i === 1) aria-hidden="true" @endif>
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full border-2 border-white/30"></div>
@@ -918,8 +920,10 @@ $comparisons = [
                             {{-- Right side: solid border pills with checkmarks (scrolling) --}}
                             <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
                                 <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right" style="will-change: transform;">
-                                    {{-- marquee-right uses translateX(-50%): 2 copies are the minimum for a seamless loop --}}
-                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0">
+                                    {{-- marquee-right uses translateX(-50%): 2 copies are the minimum for a seamless loop.
+                                         Idem : la 2e copie est décorative. Cette 2e liste répète en outre les
+                                         technologies déjà listées à gauche → masquée en entier aux lecteurs d'écran. --}}
+                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0" @if($i === 1) aria-hidden="true" @endif>
                                         <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
                                             <div class="relative w-5 h-5">
                                                 <div class="absolute inset-0 rounded-full bg-white flex items-center justify-center">

@@ -19,6 +19,10 @@ return Application::configure(basePath: dirname(__DIR__))
         // Baseline security headers on every response.
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
 
+        // Collapses Blade indentation out of the rendered HTML (config/minify.php
+        // scopes this to the homepage).
+        $middleware->append(\App\Http\Middleware\MinifyHtml::class);
+
         // Trust reverse-proxy headers when TRUSTED_PROXIES is set (e.g. "*" or
         // a comma-separated list) so HTTPS/host detection works behind a proxy.
         if ($proxies = env('TRUSTED_PROXIES')) {

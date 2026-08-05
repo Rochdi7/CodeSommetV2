@@ -40,9 +40,12 @@
             </div>
 
             {{-- Texte --}}
-            <h2 id="promo-modal-title" class="promo-modal__title font-heading">
+            {{-- role/aria-level plutôt qu'un <h2> : le titre nomme toujours la
+                 boîte de dialogue pour les lecteurs d'écran, sans injecter un
+                 titre marketing dans le plan de titres de chaque page. --}}
+            <p id="promo-modal-title" role="heading" aria-level="2" class="promo-modal__title font-heading">
                 Lancez votre site avec 30&nbsp;% de réduction
-            </h2>
+            </p>
             <p id="promo-modal-desc" class="promo-modal__lead font-body">
                 Site vitrine, e-commerce ou plateforme sur mesure — bénéficiez de 30&nbsp;% sur votre
                 premier projet. Devis gratuit sous 24&nbsp;h, sans engagement.
