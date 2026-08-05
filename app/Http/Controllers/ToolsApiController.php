@@ -597,59 +597,63 @@ class ToolsApiController extends Controller
         $results = [];
         $stats = ['total' => 0, 'working' => 0, 'broken' => 0, 'redirects' => 0, 'internal' => 0, 'external' => 0];
 
-        // Cap total outbound fetches to limit amplification/DoS.
-        foreach (array_slice($links, 0, 25) as $link) {
-            // Resolve relative URLs
+        // Résolution des URL relatives et plafond du nombre de requêtes
+        // sortantes (anti-amplification).
+        $toCheck = [];
+        foreach ($links as $link) {
+            if (count($toCheck) >= 25) {
+                break;
+            }
             if (str_starts_with($link, '/')) {
                 $link = $baseScheme . '://' . $baseDomain . $link;
-            } elseif (!preg_match('#^https?://#', $link)) {
+            } elseif (! preg_match('#^https?://#', $link)) {
+                continue;
+            }
+            $toCheck[$link] = ($parsed = parse_url($link)) && ($parsed['host'] ?? '') === $baseDomain
+                ? 'internal'
+                : 'external';
+        }
+
+        // Vérification en parallèle : ces requêtes sont dominées par la latence
+        // réseau, les enchaîner en série coûtait ~29 s pour 25 liens. Chaque
+        // URL reste validée individuellement avant l'envoi (cf. multiHead).
+        $responses = $this->fetcher->multiHead(array_keys($toCheck), 8);
+
+        foreach ($toCheck as $link => $type) {
+            $r = $responses[$link] ?? null;
+
+            // Cible bloquée : retirée silencieusement des statistiques, comme
+            // auparavant, pour ne pas révéler quels hôtes internes existent.
+            if ($r === null || $r['error'] === 'blocked') {
                 continue;
             }
 
-            $parsed = parse_url($link);
-            $isInternal = ($parsed['host'] ?? '') === $baseDomain;
-            $type = $isInternal ? 'internal' : 'external';
             $stats[$type]++;
             $stats['total']++;
+            $code = $r['status'];
 
-            try {
-                // Validate each discovered link before requesting it, so a page
-                // cannot make us probe internal/loopback/metadata addresses.
-                $this->urlValidator->validate($link);
-
-                $start = microtime(true);
-                $resp = $this->fetcher->get($link, 8);
-                $time = round((microtime(true) - $start) * 1000);
-                $code = $resp->status();
-
-                if ($code >= 200 && $code < 300) {
-                    $status = 'working';
-                    $stats['working']++;
-                } elseif ($code >= 300 && $code < 400) {
-                    $status = 'redirect';
-                    $stats['redirects']++;
-                } else {
-                    $status = 'broken';
-                    $stats['broken']++;
-                }
-
-                $results[] = [
-                    'url' => $link, 'status' => $status, 'statusCode' => $code,
-                    'type' => $type, 'responseTime' => $time,
-                    'redirectUrl' => $resp->header('Location'),
-                ];
-            } catch (UnsafeUrlException $e) {
-                // Skip disallowed targets silently — do not report them as broken
-                // and do not reveal internal reachability.
-                $stats[$type]--;
-                $stats['total']--;
-            } catch (\Throwable $e) {
+            if ($code >= 200 && $code < 300) {
+                $status = 'working';
+                $stats['working']++;
+            } elseif ($code >= 300 && $code < 400) {
+                $status = 'redirect';
+                $stats['redirects']++;
+            } elseif ($code === 0) {
+                $status = 'error';
                 $stats['broken']++;
-                $results[] = [
-                    'url' => $link, 'status' => 'error', 'statusCode' => 0,
-                    'type' => $type,
-                ];
+            } else {
+                $status = 'broken';
+                $stats['broken']++;
             }
+
+            $results[] = [
+                'url' => $link,
+                'status' => $status,
+                'statusCode' => $code,
+                'type' => $type,
+                'responseTime' => $r['timeMs'],
+                'redirectUrl' => $r['location'],
+            ];
         }
 
         return response()->json([
