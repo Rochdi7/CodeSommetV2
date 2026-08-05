@@ -42,7 +42,7 @@
 
                     {{-- Villes --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.locations') }}</h3>
+                        <p class="text-base font-medium text-[#E0E0E0]">{{ __('footer.locations') }}</p>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('location', 'casablanca') }}">Casablanca</a></li>
@@ -61,7 +61,7 @@
 
                     {{-- Industries --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.industries') }}</h3>
+                        <p class="text-base font-medium text-[#E0E0E0]">{{ __('footer.industries') }}</p>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('service', 'education-website-development') }}">{{ __('footer.education_edtech') }}</a>
@@ -88,7 +88,7 @@
 
                     {{-- Popular Tools --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.popular_tools') }}</h3>
+                        <p class="text-base font-medium text-[#E0E0E0]">{{ __('footer.popular_tools') }}</p>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('tool', 'website-analyzer') }}">{{ __('footer.website_analyzer') }}</a>
@@ -115,7 +115,7 @@
 
                     {{-- Légal --}}
                     <div class="space-y-4">
-                        <h3 class="text-base font-medium text-[#E0E0E0]">{{ __('footer.legal') }}</h3>
+                        <p class="text-base font-medium text-[#E0E0E0]">{{ __('footer.legal') }}</p>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('blog') }}">Blog</a></li>

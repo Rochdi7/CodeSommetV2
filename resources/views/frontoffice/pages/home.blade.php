@@ -5,6 +5,7 @@
 @section('meta_keywords', __('home.meta_keywords'))
 @section('og_title', __('home.og_title'))
 @section('og_description', __('home.og_description'))
+@section('twitter_title', __('home.og_title'))
 @section('twitter_description', __('home.twitter_description'))
 
 @section('content')
@@ -121,9 +122,9 @@
                         </button><a
                             class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white border-2 border-[#00AEEF] hover:bg-[#00AEEF] hover:text-white transition-all w-full sm:w-auto"
                             href="{{ route('tool', 'website-analyzer') }}"><span
-                                class="text-sm md:text-base font-medium text-[#0071BC] group-hover:text-white">Analyser
-                                Votre
-                                Site Web</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                class="text-sm md:text-base font-medium text-[#0071BC] group-hover:text-white">Audit
+                                Gratuit
+                                de Votre Site</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-arrow-right w-4 h-4 text-[#0071BC] group-hover:text-white"
@@ -2189,7 +2190,7 @@
                     class="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                     <span
                         class="inline-flex items-center gap-2 text-white text-sm md:text-base font-semibold tracking-wide uppercase">
-                        Voir l'offre
+                        Maintenance et support de site web
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
