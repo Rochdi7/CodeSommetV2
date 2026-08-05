@@ -1118,7 +1118,10 @@
             '<div class="feature-tooltip-content">' +
             '<div class="feature-tooltip-header">' +
             '<div class="feature-tooltip-icon"></div>' +
-            '<h3 class="feature-tooltip-title"></h3>' +
+            // Libellé d'infobulle au survol, pas un titre de section : un <div>
+            // évite d'injecter un H3 vide dans le plan de titres de la page.
+            // role/aria-level conservent l'annonce pour les lecteurs d'écran.
+            '<div class="feature-tooltip-title" role="heading" aria-level="3"></div>' +
             '</div>' +
             '<p class="feature-tooltip-desc"></p>' +
             '<div class="feature-tooltip-line"></div>' +

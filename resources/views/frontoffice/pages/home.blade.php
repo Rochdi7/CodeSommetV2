@@ -67,7 +67,7 @@
                             class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('home.ml_524') }}</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4"><a target="_blank"
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4"><button type="button" target="_blank"
                             rel="noopener noreferrer"
                             class="md:hidden group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto"
                             style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
@@ -79,7 +79,7 @@
                       rgba(0, 0, 0, 0.04) 0px 82.4287px 82.4287px -3.28125px,
                       rgba(0, 0, 0, 0.02) 0px 150px 150px -3.75px"
                             data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
-                            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#">
+                            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                             <div class="shine-wrapper-hero">
                                 <div class="shine-element-hero"></div>
                             </div>
@@ -94,7 +94,7 @@
                                 </svg></div><span
                                 class="relative z-10 text-sm md:text-base font-medium tracking-tight text-white"
                                 style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('home.ml_525') }}</span>
-                        </a><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
+                        </button><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
                             data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
                             class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto"
                             style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
@@ -770,7 +770,7 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_2') }}</h3>
+                        <p class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_2') }}</p>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('home.ml_531') }}</p>
                     </div>
                 </div>
@@ -802,7 +802,7 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_3') }}</h3>
+                        <p class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_3') }}</p>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('home.ml_535') }}</p>
                     </div>
                 </div>
@@ -837,7 +837,7 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_121') }}</h3>
+                        <p class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_121') }}</p>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('home.text_6') }}</p>
                     </div>
                 </div>

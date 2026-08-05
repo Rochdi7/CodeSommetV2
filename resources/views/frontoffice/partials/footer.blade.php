@@ -24,13 +24,19 @@
 
                 {{-- Bloc marque --}}
                 <div class="space-y-6 mb-12 md:mb-0 md:max-w-sm flex-shrink-0">
+                    {{-- Logo de pied de page : même destination que le logo d'en-tête.
+                         L'alt de l'image est vidé (l'image est décorative ici, le texte
+                         « CodeSommet » juste à côté porte déjà le nom) et un libellé
+                         sr-only distingue ce lien de celui de l'en-tête pour éviter deux
+                         ancres internes au libellé identique. --}}
                     <a class="inline-flex items-center gap-1" href="{{ route('home') }}">
                         <div class="w-10 h-10">
-                            <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet" width="220" height="150"
+                            <img src="{{ asset('logo-white.svg') }}" alt="" aria-hidden="true" width="220" height="150"
                                 class="w-full h-full object-contain" />
                         </div>
                         <span style="font-family:var(--font-heading)"
                             class="text-2xl font-bold text-white">CodeSommet</span>
+                        <span class="sr-only">— retour à l'accueil</span>
                     </a>
                     <p class="text-[#A0A0A0] leading-relaxed text-sm">
                         {{ __('footer.description') }}
@@ -118,7 +124,7 @@
                         <p class="text-base font-medium text-[#E0E0E0]">{{ __('footer.legal') }}</p>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
-                                    href="{{ route('blog') }}">Blog</a></li>
+                                    href="{{ route('blog') }}">Articles &amp; ressources</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('get-quote') }}">{{ __('footer.request_quote') }}</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
@@ -142,7 +148,7 @@
             <div class="flex justify-center md:justify-end items-center mb-32 md:mb-0">
                 <div class="flex items-center gap-3">
                     {{-- LinkedIn --}}
-                    <a aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+                    <a target="_blank" rel="noopener noreferrer"
                         class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
                         href="https://www.linkedin.com/in/codesommet">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -154,10 +160,11 @@
                             <rect width="4" height="12" x="2" y="9"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
+                    <span class="sr-only">CodeSommet sur LinkedIn</span>
                     </a>
 
                     {{-- Instagram --}}
-                    <a aria-label="Instagram" target="_blank" rel="noopener noreferrer"
+                    <a target="_blank" rel="noopener noreferrer"
                         class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
                         href="https://www.instagram.com/code_sommet/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -168,20 +175,22 @@
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                         </svg>
+                    <span class="sr-only">CodeSommet sur Instagram</span>
                     </a>
 
                     {{-- Facebook --}}
-                    <a aria-label="Facebook" target="_blank" rel="noopener noreferrer"
+                    <a target="_blank" rel="noopener noreferrer"
                         class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
                         href="https://www.facebook.com/codesommetagency">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 text-white">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                         </svg>
+                    <span class="sr-only">CodeSommet sur Facebook</span>
                     </a>
 
                     {{-- YouTube --}}
-                    <a aria-label="YouTube" target="_blank" rel="noopener noreferrer"
+                    <a target="_blank" rel="noopener noreferrer"
                         class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200"
                         href="https://www.youtube.com/@codesommet">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
@@ -190,6 +199,7 @@
                                 d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
                             </path>
                         </svg>
+                    <span class="sr-only">CodeSommet sur YouTube</span>
                     </a>
                 </div>
             </div>

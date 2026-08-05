@@ -66,7 +66,7 @@
 
             {{-- CTA --}}
             <a href="{{ route('get-quote') }}" class="promo-offer__cta promo-modal__cta">
-                Obtenir mon devis
+                Profiter des 30 % de réduction
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
