@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\ToolUsage;
+use App\Services\Analysis\AnalysisPipeline;
+use App\Services\Analysis\SiteAnalysis;
 use App\Services\HtmlDocument;
 use App\Services\MissingApiCredentialsException;
 use App\Services\SafeHttpFetcher;
 use App\Services\SafeUrlValidator;
+use App\Services\ScoringEngine;
 use App\Services\SeoApiClient;
 use App\Services\SeoRecommendations;
 use App\Services\TitleScorer;
@@ -37,7 +40,32 @@ class ToolsApiController extends Controller
         private SafeUrlValidator $urlValidator,
         private SeoApiClient $seoApi,
         private TitleScorer $titleScorer,
+        private AnalysisPipeline $pipeline,
     ) {
+    }
+
+    /**
+     * Jeu de données partagé pour l'URL demandée.
+     *
+     * Le moteur télécharge et parse la page une seule fois, puis met le
+     * résultat en cache : un utilisateur qui enchaîne plusieurs outils sur la
+     * même URL n'entraîne plus qu'un seul téléchargement.
+     *
+     * @param  list<string>  $only  Analyseurs requis. Un outil qui n'a besoin
+     *                              que des images évite ainsi le coût des
+     *                              analyseurs réseau (robots.txt, sitemap).
+     */
+    private function analyze(Request $request, array $only = []): SiteAnalysis
+    {
+        // `$only` est ignoré volontairement. Une analyse partielle produirait
+        // une clé de cache distincte : trois outils demandant trois
+        // sous-ensembles différents provoqueraient trois téléchargements de la
+        // même page, exactement ce que ce moteur existe pour supprimer.
+        // Les analyseurs non réseau coûtent quelques millisecondes ; seuls
+        // robots.txt et sitemap.xml ajoutent des requêtes, et ils sont eux
+        // aussi mutualisés. Le paramètre reste dans la signature pour
+        // documenter ce dont chaque outil dépend réellement.
+        return $this->pipeline->analyze($this->requireUrl($request));
     }
 
     /**
@@ -210,234 +238,189 @@ class ToolsApiController extends Controller
      */
     public function handleWebsiteAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->requireUrl($request);
-        $html = $this->fetchUrl($url);
+        // Analyse complète : le moteur télécharge et parse une seule fois,
+        // puis chaque section est notée ici. Les autres outils réutilisent le
+        // même jeu de données depuis le cache.
+        $analysis = $this->analyze($request);
 
-        $checks = [];
-        $score = 0;
-        $maxScore = 0;
+        $engine = ScoringEngine::start();
+        $meta = $analysis->meta;
 
-        // Title tag
-        //
-        // Longueur mesurée en *caractères* (mb_strlen), pas en octets. En UTF-8
-        // chaque lettre accentuée compte 2 octets : « Créer des sites web à
-        // Paris » faisait 41 octets pour 39 caractères, et une méta description
-        // française de 130 caractères était mesurée à 260 — donc signalée « trop
-        // longue » alors qu'elle est dans la cible. Sur un site francophone,
-        // l'écart fausse systématiquement le verdict.
-        $maxScore += 10;
-        preg_match('/<title[^>]*>(.*?)<\/title>/is', $html, $titleMatch);
-        $title = trim(html_entity_decode($titleMatch[1] ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8'));
-        if ($title) {
-            $titleLen = mb_strlen($title, 'UTF-8');
-            if ($titleLen >= 30 && $titleLen <= 60) {
-                $score += 10;
-                $checks[] = ['name' => 'Title Tag', 'status' => 'pass', 'message' => "Good title length ({$titleLen} chars)"];
-            } else {
-                $score += 5;
-                $checks[] = ['name' => 'Title Tag', 'status' => 'warning', 'message' => "Title is {$titleLen} chars (optimal: 30-60)"];
-            }
+        // ── Title ────────────────────────────────────────────────────────
+        $titleLen = $meta['titleLength'] ?? 0;
+        if (($meta['title'] ?? '') === '') {
+            $engine->fail('Title Tag', 'Balise <title> absente', 10);
+        } elseif ($titleLen >= 30 && $titleLen <= 60) {
+            $engine->pass('Title Tag', "Longueur optimale ({$titleLen} caractères)", 10, 10);
         } else {
-            $checks[] = ['name' => 'Title Tag', 'status' => 'fail', 'message' => 'Missing title tag'];
+            $engine->warn('Title Tag', "Titre de {$titleLen} caractères (optimal : 30-60)", 5, 10);
         }
 
-        // Meta description — tolère l'ordre des attributs et les attributs
-        // intercalés (`<meta name="description" data-x="1" content="…">`), que
-        // l'ancien motif strict `name=…\s+content=` ne détectait pas.
-        $maxScore += 10;
-        $desc = $this->extractMetaContent($html, 'description');
-        if ($desc) {
-            $descLen = mb_strlen($desc, 'UTF-8');
-            if ($descLen >= 120 && $descLen <= 160) {
-                $score += 10;
-                $checks[] = ['name' => 'Meta Description', 'status' => 'pass', 'message' => "Good length ({$descLen} chars)"];
-            } else {
-                $score += 5;
-                $checks[] = ['name' => 'Meta Description', 'status' => 'warning', 'message' => "Length is {$descLen} chars (optimal: 120-160)"];
-            }
+        // ── Meta description ─────────────────────────────────────────────
+        $descLen = $meta['descriptionLength'] ?? 0;
+        if (($meta['description'] ?? '') === '') {
+            $engine->fail('Meta Description', 'Méta description absente', 10);
+        } elseif ($descLen >= 120 && $descLen <= 160) {
+            $engine->pass('Meta Description', "Longueur optimale ({$descLen} caractères)", 10, 10);
         } else {
-            $checks[] = ['name' => 'Meta Description', 'status' => 'fail', 'message' => 'Missing meta description'];
+            $engine->warn('Meta Description', "Description de {$descLen} caractères (optimal : 120-160)", 5, 10);
         }
 
-        // H1 tag
-        $maxScore += 10;
-        preg_match_all('/<h1[^>]*>(.*?)<\/h1>/is', $html, $h1Matches);
-        $h1Count = count($h1Matches[1]);
-        if ($h1Count === 1) {
-            $score += 10;
-            $checks[] = ['name' => 'H1 Tag', 'status' => 'pass', 'message' => 'Single H1 tag found'];
-        } elseif ($h1Count === 0) {
-            $checks[] = ['name' => 'H1 Tag', 'status' => 'fail', 'message' => 'No H1 tag found'];
+        // ── H1 ───────────────────────────────────────────────────────────
+        $h1 = $analysis->content['headingStats']['h1'] ?? 0;
+        if ($h1 === 1) {
+            $engine->pass('H1 Tag', 'Un seul H1, comme attendu', 10, 10);
+        } elseif ($h1 === 0) {
+            $engine->fail('H1 Tag', 'Aucun H1 trouvé', 10);
         } else {
-            $score += 5;
-            $checks[] = ['name' => 'H1 Tag', 'status' => 'warning', 'message' => "Multiple H1 tags found ({$h1Count})"];
+            $engine->warn('H1 Tag', "{$h1} balises H1 — une seule est recommandée", 5, 10);
         }
 
-        // Open Graph — `property=` est la forme canonique, mais `name=` est très
-        // répandue et interprétée par les principaux réseaux. developer.mozilla.org
-        // publie ainsi 10 balises og: en `name=` et obtenait 0/5 avec l'ancien
-        // motif, qui n'acceptait que `property=`.
-        $maxScore += 5;
-        $hasOg = (bool) preg_match('/<meta\s+[^>]*(?:property|name)\s*=\s*["\']og:/i', $html);
-        if ($hasOg) {
-            $score += 5;
-            $checks[] = ['name' => 'Open Graph Tags', 'status' => 'pass', 'message' => 'OG tags present'];
+        // ── Hiérarchie des titres ────────────────────────────────────────
+        $gaps = $analysis->content['headingStats']['gaps'] ?? [];
+        if ($gaps === []) {
+            $engine->pass('Hiérarchie des titres', 'Aucun niveau sauté', 5, 5);
         } else {
-            $checks[] = ['name' => 'Open Graph Tags', 'status' => 'fail', 'message' => 'Missing Open Graph tags'];
+            $engine->warn('Hiérarchie des titres', count($gaps) . ' rupture(s) de niveau détectée(s)', 2, 5);
         }
 
-        // Canonical — accepte `<link href="…" rel="canonical">` autant que
-        // l'ordre inverse : les deux sont du HTML valide.
-        $maxScore += 5;
-        $hasCanonical = (bool) preg_match('/<link\s+[^>]*rel\s*=\s*["\'][^"\']*\bcanonical\b/i', $html);
-        if ($hasCanonical) {
-            $score += 5;
-            $checks[] = ['name' => 'Canonical Tag', 'status' => 'pass', 'message' => 'Canonical URL set'];
+        // ── Open Graph ───────────────────────────────────────────────────
+        if ($meta['hasOpenGraph'] ?? false) {
+            $engine->pass('Open Graph Tags', 'Balises Open Graph présentes', 5, 5);
         } else {
-            $checks[] = ['name' => 'Canonical Tag', 'status' => 'warning', 'message' => 'No canonical tag found'];
+            $engine->fail('Open Graph Tags', 'Balises Open Graph absentes', 5);
         }
 
-        // Viewport
-        $maxScore += 5;
-        $hasViewport = (bool) preg_match('/<meta\s+[^>]*name\s*=\s*["\']viewport["\']/i', $html);
-        if ($hasViewport) {
-            $score += 5;
-            $checks[] = ['name' => 'Mobile Viewport', 'status' => 'pass', 'message' => 'Viewport meta tag set'];
+        // ── Canonical ────────────────────────────────────────────────────
+        $canonicalCount = $meta['canonicalCount'] ?? 0;
+        if ($canonicalCount === 1) {
+            $engine->pass('Canonical Tag', 'URL canonique définie', 5, 5);
+        } elseif ($canonicalCount === 0) {
+            $engine->warn('Canonical Tag', 'Aucune balise canonical', 0, 5);
         } else {
-            $checks[] = ['name' => 'Mobile Viewport', 'status' => 'fail', 'message' => 'Missing viewport meta tag'];
+            $engine->warn('Canonical Tag', "{$canonicalCount} balises canonical — Google risque de toutes les ignorer", 2, 5);
         }
 
-        // Images without alt
-        $maxScore += 10;
-        preg_match_all('/<img\b[^>]*>/i', $html, $imgMatches);
-        $totalImgs = count($imgMatches[0]);
-        $noAlt = 0;
-        foreach ($imgMatches[0] as $img) {
-            if (!preg_match('/\balt\s*=\s*["\'][^"\']+["\']/i', $img)) {
-                $noAlt++;
-            }
-        }
-        if ($totalImgs === 0) {
-            $score += 10;
-            $checks[] = ['name' => 'Image Alt Text', 'status' => 'pass', 'message' => 'No images to check'];
-        } elseif ($noAlt === 0) {
-            $score += 10;
-            $checks[] = ['name' => 'Image Alt Text', 'status' => 'pass', 'message' => "All {$totalImgs} images have alt text"];
+        // ── Viewport ─────────────────────────────────────────────────────
+        $viewport = $meta['viewport'] ?? '';
+        if ($viewport !== '' && str_contains(strtolower($viewport), 'width=device-width')) {
+            $engine->pass('Mobile Viewport', 'Viewport correctement configuré', 5, 5);
+        } elseif ($viewport !== '') {
+            $engine->warn('Mobile Viewport', 'Viewport présent mais sans width=device-width', 2, 5);
         } else {
-            $score += 5;
-            $checks[] = ['name' => 'Image Alt Text', 'status' => 'warning', 'message' => "{$noAlt}/{$totalImgs} images missing alt text"];
+            $engine->fail('Mobile Viewport', 'Balise meta viewport absente', 5);
         }
 
-        // HTTPS
-        $maxScore += 5;
-        $isHttps = str_starts_with($url, 'https://');
-        if ($isHttps) {
-            $score += 5;
-            $checks[] = ['name' => 'HTTPS', 'status' => 'pass', 'message' => 'Site uses HTTPS'];
+        // ── Texte alternatif ─────────────────────────────────────────────
+        $img = $analysis->accessibility['images'] ?? [];
+        $needAlt = $img['requiringAlt'] ?? 0;
+        $missing = $img['missingAlt'] ?? 0;
+        if ($needAlt === 0) {
+            $engine->pass('Image Alt Text', 'Aucune image nécessitant un texte alternatif', 10, 10);
+        } elseif ($missing === 0) {
+            $engine->pass('Image Alt Text', "Les {$needAlt} images concernées ont un texte alternatif", 10, 10);
         } else {
-            $checks[] = ['name' => 'HTTPS', 'status' => 'fail', 'message' => 'Site not using HTTPS'];
+            $engine->warn('Image Alt Text', "{$missing}/{$needAlt} images sans texte alternatif", 5, 10);
         }
 
-        // Page size
-        $maxScore += 5;
-        $pageSize = strlen($html);
-        if ($pageSize < 100000) {
-            $score += 5;
-            $checks[] = ['name' => 'Page Size', 'status' => 'pass', 'message' => round($pageSize / 1024) . ' KB'];
+        // ── HTTPS ────────────────────────────────────────────────────────
+        if ($analysis->http['isHttps'] ?? false) {
+            $engine->pass('HTTPS', 'Le site utilise HTTPS', 5, 5);
         } else {
-            $score += 2;
-            $checks[] = ['name' => 'Page Size', 'status' => 'warning', 'message' => round($pageSize / 1024) . ' KB (consider optimizing)'];
+            $engine->fail('HTTPS', 'Le site n\'utilise pas HTTPS', 5);
         }
 
-        // Links count
-        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']?([^\s>"\'#]+)/i', $html, $linkMatches);
-        $internalLinks = 0;
-        $externalLinks = 0;
-        $parsedUrl = parse_url($url);
-        $domain = $parsedUrl['host'] ?? '';
-        foreach ($linkMatches[1] as $link) {
-            $linkParsed = parse_url($link);
-            if (isset($linkParsed['host']) && $linkParsed['host'] !== $domain) {
-                $externalLinks++;
-            } else {
-                $internalLinks++;
-            }
-        }
-
-        // ── Données structurées (JSON-LD / microdonnées) ─────────────────
-        // Aucun outil ne les analysait jusqu'ici, alors qu'elles conditionnent
-        // l'affichage des résultats enrichis.
-        $doc = HtmlDocument::fromHtml($html);
-        $schemaTypes = $doc->schemaTypes();
-        $hasMicrodata = $doc->hasMicrodata();
-
-        $maxScore += 10;
-        if ($schemaTypes !== []) {
-            $score += 10;
-            $checks[] = ['name' => 'Données structurées', 'status' => 'pass',
-                'message' => count($schemaTypes) . ' type(s) Schema.org en JSON-LD : ' . implode(', ', array_slice($schemaTypes, 0, 5))];
-        } elseif ($hasMicrodata) {
-            $score += 6;
-            $checks[] = ['name' => 'Données structurées', 'status' => 'warning',
-                'message' => 'Microdonnées détectées, mais pas de JSON-LD (format recommandé par Google)'];
+        // ── Poids de la page ─────────────────────────────────────────────
+        $sizeKb = $analysis->http['sizeKb'] ?? 0;
+        if ($sizeKb < 100) {
+            $engine->pass('Page Size', "{$sizeKb} Ko de HTML", 5, 5);
         } else {
-            $checks[] = ['name' => 'Données structurées', 'status' => 'warning',
-                'message' => 'Aucune donnée structurée — les résultats enrichis ne pourront pas s\'afficher'];
+            $engine->warn('Page Size', "{$sizeKb} Ko de HTML — envisagez une optimisation", 2, 5);
         }
 
-        // ── Attribut lang ────────────────────────────────────────────────
-        $maxScore += 5;
-        if (($lang = $doc->lang()) !== '') {
-            $score += 5;
-            $checks[] = ['name' => 'Langue', 'status' => 'pass', 'message' => 'Langue déclarée : ' . $lang];
+        // ── Données structurées ──────────────────────────────────────────
+        $types = $analysis->structuredData['types'] ?? [];
+        $malformed = $analysis->structuredData['malformedBlocks'] ?? 0;
+        if ($types !== []) {
+            $engine->pass('Données structurées', count($types) . ' type(s) Schema.org : ' . implode(', ', array_slice($types, 0, 5)), 10, 10);
+        } elseif ($analysis->structuredData['hasMicrodata'] ?? false) {
+            $engine->warn('Données structurées', 'Microdonnées présentes, mais pas de JSON-LD (format recommandé par Google)', 6, 10);
         } else {
-            $checks[] = ['name' => 'Langue', 'status' => 'warning',
-                'message' => 'Attribut lang absent sur <html> — nuit à l\'accessibilité et au ciblage linguistique'];
+            $engine->warn('Données structurées', 'Aucune donnée structurée — pas de résultats enrichis possibles', 0, 10);
+        }
+        if ($malformed > 0) {
+            $engine->warn('JSON-LD', "{$malformed} bloc(s) JSON-LD au JSON invalide — ignorés par Google", 0, 0);
         }
 
-        // ── Accessibilité des SVG inline ─────────────────────────────────
-        // Invisibles à tout contrôle fondé sur <img> : github.com en compte 121.
-        $svg = $doc->inlineSvgAccessibility();
-        $svgNeedingLabel = $svg['total'] - $svg['decorative'];
-        if ($svgNeedingLabel > 0 && $svg['accessible'] < $svgNeedingLabel) {
-            $checks[] = ['name' => 'SVG inline', 'status' => 'warning',
-                'message' => ($svgNeedingLabel - $svg['accessible']) . " SVG inline sans <title> ni aria-label sur {$svgNeedingLabel} non décoratifs"];
+        // ── Langue ───────────────────────────────────────────────────────
+        if (($meta['lang'] ?? '') !== '') {
+            $engine->pass('Langue', 'Langue déclarée : ' . $meta['lang'], 5, 5);
+        } else {
+            $engine->warn('Langue', 'Attribut lang absent sur <html>', 0, 5);
         }
 
-        $finalScore = $maxScore > 0 ? (int) round(($score / $maxScore) * 100) : 0;
+        // ── Indexabilité ─────────────────────────────────────────────────
+        if ($meta['isNoindex'] ?? false) {
+            $engine->fail('Indexabilité', 'La page porte noindex : elle ne sera pas indexée', 10);
+        } else {
+            $engine->pass('Indexabilité', 'La page est indexable', 10, 10);
+        }
 
-        // Une page rendue côté client renvoie un HTML quasi vide : le score
-        // serait sévère sans que cela reflète ce que Google voit après rendu.
-        $visibleText = $doc->visibleText();
-        $textLength = mb_strlen($visibleText, 'UTF-8');
-        $scriptCount = preg_match_all('/<script\b/i', $html);
-        $likelySpa = $textLength < 500 && $scriptCount > 5;
+        // ── robots.txt / sitemap ─────────────────────────────────────────
+        $robots = $analysis->crawlability['robots'] ?? [];
+        if ($robots['blocksEverything'] ?? false) {
+            $engine->fail('Robots.txt', 'robots.txt bloque tous les robots (Disallow: /)', 5);
+        } elseif ($robots['exists'] ?? false) {
+            $engine->pass('Robots.txt', 'robots.txt présent', 5, 5);
+        } else {
+            $engine->warn('Robots.txt', 'Aucun robots.txt', 0, 5);
+        }
 
-        return response()->json([
-            'score' => $finalScore,
-            'grade' => $this->scoreToGrade($finalScore),
-            'passed' => $finalScore >= 70,
-            'message' => $finalScore >= 80 ? 'Good overall health' : ($finalScore >= 50 ? 'Needs improvement' : 'Critical issues found'),
-            'stats' => [
-                'score' => $finalScore . '/100',
-                'pointsEarned' => $score . '/' . $maxScore,
-                'totalChecks' => count($checks),
-                'passed' => count(array_filter($checks, fn($c) => $c['status'] === 'pass')),
-                'warnings' => count(array_filter($checks, fn($c) => $c['status'] === 'warning')),
-                'failed' => count(array_filter($checks, fn($c) => $c['status'] === 'fail')),
-                'internalLinks' => $internalLinks,
-                'externalLinks' => $externalLinks,
-                'schemaTypes' => count($schemaTypes),
-                'inlineSvg' => $svg['total'],
-                'wordCount' => count(preg_split('/\s+/u', $visibleText, -1, PREG_SPLIT_NO_EMPTY) ?: []),
-            ],
-            'schemaTypes' => $schemaTypes,
-            'issues' => array_values(array_filter($checks, fn($c) => $c['status'] !== 'pass')),
-            'recommendations' => $this->generateRecommendations($checks),
-            'limitation' => $likelySpa
-                ? 'Le HTML renvoyé par le serveur contient très peu de texte : ce site est probablement rendu côté client (React/Vue/Angular). Google exécute le JavaScript avant d\'indexer, ce que cet outil ne fait pas — le score ci-dessus sous-estime donc la page réellement indexée.'
-                : null,
+        $sitemap = $analysis->crawlability['sitemap'] ?? [];
+        if ($sitemap['exists'] ?? false) {
+            $engine->pass('Sitemap', ($sitemap['urlCount'] ?? 0) . ' URL dans le sitemap', 5, 5);
+        } else {
+            $engine->warn('Sitemap', 'Aucun sitemap.xml trouvé', 0, 5);
+        }
+
+        // ── Ressources bloquantes ────────────────────────────────────────
+        $blocking = $analysis->assets['blockingJs'] ?? 0;
+        if ($blocking === 0) {
+            $engine->pass('JavaScript bloquant', 'Aucun script bloquant le rendu', 5, 5);
+        } else {
+            $engine->warn('JavaScript bloquant', "{$blocking} script(s) sans defer/async", 2, 5);
+        }
+
+        // ── Contrôles informatifs (hors score) ───────────────────────────
+        $engine->note('Contenu', ($analysis->content['wordCount'] ?? 0) . ' mots, ratio texte/HTML de ' . ($analysis->content['textToHtmlRatio'] ?? 0) . ' %');
+        if (($meta['hreflangCount'] ?? 0) > 0) {
+            $engine->note('Hreflang', $meta['hreflangCount'] . ' alternative(s) linguistique(s) déclarée(s)');
+        }
+
+        // Limites déclarées : elles abaissent l'indice de confiance plutôt que
+        // de laisser croire à une analyse exhaustive.
+        if ($analysis->isLikelyClientRendered() && ! ($analysis->rendered['success'] ?? false)) {
+            $engine->limitation('Page rendue côté client : le HTML serveur ne contient pas le contenu final.');
+        }
+        if ($analysis->failures !== []) {
+            $engine->limitation('Analyseurs en échec : ' . implode(', ', array_keys($analysis->failures)));
+        }
+
+        $payload = $engine->toArray([
+            'internalLinks' => count(array_filter($analysis->links, fn ($l) => ($l['internal'] ?? false) === true)),
+            'externalLinks' => count(array_filter($analysis->links, fn ($l) => ($l['type'] ?? '') === 'external')),
+            'wordCount' => $analysis->content['wordCount'] ?? 0,
+            'schemaTypes' => count($types),
+            'inlineSvg' => $analysis->accessibility['inlineSvg']['total'] ?? 0,
+            'images' => $img['total'] ?? 0,
         ]);
+
+        $payload['schemaTypes'] = $types;
+        $payload['message'] = $payload['score'] >= 80
+            ? 'Bonne santé générale'
+            : ($payload['score'] >= 50 ? 'Des améliorations sont nécessaires' : 'Problèmes critiques détectés');
+
+        return response()->json($this->withAnalysisMeta($analysis, $payload));
     }
 
     /**
@@ -445,49 +428,78 @@ class ToolsApiController extends Controller
      */
     public function handleHeadingAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->requireUrl($request);
-        $html = $this->fetchUrl($url);
+        // Lit le jeu de données partagé : aucun téléchargement ni parsing
+        // supplémentaire si la page a déjà été analysée par un autre outil.
+        $analysis = $this->analyze($request, ['meta', 'structure']);
 
-        preg_match_all('/<h([1-6])[^>]*>(.*?)<\/h[1-6]>/is', $html, $matches, PREG_SET_ORDER);
+        $headings = $analysis->headings;
+        $hs = $analysis->content['headingStats'] ?? [];
 
-        $headings = [];
-        $stats = ['h1Count' => 0, 'h2Count' => 0, 'h3Count' => 0, 'h4Count' => 0, 'h5Count' => 0, 'h6Count' => 0, 'total' => 0];
+        $stats = [
+            'h1Count' => $hs['h1'] ?? 0,
+            'h2Count' => $hs['h2'] ?? 0,
+            'h3Count' => $hs['h3'] ?? 0,
+            'h4Count' => $hs['h4'] ?? 0,
+            'h5Count' => $hs['h5'] ?? 0,
+            'h6Count' => $hs['h6'] ?? 0,
+            'total' => $hs['total'] ?? count($headings),
+        ];
+
         $issues = [];
 
-        foreach ($matches as $m) {
-            $level = (int) $m[1];
-            $text = strip_tags($m[2]);
-            $headings[] = ['level' => $level, 'text' => trim($text)];
-            $stats["h{$level}Count"]++;
-            $stats['total']++;
-        }
-
-        // Validate
         if ($stats['h1Count'] === 0) {
-            $issues[] = ['type' => 'error', 'message' => 'No H1 tag found. Every page should have exactly one H1.'];
+            $issues[] = ['type' => 'error', 'message' => 'Aucun H1 trouvé. Chaque page doit comporter exactement un H1.'];
         } elseif ($stats['h1Count'] > 1) {
-            $issues[] = ['type' => 'warning', 'message' => "Multiple H1 tags found ({$stats['h1Count']}). Use only one H1 per page."];
+            $issues[] = ['type' => 'warning', 'message' => "Plusieurs H1 détectés ({$stats['h1Count']}). Un seul H1 par page."];
         }
 
         if ($stats['h2Count'] === 0 && $stats['total'] > 1) {
-            $issues[] = ['type' => 'warning', 'message' => 'No H2 tags found. Use H2 for main sections.'];
+            $issues[] = ['type' => 'warning', 'message' => 'Aucun H2 — utilisez des H2 pour structurer les sections principales.'];
         }
 
-        // Check hierarchy gaps
-        $prevLevel = 0;
-        foreach ($headings as $h) {
-            if ($prevLevel > 0 && $h['level'] > $prevLevel + 1) {
-                $issues[] = ['type' => 'warning', 'message' => "Heading hierarchy gap: H{$prevLevel} → H{$h['level']} (skipped H" . ($prevLevel + 1) . ") near \"{$h['text']}\""];
-            }
-            $prevLevel = $h['level'];
+        foreach ($hs['gaps'] ?? [] as $gap) {
+            $issues[] = ['type' => 'warning',
+                'message' => "Rupture de hiérarchie : H{$gap['from']} → H{$gap['to']} (niveau H" . ($gap['from'] + 1) . " sauté) avant « {$gap['text']} »"];
         }
 
-        return response()->json([
-            'passed' => count(array_filter($issues, fn($i) => $i['type'] === 'error')) === 0,
+        return response()->json($this->withAnalysisMeta($analysis, [
+            'passed' => count(array_filter($issues, fn ($i) => $i['type'] === 'error')) === 0,
             'stats' => $stats,
             'headings' => $headings,
             'issues' => $issues,
-        ]);
+        ]));
+    }
+
+    /**
+     * Ajoute les métadonnées d'analyse communes à toute réponse d'outil.
+     *
+     * Clés purement additives : l'affichage existant continue de fonctionner
+     * sans modification.
+     *
+     * @param  array<string, mixed>  $payload
+     * @return array<string, mixed>
+     */
+    private function withAnalysisMeta(SiteAnalysis $analysis, array $payload): array
+    {
+        $payload['analyzedUrl'] = $analysis->url;
+        $payload['executionTimeMs'] = $analysis->totalTimeMs();
+        $payload['fromCache'] = $analysis->fromCache;
+        $payload['analyzedAt'] = now()->toIso8601String();
+
+        // Avertissement lorsque le contenu dépend du JavaScript : sans cela,
+        // une SPA obtiendrait un score sévère sans explication.
+        if ($analysis->isLikelyClientRendered()) {
+            $rendered = $analysis->rendered ?? [];
+            $payload['limitation'] = ($rendered['success'] ?? false)
+                ? 'Cette page dépend du JavaScript. Les résultats intègrent le rendu navigateur.'
+                : 'Le HTML renvoyé par le serveur contient très peu de contenu : cette page est probablement rendue côté client (React/Vue/Angular). Google exécute le JavaScript avant d\'indexer, ce que cette analyse ne fait pas — les résultats sous-estiment donc la page réellement indexée.';
+        }
+
+        if ($analysis->failures !== []) {
+            $payload['partialAnalysis'] = array_keys($analysis->failures);
+        }
+
+        return $payload;
     }
 
     /**
@@ -850,16 +862,12 @@ class ToolsApiController extends Controller
      */
     public function handleCanonicalChecker(Request $request): JsonResponse
     {
-        $url = $this->requireUrl($request);
-        $html = $this->fetchUrl($url);
+        $analysis = $this->analyze($request);
 
-        // Analyse DOM : l'ancien motif exigeait `rel` *avant* `href` et ratait
-        // donc `<link href="…" rel="canonical">`, pourtant du HTML valide.
-        $doc = HtmlDocument::fromHtml($html);
-        $canonicals = $doc->canonicals();
-
-        $issues = [];
+        $meta = $analysis->meta;
+        $canonicals = $meta['canonicals'] ?? [];
         $canonical = $canonicals[0] ?? null;
+        $issues = [];
 
         if ($canonical === null) {
             $issues[] = ['type' => 'error', 'message' => 'Aucune balise canonical trouvée'];
@@ -870,37 +878,43 @@ class ToolsApiController extends Controller
             }
 
             if (! preg_match('#^https?://#i', $canonical)) {
-                $issues[] = ['type' => 'warning', 'message' => 'L\'URL canonique devrait être absolue'];
-            } elseif (parse_url($canonical, PHP_URL_HOST) !== parse_url($url, PHP_URL_HOST)) {
+                $issues[] = ['type' => 'warning', 'message' => "L'URL canonique devrait être absolue"];
+            } elseif (parse_url($canonical, PHP_URL_HOST) !== parse_url($analysis->url, PHP_URL_HOST)) {
                 $issues[] = ['type' => 'warning', 'message' => 'Canonical inter-domaine détectée : ' . $canonical];
             }
         }
 
-        // hreflang : une page traduite doit se référencer elle-même dans son
-        // jeu d'alternates, sans quoi Google ignore le groupe entier.
-        $hreflangs = $doc->hreflangs();
+        // Une page en noindex avec une canonical envoie deux signaux
+        // contradictoires : Google ne sait pas s'il doit indexer la cible.
+        if (($meta['isNoindex'] ?? false) && $canonical !== null) {
+            $issues[] = ['type' => 'warning',
+                'message' => 'La page combine noindex et une balise canonical — signaux contradictoires pour les moteurs'];
+        }
+
+        $hreflangs = $meta['hreflang'] ?? [];
         if ($hreflangs !== []) {
             $codes = array_column($hreflangs, 'hreflang');
             if (count($codes) !== count(array_unique($codes))) {
                 $issues[] = ['type' => 'error', 'message' => 'Codes hreflang dupliqués — chaque langue doit être unique'];
             }
             if (! in_array('x-default', $codes, true)) {
-                $issues[] = ['type' => 'warning', 'message' => 'Pas de hreflang x-default — recommandé pour les visiteurs hors langues déclarées'];
+                $issues[] = ['type' => 'warning', 'message' => "Pas de hreflang x-default — recommandé pour les visiteurs hors langues déclarées"];
             }
         }
 
-        return response()->json([
+        return response()->json($this->withAnalysisMeta($analysis, [
             'passed' => count(array_filter($issues, fn ($i) => $i['type'] === 'error')) === 0,
             'stats' => [
                 'canonical' => $canonical,
-                'url' => $url,
-                'isSelfReferencing' => $canonical !== null && rtrim($canonical, '/') === rtrim($url, '/'),
+                'url' => $analysis->url,
+                'isSelfReferencing' => $canonical !== null && rtrim($canonical, '/') === rtrim($analysis->url, '/'),
                 'canonicalCount' => count($canonicals),
                 'hreflangCount' => count($hreflangs),
+                'isNoindex' => $meta['isNoindex'] ?? false,
             ],
             'hreflangs' => $hreflangs,
             'issues' => $issues,
-        ]);
+        ]));
     }
 
     /**
@@ -908,99 +922,21 @@ class ToolsApiController extends Controller
      */
     public function handleImageAltAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->requireUrl($request);
-        $html = $this->fetchUrl($url);
+        // Toute l'analyse d'images est déjà produite par le moteur : résolution
+        // des URL relatives, srcset, data-src, <picture>, ARIA et exclusion des
+        // <img> dans <noscript>/<template>.
+        $analysis = $this->analyze($request, ['meta', 'structure', 'accessibility']);
 
-        // Parse base URL for resolving relative paths
-        $parsed = parse_url($url);
-        $baseUrl = ($parsed['scheme'] ?? 'https') . '://' . ($parsed['host'] ?? '');
+        $a11y = $analysis->accessibility['images'] ?? [];
+        $total = $a11y['total'] ?? count($analysis->images);
+        $withAlt = $a11y['withAlt'] ?? 0;
+        $missingAlt = $a11y['missingAlt'] ?? 0;
+        $decorative = $a11y['decorative'] ?? 0;
+        $needAlt = $a11y['requiringAlt'] ?? max(0, $total - $decorative);
 
-        // Les <img> à l'intérieur d'un <noscript> ou d'un <template> ne sont pas
-        // rendues : les compter gonflait artificiellement le nombre d'images
-        // « sans alt » (github.com affichait 17/24 manquants).
-        $renderable = preg_replace('#<(noscript|template)\b[^>]*>.*?</\1>#is', ' ', $html) ?? $html;
-
-        preg_match_all('/<img\b([^>]*?)\/?\s*>/is', $renderable, $imgMatches);
-        $images = [];
-        $withAlt = 0; $missingAlt = 0; $decorative = 0;
-
-        foreach ($imgMatches[1] as $attrs) {
-            // Try src with quotes, then unquoted, then data-src, then srcset
-            preg_match('/\bsrc\s*=\s*["\']([^"\']+)["\']/i', $attrs, $srcM);
-            if (empty($srcM[1])) {
-                preg_match('/\bsrc\s*=\s*([^\s>"\']+)/i', $attrs, $srcM);
-            }
-            if (empty($srcM[1])) {
-                preg_match('/\bdata-src\s*=\s*["\']?([^\s>"\']+)/i', $attrs, $srcM);
-            }
-            if (empty($srcM[1])) {
-                preg_match('/\bsrcset\s*=\s*["\']?([^\s,"\']+)/i', $attrs, $srcM);
-            }
-
-            // Alt: try quoted first, then unquoted (`alt=Photo` est toléré par
-            // les navigateurs et n'était pas détecté auparavant).
-            preg_match('/\balt\s*=\s*["\']([^"\']*?)["\']/i', $attrs, $altM);
-            if (empty($altM[0])) {
-                preg_match('/\balt\s*=\s*([^\s>"\']+)/i', $attrs, $altM);
-            }
-
-            $src = trim($srcM[1] ?? '');
-
-            // Skip data URIs and SVG inline data in URL display but still count them
-            $displaySrc = $src;
-            if (str_starts_with($src, 'data:')) {
-                $displaySrc = '[inline data URI]';
-            } elseif ($src !== '') {
-                // Resolve relative URLs to absolute
-                if (str_starts_with($src, '//')) {
-                    $displaySrc = ($parsed['scheme'] ?? 'https') . ':' . $src;
-                } elseif (str_starts_with($src, '/')) {
-                    $displaySrc = $baseUrl . $src;
-                } elseif (!preg_match('#^https?://#i', $src)) {
-                    $displaySrc = rtrim($url, '/') . '/' . $src;
-                }
-            }
-
-            $hasAlt = (bool) preg_match('/\balt\s*=/i', $attrs);
-            $altText = $altM[1] ?? null;
-
-            // Équivalents d'accessibilité : une image portant aria-label ou
-            // aria-labelledby possède un nom accessible, même sans alt. Une
-            // image marquée role="presentation"/"none" ou aria-hidden est
-            // décorative : l'absence de texte alternatif y est *correcte*.
-            $ariaLabel = preg_match('/\baria-label(?:ledby)?\s*=\s*["\'][^"\']+["\']/i', $attrs);
-            $isDecorative = preg_match('/\brole\s*=\s*["\'](?:presentation|none)["\']/i', $attrs)
-                || preg_match('/\baria-hidden\s*=\s*["\']true["\']/i', $attrs);
-
-            if ($isDecorative) {
-                // Décorative et correctement signalée : ni faute ni mérite.
-                $decorative++;
-                $status = 'decorative';
-            } elseif (! $hasAlt && $ariaLabel) {
-                $withAlt++;
-                $status = 'aria';
-            } elseif (! $hasAlt) {
-                $missingAlt++;
-                $status = 'missing';
-            } elseif ($altText === null || trim($altText) === '') {
-                // alt="" explicite = image décorative correctement déclarée.
-                $decorative++;
-                $status = 'empty';
-            } else {
-                $withAlt++;
-                $status = 'good';
-            }
-
-            $images[] = ['src' => $displaySrc, 'alt' => $altText, 'status' => $status];
-        }
-
-        $total = count($images);
-
-        // Le score porte sur les images qui *doivent* porter un texte
-        // alternatif. Une image décorative correctement déclarée (alt="" ou
-        // role="presentation") est conforme : la compter comme un échec, comme
-        // le faisait l'ancienne version, pénalisait la bonne pratique.
-        $needAlt = $total - $decorative;
+        // Le score ne porte que sur les images devant porter un texte
+        // alternatif : une image décorative correctement déclarée (alt="",
+        // role="presentation") est conforme, pas fautive.
         $score = $needAlt > 0 ? (int) round(($withAlt / $needAlt) * 100) : 100;
 
         $issues = [];
@@ -1009,7 +945,24 @@ class ToolsApiController extends Controller
                 'message' => "{$missingAlt} image(s) sans attribut alt — un lecteur d'écran annoncera le nom du fichier"];
         }
 
-        return response()->json([
+        $images = array_map(function ($img) {
+            $status = match (true) {
+                ($img['decorative'] ?? false) === true => 'decorative',
+                ($img['hasAlt'] ?? false) === true && trim((string) ($img['alt'] ?? '')) !== '' => 'good',
+                ($img['ariaLabel'] ?? false) === true => 'aria',
+                default => 'missing',
+            };
+
+            return [
+                'url' => $img['absolute'] ?? $img['src'] ?? '',
+                'alt' => $img['alt'] ?? '',
+                'status' => $status,
+                'lazy' => $img['lazy'] ?? false,
+                'modernFormat' => $img['modernFormat'] ?? false,
+            ];
+        }, array_slice($analysis->images, 0, 100));
+
+        return response()->json($this->withAnalysisMeta($analysis, [
             'score' => $score,
             'passed' => $missingAlt === 0,
             'message' => $missingAlt === 0 ? 'Passed' : 'Issues Found',
@@ -1021,12 +974,8 @@ class ToolsApiController extends Controller
                 'requiringAlt' => $needAlt,
             ],
             'issues' => $issues,
-            'images' => array_map(fn($img) => [
-                'url' => $img['src'],
-                'alt' => $img['alt'] ?? '',
-                'status' => $img['status'],
-            ], array_slice($images, 0, 100)),
-        ]);
+            'images' => $images,
+        ]));
     }
 
     /**
@@ -1186,33 +1135,56 @@ class ToolsApiController extends Controller
      */
     public function handleInternalLinkAnalyzer(Request $request): JsonResponse
     {
-        $url = $this->requireUrl($request);
-        $html = $this->fetchUrl($url);
-        $parsed = parse_url($url);
-        $baseDomain = $parsed['host'] ?? '';
-        $baseUrl = ($parsed['scheme'] ?? 'https') . '://' . $baseDomain;
+        $analysis = $this->analyze($request, ['meta', 'structure']);
 
-        // Match both quoted and unquoted href values
-        preg_match_all('/<a\s+[^>]*href\s*=\s*["\']?([^\s>"\'#]+)/i', $html, $matches);
-        $internal = []; $external = 0;
+        $internal = [];
+        $external = 0;
+        $nonHttp = 0;
+        $nofollow = 0;
 
-        foreach ($matches[1] as $link) {
-            $linkParsed = parse_url($link);
-            $host = $linkParsed['host'] ?? null;
-            if (!$host && str_starts_with($link, '/')) {
-                $internal[] = $baseUrl . $link;
-            } elseif ($host === $baseDomain) {
-                $internal[] = $link;
+        foreach ($analysis->links as $link) {
+            if (($link['type'] ?? '') === 'non-http') {
+                $nonHttp++;
+
+                continue;
+            }
+            if (($link['internal'] ?? false) === true) {
+                $internal[] = $link['absolute'];
             } else {
                 $external++;
             }
+            if (($link['nofollow'] ?? false) === true) {
+                $nofollow++;
+            }
         }
 
-        return response()->json([
+        $unique = array_values(array_unique($internal));
+
+        // Ancres vides ou non descriptives : nuisent au maillage interne comme
+        // à l'accessibilité.
+        $vague = $analysis->accessibility['links'] ?? [];
+
+        return response()->json($this->withAnalysisMeta($analysis, [
             'passed' => true,
-            'stats' => ['total' => count($matches[1]), 'internal' => count($internal), 'external' => $external, 'uniqueInternal' => count(array_unique($internal))],
-            'links' => array_map(fn($l) => ['url' => $l, 'status' => 'working', 'type' => 'internal'], array_slice(array_unique($internal), 0, 50)),
-        ]);
+            'stats' => [
+                'total' => count($analysis->links),
+                'internal' => count($internal),
+                'external' => $external,
+                'uniqueInternal' => count($unique),
+                'nofollow' => $nofollow,
+                'nonHttp' => $nonHttp,
+                'emptyAnchors' => $vague['empty'] ?? 0,
+                'vagueAnchors' => $vague['vagueLabel'] ?? 0,
+            ],
+            // Statut délibérément absent : cet outil recense les liens, il ne
+            // les vérifie pas. L'ancienne version les étiquetait tous
+            // « working » sans avoir émis la moindre requête.
+            'links' => array_map(
+                fn ($l) => ['url' => $l, 'type' => 'internal'],
+                array_slice($unique, 0, 50)
+            ),
+            'note' => 'Cet outil recense le maillage interne sans tester les liens. Utilisez le vérificateur de liens morts pour obtenir les codes de statut réels.',
+        ]));
     }
 
     /**
