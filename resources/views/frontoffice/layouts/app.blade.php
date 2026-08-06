@@ -72,6 +72,15 @@
         <link rel="stylesheet" href="{{ asset_v('css/components.min.css') }}" />
     @endif
 
+    {{-- Tableau de bord des résultats d'analyse. Chargé uniquement sur /tools :
+         inutile ailleurs. Feuille dédiée plutôt qu'utilitaires Tailwind, car le
+         balisage des résultats est produit par JavaScript à l'exécution et
+         échappe donc au purge — les classes dynamiques (bg-emerald-50,
+         ring-amber-200…) étaient absentes du CSS compilé. --}}
+    @if (request()->is('tools') || request()->is('tools/*') || request()->is('*/tools/*'))
+        <link rel="stylesheet" href="{{ asset_v('css/tool-results.css') }}" />
+    @endif
+
     {{-- Toastr (notifications) : hors chemin critique — aucune notification ne se
          déclenche avant interaction. Motif print→all avec repli noscript.
          Auto-hébergé (toastr 2.1.4 épinglé) : plus de dépendance à cdnjs, donc
