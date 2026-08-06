@@ -73,6 +73,27 @@ return [
         'endpoint' => 'https://lsapi.seomoz.com/v2/url_metrics',
     ],
 
+    'headless' => [
+        /*
+         * Rendu navigateur (couche 4). Désactivé par défaut : Chromium pèse
+         * ~2,8 Go et `proc_open` est très souvent bloqué en hébergement
+         * mutualisé. Sans lui, l'application fonctionne normalement — les
+         * pages rendues côté client reçoivent simplement un avertissement
+         * indiquant que l'analyse porte sur le HTML brut.
+         *
+         * À activer sur un VPS ou un conteneur disposant de Chromium :
+         *   HEADLESS_RENDERING=true
+         */
+        'enabled' => env('HEADLESS_RENDERING', false),
+
+        // Chemin de Node si absent du PATH (fréquent en mutualisé),
+        // p. ex. /home/user/.nvm/versions/node/v20.11.0/bin/node
+        'node_path' => env('HEADLESS_NODE_PATH', 'node'),
+
+        // Chemin explicite d'un Chromium déjà présent sur le serveur.
+        'browser_path' => env('HEADLESS_BROWSER_PATH'),
+    ],
+
     'openpagerank' => [
         // Open PageRank — free domain-authority substitute (0-10 scale).
         // https://www.domcop.com/openpagerank/

@@ -16,7 +16,28 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Moteur central d'analyse : la page est téléchargée et parsée une
+        // seule fois, puis chaque analyseur enrichit un jeu de données partagé
+        // que tous les outils consomment. L'ordre d'enregistrement compte —
+        // AssetAnalyzer et AccessibilityAnalyzer lisent la section `images`
+        // produite par StructureAnalyzer.
+        $this->app->bind(\App\Services\Analysis\AnalysisPipeline::class, function ($app) {
+            return (new \App\Services\Analysis\AnalysisPipeline(
+                $app->make(\App\Services\SafeHttpFetcher::class),
+                $app->make(\App\Services\SafeUrlValidator::class),
+            ))->registerMany([
+                new \App\Services\Analysis\Analyzers\HttpAnalyzer(),
+                new \App\Services\Analysis\Analyzers\MetaAnalyzer(),
+                new \App\Services\Analysis\Analyzers\StructureAnalyzer(),
+                new \App\Services\Analysis\Analyzers\SchemaAnalyzer(),
+                new \App\Services\Analysis\Analyzers\AssetAnalyzer(),
+                new \App\Services\Analysis\Analyzers\AccessibilityAnalyzer(),
+                $app->make(\App\Services\Analysis\Analyzers\CrawlabilityAnalyzer::class),
+                // En dernier : il lit content/assets/headings pour décider si
+                // un rendu navigateur se justifie.
+                $app->make(\App\Services\Analysis\Analyzers\RenderAnalyzer::class),
+            ]);
+        });
     }
 
     /**

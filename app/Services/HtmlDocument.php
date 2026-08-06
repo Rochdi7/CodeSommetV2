@@ -32,6 +32,9 @@ class HtmlDocument
 
     private bool $parsed = false;
 
+    /** Le clonage du document pour extraire le texte est coûteux : on mémoïse. */
+    private ?string $visibleTextCache = null;
+
     public function __construct(private string $html)
     {
     }
@@ -455,14 +458,37 @@ class HtmlDocument
             return '';
         }
 
-        foreach ($this->query('//script|//style|//noscript|//template') as $node) {
-            $node->parentNode?->removeChild($node);
+        if ($this->visibleTextCache !== null) {
+            return $this->visibleTextCache;
         }
 
-        $body = $this->query('//body');
-        $text = $body === [] ? ($this->dom->textContent ?? '') : $body[0]->textContent;
+        // NON DESTRUCTIF. Une version antérieure supprimait les nœuds
+        // script/style du document pour isoler le texte : tout analyseur
+        // exécuté ensuite voyait alors un DOM amputé et comptait zéro script.
+        // On travaille désormais sur une copie, laissant le document intact
+        // pour les analyseurs suivants du pipeline.
+        $clone = clone $this->dom;
+        $xpath = new DOMXPath($clone);
 
-        return $this->clean($text);
+        $nodes = $xpath->query('//script|//style|//noscript|//template');
+        if ($nodes !== false) {
+            // Itération sur un instantané : retirer un nœud d'une DOMNodeList
+            // vivante pendant le parcours en décale les indices.
+            $toRemove = [];
+            foreach ($nodes as $node) {
+                $toRemove[] = $node;
+            }
+            foreach ($toRemove as $node) {
+                $node->parentNode?->removeChild($node);
+            }
+        }
+
+        $body = $xpath->query('//body');
+        $text = ($body !== false && $body->length > 0)
+            ? $body->item(0)->textContent
+            : ($clone->textContent ?? '');
+
+        return $this->visibleTextCache = $this->clean($text);
     }
 
     public function lang(): string
