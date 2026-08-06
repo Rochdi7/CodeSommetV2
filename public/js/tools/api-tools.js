@@ -385,7 +385,12 @@
         } else {
             h += '<ul class="csr-check-list">';
             items.slice(0, 12).forEach(function (c) {
-                var pts = (c.max > 0) ? ' <span class="csr-check-pts">(' + c.points + '/' + c.max + ')</span>' : '';
+                // Points forcés en nombres avant interpolation : ils viennent
+                // du serveur, mais le rendu ne doit dépendre d'aucune
+                // hypothèse sur la charge utile reçue.
+                var pts = (Number(c.max) > 0)
+                    ? ' <span class="csr-check-pts">(' + Number(c.points) + '/' + Number(c.max) + ')</span>'
+                    : '';
                 h += '<li><span class="csr-bullet csr-t-' + tone + '" aria-hidden="true"></span>' +
                     '<span><span class="csr-check-name">' + escapeHtml(c.name) + '</span>' + pts +
                     '<br><span class="csr-check-msg">' + escapeHtml(c.message) + '</span></span></li>';
