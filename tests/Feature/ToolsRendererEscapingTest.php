@@ -30,27 +30,44 @@ class ToolsRendererEscapingTest extends TestCase
     {
         $js = $this->js('api-tools.js');
 
-        $this->assertStringContainsString(
-            "escapeHtml(entry[1])",
+        // Clés ET valeurs de data.stats proviennent de la réponse serveur : les
+        // deux doivent passer par escapeHtml (BUG-15). Le rendu a été réécrit
+        // en tableau de bord, d'où des noms de variables différents — c'est la
+        // propriété d'échappement qui est vérifiée, pas sa formulation exacte.
+        $this->assertMatchesRegularExpression(
+            '/csr-stat-v">\'\s*\+\s*escapeHtml\(/',
             $js,
             'Les valeurs de data.stats doivent être échappées (BUG-15).'
         );
         $this->assertStringContainsString(
-            "escapeHtml(formatLabel(entry[0]))",
+            'escapeHtml(formatLabel(',
             $js,
             'Les clés de data.stats doivent être échappées (BUG-15).'
         );
 
-        // La forme vulnérable ne doit pas réapparaître.
-        $this->assertStringNotContainsString("'</div>' +\n                    '<div class=\"text-sm text-gray-600 mt-1\">' + formatLabel(", $js);
+        // La forme vulnérable ne doit pas réapparaître : une clé ou une valeur
+        // interpolée sans échappement.
+        $this->assertDoesNotMatchRegularExpression(
+            '/csr-stat-[vl]">\'\s*\+\s*(?!escapeHtml)[A-Za-z_$]/',
+            $js,
+            'Aucune interpolation non échappée dans les cartes de statistiques.'
+        );
     }
 
     public function test_api_renderer_escapes_the_grade_banner(): void
     {
+        $js = $this->js('api-tools.js');
+
+        // La note est désormais rendue par badge(), qui échappe son libellé.
+        $this->assertMatchesRegularExpression(
+            '/function badge\([^)]*\)\s*\{\s*return[^;]*escapeHtml\(text\)/s',
+            $js,
+            'badge() doit échapper son libellé — la note vient de la réponse serveur (BUG-15).'
+        );
         $this->assertStringContainsString(
-            'escapeHtml(data.grade ? grade : score',
-            $this->js('api-tools.js'),
-            'Le champ grade doit être échappé (BUG-15).'
+            "badge('Note ' + grade",
+            $js,
+            'La note doit être rendue via badge(), donc échappée.'
         );
     }
 
