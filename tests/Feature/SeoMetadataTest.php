@@ -187,14 +187,20 @@ class SeoMetadataTest extends TestCase
 
     public function test_mismatched_case_studies_are_noindexed_and_out_of_sitemap(): void
     {
-        foreach (config('pages.noindexed_case_studies') as $slug) {
+        // The list is intentionally empty today (config/pages.php); assert the
+        // config shape so this test always performs assertions instead of
+        // silently iterating zero times (was PHPUnit-risky).
+        $slugs = config('pages.noindexed_case_studies');
+        $this->assertIsArray($slugs);
+
+        foreach ($slugs as $slug) {
             $this->get("/our-work/{$slug}")
                 ->assertOk()
                 ->assertSee('noindex, follow', false);
         }
 
-        $xml = $this->get('/sitemap.xml')->getContent();
-        foreach (config('pages.noindexed_case_studies') as $slug) {
+        $xml = $this->get('/sitemap.xml')->assertOk()->getContent();
+        foreach ($slugs as $slug) {
             $this->assertStringNotContainsString("/our-work/{$slug}<", $xml, "Sitemap contient la page noindexée {$slug}");
         }
     }
