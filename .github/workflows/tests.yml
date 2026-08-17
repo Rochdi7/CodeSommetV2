@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, dom, curl, sqlite3, pdo_sqlite, gd, intl
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Prepare environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Run test suite
+        run: composer test

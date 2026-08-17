@@ -61,7 +61,7 @@
                             </tr>
                             <tr>
                                 <td style="font-size:11px; color:#cbd5e1; padding-top:12px;">
-                                    Vous recevez cet e-mail suite à une action réalisée sur pikassostudio.com.
+                                    Vous recevez cet e-mail suite à une action réalisée sur codesommet.com.
                                 </td>
                             </tr>
                         </table>

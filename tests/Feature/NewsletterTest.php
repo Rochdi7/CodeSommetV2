@@ -20,18 +20,19 @@ class NewsletterTest extends TestCase
         RateLimiter::clear('newsletter');
     }
 
-    public function test_new_and_existing_emails_return_identical_responses(): void
+    public function test_duplicate_subscription_is_acknowledged_without_creating_a_row(): void
     {
-        // First (new) subscription.
+        // Contract per NewsletterController::subscribe(): duplicates get a
+        // distinct "already subscribed" reply. The enumeration trade-off is
+        // documented and accepted there; abuse is bounded by throttle:newsletter.
         $new = $this->postJson('/newsletter/subscribe', ['email' => 'a@example.com']);
         RateLimiter::clear('newsletter');
         // Second (existing) subscription — same address.
         $existing = $this->postJson('/newsletter/subscribe', ['email' => 'a@example.com']);
 
-        $new->assertOk();
-        $existing->assertOk();
-        $this->assertSame($new->json(), $existing->json());
-        // Only one row created — the second was a silent no-op.
+        $new->assertOk()->assertJson(['success' => true])->assertJsonMissing(['already' => true]);
+        $existing->assertOk()->assertJson(['success' => true, 'already' => true]);
+        // Only one row created — the second did not re-insert.
         $this->assertDatabaseCount('newsletter_subscribers', 1);
     }
 
