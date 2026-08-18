@@ -31,6 +31,7 @@ return [
     'text_21' => 'Un bon score global signifie réussir les trois métriques principales : LCP inférieur à 2,5 secondes, FID inférieur à 100 ms (ou INP inférieur à 200 ms) et CLS inférieur à 0,1. Google exige que 75 % des visites de page atteignent ces seuils pour la classification « bon ». Visez : TTFB inférieur à 800 ms, FCP inférieur à 1,8 s, et tous les Core Web Vitals dans la plage « bon » sur mobile et desktop.',
     'text_22' => 'Vous avez encore des questions ?',
     'text_23' => 'Contactez notre équipe pour obtenir de l\'aide',
+    'text_crosslink' => 'Vous cherchez plutôt à optimiser la vitesse globale de votre site ? Consultez notre <a href="/tools/page-speed-analyzer" class="text-[#00AEEF] font-semibold hover:underline">Analyseur de Vitesse de Page</a> pour des recommandations complètes de performance.',
     'text_24' => 'Besoin d\'un Outil Personnalisé pour Votre Entreprise ?',
     'text_25' => 'Nous créons des outils alimentés par l\'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats',
     'text_26' => 'Réserver un Appel Découverte',

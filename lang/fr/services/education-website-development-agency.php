@@ -3,7 +3,7 @@
 return [
     'title' => 'Développement de Sites Web Éducatifs & E-Learning | CodeSommet',
     'meta_description' => 'Développement de sites web éducatifs : portails d\'études à l\'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Contactez-nous pour les tarifs.',
-    'meta_keywords' => 'développement site web éducatif,site études à l\'étranger,développement plateforme e-learning,développement portail étudiant,CRM éducation,plateforme de cours en ligne,site école de langues,développement site université',
+    'meta_keywords' => 'développement site web éducatif,site études à l\'étranger,développement portail étudiant,CRM éducation,plateforme de cours en ligne,site école de langues',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
