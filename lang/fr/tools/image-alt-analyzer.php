@@ -42,4 +42,6 @@ return [
     'text_131' => 'Analyseur de Texte Alt d\'Image',
     'text_132' => 'Quand dois-je utiliser un texte alt vide (alt=\') ?',
     'text_133' => 'Le texte alt manquant affecte-t-il mon classement Google ?',
+    'text_134' => 'Vérifiez le poids et le format de vos images pour accélérer le chargement de vos pages',
+    'link_analyseur_compression' => 'Analyseur de Compression d\'Images',
 ];

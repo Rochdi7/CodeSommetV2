@@ -805,6 +805,11 @@
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
                             {{ __('locations/web-development-company-paris.ml_1102') }}</p>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed mt-3">Découvrez <a
+                                class="inline-flex items-center text-sm font-medium hover:underline"
+                                href="{{ route('service', 'ecommerce-website-development') }}"
+                                style="color: rgb(255, 101, 0);">nos plateformes e-commerce pour marques de luxe</a>
+                            conçues pour répondre à ces exigences.</p>
                     </div>
                     <div
                         class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">

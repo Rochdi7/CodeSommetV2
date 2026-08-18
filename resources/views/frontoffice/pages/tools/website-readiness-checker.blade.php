@@ -151,7 +151,10 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/website-readiness-checker.text_13') }}</p>
+                            <p>{{ __('tools/website-readiness-checker.text_13') }} {{ __('tools/website-readiness-checker.link_website_analyzer_intro') }}
+                                <a href="{{ route('tool', 'website-analyzer') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">{{ __('tools/website-readiness-checker.link_website_analyzer_anchor') }}</a>
+                            </p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -217,7 +220,10 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/website-readiness-checker.text_19') }}</p>
+                            <p>{{ __('tools/website-readiness-checker.text_19') }} {{ __('tools/website-readiness-checker.link_ssl_intro') }} <a
+                                    href="{{ route('tool', 'ssl-certificate-checker') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">{{ __('tools/website-readiness-checker.link_ssl_anchor') }}</a>.
+                            </p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -313,6 +319,13 @@
                     <p class="text-sm text-gray-600 mb-2">{{ __('tools/website-readiness-checker.text_28') }}</p><a
                         href="/contact"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/website-readiness-checker.text_29') }}<svg
+                            class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg></a>
+                    <p class="text-sm text-gray-600 mt-4 mb-2">{{ __('tools/website-readiness-checker.link_get_quote_intro') }}</p><a
+                        href="{{ route('get-quote') }}"
+                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">{{ __('tools/website-readiness-checker.link_get_quote_anchor') }}<svg
                             class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

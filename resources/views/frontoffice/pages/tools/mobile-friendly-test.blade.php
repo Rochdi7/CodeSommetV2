@@ -247,6 +247,14 @@
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg></a>
                 </div>
+                <div class="mt-6 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-sm text-gray-600">La compatibilité mobile n'est qu'une partie de l'équation :
+                        pensez aussi à vérifier votre <a href="{{ route('tool', 'page-speed-analyzer') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">analyseur de vitesse de page</a>
+                        pour la performance, ou lancez un <a href="{{ route('tool', 'website-analyzer') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">audit complet de site web (SEO, performance, design, sécurité)</a>
+                        pour une vue d'ensemble de votre site.</p>
+                </div>
             </div>
         </div>
     </section>

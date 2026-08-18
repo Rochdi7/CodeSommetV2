@@ -345,6 +345,77 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
+                </a><a
+                    class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    href="{{ route('tool', 'canonical-checker') }}">
+                    <div class="mb-4">
+                        <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-link2 lucide-link-2 w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                aria-hidden="true">
+                                <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+                                <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+                                <line x1="8" x2="16" y1="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
+                        style="font-family:var(--font-heading)">Vérificateur d'URL Canonical</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Validez vos balises canonical avec notre
+                        vérificateur d'URL canonical pour éviter les problèmes de contenu dupliqué.
+                    </p>
+                    <div
+                        class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
+                        <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 right-4"><span
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                    </div>
+                </a><a
+                    class="group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    href="{{ route('tool', 'internal-link-analyzer') }}">
+                    <div class="mb-4">
+                        <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-list w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                aria-hidden="true">
+                                <path d="M3 5h.01"></path>
+                                <path d="M3 12h.01"></path>
+                                <path d="M3 19h.01"></path>
+                                <path d="M8 5h13"></path>
+                                <path d="M8 12h13"></path>
+                                <path d="M8 19h13"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
+                        style="font-family:var(--font-heading)">Analyseur de Liens Internes</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Utilisez notre analyseur de liens internes
+                        pour cartographier votre structure de liens et repérer les liens internes brisés.
+                    </p>
+                    <div
+                        class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
+                        <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 right-4"><span
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                    </div>
                 </a></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"

@@ -82,7 +82,11 @@
                             2</div>
                         <div>
                             <p class="text-sm font-medium text-gray-900">{{ __('tools/html-to-text.text_142') }}</p>
-                            <p class="text-sm text-gray-600">{{ __('tools/html-to-text.text_4') }}</p>
+                            <p class="text-sm text-gray-600">{{ __('tools/html-to-text.text_4') }} Une fois votre
+                                contenu extrait, pensez aussi à structurer vos questions-réponses avec notre <a
+                                    href="{{ route('tool', 'faq-schema-generator') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">générateur de schéma FAQ
+                                    (JSON-LD)</a> pour améliorer votre visibilité dans les résultats de recherche.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-3">

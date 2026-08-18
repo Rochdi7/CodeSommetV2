@@ -830,7 +830,10 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-rabat.ml_1102') }}</p>
+                            {{ __('locations/web-development-company-rabat.ml_1102') }} Découvrez nos <a
+                                href="{{ route('service', 'real-estate-website-development') }}"
+                                class="text-[#00AEEF] font-semibold hover:underline">plateformes immobilières conçues pour les entreprises de Rabat</a>.
+                        </p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">
@@ -2114,7 +2117,9 @@
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-rabat.text_48') }}</h2>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">
-                        {{ __('locations/web-development-company-rabat.ml_1146') }}</p>
+                        {{ __('locations/web-development-company-rabat.ml_1146') }} Retrouvez notre <a
+                            href="{{ route('location', 'casablanca') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">agence de développement web à Casablanca</a>.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
@@ -2274,6 +2279,39 @@
                                         Riyad</h3>
                                     <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Arabie
                                         Saoudite</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                        href="{{ route('location', 'casablanca') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                        </path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Casablanca</h3>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Maroc</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

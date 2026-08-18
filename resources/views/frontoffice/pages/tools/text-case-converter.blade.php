@@ -263,7 +263,9 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/text-case-converter.text_22') }}</p>
+                            <p>{{ __('tools/text-case-converter.text_22_before') }} <a
+                                    href="{{ route('tool', 'url-slug-generator') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">{{ __('tools/text-case-converter.text_22_link') }}</a>{{ __('tools/text-case-converter.text_22_after') }}</p>
                         </div>
                     </div>
                 </div>

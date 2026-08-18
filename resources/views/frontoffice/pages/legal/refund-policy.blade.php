@@ -326,6 +326,10 @@
                                 <li><strong>Paiement final :</strong> {{ __('legal/refund-policy.text_43') }}</li>
                             </ul>
                             <p class="mt-3 text-sm italic">{{ __('legal/refund-policy.text_44') }}</p>
+                            <p class="mt-3">Avant de démarrer un projet, vous pouvez <a
+                                    class="text-[#00AEEF] hover:underline"
+                                    href="{{ route('get-quote') }}">voir la structure d'acompte lors d'une demande de devis</a>.
+                            </p>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_45') }}

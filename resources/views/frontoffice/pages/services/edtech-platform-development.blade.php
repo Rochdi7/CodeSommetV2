@@ -340,7 +340,7 @@
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Calendrier de Lancement
-                                        en 2-5 Jours</h3>
+                                        en 7-10 Jours</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">
                                         {{ __('services/edtech-platform-development-agency.ml_933') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
@@ -558,6 +558,11 @@
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
                         style="color:white"
                         href="https://cal.com/code-sommet/new-client-meeting">{{ __('services/edtech-platform-development-agency.text_15') }}</a>
+                    <p class="text-sm text-[#0F0F0F]/60 mt-5 max-w-2xl mx-auto px-4">
+                        Vous avez plutôt <a
+                            class="text-[#00AEEF] font-semibold hover:underline"
+                            href="{{ route('service', 'elearning-platform-development') }}">besoin d'un LMS interne pour votre école ou entreprise plutôt qu'un produit EdTech commercialisable ?</a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -950,7 +955,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">

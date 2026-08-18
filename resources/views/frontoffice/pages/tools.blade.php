@@ -1662,15 +1662,18 @@
                     style="font-family:var(--font-heading);opacity:0;transform:translateY(30px)">Besoin d'une Solution Sur
                     Mesure ?
                 </h2>
-                <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">{{ __('tools.ml_581') }}</p><a
-                    class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto"
-                    style="color:white" href="{{ route('contact') }}">{{ __('tools.text_39') }}<svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg></a>
+                <p class="text-lg text-[#0F0F0F]/70 mb-8 max-w-2xl mx-auto">{{ __('tools.ml_581') }}</p>
+                <div class="flex flex-wrap items-center justify-center gap-4"><a
+                        class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 py-4 text-lg h-auto"
+                        style="color:white" href="{{ route('contact') }}">{{ __('tools.text_39') }}<svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg></a><a
+                        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
+                        href="{{ route('get-quote') }}">Demander un devis pour votre projet</a></div>
             </div>
         </section>
         <script>

@@ -74,6 +74,9 @@
                             </svg>
                         </a>
                     </div>
+                    <p class="text-xs sm:text-sm text-[#0F0F0F]/50">
+                        <a href="{{ route('tool', 'website-analyzer') }}" class="underline decoration-[#00AEEF]/40 underline-offset-4 hover:text-[#00AEEF] transition-colors">testez gratuitement votre site avec notre analyseur</a>
+                    </p>
 
                     {{-- Stats --}}
                     <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 pt-4 text-center">

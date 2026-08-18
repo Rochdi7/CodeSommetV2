@@ -910,6 +910,9 @@
                         comment nous avons aidé les entreprises en
                         <!-- -->{{ __('services/education-website-development-agency.text_31') }}<!-- -->{{ __('services/education-website-development-agency.ml_963') }}
                     </p>
+                    <p class="text-[#0F0F0F]/70 text-base max-w-2xl mx-auto mt-3">Au-delà de l'Allemagne et du Maroc,
+                        <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('case-study', 'morocco-quest') }}">découvrez notre travail avec Morocco Quest, un exemple de plateforme éducative internationale</a>.
+                    </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><a class="block" href="{{ route('case-study', 'gls-sprachenzentrum') }}">
@@ -965,7 +968,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -1912,7 +1915,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/education-website-development-agency.ml_1007') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">4-6
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-12
@@ -3023,6 +3026,13 @@
                             </svg>
                         </div>
                     </a></div>
+                <div class="text-center mt-6 md:mt-8 px-4">
+                    <p class="text-sm md:text-base text-[#0F0F0F]/70 max-w-2xl mx-auto">Vous avez
+                        <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('service', 'university-website-development') }}">besoin d'un site dédié aux admissions et à la gestion de campus universitaire ?</a>
+                        Ou plutôt vous avez
+                        <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('service', 'edtech-platform-development') }}">besoin d'un produit LMS commercialisable plutôt qu'un site institutionnel ?</a>
+                    </p>
+                </div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
                         href="/#industries">{{ __('services/education-website-development-agency.text_87') }}<svg

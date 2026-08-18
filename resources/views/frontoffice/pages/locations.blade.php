@@ -1285,6 +1285,9 @@
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></a>
+                <p class="text-base text-[#0F0F0F]/60 mt-6">Vous cherchez une expertise par secteur plutôt que
+                    par ville&nbsp;? <a class="text-[#00AEEF] font-medium hover:underline transition-colors"
+                        href="{{ route('industries') }}">voir nos spécialisations sectorielles</a>.</p>
             </div>
         </section>
     @endsection

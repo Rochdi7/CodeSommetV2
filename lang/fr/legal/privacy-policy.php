@@ -166,4 +166,5 @@ return [
     'text_454' => '[email protected]',
     'text_455' => '[email protected]',
     'text_456' => '[email protected]',
+    'text_457' => 'Contactez-nous pour exercer vos droits',
 ];

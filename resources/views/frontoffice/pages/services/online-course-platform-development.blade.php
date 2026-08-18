@@ -339,7 +339,7 @@
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Calendrier de Lancement
-                                        en 2-5 Jours</h3>
+                                        en 7-10 Jours</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">
                                         {{ __('services/online-course-platform-development-agency.ml_952') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
@@ -3012,7 +3012,12 @@
                             stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
-                        </svg></a></div>
+                        </svg></a>
+                    <p class="text-sm md:text-base text-[#0F0F0F]/70 mt-4 px-4">Vous avez <a
+                            class="inline-flex items-center gap-1 text-[#00AEEF] font-semibold hover:underline"
+                            href="{{ route('service', 'university-website-development') }}">besoin d'un portail
+                            d'admissions universitaire complet, pas seulement d'un catalogue de cours ?</a></p>
+                </div>
             </div>
         </section>
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">

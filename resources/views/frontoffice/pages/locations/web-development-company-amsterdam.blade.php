@@ -830,7 +830,9 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-amsterdam.ml_906') }}</p>
+                            {{ __('locations/web-development-company-amsterdam.ml_906') }}
+                            Découvrez <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('service', 'fintech-platform-development') }}">nos plateformes de paiement conformes PSD2</a>
+                            pour les startups fintech.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">

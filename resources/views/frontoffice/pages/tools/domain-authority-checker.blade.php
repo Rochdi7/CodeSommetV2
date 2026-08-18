@@ -129,7 +129,11 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/domain-authority-checker.text_11') }}</p>
+                            <p>{{ __('tools/domain-authority-checker.text_11') }} Pour une analyse plus complète
+                                combinant SEO technique et on-page, essayez notre <a
+                                    href="{{ route('tool', 'domain-health-checker') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">vérificateur de santé de
+                                    domaine plus complet (SEO technique + on-page)</a>.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

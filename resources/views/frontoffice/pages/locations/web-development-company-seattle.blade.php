@@ -818,7 +818,9 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-seattle.text_373') }}</p>
+                            {{ __('locations/web-development-company-seattle.text_373') }}<!-- --> Ce savoir-faire nourrit directement notre service de <a
+                                href="{{ route('service', 'saas-platform-development') }}"
+                                class="text-[#00AEEF] font-semibold hover:underline">tableaux de bord SaaS évolutifs</a>.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">

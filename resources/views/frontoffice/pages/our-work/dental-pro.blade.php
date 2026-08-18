@@ -196,6 +196,7 @@
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/dental-pro.solution_bullet_3') }}</span></li>
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/dental-pro.solution_bullet_4') }}</span></li>
                     </ul>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mt-4">Ce type de plateforme e-commerce et backoffice sur mesure s'appuie sur <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('service', 'ecommerce-website-development') }}">notre service de développement e-commerce</a>.</p>
                 </div>
             </div>
             <div class="mb-8 md:mb-12 max-w-6xl mx-auto">
@@ -896,6 +897,7 @@
                     </div>
                     <p class="text-base md:text-lg text-white/70 font-medium">{{ __('our-work/dental-pro.text_46') }}</p>
                     <p class="text-sm md:text-base text-white/50">{{ __('our-work/dental-pro.text_47') }}</p>
+                    <p class="text-sm md:text-base text-white/50"><a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('get-quote') }}">demander un devis pour un projet similaire</a></p>
                     <div class="mt-6">
                         <div class="relative w-full py-8">
                             <div class="flex items-center justify-center gap-0">

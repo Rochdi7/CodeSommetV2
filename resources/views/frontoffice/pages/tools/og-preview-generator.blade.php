@@ -216,6 +216,10 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/og-preview-generator.text_19') }}</p>
+                            <p class="mt-2">Pour générer directement ces balises og:image et twitter:image, utilisez notre <a
+                                    href="{{ route('tool', 'meta-tag-generator') }}"
+                                    class="text-[#00AEEF] hover:underline">générateur de balises méta IA (title, description, OG en un clic)</a>.
+                            </p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

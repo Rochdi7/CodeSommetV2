@@ -412,6 +412,12 @@
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans
                         <!-- -->Boston<!-- -->{{ __('locations/web-development-company-boston.ml_892') }}
                     </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto mt-2">L'un des secteurs les plus dynamiques
+                        de Boston reste l'EdTech&nbsp;: nous proposons également du
+                        <a class="font-medium hover:underline" href="{{ route('service', 'education-website-development') }}"
+                            style="color: rgb(255, 101, 0);">développement de sites web pour organisations EdTech</a>,
+                        pensé pour les établissements d'enseignement et les plateformes d'apprentissage en ligne.
+                    </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">

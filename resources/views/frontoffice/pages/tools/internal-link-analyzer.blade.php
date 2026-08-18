@@ -258,7 +258,11 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/internal-link-analyzer.text_21') }}</p>
+                            <p>{!! str_replace(
+                                'liens internes cassés (erreurs 404)',
+                                '<a href="' . route('tool', 'broken-link-checker') . '" class="text-[#00AEEF] hover:underline">vérificateur de liens brisés (erreurs 404)</a>',
+                                e(__('tools/internal-link-analyzer.text_21')),
+                            ) !!}</p>
                         </div>
                     </div>
                 </div>

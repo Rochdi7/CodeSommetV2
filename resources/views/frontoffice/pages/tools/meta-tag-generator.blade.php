@@ -124,7 +124,9 @@
                             class="text-[#00AEEF] mt-1">•</span><span>{{ __('tools/meta-tag-generator.text_15') }}</span>
                     </li>
                     <li class="flex items-start gap-2"><span
-                            class="text-[#00AEEF] mt-1">•</span><span>{{ __('tools/meta-tag-generator.text_16') }}</span>
+                            class="text-[#00AEEF] mt-1">•</span><span>{{ __('tools/meta-tag-generator.text_16') }}
+                            <a href="{{ route('tool', 'og-preview-generator') }}"
+                                class="text-[#00AEEF] font-medium hover:underline">prévisualiser le rendu de vos balises Open Graph sur les réseaux sociaux</a>.</span>
                     </li>
                     <li class="flex items-start gap-2"><span
                             class="text-[#00AEEF] mt-1">•</span><span>{{ __('tools/meta-tag-generator.text_17') }}</span>

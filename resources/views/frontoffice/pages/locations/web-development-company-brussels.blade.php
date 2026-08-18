@@ -809,6 +809,11 @@
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
                             {{ __('locations/web-development-company-brussels.ml_907') }}</p>
+                        <p class="text-[#0F0F0F]/70 leading-relaxed mt-3">Nous concevons aussi des <a
+                                href="{{ route('service', 'fintech-platform-development') }}"
+                                class="text-[#00AEEF] font-semibold hover:underline">plateformes Regtech et
+                                conformité sur mesure</a> pour les institutions financières bruxelloises soumises à
+                            ces exigences réglementaires.</p>
                     </div>
                     <div
                         class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">

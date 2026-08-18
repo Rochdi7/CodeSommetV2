@@ -248,6 +248,10 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/schema-generator.text_19') }}</p>
+                            <p class="mt-3">Si votre page inclut une section de questions fréquentes, utilisez notre
+                                <a href="{{ route('tool', 'faq-schema-generator') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">générateur de schéma FAQ dédié</a>
+                                pour créer ce bloc séparément avant de le combiner avec vos autres types de schema.</p>
                         </div>
                     </div>
                 </div>

@@ -147,6 +147,17 @@
                 </div>
             </div>
         </section>
+        <section class="w-full py-6 md:py-8 bg-[var(--bg-primary)]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="rounded-2xl border border-[#00AEEF]/20 bg-[#00AEEF]/5 p-5 md:p-6">
+                    <p class="text-sm md:text-base text-[#0F0F0F]/80">
+                        Ce site vous présente notre offre de site web vitrine pour cliniques et praticiens de télémédecine. Si
+                        <!-- --> <a href="{{ route('service', 'telemedicine-platform-development') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">vous construisez une startup de télésanté et avez besoin d'une plateforme complète, pas juste d'un site ?</a>
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center mb-12">
@@ -972,7 +983,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">

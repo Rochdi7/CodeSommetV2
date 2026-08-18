@@ -245,6 +245,9 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">
                                 {{ __('legal/terms-of-service.text_339') }}</h3>
                             <p class="mb-3">{{ __('legal/terms-of-service.text_61') }}</p>
+                            <p class="mb-3">Vous pouvez <a class="text-[#00AEEF] hover:underline"
+                                    href="{{ route('get-quote') }}">démarrer une demande de devis</a> pour obtenir une
+                                proposition personnalisée correspondant à votre projet.</p>
                             <ul class="list-disc pl-6 space-y-2">
                                 <li><strong>{{ __('legal/terms-of-service.text_340') }}</strong>
                                     {{ __('legal/terms-of-service.text_62') }}</li>

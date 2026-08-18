@@ -830,6 +830,14 @@
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
                             {{ __('locations/web-development-company-lisbon.ml_1102') }}</p>
+                        <a class="inline-flex items-center text-sm font-medium hover:underline mt-4"
+                            href="{{ route('service', 'real-estate-website-development') }}"
+                            style="color: rgb(255, 101, 0);">En savoir plus sur notre
+                            conception de plateformes immobilières sur mesure<svg class="w-4 h-4 ml-1" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg></a>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">
@@ -2251,7 +2259,7 @@
                         </div>
                     </a><a
                         class="group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                        href="{{ route('location', 'riyadh') }}">
+                        href="{{ route('location', 'barcelona') }}" aria-label="agence web à Barcelone">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 min-w-0">
                                 <div
@@ -2270,9 +2278,8 @@
                                 <div class="min-w-0 flex-1">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Riyad</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Arabie
-                                        Saoudite</p>
+                                        Barcelone</h3>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Espagne</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

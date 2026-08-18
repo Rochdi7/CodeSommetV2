@@ -84,6 +84,10 @@
                         <li><strong>Minifier :</strong> {{ __('tools/json-formatter.text_6') }}</li>
                         <li><strong>Valider :</strong> {{ __('tools/json-formatter.text_7') }}</li>
                     </ul>
+                    <p>Si vos données JSON contiennent des champs binaires ou nécessitent un transit sécurisé dans une
+                        requête API, utilisez notre <a href="{{ route('tool', 'base64-encoder') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">encodeur/décodeur Base64</a> pour
+                        encoder ou décoder ces valeurs avant de les intégrer à votre payload.</p>
                     <div class="bg-white rounded-lg p-4 border border-gray-200 mt-4">
                         <p class="text-xs text-gray-600 mb-2"><strong>Example:</strong></p>
                         <div class="space-y-2 font-mono text-xs">

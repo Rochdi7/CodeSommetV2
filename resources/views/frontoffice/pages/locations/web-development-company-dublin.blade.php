@@ -828,6 +828,14 @@
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
                             {{ __('locations/web-development-company-dublin.ml_1104') }}</p>
+                        <a class="inline-flex items-center text-sm font-medium hover:underline mt-4"
+                            href="{{ route('service', 'healthcare-website-development') }}"
+                            style="color: rgb(0, 174, 239);">Découvrez notre expertise en développement de sites web
+                            santé conformes RGPD<svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg></a>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">

@@ -2707,6 +2707,15 @@
                             </div>
                         </a></div>
                 </div>
+                <p class="text-sm md:text-base text-[#0F0F0F]/70 text-center px-4 mb-6 md:mb-8">Nos clients
+                    immobiliers sont présents sur plusieurs continents, <a
+                        href="{{ route('location', 'casablanca') }}"
+                        class="text-[#00AEEF] font-semibold hover:underline">exemple : nos clients immobiliers à
+                        Casablanca</a><!-- -->
+                    et à <a href="{{ route('location', 'dubai') }}"
+                        class="text-[#00AEEF] font-semibold hover:underline">Dubaï, où le marché immobilier est
+                        particulièrement actif</a>.
+                </p>
                 <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
                     <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez
                         <!-- -->{{ __('services/real-estate-website-development-agency.text_219') }}<!-- -->

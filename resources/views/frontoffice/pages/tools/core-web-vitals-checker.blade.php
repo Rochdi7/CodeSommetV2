@@ -174,6 +174,7 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/core-web-vitals-checker.text_15') }}</p>
+                            <p class="mt-3">Utilisez notre outil pour <a href="{{ route('tool', 'image-compression-analyzer') }}" class="text-[#00AEEF] font-semibold hover:underline">réduire le poids des images pour améliorer le LCP</a>, et notre <a href="{{ route('tool', 'html-minifier') }}" class="text-[#00AEEF] font-semibold hover:underline">minificateur HTML/CSS/JS</a> pour éliminer rapidement les ressources qui bloquent le rendu.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -243,6 +244,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-6 pt-6 border-t border-gray-200 text-sm text-gray-600 text-center">Pour aller plus loin, consultez notre <a href="{{ route('tool', 'page-speed-analyzer') }}" class="text-[#00AEEF] font-semibold hover:underline">analyseur de vitesse de page complet (poids, requêtes, bonnes pratiques)</a> afin d'obtenir une analyse détaillée au-delà des seules métriques Core Web Vitals.</div>
                 <div class="mt-6 text-center">
                     <p class="text-sm text-gray-600 mb-2">{{ __('tools/core-web-vitals-checker.text_22') }}</p><a
                         href="/contact"

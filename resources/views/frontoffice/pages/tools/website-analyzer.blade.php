@@ -55,6 +55,7 @@
                         <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ __('tools/website-analyzer.text_2') }}</h2>
                         <p class="text-gray-600">Get instant feedback on SEO, performance, design, security, and more. Enter
                             your URL and we&#x27;ll analyze 40+ checkpoints across 5 categories using AI-powered insights.
+                            Vous avez <a class="text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="{{ route('tool', 'website-readiness-checker') }}">besoin d'une checklist rapide avant lancement plutôt qu'un audit complet de 40+ points ?</a>
                         </p>
                     </div>
                     <div class="space-y-2"><label
@@ -146,7 +147,8 @@
                                     </div>
                                 </div>
                                 <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                                    {{ __('tools/website-analyzer.text_7') }}</p>
+                                    {{ __('tools/website-analyzer.text_7') }} Besoin d'enrichir vos données structurées ?
+                                    Utilisez notre <a class="text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="{{ route('tool', 'schema-generator') }}">générateur de schema markup</a>.</p>
                             </div>
                         </div>
                         <div
@@ -179,7 +181,8 @@
                                     </div>
                                 </div>
                                 <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                                    {{ __('tools/website-analyzer.text_9') }}</p>
+                                    {{ __('tools/website-analyzer.text_9') }} Pour une analyse encore plus poussée de vos
+                                    Core Web Vitals, essayez notre <a class="text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="{{ route('tool', 'page-speed-analyzer') }}">analyseur de vitesse de page dédié</a>.</p>
                             </div>
                         </div>
                         <div
@@ -475,6 +478,7 @@
                                 </div>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">{{ __('tools/website-analyzer.text_31') }}
+                                Pour un contrôle de sécurité encore plus approfondi, consultez notre <a class="text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="{{ route('tool', 'ssl-certificate-checker') }}">vérificateur de certificat SSL détaillé</a>.
                             </p>
                         </div>
                         <div
@@ -783,7 +787,14 @@
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
-                            </svg>Read Doctor Hubli case study - 50K monthly visitors</a></div>
+                            </svg>Read Doctor Hubli case study - 50K monthly visitors</a><a
+                            class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors"
+                            href="{{ route('get-quote') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg>Obtenir un devis pour la refonte de votre site</a></div>
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">

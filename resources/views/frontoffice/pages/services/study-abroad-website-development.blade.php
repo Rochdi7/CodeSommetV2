@@ -324,7 +324,7 @@
                                             </div>
                                             <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
                                                 {{ __('services/study-abroad-website-development-agency.ml_1138') }}</h3>
-                                            <p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch in 2-5 jours
+                                            <p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch in 7-10 jours
                                                 to
                                                 catch peak admission cycles. Quick turnaround pour urgent intakes (Fall,
                                                 Spring,
@@ -1879,7 +1879,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/study-abroad-website-development-agency.ml_1208') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">4-6
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-12
@@ -2978,6 +2978,12 @@
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                     </svg></a></div>
+            <div class="text-center pt-5 md:pt-6 mt-8 md:mt-10 border-t border-[#0F0F0F]/8">
+                <p class="text-sm md:text-base text-[#0F0F0F]/70 px-4"><a
+                        class="text-[#00AEEF] font-semibold hover:underline"
+                        href="{{ route('service', 'university-website-development') }}">vous êtes une université
+                        cherchant à gérer vos admissions internationales directement ?</a></p>
+            </div>
         </div>
     </section>
     <section class="w-full bg-[#F5F5F5] py-16 md:py-20">

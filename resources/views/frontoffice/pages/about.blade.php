@@ -99,7 +99,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><a
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4"><a
                             class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white gap-2 px-8 h-12"
                             style="color:white" href="{{ route('contact') }}">Commencer<svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -107,7 +108,9 @@
                                 stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
-                            </svg></a>
+                            </svg></a><a href="{{ route('get-quote') }}"
+                                class="text-[#00AEEF] hover:underline font-medium">obtenir un devis personnalisé</a>
+                        </div>
                     </div>
                     <div class="hidden lg:flex relative h-[400px] items-center justify-center"
                         style="transform:scale(0.95)">
@@ -464,7 +467,8 @@
                     <div class="text-center">
                         <p class="text-[#0F0F0F]/50 text-sm italic">Ensemble, nous avons livré plus de 50 projets
                             exceptionnels
-                            depuis 2018. <a href="{{ route('contact') }}"
+                            depuis 2018 — <a href="{{ route('our-work') }}"
+                                class="text-[#00AEEF] hover:underline">découvrez nos 50+ projets livrés</a>. <a href="{{ route('contact') }}"
                                 class="text-[#00AEEF] hover:underline">{{ __('about.text_140') }}</a>
                             {{ __('about.text_21') }}</p>
                     </div>
