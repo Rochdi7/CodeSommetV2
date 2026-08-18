@@ -9,7 +9,7 @@
 @section('content')
     {{-- Hero Section --}}
     <section class="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-28 lg:pt-32 pb-16 md:pb-20">
-        @include('frontoffice.components.hero-background')
+        @include('frontoffice.components.shared.hero-background')
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
             <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 lg:gap-12 items-center">
                 <div class="space-y-6 lg:space-y-8 text-center lg:text-left">

@@ -1,6 +1,6 @@
 {{--
     Breadcrumb component
-    Usage: @include('frontoffice.components.breadcrumb', ['items' => [['label' => 'Home', 'url' => route('home')], ['label' => 'Industries'], ['label' => 'E-commerce']]])
+    Usage: @include('frontoffice.components.shared.breadcrumb', ['items' => [['label' => 'Home', 'url' => route('home')], ['label' => 'Industries'], ['label' => 'E-commerce']]])
 --}}
 <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb">
     @foreach ($items as $index => $item)
