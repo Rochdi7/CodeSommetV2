@@ -42,7 +42,7 @@
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Landing page sur mesure</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 7 à 10 jours</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 2 à 5 jours</div>
                                             <div id="mob-book-btn" class="w-full py-1.5 px-2.5 rounded-xl font-medium text-center text-xs bg-white text-gray-900">Réservez votre créneau</div>
                                         </div>
                                     </div>
@@ -226,7 +226,7 @@
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Landing page sur mesure</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 7 à 10 jours</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Livraison en 2 à 5 jours</div>
                                     <div id="plan-book-btn" class="w-full py-3 px-4 rounded-xl font-medium text-center transition-colors bg-white text-gray-900">Réservez votre créneau</div>
                                 </div>
                             </div>

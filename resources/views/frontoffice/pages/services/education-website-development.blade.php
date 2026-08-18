@@ -965,7 +965,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours
+                        </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -1912,7 +1912,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/education-website-development-agency.ml_1007') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">4-6
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-12

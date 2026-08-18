@@ -42,7 +42,7 @@
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
-                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Vitrine en 10-20 jours</div>
+                                            <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Vitrine en 2-5 jours</div>
                                             <div id="mob-book-btn" class="w-full py-1.5 px-2.5 rounded-xl font-medium text-center text-xs bg-white text-gray-900">Demandez un Devis Gratuit</div>
                                         </div>
                                     </div>
@@ -226,7 +226,7 @@
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Site web sur mesure</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Design UI/UX & identité visuelle</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Optimisation SEO</div>
-                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Vitrine en 10-20 jours</div>
+                                    <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Vitrine en 2-5 jours</div>
                                     <div id="plan-book-btn" class="w-full py-3 px-4 rounded-xl font-medium text-center transition-colors bg-white text-gray-900">Demandez un Devis Gratuit</div>
                                 </div>
                             </div>
@@ -373,7 +373,7 @@
 @php
 $comparisons = [
 ['label' => 'Investissement', 'codesommet' => 'Tarification sur mesure', 'designer' => 'Coûts salariaux élevés', 'agency' => 'Tarifs premium'],
-['label' => 'Rapidité de Livraison', 'codesommet' => '10 à 20 jours (vitrine)', 'designer' => '2-3 semaines', 'agency' => '3-6 mois'],
+['label' => 'Rapidité de Livraison', 'codesommet' => '2 à 5 jours (vitrine)', 'designer' => '2-3 semaines', 'agency' => '3-6 mois'],
 ['label' => 'Garantie Qualité', 'codesommet' => 'Révisions illimitées', 'designer' => 'Qualité variable', 'agency' => '2-3 cycles de révision'],
 ['label' => 'Délai de Démarrage', 'codesommet' => 'Devis gratuit & immédiat', 'designer' => '4-8 semaines de recrutement', 'agency' => '2-4 semaines de lancement'],
 ['label' => 'Périmètre', 'codesommet' => 'Solution complète clé en main', 'designer' => 'Limité aux compétences', 'agency' => 'Nécessite souvent plusieurs prestataires'],
@@ -473,7 +473,7 @@ $comparisons = [
             $problems = [
             ['title' => '1. Mauvaise Expérience Utilisateur', 'problem' => 'Chargement lent, navigation confuse et design obsolète qui frustrent les visiteurs.', 'solution' => 'Performance ultra-rapide, UX intuitive et design moderne qui ravit les utilisateurs.'],
             ['title' => '2. Pas d\'Intégration IA', 'problem' => 'Vous passez à côté des capacités IA que vos concurrents utilisent déjà.', 'solution' => 'Chatbots intelligents, recherche IA, automatisation et fonctionnalités intelligentes intégrées.'],
-            ['title' => '3. Des Mois d\'Attente', 'problem' => 'Les agences traditionnelles prennent 3-6 mois pendant que vous perdez des opportunités.', 'solution' => 'Vitrine livrée en 10 à 20 jours. E-commerce ou SaaS en 3 à 6 semaines. Commencez à croître immédiatement.'],
+            ['title' => '3. Des Mois d\'Attente', 'problem' => 'Les agences traditionnelles prennent 3-6 mois pendant que vous perdez des opportunités.', 'solution' => 'Vitrine livrée en 2 à 5 jours. E-commerce ou SaaS en 3 à 6 semaines. Commencez à croître immédiatement.'],
             ['title' => '4. Image de Marque Non Professionnelle', 'problem' => 'Votre site web ne reflète pas la vraie valeur et l\'expertise de votre entreprise.', 'solution' => 'Design premium qui établit l\'autorité et inspire confiance instantanément.'],
             ['title' => '5. Tarification Opaque', 'problem' => 'Les agences cachent les coûts jusqu\'à ce que vous soyez engagé.', 'solution' => 'Processus transparent. Vous savez exactement ce que vous obtenez avant de vous engager.'],
             ['title' => '6. Faible Taux de Conversion', 'problem' => 'Le trafic ne convertit pas. Les visiteurs naviguent mais ne passent pas à l\'action.', 'solution' => 'CTAs stratégiques, formulaires optimisés et design orienté conversion.'],
@@ -552,7 +552,7 @@ $comparisons = [
                         </div>
                     </div>
                     <div class="mb-6 p-4 rounded-2xl bg-white/5">
-                        <p class="text-white/70">Site vitrine en 10-20 jours, e-commerce ou SaaS en 3-6 semaines. Dépôt de 40% pour démarrer, solde à la livraison.</p>
+                        <p class="text-white/70">Site vitrine en 2-5 jours, e-commerce ou SaaS en 3-6 semaines. Dépôt de 40% pour démarrer, solde à la livraison.</p>
                     </div>
                     <div class="divide-y divide-white/10">
                         @foreach(['Sites vitrine, e-commerce & SaaS sur mesure', 'Applications mobiles (Flutter) & CRM', 'Design UI/UX responsive mobile-first', 'Identité visuelle & création de logo', 'SEO On-Page & Off-Page avancé', 'Intégration Shopify, WordPress, Laravel', 'Intégration de paiement prête', 'Analytics & suivi des conversions'] as $feature)

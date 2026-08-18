@@ -340,7 +340,7 @@
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Calendrier de Lancement
-                                        en 7-10 Jours</h3>
+                                        en 2-5 Jours</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">
                                         {{ __('services/edtech-platform-development-agency.ml_933') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
@@ -950,7 +950,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours
+                        </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">

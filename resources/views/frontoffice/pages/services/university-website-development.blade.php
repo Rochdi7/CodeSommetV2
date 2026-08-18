@@ -340,7 +340,7 @@
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Calendrier de Lancement
-                                        en 7-10 Jours</h3>
+                                        en 2-5 Jours</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">
                                         {{ __('services/university-website-development-agency.ml_950') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
