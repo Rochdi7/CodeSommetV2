@@ -52,7 +52,7 @@
 @section('content')
 {{-- Hero / Header --}}
 <section class="relative pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 overflow-hidden">
-    @include('frontoffice.components.hero-background')
+    @include('frontoffice.components.shared.hero-background')
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
 
         {{-- Back button --}}
@@ -292,5 +292,5 @@
 </section>
 
 {{-- CTA Banner --}}
-@include('frontoffice.components.cta-banner')
+@include('frontoffice.components.shared.cta-banner')
 @endsection
