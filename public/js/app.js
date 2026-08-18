@@ -906,11 +906,11 @@
         if (!textEl || !btn) return;
 
         var facts = [
-            "We deliver websites in 7-10 days while most agencies take 8-12 weeks! \u26A1",
+            "We deliver websites in 2-5 days while most agencies take 8-12 weeks! \u26A1",
             "Our AI-assisted development process is 3x faster than traditional coding! \uD83E\uDD16",
             "We\u2019ve delivered 95+ successful projects across 15+ countries worldwide! \uD83C\uDF0D",
             "Every website we build is conversion-optimized from day one - not just pretty! \uD83D\uDCC8",
-            "Our team operates across 3 continents: Dubai, USA, and India! \uD83C\uDF0F",
+            "Our team operates across 3 continents: Dubai, USA, and Morocco! \uD83C\uDF0F",
             "We provide unlimited revisions on retainer plans - yes, truly unlimited! \uD83D\uDD04",
             "Our average client sees their first lead within 48 hours of launch! \uD83C\uDFAF",
             "We use the latest AI tools to deliver enterprise-quality at startup speed! \u2728",
@@ -1369,7 +1369,7 @@
         }
 
         var faqAnswers = {
-            whyChoose: 'Nous combinons technologie IA de pointe, design premium et livraison rapide. Là où les agences traditionnelles prennent des mois, nous livrons en 7 à 10 jours avec des révisions illimitées. Notre expertise full-stack couvre tout, des tableaux de bord sur mesure aux chatbots IA, pour donner à votre entreprise un vrai avantage concurrentiel.',
+            whyChoose: 'Nous combinons technologie IA de pointe, design premium et livraison rapide. Là où les agences traditionnelles prennent des mois, nous livrons en 2 à 5 jours avec des révisions illimitées. Notre expertise full-stack couvre tout, des tableaux de bord sur mesure aux chatbots IA, pour donner à votre entreprise un vrai avantage concurrentiel.',
             startups: 'Absolument ! Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
             technologies: 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons OpenAI, des chatbots sur mesure et des automatisations intelligentes. Notre stack technique garantit des performances rapides, un excellent SEO et une vraie évolutivité.',
             integrate: 'Oui, nous sommes spécialisés dans l\'intégration avec vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',
@@ -1378,7 +1378,7 @@
             remote: 'Notre équipe travaille à distance et accompagne des clients dans le monde entier. Tout se passe en ligne : appels vidéo, collaboration sur Slack et suivi de projet en temps réel, ce qui nous permet de rester très réactifs quel que soit votre fuseau horaire.',
             payment: 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
             compliance: 'Nous concevons des sites conformes aux bonnes pratiques et réglementations applicables, notamment le RGPD pour les données personnelles : consentement aux cookies, politique de confidentialité et sécurisation des données. Pour des exigences sectorielles ou locales spécifiques, nous adaptons la solution avec vous.',
-            speed: 'La plupart des sites web sont livrés en 7 à 10 jours après validation du périmètre. Les plateformes plus complexes prennent généralement de 3 à 6 semaines. Nous pouvons aussi lancer une première version rapidement puis itérer par étapes.'
+            speed: 'La plupart des sites web sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes prennent généralement de 3 à 6 semaines. Nous pouvons aussi lancer une première version rapidement puis itérer par étapes.'
         };
 
         function findAnswer(questionText) {
