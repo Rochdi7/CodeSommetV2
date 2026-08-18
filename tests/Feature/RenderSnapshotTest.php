@@ -408,12 +408,20 @@ class RenderSnapshotTest extends TestCase
     }
 
     /**
-     * Sort by method+uri and drop nothing else — the baseline is the full
-     * route:list --json output, so any change to uri, name, action or
-     * middleware is detected (A9).
+     * Sort by method+uri and keep the route contract — domain, method, uri,
+     * name, action, middleware — so any change to those is detected (A9).
+     * The `path` field (closure definition file:line) is dropped: it is not
+     * part of the route contract, is environment-dependent (absolute when
+     * the file lies outside base_path) and churns whenever a line moves in
+     * routes/web.php without any route changing.
      */
     private function normalizeRoutes(array $routes): array
     {
+        $routes = array_map(function (array $r) {
+            unset($r['path']);
+
+            return $r;
+        }, $routes);
         usort($routes, fn ($a, $b) => strcmp($a['method'].' '.$a['uri'], $b['method'].' '.$b['uri']));
 
         return $routes;

@@ -8,8 +8,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -20,8 +19,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -32,8 +30,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -44,8 +41,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -56,8 +52,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -68,8 +63,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -80,8 +74,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -92,8 +85,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -104,8 +96,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -115,8 +106,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -126,8 +116,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -138,8 +127,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -150,8 +138,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -162,8 +149,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -174,8 +160,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -186,8 +171,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -198,8 +182,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -210,8 +193,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -222,8 +204,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -234,8 +215,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -246,8 +226,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -258,8 +237,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -270,8 +248,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -281,8 +258,7 @@
         "action": "App\\Http\\Controllers\\Auth\\AdminLoginController@showLoginForm",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -293,8 +269,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -305,8 +280,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -317,8 +291,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -329,8 +302,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -341,8 +313,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -353,8 +324,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -365,8 +335,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -377,8 +346,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -389,8 +357,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -401,8 +368,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -413,8 +379,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -425,8 +390,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -437,8 +401,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -449,8 +412,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -461,8 +423,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -473,8 +434,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -485,8 +445,7 @@
         "middleware": [
             "api",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -496,8 +455,7 @@
         "action": "App\\Http\\Controllers\\BlogController@index",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -507,8 +465,7 @@
         "action": "Closure",
         "middleware": [
             "web"
-        ],
-        "path": "routes/web.php:111"
+        ]
     },
     {
         "domain": null,
@@ -518,8 +475,7 @@
         "action": "App\\Http\\Controllers\\BlogController@show",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -529,8 +485,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -540,8 +495,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -551,8 +505,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -562,8 +515,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -573,8 +525,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -584,8 +535,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -595,8 +545,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -606,8 +555,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -617,8 +565,7 @@
         "action": "App\\Http\\Controllers\\LlmsTxtController@index",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -628,8 +575,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -639,8 +585,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -650,8 +595,7 @@
         "action": "Closure",
         "middleware": [
             "web"
-        ],
-        "path": "routes/web.php:101"
+        ]
     },
     {
         "domain": null,
@@ -661,8 +605,7 @@
         "action": "Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController@show",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -672,8 +615,7 @@
         "action": "Closure",
         "middleware": [
             "web"
-        ],
-        "path": "routes/web.php:65"
+        ]
     },
     {
         "domain": null,
@@ -683,8 +625,7 @@
         "action": "App\\Http\\Controllers\\SitemapController@index",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -692,8 +633,7 @@
         "uri": "storage/{path}",
         "name": "storage.local",
         "action": "Closure",
-        "middleware": [],
-        "path": "vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:98"
+        "middleware": []
     },
     {
         "domain": null,
@@ -703,8 +643,7 @@
         "action": "Illuminate\\Routing\\ViewController",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -714,8 +653,7 @@
         "action": "Closure",
         "middleware": [
             "web"
-        ],
-        "path": "routes/web.php:92"
+        ]
     },
     {
         "domain": null,
@@ -723,8 +661,7 @@
         "uri": "up",
         "name": null,
         "action": "Closure",
-        "middleware": [],
-        "path": "vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:219"
+        "middleware": []
     },
     {
         "domain": null,
@@ -734,8 +671,7 @@
         "action": "Closure",
         "middleware": [
             "web"
-        ],
-        "path": "routes/web.php:80"
+        ]
     },
     {
         "domain": null,
@@ -746,8 +682,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -758,8 +693,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -770,8 +704,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -782,8 +715,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -794,8 +726,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -807,8 +738,7 @@
             "web",
             "App\\Http\\Middleware\\SuperAdmin",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:budget-unlock"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -819,8 +749,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -831,8 +760,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -843,8 +771,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -855,8 +782,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -867,8 +793,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -879,8 +804,7 @@
         "middleware": [
             "web",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:admin-login"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -890,8 +814,7 @@
         "action": "App\\Http\\Controllers\\Auth\\AdminLoginController@logout",
         "middleware": [
             "web"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -902,8 +825,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -914,8 +836,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -926,8 +847,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -938,8 +858,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -950,8 +869,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -962,8 +880,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -974,8 +891,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -986,8 +902,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -998,8 +913,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1010,8 +924,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1022,8 +935,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1034,8 +946,7 @@
         "middleware": [
             "web",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:quote"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1046,8 +957,7 @@
         "middleware": [
             "api",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-api"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1058,8 +968,7 @@
         "middleware": [
             "api",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1070,8 +979,7 @@
         "middleware": [
             "web",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:contact"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1082,8 +990,7 @@
         "middleware": [
             "web",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:newsletter"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1091,8 +998,7 @@
         "uri": "storage/{path}",
         "name": "storage.local.upload",
         "action": "Closure",
-        "middleware": [],
-        "path": "vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:106"
+        "middleware": []
     },
     {
         "domain": null,
@@ -1103,8 +1009,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1115,8 +1020,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1127,8 +1031,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1139,8 +1042,7 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     },
     {
         "domain": null,
@@ -1151,7 +1053,6 @@
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
-        ],
-        "path": null
+        ]
     }
 ]
