@@ -1,0 +1,293 @@
+{
+    "headings": [
+        [
+            1,
+            "NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT CROISSANCE COMMERCIALE À TANGERCROISSANCE COMMERCIALE À TANGER"
+        ],
+        [
+            2,
+            "Pourquoi Choisir CodeSommet in Tanger?"
+        ],
+        [
+            3,
+            "Experts en IA"
+        ],
+        [
+            3,
+            "Spécialistes Dashboard & SaaS"
+        ],
+        [
+            3,
+            "Axé Génération de Prospects"
+        ],
+        [
+            3,
+            "Service Complet de Bout en Bout"
+        ],
+        [
+            3,
+            "Spécialistes Sectoriels"
+        ],
+        [
+            3,
+            "Stack Technologique Moderne"
+        ],
+        [
+            2,
+            "Approuvé par Tanger Entreprises"
+        ],
+        [
+            2,
+            "Tanger Nos Secteurs de Spécialisation"
+        ],
+        [
+            3,
+            "FinTech"
+        ],
+        [
+            3,
+            "Cabinet Juridique"
+        ],
+        [
+            3,
+            "Cabinets de Conseil"
+        ],
+        [
+            3,
+            "Santé"
+        ],
+        [
+            3,
+            "Immobilier"
+        ],
+        [
+            3,
+            "Plateformes SaaS"
+        ],
+        [
+            2,
+            "Histoires de réussite à Tanger"
+        ],
+        [
+            3,
+            "GlamWorlds"
+        ],
+        [
+            3,
+            "Mon Asso"
+        ],
+        [
+            3,
+            "Morocco Quest"
+        ],
+        [
+            2,
+            "Comment Nous Concevons des Plateformes Immobilières Pensées pour le Marché de Tanger"
+        ],
+        [
+            3,
+            "Le Défi"
+        ],
+        [
+            3,
+            "Notre Solution"
+        ],
+        [
+            3,
+            "Impact Mesurable"
+        ],
+        [
+            3,
+            "Technologies Utilisées"
+        ],
+        [
+            2,
+            "Solutions sur mesure, tarification transparente"
+        ],
+        [
+            3,
+            "Développement Web"
+        ],
+        [
+            3,
+            "Forfait"
+        ],
+        [
+            2,
+            "Prêt à Améliorer Votre Site Web à Tanger ?"
+        ],
+        [
+            2,
+            "CodeSommet Tanger vs Others"
+        ],
+        [
+            2,
+            "Ce que nos clients de Tanger disent de nous"
+        ],
+        [
+            2,
+            "Comment démarrer en 3 étapes simples"
+        ],
+        [
+            3,
+            "Abonnement"
+        ],
+        [
+            3,
+            "Développement de Site Web"
+        ],
+        [
+            3,
+            "Vous avez faitvotre part"
+        ],
+        [
+            3,
+            "Choisissez votre formule"
+        ],
+        [
+            3,
+            "Vos demandes design"
+        ],
+        [
+            3,
+            "Envoyez votre demande"
+        ],
+        [
+            3,
+            "Tâches du projet"
+        ],
+        [
+            3,
+            "Suivez notre livraison"
+        ],
+        [
+            3,
+            "Abonnement"
+        ],
+        [
+            3,
+            "Développement de Site Web"
+        ],
+        [
+            3,
+            "Vous avez faitvotre part"
+        ],
+        [
+            3,
+            "Vos demandes design"
+        ],
+        [
+            3,
+            "Tâches du projet"
+        ],
+        [
+            3,
+            "Choisissez votre formule"
+        ],
+        [
+            3,
+            "Envoyez votre demande"
+        ],
+        [
+            3,
+            "Suivez notre livraison"
+        ],
+        [
+            2,
+            "Questions fréquemment posées sur le Développement Web à Tanger"
+        ],
+        [
+            3,
+            "Avez-vous un bureau physique à Tanger ?"
+        ],
+        [
+            3,
+            "Pouvez-vous travailler avec les entreprises de Tanger à distance ?"
+        ],
+        [
+            3,
+            "Quels modes de paiement acceptez-vous à Tanger ?"
+        ],
+        [
+            3,
+            "Comprenez-vous les lois de conformité et de protection des données au Maroc ?"
+        ],
+        [
+            3,
+            "En combien de temps pouvez-vous lancer un site web pour mon entreprise à Tanger ?"
+        ],
+        [
+            3,
+            "Pouvez-vous aider avec l'enregistrement de domaine ?"
+        ],
+        [
+            2,
+            "Nous Desservons Également"
+        ],
+        [
+            3,
+            "Abu Dhabi"
+        ],
+        [
+            3,
+            "Riyad"
+        ],
+        [
+            3,
+            "Doha"
+        ],
+        [
+            3,
+            "Kuwait City"
+        ],
+        [
+            3,
+            "Riyad"
+        ],
+        [
+            2,
+            "Explorer davantage"
+        ],
+        [
+            3,
+            "Audit Gratuit de Site Web"
+        ],
+        [
+            3,
+            "Voir Nos Projets"
+        ],
+        [
+            3,
+            "À Propos de CodeSommet"
+        ],
+        [
+            3,
+            "Contactez-nous"
+        ],
+        [
+            3,
+            "Retour à l'accueil"
+        ],
+        [
+            2,
+            "Prêt à Créer Quelque Chose d'Extraordinaire ?"
+        ]
+    ],
+    "links": {
+        "internal": 70,
+        "external": 7,
+        "fragment": 3,
+        "other": 0
+    },
+    "fragment_ids": [
+        "pricing",
+        "portfolio"
+    ],
+    "parser_errors": {
+        "Opening and ending tag mismatch: main and div": 1,
+        "Opening and ending tag mismatch: section and div": 1,
+        "Unexpected end tag : p": 1,
+        "error parsing attribute name": 2,
+        "htmlParseEntityRef: no name": 4
+    }
+}

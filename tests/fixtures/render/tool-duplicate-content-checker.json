@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Contenu Dupliqué"
+        ],
+        [
+            3,
+            "Comment utiliser cet outil"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le contenu dupliqué et pourquoi est-ce important pour le SEO ?"
+        ],
+        [
+            3,
+            "Quel pourcentage de similarité est problématique ?"
+        ],
+        [
+            3,
+            "Quelle différence entre contenu dupliqué interne et externe ?"
+        ],
+        [
+            3,
+            "Comment les balises canonical aident-elles avec le contenu dupliqué ?"
+        ],
+        [
+            3,
+            "Est-il acceptable de syndiquer ou republier du contenu ?"
+        ],
+        [
+            3,
+            "Comment éviter le contenu dupliqué avec des pages similaires ?"
+        ],
+        [
+            3,
+            "Les citations comptent-elles comme du contenu dupliqué ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Canonical URL Checker"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Analyseur de Densité de Mots-clés"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

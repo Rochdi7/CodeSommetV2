@@ -1,0 +1,80 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Sitemap XML"
+        ],
+        [
+            3,
+            "Comment utiliser cet outil"
+        ],
+        [
+            3,
+            "Meilleures Pratiques pour les Sitemaps XML"
+        ],
+        [
+            3,
+            "Comprendre les Paramètres du Sitemap"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un sitemap XML et pourquoi en ai-je besoin ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je mettre à jour mon sitemap XML ?"
+        ],
+        [
+            3,
+            "Comment soumettre mon sitemap à Google Search Console ?"
+        ],
+        [
+            3,
+            "Que dois-je définir pour les valeurs de priorité et changefreq ?"
+        ],
+        [
+            3,
+            "Dois-je inclure chaque page de mon site web ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs courantes de sitemap XML à éviter ?"
+        ],
+        [
+            3,
+            "Où dois-je uploader mon fichier sitemap.xml ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Sitemap Validator"
+        ],
+        [
+            3,
+            "Robots.txt Generator"
+        ],
+        [
+            3,
+            "Robots.txt Validator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

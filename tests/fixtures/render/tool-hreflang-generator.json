@@ -1,0 +1,79 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Balises Hreflang"
+        ],
+        [
+            3,
+            "Versions Linguistiques"
+        ],
+        [
+            3,
+            "Comment utiliser cet outil"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que sont les balises hreflang et pourquoi en ai-je besoin ?"
+        ],
+        [
+            3,
+            "Quelle différence entre codes de langue (en) et codes régionaux (en-US) ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que x-default et quand l'utiliser ?"
+        ],
+        [
+            3,
+            "Dois-je utiliser des balises HTML ou des en-têtes HTTP pour hreflang ?"
+        ],
+        [
+            3,
+            "Dois-je ajouter des balises hreflang à chaque version ?"
+        ],
+        [
+            3,
+            "Comment vérifier que mon implémentation hreflang est correcte ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs hreflang les plus courantes ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Aperçu Open Graph"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Analyseur de Densité de Mots-clés"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "Unexpected end tag : p": 1,
+        "htmlParseStartTag: misplaced <head> tag": 1
+    }
+}

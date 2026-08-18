@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Encodeur/Décodeur Base64"
+        ],
+        [
+            3,
+            "Qu'est-ce que l'Encodage Base64 ?"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que l'encodage Base64 et pourquoi est-il utilisé ?"
+        ],
+        [
+            3,
+            "L'encodage Base64 est-il une forme de chiffrement ou sécurisé ?"
+        ],
+        [
+            3,
+            "Pourquoi l'encodage Base64 augmente-t-il la taille des fichiers ?"
+        ],
+        [
+            3,
+            "Quand dois-je utiliser l'encodage Base64 pour les images ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que l'encodage Base64 sécurisé pour les URL ?"
+        ],
+        [
+            3,
+            "L'encodage Base64 peut-il corrompre mes données ?"
+        ],
+        [
+            3,
+            "Quels sont les cas d'utilisation courants du Base64 en développement web ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "FAQ Schema Generator"
+        ],
+        [
+            3,
+            "Analyseur de Score de Lisibilité"
+        ],
+        [
+            3,
+            "Word & Character Counter"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

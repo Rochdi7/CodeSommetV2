@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Analyseur de Vitesse de Page"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi la vitesse de page est-elle importante pour le SEO et l'expérience utilisateur ?"
+        ],
+        [
+            3,
+            "Que sont les Core Web Vitals et comment affectent-ils mon classement ?"
+        ],
+        [
+            3,
+            "Quel est un bon temps de chargement de page en 2026 ?"
+        ],
+        [
+            3,
+            "Pourquoi ma vitesse mobile est-elle plus lente que sur ordinateur, et est-ce important ?"
+        ],
+        [
+            3,
+            "Quelles sont les actions rapides pour améliorer la vitesse de ma page aujourd'hui ?"
+        ],
+        [
+            3,
+            "Comment l'utilisation d'un CDN améliore-t-elle la vitesse de page ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je surveiller la vitesse de ma page ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "HTML/CSS/JS Minifier"
+        ],
+        [
+            3,
+            "Image Compression Analyzer"
+        ],
+        [
+            3,
+            "Analyseur de Densité de Mots-clés"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

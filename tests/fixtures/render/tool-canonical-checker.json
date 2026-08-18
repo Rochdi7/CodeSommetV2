@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur d'URL Canonical"
+        ],
+        [
+            3,
+            "Comment utiliser cet outil"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'une URL canonical et pourquoi est-ce important ?"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'une balise canonical auto-référente ?"
+        ],
+        [
+            3,
+            "Quand utiliser des balises canonical inter-domaines ?"
+        ],
+        [
+            3,
+            "Que se passe-t-il avec plusieurs balises canonical sur une page ?"
+        ],
+        [
+            3,
+            "Les balises canonical peuvent-elles nuire au SEO si mal implémentées ?"
+        ],
+        [
+            3,
+            "Comment Google gère les balises canonical vs les redirections 301 ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs d'URL canonical les plus courantes ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Duplicate Content Checker"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Broken Link Checker"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

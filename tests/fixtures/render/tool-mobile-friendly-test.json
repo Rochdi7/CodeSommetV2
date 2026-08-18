@@ -1,0 +1,52 @@
+{
+    "headings": [
+        [
+            1,
+            "Test de Compatibilité Mobile"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi la compatibilité mobile est-elle importante pour le SEO ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que la balise méta viewport et pourquoi est-elle essentielle ?"
+        ],
+        [
+            3,
+            "Quelle est la taille de police minimale pour la lisibilité mobile ?"
+        ],
+        [
+            3,
+            "Que sont les cibles tactiles et pourquoi sont-elles importantes ?"
+        ],
+        [
+            3,
+            "Comment empêcher le défilement horizontal sur mobile ?"
+        ],
+        [
+            3,
+            "Que sont les media queries et en ai-je besoin ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je tester la compatibilité mobile de mon site ?"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 48,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

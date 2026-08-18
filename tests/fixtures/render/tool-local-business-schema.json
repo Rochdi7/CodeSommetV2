@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Schéma d'Entreprise Locale"
+        ],
+        [
+            3,
+            "Optionnel (Recommandé pour un Meilleur SEO)"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le Schéma d'Entreprise Locale et pourquoi en ai-je besoin ?"
+        ],
+        [
+            3,
+            "Comment cela aide-t-il mon classement Google Maps ?"
+        ],
+        [
+            3,
+            "Quels champs sont obligatoires ou optionnels ?"
+        ],
+        [
+            3,
+            "Puis-je ajouter les horaires d'ouverture et comment les mettre à jour ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser ce schéma pour plusieurs emplacements d'entreprise ?"
+        ],
+        [
+            3,
+            "Quel est le rapport avec mon profil Google Business ?"
+        ],
+        [
+            3,
+            "Ce schéma m'aidera-t-il à obtenir des résultats enrichis avec des étoiles ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Schema Markup Generator"
+        ],
+        [
+            3,
+            "Aperçu Open Graph"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

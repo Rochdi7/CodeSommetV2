@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Analyseur de Texte Alt d'Image"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le texte alt d'image et pourquoi est-ce important ?"
+        ],
+        [
+            3,
+            "Quelle longueur doit avoir mon texte alt ?"
+        ],
+        [
+            3,
+            "Dois-je inclure des mots-clés dans mon texte alt pour le SEO ?"
+        ],
+        [
+            3,
+            "Quand dois-je utiliser un texte alt vide (alt=') ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs courantes de texte alt à éviter ?"
+        ],
+        [
+            3,
+            "Le texte alt manquant affecte-t-il mon classement Google ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je auditer le texte alt des images de mon site web ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Broken Link Checker"
+        ],
+        [
+            3,
+            "Sitemap Validator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

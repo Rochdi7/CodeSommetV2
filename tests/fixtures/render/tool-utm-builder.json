@@ -1,0 +1,81 @@
+{
+    "headings": [
+        [
+            1,
+            "Constructeur de ParamÃ¨tres UTM"
+        ],
+        [
+            3,
+            "GÃ©nÃ©rateur d'URL de Campagne"
+        ],
+        [
+            3,
+            "Comment Utiliser les ParamÃ¨tres UTM"
+        ],
+        [
+            3,
+            "Questions FrÃ©quemment PosÃ©es"
+        ],
+        [
+            3,
+            "Que sont les paramÃ¨tres UTM et pourquoi les utiliser ?"
+        ],
+        [
+            3,
+            "Quels paramÃ¨tres UTM sont requis vs optionnels ?"
+        ],
+        [
+            3,
+            "Quelles conventions de nommage suivre pour les paramÃ¨tres UTM ?"
+        ],
+        [
+            3,
+            "Comment les paramÃ¨tres UTM fonctionnent-ils avec Google Analytics ?"
+        ],
+        [
+            3,
+            "Dois-je raccourcir les URL avec UTM avant de les partager ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs courantes Ã Ã©viter avec les paramÃ¨tres UTM ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser des paramÃ¨tres UTM pour le trafic non payant ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous IntÃ©resser"
+        ],
+        [
+            3,
+            "AperÃ§u Open Graph"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Analyseur de DensitÃ© de Mots-clÃ©s"
+        ],
+        [
+            2,
+            "Besoin d'un Outil PersonnalisÃ© pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "Misplaced DOCTYPE declaration": 1,
+        "htmlParseStartTag: misplaced <body> tag": 1,
+        "htmlParseStartTag: misplaced <head> tag": 1,
+        "htmlParseStartTag: misplaced <html> tag": 1
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi la hiérarchie des titres est-elle importante pour le SEO ?"
+        ],
+        [
+            3,
+            "Combien de balises H1 par page ?"
+        ],
+        [
+            3,
+            "Que se passe-t-il si je saute des niveaux (ex. : H1 → H3) ?"
+        ],
+        [
+            3,
+            "Dois-je inclure des mots-clés dans mes titres ?"
+        ],
+        [
+            3,
+            "Comment les titres aident-ils l'accessibilité ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs courantes de structure de titres ?"
+        ],
+        [
+            3,
+            "Comment corriger les problèmes de structure de titres ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Broken Link Checker"
+        ],
+        [
+            3,
+            "Image Alt Text Analyzer"
+        ],
+        [
+            3,
+            "Sitemap Validator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

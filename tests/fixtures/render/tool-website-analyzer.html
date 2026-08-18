@@ -1,0 +1,1049 @@
+<html dir="ltr" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="CSRF_TOKEN" name="csrf-token">
+    <title>
+      #text Analyseur de Site Web - Outil Gratuit d'Audit SEO & Performance | CodeSommet
+    <meta content="Auditez votre site gratuitement : plus de 40 vérifications SEO, performance, sécurité et accessibilité, avec un score global et des conseils concrets." name="description">
+    <meta content="CodeSommet" name="author">
+    <meta content="analyseur de site web,outil audit site web,vérificateur SEO,analyseur performance,test vitesse site web,analyse automatisée site web,audit SEO gratuit,vérificateur vitesse page,bilan santé site web,Core Web Vitals,analyse design,audit sécurité" name="keywords">
+    <meta content="index, follow" name="robots">
+    <meta content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" name="googlebot">
+    <meta content="Analyseur de Site Web - 40+ Vérifications pour SEO, Performance & Design" property="og:title">
+    <meta content="Audit complet et gratuit de site web avec analyse avancée. Vérifiez le SEO, la performance, le design et la sécurité en 30 secondes. Obtenez un plan d'amélioration personnalisé." property="og:description">
+    <meta content="http://localhost:8000/tools/website-analyzer" property="og:url">
+    <meta content="CodeSommet" property="og:site_name">
+    <meta content="fr_FR" property="og:locale">
+    <meta content="http://localhost:8000/heros/saas-hero.webp" property="og:image">
+    <meta content="1536" property="og:image:width">
+    <meta content="1024" property="og:image:height">
+    <meta content="CodeSommet - Agence Digitale" property="og:image:alt">
+    <meta content="website" property="og:type">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="@code_sommet" name="twitter:site">
+    <meta content="@code_sommet" name="twitter:creator">
+    <meta content="CodeSommet - Agence Digitale | Développement Web, Design & SEO" name="twitter:title">
+    <meta content="Audit complet et gratuit de site web avec analyse avancée. Vérifiez le SEO, la performance, le design et la sécurité en 30 secondes." name="twitter:description">
+    <meta content="http://localhost:8000/heros/saas-hero.webp" name="twitter:image">
+    <link href="http://localhost:8000/tools/website-analyzer" rel="canonical">
+    <link href="http://localhost:8000/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="http://localhost:8000/favicon/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="http://localhost:8000/favicon/favicon.ico" rel="shortcut icon">
+    <link href="http://localhost:8000/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="http://localhost:8000/favicon/site.webmanifest" rel="manifest">
+    <link as="font" crossorigin="" href="http://localhost:8000/fonts/phudu-latin.woff2" rel="preload" type="font/woff2">
+    <link as="font" crossorigin="" href="http://localhost:8000/fonts/inter-latin.woff2" rel="preload" type="font/woff2">
+    <link href="http://localhost:8000/css/main.css?v=VERSION" rel="stylesheet">
+    <link href="http://localhost:8000/css/components.min.css?v=VERSION" rel="stylesheet">
+    <link href="http://localhost:8000/css/tool-results.css?v=VERSION" rel="stylesheet">
+    <link href="http://localhost:8000/vendor/toastr/toastr-2.1.4.min.css?v=VERSION" media="print" onload="this.media='all'" rel="stylesheet">
+    <link href="http://localhost:8000/css/toastr-theme.css?v=VERSION" media="print" onload="this.media='all'" rel="stylesheet">
+    <noscript>
+      <link href="http://localhost:8000/vendor/toastr/toastr-2.1.4.min.css?v=VERSION" rel="stylesheet">
+      <link href="http://localhost:8000/css/toastr-theme.css?v=VERSION" rel="stylesheet">
+    <script type="application/ld+json">
+      #raw {"@context":"https://schema.org","@type":"Organization","@id":"http://localhost:8000/#organization","name":"CodeSommet","alternateName":"Code Sommet","url":"http://localhost:8000","logo":"http://localhost:8000/logo.svg","description":"Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital.","foundingDate":"2018","address":{"@type":"PostalAddress","addressCountry":"MA"},"areaServed":"Worldwide","knowsAbout":["Développement web sur mesure","Développement de plateformes SaaS","Sites e-commerce","Design UI/UX","SEO","Développement Next.js et React","Tableaux de bord et applications métier"],"sameAs":["https://www.linkedin.com/in/codesommet","https://www.instagram.com/code_sommet/","https://www.facebook.com/codesommetagency","https://www.youtube.com/@codesommet"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+212632582096","email":"codesommet@gmail.com","availableLanguage":["English","French","Arabic"]}}
+    <script type="application/ld+json">
+      #raw {"@context":"https://schema.org","@type":"WebSite","@id":"http://localhost:8000/#website","url":"http://localhost:8000","name":"CodeSommet","inLanguage":"fr","publisher":{"@id":"http://localhost:8000/#organization"}}
+    <script type="application/ld+json">
+      #raw {"@context":"https://schema.org","@type":"WebApplication","name":"Analyseur de Site Web","url":"http://localhost:8000/tools/website-analyzer","description":"Auditez votre site gratuitement : plus de 40 vérifications SEO, performance, sécurité et accessibilité, avec un score global et des conseils concrets.","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"provider":{"@id":"http://localhost:8000/#organization"},"inLanguage":"fr"}
+    <script type="application/ld+json">
+      #raw {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"http://localhost:8000/"},{"@type":"ListItem","position":2,"name":"Outils SEO \u0026 IA","item":"http://localhost:8000/tools"},{"@type":"ListItem","position":3,"name":"Analyseur de Site Web","item":"http://localhost:8000/tools/website-analyzer"}]}
+  <body class="antialiased">
+    <div aria-hidden="true" id="preloader">
+      <div class="preloader-inner">
+        <img alt="CodeSommet" class="preloader-logo" height="40" src="http://localhost:8000/logo.svg" width="160">
+        <div class="preloader-spinner">
+          <div class="preloader-bar">
+    <header class="fixed top-6 left-0 right-0 z-40 hidden lg:block px-6 transition-all duration-500 ease-out">
+      <div class="flex justify-center items-center gap-3">
+        <div class="relative flex items-center gap-4 px-3 py-2 rounded-full transition-all duration-300 bg-white/90 backdrop-blur-xl border border-[var(--border-light)] shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)]">
+          <div class="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-0 h-full" style="background:linear-gradient(90deg, transparent 0%, rgba(0,174,239,0.08) 40%, rgba(0,174,239,0.12) 50%, rgba(0,174,239,0.08) 60%, transparent 100%);width:200%;animation:nav-sweep 4s ease-in-out infinite">
+          <style>
+            #raw @keyframes nav-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(0%); } }
+          <a class="flex items-center pl-4 relative z-10" href="http://localhost:8000">
+            <div class="flex items-center gap-1">
+              <div class="w-14 h-14 flex items-center justify-center">
+                <img alt="CodeSommet" class="w-full h-full object-contain" height="150" src="http://localhost:8000/logo.svg" width="220">
+              <span class="text-[var(--text-primary)] font-bold text-lg font-heading">
+                #text CodeSommet
+          <nav class="flex items-center gap-1 relative z-10">
+            <div class="relative">
+              <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="http://localhost:8000">
+                #text Accueil
+            <div class="relative">
+              <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="http://localhost:8000/about">
+                #text À Propos
+            <div class="relative">
+              <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="http://localhost:8000/our-work">
+                #text Nos Projets
+            <div class="relative">
+              <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="http://localhost:8000/tools">
+                #text Outils
+            <div class="relative">
+              <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="http://localhost:8000/blog">
+                #text Blog
+            <div class="relative">
+              <a class="relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center z-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" href="http://localhost:8000/contact">
+                #text Contact
+          <div class="flex items-center gap-2 pr-2 relative z-10">
+            <a class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 hover:bg-white hover:from-white hover:to-white hover:text-[var(--color-primary-orange)] hover:border hover:border-[var(--color-primary-orange)]" href="http://localhost:8000/get-quote">
+              #text Devis Gratuit
+            <button class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 border border-[var(--border-light)] text-[var(--text-primary)] hover:bg-gray-50" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;,&quot;useSlotsViewOnSmallScreen&quot;:&quot;true&quot;}" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting">
+              #text Réserver un Appel
+    <header class="fixed left-0 right-0 z-40 lg:hidden transition-all duration-500 ease-out top-0">
+      <div class="flex w-full justify-center px-4 pt-3 pb-1">
+        <div class="relative flex w-full max-w-[380px] items-center justify-between rounded-full border border-[var(--border-light)] bg-white/90 backdrop-blur-xl px-3 py-2.5 shadow-[0_4px_12px_rgba(0,0,0,0.05),0_2px_6px_rgba(0,0,0,0.03)]">
+          <button aria-expanded="false" aria-label="Basculer le menu de navigation" class="h-11 w-11 rounded-full bg-transparent text-[var(--text-primary)] transition hover:bg-[var(--bg-secondary)] flex items-center justify-center" id="mobile-menu-toggle">
+            <svg aria-hidden="true" class="h-5 w-5" fill="none" height="24" id="mobile-icon-open" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 5h16">
+              <path d="M4 12h16">
+              <path d="M4 19h16">
+            <svg aria-hidden="true" class="h-5 w-5 hidden" fill="none" height="24" id="mobile-icon-close" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6 6 18">
+              <path d="m6 6 12 12">
+          <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center" href="http://localhost:8000">
+            <div class="flex items-center gap-1">
+              <div class="w-14 h-14 flex items-center justify-center">
+                <img alt="CodeSommet" class="w-full h-full object-contain" height="150" src="http://localhost:8000/logo.svg" width="220">
+              <span class="text-[var(--text-primary)] font-bold text-[20px] font-heading">
+                #text CodeSommet
+      <div class="hidden fixed left-0 right-0 z-[70] flex justify-center px-4" id="mobile-menu" style="top: 88px;">
+        <div class="w-full max-w-[380px] max-h-[calc(100vh-120px)] overflow-y-auto rounded-3xl border border-white/30 bg-white/95 p-3 shadow-[0_28px_60px_-24px_rgba(37,99,235,0.45)] backdrop-blur-2xl">
+          <nav class="flex flex-col gap-1.5">
+            <a class="group relative flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_18px_30px_-22px_rgba(37,99,235,0.45)] text-slate-700 bg-white/80 hover:bg-white/90" href="http://localhost:8000">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg text-white shadow-inner bg-gradient-to-br from-black to-gray-900">
+                <svg aria-hidden="true" class="h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8">
+                  <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+              <span class="flex-1 text-left">
+                #text Accueil
+            <a class="group relative flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_18px_30px_-22px_rgba(37,99,235,0.45)] text-slate-700 bg-white/80 hover:bg-white/90" href="http://localhost:8000/about">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg text-white shadow-inner bg-gradient-to-br from-black to-gray-900">
+                <svg aria-hidden="true" class="h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10">
+                  <path d="M12 16v-4">
+                  <path d="M12 8h.01">
+              <span class="flex-1 text-left">
+                #text À Propos
+            <a class="group relative flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_18px_30px_-22px_rgba(37,99,235,0.45)] text-slate-700 bg-white/80 hover:bg-white/90" href="http://localhost:8000/our-work">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg text-white shadow-inner bg-gradient-to-br from-black to-gray-900">
+                <svg aria-hidden="true" class="h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+                  <rect height="14" rx="2" width="20" x="2" y="6">
+              <span class="flex-1 text-left">
+                #text Nos Projets
+            <a class="group relative flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_18px_30px_-22px_rgba(37,99,235,0.45)] text-slate-700 bg-white/80 hover:bg-white/90" href="http://localhost:8000/tools">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg text-white shadow-inner bg-gradient-to-br from-black to-gray-900">
+                <svg aria-hidden="true" class="h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z">
+              <span class="flex-1 text-left">
+                #text Outils
+            <a class="group relative flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_18px_30px_-22px_rgba(37,99,235,0.45)] text-slate-700 bg-white/80 hover:bg-white/90" href="http://localhost:8000/blog">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg text-white shadow-inner bg-gradient-to-br from-black to-gray-900">
+                <svg aria-hidden="true" class="h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 20h9">
+                  <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z">
+              <span class="flex-1 text-left">
+                #text Blog
+            <a class="group relative flex items-center gap-2.5 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_18px_30px_-22px_rgba(37,99,235,0.45)] text-slate-700 bg-white/80 hover:bg-white/90" href="http://localhost:8000/contact">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg text-white shadow-inner bg-gradient-to-br from-black to-gray-900">
+                <svg aria-hidden="true" class="h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
+                  <rect height="16" rx="2" width="20" x="2" y="4">
+              <span class="flex-1 text-left">
+                #text Contact
+          <div class="mt-4 rounded-2xl bg-white/80 p-2 shadow-inner backdrop-blur-sm space-y-2">
+            <a class="h-11 w-full rounded-xl bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:shadow-lg inline-flex items-center justify-center font-semibold transition-all" href="http://localhost:8000/get-quote">
+              #text Devis Gratuit
+            <button class="h-11 w-full rounded-xl border border-black/10 text-slate-700 hover:bg-white/90 inline-flex items-center justify-center font-semibold transition-all" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;,&quot;useSlotsViewOnSmallScreen&quot;:&quot;true&quot;}" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting">
+              #text Réserver un Appel
+    <main>
+      <section class="relative overflow-hidden pt-28 pb-16 bg-white">
+        <div class="absolute inset-0 pointer-events-none" style="z-index:0">
+          <div class="absolute inset-0 w-full h-full" style="background-image:linear-gradient(to right, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(180, 180, 180, 0.2) 1px, transparent 1px);background-size:30px 30px;background-position:center center">
+          <div class="absolute inset-0 w-full h-full" style="background:radial-gradient(
+            ellipse 70% 70% at center,
+            transparent 0%,
+            transparent 10%,
+            rgba(255, 255, 255, 0.1425) 25%,
+            rgba(255, 255, 255, 0.33249999999999996) 40%,
+            rgba(255, 255, 255, 0.57) 60%,
+            rgba(255, 255, 255, 0.8075) 80%,
+            rgba(255, 255, 255, 0.95) 100%
+          )">
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+          <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8">
+            <a class="hover:text-[#00AEEF] transition-colors" href="/">
+              #text Accueil
+            <span>
+              #text /
+            <a class="hover:text-[#00AEEF] transition-colors" href="/tools">
+              #text Outils
+            <span>
+              #text /
+            <span class="text-black font-medium">
+              #text Analyseur de Site Web
+          <div class="mb-8">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">
+              #text Analyseur de Site Web
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              #text Analyse complète de site web avec insights alimentés par l'IA, audit SEO, métriques de performance et plan d'amélioration personnalisé
+          <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-50 border border-green-200 rounded-full text-sm">
+            <div class="relative">
+              <div class="w-2 h-2 bg-green-500 rounded-full">
+              <div class="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping opacity-75">
+            <span class="text-green-700 font-medium">
+              #text Gratuit • Aucune inscription requise
+      <section class="max-w-5xl mx-auto px-4 py-12">
+        <div class="space-y-6 sm:space-y-8 overflow-x-hidden">
+          <div class="bg-white rounded-2xl border-2 border-gray-200 p-4 sm:p-6 lg:p-8">
+            <div class="space-y-6">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                  #text Analyser Votre Site Web
+                <p class="text-gray-600">
+                  #text Get instant feedback on SEO, performance, design, security, and more. Enter your URL and we'll analyze 40+ checkpoints across 5 categories using AI-powered insights.
+              <div class="space-y-2">
+                <label class="block text-sm font-medium text-black">
+                  #text URL du site web
+                  <span class="text-[#00AEEF] ml-1">
+                    #text *
+                <div class="relative">
+                  <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                    <svg aria-hidden="true" class="lucide lucide-globe w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10">
+                      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
+                      <path d="M2 12h20">
+                  <input class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60 pl-11" placeholder="https://example.com" required="" type="text" value="">
+                <p class="text-sm text-gray-500">
+                  #text Entrez l'URL complète incluant https://
+              <button class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full w-full bg-[#00AEEF] hover:bg-[#0071BC] text-white" tabindex="0">
+                #text Analyser le Site Web
+          <div class="space-y-6 sm:space-y-8">
+            <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
+              <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-black mb-3">
+                  #text Comment Fonctionne l'Analyseur de Site Web
+                <p class="text-base text-gray-600">
+                  #text Notre système d'analyse progressive en 5 étapes se termine en environ 30 secondes, vous donnant des informations instantanées tout en effectuant des audits techniques approfondis en arrière-plan.
+              <div class="space-y-6">
+                <div class="flex gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-[#00AEEF] hover:shadow-md transition-all duration-200">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-blue-50 flex items-center justify-center">
+                      <svg aria-hidden="true" class="lucide lucide-globe w-6 h-6 text-blue-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10">
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
+                        <path d="M2 12h20">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                      <h3 class="text-lg sm:text-xl font-bold text-black">
+                        #text Enter URL & Instant Checks
+                      <div class="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 flex-shrink-0">
+                        <svg aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6v6l4 2">
+                          <circle cx="12" cy="12" r="10">
+                        <span>
+                          #text 2 seconds
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      #text Entrez l'URL de votre site web et nous vérifions immédiatement HTTPS, sitemap.xml, robots.txt, certificat SSL, favicon, viewport mobile et temps de réponse. Cela vous donne des indicateurs de sant? rapides en moins de 2 secondes.
+                <div class="flex gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-[#00AEEF] hover:shadow-md transition-all duration-200">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-orange-50 flex items-center justify-center">
+                      <svg aria-hidden="true" class="lucide lucide-trending-up w-6 h-6 text-[#00AEEF]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7h6v6">
+                        <path d="m22 7-8.5 8.5-5-5L2 17">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                      <h3 class="text-lg sm:text-xl font-bold text-black">
+                        #text Analyse SEO
+                      <div class="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 flex-shrink-0">
+                        <svg aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6v6l4 2">
+                          <circle cx="12" cy="12" r="10">
+                        <span>
+                          #text 5 seconds
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      #text Nous analysons vos balises meta, la structure des titres (H1-H6), les balises Open Graph, les Twitter Cards, les balises canoniques, les textes alternatifs des images, le balisage schema et la structure des liens internes. Cet audit SEO complet identifie les opportunités d'optimisation.
+                <div class="flex gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-[#00AEEF] hover:shadow-md transition-all duration-200">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-green-50 flex items-center justify-center">
+                      <svg aria-hidden="true" class="lucide lucide-zap w-6 h-6 text-green-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                      <h3 class="text-lg sm:text-xl font-bold text-black">
+                        #text Métriques de Performance
+                      <div class="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 flex-shrink-0">
+                        <svg aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6v6l4 2">
+                          <circle cx="12" cy="12" r="10">
+                        <span>
+                          #text 8 seconds
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      #text À l'aide de l'API Google PageSpeed Insights, nous mesurons les Core Web Vitals incluant Largest Contentful Paint (LCP), First Contentful Paint (FCP), Cumulative Layout Shift (CLS) et Time to Interactive (TTI). Ces métriques impactent directement vos classements Google.
+                <div class="flex gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-[#00AEEF] hover:shadow-md transition-all duration-200">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-purple-50 flex items-center justify-center">
+                      <svg aria-hidden="true" class="lucide lucide-palette w-6 h-6 text-purple-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
+                        <circle cx="13.5" cy="6.5" fill="currentColor" r=".5">
+                        <circle cx="17.5" cy="10.5" fill="currentColor" r=".5">
+                        <circle cx="6.5" cy="12.5" fill="currentColor" r=".5">
+                        <circle cx="8.5" cy="7.5" fill="currentColor" r=".5">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                      <h3 class="text-lg sm:text-xl font-bold text-black">
+                        #text Analyse de la Qualité du Design
+                      <div class="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 flex-shrink-0">
+                        <svg aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6v6l4 2">
+                          <circle cx="12" cy="12" r="10">
+                        <span>
+                          #text 10 seconds
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      #text Notre système avancé de vision par ordinateur analyse la capture de votre site web pour évaluer la qualité du design, l'harmonie des couleurs, la typographie, l'expérience utilisateur et la réactivité mobile. Vous obtenez 3 à 5 problèmes précis et des recommandations actionnables basées sur les meilleures pratiques modernes du web design.
+                <div class="flex gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-[#00AEEF] hover:shadow-md transition-all duration-200">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-pink-50 flex items-center justify-center">
+                      <svg aria-hidden="true" class="lucide lucide-sparkles w-6 h-6 text-pink-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                        <path d="M20 2v4">
+                        <path d="M22 4h-4">
+                        <circle cx="4" cy="20" r="2">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                      <h3 class="text-lg sm:text-xl font-bold text-black">
+                        #text Personalized Improvement Plan
+                      <div class="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 flex-shrink-0">
+                        <svg aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6v6l4 2">
+                          <circle cx="12" cy="12" r="10">
+                        <span>
+                          #text 8 seconds
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      #text Enfin, notre algorithme génère une feuille de route personnalisée sur 4 semaines, priorisée en Problèmes Critiques (Semaine 1), Opportunités de Croissance (Semaines 2-3) et Améliorations Avancées (Semaine 4). Chaque élément inclut le problème, la solution, l'analyse d'impact et une estimation d'investissement.
+              <div class="mt-6 p-4 bg-gradient-to-r from-[#00AEEF]/10 to-orange-50 border border-[#00AEEF]/20 rounded-lg">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <p class="text-sm font-medium text-gray-800">
+                    <strong class="text-[#00AEEF]">
+                      #text Temps total d'analyse :
+                    #text Approximately 30 seconds for complete results
+                  <div class="flex items-center gap-2 text-sm text-gray-600">
+                    <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10">
+                      <path d="m9 12 2 2 4-4">
+                    <span>
+                      #text 40+ vérifications effectuées
+            <div class="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-lg p-6 md:p-8">
+              <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-black mb-3">
+                  #text Ce que Nous Analysons : 40+ Points de Contrôle
+                <p class="text-base text-gray-600">
+                  #text Notre analyse complète couvre chaque aspect critique de votre site web à travers 5 grandes catégories. Cliquez sur chaque catégorie pour voir le détail des vérifications effectuées.
+              <div class="space-y-3">
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                    <div class="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-trending-up w-6 h-6 text-[#00AEEF]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7h6v6">
+                        <path d="m22 7-8.5 8.5-5-5L2 17">
+                    <div class="flex-1 text-left min-w-0">
+                      <h3 class="text-lg sm:text-xl font-bold text-black mb-1">
+                        #text Analyse SEO
+                      <p class="text-sm text-gray-600">
+                        #text 10
+                        #comment 
+                        #text vérifications complètes
+                    <div class="flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6">
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                    <div class="w-12 h-12 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-zap w-6 h-6 text-green-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                    <div class="flex-1 text-left min-w-0">
+                      <h3 class="text-lg sm:text-xl font-bold text-black mb-1">
+                        #text Métriques de Performance
+                      <p class="text-sm text-gray-600">
+                        #text 8
+                        #comment 
+                        #text vérifications complètes
+                    <div class="flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6">
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                    <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-palette w-6 h-6 text-purple-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
+                        <circle cx="13.5" cy="6.5" fill="currentColor" r=".5">
+                        <circle cx="17.5" cy="10.5" fill="currentColor" r=".5">
+                        <circle cx="6.5" cy="12.5" fill="currentColor" r=".5">
+                        <circle cx="8.5" cy="7.5" fill="currentColor" r=".5">
+                    <div class="flex-1 text-left min-w-0">
+                      <h3 class="text-lg sm:text-xl font-bold text-black mb-1">
+                        #text Analyse de la Qualité du Design
+                      <p class="text-sm text-gray-600">
+                        #text 7
+                        #comment 
+                        #text vérifications complètes
+                    <div class="flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6">
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-shield w-6 h-6 text-blue-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                    <div class="flex-1 text-left min-w-0">
+                      <h3 class="text-lg sm:text-xl font-bold text-black mb-1">
+                        #text Audit de Sécurité
+                      <p class="text-sm text-gray-600">
+                        #text 7
+                        #comment 
+                        #text vérifications complètes
+                    <div class="flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6">
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                    <div class="w-12 h-12 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-circle-check w-6 h-6 text-teal-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10">
+                        <path d="m9 12 2 2 4-4">
+                    <div class="flex-1 text-left min-w-0">
+                      <h3 class="text-lg sm:text-xl font-bold text-black mb-1">
+                        #text Vérifications Instantanées de Santé
+                      <p class="text-sm text-gray-600">
+                        #text 8
+                        #comment 
+                        #text vérifications complètes
+                    <div class="flex-shrink-0">
+                      <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6">
+              <div class="mt-6 p-4 bg-gradient-to-r from-[#00AEEF]/10 to-orange-50 border border-[#00AEEF]/20 rounded-lg">
+                <p class="text-sm text-gray-700">
+                  <strong class="text-black">
+                    #text 40+ vérifications au total
+                  #text réparties entre SEO (10), Performance (8), Design (7), Sécurité (7) et Santé Instantanée (8)
+            <div class="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-lg p-6 md:p-8">
+              <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-black mb-3">
+                  #text Pourquoi utiliser cet outil gratuit ?
+                <p class="text-base text-gray-600">
+                  #text We're not just another website checker. Our AI-powered analyzer provides insights that typically require hiring SEO consultants, performance engineers, and design experts.
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div class="p-6 rounded-xl bg-gradient-to-br from-pink-50 to-purple-50 border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition-all duration-200">
+                  <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <svg aria-hidden="true" class="lucide lucide-sparkles w-6 h-6 text-pink-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                        <path d="M20 2v4">
+                        <path d="M22 4h-4">
+                        <circle cx="4" cy="20" r="2">
+                    <div>
+                      <h3 class="text-lg font-bold text-black mb-1">
+                        #text Analyse Visuelle Avancée
+                      <span class="text-xs font-semibold text-pink-600 uppercase tracking-wide">
+                        #text Computer Vision
+                  <p class="text-sm text-gray-700 leading-relaxed">
+                    #text Le seul outil gratuit utilisant la vision par ordinateur pour analyser le design de votre site web. Obtenez des retours visuels précis sur l'harmonie des couleurs, la typographie et l'expérience utilisateur, des prestations que des designers professionnels factureraient 500 $ ou plus.
+                <div class="p-6 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition-all duration-200">
+                  <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <svg aria-hidden="true" class="lucide lucide-target w-6 h-6 text-blue-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10">
+                        <circle cx="12" cy="12" r="6">
+                        <circle cx="12" cy="12" r="2">
+                    <div>
+                      <h3 class="text-lg font-bold text-black mb-1">
+                        #text 40+ Vérifications Complètes
+                      <span class="text-xs font-semibold text-blue-600 uppercase tracking-wide">
+                        #text 40+ checks
+                  <p class="text-sm text-gray-700 leading-relaxed">
+                    #text La plupart des outils gratuits vérifient 15 ? 20 éléments. Nous analysons plus de 40 points critiques sur le SEO, la performance (Core Web Vitals), la qualité du design et la sécurité. Voyez exactement ce qu'il faut corriger avec des recommandations actionnables.
+                <div class="p-6 rounded-xl bg-gradient-to-br from-orange-50 to-amber-50 border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition-all duration-200">
+                  <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <svg aria-hidden="true" class="lucide lucide-trending-up w-6 h-6 text-[#00AEEF]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7h6v6">
+                        <path d="m22 7-8.5 8.5-5-5L2 17">
+                    <div>
+                      <h3 class="text-lg font-bold text-black mb-1">
+                        #text Feuille de Route Personnalisée
+                      <span class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wide">
+                        #text 4-week plan
+                  <p class="text-sm text-gray-700 leading-relaxed">
+                    #text Obtenez un plan d'amélioration personnalisé sur 4 semaines, priorisé par impact. Il inclut Problèmes Critiques (Semaine 1), Opportunités de Croissance (Semaines 2-3) et Améliorations Avancées (Semaine 4) avec estimations de ROI et planning.
+                <div class="p-6 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition-all duration-200">
+                  <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <svg aria-hidden="true" class="lucide lucide-zap w-6 h-6 text-green-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                    <div>
+                      <h3 class="text-lg font-bold text-black mb-1">
+                        #text Résultats Progressifs Instantanés
+                      <span class="text-xs font-semibold text-green-600 uppercase tracking-wide">
+                        #text 30 seconds total
+                  <p class="text-sm text-gray-700 leading-relaxed">
+                    #text Contrairement aux outils qui vous font attendre 80 secondes, nous affichons les résultats au fur et ? mesure. Voyez les insights SEO en 3 secondes, la performance en 8 secondes et le design en 18 secondes. Le chargement progressif maintient l'engagement.
+                <div class="p-6 rounded-xl bg-gradient-to-br from-indigo-50 to-blue-50 border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition-all duration-200">
+                  <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <svg aria-hidden="true" class="lucide lucide-globe w-6 h-6 text-indigo-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10">
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
+                        <path d="M2 12h20">
+                    <div>
+                      <h3 class="text-lg font-bold text-black mb-1">
+                        #text Références Sectorielles Spécifiques
+                      <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wide">
+                        #text 16+ industries
+                  <p class="text-sm text-gray-700 leading-relaxed">
+                    #text Notre système détecte automatiquement votre secteur (Éducation, sant?, SaaS, e-commerce, etc.) et compare vos scores ? plus de 16 standards sectoriels. Obtenez des recommandations adaptées ? votre paysage concurrentiel.
+                <div class="p-6 rounded-xl bg-gradient-to-br from-teal-50 to-cyan-50 border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition-all duration-200">
+                  <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <svg aria-hidden="true" class="lucide lucide-circle-check w-6 h-6 text-teal-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10">
+                        <path d="m9 12 2 2 4-4">
+                    <div>
+                      <h3 class="text-lg font-bold text-black mb-1">
+                        #text 100 % gratuit pour toujours
+                      <span class="text-xs font-semibold text-teal-600 uppercase tracking-wide">
+                        #text Sans inscription
+                  <p class="text-sm text-gray-700 leading-relaxed">
+                    #text Aucune inscription requise, aucune carte bancaire, analyses illimitées. Nous avons conçu cet outil pour démontrer notre expertise technique et aider les entreprises ? améliorer leur présence en ligne. Utilisé par plus de 10 000 sites web dans le monde.
+              <div class="mt-8 p-6 bg-gradient-to-r from-[#00AEEF] to-[#0071BC] rounded-xl text-white">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <div>
+                    <h3 class="text-xl font-bold mb-1">
+                      #text Prêt ? analyser votre site web ?
+                    <p class="text-sm text-white/90">
+                      #text Obtenez des insights instantanés et un plan d'amélioration personnalisé en 30 secondes
+                  <button class="flex items-center gap-2 text-sm font-medium bg-white text-[#00AEEF] px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all flex-shrink-0 cursor-pointer">
+                    <svg aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12h14">
+                      <path d="m12 5 7 7-7 7">
+                    <span>
+                      #text Scroll up to start
+            <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
+              <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-black mb-3">
+                  #text Analyseur de site web vs audit SEO manuel
+                <p class="text-base text-gray-600">
+                  #text Découvrez comment notre analyseur automatisé gratuit se compare ? l'embauche d'un consultant SEO pour un audit manuel. Économisez des milliers de dollars et des semaines d'attente.
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                  <thead>
+                    <tr class="border-b-2 border-gray-200">
+                      <th class="text-left py-4 px-4 text-sm font-bold text-gray-700 uppercase tracking-wide">
+                        #text Feature
+                      <th class="text-left py-4 px-4 text-sm font-bold text-gray-700 uppercase tracking-wide">
+                        #text Audit manuel
+                      <th class="text-left py-4 px-4 text-sm font-bold text-[#00AEEF] uppercase tracking-wide">
+                        #text Analyseur de site web
+                  <tbody>
+                    <tr class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Cost
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text $500 - $2,000
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text Gratuit
+                    <tr class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Time Required
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text 2-5 business days
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text 30 seconds
+                    <tr class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Nombre de Vérifications
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text 15-20 items
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text 40+ vérifications complètes
+                    <tr class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Analyse du Design
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text Subjective opinion
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text Computer vision powered
+                    <tr class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Core Web Vitals
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text Vérification manuelle Google PageSpeed
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text Automated real-time data
+                    <tr class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Improvement Plan
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text Generic recommendations
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text Feuille de route personnalisée sur 4 semaines
+                    <tr class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Benchmark Sectoriel
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text Not included
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text 16+ standards sectoriels
+                    <tr class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
+                      <td class="py-4 px-4 text-sm font-medium text-gray-900">
+                        #text Follow-up Audits
+                      <td class="py-4 px-4 text-sm text-gray-600">
+                        #text Co?t supplémentaire par audit
+                      <td class="py-4 px-4">
+                        <div class="flex items-center gap-2">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-4 h-4 text-green-600 flex-shrink-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <span class="text-sm font-semibold text-black">
+                            #text Réanalyses illimitées
+              <div class="mt-6 p-4 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-lg">
+                <div class="flex items-start gap-3">
+                  <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10">
+                    <path d="m9 12 2 2 4-4">
+                  <div>
+                    <p class="text-sm text-gray-800 leading-relaxed">
+                      <strong class="text-black">
+                        #text Save $500-$2,000 and 2-5 days
+                      #text by using our free automated analyzer. Get the same depth of analysis with advanced algorithms that manual audits can't provide.
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="/our-work/mon-asso">
+                  <svg aria-hidden="true" class="lucide lucide-chevron-right w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 18 6-6-6-6">
+                  #text See how we improved MSinGermany's SEO by 300%
+                <a class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="/our-work/dental-pro">
+                  <svg aria-hidden="true" class="lucide lucide-chevron-right w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 18 6-6-6-6">
+                  #text Read Doctor Hubli case study - 50K monthly visitors
+          <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
+            <div class="mb-6">
+              <div class="flex items-center gap-2 mb-3">
+                <svg aria-hidden="true" class="lucide lucide-circle-question-mark w-5 h-5 text-[#00AEEF]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10">
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
+                  <path d="M12 17h.01">
+                <h3 class="text-xl md:text-2xl font-bold text-black">
+                  #text Questions Fréquemment Posées
+              <p class="text-sm md:text-base text-gray-600">
+                #text Questions courantes sur cet outil et comment l'utiliser efficacement
+            <div class="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 1
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Que vérifie l'Analyseur de site web ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text L'Analyseur de site web effectue plus de 40 vérifications complètes dans 5 catégories : Analyse SEO (balises meta, titres, balisage schema), Performance (Core Web Vitals, vitesse de page), Qualité du Design (analyse visuelle par vision par ordinateur), Sécurité (SSL, en-têtes, politiques de confidentialité), puis génère un plan d'amélioration personnalisé avec calendrier et estimations d'investissement.
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 2
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Comment fonctionne l'analyse du design ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text Notre Analyseur de site web utilise des algorithmes avancés de vision par ordinateur pour analyser les captures de votre site et évaluer la qualité du design, l'harmonie des couleurs, la typographie, l'expérience utilisateur et la réactivité mobile. Il fournit des problèmes de design précis et des recommandations actionnables basées sur les meilleures pratiques actuelles et les standards de votre secteur.
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 3
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Que sont les Core Web Vitals et pourquoi sont-ils importants ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text Les Core Web Vitals sont les métriques de Google pour mesurer l'expérience utilisateur : Largest Contentful Paint (LCP), First Input Delay (FID) et Cumulative Layout Shift (CLS). Notre analyseur les mesure via l'API Google PageSpeed Insights et fournit des recommandations d'optimisation précises. De bons Core Web Vitals améliorent le classement en recherche et la satisfaction utilisateur.
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 4
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Quel est le niveau de précision de la détection du secteur ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text Notre détecteur sectoriel intelligent analyse le contenu de votre site et le classe dans plus de 16 secteurs avec des scores de confiance. Il permet de comparer votre site ? des standards sectoriels et fournit des recommandations adaptées ? votre domaine (e-commerce, SaaS, sant?, Éducation, etc.).
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 5
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Qu'est-ce qui est inclus dans le plan d'amélioration personnalisé ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text La proposition automatisée inclut une matrice de priorité ? 3 niveaux : Problèmes Critiques (Semaine 1) pour la sécurité et les fonctionnalités, Opportunités de Croissance (Semaines 2-3) pour le SEO et la performance, et Améliorations Avancées (Semaine 4) pour l'optimisation. Chaque élément détaille les problèmes, solutions, analyses d'impact et un calendrier de mise en œuvre sur 4 semaines avec estimations d'investissement.
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 6
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text ? quelle fréquence l'analyse est-elle mise en cache ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text Les résultats d'analyse sont mis en cache pendant 7 jours afin d'optimiser la performance et de réduire les coûts API. Cela signifie que si vous analysez le même site dans ce délai, vous obtiendrez des résultats instantanés. Vous pouvez forcer une nouvelle analyse en cliquant ? nouveau sur 'Analyser le Site Web', ce qui contournera le cache et relancera toutes les vérifications depuis zéro.
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 7
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Puis-je partager les résultats de mon analyse de site web ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text Yes! After your analysis is complete, click the 'Partager Results' button to get a unique shareable link. You can copy the link, download results, or share directly on social media. The shared results remain accessible and can be used to track improvements over time or show stakeholders.
+              <div class="border-b border-gray-200 last:border-0">
+                <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                  <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold text-[#00AEEF]">
+                      #text 8
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-base md:text-lg font-semibold text-black">
+                      #text Qu'est-ce qui différencie cet outil des autres analyseurs de site web ?
+                  <div class="flex-shrink-0">
+                    <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m6 9 6 6 6-6">
+                <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
+                  <p>
+                    #text Notre Analyseur de site web est le seul outil gratuit qui combine analyse avancée du design, détection sectorielle, propositions d'amélioration personnalisées et plus de 40 vérifications techniques. Contrairement aux vérificateurs basiques, nous fournissons des feuilles de route actionnables avec planning, estimations d'investissement et solutions précises, pas seulement des listes de problèmes.
+            <div class="mt-6 text-center">
+              <p class="text-sm text-gray-600 mb-2">
+                #text Vous avez encore des questions ?
+              <a class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base" href="/contact">
+                #text Contactez notre équipe pour obtenir de l'aide
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+      <section class="py-12 bg-[#F5F5F5]">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="relative overflow-hidden rounded-2xl px-6 py-8 md:py-10" style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)">
+            <div class="absolute inset-0 z-0" style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                                 linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);background-size:50px 50px">
+            <div class="absolute inset-0 z-[1]" style="background:radial-gradient(
+                  ellipse 70% 70% at center,
+                  transparent 0%,
+                  rgba(10, 10, 10, 0.3) 50%,
+                  rgba(10, 10, 10, 0.8) 100%
+                )">
+            <div class="relative z-10 text-center space-y-6">
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white" style="font-family:var(--font-display)">
+                #text Besoin d'un Outil Personnalisé pour Votre Entreprise ?
+              <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+                #text Nous créons des outils alimentés par l'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats
+              <div class="pt-2">
+                <a class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;,&quot;useSlotsViewOnSmallScreen&quot;:&quot;true&quot;}" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" href="#" rel="noopener noreferrer" style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
+                      rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
+                      rgba(0, 0, 0, 0.063) 0px 10.8925px 10.8925px -1.40625px,
+                      rgba(0, 0, 0, 0.063) 0px 18.1088px 18.1088px -1.875px" target="_blank">
+                  <div class="absolute inset-[3px] rounded-[114px] bg-white z-0">
+                  <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black" style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">
+                    #text Réserver un Appel Découverte
+              <p class="text-sm text-white/50 pt-2">
+                #text 50+ projets réussis • Livraison en 48h • Sans engagement à long terme
+    <footer class="relative bg-black text-white overflow-hidden min-h-[600px]">
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8 h-full min-h-[600px]">
+        <div class="absolute bottom-0 left-0 pointer-events-none w-full flex justify-center md:justify-start">
+          <svg aria-hidden="true" class="h-auto will-change-transform" preserveaspectratio="xMinYMax meet" viewbox="0 0 1600 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <lineargradient id="textStrokeGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#C0C0C0" stop-opacity="1">
+                <stop offset="85%" stop-color="#000000" stop-opacity="1">
+            <text fill="none" font-family="var(--font-heading)" font-size="200" font-weight="bold" stroke="url(#textStrokeGradient)" stroke-width="1.5" x="20" y="200">
+              #text codesommet
+        <div class="relative z-10 pt-16 pb-8">
+          <div class="md:flex md:gap-12 lg:gap-20 mb-16">
+            <div class="space-y-6 mb-12 md:mb-0 md:max-w-sm flex-shrink-0">
+              <a class="inline-flex items-center gap-1" href="http://localhost:8000">
+                <div class="w-10 h-10">
+                  <img alt="" aria-hidden="true" class="w-full h-full object-contain" height="150" src="http://localhost:8000/logo-white.svg" width="220">
+                <span class="text-2xl font-bold text-white" style="font-family:var(--font-heading)">
+                  #text CodeSommet
+                <span class="sr-only">
+                  #text — retour à l'accueil
+              <p class="text-[#A0A0A0] leading-relaxed text-sm">
+                #text CodeSommet est une agence digitale spécialisée dans le développement web sur mesure, le design UI/UX, le branding, le SEO et les solutions e-commerce. Nous aidons les entreprises à développer leur présence en ligne avec des solutions digitales modernes et performantes.
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 lg:gap-8 mb-12 md:mb-0 flex-1">
+              <div class="space-y-4">
+                <p class="text-base font-medium text-[#E0E0E0]">
+                  #text Emplacements
+                <ul class="space-y-2.5">
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/web-development-company/casablanca">
+                      #text Casablanca
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/web-development-company/marrakech">
+                      #text Marrakech
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/web-development-company/rabat">
+                      #text Rabat
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/web-development-company/tangier">
+                      #text Tanger
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/web-development-company/worldwide">
+                      #text International
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/locations">
+                      #text Tous les Emplacements →
+              <div class="space-y-4">
+                <p class="text-base font-medium text-[#E0E0E0]">
+                  #text Secteurs
+                <ul class="space-y-2.5">
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/services/education-website-development">
+                      #text Éducation & EdTech
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/services/healthcare-website-development">
+                      #text Santé & Médical
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/services/study-abroad-website-development">
+                      #text Études à l'Étranger
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/services/saas-platform-development">
+                      #text SaaS & Logiciel B2B
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/services/ecommerce-website-development">
+                      #text E-commerce
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/services/fintech-platform-development">
+                      #text FinTech & Finance
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/industries">
+                      #text Tous les Secteurs →
+              <div class="space-y-4">
+                <p class="text-base font-medium text-[#E0E0E0]">
+                  #text Outils Populaires
+                <ul class="space-y-2.5">
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools/website-analyzer">
+                      #text Analyseur de Site Web
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools/website-readiness-checker">
+                      #text Vérificateur de Site
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools/meta-tag-generator">
+                      #text Générateur de Balises Meta
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools/blog-title-generator">
+                      #text Générateur de Titres
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools/heading-analyzer">
+                      #text Analyseur de Titres
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools/color-palette-generator">
+                      #text Générateur de Palette
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/tools">
+                      #text Tous les Outils →
+              <div class="space-y-4">
+                <p class="text-base font-medium text-[#E0E0E0]">
+                  #text Légal
+                <ul class="space-y-2.5">
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/blog">
+                      #text Articles & ressources
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/get-quote">
+                      #text Demander un Devis
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/legal/privacy-policy">
+                      #text Politique de Confidentialité
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/legal/terms-of-service">
+                      #text Conditions d'Utilisation
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/legal/refund-policy">
+                      #text Politique de Remboursement
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/legal/cookie-policy">
+                      #text Politique de Cookies
+                  <li>
+                    <a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block" href="http://localhost:8000/legal/acceptable-use">
+                      #text Utilisation Acceptable
+          <div class="flex justify-center md:justify-end items-center mb-32 md:mb-0">
+            <div class="flex items-center gap-3">
+              <a class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.linkedin.com/in/codesommet" rel="noopener noreferrer" target="_blank">
+                <svg aria-hidden="true" class="lucide lucide-linkedin w-4 h-4 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                  <rect height="12" width="4" x="2" y="9">
+                  <circle cx="4" cy="4" r="2">
+                <span class="sr-only">
+                  #text CodeSommet sur LinkedIn
+              <a class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.instagram.com/code_sommet/" rel="noopener noreferrer" target="_blank">
+                <svg aria-hidden="true" class="lucide lucide-instagram w-4 h-4 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <rect height="20" rx="5" ry="5" width="20" x="2" y="2">
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5">
+                <span class="sr-only">
+                  #text CodeSommet sur Instagram
+              <a class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.facebook.com/codesommetagency" rel="noopener noreferrer" target="_blank">
+                <svg class="w-4 h-4 text-white" fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                <span class="sr-only">
+                  #text CodeSommet sur Facebook
+              <a class="w-10 h-10 rounded-full bg-[#404040] hover:bg-[#505050] flex items-center justify-center transition-all duration-200" href="https://www.youtube.com/@codesommet" rel="noopener noreferrer" target="_blank">
+                <svg class="w-4 h-4 text-white" fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                <span class="sr-only">
+                  #text CodeSommet sur YouTube
+    <script type="text/javascript">
+      #raw (function() { var SRC = "https://app.cal.eu/embed/embed.js"; var started = false; var ready = false; var pendingClick = null; function loadCal() { if (started) return; started = true; (function(C, A, L) { let p = function(a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function() { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function() { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, SRC, "init"); Cal("init", "new-client-meeting", { origin: "https://app.cal.eu" }); Cal.ns["new-client-meeting"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" }); var s = document.head.querySelector('script[src="' + SRC + '"]'); if (s) { s.addEventListener('load', function() { ready = true; if (pendingClick) { var btn = pendingClick; pendingClick = null; // Laisse l'embed scanner les data-cal-link, puis rejoue le clic. setTimeout(function() { btn.click(); }, 80); } }); } else { ready = true; } } function warm() { loadCal(); ['pointerdown', 'touchstart', 'keydown', 'scroll'].forEach(function(ev) { window.removeEventListener(ev, warm); }); } ['pointerdown', 'touchstart', 'keydown', 'scroll'].forEach(function(ev) { window.addEventListener(ev, warm, { passive: true }); }); // Pré-chauffe au survol / focus d'un bouton de réservation. document.addEventListener('pointerover', function(e) { if (e.target && e.target.closest && e.target.closest('[data-cal-link]')) loadCal(); }, { passive: true }); // Filet de sécurité : clic avant que l'embed soit prêt → on retient le // bouton et on rejoue le clic une fois embed.js chargé. document.addEventListener('click', function(e) { var btn = e.target && e.target.closest && e.target.closest('[data-cal-link]'); if (!btn || ready) return; e.preventDefault(); e.stopPropagation(); pendingClick = btn; loadCal(); }, true); })();
+    <div aria-label="Actions rapides" class="fab-stack" role="complementary">
+      <button aria-label="Retour en haut de la page" class="fab fab--top" id="backToTop" title="Retour en haut" type="button">
+        <svg aria-hidden="true" class="fab-progress" viewbox="0 0 44 44">
+          <circle class="fab-progress__track" cx="22" cy="22" r="20">
+          <circle class="fab-progress__bar" cx="22" cy="22" r="20">
+        <svg aria-hidden="true" class="fab__icon" fill="none" viewbox="0 0 24 24">
+          <path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <a aria-label="Discuter avec nous sur WhatsApp" class="fab fab--whatsapp" href="https://wa.me/212632582096?text=Bonjour%20CodeSommet%20!%20Je%20souhaite%20discuter%20d%27un%20projet%20de%20d%C3%A9veloppement%20web.%20Pouvons-nous%20%C3%A9changer%20%3F" rel="noopener noreferrer" target="_blank">
+        <span aria-hidden="true" class="fab__pulse">
+        <svg aria-hidden="true" class="fab__icon fab__icon--wa" fill="currentColor" viewbox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.896 9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.82 11.82 0 0 0 20.465 3.49">
+        <span class="fab__label">
+          #text Discutons sur WhatsApp
+    <div aria-describedby="promo-modal-desc" aria-labelledby="promo-modal-title" aria-modal="true" class="promo-modal" data-promo-deadline="2026-08-31T23:59:59+00:00" hidden="" id="promoModal" role="dialog">
+      <div class="promo-modal__overlay" data-promo-close="">
+      <div class="promo-modal__dialog" role="document">
+        <span aria-hidden="true" class="promo-sheen">
+        <button aria-label="Fermer l'offre" class="promo-modal__close" data-promo-close="" type="button">
+          <svg aria-hidden="true" fill="none" height="16" viewbox="0 0 24 24" width="16">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-linecap="round" stroke-width="2.2">
+        <div class="promo-modal__body">
+          <span class="promo-offer__badge">
+            <span aria-hidden="true" class="promo-offer__dot">
+            #text Offre de lancement
+          <div class="promo-modal__figure-row">
+            <div class="promo-offer__figure">
+              #text -30
+              <span class="text-[0.45em] align-super">
+                #text %
+            <div class="promo-modal__figure-note">
+              #text sur votre
+              <br>
+              #text premier projet
+          <p aria-level="2" class="promo-modal__title font-heading" id="promo-modal-title" role="heading">
+            #text Lancez votre site avec 30 % de réduction
+          <p class="promo-modal__lead font-body" id="promo-modal-desc">
+            #text Site vitrine, e-commerce ou plateforme sur mesure — bénéficiez de 30 % sur votre premier projet. Devis gratuit sous 24 h, sans engagement.
+          <div aria-label="Temps restant pour profiter de l'offre" class="promo-modal__countdown" data-promo-countdown="">
+            <span class="promo-count">
+              <span class="promo-count__num" data-promo-days="">
+                #text --
+              <span class="promo-count__lbl">
+                #text Jours
+            <span class="promo-count">
+              <span class="promo-count__num" data-promo-hours="">
+                #text --
+              <span class="promo-count__lbl">
+                #text Heures
+            <span class="promo-count">
+              <span class="promo-count__num" data-promo-mins="">
+                #text --
+              <span class="promo-count__lbl">
+                #text Min
+            <span class="promo-count">
+              <span class="promo-count__num" data-promo-secs="">
+                #text --
+              <span class="promo-count__lbl">
+                #text Sec
+          <a class="promo-offer__cta promo-modal__cta" href="http://localhost:8000/get-quote">
+            #text Profiter des 30 % de réduction
+            <svg aria-hidden="true" fill="none" height="16" viewbox="0 0 24 24" width="16">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <button class="promo-modal__dismiss" data-promo-close="" type="button">
+            #text Non merci, peut-être plus tard
+          <p class="promo-modal__terms">
+            #text Offre réservée aux nouveaux clients, valable jusqu'au 31 août. Non cumulable avec d'autres offres.
+    <script defer="defer" src="http://localhost:8000/vendor/jquery/jquery-3.7.1.min.js?v=VERSION">
+    <script defer="defer" src="http://localhost:8000/vendor/toastr/toastr-2.1.4.min.js?v=VERSION">
+    <script defer="defer" src="http://localhost:8000/js/toastr-init.js?v=VERSION">
+    <script defer="defer" src="http://localhost:8000/js/app.min.js?v=VERSION">
+    <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
+    <script>
+      #raw (function() { var done = false; function dismiss() { if (done) return; done = true; var p = document.getElementById('preloader'); if (p) { p.classList.add('loaded'); setTimeout(function() { p.remove(); }, 600); } } // Ce script inline en fin de <body> s'exécute dès que le HTML est // parsé — AVANT le téléchargement des scripts defer (contrairement // à DOMContentLoaded, qui les attend : ~1,5 s de délai LCP en 4G // lente). Deux rAF = première opportunité de peinture, page déjà // entièrement stylée par le CSS critique inliné. requestAnimationFrame(function() { requestAnimationFrame(dismiss); }); document.addEventListener('DOMContentLoaded', dismiss); window.addEventListener('load', dismiss); setTimeout(dismiss, 2500); })();
+    <script defer="defer" src="http://localhost:8000/scripts/google-analytics.js?v=VERSION">
+    <script>
+      #raw (function() { function loadGtag() { if (window.__gtagLoaded) return; window.__gtagLoaded = true; var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K'; document.head.appendChild(s); } window.addEventListener('load', function() { if ('requestIdleCallback' in window) { requestIdleCallback(loadGtag, { timeout: 3000 }); } else { setTimeout(loadGtag, 1500); } }); setTimeout(loadGtag, 6000); })();
+    <script defer="defer" src="http://localhost:8000/js/tools-common.js">
+    <script defer="defer" src="http://localhost:8000/js/tools/api-tools.js">

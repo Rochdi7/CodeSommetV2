@@ -1,0 +1,74 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Santé de Domaine"
+        ],
+        [
+            3,
+            "Ce que Cet Outil Vérifie"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que la santé du domaine et pourquoi est-ce important pour le SEO ?"
+        ],
+        [
+            3,
+            "À quelle fréquence vérifier la santé de mon domaine ?"
+        ],
+        [
+            3,
+            "Pourquoi HTTPS/SSL est-il si important pour mon site ?"
+        ],
+        [
+            3,
+            "Que signifie l'indexation mobile-first et pourquoi une balise viewport ?"
+        ],
+        [
+            3,
+            "Comment les Core Web Vitals sont-ils liés à la santé du domaine ?"
+        ],
+        [
+            3,
+            "J'ai un score faible - que corriger en premier ?"
+        ],
+        [
+            3,
+            "Quelle différence entre sitemap.xml et robots.txt ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Website Readiness Checker"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Broken Link Checker"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "Unexpected end tag : p": 1
+    }
+}

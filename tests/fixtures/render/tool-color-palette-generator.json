@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Palette de Couleurs"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Comment l'IA extrait-elle les couleurs de mon image de marque ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre les formats hex, RGB et HSL ?"
+        ],
+        [
+            3,
+            "Que signifie la conformité WCAG AA pour ma palette ?"
+        ],
+        [
+            3,
+            "Comment choisir les couleurs primaire, secondaire et accent ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser ces palettes pour l'impression ou seulement le web ?"
+        ],
+        [
+            3,
+            "Que sont les règles d'harmonie des couleurs et pourquoi comptent-elles ?"
+        ],
+        [
+            3,
+            "Comment tester ma palette avant de l'implémenter sur mon site ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "QR Code Generator"
+        ],
+        [
+            3,
+            "CSS Minifier"
+        ],
+        [
+            3,
+            "AI Meta Tag Generator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

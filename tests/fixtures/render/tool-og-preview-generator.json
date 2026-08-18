@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur d'Aperçu Open Graph"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que sont les balises Open Graph et pourquoi sont-elles importantes ?"
+        ],
+        [
+            3,
+            "En quoi les balises OG diffèrent-elles entre Facebook, Twitter et LinkedIn ?"
+        ],
+        [
+            3,
+            "Quelles sont les dimensions d'image idéales pour les aperçus sur les réseaux sociaux ?"
+        ],
+        [
+            3,
+            "Quelle longueur doivent avoir mon titre et ma description pour de meilleurs résultats ?"
+        ],
+        [
+            3,
+            "Comment tester si mes balises OG fonctionnent correctement ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre og:image et twitter:image ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je mettre à jour mes balises Open Graph ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Meta Refresh Redirect Generator"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Analyseur de Densité de Mots-clés"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

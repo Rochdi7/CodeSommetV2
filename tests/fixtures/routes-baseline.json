@@ -1,0 +1,1157 @@
+[
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/blog/{blog}",
+        "name": "admin.blog.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/budget/{entry}",
+        "name": "admin.budget.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/categories/{category}",
+        "name": "admin.categories.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/finance/expense/{expense}",
+        "name": "admin.finance.expense.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\FinanceController@destroyExpense",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/media/{medium}",
+        "name": "admin.media.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\MediaController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/newsletter/{subscriber}",
+        "name": "admin.newsletter.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\NewsletterAdminController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/payments/{payment}",
+        "name": "admin.payments.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/projects/{project}",
+        "name": "admin.projects.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
+        "uri": "admin/tags/{tag}",
+        "name": "admin.tags.destroy",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@destroy",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "/",
+        "name": "home",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "about",
+        "name": "about",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/blog",
+        "name": "admin.blog.index",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/blog/create",
+        "name": "admin.blog.create",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@create",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/blog/{blog}",
+        "name": "admin.blog.show",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@show",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/blog/{blog}/edit",
+        "name": "admin.blog.edit",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@edit",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/budget",
+        "name": "admin.budget.index",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/budget/lock",
+        "name": "admin.budget.lock",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@showLock",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/categories",
+        "name": "admin.categories.index",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/categories/create",
+        "name": "admin.categories.create",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@create",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/categories/{category}/edit",
+        "name": "admin.categories.edit",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@edit",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/dashboard",
+        "name": "admin.dashboard",
+        "action": "App\\Http\\Controllers\\Admin\\DashboardController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/finance",
+        "name": "admin.finance",
+        "action": "App\\Http\\Controllers\\Admin\\FinanceController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/home-ads",
+        "name": "admin.home-ads.index",
+        "action": "App\\Http\\Controllers\\Admin\\HomeAdController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/login",
+        "name": "admin.login",
+        "action": "App\\Http\\Controllers\\Auth\\AdminLoginController@showLoginForm",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/media",
+        "name": "admin.media.index",
+        "action": "App\\Http\\Controllers\\Admin\\MediaController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/media/picker",
+        "name": "admin.media.picker",
+        "action": "App\\Http\\Controllers\\Admin\\MediaController@picker",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/newsletter",
+        "name": "admin.newsletter.index",
+        "action": "App\\Http\\Controllers\\Admin\\NewsletterAdminController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/newsletter/export",
+        "name": "admin.newsletter.export",
+        "action": "App\\Http\\Controllers\\Admin\\NewsletterAdminController@export",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/payments",
+        "name": "admin.payments.index",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/payments/create",
+        "name": "admin.payments.create",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@create",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/payments/{payment}",
+        "name": "admin.payments.show",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@show",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/payments/{payment}/edit",
+        "name": "admin.payments.edit",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@edit",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/projects",
+        "name": "admin.projects.index",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/projects/create",
+        "name": "admin.projects.create",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@create",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/projects/{project}",
+        "name": "admin.projects.show",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@show",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/projects/{project}/edit",
+        "name": "admin.projects.edit",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@edit",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/projects/{project}/payments",
+        "name": "admin.projects.payments",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@byProject",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/tags",
+        "name": "admin.tags.index",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/tags/create",
+        "name": "admin.tags.create",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@create",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/tags/{tag}/edit",
+        "name": "admin.tags.edit",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@edit",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "api/tools/{slug}/usage",
+        "name": null,
+        "action": "App\\Http\\Controllers\\ToolsApiController@usageShow",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "blog",
+        "name": "blog",
+        "action": "App\\Http\\Controllers\\BlogController@index",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "blog/preview",
+        "name": "blog.preview",
+        "action": "Closure",
+        "middleware": [
+            "web"
+        ],
+        "path": "routes/web.php:111"
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "blog/{slug}",
+        "name": "blog.show",
+        "action": "App\\Http\\Controllers\\BlogController@show",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "contact",
+        "name": "contact",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "get-quote",
+        "name": "get-quote",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "industries",
+        "name": "industries",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "legal/acceptable-use",
+        "name": "acceptable-use",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "legal/cookie-policy",
+        "name": "cookie-policy",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "legal/privacy-policy",
+        "name": "privacy-policy",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "legal/refund-policy",
+        "name": "refund-policy",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "legal/terms-of-service",
+        "name": "terms-of-service",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "llms.txt",
+        "name": "llms-txt",
+        "action": "App\\Http\\Controllers\\LlmsTxtController@index",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "locations",
+        "name": "locations",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "our-work",
+        "name": "our-work",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "our-work/{slug}",
+        "name": "case-study",
+        "action": "Closure",
+        "middleware": [
+            "web"
+        ],
+        "path": "routes/web.php:101"
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "sanctum/csrf-cookie",
+        "name": "sanctum.csrf-cookie",
+        "action": "Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController@show",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "services/{slug}",
+        "name": "service",
+        "action": "Closure",
+        "middleware": [
+            "web"
+        ],
+        "path": "routes/web.php:65"
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "sitemap.xml",
+        "name": "sitemap",
+        "action": "App\\Http\\Controllers\\SitemapController@index",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "storage/{path}",
+        "name": "storage.local",
+        "action": "Closure",
+        "middleware": [],
+        "path": "vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:98"
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "tools",
+        "name": "tools",
+        "action": "Illuminate\\Routing\\ViewController",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "tools/{slug}",
+        "name": "tool",
+        "action": "Closure",
+        "middleware": [
+            "web"
+        ],
+        "path": "routes/web.php:92"
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "up",
+        "name": null,
+        "action": "Closure",
+        "middleware": [],
+        "path": "vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:219"
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "web-development-company/{city}",
+        "name": "location",
+        "action": "Closure",
+        "middleware": [
+            "web"
+        ],
+        "path": "routes/web.php:80"
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/blog",
+        "name": "admin.blog.store",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@store",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/budget",
+        "name": "admin.budget.store",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@store",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/budget/lock",
+        "name": "admin.budget.lock.out",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@lock",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/budget/salary",
+        "name": "admin.budget.salary",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@saveSalary",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/budget/start",
+        "name": "admin.budget.start",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@startTracking",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/budget/unlock",
+        "name": "admin.budget.unlock",
+        "action": "App\\Http\\Controllers\\Admin\\BudgetController@unlock",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:budget-unlock"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/categories",
+        "name": "admin.categories.store",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@store",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/categories/quick",
+        "name": "admin.categories.quick",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@quickStore",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/finance/expense",
+        "name": "admin.finance.expense.store",
+        "action": "App\\Http\\Controllers\\Admin\\FinanceController@storeExpense",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/home-ads/{homeAd}",
+        "name": "admin.home-ads.update",
+        "action": "App\\Http\\Controllers\\Admin\\HomeAdController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/home-ads/{homeAd}/toggle",
+        "name": "admin.home-ads.toggle",
+        "action": "App\\Http\\Controllers\\Admin\\HomeAdController@toggle",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/login",
+        "name": "admin.login.submit",
+        "action": "App\\Http\\Controllers\\Auth\\AdminLoginController@login",
+        "middleware": [
+            "web",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:admin-login"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/logout",
+        "name": "admin.logout",
+        "action": "App\\Http\\Controllers\\Auth\\AdminLoginController@logout",
+        "middleware": [
+            "web"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/media/upload",
+        "name": "admin.media.upload",
+        "action": "App\\Http\\Controllers\\Admin\\MediaController@upload",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/media/{medium}",
+        "name": "admin.media.update",
+        "action": "App\\Http\\Controllers\\Admin\\MediaController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/payments",
+        "name": "admin.payments.store",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@store",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/projects",
+        "name": "admin.projects.store",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@store",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/projects/{project}/add-payment",
+        "name": "admin.projects.add-payment",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@addPayment",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/projects/{project}/generate-schedule",
+        "name": "admin.projects.generate-schedule",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@generatePaymentSchedule",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/projects/{project}/update-phases",
+        "name": "admin.projects.update-phases",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@updatePhases",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/projects/{project}/update-progress",
+        "name": "admin.projects.update-progress",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@updateProgress",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/projects/{project}/update-status",
+        "name": "admin.projects.update-status",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@updateStatus",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/tags",
+        "name": "admin.tags.store",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@store",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/tags/quick",
+        "name": "admin.tags.quick",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@quickStore",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "api/get-quote",
+        "name": "quote.store",
+        "action": "App\\Http\\Controllers\\QuoteRequestController@store",
+        "middleware": [
+            "web",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:quote"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "api/tools/{slug}",
+        "name": null,
+        "action": "App\\Http\\Controllers\\ToolsApiController@handle",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-api"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "api/tools/{slug}/usage",
+        "name": null,
+        "action": "App\\Http\\Controllers\\ToolsApiController@usageIncrement",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "contact",
+        "name": "contact.store",
+        "action": "App\\Http\\Controllers\\ContactController@store",
+        "middleware": [
+            "web",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:contact"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "newsletter/subscribe",
+        "name": "newsletter.subscribe",
+        "action": "App\\Http\\Controllers\\NewsletterController@subscribe",
+        "middleware": [
+            "web",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:newsletter"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "PUT",
+        "uri": "storage/{path}",
+        "name": "storage.local.upload",
+        "action": "Closure",
+        "middleware": [],
+        "path": "vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:106"
+    },
+    {
+        "domain": null,
+        "method": "PUT|PATCH",
+        "uri": "admin/blog/{blog}",
+        "name": "admin.blog.update",
+        "action": "App\\Http\\Controllers\\Admin\\BlogPostController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "PUT|PATCH",
+        "uri": "admin/categories/{category}",
+        "name": "admin.categories.update",
+        "action": "App\\Http\\Controllers\\Admin\\CategoryController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "PUT|PATCH",
+        "uri": "admin/payments/{payment}",
+        "name": "admin.payments.update",
+        "action": "App\\Http\\Controllers\\Admin\\PaymentController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "PUT|PATCH",
+        "uri": "admin/projects/{project}",
+        "name": "admin.projects.update",
+        "action": "App\\Http\\Controllers\\Admin\\ProjectController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    },
+    {
+        "domain": null,
+        "method": "PUT|PATCH",
+        "uri": "admin/tags/{tag}",
+        "name": "admin.tags.update",
+        "action": "App\\Http\\Controllers\\Admin\\TagController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ],
+        "path": null
+    }
+]

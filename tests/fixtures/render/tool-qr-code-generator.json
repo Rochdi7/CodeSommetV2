@@ -1,0 +1,74 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de QR Code"
+        ],
+        [
+            3,
+            "Cas d'Utilisation"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Comment fonctionnent les QR codes ?"
+        ],
+        [
+            3,
+            "Quelle taille d'impression pour mon QR code ?"
+        ],
+        [
+            3,
+            "Que sont les niveaux de correction d'erreur et lequel choisir ?"
+        ],
+        [
+            3,
+            "Puis-je personnaliser les couleurs de mon QR code ?"
+        ],
+        [
+            3,
+            "Comment suivre le nombre de personnes qui scannent mon QR code ?"
+        ],
+        [
+            3,
+            "Quelle est la quantité maximale de données qu'un QR code peut stocker ?"
+        ],
+        [
+            3,
+            "Comment tester si mon QR code fonctionne correctement ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Color Palette Generator"
+        ],
+        [
+            3,
+            "CSS Minifier"
+        ],
+        [
+            3,
+            "XML Sitemap Generator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 1
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "error parsing attribute name": 4
+    }
+}

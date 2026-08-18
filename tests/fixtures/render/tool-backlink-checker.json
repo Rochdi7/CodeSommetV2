@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Backlinks"
+        ],
+        [
+            3,
+            "Propulsé par Moz"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le Domain Authority (DA) et pourquoi est-ce important ?"
+        ],
+        [
+            3,
+            "Comment cet outil analyse-t-il les backlinks ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre le Page Authority et le Domain Authority ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que le Spam Score et comment est-il calculé ?"
+        ],
+        [
+            3,
+            "Pourquoi devrais-je vérifier les backlinks régulièrement ?"
+        ],
+        [
+            3,
+            "Comment puis-je améliorer mon score de Domain Authority ?"
+        ],
+        [
+            3,
+            "Que dois-je faire si j'ai un Spam Score élevé ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Internal Link Analyzer"
+        ],
+        [
+            3,
+            "Nofollow Link Checker"
+        ],
+        [
+            3,
+            "Domain Authority Checker"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

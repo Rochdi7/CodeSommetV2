@@ -1,0 +1,71 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Schéma FAQ"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le balisage FAQ et pourquoi est-ce important ?"
+        ],
+        [
+            3,
+            "Comment le schéma FAQ améliore-t-il mon SEO ?"
+        ],
+        [
+            3,
+            "Combien de FAQ inclure sur une page ?"
+        ],
+        [
+            3,
+            "Quelle est la longueur idéale pour les questions et réponses ?"
+        ],
+        [
+            3,
+            "Comment implémenter le schéma FAQ généré sur mon site ?"
+        ],
+        [
+            3,
+            "Mes FAQ apparaîtront-elles dans la section 'Autres questions posées' de Google ?"
+        ],
+        [
+            3,
+            "Y a-t-il des directives Google à suivre pour le schéma FAQ ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Analyseur de Score de Lisibilité"
+        ],
+        [
+            3,
+            "Word & Character Counter"
+        ],
+        [
+            3,
+            "HTML to Plain Text Converter"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "Unexpected end tag : p": 1,
+        "htmlParseStartTag: misplaced <head> tag": 1
+    }
+}
