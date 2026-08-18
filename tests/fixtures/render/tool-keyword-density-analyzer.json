@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Analyseur de Densité de Mots-Clés"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Quelle est la densité de mots-clés idéale pour le SEO ?"
+        ],
+        [
+            3,
+            "Comment la densité de mots-clés affecte-t-elle les classements SEO ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que le bourrage de mots-clés et pourquoi est-il pénalisé ?"
+        ],
+        [
+            3,
+            "Dois-je analyser des mots simples ou des expressions de mots-clés ?"
+        ],
+        [
+            3,
+            "Que sont les mots-clés LSI et quel est leur rapport avec la densité de mots-clés ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je analyser ma densité de mots-clés ?"
+        ],
+        [
+            3,
+            "Ma densité de mots-clés est supérieure à 3% - comment la corriger ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "URL Slug Generator"
+        ],
+        [
+            3,
+            "Internal Link Analyzer"
+        ],
+        [
+            3,
+            "Nofollow Link Checker"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

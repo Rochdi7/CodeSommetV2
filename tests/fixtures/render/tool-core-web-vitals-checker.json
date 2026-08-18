@@ -1,0 +1,52 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur Core Web Vitals"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que sont les Core Web Vitals et pourquoi sont-ils importants pour le SEO ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre les Core Web Vitals mobile et desktop ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que l'INP et pourquoi a-t-il remplacé le FID ?"
+        ],
+        [
+            3,
+            "Comment améliorer mon score LCP (Largest Contentful Paint) ?"
+        ],
+        [
+            3,
+            "Qu'est-ce qui cause de mauvais scores CLS ?"
+        ],
+        [
+            3,
+            "À quelle fréquence vérifier mes Core Web Vitals ?"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un bon score global de Core Web Vitals ?"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 48,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

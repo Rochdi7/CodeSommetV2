@@ -1,0 +1,63 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Schema Markup"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le schema markup (JSON-LD) et pourquoi est-il important pour le SEO ?"
+        ],
+        [
+            3,
+            "Comment implémenter le schema markup sur mon site web ?"
+        ],
+        [
+            3,
+            "Comment valider mon schema markup après l'avoir ajouté à mon site ?"
+        ],
+        [
+            3,
+            "Le schema markup améliorera-t-il directement mon classement dans les recherches ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser plusieurs types de schema sur la même page ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Local Business Schema Generator"
+        ],
+        [
+            3,
+            "Aperçu Open Graph"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "Unexpected end tag : p": 1,
+        "htmlParseStartTag: misplaced <head> tag": 1
+    }
+}

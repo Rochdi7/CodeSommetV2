@@ -1,0 +1,52 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Certificat SSL"
+        ],
+        [
+            3,
+            "Ce que Cet Outil Vérifie"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un certificat SSL et pourquoi est-il important ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je vérifier mon certificat SSL ?"
+        ],
+        [
+            3,
+            "Que signifie 'chaîne de certificat invalide' ?"
+        ],
+        [
+            3,
+            "Un certificat SSL auto-signé est-il sûr à utiliser ?"
+        ],
+        [
+            3,
+            "Quelle version du protocole SSL/TLS dois-je utiliser ?"
+        ],
+        [
+            3,
+            "Mon certificat SSL expire bientôt - que dois-je faire ?"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 48,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

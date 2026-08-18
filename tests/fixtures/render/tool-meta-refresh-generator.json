@@ -1,0 +1,80 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Redirection Meta Refresh"
+        ],
+        [
+            3,
+            "Configuration de Redirection"
+        ],
+        [
+            3,
+            "Avertissement Impact SEO"
+        ],
+        [
+            3,
+            "Quand Utiliser Meta Refresh"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'une redirection meta refresh et comment fonctionne-t-elle ?"
+        ],
+        [
+            3,
+            "Quand dois-je utiliser les redirections meta refresh au lieu des redirections 301 ?"
+        ],
+        [
+            3,
+            "Quel est le meilleur réglage de délai pour une redirection meta refresh ?"
+        ],
+        [
+            3,
+            "Les redirections meta refresh nuisent-elles au SEO ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre les redirections meta refresh et JavaScript ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser les redirections meta refresh pour les utilisateurs mobiles ?"
+        ],
+        [
+            3,
+            "Quels sont les meilleurs cas d'utilisation pour les redirections meta refresh ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Aperçu Open Graph"
+        ],
+        [
+            3,
+            "XML Sitemap Generator"
+        ],
+        [
+            3,
+            "Robots.txt Generator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

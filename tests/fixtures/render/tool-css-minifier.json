@@ -1,0 +1,76 @@
+{
+    "headings": [
+        [
+            1,
+            "Minificateur CSS"
+        ],
+        [
+            3,
+            "Comment Fonctionne la Minification CSS"
+        ],
+        [
+            3,
+            "Bonnes Pratiques"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que fait réellement la minification CSS ?"
+        ],
+        [
+            3,
+            "Quelle réduction de taille puis-je attendre ?"
+        ],
+        [
+            3,
+            "La minification CSS va-t-elle casser le style de mon site ?"
+        ],
+        [
+            3,
+            "Dois-je utiliser le CSS minifié ou la compression Gzip ?"
+        ],
+        [
+            3,
+            "Ai-je besoin de source maps avec le CSS minifié ?"
+        ],
+        [
+            3,
+            "Comment intégrer la minification CSS dans mon processus de build ?"
+        ],
+        [
+            3,
+            "Quand minifier le CSS et quand l'éviter ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Color Palette Generator"
+        ],
+        [
+            3,
+            "QR Code Generator"
+        ],
+        [
+            3,
+            "HTML/CSS/JS Minifier"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

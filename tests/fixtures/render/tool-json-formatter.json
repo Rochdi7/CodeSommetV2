@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Formateur/Validateur JSON"
+        ],
+        [
+            3,
+            "Comment Utiliser le Formateur JSON"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le JSON et pourquoi est-ce important ?"
+        ],
+        [
+            3,
+            "Quelles sont les erreurs de syntaxe JSON les plus courantes ?"
+        ],
+        [
+            3,
+            "Quand dois-je formater ou minifier le JSON ?"
+        ],
+        [
+            3,
+            "Pourquoi dois-je valider le JSON avant de l'utiliser en production ?"
+        ],
+        [
+            3,
+            "Comment le JSON aide-t-il au développement d'API ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre JSON et XML ?"
+        ],
+        [
+            3,
+            "Quelles sont les bonnes pratiques pour travailler avec le JSON ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "FAQ Schema Generator"
+        ],
+        [
+            3,
+            "Analyseur de Score de Lisibilité"
+        ],
+        [
+            3,
+            "Word & Character Counter"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

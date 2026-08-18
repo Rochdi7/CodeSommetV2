@@ -1,0 +1,161 @@
+{
+    "headings": [
+        [
+            1,
+            "NOUS VOUS SERVONS PARTOUTOÙ QUE VOUS SOYEZ"
+        ],
+        [
+            2,
+            "Pourquoi les entreprises du monde entier choisissent CodeSommet"
+        ],
+        [
+            3,
+            "Entièrement à Distance, Disponible Partout"
+        ],
+        [
+            3,
+            "Experts en IA"
+        ],
+        [
+            3,
+            "Spécialistes Dashboard & SaaS"
+        ],
+        [
+            3,
+            "Axé Génération de Prospects"
+        ],
+        [
+            3,
+            "Service Complet de A à Z"
+        ],
+        [
+            3,
+            "Spécialistes Sectoriels"
+        ],
+        [
+            2,
+            "Comment nous travaillons avec des clients dans le monde entier"
+        ],
+        [
+            3,
+            "Appel découverte"
+        ],
+        [
+            3,
+            "Design & Prototype"
+        ],
+        [
+            3,
+            "Développement"
+        ],
+        [
+            3,
+            "Lancement & Support"
+        ],
+        [
+            2,
+            "Secteurs que Nous Servons dans le Monde"
+        ],
+        [
+            3,
+            "Éducation & EdTech"
+        ],
+        [
+            3,
+            "Santé & Médical"
+        ],
+        [
+            3,
+            "E-Commerce & Retail"
+        ],
+        [
+            3,
+            "FinTech & Finance"
+        ],
+        [
+            3,
+            "SaaS & Logiciels B2B"
+        ],
+        [
+            3,
+            "Immobilier & Propriété"
+        ],
+        [
+            2,
+            "Histoires de réussite ? travers le monde"
+        ],
+        [
+            3,
+            "Mon Asso"
+        ],
+        [
+            3,
+            "GlamWorlds"
+        ],
+        [
+            3,
+            "Morocco Quest"
+        ],
+        [
+            2,
+            "Questions fréquemment posées"
+        ],
+        [
+            3,
+            "Où êtes-vous basés ?"
+        ],
+        [
+            3,
+            "Pouvez-vous travailler dans mon fuseau horaire ?"
+        ],
+        [
+            3,
+            "Comment communiquons-nous pendant le projet ?"
+        ],
+        [
+            3,
+            "Quels modes de paiement acceptez-vous ?"
+        ],
+        [
+            3,
+            "En combien de temps pouvez-vous livrer un site web ?"
+        ],
+        [
+            3,
+            "Offrez-vous un support continu après le lancement ?"
+        ],
+        [
+            2,
+            "Explorer davantage"
+        ],
+        [
+            3,
+            "Voir Nos Projets"
+        ],
+        [
+            3,
+            "À Propos de CodeSommet"
+        ],
+        [
+            3,
+            "Contactez-nous"
+        ],
+        [
+            2,
+            "Prêt à Créer Quelque Chose d'Extraordinaire ?"
+        ]
+    ],
+    "links": {
+        "internal": 64,
+        "external": 5,
+        "fragment": 0,
+        "other": 0
+    },
+    "fragment_ids": [
+        "portfolio"
+    ],
+    "parser_errors": {
+        "htmlParseEntityRef: expecting ';'": 6,
+        "htmlParseEntityRef: no name": 2
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur Robots.txt"
+        ],
+        [
+            3,
+            "Configurer le Robots.txt"
+        ],
+        [
+            3,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un fichier robots.txt et pourquoi en ai-je besoin ?"
+        ],
+        [
+            3,
+            "Où placer le fichier robots.txt sur mon site web ?"
+        ],
+        [
+            3,
+            "Que signifient les directives User-agent et laquelle utiliser ?"
+        ],
+        [
+            3,
+            "Comment bloquer des robots de moteurs de recherche spécifiques tout en en autorisant d'autres ?"
+        ],
+        [
+            3,
+            "Dois-je inclure l'URL de mon sitemap dans robots.txt ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser des caractères génériques dans les règles de chemin robots.txt ?"
+        ],
+        [
+            3,
+            "Comment tester mon fichier robots.txt avant de le déployer ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Robots.txt Validator"
+        ],
+        [
+            3,
+            "XML Sitemap Generator"
+        ],
+        [
+            3,
+            "Sitemap Validator"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

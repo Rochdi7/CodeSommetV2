@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Liens Brisés"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que sont les liens brisés et pourquoi nuisent-ils au SEO ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je vérifier les liens brisés sur mon site ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre les liens brisés internes et externes ?"
+        ],
+        [
+            3,
+            "Comment corriger les erreurs 404 trouvées par cet outil ?"
+        ],
+        [
+            3,
+            "Que sont les chaînes de redirection et pourquoi les corriger ?"
+        ],
+        [
+            3,
+            "Puis-je automatiser la surveillance des liens brisés ?"
+        ],
+        [
+            3,
+            "Les liens brisés affectent-ils mon classement Google ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Nofollow Link Checker"
+        ],
+        [
+            3,
+            "Analyseur de Structure des Titres"
+        ],
+        [
+            3,
+            "Image Alt Text Analyzer"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

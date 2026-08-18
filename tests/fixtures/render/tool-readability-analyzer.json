@@ -1,0 +1,58 @@
+{
+    "headings": [
+        [
+            1,
+            "Analyseur de Score de Lisibilité"
+        ],
+        [
+            3,
+            "Quelle est la différence entre Flesch Reading Ease et Flesch-Kincaid Grade ?"
+        ],
+        [
+            3,
+            "Dois-je toujours viser le score de lisibilité le plus élevé ?"
+        ],
+        [
+            3,
+            "Comment améliorer mon score de lisibilité sans simplifier le contenu ?"
+        ],
+        [
+            3,
+            "Que signifient les 'mots complexes' dans l'analyse de lisibilité ?"
+        ],
+        [
+            3,
+            "Puis-je utiliser cet outil pour vérifier la lisibilité dans d'autres langues que l'anglais ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Word & Character Counter"
+        ],
+        [
+            3,
+            "HTML to Plain Text Converter"
+        ],
+        [
+            3,
+            "Text Case Converter"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": {
+        "Unexpected end tag : div": 3
+    }
+}

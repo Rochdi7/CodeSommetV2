@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Convertisseur de Casse de Texte"
+        ],
+        [
+            3,
+            "Ce que Cet Outil Fait"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Quand utiliser la Casse de Titre vs la Casse de Phrase ?"
+        ],
+        [
+            3,
+            "La casse des URL (majuscules vs minuscules) affecte-t-elle le SEO ?"
+        ],
+        [
+            3,
+            "Quelles sont les conventions de nommage en programmation ?"
+        ],
+        [
+            3,
+            "Quelles sont les règles correctes pour la Casse de Titre ?"
+        ],
+        [
+            3,
+            "Comment la casse du texte affecte-t-elle l'accessibilité pour les lecteurs d'écran ?"
+        ],
+        [
+            3,
+            "Puis-je convertir de grands blocs de texte ou plusieurs paragraphes ?"
+        ],
+        [
+            3,
+            "Pourquoi aurais-je besoin de snake_case ou camelCase pour des tâches non liées au code ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "HTML to Plain Text Converter"
+        ],
+        [
+            3,
+            "Analyseur de Score de Lisibilité"
+        ],
+        [
+            3,
+            "Word & Character Counter"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

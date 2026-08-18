@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Liens Nofollow"
+        ],
+        [
+            3,
+            "Comprendre les Liens Nofollow"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un lien nofollow et pourquoi est-ce important pour le SEO ?"
+        ],
+        [
+            3,
+            "Quand dois-je utiliser les liens nofollow vs dofollow ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre les attributs nofollow, sponsored et UGC ?"
+        ],
+        [
+            3,
+            "Le PageRank sculpting avec nofollow fonctionne-t-il encore ?"
+        ],
+        [
+            3,
+            "Dois-je utiliser nofollow sur les liens internes ?"
+        ],
+        [
+            3,
+            "À quelle fréquence dois-je auditer les liens nofollow de mon site ?"
+        ],
+        [
+            3,
+            "Trop de liens nofollow peuvent-ils nuire à mon SEO ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Broken Link Checker"
+        ],
+        [
+            3,
+            "Internal Link Analyzer"
+        ],
+        [
+            3,
+            "Backlink Checker"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

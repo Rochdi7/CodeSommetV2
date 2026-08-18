@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Analyseur de Compression d'Images"
+        ],
+        [
+            3,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi la compression d'images est-elle importante pour le SEO ?"
+        ],
+        [
+            3,
+            "Quelle est la différence entre les formats WebP, JPEG et PNG ?"
+        ],
+        [
+            3,
+            "Comment équilibrer la qualité d'image avec la taille du fichier ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que le lazy loading et dois-je l'utiliser ?"
+        ],
+        [
+            3,
+            "Dois-je utiliser un CDN pour les images ?"
+        ],
+        [
+            3,
+            "Quelle taille dois-je donner aux images responsives ?"
+        ],
+        [
+            3,
+            "Quels sont les meilleurs outils gratuits de compression d'images ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Page Speed Analyzer"
+        ],
+        [
+            3,
+            "HTML/CSS/JS Minifier"
+        ],
+        [
+            3,
+            "Analyseur de Densité de Mots-clés"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

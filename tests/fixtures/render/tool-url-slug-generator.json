@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Slug URL"
+        ],
+        [
+            3,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un slug URL et pourquoi est-il important pour le SEO ?"
+        ],
+        [
+            3,
+            "Dois-je utiliser des tirets ou des tirets bas dans les slugs URL ?"
+        ],
+        [
+            3,
+            "Quelle est la longueur idéale pour un slug URL ?"
+        ],
+        [
+            3,
+            "Comment gérer les caractères spéciaux et les mots vides ?"
+        ],
+        [
+            3,
+            "Où placer les mots-clés dans mon slug URL ?"
+        ],
+        [
+            3,
+            "Puis-je changer un slug URL existant sans nuire au SEO ?"
+        ],
+        [
+            3,
+            "Quelles sont les différentes variantes de slug et quand les utiliser ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Analyseur de Densité de Mots-clés"
+        ],
+        [
+            3,
+            "Canonical URL Checker"
+        ],
+        [
+            3,
+            "Aperçu Open Graph"
+        ],
+        [
+            2,
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}
