@@ -7,7 +7,7 @@
 | **Phase** | 1 of 11 |
 | **Revision** | **r4** (supersedes r3, r2, r1, initial draft) |
 | **Status** | **Steps 0–2 approved 🟡 with changes (second board review, `PHASE1_REVIEW_BOARD_REPORT.md`) · Step 3 removal ratified · r4 applies the board's six required changes** |
-| **Scope** | Audit + architecture design only. No files modified. |
+| **Scope** | Audit + architecture design; r4 additionally lands the gate-enabling test fixes and CI (no view/route/lang changes). |
 | **Companions** | `INDEXING_INVESTIGATION.md`, `CONTENT_ARCHITECTURE_PLAN.md` |
 
 ---
@@ -275,7 +275,7 @@ Problem: decisions buried in long reports are unmaintainable over a 10-year hori
 ### ADR-002 — Remove the duplicate view tree
 **Status: ✅ APPROVED (board) — Step 1**
 
-**Evidence [M].** Routes reference `frontoffice.pages.*` exclusively · legacy tree `@extends('layouts.app')` ×115 · one live reference (`HomeAdController.php:19`) · 135 of 137 files differ (diverged, stale) · 16 MB.
+**Evidence [M].** Routes reference `frontoffice.pages.*` exclusively · legacy tree `@extends('layouts.app')` ×115 · one live reference (`HomeAdController.php:19`; the view exists **only** in the legacy tree — no backoffice copy) · 102 files differ + 33 exist on one side only (diverged, stale) · 16 MB · every dynamic `view()` call in `routes/web.php` and `ToolsApiController` targets `frontoffice.*` behind a `view()->exists` guard (complete audit, r4).
 
 **Decision: delete from the working tree**, preserving `pages/admin/` by moving it to `backoffice/`.
 
@@ -286,7 +286,7 @@ Problem: decisions buried in long reports are unmaintainable over a 10-year hori
 | Rollback | ✅ one command | ✅ one command |
 | Long-term | ❌ archives become permanent | ✅ history is the archive |
 
-**Procedure.** `git tag pre-phase1-legacy-views` → `git mv pages/admin backoffice/pages/admin` → update controller → `git rm -r resources/views/pages` → commit message records tag + restore command.
+**Procedure.** `git tag pre-phase1-legacy-views` → `git mv pages/admin backoffice/pages/admin` → rewrite the 6 internal `@include('pages.admin…')` in the moved files (r4) → update controller → `AdminHomeAdsTest` green → `git rm -r resources/views/pages` → commit message records tag + restore command.
 **Recovery:** `git checkout pre-phase1-legacy-views -- resources/views/pages`
 
 ---
@@ -296,7 +296,7 @@ Problem: decisions buried in long reports are unmaintainable over a 10-year hori
 
 **(a) Naming rule.** `components/` = reusable, parameterised, no knowledge of caller. `partials/` = singleton page furniture, `@include`d once.
 
-**(b) No aliases.** With **6 static references in 3 files [M]**, alias stubs would add 4 indirection files to serve 6 call sites, leaving two valid paths per component and a permanent drift surface. Direct migration in one atomic commit.
+**(b) No aliases.** With **5 static references in 3 files [M]** (r4 correction), alias stubs would add 4 indirection files to serve 5 call sites, leaving two valid paths per component and a permanent drift surface. Direct migration in one atomic commit.
 
 **Dead components.** `breadcrumb` and `newsletter-form` have 0 references. **Moved, not deleted** — deletion needs its own evidence (ADR-012, deferred).
 
@@ -307,7 +307,7 @@ Problem: decisions buried in long reports are unmaintainable over a 10-year hori
 
 **r3 correction.** r2 treated ADR-004 as the blocker for Steps 4–7 while approving Step 3 — a dependency inversion the board flagged (C3). The real blocker is **ADR-009** (namespacing), which is upstream of ADR-004. ADR-004 cannot be evaluated until namespacing is settled, because options B1–B5 assume a key structure that ADR-009 may change.
 
-Alternatives B1 (semantic lang keys) · B2 (config) · B3 (View Composers) · B4 (typed DTO) · B5 (hybrid) remain open, to be measured against Phase 3 blueprints. **Board note incorporated:** B3 was under-weighted in r2 and is likely the idiomatic Laravel answer; it gets equal evaluation weight in RFC-002.
+Alternatives B1 (semantic lang keys) · B2 (config) · B3 (View Composers) · B4 (typed DTO) · B5 (hybrid) remain open, to be measured against Phase 3 blueprints. **Repo precedent (r4, second board [M]):** B2 has the strongest precedent — `config/pages.php` is already the documented single source of truth for route whitelists + sitemap; B3 has **zero** precedent (no `View::composer` anywhere); B4 has no `app/DTO`; B1 has per-page lang precedent in `lang/fr/tools/`. B3 keeps equal evaluation weight in RFC-002 but the r3 phrase "likely the idiomatic answer" is withdrawn as unevidenced.
 
 ---
 
@@ -485,11 +485,11 @@ One concern per commit · verify after each · working tree deployable at every 
 
 | # | Criterion | Command | Expected |
 |---|---|---|---|
-| A1 | Suite green | `composer test` | 0 failed |
+| A1 | Suite green (**full** suite, not the SEO subset) | `composer test` | 0 failed — **achievable since r4** (227 passed / 1,504 assertions / 0 risky) |
 | A2 | **Named tests all present** | `composer test` | no test removed *(board: replaces brittle assertion-count check)* |
 | A3 | Style clean | `vendor/bin/pint --test` | 0 issues |
 | A4 | Blade compiles | `php artisan view:cache` | exit 0 |
-| A5 | HTML well-formed | `--filter=RenderSnapshot` | 81/81 |
+| A5 | Structural checks pass (r4: replaces "well-formed") | `--filter=RenderSnapshot` | 81/81; real-error classes ≤ baseline |
 | A6 | No duplicate IDs | `--filter=RenderSnapshot` | 0 |
 | A7 | Normalized DOM equivalent | `--filter=RenderSnapshot` | 81/81 |
 | A8 | Sitemap URLs 200 | `--filter=SitemapIntegrity` | 117/117 |
@@ -513,11 +513,13 @@ r2's M1/M3 were arithmetic on a false assumption presented as measurement. **Rem
 
 | # | Metric | Before [M] | Target | Type |
 |---|---|---|---|---|
-| **M1** | Maintenance surface — Blade files | **274** | **137** (−50%) | [M] |
+| **M1** | Maintenance surface — Blade files | **325** *(r4; r3's 274 unverifiable)* | **188** (−137) | [M] |
 | **M2** | Maintenance surface — dead bytes | **16 MB** | **0** | [M] |
 | **M3** | Ambiguous edit targets (components on >1 path) | 0 (4 if aliased) | **0** | [M] |
-| **M4** | Named tests | 29 files | **30** (+snapshot) | [M] |
-| **M5** | Risky tests | **1** | **0** | [M] |
+| **M4** | Named tests | 30 files *(29 + `AdminHomeAdsTest`, r4)* | **31** (+snapshot) | [M] |
+| **M5** | Risky tests | ~~1~~ **0** (fixed in r4) | **0** | [M] |
+| **M9** | *(r4)* Full suite | **227 passed / 1,504 assertions / 0 failed** | ≥ that, 0 failed | [M] |
+| **M10** | *(r4)* CI | none | `composer test` on every push/PR | [M] |
 | **M6** | Route baseline captured | ✗ | ✓ | [M] |
 | **M7** | Normalized DOM | baseline | equivalent | [M] |
 | **M8** | Fixture coverage | 0 | **81 routes** | [M] |
@@ -535,7 +537,7 @@ r2's M1/M3 were arithmetic on a false assumption presented as measurement. **Rem
 | **R1** | Lang namespace/key misalignment | High | **Certain** | **No longer in scope.** Step 3 removed; ADR-009 owns it. *(r2 misclassified this as deferred while approving work that depended on it.)* | ADR-009 |
 | R2 | Markup drift lost in extraction | — | — | **Not applicable** — no extraction in Phase 1 | — |
 | R3 | Snapshot harness not built first | High | Low | Step 0 hard gate (A5–A7) | Step 0 |
-| R4 | Deleting legacy tree breaks a reference | Med | Low | Grep verified [M]; tag; one-command restore | Step 1 |
+| R4 | Deleting legacy tree breaks a reference | Med | **Med→Low** | Grep verified [M]; legacy view is the only copy of home-ads and its tree has 6 internal `@include`s (r4); `AdminHomeAdsTest` now guards it; tag; one-command restore | Step 1 |
 | R5 | Design/responsive regression | — | — | Not applicable — no markup moves | — |
 | R6 | SEO metadata lost | High | Low | Metadata stays in page files; A10–A18 | Step 2 |
 | R7 | `worldwide` / `amsterdam` structural outliers | Med | Med | Both excluded and now documented [M] | — |
@@ -543,7 +545,10 @@ r2's M1/M3 were arithmetic on a false assumption presented as measurement. **Rem
 | R9 | Phase 1 collides with content phases | Low | Low | Different layers | — |
 | **R10** | **Stale view cache after deploy/rollback** | Med | Med | `view:clear` mandated in §7 *(board gap)* | Step 1–2 |
 | **R11** | **Fixture rot / bulk regeneration** | Med | **High** | ADR-010 *(board gap)* | Step 0 |
-| **R12** | **CI runtime growth from 81 fixtures** | Low | Med | Measure in Step 0; budget before RFC-002 *(board gap)* | Step 0 |
+| **R12** | ~~CI runtime growth~~ **No CI existed** (r4 reframe) | Med | Certain→Fixed | `.github/workflows/tests.yml` runs `composer test` on push/PR. Runtime cost of 81 fixtures measured [D]: ~+4–5 s on a 45 s suite — not a risk | Step 0 |
+| **R15** | *(r4)* Governing RFC + companions untracked | Med | Certain→Fixed | Committed with r4 | — |
+| **R16** | *(r4)* Fork-point serialization — branch is 13 commits ahead of `main`; Phase 1 reaches production only after this branch merges | Med | Certain | Merge `seo-tools-production-grade` first, or branch `phase-1/*` from `main` after merge | Owner |
+| **R17** | *(r4)* Stage-2 gate unimplementable as "0 libxml errors" | High | Certain→Fixed | §8.1 respecified | Step 0 |
 | **R13** | **Merge conflicts during rollout** | — | — | Not applicable at 4-file scope; real risk in RFC-002 | RFC-002 |
 | **R14** | **`location-process-steps` never audited** | Med | Med | 35,946 B included by all 34 pages, unexamined. Audit in RFC-002 *(board gap)* | RFC-002 |
 
@@ -555,9 +560,9 @@ r2's M1/M3 were arithmetic on a false assumption presented as measurement. **Rem
 
 **Step 0** — [ ] tag `pre-phase1` · [ ] `RenderSnapshotTest` (81 routes, 5 stages) · [ ] baseline fixtures · [ ] **route baseline JSON** · [ ] fix/skip risky test · [ ] measure CI delta (R12) · [ ] A1–A9
 
-**Step 1** — [ ] tag `pre-phase1-legacy-views` · [ ] `git mv pages/admin` · [ ] update controller · [ ] grep = 0 · [ ] `git rm -r pages` · [ ] commit records restore command · [ ] `/admin/home-ads` 200 · [ ] A1–A9
+**Step 1** — [ ] tag `pre-phase1-legacy-views` · [ ] `git mv pages/admin` · [ ] rewrite 6 internal `@include('pages.admin…')` · [ ] update controller · [ ] grep `view('pages.` + `@include('pages.` = 0 · [ ] `AdminHomeAdsTest` green · [ ] `git rm -r pages` · [ ] commit records restore command · [ ] A1–A9
 
-**Step 2** — [ ] create `components/shared/` · [ ] `git mv` 4 · [ ] update 6 refs · [ ] grep old paths = 0 · [ ] `view:clear` · [ ] blog pages render · [ ] A1–A9
+**Step 2** — [ ] create `components/shared/` · [ ] `git mv` 4 · [ ] update 5 refs · [ ] grep old paths = 0 · [ ] `view:clear` · [ ] blog pages render · [ ] A1–A9
 
 **Phase close** — [ ] M1–M8 recorded · [ ] ADR-001/002/003/006/007/009/010 committed · [ ] **RFC-002 opened, gated on ADR-009**
 
@@ -567,13 +572,13 @@ r2's M1/M3 were arithmetic on a false assumption presented as measurement. **Rem
 
 > ### ☑ **Implement Steps 0–2 (4.5 h) · Step 3 removed**
 
-**Reason.** Steps 0–2 depend on nothing downstream and are backed by direct measurement: 6 component references [M], 16 MB dead tree [M], 135 of 137 files diverged [M]. Step 3 is removed because §3.5 proves — by automated census of all 34 pages — that no byte-identical sections exist and that per-city lang namespacing makes cross-page extraction structurally impossible until ADR-009 is resolved.
+**Reason.** Steps 0–2 depend on nothing downstream and are backed by direct measurement: 5 component references [M], 16 MB dead tree [M], 102 diverged + 33 one-sided files [M]. Step 3 is removed because §3.5 proves — by automated census of all 34 pages — that no byte-identical sections exist and that per-city lang namespacing makes cross-page extraction structurally impossible until ADR-009 is resolved.
 
 **Expected impact.**
 
 | | |
 |---|---|
-| Maintenance surface | 274 → **137** files; **−16 MB** |
+| Maintenance surface | 325 → **188** Blade files (−137); **−16 MB** *(r4: r3's "274" matched no measurement; total is 325 [M])* |
 | Regression safety | 0 → **81 routes** under snapshot + route baseline |
 | Rendered DOM | **unchanged (asserted)** |
 | SEO | **unchanged (asserted)** |
@@ -606,4 +611,4 @@ For `docs/adr/` and future phases:
 
 ---
 
-*RFC-001 r3. Board decision incorporated 2026-08-06. §3.5 census: 34 files, 12 sections, 3 normalization levels, MD5 clustering — automated, no visual inspection. Lang structure: PHP `include`, n=4. Component census: `grep`, complete. Sizes: `du -sh`. Test baseline: `17 passed, 446 assertions, 1 risky, 4.15s`. All figures marked [M] measured or [D] derived. **No files modified.***
+*RFC-001 r4. Second board review (`PHASE1_REVIEW_BOARD_REPORT.md`) incorporated 2026-08-06: census corrected (5 refs, 119 live pages, 102+33 diff), gates A1/A5 made achievable, Step 1 amended, tests fixed (227/1,504 green), CI added. Prior r3 note: Board decision incorporated 2026-08-06. §3.5 census: 34 files, 12 sections, 3 normalization levels, MD5 clustering — automated, no visual inspection. Lang structure: PHP `include`, n=4. Component census: `grep`, complete. Sizes: `du -sh`. SEO-subset baseline: `17 passed, 446 assertions`; full suite after r4 fixes: `227 passed, 1,504 assertions, 0 risky`. All figures marked [M] measured or [D] derived. **r4 modifies files: 3 tests + 1 CI workflow; no view/route/lang changes.***
