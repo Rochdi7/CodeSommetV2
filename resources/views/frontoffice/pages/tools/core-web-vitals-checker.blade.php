@@ -254,6 +254,9 @@
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg></a>
                 </div>
+                <div class="mt-4 text-center">
+                    <p class="text-sm text-gray-600">{!! __('tools/core-web-vitals-checker.text_crosslink') !!}</p>
+                </div>
             </div>
         </div>
     </section>

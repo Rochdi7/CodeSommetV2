@@ -28,6 +28,7 @@ return [
     'text_18' => 'Vérifiez la vitesse de vos pages critiques (page d\'accueil, pages de destination clés, page de paiement) chaque semaine et mensuellement pour les autres pages. Testez toujours après des mises à jour majeures, de nouvelles fonctionnalités ou des changements de design. Utilisez cet outil en parallèle avec Google PageSpeed Insights et des outils de surveillance des utilisateurs réels (RUM) pour suivre les performances dans le temps et détecter les problèmes avant qu\'ils n\'impactent le classement ou les revenus.',
     'text_19' => 'Vous avez encore des questions ?',
     'text_20' => 'Contactez notre équipe pour obtenir de l\'aide',
+    'text_crosslink' => 'Vous voulez vérifier la conformité officielle aux critères Google ? Utilisez notre <a href="/tools/core-web-vitals-checker" class="text-[#00AEEF] font-semibold hover:underline">Vérificateur Core Web Vitals</a> pour des métriques LCP, INP et CLS détaillées.',
     'text_21' => 'Outils Connexes Qui Pourraient Vous Intéresser',
     'text_22' => 'Continuez à optimiser votre site web avec ces outils complémentaires',
     'text_23' => 'Minifiez le code pour réduire la taille des fichiers et améliorer la vitesse de page',
