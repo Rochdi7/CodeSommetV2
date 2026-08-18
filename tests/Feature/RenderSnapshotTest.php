@@ -387,7 +387,11 @@ class RenderSnapshotTest extends TestCase
             $value = preg_replace('/([?&])v=\d+/', '$1v=VERSION', $value);
         }
 
-        return $value;
+        // Attribute values may span lines in Blade source (multi-line style="…");
+        // the line-ending flavour (CRLF vs LF checkout) must not leak into the
+        // snapshot, and intra-attribute whitespace is not semantically significant
+        // for a regression snapshot.
+        return $this->collapse($value);
     }
 
     private function normalizeRaw(string $content): string
