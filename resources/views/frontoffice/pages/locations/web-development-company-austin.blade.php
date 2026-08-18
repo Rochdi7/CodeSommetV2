@@ -823,7 +823,10 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-austin.ml_907') }}</p>
+                            {{ __('locations/web-development-company-austin.ml_907') }}
+                            Découvrez notre service dédié au <a class="inline-flex items-center font-medium hover:underline"
+                                href="{{ route('service', 'saas-platform-development') }}"
+                                style="color: rgb(255, 101, 0);">lancement rapide de plateformes MVP</a>.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">

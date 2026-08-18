@@ -127,7 +127,10 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/page-speed-analyzer.text_8') }}</p>
+                            <p>{{ __('tools/page-speed-analyzer.text_8') }} Pour obtenir le <a
+                                    href="{{ route('tool', 'core-web-vitals-checker') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">détail mobile/desktop des métriques Core Web Vitals</a>
+                                de votre site, utilisez notre outil dédié.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -193,7 +196,10 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/page-speed-analyzer.text_14') }}</p>
+                            <p>{{ __('tools/page-speed-analyzer.text_14') }} Utilisez notre <a
+                                    href="{{ route('tool', 'image-compression-analyzer') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">analyseur de compression d'images</a>
+                                pour repérer précisément les images à optimiser en priorité.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

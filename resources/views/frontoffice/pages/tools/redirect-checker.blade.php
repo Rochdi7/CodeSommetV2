@@ -102,7 +102,11 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/redirect-checker.text_9') }}</p>
+                            <p>{{ __('tools/redirect-checker.text_9') }}
+                                Si vous n'avez pas accès à la configuration du serveur, notre <a
+                                    href="{{ route('tool', 'meta-refresh-generator') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">générateur de redirection meta refresh (sans accès serveur)</a>
+                                reste une alternative côté client pour les redirections temporaires.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -190,7 +194,11 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/redirect-checker.text_17') }}</p>
+                            <p>{{ __('tools/redirect-checker.text_17') }}
+                                Si un changement d'URL est à l'origine de vos redirections, pensez à passer par notre <a
+                                    href="{{ route('tool', 'url-slug-generator') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">générateur de slug URL SEO-friendly</a>
+                                pour éviter d'avoir à recréer une nouvelle redirection à chaque changement.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

@@ -381,6 +381,8 @@
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></li>
                             </ul>
                             <p class="mt-3 text-sm">{{ __('legal/privacy-policy.text_93') }}</p>
+                            <p class="mt-3 text-sm"><a class="text-[#00AEEF] hover:underline"
+                                    href="{{ route('contact') }}">{{ __('legal/privacy-policy.text_457') }}</a></p>
                         </div>
                     </div>
                 </div>

@@ -188,7 +188,9 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/mon-asso.text_9') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/mon-asso.text_10') }}</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/mon-asso.text_10') }}<!-- --> <a
+                            href="{{ route('service', 'saas-platform-development') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">{{ __('our-work/mon-asso.solution_saas_link') }}</a><!-- -->{{ __('our-work/mon-asso.solution_saas_suffix') }}</p>
                     <ul class="space-y-2">
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/mon-asso.solution_bullet_1') }}</span></li>
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/mon-asso.solution_bullet_2') }}</span></li>

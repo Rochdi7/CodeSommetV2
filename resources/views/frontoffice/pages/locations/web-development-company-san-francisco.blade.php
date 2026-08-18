@@ -820,7 +820,8 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-san-francisco.text_371') }}</p>
+                            {{ __('locations/web-development-company-san-francisco.text_371') }}
+                            Découvrez notre offre de <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('service', 'saas-platform-development') }}">développement de plateformes SaaS pour startups</a>.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">

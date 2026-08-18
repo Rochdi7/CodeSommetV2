@@ -590,7 +590,9 @@
                                         <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
                                                 class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Tableaux de
                                                 bord agents</span></li>
-                                    </ul>
+                                    </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto"
+                                        href="{{ route('service', 'real-estate-website-development') }}"
+                                        style="color: rgb(255, 101, 0);">Découvrez nos plateformes immobilières pour investisseurs institutionnels</a>
                                 </div>
                             </div>
                         </div>

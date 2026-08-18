@@ -311,6 +311,15 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg></a>
+                    <p class="text-sm text-gray-600 mt-4 mb-2">Envie d'aller plus loin qu'un script ? Notre équipe
+                        peut développer et intégrer le chatbot directement sur votre site.</p><a
+                        href="{{ route('get-quote') }}"
+                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Demander
+                        un devis pour l'intégration d'un chatbot IA sur votre site<svg class="w-4 h-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg></a>
                 </div>
             </div>
         </section>

@@ -147,6 +147,27 @@
                 </div>
             </div>
         </section>
+        <section class="w-full py-6 md:py-8 bg-[#F5F5F5]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="rounded-2xl border border-[#00AEEF]/20 bg-white p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+                    <div class="flex-shrink-0 w-11 h-11 rounded-full bg-[#00AEEF]/10 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-heart w-5 h-5 text-[#00AEEF]"
+                            aria-hidden="true">
+                            <path
+                                d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text-sm md:text-base text-[#0F0F0F]/70 leading-relaxed">
+                        Cette page concerne le développement d'une <strong class="text-[#0F0F0F] font-semibold">plateforme de télémédecine complète</strong>, pensée pour les cliniques virtuelles et les startups santé&nbsp;:
+                        <a class="text-[#00AEEF] font-semibold underline decoration-[#00AEEF]/30 hover:decoration-[#00AEEF] underline-offset-2 transition-colors"
+                            href="{{ route('service', 'telemedicine-website-development') }}">vous êtes un cabinet ou une clinique cherchant un site vitrine avec télésanté plutôt qu'une plateforme complète ?</a>
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center mb-12">

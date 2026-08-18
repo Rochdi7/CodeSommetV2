@@ -50,6 +50,10 @@
                         </h1>
                         <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
                             {{ __('our-work.text_3') }}</p>
+                        <p class="text-base text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
+                            Chaque projet ci-dessous appartient à un secteur précis — pour aller plus loin, n'hésitez pas à
+                            <a class="text-[#00AEEF] hover:underline" href="{{ route('industries') }}">explorer nos secteurs d'expertise</a>.
+                        </p>
                     </div>
                     <div class="flex flex-wrap justify-center lg:justify-start gap-6 md:gap-8">
                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -235,6 +239,12 @@
                         </div>
                     </a></div>
             </div>
+            <p class="mt-10 text-center text-sm md:text-base text-[var(--text-secondary)] max-w-3xl mx-auto">
+                Des boutiques comme GlamWorlds ou Dental Pro s'appuient sur
+                <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'ecommerce-website-development') }}">notre offre de développement e-commerce</a>,
+                tandis que Hssabek et Mon Asso illustrent
+                <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'saas-platform-development') }}">notre expertise en plateformes SaaS sur mesure</a>.
+            </p>
         </div>
     </section>
     <section class="py-16 md:py-20 bg-white">

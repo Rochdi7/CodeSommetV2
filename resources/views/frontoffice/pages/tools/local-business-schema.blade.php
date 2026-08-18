@@ -157,6 +157,7 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/local-business-schema.text_20') }}</p>
+                            <p class="mt-3">Vous gérez une agence immobilière ? Au-delà du schéma, un site dédié peut faire toute la différence pour votre visibilité locale : découvrez notre offre de <a class="text-[#00AEEF] font-semibold hover:underline" href="{{ route('service', 'real-estate-website-development') }}">développement de sites web pour agences immobilières</a>.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

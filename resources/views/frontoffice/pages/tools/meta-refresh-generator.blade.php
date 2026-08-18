@@ -111,6 +111,7 @@
                             <strong>{{ __('tools/meta-refresh-generator.text_11') }}</strong>{{ __('tools/meta-refresh-generator.text_12') }}
                             <strong>redirections 301</strong> {{ __('tools/meta-refresh-generator.text_150') }}
                             <strong>redirections 302</strong> {{ __('tools/meta-refresh-generator.text_13') }}
+                            Vérifiez vos redirections existantes avec notre <a href="{{ route('tool', 'redirect-checker') }}" class="text-[#00AEEF] font-semibold hover:underline">vérificateur de redirections 301/302</a>.
                         </p>
                         <p class="text-sm text-yellow-800 mt-2"><strong>Cas d'utilisation valides :</strong>
                             {{ __('tools/meta-refresh-generator.text_14') }}</p>

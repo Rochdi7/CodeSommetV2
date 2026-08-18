@@ -733,6 +733,18 @@
                                                     style="font-family:var(--font-body)">{{ __('services/healthcare-website-development-agency.text_27') }}</span>
                                             </li>
                                         </ul>
+                                        <p class="text-sm md:text-base text-[#0F0F0F]/70 mt-4 md:mt-6 relative z-10"
+                                            style="font-family:var(--font-body)"><a
+                                                class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
+                                                href="{{ route('service', 'telemedicine-website-development') }}">Besoin d'un site web dédié aux consultations à distance pour votre cabinet ?<svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></a>
+                                        </p>
                                     </div>
                                     <div
                                         class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
@@ -953,7 +965,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -1900,7 +1912,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/healthcare-website-development-agency.ml_1000') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">6-8
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">12-16

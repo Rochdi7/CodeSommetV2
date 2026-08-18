@@ -95,6 +95,7 @@
                         </ul>
                     </div>
                 </div>
+                <p class="text-sm text-gray-600 mt-4">Pour une vue d'ensemble complète de la sécurité et de la configuration de votre nom de domaine, essayez aussi notre <a href="{{ route('tool', 'domain-health-checker') }}" class="text-[#00AEEF] font-semibold hover:underline">vérificateur de santé de domaine (DNS, SSL, on-page)</a>.</p>
             </div>
         </div>
     </section>
@@ -129,7 +130,7 @@
                         </svg></div>
                 </button>
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
-                    <p>{{ __('tools/ssl-certificate-checker.text_20') }}</p>
+                    <p>{{ __('tools/ssl-certificate-checker.text_20') }} Pensez aussi à mettre en place un <a href="{{ route('tool', 'redirect-checker') }}" class="text-[#00AEEF] font-semibold hover:underline">vérificateur de redirections HTTP vers HTTPS</a> pour vous assurer que tout le trafic non sécurisé est bien redirigé.</p>
                 </div>
             </div>
             <div class="border-b border-gray-200 last:border-0"><button

@@ -355,6 +355,15 @@
                                 {{ __('contact.text_168') }}</h2>
                             <p class="text-sm sm:text-base text-[var(--text-secondary)]">{{ __('contact.text_23') }}</p>
                         </div>
+                        <div class="mb-6 sm:mb-8 rounded-xl border border-[#00AEEF]/20 bg-[#00AEEF]/5 p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                            <p class="text-sm text-[var(--text-secondary)]">Vous avez
+                                <a href="{{ route('get-quote') }}"
+                                    class="text-[#00AEEF] font-medium hover:text-[#0071BC] transition-colors">besoin d'un devis chiffré précis plutôt que d'échanger d'abord ? demandez votre devis structuré</a>.
+                                Ou <a href="{{ route('our-work') }}"
+                                    class="text-[#00AEEF] font-medium hover:text-[#0071BC] transition-colors">voir des exemples de projets livrés</a>
+                                avant de nous écrire.
+                            </p>
+                        </div>
                         <form class="space-y-4 sm:space-y-6" method="POST" action="{{ route('contact.store') }}">
                             @csrf
                             {{-- Honeypot: hidden from users, bots fill it. --}}

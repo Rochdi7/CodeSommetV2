@@ -625,7 +625,14 @@
                                                 class="mr-2"
                                                 style="color: rgb(255, 101, 0);">•</span><span>{{ __('locations/web-development-company-copenhagen.text_10') }}</span>
                                         </li>
-                                    </ul>
+                                    </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto"
+                                        href="{{ route('service', 'saas-platform-development') }}"
+                                        style="color: rgb(255, 101, 0);">Découvrez notre <!-- -->conception de plateformes SaaS sur mesure<svg
+                                            class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg></a>
                                 </div>
                             </div>
                         </div>

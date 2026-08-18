@@ -130,7 +130,10 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/image-compression-analyzer.text_9') }}</p>
+                            <p>{{ __('tools/image-compression-analyzer.text_9') }} Pensez aussi à vérifier vos
+                                balises alt avec notre <a href="{{ route('tool', 'image-alt-analyzer') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">analyseur de texte alt
+                                    d'image</a>, un autre facteur clé du SEO des images.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

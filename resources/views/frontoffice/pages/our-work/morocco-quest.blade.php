@@ -50,7 +50,7 @@
                     <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">
                         {{ __('our-work/morocco-quest.text_2') }}</p>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">
-                        {{ __('our-work/morocco-quest.text_3') }}</p>
+                        {{ __('our-work/morocco-quest.text_3') }} Découvrez également <a href="{{ route('location', 'casablanca') }}" class="text-[#00AEEF] hover:underline">nos projets pour des entreprises marocaines à Casablanca</a>.</p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                         <div
                             class="group relative p-4 bg-white rounded-2xl border border-gray-100 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">

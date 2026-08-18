@@ -305,7 +305,7 @@ async function runLinkingPlan(inventory, topicalMap, cannibalizationFindings) {
   ]
 
   const results = await parallel(sections.map(section => async () => {
-    const r = await agent(
+    let r = await agent(
       `You are building an internal linking plan for the "${section.name}" section of codesommet.com, a Laravel web dev agency site. You have the full site's topical map, keyword ownership map, and cannibalization findings (JSON below) plus the page inventory for this section.
 
 RULES (strict):
@@ -334,8 +334,41 @@ ${JSON.stringify(section.pages)}
 Call StructuredOutput with link_opportunities (only action "add" items need full justification; you may skip "keep"), orphan_pages, weak_pages, overlinked_pages.`,
       { label: `linkplan:${section.name}`, phase: 'Linking Plan', schema: LINKING_PLAN_SCHEMA, effort: 'high' }
     )
+    if (!r) {
+      // One retry on a fresh agent call if the structured-output tool call failed validation
+      // repeatedly (observed: retry cap exceeded despite well-formed content in the raw payload).
+      log(`Linking plan for "${section.name}" failed, retrying once...`)
+      r = await agent(
+        `You are building an internal linking plan for the "${section.name}" section of codesommet.com, a Laravel web dev agency site. You have the full site's topical map, keyword ownership map, and cannibalization findings (JSON below) plus the page inventory for this section.
+
+RULES (strict):
+- Every proposed link needs an explicit WHY - one of: topic_support (destination expands on current topic), user_next_step (logical next step for visitor), commercial_transition (informational content leading to relevant service), topical_authority (supporting page reinforces a pillar), location_relevance (geographic relevance), case_study_proof (destination is evidence of expertise), conversion (destination is a relevant commercial page like /get-quote or /contact).
+- Do NOT propose linking every page in this section to every other page in the same section.
+- Where the topical map's keyword_ownership_map indicates a page is a "supporting_url" for a keyword cluster, that page SHOULD link to its primary_url.
+- Where cannibalization findings recommend "differentiate_intent", make the anchor text explicitly disambiguate rather than blur the two pages.
+- Prioritize giving tier1/tier2 commercial pages more inbound contextual links from tier3/tier4 pages.
+- Anchor text must be natural, descriptive, and varied (not repeated verbatim across many sources for the same destination). Keep each anchor_text under 120 characters and avoid special/accented-character-heavy phrasing where a simpler equivalent works, to reduce encoding round-trip issues.
+- If you cannot justify a link, do not propose it.
+- Identify orphan_pages, weak_pages, overlinked_pages.
+
+TOPICAL MAP:
+${JSON.stringify(topicalMap)}
+
+CANNIBALIZATION FINDINGS:
+${JSON.stringify(cannibalizationFindings)}
+
+THIS SECTION'S PAGE INVENTORY:
+${JSON.stringify(section.pages)}
+
+Call StructuredOutput with link_opportunities, orphan_pages, weak_pages, overlinked_pages. Keep the total number of link_opportunities under 30 for this call so the payload stays small and reliable.`,
+        { label: `linkplan:${section.name}:retry`, phase: 'Linking Plan', schema: LINKING_PLAN_SCHEMA, effort: 'high' }
+      )
+    }
     return { section: section.name, plan: r }
   }))
+
+  const failedSections = results.filter(r => !r.plan).map(r => r.section)
+  if (failedSections.length) log(`WARNING: linking plan could not be generated for: ${failedSections.join(', ')} — these sections got zero new link proposals.`)
 
   const allOpportunities = results.flatMap(r => (r.plan && r.plan.link_opportunities) ? r.plan.link_opportunities : [])
   const allOrphans = results.flatMap(r => (r.plan && r.plan.orphan_pages) ? r.plan.orphan_pages : [])

@@ -74,6 +74,11 @@
                                     <strong>{{ __('tools/faq-schema-generator.text_9') }}</strong>
                                     {{ __('tools/faq-schema-generator.text_10') }}
                                 </p>
+                                <p class="text-xs text-gray-600 mt-3">
+                                    {{ __('tools/faq-schema-generator.text_44') }}
+                                    <a href="{{ route('tool', 'schema-generator') }}"
+                                        class="text-[#00AEEF] font-semibold hover:underline">{{ __('tools/faq-schema-generator.text_45') }}</a>.
+                                </p>
                             </div>
                         </div>
                     </div>

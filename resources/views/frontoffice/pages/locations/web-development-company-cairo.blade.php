@@ -831,7 +831,10 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-cairo.ml_910') }}</p>
+                            {{ __('locations/web-development-company-cairo.ml_910') }} Découvrez notre approche de
+                            <a href="{{ route('service', 'real-estate-website-development') }}"
+                                class="text-[#00AEEF] font-semibold hover:underline">conception de plateformes
+                                immobilières pour le marché égyptien</a>.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">
@@ -2123,7 +2126,10 @@
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-cairo.text_59') }}</h2>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">
-                        {{ __('locations/web-development-company-cairo.ml_951') }}</p>
+                        {{ __('locations/web-development-company-cairo.ml_951') }} Vous êtes basé plus à l'ouest ? Notre
+                        <a href="{{ route('location', 'tunis') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">agence web à Tunis</a> accompagne
+                        aussi les entreprises d'Afrique du Nord.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"

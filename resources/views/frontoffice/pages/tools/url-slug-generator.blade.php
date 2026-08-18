@@ -166,6 +166,11 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/url-slug-generator.text_14') }}</p>
+                            <p class="mt-2">Après avoir mis en place vos redirections 301, utilisez notre <a
+                                    href="{{ route('tool', 'redirect-checker') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">vérificateur de redirections</a>
+                                pour vérifier qu'elles fonctionnent correctement et éviter les chaînes de
+                                redirection.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

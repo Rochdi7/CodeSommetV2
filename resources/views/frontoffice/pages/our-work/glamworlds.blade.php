@@ -195,6 +195,7 @@
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.solution_bullet_3') }}</span></li>
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/glamworlds.solution_bullet_4') }}</span></li>
                     </ul>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mt-4">Cette refonte Shopify s'appuie sur <a href="{{ route('service', 'ecommerce-website-development') }}" class="text-[#00AEEF] hover:underline">notre expertise en création de boutiques e-commerce</a>, du choix de la plateforme jusqu'à l'optimisation SEO des fiches produits.</p>
                 </div>
             </div>
             <div class="mb-8 md:mb-12 max-w-6xl mx-auto">

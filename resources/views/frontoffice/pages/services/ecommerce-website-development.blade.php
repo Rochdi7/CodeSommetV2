@@ -624,7 +624,11 @@
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
                                                     style="font-family:var(--font-body)">Passerelles de paiement multiples
-                                                    : Stripe, PayPal, Apple Pay, Google Pay</span></li>
+                                                    : Stripe, PayPal, Apple Pay, Google Pay. Nous concevons aussi des
+                                                    <a class="text-[#00AEEF] underline hover:text-[#0F0F0F] transition-colors"
+                                                        href="{{ route('service', 'fintech-website-development') }}">paiements
+                                                        sécurisés pour le e-commerce et les marketplaces financières</a></span>
+                                                </li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -911,7 +915,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">

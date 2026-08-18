@@ -107,6 +107,12 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/word-counter.text_8') }}</p>
+                            <p class="mt-3">Au-delà du nombre de mots, la répartition de vos mots-clés dans le texte
+                                influence aussi le référencement. Utilisez notre <a
+                                    href="{{ route('tool', 'keyword-density-analyzer') }}"
+                                    class="text-[#00AEEF] font-semibold hover:underline">analyseur de densité de
+                                    mots-clés</a> pour vérifier que vos termes cibles sont utilisés de façon
+                                naturelle et équilibrée.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

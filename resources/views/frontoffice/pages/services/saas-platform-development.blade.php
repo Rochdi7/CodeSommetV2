@@ -939,7 +939,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -1877,7 +1877,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/saas-platform-development-agency.ml_981') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours (MVP)</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours (MVP)</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">6-8
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Plus de 12
@@ -2992,6 +2992,13 @@
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg></a></div>
+                <div class="mt-4 text-center">
+                    <p class="text-sm text-[#0F0F0F]/60">
+                        {{ __('services/saas-platform-development-agency.sw_2427') }}<!-- --> <a
+                            href="{{ route('service', 'fintech-platform-development') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">{{ __('services/saas-platform-development-agency.sw_2428') }}</a>
+                    </p>
+                </div>
             </div>
         </section>
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">

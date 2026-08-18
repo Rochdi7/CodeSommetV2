@@ -50,6 +50,8 @@ return [
     'text_40' => 'Nous créons des outils alimentés par l\'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats',
     'text_41' => 'Réserver un Appel Découverte',
     'text_42' => '50+ projets réussis • Livraison en 48h • Sans engagement',
+    'text_44' => 'Besoin de baliser autre chose qu\'une FAQ ? Utilisez notre',
+    'text_45' => 'générateur de schema markup général (Article, Produit, Organisation...)',
     'placeholder_43' => 'Q : Qu\'est-ce que le balisage FAQ ?
 R : Le balisage FAQ est une donnée structurée qui aide les moteurs de recherche à comprendre votre contenu FAQ et à l\'afficher sous forme de résultats enrichis dans les résultats Google.
 

@@ -3055,6 +3055,16 @@
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg></a></div>
+                <div class="text-center mt-4"><a
+                        class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
+                        href="{{ route('service', 'university-website-development') }}">vous représentez un
+                        établissement d'enseignement supérieur plutôt qu'une école de langues ?<svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg></a></div>
             </div>
         </section>
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">

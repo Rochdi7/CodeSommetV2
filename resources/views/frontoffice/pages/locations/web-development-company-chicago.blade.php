@@ -442,6 +442,12 @@
                                         <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
                                                 class="mr-2" style="color: rgb(255, 101, 0);">•</span><span>Applications
                                                 wallet</span></li>
+                                        <li class="flex items-start text-xs text-[var(--text-secondary)]"><span
+                                                class="mr-2" style="color: rgb(255, 101, 0);">•</span><span><a
+                                                    class="hover:underline"
+                                                    href="{{ route('service', 'fintech-platform-development') }}"
+                                                    style="color: rgb(255, 101, 0);">Tableaux de bord métier et
+                                                    plateformes financières</a></span></li>
                                     </ul><a class="inline-flex items-center text-sm font-medium hover:underline mt-auto"
                                         href="/our-work/glamworlds"
                                         style="color: rgb(255, 101, 0);">{{ __('locations/web-development-company-chicago.text_9') }}<svg

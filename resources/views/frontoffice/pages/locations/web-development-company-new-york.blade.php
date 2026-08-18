@@ -891,6 +891,7 @@
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">AWS</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">{{ __('locations/web-development-company-new-york.ml_1109') }}</span>
                     </div>
+                    <p class="text-[#0F0F0F]/70 text-sm text-center mt-6">Cette approche s'inscrit dans notre offre plus large de <a class="text-[#00AEEF] font-medium hover:underline" href="{{ route('service', 'fintech-platform-development') }}">plateformes fintech prêtes pour la production</a>, conçue pour les entreprises new-yorkaises qui construisent des produits financiers sécurisés et évolutifs.</p>
                 </div>
                 <div
                     class="relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] rounded-3xl p-8 md:p-12 text-white overflow-hidden">

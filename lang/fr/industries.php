@@ -33,5 +33,6 @@ return [
     'text_122' => 'Contactez-Nous',
     'text_123' => 'Plateformes de Télémédecine',
     'text_124' => 'FinTech & Services Financiers',
+    'text_125' => 'Découvrir les villes où nous intervenons',
     'attr_622' => 'Services de développement web spécifiques à chaque secteur',
 ];

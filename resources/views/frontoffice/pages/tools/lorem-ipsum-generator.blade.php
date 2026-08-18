@@ -88,6 +88,11 @@
                             <li>{{ __('tools/lorem-ipsum-generator.text_9') }}</li>
                             <li>{{ __('tools/lorem-ipsum-generator.text_10') }}</li>
                         </ul>
+                        <p class="text-gray-600">Une fois votre texte de remplissage généré, utilisez notre <a
+                                href="{{ route('tool', 'text-case-converter') }}"
+                                class="text-[#00AEEF] hover:underline font-medium">convertisseur de casse de texte</a>
+                            pour tester différents styles de casse (majuscules, minuscules, titre) dans vos maquettes
+                            et wireframes.</p>
                     </div>
                     <div class="space-y-2">
                         <h4 class="font-semibold text-gray-900">{{ __('tools/lorem-ipsum-generator.text_11') }}</h4>

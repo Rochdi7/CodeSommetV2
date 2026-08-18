@@ -170,7 +170,9 @@
                 </button>
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                     style="padding-left:3.5rem">
-                    <p>{{ __('tools/domain-health-checker.text_26') }}</p>
+                    <p>{{ __('tools/domain-health-checker.text_26') }} Pour une
+                        <a class="text-[#00AEEF] hover:underline font-medium" href="{{ route('tool', 'ssl-certificate-checker') }}">analyse détaillée du certificat SSL/TLS</a>
+                        (émetteur, date d'expiration, chaîne de confiance), utilisez notre outil dédié.</p>
                 </div>
             </div>
             <div class="border-b border-gray-200 last:border-0"><button

@@ -411,7 +411,11 @@
                         Services
                         Financiers<!-- --> {{ __('services/fintech-platform-development-agency.text_9') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('services/fintech-platform-development-agency.ml_925') }}</p>
+                        {{ __('services/fintech-platform-development-agency.ml_925') }} Cette page couvre le
+                        développement de plateformes produit (paiement, trading, KYC, conformité) — <a
+                            href="{{ route('service', 'fintech-website-development') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">vous cherchez plutôt un site vitrine
+                            marketing pour votre société financière ?</a></p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
@@ -585,7 +589,10 @@
                         {{ __('services/fintech-platform-development-agency.text_18') }}<!-- --> for <!-- -->FinTech et
                         Services Financiers<!-- --> Sites Web</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise fintech et de
-                        services financiers a besoin sur une seule plateforme</p>
+                        services financiers a besoin sur une seule plateforme — <a
+                            href="{{ route('service', 'saas-platform-development') }}"
+                            class="text-[#00AEEF] font-semibold hover:underline">besoin aussi d'un tableau de bord
+                            SaaS complet au-delà de la conformité financière ?</a></p>
                 </div>
                 <div class="space-y-12">
                     <div>
@@ -947,7 +954,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 2-5 Jours
+                        </svg>Calendrier de Lancement en 7-10 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -1898,7 +1905,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/fintech-platform-development-agency.ml_987') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-12
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">16+

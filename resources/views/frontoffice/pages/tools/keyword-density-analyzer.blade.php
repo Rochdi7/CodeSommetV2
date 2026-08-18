@@ -150,6 +150,10 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/keyword-density-analyzer.text_13') }}</p>
+                            <p class="mt-3">Pour éviter la sur-optimisation, pensez aussi à vérifier l'unicité de
+                                votre contenu avec notre <a class="text-[#00AEEF] font-semibold hover:underline"
+                                    href="{{ route('tool', 'duplicate-content-checker') }}">vérificateur de contenu
+                                    dupliqué</a>.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

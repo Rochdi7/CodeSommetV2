@@ -399,8 +399,11 @@
                             style="padding-left:3.5rem">
                             <p>Absolutely! UTM parameters work for any traffic source, not just paid ads. Use them for email
                                 newsletters (medium=email), organic social posts (medium=social), blog guest posts
-                                (medium=referral), QR codes (medium=qr_code), and any other marketing channel. This gives
-                                you complete visibility into all your traffic sources, not just paid campaigns.</p>
+                                (medium=referral), QR codes (medium=qr_code) generated with our <a
+                                    class="text-[#00AEEF] hover:underline"
+                                    href="{{ route('tool', 'qr-code-generator') }}">générateur de QR code</a>, and any
+                                other marketing channel. This gives you complete visibility into all your traffic
+                                sources, not just paid campaigns.</p>
                         </div>
                     </div>
                 </div>

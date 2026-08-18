@@ -285,7 +285,10 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>{{ __('tools/qr-code-generator.text_36') }}</p>
+                            <p>{{ __('tools/qr-code-generator.text_36') }} Pour aller plus loin, utilisez notre <a
+                                    href="{{ route('tool', 'utm-builder') }}"
+                                    class="text-[#00AEEF] hover:underline font-medium">constructeur d'URL UTM pour le suivi de campagne</a>
+                                afin d'ajouter des paramètres de suivi avant de générer votre QR code.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

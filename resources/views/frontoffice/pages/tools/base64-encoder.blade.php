@@ -88,6 +88,11 @@
                         <li><strong>{{ __('tools/base64-encoder.text_15') }}</strong>
                             {{ __('tools/base64-encoder.text_16') }}</li>
                         <li><strong>Authentification API :</strong> {{ __('tools/base64-encoder.text_17') }}</li>
+                        <li><strong>Données binaires dans les API JSON :</strong> les valeurs encodées en Base64 sont
+                            souvent intégrées dans des payloads JSON ; utilisez notre <a
+                                href="{{ route('tool', 'json-formatter') }}"
+                                class="text-[#00AEEF] font-semibold hover:underline">formateur et validateur JSON</a>
+                            pour vérifier la structure de ces payloads.</li>
                     </ul>
                     <div class="bg-white rounded-lg p-4 border border-gray-200 mt-4">
                         <p class="text-xs text-gray-600 mb-2"><strong>Exemple :</strong></p>

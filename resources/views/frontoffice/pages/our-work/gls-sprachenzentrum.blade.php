@@ -188,7 +188,7 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/gls-sprachenzentrum.text_8') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/gls-sprachenzentrum.text_9') }}</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/gls-sprachenzentrum.text_9') }} Découvrez <a href="{{ route('service', 'language-school-website-development') }}" class="text-[#00AEEF] font-medium hover:underline">notre offre pour écoles de langues</a>.</p>
                     <ul class="space-y-2">
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.solution_bullet_1') }}</span></li>
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/gls-sprachenzentrum.solution_bullet_2') }}</span></li>
@@ -717,6 +717,7 @@
     </section>
     <section class="pt-12 md:pt-16 lg:pt-20 pb-3 md:pb-4 bg-[#F5F5F5] border-t border-gray-200">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+            <p class="text-sm text-gray-600 text-center max-w-2xl mx-auto mb-6">Cette plateforme CRM/paie sur mesure s'inscrit dans nos projets de backoffice métier complexes : découvrez <a href="{{ route('case-study', 'hssabek') }}" class="text-[#00AEEF] font-medium hover:underline">un autre exemple de plateforme SaaS métier sur mesure</a>.</p>
             <div class="grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 max-w-4xl mx-auto"><a class="group"
                     href="/our-work/morocco-quest">
                     <div

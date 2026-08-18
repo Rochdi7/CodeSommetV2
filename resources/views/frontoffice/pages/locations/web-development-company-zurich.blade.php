@@ -814,7 +814,8 @@
                                 Solution</h3>
                         </div>
                         <p class="text-[#0F0F0F]/70 leading-relaxed">
-                            {{ __('locations/web-development-company-zurich.text_375') }}</p>
+                            {{ __('locations/web-development-company-zurich.text_375') }}
+                            Découvrez notre approche pour concevoir des <a class="text-[#00AEEF] font-medium hover:underline" href="{{ route('service', 'fintech-platform-development') }}">plateformes bancaires et gestion de patrimoine sécurisées</a>.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#00AEEF] to-[#0071BC] rounded-3xl p-8 md:p-10 text-white mb-12">

@@ -47,4 +47,5 @@ return [
     'text_37' => 'Nous créons des outils alimentés par l\'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats',
     'text_38' => 'Réserver un Appel Découverte',
     'text_39' => '50+ projets réussis • Livraison en 48h • Pas de contrats à long terme',
+    'text_40' => 'Testez vos redirections HTTP et détectez les chaînes ou boucles de redirection',
 ];
