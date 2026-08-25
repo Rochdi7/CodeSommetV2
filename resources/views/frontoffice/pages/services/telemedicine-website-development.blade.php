@@ -983,7 +983,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours
+                        </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -3036,6 +3036,8 @@
                             </svg>
                         </div>
                     </a></div>
+                <p class="text-center text-sm md:text-base text-[#0F0F0F]/70 mt-6 md:mt-8 px-4">
+                    {{ __('services/telemedicine-website-development-agency.ml_1249') }}</p>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
                         href="/#industries">{{ __('services/telemedicine-website-development-agency.text_82') }}<svg

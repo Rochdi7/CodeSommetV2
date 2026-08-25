@@ -687,6 +687,11 @@
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
                                             style="font-family:var(--font-body)">
                                             {{ __('services/healthcare-website-development-agency.ml_946') }}</p>
+                                        <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
+                                            style="font-family:var(--font-body)">
+                                            <a class="text-[#00AEEF] font-semibold hover:underline"
+                                                href="{{ route('service', 'telemedicine-website-development') }}">{{ __('services/healthcare-website-development-agency.ml_1037') }}</a>
+                                        </p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -965,7 +970,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours
+                        </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -1912,7 +1917,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/healthcare-website-development-agency.ml_1000') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">6-8
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">12-16

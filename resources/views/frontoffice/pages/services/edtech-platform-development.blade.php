@@ -146,6 +146,44 @@
                 </div>
             </div>
         </section>
+        <section class="w-full py-10 md:py-12 bg-[var(--bg-primary)]">
+            <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 p-6 md:p-8">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            {{ __('services/edtech-platform-development-agency.ml_1029') }}</p>
+                        <a class="group inline-flex items-center gap-2 text-[15px] font-semibold text-[#00AEEF] hover:text-[#0F0F0F] transition-colors"
+                            href="{{ route('service', 'elearning-platform-development') }}">
+                            <span>Voir la plateforme E-Learning (LMS)</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 p-6 md:p-8">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            {{ __('services/edtech-platform-development-agency.ml_1030') }}</p>
+                        <a class="group inline-flex items-center gap-2 text-[15px] font-semibold text-[#00AEEF] hover:text-[#0F0F0F] transition-colors"
+                            href="{{ route('service', 'education-website-development') }}">
+                            <span>Voir le développement de site institutionnel</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center mb-12">
@@ -340,7 +378,7 @@
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Calendrier de Lancement
-                                        en 7-10 Jours</h3>
+                                        en 2-5 Jours</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">
                                         {{ __('services/edtech-platform-development-agency.ml_933') }}</p>
                                     <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
@@ -955,7 +993,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours
+                        </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
