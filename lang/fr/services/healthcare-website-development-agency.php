@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Santé & Télémédecine | CodeSommet',
+    'title' => 'Développement de Sites Web Santé & Télésanté | CodeSommet',
     'meta_description' => 'Développement de sites web de santé : portails patients, systèmes de télémédecine et prise de rendez-vous, conformes HIPAA et enrichis de fonctionnalités IA. Contactez-nous pour les tarifs.',
-    'meta_keywords' => 'développement site web santé,développement portail patient,plateforme de télémédecine,conception site web médical,développement site web hôpital,site web clinique,CRM santé,système de prise de rendez-vous',
+    'meta_keywords' => 'développement site web santé,développement portail patient,consultations vidéo santé,conception site web médical,développement site web hôpital,site web clinique,CRM santé,système de prise de rendez-vous',
     'og_title' => 'CodeSommet - Agence de Développement Web Alimentée par l\'IA | Maroc',
     'og_description' => 'Agence de développement web premium au Maroc spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS. Développement Next.js expert pour l\'éducation, la santé et les entreprises.',
     'twitter_description' => 'Agence de développement web premium spécialisée dans les sites web alimentés par l\'IA, les tableaux de bord intelligents et les plateformes SaaS.',
@@ -221,7 +221,7 @@ return [
     'ml_1008' => 'Combien de temps faut-il pour construire un site web de santé ?',
     'ml_1009' => 'Pouvez-vous vous intégrer avec notre système DSE existant ?',
     'ml_1010' => 'Les patients peuvent-ils réserver des rendez-vous en ligne 24h/24 ?',
-    'ml_1011' => 'Comment fonctionne la plateforme de télémédecine ?',
+    'ml_1011' => 'Comment la téléconsultation est-elle présentée sur le site ?',
     'ml_1012' => 'Qu\'est-ce qui vous différencie des autres développeurs web de santé ?',
     'ml_1013' => 'Pouvez-vous aider à réduire nos taux d\'absentéisme ?',
     'ml_1014' => 'Présence Mondiale',
@@ -247,6 +247,7 @@ return [
     'ml_1034' => 'Réserver un Appel Découverte',
     'ml_1035' => 'Réserver un Appel Découverte',
     'ml_1036' => 'Discutons de comment l\'IA et le design moderne peuvent élever votre entreprise',
+    'ml_1037' => 'Besoin d\'un site pour votre cabinet ou clinique qui propose aussi la téléconsultation ? Voir notre offre de site web de télémédecine pour cabinets',
     'attr_1536' => 'Système de Prise de Rendez-vous',
     'attr_1537' => 'Plateforme de Télémédecine',
     'qb_2137' => '"Une collaboration professionnelle du début à la fin. Je recommande sans hésiter."',
