@@ -482,7 +482,7 @@
                         style="opacity:0;transform:translateY(30px)">
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
-                                style="font-family:var(--font-heading)">4+</div>
+                                style="font-family:var(--font-heading)">8+</div>
                             <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">{{ __('about.text_28') }}</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">

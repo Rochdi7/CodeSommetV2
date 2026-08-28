@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Agence digitale basée au Maroc depuis 2018. Développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles & SaaS.',
     'text_0' => 'Notre Histoire',
     'text_1' => 'Votre Partenaire Digital au Maroc Depuis 2018',
-    'text_2' => '4+ Ans d\'Expérience',
+    'text_2' => '8+ Ans d\'Expérience',
     'text_3' => 'De Nombreux Projets Livrés',
     'text_4' => 'Équipe d\'Experts',
     'text_5' => 'Des Solutions Digitales Complètes Qui Génèrent des Résultats',
