@@ -10,11 +10,11 @@ return [
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => 'Livraison en 2 à 5 jours',
-    'text_3' => '50+ clients à',
+    'text_3' => 'Au service des entreprises à',
     'text_4' => 'Pourquoi Choisir CodeSommet in',
     'text_5' => 'Rapidité Startup',
-    'text_6' => 'Approuvé par',
-    'text_7' => '50+ Projets Livrés',
+    'text_6' => 'Au service des entreprises à',
+    'text_7' => 'Projets livrés à distance',
     'text_8' => 'avec lesquelles nous avons collaboré',
     'text_9' => 'Nos Secteurs de Spécialisation',
     'text_10' => 'Voir l\'Étude de Cas',
@@ -24,10 +24,10 @@ return [
     'text_14' => 'Nos réalisations à',
     'text_15' => 'Histoires de réussite à',
     'text_16' => 'Éducation',
-    'text_17' => 'Plus de 300 étudiants inscrits',
+    'text_17' => 'Plateforme d\x27inscription en ligne',
     'text_18' => 'Santé',
     'text_19' => 'Tourisme',
-    'text_20' => 'Plus de 800 voyageurs accompagnés',
+    'text_20' => 'Réservation de circuits en ligne',
     'text_21' => '500M CAD de volume annuel brut influencé',
     'text_22' => 'Revenus des campagnes email augmentés de 2,8x',
     'text_23' => 'Financement Série B (45M CAD) obtenu',
@@ -73,7 +73,7 @@ return [
     'aria_63' => 'Précédent testimonials',
     'text_161' => 'Experts en IA',
     'text_162' => 'Immobilier',
-    'text_163' => 'Plus de 2 000 rendez-vous réservés',
+    'text_163' => 'Prise de rendez-vous en ligne',
     'text_164' => '12 mois',
     'text_165' => 'E-Commerce & IA à Toronto',
     'text_166' => 'Revue de design',
@@ -91,7 +91,7 @@ return [
     'text_377' => 'Recommandations produits propulsées par l\'IA',
     'text_378' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'text_379' => 'Explorez nos services de développement web dans d\'autres villes à travers le monde',
-    'text_380' => 'Rejoignez plus de 50 entreprises visionnaires qui ont choisi l\'excellence',
+    'text_380' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',
     'text_381' => 'Let\'s discuter de la façon dont l\'IA et le design moderne peuvent propulser votre entreprise',
     'text_681' => '🇨🇦',
     'text_682' => 'Automatisation',
@@ -176,7 +176,7 @@ return [
     'qb_1759' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
     'sw_2559' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Toronto.',
     'sw_2560' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Toronto.',
-    'sw_2561' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Toronto',
+    'sw_2561' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_2562' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Toronto.',
     'sw_2563' => 'Questions fréquemment posées sur le Développement Web à Toronto',
     'sw_2564' => 'Voir l\'Étude de Cas',
@@ -185,11 +185,11 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Prospects générés</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',

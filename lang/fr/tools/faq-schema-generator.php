@@ -65,7 +65,7 @@ R : Copiez le code JSON-LD généré et collez-le dans la section <head> de votr
 R : Le prix d\'un site web professionnel varie généralement entre 1 500 € et 10 000 € selon la complexité, le nombre de pages et les fonctionnalités souhaitées.
 
 Q : Combien de temps faut-il pour créer un site web ?
-R : En moyenne, la création d\'un site vitrine prend 2 à 4 semaines, tandis qu\'un site e-commerce complet peut nécessiter 6 à 12 semaines.
+R : Le délai dépend de la portée du projet : un site vitrine est généralement plus rapide à livrer qu\'un site e-commerce complet.
 
 Q : Proposez-vous la maintenance après la mise en ligne ?
 R : Oui, nous proposons des forfaits de maintenance mensuels incluant les mises à jour de sécurité, les sauvegardes régulières et le support technique.',

@@ -10,29 +10,29 @@ return [
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => 'Livraison en 2 à 5 jours',
-    'text_3' => '50+ clients à',
+    'text_3' => 'Disponible pour les entreprises de',
     'text_4' => 'Pourquoi Choisir CodeSommet in',
     'text_5' => 'Sites web optimisés SEO et axés conversion qui transforment les visiteurs de Zurich en clients payants pour les marchés suisses et européens.',
     'text_6' => 'Rapidité Startup',
     'text_7' => 'Expertise approfondie dans la fintech, la santé et le SaaS, les secteurs à la croissance la plus rapide de Zurich et de l\'économie d\'innovation suisse.',
     'text_8' => 'Next.js 15, React, TypeScript, Supabase, OpenAI, Claude - des technologies qui attirent les meilleurs talents en ingénierie de Zurich et les investisseurs européens.',
-    'text_9' => 'Approuvé par',
-    'text_10' => '50+ Projets Livrés',
-    'text_11' => 'avec lesquelles nous avons collaboré',
+    'text_9' => 'Ce que nous apportons aux entreprises de',
+    'text_10' => 'Projets livrés à distance',
+    'text_11' => 'en collaboration à distance',
     'text_12' => 'Nos Secteurs de Spécialisation',
     'text_13' => 'Voir l\'Étude de Cas',
     'text_14' => 'Santé',
     'text_15' => 'Développement API',
     'text_16' => 'Discuter de vos besoins sectoriels',
-    'text_17' => 'Nos réalisations à',
-    'text_18' => 'Histoires de réussite à',
+    'text_17' => 'Projets présentés pour',
+    'text_18' => 'Ce que nous construisons pour',
     'text_19' => 'Tourisme',
-    'text_20' => 'Plus de 800 voyageurs accompagnés',
+    'text_20' => 'Site de voyages sur mesure avec demandes de devis en ligne',
     'text_21' => 'SaaS',
-    'text_22' => 'Plus de 50 associations gérées',
+    'text_22' => 'Plateforme de gestion d\'associations : membres, cotisations et événements',
     'text_23' => 'Santé',
     'text_24' => 'Crypto / Gestion de Patrimoine',
-    'text_25' => 'Zéro incident de sécurité depuis le lancement',
+    'text_25' => 'Chiffrement de bout en bout et contrôle d\'accès par rôles',
     'text_26' => 'Technologies Utilisées',
     'text_27' => 'Associé Gérant',
     'text_28' => 'Solutions sur mesure, tarification transparente',
@@ -79,7 +79,7 @@ return [
     'aria_69' => 'Précédent testimonials',
     'text_167' => 'Experts en IA',
     'text_168' => 'Immobilier',
-    'text_169' => 'Plus de 2 000 rendez-vous réservés',
+    'text_169' => 'Site de clinique dentaire avec prise de rendez-vous en ligne',
     'text_170' => '16 mois',
     'text_171' => 'Développement Web pour la Fintech et la Gestion de Patrimoine',
     'text_172' => 'Revue de design',
@@ -94,7 +94,7 @@ return [
     'text_380' => 'Recommandations propulsées par l\'IA',
     'text_381' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'text_382' => 'Explorez nos services de développement web dans d\'autres villes à travers le monde',
-    'text_383' => 'Rejoignez plus de 50 entreprises visionnaires qui ont choisi l\'excellence',
+    'text_383' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',
     'text_384' => 'Let\'s discuter de la façon dont l\'IA et le design moderne peuvent propulser votre entreprise',
     'text_684' => '🇨🇭',
     'text_685' => 'Automatisation',
@@ -123,7 +123,7 @@ return [
     'ml_1107' => 'Sites web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et intégration CRM',
     'ml_1108' => 'Annonces immobilières',
     'ml_1109' => 'Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel',
-    'ml_1110' => 'à atteindre leurs objectifs numériques.',
+    'ml_1110' => ', en collaboration à distance.',
     'ml_1111' => 'Étude de cas',
     'ml_1112' => 'Le Défi',
     'ml_1113' => 'Pensé pour une clientèle exigeante et des partenaires bancaires',
@@ -181,7 +181,7 @@ return [
     'sw_3062' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Zurich.',
     'sw_3063' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Zurich.',
     'sw_3064' => '"L\'équipe a compris nos exigences de sécurité et de conformité dès le premier échange. Le résultat est à la hauteur des standards suisses que nous attendions."',
-    'sw_3065' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Zurich',
+    'sw_3065' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_3066' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Zurich.',
     'sw_3067' => 'Questions fréquemment posées sur le Développement Web à Zurich',
     'sw_3068' => 'Voir l\'Étude de Cas',
@@ -190,11 +190,11 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites orientés conversion</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Accompagnement continu</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',

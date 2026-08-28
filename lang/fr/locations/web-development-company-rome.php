@@ -10,21 +10,21 @@ return [
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => 'Livraison en 2 à 5 jours',
-    'text_3' => '50+ clients à',
+    'text_3' => 'Disponible pour les entreprises de',
     'text_4' => 'Pourquoi Choisir CodeSommet in',
-    'text_5' => 'Approuvé par',
-    'text_6' => '50+ Projets Livrés',
-    'text_7' => 'avec lesquelles nous avons collaboré',
+    'text_5' => 'Ce que nous apportons aux entreprises de',
+    'text_6' => 'Projets livrés à distance',
+    'text_7' => 'en collaboration à distance',
     'text_8' => 'Nos Secteurs de Spécialisation',
     'text_9' => 'Voir l\'Étude de Cas',
     'text_10' => 'Santé',
     'text_11' => 'Développement API',
     'text_12' => 'Discuter de vos besoins sectoriels',
-    'text_13' => 'Nos réalisations à',
-    'text_14' => 'Histoires de réussite à',
-    'text_15' => 'Plus de 1 200 commandes traitées',
+    'text_13' => 'Projets présentés pour',
+    'text_14' => 'Ce que nous construisons pour',
+    'text_15' => 'Boutique en ligne avec catalogue, paiement et suivi des commandes',
     'text_16' => 'SaaS',
-    'text_17' => 'Plus de 50 associations gérées',
+    'text_17' => 'Plateforme de gestion d\'associations : membres, cotisations et événements',
     'text_18' => 'Tourisme',
     'text_19' => 'Technologies Utilisées',
     'text_20' => 'Associé Gérant',
@@ -71,7 +71,7 @@ return [
     'aria_61' => 'Précédent testimonials',
     'text_159' => 'Experts en IA',
     'text_160' => 'Immobilier',
-    'text_161' => 'Plus de 800 voyageurs accompagnés',
+    'text_161' => 'Site de voyages sur mesure avec demandes de devis en ligne',
     'text_162' => 'Immobilier & PropTech',
     'text_163' => '4 mois',
     'text_164' => 'Revue de design',
@@ -89,7 +89,7 @@ return [
     'text_375' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'text_376' => 'Pouvez-vous aider avec l\'enregistrement de domaine ?',
     'text_377' => 'Explorez nos services de développement web dans d\'autres villes à travers le monde',
-    'text_378' => 'Rejoignez plus de 50 entreprises visionnaires qui ont choisi l\'excellence',
+    'text_378' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',
     'text_379' => 'Let\'s discuter de la façon dont l\'IA et le design moderne peuvent propulser votre entreprise',
     'text_679' => '🇮🇹',
     'text_680' => 'Automatisation',
@@ -120,7 +120,7 @@ return [
     'ml_1104' => 'Sites web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et intégration CRM',
     'ml_1105' => 'Annonces immobilières',
     'ml_1106' => 'Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel',
-    'ml_1107' => 'à atteindre leurs objectifs numériques.',
+    'ml_1107' => ', en collaboration à distance.',
     'ml_1108' => 'Étude de cas',
     'ml_1109' => 'Comment Nous Concevons des Plateformes Immobilières Sur Mesure pour les Entreprises de Rome',
     'ml_1110' => 'Entreprises de gestion et de promotion immobilière',
@@ -179,7 +179,7 @@ return [
     'qb_2261' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
     'sw_3061' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Rome.',
     'sw_3062' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Rome.',
-    'sw_3063' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Rome',
+    'sw_3063' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_3064' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Rome.',
     'sw_3065' => 'Questions Fréquemment Posées sur le Développement Web à Rome',
     'sw_3066' => 'Voir l\'Étude de Cas',
@@ -188,11 +188,11 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites orientés conversion</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Accompagnement continu</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',

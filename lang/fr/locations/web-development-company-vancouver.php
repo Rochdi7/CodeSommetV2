@@ -10,11 +10,11 @@ return [
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => 'Livraison en 2 à 5 jours',
-    'text_3' => '50+ clients à',
+    'text_3' => 'Au service des entreprises à',
     'text_4' => 'Pourquoi Choisir CodeSommet in',
     'text_5' => 'Rapidité Startup',
-    'text_6' => 'Approuvé par',
-    'text_7' => '50+ Projets Livrés',
+    'text_6' => 'Au service des entreprises à',
+    'text_7' => 'Projets livrés à distance',
     'text_8' => 'avec lesquelles nous avons collaboré',
     'text_9' => 'Nos Secteurs de Spécialisation',
     'text_10' => 'Voir l\'Étude de Cas',
@@ -24,7 +24,7 @@ return [
     'text_14' => 'Nos réalisations à',
     'text_15' => 'Histoires de réussite à',
     'text_16' => 'Éducation',
-    'text_17' => 'Plus de 300 étudiants inscrits',
+    'text_17' => 'Plateforme d\x27inscription en ligne',
     'text_18' => 'Santé',
     'text_19' => 'Tourisme',
     'text_20' => 'Tableaux de bord SaaS conçus pour évoluer avec votre activité',
@@ -71,8 +71,8 @@ return [
     'aria_61' => 'Précédent testimonials',
     'text_159' => 'Experts en IA',
     'text_160' => 'Immobilier',
-    'text_161' => 'Plus de 2 000 rendez-vous réservés',
-    'text_162' => 'Plus de 800 voyageurs accompagnés',
+    'text_161' => 'Prise de rendez-vous en ligne',
+    'text_162' => 'Réservation de circuits en ligne',
     'text_163' => '13 mois',
     'text_164' => 'Revue de design',
     'text_165' => 'Abordable - Milieu de gamme',
@@ -92,7 +92,7 @@ return [
     'text_378' => 'Recommandations propulsées par l\'IA',
     'text_379' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'text_380' => 'Explorez nos services de développement web dans d\'autres villes à travers le monde',
-    'text_381' => 'Rejoignez plus de 50 entreprises visionnaires qui ont choisi l\'excellence',
+    'text_381' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',
     'text_382' => 'Let\'s discuter de la façon dont l\'IA et le design moderne peuvent propulser votre entreprise',
     'text_682' => '🇨🇦',
     'text_683' => 'Automatisation',
@@ -181,7 +181,7 @@ return [
     'qb_2263' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
     'sw_3063' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Vancouver.',
     'sw_3064' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Vancouver.',
-    'sw_3065' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Vancouver',
+    'sw_3065' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_3066' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Vancouver.',
     'sw_3067' => 'Questions fréquemment posées sur le Développement Web à Vancouver',
     'sw_3068' => 'Voir l\'Étude de Cas',
@@ -190,11 +190,11 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Prospects générés</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',

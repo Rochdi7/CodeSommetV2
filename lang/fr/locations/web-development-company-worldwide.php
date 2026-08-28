@@ -27,7 +27,7 @@ return [
     'text_17' => 'Expertise approfondie en Éducation, Santé, E-commerce, FinTech, Immobilier et SaaS — nous comprenons votre marché.',
     'text_18' => 'Notre Processus',
     'text_19' => 'Comment nous travaillons avec des clients dans le monde entier',
-    'text_20' => 'Un flux de travail ? distance fluide, affiné sur plus de 50 projets dans plus de 15 pays.',
+    'text_20' => 'Un flux de travail à distance fluide, affiné projet après projet avec des clients répartis sur plusieurs continents.',
     'text_21' => 'Appel découverte',
     'text_22' => 'Nous organisons un appel vidéo pour comprendre votre activité, vos objectifs et vos besoins — à l\'heure qui convient à votre fuseau horaire.',
     'text_23' => 'Nous créons des maquettes haute fidélité dans Figma avec collaboration en temps réel. Vous suivez l\'avancement chaque jour et donnez vos retours instantanément.',

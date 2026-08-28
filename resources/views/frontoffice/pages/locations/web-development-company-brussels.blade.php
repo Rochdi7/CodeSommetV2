@@ -364,7 +364,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-brussels.text_5') }} <!-- -->Bruxelles<!-- --> Entreprises
+                        {{ __('locations/web-development-company-brussels.text_5') }} <!-- -->Bruxelles<!-- -->
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -375,15 +375,15 @@
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites orientés conversion</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Accompagnement continu</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Une approche pensée pour les entreprises de
                         <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_889') }}
                     </p>
                 </div>
@@ -659,8 +659,8 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-brussels.text_13') }} <!-- -->Bruxelles</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
-                        comment nous avons aidé les entreprises à
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, livrés à distance. Découvrez
+                        ce que nous pouvons construire pour votre entreprise à
                         <!-- -->Bruxelles<!-- -->{{ __('locations/web-development-company-brussels.ml_902') }}
                     </p>
                 </div>
@@ -1564,7 +1564,6 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>{{ __('locations/web-development-company-brussels.text_53') }} <!-- -->Bruxelles<!-- -->
-                            Entreprises
                         </div>
                     </div>
                 </div>
@@ -2676,7 +2675,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 50 entreprises
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                             visionnaires qui ont choisi l'excellence</p>
                         <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
                             peuvent propulser votre entreprise</p>

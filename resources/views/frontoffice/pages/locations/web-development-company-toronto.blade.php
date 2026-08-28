@@ -365,7 +365,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-toronto.text_6') }} <!-- -->Toronto<!-- --> Entreprises
+                        {{ __('locations/web-development-company-toronto.text_6') }} <!-- -->Toronto<!-- -->
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -839,7 +839,7 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
-                            <p class="text-base font-medium leading-snug">Augmentation moyenne du taux de conversion : 32%
+                            <p class="text-base font-medium leading-snug">Sites conçus pour améliorer le taux de conversion
                             </p>
                         </div>
                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
