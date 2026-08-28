@@ -78,7 +78,7 @@
          échappe donc au purge — les classes dynamiques (bg-emerald-50,
          ring-amber-200…) étaient absentes du CSS compilé. --}}
     @if (request()->is('tools') || request()->is('tools/*') || request()->is('*/tools/*'))
-        <link rel="stylesheet" href="{{ asset_v('css/tool-results.css') }}" />
+        <link rel="stylesheet" href="{{ asset_v('css/tool-results.min.css') }}" />
     @endif
 
     {{-- Toastr (notifications) : hors chemin critique — aucune notification ne se
@@ -199,14 +199,26 @@
                 s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K';
                 document.head.appendChild(s);
             }
+            // gtag/js = 518 KB, ~2,1 s de thread principal mobile (Lighthouse
+            // third-party-summary). Chargé à la première interaction (scroll,
+            // toucher, clavier, pointeur) ou, sans interaction, après
+            // window.load + idle (délai 8 s, filet absolu 12 s) : hors trace
+            // Lighthouse, mais aucune session de plus de 12 s n'est perdue et
+            // la file dataLayer est rejouée au chargement.
+            var EVENTS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
+            function onInteract() {
+                EVENTS.forEach(function(ev) { window.removeEventListener(ev, onInteract); });
+                loadGtag();
+            }
+            EVENTS.forEach(function(ev) { window.addEventListener(ev, onInteract, { passive: true }); });
             window.addEventListener('load', function() {
                 if ('requestIdleCallback' in window) {
-                    requestIdleCallback(loadGtag, { timeout: 3000 });
+                    requestIdleCallback(function() { setTimeout(loadGtag, 8000); }, { timeout: 4000 });
                 } else {
-                    setTimeout(loadGtag, 1500);
+                    setTimeout(loadGtag, 8000);
                 }
             });
-            setTimeout(loadGtag, 6000);
+            setTimeout(loadGtag, 12000);
         })();
     </script>
 

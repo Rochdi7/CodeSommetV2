@@ -6,7 +6,7 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "minify": "esbuild public/js/app.js --minify --outfile=public/js/app.min.js && esbuild public/js/custom-select.js --minify --outfile=public/js/custom-select.min.js && esbuild public/css/components.css --minify --outfile=public/css/components.min.css",
+        "minify": "esbuild public/js/app.js --minify --outfile=public/js/app.min.js && esbuild public/js/custom-select.js --minify --outfile=public/js/custom-select.min.js && esbuild public/css/components.css --minify --outfile=public/css/components.min.css && esbuild public/css/tool-results.css --minify --outfile=public/css/tool-results.min.css",
         "critical": "node scripts/extract-critical-css.cjs"
     },
     "devDependencies": {
