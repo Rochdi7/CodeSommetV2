@@ -311,4 +311,12 @@ return [
     'faq_a6' => 'Oui. Vos étudiants viennent de pays différents : le site peut afficher vos frais de service dans la devise du candidat et accepter les paiements par carte ou virement selon les passerelles disponibles sur vos marchés. Les acomptes et paiements par étape (dossier, visa, placement) peuvent être prévus dans le portail.',
     'faq_a7' => 'Un développeur généraliste livre un site de présentation ; nous concevons l\'outil de travail de votre cabinet, avec parcours de candidature, gestion documentaire par pays et suivi des étapes jusqu\'à l\'obtention du visa. Vous échangez directement avec l\'équipe qui réalise le projet et disposez de révisions jusqu\'à validation.',
     'faq_a8' => 'Oui. Nous créons des pages d\'atterrissage par destination et par programme pour vos campagnes Google Ads, et structurons le site pour les recherches du type « étudier à l\'étranger » ou « visa étudiant » dans vos marchés cibles. Le suivi des conversions est configuré pour mesurer les demandes réellement générées par chaque campagne.',
+    'faq_q1' => 'Combien de temps faut-il pour créer un site web d\'études à l\'étranger ?',
+    'faq_q2' => 'Fournissez-vous la rédaction de contenu pour les sites web d\'études à l\'étranger ?',
+    'faq_q3' => 'Le chatbot IA peut-il gérer les requêtes de visa en plusieurs langues ?',
+    'faq_q4' => 'Quels systèmes CRM intégrez-vous ?',
+    'faq_q5' => 'Pouvez-vous créer un système de suivi de documents de visa ?',
+    'faq_q6' => 'Supportez-vous plusieurs devises et passerelles de paiement ?',
+    'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs web ?',
+    'faq_q8' => 'Pouvez-vous aider avec Google Ads et le SEO pour les mots-clés études à l\'étranger ?',
 ];

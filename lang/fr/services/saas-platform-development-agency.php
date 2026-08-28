@@ -249,4 +249,12 @@ return [
     'faq_a6' => 'Oui, l\'API fait partie intégrante de la plateforme et non d\'un ajout ultérieur. Nous développons des APIs REST (et GraphQL si votre cas d\'usage le justifie) avec authentification OAuth 2.0 ou par clés API, limitation de débit et webhooks pour les événements clés. La documentation est générée automatiquement à partir du code, ce qui évite qu\'elle devienne obsolète au fil des versions.',
     'faq_a7' => 'Nous ne construisons pas seulement des écrans : nous prenons en charge l\'ensemble du cycle de vie SaaS, de l\'onboarding à la facturation en passant par les analytiques d\'usage et l\'API. L\'architecture, le DevOps et la surveillance sont inclus dans notre démarche, là où beaucoup de prestataires s\'arrêtent au prototype. Vous travaillez avec une seule équipe qui connaît les enjeux d\'un produit par abonnement.',
     'faq_a8' => 'Le lancement du MVP est un point de départ, pas une fin. Nous analysons les données d\'usage pour prioriser les fonctionnalités de la version suivante, puis nous livrons les évolutions par lots courts. Notre formule d\'abonnement couvre le développement continu, l\'hébergement et la maintenance, avec la possibilité de mettre en pause ou d\'arrêter à tout moment.',
+    'faq_q1' => 'Combien de temps faut-il pour créer une plateforme SaaS ?',
+    'faq_q2' => 'Comment gérez-vous l\'architecture multi-tenant et l\'isolation des données ?',
+    'faq_q3' => 'La plateforme peut-elle passer à l\'échelle avec la croissance de ma base d\'utilisateurs ?',
+    'faq_q4' => 'Avec quels systèmes de facturation vous intégrez-vous ?',
+    'faq_q5' => 'Pouvez-vous créer une plateforme SaaS en marque blanche ?',
+    'faq_q6' => 'Supportez-vous le développement et la documentation d\'API ?',
+    'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs SaaS ?',
+    'faq_q8' => 'Que se passe-t-il après le lancement du MVP : itérations, maintenance et évolutions ?',
 ];

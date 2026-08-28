@@ -256,4 +256,12 @@ return [
     'faq_a6' => 'Nous implémentons la conformité LTI 1.3 pour que votre plateforme s\'interface avec les LMS déjà utilisés par vos clients (Moodle, Canvas, Blackboard), l\'authentification SSO/SAML pour leurs comptes existants, et une API ouverte pour synchroniser les données avec leurs systèmes d\'information (SIS, ERP, RH).',
     'faq_a7' => 'Nous construisons un moteur de facturation par client (abonnement, à l\'usage ou licence annuelle selon votre modèle) ainsi qu\'un système de répartition automatique des revenus configurable par contrat, pour reverser la part de vos instructeurs ou revendeurs sans calcul manuel.',
     'faq_a8' => 'Oui. L\'interface apprenant est conçue en mobile-first, avec une progression synchronisée entre appareils et, selon le besoin, certaines fonctions accessibles hors ligne.',
+    'faq_q1' => 'Combien de temps faut-il pour construire une plateforme EdTech B2B multi-clients personnalisée ?',
+    'faq_q2' => 'Pouvons-nous migrer nos contenus et nos clients existants vers la nouvelle plateforme ?',
+    'faq_q3' => 'Proposez-vous un modèle multi-tenant pour revendre votre plateforme à plusieurs clients institutionnels ?',
+    'faq_q4' => 'Supportez-vous le marquage blanc (white-label) pour que chacun de nos propres clients ait sa marque ?',
+    'faq_q5' => 'Pouvez-vous construire une marketplace multi-instructeurs ou multi-éditeurs ?',
+    'faq_q6' => 'Quelles intégrations API et LTI proposez-vous pour les institutions clientes (LMS existants, SSO, SIS) ?',
+    'faq_q7' => 'Comment gérez-vous la facturation par client et le partage des revenus avec nos instructeurs ou clients revendeurs ?',
+    'faq_q8' => 'Les étudiants peuvent-ils accéder aux cours sur appareils mobiles ?',
 ];

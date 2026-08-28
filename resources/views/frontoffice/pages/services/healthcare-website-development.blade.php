@@ -2396,8 +2396,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/healthcare-website-development-agency.ml_1008') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q1') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2414,8 +2413,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Le site respecte-t-il les exigences
-                                    HIPAA et RGPD pour les données patients ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q2') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2432,8 +2430,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/healthcare-website-development-agency.ml_1009') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q3') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2450,8 +2447,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Fournissez-vous une formation pour
-                                    notre personnel ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q4') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2468,8 +2464,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/healthcare-website-development-agency.ml_1010') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q5') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2486,8 +2481,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/healthcare-website-development-agency.ml_1011') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q6') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2504,8 +2498,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/healthcare-website-development-agency.ml_1012') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q7') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2522,8 +2515,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">8</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/healthcare-website-development-agency.ml_1013') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/healthcare-website-development-agency.faq_q8') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"

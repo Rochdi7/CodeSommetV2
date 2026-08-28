@@ -272,4 +272,12 @@ return [
     'faq_a6' => 'Oui, la plateforme est conçue dès le départ avec une architecture multilingue et multi-devises, ce qui convient aux services de télémédecine internationaux et au tourisme médical. Nous adaptons également les parcours de paiement et de prise de rendez-vous aux fuseaux horaires et aux règles locales identifiées avec vous.',
     'faq_a7' => 'Le médecin rédige la prescription depuis son tableau de bord, elle est signée numériquement, horodatée et mise à disposition du patient dans son espace sécurisé. Lorsque des réseaux de pharmacies proposent une interface d\'intégration, nous pouvons y transmettre l\'ordonnance directement. Le renouvellement d\'ordonnance peut être demandé par le patient et validé par le praticien.',
     'faq_a8' => 'Oui, l\'architecture est conçue pour monter en charge : services vidéo découplés, infrastructure cloud élastique et tests de charge sur les consultations simultanées avant le lancement. Nous dimensionnons la plateforme selon votre volume prévisionnel et nous la faisons évoluer à mesure que votre activité grandit.',
+    'faq_q1' => 'Combien de temps faut-il pour créer une plateforme de télémédecine ?',
+    'faq_q2' => 'Comment l\'architecture de la plateforme respecte-t-elle les exigences HIPAA ?',
+    'faq_q3' => 'Le vérificateur de symptômes IA peut-il gérer le triage médical ?',
+    'faq_q4' => 'Quelle plateforme vidéo utilisez-vous pour les consultations ?',
+    'faq_q5' => 'Pouvez-vous vous intégrer à notre système DME existant ?',
+    'faq_q6' => 'Supportez-vous les services de télémédecine internationaux ?',
+    'faq_q7' => 'Comment fonctionne l\'e-prescription sur la plateforme ?',
+    'faq_q8' => 'La plateforme peut-elle absorber un grand nombre de consultations simultanées ?',
 ];

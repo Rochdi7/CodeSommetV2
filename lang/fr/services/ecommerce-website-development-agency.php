@@ -240,4 +240,12 @@ return [
     'faq_a6' => 'Oui, les clients disposent d\'un compte avec panier persistant, liste de souhaits et méthodes de paiement enregistrées. Le paiement invité reste possible pour ne pas freiner un premier achat. Les paniers abandonnés peuvent déclencher des e-mails de relance avec un code de réduction si vous le souhaitez.',
     'faq_a7' => 'Oui, la boutique est pensée mobile-first, avec une navigation tactile fluide et un tunnel de paiement adapté aux petits écrans. Les images sont optimisées, servies via CDN et chargées progressivement pour maintenir des pages légères. Nous testons les parcours d\'achat sur les appareils réels avant le lancement.',
     'faq_a8' => 'Oui, nous structurons les fiches produits et les catégories pour le référencement, avec des données structurées produit et des URL propres. Nous configurons le suivi des conversions via Google Analytics et le pixel de vos réseaux publicitaires. Pour Google Shopping, nous préparons un flux produit exploitable dans Merchant Center et vous accompagnons sur sa mise en place.',
+    'faq_q1' => 'Combien de temps faut-il pour construire un site web e-commerce ?',
+    'faq_q2' => 'Quelles passerelles de paiement intégrez-vous ?',
+    'faq_q3' => 'Pouvez-vous construire des variations et options de produits personnalisées ?',
+    'faq_q4' => 'Incluez-vous la gestion des stocks et l\'exécution des commandes ?',
+    'faq_q5' => 'Comment fonctionne le moteur de recommandation de produits IA ?',
+    'faq_q6' => 'Les clients peuvent-ils sauvegarder leur panier et leur liste de souhaits ?',
+    'faq_q7' => 'Optimisez-vous pour les achats mobiles et le chargement rapide ?',
+    'faq_q8' => 'Aidez-vous avec le SEO e-commerce et Google Shopping ?',
 ];

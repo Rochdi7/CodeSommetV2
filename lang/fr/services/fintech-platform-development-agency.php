@@ -248,4 +248,12 @@ return [
     'faq_a6' => 'Oui. La plateforme peut gérer plusieurs devises avec des taux de change en temps réel, une conversion automatisée et des rails de paiement transfrontaliers. Nous traitons les questions de réconciliation multi-devises, d\'arrondi et de reporting par devise dès la conception. Les corridors disponibles dépendent des processeurs et partenaires bancaires retenus pour votre projet.',
     'faq_a7' => 'Nous abordons chaque projet FinTech par la sécurité et la conformité, pas seulement par l\'interface : architecture de tokenisation, détection de fraude, workflows KYC/AML et pistes d\'audit font partie du socle. Les tests de pénétration et l\'audit de sécurité sont intégrés au processus avant le lancement. Vous travaillez avec une équipe qui comprend les contraintes des paiements et des services financiers.',
     'faq_a8' => 'Nous construisons des pistes d\'audit immuables qui tracent chaque transaction, chaque changement de statut et chaque action administrateur. Un tableau de bord de conformité permet de surveiller les transactions, de générer les rapports attendus par vos régulateurs et de les exporter en CSV, PDF ou Excel. Le format exact des rapports est défini avec votre équipe conformité selon la juridiction concernée.',
+    'faq_q1' => 'Combien de temps faut-il pour construire une plateforme FinTech ?',
+    'faq_q2' => 'Gérez-vous la certification de conformité PCI-DSS ?',
+    'faq_q3' => 'Pouvez-vous intégrer des processeurs de paiement comme Stripe, Adyen ou Checkout.com ?',
+    'faq_q4' => 'Quels fournisseurs KYC supportez-vous ?',
+    'faq_q5' => 'Pouvez-vous construire une plateforme de trading avec des données de marché en temps réel ?',
+    'faq_q6' => 'Supportez-vous les paiements multi-devises et transfrontaliers ?',
+    'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs FinTech ?',
+    'faq_q8' => 'Comment gérez-vous le reporting réglementaire et les pistes d\'audit ?',
 ];

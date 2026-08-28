@@ -285,4 +285,12 @@ return [
     'faq_a6' => 'Oui. Une école de langues accueille souvent des élèves de plusieurs pays : le site peut afficher les tarifs dans plusieurs devises et accepter les paiements par carte ou virement via une passerelle adaptée à votre pays. Les paiements échelonnés ou par session peuvent également être prévus selon votre offre.',
     'faq_a7' => 'Nous ne livrons pas un thème générique adapté à la hâte : chaque site est conçu autour du fonctionnement réel d\'un institut linguistique, avec des catalogues par langue et par niveau, des horaires de sessions et un contenu multilingue. Vous travaillez directement avec l\'équipe qui développe votre site, avec des révisions jusqu\'à validation.',
     'faq_a8' => 'Oui. Nous structurons le site pour qu\'il se positionne sur les recherches de cours de langues dans votre ville et préparons des pages d\'atterrissage dédiées à vos campagnes Google Ads (cours d\'anglais intensif, préparation aux examens, etc.). Le suivi des conversions est configuré pour que vous sachiez quelles campagnes génèrent des inscriptions.',
+    'faq_q1' => 'Combien de temps faut-il pour créer un site web d\'école de langues ?',
+    'faq_q2' => 'Fournissez-vous la rédaction de contenu pour les sites web éducatifs ?',
+    'faq_q3' => 'Le chatbot IA peut-il gérer les requêtes étudiantes en plusieurs langues ?',
+    'faq_q4' => 'Quels systèmes CRM intégrez-vous ?',
+    'faq_q5' => 'Pouvez-vous créer un système d\'inscription en ligne aux cours avec choix du niveau et de l\'horaire ?',
+    'faq_q6' => 'Supportez-vous plusieurs devises et passerelles de paiement ?',
+    'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs web ?',
+    'faq_q8' => 'Pouvez-vous aider avec Google Ads et le SEO pour les sites web éducatifs ?',
 ];

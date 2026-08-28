@@ -2006,8 +2006,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('locations/web-development-company-berlin.ml_945') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-berlin.faq_q1') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2024,8 +2023,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('locations/web-development-company-berlin.ml_946') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-berlin.faq_q2') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2042,8 +2040,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('locations/web-development-company-berlin.ml_947') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-berlin.faq_q3') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2060,8 +2057,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('locations/web-development-company-berlin.ml_948') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-berlin.faq_q4') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2078,8 +2074,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('locations/web-development-company-berlin.ml_949') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-berlin.faq_q5') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2096,8 +2091,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('locations/web-development-company-berlin.ml_950') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-berlin.faq_q6') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"

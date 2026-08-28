@@ -2371,8 +2371,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Combien de temps faut-il pour migrer
-                                    depuis Teachable ou Kajabi ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q1') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2389,8 +2388,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">2</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/online-course-platform-development-agency.ml_1015') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q2') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2407,8 +2405,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">3</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/online-course-platform-development-agency.ml_1016') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q3') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2425,8 +2422,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/online-course-platform-development-agency.ml_1017') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q4') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2443,8 +2439,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">5</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Puis-je proposer des abonnements et
-                                    des plans de paiement ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q5') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2461,8 +2456,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Supportez-vous le contenu progressif
-                                    et la planification de cours ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q6') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2479,8 +2473,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">7</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/online-course-platform-development-agency.ml_1018') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q7') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2497,8 +2490,7 @@
                                 <span class="text-sm font-bold text-[#00AEEF]">8</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">
-                                    {{ __('services/online-course-platform-development-agency.ml_1019') }}</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/online-course-platform-development-agency.faq_q8') }}</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"

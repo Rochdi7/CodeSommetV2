@@ -269,4 +269,12 @@ return [
     'faq_a6' => 'Oui. Nous intégrons des passerelles de paiement adaptées aux marchés où se trouvent vos étudiants et affichons les frais dans plusieurs devises. Les reçus de paiement sont générés automatiquement et rattachés au dossier de l\'étudiant.',
     'faq_a7' => 'Nous nous concentrons sur le secteur éducatif : flux de candidature, saisons d\'admission, contenu multilingue et génération de leads sont des problématiques que nous traitons au quotidien. Nous construisons des plateformes sur mesure plutôt que d\'assembler des plugins, et nous livrons avec un rythme adapté aux campagnes d\'admission. Le tout avec un accompagnement direct sur Slack et des révisions jusqu\'à validation.',
     'faq_a8' => 'Oui. Nous concevons vos pages de destination pour convertir le trafic Google Ads, avec suivi des conversions et tests A/B. Côté SEO, nous mettons en place le SEO technique, le balisage schema, un blog et des pages par pays pour capter les recherches d\'études à l\'étranger.',
+    'faq_q1' => 'Combien de temps faut-il pour construire un site web éducatif ?',
+    'faq_q2' => 'Fournissez-vous la rédaction de contenu pour les sites web éducatifs ?',
+    'faq_q3' => 'Le chatbot IA peut-il gérer les requêtes étudiantes en plusieurs langues ?',
+    'faq_q4' => 'Pouvez-vous connecter le site à notre CRM existant ?',
+    'faq_q5' => 'Pouvez-vous construire un portail de candidature étudiant avec téléchargement de documents ?',
+    'faq_q6' => 'Supportez-vous plusieurs devises et passerelles de paiement ?',
+    'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs web ?',
+    'faq_q8' => 'Pouvez-vous aider avec Google Ads et le SEO pour les sites web éducatifs ?',
 ];
