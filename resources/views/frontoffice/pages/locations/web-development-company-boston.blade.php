@@ -364,7 +364,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-boston.text_6') }} <!-- -->Boston<!-- --> Entreprises</h2>
+                        {{ __('locations/web-development-company-boston.text_6') }} <!-- -->Boston<!-- --></h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -374,12 +374,12 @@
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Prospects générés</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
@@ -768,8 +768,7 @@
                         </svg>{{ __('locations/web-development-company-boston.ml_905') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Comment Nous Avons Construit un Portail Patient Conforme
-                        HIPAA Servant Plus de 25 000 Patients</h2>
+                        style="font-family:var(--font-heading)">Comment Nous Avons Construit un Portail Patient Conforme HIPAA avec Prise de Rendez-vous en Ligne</h2>
                     <div class="flex items-center justify-center gap-6 text-sm text-[#0F0F0F]/60 flex-wrap">
                         <div class="flex items-center gap-2"><span
                                 class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-boston.ml_906') }}</span>
@@ -788,7 +787,7 @@
                 </div>
                 <div class="relative w-full max-w-5xl mx-auto mb-12">
                     <div class="relative aspect-[16/9]"><img
-                            alt="Comment Nous Avons Construit un Portail Patient Conforme HIPAA Servant Plus de 25 000 Patients"
+                            alt="Comment Nous Avons Construit un Portail Patient Conforme HIPAA avec Prise de Rendez-vous en Ligne"
                             decoding="async" class="object-contain"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                             sizes="100vw" src="{{ asset('images/success-story-healthtech1aaa.webp') }}" /></div>
@@ -2676,7 +2675,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 50 entreprises
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                             visionnaires qui ont choisi l'excellence</p>
                         <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
                             peuvent propulser votre entreprise</p>

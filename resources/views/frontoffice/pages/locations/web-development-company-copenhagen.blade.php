@@ -375,12 +375,12 @@
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites pensés pour la conversion</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients dans plusieurs pays</span>
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
@@ -786,7 +786,7 @@
                                 class="lucide lucide-clock w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M12 6v6l4 2"></path>
                                 <circle cx="12" cy="12" r="10"></circle>
-                            </svg><span>11 months</span></div>
+                            </svg><span>Délai adapté à la portée du projet</span></div>
                     </div>
                 </div>
                 <div class="relative w-full max-w-5xl mx-auto mb-12">
@@ -2680,7 +2680,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 50 entreprises
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                             visionnaires qui ont choisi l'excellence</p>
                         <p class="text-sm md:text-base text-white/50">Discutons de comment l'IA et le design moderne
                             peuvent propulser votre entreprise</p>

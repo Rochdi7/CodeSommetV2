@@ -255,3 +255,21 @@ LOW
 Branch `seo-tools-production-grade`, HEAD `b5f1b47`, nothing committed. Modified: 16 service blades + 16 lang, 35 location blades + 35 lang, `public/js/app.js` + `app.min.js`, 134 snapshot fixtures. New: `tests/browser/faq-accordion.spec.cjs`, this report.
 
 **PHASE 4 STATUS: COMPLETE** (remaining items above are non-blocking follow-ups).
+
+---
+
+# Phase 5 — City E-E-A-T, home/about stats, og tags (2026-08-28)
+
+## Fixed
+- **35 city pages** (3 agents): removed fabricated local proof — "50+ clients à {ville}", "50+ Projets Livrés", "100+ Prospects/35+ Clients" pills, copy-pasted case-study badges (300 étudiants / 2 000 rendez-vous / 800 voyageurs / 1 200 commandes / 50 associations), invented case metrics (500M€, 2M résidents, 18M$, 12s→180ms, FINMA, Série A 8M€…), "Approuvé par / Nous avons aidé…", "10 meilleures agences" footnotes, "N months" durations. Replaced with real deliverables / qualitative wording; no local office/team/client claims. "7-14 jours" → "2-5 jours" (13 files).
+- **Home / about**: "50+ Projets Livrés", "98% satisfaction", "100% transparent", "plus de 40 vérifications" (tool emits 29) → qualitative. Kept literally-true counts (18 features, 16 industries, 34 villes, "4+ ans" — flag: understates 2018→2026).
+- **og/twitter**: 13 service og_titles + 15 og/twitter descriptions now page-specific (were generic agency boilerplate). Real-estate meta mojibake "7 ? 10 jours" → "2-5 jours".
+- **Tool copy**: faq-schema-generator sample answer + website-analyzer roadmap no longer promise weeks; glamworlds "4 semaines" kept (real case-study delay).
+
+## Tests
+SEO suites 30/30 · snapshots 36 fails (city content, expected) → reviewed regen → **83/83** · Playwright spot-check (fintech, dubai, london) see run output · `php -l` 0 errors · view:cache OK.
+
+## Still open
+- Fintech card image: all 4 finance assets in use → **BLOCKED — NEW IMAGE ASSET REQUIRED**.
+- "4+ ans d'expérience" (home/about) — owner decision.
+- Location testimonial attributions reuse the same 3 clients on every page — content decision.

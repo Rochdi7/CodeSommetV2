@@ -374,15 +374,15 @@
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites orientés conversion</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Accompagnement continu</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Une approche pensée pour les entreprises de
                         <!-- -->Madrid<!-- -->{{ __('locations/web-development-company-madrid.ml_1083') }}
                     </p>
                 </div>
@@ -659,8 +659,8 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-madrid.text_12') }} <!-- -->Madrid</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, des résultats concrets.
-                        Découvrez comment nous avons aidé des entreprises de
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, livrés à distance.
+                        Découvrez ce que nous pouvons construire pour votre entreprise à
                         <!-- -->Madrid<!-- -->{{ __('locations/web-development-company-madrid.ml_1096') }}
                     </p>
                 </div>
@@ -2530,7 +2530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 50 entreprises
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                             visionnaires qui ont choisi l'excellence</p>
                         <p class="text-sm md:text-base text-white/50">
                             {{ __('locations/web-development-company-madrid.text_366') }}</p>

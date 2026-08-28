@@ -365,7 +365,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tunis.text_5') }}
-                        <!-- -->Tunis<!-- --> Entreprises
+                        <!-- -->Tunis<!-- -->
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">

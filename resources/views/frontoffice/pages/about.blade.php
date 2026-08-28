@@ -465,10 +465,10 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <p class="text-[#0F0F0F]/50 text-sm italic">Ensemble, nous avons livré plus de 50 projets
+                        <p class="text-[#0F0F0F]/50 text-sm italic">Ensemble, nous avons livré de nombreux projets
                             exceptionnels
                             depuis 2018 — <a href="{{ route('our-work') }}"
-                                class="text-[#00AEEF] hover:underline">découvrez nos 50+ projets livrés</a>. <a href="{{ route('contact') }}"
+                                class="text-[#00AEEF] hover:underline">découvrez nos projets livrés</a>. <a href="{{ route('contact') }}"
                                 class="text-[#00AEEF] hover:underline">{{ __('about.text_140') }}</a>
                             {{ __('about.text_21') }}</p>
                     </div>
@@ -487,7 +487,7 @@
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
-                                style="font-family:var(--font-heading)">50+</div>
+                                style="font-family:var(--font-heading)">Nombreux</div>
                             <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">{{ __('about.text_29') }}</p>
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
@@ -497,7 +497,7 @@
                         </div>
                         <div class="bg-white rounded-2xl p-6 shadow-md text-center">
                             <div class="text-3xl md:text-4xl font-bold text-[#00AEEF] mb-2"
-                                style="font-family:var(--font-heading)">100%</div>
+                                style="font-family:var(--font-heading)">Priorité</div>
                             <p class="text-sm md:text-base text-[#0F0F0F]/70 font-medium">Satisfaction Client</p>
                         </div>
                     </div>

@@ -365,8 +365,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-stockholm.text_6') }} <!-- -->Stockholm<!-- -->
-                        Entreprises</h2>
+                        {{ __('locations/web-development-company-stockholm.text_6') }} <!-- -->Stockholm<!-- --></h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -645,8 +644,8 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-stockholm.text_15') }} <!-- -->Stockholm</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, des résultats concrets.
-                        Découvrez comment nous avons aidé des entreprises basées à
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, livrés à distance.
+                        Découvrez ce que nous pouvons construire pour votre entreprise à
                         <!-- -->Stockholm<!-- -->{{ __('locations/web-development-company-stockholm.ml_1107') }}
                     </p>
                 </div>
@@ -840,8 +839,7 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
-                            <p class="text-base font-medium leading-snug">18M$ de revenus annuels (60% achats in-app, 30%
-                                pubs, 10% abonnements)</p>
+                            <p class="text-base font-medium leading-snug">Monétisation intégrée : achats in-app, publicité et abonnements</p>
                         </div>
                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1543,7 +1541,7 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>{{ __('locations/web-development-company-stockholm.text_50') }}
-                            <!-- -->Stockholm<!-- --> Entreprises
+                            <!-- -->Stockholm<!-- -->
                         </div>
                     </div>
                 </div>

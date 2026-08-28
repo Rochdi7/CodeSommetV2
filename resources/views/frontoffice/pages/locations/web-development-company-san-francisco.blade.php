@@ -368,8 +368,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-san-francisco.text_7') }} <!-- -->San Francisco<!-- -->
-                        Entreprises</h2>
+                        {{ __('locations/web-development-company-san-francisco.text_7') }} <!-- -->San Francisco<!-- --></h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -649,8 +648,8 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-san-francisco.text_16') }} <!-- -->San Francisco</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, des résultats concrets.
-                        Découvrez comment nous avons aidé des entreprises basées à <!-- -->San
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, livrés à distance.
+                        Découvrez ce que nous pouvons construire pour votre entreprise à <!-- -->San
                         Francisco<!-- -->{{ __('locations/web-development-company-san-francisco.ml_1106') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">

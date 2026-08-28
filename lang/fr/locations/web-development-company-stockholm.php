@@ -10,24 +10,24 @@ return [
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_1' => 'Basé à',
     'text_2' => 'Livraison en 2 à 5 jours',
-    'text_3' => '50+ clients à',
+    'text_3' => 'Disponible pour les entreprises de',
     'text_4' => 'Pourquoi Choisir CodeSommet in',
     'text_5' => 'Rapidité Startup',
-    'text_6' => 'Approuvé par',
-    'text_7' => '50+ Projets Livrés',
-    'text_8' => 'avec lesquelles nous avons collaboré',
+    'text_6' => 'Ce que nous apportons aux entreprises de',
+    'text_7' => 'Projets livrés à distance',
+    'text_8' => 'en collaboration à distance',
     'text_9' => 'Nos Secteurs de Spécialisation',
     'text_10' => 'Voir l\'Étude de Cas',
     'text_11' => 'Santé',
     'text_12' => 'Développement API',
     'text_13' => 'Discuter de vos besoins sectoriels',
-    'text_14' => 'Nos réalisations à',
-    'text_15' => 'Histoires de réussite à',
+    'text_14' => 'Projets présentés pour',
+    'text_15' => 'Ce que nous construisons pour',
     'text_16' => 'Éducation',
-    'text_17' => 'Plus de 300 étudiants inscrits',
+    'text_17' => 'Plateforme d\'inscription en ligne pour une école de langues',
     'text_18' => 'Santé',
     'text_19' => 'Tourisme',
-    'text_20' => 'Plus de 800 voyageurs accompagnés',
+    'text_20' => 'Site de voyages sur mesure avec demandes de devis en ligne',
     'text_21' => 'Plateformes conçues pour le divertissement interactif et le multijoueur en temps réel',
     'text_22' => 'Architecture pensée pour la fidélisation et l\'engagement des utilisateurs',
     'text_23' => 'Technologies Utilisées',
@@ -75,7 +75,7 @@ return [
     'aria_65' => 'Précédent testimonials',
     'text_163' => 'Experts en IA',
     'text_164' => 'Immobilier',
-    'text_165' => 'Plus de 2 000 rendez-vous réservés',
+    'text_165' => 'Site de clinique dentaire avec prise de rendez-vous en ligne',
     'text_166' => '13 mois',
     'text_167' => 'Secteur du jeu vidéo à Stockholm',
     'text_168' => 'Revue de design',
@@ -91,7 +91,7 @@ return [
     'text_377' => 'Recommandations propulsées par l\'IA',
     'text_378' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'text_379' => 'Explorez nos services de développement web dans d\'autres villes à travers le monde',
-    'text_380' => 'Rejoignez plus de 50 entreprises visionnaires qui ont choisi l\'excellence',
+    'text_380' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',
     'text_381' => 'Let\'s discuter de la façon dont l\'IA et le design moderne peuvent propulser votre entreprise',
     'text_681' => '🇸🇪',
     'text_682' => 'Automatisation',
@@ -120,7 +120,7 @@ return [
     'ml_1104' => 'Sites web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et intégration CRM',
     'ml_1105' => 'Annonces immobilières',
     'ml_1106' => 'Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel',
-    'ml_1107' => 'à atteindre leurs objectifs numériques.',
+    'ml_1107' => ', en collaboration à distance.',
     'ml_1108' => 'Étude de cas',
     'ml_1109' => 'Plateforme de jeux mobiles casual avec fonctionnalités sociales',
     'ml_1110' => 'Le Défi',
@@ -174,7 +174,7 @@ return [
     'sw_2556' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à Stockholm.',
     'sw_2557' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à Stockholm.',
     'sw_2558' => '"La plateforme tient parfaitement la charge et la synchronisation multiplateforme fonctionne sans accroc. Un vrai gain de fiabilité depuis le lancement."',
-    'sw_2559' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? Stockholm',
+    'sw_2559' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_2560' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Stockholm.',
     'sw_2561' => 'Questions fréquemment posées sur le Développement Web à Stockholm',
     'sw_2562' => 'Voir l\'Étude de Cas',
@@ -183,11 +183,11 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites orientés conversion</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Accompagnement continu</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',

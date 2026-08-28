@@ -11,25 +11,25 @@ return [
     'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_2' => 'Basé à',
     'text_3' => 'Livraison en 2 à 5 jours',
-    'text_4' => '50+ clients à',
+    'text_4' => 'Disponible pour les entreprises de',
     'text_5' => 'Pourquoi Choisir CodeSommet in',
     'text_6' => 'Rapidité Startup',
-    'text_7' => 'Approuvé par',
-    'text_8' => '50+ Projets Livrés',
-    'text_9' => 'avec lesquelles nous avons collaboré',
+    'text_7' => 'Ce que nous apportons aux entreprises de',
+    'text_8' => 'Projets livrés à distance',
+    'text_9' => 'en collaboration à distance',
     'text_10' => 'Nos Secteurs de Spécialisation',
     'text_11' => 'Voir l\'Étude de Cas',
     'text_12' => 'Santé',
     'text_13' => 'Développement API',
     'text_14' => 'Discuter de vos besoins sectoriels',
-    'text_15' => 'Nos réalisations à',
-    'text_16' => 'Histoires de réussite à',
+    'text_15' => 'Projets présentés pour',
+    'text_16' => 'Ce que nous construisons pour',
     'text_17' => 'Éducation',
-    'text_18' => 'Plus de 300 étudiants inscrits',
+    'text_18' => 'Plateforme d\'inscription en ligne pour une école de langues',
     'text_19' => 'Santé',
     'text_20' => 'Tourisme',
     'text_21' => 'Logiciel Entreprise',
-    'text_22' => 'Temps de requête réduit de 12s à 180ms',
+    'text_22' => 'Requêtes optimisées et mise en cache pour des tableaux de bord réactifs',
     'text_23' => 'Technologies Utilisées',
     'text_24' => 'Solutions sur mesure, tarification transparente',
     'text_25' => 'Développement Web',
@@ -72,8 +72,8 @@ return [
     'aria_62' => 'Précédent testimonials',
     'text_160' => 'Experts en IA',
     'text_161' => 'Immobilier',
-    'text_162' => 'Plus de 2 000 rendez-vous réservés',
-    'text_163' => 'Plus de 800 voyageurs accompagnés',
+    'text_162' => 'Site de clinique dentaire avec prise de rendez-vous en ligne',
+    'text_163' => 'Site de voyages sur mesure avec demandes de devis en ligne',
     'text_164' => '6 mois',
     'text_165' => 'Startups SaaS de San Francisco',
     'text_166' => 'Revue de design',
@@ -90,7 +90,7 @@ return [
     'text_376' => 'Recommandations propulsées par l\'IA',
     'text_377' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'text_378' => 'Explorez nos services de développement web dans d\'autres villes à travers le monde',
-    'text_379' => 'Rejoignez plus de 50 entreprises visionnaires qui ont choisi l\'excellence',
+    'text_379' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',
     'text_380' => 'Let\'s discuter de la façon dont l\'IA et le design moderne peuvent propulser votre entreprise',
     'text_680' => '🇺🇸',
     'text_681' => 'Automatisation',
@@ -119,7 +119,7 @@ return [
     'ml_1103' => 'Sites web immobiliers haut de gamme avec visites virtuelles, systèmes de réservation et intégration CRM',
     'ml_1104' => 'Annonces immobilières',
     'ml_1105' => 'Applications SaaS complètes avec authentification, facturation et fonctionnalités en temps réel',
-    'ml_1106' => 'à atteindre leurs objectifs numériques.',
+    'ml_1106' => ', en collaboration à distance.',
     'ml_1107' => 'Étude de cas',
     'ml_1108' => 'Comment Nous Accompagnons les Startups SaaS de San Francisco dans leur Croissance',
     'ml_1109' => 'Plateformes SaaS B2B et tableaux de bord produits',
@@ -182,7 +182,7 @@ return [
     'qb_2264' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
     'sw_3064' => 'L\'expertise locale rencontre les standards mondiaux. Voici ce qui fait de nous le partenaire idéal en développement web à San Francisco.',
     'sw_3065' => 'Vous ne voyez pas votre secteur ? Nous travaillons avec des entreprises de tous les secteurs à San Francisco.',
-    'sw_3066' => '* Comparaison basée sur les prix moyens et les offres de services des 10 meilleures agences ? San Francisco',
+    'sw_3066' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_3067' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de San Francisco.',
     'sw_3068' => 'Questions Fréquemment Posées sur le Développement Web à San Francisco',
     'sw_3069' => 'Voir l\'Étude de Cas',
@@ -191,11 +191,11 @@ return [
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">100+ Prospects</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Sites orientés conversion</span>
                     </div>
                     <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                     <div class="flex items-center gap-2">
-                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">35+ Clients</span>
+                        <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF]"></div><span class="font-semibold text-[#0F0F0F] whitespace-nowrap">Accompagnement continu</span>
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',

@@ -366,7 +366,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-seattle.text_7') }} <!-- -->Seattle<!-- --> Entreprises
+                        {{ __('locations/web-development-company-seattle.text_7') }} <!-- -->Seattle<!-- -->
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -752,9 +752,7 @@
                         </svg>{{ __('locations/web-development-company-seattle.ml_1108') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Comment Nous Avons Construit un Tableau de Bord Entreprise
-                        Servant Plus de 50 000 Utilisateurs
-                        Quotidiennement</h2>
+                        style="font-family:var(--font-heading)">Comment Nous Avons Construit un Tableau de Bord Entreprise Conçu pour un Usage Quotidien à Grande Échelle</h2>
                     <div class="flex items-center justify-center gap-6 text-sm text-[#0F0F0F]/60 flex-wrap">
                         <div class="flex items-center gap-2"><span
                                 class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-seattle.text_371') }}</span>
@@ -773,7 +771,7 @@
                 </div>
                 <div class="relative w-full max-w-5xl mx-auto mb-12">
                     <div class="relative aspect-[16/9]"><img
-                            alt="Comment Nous Avons Construit un Tableau de Bord Entreprise Servant Plus de 50 000 Utilisateurs Quotidiennement"
+                            alt="Comment Nous Avons Construit un Tableau de Bord Entreprise Conçu pour un Usage Quotidien à Grande Échelle"
                             decoding="async" class="object-contain"
                             style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                             sizes="100vw" src="{{ asset('images/success-story-saasb35f.webp') }}" /></div>

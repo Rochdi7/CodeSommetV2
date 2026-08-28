@@ -365,7 +365,7 @@
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
                         style="font-family:var(--font-heading)">{{ __('locations/web-development-company-rome.text_5') }}
-                        <!-- -->Rome<!-- --> Entreprises
+                        <!-- -->Rome<!-- -->
                     </h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
@@ -646,8 +646,8 @@
                         style="font-family:var(--font-heading)">{{ __('locations/web-development-company-rome.text_14') }}
                         <!-- -->Rome
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, des résultats concrets.
-                        Découvrez comment nous avons aidé des entreprises basées à
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Des projets réels, livrés à distance.
+                        Découvrez ce que nous pouvons construire pour votre entreprise à
                         <!-- -->Rome<!-- -->{{ __('locations/web-development-company-rome.ml_1107') }}
                     </p>
                 </div>
@@ -1543,7 +1543,6 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>{{ __('locations/web-development-company-rome.text_46') }} <!-- -->Rome<!-- -->
-                            Entreprises
                         </div>
                     </div>
                 </div>
