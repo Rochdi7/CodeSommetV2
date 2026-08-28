@@ -218,7 +218,7 @@
         ],
         [
             3,
-            "Pouvez-vous aider avec l'enregistrement de domaine .ae ?"
+            "Pouvez-vous aider avec l'enregistrement de domaine .ng ?"
         ],
         [
             2,
@@ -226,23 +226,11 @@
         ],
         [
             3,
-            "Abu Dhabi"
+            "Le Caire"
         ],
         [
             3,
-            "Riyad"
-        ],
-        [
-            3,
-            "Doha"
-        ],
-        [
-            3,
-            "Koweït City"
-        ],
-        [
-            3,
-            "Riyad"
+            "Tunis"
         ],
         [
             2,
@@ -274,7 +262,7 @@
         ]
     ],
     "links": {
-        "internal": 70,
+        "internal": 68,
         "external": 7,
         "fragment": 3,
         "other": 0

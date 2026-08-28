@@ -183,4 +183,10 @@ return [
     'sw_3064' => 'Questions Fréquemment Posées sur le Développement Web à Marrakech',
     'sw_3065' => 'Voir l\'Étude de Cas',
     'sw_3066' => 'Contactez notre équipe de Marrakech',
+    'faq_a1' => 'Nous n\'avons pas de bureau à Marrakech : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
+    'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Marrakech et vous gardez une visibilité complète sur l\'avancement à chaque étape.',
+    'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
+    'faq_a4' => 'Nous concevons des sites conformes aux bonnes pratiques de protection des données : consentement aux cookies, politique de confidentialité, sécurisation des formulaires et des données. Pour les exigences propres à Maroc ou à votre secteur, nous adaptons les mentions et les fonctionnalités avec vous lors du cadrage.',
+    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
+    'faq_a6' => 'Oui. Nous vous conseillons sur le choix du nom de domaine (.ma ou .com selon votre cible), nous vous guidons pour l\'enregistrement auprès d\'un registrar et nous configurons le DNS, le certificat SSL et les redirections pour que le site soit prêt dès la mise en ligne.',
 ];

@@ -218,7 +218,7 @@
         ],
         [
             3,
-            "Pouvez-vous aider avec l'enregistrement de domaine .ae ?"
+            "Pouvez-vous aider avec l'enregistrement de domaine .ma ?"
         ],
         [
             2,
@@ -226,23 +226,15 @@
         ],
         [
             3,
-            "Abu Dhabi"
+            "notre agence web à Rabat"
         ],
         [
             3,
-            "Riyad"
+            "notre agence web à Tanger"
         ],
         [
             3,
-            "Doha"
-        ],
-        [
-            3,
-            "Koweït City"
-        ],
-        [
-            3,
-            "Riyad"
+            "notre agence web à Casablanca"
         ],
         [
             2,
@@ -274,7 +266,7 @@
         ]
     ],
     "links": {
-        "internal": 70,
+        "internal": 69,
         "external": 7,
         "fragment": 3,
         "other": 0

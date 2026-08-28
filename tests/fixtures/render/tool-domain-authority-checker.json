@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Vérificateur de Domain Authority"
+            "Vérificateur de Fondations SEO Techniques"
         ],
         [
             3,
@@ -10,31 +10,31 @@
         ],
         [
             3,
-            "Qu'est-ce que le Domain Authority et pourquoi est-ce important ?"
+            "Qu'est-ce que le Score de Fondations SEO Techniques et pourquoi est-ce important ?"
         ],
         [
             3,
-            "Comment mon score de Domain Authority est-il calculé ?"
+            "Comment le Score de Fondations SEO Techniques est-il calculé ?"
         ],
         [
             3,
-            "Qu'est-ce qu'un bon score de Domain Authority ?"
+            "Qu'est-ce qu'un bon Score de Fondations SEO Techniques ?"
         ],
         [
             3,
-            "Comment améliorer mon score de Domain Authority ?"
+            "Comment améliorer mon Score de Fondations SEO Techniques ?"
         ],
         [
             3,
-            "Le Domain Authority est-il identique aux classements Google ?"
+            "Ce score est-il un facteur de classement Google ?"
         ],
         [
             3,
-            "Quelle différence entre Domain Authority et Page Authority ?"
+            "Quelle différence avec le Domain Authority (DA) et le Page Authority (PA) de Moz ?"
         ],
         [
             3,
-            "À quelle fréquence vérifier mon Domain Authority ?"
+            "À quelle fréquence vérifier mes fondations SEO techniques ?"
         ],
         [
             3,
@@ -62,7 +62,7 @@
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 53,
         "external": 5,
         "fragment": 1,
         "other": 0

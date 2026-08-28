@@ -53,12 +53,16 @@
             "Sitemap Validator"
         ],
         [
+            3,
+            "Analyseur de Compression d'Images"
+        ],
+        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 53,
         "external": 5,
         "fragment": 1,
         "other": 0

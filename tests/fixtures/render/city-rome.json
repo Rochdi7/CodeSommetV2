@@ -226,23 +226,7 @@
         ],
         [
             3,
-            "Abu Dhabi"
-        ],
-        [
-            3,
-            "Riyad"
-        ],
-        [
-            3,
-            "Doha"
-        ],
-        [
-            3,
-            "Kuwait City"
-        ],
-        [
-            3,
-            "Riyad"
+            "Notre agence web à Milan"
         ],
         [
             2,
@@ -274,7 +258,7 @@
         ]
     ],
     "links": {
-        "internal": 70,
+        "internal": 67,
         "external": 7,
         "fragment": 3,
         "other": 0

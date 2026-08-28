@@ -53,12 +53,20 @@
             "Image Alt Text Analyzer"
         ],
         [
+            3,
+            "Vérificateur d'URL Canonical"
+        ],
+        [
+            3,
+            "Analyseur de Liens Internes"
+        ],
+        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 54,
         "external": 5,
         "fragment": 1,
         "other": 0

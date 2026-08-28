@@ -137,9 +137,9 @@
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+
+                                    class="font-semibold text-[#0F0F0F]">Clients
                                     <!-- -->{{ __('services/fintech-website-development-agency.text_178') }}<!-- -->
-                                    Clients</span>
+                                    accompagnés</span>
                             </div>
                         </div>
                     </div>
@@ -191,8 +191,8 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">60% de Nos Clients Sont
-                                        dans la FinTech</h3>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">Une Part Importante de Nos Clients
+                                        Sont dans la FinTech</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed flex-grow">
                                         {{ __('services/fintech-website-development-agency.ml_917') }}
                                         <!-- --> Vous avez plutôt <a
@@ -371,21 +371,17 @@
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/fintech-website-development-agency.text_4') }}
-                                <span class="count-up" data-target="50">0</span>
-                                {{ __('services/fintech-website-development-agency.text_5') }}</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Projets livrés sur mesure</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/fintech-website-development-agency.text_6') }}
-                                <span class="count-up" data-target="100">0</span> Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Prospects générés pour nos clients</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/fintech-website-development-agency.text_7') }}
-                                <span class="count-up" data-target="35">0</span> Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
@@ -555,8 +551,8 @@
                 <div class="text-center mt-10 md:mt-12">
                     <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
                         style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                        exacts pour plus de 40
-                        <!-- -->{{ __('services/fintech-website-development-agency.text_182') }}<!-- --> entreprises.
+                        exacts pour de nombreuses entreprises
+                        <!-- -->{{ __('services/fintech-website-development-agency.text_182') }}<!-- -->.
                     </p><a
                         class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
                         style="color:white"
@@ -621,8 +617,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Tokenisation de carte et
-                                                    coffre-fort</span></li>
+                                                    style="font-family:var(--font-body)">Pages sécurité et confidentialité
+                                                    rédigées clairement</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -632,8 +628,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Authentification 3D Secure
-                                                    2.0</span></li>
+                                                    style="font-family:var(--font-body)">Mentions légales et licences
+                                                    accessibles depuis chaque page</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -691,8 +687,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Flux de prix en direct et
-                                                    graphiques</span></li>
+                                                    style="font-family:var(--font-body)">Pages produit et comparatifs d'offres lisibles</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -702,8 +697,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Carnet d'ordres et visualisation
-                                                    de la profondeur</span></li>
+                                                    style="font-family:var(--font-body)">Chiffres clés et graphiques mis en forme</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -713,8 +707,7 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Suivi de portefeuille et
-                                                    P&L</span></li>
+                                                    style="font-family:var(--font-body)">Simulateur ou calculateur de tarifs intégré</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -724,14 +717,13 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Outils de gestion des
-                                                    risques</span></li>
+                                                    style="font-family:var(--font-body)">Appels à l'action vers la demande de devis</span></li>
                                         </ul>
                                     </div>
                                     <div
                                         class="flex-1 relative min-h-[280px] md:min-h-[400px] lg:min-h-[500px] overflow-hidden">
                                         <img src="{{ asset('images/finance/finance-trading-dashboard.webp') }}"
-                                            alt="Tableau de Bord de Trading"
+                                            alt="Présentation de produits financiers"
                                             class="absolute inset-0 w-full h-full object-contain" />
                                     </div>
                                 </div>
@@ -759,8 +751,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">OCR de documents et
-                                                    validation</span></li>
+                                                    style="font-family:var(--font-body)">Étapes d'ouverture de compte
+                                                    expliquées pas à pas</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -840,8 +832,8 @@
                                                     <circle cx="12" cy="12" r="10"></circle>
                                                     <path d="m9 12 2 2 4-4"></path>
                                                 </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                    style="font-family:var(--font-body)">Analyses de volume de
-                                                    transactions</span></li>
+                                                    style="font-family:var(--font-body)">Suivi des conversions (formulaires,
+                                                    demandes de devis)</span></li>
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -988,7 +980,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 1
+                                            </svg>Étape 1
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1091,7 +1083,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 2
+                                            </svg>Étape 2
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1190,7 +1182,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 3
+                                            </svg>Étape 3
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1290,7 +1282,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 4
+                                            </svg>Étape 4
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1898,17 +1890,17 @@
                                     {{ __('services/fintech-website-development-agency.ml_990') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
                                         class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-12
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Plusieurs
                                         semaines</span></div>
-                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">16+
-                                        semaines</span></div>
+                                <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Plusieurs
+                                        mois</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/fintech-website-development-agency.ml_991') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">AML, PCI-DSS, RGPD</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">Mentions de conformité mises en avant</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
                                         inclus</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">Non
@@ -1917,8 +1909,7 @@
                         </div>
                     </div>
                     <div class="mt-8 text-center">
-                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les prix moyens et les offres de
-                            services des 10 meilleures agences en
+                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison indicative avec les offres généralement constatées en
                             <!-- -->{{ __('services/fintech-website-development-agency.text_196') }}
                         </p>
                         <div
@@ -2375,15 +2366,15 @@
                     </p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">1</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Combien de temps faut-il pour
-                                    construire un site web FinTech ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Le site peut-il présenter plusieurs
+                                    produits ou offres financières ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2391,8 +2382,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a1') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-2"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2408,8 +2400,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a2') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-3"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2425,16 +2418,17 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a3') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-4"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">4</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Quels fournisseurs KYC
-                                    supportez-vous ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Comment rassurer un visiteur avant
+                                    qu'il ne nous contacte ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2442,8 +2436,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a4') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-5"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2459,16 +2454,17 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-5" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a5') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-6"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                                 <span class="text-sm font-bold text-[#00AEEF]">6</span>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Supportez-vous les paiements
-                                    multi-devises et transfrontaliers ?</h3>
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Le site peut-il être multilingue et
+                                    adapté à plusieurs pays ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2476,8 +2472,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a6') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2493,8 +2490,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a7') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-8"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2510,7 +2508,8 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div id="faq-answer-8" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/fintech-website-development-agency.faq_a8') }}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">
@@ -3342,7 +3341,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                             visionnaires qui ont choisi l'excellence</p>
                         <p class="text-sm md:text-base text-white/50">
                             {{ __('services/fintech-website-development-agency.ml_1025') }}</p>
