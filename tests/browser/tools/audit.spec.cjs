@@ -59,7 +59,7 @@ function collect(page) {
     page.on('response', (res) => {
         const url = res.url();
         // Only same-origin responses matter — third-party 4xx is out of scope.
-        if (!url.startsWith('http://127.0.0.1:8000')) return;
+        if (!url.startsWith(ORIGIN)) return;
         if (res.status() >= 400) failedRequests.push({ url, reason: `HTTP ${res.status()}` });
     });
 
