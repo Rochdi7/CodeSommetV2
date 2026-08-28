@@ -10,7 +10,7 @@ return [
     'text_0' => 'Nous Acceptons Maintenant les Nouveaux Projets',
     'text_1' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
     'text_2' => 'De Nombreux Projets Livrés',
-    'text_3' => '4+ Années d\'Expérience',
+    'text_3' => '8+ Années d\'Expérience',
     'text_4' => 'Économies',
     'text_5' => 'Le plus élevé (Ce mois-ci)',
     'text_6' => 'Nos clients reviennent parce que nous livrons des résultats qui comptent',

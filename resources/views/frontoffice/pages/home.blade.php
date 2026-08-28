@@ -783,7 +783,7 @@
                     <div class="relative h-64 overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                         <div class="absolute inset-0 flex items-center justify-center pt-[92px]">
                             <div class="relative flex items-center justify-center"><span
-                                    class="font-bold leading-none z-0">4+</span>
+                                    class="font-bold leading-none z-0">8+</span>
                                 <div class="absolute bg-white px-3 py-1.5 rounded-full shadow-md text-xs font-medium whitespace-nowrap z-10"
                                     style="left:calc(50% + 140px);top:calc(50% + -50px);transform:translate(-50%, -50%)">
                                     Design Web</div>
