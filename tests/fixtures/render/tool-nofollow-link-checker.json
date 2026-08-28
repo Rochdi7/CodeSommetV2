@@ -54,10 +54,6 @@
         ],
         [
             3,
-            "Backlink Checker"
-        ],
-        [
-            3,
             "Vérificateur de redirections"
         ],
         [
@@ -66,7 +62,7 @@
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 52,
         "external": 5,
         "fragment": 1,
         "other": 0

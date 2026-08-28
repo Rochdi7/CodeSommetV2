@@ -22,7 +22,7 @@ use Tests\TestCase;
  * Plus A16 (heading hierarchy), A17 (link counts), A18 (fragment IDs) and
  * A9 (route baseline).
  *
- * Coverage is an EXPLICIT inventory (35 city + 46 tool routes = 81), not a
+ * Coverage is an EXPLICIT inventory (35 city + 45 tool routes = 80), not a
  * discovered list; the inventory is cross-checked against config/pages.php and
  * the tools view directory so silent drift fails loudly.
  *
@@ -49,7 +49,7 @@ class RenderSnapshotTest extends TestCase
 
     /** Explicit, deterministic tool inventory (mirrors resources/views/frontoffice/pages/tools/). */
     private const TOOLS = [
-        'backlink-checker', 'base64-encoder', 'blog-title-generator',
+        'base64-encoder', 'blog-title-generator',
         'broken-link-checker', 'canonical-checker', 'chatbot-script-generator',
         'color-palette-generator', 'core-web-vitals-checker', 'css-minifier',
         'domain-authority-checker', 'domain-health-checker',
@@ -99,11 +99,11 @@ class RenderSnapshotTest extends TestCase
         return $cases;
     }
 
-    public function test_inventory_is_exactly_81_routes_and_matches_repository(): void
+    public function test_inventory_is_exactly_80_routes_and_matches_repository(): void
     {
         $this->assertCount(35, self::CITIES, 'City inventory must be exactly 35 routes');
-        $this->assertCount(46, self::TOOLS, 'Tool inventory must be exactly 46 routes');
-        $this->assertCount(81, self::routeProvider());
+        $this->assertCount(45, self::TOOLS, 'Tool inventory must be exactly 45 routes');
+        $this->assertCount(80, self::routeProvider());
 
         // Cross-check against the sources of truth so drift cannot go unnoticed.
         $configCities = config('pages.cities');

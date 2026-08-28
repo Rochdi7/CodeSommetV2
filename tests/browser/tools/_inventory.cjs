@@ -15,7 +15,6 @@ const TOOLS = [
     { slug: 'keyword-density-analyzer', name: 'Analyseur de Densité de Mots-Clés', type: 'api', input: 'https://example.com' },
     { slug: 'broken-link-checker', name: 'Vérificateur de Liens Cassés', type: 'api', input: 'https://example.com' },
     { slug: 'redirect-checker', name: 'Vérificateur de Redirections', type: 'api', input: 'https://example.com' },
-    { slug: 'backlink-checker', name: 'Vérificateur de Backlinks', type: 'api', input: 'example.com' },
     { slug: 'ssl-certificate-checker', name: 'Vérificateur de Certificat SSL', type: 'api', input: 'example.com' },
     { slug: 'mobile-friendly-test', name: 'Test de Compatibilité Mobile', type: 'api', input: 'https://example.com' },
     { slug: 'core-web-vitals-checker', name: 'Vérificateur Core Web Vitals', type: 'api', input: 'https://example.com' },
