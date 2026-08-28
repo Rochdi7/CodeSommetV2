@@ -89,6 +89,8 @@ Route::group([], function () {
     })->where('city', '[a-z\-]+')->name('location');
 
     // ─── Tools Pages ────────────────────────────────────────────────────────
+    Route::redirect('/tools/backlink-checker', '/tools/domain-health-checker', 301);
+
     Route::get('/tools/{slug}', function (string $slug) {
         $view = "frontoffice.pages.tools.{$slug}";
         if (! view()->exists($view)) {

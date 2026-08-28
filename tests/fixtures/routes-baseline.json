@@ -675,6 +675,16 @@
     },
     {
         "domain": null,
+        "method": "GET|HEAD|POST|PUT|PATCH|DELETE|OPTIONS",
+        "uri": "tools/backlink-checker",
+        "name": null,
+        "action": "Illuminate\\Routing\\RedirectController",
+        "middleware": [
+            "web"
+        ]
+    },
+    {
+        "domain": null,
         "method": "POST",
         "uri": "admin/blog",
         "name": "admin.blog.store",

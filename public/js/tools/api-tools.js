@@ -17,7 +17,6 @@
         'keyword-density-analyzer': { title: 'Keyword Density', action: 'Analyze Keywords', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
         'broken-link-checker': { title: 'Broken Link Checker', action: 'Check Links', actionText: 'pages scannées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
         'redirect-checker': { title: 'Redirect Checker', action: 'Check Redirects', actionText: 'URL vérifiées', inputLabel: 'URL à vérifier', inputPlaceholder: 'https://example.com/old-page' },
-        'backlink-checker': { title: 'Backlink Checker', action: 'Check Backlinks', actionText: 'domaines analysés', inputLabel: 'Domaine', inputPlaceholder: 'example.com' },
         'ssl-certificate-checker': { title: 'SSL Checker', action: 'Check SSL', actionText: 'certificats vérifiés', inputLabel: 'Domaine', inputPlaceholder: 'example.com' },
         'mobile-friendly-test': { title: 'Mobile Friendly', action: 'Test Mobile', actionText: 'pages testées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },
         'core-web-vitals-checker': { title: 'Core Web Vitals', action: 'Check Vitals', actionText: 'pages analysées', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' },

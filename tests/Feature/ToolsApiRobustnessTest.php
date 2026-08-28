@@ -200,7 +200,7 @@ class ToolsApiRobustnessTest extends TestCase
 
         Http::fake();
 
-        foreach (['domain-authority-checker', 'backlink-checker'] as $slug) {
+        foreach (['domain-authority-checker'] as $slug) {
             RateLimiter::clear('tools-api');
             RateLimiter::clear('tools-api-heavy');
 

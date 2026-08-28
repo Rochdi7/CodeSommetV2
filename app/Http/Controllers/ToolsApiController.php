@@ -1677,62 +1677,6 @@ class ToolsApiController extends Controller
     }
 
     /**
-     * Backlink Checker (basic — without Moz API)
-     */
-    public function handleBacklinkChecker(Request $request): JsonResponse
-    {
-        // Valide l'hôte (et bloque les cibles internes) avant tout appel sortant.
-        $domain = $this->requireHost($request, 'url', 'domain');
-
-        // Un profil de backlinks suppose un crawl à l'échelle du web. Sans
-        // fournisseur, on renvoie 503 explicite plutôt que l'ancien score
-        // codé en dur (`'score' => 50`), qui ne reposait sur aucune analyse.
-        $data = $this->seoApi->backlinks($domain);
-
-        $m = $data['metrics'];
-        $total = (int) ($m['totalBacklinks'] ?? 0);
-        $refDomains = (int) ($m['linkingDomains'] ?? 0);
-        $nofollow = (int) ($m['nofollowBacklinks'] ?? 0);
-        $dofollow = max(0, $total - $nofollow);
-
-        $issues = [];
-        if ($refDomains === 0) {
-            $issues[] = ['type' => 'warning', 'message' => 'Aucun domaine référent détecté par le fournisseur.'];
-        }
-        if ($total > 0 && $refDomains > 0 && ($total / max($refDomains, 1)) > 100) {
-            $issues[] = ['type' => 'warning', 'message' => 'Ratio liens/domaine très élevé — profil potentiellement peu diversifié.'];
-        }
-        if (($spam = $m['spamScore'] ?? null) !== null && $spam >= 30) {
-            $issues[] = ['type' => 'error', 'message' => "Spam Score de {$spam}% — vérifiez les domaines référents de faible qualité."];
-        }
-
-        return response()->json([
-            'score' => (int) round($data['scale'] === '0-10' ? $data['authority'] * 10 : $data['authority']),
-            'grade' => $this->scoreToGrade((int) round($data['scale'] === '0-10' ? $data['authority'] * 10 : $data['authority'])),
-            'passed' => $refDomains > 0,
-            'stats' => array_filter([
-                'domain' => $domain,
-                'totalBacklinks' => $total ?: null,
-                'referringDomains' => $refDomains ?: null,
-                'dofollow' => $dofollow ?: null,
-                'nofollow' => $nofollow ?: null,
-                'domainAuthority' => isset($m['domainAuthority']) ? $m['domainAuthority'] . '/100' : null,
-                'spamScore' => isset($m['spamScore']) ? $m['spamScore'] . '%' : null,
-            ], fn ($v) => $v !== null),
-            'issues' => $issues,
-            'recommendations' => [
-                'Visez des liens éditoriaux depuis des domaines thématiquement proches de votre activité.',
-                'Diversifiez les domaines référents : 10 domaines distincts pèsent plus que 100 liens d\'un même site.',
-                'Surveillez le Spam Score et désavouez les domaines toxiques via la Search Console.',
-            ],
-            'dataSource' => $data['source'],
-            'fetchedAt' => $data['fetchedAt'],
-        ]);
-    }
-
-    // ─── AI-Powered Tools (client-side fallback without API key) ─────
-
-    /**
      * Blog Title Generator — generates SEO titles from topic
      */
     public function handleBlogTitleGenerator(Request $request): JsonResponse
