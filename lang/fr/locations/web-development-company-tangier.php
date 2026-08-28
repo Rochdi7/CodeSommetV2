@@ -202,4 +202,10 @@ return [
     'faq_a4' => 'Nous concevons des sites conformes aux bonnes pratiques de protection des données : consentement aux cookies, politique de confidentialité, sécurisation des formulaires et des données. Pour les exigences propres à Maroc ou à votre secteur, nous adaptons les mentions et les fonctionnalités avec vous lors du cadrage.',
     'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
     'faq_a6' => 'Oui. Nous vous conseillons sur le choix du nom de domaine (.ma ou .com selon votre cible), nous vous guidons pour l\'enregistrement auprès d\'un registrar et nous configurons le DNS, le certificat SSL et les redirections pour que le site soit prêt dès la mise en ligne.',
+    'faq_q1' => 'Avez-vous un bureau physique à Tanger ?',
+    'faq_q2' => 'Pouvez-vous travailler avec les entreprises de Tanger à distance ?',
+    'faq_q3' => 'Quels modes de paiement acceptez-vous à Tanger ?',
+    'faq_q4' => 'Comprenez-vous les lois de conformité et de protection des données au Maroc ?',
+    'faq_q5' => 'En combien de temps pouvez-vous lancer un site web pour mon entreprise à Tanger ?',
+    'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine ?',
 ];

@@ -266,4 +266,12 @@ return [
     'faq_a6' => 'Oui. Vous pouvez publier les leçons progressivement (par exemple un module par semaine après l\'inscription), programmer une date d\'ouverture pour une cohorte, ou conditionner l\'accès à une leçon à la réussite de la précédente. Ces règles se configurent depuis votre tableau de bord, sans intervention technique, et contribuent à maintenir l\'engagement de vos étudiants dans la durée.',
     'faq_a7' => 'Sur Teachable, vos pages de vente vivent généralement sur un sous-domaine de la plateforme avec un contrôle limité sur la structure et les balises. Avec votre propre site, chaque cours dispose d\'une page optimisée sur votre domaine, avec vos titres, vos textes et vos performances techniques. Le référencement dépend ensuite de la qualité de votre contenu et de la régularité de vos publications, ce sur quoi nous vous accompagnons.',
     'faq_a8' => 'C\'est justement l\'intérêt d\'une plateforme sur mesure : nous développons ce dont vous avez besoin, par exemple un espace communautaire, des certificats personnalisés, des quiz avancés, un programme d\'affiliation ou une connexion avec votre outil d\'e-mailing ou votre CRM. Chaque fonctionnalité est cadrée avec vous en amont, puis livrée selon un calendrier convenu au lieu d\'attendre qu\'un éditeur l\'ajoute à sa feuille de route.',
+    'faq_q1' => 'Combien de temps faut-il pour migrer depuis Teachable ou Kajabi ?',
+    'faq_q2' => 'Combien puis-je économiser en passant à ma propre plateforme ?',
+    'faq_q3' => 'Qui possède la plateforme, les cours et les données de mes étudiants ?',
+    'faq_q4' => 'Quel hébergement vidéo utilisez-vous ?',
+    'faq_q5' => 'Puis-je proposer des abonnements et des plans de paiement ?',
+    'faq_q6' => 'Supportez-vous le contenu progressif et la planification de cours ?',
+    'faq_q7' => 'Ma plateforme personnalisée aura-t-elle un meilleur SEO que Teachable ?',
+    'faq_q8' => 'Et si j\'ai besoin de fonctionnalités que Teachable n\'offre pas ?',
 ];

@@ -262,4 +262,12 @@ return [
     'faq_a6' => 'Sur un site de clinique ou de cabinet, la téléconsultation est proposée comme un service parmi les autres : un motif de rendez-vous dédié, une page qui explique le déroulement et un accès depuis l\'espace patient. Elle s\'appuie sur un module vidéo sécurisé sans transformer le site en plateforme complète. Si votre activité est centrée sur les soins à distance, notre offre de site web de télémédecine pour cabinets sera plus adaptée.',
     'faq_a7' => 'Nous travaillons quotidiennement avec des cabinets, cliniques et hôpitaux, et nous intégrons dès la conception les contraintes propres à ce secteur : confidentialité des données, parcours de prise de rendez-vous et référencement local. Chaque site inclut des fonctionnalités IA adaptées à l\'accueil patient, un tableau de bord de gestion et un accompagnement après la mise en ligne.',
     'faq_a8' => 'Nous mettons en place des rappels automatisés par SMS et e-mail, une confirmation en un clic, une reprogrammation simple et une liste d\'attente pour réattribuer les créneaux libérés. Ces mécanismes aident à limiter les rendez-vous manqués ; l\'effet réel dépend de votre patientèle et de votre organisation.',
+    'faq_q1' => 'Combien de temps faut-il pour construire un site web de santé ?',
+    'faq_q2' => 'Le site respecte-t-il les exigences HIPAA et RGPD pour les données patients ?',
+    'faq_q3' => 'Pouvez-vous vous intégrer avec notre système DSE existant ?',
+    'faq_q4' => 'Fournissez-vous une formation pour notre personnel ?',
+    'faq_q5' => 'Les patients peuvent-ils réserver des rendez-vous en ligne 24h/24 ?',
+    'faq_q6' => 'Comment la téléconsultation est-elle présentée sur le site ?',
+    'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs web de santé ?',
+    'faq_q8' => 'Pouvez-vous aider à réduire nos taux d\'absentéisme ?',
 ];

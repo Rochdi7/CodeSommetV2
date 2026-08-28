@@ -251,4 +251,12 @@ return [
     'faq_a6' => 'Oui. Le site peut être proposé en plusieurs langues avec des contenus, des mentions réglementaires et des devises adaptés à chaque pays cible, et une structure d\'URL prévue pour le référencement international.',
     'faq_a7' => 'Nous concevons chaque page pour la confiance et la conversion d\'une audience financière prudente : mise en avant des certifications, parcours de lead clair et messages de sécurité pensés spécifiquement pour ce secteur, plutôt qu\'un habillage générique appliqué à un thème standard.',
     'faq_a8' => 'Oui — nous traduisons vos certifications et licences existantes en messages clairs et en éléments visuels de réassurance sur le site. Nous ne délivrons pas les certifications elles-mêmes, nous les mettons en valeur auprès de vos visiteurs.',
+    'faq_q1' => 'Le site peut-il présenter plusieurs produits ou offres financières ?',
+    'faq_q2' => 'Le site peut-il inclure une calculatrice de tarifs ou un simulateur pour nos visiteurs ?',
+    'faq_q3' => 'Comment présentez-vous nos certifications de conformité sur le site ?',
+    'faq_q4' => 'Comment rassurer un visiteur avant qu\'il ne nous contacte ?',
+    'faq_q5' => 'Combien de temps prend la création d\'un site web fintech standard ?',
+    'faq_q6' => 'Le site peut-il être multilingue et adapté à plusieurs pays ?',
+    'faq_q7' => 'Qu\'est-ce qui différencie vos sites web fintech des templates génériques ?',
+    'faq_q8' => 'Pouvez-vous nous aider à communiquer notre conformité réglementaire aux visiteurs du site ?',
 ];

@@ -273,4 +273,12 @@ return [
     'faq_a6' => 'Les formulaires de contact et de rendez-vous sont conçus pour ne collecter que le strict nécessaire, transmettre les demandes de manière sécurisée et afficher clairement les mentions de confidentialité. Nous vous conseillons sur les bonnes pratiques adaptées à un site médical ; les échanges cliniques eux-mêmes restent dans vos outils métier.',
     'faq_a7' => 'Oui. Vous disposez d\'un espace d\'administration simple pour modifier les horaires, ajouter un praticien, mettre à jour une spécialité ou publier une actualité, sans compétence technique. Nous formons votre équipe à la mise en ligne lors de la livraison.',
     'faq_a8' => 'Cela dépend du nombre de spécialités, de praticiens et de pages, ainsi que du contenu déjà disponible (photos, textes, informations pratiques). Un site de présentation standard peut être mis en ligne en quelques jours ; un site multi-spécialités avec intégrations demande plus de temps. Nous confirmons le délai exact lors de l\'appel découverte, une fois le périmètre défini.',
+    'faq_q1' => 'Que doit contenir le site web d\'un cabinet ou d\'une clinique proposant la téléconsultation ?',
+    'faq_q2' => 'Comment le site génère-t-il des demandes de rendez-vous ?',
+    'faq_q3' => 'Le site peut-il présenter plusieurs médecins ou plusieurs spécialités ?',
+    'faq_q4' => 'Comment structurez-vous les services médicaux pour le référencement local ?',
+    'faq_q5' => 'Le site peut-il s\'intégrer à notre système de prise de rendez-vous existant ?',
+    'faq_q6' => 'Comment traitez-vous la confidentialité des informations saisies par les patients ?',
+    'faq_q7' => 'Pourrons-nous mettre à jour le site nous-mêmes (horaires, équipe, actualités) ?',
+    'faq_q8' => 'Combien de temps prend la création d\'un site web pour un cabinet médical ?',
 ];

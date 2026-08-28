@@ -272,4 +272,12 @@ return [
     'faq_a6' => 'Oui, la recherche combine les filtres essentiels (localisation, prix, surface, chambres, équipements) avec une vue carte interactive et regroupement des biens. Les critères propres à votre marché, comme le quartier, la proximité des écoles ou les charges, peuvent être ajoutés. Les visiteurs peuvent enregistrer une recherche et recevoir des alertes dès qu\'un bien correspond.',
     'faq_a7' => 'Oui, les acheteurs peuvent créer un compte, ajouter des biens en favoris, sauvegarder leurs recherches et recevoir des notifications. Ces comptes vous donnent aussi une vision précieuse des biens qui suscitent le plus d\'intérêt. La création de compte reste facultative pour consulter les annonces afin de ne pas freiner la découverte.',
     'faq_a8' => 'Oui, chaque page d\'annonce et de quartier est structurée pour se positionner sur les recherches locales, avec des données structurées et des URL lisibles. Nous mettons en place le suivi des conversions pour mesurer précisément les demandes générées par vos campagnes Google Ads. La stratégie de contenu et le pilotage des campagnes peuvent être intégrés à un accompagnement continu.',
+    'faq_q1' => 'Combien de temps faut-il pour créer un site web immobilier ?',
+    'faq_q2' => 'Pouvez-vous intégrer les données MLS dans notre portail immobilier ?',
+    'faq_q3' => 'Incluez-vous les visites virtuelles et les fonctionnalités de vue à 360° ?',
+    'faq_q4' => 'Les agents peuvent-ils gérer leurs propres annonces sur la plateforme ?',
+    'faq_q5' => 'Comment fonctionne le CRM de gestion de prospects ?',
+    'faq_q6' => 'Incluez-vous des filtres de recherche avancés et l\'intégration de carte ?',
+    'faq_q7' => 'Les acheteurs peuvent-ils sauvegarder leurs biens favoris et créer des comptes ?',
+    'faq_q8' => 'Aidez-vous avec le SEO immobilier et Google Ads ?',
 ];

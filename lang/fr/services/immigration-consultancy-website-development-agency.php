@@ -258,4 +258,12 @@ return [
     'faq_a6' => 'Oui. Les leads qualifiés par le calculateur d\'éligibilité ou le formulaire de contact peuvent être envoyés automatiquement vers votre CRM, qu\'il s\'agisse de HubSpot, Zoho, Salesforce ou d\'un outil que vous utilisez déjà. Nous définissons ensemble quelles informations sont transmises (profil, pays visé, type de visa, statut) afin que votre équipe commerciale travaille dans son environnement habituel sans ressaisie.',
     'faq_a7' => 'Oui. Le site est structuré par destination puis par type de visa (études, travail, regroupement familial, résidence permanente, visiteur, etc.), chacun ayant sa page dédiée, sa liste de documents et ses critères propres. Cette organisation aide vos prospects à trouver rapidement le parcours qui les concerne et sert de base au référencement sur des requêtes précises comme « visa étudiant Canada ».',
     'faq_a8' => 'Oui. Nous construisons le site autour des requêtes que tapent réellement vos prospects (pays, type de visa, ville) avec des pages dédiées, un contenu clair et des performances techniques solides. Pour Google Ads, nous concevons des pages d\'atterrissage ciblées par visa avec un formulaire ou un calculateur d\'éligibilité comme point de conversion, et nous mettons en place le suivi des conversions pour que vous puissiez mesurer chaque campagne.',
+    'faq_q1' => 'Combien de temps faut-il pour construire un site web de conseil en immigration ?',
+    'faq_q2' => 'Pouvez-vous construire des calculateurs d\'éligibilité visa pour plusieurs pays ?',
+    'faq_q3' => 'Incluez-vous le suivi de dossiers et la gestion de documents ?',
+    'faq_q4' => 'Le chatbot IA peut-il gérer les requêtes de visa en plusieurs langues ?',
+    'faq_q5' => 'Comment assurez-vous la sécurité des données et la conformité RGPD ?',
+    'faq_q6' => 'Pouvez-vous vous intégrer avec des systèmes CRM comme HubSpot ou Salesforce ?',
+    'faq_q7' => 'Supportez-vous plusieurs types de visa par pays ?',
+    'faq_q8' => 'Aidez-vous avec le SEO et Google Ads pour les sites web d\'immigration ?',
 ];

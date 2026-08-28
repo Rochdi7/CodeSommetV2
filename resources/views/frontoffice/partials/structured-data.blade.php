@@ -123,6 +123,41 @@
         ];
     }
 
+    // FAQPage : questions/réponses issues des mêmes clés de traduction que le bloc FAQ visible
+    // (faq_q1..N / faq_a1..N), afin que le schéma reflète exactement le texte affiché.
+    $sdFaqNs = match ($sdRouteName) {
+        'service' => isset($sdSlug) ? "services/{$sdSlug}-agency" : null,
+        'location' => isset($sdCity) ? "locations/web-development-company-{$sdCity}" : null,
+        default => null,
+    };
+    if ($sdFaqNs) {
+        $sdFaqItems = [];
+        for ($sdI = 1; $sdI <= 50; $sdI++) {
+            $sdQKey = "{$sdFaqNs}.faq_q{$sdI}";
+            $sdAKey = "{$sdFaqNs}.faq_a{$sdI}";
+            if (! \Illuminate\Support\Facades\Lang::has($sdQKey) || ! \Illuminate\Support\Facades\Lang::has($sdAKey)) {
+                break;
+            }
+            $sdQ = trim(preg_replace('/\s+/u', ' ', html_entity_decode(strip_tags(__($sdQKey)), ENT_QUOTES | ENT_HTML5, 'UTF-8')));
+            $sdA = trim(preg_replace('/\s+/u', ' ', html_entity_decode(strip_tags(__($sdAKey)), ENT_QUOTES | ENT_HTML5, 'UTF-8')));
+            if ($sdQ === '' || $sdA === '') {
+                break;
+            }
+            $sdFaqItems[] = [
+                '@type' => 'Question',
+                'name' => $sdQ,
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $sdA],
+            ];
+        }
+        if ($sdFaqItems !== []) {
+            $sdSchemas[] = [
+                '@context' => 'https://schema.org',
+                '@type' => 'FAQPage',
+                'mainEntity' => $sdFaqItems,
+            ];
+        }
+    }
+
     if ($sdCrumbs) {
         $sdSchemas[] = [
             '@context' => 'https://schema.org',

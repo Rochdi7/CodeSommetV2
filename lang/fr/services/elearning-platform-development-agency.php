@@ -256,4 +256,12 @@ return [
     'faq_a6' => 'Oui. Les apprenants accèdent à leurs parcours sur mobile avec une interface adaptée et une progression synchronisée ; certaines fonctions peuvent être disponibles hors ligne selon le besoin.',
     'faq_a7' => 'Oui. Nous reprenons vos modules SCORM, vos documents, vidéos et questionnaires existants, puis nous les réorganisons dans la nouvelle structure de parcours. Les historiques de formation peuvent être importés lorsqu\'un export est disponible.',
     'faq_a8' => 'Oui. Chaque site, classe ou service peut avoir son catalogue, ses parcours et ses responsables, avec des rapports consolidés au niveau de l\'établissement ou de l\'entreprise.',
+    'faq_q1' => 'Combien de temps faut-il pour mettre en place une plateforme de formation interne ?',
+    'faq_q2' => 'Quelles options d\'hébergement vidéo supportez-vous ?',
+    'faq_q3' => 'La plateforme peut-elle s\'intégrer à notre SIRH, notre SIS ou notre annuaire (SSO) ?',
+    'faq_q4' => 'Fournissez-vous des fonctionnalités de gamification et d\'engagement ?',
+    'faq_q5' => 'Comment gérez-vous les rôles : administrateurs, formateurs, apprenants et managers ?',
+    'faq_q6' => 'Les étudiants peuvent-ils accéder aux cours sur appareils mobiles ?',
+    'faq_q7' => 'Pouvons-nous migrer nos contenus de formation existants (SCORM, PDF, vidéos) ?',
+    'faq_q8' => 'Pouvez-vous gérer plusieurs sites, classes ou services avec des parcours différents ?',
 ];

@@ -186,4 +186,10 @@ return [
     'faq_a4' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
     'faq_a5' => 'Notre modèle de révisions illimitées signifie exactement cela : nous affinons jusqu\'à ce que vous soyez satisfait. Il n\'y a pas de limite au nombre de modifications demandées, chaque révision étant généralement traitée sous 48 à 72 heures, sans coût supplémentaire.',
     'faq_a6' => 'Oui. Nous proposons un support continu complet : hébergement, maintenance, mises à jour de sécurité, surveillance des performances et mises à jour de contenu. Nos forfaits incluent une collaboration en temps réel sur Slack, ainsi que la correction de bugs et les évolutions après le lancement.',
+    'faq_q1' => 'Pourquoi choisir CodeSommet plutôt que les agences de développement web d\'Abu Dhabi ?',
+    'faq_q2' => 'Travaillez-vous avec les entités gouvernementales et semi-gouvernementales d\'Abu Dhabi ?',
+    'faq_q3' => 'Quelles technologies utilisez-vous pour les projets à Abu Dhabi ?',
+    'faq_q4' => 'Pouvez-vous intégrer les passerelles de paiement UAE et les systèmes locaux ?',
+    'faq_q5' => 'Comment fonctionne le modèle de révisions illimitées à Abu Dhabi ?',
+    'faq_q6' => 'Fournissez-vous un support continu pour les clients d\'Abu Dhabi après le lancement ?',
 ];

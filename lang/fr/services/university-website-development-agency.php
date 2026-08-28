@@ -275,4 +275,12 @@ return [
     'faq_a6' => 'Oui. Chaque candidat dispose d\'un espace personnel où il voit l\'état de sa candidature en temps réel : dossier reçu, documents en cours de vérification, décision d\'admission. Des notifications par e-mail sont envoyées à chaque changement de statut, ce qui réduit les appels et e-mails vers votre service d\'admission.',
     'faq_a7' => 'Oui. À la livraison, nous organisons une session de formation pour le personnel d\'admission, les enseignants et les administrateurs afin qu\'ils maîtrisent le tableau de bord, la gestion des candidatures et la mise à jour du catalogue de cours. Une documentation est fournie et notre équipe reste disponible pour les questions de prise en main.',
     'faq_a8' => 'Oui. Le système est conçu pour gérer plusieurs campus, facultés ou départements depuis une seule administration, avec des pages, catalogues de cours et équipes d\'admission propres à chaque entité. Les rôles et permissions permettent à chaque campus de gérer son contenu tout en conservant une vue consolidée au niveau de l\'établissement.',
+    'faq_q1' => 'Combien de temps faut-il pour créer un site web universitaire avec portail étudiant ?',
+    'faq_q2' => 'Pouvez-vous vous intégrer à notre LMS existant (Moodle, Canvas, Blackboard) ?',
+    'faq_q3' => 'Le système est-il conforme FERPA pour la protection des données étudiantes ?',
+    'faq_q4' => 'Les étudiants internationaux peuvent-ils postuler et payer dans leur devise locale ?',
+    'faq_q5' => 'Comment gérez-vous la vérification des documents pour les admissions ?',
+    'faq_q6' => 'Les étudiants peuvent-ils suivre le statut de leur candidature en ligne ?',
+    'faq_q7' => 'Fournissez-vous une formation pour le personnel d\'admission et les enseignants ?',
+    'faq_q8' => 'Pouvons-nous gérer plusieurs campus depuis un seul système ?',
 ];
