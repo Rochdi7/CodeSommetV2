@@ -1998,7 +1998,7 @@
                         {{ __('locations/web-development-company-madrid.sw_3063') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2014,8 +2014,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-madrid.faq_a1') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-2"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2031,8 +2032,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-madrid.faq_a2') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-3"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2048,8 +2050,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-madrid.faq_a3') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-4"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2065,8 +2068,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-madrid.faq_a4') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-5"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2082,8 +2086,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-5" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-madrid.faq_a5') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-6"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2091,7 +2096,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">Pouvez-vous aider avec
-                                    l'enregistrement de domaine .ae ?</h3>
+                                    l'enregistrement de domaine .es ?</h3>
                             </div>
                             <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2099,7 +2104,8 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-madrid.faq_a6') }}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">

@@ -180,4 +180,10 @@ return [
     'sw_2862' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes de Abu Dhabi entreprises.',
     'sw_2863' => 'Questions Fréquemment Posées Sur le Développement Web à Abu Dhabi',
     'sw_2864' => 'Voir l\'Étude de Cas',
+    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre, avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Abu Dhabi comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
+    'faq_a2' => 'Oui. Nous pouvons répondre aux exigences habituelles des organisations publiques et parapubliques : contenu bilingue arabe/anglais, accessibilité, circuits de validation internes et hébergement conforme à vos contraintes. Le cadrage précis se fait lors de l\'appel découverte.',
+    'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',
+    'faq_a4' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
+    'faq_a5' => 'Notre modèle de révisions illimitées signifie exactement cela : nous affinons jusqu\'à ce que vous soyez satisfait. Il n\'y a pas de limite au nombre de modifications demandées, chaque révision étant généralement traitée sous 48 à 72 heures, sans coût supplémentaire.',
+    'faq_a6' => 'Oui. Nous proposons un support continu complet : hébergement, maintenance, mises à jour de sécurité, surveillance des performances et mises à jour de contenu. Nos forfaits incluent une collaboration en temps réel sur Slack, ainsi que la correction de bugs et les évolutions après le lancement.',
 ];

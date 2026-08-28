@@ -1368,58 +1368,7 @@
                 .trim();
         }
 
-        var faqAnswers = {
-            whyChoose: 'Nous combinons technologie IA de pointe, design premium et livraison rapide. Là où les agences traditionnelles prennent des mois, nous livrons en 2 à 5 jours avec des révisions illimitées. Notre expertise full-stack couvre tout, des tableaux de bord sur mesure aux chatbots IA, pour donner à votre entreprise un vrai avantage concurrentiel.',
-            startups: 'Absolument ! Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
-            technologies: 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons OpenAI, des chatbots sur mesure et des automatisations intelligentes. Notre stack technique garantit des performances rapides, un excellent SEO et une vraie évolutivité.',
-            integrate: 'Oui, nous sommes spécialisés dans l\'intégration avec vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',
-            revisions: 'Notre modèle de révisions illimitées signifie exactement cela : nous affinons jusqu\'à ce que vous soyez satisfait à 100 %. Aucune limite au nombre de modifications demandées, chaque révision étant généralement traitée sous 48 à 72 heures, sans coût supplémentaire.',
-            support: 'Oui, nous proposons un support continu complet : hébergement premium, maintenance, mises à jour de sécurité, surveillance des performances et mises à jour de contenu. Nos forfaits incluent une collaboration en temps réel sur Slack, ainsi que la correction de bugs et les évolutions après le lancement.',
-            remote: 'Notre équipe travaille à distance et accompagne des clients dans le monde entier. Tout se passe en ligne : appels vidéo, collaboration sur Slack et suivi de projet en temps réel, ce qui nous permet de rester très réactifs quel que soit votre fuseau horaire.',
-            payment: 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
-            compliance: 'Nous concevons des sites conformes aux bonnes pratiques et réglementations applicables, notamment le RGPD pour les données personnelles : consentement aux cookies, politique de confidentialité et sécurisation des données. Pour des exigences sectorielles ou locales spécifiques, nous adaptons la solution avec vous.',
-            speed: 'La plupart des sites web sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes prennent généralement de 3 à 6 semaines. Nous pouvons aussi lancer une première version rapidement puis itérer par étapes.'
-        };
-
-        function findAnswer(questionText) {
-            var q = normalizeText(questionText);
-            var rules = [
-                { fragments: ['pourquoi choisir'], answer: faqAnswers.whyChoose },
-                { fragments: ['why choose'], answer: faqAnswers.whyChoose },
-                { fragments: ['bureau'], answer: faqAnswers.remote },
-                { fragments: ['a distance'], answer: faqAnswers.remote },
-                { fragments: ['remote'], answer: faqAnswers.remote },
-                { fragments: ['paiement'], answer: faqAnswers.payment },
-                { fragments: ['payment'], answer: faqAnswers.payment },
-                { fragments: ['conformite'], answer: faqAnswers.compliance },
-                { fragments: ['lois'], answer: faqAnswers.compliance },
-                { fragments: ['rgpd'], answer: faqAnswers.compliance },
-                { fragments: ['compliance'], answer: faqAnswers.compliance },
-                { fragments: ['quelle vitesse'], answer: faqAnswers.speed },
-                { fragments: ['rapidement', 'lancer'], answer: faqAnswers.speed },
-                { fragments: ['delai', 'livraison'], answer: faqAnswers.speed },
-                { fragments: ['how fast'], answer: faqAnswers.speed },
-                { fragments: ['startup'], answer: faqAnswers.startups },
-                { fragments: ['early stage'], answer: faqAnswers.startups },
-                { fragments: ['technolog'], answer: faqAnswers.technologies },
-                { fragments: ['integr', 'systemes existants'], answer: faqAnswers.integrate },
-                { fragments: ['integrate'], answer: faqAnswers.integrate },
-                { fragments: ['revisions illimitees'], answer: faqAnswers.revisions },
-                { fragments: ['unlimited revision'], answer: faqAnswers.revisions },
-                { fragments: ['support continu'], answer: faqAnswers.support },
-                { fragments: ['apres le lancement'], answer: faqAnswers.support },
-                { fragments: ['ongoing support'], answer: faqAnswers.support },
-                { fragments: ['after launch'], answer: faqAnswers.support }
-            ];
-            for (var i = 0; i < rules.length; i++) {
-                var matches = rules[i].fragments.every(function (fragment) {
-                    return q.indexOf(fragment) !== -1;
-                });
-                if (matches) return rules[i].answer;
-            }
-            return 'Contactez-nous pour en discuter en détail. Nous serons ravis d\'échanger sur vos besoins spécifiques et sur la façon dont nous pouvons aider votre entreprise à grandir.';
-        }
-
+        // Answers are server-rendered (lang faq_a* keys); JS only drives the accordion.
         var faqContainers = document.querySelectorAll('.max-w-4xl.mx-auto.bg-white.rounded-2xl.border');
         faqContainers.forEach(function (container) {
             var faqItems = container.querySelectorAll('.border-b');
@@ -1437,25 +1386,18 @@
                 btn.dataset.faqBound = 'true';
 
                 var chevron = btn.querySelector('svg');
-                var questionText = questionEl.textContent;
-
-                // Create answer div
-                var answerDiv = document.createElement('div');
-                answerDiv.className = 'faq-answer overflow-hidden';
-                answerDiv.style.maxHeight = '0';
-                answerDiv.style.transition = 'max-height 0.3s ease-out, padding 0.3s ease-out';
-                answerDiv.style.padding = '0 16px';
-                answerDiv.innerHTML = '<p class="text-[#0F0F0F]/70 text-base leading-relaxed pb-6">' + findAnswer(questionText) + '</p>';
-                item.appendChild(answerDiv);
+                var answerDiv = item.querySelector('.faq-answer');
+                if (!answerDiv) return;
+                btn.setAttribute('aria-expanded', 'false');
 
                 var isOpen = false;
 
                 btn.addEventListener('click', function () {
                     isOpen = !isOpen;
+                    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
                     if (isOpen) {
                         answerDiv.style.maxHeight = answerDiv.scrollHeight + 'px';
-                        answerDiv.style.padding = '0 16px';
                         if (chevron) {
                             chevron.style.transition = 'transform 0.3s ease';
                             chevron.style.transform = 'rotate(180deg)';
@@ -1622,311 +1564,7 @@
             });
         }
 
-        function findAnswer(questionText) {
-            var q = normalizeText(questionText);
-            var rules = [
-                {
-                    fragments: ['combien', 'temps', 'migrer'],
-                    answer: "Une migration depuis Teachable, Thinkific ou Kajabi prend en general 7 a 14 jours selon le volume de cours, de videos, d'etudiants et d'automatisations a reprendre. Nous preparons la bascule sur un environnement de test pour eviter les interruptions."
-                },
-                {
-                    fragments: ['combien', 'puis je economiser'],
-                    answer: "Le gain depend de vos frais de plateforme, de vos commissions et de votre volume de ventes. Pour des activites regulieres, une plateforme sur mesure permet souvent de recuperer une part importante de marge des les premiers mois."
-                },
-                {
-                    fragments: ['combien', 'temps', 'plateforme'],
-                    answer: "Une plateforme sur mesure prend souvent entre 3 et 6 semaines selon les modules attendus, les integrations et les regles metier. Nous pouvons aussi lancer une V1 rapide puis ajouter les fonctions avancees par etapes."
-                },
-                {
-                    fragments: ['combien', 'temps', 'site web'],
-                    answer: "La plupart des sites web sectoriels se livrent en 2 a 4 semaines selon le nombre de pages, le contenu disponible et les integrations. Nous validons d'abord le perimetre pour garder un delai realiste."
-                },
-                {
-                    fragments: ['passerelles', 'paiement'],
-                    answer: "Nous integrons les passerelles les plus adaptees a votre marche comme Stripe, PayPal, Checkout.com, CMI ou d'autres solutions locales et internationales. Nous gerons aussi les paiements one-shot, les abonnements, les coupons et les webhooks."
-                },
-                {
-                    fragments: ['stripe'],
-                    answer: "Oui, nous integrons Stripe, Adyen, Checkout.com, PayPal et d'autres PSP selon votre pays, vos volumes et vos exigences de conformite. Nous pouvons aussi prendre en charge la fraude, le 3D Secure et les remboursements."
-                },
-                {
-                    fragments: ['variations', 'produits'],
-                    answer: "Oui. Nous pouvons gerer les tailles, couleurs, bundles, options personnalisees, regles de prix et variantes complexes avec une gestion simple cote administration."
-                },
-                {
-                    fragments: ['stocks'],
-                    answer: "Oui, nous mettons en place le suivi de stock en temps reel, les alertes, la gestion multi-entrepots et le traitement des commandes. Si besoin, nous pouvons aussi connecter votre logistique ou votre ERP."
-                },
-                {
-                    fragments: ['recommandation', 'produits', 'ia'],
-                    answer: "Le moteur IA peut utiliser l'historique d'achat, la navigation, les categories et les comportements de clients similaires pour proposer des produits pertinents et augmenter le panier moyen."
-                },
-                {
-                    fragments: ['panier'],
-                    answer: "Oui, les clients peuvent sauvegarder leur panier et leurs favoris puis reprendre leur parcours plus tard. C'est utile pour les achats compares et les paniers a cycle plus long."
-                },
-                {
-                    fragments: ['achats mobiles'],
-                    answer: "Oui, nous optimisons le parcours mobile, le poids des pages, le checkout et la vitesse de chargement pour garder de bonnes conversions sur smartphone."
-                },
-                {
-                    fragments: ['google shopping'],
-                    answer: "Oui, nous pouvons preparer le flux produit, le balisage schema, la structure SEO e-commerce et les bases de vos campagnes Google Shopping avec un tracking propre."
-                },
-                {
-                    fragments: ['teachable', 'thinkific'],
-                    answer: "Oui, nous pouvons migrer les cours, chapitres, videos, quiz, etudiants et donnees utiles depuis Teachable ou Thinkific. Nous verifions aussi les redirections et les acces avant la mise en ligne."
-                },
-                {
-                    fragments: ['hebergement', 'video'],
-                    answer: "Nous utilisons selon le projet des solutions comme Vimeo, Bunny Stream, Mux, Wistia ou un stockage prive type S3 avec CDN. Le choix depend du volume, du budget et du niveau de controle attendu."
-                },
-                {
-                    fragments: ['marketplace', 'multi instructeurs'],
-                    answer: "Oui, nous pouvons construire une marketplace multi-instructeurs avec espaces formateurs, partage de revenus, approbation de contenus, tableaux de bord et gestion des commissions."
-                },
-                {
-                    fragments: ['gamification'],
-                    answer: "Oui. Nous pouvons ajouter badges, points, certificats, progression, streaks, classements et rappels intelligents pour renforcer l'engagement et la completion."
-                },
-                {
-                    fragments: ['appareils mobiles'],
-                    answer: "Oui, les etudiants peuvent suivre leurs cours sur mobile avec une interface adaptee, progression synchronisee et, selon le besoin, certaines fonctions hors ligne."
-                },
-                {
-                    fragments: ['redaction', 'contenu'],
-                    answer: "Oui, nous pouvons vous aider sur l'arborescence, les messages cles, les pages de conversion et les textes SEO. Nous preferons toutefois travailler avec votre expertise metier pour garder un contenu credible."
-                },
-                {
-                    fragments: ['chatbot', 'plusieurs langues'],
-                    answer: "Oui, nous pouvons configurer un chatbot IA multilingue en francais, anglais, arabe ou d'autres langues selon votre public. Les reponses peuvent etre alimentees par votre contenu et vos procedures internes."
-                },
-                {
-                    fragments: ['crm'],
-                    answer: "Nous integrons regulierement HubSpot, Salesforce, Zoho, Pipedrive et d'autres CRM. Les leads, formulaires, rendez-vous et evenements peuvent etre synchronises automatiquement."
-                },
-                {
-                    fragments: ['portail', 'candidature'],
-                    answer: "Oui, nous pouvons creer un portail de candidature avec formulaires avances, upload de documents, suivi d'etapes, notifications et validation par votre equipe."
-                },
-                {
-                    fragments: ['plusieurs devises'],
-                    answer: "Oui, nous pouvons prendre en charge plusieurs devises, localiser les moyens de paiement et afficher des montants adaptes au pays de l'utilisateur avec les regles de taxe utiles."
-                },
-                {
-                    fragments: ['qu est ce qui vous differencie'],
-                    answer: "Nous combinons execution rapide, design premium et vraie logique produit. Le point cle est que nous adaptons le site ou la plateforme a votre secteur au lieu de livrer un modele generique."
-                },
-                {
-                    fragments: ['google ads'],
-                    answer: "Oui, nous pouvons preparer les landing pages, le tracking GA4 et GTM, les events de conversion et les fondations SEO pour soutenir vos campagnes Google Ads."
-                },
-                {
-                    fragments: ['pci dss'],
-                    answer: "Oui, nous concevons l'architecture avec les bonnes pratiques PCI-DSS et nous evitons que votre application stocke inutilement des donnees sensibles. La certification formelle depend ensuite de votre perimetre."
-                },
-                {
-                    fragments: ['kyc'],
-                    answer: "Nous pouvons integrer des fournisseurs KYC comme Sumsub, Persona, Onfido, Veriff ou d'autres services compatibles avec votre zone geographique et vos contraintes de conformite."
-                },
-                {
-                    fragments: ['trading', 'temps reel'],
-                    answer: "Oui, nous pouvons connecter des flux de marche en temps reel, construire des tableaux de bord, des watchlists et des alertes. Le perimetre exact depend ensuite des licences de donnees et des API disponibles."
-                },
-                {
-                    fragments: ['transfrontaliers'],
-                    answer: "Oui, nous pouvons gerer les paiements multi-devises, les parcours internationaux, les taux de change et les moyens de paiement adaptes a plusieurs regions."
-                },
-                {
-                    fragments: ['conformite reglementaire'],
-                    answer: "Oui, nous pouvons vous accompagner sur les besoins techniques lies a la conformite et travailler avec vos partenaires juridiques ou de licence pour cadrer correctement la solution."
-                },
-                {
-                    fragments: ['donnees', 'temps reel'],
-                    answer: "Oui, nous pouvons connecter des donnees en temps reel via API ou webhooks pour afficher soldes, disponibilites, statuts ou indicateurs metier sans retards inutiles."
-                },
-                {
-                    fragments: ['hipaa'],
-                    answer: "Oui, la plateforme peut etre concue avec des pratiques compatibles HIPAA comme le controle d'acces, la journalisation, le chiffrement et le choix de fournisseurs appropries. Le cadrage final depend toujours de votre organisation."
-                },
-                {
-                    fragments: ['dse existant'],
-                    answer: "Oui, nous pouvons integrer votre DSE via API, middleware ou echanges securises selon ce que permet votre systeme actuel. Nous verifions d'abord les points d'entree, les droits et les limites techniques."
-                },
-                {
-                    fragments: ['dme existant'],
-                    answer: "Oui, nous pouvons relier votre DME existant si une API, un connecteur ou un flux securise est disponible. Une phase de test est prevue pour fiabiliser les synchronisations sensibles."
-                },
-                {
-                    fragments: ['formation', 'personnel'],
-                    answer: "Oui, nous prevoyons une formation equipe, une documentation claire et une passation pour que vos collaborateurs puissent utiliser l'outil sans dependance inutile."
-                },
-                {
-                    fragments: ['rendez vous en ligne'],
-                    answer: "Oui, les patients peuvent reserver 24 h sur 24 avec choix du praticien, disponibilites, confirmations et rappels automatiques pour reduire les oublis."
-                },
-                {
-                    fragments: ['telemedecine'],
-                    answer: "Nous pouvons mettre en place une experience de telemedecine avec video securisee, salle d'attente, gestion de rendez-vous, comptes patients et historique utile au suivi."
-                },
-                {
-                    fragments: ['absenteisme'],
-                    answer: "Oui, avec rappels SMS et email, confirmations, reprogrammation simple et suivi des no-shows, il est possible de reduire nettement le taux d'absenteisme."
-                },
-                {
-                    fragments: ['eligibilite', 'visa'],
-                    answer: "Oui, nous pouvons creer des calculateurs d'eligibilite visa avec questions conditionnelles, scores, orientation par pays et capture de lead en fin de parcours."
-                },
-                {
-                    fragments: ['suivi de dossiers'],
-                    answer: "Oui, nous pouvons mettre en place un espace client avec suivi de dossier, checklist, demandes de documents, statut des etapes et notifications."
-                },
-                {
-                    fragments: ['rgpd'],
-                    answer: "Nous appliquons des mesures comme le chiffrement, les droits d'acces, les journaux, les consentements et une gestion propre des donnees personnelles pour rester alignes avec les bonnes pratiques RGPD."
-                },
-                {
-                    fragments: ['hubspot'],
-                    answer: "Oui, HubSpot, Salesforce, Zoho et d'autres CRM peuvent etre relies pour synchroniser prospects, dossiers, taches et relances commerciales."
-                },
-                {
-                    fragments: ['types de visa'],
-                    answer: "Oui, chaque pays et chaque type de visa peut avoir son propre parcours, ses documents requis, ses regles et ses automations dans le meme systeme."
-                },
-                {
-                    fragments: ['perdre des etudiants'],
-                    answer: "Non, pas si la migration est planifiee proprement. Nous migrons le contenu, conservons les acces, preparons les redirections utiles et validons le tout avant la bascule publique."
-                },
-                {
-                    fragments: ['abonnements', 'plans de paiement'],
-                    answer: "Oui, nous pouvons proposer des abonnements, des plans de paiement fractionnes, des coupons, des essais gratuits et des relances de paiement selon votre modele commercial."
-                },
-                {
-                    fragments: ['contenu progressif'],
-                    answer: "Oui, nous pouvons gerer le drip content, les prerequis, la planification des modules et l'ouverture automatique des lecons selon vos regles pedagogiques."
-                },
-                {
-                    fragments: ['meilleur seo'],
-                    answer: "Oui, une plateforme sur mesure donne un controle SEO beaucoup plus fin que les solutions fermees. Vous maitrisez l'URL, le balisage, la structure des pages et la performance."
-                },
-                {
-                    fragments: ['teachable n offre pas'],
-                    answer: "C'est justement l'avantage du sur-mesure. Si une fonctionnalite utile n'existe pas dans Teachable ou Kajabi, nous pouvons la concevoir autour de votre logique produit."
-                },
-                {
-                    fragments: ['mls'],
-                    answer: "Oui, nous pouvons integrer MLS, IDX ou vos flux immobiliers locaux selon les connecteurs et les droits disponibles, puis adapter la recherche a votre marche."
-                },
-                {
-                    fragments: ['visites virtuelles'],
-                    answer: "Oui, nous supportons les visites 360, les galeries interactives, les videos et des integrations comme Matterport pour mieux valoriser les biens."
-                },
-                {
-                    fragments: ['agents', 'propres annonces'],
-                    answer: "Oui, chaque agent peut disposer de son espace pour publier, modifier et suivre ses annonces, ses leads et ses performances sans exposer les donnees des autres."
-                },
-                {
-                    fragments: ['prospects'],
-                    answer: "Nous pouvons integrer un CRM immobilier pour capter, qualifier, distribuer et suivre les prospects avec historique, relances et attribution aux agents."
-                },
-                {
-                    fragments: ['filtres', 'carte'],
-                    answer: "Oui, nous pouvons ajouter des filtres avances par prix, surface, quartier, type de bien et disponibilite, ainsi qu'une carte interactive pour la recherche geolocalisee."
-                },
-                {
-                    fragments: ['biens favoris'],
-                    answer: "Oui, les acheteurs peuvent creer un compte, enregistrer leurs biens favoris, comparer des annonces et recevoir des alertes sur les nouvelles opportunites."
-                },
-                {
-                    fragments: ['seo immobilier'],
-                    answer: "Oui, nous optimisons les pages de ville, les fiches biens, le schema markup et les parcours de conversion, puis nous preparons le terrain pour vos campagnes Google Ads."
-                },
-                {
-                    fragments: ['10 000 utilisateurs'],
-                    answer: "Oui, nous pouvons concevoir une architecture evolutive avec separation claire du front, du back, du cache, des files de taches et de la base de donnees pour absorber la croissance."
-                },
-                {
-                    fragments: ['facturation'],
-                    answer: "Nous integrons selon le modele Stripe Billing, Paddle, Lemon Squeezy ou une logique de facturation plus personnalisee avec essais, plans, prorata et webhooks."
-                },
-                {
-                    fragments: ['marque blanche'],
-                    answer: "Oui, nous pouvons livrer une plateforme SaaS en marque blanche avec theming, domaines personnalises, parametrage client et une base produit reutilisable."
-                },
-                {
-                    fragments: ['api'],
-                    answer: "Oui, nous pouvons developper vos API REST ou GraphQL, gerer l'authentification, les permissions et la documentation pour vos partenaires ou clients."
-                },
-                {
-                    fragments: ['publicite payante'],
-                    answer: "Oui, nous pouvons preparer les pages de conversion, le tracking et les fondations SEO et SEA pour soutenir la croissance d'une plateforme SaaS apres le lancement."
-                },
-                {
-                    fragments: ['documents de visa'],
-                    answer: "Oui, nous pouvons suivre chaque document requis, son statut, ses dates limites, les validations internes et les relances automatiques vers l'etudiant."
-                },
-                {
-                    fragments: ['mots cles', 'etudes a l etranger'],
-                    answer: "Oui, nous pouvons structurer le site autour des mots-cles etudes a l'etranger, visas, destinations et programmes puis relier le tout a des landing pages performantes."
-                },
-                {
-                    fragments: ['symptomes', 'ia'],
-                    answer: "Oui, l'IA peut aider au pre-triage avec des questionnaires guides et des regles de securite. Elle ne remplace pas le jugement medical, mais elle peut accelerer l'orientation des patients."
-                },
-                {
-                    fragments: ['plateforme video'],
-                    answer: "Nous utilisons selon le besoin des solutions comme Twilio Video, Daily, Zoom SDK ou d'autres briques video securisees selon la qualite, le budget et la conformite attendus."
-                },
-                {
-                    fragments: ['internationaux'],
-                    answer: "Oui, nous pouvons gerer plusieurs fuseaux horaires, devises, langues et parcours patient pour des services de telemedecine a portee internationale, dans la limite des regles applicables."
-                },
-                {
-                    fragments: ['prescriptions'],
-                    answer: "Nous pouvons integrer des workflows de prescription securises, des validations internes et, si necessaire, des connexions a des services tiers ou logiciels metier."
-                },
-                {
-                    fragments: ['commercialiser'],
-                    answer: "Oui, nous pouvons vous aider sur la structure d'acquisition, les landing pages, le tracking, le SEO et les parcours de conversion pour soutenir le lancement commercial."
-                },
-                {
-                    fragments: ['lms existant'],
-                    answer: "Oui, nous pouvons nous integrer a Moodle, Canvas, Blackboard et d'autres LMS si des API ou connecteurs sont disponibles. Nous cadrons ensuite les flux de comptes, notes et contenus."
-                },
-                {
-                    fragments: ['ferpa'],
-                    answer: "Oui, nous pouvons structurer la plateforme avec de bonnes pratiques FERPA sur les acces, la confidentialite, les journaux et la separation des roles."
-                },
-                {
-                    fragments: ['devise locale'],
-                    answer: "Oui, les etudiants internationaux peuvent postuler et payer dans leur devise locale si le prestataire de paiement et votre modele de facturation le permettent."
-                },
-                {
-                    fragments: ['verification', 'documents', 'admissions'],
-                    answer: "Nous mettons en place un upload securise, des checklists, une validation interne, des statuts clairs et des notifications pour fluidifier la verification des dossiers d'admission."
-                },
-                {
-                    fragments: ['statut', 'candidature'],
-                    answer: "Oui, un portail peut permettre aux etudiants de suivre en temps reel le statut de leur candidature, les documents manquants et les prochaines actions attendues."
-                },
-                {
-                    fragments: ['admission', 'enseignants'],
-                    answer: "Oui, nous prevoyons onboarding, documentation et sessions de formation pour les equipes d'admission, les enseignants et les administrateurs."
-                },
-                {
-                    fragments: ['plusieurs campus'],
-                    answer: "Oui, un seul back-office peut gerer plusieurs campus, programmes, equipes et flux d'admission avec des permissions et des rapports distincts."
-                }
-            ];
-
-            for (var i = 0; i < rules.length; i += 1) {
-                if (matchesQuestion(q, rules[i].fragments)) {
-                    return rules[i].answer;
-                }
-            }
-
-            return "Oui, nous pouvons adapter cette partie a votre besoin metier et vous proposer une reponse precise apres avoir valide vos contraintes techniques, contenu et integrations.";
-        }
+        // Answers are server-rendered (lang faq_a* keys); JS only drives the accordion.
 
         function closeItem(item, button, chevron, answerDiv) {
             item.dataset.open = 'false';
@@ -1936,10 +1574,12 @@
                 chevron.style.transform = 'rotate(0deg)';
             }
             button.style.backgroundColor = '';
+            button.setAttribute('aria-expanded', 'false');
         }
 
         function openItem(item, button, chevron, answerDiv) {
             item.dataset.open = 'true';
+            button.setAttribute('aria-expanded', 'true');
             answerDiv.style.maxHeight = answerDiv.scrollHeight + 'px';
             if (chevron) {
                 chevron.style.transition = 'transform 0.3s ease';
@@ -1962,15 +1602,8 @@
                 var chevron = btn.querySelector('svg');
                 var answerDiv = item.querySelector('.faq-answer');
 
-                if (!answerDiv) {
-                    answerDiv = document.createElement('div');
-                    answerDiv.className = 'faq-answer overflow-hidden';
-                    answerDiv.style.maxHeight = '0';
-                    answerDiv.style.transition = 'max-height 0.3s ease';
-                    item.appendChild(answerDiv);
-                }
+                if (!answerDiv) return;
 
-                answerDiv.innerHTML = '<div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">' + findAnswer(questionEl.textContent) + '</p></div>';
                 closeItem(item, btn, chevron, answerDiv);
                 btn.dataset.faqBound = 'true';
 

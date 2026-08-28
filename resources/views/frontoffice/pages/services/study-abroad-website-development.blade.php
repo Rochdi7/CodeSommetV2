@@ -324,11 +324,8 @@
                                             </div>
                                             <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
                                                 {{ __('services/study-abroad-website-development-agency.ml_1138') }}</h3>
-                                            <p class="text-gray-600 text-sm leading-relaxed flex-grow">Launch in 7-10 jours
-                                                to
-                                                catch peak admission cycles. Quick turnaround pour urgent intakes (Fall,
-                                                Spring,
-                                                Winter).</p>
+                                            <p class="text-gray-600 text-sm leading-relaxed flex-grow">Lancement en 2-5 jours
+                                                pour capter les pics d&#x27;admission. Délai court pour les rentrées urgentes (automne, printemps, hiver).</p>
                                             <div class="mt-6 pt-6 border-t border-gray-50 flex-shrink-0"></div>
                                         </div>
                                     </div>
@@ -349,21 +346,17 @@
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_9') }}
-                                <span class="count-up" data-target="50">0</span>
-                                {{ __('services/study-abroad-website-development-agency.text_10') }}</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Projets livrés sur mesure</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_11') }}
-                                <span class="count-up" data-target="100">0</span> Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Prospects générés pour nos clients</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/study-abroad-website-development-agency.text_12') }}
-                                <span class="count-up" data-target="35">0</span> Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">
@@ -457,11 +450,7 @@
                             style="font-family:var(--font-heading)">
                             {{ __('services/study-abroad-website-development-agency.ml_1143') }}</h3>
                         <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                            style="font-family:var(--font-body)">Counselors spend 20+ hours per week answering basic
-                            questions from students who don&#x27;t meet eligibility criteria or can&#x27;t afford
-                            programs. AI-powered eligibility checker, automated financial aid calculator, program
-                            recommendation engine, and lead scoring system that prioritizes high-intent, qualified
-                            students.</p>
+                            style="font-family:var(--font-body)">Les conseillers passent de nombreuses heures chaque semaine à répondre aux questions de base d&#x27;étudiants qui ne remplissent pas les critères d&#x27;éligibilité ou ne peuvent pas financer leur programme. Vérificateur d&#x27;éligibilité IA, calculateur d&#x27;aide financière, moteur de recommandation de programmes et scoring des prospects pour prioriser les étudiants qualifiés et motivés.</p>
                     </div>
                 </div>
                 <div>
@@ -536,7 +525,7 @@
             <div class="text-center mt-10 md:mt-12">
                 <p class="text-base md:text-lg font-semibold text-[#0F0F0F] mb-5 md:mb-6 max-w-2xl mx-auto px-4"
                     style="font-family:var(--font-heading)">Cela vous semble familier ? Nous avons résolu ces problèmes
-                    exacts pour plus de 40
+                    exacts pour de nombreuses
                     <!-- -->{{ __('services/study-abroad-website-development-agency.text_19') }}<!-- --> entreprises.
                 </p><a
                     class="h-10 px-6 text-base rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)] hover:shadow-[0_6px_24px_rgba(0,174,239,0.35)] hover:-translate-y-0.5 [&amp;&gt;*]:text-white [&amp;&gt;*]:hover:text-white h-11 md:h-12 px-6 md:px-8 text-sm md:text-base"
@@ -669,7 +658,7 @@
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
                                             </svg><span class="text-sm md:text-base text-[#0F0F0F]/80 leading-relaxed"
-                                                style="font-family:var(--font-body)">Plus de 50 langues (hindi, arabe,
+                                                style="font-family:var(--font-body)">Nombreuses langues (hindi, arabe,
                                                 ourdou, chinois)</span></li>
                                         <li class="flex items-start gap-2 md:gap-3"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1879,7 +1868,7 @@
                                 <div class="p-3 md:p-4 font-medium text-xs md:text-sm text-[#0F0F0F]">
                                     {{ __('services/study-abroad-website-development-agency.ml_1208') }}</div>
                                 <div class="p-3 md:p-4 text-center bg-[#00AEEF]/5"><span
-                                        class="text-sm font-bold text-[#0F0F0F]">7-10 jours</span></div>
+                                        class="text-sm font-bold text-[#0F0F0F]">2-5 jours</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">4-6
                                         semaines</span></div>
                                 <div class="p-3 md:p-4 text-center"><span class="text-sm text-[#0F0F0F]/60">8-12
@@ -1900,8 +1889,7 @@
                         </div>
                     </div>
                     <div class="mt-8 text-center">
-                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison basée sur les prix moyens et les offres de
-                            services des 10 meilleures agences en
+                        <p class="text-sm text-[#0F0F0F]/60 mb-4">* Comparaison indicative avec les offres généralement constatées en
                             <!-- -->{{ __('services/study-abroad-website-development-agency.text_66') }}
                         </p>
                         <div
@@ -2358,7 +2346,7 @@
                     {{ __('services/study-abroad-website-development-agency.sw_3147') }}</p>
             </div>
             <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">1</span>
@@ -2373,8 +2361,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-1" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a1') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-2"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">2</span>
@@ -2389,8 +2378,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-2" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a2') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-3"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">3</span>
@@ -2405,8 +2395,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-3" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a3') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-4"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">4</span>
@@ -2421,8 +2412,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-4" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a4') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-5"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">5</span>
@@ -2437,8 +2429,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-5" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a5') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-6"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">6</span>
@@ -2453,8 +2446,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a6') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">7</span>
@@ -2469,8 +2463,9 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
-                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a7') }}</p></div></div></div>
+                <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-8"
                         class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                         <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
                             <span class="text-sm font-bold text-[#00AEEF]">8</span>
@@ -2485,7 +2480,8 @@
                                 class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                             </svg></div>
-                    </button></div>
+                    </button>
+                        <div id="faq-answer-8" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/study-abroad-website-development-agency.faq_a8') }}</p></div></div></div>
             </div>
             <div class="mt-10 text-center">
                 <p class="text-sm text-[#0F0F0F]/60 mb-2">
@@ -3300,7 +3296,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
+                    <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                         visionnaires qui ont choisi l'excellence</p>
                     <p class="text-sm md:text-base text-white/50">
                         {{ __('services/study-abroad-website-development-agency.ml_1244') }}</p>

@@ -138,7 +138,7 @@
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">50+ <!-- -->E-commerce<!-- --> Clients</span>
+                                    class="font-semibold text-[#0F0F0F]">Boutiques <!-- -->E-commerce<!-- --> sur Mesure</span>
                             </div>
                         </div>
                     </div>
@@ -363,21 +363,17 @@
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_4') }}
-                                <span class="count-up" data-target="50">0</span>
-                                {{ __('services/ecommerce-website-development-agency.text_5') }}</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Projets livrés sur mesure</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_6') }}
-                                <span class="count-up" data-target="100">0</span> Prospects</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Prospects générés pour nos clients</span>
                         </div>
                         <div class="hidden sm:block w-px h-4 bg-[#0F0F0F]/20"></div>
                         <div class="flex items-center gap-2">
                             <div class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#00AEEF] flex-shrink-0"></div><span
-                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">{{ __('services/ecommerce-website-development-agency.text_7') }}
-                                <span class="count-up" data-target="35">0</span> Clients</span>
+                                class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
@@ -915,7 +911,7 @@
                             <path d="M16 2v4"></path>
                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                             <path d="M3 10h18"></path>
-                        </svg>Calendrier de Lancement en 7-10 Jours
+                        </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
@@ -955,7 +951,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 1
+                                            </svg>Étape 1
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1058,7 +1054,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 2
+                                            </svg>Étape 2
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1157,7 +1153,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 3
+                                            </svg>Étape 3
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -1257,7 +1253,7 @@
                                                 <path d="M16 2v4"></path>
                                                 <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                                 <path d="M3 10h18"></path>
-                                            </svg>Semaine 4
+                                            </svg>Étape 4
                                         </div>
                                         <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-[#0F0F0F] mb-3 md:mb-4"
                                             style="font-family:var(--font-heading)">
@@ -2319,7 +2315,7 @@
                         {{ __('services/ecommerce-website-development-agency.sw_2917') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2335,8 +2331,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a1') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-2"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2352,8 +2349,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a2') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-3"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2369,8 +2367,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a3') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-4"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2386,8 +2385,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a4') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-5"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2403,8 +2403,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-5" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a5') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-6"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2420,8 +2421,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a6') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2437,8 +2439,9 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
-                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a7') }}</p></div></div></div>
+                    <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-8"
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
                                 class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -2454,7 +2457,8 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div id="faq-answer-8" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/ecommerce-website-development-agency.faq_a8') }}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">
@@ -3287,7 +3291,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez plus de 95 entreprises
+                        <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les entreprises
                             visionnaires qui ont choisi l'excellence</p>
                         <p class="text-sm md:text-base text-white/50">
                             {{ __('services/ecommerce-website-development-agency.ml_1010') }}</p>

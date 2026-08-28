@@ -226,23 +226,15 @@
         ],
         [
             3,
-            "Abu Dhabi"
+            "Rabat"
         ],
         [
             3,
-            "Riyad"
+            "Marrakech"
         ],
         [
             3,
-            "Doha"
-        ],
-        [
-            3,
-            "Kuwait City"
-        ],
-        [
-            3,
-            "Riyad"
+            "CodeSommet à Casablanca"
         ],
         [
             2,
@@ -274,7 +266,7 @@
         ]
     ],
     "links": {
-        "internal": 70,
+        "internal": 69,
         "external": 7,
         "fragment": 3,
         "other": 0

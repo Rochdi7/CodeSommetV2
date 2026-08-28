@@ -81,22 +81,22 @@
                     {{-- Stats --}}
                     <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 pt-4 text-center">
                         <div>
-                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] count-up" data-target="50" style="font-family:var(--font-heading)">0+</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] " style="font-family:var(--font-heading)">Sur mesure</div>
                             <div class="text-xs sm:text-sm text-[#0F0F0F]/50 mt-1">{{ __('locations/web-development-company-worldwide.text_2') }}</div>
                         </div>
                         <div class="w-px h-10 bg-[#E0E0E0]"></div>
                         <div>
-                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] count-up" data-target="15" style="font-family:var(--font-heading)">0+</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] " style="font-family:var(--font-heading)">International</div>
                             <div class="text-xs sm:text-sm text-[#0F0F0F]/50 mt-1">Pays Desservis</div>
                         </div>
                         <div class="w-px h-10 bg-[#E0E0E0]"></div>
                         <div>
-                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] count-up" data-target="7" data-suffix=" Jours" style="font-family:var(--font-heading)">0 Jours</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] " style="font-family:var(--font-heading)">Rapide</div>
                             <div class="text-xs sm:text-sm text-[#0F0F0F]/50 mt-1">{{ __('locations/web-development-company-worldwide.text_448') }}</div>
                         </div>
                         <div class="w-px h-10 bg-[#E0E0E0]"></div>
                         <div>
-                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] count-up" data-target="100" data-suffix="%" style="font-family:var(--font-heading)">0%</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-[#0F0F0F] " style="font-family:var(--font-heading)">À distance</div>
                             <div class="text-xs sm:text-sm text-[#0F0F0F]/50 mt-1">{{ __('locations/web-development-company-worldwide.text_3') }}</div>
                         </div>
                     </div>
