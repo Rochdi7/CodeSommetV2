@@ -17,6 +17,12 @@ return [
     |     https://cal.com / https://app.cal.com fallbacks
     |   - Google Analytics/GTM:  https://www.googletagmanager.com
     |                            https://www.google-analytics.com
+    |   - reCAPTCHA v3:          https://www.google.com (api.js + siteverify
+    |                            frame) and https://www.gstatic.com (the
+    |                            recaptcha__*.js payload api.js pulls in).
+    |     Both script-src AND frame-src are required: v3 is "invisible" but
+    |     still mounts a hidden iframe, and without frame-src the token is
+    |     never issued, so every submission would fail validation.
     | jQuery 3.7.1 and Toastr 2.1.4 are self-hosted under public/vendor/ (see
     | frontoffice/layouts/app.blade.php and frontoffice/pages/get-quote.blade.php)
     | so cdnjs.cloudflare.com / code.jquery.com are intentionally NOT in this
@@ -31,12 +37,12 @@ return [
     */
     'csp' => env('CSP', implode('; ', [
         "default-src 'self'",
-        "script-src 'self' 'unsafe-inline' https://app.cal.com https://app.cal.eu https://cal.com https://www.googletagmanager.com https://www.google-analytics.com",
+        "script-src 'self' 'unsafe-inline' https://app.cal.com https://app.cal.eu https://cal.com https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com",
         "style-src 'self' 'unsafe-inline'",
         "img-src 'self' data: https:",
         "font-src 'self' data:",
         "connect-src 'self' https://app.cal.com https://app.cal.eu https://www.google-analytics.com https://www.googletagmanager.com",
-        "frame-src https://app.cal.com https://app.cal.eu https://cal.com",
+        "frame-src https://app.cal.com https://app.cal.eu https://cal.com https://www.google.com https://recaptcha.google.com",
         "object-src 'none'",
         "base-uri 'self'",
         "form-action 'self'",

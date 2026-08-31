@@ -2,7 +2,13 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\BusinessEmail;
+use App\Rules\Recaptcha;
+use App\Support\SpamDetector;
+use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\Validator;
 
 class StoreQuoteRequest extends FormRequest
 {
@@ -15,7 +21,7 @@ class StoreQuoteRequest extends FormRequest
     {
         return [
             'fullName' => ['required', 'string', 'max:150'],
-            'email' => ['required', 'email:rfc', 'max:255'],
+            'email' => ['required', 'email:rfc', 'max:255', new BusinessEmail(allowNonRoutable: ! app()->isProduction())],
             'phone' => ['nullable', 'string', 'max:50'],
             'companyName' => ['nullable', 'string', 'max:150'],
             'referenceWebsite1' => ['nullable', 'string', 'max:255'],
@@ -32,7 +38,32 @@ class StoreQuoteRequest extends FormRequest
             'howFoundUs' => ['nullable', 'string', 'max:100'],
             // Honeypot.
             'website' => ['nullable', 'size:0'],
+            'g-recaptcha-response' => [new Recaptcha('quote')],
         ];
+    }
+
+    /**
+     * Heuristic spam rejection, applied after the field rules pass. Bots that
+     * defeat the honeypot and reCAPTCHA still get stopped here.
+     */
+    public function withValidator(ValidatorContract $validator): void
+    {
+        $validator->after(function (Validator $validator) {
+            if ($validator->errors()->isNotEmpty()) {
+                return;
+            }
+
+            $reason = SpamDetector::check($validator->getData());
+
+            if ($reason !== null) {
+                Log::info('Quote form submission blocked as spam', [
+                    'reason' => $reason,
+                    'ip' => $this->ip(),
+                ]);
+
+                $validator->errors()->add('description', 'Votre demande a été refusée. Merci de la reformuler sans lien ni code.');
+            }
+        });
     }
 
     public function messages(): array
