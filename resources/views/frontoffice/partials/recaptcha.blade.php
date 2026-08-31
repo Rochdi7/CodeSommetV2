@@ -38,39 +38,40 @@
         @once
             @push('head')
                 <style>
-                    /* Container matched to the site's form fields: same radius,
-                       border and brand focus ring as the inputs above it. */
+                    /* Google's widget already draws its own bordered card, so
+                       the wrapper adds NO border or background of its own —
+                       a second frame around it reads as a heavy double box.
+                       We only shrink Google's default border-radius/shadow to
+                       match the site's inputs and own the interaction states. */
                     .cs-recaptcha {
                         margin-top: 0.25rem;
                     }
 
                     .cs-recaptcha__box {
                         display: inline-block;
-                        padding: 0.875rem;
-                        background: var(--bg-secondary, #F7F9FC);
-                        border: 1px solid var(--border-default, rgba(15, 15, 15, 0.12));
                         border-radius: 10px;
-                        transition: border-color .2s ease, box-shadow .2s ease;
+                        transition: box-shadow .2s ease;
+                    }
+
+                    /* The widget itself is a cross-origin iframe, so its
+                       internals cannot be styled from here — clipping it to
+                       our radius is the only visual control we have over it. */
+                    .cs-recaptcha__widget {
+                        border-radius: 10px;
+                        overflow: hidden;
+                        line-height: 0;
                     }
 
                     .cs-recaptcha__box:hover {
-                        border-color: rgba(0, 174, 239, 0.45);
-                    }
-
-                    /* Mirrors the focus ring on the text inputs. */
-                    .cs-recaptcha--focus .cs-recaptcha__box {
-                        border-color: #00AEEF;
-                        box-shadow: 0 0 0 3px var(--focus-ring, rgba(0, 174, 239, 0.4));
+                        box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.10);
                     }
 
                     .cs-recaptcha--error .cs-recaptcha__box {
-                        border-color: var(--color-error, #EF4444);
                         box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.18);
                     }
 
                     .cs-recaptcha--done .cs-recaptcha__box {
-                        border-color: var(--color-success, #22C55E);
-                        background: rgba(34, 197, 94, 0.05);
+                        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
                     }
 
                     .cs-recaptcha__error {
@@ -79,20 +80,33 @@
                         color: var(--color-error, #EF4444);
                     }
 
-                    /* The widget is a fixed 304px iframe. On narrow phones it
-                       would overflow the card, so scale it down from its own
-                       top-left corner and reclaim the leftover height. */
-                    @media (max-width: 400px) {
+                    /* Google ships the widget as a fixed 304x78 iframe that
+                       cannot be resized, only transformed. Scale it to fit
+                       narrow screens and reclaim the height the scale frees,
+                       otherwise the untransformed box keeps its full footprint
+                       and leaves dead space under the checkbox. */
+                    @media (max-width: 480px) {
                         .cs-recaptcha__widget {
-                            transform: scale(0.87);
+                            transform: scale(0.85);
                             transform-origin: 0 0;
-                            height: 65px;
+                            /* A transform does not change layout size, so the
+                               box still reserves the full 304x78 and would push
+                               past the card edge. Clamp both axes to the scaled
+                               dimensions to reclaim that space. */
+                            width: 259px;
+                            height: 66px;
                         }
 
                         .cs-recaptcha__box {
-                            padding: 0.75rem;
-                            width: 100%;
-                            overflow: hidden;
+                            max-width: 100%;
+                        }
+                    }
+
+                    @media (max-width: 360px) {
+                        .cs-recaptcha__widget {
+                            transform: scale(0.77);
+                            width: 234px;
+                            height: 60px;
                         }
                     }
                 </style>
