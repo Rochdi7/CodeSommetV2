@@ -370,6 +370,7 @@
                             <div style="position:absolute;left:-9999px" aria-hidden="true">
                                 <label>Ne pas remplir<input type="text" name="website" tabindex="-1" autocomplete="off" value="" /></label>
                             </div>
+                            @include('frontoffice.partials.recaptcha', ['action' => 'contact'])
                             <div><label for="name"
                                     class="block text-sm font-medium text-[var(--text-primary)] mb-2">{{ __('contact.label_162') }}
                                     <span class="text-[#00AEEF]">*</span></label><input type="text" id="name"
@@ -1308,6 +1309,8 @@
             </div>
         </div>
     @endsection
+
+    @include('frontoffice.partials.email-validation', ['field' => 'email'])
 
     @push('scripts')
         @if (session('contact_success'))

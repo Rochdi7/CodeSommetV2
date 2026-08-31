@@ -148,6 +148,12 @@
                     </div>
 
                     <form id="quoteForm" onsubmit="return false;">
+                        {{-- Honeypot: hidden from users, bots fill it. --}}
+                        <div style="position:absolute;left:-9999px" aria-hidden="true">
+                            <label>Ne pas remplir<input type="text" id="website" name="website" tabindex="-1"
+                                    autocomplete="off" value="" /></label>
+                        </div>
+                        @include('frontoffice.partials.recaptcha', ['action' => 'quote'])
                         <div class="overflow-hidden min-h-[280px]" id="stepsContainer">
 
                             {{-- STEP 1: About You --}}
@@ -539,6 +545,36 @@
             });
         }
 
+        /**
+         * Mirrors App\Rules\BusinessEmail. Returns an error message, or null
+         * when the address is acceptable. The server re-validates regardless —
+         * this only spares the visitor a round-trip.
+         */
+        var DISPOSABLE_DOMAINS = [
+            'mailinator.com', 'guerrillamail.com', 'guerrillamail.info', 'sharklasers.com',
+            '10minutemail.com', '10minutemail.net', 'tempmail.com', 'temp-mail.org',
+            'throwawaymail.com', 'yopmail.com', 'yopmail.fr', 'trashmail.com',
+            'getnada.com', 'dispostable.com', 'maildrop.cc', 'fakeinbox.com',
+            'mailnesia.com', 'mytemp.email', 'spamgourmet.com', 'mohmal.com',
+            'emailondeck.com', 'tempinbox.com', 'discard.email', 'mailcatch.com',
+            'inboxbear.com', 'moakt.com', 'tempmailo.com', 'burnermail.io',
+            'grr.la', 'spam4.me', 'byom.de', 'einrot.com', 'harakirimail.com'
+        ];
+
+        function checkEmail(email) {
+            if (!/^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/.test(email)) {
+                return 'Veuillez entrer une adresse e-mail valide (ex. nom@domaine.com)';
+            }
+
+            var domain = email.split('@').pop().toLowerCase();
+
+            if (DISPOSABLE_DOMAINS.indexOf(domain) !== -1) {
+                return 'Les adresses e-mail jetables ne sont pas acceptées. Merci d’utiliser une adresse permanente.';
+            }
+
+            return null;
+        }
+
         function validateStep(step) {
             clearErrors();
             var valid = true;
@@ -560,9 +596,12 @@
                 if (!email) {
                     showError('email', 'L\u2019adresse e-mail est requise');
                     valid = false;
-                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                    showError('email', 'Veuillez entrer une adresse e-mail valide');
-                    valid = false;
+                } else {
+                    var emailProblem = checkEmail(email);
+                    if (emailProblem) {
+                        showError('email', emailProblem);
+                        valid = false;
+                    }
                 }
 
                 if (!phone) {
@@ -758,7 +797,11 @@
                 description: document.getElementById('description').value || undefined,
                 budgetRange: document.getElementById('budgetRange').value || undefined,
                 startTimeline: document.getElementById('startTimeline').value || undefined,
-                howFoundUs: document.getElementById('howFoundUs').value || undefined
+                howFoundUs: document.getElementById('howFoundUs').value || undefined,
+                // Anti-spam: honeypot (must stay empty) + reCAPTCHA v3 token.
+                website: (document.getElementById('website') || {}).value || undefined,
+                'g-recaptcha-response': (document.getElementById('recaptchaToken-quote') || {}).value ||
+                    undefined
             };
 
             fetch('/api/get-quote', {
@@ -873,6 +916,10 @@
 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/custom-select.js') }}" defer></script>
+
+    {{-- This page is standalone (no layout), so it must render the stack
+         itself — the reCAPTCHA partial pushes its loader here. --}}
+    @stack('scripts')
 </body>
 
 </html>

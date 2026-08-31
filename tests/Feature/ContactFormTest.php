@@ -31,7 +31,7 @@ class ContactFormTest extends TestCase
             'company' => 'ACME',
             'budget' => 'medium',
             'inquiryType' => 'new-project',
-            'message' => 'Bonjour, je souhaite un devis.',
+            'message' => 'Bonjour, je souhaite un devis pour un site vitrine.',
             'website' => '', // honeypot empty
         ]);
 
@@ -80,14 +80,86 @@ class ContactFormTest extends TestCase
 
     public function test_rate_limit_applies(): void
     {
-        for ($i = 0; $i < 5; $i++) {
-            $this->post('/contact', [
-                'name' => 'Jean', 'email' => 'jean@example.com', 'message' => 'hello',
-            ]);
+        $payload = [
+            'name' => 'Jean',
+            'email' => 'jean@example.com',
+            'message' => 'Bonjour, je souhaite discuter d\'un projet web.',
+        ];
+
+        // The contact limiter allows 2/minute; the third call must be blocked.
+        for ($i = 0; $i < 2; $i++) {
+            $this->post('/contact', $payload);
         }
 
+        $this->post('/contact', $payload)->assertStatus(429);
+    }
+
+    /**
+     * Regression guard for the August 2026 crypto-scam flood: ~700 messages
+     * whose "name" carried a graph.org bait link and whose body was random
+     * alphanumeric filler.
+     *
+     * @dataProvider spamPayloads
+     */
+    public function test_spam_submissions_are_rejected(array $overrides): void
+    {
+        $response = $this->post('/contact', array_merge([
+            'name' => 'Jean Dupont',
+            'email' => 'jean@example.com',
+            'message' => 'Bonjour, je souhaite un devis pour un site vitrine.',
+        ], $overrides));
+
+        $response->assertSessionHasErrors();
+        $this->assertDatabaseCount('contact_messages', 0);
+    }
+
+    public static function spamPayloads(): array
+    {
+        return [
+            'bait url in name' => [[
+                'name' => '+2.84567197 BTC. NEXT ->>> graph.org/h3Pp4Yvgnt-08-31?Mr5ACw6Z',
+            ]],
+            'coinbase transfer in name' => [[
+                'name' => 'Transfer № L7104 from Coinbase. GET -> graph.org/9FgrfTrW5Y',
+            ]],
+            'bare domain in name' => [[
+                'name' => 'John telegra.ph/some-bait-page',
+            ]],
+            'cyrillic name' => [[
+                'name' => 'Иван Петров',
+            ]],
+            'url in company' => [[
+                'company' => 'visit https://spam.example/win',
+            ]],
+            'gibberish message' => [[
+                'message' => '4rUkv1W Wndi 5yv1AGc IbJsAA7 vkHt NfkW1va gT9xQ2z',
+            ]],
+        ];
+    }
+
+    public function test_legitimate_submission_with_url_in_message_is_accepted(): void
+    {
+        // A URL in the *message* is normal — a prospect linking their current
+        // site. Only identity fields (name/company/phone) reject links.
+        $response = $this->post('/contact', [
+            'name' => 'Marie Leroy',
+            'email' => 'marie@example.com',
+            'company' => 'Studio Leroy',
+            'message' => 'Bonjour, notre site actuel est https://studio-leroy.fr et nous souhaitons le refondre.',
+        ]);
+
+        $response->assertSessionHas('contact_success');
+        $this->assertDatabaseCount('contact_messages', 1);
+    }
+
+    public function test_short_message_is_rejected(): void
+    {
         $this->post('/contact', [
-            'name' => 'Jean', 'email' => 'jean@example.com', 'message' => 'hello',
-        ])->assertStatus(429);
+            'name' => 'Jean Dupont',
+            'email' => 'jean@example.com',
+            'message' => 'hi',
+        ])->assertSessionHasErrors('message');
+
+        $this->assertDatabaseCount('contact_messages', 0);
     }
 }

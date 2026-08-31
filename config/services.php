@@ -37,6 +37,31 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Google reCAPTCHA v3 (public forms)
+    |--------------------------------------------------------------------------
+    |
+    | Invisible bot scoring for the contact and quote forms. Get a v3 key pair
+    | at https://www.google.com/recaptcha/admin/create and set:
+    |
+    |   RECAPTCHA_SITE_KEY=...
+    |   RECAPTCHA_SECRET_KEY=...
+    |
+    | When the keys are absent, reCAPTCHA is skipped entirely — the honeypot
+    | and SpamDetector layers keep working, so local dev needs no keys.
+    |
+    | threshold: 0.0 (certainly a bot) to 1.0 (certainly human). 0.5 is
+    | Google's recommended starting point; raise it if spam persists.
+    |
+    */
+
+    'recaptcha' => [
+        'site_key' => env('RECAPTCHA_SITE_KEY'),
+        'secret_key' => env('RECAPTCHA_SECRET_KEY'),
+        'threshold' => env('RECAPTCHA_THRESHOLD', 0.5),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | SEO Data Providers (public /tools API)
     |--------------------------------------------------------------------------
     |

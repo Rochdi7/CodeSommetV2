@@ -95,8 +95,27 @@ class AppServiceProvider extends ServiceProvider
             ->by(($request->session()?->getId() ?? 'no-session') . '|' . $request->ip()));
 
         // Public form submissions.
-        RateLimiter::for('newsletter', fn (Request $request) => Limit::perMinute(3)->by($request->ip()));
-        RateLimiter::for('contact', fn (Request $request) => Limit::perMinute(5)->by($request->ip()));
-        RateLimiter::for('quote', fn (Request $request) => Limit::perMinute(5)->by($request->ip()));
+        //
+        // Two stacked limits per form: a burst cap (a human never submits the
+        // contact form more than twice a minute) *and* an hourly cap. The
+        // hourly one is what actually stops a spam run — an August 2026 bot
+        // flood sent ~700 messages at 3-4/min, comfortably under a
+        // minute-only limit of 5.
+        RateLimiter::for('newsletter', fn (Request $request) => [
+            Limit::perMinute(3)->by($request->ip()),
+            Limit::perHour(10)->by($request->ip()),
+        ]);
+
+        RateLimiter::for('contact', fn (Request $request) => [
+            Limit::perMinute(2)->by($request->ip()),
+            Limit::perHour(5)->by($request->ip()),
+            Limit::perDay(10)->by($request->ip()),
+        ]);
+
+        RateLimiter::for('quote', fn (Request $request) => [
+            Limit::perMinute(2)->by($request->ip()),
+            Limit::perHour(5)->by($request->ip()),
+            Limit::perDay(10)->by($request->ip()),
+        ]);
     }
 }
