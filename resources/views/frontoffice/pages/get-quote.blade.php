@@ -26,6 +26,10 @@
 
     {{-- Données structurées globales (Organization, WebSite) --}}
     @include('frontoffice.partials.structured-data')
+
+    {{-- This page is standalone (no layout), so it renders the stacks itself.
+         The reCAPTCHA partial pushes its widget CSS here. --}}
+    @stack('head')
 </head>
 
 <body class="antialiased">
@@ -153,7 +157,6 @@
                             <label>Ne pas remplir<input type="text" id="website" name="website" tabindex="-1"
                                     autocomplete="off" value="" /></label>
                         </div>
-                        @include('frontoffice.partials.recaptcha', ['action' => 'quote'])
                         <div class="overflow-hidden min-h-[280px]" id="stepsContainer">
 
                             {{-- STEP 1: About You --}}
@@ -417,6 +420,10 @@
                                         <option value="Other">{{ __('get-quote.opt_143') }}</option>
                                     </select>
                                 </div>
+
+                                {{-- Anti-bot check: lives in step 3 so it is only
+                                     shown once, on the step that submits. --}}
+                                @include('frontoffice.partials.recaptcha', ['action' => 'quote'])
                             </div>
 
                         </div>
@@ -773,6 +780,15 @@
         function submitForm() {
             if (!validateStep(currentStep)) return;
 
+            // Anti-bot gate. With the visible checkbox (v2) the visitor must
+            // tick it before we send anything; v3 has no widget, so this is a
+            // no-op there and the hidden token is read below.
+            var captcha = (window.csRecaptcha || {})['quote'];
+            if (captcha && !captcha.isSolved()) {
+                captcha.showError();
+                return;
+            }
+
             clearErrors();
 
             var submitBtn = document.getElementById('submitBtn');
@@ -800,8 +816,9 @@
                 howFoundUs: document.getElementById('howFoundUs').value || undefined,
                 // Anti-spam: honeypot (must stay empty) + reCAPTCHA v3 token.
                 website: (document.getElementById('website') || {}).value || undefined,
-                'g-recaptcha-response': (document.getElementById('recaptchaToken-quote') || {}).value ||
-                    undefined
+                // v2 reads the token from the widget, v3 from the hidden input.
+                'g-recaptcha-response': (captcha ? captcha.token() :
+                    (document.getElementById('recaptchaToken-quote') || {}).value) || undefined
             };
 
             fetch('/api/get-quote', {
@@ -858,6 +875,11 @@
                     });
                 })
                 .catch(function(err) {
+                    // A reCAPTCHA token is single-use: once spent on a failed
+                    // attempt it can never be verified again, so the widget has
+                    // to be reset or the retry is guaranteed to fail too.
+                    if (captcha) captcha.reset();
+
                     // TypeError from fetch() means the request never reached the server.
                     var msg = (err instanceof TypeError) ?
                         'Connexion au serveur impossible. V\u00e9rifiez votre connexion internet et r\u00e9essayez.' :

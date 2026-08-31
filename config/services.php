@@ -55,8 +55,18 @@ return [
     */
 
     'recaptcha' => [
+        /*
+         * 'v2' renders the visible "Je ne suis pas un robot" checkbox;
+         * 'v3' is invisible and scores the visitor silently.
+         *
+         * A key pair belongs to exactly ONE version — a v3 key cannot draw the
+         * checkbox, and a v2 key returns no score. Switching RECAPTCHA_VERSION
+         * therefore requires swapping the key pair to match.
+         */
+        'version' => env('RECAPTCHA_VERSION', 'v3'),
         'site_key' => env('RECAPTCHA_SITE_KEY'),
         'secret_key' => env('RECAPTCHA_SECRET_KEY'),
+        // v3 only — ignored by the checkbox flow, which has no score.
         'threshold' => env('RECAPTCHA_THRESHOLD', 0.5),
     ],
 

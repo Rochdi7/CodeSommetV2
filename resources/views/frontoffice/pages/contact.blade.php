@@ -370,7 +370,6 @@
                             <div style="position:absolute;left:-9999px" aria-hidden="true">
                                 <label>Ne pas remplir<input type="text" name="website" tabindex="-1" autocomplete="off" value="" /></label>
                             </div>
-                            @include('frontoffice.partials.recaptcha', ['action' => 'contact'])
                             <div><label for="name"
                                     class="block text-sm font-medium text-[var(--text-primary)] mb-2">{{ __('contact.label_162') }}
                                     <span class="text-[#00AEEF]">*</span></label><input type="text" id="name"
@@ -434,7 +433,9 @@
                                     class="w-full px-4 py-3 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00AEEF]/40 focus:border-[#00AEEF] transition-colors resize-none"
                                     style="border-radius:10px" placeholder="{{ __('contact.placeholder_56') }}">{{ old('message') }}</textarea>
                                 <p class="mt-1 text-xs text-[var(--text-secondary)]">{{ __('contact.text_36') }}</p>
-                            </div><button type="submit"
+                            </div>
+                            @include('frontoffice.partials.recaptcha', ['action' => 'contact'])
+                            <button type="submit"
                                 class="w-full group relative inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full overflow-hidden transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
                                 style="background-color:#00AEEF;box-shadow:0 4px 20px rgba(0, 174, 239, 0.25)"><span
                                     class="text-white font-medium text-sm sm:text-base">{{ __('contact.text_169') }}</span><svg

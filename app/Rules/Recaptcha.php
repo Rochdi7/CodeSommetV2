@@ -54,21 +54,28 @@ class Recaptcha implements ValidationRule
             return;
         }
 
-        $threshold = (float) config('services.recaptcha.threshold', 0.5);
+        $passed = ($response['success'] ?? false) === true;
 
-        $passed = ($response['success'] ?? false) === true
-            && (float) ($response['score'] ?? 0) >= $threshold
-            && ($response['action'] ?? null) === $this->action;
+        // v3 additionally returns a score and the action the token was minted
+        // for; v2 (the visible "I'm not a robot" checkbox) returns neither, so
+        // those checks only apply when Google actually sent a score back.
+        if ($passed && config('services.recaptcha.version') === 'v3') {
+            $threshold = (float) config('services.recaptcha.threshold', 0.5);
+
+            $passed = (float) ($response['score'] ?? 0) >= $threshold
+                && ($response['action'] ?? null) === $this->action;
+        }
 
         if (! $passed) {
             Log::info('reCAPTCHA rejected submission', [
                 'ip' => request()->ip(),
+                'version' => config('services.recaptcha.version'),
                 'score' => $response['score'] ?? null,
                 'action' => $response['action'] ?? null,
                 'error-codes' => $response['error-codes'] ?? null,
             ]);
 
-            $fail('La vérification anti-spam a échoué. Veuillez recharger la page et réessayer.');
+            $fail('Veuillez confirmer que vous n\'êtes pas un robot, puis réessayer.');
         }
     }
 }
