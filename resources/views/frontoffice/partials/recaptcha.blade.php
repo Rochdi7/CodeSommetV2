@@ -47,18 +47,15 @@
                         margin-top: 0.25rem;
                     }
 
+                    /* The widget is a cross-origin iframe whose internals cannot
+                       be styled from here, so the outer box owns the rounding
+                       and any clipping. Nothing sizes or clips the scaled
+                       element itself — doing so crops the iframe rather than
+                       shrinking it, cutting off the reCAPTCHA logo. */
                     .cs-recaptcha__box {
                         display: inline-block;
                         border-radius: 10px;
                         transition: box-shadow .2s ease;
-                    }
-
-                    /* The widget itself is a cross-origin iframe, so its
-                       internals cannot be styled from here — clipping it to
-                       our radius is the only visual control we have over it. */
-                    .cs-recaptcha__widget {
-                        border-radius: 10px;
-                        overflow: hidden;
                         line-height: 0;
                     }
 
@@ -81,32 +78,34 @@
                     }
 
                     /* Google ships the widget as a fixed 304x78 iframe that
-                       cannot be resized, only transformed. Scale it to fit
-                       narrow screens and reclaim the height the scale frees,
-                       otherwise the untransformed box keeps its full footprint
-                       and leaves dead space under the checkbox. */
+                       cannot be resized, only transformed.
+                       The scaled element MUST keep its natural 304px width:
+                       narrowing the element that clips its overflow crops the
+                       iframe instead of shrinking it, which cuts the logo off.
+                       So scale .cs-recaptcha__widget (width untouched) and
+                       clamp the OUTER box to the resulting visual size, since
+                       a transform leaves layout size unchanged. */
                     @media (max-width: 480px) {
                         .cs-recaptcha__widget {
                             transform: scale(0.85);
                             transform-origin: 0 0;
-                            /* A transform does not change layout size, so the
-                               box still reserves the full 304x78 and would push
-                               past the card edge. Clamp both axes to the scaled
-                               dimensions to reclaim that space. */
-                            width: 259px;
-                            height: 66px;
                         }
 
                         .cs-recaptcha__box {
-                            max-width: 100%;
+                            width: 259px;
+                            height: 67px;
+                            overflow: hidden;
                         }
                     }
 
                     @media (max-width: 360px) {
                         .cs-recaptcha__widget {
-                            transform: scale(0.77);
-                            width: 234px;
-                            height: 60px;
+                            transform: scale(0.75);
+                        }
+
+                        .cs-recaptcha__box {
+                            width: 228px;
+                            height: 59px;
                         }
                     }
                 </style>
