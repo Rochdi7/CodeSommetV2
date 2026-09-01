@@ -134,6 +134,73 @@ class ContactFormTest extends TestCase
             'gibberish message' => [[
                 'message' => '4rUkv1W Wndi 5yv1AGc IbJsAA7 vkHt NfkW1va gT9xQ2z',
             ]],
+
+            /*
+             * September 2026 wave. The identity fields look plausible
+             * ("Beepinsits", company "google") and carry no URL, so the
+             * whole payload lives in the message body.
+             */
+            'withdrawal ultimatum' => [[
+                'name' => 'Beepinsits',
+                'company' => 'google',
+                'phone' => '88433544355',
+                'message' => 'You must complete the withdrawal operation within 24 hours, otherwise your account will be blocked. Write to this email and receive instructions',
+            ]],
+            'crypto transfer threat' => [[
+                'name' => 'Jonnycen',
+                'message' => 'Your payment of 1.2 BTC is pending. You need to confirm the transfer within 12 hours or your wallet will be frozen.',
+            ]],
+            'prize claim' => [[
+                'name' => 'Alexpi',
+                'message' => 'Congratulations! You have won a bonus payment of $5000. Claim your reward now, write to this email for instructions.',
+            ]],
+            'account suspension redirect' => [[
+                'name' => 'Mikeloi',
+                'message' => 'We have received your deposit. You must complete verification, otherwise your account will be suspended. Reply to this address.',
+            ]],
+        ];
+    }
+
+    /**
+     * Finance vocabulary is NOT spam on its own. This is a web agency:
+     * fintech, crypto and e-commerce clients are real business, and blocking
+     * one costs far more than delivering a spam message. What convicts is the
+     * scam's second-person framing ("you must...", "your account will be..."),
+     * not the subject matter.
+     *
+     * @dataProvider legitimateFinancePayloads
+     */
+    public function test_finance_enquiries_are_not_treated_as_spam(array $overrides): void
+    {
+        $response = $this->post('/contact', array_merge([
+            'name' => 'Yassine Alami',
+            'email' => 'yassine@example.com',
+            'message' => 'Bonjour, nous souhaitons discuter dun projet avec vous.',
+        ], $overrides));
+
+        $response->assertSessionHasNoErrors();
+        $this->assertDatabaseCount('contact_messages', 1);
+    }
+
+    public static function legitimateFinancePayloads(): array
+    {
+        return [
+            'crypto exchange brief' => [[
+                'company' => 'BitTrade SARL',
+                'phone' => '0661122334',
+                'message' => 'We are building a cryptocurrency exchange dashboard and need help with the bitcoin wallet integration and the withdrawal operation flow.',
+            ]],
+            'fintech dashboard' => [[
+                'company' => 'PayFlow',
+                'message' => 'Our fintech app lets users transfer funds between accounts. We need a secure dashboard where an account can be suspended by an admin.',
+            ]],
+            'ecommerce payment with deadline' => [[
+                'message' => 'We need an e-commerce site with online payment. If a payment fails the order should be locked until the client retries. Can you deliver within 30 days?',
+            ]],
+            'bank portal' => [[
+                'company' => 'Credit Nord',
+                'message' => 'We want a customer portal where clients view their balance and request a transfer. Accounts that are frozen must show a clear message.',
+            ]],
         ];
     }
 
