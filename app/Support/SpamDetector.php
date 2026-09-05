@@ -14,7 +14,13 @@ namespace App\Support;
  *   September 2026 — the same operators with the tells removed: a plausible
  *   name ("Beepinsits"), no URL anywhere, and the whole scam in the message
  *   body ("You must complete the withdrawal operation within 24 hours,
- *   otherwise your account will be blocked. Write to this email").
+     *   otherwise your account will be blocked. Write to this email").
+ *
+ *   September 2026, second wave — identical identity fields, but the body
+ *   is now a Russian teaser with a bait link on a throwaway TLD ("Класс!
+ *   Твой потрясающий сюрприз в ожидании! ... https://peskartyhrt.buzz/…").
+ *   The site serves FR/EN/AR audiences; a Cyrillic message body plus a link
+ *   never comes from a client.
  *
  * The message check deliberately does NOT convict on finance vocabulary:
  * this is a web agency, and fintech/crypto/e-commerce clients are real
@@ -44,7 +50,23 @@ class SpamDetector
      * company names like "Martin.Co" or "Sté. Atlas" would be caught, and a
      * blocked customer costs far more than a delivered spam message.
      */
-    private const URL_PATTERN = '~(?:https?://|\bwww\.|(?<![\d@])\b[a-z0-9][a-z0-9-]{1,}\.[a-z]{2,24}[/?#]|(?<![\d@])\b[a-z0-9][a-z0-9-]{1,}\.(?:ru|su|xyz|top|icu|buzz|click|link|site|online|club|cyou|rest|monster|quest|ph)\b)~i';
+    /**
+     * TLDs that, in this mailbox's history, only ever appear in bait links.
+     * Used for links in the MESSAGE body, so it is deliberately the short,
+     * high-confidence list: a prospect may well run a .site or .online shop
+     * and paste its address, but nobody links a .buzz or .icu page in a
+     * project brief.
+     */
+    private const SPAM_TLDS = 'ru|su|xyz|top|icu|buzz|cyou|rest|monster|quest|sbs|cfd|bond|lol|pw|tk|ml|ga|cf|gq';
+
+    /**
+     * Wider list for IDENTITY fields (name/company/phone), where a bare
+     * domain of any kind is already suspect and the cost of a false match is
+     * lower — a company literally named "shop.online" is vanishingly rare.
+     */
+    private const IDENTITY_SPAM_TLDS = self::SPAM_TLDS.'|click|link|site|online|club|ph';
+
+    private const URL_PATTERN = '~(?:https?://|\bwww\.|(?<![\d@])\b[a-z0-9][a-z0-9-]{1,}\.[a-z]{2,24}[/?#]|(?<![\d@])\b[a-z0-9][a-z0-9-]{1,}\.(?:'.self::IDENTITY_SPAM_TLDS.')\b)~i';
 
     /**
      * Crypto-scam vocabulary. Checked against name/company only — a genuine
@@ -103,6 +125,10 @@ class SpamDetector
                 return 'gibberish-message';
             }
 
+            if ($reason = self::messageLinkOrScriptReason($message)) {
+                return $reason;
+            }
+
             $matched = self::messageScamSignals($message);
 
             /*
@@ -130,6 +156,49 @@ class SpamDetector
                 return 'scam-message:redirect+'.implode('+', $topics);
             }
 
+        }
+
+        return null;
+    }
+
+    /**
+     * Link and writing-system tells in the message body.
+     *
+     * A URL in the message is normal — prospects link their current site —
+     * so this never convicts on "contains a link" alone. It convicts on:
+     *
+     *   1. A link whose TLD only ever shows up in bait (see SPAM_TLDS).
+     *   2. Cyrillic text next to ANY link: the site serves FR/EN/AR
+     *      audiences, and every Russian-language message with a link this
+     *      mailbox has received was a scam teaser.
+     *   3. A message written mostly in Cyrillic, link or not. Genuine
+     *      enquiries arrive in French, English or Arabic.
+     */
+    private static function messageLinkOrScriptReason(string $message): ?string
+    {
+        $anyUrl = '~(?:https?://|\bwww\.)\S+|\b[a-z0-9][a-z0-9-]{1,}\.[a-z]{2,24}[/?#]\S*~iu';
+        // The lookbehind keeps e-mail addresses out of it: "devis@agence.top"
+        // is a mailbox, not a link.
+        $spamTldUrl = '~(?<![\w@.-])(?:https?://|www\.)?[a-z0-9][a-z0-9.-]*\.(?:'.self::SPAM_TLDS.')(?:[/?#:]|\b)~iu';
+
+        if (preg_match($spamTldUrl, $message)) {
+            return 'spam-tld-url-in-message';
+        }
+
+        $cyrillic = preg_match_all('~\p{Cyrillic}~u', $message);
+
+        if ($cyrillic === 0) {
+            return null;
+        }
+
+        if (preg_match($anyUrl, $message)) {
+            return 'cyrillic+url-in-message';
+        }
+
+        $letters = preg_match_all('~\p{L}~u', $message);
+
+        if ($letters > 0 && $cyrillic / $letters >= 0.3) {
+            return 'cyrillic-message';
         }
 
         return null;

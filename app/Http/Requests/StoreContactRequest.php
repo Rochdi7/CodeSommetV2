@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use App\Rules\BusinessEmail;
 use App\Rules\Recaptcha;
 use App\Support\SpamDetector;
+use App\Support\SubmissionFingerprint;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Log;
@@ -51,6 +52,11 @@ class StoreContactRequest extends FormRequest
             }
 
             $reason = SpamDetector::check($validator->getData());
+
+            // Same identity hammering the form from any number of IPs.
+            if ($reason === null && SubmissionFingerprint::exceeded('contact', $validator->getData())) {
+                $reason = 'identity-flood';
+            }
 
             if ($reason !== null) {
                 Log::info('Contact form submission blocked as spam', [

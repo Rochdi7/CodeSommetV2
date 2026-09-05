@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use App\Rules\BusinessEmail;
 use App\Rules\Recaptcha;
 use App\Support\SpamDetector;
+use App\Support\SubmissionFingerprint;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Log;
@@ -54,6 +55,11 @@ class StoreQuoteRequest extends FormRequest
             }
 
             $reason = SpamDetector::check($validator->getData());
+
+            // Same identity hammering the form from any number of IPs.
+            if ($reason === null && SubmissionFingerprint::exceeded('quote', $validator->getData())) {
+                $reason = 'identity-flood';
+            }
 
             if ($reason !== null) {
                 Log::info('Quote form submission blocked as spam', [

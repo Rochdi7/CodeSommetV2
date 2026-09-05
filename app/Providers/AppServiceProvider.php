@@ -101,21 +101,28 @@ class AppServiceProvider extends ServiceProvider
         // hourly one is what actually stops a spam run — an August 2026 bot
         // flood sent ~700 messages at 3-4/min, comfortably under a
         // minute-only limit of 5.
+        //
+        // Each stacked limit MUST use a distinct key. ThrottleRequests derives
+        // the cache key from md5(limiterName . by()), so three limits sharing
+        // the bare IP collapse onto ONE counter whose decay is set by the first
+        // hit (60 s). The hour/day limits then never accumulate — which is
+        // precisely how the September 2026 bot got exactly 2 messages through
+        // every minute of the day. The window prefix keeps the counters apart.
         RateLimiter::for('newsletter', fn (Request $request) => [
-            Limit::perMinute(3)->by($request->ip()),
-            Limit::perHour(10)->by($request->ip()),
+            Limit::perMinute(3)->by('minute:'.$request->ip()),
+            Limit::perHour(10)->by('hour:'.$request->ip()),
         ]);
 
         RateLimiter::for('contact', fn (Request $request) => [
-            Limit::perMinute(2)->by($request->ip()),
-            Limit::perHour(5)->by($request->ip()),
-            Limit::perDay(10)->by($request->ip()),
+            Limit::perMinute(2)->by('minute:'.$request->ip()),
+            Limit::perHour(5)->by('hour:'.$request->ip()),
+            Limit::perDay(10)->by('day:'.$request->ip()),
         ]);
 
         RateLimiter::for('quote', fn (Request $request) => [
-            Limit::perMinute(2)->by($request->ip()),
-            Limit::perHour(5)->by($request->ip()),
-            Limit::perDay(10)->by($request->ip()),
+            Limit::perMinute(2)->by('minute:'.$request->ip()),
+            Limit::perHour(5)->by('hour:'.$request->ip()),
+            Limit::perDay(10)->by('day:'.$request->ip()),
         ]);
     }
 }
