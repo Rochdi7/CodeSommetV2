@@ -158,6 +158,33 @@ class ContactFormTest extends TestCase
                 'name' => 'Mikeloi',
                 'message' => 'We have received your deposit. You must complete verification, otherwise your account will be suspended. Reply to this address.',
             ]],
+
+            /*
+             * September 2026, second wave: a Russian teaser plus a bait link
+             * on a throwaway TLD, all in the message body.
+             */
+            'russian teaser with buzz link' => [[
+                'name' => 'Beepinsits',
+                'company' => 'google',
+                'phone' => '82668167956',
+                'message' => 'Класс! Твой потрясающий сюрприз в ожидании! Посмотрите дальше по ссылке https://peskartyhrt.buzz/JiIq7GAPI#XO6st8',
+            ]],
+            'russian message without link' => [[
+                'name' => 'Beepinsits',
+                'message' => 'Класс! Твой потрясающий сюрприз в ожидании! Посмотрите дальше по ссылке',
+            ]],
+            'english teaser with spam tld link' => [[
+                'name' => 'Beepinsits',
+                'message' => 'Great news, your surprise is waiting. See more at https://peskartyhrt.buzz/JiIq7GAPI',
+            ]],
+            'bare spam tld domain in message' => [[
+                'name' => 'Beepinsits',
+                'message' => 'Everything you need is on wonderprize.icu right now, do not miss it.',
+            ]],
+            'cyrillic sentence with ordinary link' => [[
+                'name' => 'Beepinsits',
+                'message' => 'Смотри что нашел, переходи сюда https://example.com/promo сейчас же!',
+            ]],
         ];
     }
 
@@ -202,6 +229,99 @@ class ContactFormTest extends TestCase
                 'message' => 'We want a customer portal where clients view their balance and request a transfer. Accounts that are frozen must show a clear message.',
             ]],
         ];
+    }
+
+    /**
+     * A link in the message, an e-mail on an odd TLD, a stray Cyrillic word:
+     * none of these is spam on its own.
+     *
+     * @dataProvider legitimateLinkPayloads
+     */
+    public function test_links_and_stray_cyrillic_in_message_are_not_treated_as_spam(array $overrides): void
+    {
+        $response = $this->post('/contact', array_merge([
+            'name' => 'Marie Leroy',
+            'email' => 'marie@example.com',
+            'message' => 'Bonjour, nous souhaitons refondre notre site.',
+        ], $overrides));
+
+        $response->assertSessionHasNoErrors();
+        $this->assertDatabaseCount('contact_messages', 1);
+    }
+
+    public static function legitimateLinkPayloads(): array
+    {
+        return [
+            'shop on a .site domain' => [[
+                'message' => 'Notre boutique actuelle est https://maboutique.site/collections et nous voulons une refonte complète.',
+            ]],
+            'email address on a .top domain' => [[
+                'message' => 'Bonjour, merci d\'envoyer le devis à contact@agence.top, nous voulons un site vitrine.',
+            ]],
+            'french message naming a cyrillic colleague' => [[
+                'message' => 'Salut, mon associé Иван gère la partie technique, on veut un site e-commerce pour notre marque de vêtements.',
+            ]],
+        ];
+    }
+
+    /**
+     * Regression: the three stacked limits used to share one cache key, so
+     * only the 2/minute cap ever applied and a bot got exactly two messages
+     * through every minute of the day. The hourly cap must actually hold.
+     */
+    public function test_hourly_rate_limit_holds_across_minutes(): void
+    {
+        $payload = fn (int $i) => [
+            'name' => 'Jean '.$i,
+            'email' => 'jean'.$i.'@example.com',
+            'message' => 'Bonjour, je souhaite discuter d\'un projet web.',
+        ];
+
+        $sent = 0;
+
+        // 2 per minute for three minutes = 6 attempts; the hourly cap is 5.
+        for ($minute = 0; $minute < 3; $minute++) {
+            $this->travel($minute * 61)->seconds();
+
+            for ($i = 0; $i < 2; $i++) {
+                $status = $this->post('/contact', $payload($sent))->status();
+
+                if ($status !== 429) {
+                    $sent++;
+                }
+            }
+        }
+
+        $this->assertSame(5, $sent);
+
+        $this->travel(4 * 61)->seconds();
+        $this->post('/contact', $payload(99))->assertStatus(429);
+    }
+
+    /**
+     * The same identity hammering the form from many IPs is refused after a
+     * few clean submissions, independently of the per-IP throttle.
+     */
+    public function test_same_identity_from_many_ips_is_refused(): void
+    {
+        $payload = [
+            'name' => 'Beepinsits',
+            'email' => 'beep@example.com',
+            'phone' => '82668167956',
+            'message' => 'Bonjour, je souhaite discuter d\'un projet web sérieux.',
+        ];
+
+        for ($i = 1; $i <= 3; $i++) {
+            $this->withServerVariables(['REMOTE_ADDR' => '10.0.0.'.$i])
+                ->post('/contact', $payload)
+                ->assertSessionHasNoErrors();
+        }
+
+        $this->withServerVariables(['REMOTE_ADDR' => '10.0.0.4'])
+            ->post('/contact', $payload)
+            ->assertSessionHasErrors('message');
+
+        $this->assertDatabaseCount('contact_messages', 3);
     }
 
     public function test_legitimate_submission_with_url_in_message_is_accepted(): void
