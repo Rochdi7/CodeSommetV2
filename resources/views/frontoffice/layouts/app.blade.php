@@ -147,6 +147,13 @@
     <script src="{{ asset_v('vendor/toastr/toastr-2.1.4.min.js') }}" defer></script>
     <script src="{{ asset_v('js/toastr-init.js') }}" defer></script>
 
+    {{-- Dissuasion d'inspection du code source : clic droit, raccourcis
+         DevTools / view-source, sélection, copie et glisser-déposer.
+         Chargé sans defer pour être actif dès le parsing, avant toute
+         interaction possible. Dissuasion seulement — voir l'en-tête du
+         fichier : aucun secret ne doit vivre côté client. --}}
+    <script src="{{ asset_v('js/devtools-deterrent.min.js') }}"></script>
+
     {{-- JS principal --}}
     <script src="{{ asset_v('js/app.min.js') }}" defer></script>
     <script src="{{ asset_v('js/custom-select.min.js') }}" defer></script>

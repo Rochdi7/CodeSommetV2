@@ -2152,3 +2152,58 @@ body.has-promo-bar .fab-stack {
         padding-right: 20px;
     }
 }
+
+/* ==========================================================================
+   Source inspection deterrent — selection / copy / drag
+   Pairs with public/js/devtools-deterrent.js. CSS is needed as well as JS:
+   without it the selection highlight still paints before the JS handler
+   cancels it. Form fields and [data-allow-select] blocks stay usable.
+   Casual deterrent only — see the header of devtools-deterrent.js.
+   ========================================================================== */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+input,
+textarea,
+select,
+option,
+[contenteditable=""],
+[contenteditable="true"],
+[data-allow-select],
+[data-allow-select] * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* L'appui long (equivalent tactile du clic droit) est bloque partout,
+   y compris dans les champs : la saisie et le collage restent possibles. */
+* {
+    -webkit-touch-callout: none;
+}
+
+img,
+svg,
+picture,
+video {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+/* Le contenu reste visible et sélectionnable à l'impression et pour les
+   technologies d'assistance : n'entravons pas l'accessibilité réelle. */
+@media print {
+    body,
+    body * {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+}

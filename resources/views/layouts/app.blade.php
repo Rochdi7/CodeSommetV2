@@ -127,7 +127,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     {{-- Dissuasion d'inspection du code source (protection légère, non infaillible) --}}
-    <script src="{{ asset('js/devtools-deterrent.js') }}" defer></script>
+    <script src="{{ asset('js/devtools-deterrent.min.js') }}"></script>
 
     {{-- Preloader dismiss --}}
     <script>
