@@ -86,7 +86,7 @@
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'elearning-platform-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -118,7 +118,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'edtech-platform-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -150,7 +150,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'education-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -182,7 +182,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'immigration-consultancy-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -214,7 +214,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'language-school-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -246,7 +246,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'online-course-platform-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -278,7 +278,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'study-abroad-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -310,7 +310,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'university-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -351,7 +351,7 @@
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'healthcare-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -381,7 +381,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'telemedicine-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -411,7 +411,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'telemedicine-platform-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -449,7 +449,7 @@
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'ecommerce-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -480,7 +480,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'saas-platform-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -519,7 +519,7 @@
                                 <!-- -->{{ __('industries.text_119') }}<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'fintech-platform-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -549,7 +549,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'fintech-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -588,7 +588,7 @@
                                 <!-- -->{{ __('industries.text_120') }}<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'real-estate-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">

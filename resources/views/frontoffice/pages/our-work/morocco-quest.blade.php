@@ -202,7 +202,7 @@
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center"
                     style="font-family:var(--font-heading)">{{ __('our-work/morocco-quest.text_11') }}</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v7 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -220,7 +220,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v4 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -238,7 +238,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v1 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -256,7 +256,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v5 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -274,7 +274,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v2 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -292,7 +292,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v6 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -310,7 +310,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v3 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -328,7 +328,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v7 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -346,7 +346,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v4 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -364,7 +364,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v1 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -382,7 +382,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v5 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -400,7 +400,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v2 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -418,7 +418,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v6 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -436,7 +436,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v3 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -454,7 +454,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v7 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div
@@ -472,7 +472,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
+                    <div class="lx-card lx-v4 bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-all duration-300 border border-gray-100"
                         style="transform:scale(0.95)">
                         <div class="flex items-center gap-3">
                             <div

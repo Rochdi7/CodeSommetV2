@@ -8,8 +8,8 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..', '..');
-const RESULTS = path.join(ROOT, 'TOOLS_TEST_RESULTS.json');
-const REPORT = path.join(ROOT, 'TOOLS_FUNCTIONAL_AUDIT.md');
+const RESULTS = path.join(ROOT, 'docs', 'reports', 'tools', 'TOOLS_TEST_RESULTS.json');
+const REPORT = path.join(ROOT, 'docs', 'reports', 'tools', 'TOOLS_FUNCTIONAL_AUDIT.md');
 
 const rows = JSON.parse(fs.readFileSync(RESULTS, 'utf8'));
 const tick = (v) => (v === 'pass' ? 'OK' : v === 'skip' ? '—' : v === 'error' ? 'ERR' : 'KO');

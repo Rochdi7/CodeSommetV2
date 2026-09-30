@@ -83,7 +83,7 @@
                         </h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'casablanca') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -116,7 +116,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'marrakech') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -149,7 +149,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'rabat') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -182,7 +182,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'tangier') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -224,7 +224,7 @@
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'abudhabi') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -257,7 +257,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'dubai') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -290,7 +290,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'riyadh') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -331,7 +331,7 @@
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'tunis') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -364,7 +364,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'cairo') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -398,7 +398,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'lagos') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -441,7 +441,7 @@
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'madrid') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -474,7 +474,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'barcelona') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -507,7 +507,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'lisbon') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -540,7 +540,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'rome') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -573,7 +573,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'milan') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -614,7 +614,7 @@
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'amsterdam') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -647,7 +647,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'berlin') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -680,7 +680,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'brussels') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -713,7 +713,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'copenhagen') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -746,7 +746,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'dublin') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -779,7 +779,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'london') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -812,7 +812,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'paris') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -845,7 +845,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'stockholm') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -879,7 +879,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'zurich') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -921,7 +921,7 @@
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'austin') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -955,7 +955,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'boston') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -989,7 +989,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'chicago') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1023,7 +1023,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'denver') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1057,7 +1057,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'los-angeles') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1091,7 +1091,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'new-york') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1125,7 +1125,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'san-francisco') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1159,7 +1159,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'seattle') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1201,7 +1201,7 @@
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                             style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'toronto') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
@@ -1234,7 +1234,7 @@
                                     </svg>
                                 </div>
                             </a><a
-                                class="group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('location', 'vancouver') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">

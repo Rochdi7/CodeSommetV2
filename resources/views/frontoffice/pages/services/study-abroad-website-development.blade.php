@@ -144,7 +144,7 @@
                                 <div
                                     class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                                     <div
-                                        class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                        class="lx-card lx-v6 relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                                         <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
                                             <div class="mb-6 flex-shrink-0">
                                                 <div
@@ -175,7 +175,7 @@
                                 <div
                                     class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                                     <div
-                                        class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                        class="lx-card lx-v3 relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                                         <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
                                             <div class="mb-6 flex-shrink-0">
                                                 <div
@@ -217,7 +217,7 @@
                                 <div
                                     class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                                     <div
-                                        class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                        class="lx-card lx-v7 relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                                         <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
                                             <div class="mb-6 flex-shrink-0">
                                                 <div
@@ -247,7 +247,7 @@
                                 <div
                                     class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                                     <div
-                                        class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                        class="lx-card lx-v4 relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                                         <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
                                             <div class="mb-6 flex-shrink-0">
                                                 <div
@@ -277,7 +277,7 @@
                                 <div
                                     class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                                     <div
-                                        class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                        class="lx-card lx-v1 relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                                         <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
                                             <div class="mb-6 flex-shrink-0">
                                                 <div
@@ -306,7 +306,7 @@
                                 <div
                                     class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                                     <div
-                                        class="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                                        class="lx-card lx-v5 relative h-full bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                                         <div class="relative z-10 p-8 h-full flex flex-col min-h-[240px]">
                                             <div class="mb-6 flex-shrink-0">
                                                 <div
@@ -388,7 +388,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div>
                     <div
-                        class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                        class="lx-card lx-v2 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                         <div
                             class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -411,7 +411,7 @@
                 </div>
                 <div>
                     <div
-                        class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                        class="lx-card lx-v6 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                         <div
                             class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -435,7 +435,7 @@
                 </div>
                 <div>
                     <div
-                        class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                        class="lx-card lx-v3 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                         <div
                             class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -455,7 +455,7 @@
                 </div>
                 <div>
                     <div
-                        class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                        class="lx-card lx-v7 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                         <div
                             class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -477,7 +477,7 @@
                 </div>
                 <div>
                     <div
-                        class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                        class="lx-card lx-v4 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                         <div
                             class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -499,7 +499,7 @@
                 </div>
                 <div>
                     <div
-                        class="h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                        class="lx-card lx-v1 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                         <div
                             class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -950,7 +950,7 @@
                         <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row">
                             <div class="flex-1">
                                 <div
-                                    class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                    class="lx-card lx-v5 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                     <div
                                         class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1044,7 +1044,7 @@
                         <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse">
                             <div class="flex-1">
                                 <div
-                                    class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                    class="lx-card lx-v2 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                     <div
                                         class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1152,7 +1152,7 @@
                         <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row">
                             <div class="flex-1">
                                 <div
-                                    class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                    class="lx-card lx-v6 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                     <div
                                         class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1246,7 +1246,7 @@
                         <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse">
                             <div class="flex-1">
                                 <div
-                                    class="bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                    class="lx-card lx-v3 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                     <div
                                         class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1929,7 +1929,7 @@
                             <div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="0">
                                 <div class="relative">
                                     <div
-                                        class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                        class="lx-card lx-v7 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                         <div
                                             class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2011,7 +2011,7 @@
                                 </div>
                                 <div class="relative">
                                     <div
-                                        class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                        class="lx-card lx-v4 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                         <div
                                             class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2095,7 +2095,7 @@
                                 style="display: none;">
                                 <div class="relative">
                                     <div
-                                        class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                        class="lx-card lx-v1 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                         <div
                                             class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2177,7 +2177,7 @@
                                 </div>
                                 <div class="relative">
                                     <div
-                                        class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                        class="lx-card lx-v5 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                         <div
                                             class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2509,7 +2509,7 @@
                     {{ __('services/study-abroad-website-development-agency.ml_1222') }}</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
-                <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                <div><a class="lx-card lx-v2 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
                         href="{{ route('location', 'dubai') }}">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2 md:gap-3 min-w-0">
@@ -2545,7 +2545,7 @@
                             </svg>
                         </div>
                     </a></div>
-                <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                <div><a class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
                         href="{{ route('location', 'casablanca') }}">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2 md:gap-3 min-w-0">
@@ -2581,7 +2581,7 @@
                             </svg>
                         </div>
                     </a></div>
-                <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                <div><a class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
                         href="{{ route('location', 'san-francisco') }}">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2 md:gap-3 min-w-0">
@@ -2617,7 +2617,7 @@
                             </svg>
                         </div>
                     </a></div>
-                <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                <div><a class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
                         href="{{ route('location', 'london') }}">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2 md:gap-3 min-w-0">
@@ -2653,7 +2653,7 @@
                             </svg>
                         </div>
                     </a></div>
-                <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                <div><a class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
                         href="{{ route('location', 'paris') }}">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2 md:gap-3 min-w-0">
@@ -2689,7 +2689,7 @@
                             </svg>
                         </div>
                     </a></div>
-                <div><a class="group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
+                <div><a class="lx-card lx-v1 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
                         href="{{ route('location', 'marrakech') }}">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-2 md:gap-3 min-w-0">
@@ -2754,7 +2754,7 @@
                     {{ __('services/study-abroad-website-development-agency.ml_1224') }}</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
-                    class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                    class="lx-card lx-v5 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
                     href="{{ route('service', 'language-school-website-development') }}">
                     <div class="flex items-start justify-between gap-2">
                         <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
@@ -2787,7 +2787,7 @@
                         </svg>
                     </div>
                 </a><a
-                    class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                    class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
                     href="{{ route('service', 'edtech-platform-development') }}">
                     <div class="flex items-start justify-between gap-2">
                         <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
@@ -2821,7 +2821,7 @@
                         </svg>
                     </div>
                 </a><a
-                    class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                    class="lx-card lx-v6 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
                     href="{{ route('service', 'online-course-platform-development') }}">
                     <div class="flex items-start justify-between gap-2">
                         <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
@@ -2854,7 +2854,7 @@
                         </svg>
                     </div>
                 </a><a
-                    class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                    class="lx-card lx-v3 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
                     href="{{ route('service', 'immigration-consultancy-website-development') }}">
                     <div class="flex items-start justify-between gap-2">
                         <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
@@ -2891,7 +2891,7 @@
                         </svg>
                     </div>
                 </a><a
-                    class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                    class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
                     href="{{ route('service', 'healthcare-website-development') }}">
                     <div class="flex items-start justify-between gap-2">
                         <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
@@ -2924,7 +2924,7 @@
                         </svg>
                     </div>
                 </a><a
-                    class="group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
+                    class="lx-card lx-v4 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
                     href="{{ route('service', 'telemedicine-platform-development') }}">
                     <div class="flex items-start justify-between gap-2">
                         <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
@@ -2984,7 +2984,7 @@
                     {{ __('services/study-abroad-website-development-agency.ml_1234') }}</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
-                    class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                    class="lx-card lx-v1 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
                     href="{{ route('tool', 'website-analyzer') }}">
                     <div class="flex flex-col h-full">
                         <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
@@ -3015,7 +3015,7 @@
                         </div>
                     </div>
                 </a><a
-                    class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                    class="lx-card lx-v5 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
                     href="{{ route('our-work') }}">
                     <div class="flex flex-col h-full">
                         <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
@@ -3046,7 +3046,7 @@
                         </div>
                     </div>
                 </a><a
-                    class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                    class="lx-card lx-v2 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
                     href="{{ route('about') }}">
                     <div class="flex flex-col h-full">
                         <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
@@ -3078,7 +3078,7 @@
                         </div>
                     </div>
                 </a><a
-                    class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                    class="lx-card lx-v6 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
                     href="{{ route('contact') }}">
                     <div class="flex flex-col h-full">
                         <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
@@ -3108,7 +3108,7 @@
                         </div>
                     </div>
                 </a><a
-                    class="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
+                    class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
                     href="{{ route('home') }}">
                     <div class="flex flex-col h-full">
                         <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"

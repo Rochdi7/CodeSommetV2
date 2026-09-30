@@ -10,7 +10,7 @@ use Tests\TestCase;
  * d'accueil (contraste, CSP jQuery/Toastr auto-hébergé, titres dupliqués,
  * ancres internes, taille du document, métadonnées).
  *
- * Voir docs/homepage-quality-fixes.md pour le détail de l'audit et des
+ * Voir docs/reports/performance/homepage-quality-fixes.md pour le détail de l'audit et des
  * correctifs.
  */
 class HomepageQualityTest extends TestCase

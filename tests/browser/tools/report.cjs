@@ -9,7 +9,7 @@ const path = require('path');
 const { TOOLS } = require('./_inventory.cjs');
 
 const RESULTS = path.join(__dirname, '.results');
-const OUT = path.join(__dirname, '..', '..', '..', 'TOOLS_TEST_RESULTS.json');
+const OUT = path.join(__dirname, '..', '..', '..', 'docs', 'reports', 'tools', 'TOOLS_TEST_RESULTS.json');
 
 function read(slug, project) {
     const f = path.join(RESULTS, `${slug}-${project}.json`);

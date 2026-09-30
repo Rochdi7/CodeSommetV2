@@ -2207,3 +2207,140 @@ video {
         user-select: text;
     }
 }
+
+/* ------------------------------------------------------------------
+   Luxury cards (.lx-card + .lx-v1 … .lx-v7)
+   Every content card on the site carries .lx-card plus one colour
+   variant. The variant sets two RGB accents and the corner the glow
+   lives in; the base rule paints a soft radial wash, a blurred orb, a
+   thin gradient stroke on the accent edge, and a lift on hover.
+   Variants are assigned per page in a pseudo-random sequence so no
+   two neighbouring cards, and no two pages, share the same rhythm.
+   ------------------------------------------------------------------ */
+.lx-card {
+    --lx-a: 0, 174, 239;           /* accent            */
+    --lx-b: 0, 113, 188;           /* deep accent       */
+    --lx-c: 125, 83, 255;          /* counter glow      */
+    --lx-pos: 100% 0%;             /* wash origin       */
+    --lx-pos-2: 0% 100%;           /* counter origin    */
+    --lx-orb: -60px -60px auto auto; /* orb inset       */
+    --lx-stroke: 90deg;            /* stroke direction  */
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-image:
+        radial-gradient(circle at var(--lx-pos), rgba(var(--lx-a), 0.10) 0%, rgba(var(--lx-a), 0.035) 24%, rgba(var(--lx-a), 0) 48%),
+        radial-gradient(circle at var(--lx-pos-2), rgba(var(--lx-c), 0.05) 0%, rgba(var(--lx-c), 0) 40%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(var(--lx-a), 0.015) 100%);
+    border-color: rgba(var(--lx-a), 0.14);
+    box-shadow: 0 1px 2px rgba(15, 15, 15, 0.03);
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.35s ease,
+        background-color 0.35s ease;
+}
+
+.lx-card::before {
+    content: "";
+    position: absolute;
+    inset: var(--lx-orb);
+    width: 180px;
+    height: 180px;
+    border-radius: 9999px;
+    background: radial-gradient(circle, rgba(var(--lx-a), 0.20) 0%, rgba(var(--lx-b), 0.08) 40%, rgba(var(--lx-a), 0) 70%);
+    filter: blur(26px);
+    opacity: 0.8;
+    transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.lx-card::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 2px;
+    background: linear-gradient(var(--lx-stroke), rgba(var(--lx-a), 0) 0%, rgba(var(--lx-a), 0) 45%, rgba(var(--lx-a), 0.55) 80%, rgba(var(--lx-b), 0.75) 100%);
+    opacity: 0.75;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lx-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(var(--lx-a), 0.32);
+    box-shadow:
+        0 18px 40px -18px rgba(var(--lx-b), 0.30),
+        0 8px 20px -12px rgba(var(--lx-a), 0.20),
+        0 1px 2px rgba(15, 15, 15, 0.04);
+}
+
+.lx-card:hover::before {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+.lx-card:hover::after {
+    opacity: 1;
+}
+
+/* Neutral icon tiles pick up the variant tint (brand-blue tiles are left as they are) */
+.lx-card .w-14.h-14.rounded-2xl,
+.lx-card .rounded-lg.bg-\[\#F8F8F8\] {
+    background-image: linear-gradient(135deg, rgba(var(--lx-a), 0.14) 0%, rgba(var(--lx-c), 0.07) 100%);
+    box-shadow:
+        inset 0 0 0 1px rgba(var(--lx-a), 0.16),
+        0 4px 12px -6px rgba(var(--lx-a), 0.35);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.lx-card:hover .w-14.h-14.rounded-2xl,
+.lx-card:hover .rounded-lg.bg-\[\#F8F8F8\] {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow:
+        inset 0 0 0 1px rgba(var(--lx-a), 0.30),
+        0 8px 18px -8px rgba(var(--lx-a), 0.5);
+}
+
+/* Bottom divider inside the "why choose us" cards: gradient hairline */
+.lx-card .border-t.border-gray-50 {
+    border-top: 0;
+    position: relative;
+}
+
+.lx-card .border-t.border-gray-50::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(var(--lx-a), 0.45) 0%, rgba(var(--lx-a), 0.12) 45%, rgba(var(--lx-a), 0) 100%);
+}
+
+/* Colour variants ---------------------------------------------------- */
+.lx-v1 { /* azure   */ --lx-a: 0, 174, 239;   --lx-b: 0, 113, 188;   --lx-c: 125, 83, 255;  --lx-pos: 100% 0%;   --lx-pos-2: 0% 100%;  --lx-orb: -60px -60px auto auto; --lx-stroke: 90deg; }
+.lx-v2 { /* violet  */ --lx-a: 125, 83, 255;  --lx-b: 91, 33, 182;   --lx-c: 0, 174, 239;   --lx-pos: 0% 0%;     --lx-pos-2: 100% 100%; --lx-orb: -60px auto auto -60px; --lx-stroke: 270deg; }
+.lx-v3 { /* teal    */ --lx-a: 20, 184, 166;  --lx-b: 13, 148, 136;  --lx-c: 0, 174, 239;   --lx-pos: 100% 100%; --lx-pos-2: 0% 0%;    --lx-orb: auto -60px -60px auto; --lx-stroke: 90deg; }
+.lx-v4 { /* gold    */ --lx-a: 212, 168, 67;  --lx-b: 180, 130, 30;  --lx-c: 0, 174, 239;   --lx-pos: 100% 0%;   --lx-pos-2: 0% 100%;  --lx-orb: -60px -60px auto auto; --lx-stroke: 90deg; }
+.lx-v5 { /* rose    */ --lx-a: 236, 72, 153;  --lx-b: 190, 24, 93;   --lx-c: 125, 83, 255;  --lx-pos: 0% 100%;   --lx-pos-2: 100% 0%;  --lx-orb: auto auto -60px -60px; --lx-stroke: 270deg; }
+.lx-v6 { /* indigo  */ --lx-a: 79, 70, 229;   --lx-b: 49, 46, 129;   --lx-c: 20, 184, 166;  --lx-pos: 0% 0%;     --lx-pos-2: 100% 100%; --lx-orb: -60px auto auto -60px; --lx-stroke: 270deg; }
+.lx-v7 { /* sky     */ --lx-a: 14, 165, 233;  --lx-b: 3, 105, 161;   --lx-c: 236, 72, 153;  --lx-pos: 100% 100%; --lx-pos-2: 0% 0%;    --lx-orb: auto -60px -60px auto; --lx-stroke: 90deg; }
+
+@media (prefers-reduced-motion: reduce) {
+    .lx-card,
+    .lx-card::before,
+    .lx-card::after,
+    .lx-card .w-14.h-14.rounded-2xl,
+    .lx-card .rounded-lg.bg-\[\#F8F8F8\] {
+        transition: none;
+    }
+    .lx-card:hover,
+    .lx-card:hover::before,
+    .lx-card:hover .w-14.h-14.rounded-2xl,
+    .lx-card:hover .rounded-lg.bg-\[\#F8F8F8\] {
+        transform: none;
+    }
+}

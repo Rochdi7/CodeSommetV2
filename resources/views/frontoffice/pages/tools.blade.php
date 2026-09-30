@@ -153,7 +153,7 @@
                     style="opacity:0;transform:translateY(30px)"><a href="{{ route('tool', 'website-analyzer') }}"
                         data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -184,7 +184,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'meta-tag-generator') }}" data-category="ai">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -220,7 +220,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'blog-title-generator') }}" data-category="ai">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -253,7 +253,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'chatbot-script-generator') }}" data-category="ai">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v2 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -284,7 +284,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'landing-page-generator') }}" data-category="ai">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v5 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -322,7 +322,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'og-preview-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -354,7 +354,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'heading-analyzer') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v4 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -390,7 +390,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'keyword-density-analyzer') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -422,7 +422,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'broken-link-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -453,7 +453,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'domain-authority-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -483,7 +483,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'image-alt-analyzer') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v2 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -517,7 +517,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'sitemap-validator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v5 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -552,7 +552,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'robots-validator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -583,7 +583,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'schema-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v4 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -614,7 +614,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'page-speed-analyzer') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -647,7 +647,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'url-slug-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -678,7 +678,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'html-minifier') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -709,7 +709,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'redirect-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v2 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -740,7 +740,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'canonical-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v5 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -771,7 +771,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'internal-link-analyzer') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -802,7 +802,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'image-compression-analyzer') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v4 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -834,7 +834,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'domain-health-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -865,7 +865,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'website-readiness-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -898,7 +898,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'hreflang-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -929,7 +929,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'local-business-schema') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v2 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -962,7 +962,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'xml-sitemap-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v5 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -994,7 +994,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'utm-builder') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1025,7 +1025,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'robots-txt-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v4 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1058,7 +1058,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'nofollow-link-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1089,7 +1089,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'duplicate-content-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1120,7 +1120,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'meta-refresh-generator') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1152,7 +1152,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'faq-schema-generator') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v2 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1186,7 +1186,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'readability-analyzer') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v5 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1218,7 +1218,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'word-counter') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1249,7 +1249,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'html-to-text') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v4 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1281,7 +1281,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'text-case-converter') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1314,7 +1314,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'base64-encoder') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1344,7 +1344,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'json-formatter') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1378,7 +1378,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'lorem-ipsum-generator') }}" data-category="content">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v2 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1411,7 +1411,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'color-palette-generator') }}" data-category="design">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v5 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1448,7 +1448,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'qr-code-generator') }}" data-category="design">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1488,7 +1488,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'css-minifier') }}" data-category="design">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v4 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1519,7 +1519,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'ssl-certificate-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v7 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1550,7 +1550,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'mobile-friendly-test') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v3 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1581,7 +1581,7 @@
                         </div>
                     </a><a href="{{ route('tool', 'core-web-vitals-checker') }}" data-category="seo">
                         <div
-                            class="group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="lx-card lx-v6 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
