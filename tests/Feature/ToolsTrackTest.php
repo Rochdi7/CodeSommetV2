@@ -204,6 +204,76 @@ class ToolsTrackTest extends TestCase
         Carbon::setTestNow();
     }
 
+    public function test_tool_detail_page_lists_scanned_sites_and_every_use(): void
+    {
+        ToolUsage::create(['slug' => 'heading-analyzer', 'count' => 39]);
+
+        $this->hit('heading-analyzer', ['url' => 'https://www.alpha.example/page-1'], ip: '203.0.113.10');
+        $this->hit('heading-analyzer', ['url' => 'alpha.example/page-2'], ip: '203.0.113.10');
+        $this->hit('heading-analyzer', ['url' => 'https://beta.example'], ip: '198.51.100.7');
+        $this->hit('heading-analyzer', ['url' => 'https://gamma.example'], ua: 'Googlebot/2.1');
+        $this->hit('word-counter', ['url' => 'https://other-tool.example']);
+
+        $admin = $this->admin();
+
+        // Overview links each tool to its detail page.
+        $this->actingAs($admin)->get('/admin/tools-track')
+            ->assertSee('/admin/tools-track/tools/heading-analyzer', false);
+
+        $response = $this->actingAs($admin)->get('/admin/tools-track/tools/heading-analyzer')->assertOk();
+
+        $summary = $response->viewData('summary');
+        // hit() increments the public counter too: 39 seeded + 4.
+        $this->assertSame(43, $summary['total']);
+        $this->assertSame(4, $summary['uses']);
+        $this->assertSame(3, $summary['sites']);
+        $this->assertSame(3, $summary['humans']);
+        $this->assertSame(1, $summary['bots']);
+
+        $sites = $response->viewData('sites');
+        $this->assertSame('alpha.example', $sites[0]['domain']);
+        $this->assertSame(2, $sites[0]['scans']);
+        $this->assertSame(1, $sites[0]['people']);
+        $this->assertEqualsCanonicalizing(['https://www.alpha.example/page-1', 'alpha.example/page-2'], $sites[0]['urls']);
+        $this->assertSame(1, collect($sites)->firstWhere('domain', 'gamma.example')['bots']);
+
+        $response
+            ->assertSee('Heading Analyzer')
+            ->assertSee('data-site="alpha.example"', false)
+            ->assertSee('https://beta.example')
+            ->assertSee('198.51.100.7')
+            ->assertDontSee('other-tool.example')
+            ->assertSee('data-stat="sites">3<', false)
+            // 39 legacy uses have no detail: say so instead of looking empty.
+            ->assertSee('avant le suivi d&eacute;taill&eacute;', false);
+
+        $this->assertSame(4, $response->viewData('events')->total());
+
+        // Filters on the detail page.
+        $this->assertSame(2, $this->actingAs($admin)->get('/admin/tools-track/tools/heading-analyzer?q=alpha.example')->viewData('events')->total());
+        $this->assertSame(1, $this->actingAs($admin)->get('/admin/tools-track/tools/heading-analyzer?kind=bot')->viewData('events')->total());
+    }
+
+    public function test_tool_detail_page_for_legacy_tool_without_events_and_unknown_tool(): void
+    {
+        $this->get('/admin/tools-track/tools/heading-analyzer')->assertRedirect();
+
+        ToolUsage::create(['slug' => 'backlink-checker', 'count' => 1]);
+
+        $this->actingAs($this->admin())->get('/admin/tools-track/tools/backlink-checker')
+            ->assertOk()
+            ->assertSee('Aucune utilisation suivie');
+
+        $this->actingAs($this->admin())->get('/admin/tools-track/tools/not-a-tool')->assertNotFound();
+    }
+
+    public function test_domain_normalisation(): void
+    {
+        $this->assertSame('example.com', \App\Services\ToolUsageStats::domainOf('https://www.Example.com/path?x=1'));
+        $this->assertSame('example.com', \App\Services\ToolUsageStats::domainOf('example.com/page'));
+        $this->assertSame('sub.example.com', \App\Services\ToolUsageStats::domainOf('http://sub.example.com'));
+    }
+
     public function test_export_streams_filtered_csv(): void
     {
         $this->hit('word-counter', ['url' => 'https://csv.example']);

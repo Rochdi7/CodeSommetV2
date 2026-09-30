@@ -147,6 +147,7 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     // Tool usage tracking (who uses the free SEO tools, when, from where, on which link)
     Route::get('/tools-track', [ToolsTrackController::class, 'index'])->name('tools-track.index');
     Route::get('/tools-track/export', [ToolsTrackController::class, 'export'])->name('tools-track.export');
+    Route::get('/tools-track/tools/{slug}', [ToolsTrackController::class, 'show'])->where('slug', '[a-z0-9-]+')->name('tools-track.tool');
 
     // Projects Management
     Route::resource('projects', ProjectController::class);

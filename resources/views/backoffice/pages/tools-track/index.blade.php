@@ -158,7 +158,7 @@
                     @forelse($tools as $tool)
                     <tr data-tool="{{ $tool['slug'] }}">
                         <td>
-                            <a href="{{ $qs(['tool' => $tool['slug']]) }}" class="font-semibold hover:text-[#00AEEF] transition-colors">{{ $tool['name'] }}</a>
+                            <a href="{{ route('admin.tools-track.tool', $tool['slug']) }}" class="font-semibold hover:text-[#00AEEF] transition-colors">{{ $tool['name'] }}</a>
                         </td>
                         <td class="text-right font-semibold">{{ number_format($tool['uses'], 0, ',', ' ') }}</td>
                         <td class="text-right text-[#00AEEF] font-semibold">{{ number_format($tool['people'], 0, ',', ' ') }}</td>
@@ -242,7 +242,7 @@
                             <span class="font-semibold text-[var(--text-primary)]">{{ $event->created_at?->format('H:i:s') }}</span>
                         </td>
                         <td>
-                            <a href="{{ $qs(['tool' => $event->slug]) }}" class="text-xs font-semibold hover:text-[#00AEEF]">{{ ucwords(str_replace('-', ' ', $event->slug)) }}</a>
+                            <a href="{{ route('admin.tools-track.tool', $event->slug) }}" class="text-xs font-semibold hover:text-[#00AEEF]">{{ ucwords(str_replace('-', ' ', $event->slug)) }}</a>
                             @if($event->source !== 'live')
                                 <span class="admin-badge ml-1" style="background:#F3F4F6;color:#6B7280;font-size:10px">import</span>
                             @endif

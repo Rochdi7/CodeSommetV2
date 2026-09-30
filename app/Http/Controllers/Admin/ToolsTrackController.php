@@ -42,6 +42,54 @@ class ToolsTrackController extends Controller
     }
 
     /**
+     * One tool: every scanned site (grouped by domain) and every use.
+     */
+    public function show(Request $request, string $slug, ToolUsageStats $stats)
+    {
+        $known = ToolUsage::where('slug', $slug)->exists()
+            || ToolUsageEvent::where('slug', $slug)->exists()
+            || view()->exists("frontoffice.pages.tools.{$slug}");
+        abort_unless(preg_match('/^[a-z0-9-]{1,100}$/', $slug) && $known, 404);
+
+        $filters = ['period' => 'all'] + $this->filters($request);
+        $filters['period'] = (string) $request->query('period', 'all');
+        $filters['period'] = in_array($filters['period'], ToolUsageStats::PERIODS, true) ? $filters['period'] : 'all';
+        $filters['tool'] = $slug;
+
+        $base = $stats->eventsQuery($filters);
+
+        $summary = [
+            'total' => ToolUsage::countFor($slug),
+            'uses' => (clone $base)->count(),
+            'people' => (clone $base)->distinct('visitor_hash')->count('visitor_hash'),
+            'humans' => (clone $base)->where('is_bot', false)->count(),
+            'bots' => (clone $base)->where('is_bot', true)->count(),
+            'first_at' => (clone $base)->min('created_at'),
+            'last_at' => (clone $base)->max('created_at'),
+        ];
+
+        $sites = $stats->scannedSites($base);
+        $summary['sites'] = count($sites);
+
+        $events = (clone $base)
+            ->orderByDesc('created_at')
+            ->orderByDesc('id')
+            ->paginate(50)
+            ->withQueryString();
+
+        return view('backoffice.pages.tools-track.show', [
+            'slug' => $slug,
+            'name' => ucwords(str_replace('-', ' ', $slug)),
+            'hasPublicPage' => view()->exists("frontoffice.pages.tools.{$slug}"),
+            'filters' => $filters,
+            'periods' => ToolUsageStats::PERIODS,
+            'summary' => $summary,
+            'sites' => $sites,
+            'events' => $events,
+        ]);
+    }
+
+    /**
      * CSV of the filtered events (newest first, capped so a click can never
      * pull millions of rows).
      */

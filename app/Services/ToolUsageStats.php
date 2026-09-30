@@ -164,6 +164,52 @@ final class ToolUsageStats
     }
 
     /**
+     * Sites scanned with a tool, grouped by domain (www. stripped), most
+     * scanned first. Each entry keeps the distinct full URLs submitted.
+     *
+     * @return list<array{domain:string, scans:int, people:int, bots:int, last_at:string, urls:list<string>}>
+     */
+    public function scannedSites(Builder $base): array
+    {
+        $sites = [];
+
+        (clone $base)
+            ->whereNotNull('target_url')
+            ->orderByDesc('created_at')
+            ->limit(20000)
+            ->get(['target_url', 'visitor_hash', 'is_bot', 'created_at'])
+            ->each(function (ToolUsageEvent $e) use (&$sites) {
+                $domain = self::domainOf($e->target_url);
+                $s = &$sites[$domain];
+                $s ??= ['domain' => $domain, 'scans' => 0, 'people' => [], 'bots' => 0, 'last_at' => (string) $e->created_at, 'urls' => []];
+                $s['scans']++;
+                $s['people'][$e->visitor_hash] = true;
+                $s['bots'] += $e->is_bot ? 1 : 0;
+                if (count($s['urls']) < 20 && ! in_array($e->target_url, $s['urls'], true)) {
+                    $s['urls'][] = $e->target_url;
+                }
+                unset($s);
+            });
+
+        $sites = array_map(fn ($s) => ['people' => count($s['people'])] + $s, array_values($sites));
+        usort($sites, fn ($a, $b) => [$b['scans'], $b['last_at']] <=> [$a['scans'], $a['last_at']]);
+
+        return $sites;
+    }
+
+    public static function domainOf(string $url): string
+    {
+        $candidate = preg_match('#^[a-z][a-z0-9+.-]*://#i', $url) ? $url : 'https://' . $url;
+        $host = strtolower((string) parse_url($candidate, PHP_URL_HOST));
+
+        if ($host === '') {
+            return mb_substr($url, 0, 80);
+        }
+
+        return str_starts_with($host, 'www.') ? substr($host, 4) : $host;
+    }
+
+    /**
      * @return list<array{ip:string, country:?string, uses:int, bots:int, last_at:string}>
      */
     private function topIps(Builder $base): array

@@ -461,6 +461,17 @@
     {
         "domain": null,
         "method": "GET|HEAD",
+        "uri": "admin/tools-track/tools/{slug}",
+        "name": "admin.tools-track.tool",
+        "action": "App\\Http\\Controllers\\Admin\\ToolsTrackController@show",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
         "uri": "api/tools/{slug}/usage",
         "name": null,
         "action": "App\\Http\\Controllers\\ToolsApiController@usageShow",
