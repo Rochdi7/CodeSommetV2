@@ -63,8 +63,17 @@
                 </a>
                 <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
                     data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-                    class="h-10 px-5 text-sm rounded-full inline-flex items-center justify-center font-medium transition-all duration-200 border border-[var(--border-light)] text-[var(--text-primary)] hover:bg-gray-50">
-                    {{ __('nav.book_call') }}
+                    class="group relative h-10 px-5 text-sm rounded-full inline-flex items-center justify-center overflow-hidden transition-all duration-300 hover:-translate-y-0.5" style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.52px 2.52px -0.47px,
+                           rgba(0, 0, 0, 0.1) 0px 5.97px 5.97px -0.94px,
+                           rgba(0, 0, 0, 0.08) 0px 10.89px 10.89px -1.41px,
+                           rgba(0, 0, 0, 0.08) 0px 18.11px 18.11px -1.88px,
+                           rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px,
+                           rgba(0, 0, 0, 0.05) 0px 47.87px 47.87px -2.81px">
+                    <div class="shine-wrapper-hero">
+                        <div class="shine-element-hero"></div>
+                    </div>
+                    <div class="absolute inset-[3px] rounded-[114px] bg-black z-0"></div>
+                    <span class="relative z-10 font-semibold text-white tracking-wide">{{ __('nav.book_call') }}</span>
                 </button>
             </div>
 
