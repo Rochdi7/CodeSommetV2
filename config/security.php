@@ -32,7 +32,7 @@ return [
     | page needs jQuery/Toastr, reference the local copies instead.
     | `'unsafe-inline'` remains in script-src because 57 views carry inline
     | <script> blocks; migrate to nonces before removing it. `'unsafe-eval'` is
-    | deliberately NOT included. See CSP_VERIFICATION_REPORT.md.
+    | deliberately NOT included. See docs/reports/security/CSP_VERIFICATION_REPORT.md.
     |
     */
     'csp' => env('CSP', implode('; ', [
