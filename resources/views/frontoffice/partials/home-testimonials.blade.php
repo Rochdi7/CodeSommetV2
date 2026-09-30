@@ -87,8 +87,8 @@
                  double-width track it needs, without shipping the testimonial
                  text twice in the initial HTML response. --}}
             @foreach ($testimonials as $t)
-                    <div class="block">
-                        <div class="testimonial-card flex-shrink-0 w-[340px] md:w-[450px] bg-[#FEFEFE] rounded-3xl overflow-hidden my-2 p-2 transition-all duration-300 hover:-translate-y-2"
+                    <div class="flex">
+                        <div class="testimonial-card flex flex-col flex-shrink-0 w-[340px] md:w-[450px] bg-[#FEFEFE] rounded-3xl overflow-hidden my-2 p-2 transition-all duration-300 hover:-translate-y-2"
                             style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 40px, rgba(0, 0, 0, 0.06) 0px 2px 8px;">
                             <div class="relative h-64 md:h-80 overflow-hidden transition-all duration-500 rounded-[16px]"
                                 style="background: rgb(245, 245, 245);">
@@ -117,7 +117,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-4 md:px-6 pt-4 md:pt-6 pb-3 md:pb-4">
+                            <div class="flex-1 flex flex-col px-4 md:px-6 pt-4 md:pt-6 pb-3 md:pb-4">
                                 <div class="relative bg-[#F5F5F5] rounded-3xl px-4 md:px-5 py-2.5 md:py-3 mb-2">
                                     <div class="absolute w-4 h-4 bg-[#F5F5F5] rotate-45"
                                         style="border-radius: 0px 0px 4px; left: 14px; bottom: -3px;"></div>
@@ -125,7 +125,7 @@
                                         class="relative text-[var(--text-primary)] text-xs md:text-sm leading-relaxed italic mb-0">
                                         {{ $t['quote'] }}</p>
                                 </div>
-                                <div class="flex items-start gap-2.5 md:gap-3">
+                                <div class="mt-auto flex items-start gap-2.5 md:gap-3">
                                     @if ($t['avatar'])
                                         <img srcset="{{ asset(str_replace('.webp', '-96w.webp', $t['avatar'])) }} 96w, {{ asset($t['avatar']) }} 256w"
                                             sizes="48px"
