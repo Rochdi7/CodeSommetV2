@@ -5,8 +5,10 @@
         ->orderByDesc('published_at')
         ->limit(6)
         ->get();
-    $homeBlogPerPage = 3;
-    $homeBlogPages = $homeBlogPosts->chunk($homeBlogPerPage);
+    // Server default = desktop (3 per slide). JS re-paginates per viewport:
+    // 1 card on mobile, 2 on tablet, 3 on desktop.
+    $homeBlogPages = $homeBlogPosts->chunk(3);
+    $homeBlogMulti = $homeBlogPosts->count() > 1;
 @endphp
 
 @if ($homeBlogPosts->isNotEmpty())
@@ -23,12 +25,11 @@
             <div class="blog-carousel-container" data-current-slide="0">
                 {{-- No overflow-hidden: slides toggle via display, and clipping cut off the card shadows --}}
                 <div class="relative">
-                    @foreach ($homeBlogPages as $page => $posts)
-                        <div class="blog-carousel-slide grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-slide="{{ $page }}"
-                            @if ($page !== 0) style="display: none;" @endif>
-                            @foreach ($posts as $post)
+                    <div class="blog-carousel-track grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            @foreach ($homeBlogPosts as $i => $post)
                                 @php $color = $post->category?->color ?: '#00AEEF'; @endphp
-                                <article>
+                                {{-- Pre-JS visibility matches the first slide at each breakpoint (no layout shift) --}}
+                                <article class="blog-carousel-item {{ $i === 0 ? '' : ($i === 1 ? 'hidden md:block' : ($i === 2 ? 'hidden lg:block' : 'hidden')) }}">
                                     <a href="{{ route('blog.show', $post->slug) }}" class="block group">
                                         <div
                                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
@@ -100,10 +101,9 @@
                                     </a>
                                 </article>
                             @endforeach
-                        </div>
-                    @endforeach
+                    </div>
 
-                @if ($homeBlogPages->count() > 1)
+                @if ($homeBlogMulti)
                     {{-- Prev / Next: centred on the cards (not the dots), pushed outside the cards on wide screens --}}
                     <button type="button" class="blog-carousel-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 xl:-translate-x-[calc(100%+1rem)] w-12 h-12 bg-white rounded-full shadow-lg border border-[var(--border-light)] flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
                         aria-label="Articles précédents">
@@ -124,9 +124,9 @@
                 @endif
                 </div>
 
-                @if ($homeBlogPages->count() > 1)
-                    {{-- Dots --}}
-                    <div class="flex justify-center items-center gap-3 mt-8">
+                @if ($homeBlogMulti)
+                    {{-- Dots (rebuilt by JS for the current cards-per-slide) --}}
+                    <div class="blog-carousel-dots flex justify-center items-center gap-3 mt-8">
                         @foreach ($homeBlogPages as $page => $posts)
                             <button type="button" class="blog-carousel-dot rounded-full transition-all duration-300 {{ $page === 0 ? 'w-3 h-3 bg-[#00AEEF] scale-125' : 'w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40' }}"
                                 data-dot="{{ $page }}" aria-label="Aller au groupe d'articles {{ $page + 1 }}"></button>
@@ -149,56 +149,89 @@
         </div>
     </section>
 
-    @if ($homeBlogPages->count() > 1)
+    @if ($homeBlogMulti)
         <script>
             (function() {
                 var container = document.querySelector('.blog-carousel-container');
                 if (!container || container.dataset.bound === 'true') return;
                 container.dataset.bound = 'true';
 
-                var slides = container.querySelectorAll('.blog-carousel-slide');
-                var dots = container.querySelectorAll('.blog-carousel-dot');
+                var items = Array.prototype.slice.call(container.querySelectorAll('.blog-carousel-item'));
+                var track = container.querySelector('.blog-carousel-track');
+                var dotsWrap = container.querySelector('.blog-carousel-dots');
                 var prevBtn = container.querySelector('.blog-carousel-prev');
                 var nextBtn = container.querySelector('.blog-carousel-next');
-                var total = slides.length;
-                var currentSlide = 0;
-                var autoRotate = null;
+                var mqLg = window.matchMedia('(min-width: 1024px)');
+                var mqMd = window.matchMedia('(min-width: 768px)');
+                var perPage = 3, total = 1, currentSlide = 0, autoRotate = null;
+
+                var DOT_ON = 'blog-carousel-dot rounded-full transition-all duration-300 w-3 h-3 bg-[#00AEEF] scale-125';
+                var DOT_OFF = 'blog-carousel-dot rounded-full transition-all duration-300 w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40';
+
+                // 1 card per slide on mobile, 2 on tablet, 3 on desktop
+                function computePerPage() {
+                    return mqLg.matches ? 3 : (mqMd.matches ? 2 : 1);
+                }
+
+                function buildDots() {
+                    var single = total <= 1;
+                    if (dotsWrap) {
+                        dotsWrap.innerHTML = '';
+                        for (var i = 0; i < total; i++) {
+                            (function(idx) {
+                                var dot = document.createElement('button');
+                                dot.type = 'button';
+                                dot.className = DOT_OFF;
+                                dot.setAttribute('aria-label', "Aller au groupe d'articles " + (idx + 1));
+                                dot.addEventListener('click', function() {
+                                    showSlide(idx);
+                                    startAutoRotate();
+                                });
+                                dotsWrap.appendChild(dot);
+                            })(i);
+                        }
+                        dotsWrap.style.display = single ? 'none' : '';
+                    }
+                    if (prevBtn) prevBtn.style.display = single ? 'none' : '';
+                    if (nextBtn) nextBtn.style.display = single ? 'none' : '';
+                }
 
                 function showSlide(index) {
                     currentSlide = ((index % total) + total) % total;
-
-                    slides.forEach(function(slide, i) {
-                        slide.style.display = i === currentSlide ? '' : 'none';
+                    var from = currentSlide * perPage;
+                    items.forEach(function(item, i) {
+                        item.style.display = (i >= from && i < from + perPage) ? 'block' : 'none';
                     });
-
-                    dots.forEach(function(dot, i) {
-                        if (i === currentSlide) {
-                            dot.className = 'blog-carousel-dot rounded-full transition-all duration-300 w-3 h-3 bg-[#00AEEF] scale-125';
-                        } else {
-                            dot.className = 'blog-carousel-dot rounded-full transition-all duration-300 w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40';
-                        }
-                    });
-
+                    if (dotsWrap) {
+                        Array.prototype.forEach.call(dotsWrap.children, function(dot, i) {
+                            dot.className = i === currentSlide ? DOT_ON : DOT_OFF;
+                        });
+                    }
                     container.dataset.currentSlide = String(currentSlide);
                 }
 
+                function layout() {
+                    var firstVisible = currentSlide * perPage;
+                    perPage = computePerPage();
+                    total = Math.max(1, Math.ceil(items.length / perPage));
+                    buildDots();
+                    showSlide(Math.floor(firstVisible / perPage));
+                    startAutoRotate();
+                }
+
                 function startAutoRotate() {
-                    if (autoRotate) clearInterval(autoRotate);
-                    autoRotate = setInterval(function() {
-                        showSlide(currentSlide + 1);
-                    }, 6000);
+                    stopAutoRotate();
+                    if (total > 1) {
+                        autoRotate = setInterval(function() {
+                            showSlide(currentSlide + 1);
+                        }, 6000);
+                    }
                 }
 
                 function stopAutoRotate() {
                     if (autoRotate) clearInterval(autoRotate);
+                    autoRotate = null;
                 }
-
-                dots.forEach(function(dot, i) {
-                    dot.addEventListener('click', function() {
-                        showSlide(i);
-                        startAutoRotate();
-                    });
-                });
 
                 if (prevBtn) {
                     prevBtn.addEventListener('click', function() {
@@ -214,11 +247,41 @@
                     });
                 }
 
+                // Swipe left / right on touch screens
+                var startX = 0, startY = 0, tracking = false;
+                track.addEventListener('touchstart', function(e) {
+                    if (e.touches.length !== 1) return;
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                    tracking = true;
+                    stopAutoRotate();
+                }, { passive: true });
+                track.addEventListener('touchend', function(e) {
+                    if (!tracking) return;
+                    tracking = false;
+                    var dx = e.changedTouches[0].clientX - startX;
+                    var dy = e.changedTouches[0].clientY - startY;
+                    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+                        showSlide(currentSlide + (dx < 0 ? 1 : -1));
+                    }
+                    startAutoRotate();
+                }, { passive: true });
+
                 container.addEventListener('mouseenter', stopAutoRotate);
                 container.addEventListener('mouseleave', startAutoRotate);
 
-                showSlide(0);
-                startAutoRotate();
+                function onBreakpoint() {
+                    if (computePerPage() !== perPage) layout();
+                }
+                if (mqLg.addEventListener) {
+                    mqLg.addEventListener('change', onBreakpoint);
+                    mqMd.addEventListener('change', onBreakpoint);
+                } else {
+                    mqLg.addListener(onBreakpoint);
+                    mqMd.addListener(onBreakpoint);
+                }
+
+                layout();
             })();
         </script>
     @endif
