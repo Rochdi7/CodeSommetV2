@@ -72,7 +72,7 @@
             })
             .then(function (data) {
                 CodeSommetTools.setLoading(false);
-                CodeSommetTools.incrementUsage(slug);
+                CodeSommetTools.incrementUsage(slug, url);
                 showGenericResult(data, slug, config);
             })
             .catch(function (err) {

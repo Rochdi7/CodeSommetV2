@@ -138,7 +138,7 @@ class ToolsApiController extends Controller
         // Time-series + unique-visitor log for the admin dashboard. Never let
         // it break the public counter.
         try {
-            ToolUsageEvent::record($slug, ToolUsageEvent::visitorHashFor($request));
+            ToolUsageEvent::recordFromRequest($request, $slug);
         } catch (\Throwable $e) {
             Log::warning("Tool usage event not recorded [{$slug}]: " . $e->getMessage());
         }

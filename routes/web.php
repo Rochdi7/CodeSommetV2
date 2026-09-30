@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ToolsTrackController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\FinanceController;
@@ -142,6 +143,10 @@ Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('adm
 Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(function () {
     // Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    // Tool usage tracking (who uses the free SEO tools, when, from where, on which link)
+    Route::get('/tools-track', [ToolsTrackController::class, 'index'])->name('tools-track.index');
+    Route::get('/tools-track/export', [ToolsTrackController::class, 'export'])->name('tools-track.export');
 
     // Projects Management
     Route::resource('projects', ProjectController::class);

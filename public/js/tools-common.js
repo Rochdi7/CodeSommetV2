@@ -79,8 +79,23 @@ window.CodeSommetTools.onReady = function (fn) {
         if (el) el.textContent = Math.max(0, count).toLocaleString('en-US');
     }
 
-    CodeSommetTools.incrementUsage = function (toolSlug) {
-        fetch('/api/tools/' + encodeURIComponent(toolSlug) + '/usage', { method: 'POST' })
+    /* `target` is the link the visitor just scanned (shown in the admin
+     * "Suivi des outils" page). Tools that don't pass it fall back to the
+     * page's URL input, so client-side tools with a URL field are covered too. */
+    CodeSommetTools.incrementUsage = function (toolSlug, target) {
+        if (typeof target !== 'string') {
+            var urlField = document.querySelector('section.max-w-5xl input[type="url"]') || document.querySelector('input[type="url"]');
+            target = urlField ? urlField.value.trim() : '';
+        }
+        var payload = {
+            url: target ? String(target).slice(0, 2048) : null,
+            webdriver: !!(navigator && navigator.webdriver)
+        };
+        fetch('/api/tools/' + encodeURIComponent(toolSlug) + '/usage', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+        })
             .then(function (res) { return res.ok ? res.json() : null; })
             .then(function (data) { if (data && typeof data.count === 'number') setCounterText(data.count); })
             .catch(function () { /* counter is cosmetic; ignore network failures */ });
