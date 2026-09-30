@@ -20,8 +20,9 @@
                     Nos conseils, analyses et actualités sur le développement web et l'IA</p>
             </div>
 
-            <div class="blog-carousel-container relative" data-current-slide="0">
-                <div class="overflow-hidden">
+            <div class="blog-carousel-container" data-current-slide="0">
+                {{-- No overflow-hidden: slides toggle via display, and clipping cut off the card shadows --}}
+                <div class="relative">
                     @foreach ($homeBlogPages as $page => $posts)
                         <div class="blog-carousel-slide grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-slide="{{ $page }}"
                             @if ($page !== 0) style="display: none;" @endif>
@@ -113,11 +114,10 @@
                             @endforeach
                         </div>
                     @endforeach
-                </div>
 
                 @if ($homeBlogPages->count() > 1)
-                    {{-- Prev / Next --}}
-                    <button type="button" class="blog-carousel-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-12 h-12 bg-white rounded-full shadow-lg border border-[var(--border-light)] flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
+                    {{-- Prev / Next: centred on the cards (not the dots), pushed outside the cards on wide screens --}}
+                    <button type="button" class="blog-carousel-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 xl:-translate-x-[calc(100%+1rem)] w-12 h-12 bg-white rounded-full shadow-lg border border-[var(--border-light)] flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
                         aria-label="Articles précédents">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -125,7 +125,7 @@
                             <path d="m15 18-6-6 6-6" />
                         </svg>
                     </button>
-                    <button type="button" class="blog-carousel-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 w-12 h-12 bg-white rounded-full shadow-lg border border-[var(--border-light)] flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
+                    <button type="button" class="blog-carousel-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 xl:translate-x-[calc(100%+1rem)] w-12 h-12 bg-white rounded-full shadow-lg border border-[var(--border-light)] flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
                         aria-label="Articles suivants">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -133,7 +133,10 @@
                             <path d="m9 18 6-6-6-6" />
                         </svg>
                     </button>
+                @endif
+                </div>
 
+                @if ($homeBlogPages->count() > 1)
                     {{-- Dots --}}
                     <div class="flex justify-center items-center gap-3 mt-8">
                         @foreach ($homeBlogPages as $page => $posts)
