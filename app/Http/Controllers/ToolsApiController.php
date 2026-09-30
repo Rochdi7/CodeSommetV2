@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ToolUsage;
+use App\Models\ToolUsageEvent;
 use App\Services\Analysis\AnalysisPipeline;
 use App\Services\Analysis\SiteAnalysis;
 use App\Services\HtmlDocument;
@@ -126,13 +127,23 @@ class ToolsApiController extends Controller
         return response()->json(['slug' => $slug, 'count' => ToolUsage::countFor($slug)]);
     }
 
-    public function usageIncrement(string $slug): JsonResponse
+    public function usageIncrement(Request $request, string $slug): JsonResponse
     {
         if (! view()->exists("frontoffice.pages.tools.{$slug}")) {
             return response()->json(['error' => 'Tool not found'], 404);
         }
 
-        return response()->json(['slug' => $slug, 'count' => ToolUsage::incrementFor($slug)]);
+        $count = ToolUsage::incrementFor($slug);
+
+        // Time-series + unique-visitor log for the admin dashboard. Never let
+        // it break the public counter.
+        try {
+            ToolUsageEvent::record($slug, ToolUsageEvent::visitorHashFor($request));
+        } catch (\Throwable $e) {
+            Log::warning("Tool usage event not recorded [{$slug}]: " . $e->getMessage());
+        }
+
+        return response()->json(['slug' => $slug, 'count' => $count]);
     }
 
     // ─── Helpers ──────────────────────────────────────────────────────

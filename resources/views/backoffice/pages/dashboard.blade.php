@@ -195,4 +195,99 @@
         </div>
     </div>
 </div>
+
+{{-- Tool Usage --}}
+<div class="admin-card mt-6" id="tool-usage-stats">
+    <div class="admin-card-header">
+        <h3 class="text-sm font-semibold text-[var(--text-primary)]">Utilisation des Outils SEO</h3>
+        <a href="{{ route('tools') }}" target="_blank" rel="noopener" class="text-xs text-[#00AEEF] hover:underline">Voir les outils</a>
+    </div>
+    <div class="admin-card-body">
+        <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-3 mb-6">
+            <div class="p-3 rounded-lg bg-[#F5F5F5]">
+                <div class="text-lg font-bold text-[var(--text-primary)]" data-stat="tools-total">{{ number_format($toolStats['total'], 0, ',', ' ') }}</div>
+                <div class="text-[11px] text-[var(--text-tertiary)]">Utilisations (total)</div>
+            </div>
+            <div class="p-3 rounded-lg bg-[#F5F5F5]">
+                <div class="text-lg font-bold text-[var(--text-primary)]" data-stat="tools-uses-today">{{ number_format($toolStats['uses_today'], 0, ',', ' ') }}</div>
+                <div class="text-[11px] text-[var(--text-tertiary)]">Utilisations aujourd&rsquo;hui</div>
+            </div>
+            <div class="p-3 rounded-lg bg-[#F5F5F5]">
+                <div class="text-lg font-bold text-[var(--text-primary)]" data-stat="tools-uses-7d">{{ number_format($toolStats['uses_7d'], 0, ',', ' ') }}</div>
+                <div class="text-[11px] text-[var(--text-tertiary)]">Utilisations 7 jours</div>
+            </div>
+            <div class="p-3 rounded-lg" style="background:rgba(0,174,239,0.08)">
+                <div class="text-lg font-bold text-[#00AEEF]" data-stat="tools-visitors-today">{{ number_format($toolStats['visitors_today'], 0, ',', ' ') }}</div>
+                <div class="text-[11px] text-[var(--text-tertiary)]">Personnes aujourd&rsquo;hui</div>
+            </div>
+            <div class="p-3 rounded-lg" style="background:rgba(0,174,239,0.08)">
+                <div class="text-lg font-bold text-[#00AEEF]" data-stat="tools-visitors-7d">{{ number_format($toolStats['visitors_7d'], 0, ',', ' ') }}</div>
+                <div class="text-[11px] text-[var(--text-tertiary)]">Personnes 7 jours</div>
+            </div>
+            <div class="p-3 rounded-lg" style="background:rgba(0,174,239,0.08)">
+                <div class="text-lg font-bold text-[#00AEEF]" data-stat="tools-visitors-30d">{{ number_format($toolStats['visitors_30d'], 0, ',', ' ') }}</div>
+                <div class="text-[11px] text-[var(--text-tertiary)]">Personnes 30 jours</div>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-6">
+            {{-- 14-day chart --}}
+            <div class="lg:col-span-2">
+                <div class="text-xs font-semibold text-[var(--text-secondary)] mb-3">14 derniers jours</div>
+                @php $maxUse = max(1, max(array_column($toolStats['daily'], 'uses'))); @endphp
+                <div class="flex items-end gap-1" style="height:140px">
+                    @foreach($toolStats['daily'] as $day)
+                    <div class="flex-1 flex flex-col items-center gap-1 h-full justify-end" title="{{ $day['label'] }} : {{ $day['uses'] }} utilisation(s), {{ $day['visitors'] }} personne(s)">
+                        <div class="w-full relative rounded-t-md" style="background:rgba(0,174,239,0.25);height:{{ $day['uses'] / $maxUse * 100 }}%;min-height:2px">
+                            <div class="absolute bottom-0 left-0 right-0 rounded-t-md" style="background:#00AEEF;height:{{ $day['uses'] > 0 ? ($day['visitors'] / $day['uses'] * 100) : 0 }}%"></div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <div class="flex justify-between mt-1 text-[10px] text-[var(--text-tertiary)]">
+                    <span>{{ $toolStats['daily'][0]['label'] }}</span>
+                    <span>{{ $toolStats['daily'][count($toolStats['daily']) - 1]['label'] }}</span>
+                </div>
+                <div class="flex items-center gap-4 mt-3">
+                    <div class="flex items-center gap-1.5">
+                        <div class="w-3 h-3 rounded-sm" style="background:#00AEEF"></div><span class="text-[11px] text-[var(--text-tertiary)]">Personnes</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <div class="w-3 h-3 rounded-sm" style="background:rgba(0,174,239,0.25)"></div><span class="text-[11px] text-[var(--text-tertiary)]">Utilisations</span>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Per-tool table --}}
+            <div class="lg:col-span-3 overflow-x-auto">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Outil</th>
+                            <th class="text-right">Total</th>
+                            <th class="text-right">7 jours</th>
+                            <th class="text-right">Personnes (7j)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse($toolStats['tools'] as $tool)
+                        <tr data-tool="{{ $tool['slug'] }}">
+                            <td>
+                                <a href="{{ route('tool', $tool['slug']) }}" target="_blank" rel="noopener" class="font-semibold hover:text-[#00AEEF] transition-colors">{{ $tool['name'] }}</a>
+                            </td>
+                            <td class="text-right font-semibold">{{ number_format($tool['total'], 0, ',', ' ') }}</td>
+                            <td class="text-right text-[var(--text-secondary)]">{{ number_format($tool['uses_7d'], 0, ',', ' ') }}</td>
+                            <td class="text-right text-[#00AEEF] font-semibold">{{ number_format($tool['visitors_7d'], 0, ',', ' ') }}</td>
+                        </tr>
+                        @empty
+                        <tr>
+                            <td colspan="4" class="text-center text-[var(--text-tertiary)] py-8">Aucune utilisation enregistr&eacute;e pour le moment.</td>
+                        </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
