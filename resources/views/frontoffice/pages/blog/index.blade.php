@@ -230,18 +230,8 @@
                                 @endif
                                 <div class="flex items-center gap-3">
                                     <div
-                                        class="w-8 h-8 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                        @if ($featuredPost->author_avatar)
-                                            <img src="{{ asset('storage/' . $featuredPost->author_avatar) }}"
-                                                alt="{{ $featuredPost->author }}"
-                                                class="w-full h-full object-cover" />
-                                        @else
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="2">
-                                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                                <circle cx="12" cy="7" r="4"></circle>
-                                            </svg>
-                                        @endif
+                                        class="w-8 h-8 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0 overflow-hidden">
+                                        <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-5 h-5" />
                                     </div>
                                     <div>
                                         <div class="text-sm font-semibold text-[var(--text-primary)]">
@@ -381,19 +371,8 @@
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center gap-2">
                                                 <div
-                                                    class="w-6 h-6 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                                    @if ($post->author_avatar)
-                                                        <img src="{{ asset('storage/' . $post->author_avatar) }}"
-                                                            alt="{{ $post->author }}" loading="lazy"
-                                                            class="w-full h-full object-cover" />
-                                                    @else
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#00AEEF"
-                                                            stroke-width="2">
-                                                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                                            <circle cx="12" cy="7" r="4"></circle>
-                                                        </svg>
-                                                    @endif
+                                                    class="w-6 h-6 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0 overflow-hidden">
+                                                    <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-4 h-4" />
                                                 </div>
                                                 <span
                                                     class="text-xs font-medium text-[var(--text-secondary)]">{{ $post->author }}</span>

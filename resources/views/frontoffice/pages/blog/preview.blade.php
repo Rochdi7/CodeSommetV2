@@ -45,12 +45,8 @@
                 {{-- Meta Info --}}
                 <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8">
                     <div class="flex items-center gap-2.5">
-                        <div class="w-10 h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="#00AEEF" stroke-width="2">
-                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
+                        <div class="w-10 h-10 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0">
+                            <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-6 h-6" />
                         </div>
                         <div class="text-left">
                             <div class="text-sm font-semibold text-[var(--text-primary)]">CodeSommet</div>
@@ -251,12 +247,8 @@
             <div class="bg-white rounded-3xl p-8 md:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100">
                 <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00AEEF]/20 to-[#0071BC]/10 flex items-center justify-center flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                            fill="none" stroke="#00AEEF" stroke-width="1.5">
-                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
+                        class="w-16 h-16 rounded-2xl bg-white border border-[var(--border-light)] shadow-sm flex items-center justify-center flex-shrink-0">
+                        <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-10 h-10" />
                     </div>
                     <div class="text-center sm:text-left">
                         <div class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider mb-1">
