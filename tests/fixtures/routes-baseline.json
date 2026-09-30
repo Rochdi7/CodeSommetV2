@@ -439,6 +439,28 @@
     {
         "domain": null,
         "method": "GET|HEAD",
+        "uri": "admin/tools-track",
+        "name": "admin.tools-track.index",
+        "action": "App\\Http\\Controllers\\Admin\\ToolsTrackController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/tools-track/export",
+        "name": "admin.tools-track.export",
+        "action": "App\\Http\\Controllers\\Admin\\ToolsTrackController@export",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
         "uri": "api/tools/{slug}/usage",
         "name": null,
         "action": "App\\Http\\Controllers\\ToolsApiController@usageShow",
