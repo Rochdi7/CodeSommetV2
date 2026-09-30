@@ -17,3 +17,6 @@ yarn-error.log
 /storage/framework/sessions/*
 /storage/framework/views/*
 /storage/logs/*
+
+# Raw media archives never belong in the web root
+public/*.zip
