@@ -231,7 +231,7 @@
                                 <div class="flex items-center gap-3">
                                     <div
                                         class="w-8 h-8 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                        <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-5 h-5" />
+                                        <img src="{{ asset('logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-full h-full object-contain scale-[1.3]" />
                                     </div>
                                     <div>
                                         <div class="text-sm font-semibold text-[var(--text-primary)]">
@@ -372,7 +372,7 @@
                                             <div class="flex items-center gap-2">
                                                 <div
                                                     class="w-6 h-6 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                                    <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-4 h-4" />
+                                                    <img src="{{ asset('logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-full h-full object-contain scale-[1.3]" />
                                                 </div>
                                                 <span
                                                     class="text-xs font-medium text-[var(--text-secondary)]">{{ $post->author }}</span>

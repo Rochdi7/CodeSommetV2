@@ -85,8 +85,8 @@
             {{-- Meta Info --}}
             <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8">
                 <div class="flex items-center gap-2.5">
-                    <div class="w-10 h-10 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0">
-                        <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-6 h-6" />
+                    <div class="w-10 h-10 rounded-full bg-white border border-[var(--border-light)] flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img src="{{ asset('logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-full h-full object-contain scale-[1.3]" />
                     </div>
                     <div class="text-left">
                         <div class="text-sm font-semibold text-[var(--text-primary)]">{{ $post->author }}</div>
@@ -197,8 +197,8 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[860px]">
         <div class="bg-white rounded-3xl p-8 md:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-gray-100">
             <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-                <div class="w-16 h-16 rounded-2xl bg-white border border-[var(--border-light)] shadow-sm flex items-center justify-center flex-shrink-0">
-                    <img src="{{ asset('images/codesommet-logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-10 h-10" />
+                <div class="w-16 h-16 rounded-2xl bg-white border border-[var(--border-light)] shadow-sm flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <img src="{{ asset('logo.svg') }}" alt="CodeSommet" loading="lazy" class="w-full h-full object-contain scale-[1.3]" />
                 </div>
                 <div class="text-center sm:text-left">
                     <div class="text-xs font-semibold text-[#00AEEF] uppercase tracking-wider mb-1">{{ __('blog/show.text_0') }}</div>
