@@ -76,6 +76,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('qr-code-generator', 'QR codes generated');
+        CodeSommetTools.initUsageCounter('qr-code-generator', 'codes QR générés');
     });
 })();

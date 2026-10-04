@@ -4,7 +4,7 @@ return [
     'text_0' => 'À propos de l\'auteur',
     'text_1' => 'Chez CodeSommet, nous partageons notre expertise en développement web, design UI/UX et stratégie digitale pour aider les entreprises à réussir en ligne.',
     'text_101' => 'Image de couverture',
-    'text_102' => 'read_time }} de lecture',
+    'text_102' => 'de lecture',
     'ml_502' => 'À lire aussi',
     'php_1002' => 'Du bento grid au glassmorphism avancé, les tendances visuelles qui dominent le web.',
     'php_1003' => 'Créer une API RESTful avec Laravel 12',

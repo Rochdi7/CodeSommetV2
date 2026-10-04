@@ -141,6 +141,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('faq-schema-generator', 'FAQ schemas generated');
+        CodeSommetTools.initUsageCounter('faq-schema-generator', 'schémas FAQ générés');
     });
 })();

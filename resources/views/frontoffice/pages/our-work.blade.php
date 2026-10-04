@@ -110,8 +110,8 @@
                         href="{{ route('case-study', 'glamworlds') }}">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
+                                    data-src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay
+                                    loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span
@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds</h3>
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds</h2>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
                                     {{ __('our-work.text_8') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
@@ -132,15 +132,15 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay
+                                    data-src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay
                                     loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.monasso_tag') }}</span></div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h2>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
                                     {{ __('our-work.text_10') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
@@ -153,16 +153,16 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
+                                    data-src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
                                     autoplay loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.morocco_quest_tag') }}</span>
                                 </div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h2>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
                                     {{ __('our-work.text_12') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
@@ -175,9 +175,9 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}"
+                                    data-src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}"
                                     autoplay loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h2>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
                                     {{ __('our-work.gls_subtitle') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
@@ -197,9 +197,9 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
+                                    data-src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
                                     loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span
@@ -207,7 +207,7 @@
                                 </div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h2>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
                                     {{ __('our-work.text_17') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
@@ -220,9 +220,9 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
+                                    data-src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
                                     loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                     <span
@@ -230,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="px-5 py-4">
-                                <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Hssabek</h3>
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Hssabek</h2>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
                                     {{ __('our-work.hssabek_subtitle') }}</p>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">

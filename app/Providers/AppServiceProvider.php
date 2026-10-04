@@ -85,6 +85,10 @@ class AppServiceProvider extends ServiceProvider
         // négligeable mais throttlé séparément pour ne pas partager le budget
         // des vrais appels d'analyse.
         RateLimiter::for('tools-usage', fn (Request $request) => Limit::perMinute(30)->by($request->ip()));
+        // Lecture du compteur (GET au chargement de chaque page outil) : bucket distinct,
+        // sinon la simple navigation entre outils consomme le budget de l'incrément
+        // (même nom de limiteur = même compteur) et renvoie des 429. Même plafond.
+        RateLimiter::for('tools-usage-read', fn (Request $request) => Limit::perMinute(30)->by($request->ip()));
 
         // Admin login — per IP + submitted email.
         RateLimiter::for('admin-login', fn (Request $request) => Limit::perMinute(5)

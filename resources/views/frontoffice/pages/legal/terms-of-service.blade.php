@@ -589,8 +589,7 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">
                                 {{ __('legal/terms-of-service.text_197') }}</h3>
                             <p>{{ __('legal/terms-of-service.text_198') }} <a href="mailto:codesommet@gmail.com"
-                                    class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                        data-cfemail="462e232a2a2906362f2d27353529353233222f296825292b">{{ __('legal/terms-of-service.text_561') }}</span></a>
+                                    class="text-[#00AEEF] hover:underline">{{ __('legal/terms-of-service.text_561') }}</a>
                                 {{ __('legal/terms-of-service.text_199') }}</p>
                         </div>
                         <div>
@@ -687,8 +686,7 @@
                             </div>
                             <div class="space-y-2">
                                 <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="c1a9a4adadae81b1a8aaa0b2b2aeb2b5b4a5a8aeefa2aeac">{{ __('legal/terms-of-service.text_562') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/terms-of-service.text_562') }}</a>
                                 </p>
                                 <p><strong>{{ __('legal/terms-of-service.text_224') }}</strong> <a
                                         href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20

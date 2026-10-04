@@ -70,7 +70,7 @@
                                 <div class="min-w-0">
                                     <p class="text-xs text-gray-500 uppercase tracking-wide">
                                         {{ __('our-work/dental-pro.text_4') }}</p>
-                                    <p class="text-sm font-bold text-gray-900 truncate">4 weeks</p>
+                                    <p class="text-sm font-bold text-gray-900 truncate">4 semaines</p>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +132,8 @@
                     </div>
                     <div
                         class="relative aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 md:border-2 shadow-xl md:shadow-2xl">
-                        <video src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
-                            loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
+                        <video data-src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
+                            loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                     </div>
                 </div>
             </div>
@@ -447,8 +447,8 @@
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-video rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <video src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
-                        loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
+                    <video data-src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
+                        loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                 </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
@@ -617,27 +617,6 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="group relative bg-white rounded-lg p-3 shadow-lg hover:shadow-2xl transition-all duration-300">
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-10 h-10 rounded-lg bg-[#06B6D4]/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-monitor w-5 h-5 text-[#06B6D4]" aria-hidden="true">
-                                    <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                                    <line x1="8" x2="16" y1="21" y2="21"></line>
-                                    <line x1="12" x2="12" y1="17" y2="21"></line>
-                                </svg>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <p class="text-lg md:text-xl font-bold text-gray-900 leading-tight">
-                                    {{ __('our-work/dental-pro.text_33') }}</p>
-                                <p class="text-xs text-gray-600 font-medium">Satisfaction</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="max-w-4xl mx-auto mt-16 mb-12">
                     <div
@@ -727,7 +706,7 @@
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
-                        <p class="text-sm font-semibold text-gray-700 hidden md:block">Suivant Project</p>
+                        <p class="text-sm font-semibold text-gray-700 hidden md:block">Projet suivant</p>
                     </div>
                 </a>
 <a class="group"

@@ -80,7 +80,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/robots-validator.text_3') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/robots-validator.text_3') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/robots-validator.text_4') }}</p>
                 </div>
@@ -278,7 +278,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Robots.txt Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur Robots.txt</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-validator.text_23') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Sitemap Validator</h3>
+                        style="font-family:var(--font-heading)">Validateur de Sitemap</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-validator.text_24') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -348,7 +348,8 @@
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
                         style="font-family:var(--font-heading)">{{ __('tools/robots-validator.text_25') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Visual H1-H6 tree with SEO validation</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Arbre visuel H1-H6 avec validation
+                                SEO</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"

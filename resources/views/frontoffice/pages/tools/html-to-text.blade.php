@@ -53,7 +53,7 @@
                 <div class="space-y-6">
                     <div><label
                             class="block text-sm font-medium text-gray-900 mb-2">{{ __('tools/html-to-text.label_137') }}</label>
-                        <textarea placeholder="&lt;p&gt;Paste your HTML here...&lt;/p&gt;" rows="12"
+                        <textarea placeholder="&lt;p&gt;Collez votre HTML ici...&lt;/p&gt;" rows="12"
                             class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm font-mono resize-y"></textarea>
                     </div>
                     <div class="flex items-center gap-2"><input type="checkbox" id="preserveWhitespace"
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">Cas d'Utilisation</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Cas d'Utilisation</h2>
                 <div class="space-y-4">
                     <div class="flex items-start gap-3">
                         <div
@@ -119,7 +119,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/html-to-text.text_9') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/html-to-text.text_9') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/html-to-text.text_10') }}</p>
                 </div>
@@ -314,7 +314,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Text Case Converter</h3>
+                        style="font-family:var(--font-heading)">Convertisseur de Casse de Texte</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/html-to-text.text_29') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -379,7 +379,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Word &amp; Character Counter</h3>
+                        style="font-family:var(--font-heading)">Compteur de Mots &amp; Caractères</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/html-to-text.text_32') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">

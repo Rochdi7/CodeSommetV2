@@ -82,7 +82,7 @@
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                     <path d="M12 17h.01"></path>
                 </svg>
-                <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/sitemap-validator.text_3') }}</h3>
+                <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/sitemap-validator.text_3') }}</h2>
             </div>
             <p class="text-sm md:text-base text-gray-600">{{ __('tools/sitemap-validator.text_4') }}</p>
         </div>
@@ -261,9 +261,8 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Generate SEO-friendly XML sitemaps for search
-                        engines</p>
+                        style="font-family:var(--font-heading)">Générateur de Sitemap XML</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_566') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -294,7 +293,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Robots.txt Validator</h3>
+                        style="font-family:var(--font-heading)">Validateur Robots.txt</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/sitemap-validator.text_23') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -330,7 +329,8 @@
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
                         style="font-family:var(--font-heading)">{{ __('tools/sitemap-validator.text_24') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Visual H1-H6 tree with SEO validation</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Arbre visuel H1-H6 avec validation
+                                SEO</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"

@@ -38,8 +38,12 @@ const VIEWPORTS = [[375, 812], [768, 1024], [1440, 900]];
       function selectorMatches(sel) {
         // Strip pseudo-classes/elements so :hover/::before rules are kept
         // when their base element exists.
+        // (?<!\\) : ne pas traiter le séparateur de variante Tailwind échappé
+        // (`.lg\:block`, `.hover\:…`) comme une pseudo-classe — sinon le
+        // sélecteur devient `.lg\`, ne matche rien, et toutes les règles
+        // responsive desktop étaient omises du CSS critique.
         const base = sel
-          .replace(/::?[a-zA-Z-]+(\([^)]*\))?/g, (m) => {
+          .replace(/(?<!\\)::?[a-zA-Z-]+(\([^)]*\))?/g, (m) => {
             // keep functional selectors that change matching (:not, :nth-child…)
             return /^::?(not|is|where|has|nth|first|last|only)/.test(m) ? m : '';
           })

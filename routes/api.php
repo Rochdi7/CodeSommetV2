@@ -31,7 +31,7 @@ Route::post('/tools/{slug}', [ToolsApiController::class, 'handle'])
  */
 Route::get('/tools/{slug}/usage', [ToolsApiController::class, 'usageShow'])
     ->where('slug', '[a-z0-9-]+')
-    ->middleware('throttle:tools-usage');
+    ->middleware('throttle:tools-usage-read');
 Route::post('/tools/{slug}/usage', [ToolsApiController::class, 'usageIncrement'])
     ->where('slug', '[a-z0-9-]+')
     ->middleware('throttle:tools-usage');

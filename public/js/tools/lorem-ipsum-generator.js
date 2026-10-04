@@ -112,6 +112,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('lorem-ipsum-generator', 'Lorem Ipsum texts generated');
+        CodeSommetTools.initUsageCounter('lorem-ipsum-generator', 'textes Lorem Ipsum générés');
     });
 })();

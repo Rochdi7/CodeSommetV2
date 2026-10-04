@@ -58,7 +58,7 @@
                 <p class="text-xs text-gray-500 mt-2">{{ __('tools/nofollow-link-checker.text_5') }}</p>
                 <div class="flex flex-wrap gap-3 mt-4"><button
                         class="inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden transform-gpu focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-primary)] bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white shadow-[0_8px_20px_rgba(0,174,239,0.3),0_4px_10px_rgba(0,174,239,0.2)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(0,174,239,0.4),0_6px_15px_rgba(0,174,239,0.3)] active:translate-y-0 active:shadow-[0_4px_15px_rgba(0,174,239,0.3)] h-10 px-6 text-base rounded-full gap-2"
-                        tabindex="0">Analyze Links<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        tabindex="0">Analyser les liens<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -66,7 +66,7 @@
                         </svg></button></div>
             </div>
             <div class="bg-blue-50 rounded-2xl border border-blue-200 p-6">
-                <h3 class="text-lg font-bold text-black mb-3">{{ __('tools/nofollow-link-checker.text_6') }}</h3>
+                <h2 class="text-lg font-bold text-black mb-3">{{ __('tools/nofollow-link-checker.text_6') }}</h2>
                 <div class="space-y-2 text-sm text-gray-700">
                     <p>Les <strong>liens dofollow</strong> {{ __('tools/nofollow-link-checker.text_7') }}</p>
                     <p>Les <strong>liens nofollow</strong> (rel=&quot;nofollow&quot;) tell search engines not to follow the
@@ -89,8 +89,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/nofollow-link-checker.text_12') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/nofollow-link-checker.text_12') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/nofollow-link-checker.text_13') }}</p>
                 </div>
@@ -286,7 +286,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Broken Link Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur de Liens Cassés</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/nofollow-link-checker.text_32') }}
                     </p>
                     <div
@@ -319,7 +319,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Internal Link Analyzer</h3>
+                        style="font-family:var(--font-heading)">Analyseur de Liens Internes</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/nofollow-link-checker.text_33') }}
                     </p>
                     <div

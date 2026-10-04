@@ -74,7 +74,7 @@
                 <div class="mt-6"></div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-black mb-4">{{ __('tools/duplicate-content-checker.text_5') }}</h3>
+                <h2 class="text-lg font-semibold text-black mb-4">{{ __('tools/duplicate-content-checker.text_5') }}</h2>
                 <div class="space-y-4 text-sm text-gray-700">
                     <div class="flex items-start gap-3">
                         <div
@@ -113,8 +113,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/duplicate-content-checker.text_11') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/duplicate-content-checker.text_11') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/duplicate-content-checker.text_12') }}</p>
                 </div>
@@ -305,7 +305,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Canonical URL Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur d'URL Canonique</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/duplicate-content-checker.text_30') }}</p>
                     <div

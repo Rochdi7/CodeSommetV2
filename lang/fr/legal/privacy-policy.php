@@ -163,8 +163,8 @@ return [
     'text_252' => 'Contactez-nous',
     'text_253' => 'Politique de Cookies',
     'text_254' => 'Politique de Remboursement',
-    'text_454' => '[email protected]',
-    'text_455' => '[email protected]',
-    'text_456' => '[email protected]',
+    'text_454' => 'codesommet@gmail.com',
+    'text_455' => 'codesommet@gmail.com',
+    'text_456' => 'codesommet@gmail.com',
     'text_457' => 'Contactez-nous pour exercer vos droits',
 ];

@@ -182,8 +182,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_22') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_22') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -219,8 +219,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_228') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_228') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -256,8 +256,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_34') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_34') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -293,8 +293,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_41') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_41') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -329,8 +329,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_230') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_230') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -366,7 +366,7 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">6. Pratiques trompeuses</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">6. Pratiques trompeuses</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -401,8 +401,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_231') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_231') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -438,8 +438,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_61') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_61') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <ul class="list-disc pl-6 space-y-2">
@@ -494,7 +494,7 @@
                             <li><strong>Services tiers :</strong> {{ __('legal/acceptable-use.text_79') }}</li>
                         </ul>
                         <div class="bg-[#00AEEF]/5 rounded-lg p-6 border border-[#00AEEF]/20 mt-4">
-                            <h4 class="font-semibold text-[#0F0F0F] mb-2">{{ __('legal/acceptable-use.text_80') }}</h4>
+                            <h3 class="font-semibold text-[#0F0F0F] mb-2">{{ __('legal/acceptable-use.text_80') }}</h3>
                             <ul class="list-disc pl-6 space-y-1 text-sm">
                                 <li>{{ __('legal/acceptable-use.text_81') }}</li>
                                 <li>{{ __('legal/acceptable-use.text_82') }}</li>
@@ -547,7 +547,7 @@
                                                 <line x1="12" x2="12.01" y1="16" y2="16">
                                                 </line>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">1. Avertissement</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">1. Avertissement</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/acceptable-use.text_88') }}</p>
@@ -579,8 +579,8 @@
                                                 <line x1="12" x2="12.01" y1="16" y2="16">
                                                 </line>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_233') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_233') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/acceptable-use.text_89') }}</p>
@@ -612,8 +612,8 @@
                                                 <line x1="12" x2="12.01" y1="16" y2="16">
                                                 </line>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_234') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_234') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/acceptable-use.text_90') }}</p>
@@ -642,8 +642,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_91') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_91') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/acceptable-use.text_92') }}</p>
@@ -672,8 +672,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_235') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_235') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/acceptable-use.text_93') }}</p>
@@ -702,8 +702,8 @@
                                                 <path d="m15 9-6 6"></path>
                                                 <path d="m9 9 6 6"></path>
                                             </svg></div>
-                                        <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                            {{ __('legal/acceptable-use.text_94') }}</h4>
+                                        <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                            {{ __('legal/acceptable-use.text_94') }}</h3>
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/acceptable-use.text_95') }}</p>
@@ -743,8 +743,7 @@
                                 {{ __('legal/acceptable-use.text_102') }}</h3>
                             <p class="mb-3">{{ __('legal/acceptable-use.text_103') }} <a
                                     href="mailto:codesommet@gmail.com"
-                                    class="text-[#00AEEF] hover:underline font-medium"><span class="__cf_email__"
-                                        data-cfemail="0c64696060634c7c65676d7f7f637f7879686563226f6361">{{ __('legal/acceptable-use.text_438') }}</span></a>
+                                    class="text-[#00AEEF] hover:underline font-medium">{{ __('legal/acceptable-use.text_438') }}</a>
                                 {{ __('legal/acceptable-use.text_104') }}</p>
                             <p class="mb-2 font-medium text-[#0F0F0F]">Veuillez inclure :</p>
                             <ul class="list-disc pl-6 space-y-1 text-sm">
@@ -816,8 +815,7 @@
                             </div>
                             <div class="space-y-2">
                                 <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="3e565b5252517e4e57555f4d4d514d4a4b5a5751105d5153">{{ __('legal/acceptable-use.text_439') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/acceptable-use.text_439') }}</a>
                                 </p>
                                 <p><strong>{{ __('legal/acceptable-use.text_121') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>

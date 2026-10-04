@@ -179,7 +179,7 @@
                                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                             </svg></div>
-                        <h3 class="font-semibold text-[var(--text-primary)] mb-2">{{ __('contact.text_10') }}</h3>
+                        <h2 class="text-base font-semibold text-[var(--text-primary)] mb-2">{{ __('contact.text_10') }}</h2>
                         <p class="text-sm text-[var(--text-secondary)] mb-3">{{ __('contact.text_11') }}</p><a
                             href="mailto:codesommet@gmail.com"
                             class="text-[#00AEEF] font-medium hover:text-[#0071BC] transition-colors inline-flex items-center gap-2 group text-sm">{{ __('contact.text_166') }}<svg
@@ -203,7 +203,7 @@
                                     d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
                                 </path>
                             </svg></div>
-                        <h3 class="font-semibold text-[var(--text-primary)] mb-2">WhatsApp</h3>
+                        <h2 class="text-base font-semibold text-[var(--text-primary)] mb-2">WhatsApp</h2>
                         <p class="text-sm text-[var(--text-secondary)] mb-3">{{ __('contact.text_12') }}</p><a
                             href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'm%20interested%20in%20discussing%20a%20project%20with%20you."
                             target="_blank" rel="noopener noreferrer"
@@ -227,7 +227,7 @@
                                 <path d="M12 6v6l4 2"></path>
                                 <circle cx="12" cy="12" r="10"></circle>
                             </svg></div>
-                        <h3 class="font-semibold text-[var(--text-primary)] mb-2">Heures d'Ouverture</h3>
+                        <h2 class="text-base font-semibold text-[var(--text-primary)] mb-2">Heures d'Ouverture</h2>
                         <p class="text-xs text-[var(--text-secondary)] mb-2">Lun-Ven : 9h - 18h (GMT+1)</p>
                         <p class="text-xs text-[var(--text-secondary)]">Sam : 10h - 14h (GMT+1)</p>
                     </div>

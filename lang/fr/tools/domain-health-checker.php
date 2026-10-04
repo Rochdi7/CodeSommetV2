@@ -46,7 +46,6 @@ return [
     'text_36' => 'Contactez notre équipe pour obtenir de l\'aide',
     'text_37' => 'Outils Connexes Qui Pourraient Vous Intéresser',
     'text_38' => 'Continuez à optimiser votre site web avec ces outils complémentaires',
-    'text_39' => 'amp; Sécurité',
     'text_40' => 'Analyseur de Structure des Titres',
     'text_41' => 'Arbre visuel H1-H6 avec validation SEO',
     'text_42' => 'Trouvez les liens brisés, redirections et délais d\'attente',

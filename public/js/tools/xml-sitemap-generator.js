@@ -113,6 +113,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('xml-sitemap-generator', 'sitemaps generated');
+        CodeSommetTools.initUsageCounter('xml-sitemap-generator', 'sitemaps générés');
     });
 })();

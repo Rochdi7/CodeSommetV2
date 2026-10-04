@@ -1,6 +1,6 @@
 @extends('frontoffice.layouts.app')
 
-@section('title', ($post->meta_title ?: $post->title) . ' - Blog | CodeSommet')
+@section('title', ($post->meta_title ?: $post->title) . ' | CodeSommet')
 @section('meta_description', $post->meta_description ?: $post->excerpt)
 @section('og_title', $post->meta_title ?: $post->title)
 @section('og_description', $post->meta_description ?: $post->excerpt)
@@ -10,12 +10,26 @@
 @if($post->featured_image)
 @section('og_image', asset('storage/' . $post->featured_image))
 @section('og_image_alt', $post->image_alt ?: $post->title)
+@php
+    // Dimensions réelles de l'image OG (le layout annonce 1536x1024 par défaut).
+    $ogImagePath = public_path('storage/' . $post->featured_image);
+    $ogImageSize = is_file($ogImagePath) ? getimagesize($ogImagePath) : false;
+@endphp
+@if($ogImageSize)
+@section('og_image_width', (string) $ogImageSize[0])
+@section('og_image_height', (string) $ogImageSize[1])
+@endif
 @section('twitter_image', asset('storage/' . $post->featured_image))
 @endif
 
 @section('structured_data')
 @php
     $postUrl = rtrim(config('app.url'), '/') . '/blog/' . $post->slug;
+    // Articles signés par la marque : on référence l'Organization (même @id que le
+    // schéma global) au lieu de typer « CodeSommet » comme une Person.
+    $blogAuthor = (blank($post->author) || strcasecmp(trim($post->author), 'CodeSommet') === 0)
+        ? ['@type' => 'Organization', '@id' => rtrim(config('app.url'), '/') . '/#organization', 'name' => 'CodeSommet']
+        : ['@type' => 'Person', 'name' => $post->author];
     $blogSchema = [
         '@context' => 'https://schema.org',
         '@type' => 'BlogPosting',
@@ -24,7 +38,7 @@
         'url' => $postUrl,
         'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $postUrl],
         'inLanguage' => 'fr',
-        'author' => ['@type' => 'Person', 'name' => $post->author],
+        'author' => $blogAuthor,
         'publisher' => [
             '@type' => 'Organization',
             '@id' => rtrim(config('app.url'), '/') . '/#organization',
@@ -125,11 +139,17 @@
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[900px]">
         <div class="rounded-3xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
             @if($post->featured_image)
+            @php
+                // Dimensions intrinsèques (réservent le ratio, h-auto garde le rendu responsive).
+                $featuredPath = public_path('storage/' . $post->featured_image);
+                $featuredSize = is_file($featuredPath) ? @getimagesize($featuredPath) : false;
+            @endphp
             <figure>
                 <img src="{{ asset('storage/' . $post->featured_image) }}"
                      alt="{{ $post->image_alt }}"
                      @if($post->featured_image_description) title="{{ $post->featured_image_description }}" @endif
-                     class="w-full h-auto object-cover" loading="eager" />
+                     @if($featuredSize) width="{{ $featuredSize[0] }}" height="{{ $featuredSize[1] }}" @endif
+                     class="w-full h-auto object-cover" loading="eager" fetchpriority="high" />
                 @if($post->featured_image_caption)
                 <figcaption class="px-5 py-3 text-xs text-[var(--text-tertiary)] bg-gray-50 text-center">
                     {{ $post->featured_image_caption }}

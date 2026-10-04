@@ -49,7 +49,7 @@
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
                             style="font-family:var(--font-heading)">{{ __('locations.text_2') }}<!-- --> <span
-                                class="text-[#00AEEF]">International</span></h1>
+                                class="text-[#00AEEF]">Internationales</span></h1>
                         <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('locations.text_3') }}</p>
                         <div class="flex flex-wrap gap-4 justify-center lg:justify-start"><a

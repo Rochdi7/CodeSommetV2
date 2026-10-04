@@ -148,6 +148,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('schema-generator', 'schema markups generated');
+        CodeSommetTools.initUsageCounter('schema-generator', 'balisages schema générés');
     });
 })();

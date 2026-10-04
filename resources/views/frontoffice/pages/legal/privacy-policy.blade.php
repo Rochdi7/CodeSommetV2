@@ -165,7 +165,6 @@
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                    <h4 class="text-xl font-semibold text-[#0F0F0F]"></h4>
                                 </div>
                                 <div class="space-y-3">
                                     <div class="flex items-start gap-3 group">
@@ -372,8 +371,7 @@
                             <p class="mb-3">{{ __('legal/privacy-policy.text_90') }}</p>
                             <ul class="space-y-2">
                                 <li><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="0169646d6d6e4171686a6072726e72757465686e2f626e6c">{{ __('legal/privacy-policy.text_454') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_454') }}</a>
                                 </li>
                                 <li><strong>{{ __('legal/privacy-policy.text_91') }}</strong> +212 6 32 58 20 96</li>
                                 <li><strong>{{ __('legal/privacy-policy.text_92') }}</strong> <a
@@ -445,8 +443,7 @@
                     <div class="space-y-4 text-[#0F0F0F]/70">
                         <p>{{ __('legal/privacy-policy.text_119') }}</p>
                         <p>{{ __('legal/privacy-policy.text_120') }} <a href="mailto:codesommet@gmail.com"
-                                class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                    data-cfemail="3d55585151527d4d54565c4e4e524e4948595452135e5250">{{ __('legal/privacy-policy.text_455') }}</span></a>{{ __('legal/privacy-policy.text_121') }}
+                                class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_455') }}</a>{{ __('legal/privacy-policy.text_121') }}
                         </p>
                     </div>
                 </div>
@@ -487,8 +484,7 @@
                             </div>
                             <div class="space-y-2">
                                 <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="5f373a3333301f2f36343e2c2c302c2b2a3b3630713c3032">{{ __('legal/privacy-policy.text_456') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_456') }}</a>
                                 </p>
                                 <p><strong>{{ __('legal/privacy-policy.text_131') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>

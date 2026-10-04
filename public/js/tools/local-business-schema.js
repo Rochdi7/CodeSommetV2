@@ -115,6 +115,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('local-business-schema', 'schemas generated');
+        CodeSommetTools.initUsageCounter('local-business-schema', 'schémas générés');
     });
 })();

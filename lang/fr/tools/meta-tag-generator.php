@@ -55,5 +55,5 @@ return [
     'label_144' => 'URL du site web',
     'text_145' => 'balises de titre',
     'text_146' => 'AI Landing Page Generator',
-    'sw_946' => 'Entrez simplement l\'URL de votre site web dans le champ de saisie et cliquez sur « Générer les Balises Méta ». Notre IA analysera le contenu de votre page, en extraira les informations pertinentes et créera des balises méta optimisées. Vous pourrez ensuite copier le code HTML généré et le coller dans la section &lt;head&gt; de votre site.',
+    'sw_946' => 'Entrez simplement l\'URL de votre site web dans le champ de saisie et cliquez sur « Générer les Balises Méta ». Notre IA analysera le contenu de votre page, en extraira les informations pertinentes et créera des balises méta optimisées. Vous pourrez ensuite copier le code HTML généré et le coller dans la section <head> de votre site.',
 ];

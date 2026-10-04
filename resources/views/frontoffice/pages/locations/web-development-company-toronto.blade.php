@@ -84,8 +84,7 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">Tableaux
-                                            de Bord SaaS</span><span
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="Tableaux de Bord SaaS"></span><span
                                             class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Tableaux
                                             de Bord SaaS</span></span></span></h1>
                             <p
@@ -128,8 +127,7 @@
                         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm md:text-base pt-4">
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-toronto.text_1') }}
-                                    <!-- -->Toronto</span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-toronto.text_1') }}</span>
                             </div>
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
@@ -655,9 +653,9 @@
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}"
+                                        data-src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}"
                                         autoplay loop muted playsinline webkit-playsinline
-                                        class="w-full h-full object-cover"></video>
+                                        preload="none" class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                         <span
@@ -681,9 +679,9 @@
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}"
+                                        data-src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}"
                                         autoplay loop muted playsinline webkit-playsinline
-                                        class="w-full h-full object-cover"></video>
+                                        preload="none" class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                         <span
@@ -708,9 +706,9 @@
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                        src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
+                                        data-src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
                                         autoplay loop muted playsinline webkit-playsinline
-                                        class="w-full h-full object-cover"></video>
+                                        preload="none" class="w-full h-full object-cover"></video>
                                     <div
                                         class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                                         <span
@@ -864,7 +862,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 mb-12">
+                <div class="bg-white rounded-2xl p-8 border border-[#0F0F0F]/10">
                     <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4 text-center">
                         {{ __('locations/web-development-company-toronto.text_24') }}</h3>
                     <div class="flex flex-wrap justify-center gap-3"><span
@@ -879,32 +877,6 @@
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">Shopify
                             API</span><span
                             class="px-4 py-2 bg-[#F8F8F8] border border-[#0F0F0F]/10 rounded-full text-sm font-medium text-[#0F0F0F] hover:border-[#00AEEF]/30 hover:bg-[#00AEEF]/5 transition-all">AWS</span>
-                    </div>
-                </div>
-                <div
-                    class="relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] rounded-3xl p-8 md:p-12 text-white overflow-hidden">
-                    <div class="absolute top-6 right-6 opacity-10"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote w-24 h-24"
-                            aria-hidden="true">
-                            <path
-                                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                            </path>
-                            <path
-                                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                            </path>
-                        </svg></div>
-                    <div class="relative z-10 max-w-3xl">
-                        <p class="text-xl md:text-2xl leading-relaxed mb-6 italic font-light text-white">
-                            &quot;<!-- -->{{ __('locations/web-development-company-toronto.text_373') }}<!-- -->&quot;</p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-px h-12 bg-[#00AEEF]"></div>
-                            <div>
-                                <div class="font-semibold text-lg text-white">PDG</div>
-                                <div class="text-[#00AEEF] text-sm font-medium">
-                                    {{ __('locations/web-development-company-toronto.text_165') }}</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1207,7 +1179,7 @@
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Sur
                                                 Mesure</span><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Sur
-                                                Mesure</span></div><span class="text-black/50 text-xl mb-2">/month</span>
+                                                Mesure</span></div><span class="text-black/50 text-xl mb-2">/mois</span>
                                     </div>
                                     <p class="text-black/60 text-sm mt-2">
                                         {{ __('locations/web-development-company-toronto.text_42') }}</p>
@@ -1434,9 +1406,9 @@
                                         class="text-sm font-bold text-[#0F0F0F]">{{ __('locations/web-development-company-toronto.text_167') }}</span>
                                 </div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Premium/month</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">Premium/mois</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Premium/month</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">Premium/mois</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">
@@ -1900,10 +1872,10 @@
                     <div class="flex justify-center items-center gap-3 mt-8"><button
                             class="testimonial-dot transition-all duration-300 rounded-full"
                             style="width:12px;height:12px;background:#00AEEF;transform:scale(1.25)" data-dot="0"
-                            aria-label="Go to testimonial group 1"></button><button
+                            aria-label="Aller au groupe de témoignages 1"></button><button
                             class="testimonial-dot transition-all duration-300 rounded-full"
                             style="width:10px;height:10px;background:rgba(15,15,15,0.25)" data-dot="1"
-                            aria-label="Go to testimonial group 2"></button></div>
+                            aria-label="Aller au groupe de témoignages 2"></button></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60">

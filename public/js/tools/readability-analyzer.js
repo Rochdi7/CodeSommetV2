@@ -268,6 +268,6 @@
             return '<div class="flex justify-between items-center"><span class="text-gray-600">' + l + '</span><span class="font-semibold text-black">' + v + '</span></div>';
         }
 
-        CodeSommetTools.initUsageCounter('readability-analyzer', 'texts analyzed');
+        CodeSommetTools.initUsageCounter('readability-analyzer', 'textes analysés');
     });
 })();

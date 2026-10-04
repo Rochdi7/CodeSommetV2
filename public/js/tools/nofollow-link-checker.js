@@ -136,6 +136,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('nofollow-link-checker', 'link analyses performed');
+        CodeSommetTools.initUsageCounter('nofollow-link-checker', 'analyses de liens effectuées');
     });
 })();

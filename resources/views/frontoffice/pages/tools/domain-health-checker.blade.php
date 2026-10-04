@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/domain-health-checker.text_6') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/domain-health-checker.text_6') }}</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="space-y-2">
                         <p class="text-sm font-semibold text-gray-900">{{ __('tools/domain-health-checker.text_7') }}</p>
@@ -109,7 +109,7 @@
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                     <path d="M12 17h.01"></path>
                 </svg>
-                <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/domain-health-checker.text_19') }}</h3>
+                <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/domain-health-checker.text_19') }}</h2>
             </div>
             <p class="text-sm md:text-base text-gray-600">{{ __('tools/domain-health-checker.text_20') }}</p>
         </div>
@@ -289,10 +289,10 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Website Readiness Checker</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Analyse en 14 points couvrant SEO, Croissance,
-                        Performance >14-point analysis across SEO, Growth, Performance &amp; Security</p>
-                    {{ __('tools/domain-health-checker.text_39') }}</p>
+                        style="font-family:var(--font-heading)">Vérificateur de Préparation du Site</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Analyse en 14 points couvrant SEO,
+                                Croissance,
+                                Performance &amp; Sécurité</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -308,27 +308,22 @@
                     </div>
                 </a><a
                     class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/heading-analyzer">
+                    href="/tools/domain-authority-checker">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-list w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
-                                aria-hidden="true">
-                                <path d="M3 5h.01"></path>
-                                <path d="M3 12h.01"></path>
-                                <path d="M3 19h.01"></path>
-                                <path d="M8 5h13"></path>
-                                <path d="M8 12h13"></path>
-                                <path d="M8 19h13"></path>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-shield-check w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">{{ __('tools/domain-health-checker.text_40') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/domain-health-checker.text_41') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('tools.text_domain_authority') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_domain_authority') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -359,7 +354,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Broken Link Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur de Liens Cassés</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/domain-health-checker.text_42') }}
                     </p>
                     <div

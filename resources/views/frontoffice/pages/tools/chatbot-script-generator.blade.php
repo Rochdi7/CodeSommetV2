@@ -142,8 +142,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/chatbot-script-generator.text_12') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/chatbot-script-generator.text_12') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/chatbot-script-generator.text_13') }}</p>
                 </div>
@@ -353,7 +353,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">AI Meta Tag Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Balises Meta IA</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/chatbot-script-generator.text_32') }}</p>
                     <div
@@ -386,7 +386,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">AI Blog Title Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Titres de Blog IA</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/chatbot-script-generator.text_33') }}</p>
                     <div

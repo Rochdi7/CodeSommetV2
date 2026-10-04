@@ -82,7 +82,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/word-counter.text_5') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/word-counter.text_5') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/word-counter.text_6') }}</p>
                 </div>
@@ -283,8 +283,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
                         style="font-family:var(--font-heading)">{{ __('tools/word-counter.text_22') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Analyze text readability with 5 algorithms and
-                        grade levels</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_572') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -316,9 +315,8 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">HTML to Plain Text Converter</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Convert HTML to clean, readable plain text
-                        instantly</p>
+                        style="font-family:var(--font-heading)">Convertisseur HTML vers Texte Brut</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_574') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -349,9 +347,10 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Text Case Converter</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Convert text between uppercase, lowercase, title
-                        case, and more</p>
+                        style="font-family:var(--font-heading)">Convertisseur de Casse de Texte</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Convertissez du texte entre
+                                majuscules,
+                                minuscules, casse de titre et plus</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"

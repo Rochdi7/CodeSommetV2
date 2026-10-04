@@ -96,6 +96,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('html-to-text', 'HTML conversions performed');
+        CodeSommetTools.initUsageCounter('html-to-text', 'conversions HTML effectuées');
     });
 })();

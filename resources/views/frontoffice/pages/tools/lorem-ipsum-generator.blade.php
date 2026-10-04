@@ -76,11 +76,11 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/lorem-ipsum-generator.text_6') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/lorem-ipsum-generator.text_6') }}</h2>
                 <div class="space-y-4 text-sm text-gray-700">
                     <p>{{ __('tools/lorem-ipsum-generator.text_7') }}</p>
                     <div class="space-y-2">
-                        <h4 class="font-semibold text-gray-900">Cas d'Utilisation Courants :</h4>
+                        <h3 class="font-semibold text-gray-900">Cas d'Utilisation Courants :</h3>
                         <ul class="list-disc list-inside space-y-1 text-gray-600">
                             <li>{{ __('tools/lorem-ipsum-generator.text_144') }}</li>
                             <li>{{ __('tools/lorem-ipsum-generator.text_145') }}</li>
@@ -95,7 +95,7 @@
                             et wireframes.</p>
                     </div>
                     <div class="space-y-2">
-                        <h4 class="font-semibold text-gray-900">{{ __('tools/lorem-ipsum-generator.text_11') }}</h4>
+                        <h3 class="font-semibold text-gray-900">{{ __('tools/lorem-ipsum-generator.text_11') }}</h3>
                         <ul class="list-disc list-inside space-y-1 text-gray-600">
                             <li>{{ __('tools/lorem-ipsum-generator.text_12') }}</li>
                             <li>{{ __('tools/lorem-ipsum-generator.text_13') }}</li>
@@ -115,8 +115,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/lorem-ipsum-generator.text_16') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/lorem-ipsum-generator.text_16') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/lorem-ipsum-generator.text_17') }}</p>
                 </div>
@@ -346,7 +346,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Word &amp; Character Counter</h3>
+                        style="font-family:var(--font-heading)">Compteur de Mots &amp; Caractères</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/lorem-ipsum-generator.text_37') }}
                     </p>
                     <div
@@ -380,7 +380,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">HTML to Plain Text Converter</h3>
+                        style="font-family:var(--font-heading)">Convertisseur HTML vers Texte Brut</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/lorem-ipsum-generator.text_38') }}
                     </p>
                     <div

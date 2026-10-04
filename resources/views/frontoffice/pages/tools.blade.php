@@ -71,6 +71,7 @@
                     </div>
                     <div class="relative flex items-center justify-center"><img
                             src="{{ asset('images/new-flyers/free-seo-web-development-tools.webp') }}" alt="Outils SEO et IA Gratuits"
+                            width="900" height="597" fetchpriority="high"
                             class="w-full h-auto max-w-lg mx-auto" /></div>
                 </div>
                 <div class="space-y-4" id="tools">
@@ -168,8 +169,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_139') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_139') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_547') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -204,8 +205,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_4') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_4') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_548') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -235,8 +236,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_5') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_5') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">10 titres viraux avec des scores SEO
                                 et
                                 CTR estimates</p>
@@ -268,8 +269,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_6') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_6') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_549') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -306,8 +307,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_7') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_7') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_550') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -338,8 +339,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_8') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_8') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_551') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -372,8 +373,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_140') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_140') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Arbre visuel H1-H6 avec validation
                                 SEO
                             </p>
@@ -406,8 +407,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_9') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_9') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_552') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -437,8 +438,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_10') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_10') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_553') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -467,8 +468,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_domain_authority') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_domain_authority') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_domain_authority') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -499,8 +500,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_141') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_141') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez les images pour les balises
                                 alt manquantes ou insuffisantes
                                 text</p>
@@ -534,8 +535,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_142') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_142') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Validez les sitemaps XML selon les
                                 meilleures
                                 practices</p>
@@ -567,8 +568,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Validateur Robots.txt</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">Validateur Robots.txt</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_555') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -598,8 +599,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_12') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_12') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_556') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -629,8 +630,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_143') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_143') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analysez les performances de
                                 chargement et obtenez
                                 actionable recommendations</p>
@@ -662,8 +663,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_13') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_13') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_557') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -693,8 +694,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Minificateur HTML/CSS/JS</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">Minificateur HTML/CSS/JS</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_558') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -724,8 +725,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_14') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_14') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_559') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -755,8 +756,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_15') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_15') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_560') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -786,8 +787,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_144') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_144') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_561') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -818,8 +819,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_145') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_145') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_562') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -849,8 +850,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_16') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_16') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_563') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -880,11 +881,11 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_17') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_17') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Analyse en 14 points couvrant SEO,
                                 Croissance,
-                                Performance &amp; Security</p>
+                                Performance &amp; Sécurité</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
                                 <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -913,8 +914,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_18') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_18') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_564') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -946,8 +947,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_19') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_19') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_565') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -978,8 +979,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_20') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_20') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_566') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1009,8 +1010,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_21') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_21') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_567') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1042,8 +1043,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_22') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_22') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_568') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1073,8 +1074,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_23') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_23') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_569') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1104,8 +1105,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_24') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_24') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_570') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1136,8 +1137,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_25') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_25') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_571') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1169,8 +1170,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_26') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_26') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez les FAQ au format
                                 JSON-LD schema</p>
                             <div
@@ -1202,8 +1203,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_27') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_27') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_572') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1233,8 +1234,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_28') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_28') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_573') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1265,8 +1266,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_29') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_29') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_574') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1296,8 +1297,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_146') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_146') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Convertissez du texte entre
                                 majuscules,
                                 minuscules, casse de titre et plus</p>
@@ -1328,8 +1329,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_30') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_30') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_575') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1360,8 +1361,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Formateur/Validateur JSON</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">Formateur/Validateur JSON</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Formatez, validez et minifiez du
                                 JSON
                                 avec coloration syntaxique</p>
@@ -1395,8 +1396,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_31') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_31') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_576') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1430,8 +1431,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_32') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_32') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Extrayez les couleurs de marque des
                                 logos avec
                                 la vision IA</p>
@@ -1472,8 +1473,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_33') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_33') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_577') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1503,8 +1504,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">Minificateur CSS</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">Minificateur CSS</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_578') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1534,8 +1535,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_34') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_34') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_579') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1565,8 +1566,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_35') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_35') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools.ml_580') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1595,8 +1596,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_36') }}</h3>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools.text_36') }}</h2>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">Mesurez LCP, FID, CLS pour le
                                 classement Google
                                 rankings</p>
@@ -1620,8 +1621,8 @@
                         <path d="m21 21-4.34-4.34"></path>
                         <circle cx="11" cy="11" r="8"></circle>
                     </svg>
-                    <h3 class="text-2xl font-bold text-[#0F0F0F] mb-2" style="font-family:var(--font-heading)">
-                        {{ __('tools.text_37') }}</h3>
+                    <h2 class="text-2xl font-bold text-[#0F0F0F] mb-2" style="font-family:var(--font-heading)">
+                        {{ __('tools.text_37') }}</h2>
                     <p class="text-[#0F0F0F]/60">{{ __('tools.text_38') }}</p>
                 </div>
             </div>
@@ -1666,7 +1667,7 @@
 
                     toolCards.forEach(function(card) {
                         var category = card.getAttribute('data-category') || '';
-                        var name = card.querySelector('h3') ? card.querySelector('h3').textContent
+                        var name = card.querySelector('h2, h3') ? card.querySelector('h2, h3').textContent
                         .toLowerCase() : '';
                         var desc = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() :
                             '';

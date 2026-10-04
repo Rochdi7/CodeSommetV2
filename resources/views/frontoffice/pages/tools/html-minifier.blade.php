@@ -96,7 +96,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/html-minifier.text_5') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/html-minifier.text_5') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/html-minifier.text_6') }}</p>
                 </div>
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Image Compression Analyzer</h3>
+                        style="font-family:var(--font-heading)">Analyseur de Compression d'Images</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/html-minifier.text_25') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">

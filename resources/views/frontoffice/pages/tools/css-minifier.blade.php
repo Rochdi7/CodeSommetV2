@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4">{{ __('tools/css-minifier.text_3') }}</h3>
+                <h2 class="text-lg font-semibold text-[#0F0F0F] mb-4">{{ __('tools/css-minifier.text_3') }}</h2>
                 <div class="space-y-4">
                     <div class="flex items-start gap-3">
                         <div
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="bg-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4">Bonnes Pratiques</h3>
+                <h2 class="text-lg font-semibold text-[#0F0F0F] mb-4">Bonnes Pratiques</h2>
                 <div class="space-y-3 text-sm text-gray-700">
                     <div class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -166,7 +166,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/css-minifier.text_17') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/css-minifier.text_17') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/css-minifier.text_18') }}</p>
                 </div>
@@ -365,7 +365,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Color Palette Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Palette de Couleurs</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/css-minifier.text_36') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -406,7 +406,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">QR Code Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Code QR</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/css-minifier.text_37') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -438,7 +438,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">HTML/CSS/JS Minifier</h3>
+                        style="font-family:var(--font-heading)">Minificateur HTML/CSS/JS</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/css-minifier.text_38') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">

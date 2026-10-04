@@ -80,8 +80,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/page-speed-analyzer.text_3') }}
-                        </h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/page-speed-analyzer.text_3') }}
+                        </h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/page-speed-analyzer.text_4') }}</p>
                 </div>
@@ -286,7 +286,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">HTML/CSS/JS Minifier</h3>
+                        style="font-family:var(--font-heading)">Minificateur HTML/CSS/JS</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/page-speed-analyzer.text_23') }}
                     </p>
                     <div
@@ -319,7 +319,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Image Compression Analyzer</h3>
+                        style="font-family:var(--font-heading)">Analyseur de Compression d'Images</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/page-speed-analyzer.text_24') }}
                     </p>
                     <div
@@ -337,25 +337,23 @@
                     </div>
                 </a><a
                     class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/keyword-density-analyzer">
+                    href="/tools/mobile-friendly-test">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chart-column w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
-                                aria-hidden="true">
-                                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                                <path d="M18 17V9"></path>
-                                <path d="M13 17V5"></path>
-                                <path d="M8 17v-3"></path>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-smartphone w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <rect width="14" height="20" x="5" y="2" rx="2"
+                                            ry="2"></rect>
+                                        <path d="M12 18h.01"></path>
+                                    </svg>
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">{{ __('tools/page-speed-analyzer.text_25') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/page-speed-analyzer.text_26') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('tools.text_35') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_580') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"

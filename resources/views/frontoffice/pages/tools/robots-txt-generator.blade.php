@@ -52,8 +52,8 @@
             <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">
-                            {{ __('tools/robots-txt-generator.text_142') }}</h3>
+                        <h2 class="text-lg font-semibold text-[#0F0F0F] mb-2">
+                            {{ __('tools/robots-txt-generator.text_142') }}</h2>
                         <p class="text-sm text-[#0F0F0F]/60 mb-4">{{ __('tools/robots-txt-generator.text_4') }}</p>
                     </div>
                     <div><label for="robots-user-agent"
@@ -150,7 +150,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-4">{{ __('tools/robots-txt-generator.text_8') }}</h3>
+                <h2 class="text-lg font-semibold text-[#0F0F0F] mb-4">{{ __('tools/robots-txt-generator.text_8') }}</h2>
                 <div class="space-y-4">
                     <div class="flex items-start gap-3">
                         <div
@@ -188,8 +188,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/robots-txt-generator.text_13') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/robots-txt-generator.text_13') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/robots-txt-generator.text_14') }}</p>
                 </div>
@@ -385,7 +385,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Robots.txt Validator</h3>
+                        style="font-family:var(--font-heading)">Validateur Robots.txt</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-txt-generator.text_33') }}
                     </p>
                     <div
@@ -419,7 +419,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Sitemap XML</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-txt-generator.text_34') }}
                     </p>
                     <div
@@ -454,7 +454,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Sitemap Validator</h3>
+                        style="font-family:var(--font-heading)">Validateur de Sitemap</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/robots-txt-generator.text_35') }}
                     </p>
                     <div

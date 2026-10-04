@@ -2344,3 +2344,32 @@ video {
         transform: none;
     }
 }
+
+/* Hero H1 sizing span (services / villes) : le texte de dimensionnement est rendu
+   en CSS depuis data-sizer pour que le H1 ne contienne la phrase qu'une seule fois
+   dans le DOM (SEO / lecteurs d'écran), avec une boîte strictement identique. */
+[data-sizer]::before {
+    content: attr(data-sizer);
+}
+
+/* Zones tactiles (WCAG 2.5.8, >= 24px) : points de carrousel (9-15px) et icône
+   « Accueil » du fil d'Ariane (11px). Pseudo-élément transparent : aucune
+   modification visuelle, seule la zone cliquable est agrandie. */
+button[data-dot],
+button[aria-label^="Aller au groupe"],
+button[aria-label^="Aller à la page de témoignages"],
+a[aria-label="Home"] {
+    position: relative;
+}
+button[data-dot]::after,
+button[aria-label^="Aller au groupe"]::after,
+button[aria-label^="Aller à la page de témoignages"]::after,
+a[aria-label="Home"]::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translate(-50%, -50%);
+}

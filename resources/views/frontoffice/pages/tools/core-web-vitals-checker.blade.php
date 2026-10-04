@@ -82,8 +82,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/core-web-vitals-checker.text_6') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/core-web-vitals-checker.text_6') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/core-web-vitals-checker.text_7') }}</p>
                 </div>

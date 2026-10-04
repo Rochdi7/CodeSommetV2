@@ -279,9 +279,9 @@
                 {{-- Project 1 --}}
                 <a href="{{ route('case-study', 'mon-asso') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
                     <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
-                        <video src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}"
-                            autoplay loop muted playsinline preload="metadata"
-                            class="w-full h-full object-cover"></video>
+                        <video data-src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}"
+                            autoplay loop muted playsinline
+                            preload="none" class="w-full h-full object-cover"></video>
                         <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                             <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-worldwide.text_32') }}</span>
                         </div>
@@ -295,9 +295,9 @@
                 {{-- Project 2 --}}
                 <a href="{{ route('case-study', 'glamworlds') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
                     <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
-                        <video src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}"
-                            autoplay loop muted playsinline preload="metadata"
-                            class="w-full h-full object-cover"></video>
+                        <video data-src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}"
+                            autoplay loop muted playsinline
+                            preload="none" class="w-full h-full object-cover"></video>
                         <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                             <span class="text-xs font-bold text-white tracking-wide uppercase">Beauté</span>
                         </div>
@@ -311,9 +311,9 @@
                 {{-- Project 3 --}}
                 <a href="{{ route('case-study', 'morocco-quest') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
                     <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
-                        <video src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
-                            autoplay loop muted playsinline preload="metadata"
-                            class="w-full h-full object-cover"></video>
+                        <video data-src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
+                            autoplay loop muted playsinline
+                            preload="none" class="w-full h-full object-cover"></video>
                         <div class="absolute top-4 right-4 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
                             <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('locations/web-development-company-worldwide.text_37') }}</span>
                         </div>

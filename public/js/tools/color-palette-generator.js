@@ -348,6 +348,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('color-palette-generator', 'palettes generated');
+        CodeSommetTools.initUsageCounter('color-palette-generator', 'palettes générées');
     });
 })();

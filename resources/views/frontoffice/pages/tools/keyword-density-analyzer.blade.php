@@ -80,8 +80,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/keyword-density-analyzer.text_6') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/keyword-density-analyzer.text_6') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/keyword-density-analyzer.text_7') }}</p>
                 </div>
@@ -293,7 +293,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">URL Slug Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Slug URL</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/keyword-density-analyzer.text_27') }}</p>
                     <div
@@ -326,7 +326,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Internal Link Analyzer</h3>
+                        style="font-family:var(--font-heading)">Analyseur de Liens Internes</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/keyword-density-analyzer.text_28') }}</p>
                     <div
@@ -359,7 +359,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Nofollow Link Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur de Liens Nofollow</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/keyword-density-analyzer.text_29') }}</p>
                     <div

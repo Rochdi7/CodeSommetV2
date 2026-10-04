@@ -73,7 +73,7 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none">{{ __('services/study-abroad-website-development-agency.ml_1123') }}</span><span
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="{{ __('services/study-abroad-website-development-agency.ml_1123') }}"></span><span
                                             class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">{{ __('services/study-abroad-website-development-agency.ml_1124') }}</span></span></span>
                             </h1>
                             <p
@@ -883,9 +883,9 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}" autoplay
+                                    data-src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}" autoplay
                                     loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">Éducation</span>
@@ -902,9 +902,9 @@
                         <div
                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                             <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}" autoplay
+                                    data-src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}" autoplay
                                     loop muted playsinline webkit-playsinline
-                                    class="w-full h-full object-cover"></video>
+                                    preload="none" class="w-full h-full object-cover"></video>
                                 <div
                                     class="absolute top-5 right-5 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full border border-white/30">
                                     <span class="text-xs font-bold text-white tracking-wide uppercase">Tourisme</span>
@@ -2263,10 +2263,10 @@
                         <div class="flex justify-center items-center gap-3 mt-8"><button
                                 class="testimonial-dot transition-all duration-300 rounded-full"
                                 style="width:12px;height:12px;background:#00AEEF;transform:scale(1.25)" data-dot="0"
-                                aria-label="Go to testimonial group 1"></button><button
+                                aria-label="Aller au groupe de témoignages 1"></button><button
                                 class="testimonial-dot transition-all duration-300 rounded-full"
                                 style="width:10px;height:10px;background:rgba(15,15,15,0.25)" data-dot="1"
-                                aria-label="Go to testimonial group 2"></button></div>
+                                aria-label="Aller au groupe de témoignages 2"></button></div>
                     </div>
                     <div class="mt-10 text-center">
                         <p class="text-sm text-[#0F0F0F]/60">

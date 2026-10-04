@@ -145,6 +145,6 @@
         }
         function escapeAttr(str) { return str.replace(/"/g, '&quot;'); }
 
-        CodeSommetTools.initUsageCounter('url-slug-generator', 'slugs generated');
+        CodeSommetTools.initUsageCounter('url-slug-generator', 'slugs générés');
     });
 })();

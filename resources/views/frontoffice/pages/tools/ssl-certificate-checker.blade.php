@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/ssl-certificate-checker.text_6') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/ssl-certificate-checker.text_6') }}</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="space-y-2">
                         <p class="text-sm font-semibold text-gray-900">{{ __('tools/ssl-certificate-checker.text_7') }}</p>
@@ -109,7 +109,7 @@
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                     <path d="M12 17h.01"></path>
                 </svg>
-                <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/ssl-certificate-checker.text_17') }}</h3>
+                <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/ssl-certificate-checker.text_17') }}</h2>
             </div>
             <p class="text-sm md:text-base text-gray-600">{{ __('tools/ssl-certificate-checker.text_18') }}</p>
         </div>

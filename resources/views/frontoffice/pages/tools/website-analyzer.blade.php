@@ -104,7 +104,7 @@
                             </div>
                             <div class="flex-1 min-w-0">
                                 <div class="flex items-start justify-between gap-4 mb-2">
-                                    <h3 class="text-lg sm:text-xl font-bold text-black">Enter URL &amp; Instant Checks</h3>
+                                    <h3 class="text-lg sm:text-xl font-bold text-black">Saisie de l'URL &amp; vérifications instantanées</h3>
                                     <div class="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -807,8 +807,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/website-analyzer.text_50') }}
-                        </h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/website-analyzer.text_50') }}
+                        </h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/website-analyzer.text_51') }}</p>
                 </div>
@@ -964,10 +964,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Yes! After your analysis is complete, click the 'Partager Results' button to get a unique
-                                shareable link. You can copy the link, download results, or share directly on social media.
-                                The shared results remain accessible and can be used to track improvements over time or show
-                                stakeholders.</p>
+                            <p>{{ __('tools/website-analyzer.text_64_answer') }}</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

@@ -84,8 +84,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/url-slug-generator.text_7') }}
-                        </h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/url-slug-generator.text_7') }}
+                        </h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/url-slug-generator.text_8') }}</p>
                 </div>
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Canonical URL Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur d'URL Canonique</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/url-slug-generator.text_25') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -316,24 +316,23 @@
                     </div>
                 </a><a
                     class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/og-preview-generator">
+                    href="/tools/utm-builder">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-eye w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
-                                aria-hidden="true">
-                                <path
-                                    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
-                                </path>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-link2 lucide-link-2 w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+                                        <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+                                        <line x1="8" x2="16" y1="12" y2="12"></line>
+                                    </svg>
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">{{ __('tools/url-slug-generator.text_26') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/url-slug-generator.text_27') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('tools.text_21') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_567') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayez gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"

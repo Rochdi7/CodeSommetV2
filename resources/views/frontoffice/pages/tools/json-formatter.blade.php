@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/json-formatter.text_3') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/json-formatter.text_3') }}</h2>
                 <div class="space-y-4 text-sm text-gray-700">
                     <p>{{ __('tools/json-formatter.text_4') }}</p>
                     <ul class="space-y-2 ml-6 list-disc">
@@ -121,7 +121,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/json-formatter.text_10') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/json-formatter.text_10') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/json-formatter.text_11') }}</p>
                 </div>
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">FAQ Schema Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Schema FAQ</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/json-formatter.text_29') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -334,24 +334,22 @@
                     </div>
                 </a><a
                     class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/readability-analyzer">
+                    href="/tools/base64-encoder">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-file-code w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
-                                aria-hidden="true">
-                                <path d="M10 12.5 8 15l2 2.5"></path>
-                                <path d="m14 12.5 2 2.5-2 2.5"></path>
-                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-code w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path d="m16 18 6-6-6-6"></path>
+                                        <path d="m8 6-6 6 6 6"></path>
+                                    </svg>
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">{{ __('tools/json-formatter.text_30') }}</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/json-formatter.text_31') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('tools.text_30') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_575') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -382,7 +380,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Word &amp; Character Counter</h3>
+                        style="font-family:var(--font-heading)">Compteur de Mots &amp; Caractères</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/json-formatter.text_32') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">

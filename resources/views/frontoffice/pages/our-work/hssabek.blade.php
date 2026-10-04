@@ -131,8 +131,8 @@
                     </div>
                     <div
                         class="relative aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 md:border-2 shadow-xl md:shadow-2xl">
-                        <video src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
-                            loop muted playsinline webkit-playsinline class="w-full h-full object-cover"></video>
+                        <video data-src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
+                            loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                     </div>
                 </div>
             </div>
@@ -447,8 +447,8 @@
             <div class="relative mb-8 md:mb-12 max-w-5xl mx-auto">
                 <div
                     class="relative aspect-video rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
-                    <video src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay loop muted
-                        playsinline webkit-playsinline class="w-full h-full object-cover"></video>
+                    <video data-src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay loop muted
+                        playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                 </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
@@ -728,7 +728,7 @@
                         <p class="text-sm font-semibold text-white hidden md:block">{{ __('our-work/hssabek.text_38') }}
                         </p>
                     </div>
-                </a><a class="group" href="/our-work/dental-pro">
+                </a><a class="group" href="/our-work/morocco-quest">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -739,7 +739,7 @@
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
-                        <p class="text-sm font-semibold text-gray-700 hidden md:block">Projet Suivant</p>
+                        <p class="text-sm font-semibold text-gray-700 hidden md:block">Projet suivant</p>
                     </div>
                 </a></div>
         </div>

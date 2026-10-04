@@ -1468,7 +1468,7 @@
                 for (var i = 0; i < totalPages; i += 1) {
                     var dot = document.createElement('button');
                     dot.type = 'button';
-                    dot.setAttribute('aria-label', 'Go to testimonial page ' + (i + 1));
+                    dot.setAttribute('aria-label', 'Aller à la page de témoignages ' + (i + 1));
                     dot.addEventListener('click', (function (pageIndex) {
                         return function () {
                             stopAutoRotate();
@@ -1634,14 +1634,21 @@
         var faqAnswers = document.querySelectorAll('.faq-answer');
         if (!faqAnswers.length) return;
 
-        faqAnswers.forEach(function (answer) {
+        faqAnswers.forEach(function (answer, index) {
             var btn = answer.previousElementSibling;
             if (!btn || btn.tagName !== 'BUTTON') return;
 
             var chevron = btn.querySelector('svg');
 
+            // Expose the accordion state to assistive technologies (same contract as
+            // the service / city FAQ accordion): aria-controls + aria-expanded.
+            if (!answer.id) answer.id = 'tool-faq-answer-' + (index + 1);
+            btn.setAttribute('aria-controls', answer.id);
+            btn.setAttribute('aria-expanded', answer.classList.contains('hidden') ? 'false' : 'true');
+
             btn.addEventListener('click', function () {
                 var isHidden = answer.classList.contains('hidden');
+                btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
 
                 if (isHidden) {
                     answer.classList.remove('hidden');
@@ -2054,11 +2061,31 @@
     // Showcase video autoplay
     // The muted attribute alone is not always enough for Chrome/Safari to grant
     // autoplay, so set the property explicitly and play once the video is in view.
+    // Videos ship with data-src + preload="none": the MP4 (0.7–1.8 MB each) is only
+    // requested when the video approaches the viewport, instead of at page load.
+    // prefers-reduced-motion: the first frame is shown with native controls, no autoplay.
     (function () {
         var videos = document.querySelectorAll('video[autoplay]');
         if (!videos.length) return;
 
+        var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function load(video) {
+            var src = video.getAttribute('data-src');
+            if (!src || video.getAttribute('src')) return;
+            if (reduceMotion) {
+                video.removeAttribute('autoplay');
+                video.autoplay = false;
+                video.preload = 'metadata';
+                video.controls = true;
+            } else {
+                video.preload = 'auto';
+            }
+            video.src = src;
+        }
+
         function play(video) {
+            if (reduceMotion) return;
             video.muted = true;
             video.defaultMuted = true;
             var attempt = video.play();
@@ -2068,13 +2095,26 @@
         }
 
         if (!('IntersectionObserver' in window)) {
-            Array.prototype.forEach.call(videos, play);
+            Array.prototype.forEach.call(videos, function (video) {
+                load(video);
+                play(video);
+            });
             return;
         }
+
+        var loader = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    load(entry.target);
+                    loader.unobserve(entry.target);
+                }
+            });
+        }, {rootMargin: '300px 0px'});
 
         var observer = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
+                    load(entry.target);
                     play(entry.target);
                 } else {
                     entry.target.pause();
@@ -2085,6 +2125,7 @@
         Array.prototype.forEach.call(videos, function (video) {
             video.muted = true;
             video.defaultMuted = true;
+            loader.observe(video);
             observer.observe(video);
         });
     })();
@@ -2382,7 +2423,23 @@
         }
 
         function onKeydown(e) {
-            if (e.key === 'Escape' || e.keyCode === 27) { close(); }
+            if (e.key === 'Escape' || e.keyCode === 27) { close(); return; }
+            // aria-modal="true" promises that focus stays in the dialog: keep Tab /
+            // Shift+Tab cycling between its focusable elements.
+            if (e.key === 'Tab' || e.keyCode === 9) {
+                var focusables = Array.prototype.filter.call(
+                    modal.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'),
+                    function (el) { return el.offsetParent !== null; }
+                );
+                if (!focusables.length) { e.preventDefault(); return; }
+                var first = focusables[0], last = focusables[focusables.length - 1];
+                var active = document.activeElement;
+                if (e.shiftKey && (active === first || !modal.contains(active))) {
+                    e.preventDefault(); last.focus();
+                } else if (!e.shiftKey && (active === last || !modal.contains(active))) {
+                    e.preventDefault(); first.focus();
+                }
+            }
         }
 
         var closers = modal.querySelectorAll('[data-promo-close]');

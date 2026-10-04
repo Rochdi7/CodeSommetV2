@@ -130,5 +130,5 @@ return [
     'text_219' => 'Taux de clics publicitaires',
     'text_220' => 'Analyse du site web et analyse du trafic',
     'text_221' => 'Politique de Remboursement',
-    'text_421' => '[email protected]',
+    'text_421' => 'codesommet@gmail.com',
 ];

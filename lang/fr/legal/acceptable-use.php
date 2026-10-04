@@ -147,6 +147,6 @@ return [
     'text_236' => 'URL ou emplacement de la violation',
     'text_237' => 'Politique de Cookies',
     'text_238' => 'Politique de Remboursement',
-    'text_438' => '[email protected]',
-    'text_439' => '[email protected]',
+    'text_438' => 'codesommet@gmail.com',
+    'text_439' => 'codesommet@gmail.com',
 ];

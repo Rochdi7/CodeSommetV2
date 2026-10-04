@@ -99,6 +99,6 @@
         }
         function escapeAttr(str) { return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
 
-        CodeSommetTools.initUsageCounter('text-case-converter', 'text conversions performed');
+        CodeSommetTools.initUsageCounter('text-case-converter', 'conversions de texte effectuées');
     });
 })();

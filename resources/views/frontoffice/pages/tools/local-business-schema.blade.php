@@ -100,8 +100,8 @@
                             class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
                             value="" /></div>
                     <div class="pt-4 border-t-2 border-gray-200">
-                        <h3 class="text-sm font-semibold text-gray-900 mb-4">
-                            {{ __('tools/local-business-schema.text_15') }}</h3>
+                        <h2 class="text-sm font-semibold text-gray-900 mb-4">
+                            {{ __('tools/local-business-schema.text_15') }}</h2>
                         <div class="space-y-3"><input type="url"
                                 placeholder="{{ __('tools/local-business-schema.placeholder_151') }}"
                                 class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#00AEEF] focus:outline-none text-sm"
@@ -131,8 +131,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/local-business-schema.text_17') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/local-business-schema.text_17') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/local-business-schema.text_18') }}</p>
                 </div>
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Schema Markup Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Balisage Schema</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/local-business-schema.text_37') }}
                     </p>
                     <div

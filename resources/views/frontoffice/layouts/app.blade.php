@@ -27,8 +27,8 @@
     <meta property="og:site_name" content="CodeSommet" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:image" content="@yield('og_image', asset('heros/saas-hero.webp'))" />
-    <meta property="og:image:width" content="1536" />
-    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:width" content="@yield('og_image_width', '1536')" />
+    <meta property="og:image:height" content="@yield('og_image_height', '1024')" />
     <meta property="og:image:alt" content="@yield('og_image_alt', 'CodeSommet - Agence Digitale')" />
     <meta property="og:type" content="@yield('og_type', 'website')" />
 
@@ -36,7 +36,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@@code_sommet" />
     <meta name="twitter:creator" content="@@code_sommet" />
-    <meta name="twitter:title" content="@yield('twitter_title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')" />
+    {{-- twitter:title : à défaut d'une valeur dédiée, reprend og:title de la page (sinon le titre générique). --}}
+    <meta name="twitter:title" content="{!! trim($__env->yieldContent('twitter_title')) !== '' ? $__env->yieldContent('twitter_title') : $__env->yieldContent('og_title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO') !!}" />
     <meta name="twitter:description" content="@yield('twitter_description', 'Agence digitale spécialisée en développement web sur mesure, design UI/UX, branding, SEO, solutions e-commerce et marketing digital. Obtenez votre devis gratuit dès aujourd\'hui.')" />
     <meta name="twitter:image" content="@yield('twitter_image', asset('heros/saas-hero.webp'))" />
 
@@ -102,6 +103,10 @@
 
     {{-- Données structurées globales + par type de page (Organization, WebSite, BreadcrumbList, Service, WebApplication) --}}
     @include('frontoffice.partials.structured-data')
+
+    {{-- Sans JavaScript, le script de fin de <body> ne retire jamais le preloader :
+         on le masque d'office pour ne jamais bloquer l'accès au contenu. --}}
+    <noscript><style>#preloader{display:none}</style></noscript>
 </head>
 
 <body class="antialiased">

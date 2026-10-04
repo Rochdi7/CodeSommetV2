@@ -477,7 +477,7 @@
         "action": "App\\Http\\Controllers\\ToolsApiController@usageShow",
         "middleware": [
             "api",
-            "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage"
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage-read"
         ]
     },
     {

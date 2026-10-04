@@ -146,8 +146,8 @@
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                        {{ __('legal/cookie-policy.text_17') }}</h4>
+                                    <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                        {{ __('legal/cookie-policy.text_17') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_18') }}
@@ -187,8 +187,8 @@
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                        {{ __('legal/cookie-policy.text_218') }}</h4>
+                                    <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                        {{ __('legal/cookie-policy.text_218') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_26') }}
@@ -234,8 +234,8 @@
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                        {{ __('legal/cookie-policy.text_37') }}</h4>
+                                    <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                        {{ __('legal/cookie-policy.text_37') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_38') }}
@@ -274,8 +274,8 @@
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                    <h4 class="text-lg font-semibold text-[#0F0F0F]">
-                                        {{ __('legal/cookie-policy.text_46') }}</h4>
+                                    <h3 class="text-lg font-semibold text-[#0F0F0F]">
+                                        {{ __('legal/cookie-policy.text_46') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
                                     <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_47') }}
@@ -508,8 +508,7 @@
                             </div>
                             <div class="space-y-2">
                                 <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="bed6dbd2d2d1feced7d5dfcdcdd1cdcacbdad7d190ddd1d3">{{ __('legal/cookie-policy.text_421') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/cookie-policy.text_421') }}</a>
                                 </p>
                                 <p><strong>{{ __('legal/cookie-policy.text_108') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>

@@ -84,22 +84,34 @@
         ];
     } elseif ($sdRouteName === 'tool' && ($sdSlug = $sdRoute->parameter('slug'))) {
         $sdLeaf = $sdShortTitle(__("tools/{$sdSlug}.title"), $sdSlug);
-        $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Outils SEO & IA', $sdSiteUrl.'/tools'], [$sdLeaf, $sdPageUrl]];
+        $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Outils', $sdSiteUrl.'/tools'], [$sdLeaf, $sdPageUrl]];
         $sdSchemas[] = [
             '@context' => 'https://schema.org',
             '@type' => 'WebApplication',
             'name' => $sdLeaf,
             'url' => $sdPageUrl,
             'description' => __("tools/{$sdSlug}.meta_description"),
-            'applicationCategory' => 'BusinessApplication',
+            // Catégorie selon la nature réelle de l'outil (SEO / marketing par défaut).
+            'applicationCategory' => match (true) {
+                in_array($sdSlug, ['base64-encoder', 'json-formatter', 'css-minifier', 'html-minifier', 'html-to-text',
+                    'url-slug-generator', 'robots-txt-generator', 'xml-sitemap-generator', 'meta-refresh-generator',
+                    'hreflang-generator', 'schema-generator', 'faq-schema-generator', 'local-business-schema',
+                    'chatbot-script-generator'], true) => 'DeveloperApplication',
+                in_array($sdSlug, ['color-palette-generator', 'og-preview-generator'], true) => 'DesignApplication',
+                in_array($sdSlug, ['word-counter', 'text-case-converter', 'lorem-ipsum-generator', 'qr-code-generator'], true) => 'UtilitiesApplication',
+                $sdSlug === 'ssl-certificate-checker' => 'SecurityApplication',
+                default => 'BusinessApplication',
+            },
             'operatingSystem' => 'Web',
             'isAccessibleForFree' => true,
+            // Outils réellement gratuits : offre à 0. Aucune note / avis n'est ajouté.
+            'offers' => ['@type' => 'Offer', 'price' => '0', 'priceCurrency' => 'EUR'],
             'provider' => ['@id' => $sdOrgId],
             'inLanguage' => 'fr',
         ];
     } elseif ($sdRouteName === 'location' && ($sdCity = $sdRoute->parameter('city'))) {
         $sdLeaf = $sdShortTitle(__("locations/web-development-company-{$sdCity}.title"), $sdCity);
-        $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Localisations', $sdSiteUrl.'/locations'], [$sdLeaf, $sdPageUrl]];
+        $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Emplacements', $sdSiteUrl.'/locations'], [$sdLeaf, $sdPageUrl]];
     } elseif ($sdRouteName === 'case-study' && ($sdSlug = $sdRoute->parameter('slug'))
         && ! in_array($sdSlug, config('pages.noindexed_case_studies', []), true)) {
         $sdLeaf = $sdShortTitle(__("our-work/{$sdSlug}.title"), $sdSlug);

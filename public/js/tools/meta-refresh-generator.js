@@ -91,6 +91,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('meta-refresh-generator', 'redirect pages generated');
+        CodeSommetTools.initUsageCounter('meta-refresh-generator', 'pages de redirection générées');
     });
 })();

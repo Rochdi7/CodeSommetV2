@@ -82,6 +82,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('css-minifier', 'CSS files minified');
+        CodeSommetTools.initUsageCounter('css-minifier', 'fichiers CSS minifiés');
     });
 })();

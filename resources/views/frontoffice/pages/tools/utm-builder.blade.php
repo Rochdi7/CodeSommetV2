@@ -50,7 +50,7 @@
     <section class="max-w-5xl mx-auto px-4 py-12">
         <div class="space-y-8">
             <div id="utm-form-card" class="bg-white rounded-2xl border-2 border-gray-200 p-8">
-                <h3 class="text-lg font-semibold text-gray-900 mb-6">{{ __('tools/utm-builder.text_4') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-6">{{ __('tools/utm-builder.text_4') }}</h2>
                 <div class="space-y-6">
                     <div class="space-y-2"><label
                             class="block text-sm font-medium text-black">{{ __('tools/utm-builder.label_148') }}<span
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-8">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/utm-builder.text_15') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/utm-builder.text_15') }}</h2>
                 <div class="space-y-4">
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-2">{{ __('tools/utm-builder.text_16') }}</p>
@@ -223,7 +223,7 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/utm-builder.text_25') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/utm-builder.text_25') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/utm-builder.text_26') }}</p>
                 </div>

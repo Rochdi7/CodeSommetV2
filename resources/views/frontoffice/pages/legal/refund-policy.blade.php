@@ -96,8 +96,7 @@
                                     {{ __('legal/refund-policy.text_9') }}</li>
                                 <li><strong>{{ __('legal/refund-policy.text_10') }}</strong>
                                     {{ __('legal/refund-policy.text_11') }} <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="1c74797070735c6c75777d6f6f736f6869787573327f7371">{{ __('legal/refund-policy.text_480') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_480') }}</a>
                                     {{ __('legal/refund-policy.text_12') }}</li>
                                 <li><strong>Date d'effet :</strong> {{ __('legal/refund-policy.text_13') }}</li>
                                 <li><strong>{{ __('legal/refund-policy.text_14') }}</strong>
@@ -501,8 +500,7 @@
                                     </ul>
                                     <p class="mt-3 font-medium">{{ __('legal/refund-policy.text_95') }} <a
                                             href="mailto:codesommet@gmail.com"
-                                            class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                                data-cfemail="a6cec3cacac9e6d6cfcdc7d5d5c9d5d2d3c2cfc988c5c9cb">{{ __('legal/refund-policy.text_481') }}</span></a>
+                                            class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_481') }}</a>
                                         {{ __('legal/refund-policy.text_96') }}</p>
                                 </div>
                             </div>
@@ -529,8 +527,7 @@
                             <ol class="list-decimal pl-6 space-y-3">
                                 <li><strong>{{ __('legal/refund-policy.text_99') }}</strong>
                                     {{ __('legal/refund-policy.text_100') }} <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="caa2afa6a6a58abaa3a1abb9b9a5b9bebfaea3a5e4a9a5a7">{{ __('legal/refund-policy.text_482') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_482') }}</a>
                                 </li>
                                 <li><strong>Objet :</strong> {{ __('legal/refund-policy.text_101') }}</li>
                                 <li><strong>{{ __('legal/refund-policy.text_102') }}</strong>
@@ -634,8 +631,7 @@
                             </div>
                             <div class="space-y-2">
                                 <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
-                                        class="text-[#00AEEF] hover:underline"><span class="__cf_email__"
-                                            data-cfemail="cfa7aaa3a3a08fbfa6a4aebcbca0bcbbbaaba6a0e1aca0a2">{{ __('legal/refund-policy.text_483') }}</span></a>
+                                        class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_483') }}</a>
                                 </p>
                                 <p><strong>{{ __('legal/refund-policy.text_146') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>

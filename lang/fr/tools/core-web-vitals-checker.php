@@ -3,7 +3,7 @@
 return [
     'title' => 'Vérificateur Core Web Vitals - Outil Gratuit de Performance Web | CodeSommet',
     'meta_description' => 'Mesurez les Core Web Vitals de votre site web (LCP, FID, CLS, INP) pour améliorer les classements Google et les performances. Obtenez des métriques mobile et desktop avec des recommandations concrètes.',
-    'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site sant?,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
+    'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Vérificateur Core Web Vitals - Outil Gratuit de Performance Web',
     'og_description' => 'Mesurez les Core Web Vitals de votre site web (LCP, FID, CLS, INP) pour améliorer les classements Google et les performances. Obtenez des métriques mobile et desktop avec des recommandations concrètes.',
     'twitter_description' => 'Mesurez les Core Web Vitals de votre site pour améliorer les classements Google et les performances. Outil gratuit.',

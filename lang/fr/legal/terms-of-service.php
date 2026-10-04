@@ -270,6 +270,6 @@ return [
     'text_359' => 'Lieu : Maroc ou arbitrage virtuel mutuellement convenu',
     'text_360' => 'Politique de Cookies',
     'text_361' => 'Politique de Remboursement',
-    'text_561' => '[email protected]',
-    'text_562' => '[email protected]',
+    'text_561' => 'codesommet@gmail.com',
+    'text_562' => 'codesommet@gmail.com',
 ];

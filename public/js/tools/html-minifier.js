@@ -114,6 +114,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('html-minifier', 'files minified');
+        CodeSommetTools.initUsageCounter('html-minifier', 'fichiers minifiés');
     });
 })();

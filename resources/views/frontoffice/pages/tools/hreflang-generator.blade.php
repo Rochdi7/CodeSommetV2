@@ -52,7 +52,7 @@
             <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Versions Linguistiques</h3>
+                        <h2 class="text-lg font-semibold text-gray-900 mb-2">Versions Linguistiques</h2>
                         <p class="text-sm text-gray-600 mb-4">{{ __('tools/hreflang-generator.text_4') }}</p>
                     </div>
                     <div class="space-y-3" id="hreflang-rows">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/hreflang-generator.text_7') }}</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ __('tools/hreflang-generator.text_7') }}</h2>
                 <div class="space-y-4">
                     <div class="flex items-start gap-3">
                         <div
@@ -153,8 +153,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/hreflang-generator.text_13') }}
-                        </h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/hreflang-generator.text_13') }}
+                        </h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/hreflang-generator.text_14') }}</p>
                 </div>

@@ -62,6 +62,6 @@ return [
     'text_52' => '50+ projets réussis • Livraison en 48h • Sans engagement à long terme',
     'label_152' => 'Contenu',
     'label_153' => 'Niveau de Correction d\'Erreur',
-    'text_353' => '[email protected]',
+    'text_353' => 'hello@example.com',
     'text_653' => 'Taille',
 ];

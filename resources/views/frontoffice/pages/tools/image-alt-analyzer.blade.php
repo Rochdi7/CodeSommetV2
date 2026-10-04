@@ -82,7 +82,7 @@
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                     <path d="M12 17h.01"></path>
                 </svg>
-                <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/image-alt-analyzer.text_4') }}</h3>
+                <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/image-alt-analyzer.text_4') }}</h2>
             </div>
             <p class="text-sm md:text-base text-gray-600">{{ __('tools/image-alt-analyzer.text_5') }}</p>
         </div>
@@ -295,7 +295,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Broken Link Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur de Liens Cassés</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/image-alt-analyzer.text_23') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Sitemap Validator</h3>
+                        style="font-family:var(--font-heading)">Validateur de Sitemap</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/image-alt-analyzer.text_24') }}</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">

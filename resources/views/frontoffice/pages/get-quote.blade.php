@@ -13,6 +13,22 @@
     <meta property="og:title" content="Obtenir un Devis Gratuit | CodeSommet" />
     <meta property="og:description"
         content="Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures." />
+    {{-- Page autonome (sans layout) : mêmes balises OG/Twitter que le layout principal --}}
+    <meta property="og:url" content="{{ rtrim(config('app.url'), '/') }}/get-quote" />
+    <meta property="og:site_name" content="CodeSommet" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content="{{ asset('heros/saas-hero.webp') }}" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="CodeSommet - Agence Digitale" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@@code_sommet" />
+    <meta name="twitter:creator" content="@@code_sommet" />
+    <meta name="twitter:title" content="Obtenir un Devis Gratuit | CodeSommet" />
+    <meta name="twitter:description"
+        content="Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures." />
+    <meta name="twitter:image" content="{{ asset('heros/saas-hero.webp') }}" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="{{ rtrim(config('app.url'), '/') }}/get-quote" />
     <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-96x96.png') }}" sizes="96x96" />
@@ -58,7 +74,7 @@
             </div>
         </header>
 
-        <div class="flex-1 flex flex-col items-center px-4 py-8 sm:py-12">
+        <main class="flex-1 flex flex-col items-center px-4 py-8 sm:py-12">
 
             {{-- Header --}}
             <div class="text-center mb-6 sm:mb-8 max-w-lg" id="quoteHeader"
@@ -448,7 +464,7 @@
                         </div>
 
                         <p class="text-[11px] text-center text-[var(--text-secondary)] mt-4">
-                            {{ __('get-quote.text_15') }} <a href="{{ url('privacy-policy') }}"
+                            {{ __('get-quote.text_15') }} <a href="{{ route('privacy-policy') }}"
                                 class="text-[#00AEEF] hover:text-[#0071BC] underline">{{ __('get-quote.text_153') }}</a>
                         </p>
                     </form>
@@ -464,8 +480,8 @@
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-bold text-[var(--text-primary)] mb-2">
-                            {{ __('get-quote.text_16') }}</h3>
+                        <h2 class="text-lg sm:text-xl font-bold text-[var(--text-primary)] mb-2">
+                            {{ __('get-quote.text_16') }}</h2>
                         <p class="text-sm text-[var(--text-secondary)] mb-5">{{ __('get-quote.text_17') }}</p>
                         <button onclick="resetForm()"
                             class="inline-flex items-center gap-2 px-5 py-2 bg-[#00AEEF] text-white rounded-full text-sm font-medium hover:bg-[#0071BC] transition-colors">{{ __('get-quote.text_18') }}</button>
@@ -474,7 +490,7 @@
                 </div>
             </div>
 
-        </div>
+        </main>
     </div>
 
     <script>

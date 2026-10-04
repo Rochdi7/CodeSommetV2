@@ -189,9 +189,9 @@ return [
     'text_278' => 'Modifications de la politique :',
     'text_279' => 'Conditions Consommateur de Stripe',
     'text_280' => 'Politique de Cookies',
-    'text_480' => '[email protected]',
-    'text_481' => '[email protected]',
-    'text_482' => '[email protected]',
-    'text_483' => '[email protected]',
+    'text_480' => 'codesommet@gmail.com',
+    'text_481' => 'codesommet@gmail.com',
+    'text_482' => 'codesommet@gmail.com',
+    'text_483' => 'codesommet@gmail.com',
     'text_783' => 'Virement bancaire :',
 ];

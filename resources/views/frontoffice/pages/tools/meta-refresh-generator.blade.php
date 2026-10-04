@@ -52,8 +52,8 @@
             <div class="bg-white rounded-2xl border-2 border-gray-200 p-8">
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                            {{ __('tools/meta-refresh-generator.text_149') }}</h3>
+                        <h2 class="text-lg font-semibold text-gray-900 mb-2">
+                            {{ __('tools/meta-refresh-generator.text_149') }}</h2>
                         <p class="text-sm text-gray-600 mb-4">{{ __('tools/meta-refresh-generator.text_4') }}</p>
                     </div>
                     <div class="space-y-2"><label
@@ -106,7 +106,7 @@
                         <path d="M12 17h.01"></path>
                     </svg>
                     <div>
-                        <h3 class="text-lg font-semibold text-yellow-900 mb-2">Avertissement Impact SEO</h3>
+                        <h2 class="text-lg font-semibold text-yellow-900 mb-2">Avertissement Impact SEO</h2>
                         <p class="text-sm text-yellow-800 leading-relaxed">{{ __('tools/meta-refresh-generator.text_10') }}
                             <strong>{{ __('tools/meta-refresh-generator.text_11') }}</strong>{{ __('tools/meta-refresh-generator.text_12') }}
                             <strong>redirections 301</strong> {{ __('tools/meta-refresh-generator.text_150') }}
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">Quand Utiliser Meta Refresh</h3>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Quand Utiliser Meta Refresh</h2>
                 <div class="space-y-4">
                     <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -190,8 +190,8 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <path d="M12 17h.01"></path>
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-black">
-                            {{ __('tools/meta-refresh-generator.text_21') }}</h3>
+                        <h2 class="text-xl md:text-2xl font-bold text-black">
+                            {{ __('tools/meta-refresh-generator.text_21') }}</h2>
                     </div>
                     <p class="text-sm md:text-base text-gray-600">{{ __('tools/meta-refresh-generator.text_22') }}</p>
                 </div>
@@ -427,7 +427,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">XML Sitemap Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur de Sitemap XML</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/meta-refresh-generator.text_42') }}
                     </p>
                     <div
@@ -462,7 +462,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Robots.txt Generator</h3>
+                        style="font-family:var(--font-heading)">Générateur Robots.txt</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/meta-refresh-generator.text_43') }}
                     </p>
                     <div

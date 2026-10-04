@@ -174,6 +174,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('json-formatter', 'JSON operations completed');
+        CodeSommetTools.initUsageCounter('json-formatter', 'opérations JSON effectuées');
     });
 })();

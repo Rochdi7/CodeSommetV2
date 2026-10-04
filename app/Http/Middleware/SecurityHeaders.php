@@ -38,6 +38,12 @@ class SecurityHeaders
             $response->headers->set($header, $csp);
         }
 
+        // PHP (expose_php) ajoute « X-Powered-By: PHP/x.y.z » hors de la réponse
+        // Symfony : on le retire au niveau applicatif pour ne pas divulguer la version.
+        if (! headers_sent()) {
+            header_remove('X-Powered-By');
+        }
+
         return $response;
     }
 }

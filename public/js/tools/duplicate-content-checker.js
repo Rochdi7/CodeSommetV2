@@ -118,6 +118,6 @@
                 .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
-        CodeSommetTools.initUsageCounter('duplicate-content-checker', 'content comparisons performed');
+        CodeSommetTools.initUsageCounter('duplicate-content-checker', 'comparaisons de contenu effectuées');
     });
 })();

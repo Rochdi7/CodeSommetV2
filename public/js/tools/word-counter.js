@@ -228,6 +228,6 @@
                 '<span class="font-semibold text-black">' + data.current + '/' + data.limit + '</span></div></div>';
         }
 
-        CodeSommetTools.initUsageCounter('word-counter', 'word counts performed');
+        CodeSommetTools.initUsageCounter('word-counter', 'comptages de mots effectués');
     });
 })();

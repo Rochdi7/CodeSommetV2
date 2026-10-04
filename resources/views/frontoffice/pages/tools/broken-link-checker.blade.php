@@ -82,7 +82,7 @@
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                     <path d="M12 17h.01"></path>
                 </svg>
-                <h3 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/broken-link-checker.text_6') }}</h3>
+                <h2 class="text-xl md:text-2xl font-bold text-black">{{ __('tools/broken-link-checker.text_6') }}</h2>
             </div>
             <p class="text-sm md:text-base text-gray-600">{{ __('tools/broken-link-checker.text_7') }}</p>
         </div>
@@ -260,7 +260,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Nofollow Link Checker</h3>
+                        style="font-family:var(--font-heading)">Vérificateur de Liens Nofollow</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/broken-link-checker.text_26') }}
                     </p>
                     <div
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Image Alt Text Analyzer</h3>
+                        style="font-family:var(--font-heading)">Analyseur de Texte Alt d'Images</h3>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/broken-link-checker.text_29') }}
                     </p>
                     <div
