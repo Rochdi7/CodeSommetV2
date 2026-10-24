@@ -50,6 +50,14 @@ Route::group([], function () {
     Route::view('/locations', 'frontoffice.pages.locations')->name('locations');
     Route::view('/tools', 'frontoffice.pages.tools')->name('tools');
 
+    // Ancienne URL (liée depuis /get-quote avant correction) → page légale réelle.
+    // 301 en une étape ; la query string brute (UTM…) est conservée, ce que
+    // Route::permanentRedirect() ne fait pas.
+    Route::get('/privacy-policy', function (\Illuminate\Http\Request $request) {
+        $query = (string) $request->server('QUERY_STRING', '');
+        return redirect()->to('/legal/privacy-policy' . ($query !== '' ? '?' . $query : ''), 301);
+    });
+
     // ─── Legal Pages ────────────────────────────────────────────────────────
     Route::prefix('legal')->group(function () {
         Route::view('/privacy-policy', 'frontoffice.pages.legal.privacy-policy')->name('privacy-policy');

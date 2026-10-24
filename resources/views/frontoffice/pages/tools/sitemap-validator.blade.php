@@ -347,7 +347,7 @@
                 </a></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
-                    href="/tools">{{ __('tools/sitemap-validator.text_25') }} <!-- -->41<!-- --> Outils Gratuits<svg
+                    href="/tools">{{ __('tools/sitemap-validator.text_25') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils Gratuits<svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">

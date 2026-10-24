@@ -16,6 +16,10 @@ return Application::configure(basePath: dirname(__DIR__))
             'super_admin' => \App\Http\Middleware\SuperAdmin::class,
         ]);
 
+        // /index.php, /index.php/… → URL propre (301, une étape, GET/HEAD) avant toute
+        // autre couche (pas de session démarrée pour une simple redirection).
+        $middleware->prepend(\App\Http\Middleware\RedirectIndexPhp::class);
+
         // Baseline security headers on every response.
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
 

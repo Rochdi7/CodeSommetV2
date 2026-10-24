@@ -2988,7 +2988,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'telemedicine-platform-development') }}">
+                        href="{{ route('service', 'university-website-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2996,21 +2996,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-video w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5">
-                                        </path>
-                                        <rect x="2" y="6" width="14" height="12" rx="2"></rect>
-                                    </svg>
+                                        class="lucide lucide-landmark w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><line x1="3" x2="21" y1="22" y2="22"></line><line x1="6" x2="6" y1="18" y2="11"></line><line x1="10" x2="10" y1="18" y2="11"></line><line x1="14" x2="14" y1="18" y2="11"></line><line x1="18" x2="18" y1="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/immigration-consultancy-website-development-agency.ml_1020') }}
-                                    </h3>
+                                        Universités & Enseignement Supérieur</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
-                                        {{ __('services/immigration-consultancy-website-development-agency.ml_1021') }}
-                                    </p>
+                                        Sites universitaires avec portails d'admission, catalogues de programmes et espaces étudiants.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -3033,6 +3027,7 @@
                         </svg></a></div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'immigration-consultancy-website-development'])
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">

@@ -391,10 +391,42 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
+                </a><a
+                    class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    href="/tools/hreflang-generator">
+                    <div class="mb-4">
+                        <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-globe w-6 h-6 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                        <path d="M2 12h20"></path>
+                                    </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
+                        style="font-family:var(--font-heading)">{{ __('tools.text_18') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_564') }}</p>
+                    <div
+                        class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
+                        <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 right-4"><span
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                    </div>
                 </a></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
-                    href="/tools">{{ __('tools/duplicate-content-checker.text_35') }} <!-- -->41<!-- --> Outils
+                    href="/tools">{{ __('tools/duplicate-content-checker.text_35') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils
                     Gratuits<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">

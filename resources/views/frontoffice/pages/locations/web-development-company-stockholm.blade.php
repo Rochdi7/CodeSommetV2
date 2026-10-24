@@ -2064,140 +2064,6 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
                         class="lx-card lx-v1 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                        href="{{ route('location', 'london') }}">
-                        <div class="flex items-start justify-between gap-2">
-                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
-                                <div
-                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                        </path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0 flex-1">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Londres</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">United
-                                        Kingdom</p>
-                                </div>
-                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
-                                aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </a><a
-                        class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                        href="{{ route('location', 'paris') }}">
-                        <div class="flex items-start justify-between gap-2">
-                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
-                                <div
-                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                        </path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0 flex-1">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Paris</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">France</p>
-                                </div>
-                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
-                                aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </a><a
-                        class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                        href="{{ route('location', 'amsterdam') }}">
-                        <div class="flex items-start justify-between gap-2">
-                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
-                                <div
-                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                        </path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0 flex-1">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Amsterdam</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Netherlands
-                                    </p>
-                                </div>
-                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
-                                aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </a><a
-                        class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                        href="{{ route('location', 'berlin') }}">
-                        <div class="flex items-start justify-between gap-2">
-                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
-                                <div
-                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                                        </path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="min-w-0 flex-1">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Berlin</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Germany</p>
-                                </div>
-                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
-                                aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg>
-                        </div>
-                    </a><a
-                        class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                         href="{{ route('location', 'zurich') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 min-w-0">
@@ -2218,8 +2084,7 @@
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Zurich</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Switzerland
-                                    </p>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Suisse</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2232,6 +2097,39 @@
                         </div>
                     </a><a
                         class="lx-card lx-v2 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                        href="{{ route('location', 'copenhagen') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                        </path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Copenhague</h3>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Danemark</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                         href="{{ route('location', 'dublin') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 min-w-0">
@@ -2252,7 +2150,106 @@
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
                                         Dublin</h3>
-                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Ireland</p>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Irlande</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                        href="{{ route('location', 'berlin') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                        </path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Berlin</h3>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Allemagne</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="lx-card lx-v5 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                        href="{{ route('location', 'london') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                        </path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Londres</h3>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Royaume-Uni</p>
+                                </div>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a><a
+                        class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                        href="{{ route('location', 'amsterdam') }}">
+                        <div class="flex items-start justify-between gap-2">
+                            <div class="flex items-start gap-2 md:gap-3 min-w-0">
+                                <div
+                                    class="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-map-pin w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                        </path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="text-base md:text-lg font-semibold text-[var(--text-primary)] group-hover:text-[#00AEEF] transition-colors truncate">
+                                        Amsterdam</h3>
+                                    <p class="text-xs md:text-sm text-[var(--text-secondary)] mt-1 truncate">Pays-Bas</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

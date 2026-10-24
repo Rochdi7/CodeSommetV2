@@ -401,10 +401,44 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">content</span>
                     </div>
+                </a><a
+                    class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    href="/tools/local-business-schema">
+                    <div class="mb-4">
+                        <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-map w-6 h-6 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
+                                        </path>
+                                        <path d="M15 5.764v15"></path>
+                                        <path d="M9 3.236v15"></path>
+                                    </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
+                        style="font-family:var(--font-heading)">{{ __('tools.text_19') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_565') }}</p>
+                    <div
+                        class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
+                        <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 right-4"><span
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                    </div>
                 </a></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
-                    href="/tools">{{ __('tools/faq-schema-generator.text_38') }} <!-- -->41<!-- --> Outils Gratuits<svg
+                    href="/tools">{{ __('tools/faq-schema-generator.text_38') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils Gratuits<svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">

@@ -2952,7 +2952,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'immigration-consultancy-website-development') }}">
+                        href="{{ route('service', 'elearning-platform-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2960,23 +2960,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-sparkles w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-                                        </path>
-                                        <path d="M20 2v4"></path>
-                                        <path d="M22 4h-4"></path>
-                                        <circle cx="4" cy="20" r="2"></circle>
-                                    </svg>
+                                        class="lucide lucide-laptop w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"></path><path d="M20.054 15.987H3.946"></path></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Conseil en Immigration</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web
-                                        professionnels pour les consultants en visa et immigration avec suivi de dossiers et
-                                        gestion de documents.</p>
+                                        Plateforme E-Learning</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        LMS sur mesure pour écoles, centres de formation et entreprises : cours, suivi des apprenants et certifications.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -3039,6 +3031,7 @@
                         </svg></a></div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'education-website-development'])
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">

@@ -2872,7 +2872,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v4 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'language-school-website-development') }}">
+                        href="{{ route('service', 'education-website-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2880,19 +2880,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-message-square w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
+                                        class="lucide lucide-school w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><path d="M14 22v-4a2 2 0 1 0-4 0v4"></path><path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"></path><path d="M18 5v17"></path><path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6"></path><path d="M6 5v17"></path><circle cx="12" cy="9" r="2"></circle></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/language-school-website-development-agency.ml_1044') }}</h3>
+                                        Éducation & EdTech</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
-                                        {{ __('services/language-school-website-development-agency.ml_1045') }}</p>
+                                        Sites web d'écoles et d'établissements avec portails de candidature, gestion des admissions et espaces étudiants.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -3062,6 +3058,7 @@
                         </svg></a></div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'language-school-website-development'])
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">

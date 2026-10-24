@@ -354,10 +354,73 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
+                </a><a
+                    class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    href="/tools/domain-authority-checker">
+                    <div class="mb-4">
+                        <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-shield-check w-6 h-6 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
+                        style="font-family:var(--font-heading)">{{ __('tools.text_domain_authority') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_domain_authority') }}</p>
+                    <div
+                        class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
+                        <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 right-4"><span
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                    </div>
+                </a><a
+                    class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    href="/tools/duplicate-content-checker">
+                    <div class="mb-4">
+                        <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-copy w-6 h-6 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <rect width="14" height="14" x="8" y="8" rx="2"
+                                            ry="2"></rect>
+                                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                    </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
+                        style="font-family:var(--font-heading)">{{ __('tools.text_24') }}</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools.ml_570') }}</p>
+                    <div
+                        class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
+                        <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute top-4 right-4"><span
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                    </div>
                 </a></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
-                    href="/tools">{{ __('tools/internal-link-analyzer.text_30') }} <!-- -->41<!-- --> Outils Gratuits<svg
+                    href="/tools">{{ __('tools/internal-link-analyzer.text_30') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils Gratuits<svg
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">

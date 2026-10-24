@@ -2790,7 +2790,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v3 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'language-school-website-development') }}">
+                        href="{{ route('service', 'ecommerce-website-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2798,19 +2798,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-message-square w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
+                                        class="lucide lucide-shopping-cart w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/real-estate-website-development-agency.ml_1032') }}</h3>
+                                        E-commerce</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
-                                        {{ __('services/real-estate-website-development-agency.ml_1033') }}</p>
+                                        Boutiques en ligne sur mesure avec paiement sécurisé, gestion de catalogue et parcours d'achat optimisé pour la conversion.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2969,6 +2965,7 @@
                         </svg></a></div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'real-estate-website-development'])
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">

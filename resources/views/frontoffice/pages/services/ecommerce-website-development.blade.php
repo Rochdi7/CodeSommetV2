@@ -854,6 +854,7 @@
                 </div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'ecommerce-website-development'])
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]" id="portfolio">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center mb-12">
@@ -2812,7 +2813,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'language-school-website-development') }}">
+                        href="{{ route('service', 'fintech-platform-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2820,19 +2821,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-message-square w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
+                                        class="lucide lucide-credit-card w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/ecommerce-website-development-agency.ml_994') }}</h3>
+                                        Plateformes FinTech</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
-                                        {{ __('services/ecommerce-website-development-agency.ml_995') }}</p>
+                                        Passerelles de paiement, portefeuilles numériques et plateformes financières sécurisées et conformes.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2845,7 +2842,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v1 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'immigration-consultancy-website-development') }}">
+                        href="{{ route('service', 'real-estate-website-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2853,23 +2850,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-sparkles w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-                                        </path>
-                                        <path d="M20 2v4"></path>
-                                        <path d="M22 4h-4"></path>
-                                        <circle cx="4" cy="20" r="2"></circle>
-                                    </svg>
+                                        class="lucide lucide-building w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Conseil en Immigration</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web
-                                        professionnels pour les consultants en visa et immigration avec suivi de dossiers et
-                                        gestion de documents.</p>
+                                        Immobilier</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        Portails immobiliers et sites d'agences avec annonces, recherche avancée et prise de contact qualifiée.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

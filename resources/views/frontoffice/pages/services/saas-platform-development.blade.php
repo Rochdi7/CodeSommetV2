@@ -918,6 +918,24 @@
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
+                        </a></div><div><a class="block" href="{{ route('case-study', 'hssabek') }}">
+                            <div
+                                class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
+                                <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
+                                        data-src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
+                                        loop muted playsinline webkit-playsinline
+                                        preload="none" class="w-full h-full object-cover"></video>
+                                    <div
+                                        class="absolute top-5 right-5 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full border border-white/30">
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">SaaS</span>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-4">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Hssabek</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">SaaS multi-tenant de facturation</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
+                                </div>
+                            </div>
                         </a></div>                </div>
                 <div class="text-center"></div>
             </div>
@@ -2811,7 +2829,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v4 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'language-school-website-development') }}">
+                        href="{{ route('service', 'real-estate-website-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2819,19 +2837,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-message-square w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
-                                        </path>
-                                    </svg>
+                                        class="lucide lucide-building w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/saas-platform-development-agency.ml_1002') }}</h3>
+                                        Immobilier</h3>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
-                                        {{ __('services/saas-platform-development-agency.ml_1003') }}</p>
+                                        Portails immobiliers et sites d'agences avec annonces, recherche avancée et prise de contact qualifiée.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2844,7 +2858,7 @@
                         </div>
                     </a><a
                         class="lx-card lx-v6 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'immigration-consultancy-website-development') }}">
+                        href="{{ route('service', 'ecommerce-website-development') }}">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2852,23 +2866,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-sparkles w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-                                        </path>
-                                        <path d="M20 2v4"></path>
-                                        <path d="M22 4h-4"></path>
-                                        <circle cx="4" cy="20" r="2"></circle>
-                                    </svg>
+                                        class="lucide lucide-shopping-cart w-4 h-4 md:w-5 md:h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                        aria-hidden="true"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
                                     <h3
                                         class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Conseil en Immigration</h3>
-                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web
-                                        professionnels pour les consultants en visa et immigration avec suivi de dossiers et
-                                        gestion de documents.</p>
+                                        E-commerce</h3>
+                                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
+                                        Boutiques en ligne sur mesure avec paiement sécurisé, gestion de catalogue et parcours d'achat optimisé pour la conversion.</p>
                                 </div>
                             </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -2996,6 +3002,7 @@
                 </div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'saas-platform-development'])
         <section class="w-full bg-[#F5F5F5] py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="text-center mb-10">

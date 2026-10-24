@@ -633,6 +633,16 @@
     {
         "domain": null,
         "method": "GET|HEAD",
+        "uri": "privacy-policy",
+        "name": null,
+        "action": "Closure",
+        "middleware": [
+            "web"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
         "uri": "sanctum/csrf-cookie",
         "name": "sanctum.csrf-cookie",
         "action": "Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController@show",

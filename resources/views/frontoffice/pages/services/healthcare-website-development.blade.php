@@ -906,6 +906,7 @@
                 </div>
             </div>
         </section>
+        @include('frontoffice.partials.related-articles', ['serviceSlug' => 'healthcare-website-development'])
         <section class="w-full py-24 md:py-32 bg-[#F5F5F5]" id="portfolio">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center mb-12">
