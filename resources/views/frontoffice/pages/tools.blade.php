@@ -1612,6 +1612,39 @@
                                 </svg>
                             </div>
                         </div>
+                    </a><a href="{{ route('tool', 'crawl-visualizer') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-network h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                                        <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                                        <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                                        <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                                        <path d="M12 12V8"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/crawl-visualizer.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/crawl-visualizer.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
                     </a></div>
                 <div id="tools-empty" class="text-center py-20 bg-white rounded-2xl border border-gray-100"
                     style="display:none">

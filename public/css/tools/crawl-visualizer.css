@@ -1,0 +1,50 @@
+/* Visualiseur d'exploration — styles propres à la page.
+ * main.css est une extraction statique : les utilitaires Tailwind absents y
+ * sont remplacés par ces classes cv-*. */
+
+.cv-grow { flex-grow: 1; }
+.cv-select-none { user-select: none; }
+
+.cv-stop-btn:hover { border-color: #f87171; color: #dc2626; }
+
+.cv-bar { transition: width .3s ease; }
+@media (min-width: 640px) { .cv-progress-url { max-width: 60%; } }
+
+@media (min-width: 1024px) {
+    .cv-search-wrap { max-width: 24rem; }
+    .cv-legend { margin-left: auto; }
+}
+.cv-search-input { padding-left: 2.25rem; padding-right: .75rem; }
+.cv-legend { column-gap: .75rem; row-gap: .25rem; }
+
+.cv-dot { width: .625rem; height: .625rem; border-radius: 9999px; display: inline-block; flex-shrink: 0; }
+.cv-dot--indexable { background: #22c55e; }
+.cv-dot--nonindexable { background: #ef4444; }
+.cv-dot--redirect { background: #f97316; }
+.cv-dot--blocked { background: #9ca3af; }
+.cv-dot--collapsed { background: #eab308; }
+.cv-dot--orphan { background: #fff; border: 2px solid #8b5cf6; }
+
+.cv-toggle { border-color: #e5e7eb; background: #fff; color: #374151; }
+.cv-toggle:hover { border-color: #00AEEF; color: #00AEEF; }
+.cv-toggle[aria-pressed="true"] { border-color: #00AEEF; background: rgba(0, 174, 239, .1); color: #0089bd; }
+
+.cv-stage { height: 65vh; min-height: 420px; max-height: 900px; }
+.cv-stage:fullscreen { height: 100vh; max-height: none; background: #fff; }
+.cv-canvas { touch-action: none; cursor: grab; }
+.cv-canvas.is-dragging { cursor: grabbing; }
+.cv-canvas.is-hover { cursor: pointer; }
+
+.cv-details { width: min(22rem, calc(100% - 1.5rem)); max-height: calc(100% - 1.5rem); }
+
+@media (min-width: 640px) { .cv-table-filter { width: 18rem; } }
+.cv-table-wrap { max-height: 480px; }
+
+.cv-badge { display: inline-flex; align-items: center; padding: .125rem .5rem; border-radius: 9999px; font-size: .75rem; font-weight: 600; white-space: nowrap; }
+.cv-badge--ok { background: #dcfce7; color: #15803d; }
+.cv-badge--bad { background: #fee2e2; color: #b91c1c; }
+.cv-badge--warn { background: #ffedd5; color: #c2410c; }
+.cv-badge--muted { background: #f3f4f6; color: #4b5563; }
+.cv-badge--orphan { background: #ede9fe; color: #6d28d9; }
+
+.cv-url-cell { max-width: 28rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
