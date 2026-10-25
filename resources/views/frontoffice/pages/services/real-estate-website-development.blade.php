@@ -179,6 +179,14 @@
                                     <div class="mb-6 flex-shrink-0">
                                         <div
                                             class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-search w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path d="m21 21-4.34-4.34"></path>
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                            </svg>
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
