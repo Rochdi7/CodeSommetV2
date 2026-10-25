@@ -69,6 +69,8 @@ return [
     'text_157' => 'Experts en IA',
     'text_158' => 'Immobilier',
     'text_159' => 'Site de réservation de voyages',
+    'akoubri_tag' => 'Architecture',
+    'akoubri_badge' => 'Portfolio de cabinet d\'architecture',
     'text_160' => 'Immobilier & PropTech',
     'text_161' => 'Délai adapté à la portée du projet',
     'text_162' => '/mois',

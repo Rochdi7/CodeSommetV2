@@ -238,12 +238,37 @@
                             </div>
                         </div>
                     </a></div>
+                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="technology"><a class="block"
+                        href="{{ route('case-study', 'akoubri') }}">
+                        <div
+                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
+                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
+                                    data-src="{{ asset('videos/akoubri-architecture-website-showcase.mp4') }}" autoplay
+                                    loop muted playsinline webkit-playsinline
+                                    preload="none" class="w-full h-full object-cover"></video>
+                                <div
+                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                                    <span
+                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.akoubri_tag') }}</span>
+                                </div>
+                            </div>
+                            <div class="px-5 py-4">
+                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Akoubri</h2>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
+                                    {{ __('our-work.akoubri_subtitle') }}</p>
+                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
+                                    {{ __('our-work.akoubri_description') }}</p>
+                            </div>
+                        </div>
+                    </a></div>
             </div>
             <p class="mt-10 text-center text-sm md:text-base text-[var(--text-secondary)] max-w-3xl mx-auto">
                 Des boutiques comme GlamWorlds ou Dental Pro s'appuient sur
                 <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'ecommerce-website-development') }}">notre offre de développement e-commerce</a>,
                 tandis que Hssabek et Mon Asso illustrent
-                <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'saas-platform-development') }}">notre expertise en plateformes SaaS sur mesure</a>.
+                <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'saas-platform-development') }}">notre expertise en plateformes SaaS sur mesure</a>,
+                et Akoubri montre
+                <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'real-estate-website-development') }}">notre savoir-faire en sites d'architecture et d'immobilier</a>.
             </p>
         </div>
     </section>

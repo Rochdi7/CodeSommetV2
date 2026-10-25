@@ -668,7 +668,7 @@
     <section class="pt-12 md:pt-16 lg:pt-20 pb-3 md:pb-4 bg-[#F5F5F5] border-t border-gray-200">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 max-w-4xl mx-auto"><a class="group"
-                    href="/our-work/dental-pro">
+                    href="/our-work/akoubri">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

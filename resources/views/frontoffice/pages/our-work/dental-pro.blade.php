@@ -695,7 +695,7 @@
                         <p class="text-sm font-semibold text-white hidden md:block">
                             {{ __('our-work/dental-pro.text_40') }}</p>
                     </div>
-                </a><a class="group" href="/our-work/glamworlds">
+                </a><a class="group" href="/our-work/akoubri">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
