@@ -51,7 +51,7 @@ class RenderSnapshotTest extends TestCase
     private const TOOLS = [
         'base64-encoder', 'blog-title-generator',
         'broken-link-checker', 'canonical-checker', 'chatbot-script-generator',
-        'color-palette-generator', 'core-web-vitals-checker', 'css-minifier',
+        'color-palette-generator', 'core-web-vitals-checker', 'crawl-visualizer', 'css-minifier',
         'domain-authority-checker', 'domain-health-checker',
         'duplicate-content-checker', 'faq-schema-generator', 'heading-analyzer',
         'hreflang-generator', 'html-minifier', 'html-to-text',
@@ -99,11 +99,11 @@ class RenderSnapshotTest extends TestCase
         return $cases;
     }
 
-    public function test_inventory_is_exactly_80_routes_and_matches_repository(): void
+    public function test_inventory_is_exactly_81_routes_and_matches_repository(): void
     {
         $this->assertCount(35, self::CITIES, 'City inventory must be exactly 35 routes');
-        $this->assertCount(45, self::TOOLS, 'Tool inventory must be exactly 45 routes');
-        $this->assertCount(80, self::routeProvider());
+        $this->assertCount(46, self::TOOLS, 'Tool inventory must be exactly 46 routes');
+        $this->assertCount(81, self::routeProvider());
 
         // Cross-check against the sources of truth so drift cannot go unnoticed.
         $configCities = config('pages.cities');

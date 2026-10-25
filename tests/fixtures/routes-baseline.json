@@ -993,6 +993,17 @@
     {
         "domain": null,
         "method": "POST",
+        "uri": "api/crawl-visualizer",
+        "name": null,
+        "action": "App\\Http\\Controllers\\Tools\\CrawlVisualizerController@handle",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:60,1"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
         "uri": "api/get-quote",
         "name": "quote.store",
         "action": "App\\Http\\Controllers\\QuoteRequestController@store",

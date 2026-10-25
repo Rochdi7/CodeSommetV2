@@ -35,3 +35,11 @@ Route::get('/tools/{slug}/usage', [ToolsApiController::class, 'usageShow'])
 Route::post('/tools/{slug}/usage', [ToolsApiController::class, 'usageIncrement'])
     ->where('slug', '[a-z0-9-]+')
     ->middleware('throttle:tools-usage');
+
+/*
+ * Visualiseur d'exploration : le navigateur pilote l'exploration et envoie les
+ * URL par lots de 4 (CrawlVisualizerController::MAX_URLS_PER_REQUEST). Budget
+ * dédié de 60 lots/min par IP, soit ~240 pages/min, sans entamer `tools-api`.
+ */
+Route::post('/crawl-visualizer', [\App\Http\Controllers\Tools\CrawlVisualizerController::class, 'handle'])
+    ->middleware('throttle:60,1');
