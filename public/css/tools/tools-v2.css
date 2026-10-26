@@ -10,6 +10,10 @@
 .tv-nowrap { white-space: nowrap; }
 
 .tv-max-h-80 { max-height: 20rem; }
+@media (min-width: 640px) {
+    .tv-filter-input { width: 18rem; }
+    .tv-sm-pt-8 { padding-top: 2rem; }
+}
 .tv-textarea { min-height: 10rem; resize: vertical; }
 .tv-textarea--tall { min-height: 16rem; }
 
