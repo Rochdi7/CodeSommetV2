@@ -1015,6 +1015,17 @@
     {
         "domain": null,
         "method": "POST",
+        "uri": "api/tools-v2/{slug}",
+        "name": null,
+        "action": "App\\Http\\Controllers\\Tools\\ToolsV2ApiController@handle",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:30,1"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
         "uri": "api/tools/{slug}",
         "name": null,
         "action": "App\\Http\\Controllers\\ToolsApiController@handle",

@@ -43,3 +43,12 @@ Route::post('/tools/{slug}/usage', [ToolsApiController::class, 'usageIncrement']
  */
 Route::post('/crawl-visualizer', [\App\Http\Controllers\Tools\CrawlVisualizerController::class, 'handle'])
     ->middleware('throttle:60,1');
+
+/*
+ * Outils de seconde génération (ToolsV2ApiController) : une classe par slug
+ * dans app/Services/ToolsV2/Handlers. 30 requêtes/min par IP, budget distinct
+ * de `tools-api` pour ne pas pénaliser les outils historiques.
+ */
+Route::post('/tools-v2/{slug}', [\App\Http\Controllers\Tools\ToolsV2ApiController::class, 'handle'])
+    ->where('slug', '[a-z0-9-]+')
+    ->middleware('throttle:30,1');
