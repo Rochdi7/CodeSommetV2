@@ -90,6 +90,11 @@ class AppServiceProvider extends ServiceProvider
         // (même nom de limiteur = même compteur) et renvoie des 429. Même plafond.
         RateLimiter::for('tools-usage-read', fn (Request $request) => Limit::perMinute(30)->by($request->ip()));
 
+        // Beacon analytics interne (POST /api/track). Un humain envoie quelques
+        // lots par page ; 120/min par IP laisse de la marge aux bureaux derrière
+        // un NAT partagé tout en coupant court à un script.
+        RateLimiter::for('analytics', fn (Request $request) => Limit::perMinute(120)->by('analytics|' . $request->ip()));
+
         // Admin login — per IP + submitted email.
         RateLimiter::for('admin-login', fn (Request $request) => Limit::perMinute(5)
             ->by($request->ip() . '|' . strtolower((string) $request->input('email'))));

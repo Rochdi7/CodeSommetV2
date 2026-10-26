@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ToolsTrackController;
+use App\Http\Controllers\Admin\AnalyticsController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\FinanceController;
@@ -156,6 +157,14 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     Route::get('/tools-track', [ToolsTrackController::class, 'index'])->name('tools-track.index');
     Route::get('/tools-track/export', [ToolsTrackController::class, 'export'])->name('tools-track.export');
     Route::get('/tools-track/tools/{slug}', [ToolsTrackController::class, 'show'])->where('slug', '[a-z0-9-]+')->name('tools-track.tool');
+
+    // First-party traffic & leads analytics (collector: POST /api/track)
+    Route::get('/analytics', [AnalyticsController::class, 'index'])->name('analytics.index');
+    Route::get('/analytics/sessions', [AnalyticsController::class, 'sessions'])->name('analytics.sessions');
+    Route::get('/analytics/sessions/{sessionId}', [AnalyticsController::class, 'session'])->where('sessionId', '[a-f0-9]{16,64}')->name('analytics.session');
+    Route::get('/analytics/visitors/{visitorId}', [AnalyticsController::class, 'visitor'])->where('visitorId', '[a-f0-9]{16,64}')->name('analytics.visitor');
+    Route::get('/analytics/leads', [AnalyticsController::class, 'leads'])->name('analytics.leads');
+    Route::get('/analytics/export', [AnalyticsController::class, 'export'])->name('analytics.export');
 
     // Projects Management
     Route::resource('projects', ProjectController::class);

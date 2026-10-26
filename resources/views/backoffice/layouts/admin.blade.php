@@ -446,6 +446,27 @@
                 Suivi des outils
             </a>
 
+            {{-- ── Trafic & Leads (analytics interne, sans Google) ── --}}
+            <div class="admin-nav-section" style="margin-top:12px">Trafic &amp; Leads</div>
+            <a href="{{ route('admin.analytics.index') }}" class="admin-nav-item {{ request()->routeIs('admin.analytics.index') ? 'active' : '' }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
+                </svg>
+                Vue d'ensemble
+            </a>
+            <a href="{{ route('admin.analytics.sessions') }}" class="admin-nav-item {{ request()->routeIs('admin.analytics.sessions', 'admin.analytics.session', 'admin.analytics.visitor') ? 'active' : '' }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                Sessions &amp; parcours
+            </a>
+            <a href="{{ route('admin.analytics.leads') }}" class="admin-nav-item {{ request()->routeIs('admin.analytics.leads') ? 'active' : '' }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/>
+                </svg>
+                Leads
+            </a>
+
             {{-- ── Site Web ── --}}
             <div class="admin-nav-section" style="margin-top:12px">Site Web</div>
             <a href="{{ route('home') }}" target="_blank" class="admin-nav-item">
@@ -564,6 +585,10 @@
             });
         });
     </script>
+
+    {{-- Exclut ce navigateur des statistiques de trafic internes (voir public/js/analytics.js) :
+         vos propres visites sur le site public ne comptent pas comme du trafic. --}}
+    <script>try { localStorage.setItem('cs_notrack', '1'); } catch (e) {}</script>
 
     @stack('scripts')
 </body>

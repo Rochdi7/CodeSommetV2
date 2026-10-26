@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreContactRequest;
 use App\Mail\ContactMessageConfirmation;
 use App\Mail\ContactMessageReceived;
+use App\Models\AnalyticsSession;
 use App\Models\ContactMessage;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Log;
@@ -29,6 +30,9 @@ class ContactController extends Controller
                 'source' => 'contact-form',
                 'ip_address' => $request->ip(),
                 'user_agent' => substr((string) $request->userAgent(), 0, 255),
+                // Journey link (hidden inputs injected by public/js/analytics.js).
+                'visitor_id' => AnalyticsSession::isValidId($request->input('cs_vid')) ? $request->input('cs_vid') : null,
+                'analytics_session_id' => AnalyticsSession::isValidId($request->input('cs_sid')) ? $request->input('cs_sid') : null,
             ]);
         } catch (\Throwable $e) {
             Log::error('Contact message could not be stored: '.$e->getMessage());
@@ -36,6 +40,13 @@ class ContactController extends Controller
             return back()
                 ->withInput($request->except('message'))
                 ->with('contact_error', 'Une erreur est survenue. Veuillez réessayer.');
+        }
+
+        // Best-effort: stamp the lead on its analytics session (funnel view).
+        try {
+            AnalyticsSession::attachLead($request->input('cs_sid'), $request->input('cs_vid'), 'contact', $contactMessage->id, '/contact');
+        } catch (\Throwable $e) {
+            Log::warning('Contact message #'.$contactMessage->id.' could not be linked to its analytics session: '.$e->getMessage());
         }
 
         // Mail notifications are best-effort — the DB record above is the
