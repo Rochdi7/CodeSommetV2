@@ -1761,6 +1761,122 @@
                                 </svg>
                             </div>
                         </div>
+                    </a><a href="{{ route('tool', 'structured-data-extractor') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M16 3h5v5"></path><path d="M8 3H3v5"></path><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"></path><path d="m15 9 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/structured-data-extractor.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/structured-data-extractor.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a><a href="{{ route('tool', 'sitemap-url-extractor') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M8 13h8"></path><path d="M8 17h8"></path><path d="M8 9h2"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/sitemap-url-extractor.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/sitemap-url-extractor.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a><a href="{{ route('tool', 'bot-viewer') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/bot-viewer.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/bot-viewer.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a><a href="{{ route('tool', 'ngram-extractor') }}" data-category="content">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M4 7V4h16v3"></path><path d="M9 20h6"></path><path d="M12 4v16"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/ngram-extractor.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/ngram-extractor.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
                     </a></div>
                 <div id="tools-empty" class="text-center py-20 bg-white rounded-2xl border border-gray-100"
                     style="display:none">
