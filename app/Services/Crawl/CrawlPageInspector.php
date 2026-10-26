@@ -78,6 +78,7 @@ class CrawlPageInspector
             'links' => [],
             'externalLinks' => 0,
             'nofollowLinks' => 0,
+            'anchors' => new \stdClass(),
             'timeMs' => 0,
             'bytes' => 0,
         ];

@@ -52,7 +52,49 @@ return [
     'legend_collapsed' => 'Branche repliée',
     'legend_orphan' => 'Orpheline',
     'legend_blocked' => 'Bloquée (robots.txt)',
+    'legend_folder' => 'Dossier sans page',
     'graph_hint' => 'Molette ou pincement : zoom · Glisser : déplacer · Clic : détails · Double-clic : replier une branche',
+
+    'view_label' => 'Type de visualisation',
+    'filter_label' => 'Type de page',
+    'toggle_rotate' => 'Rotation auto',
+    'toggle_phrases' => 'Expressions entières',
+    'views' => [
+        'crawl-tree' => [
+            'title' => 'Arbre d\'exploration',
+            'desc' => 'Les pages rangées par profondeur de clic depuis l\'URL de départ.',
+        ],
+        'dir-tree' => [
+            'title' => 'Arbre des répertoires',
+            'desc' => 'Les dossiers et pages des URL organisés en arborescence.',
+        ],
+        'crawl-force' => [
+            'title' => 'Diagramme d\'exploration par forces',
+            'desc' => 'Les liens internes rapprochent les pages connectées et font ressortir groupes et pages pivots.',
+        ],
+        'dir-force' => [
+            'title' => 'Diagramme des répertoires par forces',
+            'desc' => 'Les dossiers forment des grappes organiques autour de la racine du site.',
+        ],
+        'crawl-3d' => [
+            'title' => 'Diagramme d\'exploration 3D',
+            'desc' => 'Faites pivoter le graphe des liens internes pour l\'observer en profondeur.',
+        ],
+        'dir-3d' => [
+            'title' => 'Arborescence des répertoires 3D',
+            'desc' => 'Parcourez l\'architecture des dossiers dans une vue en trois dimensions.',
+        ],
+        'anchor-cloud' => [
+            'title' => 'Nuage des textes d\'ancre',
+            'desc' => 'Le vocabulaire le plus utilisé dans les ancres de vos liens internes.',
+        ],
+    ],
+    'hints' => [
+        'tree' => 'Molette ou pincement : zoom · Glisser : déplacer · Clic : détails · Double-clic : replier une branche',
+        'force' => 'Molette ou pincement : zoom · Glisser : déplacer un nœud ou la vue · Clic : détails · Double-clic : replier une branche',
+        '3d' => 'Glisser : faire pivoter · Maj + glisser : déplacer · Molette ou pincement : zoom · Clic : détails · Double-clic : replier',
+        'cloud' => 'Taille du mot = nombre de liens internes qui l\'utilisent · Clic sur un mot : pages ciblées',
+    ],
 
     'export_copy' => 'Copier le résumé',
     'export_csv' => 'Télécharger CSV',

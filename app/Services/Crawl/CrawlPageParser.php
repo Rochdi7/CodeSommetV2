@@ -13,6 +13,11 @@ final class CrawlPageParser
     /** Liens internes renvoyés au maximum par page. */
     public const MAX_LINKS = 500;
 
+    /** Textes d'ancre distincts conservés par lien, et leur longueur maximale. */
+    public const MAX_ANCHORS_PER_LINK = 3;
+
+    public const MAX_ANCHOR_LENGTH = 120;
+
     /** Extensions qui désignent des ressources, pas des pages à explorer. */
     private const ASSET_EXTENSIONS = '/\.(?:jpe?g|png|gif|webp|avif|svg|ico|bmp|tiff?|css|js|mjs|map|json|xml|rss|atom|txt|pdf|docx?|xlsx?|pptx?|csv|zip|rar|gz|tar|7z|mp3|mp4|m4a|wav|ogg|webm|mov|avi|woff2?|ttf|eot|otf|exe|dmg|apk)$/i';
 
@@ -126,7 +131,7 @@ final class CrawlPageParser
      * @param  string  $url  URL demandée (normalisée)
      * @param  string  $host  Hôte exploré : seuls ses liens sont suivis
      * @param  string  $xRobotsTag  En-tête X-Robots-Tag de la réponse
-     * @return array{title: string, h1: string, canonical: string|null, metaRobots: string, indexable: bool, reason: string|null, followLinks: bool, links: list<string>, externalLinks: int, nofollowLinks: int}
+     * @return array{title: string, h1: string, canonical: string|null, metaRobots: string, indexable: bool, reason: string|null, followLinks: bool, links: list<string>, anchors: object, externalLinks: int, nofollowLinks: int}
      */
     public static function parse(string $html, string $url, string $host, string $xRobotsTag = ''): array
     {
@@ -167,10 +172,11 @@ final class CrawlPageParser
         }
 
         $links = [];
+        $anchors = [];
         $external = 0;
         $nofollow = 0;
-        foreach ($doc->links() as $link) {
-            $resolved = self::resolve($base, $link['href']);
+        foreach ($doc->query('//a[@href]') as $node) {
+            $resolved = self::resolve($base, $node->getAttribute('href'));
             if ($resolved === null) {
                 continue;
             }
@@ -179,15 +185,21 @@ final class CrawlPageParser
 
                 continue;
             }
-            if ($link['nofollow']) {
+            if (str_contains(strtolower($node->getAttribute('rel')), 'nofollow')) {
                 $nofollow++;
             }
             if (self::isAsset($resolved) || $resolved === $url) {
                 continue;
             }
-            $links[$resolved] = true;
-            if (count($links) >= self::MAX_LINKS) {
+            if (! isset($links[$resolved]) && count($links) >= self::MAX_LINKS) {
                 break;
+            }
+            $links[$resolved] = true;
+
+            $text = self::anchorText($node);
+            if ($text !== '' && count($anchors[$resolved] ?? []) < self::MAX_ANCHORS_PER_LINK
+                && ! in_array($text, $anchors[$resolved] ?? [], true)) {
+                $anchors[$resolved][] = $text;
             }
         }
 
@@ -202,9 +214,36 @@ final class CrawlPageParser
             'reason' => $reason,
             'followLinks' => ! $nofollowPage,
             'links' => array_keys($links),
+            // Objet JSON { url: [textes d'ancre] } ; (object) garde « {} » quand il est vide.
+            'anchors' => (object) $anchors,
             'externalLinks' => $external,
             'nofollowLinks' => $nofollow,
         ];
+    }
+
+    /**
+     * Texte d'ancre d'un lien : contenu visible, sinon aria-label, alt de
+     * l'image liée ou title — ce qu'un moteur retient pour un lien image.
+     */
+    private static function anchorText(\DOMElement $a): string
+    {
+        $text = trim(preg_replace('/\s+/u', ' ', $a->textContent));
+        if ($text === '') {
+            $text = trim($a->getAttribute('aria-label'));
+        }
+        if ($text === '') {
+            foreach ($a->getElementsByTagName('img') as $img) {
+                $text = trim($img->getAttribute('alt'));
+                if ($text !== '') {
+                    break;
+                }
+            }
+        }
+        if ($text === '') {
+            $text = trim($a->getAttribute('title'));
+        }
+
+        return mb_substr($text, 0, self::MAX_ANCHOR_LENGTH);
     }
 
     /**

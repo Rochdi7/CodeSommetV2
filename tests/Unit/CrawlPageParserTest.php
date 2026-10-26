@@ -58,6 +58,25 @@ class CrawlPageParserTest extends TestCase
         $this->assertSame(1, $page['nofollowLinks']);
         $this->assertTrue($page['indexable']);
         $this->assertTrue($page['followLinks']);
+        $this->assertSame(['About', 'About again'], $page['anchors']->{'https://a.test/about'});
+    }
+
+    public function test_anchor_text_falls_back_to_aria_label_image_alt_and_title(): void
+    {
+        $html = '<a href="/a" aria-label="Accueil"></a>'
+            . '<a href="/b"><img src="x.png" alt="Logo CodeSommet"></a>'
+            . '<a href="/c" title="Contact"><svg></svg></a>'
+            . '<a href="/d">  Nos   <b>services</b> </a>'
+            . '<a href="/e"></a>';
+
+        $anchors = (array) CrawlPageParser::parse($html, 'https://a.test/', 'a.test')['anchors'];
+
+        $this->assertSame([
+            'https://a.test/a' => ['Accueil'],
+            'https://a.test/b' => ['Logo CodeSommet'],
+            'https://a.test/c' => ['Contact'],
+            'https://a.test/d' => ['Nos services'],
+        ], $anchors);
     }
 
     public function test_noindex_meta_and_header(): void

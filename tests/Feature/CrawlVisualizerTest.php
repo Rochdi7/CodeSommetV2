@@ -69,6 +69,27 @@ class CrawlVisualizerTest extends TestCase
         $this->assertStringContainsString('js/tools/crawl-visualizer.js', $html);
     }
 
+    /** Les sept types de visualisation (ids lus par crawl-visualizer.js) et le filtre par type de page. */
+    public function test_view_picker_lists_every_visualisation_type(): void
+    {
+        $html = $this->get('/tools/crawl-visualizer')->assertOk()->getContent();
+
+        foreach (['cv-view-btn', 'cv-view-menu', 'cv-view-current', 'cv-view-icon', 'cv-hint', 'cv-filter'] as $id) {
+            $this->assertStringContainsString('id="' . $id . '"', $html);
+        }
+
+        preg_match_all('/data-cv-view="([a-z0-9-]+)"/', $html, $m);
+        $this->assertSame(
+            ['crawl-tree', 'dir-tree', 'crawl-force', 'dir-force', 'crawl-3d', 'dir-3d', 'anchor-cloud'],
+            $m[1]
+        );
+        $this->assertSame(1, substr_count($html, 'aria-selected="true"'));
+
+        foreach (['all', 'indexable', 'nonindexable', 'redirect', 'error', 'orphan'] as $type) {
+            $this->assertStringContainsString('<option value="' . $type . '"', $html);
+        }
+    }
+
     public function test_tool_is_listed_on_index_and_sitemap(): void
     {
         $this->get('/tools')->assertOk()->assertSee('/tools/crawl-visualizer', false);
@@ -122,6 +143,7 @@ class CrawlVisualizerTest extends TestCase
         $this->assertTrue($home['indexable']);
         $this->assertSame('Accueil', $home['title']);
         $this->assertSame(['https://site.test/about', 'https://site.test/old'], $home['links']);
+        $this->assertSame(['https://site.test/about' => ['A'], 'https://site.test/old' => ['O']], $home['anchors']);
         $this->assertSame(1, $home['externalLinks']);
 
         $old = $pages['https://site.test/old'];
