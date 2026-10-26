@@ -1,0 +1,80 @@
+{
+    "headings": [
+        [
+            1,
+            "Accès des Robots d'IA"
+        ],
+        [
+            2,
+            "Robots d'IA"
+        ],
+        [
+            2,
+            "Signaux de la page"
+        ],
+        [
+            2,
+            "robots.txt prêt à copier"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Faut-il bloquer les robots d'IA ?"
+        ],
+        [
+            3,
+            "Google-Extended bloque-t-il Google Search ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que llms.txt ?"
+        ],
+        [
+            3,
+            "À quoi servent noai et max-snippet ?"
+        ],
+        [
+            3,
+            "Un robot peut-il ignorer mon robots.txt ?"
+        ],
+        [
+            3,
+            "Pourquoi le résultat diffère entre la page d'accueil et une autre page ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Testeur Robots.txt"
+        ],
+        [
+            3,
+            "Générateur Robots.txt"
+        ],
+        [
+            3,
+            "Vérificateur de Canonique"
+        ],
+        [
+            2,
+            "Une Stratégie de Visibilité dans les Réponses IA ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

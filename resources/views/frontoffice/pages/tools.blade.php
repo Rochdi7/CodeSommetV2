@@ -1674,6 +1674,93 @@
                                 </svg>
                             </div>
                         </div>
+                    </a><a href="{{ route('tool', 'robots-txt-tester') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/robots-txt-tester.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/robots-txt-tester.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a><a href="{{ route('tool', 'security-headers-checker') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="M12 8v4"></path><path d="M12 16h.01"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/security-headers-checker.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/security-headers-checker.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a><a href="{{ route('tool', 'ai-crawler-access-checker') }}" data-category="seo">
+                        <div
+                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div
+                                    class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide h-7 w-7 transition-colors text-[#00AEEF] group-hover:text-white"
+                                        aria-hidden="true">
+                                        <path d="M12 2a4 4 0 0 1 4 4v2h1a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z"></path><circle cx="9" cy="14" r="1"></circle><circle cx="15" cy="14" r="1"></circle><path d="M2 12h2"></path><path d="M20 12h2"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
+                                style="font-family:var(--font-heading)">{{ __('tools/ai-crawler-access-checker.card_title') }}</h2>
+                            <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/ai-crawler-access-checker.card_desc') }}</p>
+                            <div
+                                class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
+                                <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right h-4 w-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
                     </a></div>
                 <div id="tools-empty" class="text-center py-20 bg-white rounded-2xl border border-gray-100"
                     style="display:none">

@@ -49,8 +49,8 @@ class RenderSnapshotTest extends TestCase
 
     /** Explicit, deterministic tool inventory (mirrors resources/views/frontoffice/pages/tools/). */
     private const TOOLS = [
-        'base64-encoder', 'blog-title-generator', 'broken-link-checker',
-        'canonical-checker', 'chatbot-script-generator',
+        'ai-crawler-access-checker', 'base64-encoder', 'blog-title-generator',
+        'broken-link-checker', 'canonical-checker', 'chatbot-script-generator',
         'color-palette-generator', 'core-web-vitals-checker',
         'crawl-visualizer', 'css-minifier', 'domain-authority-checker',
         'domain-health-checker', 'duplicate-content-checker',
@@ -62,11 +62,11 @@ class RenderSnapshotTest extends TestCase
         'meta-refresh-generator', 'meta-tag-generator', 'mobile-friendly-test',
         'nofollow-link-checker', 'og-preview-generator', 'page-speed-analyzer',
         'qr-code-generator', 'readability-analyzer', 'redirect-checker',
-        'robots-txt-generator', 'robots-validator', 'schema-generator',
-        'serp-snippet-preview', 'sitemap-validator', 'ssl-certificate-checker',
-        'text-case-converter', 'url-slug-generator', 'utm-builder',
-        'website-analyzer', 'website-readiness-checker', 'word-counter',
-        'xml-sitemap-generator',
+        'robots-txt-generator', 'robots-txt-tester', 'robots-validator',
+        'schema-generator', 'security-headers-checker', 'serp-snippet-preview',
+        'sitemap-validator', 'ssl-certificate-checker', 'text-case-converter',
+        'url-slug-generator', 'utm-builder', 'website-analyzer',
+        'website-readiness-checker', 'word-counter', 'xml-sitemap-generator',
     ];
 
     /** Fragment IDs watched by A18. City pages (except worldwide) must carry both. */
@@ -100,11 +100,11 @@ class RenderSnapshotTest extends TestCase
         return $cases;
     }
 
-    public function test_inventory_is_exactly_82_routes_and_matches_repository(): void
+    public function test_inventory_is_exactly_85_routes_and_matches_repository(): void
     {
         $this->assertCount(35, self::CITIES, 'City inventory must be exactly 35 routes');
-        $this->assertCount(47, self::TOOLS, 'Tool inventory must be exactly 47 routes');
-        $this->assertCount(82, self::routeProvider());
+        $this->assertCount(50, self::TOOLS, 'Tool inventory must be exactly 50 routes');
+        $this->assertCount(85, self::routeProvider());
 
         // Cross-check against the sources of truth so drift cannot go unnoticed.
         $configCities = config('pages.cities');
