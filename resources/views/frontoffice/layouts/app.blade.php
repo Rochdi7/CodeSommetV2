@@ -163,6 +163,11 @@
     <script src="{{ asset_v('js/app.min.js') }}" defer></script>
     <script src="{{ asset_v('js/custom-select.min.js') }}" defer></script>
 
+    {{-- Analytics interne (pages vues, clics sur chaque bouton, formulaires,
+         scroll, temps de lecture → /api/track → admin « Trafic & leads »).
+         Indépendant de Google Analytics. --}}
+    <script src="{{ asset_v('js/analytics.min.js') }}" defer></script>
+
     {{-- Preloader dismiss — dès DOMContentLoaded : le CSS critique étant inliné,
          la page est entièrement stylée au premier rendu, l'overlay n'a plus de
          raison d'attendre window.load (le délai de rendu LCP mesurait ~2,45 s,

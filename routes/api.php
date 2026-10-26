@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ToolsApiController;
+use App\Http\Controllers\TrackingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,3 +53,13 @@ Route::post('/crawl-visualizer', [\App\Http\Controllers\Tools\CrawlVisualizerCon
 Route::post('/tools-v2/{slug}', [\App\Http\Controllers\Tools\ToolsV2ApiController::class, 'handle'])
     ->where('slug', '[a-z0-9-]+')
     ->middleware('throttle:30,1');
+
+/*
+ * First-party analytics beacon (public/js/analytics.js → TrackingController).
+ * Batches of page views / clicks / form submits / scroll / time-on-page.
+ * Own throttle bucket: a busy human sends a handful of batches per page, so
+ * 120/min per IP is generous for people and tight enough for floods.
+ */
+Route::post('/track', [TrackingController::class, 'collect'])
+    ->middleware('throttle:analytics')
+    ->name('analytics.collect');

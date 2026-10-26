@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\NewsletterWelcome;
+use App\Models\AnalyticsSession;
 use App\Models\NewsletterSubscriber;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
@@ -51,9 +52,19 @@ class NewsletterController extends Controller
             'name'          => $validated['name'] ?? null,
             'source'        => $source,
             'ip_address'    => $request->ip(),
+            // Journey link (hidden inputs injected by public/js/analytics.js).
+            'visitor_id'    => AnalyticsSession::isValidId($request->input('cs_vid')) ? $request->input('cs_vid') : null,
+            'analytics_session_id' => AnalyticsSession::isValidId($request->input('cs_sid')) ? $request->input('cs_sid') : null,
             'is_confirmed'  => true,
             'subscribed_at' => now(),
         ]);
+
+        // Best-effort: stamp the lead on its analytics session (funnel view).
+        try {
+            AnalyticsSession::attachLead($request->input('cs_sid'), $request->input('cs_vid'), 'newsletter', $subscriber->id);
+        } catch (\Throwable $e) {
+            Log::warning('Newsletter subscriber #'.$subscriber->id.' could not be linked to its analytics session: '.$e->getMessage());
+        }
 
         // Best-effort welcome email — the subscription itself must not fail
         // if mail delivery does.

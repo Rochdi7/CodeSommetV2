@@ -91,6 +91,10 @@ window.CodeSommetTools.onReady = function (fn) {
             url: target ? String(target).slice(0, 2048) : null,
             webdriver: !!(navigator && navigator.webdriver)
         };
+        // Also lands on the visitor's journey timeline (admin « Trafic & leads »).
+        if (typeof window.csTrack === 'function') {
+            window.csTrack('tool_use', { label: toolSlug, kind: 'tool', href: payload.url || undefined });
+        }
         fetch('/api/tools/' + encodeURIComponent(toolSlug) + '/usage', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },

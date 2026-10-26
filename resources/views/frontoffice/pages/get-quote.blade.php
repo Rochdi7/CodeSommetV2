@@ -834,7 +834,10 @@
                 website: (document.getElementById('website') || {}).value || undefined,
                 // v2 reads the token from the widget, v3 from the hidden input.
                 'g-recaptcha-response': (captcha ? captcha.token() :
-                    (document.getElementById('recaptchaToken-quote') || {}).value) || undefined
+                    (document.getElementById('recaptchaToken-quote') || {}).value) || undefined,
+                // Analytics interne : relie la demande au parcours du visiteur (admin « Trafic & leads »).
+                cs_vid: (window.csAnalytics || {}).visitorId || undefined,
+                cs_sid: (window.csAnalytics || {}).sessionId || undefined
             };
 
             fetch('/api/get-quote', {
