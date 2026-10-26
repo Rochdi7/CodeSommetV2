@@ -302,10 +302,120 @@
               #text 0
             <div class="text-xs md:text-sm text-gray-500 mt-1" data-default="Erreurs 4xx / 5xx" id="cv-stat-errors-label">
               #text Erreurs 4xx / 5xx
-        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" id="cv-graph-card">
+        <div class="bg-white rounded-xl border border-gray-200" id="cv-graph-card">
           <div class="flex flex-col lg:flex-row lg:items-center gap-3 p-3 md:p-4 border-b border-gray-200">
-            <div class="grid grid-cols-2 sm:flex gap-2">
-              <select aria-label="Filtre" class="h-10 px-3 rounded-lg bg-white border border-gray-200 text-sm text-black focus:border-[#00AEEF] focus:outline-none" id="cv-filter">
+            <div class="relative cv-view-picker" id="cv-view-picker">
+              <button aria-controls="cv-view-menu" aria-expanded="false" aria-haspopup="listbox" aria-label="Type de visualisation" class="cv-view-btn h-10 w-full px-3 rounded-lg border text-sm font-semibold flex items-center gap-2" id="cv-view-btn" type="button">
+                <svg aria-hidden="true" class="w-4 h-4 flex-shrink-0" fill="none" id="cv-view-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                  <rect height="6" rx="1" width="6" x="16" y="16">
+                  <rect height="6" rx="1" width="6" x="2" y="16">
+                  <rect height="6" rx="1" width="6" x="9" y="2">
+                  <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3">
+                  <path d="M12 12V8">
+                <span class="truncate" id="cv-view-current">
+                  #text Diagramme d'exploration par forces
+                <svg aria-hidden="true" class="cv-view-chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                  <path d="m6 9 6 6 6-6">
+              <ul aria-label="Type de visualisation" class="cv-view-menu hidden" id="cv-view-menu" role="listbox" tabindex="-1">
+                <li aria-selected="false" class="cv-view-option" data-cv-view="crawl-tree" id="cv-view-crawl-tree" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <circle cx="12" cy="18" r="3">
+                    <circle cx="6" cy="6" r="3">
+                    <circle cx="18" cy="6" r="3">
+                    <path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9">
+                    <path d="M12 12v3">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Arbre d'exploration
+                    <span class="cv-view-option-desc">
+                      #text Les pages rangées par profondeur de clic depuis l'URL de départ.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+                <li aria-selected="false" class="cv-view-option" data-cv-view="dir-tree" id="cv-view-dir-tree" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <path d="M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z">
+                    <path d="M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z">
+                    <path d="M3 5a2 2 0 0 0 2 2h3">
+                    <path d="M3 3v13a2 2 0 0 0 2 2h3">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Arbre des répertoires
+                    <span class="cv-view-option-desc">
+                      #text Les dossiers et pages des URL organisés en arborescence.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+                <li aria-selected="true" class="cv-view-option" data-cv-view="crawl-force" id="cv-view-crawl-force" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <rect height="6" rx="1" width="6" x="16" y="16">
+                    <rect height="6" rx="1" width="6" x="2" y="16">
+                    <rect height="6" rx="1" width="6" x="9" y="2">
+                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3">
+                    <path d="M12 12V8">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Diagramme d'exploration par forces
+                    <span class="cv-view-option-desc">
+                      #text Les liens internes rapprochent les pages connectées et font ressortir groupes et pages pivots.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+                <li aria-selected="false" class="cv-view-option" data-cv-view="dir-force" id="cv-view-dir-force" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <circle cx="18" cy="5" r="3">
+                    <circle cx="6" cy="12" r="3">
+                    <circle cx="18" cy="19" r="3">
+                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49">
+                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Diagramme des répertoires par forces
+                    <span class="cv-view-option-desc">
+                      #text Les dossiers forment des grappes organiques autour de la racine du site.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+                <li aria-selected="false" class="cv-view-option" data-cv-view="crawl-3d" id="cv-view-crawl-3d" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z">
+                    <path d="m3.3 7 8.7 5 8.7-5">
+                    <path d="M12 22V12">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Diagramme d'exploration 3D
+                    <span class="cv-view-option-desc">
+                      #text Faites pivoter le graphe des liens internes pour l'observer en profondeur.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+                <li aria-selected="false" class="cv-view-option" data-cv-view="dir-3d" id="cv-view-dir-3d" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3">
+                    <circle cx="19" cy="5" r="2">
+                    <circle cx="5" cy="19" r="2">
+                    <path d="M10.4 21.9a10 10 0 0 0 9.941-15.416">
+                    <path d="M13.5 2.1a10 10 0 0 0-9.841 15.416">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Arborescence des répertoires 3D
+                    <span class="cv-view-option-desc">
+                      #text Parcourez l'architecture des dossiers dans une vue en trois dimensions.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+                <li aria-selected="false" class="cv-view-option" data-cv-view="anchor-cloud" id="cv-view-anchor-cloud" role="option">
+                  <svg aria-hidden="true" class="cv-view-option-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                    <path d="M3 7V5a2 2 0 0 1 2-2h2">
+                    <path d="M17 3h2a2 2 0 0 1 2 2v2">
+                    <path d="M21 17v2a2 2 0 0 1-2 2h-2">
+                    <path d="M7 21H5a2 2 0 0 1-2-2v-2">
+                    <path d="M7 8h8">
+                    <path d="M7 12h10">
+                    <path d="M7 16h6">
+                  <span class="cv-view-option-text">
+                    <span class="cv-view-option-title">
+                      #text Nuage des textes d'ancre
+                    <span class="cv-view-option-desc">
+                      #text Le vocabulaire le plus utilisé dans les ancres de vos liens internes.
+                  <svg aria-hidden="true" class="cv-view-check" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+                    <path d="M20 6 9 17l-5-5">
+            <div class="grid grid-cols-2 sm:flex gap-2" data-cv-layouts="tree force 3d">
+              <select aria-label="Type de page" class="h-10 px-3 rounded-lg bg-white border border-gray-200 text-sm text-black focus:border-[#00AEEF] focus:outline-none" id="cv-filter" title="Type de page">
                 <option value="all">
                   #text Toutes les pages
                 <option value="indexable">
@@ -348,13 +458,17 @@
                   <path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3">
             <span class="hidden sm:block w-px h-6 bg-gray-200">
             <div class="flex flex-wrap gap-1">
-              <button aria-pressed="true" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-toggle="labels" type="button">
+              <button aria-pressed="true" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-layouts="tree force 3d" data-cv-toggle="labels" type="button">
                 #text Libellés
-              <button aria-pressed="false" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-toggle="arrows" type="button">
+              <button aria-pressed="false" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-layouts="tree force" data-cv-toggle="arrows" type="button">
                 #text Flèches
-              <button aria-pressed="false" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-toggle="all-links" type="button">
+              <button aria-pressed="false" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-layouts="force 3d" data-cv-toggle="all-links" type="button">
                 #text Tous les liens
-            <ul aria-label="Légende" class="flex flex-wrap cv-legend text-xs text-gray-600">
+              <button aria-pressed="true" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-layouts="3d" data-cv-toggle="rotate" type="button">
+                #text Rotation auto
+              <button aria-pressed="false" class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors" data-cv-layouts="cloud" data-cv-toggle="phrases" type="button">
+                #text Expressions entières
+            <ul aria-label="Légende" class="flex flex-wrap cv-legend text-xs text-gray-600" data-cv-layouts="tree force 3d">
               <li class="flex items-center gap-1.5">
                 <span class="cv-dot cv-dot--indexable">
                 #text Indexable
@@ -373,11 +487,14 @@
               <li class="flex items-center gap-1.5">
                 <span class="cv-dot cv-dot--orphan">
                 #text Orpheline
+              <li class="flex items-center gap-1.5" data-cv-graphs="dir">
+                <span class="cv-dot cv-dot--folder">
+                #text Dossier sans page
           <div class="relative bg-white cv-stage" id="cv-stage">
             <canvas aria-label="Visualiseur d'Exploration de Site" class="absolute inset-0 w-full h-full cv-canvas" id="cv-canvas" role="img">
             <div class="hidden absolute top-3 right-3 cv-details overflow-y-auto bg-white/95 backdrop-blur rounded-xl border border-gray-200 shadow-lg p-4 text-sm" id="cv-details">
-          <p class="px-4 py-2 text-xs text-gray-500 border-t border-gray-200">
-            #text Molette ou pincement : zoom · Glisser : déplacer · Clic : détails · Double-clic : replier une branche
+          <p class="px-4 py-2 text-xs text-gray-500 border-t border-gray-200" data-hints="{&quot;tree&quot;:&quot;Molette ou pincement : zoom \u00b7 Glisser : d\u00e9placer \u00b7 Clic : d\u00e9tails \u00b7 Double-clic : replier une branche&quot;,&quot;force&quot;:&quot;Molette ou pincement : zoom \u00b7 Glisser : d\u00e9placer un n\u0153ud ou la vue \u00b7 Clic : d\u00e9tails \u00b7 Double-clic : replier une branche&quot;,&quot;3d&quot;:&quot;Glisser : faire pivoter \u00b7 Maj + glisser : d\u00e9placer \u00b7 Molette ou pincement : zoom \u00b7 Clic : d\u00e9tails \u00b7 Double-clic : replier&quot;,&quot;cloud&quot;:&quot;Taille du mot = nombre de liens internes qui l\u0027utilisent \u00b7 Clic sur un mot : pages cibl\u00e9es&quot;}" id="cv-hint">
+            #text Molette ou pincement : zoom · Glisser : déplacer un nœud ou la vue · Clic : détails · Double-clic : replier une branche
         <div class="flex flex-wrap gap-2 mt-4">
           <button class="h-10 px-4 rounded-lg border border-gray-200 bg-white text-sm font-medium text-gray-800 hover:border-[#00AEEF] hover:text-[#00AEEF] transition-colors" data-cv-export="copy" type="button">
             #text Copier le résumé

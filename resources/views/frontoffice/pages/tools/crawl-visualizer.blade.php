@@ -143,10 +143,56 @@
             @endforeach
         </div>
 
-        <div id="cv-graph-card" class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        @php
+            // Icônes (tracés Lucide) des types de visualisation, dans l'ordre du menu.
+            $cvViews = [
+                'crawl-tree' => '<circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/>',
+                'dir-tree' => '<path d="M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z"/><path d="M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z"/><path d="M3 5a2 2 0 0 0 2 2h3"/><path d="M3 3v13a2 2 0 0 0 2 2h3"/>',
+                'crawl-force' => '<rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/>',
+                'dir-force' => '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>',
+                'crawl-3d' => '<path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>',
+                'dir-3d' => '<circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/>',
+                'anchor-cloud' => '<path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8h8"/><path d="M7 12h10"/><path d="M7 16h6"/>',
+            ];
+            $cvDefaultView = 'crawl-force';
+        @endphp
+        <div id="cv-graph-card" class="bg-white rounded-xl border border-gray-200">
             <div class="flex flex-col lg:flex-row lg:items-center gap-3 p-3 md:p-4 border-b border-gray-200">
-                <div class="grid grid-cols-2 sm:flex gap-2">
-                    <select id="cv-filter" aria-label="Filtre"
+                <div id="cv-view-picker" class="relative cv-view-picker">
+                    <button id="cv-view-btn" type="button" aria-haspopup="listbox" aria-expanded="false"
+                        aria-controls="cv-view-menu" aria-label="{{ __('tools/crawl-visualizer.view_label') }}"
+                        class="cv-view-btn h-10 w-full px-3 rounded-lg border text-sm font-semibold flex items-center gap-2"><svg
+                            id="cv-view-icon" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">{!! $cvViews[$cvDefaultView] !!}</svg><span id="cv-view-current"
+                            class="truncate">{{ __('tools/crawl-visualizer.views.' . $cvDefaultView . '.title') }}</span><svg
+                            class="cv-view-chevron w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg></button>
+                    <ul id="cv-view-menu" role="listbox" tabindex="-1"
+                        aria-label="{{ __('tools/crawl-visualizer.view_label') }}" class="cv-view-menu hidden">
+                        @foreach ($cvViews as $key => $icon)
+                            <li id="cv-view-{{ $key }}" role="option" data-cv-view="{{ $key }}"
+                                aria-selected="{{ $key === $cvDefaultView ? 'true' : 'false' }}" class="cv-view-option">
+                                <svg class="cv-view-option-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">{!! $icon !!}</svg>
+                                <span class="cv-view-option-text"><span
+                                        class="cv-view-option-title">{{ __('tools/crawl-visualizer.views.' . $key . '.title') }}</span><span
+                                        class="cv-view-option-desc">{{ __('tools/crawl-visualizer.views.' . $key . '.desc') }}</span></span>
+                                <svg class="cv-view-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M20 6 9 17l-5-5" />
+                                </svg>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 sm:flex gap-2" data-cv-layouts="tree force 3d">
+                    <select id="cv-filter" aria-label="{{ __('tools/crawl-visualizer.filter_label') }}"
+                        title="{{ __('tools/crawl-visualizer.filter_label') }}"
                         class="h-10 px-3 rounded-lg bg-white border border-gray-200 text-sm text-black focus:border-[#00AEEF] focus:outline-none">
                         <option value="all">{{ __('tools/crawl-visualizer.filter_all') }}</option>
                         <option value="indexable">{{ __('tools/crawl-visualizer.filter_indexable') }}</option>
@@ -190,18 +236,26 @@
                 </div>
                 <span class="hidden sm:block w-px h-6 bg-gray-200"></span>
                 <div class="flex flex-wrap gap-1">
-                    @foreach (['labels' => ['toggle_labels', true], 'arrows' => ['toggle_arrows', false], 'all-links' => ['toggle_all_links', false]] as $toggle => [$label, $on])
-                        <button type="button" data-cv-toggle="{{ $toggle }}" aria-pressed="{{ $on ? 'true' : 'false' }}"
+                    @foreach ([
+                        'labels' => ['toggle_labels', true, 'tree force 3d'],
+                        'arrows' => ['toggle_arrows', false, 'tree force'],
+                        'all-links' => ['toggle_all_links', false, 'force 3d'],
+                        'rotate' => ['toggle_rotate', true, '3d'],
+                        'phrases' => ['toggle_phrases', false, 'cloud'],
+                    ] as $toggle => [$label, $on, $layouts])
+                        <button type="button" data-cv-toggle="{{ $toggle }}" data-cv-layouts="{{ $layouts }}"
+                            aria-pressed="{{ $on ? 'true' : 'false' }}"
                             class="cv-toggle h-9 px-3 rounded-lg border text-xs font-semibold transition-colors">{{ __('tools/crawl-visualizer.' . $label) }}</button>
                     @endforeach
                 </div>
-                <ul class="flex flex-wrap cv-legend text-xs text-gray-600" aria-label="Légende">
+                <ul class="flex flex-wrap cv-legend text-xs text-gray-600" aria-label="Légende" data-cv-layouts="tree force 3d">
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--indexable"></span>{{ __('tools/crawl-visualizer.legend_indexable') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--nonindexable"></span>{{ __('tools/crawl-visualizer.legend_nonindexable') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--redirect"></span>{{ __('tools/crawl-visualizer.legend_redirect') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--blocked"></span>{{ __('tools/crawl-visualizer.legend_blocked') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--collapsed"></span>{{ __('tools/crawl-visualizer.legend_collapsed') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--orphan"></span>{{ __('tools/crawl-visualizer.legend_orphan') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-graphs="dir"><span class="cv-dot cv-dot--folder"></span>{{ __('tools/crawl-visualizer.legend_folder') }}</li>
                 </ul>
             </div>
             <div id="cv-stage" class="relative bg-white cv-stage">
@@ -211,7 +265,8 @@
                     class="hidden absolute top-3 right-3 cv-details overflow-y-auto bg-white/95 backdrop-blur rounded-xl border border-gray-200 shadow-lg p-4 text-sm">
                 </div>
             </div>
-            <p class="px-4 py-2 text-xs text-gray-500 border-t border-gray-200">{{ __('tools/crawl-visualizer.graph_hint') }}</p>
+            <p id="cv-hint" data-hints='@json(__('tools/crawl-visualizer.hints'))'
+                class="px-4 py-2 text-xs text-gray-500 border-t border-gray-200">{{ __('tools/crawl-visualizer.hints.force') }}</p>
         </div>
 
         <div class="flex flex-wrap gap-2 mt-4">
