@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Extracteur de N-grammes"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un n-gramme ?"
+        ],
+        [
+            3,
+            "À quoi cela sert-il en SEO ?"
+        ],
+        [
+            3,
+            "Quelle densité viser ?"
+        ],
+        [
+            3,
+            "Pourquoi ignorer les mots-outils ?"
+        ],
+        [
+            3,
+            "Le texte est-il envoyé à un serveur ?"
+        ],
+        [
+            3,
+            "Pourquoi le texte chargé diffère-t-il de la page ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Densité de Mots-clés"
+        ],
+        [
+            3,
+            "Analyseur de Lisibilité"
+        ],
+        [
+            3,
+            "Compteur de Mots"
+        ],
+        [
+            2,
+            "Besoin de Contenus Qui Se Classent ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}
