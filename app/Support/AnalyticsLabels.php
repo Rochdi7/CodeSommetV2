@@ -45,13 +45,13 @@ final class AnalyticsLabels
     {
         $seconds = (int) $seconds;
         if ($seconds < 60) {
-            return $seconds . ' s';
+            return $seconds . 's';
         }
         if ($seconds < 3600) {
-            return intdiv($seconds, 60) . ' min ' . str_pad((string) ($seconds % 60), 2, '0', STR_PAD_LEFT) . ' s';
+            return intdiv($seconds, 60) . 'm ' . str_pad((string) ($seconds % 60), 2, '0', STR_PAD_LEFT) . 's';
         }
 
-        return intdiv($seconds, 3600) . ' h ' . str_pad((string) intdiv($seconds % 3600, 60), 2, '0', STR_PAD_LEFT);
+        return intdiv($seconds, 3600) . 'h ' . str_pad((string) intdiv($seconds % 3600, 60), 2, '0', STR_PAD_LEFT) . 'm';
     }
 
     public static function source(?string $key): string
