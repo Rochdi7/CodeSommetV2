@@ -203,4 +203,6 @@ return [
     'faq_q4' => 'Pouvez-vous vous intégrer aux systèmes existants utilisés par les entreprises de Toronto ?',
     'faq_q5' => 'Comment fonctionne le modèle de révisions illimitées pour les clients de Toronto ?',
     'faq_q6' => 'Fournissez-vous un support continu après le lancement à Toronto ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

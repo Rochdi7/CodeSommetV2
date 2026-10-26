@@ -191,4 +191,6 @@ return [
     'faq_q4' => 'Pouvez-vous intégrer les passerelles de paiement UAE et les systèmes locaux ?',
     'faq_q5' => 'Comment fonctionne le modèle de révisions illimitées à Abu Dhabi ?',
     'faq_q6' => 'Fournissez-vous un support continu pour les clients d\'Abu Dhabi après le lancement ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

@@ -199,4 +199,6 @@ return [
     'faq_q4' => 'Pouvez-vous intégrer les systèmes existants utilisés par les entreprises d\'Austin ?',
     'faq_q5' => 'Comment fonctionne votre modèle de révisions illimitées pour les clients d\'Austin ?',
     'faq_q6' => 'Fournissez-vous un support continu pour les projets à Austin après le lancement ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

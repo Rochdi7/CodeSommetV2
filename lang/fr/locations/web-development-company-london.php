@@ -189,4 +189,6 @@ return [
     'faq_q4' => 'Pouvez-vous vous intégrer aux systèmes existants utilisés par les entreprises de Londres ?',
     'faq_q5' => 'Comment fonctionne le modèle de révisions illimitées pour les clients de Londres ?',
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les projets de Londres ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];
