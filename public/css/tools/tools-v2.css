@@ -9,6 +9,7 @@
 .tv-break { overflow-wrap: anywhere; }
 .tv-nowrap { white-space: nowrap; }
 
+.tv-max-h-80 { max-height: 20rem; }
 .tv-textarea { min-height: 10rem; resize: vertical; }
 .tv-textarea--tall { min-height: 16rem; }
 

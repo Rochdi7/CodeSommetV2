@@ -1,0 +1,84 @@
+{
+    "headings": [
+        [
+            1,
+            "Testeur Robots.txt"
+        ],
+        [
+            2,
+            "Résultats par URL"
+        ],
+        [
+            2,
+            "Groupes et règles"
+        ],
+        [
+            2,
+            "Avertissements de syntaxe"
+        ],
+        [
+            3,
+            "Contenu analysé"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Comment un robot choisit-il son groupe de règles ?"
+        ],
+        [
+            3,
+            "Quelle règle gagne quand plusieurs correspondent ?"
+        ],
+        [
+            3,
+            "Que signifient « * » et « $ » dans un motif ?"
+        ],
+        [
+            3,
+            "Un robots.txt empêche-t-il l'indexation ?"
+        ],
+        [
+            3,
+            "Que se passe-t-il si le fichier est absent ou en erreur ?"
+        ],
+        [
+            3,
+            "Crawl-delay et Noindex sont-ils pris en compte ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Validateur Robots.txt"
+        ],
+        [
+            3,
+            "Générateur Robots.txt"
+        ],
+        [
+            3,
+            "Accès des Robots d'IA"
+        ],
+        [
+            2,
+            "Un Problème d'Exploration Plus Large ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

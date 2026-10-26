@@ -78,7 +78,8 @@ final class Input
     /** Texte libre borné en taille. */
     public static function text(Request $request, string $key, int $maxBytes, bool $required = true): string
     {
-        $value = $request->input($key, '');
+        // ConvertEmptyStringsToNull transforme un champ vide en null.
+        $value = $request->input($key) ?? '';
         if (! is_string($value)) {
             throw new InvalidInputException('Champ texte invalide.');
         }
