@@ -12,6 +12,8 @@ class NewsletterSubscriber extends Model
         'name',
         'source',
         'ip_address',
+        'visitor_id',
+        'analytics_session_id',
         'is_confirmed',
         'subscribed_at',
         'unsubscribed_at',

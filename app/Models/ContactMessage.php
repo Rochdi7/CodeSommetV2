@@ -17,6 +17,8 @@ class ContactMessage extends Model
         'source',
         'ip_address',
         'user_agent',
+        'visitor_id',
+        'analytics_session_id',
         'status',
     ];
 }
