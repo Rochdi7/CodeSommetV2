@@ -194,4 +194,6 @@ return [
     'faq_q4' => 'Comprenez-vous les lois de conformité et de protection des données du Morocco ?',
     'faq_q5' => 'À quelle vitesse pouvez-vous lancer un site web pour mon entreprise à Marrakech ?',
     'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine .ma ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

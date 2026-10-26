@@ -271,6 +271,12 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                            <img src="{{ asset('images/partners/authentic-morocco-adventures.webp') }}" alt="Logo d'Authentic Morocco Adventures, guide de circuits privés à Marrakech, client de CodeSommet" loading="lazy" width="41" height="45"
+                                style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        </div>
+                        <div style="height:45px;width:auto"
+                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="112" height="66"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
@@ -333,6 +339,12 @@
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
                             <img src="{{ asset('images/partners/akoubri.webp') }}" alt="Logo d'Akoubri, cabinet d'architecture à Marrakech, client de CodeSommet" loading="lazy" width="176" height="45"
+                                style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        </div>
+                        <div style="height:45px;width:auto"
+                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                            <img src="{{ asset('images/partners/authentic-morocco-adventures.webp') }}" alt="Logo d'Authentic Morocco Adventures, guide de circuits privés à Marrakech, client de CodeSommet" loading="lazy" width="41" height="45"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>

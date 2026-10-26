@@ -719,7 +719,7 @@
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <p class="text-sm text-gray-600 text-center max-w-2xl mx-auto mb-6">Cette plateforme CRM/paie sur mesure s'inscrit dans nos projets de backoffice métier complexes : découvrez <a href="{{ route('case-study', 'hssabek') }}" class="text-[#00AEEF] font-medium hover:underline">un autre exemple de plateforme SaaS métier sur mesure</a>.</p>
             <div class="grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 max-w-4xl mx-auto"><a class="group"
-                    href="/our-work/morocco-quest">
+                    href="/our-work/authentic-morocco-adventures">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
