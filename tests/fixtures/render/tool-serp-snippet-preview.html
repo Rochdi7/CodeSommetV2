@@ -715,6 +715,7 @@
     <script src="http://127.0.0.1:8000/js/devtools-deterrent.min.js?v=VERSION">
     <script defer="defer" src="http://127.0.0.1:8000/js/app.min.js?v=VERSION">
     <script defer="defer" src="http://127.0.0.1:8000/js/custom-select.min.js?v=VERSION">
+    <script defer="defer" src="http://127.0.0.1:8000/js/analytics.min.js?v=VERSION">
     <script>
       #raw (function() { var done = false; function dismiss() { if (done) return; done = true; var p = document.getElementById('preloader'); if (p) { p.classList.add('loaded'); setTimeout(function() { p.remove(); }, 600); } } // Ce script inline en fin de <body> s'exécute dès que le HTML est // parsé — AVANT le téléchargement des scripts defer (contrairement // à DOMContentLoaded, qui les attend : ~1,5 s de délai LCP en 4G // lente). Deux rAF = première opportunité de peinture, page déjà // entièrement stylée par le CSS critique inliné. requestAnimationFrame(function() { requestAnimationFrame(dismiss); }); document.addEventListener('DOMContentLoaded', dismiss); window.addEventListener('load', dismiss); setTimeout(dismiss, 2500); })();
     <script defer="defer" src="http://127.0.0.1:8000/scripts/google-analytics.js?v=VERSION">
