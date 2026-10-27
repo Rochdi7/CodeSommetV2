@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Extracteur de Domaines"
+        ],
+        [
+            2,
+            "URL par domaine"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce que le domaine racine ?"
+        ],
+        [
+            3,
+            "Quelles extensions à plusieurs niveaux sont reconnues ?"
+        ],
+        [
+            3,
+            "À quoi cela sert-il en SEO ?"
+        ],
+        [
+            3,
+            "Mes données sont-elles envoyées ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Éditeur d'URL en Masse"
+        ],
+        [
+            3,
+            "Vérificateur de Domaines Expirés"
+        ],
+        [
+            3,
+            "Santé du Domaine"
+        ],
+        [
+            2,
+            "Besoin d'un Audit de Votre Profil de Liens ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

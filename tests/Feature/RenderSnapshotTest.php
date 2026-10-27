@@ -22,7 +22,7 @@ use Tests\TestCase;
  * Plus A16 (heading hierarchy), A17 (link counts), A18 (fragment IDs) and
  * A9 (route baseline).
  *
- * Coverage is an EXPLICIT inventory (36 city + 57 tool routes = 93), not a
+ * Coverage is an EXPLICIT inventory (36 city + 66 tool routes = 102), not a
  * discovered list; the inventory is cross-checked against config/pages.php and
  * the tools view directory so silent drift fails loudly.
  *
@@ -49,27 +49,32 @@ class RenderSnapshotTest extends TestCase
 
     /** Explicit, deterministic tool inventory (mirrors resources/views/frontoffice/pages/tools/). */
     private const TOOLS = [
-        'ai-crawler-access-checker', 'base64-encoder', 'blog-title-generator',
-        'bot-viewer', 'broken-link-checker', 'canonical-checker',
-        'chatbot-script-generator', 'color-palette-generator',
-        'core-web-vitals-checker', 'crawl-visualizer', 'css-minifier',
-        'domain-authority-checker', 'domain-health-checker',
-        'duplicate-content-checker', 'expired-domain-checker', 'faq-schema-generator',
-        'heading-analyzer', 'hreflang-generator', 'html-minifier',
-        'html-to-text', 'image-alt-analyzer', 'image-compression-analyzer',
-        'internal-link-analyzer', 'json-formatter', 'keyword-density-analyzer',
-        'landing-page-generator', 'llms-txt-generator', 'local-business-schema',
+        'ai-crawler-access-checker', 'ai-readiness-checker', 'base64-encoder',
+        'blog-title-generator', 'bot-viewer', 'broken-link-checker',
+        'canonical-checker', 'chatbot-script-generator',
+        'color-palette-generator', 'core-web-vitals-checker',
+        'crawl-optimization-checker', 'crawl-visualizer', 'css-minifier',
+        'domain-authority-checker', 'domain-extractor',
+        'domain-health-checker', 'duplicate-content-checker',
+        'eeat-signals-checker', 'expired-domain-checker',
+        'faq-schema-generator', 'heading-analyzer', 'hreflang-generator',
+        'html-minifier', 'html-to-text', 'image-alt-analyzer',
+        'image-compression-analyzer', 'image-compressor',
+        'internal-link-analyzer', 'invisible-character-cleaner',
+        'json-formatter', 'keyword-density-analyzer',
+        'keyword-modifier-generator', 'landing-page-generator',
+        'llms-txt-generator', 'local-business-schema',
         'lorem-ipsum-generator', 'meta-extractor', 'meta-refresh-generator',
         'meta-tag-generator', 'mobile-friendly-test', 'ngram-extractor',
-        'nofollow-link-checker', 'og-preview-generator', 'page-speed-analyzer',
-        'qr-code-generator', 'readability-analyzer', 'redirect-checker',
-        'robots-txt-generator', 'robots-txt-tester', 'robots-validator',
-        'schema-generator', 'security-headers-checker', 'serp-snippet-preview',
-        'sitemap-url-extractor', 'sitemap-validator',
+        'nofollow-link-checker', 'og-preview-generator',
+        'page-speed-analyzer', 'qr-code-generator', 'readability-analyzer',
+        'redirect-checker', 'robots-txt-generator', 'robots-txt-tester',
+        'robots-validator', 'schema-generator', 'security-headers-checker',
+        'serp-snippet-preview', 'sitemap-url-extractor', 'sitemap-validator',
         'ssl-certificate-checker', 'structured-data-extractor',
-        'text-case-converter', 'url-slug-generator', 'utm-builder',
-        'website-analyzer', 'website-readiness-checker', 'word-counter',
-        'xml-sitemap-generator',
+        'text-case-converter', 'text-editor', 'url-editor',
+        'url-slug-generator', 'utm-builder', 'website-analyzer',
+        'website-readiness-checker', 'word-counter', 'xml-sitemap-generator',
     ];
 
     /** Fragment IDs watched by A18. City pages (except worldwide) must carry both. */
@@ -103,11 +108,11 @@ class RenderSnapshotTest extends TestCase
         return $cases;
     }
 
-    public function test_inventory_is_exactly_93_routes_and_matches_repository(): void
+    public function test_inventory_is_exactly_102_routes_and_matches_repository(): void
     {
         $this->assertCount(36, self::CITIES, 'City inventory must be exactly 36 routes');
-        $this->assertCount(57, self::TOOLS, 'Tool inventory must be exactly 57 routes');
-        $this->assertCount(93, self::routeProvider());
+        $this->assertCount(66, self::TOOLS, 'Tool inventory must be exactly 66 routes');
+        $this->assertCount(102, self::routeProvider());
 
         // Cross-check against the sources of truth so drift cannot go unnoticed.
         $configCities = config('pages.cities');

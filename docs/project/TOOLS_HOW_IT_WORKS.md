@@ -476,15 +476,15 @@ Counts `<loc>` tags by regex; does not validate individual URLs or `lastmod` for
 
 | Check | Points | Method |
 |---|---|---|
-| Viewport | 30 | viewport meta present, reports its content |
-| Media queries | 20 | `@media` appears anywhere in the HTML |
-| Font sizes | 20 | heuristic (below) |
-| Tap targets | 15 | **always awarded** |
-| Horizontal scroll | 15 | no `overflow-x: scroll` |
+| Viewport | 40 | viewport meta with `width=device-width` (15 if present without it); extra `Zoom` warning when zoom is disabled |
+| Media queries | — | `@media` in the inline HTML → `pass`; otherwise `info` (external stylesheets are not fetched) |
+| Font sizes | 20, only if measurable | inline `font-size: Npx` values; all ≥ 12px → 20, otherwise 8. None inline → `info`, excluded from the score |
+| Tap targets | 20, only if measurable | `<a>`/`<button>` with inline width/height; all ≥ 44px → 20, otherwise 6. None inline → `info`, excluded |
+| Horizontal scroll | 20 | no `overflow-x: scroll` |
 
-Two caveats. **Tap targets is unconditional** — 15 free points with no analysis behind it, since measuring tap targets requires layout. And the **font-size heuristic is inverted**: it passes when it finds *no* pixel font sizes at all, or *any* size ≥ 14px. Since it only sees inline HTML, a site with all styles in an external stylesheet passes trivially.
+The score is `score / maxScore × 100`, with `maxScore` covering only the checks that could be measured. The response includes `checks` (with `info` entries) and `checksScored`. Neither `issues` nor `SeoRecommendations` includes `info` checks. The UI shows them in a third column, "Non mesurable ici".
 
-Media queries in external CSS files are likewise invisible.
+This replaced the earlier behaviour, which gave 15 unconditional tap-target points and passed fonts when no px size was found. Covered by `MobileFriendlyScoringTest`.
 
 ### 6.15 Core Web Vitals Checker
 
@@ -577,7 +577,7 @@ The SEO score and CTR estimate are **random numbers**, not predictions. Titles a
 
 ## 8. Tier C — Client-Side Tools
 
-21 tools running entirely in the browser, one JS file each in `public/js/tools/`. No server request, no rate limit, nothing leaves the user's machine.
+27 tools running entirely in the browser (21 original + 6 added on 2026-10-27, listed below), one JS file each in `public/js/tools/`. No server request, no rate limit, nothing leaves the user's machine.
 
 **Generators** — `faq-schema-generator`, `schema-generator`, `local-business-schema`, `hreflang-generator`, `robots-txt-generator`, `xml-sitemap-generator`, `meta-refresh-generator`, `qr-code-generator`, `utm-builder`, `lorem-ipsum-generator`, `url-slug-generator`.
 
@@ -589,6 +589,33 @@ The privacy property is real and worth advertising: pasting proprietary content 
 
 `color-palette-generator` also belongs here in practice — the browser reads the uploaded image into a canvas and samples pixels; the file is never uploaded.
 
+**Batch 2026-10-27 (on `frontoffice.layouts.tool` + `ToolsV2.register`)** — six more client-side tools, inspired by the SEOSignalX research (see `docs/reverse-engineering/seosignalx/FREE_TOOL_IMPLEMENTATION_MATRIX.md`):
+
+| Tool | What it does | Limits |
+|---|---|---|
+| `url-editor` | Bulk-cleans URL lists. Options: trim, force https, strip `www`, drop the `#fragment` or trailing slash, reduce to the root, deduplicate, sort. Parameters can be kept, stripped of tracking only (`utm_*`, `gclid`, `fbclid`…) or all removed. Include/exclude filters. | Non-http(s) and local hosts are reported as invalid |
+| `text-editor` | Line operations in a fixed order: trim, drop empty lines, deduplicate (optionally case-insensitive), strip brackets, find/replace (plain or JS regex), keep/exclude filters, prefix/suffix, numbering, sorting | Invalid regex → error message, no output |
+| `domain-extractor` | Root domain or full host per URL, with a URL count | Built-in multi-level suffix list (`co.ma`, `co.uk`, `github.io`…), not the full PSL; IPs are invalid |
+| `invisible-character-cleaner` | Removes zero-width, bidi, soft-hyphen and tag characters; converts NBSP to a space; can normalise quotes and ellipses and collapse spaces. Keeps ZWJ inside emoji sequences and flag tags | No "humanising" claim |
+| `image-compressor` | Re-encodes JPEG/PNG/WebP through a canvas, optionally resized to a max width (never upscaled) | ≤ 30 files, ≤ 25 MB each; per-file download; metadata dropped; the UI flags results larger than the original |
+| `keyword-modifier-generator` | Deterministic FR/EN modifier families (questions, information, comparison, purchase, prepositions, local + cities) around ≤ 5 seeds | **No search volume or ranking data**, stated on the page |
+
+The pure functions are exported for Node and tested in `tests/js/free-tools.test.cjs` (`node --test tests/js/free-tools.test.cjs`). `ClientSideToolsTest` checks that each page renders, has its index card, and that the script contains no `fetch`/XHR/beacon/`T.call`. The only request a page makes is the slug-only usage counter.
+
+**Run API tools** (`POST /api/v2/tools/{slug}/runs`, see `docs/reverse-engineering/seosignalx/phase-a-api-contract.md`): `website-analyzer`, `llms-txt-generator`, `meta-extractor` and `expired-domain-checker`. Server-side, through `SafeUrlValidator`/`SafeHttpFetcher`, and tested in `WebsiteAnalyzerPilotTest` and `FreeSeoToolsTest`.
+
+**Signal tools (batch 3, 2026-10-27)** — `eeat-signals-checker`, `ai-readiness-checker` and `crawl-optimization-checker`. They share `App\Services\Tools\Concerns\InspectsPage`, `partials/signal-results.blade.php` and `js/tools/signal-checks.js`.
+
+Each check has a group, a status (`pass`/`warn`/`fail`/`info`) and a weight. The score is Σ weight × (1, ½, 0) / Σ weight, with `info` checks (not applicable or not measurable) left out of both sums. With nothing scorable, the score is `null` and the UI says so.
+
+| Tool | Requests | What it checks |
+|---|---|---|
+| `eeat-signals-checker` | 1 page | HTTPS, linked legal pages, contact means, Organization schema, address, linked "about" page, external profiles (sameAs and links), cited external domains, author (`info` on non-articles), proof of experience, reviews (`info` when absent), dates (`info` on non-articles), word count |
+| `ai-readiness-checker` | page + robots.txt + /llms.txt | search/assistant AI bots from `AiCrawlerAccessCheckerTool::CRAWLERS` (training bots excluded), noindex/`none`, nosnippet/max-snippet:0/data-nosnippet, words without JS, H1/H2, question headings, `<p>` passages of 40–150 words, lists/tables outside nav, JSON-LD, meta description, lang, canonical, date. llms.txt is always `info` |
+| `crawl-optimization-checker` | ≤ 50 pages, 20 s (`heavy_tools`) | robots.txt status, Sitemap line, internal links to 4xx/5xx, redirects and noindex pages (each with the pages linking to it), robots-blocked links (`info`), depth > 3, parameter share > 25 %, duplicate and missing titles, sample coverage (`info`) |
+
+`SiteCrawler` uses `getNoRedirect`. A 3xx is recorded with its `redirectTo`, and the target is queued like a link: it is SSRF-validated when visited and skipped when off-site. Pages carry an `html` flag. Tested in `SignalToolsTest`.
+
 ---
 
 ## 9. Known Limitations
@@ -597,21 +624,19 @@ The privacy property is real and worth advertising: pasting proprietary content 
 
 **No JavaScript execution.** Only server-rendered HTML is visible. A client-rendered SPA looks nearly empty — no H1, no content, no images — and scores terribly regardless of the SEO Google actually sees after rendering.
 
-**External CSS is invisible.** The mobile-friendly and font-size checks only inspect inline HTML. Sites with proper external stylesheets are judged on markup they do not contain.
+**External CSS is invisible.** The mobile-friendly checks only inspect inline HTML. Checks that cannot be measured are now reported as `info` and left out of the score (§6.14) instead of being guessed.
 
-**Single page only.** No tool crawls. "Website Analyzer" analyzes exactly one URL.
+**Mostly single page.** "Website Analyzer" analyzes exactly one URL. Only `crawl-visualizer`, `llms-txt-generator` and `crawl-optimization-checker` (the last two through the bounded, robots-aware `SiteCrawler`) follow links.
 
-**Domain Health caps at 85.** Weights sum to 85, so a perfect site grades B.
+*Fixed since this document was first written (verified in code on 2026-10-27):*
 
-**HTTPS scored twice in Domain Health.** `$isHttps = $accessible` — 30 points for one fact.
+- Domain Health no longer caps at 85 and no longer counts HTTPS twice (`$isHttps = $accessible` was removed).
+- Mobile tap targets are no longer free points.
+- Core Web Vitals and Page Speed query PageSpeed Insights, with an honest fallback when PSI is unavailable.
+- Blog title scores come from `App\Services\TitleScorer` instead of `rand()`.
+- Domain Authority shows provider data only when API keys are configured (`AuthorityMetricLabellingTest`).
 
-**Mobile tap targets always pass.** 15 unconditional points.
-
-**Core Web Vitals measures nothing resembling CWV.** Server response time from your datacenter, plus tag counts.
-
-**Blog title SEO scores are `rand()`.** So are the CTR estimates.
-
-**Domain Authority is not Domain Authority.**
+Sections 6.10, 6.15 and 7 above may still describe the old behaviour.
 
 **5 MB body cap.** Pages larger than 5 MB are truncated before the regexes run, so checks may miss content near the end.
 

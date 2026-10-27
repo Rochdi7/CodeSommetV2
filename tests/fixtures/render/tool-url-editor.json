@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Éditeur d'URL en Masse"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi retirer les paramètres de suivi ?"
+        ],
+        [
+            3,
+            "Quelle différence entre « retirer le suivi » et « tout retirer » ?"
+        ],
+        [
+            3,
+            "Les URL sont-elles envoyées quelque part ?"
+        ],
+        [
+            3,
+            "Que deviennent les lignes qui ne sont pas des URL ?"
+        ],
+        [
+            3,
+            "La barre oblique finale est-elle importante ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Extracteur de Domaines"
+        ],
+        [
+            3,
+            "Générateur UTM"
+        ],
+        [
+            3,
+            "Vérificateur de Redirections"
+        ],
+        [
+            2,
+            "Une Migration d'URL à Préparer ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

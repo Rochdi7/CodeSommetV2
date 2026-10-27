@@ -1,0 +1,51 @@
+<?php
+
+return [
+    'title' => 'Vérificateur de Préparation aux Moteurs IA (GEO) Gratuit | CodeSommet',
+    'meta_description' => 'Votre page peut-elle être lue et citée par ChatGPT, Perplexity, Claude ou AI Overviews ? Accès des robots IA, noindex et nosnippet, texte sans JavaScript, passages citables, schema, llms.txt.',
+    'meta_keywords' => 'geo,generative engine optimization,ai overviews,chatgpt search,perplexity,robots ia,llms.txt,nosnippet,contenu citable,seo ia',
+    'og_title' => 'Vérificateur de Préparation aux Moteurs IA',
+    'og_description' => 'Accès des robots IA, directives d\'extrait, texte lisible sans JavaScript et passages citables : la page est-elle prête pour les réponses IA ?',
+    'twitter_description' => 'La page est-elle lisible et citable par les moteurs de réponse IA ? 14 vérifications documentées.',
+    'breadcrumb' => 'Préparation IA',
+    'h1' => 'Vérificateur de Préparation aux Moteurs IA',
+    'intro' => 'ChatGPT Search, Perplexity, Claude, Copilot et les AI Overviews de Google ne citent que ce qu\'ils peuvent atteindre et lire. Vérifiez l\'accès des robots, les directives d\'extrait et la structure qui rend un passage citable.',
+    'btn_submit' => 'Analyser la page',
+    'fields' => [
+        ['name' => 'url', 'label' => 'Page à analyser', 'type' => 'url', 'required' => true,
+            'placeholder' => 'https://example.com/services',
+            'help' => 'Une page publique. L\'outil lit aussi robots.txt et /llms.txt du site.'],
+    ],
+    'score_note' => 'Score de préparation, pas de visibilité : l\'outil ne peut pas savoir si une IA cite réellement la page. llms.txt est affiché pour information et n\'entre pas dans le score.',
+    'bots_title' => 'Robots de recherche et d\'assistants IA',
+    'bots_note' => 'Règles robots.txt appliquées à cette page pour les robots qui alimentent les réponses (les robots d\'entraînement seul sont exclus).',
+    'bots_link' => 'Détail par robot, y compris l\'entraînement',
+    'how' => [
+        'Saisissez l\'adresse d\'une page publique.',
+        'L\'outil lit le HTML brut, sans exécuter le JavaScript, comme la plupart des robots d\'IA, puis robots.txt et /llms.txt.',
+        'Levez d\'abord les blocages d\'accès (robots, noindex, nosnippet), puis travaillez la structure : titres en questions, paragraphes autonomes, listes et données structurées.',
+    ],
+    'faq_intro' => 'Préparer une page pour les réponses IA',
+    'faq' => [
+        ['q' => 'Pourquoi le texte sans JavaScript est-il si important ?',
+            'a' => 'La plupart des robots d\'IA téléchargent le HTML sans exécuter les scripts. Un site dont le contenu n\'apparaît qu\'après rendu dans le navigateur leur paraît presque vide.'],
+        ['q' => 'nosnippet bloque-t-il les AI Overviews ?',
+            'a' => 'Oui. Google indique que nosnippet, max-snippet et data-nosnippet limitent aussi l\'usage du contenu dans AI Overviews et AI Mode. Un noindex retire la page de l\'index, donc des réponses qui s\'en servent.'],
+        ['q' => 'Faut-il bloquer GPTBot ou Google-Extended ?',
+            'a' => 'Ces robots servent à l\'entraînement des modèles ; les bloquer n\'empêche pas d\'apparaître dans ChatGPT Search (OAI-SearchBot) ou dans la recherche Google (Googlebot). Cet outil ne contrôle que les robots qui alimentent les réponses ; le vérificateur d\'accès des robots IA détaille tous les autres.'],
+        ['q' => 'Le fichier llms.txt est-il obligatoire ?',
+            'a' => 'Non. C\'est une proposition de format lue par certains outils, que Google n\'utilise pas. Il est signalé à titre d\'information et ne change pas le score.'],
+    ],
+    'related' => [
+        ['slug' => 'ai-crawler-access-checker', 'title' => 'Accès des Robots IA', 'desc' => 'Le détail de robots.txt pour 20 robots d\'IA, entraînement compris.'],
+        ['slug' => 'llms-txt-generator', 'title' => 'Générateur de llms.txt', 'desc' => 'Créez un llms.txt à partir des pages de votre site.'],
+        ['slug' => 'eeat-signals-checker', 'title' => 'Signaux E-E-A-T', 'desc' => 'Vérifiez les signaux de confiance et d\'expertise de la page.'],
+    ],
+    'usage' => 'pages analysées',
+    'cta' => [
+        'title' => 'Être Cité par les Moteurs IA ?',
+        'text' => 'Nous rendons vos pages lisibles sans JavaScript et structurons vos contenus en réponses claires, sourcées et balisées',
+    ],
+    'card_title' => 'Préparation aux Moteurs IA',
+    'card_desc' => 'Robots IA, noindex et nosnippet, texte sans JavaScript, passages citables et schema : la page est-elle prête pour les réponses IA ?',
+];

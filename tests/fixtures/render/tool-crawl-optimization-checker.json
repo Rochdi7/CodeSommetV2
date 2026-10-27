@@ -1,0 +1,60 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur d'Optimisation du Crawl"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Le budget de crawl concerne-t-il les petits sites ?"
+        ],
+        [
+            3,
+            "Pourquoi corriger les liens qui pointent vers une redirection ?"
+        ],
+        [
+            3,
+            "Quelle différence avec le visualiseur de crawl ?"
+        ],
+        [
+            3,
+            "Mon site a plus de 50 pages, l'analyse est-elle complète ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Visualiseur de Crawl"
+        ],
+        [
+            3,
+            "Vérificateur de Liens Cassés"
+        ],
+        [
+            3,
+            "Testeur robots.txt"
+        ],
+        [
+            2,
+            "Une Structure de Site à Remettre à Plat ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

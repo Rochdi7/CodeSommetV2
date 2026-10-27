@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Compresseur d'Images"
+        ],
+        [
+            2,
+            "Images optimisées"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Mes images sont-elles envoyées sur un serveur ?"
+        ],
+        [
+            3,
+            "Quel format choisir ?"
+        ],
+        [
+            3,
+            "Quelle qualité utiliser ?"
+        ],
+        [
+            3,
+            "Les métadonnées sont-elles conservées ?"
+        ],
+        [
+            3,
+            "Et si l'image compressée est plus lourde ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Analyseur de Compression d'Images"
+        ],
+        [
+            3,
+            "Analyseur de Texte Alt"
+        ],
+        [
+            3,
+            "Analyseur de Vitesse"
+        ],
+        [
+            2,
+            "Un Site Trop Lent ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

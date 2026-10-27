@@ -1199,7 +1199,7 @@ class ToolsApiController extends Controller
             $checks[] = ['name' => 'Media Queries', 'status' => 'pass', 'message' => 'Media queries détectées dans le HTML'];
         } else {
             $externalCss = preg_match_all('/<link\s+[^>]*stylesheet/i', $html);
-            $checks[] = ['name' => 'Media Queries', 'status' => 'pass',
+            $checks[] = ['name' => 'Media Queries', 'status' => 'info',
                 'message' => $externalCss > 0
                     ? "Aucune media query inline ; {$externalCss} feuille(s) CSS externe(s) non analysée(s)"
                     : 'Aucune media query inline détectée'];
@@ -1209,17 +1209,16 @@ class ToolsApiController extends Controller
         // (styles inline). L'ancienne logique était inversée : elle *validait*
         // l'absence de toute taille en px, si bien qu'un site dont tout le CSS
         // est externe — la bonne pratique — obtenait les points sans contrôle.
-        $maxScore += 20;
         preg_match_all('/font-size\s*:\s*([0-9.]+)px/i', $html, $fontMatches);
         $sizes = array_map('floatval', $fontMatches[1] ?? []);
 
         if ($sizes === []) {
-            // Rien d'observable : on n'invente pas de verdict, on accorde le
-            // bénéfice du doute en le signalant explicitement.
-            $score += 20;
-            $checks[] = ['name' => 'Tailles de police', 'status' => 'pass',
-                'message' => 'Aucune taille en px dans le HTML — probablement définie en CSS externe (non analysable)'];
+            // Rien d'observable : ni réussi ni échoué. Le contrôle est exclu du
+            // score (aucun point accordé pour une mesure qui n'a pas eu lieu).
+            $checks[] = ['name' => 'Tailles de police', 'status' => 'info',
+                'message' => 'Aucune taille en px dans le HTML — probablement définie en CSS externe (non mesurable ici, exclu du score)'];
         } else {
+            $maxScore += 20;
             $tooSmall = array_values(array_filter($sizes, fn ($s) => $s < 12));
             if ($tooSmall === []) {
                 $score += 20;
@@ -1235,7 +1234,6 @@ class ToolsApiController extends Controller
         // Cibles tactiles — mesurables uniquement pour les dimensions déclarées
         // en HTML/inline. L'ancienne version accordait 15 points de façon
         // inconditionnelle, sans aucune analyse.
-        $maxScore += 20;
         $tapIssues = 0;
         preg_match_all('/<(?:a|button)\b[^>]*style\s*=\s*["\'][^"\']*["\'][^>]*>/i', $html, $tapMatches);
         foreach ($tapMatches[0] as $el) {
@@ -1243,11 +1241,13 @@ class ToolsApiController extends Controller
                 $tapIssues++;
             }
         }
+        if ($tapMatches[0] !== []) {
+            $maxScore += 20;
+        }
 
         if ($tapMatches[0] === []) {
-            $score += 20;
-            $checks[] = ['name' => 'Cibles tactiles', 'status' => 'pass',
-                'message' => 'Aucune dimension inline sur les éléments interactifs — dimensionnement en CSS externe (non analysable)'];
+            $checks[] = ['name' => 'Cibles tactiles', 'status' => 'info',
+                'message' => 'Aucune dimension inline sur les éléments interactifs — dimensionnement en CSS externe (non mesurable ici, exclu du score)'];
         } elseif ($tapIssues === 0) {
             $score += 20;
             $checks[] = ['name' => 'Cibles tactiles', 'status' => 'pass',
@@ -1277,8 +1277,12 @@ class ToolsApiController extends Controller
                 'score' => $finalScore . '/100',
                 'pointsEarned' => $score . '/' . $maxScore,
                 'checksRun' => count($checks),
+                'checksScored' => count(array_filter($checks, fn ($c) => $c['status'] !== 'info')),
             ],
-            'issues' => array_values(array_filter($checks, fn($c) => $c['status'] !== 'pass')),
+            // Contrôles non mesurables (`info`) : affichés à part, jamais comptés
+            // comme réussis ni comme problèmes.
+            'checks' => $checks,
+            'issues' => array_values(array_filter($checks, fn ($c) => ! in_array($c['status'], ['pass', 'info'], true))),
             'recommendations' => $this->generateRecommendations($checks),
             'limitation' => 'Analyse limitée au HTML renvoyé par le serveur : les feuilles CSS externes et les styles appliqués par JavaScript ne sont pas évalués.',
         ]);

@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Préparation aux Moteurs IA"
+        ],
+        [
+            2,
+            "Robots de recherche et d'assistants IA"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi le texte sans JavaScript est-il si important ?"
+        ],
+        [
+            3,
+            "nosnippet bloque-t-il les AI Overviews ?"
+        ],
+        [
+            3,
+            "Faut-il bloquer GPTBot ou Google-Extended ?"
+        ],
+        [
+            3,
+            "Le fichier llms.txt est-il obligatoire ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Accès des Robots IA"
+        ],
+        [
+            3,
+            "Générateur de llms.txt"
+        ],
+        [
+            3,
+            "Signaux E-E-A-T"
+        ],
+        [
+            2,
+            "Être Cité par les Moteurs IA ?"
+        ]
+    ],
+    "links": {
+        "internal": 61,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

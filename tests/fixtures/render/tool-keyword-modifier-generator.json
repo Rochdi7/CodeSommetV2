@@ -1,0 +1,60 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur de Variantes de Mots-Clés"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "D'où viennent ces variantes ?"
+        ],
+        [
+            3,
+            "Pourquoi n'y a-t-il pas de volume de recherche ?"
+        ],
+        [
+            3,
+            "Toutes les variantes sont-elles pertinentes ?"
+        ],
+        [
+            3,
+            "Comment s'en servir pour mon site ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Éditeur de Texte Ligne par Ligne"
+        ],
+        [
+            3,
+            "Densité de Mots-Clés"
+        ],
+        [
+            3,
+            "Extracteur de N-grammes"
+        ],
+        [
+            2,
+            "Un Plan de Contenus à Bâtir ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

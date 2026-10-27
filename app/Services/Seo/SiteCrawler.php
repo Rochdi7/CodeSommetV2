@@ -158,6 +158,8 @@ class SiteCrawler
             'description' => null,
             'noindex' => false,
             'blockedByRobots' => false,
+            'html' => false,
+            'redirectTo' => null,
             'error' => null,
             '_links' => [],
         ];
@@ -168,8 +170,11 @@ class SiteCrawler
             return $page;
         }
 
+        // Redirects are not followed here: the hop is recorded and its target
+        // queued like any other link, so it is SSRF-validated and crawled
+        // (or skipped when off-site) on its own.
         try {
-            $response = $this->fetcher->get($url, 10, [
+            $response = $this->fetcher->getNoRedirect($url, 10, [
                 'User-Agent' => self::USER_AGENT,
                 'Accept' => 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5',
             ]);
@@ -184,11 +189,21 @@ class SiteCrawler
         }
 
         $page['status'] = $response->status();
+        if ($page['status'] >= 300 && $page['status'] < 400) {
+            $location = trim((string) $response->header('Location'));
+            $page['redirectTo'] = $location !== '' ? self::resolve($url, $location) : null;
+            if ($page['redirectTo'] !== null) {
+                $page['_links'][] = $page['redirectTo'];
+            }
+
+            return $page;
+        }
         $type = strtolower((string) $response->header('Content-Type'));
         if ($page['status'] >= 400 || ($type !== '' && ! str_contains($type, 'html'))) {
             return $page;
         }
 
+        $page['html'] = true;
         $dom = HtmlDocument::fromHtml($this->fetcher->cappedBody($response));
         $page['title'] = mb_substr($dom->title(), 0, 160) ?: null;
         $page['description'] = mb_substr($dom->metaByName('description'), 0, 300) ?: null;
