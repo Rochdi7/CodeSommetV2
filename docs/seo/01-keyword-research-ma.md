@@ -79,6 +79,8 @@ Raw : `docs/seo/raw/*.csv` · snapshots : `storage/app/seo/keywords/ma/` · usag
 
 → Les pages services ont un sens en `fr` (vol. ×50 vs `ma`), mais la concurrence y est nationale (CPC 4–17 €). Positionnement réaliste : « agence de développement web **offshore / Maroc** » depuis `worldwide` + services.
 
-## 5. Prochaine étape (non lancée — ~400 unités)
+> **Suite (2026-10-26, même jour)** : vague 2 (35 mots-clés), KD des 8 HERO et SERP exécutés → `02-keyword-to-page-map-ma.md` / `.csv` et `03-on-page-optimization-report.md`. Section 5 ci-dessous conservée pour l’historique.
+
+## 5. Prochaine étape (exécutée — voir 02/03)
 
 `php artisan seo:keywords "création site web maroc;agence web casablanca;agence seo maroc;agence web maroc;création site web tanger;agence web marrakech;agence web rabat;agence web agadir" --db=ma --type=kd` (50 u/kw) pour prioriser par difficulté, puis `--type=serp` sur les 3 HERO pour voir qui ranke.

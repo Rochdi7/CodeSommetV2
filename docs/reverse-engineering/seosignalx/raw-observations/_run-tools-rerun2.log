@@ -1,0 +1,17 @@
+﻿/tech-seo/speed input captured
+/tech-seo/speed valid result
+/tech-seo/speed malformed validation-or-error
+/tech-seo/bulk-pagespeed input captured
+/tech-seo/bulk-pagespeed valid validation-or-error
+/tech-seo/bulk-pagespeed malformed validation-or-error
+/tech-seo/semantic input captured
+/tech-seo/semantic valid result
+/tech-seo/semantic malformed validation-or-error
+/tech-seo/schema-auditor input captured
+/tech-seo/schema-auditor valid result
+/tech-seo/schema-auditor malformed validation-or-error (api /api/proxy=400,/=403)
+/seo-tools/robots-generator input captured
+/seo-tools/robots-generator valid no-visible-response
+/seo-tools/robots-generator malformed no-visible-response
+/seo-tools/text-editor input captured
+/seo-tools/text-editor valid result

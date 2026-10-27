@@ -1,0 +1,262 @@
+﻿/seo-tools input captured
+/seo-tools empty not-run: tool directory
+/seo-tools valid not-run: tool directory
+/content/ai-helper input captured
+/content/ai-helper empty validation-or-error (api /api/deepseek=401)
+/content/ai-helper valid validation-or-error (api /api/deepseek=401)
+/content/content-writer input captured
+/content/content-writer empty not-run: paywall card (Professional plan)
+/content/content-writer valid not-run: paywall card (Professional plan)
+/content/content-writer/editor input captured
+/content/content-writer/editor empty not-run: blank for anonymous visitors
+/content/content-writer/editor valid not-run: blank for anonymous visitors
+/content/entities-extractor input captured
+/content/entities-extractor empty action-disabled-until-input
+/content/entities-extractor valid result
+/content/entities-extractor malformed validation-or-error (api /api/proxy=400)
+/content/entities-generator input captured
+/content/entities-generator empty action-disabled-until-input
+/content/entities-generator valid result
+/content/grammar input captured
+/content/grammar empty no-visible-response
+/content/grammar valid result
+/content/ngrams input captured
+/content/ngrams empty empty-result
+/content/ngrams valid result
+/content/ngrams malformed validation-or-error (api /api/proxy=400)
+/content/nlp input captured
+/content/nlp empty empty-result
+/content/nlp valid result
+/content/nlp malformed validation-or-error (api /api/proxy=400,/=403)
+/content/optimization input captured
+/content/optimization empty not-run: blank for anonymous visitors
+/content/optimization valid not-run: blank for anonymous visitors
+/content/outline input captured
+/content/outline empty action-disabled-until-input
+/content/outline valid validation-or-error (api /api/deepseek=401)
+/content/outline malformed validation-or-error (api /api/proxy=400)
+/content/semantic-writer input captured
+/content/semantic-writer empty not-run: paywall card (Professional plan)
+/content/semantic-writer valid not-run: paywall card (Professional plan)
+/content/semantic-writer/editor input captured
+/content/semantic-writer/editor empty not-run: blank for anonymous visitors
+/content/semantic-writer/editor valid not-run: blank for anonymous visitors
+/content/skip-gram input captured
+/content/skip-gram empty no-visible-response
+/content/skip-gram valid validation-or-error (api /api/deepseek=401)
+/content/unique-ngrams input captured
+/content/unique-ngrams empty no-visible-response
+/content/unique-ngrams valid result
+/content/watermark-remover input captured
+/content/watermark-remover empty no-visible-response
+/content/watermark-remover valid result
+/geo/ai-chat input captured
+/geo/ai-chat empty not-run: paywall card (Professional plan)
+/geo/ai-chat valid not-run: paywall card (Professional plan)
+/geo/ai-compatibility input captured
+/geo/ai-compatibility empty action-disabled-until-input
+/geo/ai-compatibility valid result
+/geo/ai-compatibility malformed result
+/geo/ai-model-checker input captured
+/geo/ai-model-checker empty action-disabled-until-input
+/geo/ai-model-checker valid result
+/geo/ai-model-checker malformed validation-or-error
+/geo/brand-sentiment input captured
+/geo/brand-sentiment empty action-disabled-until-input
+/geo/brand-sentiment valid result
+/geo/brand-sentiment malformed validation-or-error
+/geo/citation-flow input captured
+/geo/citation-flow empty action-disabled-until-input
+/geo/citation-flow valid login/plan-gate (message)
+/geo/citation-flow malformed login/plan-gate (message)
+/geo/competitor-research input captured
+/geo/competitor-research empty action-disabled-until-input
+/geo/competitor-research valid result
+/geo/competitor-research malformed result
+/geo/encyclopedia input captured
+/geo/encyclopedia empty not-run: knowledge-base content page
+/geo/encyclopedia valid not-run: knowledge-base content page
+/geo/internal-links input captured
+/geo/internal-links empty action-disabled-until-input
+/geo/internal-links valid validation-or-error
+/geo/internal-links malformed validation-or-error
+/geo/llms-generator input captured
+/geo/llms-generator empty action-disabled-until-input
+/geo/llms-generator valid result
+/geo/llms-generator malformed validation-or-error (api /api/proxy=400)
+/geo/prompt-tracking input captured
+/geo/prompt-tracking empty action-disabled-until-input
+/geo/prompt-tracking valid result
+/geo/prompt-tracking malformed validation-or-error
+/keywords/branded input captured
+/keywords/branded empty not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/branded valid not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/cannibalization input captured
+/keywords/cannibalization empty not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/cannibalization valid not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/lost input captured
+/keywords/lost empty not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/lost valid not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/low-hanging input captured
+/keywords/low-hanging empty not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/low-hanging valid not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/new input captured
+/keywords/new empty not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/new valid not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/keywords/research input captured
+/keywords/research empty action-disabled-until-input
+/keywords/research valid login/plan-gate (message)
+/keywords/suggest input captured
+/keywords/suggest empty action-disabled-until-input
+/keywords/suggest valid result
+/keywords/ubersuggest input captured
+/keywords/ubersuggest empty action-disabled-until-input
+/keywords/ubersuggest valid result
+/local-seo/image-geo-tagger input captured
+/local-seo/image-geo-tagger empty not-run: requires image file upload
+/local-seo/image-geo-tagger valid not-run: requires image file upload
+/local-seo/rank-grid-pro input captured
+/local-seo/rank-grid-pro empty action-disabled-until-input
+/local-seo/rank-grid-pro valid no-visible-response
+/local-seo/rank-grid-pro malformed action-disabled-for-invalid-input
+/off-page/backlink-cleaner input captured
+/off-page/backlink-cleaner empty not-run: requires CSV file upload of a backlink export
+/off-page/backlink-cleaner valid not-run: requires CSV file upload of a backlink export
+/off-page/backlink-cleaner malformed not-run: requires CSV file upload of a backlink export
+/off-page/backlink-directory input captured
+/off-page/backlink-directory empty not-run: static directory/listing — no run action
+/off-page/backlink-directory valid not-run: static directory/listing — no run action
+/off-page/backlink-indexer input captured
+/off-page/backlink-indexer empty not-run: would submit URLs to IndexNow (third-party, outward-facing)
+/off-page/backlink-indexer valid not-run: would submit URLs to IndexNow (third-party, outward-facing)
+/off-page/backlink-indexer malformed not-run: would submit URLs to IndexNow (third-party, outward-facing)
+/off-page/expired-domains input captured
+/off-page/expired-domains empty action-disabled-until-input
+/off-page/expired-domains valid result
+/off-page/expired-domains malformed validation-or-error
+/on-page/analyzer input captured
+/on-page/analyzer empty result
+/on-page/analyzer valid result
+/on-page/analyzer malformed result
+/on-page/bulk-image-compression input captured
+/on-page/bulk-image-compression empty not-run: requires image file upload
+/on-page/bulk-image-compression valid not-run: requires image file upload
+/on-page/internal-link-opportunities input captured
+/on-page/internal-link-opportunities empty result
+/on-page/internal-link-opportunities valid no-action-button-detected
+/on-page/page-seo input captured
+/on-page/page-seo empty no-action-button-detected
+/on-page/page-seo valid no-action-button-detected
+/resources/semantic input captured
+/resources/semantic empty not-run: content page
+/resources/semantic valid not-run: content page
+/schema-seo input captured
+/schema-seo empty not-run: landing/overview page
+/schema-seo valid not-run: landing/overview page
+/schema-seo/auditor input captured
+/schema-seo/auditor empty not-run: landing/overview page
+/schema-seo/auditor valid not-run: landing/overview page
+/schema-seo/auditor malformed not-run: landing/overview page
+/semantic-seo/ai-agents input captured
+/semantic-seo/ai-agents empty not-run: GPT agent directory content page
+/semantic-seo/ai-agents valid not-run: GPT agent directory content page
+/semantic-seo/encyclopedia input captured
+/semantic-seo/encyclopedia empty not-run: knowledge-base content page
+/semantic-seo/encyclopedia valid not-run: knowledge-base content page
+/semantic-seo/resources input captured
+/semantic-seo/resources empty not-run: resource library content page
+/semantic-seo/resources valid not-run: resource library content page
+/semantic-seo/topical-map input captured
+/semantic-seo/topical-map empty not-run: content page
+/semantic-seo/topical-map valid not-run: content page
+/seo-tools/bot-viewer input captured
+/seo-tools/bot-viewer empty no-visible-response
+/seo-tools/bot-viewer valid result
+/seo-tools/bot-viewer malformed result
+/seo-tools/da-pa-checker input captured
+/seo-tools/da-pa-checker empty action-disabled-until-input
+/seo-tools/da-pa-checker valid validation-or-error (api /api/authority-check=401)
+/seo-tools/da-pa-checker malformed validation-or-error (api /api/authority-check=401)
+/seo-tools/domain-separator input captured
+/seo-tools/domain-separator empty empty-result
+/seo-tools/domain-separator valid result
+/seo-tools/domain-separator malformed result
+/seo-tools/meta-extractor input captured
+/seo-tools/meta-extractor empty no-visible-response
+/seo-tools/meta-extractor valid result
+/seo-tools/meta-extractor malformed validation-or-error (api /api/proxy=400)
+/seo-tools/robots-generator input captured
+/seo-tools/robots-generator empty no-visible-response
+/seo-tools/robots-generator valid no-visible-response
+/seo-tools/robots-generator malformed no-visible-response
+/seo-tools/sitemap-extractor input captured
+/seo-tools/sitemap-extractor empty no-visible-response
+/seo-tools/sitemap-extractor valid result
+/seo-tools/sitemap-extractor malformed validation-or-error (api /api/proxy=400)
+/seo-tools/sitemap-generator input captured
+/seo-tools/sitemap-generator empty no-visible-response
+/seo-tools/sitemap-generator valid result
+/seo-tools/sitemap-generator malformed no-visible-response
+/seo-tools/text-editor input captured
+/seo-tools/text-editor empty no-visible-response
+/seo-tools/text-editor valid no-visible-response
+/seo-tools/url-editor input captured
+/seo-tools/url-editor empty no-visible-response
+/seo-tools/url-editor valid no-visible-response
+/seo-tools/url-editor malformed no-visible-response
+/seo-tools/word-counter input captured
+/seo-tools/word-counter empty no-visible-response
+/seo-tools/word-counter valid result
+/tech-seo/backlinks input captured
+/tech-seo/backlinks empty result
+/tech-seo/backlinks valid result
+/tech-seo/backlinks malformed result
+/tech-seo/bing input captured
+/tech-seo/bing empty not-run: requires Bing Webmaster OAuth
+/tech-seo/bing valid not-run: requires Bing Webmaster OAuth
+/tech-seo/bulk-pagespeed input captured
+/tech-seo/bulk-pagespeed empty validation-or-error
+/tech-seo/bulk-pagespeed valid validation-or-error
+/tech-seo/crawl input captured
+/tech-seo/crawl empty result
+/tech-seo/crawl valid no-action-button-detected
+/tech-seo/crawl-visualizer input captured
+/tech-seo/crawl-visualizer empty no-action-button-detected
+/tech-seo/crawl-visualizer valid no-action-button-detected
+/tech-seo/crawl-visualizer malformed no-action-button-detected
+/tech-seo/duplicate input captured
+/tech-seo/duplicate empty validation-or-error (api /api/proxy=404,/api/proxy=404,/api/proxy=404)
+/tech-seo/duplicate valid validation-or-error (api /api/proxy=404,/api/proxy=404,/api/proxy=404)
+/tech-seo/eeat input captured
+/tech-seo/eeat empty result
+/tech-seo/eeat valid no-visible-response
+/tech-seo/gsc-audit input captured
+/tech-seo/gsc-audit empty not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/tech-seo/gsc-audit valid not-run: requires Google Search Console OAuth (button starts an OAuth flow)
+/tech-seo/image-seo input captured
+/tech-seo/image-seo empty not-run: requires linked WordPress site + Patches plugin
+/tech-seo/image-seo valid not-run: requires linked WordPress site + Patches plugin
+/tech-seo/link-checker input captured
+/tech-seo/link-checker empty not-run: requires a saved website project (logged-in)
+/tech-seo/link-checker valid not-run: requires a saved website project (logged-in)
+/tech-seo/plagiarism input captured
+/tech-seo/plagiarism empty login/plan-gate (message)
+/tech-seo/plagiarism valid login/plan-gate (message)
+/tech-seo/robots input captured
+/tech-seo/robots empty result
+/tech-seo/robots valid no-action-button-detected
+/tech-seo/schema-auditor input captured
+/tech-seo/schema-auditor empty result
+/tech-seo/schema-auditor valid result
+/tech-seo/security input captured
+/tech-seo/security empty result
+/tech-seo/security valid automation-error
+/tech-seo/semantic input captured
+/tech-seo/semantic empty result
+/tech-seo/semantic valid automation-error
+/tech-seo/speed input captured
+/tech-seo/speed empty result
+/tech-seo/speed valid result
+/technical-seo/eeat-audit input captured
+/technical-seo/eeat-audit empty no-visible-response
+/technical-seo/eeat-audit valid no-visible-response
