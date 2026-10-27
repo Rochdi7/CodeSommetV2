@@ -1,0 +1,2074 @@
+[
+  {
+    "file": "01-homepage/home-desktop.png",
+    "url": "https://seosignalx.com/",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:14:51+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/ above the fold"
+  },
+  {
+    "file": "01-homepage/home-desktop-full.png",
+    "url": "https://seosignalx.com/",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:02+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/ complete layout"
+  },
+  {
+    "file": "08-authentication/login-desktop.png",
+    "url": "https://seosignalx.com/login",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:07+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/login above the fold"
+  },
+  {
+    "file": "08-authentication/login-desktop-full.png",
+    "url": "https://seosignalx.com/login",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:10+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/login complete layout"
+  },
+  {
+    "file": "07-pricing/lifetime-deal-desktop.png",
+    "url": "https://seosignalx.com/lifetime-deal",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:18+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/lifetime-deal above the fold"
+  },
+  {
+    "file": "07-pricing/lifetime-deal-desktop-full.png",
+    "url": "https://seosignalx.com/lifetime-deal",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:34+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/lifetime-deal complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-desktop.png",
+    "url": "https://seosignalx.com/seo-tools",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:39+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:42+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-ai-helper-desktop.png",
+    "url": "https://seosignalx.com/content/ai-helper",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:47+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/ai-helper above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-ai-helper-desktop-full.png",
+    "url": "https://seosignalx.com/content/ai-helper",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:50+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/ai-helper complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-content-writer-desktop.png",
+    "url": "https://seosignalx.com/content/content-writer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/content-writer above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-content-writer-desktop-full.png",
+    "url": "https://seosignalx.com/content/content-writer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:15:58+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/content-writer complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-content-writer-editor-desktop.png",
+    "url": "https://seosignalx.com/content/content-writer/editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:04+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/content-writer/editor above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-content-writer-editor-desktop-full.png",
+    "url": "https://seosignalx.com/content/content-writer/editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:06+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/content-writer/editor complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-entities-extractor-desktop.png",
+    "url": "https://seosignalx.com/content/entities-extractor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:11+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/entities-extractor above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-entities-extractor-desktop-full.png",
+    "url": "https://seosignalx.com/content/entities-extractor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:14+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/entities-extractor complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-entities-generator-desktop.png",
+    "url": "https://seosignalx.com/content/entities-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:19+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/entities-generator above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-entities-generator-desktop-full.png",
+    "url": "https://seosignalx.com/content/entities-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:22+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/entities-generator complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-grammar-desktop.png",
+    "url": "https://seosignalx.com/content/grammar",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:27+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/grammar above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-grammar-desktop-full.png",
+    "url": "https://seosignalx.com/content/grammar",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:30+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/grammar complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-ngrams-desktop.png",
+    "url": "https://seosignalx.com/content/ngrams",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:34+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/ngrams above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-ngrams-desktop-full.png",
+    "url": "https://seosignalx.com/content/ngrams",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:37+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/ngrams complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-nlp-desktop.png",
+    "url": "https://seosignalx.com/content/nlp",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:42+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/nlp above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-nlp-desktop-full.png",
+    "url": "https://seosignalx.com/content/nlp",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:45+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/nlp complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-optimization-desktop.png",
+    "url": "https://seosignalx.com/content/optimization",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:50+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/optimization above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-optimization-desktop-full.png",
+    "url": "https://seosignalx.com/content/optimization",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:53+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/optimization complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-outline-desktop.png",
+    "url": "https://seosignalx.com/content/outline",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:16:58+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/outline above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-outline-desktop-full.png",
+    "url": "https://seosignalx.com/content/outline",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:01+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/outline complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-semantic-writer-desktop.png",
+    "url": "https://seosignalx.com/content/semantic-writer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:06+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/semantic-writer above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-semantic-writer-desktop-full.png",
+    "url": "https://seosignalx.com/content/semantic-writer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:09+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/semantic-writer complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-semantic-writer-editor-desktop.png",
+    "url": "https://seosignalx.com/content/semantic-writer/editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:14+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/semantic-writer/editor above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-semantic-writer-editor-desktop-full.png",
+    "url": "https://seosignalx.com/content/semantic-writer/editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:16+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/semantic-writer/editor complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-skip-gram-desktop.png",
+    "url": "https://seosignalx.com/content/skip-gram",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:21+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/skip-gram above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-skip-gram-desktop-full.png",
+    "url": "https://seosignalx.com/content/skip-gram",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:24+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/skip-gram complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-unique-ngrams-desktop.png",
+    "url": "https://seosignalx.com/content/unique-ngrams",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:29+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/unique-ngrams above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-unique-ngrams-desktop-full.png",
+    "url": "https://seosignalx.com/content/unique-ngrams",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:32+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/unique-ngrams complete layout"
+  },
+  {
+    "file": "04-seo-tools/content-watermark-remover-desktop.png",
+    "url": "https://seosignalx.com/content/watermark-remover",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:37+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/watermark-remover above the fold"
+  },
+  {
+    "file": "04-seo-tools/content-watermark-remover-desktop-full.png",
+    "url": "https://seosignalx.com/content/watermark-remover",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:40+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/content/watermark-remover complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-ai-chat-desktop.png",
+    "url": "https://seosignalx.com/geo/ai-chat",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:46+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/ai-chat above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-ai-chat-desktop-full.png",
+    "url": "https://seosignalx.com/geo/ai-chat",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:49+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/ai-chat complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-ai-compatibility-desktop.png",
+    "url": "https://seosignalx.com/geo/ai-compatibility",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:17:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/ai-compatibility above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-ai-compatibility-desktop-full.png",
+    "url": "https://seosignalx.com/geo/ai-compatibility",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:00+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/ai-compatibility complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-ai-model-checker-desktop.png",
+    "url": "https://seosignalx.com/geo/ai-model-checker",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:09+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/ai-model-checker above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-ai-model-checker-desktop-full.png",
+    "url": "https://seosignalx.com/geo/ai-model-checker",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:12+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/ai-model-checker complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-brand-sentiment-desktop.png",
+    "url": "https://seosignalx.com/geo/brand-sentiment",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:18+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/brand-sentiment above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-brand-sentiment-desktop-full.png",
+    "url": "https://seosignalx.com/geo/brand-sentiment",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:21+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/brand-sentiment complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-citation-flow-desktop.png",
+    "url": "https://seosignalx.com/geo/citation-flow",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:31+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/citation-flow above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-citation-flow-desktop-full.png",
+    "url": "https://seosignalx.com/geo/citation-flow",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:34+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/citation-flow complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-competitor-research-desktop.png",
+    "url": "https://seosignalx.com/geo/competitor-research",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:39+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/competitor-research above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-competitor-research-desktop-full.png",
+    "url": "https://seosignalx.com/geo/competitor-research",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:42+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/competitor-research complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-encyclopedia-desktop.png",
+    "url": "https://seosignalx.com/geo/encyclopedia",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:52+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/encyclopedia above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-encyclopedia-desktop-full.png",
+    "url": "https://seosignalx.com/geo/encyclopedia",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:18:55+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/encyclopedia complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-internal-links-desktop.png",
+    "url": "https://seosignalx.com/geo/internal-links",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:00+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/internal-links above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-internal-links-desktop-full.png",
+    "url": "https://seosignalx.com/geo/internal-links",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:03+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/internal-links complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-llms-generator-desktop.png",
+    "url": "https://seosignalx.com/geo/llms-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:11+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/llms-generator above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-llms-generator-desktop-full.png",
+    "url": "https://seosignalx.com/geo/llms-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:15+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/llms-generator complete layout"
+  },
+  {
+    "file": "04-seo-tools/geo-prompt-tracking-desktop.png",
+    "url": "https://seosignalx.com/geo/prompt-tracking",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:20+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/prompt-tracking above the fold"
+  },
+  {
+    "file": "04-seo-tools/geo-prompt-tracking-desktop-full.png",
+    "url": "https://seosignalx.com/geo/prompt-tracking",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:23+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/geo/prompt-tracking complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-branded-desktop.png",
+    "url": "https://seosignalx.com/keywords/branded",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:28+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/branded above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-branded-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/branded",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:31+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/branded complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-cannibalization-desktop.png",
+    "url": "https://seosignalx.com/keywords/cannibalization",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:37+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/cannibalization above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-cannibalization-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/cannibalization",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:40+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/cannibalization complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-lost-desktop.png",
+    "url": "https://seosignalx.com/keywords/lost",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:45+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/lost above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-lost-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/lost",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:48+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/lost complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-low-hanging-desktop.png",
+    "url": "https://seosignalx.com/keywords/low-hanging",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:53+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/low-hanging above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-low-hanging-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/low-hanging",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:19:56+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/low-hanging complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-new-desktop.png",
+    "url": "https://seosignalx.com/keywords/new",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:01+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/new above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-new-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/new",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:03+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/new complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-research-desktop.png",
+    "url": "https://seosignalx.com/keywords/research",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:08+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/research above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-research-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/research",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:11+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/research complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-suggest-desktop.png",
+    "url": "https://seosignalx.com/keywords/suggest",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:16+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/suggest above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-suggest-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/suggest",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:19+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/suggest complete layout"
+  },
+  {
+    "file": "04-seo-tools/keywords-ubersuggest-desktop.png",
+    "url": "https://seosignalx.com/keywords/ubersuggest",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:23+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/ubersuggest above the fold"
+  },
+  {
+    "file": "04-seo-tools/keywords-ubersuggest-desktop-full.png",
+    "url": "https://seosignalx.com/keywords/ubersuggest",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:26+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/keywords/ubersuggest complete layout"
+  },
+  {
+    "file": "04-seo-tools/lifetime-deal-desktop.png",
+    "url": "https://seosignalx.com/lifetime-deal/",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:32+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/lifetime-deal/ above the fold"
+  },
+  {
+    "file": "04-seo-tools/lifetime-deal-desktop-full.png",
+    "url": "https://seosignalx.com/lifetime-deal/",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:43+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/lifetime-deal/ complete layout"
+  },
+  {
+    "file": "04-seo-tools/local-seo-image-geo-tagger-desktop.png",
+    "url": "https://seosignalx.com/local-seo/image-geo-tagger",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:48+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/local-seo/image-geo-tagger above the fold"
+  },
+  {
+    "file": "04-seo-tools/local-seo-image-geo-tagger-desktop-full.png",
+    "url": "https://seosignalx.com/local-seo/image-geo-tagger",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:52+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/local-seo/image-geo-tagger complete layout"
+  },
+  {
+    "file": "04-seo-tools/local-seo-rank-grid-pro-desktop.png",
+    "url": "https://seosignalx.com/local-seo/rank-grid-pro",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:20:57+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/local-seo/rank-grid-pro above the fold"
+  },
+  {
+    "file": "04-seo-tools/local-seo-rank-grid-pro-desktop-full.png",
+    "url": "https://seosignalx.com/local-seo/rank-grid-pro",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:00+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/local-seo/rank-grid-pro complete layout"
+  },
+  {
+    "file": "04-seo-tools/off-page-backlink-cleaner-desktop.png",
+    "url": "https://seosignalx.com/off-page/backlink-cleaner",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:05+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/backlink-cleaner above the fold"
+  },
+  {
+    "file": "04-seo-tools/off-page-backlink-cleaner-desktop-full.png",
+    "url": "https://seosignalx.com/off-page/backlink-cleaner",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:08+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/off-page/backlink-cleaner complete layout"
+  },
+  {
+    "file": "04-seo-tools/off-page-backlink-directory-desktop.png",
+    "url": "https://seosignalx.com/off-page/backlink-directory",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:12+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/backlink-directory above the fold"
+  },
+  {
+    "file": "04-seo-tools/off-page-backlink-directory-desktop-full.png",
+    "url": "https://seosignalx.com/off-page/backlink-directory",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:15+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/off-page/backlink-directory complete layout"
+  },
+  {
+    "file": "04-seo-tools/off-page-backlink-indexer-desktop.png",
+    "url": "https://seosignalx.com/off-page/backlink-indexer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:20+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/backlink-indexer above the fold"
+  },
+  {
+    "file": "04-seo-tools/off-page-backlink-indexer-desktop-full.png",
+    "url": "https://seosignalx.com/off-page/backlink-indexer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:23+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/off-page/backlink-indexer complete layout"
+  },
+  {
+    "file": "04-seo-tools/off-page-expired-domains-desktop.png",
+    "url": "https://seosignalx.com/off-page/expired-domains",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:27+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/expired-domains above the fold"
+  },
+  {
+    "file": "04-seo-tools/off-page-expired-domains-desktop-full.png",
+    "url": "https://seosignalx.com/off-page/expired-domains",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:30+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/off-page/expired-domains complete layout"
+  },
+  {
+    "file": "04-seo-tools/on-page-analyzer-desktop.png",
+    "url": "https://seosignalx.com/on-page/analyzer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:35+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/analyzer above the fold"
+  },
+  {
+    "file": "04-seo-tools/on-page-analyzer-desktop-full.png",
+    "url": "https://seosignalx.com/on-page/analyzer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:38+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/on-page/analyzer complete layout"
+  },
+  {
+    "file": "04-seo-tools/on-page-bulk-image-compression-desktop.png",
+    "url": "https://seosignalx.com/on-page/bulk-image-compression",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:43+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/bulk-image-compression above the fold"
+  },
+  {
+    "file": "04-seo-tools/on-page-bulk-image-compression-desktop-full.png",
+    "url": "https://seosignalx.com/on-page/bulk-image-compression",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:46+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/on-page/bulk-image-compression complete layout"
+  },
+  {
+    "file": "04-seo-tools/on-page-internal-link-opportunities-desktop.png",
+    "url": "https://seosignalx.com/on-page/internal-link-opportunities",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:50+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/internal-link-opportunities above the fold"
+  },
+  {
+    "file": "04-seo-tools/on-page-internal-link-opportunities-desktop-full.png",
+    "url": "https://seosignalx.com/on-page/internal-link-opportunities",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:53+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/on-page/internal-link-opportunities complete layout"
+  },
+  {
+    "file": "04-seo-tools/on-page-page-seo-desktop.png",
+    "url": "https://seosignalx.com/on-page/page-seo",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:21:58+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/page-seo above the fold"
+  },
+  {
+    "file": "04-seo-tools/on-page-page-seo-desktop-full.png",
+    "url": "https://seosignalx.com/on-page/page-seo",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:01+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/on-page/page-seo complete layout"
+  },
+  {
+    "file": "03-landing-pages/privacy-desktop.png",
+    "url": "https://seosignalx.com/privacy",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:06+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/privacy above the fold"
+  },
+  {
+    "file": "03-landing-pages/privacy-desktop-full.png",
+    "url": "https://seosignalx.com/privacy",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:11+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/privacy complete layout"
+  },
+  {
+    "file": "08-authentication/register-desktop.png",
+    "url": "https://seosignalx.com/register",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:17+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/register above the fold"
+  },
+  {
+    "file": "08-authentication/register-desktop-full.png",
+    "url": "https://seosignalx.com/register",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:21+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/register complete layout"
+  },
+  {
+    "file": "04-seo-tools/resources-semantic-desktop.png",
+    "url": "https://seosignalx.com/resources/semantic",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:27+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/resources/semantic above the fold"
+  },
+  {
+    "file": "04-seo-tools/resources-semantic-desktop-full.png",
+    "url": "https://seosignalx.com/resources/semantic",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:30+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/resources/semantic complete layout"
+  },
+  {
+    "file": "04-seo-tools/schema-seo-desktop.png",
+    "url": "https://seosignalx.com/schema-seo",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:37+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/schema-seo above the fold"
+  },
+  {
+    "file": "04-seo-tools/schema-seo-desktop-full.png",
+    "url": "https://seosignalx.com/schema-seo",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:40+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/schema-seo complete layout"
+  },
+  {
+    "file": "04-seo-tools/schema-seo-auditor-desktop.png",
+    "url": "https://seosignalx.com/schema-seo/auditor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:45+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/schema-seo/auditor above the fold"
+  },
+  {
+    "file": "04-seo-tools/schema-seo-auditor-desktop-full.png",
+    "url": "https://seosignalx.com/schema-seo/auditor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:48+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/schema-seo/auditor complete layout"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-ai-agents-desktop.png",
+    "url": "https://seosignalx.com/semantic-seo/ai-agents",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:53+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/ai-agents above the fold"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-ai-agents-desktop-full.png",
+    "url": "https://seosignalx.com/semantic-seo/ai-agents",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:22:56+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/semantic-seo/ai-agents complete layout"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-encyclopedia-desktop.png",
+    "url": "https://seosignalx.com/semantic-seo/encyclopedia",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:01+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/encyclopedia above the fold"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-encyclopedia-desktop-full.png",
+    "url": "https://seosignalx.com/semantic-seo/encyclopedia",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:04+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/semantic-seo/encyclopedia complete layout"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-resources-desktop.png",
+    "url": "https://seosignalx.com/semantic-seo/resources",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:09+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/resources above the fold"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-resources-desktop-full.png",
+    "url": "https://seosignalx.com/semantic-seo/resources",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:13+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/semantic-seo/resources complete layout"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-topical-map-desktop.png",
+    "url": "https://seosignalx.com/semantic-seo/topical-map",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:17+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/topical-map above the fold"
+  },
+  {
+    "file": "04-seo-tools/semantic-seo-topical-map-desktop-full.png",
+    "url": "https://seosignalx.com/semantic-seo/topical-map",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:20+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/semantic-seo/topical-map complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-bot-viewer-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/bot-viewer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:25+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/bot-viewer above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-bot-viewer-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/bot-viewer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:28+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/bot-viewer complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-da-pa-checker-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/da-pa-checker",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:32+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/da-pa-checker above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-da-pa-checker-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/da-pa-checker",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:35+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/da-pa-checker complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-domain-separator-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/domain-separator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:40+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/domain-separator above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-domain-separator-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/domain-separator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:43+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/domain-separator complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-meta-extractor-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/meta-extractor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:48+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/meta-extractor above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-meta-extractor-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/meta-extractor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:51+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/meta-extractor complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-robots-generator-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/robots-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/robots-generator above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-robots-generator-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/robots-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:23:59+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/robots-generator complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-sitemap-extractor-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/sitemap-extractor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:03+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/sitemap-extractor above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-sitemap-extractor-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/sitemap-extractor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:06+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/sitemap-extractor complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-sitemap-generator-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/sitemap-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:10+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/sitemap-generator above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-sitemap-generator-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/sitemap-generator",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:13+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/sitemap-generator complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-text-editor-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/text-editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:18+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/text-editor above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-text-editor-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/text-editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:21+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/text-editor complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-url-editor-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/url-editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:25+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/url-editor above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-url-editor-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/url-editor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:28+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/url-editor complete layout"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-word-counter-desktop.png",
+    "url": "https://seosignalx.com/seo-tools/word-counter",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:32+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/word-counter above the fold"
+  },
+  {
+    "file": "04-seo-tools/seo-tools-word-counter-desktop-full.png",
+    "url": "https://seosignalx.com/seo-tools/word-counter",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:35+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/seo-tools/word-counter complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-backlinks-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/backlinks",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:40+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/backlinks above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-backlinks-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/backlinks",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:43+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/backlinks complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-bing-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/bing",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:48+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/bing above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-bing-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/bing",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:51+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/bing complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-bulk-pagespeed-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/bulk-pagespeed",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:55+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/bulk-pagespeed above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-bulk-pagespeed-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/bulk-pagespeed",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:24:58+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/bulk-pagespeed complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-crawl-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/crawl",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:03+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/crawl above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-crawl-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/crawl",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:06+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/crawl complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-crawl-visualizer-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/crawl-visualizer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:11+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/crawl-visualizer above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-crawl-visualizer-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/crawl-visualizer",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:14+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/crawl-visualizer complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-duplicate-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/duplicate",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:19+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/duplicate above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-duplicate-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/duplicate",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:22+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/duplicate complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-eeat-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/eeat",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:27+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/eeat above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-eeat-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/eeat",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:30+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/eeat complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-gsc-audit-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/gsc-audit",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:35+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/gsc-audit above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-gsc-audit-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/gsc-audit",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:38+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/gsc-audit complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-image-seo-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/image-seo",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:43+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/image-seo above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-image-seo-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/image-seo",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:47+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/image-seo complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-link-checker-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/link-checker",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:52+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/link-checker above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-link-checker-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/link-checker",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:25:55+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/link-checker complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-plagiarism-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/plagiarism",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:00+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/plagiarism above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-plagiarism-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/plagiarism",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:03+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/plagiarism complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-robots-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/robots",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:08+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/robots above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-robots-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/robots",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:11+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/robots complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-schema-auditor-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/schema-auditor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:16+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/schema-auditor above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-schema-auditor-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/schema-auditor",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:19+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/schema-auditor complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-security-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/security",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:24+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/security above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-security-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/security",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:29+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/security complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-semantic-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/semantic",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:34+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/semantic above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-semantic-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/semantic",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:39+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/semantic complete layout"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-speed-desktop.png",
+    "url": "https://seosignalx.com/tech-seo/speed",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:44+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/speed above the fold"
+  },
+  {
+    "file": "04-seo-tools/tech-seo-speed-desktop-full.png",
+    "url": "https://seosignalx.com/tech-seo/speed",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:47+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/tech-seo/speed complete layout"
+  },
+  {
+    "file": "04-seo-tools/technical-seo-eeat-audit-desktop.png",
+    "url": "https://seosignalx.com/technical-seo/eeat-audit",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:52+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/technical-seo/eeat-audit above the fold"
+  },
+  {
+    "file": "04-seo-tools/technical-seo-eeat-audit-desktop-full.png",
+    "url": "https://seosignalx.com/technical-seo/eeat-audit",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:55+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/technical-seo/eeat-audit complete layout"
+  },
+  {
+    "file": "03-landing-pages/terms-desktop.png",
+    "url": "https://seosignalx.com/terms",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:26:59+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/terms above the fold"
+  },
+  {
+    "file": "03-landing-pages/terms-desktop-full.png",
+    "url": "https://seosignalx.com/terms",
+    "viewport": "1440x900",
+    "captured_at": "2026-10-26T12:27:04+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/terms complete layout"
+  },
+  {
+    "file": "09-mobile/home-mobile.png",
+    "url": "https://seosignalx.com/",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:27:21+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/ above the fold"
+  },
+  {
+    "file": "09-mobile/home-mobile-full.png",
+    "url": "https://seosignalx.com/",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:27:41+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/ complete layout"
+  },
+  {
+    "file": "09-mobile/login-mobile.png",
+    "url": "https://seosignalx.com/login",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:27:47+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/login above the fold"
+  },
+  {
+    "file": "09-mobile/lifetime-deal-mobile.png",
+    "url": "https://seosignalx.com/lifetime-deal/",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:12+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/lifetime-deal/ above the fold"
+  },
+  {
+    "file": "09-mobile/lifetime-deal-mobile-full.png",
+    "url": "https://seosignalx.com/lifetime-deal",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:13+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/lifetime-deal complete layout"
+  },
+  {
+    "file": "09-mobile/seo-tools-mobile.png",
+    "url": "https://seosignalx.com/seo-tools",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:18+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools above the fold"
+  },
+  {
+    "file": "02-navigation/seo-tools-mobile-menu-open.png",
+    "url": "https://seosignalx.com/seo-tools",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:19+00:00",
+    "state": "mobile menu open",
+    "demonstrates": "mobile navigation drawer"
+  },
+  {
+    "file": "09-mobile/content-ai-helper-mobile.png",
+    "url": "https://seosignalx.com/content/ai-helper",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:25+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/ai-helper above the fold"
+  },
+  {
+    "file": "09-mobile/content-content-writer-mobile.png",
+    "url": "https://seosignalx.com/content/content-writer",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:30+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/content-writer above the fold"
+  },
+  {
+    "file": "09-mobile/content-content-writer-editor-mobile.png",
+    "url": "https://seosignalx.com/content/content-writer/editor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:35+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/content-writer/editor above the fold"
+  },
+  {
+    "file": "09-mobile/content-entities-extractor-mobile.png",
+    "url": "https://seosignalx.com/content/entities-extractor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:40+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/entities-extractor above the fold"
+  },
+  {
+    "file": "09-mobile/content-entities-generator-mobile.png",
+    "url": "https://seosignalx.com/content/entities-generator",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:45+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/entities-generator above the fold"
+  },
+  {
+    "file": "09-mobile/content-grammar-mobile.png",
+    "url": "https://seosignalx.com/content/grammar",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:50+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/grammar above the fold"
+  },
+  {
+    "file": "09-mobile/content-ngrams-mobile.png",
+    "url": "https://seosignalx.com/content/ngrams",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:28:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/ngrams above the fold"
+  },
+  {
+    "file": "09-mobile/content-nlp-mobile.png",
+    "url": "https://seosignalx.com/content/nlp",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:01+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/nlp above the fold"
+  },
+  {
+    "file": "09-mobile/content-optimization-mobile.png",
+    "url": "https://seosignalx.com/content/optimization",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:06+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/optimization above the fold"
+  },
+  {
+    "file": "09-mobile/content-outline-mobile.png",
+    "url": "https://seosignalx.com/content/outline",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:11+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/outline above the fold"
+  },
+  {
+    "file": "09-mobile/content-semantic-writer-mobile.png",
+    "url": "https://seosignalx.com/content/semantic-writer",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:16+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/semantic-writer above the fold"
+  },
+  {
+    "file": "09-mobile/content-semantic-writer-editor-mobile.png",
+    "url": "https://seosignalx.com/content/semantic-writer/editor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:21+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/semantic-writer/editor above the fold"
+  },
+  {
+    "file": "09-mobile/content-skip-gram-mobile.png",
+    "url": "https://seosignalx.com/content/skip-gram",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:26+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/skip-gram above the fold"
+  },
+  {
+    "file": "09-mobile/content-unique-ngrams-mobile.png",
+    "url": "https://seosignalx.com/content/unique-ngrams",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:31+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/unique-ngrams above the fold"
+  },
+  {
+    "file": "09-mobile/content-watermark-remover-mobile.png",
+    "url": "https://seosignalx.com/content/watermark-remover",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:36+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/content/watermark-remover above the fold"
+  },
+  {
+    "file": "09-mobile/geo-ai-chat-mobile.png",
+    "url": "https://seosignalx.com/geo/ai-chat",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:41+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/ai-chat above the fold"
+  },
+  {
+    "file": "09-mobile/geo-ai-compatibility-mobile.png",
+    "url": "https://seosignalx.com/geo/ai-compatibility",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:46+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/ai-compatibility above the fold"
+  },
+  {
+    "file": "09-mobile/geo-ai-model-checker-mobile.png",
+    "url": "https://seosignalx.com/geo/ai-model-checker",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:51+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/ai-model-checker above the fold"
+  },
+  {
+    "file": "09-mobile/geo-brand-sentiment-mobile.png",
+    "url": "https://seosignalx.com/geo/brand-sentiment",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:29:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/brand-sentiment above the fold"
+  },
+  {
+    "file": "09-mobile/geo-citation-flow-mobile.png",
+    "url": "https://seosignalx.com/geo/citation-flow",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:01+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/citation-flow above the fold"
+  },
+  {
+    "file": "09-mobile/geo-competitor-research-mobile.png",
+    "url": "https://seosignalx.com/geo/competitor-research",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:06+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/competitor-research above the fold"
+  },
+  {
+    "file": "09-mobile/geo-encyclopedia-mobile.png",
+    "url": "https://seosignalx.com/geo/encyclopedia",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:11+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/encyclopedia above the fold"
+  },
+  {
+    "file": "09-mobile/geo-internal-links-mobile.png",
+    "url": "https://seosignalx.com/geo/internal-links",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:16+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/internal-links above the fold"
+  },
+  {
+    "file": "09-mobile/geo-llms-generator-mobile.png",
+    "url": "https://seosignalx.com/geo/llms-generator",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:21+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/llms-generator above the fold"
+  },
+  {
+    "file": "09-mobile/geo-prompt-tracking-mobile.png",
+    "url": "https://seosignalx.com/geo/prompt-tracking",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:26+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/geo/prompt-tracking above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-branded-mobile.png",
+    "url": "https://seosignalx.com/keywords/branded",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:31+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/branded above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-cannibalization-mobile.png",
+    "url": "https://seosignalx.com/keywords/cannibalization",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:36+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/cannibalization above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-lost-mobile.png",
+    "url": "https://seosignalx.com/keywords/lost",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:41+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/lost above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-low-hanging-mobile.png",
+    "url": "https://seosignalx.com/keywords/low-hanging",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:47+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/low-hanging above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-new-mobile.png",
+    "url": "https://seosignalx.com/keywords/new",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:52+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/new above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-research-mobile.png",
+    "url": "https://seosignalx.com/keywords/research",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:30:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/research above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-suggest-mobile.png",
+    "url": "https://seosignalx.com/keywords/suggest",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:01+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/suggest above the fold"
+  },
+  {
+    "file": "09-mobile/keywords-ubersuggest-mobile.png",
+    "url": "https://seosignalx.com/keywords/ubersuggest",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:06+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/keywords/ubersuggest above the fold"
+  },
+  {
+    "file": "09-mobile/local-seo-image-geo-tagger-mobile.png",
+    "url": "https://seosignalx.com/local-seo/image-geo-tagger",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:17+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/local-seo/image-geo-tagger above the fold"
+  },
+  {
+    "file": "09-mobile/local-seo-rank-grid-pro-mobile.png",
+    "url": "https://seosignalx.com/local-seo/rank-grid-pro",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:24+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/local-seo/rank-grid-pro above the fold"
+  },
+  {
+    "file": "09-mobile/off-page-backlink-cleaner-mobile.png",
+    "url": "https://seosignalx.com/off-page/backlink-cleaner",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:28+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/backlink-cleaner above the fold"
+  },
+  {
+    "file": "09-mobile/off-page-backlink-directory-mobile.png",
+    "url": "https://seosignalx.com/off-page/backlink-directory",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:33+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/backlink-directory above the fold"
+  },
+  {
+    "file": "09-mobile/off-page-backlink-indexer-mobile.png",
+    "url": "https://seosignalx.com/off-page/backlink-indexer",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:38+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/backlink-indexer above the fold"
+  },
+  {
+    "file": "09-mobile/off-page-expired-domains-mobile.png",
+    "url": "https://seosignalx.com/off-page/expired-domains",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:43+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/off-page/expired-domains above the fold"
+  },
+  {
+    "file": "09-mobile/on-page-analyzer-mobile.png",
+    "url": "https://seosignalx.com/on-page/analyzer",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:48+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/analyzer above the fold"
+  },
+  {
+    "file": "09-mobile/on-page-bulk-image-compression-mobile.png",
+    "url": "https://seosignalx.com/on-page/bulk-image-compression",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:53+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/bulk-image-compression above the fold"
+  },
+  {
+    "file": "09-mobile/on-page-internal-link-opportunities-mobile.png",
+    "url": "https://seosignalx.com/on-page/internal-link-opportunities",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:31:58+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/internal-link-opportunities above the fold"
+  },
+  {
+    "file": "09-mobile/on-page-page-seo-mobile.png",
+    "url": "https://seosignalx.com/on-page/page-seo",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:03+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/on-page/page-seo above the fold"
+  },
+  {
+    "file": "09-mobile/privacy-mobile.png",
+    "url": "https://seosignalx.com/privacy",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:09+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/privacy above the fold"
+  },
+  {
+    "file": "09-mobile/privacy-mobile-full.png",
+    "url": "https://seosignalx.com/privacy",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:16+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/privacy complete layout"
+  },
+  {
+    "file": "09-mobile/register-mobile.png",
+    "url": "https://seosignalx.com/register",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:21+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/register above the fold"
+  },
+  {
+    "file": "09-mobile/resources-semantic-mobile.png",
+    "url": "https://seosignalx.com/resources/semantic",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:26+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/resources/semantic above the fold"
+  },
+  {
+    "file": "09-mobile/schema-seo-mobile.png",
+    "url": "https://seosignalx.com/schema-seo",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:32+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/schema-seo above the fold"
+  },
+  {
+    "file": "09-mobile/schema-seo-auditor-mobile.png",
+    "url": "https://seosignalx.com/schema-seo/auditor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:36+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/schema-seo/auditor above the fold"
+  },
+  {
+    "file": "09-mobile/semantic-seo-ai-agents-mobile.png",
+    "url": "https://seosignalx.com/semantic-seo/ai-agents",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:42+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/ai-agents above the fold"
+  },
+  {
+    "file": "09-mobile/semantic-seo-encyclopedia-mobile.png",
+    "url": "https://seosignalx.com/semantic-seo/encyclopedia",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:46+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/encyclopedia above the fold"
+  },
+  {
+    "file": "09-mobile/semantic-seo-resources-mobile.png",
+    "url": "https://seosignalx.com/semantic-seo/resources",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:51+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/resources above the fold"
+  },
+  {
+    "file": "09-mobile/semantic-seo-topical-map-mobile.png",
+    "url": "https://seosignalx.com/semantic-seo/topical-map",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:32:56+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/semantic-seo/topical-map above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-bot-viewer-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/bot-viewer",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:01+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/bot-viewer above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-da-pa-checker-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/da-pa-checker",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:05+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/da-pa-checker above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-domain-separator-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/domain-separator",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:10+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/domain-separator above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-meta-extractor-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/meta-extractor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:15+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/meta-extractor above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-robots-generator-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/robots-generator",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:20+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/robots-generator above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-sitemap-extractor-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/sitemap-extractor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:25+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/sitemap-extractor above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-sitemap-generator-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/sitemap-generator",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:29+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/sitemap-generator above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-text-editor-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/text-editor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:34+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/text-editor above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-url-editor-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/url-editor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:39+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/url-editor above the fold"
+  },
+  {
+    "file": "09-mobile/seo-tools-word-counter-mobile.png",
+    "url": "https://seosignalx.com/seo-tools/word-counter",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:44+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/seo-tools/word-counter above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-backlinks-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/backlinks",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:49+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/backlinks above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-bing-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/bing",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:54+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/bing above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-bulk-pagespeed-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/bulk-pagespeed",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:33:59+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/bulk-pagespeed above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-crawl-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/crawl",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:04+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/crawl above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-crawl-visualizer-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/crawl-visualizer",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:09+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/crawl-visualizer above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-duplicate-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/duplicate",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:14+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/duplicate above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-eeat-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/eeat",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:19+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/eeat above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-gsc-audit-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/gsc-audit",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:24+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/gsc-audit above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-image-seo-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/image-seo",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:29+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/image-seo above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-link-checker-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/link-checker",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:34+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/link-checker above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-plagiarism-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/plagiarism",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:39+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/plagiarism above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-robots-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/robots",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:44+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/robots above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-schema-auditor-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/schema-auditor",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:49+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/schema-auditor above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-security-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/security",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:54+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/security above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-semantic-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/semantic",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:34:59+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/semantic above the fold"
+  },
+  {
+    "file": "09-mobile/tech-seo-speed-mobile.png",
+    "url": "https://seosignalx.com/tech-seo/speed",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:35:04+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/tech-seo/speed above the fold"
+  },
+  {
+    "file": "09-mobile/technical-seo-eeat-audit-mobile.png",
+    "url": "https://seosignalx.com/technical-seo/eeat-audit",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:35:09+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/technical-seo/eeat-audit above the fold"
+  },
+  {
+    "file": "09-mobile/terms-mobile.png",
+    "url": "https://seosignalx.com/terms",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:35:14+00:00",
+    "state": "initial viewport",
+    "demonstrates": "/terms above the fold"
+  },
+  {
+    "file": "09-mobile/terms-mobile-full.png",
+    "url": "https://seosignalx.com/terms",
+    "viewport": "390x844",
+    "captured_at": "2026-10-26T12:35:21+00:00",
+    "state": "full page after scroll-reveal",
+    "demonstrates": "/terms complete layout"
+  }
+]

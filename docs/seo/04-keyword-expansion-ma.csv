@@ -1,0 +1,139 @@
+﻿keyword;database;search_volume;kd;cpc;competition;intent;commercial_value;priority_tier;existing_target_page;recommended_target_page;new_page_recommendation;serp_evidence;research_source;research_date;data_quality_notes
+creation site web maroc;ma;1000;non mesuré;0.77;0.22;commerciale;forte;T1;/;/;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;variante sans accent, même volume : couverte par la même page
+agence web casablanca;ma;1000;52;0.73;0.16;commerciale locale;forte;T1;/web-development-company/casablanca;idem;non;elevenmedia.ma, energiedin.com/agence-digitale-casablanca, rythmedia.com, monkeylab.ma, msavoir.ma;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;KD 52 (phase 1)
+création site web maroc;ma;1000;22;0.77;0.22;commerciale;forte;T1;/;/;non;phrase_organic : aucune ligne retournée;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;KD 22 — HERO (phase 1)
+agence seo maroc;ma;880;44;2.48;0.06;commerciale;forte;T1;—;/services/seo-maroc (NOUVELLE);oui — créée;urikacloud.com/seo-maroc, hostino.ma/agence-seo-maroc, trtdigital.ma, rhillane.com, sortlist.com (pages service dédiées);Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;"KD 44 ; CPC 2.48 (le plus élevé du jeu)"
+création site web marrakech;ma;590;non mesuré;0.58;0.1;commerciale locale;forte;T1;/web-development-company/marrakech;idem;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;590 (phase 1)
+agence web;ma;480;non mesuré;0.63;0.12;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+agence web maroc;ma;480;53;0.62;0.12;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+agence marketing digital casablanca;ma;390;non mesuré;0.62;0.16;commerciale;faible (service non proposé);Rejeté;—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;CodeSommet ne vend pas de marketing digital (ads/social) : ne pas cibler
+shopify maroc;ma;320;non mesuré;10.18;0.38;informationnelle / plateforme;faible;Rejeté;—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;"320 ; CPC 10.18 : intention = plateforme Shopify, CodeSommet construit du e-commerce sur mesure"
+agence seo marrakech;ma;320;20;6.43;0.08;commerciale locale;forte;T2;—;/services/seo-maroc (section villes);non (évaluer plus tard une page SEO Marrakech si demande confirmée);n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;"KD 20 ; CPC 6.43 — intention très commerciale"
+seo maroc;ma;320;41;0.83;0.08;commerciale;forte;T1;—;/services/seo-maroc;non (même page);urikacloud.com, hostino.ma, vala.ma, trtdigital.ma, energiedin.com;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;"KD 41 ; comp 0.08"
+agence digitale maroc;ma;320;57;0.79;0.13;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+agence web marrakech;ma;320;33;0.75;0.1;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+crm maroc;ma;260;inconnu (0 retourné);0.49;0.15;commerciale / produit;moyenne;T2;—;/services/saas-platform-development (section CRM sur mesure) — page dédiée à évaluer;non (plan 05 : page « CRM & logiciel de gestion sur mesure » si validation SERP);phrase_organic : no_data;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;"260 ; KD 0 = inconnu ; intention probable = éditeurs CRM"
+agence digitale casablanca;ma;260;non mesuré;0.78;0.3;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+agence web rabat;ma;260;inconnu (0 retourné);0.8;0.16;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+creation site web casablanca;ma;210;non mesuré;0.91;0.22;commerciale locale;forte;T2;/web-development-company/casablanca;idem;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;variante sans accent
+développeur web freelance maroc;ma;210;non mesuré;0;0.02;commerciale (freelance);moyenne;T3;—;article blog « freelance ou agence web au Maroc ? »;non (contenu);n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;"210 ; comp 0.02 ; intention = chercher un freelance, pas une agence"
+agence marketing digital maroc;ma;210;non mesuré;0.61;0.22;commerciale;faible (service non proposé);Rejeté;—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;idem
+création site web casablanca;ma;210;non mesuré;0.91;0.22;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+création site internet marrakech;ma;170;inconnu (0 retourné);1.24;0.14;commerciale locale;forte;T2;/web-development-company/marrakech;idem (secondaire ajouté);non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;"KD 0 = inconnu ; CPC 1.24"
+agence digitale rabat;ma;170;non mesuré;0.54;0.16;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+agence seo casablanca;ma;170;inconnu (0 retourné);1.18;0.17;commerciale locale;forte;T1;—;/services/seo-maroc (section Casablanca) + mention page Casablanca;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;KD 0 retourné = inconnu
+site de vente en ligne maroc;ma;140;non mesuré;0.12;0.51;commerciale;moyenne;T2;/services/ecommerce-website-development;idem (secondaire);non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;"140 ; comp 0.51"
+agence seo;ma;140;non mesuré;0.99;0.24;commerciale;moyenne;T2;—;/services/seo-maroc;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;générique, 140
+erp maroc;ma;140;non mesuré;0.5;0.29;commerciale / produit;moyenne;T3;—;idem crm maroc;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;"140 ; intention = éditeurs ERP"
+agence de communication agadir;ma;140;non mesuré;0.31;0.04;commerciale;faible (service non proposé);Rejeté;—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;agence de communication ≠ agence web
+agence digitale marrakech;ma;140;non mesuré;0.82;0.17;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+agence web agadir;ma;140;inconnu (0 retourné);0.57;0.19;commerciale locale;forte;T1;—;/web-development-company/agadir (NOUVELLE);oui — créée;phrase_organic : no_data;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;"KD 0 = inconnu ; comp 0.19"
+boutique en ligne maroc;ma;140;non mesuré;0.15;0.3;commerciale;moyenne;T2;/services/ecommerce-website-development;idem (primaire phase 1);non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;140
+création site web rabat;ma;140;non mesuré;0.67;0.21;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+agence web fes;ma;90;inconnu (0 retourné);0.52;0.07;commerciale locale;forte;T2;—;/web-development-company/fes (PLAN — non créée);plan 05;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;90 + création site web fes 70 : à créer si Agadir confirme la traction
+création site web agadir;ma;90;inconnu (0 retourné);0;0.05;commerciale locale;forte;T1;—;/web-development-company/agadir;non (même page);n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;"KD 0 = inconnu ; comp 0.05"
+consultant seo maroc;ma;70;non mesuré;0;0.09;commerciale;forte;T2;—;/services/seo-maroc;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;comp 0.09
+création site web fes;ma;70;non mesuré;0;0.06;commerciale locale;forte;T2;—;/web-development-company/fes (PLAN);plan 05;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;70
+agence web tanger;ma;40;non mesuré;0.84;0.26;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+maintenance site web;ma;30;non mesuré;0;0.19;commerciale;moyenne;T3;—;section « maintenance » sur / ou article;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;30
+prix création site web;ma;30;non mesuré;0.3;0.73;transactionnelle;forte;T2;/get-quote;idem (secondaire);non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;"30 ; comp 0.73"
+logiciel sur mesure;ma;30;non mesuré;0;0.33;commerciale;forte;T2;/services/saas-platform-development;idem (secondaire);non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;30
+transformation digitale maroc;ma;30;non mesuré;0;0.33;informationnelle;faible;T3;—;article blog;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;30
+agence digitale tanger;ma;30;non mesuré;0.92;0.25;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+audit site web gratuit;ma;30;non mesuré;0;0.71;informationnelle / outil;moyenne;T2;/tools/website-analyzer;idem (title à ajuster);non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;"30 ; comp 0.71"
+référencement naturel maroc;ma;30;non mesuré;0;0.04;commerciale;forte;T2;—;/services/seo-maroc;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;comp 0.04
+site e-commerce maroc;ma;30;non mesuré;0.28;0.24;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+création site internet maroc;ma;30;non mesuré;0;0.05;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+devis site web;ma;30;non mesuré;0.37;0.35;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+développement site e-commerce;ma;30;non mesuré;0;0.29;commerciale;moyenne;T3;—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+agence de création de site internet;ma;20;non mesuré;0;0.52;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+conception site web;ma;20;non mesuré;0.52;0.62;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+création de site internet;ma;20;non mesuré;0.83;0.62;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+création site internet casablanca;ma;20;non mesuré;0;0.32;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+création site professionnel;ma;20;non mesuré;0;1;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+création site vitrine;ma;20;non mesuré;0;0.23;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+devis création site web;ma;20;non mesuré;0.33;0.38;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+développement web entreprise;ma;20;non mesuré;0.55;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+hébergement site web maroc;ma;20;non mesuré;0.7;0.53;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+site internet maroc;ma;20;non mesuré;0.43;0.57;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+agence e-commerce maroc;ma;20;non mesuré;0.35;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+création boutique en ligne;ma;20;non mesuré;0.56;0.62;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+création site e-commerce;ma;20;non mesuré;0.6;0.68;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+vendre en ligne maroc;ma;20;non mesuré;0.3;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+woocommerce maroc;ma;20;non mesuré;0.27;0.71;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+agence référencement maroc;ma;20;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+agence seo agadir;ma;20;non mesuré;0;0.02;commerciale locale;moyenne;T2;—;/web-development-company/agadir + /services/seo-maroc;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;"20 ; comp 0.02"
+expert seo maroc;ma;20;non mesuré;0;0.07;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+référencement maroc;ma;20;non mesuré;0.64;0.34;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+référencement naturel casablanca;ma;20;non mesuré;0;0.04;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+référencement site web maroc;ma;20;non mesuré;0;0.27;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+seo casablanca;ma;20;non mesuré;0.63;0.24;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+automatisation processus métier;ma;20;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+création application web;ma;20;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+développeur application mobile maroc;ma;20;non mesuré;0.45;0.43;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+logiciel facturation maroc;ma;20;non mesuré;0.4;0.44;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+logiciel gestion commerciale maroc;ma;20;non mesuré;0.43;0.66;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+plateforme de réservation en ligne;ma;20;non mesuré;0.93;0.49;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+agence digitale agadir;ma;20;non mesuré;0.37;0.39;commerciale locale;moyenne;T2;—;/web-development-company/agadir;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;20
+agence web kenitra;ma;20;non mesuré;0;0.43;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+agence web meknes;ma;20;non mesuré;0;0.14;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+agence web mohammedia;ma;20;non mesuré;0;0.1;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+agence web oujda;ma;20;non mesuré;0;0.06;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+création site internet rabat;ma;20;non mesuré;0;0.86;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+analyse site web gratuit;ma;20;non mesuré;0.3;0.21;informationnelle / outil;moyenne;T3;/tools/website-analyzer;idem;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;20
+analyseur site web;ma;20;non mesuré;0.26;0.13;informationnelle / outil;moyenne;T3;/tools/website-analyzer;idem;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;20
+outil seo gratuit;ma;20;non mesuré;0;0.36;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+test site web gratuit;ma;20;non mesuré;0;0.39;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+analyse seo gratuite;ma;20;non mesuré;0;0.6;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+audit seo gratuit;ma;20;non mesuré;0.11;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+conception site web maroc;ma;20;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+développement application mobile maroc;ma;20;non mesuré;0.45;0.43;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+développement logiciel maroc;ma;20;non mesuré;0;0.03;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+outils seo gratuits;ma;20;non mesuré;0;0.36;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+référencement seo maroc;ma;20;non mesuré;0;0.31;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+site vitrine maroc;ma;20;non mesuré;0.3;0.23;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+test vitesse site web;ma;20;non mesuré;0;0.08;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+agence de développement web;ma;20;non mesuré;0.44;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+création site e-commerce maroc;ma;20;non mesuré;0.61;0.45;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+prix site web maroc;ma;20;non mesuré;0.29;0.54;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+refonte site web;ma;20;non mesuré;0;0.11;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+refonte site internet;ma;10;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+tarif site internet;ma;10;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+site e-commerce casablanca;ma;10;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+agence de référencement casablanca;ma;10;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+agence de référencement naturel;ma;10;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+agence seo rabat;ma;10;non mesuré;0;0.02;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+application métier;ma;10;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+création application mobile maroc;ma;10;non mesuré;0;0.45;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+logiciel de gestion maroc;ma;10;non mesuré;0.34;0.57;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+agence de communication fes;ma;10;non mesuré;0.27;0.12;commerciale;faible (service non proposé);Rejeté;—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;10
+analyser mon site web;ma;10;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+générateur de mots clés;ma;10;non mesuré;0;0;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+outil audit seo;ma;10;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+test vitesse site;ma;10;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+agence création site web maroc;ma;10;non mesuré;0.5;0.26;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+développement web sur mesure;ma;10;non mesuré;0;0.33;commerciale;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+freelance création site web maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+maintenance site web maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+prix création site web maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-A-creation.csv);2026-10-27;
+création site e-commerce prix;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+créer une boutique en ligne au maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+refonte site e-commerce;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-B-ecommerce.csv);2026-10-27;
+consultant référencement naturel;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+optimisation seo site web;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+prix référencement naturel;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+référencement site e-commerce;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-C-seo.csv);2026-10-27;
+développement application maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-D-software.csv);2026-10-27;
+création site web restaurant;ma;0;non mesuré;0;0.33;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-E-industries.csv);2026-10-27;
+site web agence de voyage maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-E-industries.csv);2026-10-27;
+site web auto-entrepreneur maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-E-industries.csv);2026-10-27;
+site web immobilier maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-E-industries.csv);2026-10-27;
+agence digitale fes;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+agence web nador;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+agence web tetouan;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-F-cities.csv);2026-10-27;
+analyse seo en ligne gratuit;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+outil analyse seo;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+tester son site web;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (w3-validate-G-tools.csv);2026-10-27;
+logiciel sur mesure maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-wave2.csv);2026-10-26;
+création site web immobilier;ma;0;non mesuré;0;0.17;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
+développement application web maroc;ma;0;non mesuré;0;0;—;faible;Rejeté/différé (volume ≤ 20 ou no_data);—;—;non;n/d;Semrush MCP phrase_these (validate-ma-core.csv);2026-10-26;
