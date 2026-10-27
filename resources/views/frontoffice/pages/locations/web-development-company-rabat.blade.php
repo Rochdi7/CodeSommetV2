@@ -85,8 +85,8 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="CROISSANCE COMMERCIALE À RABAT"></span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">CROISSANCE
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="LA CROISSANCE COMMERCIALE À RABAT"></span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">LA CROISSANCE
                                             COMMERCIALE À RABAT</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">

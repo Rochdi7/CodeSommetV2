@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Blog - CodeSommet | Actualités, Conseils & Tendances du Développement Web',
+    'title' => 'Blog Développement Web, SEO & Design | CodeSommet',
     'meta_description' => 'Découvrez nos articles sur le développement web, le design UI/UX, le SEO, les tendances tech et les meilleures pratiques pour votre projet digital.',
     'meta_keywords' => 'blog développement web,actualités tech,conseils SEO,tendances design,tutoriels web,CodeSommet blog',
     'og_title' => 'Blog - CodeSommet | Actualités & Conseils du Développement Web',

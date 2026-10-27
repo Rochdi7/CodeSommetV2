@@ -2398,9 +2398,12 @@
                 requestAnimationFrame(function () {
                     modal.classList.add('is-visible');
                     document.body.classList.add('has-promo-modal');
+                    // Focus the dialog itself rather than the CTA: screen
+                    // readers announce its title, and the CTA no longer opens
+                    // with a keyboard focus ring. Tab moves into the controls.
                     requestAnimationFrame(function () {
-                        var cta = modal.querySelector('.promo-modal__cta');
-                        if (cta) { cta.focus(); }
+                        var dlg = modal.querySelector('.promo-modal__dialog');
+                        if (dlg) { dlg.focus({ preventScroll: true }); }
                     });
                 });
             });
@@ -2449,9 +2452,10 @@
 
         // Following the CTA counts as a dismissal — don't re-nag on the
         // quote page.
-        var ctaLink = modal.querySelector('.promo-modal__cta');
-        if (ctaLink) {
-            ctaLink.addEventListener('click', function () {
+        // The project-type "slots" lead to the same quote page.
+        var ctaLinks = modal.querySelectorAll('.promo-modal__cta, .promo-modal__slot');
+        for (var j = 0; j < ctaLinks.length; j++) {
+            ctaLinks[j].addEventListener('click', function () {
                 set(CLOSED_KEY, '1');
                 set(PAGES_KEY, '0');
             });

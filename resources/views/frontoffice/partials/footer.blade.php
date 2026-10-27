@@ -58,6 +58,8 @@
                                     href="{{ route('location', 'rabat') }}">Rabat</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('location', 'tangier') }}">{{ __('footer.tangier') }}</a></li>
+<li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('location', 'agadir') }}">{{ __('footer.agadir') }}</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('location', 'worldwide') }}">{{ __('footer.worldwide') }}</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
@@ -86,6 +88,9 @@
                             </li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('service', 'fintech-platform-development') }}">{{ __('footer.fintech') }}</a>
+                            </li>
+<li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
+                                    href="{{ route('service', 'seo-maroc') }}">{{ __('footer.seo') }}</a>
                             </li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('industries') }}">{{ __('footer.all_industries') }} →</a></li>

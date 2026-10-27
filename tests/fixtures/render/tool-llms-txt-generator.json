@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Générateur LLMs.txt"
+        ],
+        [
+            2,
+            "Votre fichier llms.txt"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Qu'est-ce qu'un fichier llms.txt ?"
+        ],
+        [
+            3,
+            "Le llms.txt améliore-t-il mon référencement ?"
+        ],
+        [
+            3,
+            "Quelles pages sont incluses ?"
+        ],
+        [
+            3,
+            "Puis-je modifier le fichier généré ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Accès des Robots IA"
+        ],
+        [
+            3,
+            "Extracteur d'URL de Sitemap"
+        ],
+        [
+            3,
+            "Visualiseur de Crawl"
+        ],
+        [
+            2,
+            "Votre Site Est-il Prêt pour la Recherche IA ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

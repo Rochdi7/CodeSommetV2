@@ -28,13 +28,14 @@ return [
         'real-estate-website-development',
         'telemedicine-platform-development',
         'telemedicine-website-development',
+        'seo-maroc',
     ],
 
     // NOTE : « doha » et « kuwait-city » ont été retirés — aucune vue n'existe
     // pour ces villes, la route renvoyait systématiquement un 404.
     'cities' => [
         'worldwide',
-        'casablanca', 'marrakech', 'rabat', 'tangier',
+        'casablanca', 'marrakech', 'rabat', 'tangier', 'agadir',
         'dubai', 'abudhabi', 'riyadh',
         'london', 'amsterdam', 'berlin', 'paris', 'copenhagen',
         'dublin', 'brussels', 'zurich', 'stockholm',

@@ -42,6 +42,9 @@ class ContactController extends Controller
                 ->with('contact_error', 'Une erreur est survenue. Veuillez réessayer.');
         }
 
+        // The next page view reports the lead to GA4 / GTM / Pixel (partials/tracking-tags).
+        $request->session()->flash('cs_lead', 'contact');
+
         // Best-effort: stamp the lead on its analytics session (funnel view).
         try {
             AnalyticsSession::attachLead($request->input('cs_sid'), $request->input('cs_vid'), 'contact', $contactMessage->id, '/contact');

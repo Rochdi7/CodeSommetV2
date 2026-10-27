@@ -280,6 +280,8 @@ window.CodeSommetTools.onReady = function (fn) {
             el = document.createElement('div');
             el.id = 'tool-error';
             el.className = 'p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm mt-4';
+            // Annoncé immédiatement par les lecteurs d'écran.
+            el.setAttribute('role', 'alert');
             actionBtn.parentElement.appendChild(el);
         }
         el.textContent = msg;

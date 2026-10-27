@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Plateformes E-Learning (LMS) | CodeSommet',
-    'meta_description' => 'Création de plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants et certification.',
+    'meta_description' => 'Plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants, certification.',
     'meta_keywords' => 'développement plateforme elearning,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',
     'og_title' => 'Développement de Plateforme E-Learning : LMS sur Mesure | CodeSommet',
     'og_description' => 'Création de plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants et certification.',

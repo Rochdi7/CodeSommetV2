@@ -22,7 +22,7 @@ use Tests\TestCase;
  * Plus A16 (heading hierarchy), A17 (link counts), A18 (fragment IDs) and
  * A9 (route baseline).
  *
- * Coverage is an EXPLICIT inventory (35 city + 45 tool routes = 80), not a
+ * Coverage is an EXPLICIT inventory (36 city + 57 tool routes = 93), not a
  * discovered list; the inventory is cross-checked against config/pages.php and
  * the tools view directory so silent drift fails loudly.
  *
@@ -39,7 +39,7 @@ class RenderSnapshotTest extends TestCase
 
     /** Explicit, deterministic city inventory (mirrors config/pages.php cities). */
     private const CITIES = [
-        'worldwide', 'casablanca', 'marrakech', 'rabat', 'tangier', 'dubai',
+        'worldwide', 'casablanca', 'marrakech', 'rabat', 'tangier', 'agadir', 'dubai',
         'abudhabi', 'riyadh', 'london', 'amsterdam', 'berlin', 'paris',
         'copenhagen', 'dublin', 'brussels', 'zurich', 'stockholm', 'madrid',
         'barcelona', 'lisbon', 'rome', 'milan', 'new-york', 'san-francisco',
@@ -54,12 +54,12 @@ class RenderSnapshotTest extends TestCase
         'chatbot-script-generator', 'color-palette-generator',
         'core-web-vitals-checker', 'crawl-visualizer', 'css-minifier',
         'domain-authority-checker', 'domain-health-checker',
-        'duplicate-content-checker', 'faq-schema-generator',
+        'duplicate-content-checker', 'expired-domain-checker', 'faq-schema-generator',
         'heading-analyzer', 'hreflang-generator', 'html-minifier',
         'html-to-text', 'image-alt-analyzer', 'image-compression-analyzer',
         'internal-link-analyzer', 'json-formatter', 'keyword-density-analyzer',
-        'landing-page-generator', 'local-business-schema',
-        'lorem-ipsum-generator', 'meta-refresh-generator',
+        'landing-page-generator', 'llms-txt-generator', 'local-business-schema',
+        'lorem-ipsum-generator', 'meta-extractor', 'meta-refresh-generator',
         'meta-tag-generator', 'mobile-friendly-test', 'ngram-extractor',
         'nofollow-link-checker', 'og-preview-generator', 'page-speed-analyzer',
         'qr-code-generator', 'readability-analyzer', 'redirect-checker',
@@ -103,11 +103,11 @@ class RenderSnapshotTest extends TestCase
         return $cases;
     }
 
-    public function test_inventory_is_exactly_89_routes_and_matches_repository(): void
+    public function test_inventory_is_exactly_93_routes_and_matches_repository(): void
     {
-        $this->assertCount(35, self::CITIES, 'City inventory must be exactly 35 routes');
-        $this->assertCount(54, self::TOOLS, 'Tool inventory must be exactly 54 routes');
-        $this->assertCount(89, self::routeProvider());
+        $this->assertCount(36, self::CITIES, 'City inventory must be exactly 36 routes');
+        $this->assertCount(57, self::TOOLS, 'Tool inventory must be exactly 57 routes');
+        $this->assertCount(93, self::routeProvider());
 
         // Cross-check against the sources of truth so drift cannot go unnoticed.
         $configCities = config('pages.cities');

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites E-commerce sur Mesure | CodeSommet',
-    'meta_description' => 'Sites e-commerce personnalisés avec paiements sécurisés, gestion des stocks, recommandations IA et optimisation de conversion. Lancez votre boutique en ligne en 2-5 jours.',
+    'title' => 'Création Site E-commerce Maroc — Boutique en Ligne | CodeSommet',
+    'meta_description' => 'Création de sites e-commerce au Maroc : boutique en ligne sur mesure, paiements sécurisés, gestion des stocks et optimisation de conversion. Devis gratuit.',
     'meta_keywords' => 'développement site e-commerce,développement boutique en ligne,plateforme panier d\'achat,intégration passerelle de paiement,catalogue produits,gestion des stocks,SEO e-commerce',
     'og_title' => 'Développement de Sites E-commerce sur Mesure | CodeSommet',
     'og_description' => 'Sites e-commerce personnalisés avec paiements sécurisés, gestion des stocks, recommandations IA et optimisation de conversion. Lancez votre boutique en ligne en 2-5 jours.',
@@ -185,7 +185,7 @@ return [
     'ml_972' => 'Expérience Mobile',
     'ml_973' => 'Entièrement responsive avec achats mobiles similaires à une application',
     'ml_974' => 'Application mobile séparée requise',
-    'ml_975' => '2-5 jours pour le MVP, 2-3 semaines pour la boutique complète',
+    'ml_975' => '2-5 jours (formule express en 2 jours possible)',
     'ml_976' => '4-8 mois avec plusieurs cycles de révision',
     'ml_977' => '8-14 mois avec recrutement, formation et développement',
     'ml_978' => 'qui ont obtenu des résultats remarquables avec CodeSommet.',
@@ -208,8 +208,8 @@ return [
     'ml_995' => 'Sites web modernes pour les instituts de formation linguistique avec gestion des cours et fonctionnalités d\'apprentissage en ligne.',
     'ml_996' => 'Santé',
     'ml_997' => 'Sites web de cliniques, systèmes de prise de rendez-vous et portails patients conformes aux réglementations de santé.',
-    'ml_998' => 'Télémédecine',
-    'ml_999' => 'Plateformes de consultation vidéo sécurisées avec gestion des patients et systèmes d\'ordonnances.',
+    'ml_998' => 'SEO & Référencement',
+    'ml_999' => 'Audit, mots-clés et optimisation on-page pour classer votre boutique sur Google au Maroc.',
     'ml_1000' => 'Découvrez ce qui fait de CodeSommet votre partenaire idéal en développement web',
     'ml_1001' => 'Obtenez une analyse alimentée par l\'IA avec une série complète de vérifications',
     'ml_1002' => 'Voir Nos Réalisations',

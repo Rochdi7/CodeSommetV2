@@ -382,6 +382,35 @@
                                 </div>
                             </a><a
                                 class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                                href="{{ route('service', 'seo-maroc') }}">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center group-hover:bg-[#00AEEF] transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-search w-5 h-5 text-[#00AEEF] group-hover:text-white transition-colors"
+                                                aria-hidden="true">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <path d="m21 21-4.3-4.3"></path>
+                                            </svg></div>
+                                        <div>
+                                            <h3
+                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
+                                                SEO & Référencement Naturel</h3>
+                                        </div>
+                                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right w-5 h-5 text-gray-400 group-hover:text-[#00AEEF] group-hover:translate-x-1 transition-all flex-shrink-0"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a><a
+                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
                                 href="{{ route('service', 'telemedicine-website-development') }}">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">

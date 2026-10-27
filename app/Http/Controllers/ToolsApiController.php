@@ -10,10 +10,11 @@ use App\Services\HtmlDocument;
 use App\Services\MissingApiCredentialsException;
 use App\Services\SafeHttpFetcher;
 use App\Services\SafeUrlValidator;
-use App\Services\ScoringEngine;
 use App\Services\SeoApiClient;
 use App\Services\SeoRecommendations;
 use App\Services\TitleScorer;
+use App\Services\Tools\AnalysisMeta;
+use App\Services\Tools\WebsiteAnalyzerTool;
 use App\Services\UnsafeUrlException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -42,6 +43,7 @@ class ToolsApiController extends Controller
         private SeoApiClient $seoApi,
         private TitleScorer $titleScorer,
         private AnalysisPipeline $pipeline,
+        private WebsiteAnalyzerTool $websiteAnalyzer,
     ) {
     }
 
@@ -245,193 +247,15 @@ class ToolsApiController extends Controller
     // ─── SEO Analysis Tools ──────────────────────────────────────────
 
     /**
-     * Website Analyzer — comprehensive 70+ check analysis
+     * Website Analyzer — comprehensive 70+ check analysis.
+     *
+     * The scoring lives in WebsiteAnalyzerTool (shared with the run API,
+     * POST /api/v2/tools/website-analyzer/runs); this legacy endpoint keeps
+     * its exact response contract.
      */
     public function handleWebsiteAnalyzer(Request $request): JsonResponse
     {
-        // Analyse complète : le moteur télécharge et parse une seule fois,
-        // puis chaque section est notée ici. Les autres outils réutilisent le
-        // même jeu de données depuis le cache.
-        $analysis = $this->analyze($request);
-
-        $engine = ScoringEngine::start();
-        $meta = $analysis->meta;
-
-        // ── Title ────────────────────────────────────────────────────────
-        $titleLen = $meta['titleLength'] ?? 0;
-        if (($meta['title'] ?? '') === '') {
-            $engine->fail('Title Tag', 'Balise <title> absente', 10);
-        } elseif ($titleLen >= 30 && $titleLen <= 60) {
-            $engine->pass('Title Tag', "Longueur optimale ({$titleLen} caractères)", 10, 10);
-        } else {
-            $engine->warn('Title Tag', "Titre de {$titleLen} caractères (optimal : 30-60)", 5, 10);
-        }
-
-        // ── Meta description ─────────────────────────────────────────────
-        $descLen = $meta['descriptionLength'] ?? 0;
-        if (($meta['description'] ?? '') === '') {
-            $engine->fail('Meta Description', 'Méta description absente', 10);
-        } elseif ($descLen >= 120 && $descLen <= 160) {
-            $engine->pass('Meta Description', "Longueur optimale ({$descLen} caractères)", 10, 10);
-        } else {
-            $engine->warn('Meta Description', "Description de {$descLen} caractères (optimal : 120-160)", 5, 10);
-        }
-
-        // ── H1 ───────────────────────────────────────────────────────────
-        $h1 = $analysis->content['headingStats']['h1'] ?? 0;
-        if ($h1 === 1) {
-            $engine->pass('H1 Tag', 'Un seul H1, comme attendu', 10, 10);
-        } elseif ($h1 === 0) {
-            $engine->fail('H1 Tag', 'Aucun H1 trouvé', 10);
-        } else {
-            $engine->warn('H1 Tag', "{$h1} balises H1 — une seule est recommandée", 5, 10);
-        }
-
-        // ── Hiérarchie des titres ────────────────────────────────────────
-        $gaps = $analysis->content['headingStats']['gaps'] ?? [];
-        if ($gaps === []) {
-            $engine->pass('Hiérarchie des titres', 'Aucun niveau sauté', 5, 5);
-        } else {
-            $engine->warn('Hiérarchie des titres', count($gaps) . ' rupture(s) de niveau détectée(s)', 2, 5);
-        }
-
-        // ── Open Graph ───────────────────────────────────────────────────
-        if ($meta['hasOpenGraph'] ?? false) {
-            $engine->pass('Open Graph Tags', 'Balises Open Graph présentes', 5, 5);
-        } else {
-            $engine->fail('Open Graph Tags', 'Balises Open Graph absentes', 5);
-        }
-
-        // ── Canonical ────────────────────────────────────────────────────
-        $canonicalCount = $meta['canonicalCount'] ?? 0;
-        if ($canonicalCount === 1) {
-            $engine->pass('Canonical Tag', 'URL canonique définie', 5, 5);
-        } elseif ($canonicalCount === 0) {
-            $engine->warn('Canonical Tag', 'Aucune balise canonical', 0, 5);
-        } else {
-            $engine->warn('Canonical Tag', "{$canonicalCount} balises canonical — Google risque de toutes les ignorer", 2, 5);
-        }
-
-        // ── Viewport ─────────────────────────────────────────────────────
-        $viewport = $meta['viewport'] ?? '';
-        if ($viewport !== '' && str_contains(strtolower($viewport), 'width=device-width')) {
-            $engine->pass('Mobile Viewport', 'Viewport correctement configuré', 5, 5);
-        } elseif ($viewport !== '') {
-            $engine->warn('Mobile Viewport', 'Viewport présent mais sans width=device-width', 2, 5);
-        } else {
-            $engine->fail('Mobile Viewport', 'Balise meta viewport absente', 5);
-        }
-
-        // ── Texte alternatif ─────────────────────────────────────────────
-        $img = $analysis->accessibility['images'] ?? [];
-        $needAlt = $img['requiringAlt'] ?? 0;
-        $missing = $img['missingAlt'] ?? 0;
-        if ($needAlt === 0) {
-            $engine->pass('Image Alt Text', 'Aucune image nécessitant un texte alternatif', 10, 10);
-        } elseif ($missing === 0) {
-            $engine->pass('Image Alt Text', "Les {$needAlt} images concernées ont un texte alternatif", 10, 10);
-        } else {
-            $engine->warn('Image Alt Text', "{$missing}/{$needAlt} images sans texte alternatif", 5, 10);
-        }
-
-        // ── HTTPS ────────────────────────────────────────────────────────
-        if ($analysis->http['isHttps'] ?? false) {
-            $engine->pass('HTTPS', 'Le site utilise HTTPS', 5, 5);
-        } else {
-            $engine->fail('HTTPS', 'Le site n\'utilise pas HTTPS', 5);
-        }
-
-        // ── Poids de la page ─────────────────────────────────────────────
-        $sizeKb = $analysis->http['sizeKb'] ?? 0;
-        if ($sizeKb < 100) {
-            $engine->pass('Page Size', "{$sizeKb} Ko de HTML", 5, 5);
-        } else {
-            $engine->warn('Page Size', "{$sizeKb} Ko de HTML — envisagez une optimisation", 2, 5);
-        }
-
-        // ── Données structurées ──────────────────────────────────────────
-        $types = $analysis->structuredData['types'] ?? [];
-        $malformed = $analysis->structuredData['malformedBlocks'] ?? 0;
-        if ($types !== []) {
-            $engine->pass('Données structurées', count($types) . ' type(s) Schema.org : ' . implode(', ', array_slice($types, 0, 5)), 10, 10);
-        } elseif ($analysis->structuredData['hasMicrodata'] ?? false) {
-            $engine->warn('Données structurées', 'Microdonnées présentes, mais pas de JSON-LD (format recommandé par Google)', 6, 10);
-        } else {
-            $engine->warn('Données structurées', 'Aucune donnée structurée — pas de résultats enrichis possibles', 0, 10);
-        }
-        if ($malformed > 0) {
-            $engine->warn('JSON-LD', "{$malformed} bloc(s) JSON-LD au JSON invalide — ignorés par Google", 0, 0);
-        }
-
-        // ── Langue ───────────────────────────────────────────────────────
-        if (($meta['lang'] ?? '') !== '') {
-            $engine->pass('Langue', 'Langue déclarée : ' . $meta['lang'], 5, 5);
-        } else {
-            $engine->warn('Langue', 'Attribut lang absent sur <html>', 0, 5);
-        }
-
-        // ── Indexabilité ─────────────────────────────────────────────────
-        if ($meta['isNoindex'] ?? false) {
-            $engine->fail('Indexabilité', 'La page porte noindex : elle ne sera pas indexée', 10);
-        } else {
-            $engine->pass('Indexabilité', 'La page est indexable', 10, 10);
-        }
-
-        // ── robots.txt / sitemap ─────────────────────────────────────────
-        $robots = $analysis->crawlability['robots'] ?? [];
-        if ($robots['blocksEverything'] ?? false) {
-            $engine->fail('Robots.txt', 'robots.txt bloque tous les robots (Disallow: /)', 5);
-        } elseif ($robots['exists'] ?? false) {
-            $engine->pass('Robots.txt', 'robots.txt présent', 5, 5);
-        } else {
-            $engine->warn('Robots.txt', 'Aucun robots.txt', 0, 5);
-        }
-
-        $sitemap = $analysis->crawlability['sitemap'] ?? [];
-        if ($sitemap['exists'] ?? false) {
-            $engine->pass('Sitemap', ($sitemap['urlCount'] ?? 0) . ' URL dans le sitemap', 5, 5);
-        } else {
-            $engine->warn('Sitemap', 'Aucun sitemap.xml trouvé', 0, 5);
-        }
-
-        // ── Ressources bloquantes ────────────────────────────────────────
-        $blocking = $analysis->assets['blockingJs'] ?? 0;
-        if ($blocking === 0) {
-            $engine->pass('JavaScript bloquant', 'Aucun script bloquant le rendu', 5, 5);
-        } else {
-            $engine->warn('JavaScript bloquant', "{$blocking} script(s) sans defer/async", 2, 5);
-        }
-
-        // ── Contrôles informatifs (hors score) ───────────────────────────
-        $engine->note('Contenu', ($analysis->content['wordCount'] ?? 0) . ' mots, ratio texte/HTML de ' . ($analysis->content['textToHtmlRatio'] ?? 0) . ' %');
-        if (($meta['hreflangCount'] ?? 0) > 0) {
-            $engine->note('Hreflang', $meta['hreflangCount'] . ' alternative(s) linguistique(s) déclarée(s)');
-        }
-
-        // Limites déclarées : elles abaissent l'indice de confiance plutôt que
-        // de laisser croire à une analyse exhaustive.
-        if ($analysis->isLikelyClientRendered() && ! ($analysis->rendered['success'] ?? false)) {
-            $engine->limitation('Page rendue côté client : le HTML serveur ne contient pas le contenu final.');
-        }
-        if ($analysis->failures !== []) {
-            $engine->limitation('Analyseurs en échec : ' . implode(', ', array_keys($analysis->failures)));
-        }
-
-        $payload = $engine->toArray([
-            'internalLinks' => count(array_filter($analysis->links, fn ($l) => ($l['internal'] ?? false) === true)),
-            'externalLinks' => count(array_filter($analysis->links, fn ($l) => ($l['type'] ?? '') === 'external')),
-            'wordCount' => $analysis->content['wordCount'] ?? 0,
-            'schemaTypes' => count($types),
-            'inlineSvg' => $analysis->accessibility['inlineSvg']['total'] ?? 0,
-            'images' => $img['total'] ?? 0,
-        ]);
-
-        $payload['schemaTypes'] = $types;
-        $payload['message'] = $payload['score'] >= 80
-            ? 'Bonne santé générale'
-            : ($payload['score'] >= 50 ? 'Des améliorations sont nécessaires' : 'Problèmes critiques détectés');
-
-        return response()->json($this->withAnalysisMeta($analysis, $payload));
+        return response()->json($this->websiteAnalyzer->analyzeUrl($this->requireUrl($request)));
     }
 
     /**
@@ -492,25 +316,7 @@ class ToolsApiController extends Controller
      */
     private function withAnalysisMeta(SiteAnalysis $analysis, array $payload): array
     {
-        $payload['analyzedUrl'] = $analysis->url;
-        $payload['executionTimeMs'] = $analysis->totalTimeMs();
-        $payload['fromCache'] = $analysis->fromCache;
-        $payload['analyzedAt'] = now()->toIso8601String();
-
-        // Avertissement lorsque le contenu dépend du JavaScript : sans cela,
-        // une SPA obtiendrait un score sévère sans explication.
-        if ($analysis->isLikelyClientRendered()) {
-            $rendered = $analysis->rendered ?? [];
-            $payload['limitation'] = ($rendered['success'] ?? false)
-                ? 'Cette page dépend du JavaScript. Les résultats intègrent le rendu navigateur.'
-                : 'Le HTML renvoyé par le serveur contient très peu de contenu : cette page est probablement rendue côté client (React/Vue/Angular). Google exécute le JavaScript avant d\'indexer, ce que cette analyse ne fait pas — les résultats sous-estiment donc la page réellement indexée.';
-        }
-
-        if ($analysis->failures !== []) {
-            $payload['partialAnalysis'] = array_keys($analysis->failures);
-        }
-
-        return $payload;
+        return AnalysisMeta::apply($analysis, $payload);
     }
 
     /**
@@ -1307,6 +1113,12 @@ class ToolsApiController extends Controller
             ? (int) round($data['authority'] * 10)
             : (int) round($data['authority']);
 
+        // Chaque fournisseur garde le nom de SA métrique : Open PageRank n'est
+        // pas le Domain Authority de Moz et ne doit jamais être affiché comme tel.
+        $isMoz = ($data['provider'] ?? null) === 'moz';
+        $metricName = $isMoz ? 'Domain Authority (Moz)' : 'Open PageRank';
+        $metricKey = $isMoz ? 'domainAuthority' : 'openPageRank';
+
         $issues = [];
         if ($normalized < 20) {
             $issues[] = ['type' => 'warning', 'message' => 'Autorité faible — profil de liens encore peu développé.'];
@@ -1321,7 +1133,7 @@ class ToolsApiController extends Controller
             'passed' => $normalized >= 30,
             'stats' => array_filter([
                 'domain' => $domain,
-                'domainAuthority' => $isTenPointScale
+                $metricKey => $isTenPointScale
                     ? $data['authority'] . '/10'
                     : $normalized . '/100',
                 'pageAuthority' => isset($data['metrics']['pageAuthority'])
@@ -1338,6 +1150,12 @@ class ToolsApiController extends Controller
             ],
             'dataSource' => $data['source'],
             'fetchedAt' => $data['fetchedAt'],
+            'authorityMetric' => $metricName,
+            'authorityProvider' => $data['provider'] ?? null,
+            'authorityScale' => $data['scale'],
+            'scoringMethod' => $isTenPointScale
+                ? "{$metricName} {$data['authority']}/10, ramené sur 100 pour l'affichage. Métrique propre à ce fournisseur : ce n'est pas le Domain Authority de Moz."
+                : "{$metricName}, échelle 0-100, fournie par {$data['source']}.",
         ]);
     }
 

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Sites Web Santé & Télésanté | CodeSommet',
-    'meta_description' => 'Développement de sites web de santé : portails patients, systèmes de télémédecine et prise de rendez-vous, conformes HIPAA et enrichis de fonctionnalités IA. Contactez-nous pour les tarifs.',
+    'meta_description' => 'Sites web pour cliniques et professionnels de santé : portails patients, télémédecine et prise de rendez-vous en ligne, avec fonctionnalités IA. Devis gratuit.',
     'meta_keywords' => 'développement site web santé,développement portail patient,consultations vidéo santé,conception site web médical,développement site web hôpital,site web clinique,CRM santé,système de prise de rendez-vous',
     'og_title' => 'Développement de Sites Web Santé & Télésanté | CodeSommet',
     'og_description' => 'Développement de sites web de santé : portails patients, systèmes de télémédecine et prise de rendez-vous, conformes HIPAA et enrichis de fonctionnalités IA. Contactez-nous pour les tarifs.',
@@ -254,7 +254,7 @@ return [
     'qb_2138' => '"Un travail sérieux et une équipe vraiment à l\'écoute. Le résultat correspond à ce que nous avions imaginé."',
     'qb_2139' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'qb_2140' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
-    'faq_a1' => 'Pour un site vitrine de cabinet ou de clinique avec prise de rendez-vous et pages de services, nous livrons généralement en 2-5 jours une fois les contenus validés. Si le projet inclut un portail patient, une intégration DSE ou une téléconsultation, le délai dépend de la portée et nous le confirmons lors de l\'appel découverte.',
+    'faq_a1' => 'Pour un site vitrine de cabinet ou de clinique avec prise de rendez-vous et pages de services, nous livrons généralement en 2-5 jours (2 jours seulement avec notre formule express) une fois les contenus validés. Si le projet inclut un portail patient, une intégration DSE ou une téléconsultation, le délai dépend de la portée et nous le confirmons lors de l\'appel découverte.',
     'faq_a2' => 'Nous concevons chaque site de santé selon les bonnes pratiques HIPAA et RGPD : communications chiffrées, contrôles d\'accès, journaux d\'audit et hébergement sécurisé des données patients. Les formulaires et l\'espace patient sont pensés pour ne collecter que les informations nécessaires. Nous ne délivrons pas de certification, mais nous documentons les mesures mises en place pour faciliter vos propres démarches de conformité.',
     'faq_a3' => 'Oui, lorsque votre DSE expose une interface d\'intégration, nous pouvons connecter le site pour synchroniser les rendez-vous, les profils patients ou les résultats d\'examens. La faisabilité et le périmètre exact sont étudiés en phase de découverte, en fonction de la documentation fournie par votre éditeur.',
     'faq_a4' => 'Oui, la formation du personnel fait partie de la phase de lancement. Nous montrons à votre équipe d\'accueil comment mettre à jour les horaires, les disponibilités et les pages de services, et comment gérer les demandes reçues via le site. Une documentation courte reste à disposition après la mise en ligne.',

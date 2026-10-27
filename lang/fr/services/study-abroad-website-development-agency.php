@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Création de Sites Web Études à l\'Étranger | CodeSommet',
-    'meta_description' => 'Développement de sites web d\'études à l\'étranger pour les cabinets de conseil en éducation internationale : portails étudiants, suivi de visa et chatbots multilingues. Contactez-nous pour les tarifs.',
+    'meta_description' => 'Sites web pour agences d\'études à l\'étranger : portails étudiants, suivi des dossiers visa et chatbots multilingues. Devis gratuit.',
     'meta_keywords' => 'développement site web études à l\'étranger,site web conseil en visa,plateforme éducation internationale,CRM études à l\'étranger,développement portail étudiant,système suivi de visa,site web conseil en éducation',
     'og_title' => 'Création de Sites Web Études à l\'Étranger | CodeSommet',
     'og_description' => 'Développement de sites web d\'études à l\'étranger pour les cabinets de conseil en éducation internationale : portails étudiants, suivi de visa et chatbots multilingues. Contactez-nous pour les tarifs.',
@@ -303,7 +303,7 @@ return [
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg><span class="text-xs sm:text-sm text-[#0F0F0F]/70">🎓<!-- --> <!-- -->Études à
                                     l',
-    'faq_a1' => 'Pour un site vitrine de cabinet de conseil en études à l\'étranger (destinations, programmes, formulaire de demande), nous livrons en 2-5 jours. Un portail avec suivi de candidature, listes de documents visa par pays et espace conseiller représente un périmètre plus large : le calendrier est défini avec vous lors de l\'appel découverte.',
+    'faq_a1' => 'Pour un site vitrine de cabinet de conseil en études à l\'étranger (destinations, programmes, formulaire de demande), nous livrons en 2-5 jours, voire en 2 jours avec notre formule express. Un portail avec suivi de candidature, listes de documents visa par pays et espace conseiller représente un périmètre plus large : le calendrier est défini avec vous lors de l\'appel découverte.',
     'faq_a2' => 'Oui. Nous rédigeons les pages par destination (étudier au Canada, en Allemagne, au Royaume-Uni…), les fiches programmes, les guides sur les démarches et les textes de conversion, en respectant votre positionnement. Chaque page est validée par votre équipe, qui reste libre de la mettre à jour dès qu\'une exigence change.',
     'faq_a3' => 'Oui. Le chatbot est entraîné sur les conditions d\'admission et de visa des pays que vous couvrez, et répond dans la langue du candidat. Il pré-qualifie la demande (niveau d\'études, budget, destination souhaitée) avant de la transmettre au conseiller concerné, ce qui évite les échanges répétitifs sur des questions de base.',
     'faq_a4' => 'Nous intégrons votre site au CRM déjà en place dans votre cabinet afin que chaque demande, relance et changement de statut y soit tracé. Si vous partez de zéro, nous configurons un pipeline adapté au parcours étudiant (demande, dossier, offre, visa, inscription). Le choix de l\'outil est validé ensemble pendant la phase de découverte.',

@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Extracteur de Métadonnées en Masse"
+        ],
+        [
+            2,
+            "Métadonnées par page"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Quelle longueur pour le titre et la description ?"
+        ],
+        [
+            3,
+            "Pourquoi signaler les doublons ?"
+        ],
+        [
+            3,
+            "Une page est affichée en erreur, pourquoi ?"
+        ],
+        [
+            3,
+            "Les pages construites en JavaScript sont-elles analysées ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Générateur de Balises Meta"
+        ],
+        [
+            3,
+            "Vérificateur de Canonical"
+        ],
+        [
+            3,
+            "Extracteur d'URL de Sitemap"
+        ],
+        [
+            2,
+            "Des Balises SEO à Reprendre sur Tout le Site ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

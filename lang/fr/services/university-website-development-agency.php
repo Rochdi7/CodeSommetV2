@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Sites Web Universitaires | CodeSommet',
-    'meta_description' => 'Développement de sites web universitaires sur mesure : admissions, portails étudiants, catalogues de cours, portails enseignants et gestion de campus. Contactez-nous pour les tarifs.',
+    'meta_description' => 'Sites web universitaires sur mesure : admissions en ligne, portails étudiants et enseignants, catalogues de cours et gestion de campus. Devis gratuit.',
     'meta_keywords' => 'développement site web universitaire,design web enseignement supérieur,développement site web collège,développement portail étudiant,site web admissions,système gestion campus,système inscription universitaire,développement site web académique',
     'og_title' => 'Développement de Sites Web Universitaires | CodeSommet',
     'og_description' => 'Développement de sites web universitaires sur mesure : admissions, portails étudiants, catalogues de cours, portails enseignants et gestion de campus. Contactez-nous pour les tarifs.',

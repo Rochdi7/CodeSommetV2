@@ -59,6 +59,9 @@ class NewsletterController extends Controller
             'subscribed_at' => now(),
         ]);
 
+        // The next page view reports the lead to GA4 / GTM / Pixel (partials/tracking-tags).
+        $request->session()->flash('cs_lead', 'newsletter');
+
         // Best-effort: stamp the lead on its analytics session (funnel view).
         try {
             AnalyticsSession::attachLead($request->input('cs_sid'), $request->input('cs_vid'), 'newsletter', $subscriber->id);

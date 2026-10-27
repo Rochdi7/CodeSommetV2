@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement Web à Casablanca, Maroc | CodeSommet',
-    'meta_description' => 'Agence web au Maroc pour les entreprises de Casablanca : sites vitrines, e-commerce et plateformes sur mesure, avec SEO et accompagnement en français.',
+    'title' => 'Agence Web Casablanca — Création de Sites Web | CodeSommet',
+    'meta_description' => 'Agence web à Casablanca : création de sites vitrines, e-commerce et plateformes sur mesure pour les entreprises casablancaises, avec SEO et devis gratuit.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Développement Web à Casablanca, Maroc | CodeSommet',
+    'og_title' => 'Agence Web Casablanca — Création de Sites Web | CodeSommet',
     'og_description' => 'Agence web au Maroc pour les entreprises de Casablanca : sites vitrines, e-commerce et plateformes sur mesure, avec SEO et accompagnement en français.',
     'twitter_description' => 'Agence web au Maroc pour les entreprises de Casablanca : sites vitrines, e-commerce et plateformes sur mesure.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
@@ -87,8 +87,8 @@ return [
     'text_474' => 'Automatisation',
     'text_475' => 'Automatisation',
     'text_476' => 'Automatisation',
-    'ml_876' => 'CROISSANCE DES ENTREPRISES À CASABLANCA',
-    'ml_877' => 'CROISSANCE DES ENTREPRISES À CASABLANCA',
+    'ml_876' => 'LA CROISSANCE DES ENTREPRISES À CASABLANCA',
+    'ml_877' => 'LA CROISSANCE DES ENTREPRISES À CASABLANCA',
     'ml_878' => 'Studio de développement web basé au Maroc servant les entreprises du monde entier. Nous construisons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
     'ml_879' => 'Réserver une Consultation Gratuite Casablanca',
     'ml_880' => 'Créez des chatbots intelligents, des workflows d\'automatisation, de la recherche alimentée par l\'IA et des moteurs de recommandation adaptés au public technophile de Casablanca.',
@@ -185,7 +185,7 @@ return [
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Casablanca et vous gardez une visibilité complète sur l\'avancement à chaque étape.',
     'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
     'faq_a4' => 'Nous concevons des sites conformes aux bonnes pratiques de protection des données : consentement aux cookies, politique de confidentialité, sécurisation des formulaires et des données. Pour les exigences propres à Maroc ou à votre secteur, nous adaptons les mentions et les fonctionnalités avec vous lors du cadrage.',
-    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
+    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Pour les projets urgents, notre formule express permet une mise en ligne en 2 jours seulement. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
     'faq_a6' => 'Oui. Nous vous conseillons sur le choix du nom de domaine (.ma ou .com selon votre cible), nous vous guidons pour l\'enregistrement auprès d\'un registrar et nous configurons le DNS, le certificat SSL et les redirections pour que le site soit prêt dès la mise en ligne.',
     'faq_q1' => 'Avez-vous un bureau physique à Casablanca ?',
     'faq_q2' => 'Pouvez-vous travailler avec les entreprises de Casablanca à distance ?',

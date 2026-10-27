@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Agence Web Maroc — Sites & SaaS sur Mesure | CodeSommet',
-    'meta_description' => 'Agence web basée au Maroc : sites sur mesure, e-commerce et SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
+    'title' => 'Création Site Web Maroc — Agence Web & SaaS | CodeSommet',
+    'meta_description' => 'Agence web au Maroc : création de sites web sur mesure, e-commerce et plateformes SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
     'meta_keywords' => 'développement web Maroc,agence digitale Maroc,design UI UX,agence branding,services SEO,développement e-commerce,développement applications mobiles,développement SaaS,design web Maroc,développement React,développement Next.js,solutions web sur mesure',
-    'og_title' => 'Agence Web Maroc — Sites & SaaS sur Mesure | CodeSommet',
+    'og_title' => 'Création Site Web Maroc — Agence Web & SaaS | CodeSommet',
     'og_description' => 'Agence web basée au Maroc : sites sur mesure, e-commerce et SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
     'twitter_description' => 'Agence web basée au Maroc : sites sur mesure, e-commerce et SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
     'text_0' => 'Nous Acceptons Maintenant les Nouveaux Projets',
