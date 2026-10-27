@@ -49,20 +49,24 @@ class RenderSnapshotTest extends TestCase
 
     /** Explicit, deterministic tool inventory (mirrors resources/views/frontoffice/pages/tools/). */
     private const TOOLS = [
-        'base64-encoder', 'blog-title-generator',
-        'broken-link-checker', 'canonical-checker', 'chatbot-script-generator',
-        'color-palette-generator', 'core-web-vitals-checker', 'css-minifier',
+        'ai-crawler-access-checker', 'base64-encoder', 'blog-title-generator',
+        'bot-viewer', 'broken-link-checker', 'canonical-checker',
+        'chatbot-script-generator', 'color-palette-generator',
+        'core-web-vitals-checker', 'crawl-visualizer', 'css-minifier',
         'domain-authority-checker', 'domain-health-checker',
-        'duplicate-content-checker', 'faq-schema-generator', 'heading-analyzer',
-        'hreflang-generator', 'html-minifier', 'html-to-text',
-        'image-alt-analyzer', 'image-compression-analyzer',
+        'duplicate-content-checker', 'faq-schema-generator',
+        'heading-analyzer', 'hreflang-generator', 'html-minifier',
+        'html-to-text', 'image-alt-analyzer', 'image-compression-analyzer',
         'internal-link-analyzer', 'json-formatter', 'keyword-density-analyzer',
         'landing-page-generator', 'local-business-schema',
-        'lorem-ipsum-generator', 'meta-refresh-generator', 'meta-tag-generator',
-        'mobile-friendly-test', 'nofollow-link-checker', 'og-preview-generator',
-        'page-speed-analyzer', 'qr-code-generator', 'readability-analyzer',
-        'redirect-checker', 'robots-txt-generator', 'robots-validator',
-        'schema-generator', 'sitemap-validator', 'ssl-certificate-checker',
+        'lorem-ipsum-generator', 'meta-refresh-generator',
+        'meta-tag-generator', 'mobile-friendly-test', 'ngram-extractor',
+        'nofollow-link-checker', 'og-preview-generator', 'page-speed-analyzer',
+        'qr-code-generator', 'readability-analyzer', 'redirect-checker',
+        'robots-txt-generator', 'robots-txt-tester', 'robots-validator',
+        'schema-generator', 'security-headers-checker', 'serp-snippet-preview',
+        'sitemap-url-extractor', 'sitemap-validator',
+        'ssl-certificate-checker', 'structured-data-extractor',
         'text-case-converter', 'url-slug-generator', 'utm-builder',
         'website-analyzer', 'website-readiness-checker', 'word-counter',
         'xml-sitemap-generator',
@@ -99,11 +103,11 @@ class RenderSnapshotTest extends TestCase
         return $cases;
     }
 
-    public function test_inventory_is_exactly_80_routes_and_matches_repository(): void
+    public function test_inventory_is_exactly_89_routes_and_matches_repository(): void
     {
         $this->assertCount(35, self::CITIES, 'City inventory must be exactly 35 routes');
-        $this->assertCount(45, self::TOOLS, 'Tool inventory must be exactly 45 routes');
-        $this->assertCount(80, self::routeProvider());
+        $this->assertCount(54, self::TOOLS, 'Tool inventory must be exactly 54 routes');
+        $this->assertCount(89, self::routeProvider());
 
         // Cross-check against the sources of truth so drift cannot go unnoticed.
         $configCities = config('pages.cities');

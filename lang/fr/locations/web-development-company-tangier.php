@@ -205,4 +205,6 @@ return [
     'faq_q4' => 'Comprenez-vous les lois de conformité et de protection des données au Maroc ?',
     'faq_q5' => 'En combien de temps pouvez-vous lancer un site web pour mon entreprise à Tanger ?',
     'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

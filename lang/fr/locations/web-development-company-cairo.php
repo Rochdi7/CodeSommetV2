@@ -193,4 +193,6 @@ return [
     'faq_q4' => 'Comprenez-vous les lois de conformité et de protection des données en Égypte ?',
     'faq_q5' => 'À quelle vitesse pouvez-vous lancer un site web pour mon entreprise au Caire ?',
     'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine .eg ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

@@ -199,4 +199,6 @@ return [
     'faq_q4' => 'Pouvez-vous intégrer les systèmes existants utilisés par les entreprises de Denver ?',
     'faq_q5' => 'Comment fonctionne votre modèle de révisions illimitées à Denver ?',
     'faq_q6' => 'Fournissez-vous un support continu après le lancement à Denver ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

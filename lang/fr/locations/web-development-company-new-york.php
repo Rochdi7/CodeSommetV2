@@ -200,4 +200,6 @@ return [
     'faq_q4' => 'Pouvez-vous vous intégrer aux systèmes existants utilisés par les entreprises de New York ?',
     'faq_q5' => 'Comment fonctionne le modèle de révisions illimitées à New York ?',
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les clients de New York ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

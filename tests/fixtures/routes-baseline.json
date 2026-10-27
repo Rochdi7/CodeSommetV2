@@ -121,6 +121,72 @@
     {
         "domain": null,
         "method": "GET|HEAD",
+        "uri": "admin/analytics",
+        "name": "admin.analytics.index",
+        "action": "App\\Http\\Controllers\\Admin\\AnalyticsController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/analytics/export",
+        "name": "admin.analytics.export",
+        "action": "App\\Http\\Controllers\\Admin\\AnalyticsController@export",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/analytics/leads",
+        "name": "admin.analytics.leads",
+        "action": "App\\Http\\Controllers\\Admin\\AnalyticsController@leads",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/analytics/sessions",
+        "name": "admin.analytics.sessions",
+        "action": "App\\Http\\Controllers\\Admin\\AnalyticsController@sessions",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/analytics/sessions/{sessionId}",
+        "name": "admin.analytics.session",
+        "action": "App\\Http\\Controllers\\Admin\\AnalyticsController@session",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/analytics/visitors/{visitorId}",
+        "name": "admin.analytics.visitor",
+        "action": "App\\Http\\Controllers\\Admin\\AnalyticsController@visitor",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
         "uri": "admin/blog",
         "name": "admin.blog.index",
         "action": "App\\Http\\Controllers\\Admin\\BlogPostController@index",
@@ -993,12 +1059,34 @@
     {
         "domain": null,
         "method": "POST",
+        "uri": "api/crawl-visualizer",
+        "name": null,
+        "action": "App\\Http\\Controllers\\Tools\\CrawlVisualizerController@handle",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:60,1"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
         "uri": "api/get-quote",
         "name": "quote.store",
         "action": "App\\Http\\Controllers\\QuoteRequestController@store",
         "middleware": [
             "web",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:quote"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "api/tools-v2/{slug}",
+        "name": null,
+        "action": "App\\Http\\Controllers\\Tools\\ToolsV2ApiController@handle",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:30,1"
         ]
     },
     {
@@ -1021,6 +1109,17 @@
         "middleware": [
             "api",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "api/track",
+        "name": "analytics.collect",
+        "action": "App\\Http\\Controllers\\TrackingController@collect",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:analytics"
         ]
     },
     {

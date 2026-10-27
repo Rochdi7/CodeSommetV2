@@ -1,0 +1,84 @@
+{
+    "headings": [
+        [
+            1,
+            "Extracteur d'URL de Sitemap"
+        ],
+        [
+            2,
+            "Anomalies"
+        ],
+        [
+            2,
+            "Par dossier"
+        ],
+        [
+            2,
+            "Fichiers lus"
+        ],
+        [
+            2,
+            "URL extraites"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "À quoi sert d'extraire les URL d'un sitemap ?"
+        ],
+        [
+            3,
+            "Quelles sont les limites d'un sitemap ?"
+        ],
+        [
+            3,
+            "Le lastmod est-il important ?"
+        ],
+        [
+            3,
+            "Pourquoi signaler les URL d'un autre hôte ?"
+        ],
+        [
+            3,
+            "Un sitemap suffit-il à faire indexer mes pages ?"
+        ],
+        [
+            3,
+            "L'outil lit-il les sitemaps d'images, de vidéos et d'actualités ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Validateur de Sitemap"
+        ],
+        [
+            3,
+            "Générateur de Sitemap XML"
+        ],
+        [
+            3,
+            "Visualiseur d'Exploration"
+        ],
+        [
+            2,
+            "Des Milliers de Pages à Mettre en Ordre ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

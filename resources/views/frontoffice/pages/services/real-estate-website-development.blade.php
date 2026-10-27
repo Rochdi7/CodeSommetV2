@@ -179,6 +179,14 @@
                                     <div class="mb-6 flex-shrink-0">
                                         <div
                                             class="relative w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-search w-7 h-7" aria-hidden="true"
+                                                style="color:#00AEEF">
+                                                <path d="m21 21-4.34-4.34"></path>
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                            </svg>
                                         </div>
                                     </div>
                                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex-shrink-0">
@@ -862,6 +870,25 @@
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
+                    <div><a class="block" href="{{ route('case-study', 'akoubri') }}">
+                            <div
+                                class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
+                                <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
+                                        data-src="{{ asset('videos/akoubri-architecture-website-showcase.mp4') }}" autoplay
+                                        loop muted playsinline webkit-playsinline
+                                        preload="none" class="w-full h-full object-cover"></video>
+                                    <div
+                                        class="absolute top-5 right-5 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-full border border-white/30">
+                                        <span class="text-xs font-bold text-white tracking-wide uppercase">Architecture</span>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-4">
+                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Akoubri</h3>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Cabinet d'architecture et de design d'intérieur : portfolio de résidences, villas et bureaux</p>
+                                    <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Marrakech</p>
+                                </div>
+                            </div>
+                        </a></div>
                     <div><a class="block" href="{{ route('case-study', 'morocco-quest') }}">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
