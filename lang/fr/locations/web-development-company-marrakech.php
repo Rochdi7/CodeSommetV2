@@ -69,6 +69,8 @@ return [
     'text_157' => 'Experts en IA',
     'text_158' => 'Immobilier',
     'text_159' => 'Site de réservation de voyages',
+    'akoubri_tag' => 'Architecture',
+    'akoubri_badge' => 'Portfolio de cabinet d\'architecture',
     'text_160' => 'Immobilier & PropTech',
     'text_161' => 'Délai adapté à la portée du projet',
     'text_162' => '/mois',
@@ -192,4 +194,6 @@ return [
     'faq_q4' => 'Comprenez-vous les lois de conformité et de protection des données du Morocco ?',
     'faq_q5' => 'À quelle vitesse pouvez-vous lancer un site web pour mon entreprise à Marrakech ?',
     'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine .ma ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

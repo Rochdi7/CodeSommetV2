@@ -829,7 +829,7 @@
                             {{ __('our-work/morocco-quest.text_45') }}</p>
                     </div>
                 </a>
-<a class="group" href="/our-work/gls-sprachenzentrum">
+<a class="group" href="/our-work/authentic-morocco-adventures">
                     <div
                         class="bg-white rounded-2xl p-4 md:p-6 text-center hover:shadow-md transition-all duration-200 border border-gray-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

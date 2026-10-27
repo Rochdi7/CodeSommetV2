@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Aperçu SERP Google"
+        ],
+        [
+            2,
+            "Vérifications"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Pourquoi mesurer en pixels plutôt qu'en caractères ?"
+        ],
+        [
+            3,
+            "Quelles sont les limites utilisées ?"
+        ],
+        [
+            3,
+            "Google réécrit-il mes titres ?"
+        ],
+        [
+            3,
+            "La meta description influence-t-elle le classement ?"
+        ],
+        [
+            3,
+            "Que signifie l'aperçu en mode sombre ?"
+        ],
+        [
+            3,
+            "L'outil enregistre-t-il mes textes ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Générateur de Balises Meta"
+        ],
+        [
+            3,
+            "Aperçu Open Graph"
+        ],
+        [
+            3,
+            "Analyseur de Titres H1-H6"
+        ],
+        [
+            2,
+            "Besoin d'Optimiser Toutes Vos Pages ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

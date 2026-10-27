@@ -33,6 +33,8 @@ class SeoMetadataTest extends TestCase
         '/tools/word-counter',
         '/tools/website-analyzer',
         '/our-work/hssabek',
+        '/our-work/akoubri',
+        '/our-work/authentic-morocco-adventures',
     ];
 
     public function test_all_public_page_groups_return_200(): void

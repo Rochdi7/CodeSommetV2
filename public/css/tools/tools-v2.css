@@ -1,0 +1,82 @@
+/* Styles partagés par les outils construits sur frontoffice.layouts.tool.
+ * main.css est une extraction statique : les utilitaires Tailwind absents y
+ * sont remplacés par ces classes tv-*. */
+
+.tv-grow { flex-grow: 1; }
+.tv-select-none { user-select: none; }
+.tv-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.tv-pre { white-space: pre-wrap; word-break: break-word; }
+.tv-break { overflow-wrap: anywhere; }
+.tv-nowrap { white-space: nowrap; }
+
+.tv-max-h-80 { max-height: 20rem; }
+@media (min-width: 640px) {
+    .tv-filter-input { width: 18rem; }
+    .tv-sm-pt-8 { padding-top: 2rem; }
+}
+.tv-textarea { min-height: 10rem; resize: vertical; }
+.tv-textarea--tall { min-height: 16rem; }
+
+.tv-table-wrap { max-height: 560px; }
+.tv-cell-url { max-width: 28rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tv-th { position: sticky; top: 0; z-index: 1; }
+
+.tv-badge { display: inline-flex; align-items: center; gap: .25rem; padding: .125rem .5rem; border-radius: 9999px; font-size: .75rem; font-weight: 600; white-space: nowrap; }
+.tv-badge--ok { background: #dcfce7; color: #15803d; }
+.tv-badge--bad { background: #fee2e2; color: #b91c1c; }
+.tv-badge--warn { background: #ffedd5; color: #c2410c; }
+.tv-badge--info { background: #dbeafe; color: #1d4ed8; }
+.tv-badge--muted { background: #f3f4f6; color: #4b5563; }
+
+.tv-check { display: flex; gap: .75rem; padding: .875rem 0; border-bottom: 1px solid #f3f4f6; }
+.tv-check:last-child { border-bottom: 0; }
+.tv-check-icon { width: 1.5rem; height: 1.5rem; border-radius: 9999px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .75rem; font-weight: 700; }
+.tv-check-icon--pass { background: #dcfce7; color: #15803d; }
+.tv-check-icon--warn { background: #ffedd5; color: #c2410c; }
+.tv-check-icon--fail { background: #fee2e2; color: #b91c1c; }
+.tv-check-icon--info { background: #dbeafe; color: #1d4ed8; }
+
+.tv-score { width: 6.5rem; height: 6.5rem; border-radius: 9999px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 6px solid #e5e7eb; }
+.tv-score--a { border-color: #22c55e; } .tv-score--b { border-color: #84cc16; }
+.tv-score--c { border-color: #eab308; } .tv-score--d { border-color: #f97316; }
+.tv-score--f { border-color: #ef4444; }
+.tv-score-grade { font-size: 2rem; font-weight: 800; line-height: 1; }
+.tv-score-label { font-size: .7rem; color: #6b7280; margin-top: .25rem; }
+
+.tv-meter { height: .5rem; border-radius: 9999px; background: #f3f4f6; overflow: hidden; }
+.tv-meter-bar { height: 100%; border-radius: 9999px; transition: width .3s ease; }
+.tv-meter-bar--ok { background: #22c55e; } .tv-meter-bar--warn { background: #f97316; } .tv-meter-bar--bad { background: #ef4444; }
+
+.tv-toggle { border: 1px solid #e5e7eb; background: #fff; color: #374151; }
+.tv-toggle:hover { border-color: #00AEEF; color: #00AEEF; }
+.tv-toggle[aria-pressed="true"] { border-color: #00AEEF; background: rgba(0, 174, 239, .1); color: #0089bd; }
+
+.tv-tabs { display: flex; flex-wrap: wrap; gap: .25rem; border-bottom: 1px solid #e5e7eb; }
+.tv-tab { padding: .5rem .875rem; font-size: .875rem; font-weight: 600; color: #6b7280; border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer; background: none; }
+.tv-tab:hover { color: #0F0F0F; }
+.tv-tab[aria-selected="true"] { color: #0089bd; border-bottom-color: #00AEEF; }
+
+.tv-code { background: #0f172a; color: #e2e8f0; border-radius: .75rem; padding: 1rem; font-size: .8rem; line-height: 1.5; overflow-x: auto; }
+
+/* Aperçu SERP */
+.tv-serp { font-family: Arial, Helvetica, sans-serif; background: #fff; border: 1px solid #e5e7eb; border-radius: .75rem; padding: 1.25rem; }
+.tv-serp--dark { background: #202124; border-color: #3c4043; }
+.tv-serp--mobile { max-width: 400px; margin: 0 auto; border-radius: 1rem; }
+.tv-serp-site { display: flex; align-items: center; gap: .75rem; margin-bottom: .25rem; }
+.tv-serp-favicon { width: 26px; height: 26px; border-radius: 9999px; background: #f1f3f4; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 11px; font-weight: 700; color: #5f6368; }
+.tv-serp--dark .tv-serp-favicon { background: #303134; color: #bdc1c6; }
+.tv-serp-name { font-size: 14px; color: #202124; line-height: 20px; }
+.tv-serp-url { font-size: 12px; color: #4d5156; line-height: 18px; word-break: break-all; }
+.tv-serp--dark .tv-serp-name { color: #dadce0; } .tv-serp--dark .tv-serp-url { color: #bdc1c6; }
+.tv-serp-title { font-size: 20px; line-height: 26px; color: #1a0dab; margin: .125rem 0 .25rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+.tv-serp--mobile .tv-serp-title { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.tv-serp--dark .tv-serp-title { color: #8ab4f8; }
+.tv-serp-desc { font-size: 14px; line-height: 22px; color: #4d5156; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tv-serp--mobile .tv-serp-desc { -webkit-line-clamp: 3; }
+.tv-serp--dark .tv-serp-desc { color: #bdc1c6; }
+.tv-serp-desc b { font-weight: 700; }
+.tv-serp-date { color: #70757a; }
+
+/* Nuage / listes de mots */
+.tv-chip { display: inline-flex; align-items: center; gap: .375rem; padding: .25rem .625rem; border-radius: 9999px; background: #f3f4f6; font-size: .8rem; color: #374151; }
+.tv-chip b { color: #0089bd; }

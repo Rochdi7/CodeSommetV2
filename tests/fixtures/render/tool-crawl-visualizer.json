@@ -1,0 +1,72 @@
+{
+    "headings": [
+        [
+            1,
+            "Visualiseur d'Exploration de Site"
+        ],
+        [
+            2,
+            "Pages explorées"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que montre le graphe d'exploration ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que la profondeur de clic ?"
+        ],
+        [
+            3,
+            "Comment l'outil repère-t-il les pages orphelines ?"
+        ],
+        [
+            3,
+            "Pourquoi une page est-elle marquée « non indexable » ?"
+        ],
+        [
+            3,
+            "L'exploration respecte-t-elle mon serveur ?"
+        ],
+        [
+            3,
+            "Mon site affiche son contenu en JavaScript, est-ce un problème ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Analyseur de Liens Internes"
+        ],
+        [
+            3,
+            "Vérificateur de Liens Morts"
+        ],
+        [
+            3,
+            "Validateur de Sitemap"
+        ],
+        [
+            2,
+            "Besoin d'une Refonte de Votre Architecture de Site ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

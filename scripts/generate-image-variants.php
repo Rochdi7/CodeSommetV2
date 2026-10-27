@@ -40,6 +40,7 @@ $jobs = [
             'morocco-quest-top', 'morocco-quest-bottom', 'dental-pro-top', 'dental-pro-bottom',
             'gls-top', 'gls-bottom', 'local-morocco-tours-top', 'local-morocco-tours-bottom',
             'authentic-morocco-adventures-top', 'authentic-morocco-adventures-bottom',
+            'akoubri-top', 'akoubri-bottom',
         ],
         'widths' => [320],
     ],

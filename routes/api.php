@@ -38,6 +38,23 @@ Route::post('/tools/{slug}/usage', [ToolsApiController::class, 'usageIncrement']
     ->middleware('throttle:tools-usage');
 
 /*
+ * Visualiseur d'exploration : le navigateur pilote l'exploration et envoie les
+ * URL par lots de 4 (CrawlVisualizerController::MAX_URLS_PER_REQUEST). Budget
+ * dédié de 60 lots/min par IP, soit ~240 pages/min, sans entamer `tools-api`.
+ */
+Route::post('/crawl-visualizer', [\App\Http\Controllers\Tools\CrawlVisualizerController::class, 'handle'])
+    ->middleware('throttle:60,1');
+
+/*
+ * Outils de seconde génération (ToolsV2ApiController) : une classe par slug
+ * dans app/Services/ToolsV2/Handlers. 30 requêtes/min par IP, budget distinct
+ * de `tools-api` pour ne pas pénaliser les outils historiques.
+ */
+Route::post('/tools-v2/{slug}', [\App\Http\Controllers\Tools\ToolsV2ApiController::class, 'handle'])
+    ->where('slug', '[a-z0-9-]+')
+    ->middleware('throttle:30,1');
+
+/*
  * First-party analytics beacon (public/js/analytics.js → TrackingController).
  * Batches of page views / clicks / form submits / scroll / time-on-page.
  * Own throttle bucket: a busy human sends a handful of batches per page, so

@@ -197,4 +197,6 @@ return [
     'faq_q4' => 'Pouvez-vous vous intégrer aux systèmes existants utilisés par les entreprises de Stockholm ?',
     'faq_q5' => 'Comment fonctionne le modèle à révisions illimitées pour Stockholm ?',
     'faq_q6' => 'Fournissez-vous un support continu pour Stockholm après le lancement ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

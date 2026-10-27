@@ -190,4 +190,6 @@ return [
     'faq_q4' => 'Pouvez-vous intégrer les systèmes existants utilisés par les entreprises de Berlin ?',
     'faq_q5' => 'Comment fonctionne le modèle de révisions illimitées pour les clients de Berlin ?',
     'faq_q6' => 'Fournissez-vous un support continu pour les entreprises de Berlin après le lancement ?',
+    'ama_tag' => 'Tourisme',
+    'ama_badge' => 'Circuits privés au Maroc',
 ];

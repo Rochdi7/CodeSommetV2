@@ -1,0 +1,76 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur d'En-têtes de Sécurité"
+        ],
+        [
+            2,
+            "Vérifications"
+        ],
+        [
+            2,
+            "En-têtes de réponse reçus"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Les en-têtes de sécurité influencent-ils le référencement ?"
+        ],
+        [
+            3,
+            "Qu'est-ce que Strict-Transport-Security (HSTS) ?"
+        ],
+        [
+            3,
+            "Comment déployer une Content-Security-Policy sans tout casser ?"
+        ],
+        [
+            3,
+            "X-Frame-Options ou frame-ancestors ?"
+        ],
+        [
+            3,
+            "Pourquoi signaler l'en-tête Server ou X-Powered-By ?"
+        ],
+        [
+            3,
+            "La note s'applique-t-elle à tout le site ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Vérificateur de Certificat SSL"
+        ],
+        [
+            3,
+            "Santé du Domaine"
+        ],
+        [
+            3,
+            "Site Prêt pour le Lancement ?"
+        ],
+        [
+            2,
+            "Besoin de Sécuriser Votre Infrastructure ?"
+        ]
+    ],
+    "links": {
+        "internal": 52,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}
