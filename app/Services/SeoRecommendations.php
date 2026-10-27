@@ -223,7 +223,8 @@ class SeoRecommendations
 
         $out = [];
         foreach ($checks as $check) {
-            if (($check['status'] ?? '') === 'pass') {
+            // `info` = not measurable from the HTML: nothing to recommend.
+            if (in_array($check['status'] ?? '', ['pass', 'info'], true)) {
                 continue;
             }
 

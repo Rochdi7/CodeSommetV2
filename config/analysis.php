@@ -22,11 +22,16 @@ return [
         'llms-txt-generator' => App\Services\Tools\LlmsTxtGeneratorTool::class,
         'meta-extractor' => App\Services\Tools\MetaExtractorTool::class,
         'expired-domain-checker' => App\Services\Tools\ExpiredDomainCheckerTool::class,
+        // Batch 3 (2026-10-27): single-page signal checks and a bounded crawl
+        // diagnosis. ai-crawler-access-checker stays the robots.txt detail tool.
+        'eeat-signals-checker' => App\Services\Tools\EeatSignalsCheckerTool::class,
+        'ai-readiness-checker' => App\Services\Tools\AiReadinessCheckerTool::class,
+        'crawl-optimization-checker' => App\Services\Tools\CrawlOptimizationCheckerTool::class,
     ],
 
     // Run-API tools that fetch many URLs per call: strict `tools-api` budget
     // (5/min per IP), like ToolsApiController::HEAVY_TOOLS for legacy tools.
-    'heavy_tools' => ['llms-txt-generator', 'meta-extractor', 'expired-domain-checker'],
+    'heavy_tools' => ['llms-txt-generator', 'meta-extractor', 'expired-domain-checker', 'crawl-optimization-checker'],
 
     'queue' => [
         // Production runs on shared hosting with no long-running worker, so

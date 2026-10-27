@@ -1,0 +1,60 @@
+{
+    "headings": [
+        [
+            1,
+            "Éditeur de Texte Ligne par Ligne"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Dans quel ordre les opérations sont-elles appliquées ?"
+        ],
+        [
+            3,
+            "La suppression des doublons tient-elle compte des majuscules ?"
+        ],
+        [
+            3,
+            "Comment utiliser une expression régulière ?"
+        ],
+        [
+            3,
+            "Et pour changer la casse ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Convertisseur de Casse"
+        ],
+        [
+            3,
+            "Générateur de Variantes de Mots-Clés"
+        ],
+        [
+            3,
+            "Compteur de Mots"
+        ],
+        [
+            2,
+            "Une Stratégie de Mots-Clés à Construire ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

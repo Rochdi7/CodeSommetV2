@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Signaux E-E-A-T"
+        ],
+        [
+            2,
+            "Signaux trouvés sur la page"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Que signifie E-E-A-T ?"
+        ],
+        [
+            3,
+            "Ce score est-il celui de Google ?"
+        ],
+        [
+            3,
+            "Pourquoi l'auteur est-il « non noté » sur ma page ?"
+        ],
+        [
+            3,
+            "Comment l'outil repère-t-il les pages « À propos » ou les mentions légales ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Préparation aux Moteurs IA"
+        ],
+        [
+            3,
+            "Extracteur de Données Structurées"
+        ],
+        [
+            3,
+            "Générateur Schema LocalBusiness"
+        ],
+        [
+            2,
+            "Renforcer la Crédibilité de Votre Site ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

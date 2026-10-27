@@ -483,16 +483,21 @@
     /* Contrôles réussis et à corriger, présentés séparément. */
     function renderChecks(checks) {
         var passed = checks.filter(function (c) { return c.status === 'pass'; });
-        var failed = checks.filter(function (c) { return c.status !== 'pass'; });
+        var failed = checks.filter(function (c) { return c.status !== 'pass' && c.status !== 'info'; });
+        // `info` : contrôle non mesurable depuis le HTML (ex. CSS externe) —
+        // ni réussi ni échoué, et exclu du score côté serveur.
+        var info = checks.filter(function (c) { return c.status === 'info'; });
 
         return '<section class="csr-checks">' +
             checkColumn('Contrôles réussis', passed, 'emerald', 'check') +
-            checkColumn('À corriger', failed, 'red', 'x') + '</section>';
+            checkColumn('À corriger', failed, 'red', 'x') +
+            (info.length ? checkColumn('Non mesurable ici', info, 'slate', 'info') : '') + '</section>';
     }
 
     function checkColumn(title, items, tone, iconName) {
+        var iconCls = tone === 'emerald' ? 'csr-ico-g' : (tone === 'red' ? 'csr-ico-r' : 'csr-ico');
         var h = '<div class="csr-card"><h3 class="csr-card-title">' +
-            icon(iconName, 'csr-ico-' + (tone === 'emerald' ? 'g' : 'r')) + escapeHtml(title) +
+            icon(iconName, iconCls) + escapeHtml(title) +
             '<span class="csr-badge csr-t-' + tone + '">' + items.length + '</span></h3>';
 
         if (!items.length) {

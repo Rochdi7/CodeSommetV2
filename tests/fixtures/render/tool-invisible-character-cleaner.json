@@ -1,0 +1,68 @@
+{
+    "headings": [
+        [
+            1,
+            "Nettoyeur de Caractères Invisibles"
+        ],
+        [
+            2,
+            "Texte d'origine (caractères surlignés)"
+        ],
+        [
+            2,
+            "Caractères trouvés"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "Quels caractères sont toujours supprimés ?"
+        ],
+        [
+            3,
+            "Pourquoi c'est un problème pour le SEO ?"
+        ],
+        [
+            3,
+            "Les emojis sont-ils conservés ?"
+        ],
+        [
+            3,
+            "Cet outil rend-il un texte « indétectable » ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Compteur de Mots"
+        ],
+        [
+            3,
+            "Éditeur de Texte Ligne par Ligne"
+        ],
+        [
+            3,
+            "Aperçu SERP"
+        ],
+        [
+            2,
+            "Des Contenus à Fiabiliser à Grande Échelle ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}
