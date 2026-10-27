@@ -79,7 +79,7 @@ return [
     'text_168' => 'Contactez-Nous',
     'text_169' => 'Cliquez ici',
     'text_369' => 'Créez des chatbots intelligents, des workflows d\'automatisation, une recherche alimentée par l\'IA et des moteurs de recommandation adaptés à Seattle\'s tech-savvy audience.',
-    'text_370' => 'Lancez votre MVP en 7 à 14 jours avec révisions illimitées. Parfait pour Seattle\'s fast-paced startup ecosystem.',
+    'text_370' => 'Lancez votre MVP en 2 à 5 jours avec révisions illimitées. Parfait pour Seattle\'s fast-paced startup ecosystem.',
     'text_371' => 'Notre approche pour les plateformes SaaS et tableaux de bord',
     'text_372' => 'Les startups SaaS et entreprises tech de Seattle ont souvent besoin de remplacer des tableaux de bord vieillissants qui peinent à gérer la croissance des utilisateurs, manquent de mises à jour en temps réel et n\'offrent pas de contrôle d\'accès basé sur les rôles. Ces limitations techniques freinent l\'adoption et compliquent la relation avec les clients entreprise.',
     'text_373' => 'Nous concevons ces plateformes avec Next.js et React Server Components pour des performances optimales, intégrons des connexions WebSocket en temps réel lorsque nécessaire, construisons un RBAC avancé avec hiérarchies d\'équipe et intégration SSO, optimisons les requêtes pour réduire les temps de chargement, ajoutons le mode sombre et déployons sur une infrastructure cloud fiable avec CDN.',
@@ -195,7 +195,7 @@ return [
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
-    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre, avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Seattle comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
+    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Seattle comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',
     'faq_a4' => 'Oui. Nous intégrons vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',

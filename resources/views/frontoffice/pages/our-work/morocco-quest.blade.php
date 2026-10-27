@@ -70,7 +70,7 @@
                                 <div class="min-w-0">
                                     <p class="text-xs text-gray-500 uppercase tracking-wide">
                                         {{ __('our-work/morocco-quest.text_4') }}</p>
-                                    <p class="text-sm font-bold text-gray-900 truncate">12 semaines</p>
+                                    <p class="text-sm font-bold text-gray-900 truncate">5 jours</p>
                                 </div>
                             </div>
                         </div>

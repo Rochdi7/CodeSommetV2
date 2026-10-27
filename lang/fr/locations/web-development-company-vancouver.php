@@ -77,7 +77,7 @@ return [
     'text_165' => 'Abordable - Milieu de gamme',
     'text_166' => 'Cliquez ici',
     'text_366' => 'Créez des chatbots intelligents, des workflows d\'automatisation, une recherche alimentée par l\'IA et des moteurs de recommandation adaptés à Vancouver\'s tech-savvy audience.',
-    'text_367' => 'Lancez votre MVP en 7 à 14 jours avec révisions illimitées. Parfait pour Vancouver\'s fast-paced startup ecosystem.',
+    'text_367' => 'Lancez votre MVP en 2 à 5 jours avec révisions illimitées. Parfait pour Vancouver\'s fast-paced startup ecosystem.',
     'text_368' => 'Plateformes web et tableaux de bord sur mesure pour les entreprises de Vancouver',
     'text_369' => 'Les entreprises de Vancouver ont besoin de sites web rapides et de tableaux de bord capables de suivre l\'évolution de leurs opérations, sans dépendre d\'outils génériques mal adaptés à leur secteur.',
     'text_370' => 'Nous concevons des plateformes sur mesure en Next.js et React, avec portails utilisateurs, tableaux de bord analytiques, intégration des paiements et automatisations propulsées par l\'IA, livrées à distance depuis le Maroc en 2 à 5 jours.',
@@ -196,7 +196,7 @@ return [
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
-    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre, avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Vancouver comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
+    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Vancouver comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',
     'faq_a4' => 'Oui. Nous intégrons vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',

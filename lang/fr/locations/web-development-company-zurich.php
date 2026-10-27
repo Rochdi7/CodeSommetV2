@@ -103,7 +103,7 @@ return [
     'ml_1093' => 'Spécialistes Dashboard & SaaS',
     'ml_1094' => 'Concevez des portails utilisateurs, des panneaux d\'administration, des tableaux de bord analytiques et des plateformes SaaS qui évoluent avec les opérations de startups et de fintech de Zurich.',
     'ml_1095' => 'Axé Génération de Prospects',
-    'ml_1096' => 'Lancez votre MVP en 7 à 14 jours avec révisions illimitées. Parfait pour l\'écosystème florissant de startups et d\'innovation de Zurich.',
+    'ml_1096' => 'Lancez votre MVP en 2 à 5 jours avec révisions illimitées. Parfait pour l\'écosystème florissant de startups et d\'innovation de Zurich.',
     'ml_1097' => 'Spécialistes Sectoriels',
     'ml_1098' => '. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
     'ml_1099' => 'Plateformes financières sécurisées avec traitement des paiements, conformité et fonctionnalités réglementaires',
@@ -191,7 +191,7 @@ return [
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
-    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre, avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Zurich comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
+    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Zurich comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',
     'faq_a4' => 'Oui. Nous intégrons vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',

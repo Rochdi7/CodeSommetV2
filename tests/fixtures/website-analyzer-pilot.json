@@ -1,0 +1,192 @@
+{
+    "score": 90,
+    "grade": "A",
+    "passed": true,
+    "stats": {
+        "score": "90/100",
+        "pointsEarned": "99/110",
+        "checksRun": 17,
+        "passed": 14,
+        "warnings": 3,
+        "failed": 0,
+        "internalLinks": 1,
+        "externalLinks": 1,
+        "wordCount": 16,
+        "schemaTypes": 1,
+        "inlineSvg": 0,
+        "images": 2
+    },
+    "issues": [
+        {
+            "type": "warning",
+            "message": "1 rupture(s) de niveau détectée(s)"
+        },
+        {
+            "type": "warning",
+            "message": "1/2 images sans texte alternatif"
+        },
+        {
+            "type": "warning",
+            "message": "1 script(s) sans defer/async"
+        }
+    ],
+    "recommendations": [
+        {
+            "title": "Texte alternatif des images",
+            "why": "L'attribut alt décrit l'image aux lecteurs d'écran et aux moteurs, qui ne peuvent pas interpréter le visuel.",
+            "impact": "Conditionne l'accessibilité (WCAG 1.1.1) et le référencement dans Google Images.",
+            "priority": "high",
+            "difficulty": "facile",
+            "fix": "Décrivez la fonction de l'image. Pour une image purement décorative, utilisez alt=\"\" — c'est la déclaration correcte, pas une omission.",
+            "badExample": "<img src=\"equipe.jpg\">",
+            "goodExample": "<img src=\"equipe.jpg\" alt=\"L'équipe CodeSommet réunie en atelier\"> et <img src=\"separateur.png\" alt=\"\">",
+            "docs": "https://www.w3.org/WAI/tutorials/images/",
+            "check": "Image Alt Text",
+            "issue": "1/2 images sans texte alternatif",
+            "severity": "warning"
+        },
+        {
+            "check": "Hiérarchie des titres",
+            "title": "Hiérarchie des titres",
+            "issue": "1 rupture(s) de niveau détectée(s)",
+            "priority": "medium",
+            "severity": "warning"
+        },
+        {
+            "check": "JavaScript bloquant",
+            "title": "JavaScript bloquant",
+            "issue": "1 script(s) sans defer/async",
+            "priority": "medium",
+            "severity": "warning"
+        }
+    ],
+    "checks": [
+        {
+            "name": "Title Tag",
+            "status": "pass",
+            "message": "Longueur optimale (43 caractères)",
+            "points": 10,
+            "max": 10
+        },
+        {
+            "name": "Meta Description",
+            "status": "pass",
+            "message": "Longueur optimale (135 caractères)",
+            "points": 10,
+            "max": 10
+        },
+        {
+            "name": "H1 Tag",
+            "status": "pass",
+            "message": "Un seul H1, comme attendu",
+            "points": 10,
+            "max": 10
+        },
+        {
+            "name": "Hiérarchie des titres",
+            "status": "warning",
+            "message": "1 rupture(s) de niveau détectée(s)",
+            "points": 2,
+            "max": 5
+        },
+        {
+            "name": "Open Graph Tags",
+            "status": "pass",
+            "message": "Balises Open Graph présentes",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Canonical Tag",
+            "status": "pass",
+            "message": "URL canonique définie",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Mobile Viewport",
+            "status": "pass",
+            "message": "Viewport correctement configuré",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Image Alt Text",
+            "status": "warning",
+            "message": "1/2 images sans texte alternatif",
+            "points": 5,
+            "max": 10
+        },
+        {
+            "name": "HTTPS",
+            "status": "pass",
+            "message": "Le site utilise HTTPS",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Page Size",
+            "status": "pass",
+            "message": "1 Ko de HTML",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Données structurées",
+            "status": "pass",
+            "message": "1 type(s) Schema.org : Organization",
+            "points": 10,
+            "max": 10
+        },
+        {
+            "name": "Langue",
+            "status": "pass",
+            "message": "Langue déclarée : fr",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Indexabilité",
+            "status": "pass",
+            "message": "La page est indexable",
+            "points": 10,
+            "max": 10
+        },
+        {
+            "name": "Robots.txt",
+            "status": "pass",
+            "message": "robots.txt présent",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "Sitemap",
+            "status": "pass",
+            "message": "1 URL dans le sitemap",
+            "points": 5,
+            "max": 5
+        },
+        {
+            "name": "JavaScript bloquant",
+            "status": "warning",
+            "message": "1 script(s) sans defer/async",
+            "points": 2,
+            "max": 5
+        },
+        {
+            "name": "Contenu",
+            "status": "pass",
+            "message": "16 mots, ratio texte/HTML de 11.8 %",
+            "points": 0,
+            "max": 0
+        }
+    ],
+    "confidence": 100,
+    "limitations": [],
+    "scoringMethod": "Pourcentage des points réellement atteignables. Résultat reproductible pour un même contenu.",
+    "schemaTypes": [
+        "Organization"
+    ],
+    "message": "Bonne santé générale",
+    "analyzedUrl": "https://8.8.8.8/"
+}

@@ -798,7 +798,7 @@
                                 class="lucide lucide-clock w-4 h-4 text-[#00AEEF]" aria-hidden="true">
                                 <path d="M12 6v6l4 2"></path>
                                 <circle cx="12" cy="12" r="10"></circle>
-                            </svg><span>14 days</span></div>
+                            </svg><span>5 jours</span></div>
                     </div>
                 </div>
                 <div class="relative w-full max-w-5xl mx-auto mb-12">

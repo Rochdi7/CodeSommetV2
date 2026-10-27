@@ -255,6 +255,35 @@
         if (data.path !== undefined) ev.p = clean(data.path, 512);
         if (data.meta && typeof data.meta === 'object') ev.m = data.meta;
         enqueue(ev);
+        forward(ev);
+    }
+
+    /* ── Forward to GA4 / GTM / Meta Pixel / Clarity (admin « Intégrations & tags »).
+          window.csTags is set by frontoffice/partials/tracking-tags before this
+          deferred script runs; absent or disabled → nothing is forwarded. ── */
+    var CONTACT_KINDS = { cal: 1, whatsapp: 1, phone: 1, email: 1 };
+
+    function forward(ev) {
+        var tags = window.csTags;
+        if (!tags || tags.disabled || !tags.forward) return;
+        var name = ev.t === 'click' ? 'cs_click'
+            : ev.t === 'form_submit' ? 'cs_form_submit'
+            : ev.t === 'tool_use' ? 'cs_tool_use'
+            : null;
+        if (!name) return;
+        var params = { label: ev.l, kind: ev.k, section: ev.sec, link_url: ev.h, page_path: ev.p || currentPath() };
+        try {
+            if (tags.ga4 && typeof window.gtag === 'function') window.gtag('event', name, params);
+            if (tags.gtm && window.dataLayer) {
+                var push = { event: name };
+                for (var key in params) if (params[key] !== undefined) push['cs_' + key] = params[key];
+                window.dataLayer.push(push);
+            }
+            if (tags.clarity && typeof window.clarity === 'function') window.clarity('event', name + '_' + (ev.k || 'button'));
+            if (tags.pixel && typeof window.fbq === 'function' && ev.t === 'click' && CONTACT_KINDS[ev.k]) {
+                window.fbq('track', 'Contact', { content_name: ev.l, content_category: ev.k });
+            }
+        } catch (e) { /* third-party tags must never break the page */ }
     }
 
     window.csTrack = track;

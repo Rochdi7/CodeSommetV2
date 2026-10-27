@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement Web à Marrakech, Maroc | CodeSommet',
+    'title' => 'Création Site Web Marrakech — Agence Web | CodeSommet',
     'meta_description' => 'Création de sites web pour les entreprises de Marrakech : hôtellerie, tourisme et services. Développement sur mesure, SEO et maintenance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Développement Web à Marrakech, Maroc | CodeSommet',
+    'og_title' => 'Création Site Web Marrakech — Agence Web | CodeSommet',
     'og_description' => 'Création de sites web pour les entreprises de Marrakech : hôtellerie, tourisme et services. Développement sur mesure, SEO et maintenance par CodeSommet.',
     'twitter_description' => 'Création de sites web pour les entreprises de Marrakech : développement sur mesure, SEO et maintenance par CodeSommet.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
@@ -186,7 +186,7 @@ return [
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Marrakech et vous gardez une visibilité complète sur l\'avancement à chaque étape.',
     'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
     'faq_a4' => 'Nous concevons des sites conformes aux bonnes pratiques de protection des données : consentement aux cookies, politique de confidentialité, sécurisation des formulaires et des données. Pour les exigences propres à Maroc ou à votre secteur, nous adaptons les mentions et les fonctionnalités avec vous lors du cadrage.',
-    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
+    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Pour les projets urgents, notre formule express permet une mise en ligne en 2 jours seulement. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
     'faq_a6' => 'Oui. Nous vous conseillons sur le choix du nom de domaine (.ma ou .com selon votre cible), nous vous guidons pour l\'enregistrement auprès d\'un registrar et nous configurons le DNS, le certificat SSL et les redirections pour que le site soit prêt dès la mise en ligne.',
     'faq_q1' => 'Avez-vous un bureau physique à Marrakech ?',
     'faq_q2' => 'Pouvez-vous travailler avec les entreprises de Marrakech à distance ?',

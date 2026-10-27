@@ -264,17 +264,7 @@
                         </div>
                         <div class="relative z-20 p-5 md:p-6 flex flex-col h-full justify-end text-white">
                             <div>
-                                <div class="flex items-start gap-3 mb-4"><span class="text-3xl pt-0.5" role="img"
-                                        aria-label="Drapeau du Maroc">&#x1F1F2;&#x1F1E6;</span>
-                                    <div>
-                                        <h3 class="text-lg md:text-xl font-semibold mb-1.5 text-white drop-shadow-lg">
-                                            {{ __('contact.text_17') }}</h3>
-                                        <address class="not-italic text-gray-200 text-xs md:text-sm leading-snug"><span
-                                                class="block">Maroc</span><span
-                                                class="block">{{ __('contact.text_18') }}</span></address>
-                                    </div>
-                                </div>
-                                <div class="mt-4 pt-4 border-t border-white/20 space-y-2"><a
+                                <div class="space-y-2"><a
                                         href="mailto:codesommet@gmail.com"
                                         class="flex items-center gap-2 text-xs text-gray-300 hover:text-white transition-colors"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="14" height="14"

@@ -19,6 +19,7 @@
     <meta name="keywords" content="@yield('meta_keywords', 'développement web Maroc, agence web IA, agence de développement Next.js, développement de tableaux de bord, développement SaaS')" />
     <meta name="robots" content="@yield('robots', 'index, follow')" />
     <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+    @include('frontoffice.partials.tracking-head')
 
     {{-- Open Graph --}}
     <meta property="og:title" content="@yield('og_title', 'CodeSommet - Agence Digitale | Développement Web, Design & SEO')" />
@@ -201,43 +202,9 @@
         })();
     </script>
 
-    {{-- Google Analytics — le stub dataLayer (google-analytics.js, defer) met la
-         page vue en file dès DOMContentLoaded ; la librairie gtag (159 KB, ~67 KB
-         inutilisés) se charge après window.load + idle, avec un filet à 6 s pour
-         les sessions écourtées. Rien n'est perdu : gtag rejoue la file au chargement. --}}
-    <script src="{{ asset_v('scripts/google-analytics.js') }}" defer></script>
-    <script>
-        (function() {
-            function loadGtag() {
-                if (window.__gtagLoaded) return;
-                window.__gtagLoaded = true;
-                var s = document.createElement('script');
-                s.async = true;
-                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3S8MG2YJ1K';
-                document.head.appendChild(s);
-            }
-            // gtag/js = 518 KB, ~2,1 s de thread principal mobile (Lighthouse
-            // third-party-summary). Chargé à la première interaction (scroll,
-            // toucher, clavier, pointeur) ou, sans interaction, après
-            // window.load + idle (délai 8 s, filet absolu 12 s) : hors trace
-            // Lighthouse, mais aucune session de plus de 12 s n'est perdue et
-            // la file dataLayer est rejouée au chargement.
-            var EVENTS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
-            function onInteract() {
-                EVENTS.forEach(function(ev) { window.removeEventListener(ev, onInteract); });
-                loadGtag();
-            }
-            EVENTS.forEach(function(ev) { window.addEventListener(ev, onInteract, { passive: true }); });
-            window.addEventListener('load', function() {
-                if ('requestIdleCallback' in window) {
-                    requestIdleCallback(function() { setTimeout(loadGtag, 8000); }, { timeout: 4000 });
-                } else {
-                    setTimeout(loadGtag, 8000);
-                }
-            });
-            setTimeout(loadGtag, 12000);
-        })();
-    </script>
+    {{-- Google Analytics 4, Tag Manager, Meta Pixel, Clarity — IDs et activation
+         gérés depuis l'admin « Intégrations & tags » (chargement différé, voir le partial). --}}
+    @include('frontoffice.partials.tracking-tags')
 
     {{-- Intégration Cal.com --}}
     @stack('scripts')

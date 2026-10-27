@@ -1,0 +1,64 @@
+{
+    "headings": [
+        [
+            1,
+            "Vérificateur de Domaines Expirés"
+        ],
+        [
+            2,
+            "Résultats"
+        ],
+        [
+            2,
+            "Comment Utiliser Cet Outil"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
+        ],
+        [
+            3,
+            "D'où viennent les informations ?"
+        ],
+        [
+            3,
+            "Quand un domaine est-il considéré comme disponible ?"
+        ],
+        [
+            3,
+            "Pourquoi certaines extensions sont-elles « à vérifier » ?"
+        ],
+        [
+            3,
+            "Un domaine expiré est-il immédiatement disponible ?"
+        ],
+        [
+            2,
+            "Outils Connexes Qui Pourraient Vous Intéresser"
+        ],
+        [
+            3,
+            "Santé du Domaine"
+        ],
+        [
+            3,
+            "Vérificateur SSL"
+        ],
+        [
+            3,
+            "Autorité de Domaine"
+        ],
+        [
+            2,
+            "Un Nouveau Nom de Domaine pour Votre Projet ?"
+        ]
+    ],
+    "links": {
+        "internal": 60,
+        "external": 5,
+        "fragment": 1,
+        "other": 0
+    },
+    "fragment_ids": [],
+    "parser_errors": []
+}

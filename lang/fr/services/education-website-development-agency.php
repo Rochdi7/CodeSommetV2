@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Sites Web Éducatifs & E-Learning | CodeSommet',
-    'meta_description' => 'Développement de sites web éducatifs : portails d\'études à l\'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Contactez-nous pour les tarifs.',
+    'meta_description' => 'Sites web éducatifs sur mesure : portails d\'études à l\'étranger, LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Devis gratuit.',
     'meta_keywords' => 'développement site web éducatif,site études à l\'étranger,développement portail étudiant,CRM éducation,plateforme de cours en ligne,site école de langues',
     'og_title' => 'Développement de Sites Web Éducatifs & E-Learning | CodeSommet',
     'og_description' => 'Développement de sites web éducatifs : portails d\'études à l\'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Contactez-nous pour les tarifs.',
@@ -261,7 +261,7 @@ return [
     'qb_2146' => '"Un travail sérieux et une équipe vraiment à l\'écoute. Le résultat correspond à ce que nous avions imaginé."',
     'qb_2147' => '"Une équipe réactive et attentive à nos besoins. Le site reflète parfaitement notre activité."',
     'qb_2148' => '"Excellent accompagnement et un vrai souci du détail. Nous sommes très satisfaits du résultat."',
-    'faq_a1' => 'Pour un site vitrine d\'école ou d\'agence d\'études à l\'étranger avec pages programmes, formulaire de contact et design premium, nous livrons généralement en 2-5 jours. Dès que le projet inclut un portail de candidature, un tableau de bord étudiant ou une intégration CRM, le délai dépend de la portée exacte et nous le confirmons lors de l\'appel découverte.',
+    'faq_a1' => 'Pour un site vitrine d\'école ou d\'agence d\'études à l\'étranger avec pages programmes, formulaire de contact et design premium, nous livrons généralement en 2-5 jours (2 jours seulement avec notre formule express). Dès que le projet inclut un portail de candidature, un tableau de bord étudiant ou une intégration CRM, le délai dépend de la portée exacte et nous le confirmons lors de l\'appel découverte.',
     'faq_a2' => 'Oui, la rédaction professionnelle fait partie de notre offre de développement de sites web. Nous rédigeons les pages programmes, les fiches d\'admission, les pages par pays de destination et le contenu d\'information pour les parents et les étudiants. Vous relisez et validez chaque texte avant la mise en ligne.',
     'faq_a3' => 'Oui. Le chatbot est formé sur vos cours, vos conditions d\'admission et vos exigences de visa, et il répond aux étudiants dans plusieurs langues, y compris les langues RTL. Il pré-qualifie les demandes et transmet les leads prêts à postuler à vos conseillers.',
     'faq_a4' => 'Oui, nous connectons le site à votre CRM afin que chaque demande, formulaire ou conversation chatbot soit enregistrée dans votre pipeline. Si vous n\'avez pas encore de CRM, nous pouvons intégrer un système de gestion des leads avec notation et suivis automatisés directement dans la plateforme. Les détails de la connexion sont définis pendant la phase de découverte.',

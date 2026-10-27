@@ -955,6 +955,23 @@
     <script src="{{ asset_v('vendor/toastr/toastr-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/toastr-init.js') }}"></script>
 
+    {{-- ?projectType=… (envoyé par les choix du pop-up d'offre) présélectionne
+         le type de projet. Seules les valeurs existantes du <select> sont
+         acceptées ; l'événement change resynchronise le custom-select. --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var wanted = new URLSearchParams(window.location.search).get('projectType');
+            var select = document.getElementById('projectType');
+            if (!wanted || !select) return;
+            for (var i = 0; i < select.options.length; i++) {
+                if (select.options[i].value && select.options[i].value === wanted) {
+                    select.selectedIndex = i;
+                    select.dispatchEvent(new Event('change', { bubbles: true }));
+                    break;
+                }
+            }
+        });
+    </script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/custom-select.js') }}" defer></script>
 

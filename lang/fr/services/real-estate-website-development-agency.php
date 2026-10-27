@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Sites Web Immobiliers & Portails | CodeSommet',
-    'meta_description' => 'Sites web immobiliers sur mesure avec recherche avancée de biens, visites virtuelles, tableaux de bord agents et gestion des leads. Lancez votre plateforme immobilière en 2-5 jours.',
+    'meta_description' => 'Sites web immobiliers sur mesure : recherche avancée de biens, visites virtuelles, tableau de bord agents et gestion des leads. Devis gratuit.',
     'meta_keywords' => 'développement site web immobilier,développement portail immobilier,plateforme visite virtuelle,tableau de bord agent,intégration MLS,CRM immobilier,site annonces immobilières',
     'og_title' => 'Développement de Sites Web Immobiliers & Portails | CodeSommet',
     'og_description' => 'Sites web immobiliers sur mesure avec recherche avancée de biens, visites virtuelles, tableaux de bord agents et gestion des leads. Lancez votre plateforme immobilière en 2-5 jours.',
@@ -224,7 +224,7 @@ return [
     'ml_1011' => 'Expérience Mobile',
     'ml_1012' => 'Entièrement responsive avec expérience mobile similaire au natif',
     'ml_1013' => 'Application mobile séparée requise pour good UX',
-    'ml_1014' => '2-5 jours pour le MVP, 2-3 semaines pour la plateforme complète',
+    'ml_1014' => '2-5 jours (formule express en 2 jours possible)',
     'ml_1015' => '3-6 mois avec plusieurs cycles de révision',
     'ml_1016' => '6-12 mois avec recrutement, formation et développement',
     'ml_1017' => 'qui ont obtenu des résultats remarquables avec CodeSommet.',

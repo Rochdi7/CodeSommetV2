@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnalysisRunController;
 use App\Http\Controllers\ToolsApiController;
 use App\Http\Controllers\TrackingController;
 use Illuminate\Support\Facades\Route;
@@ -53,6 +54,24 @@ Route::post('/crawl-visualizer', [\App\Http\Controllers\Tools\CrawlVisualizerCon
 Route::post('/tools-v2/{slug}', [\App\Http\Controllers\Tools\ToolsV2ApiController::class, 'handle'])
     ->where('slug', '[a-z0-9-]+')
     ->middleware('throttle:30,1');
+
+/*
+ * Versioned analysis-run API (Phase A, docs/reverse-engineering/seosignalx/
+ * phase-a-api-contract.md). Only tools whitelisted in config/analysis.php
+ * are accepted. Starting a run shares the `tools-api` budget with the legacy
+ * endpoint above (same limiter, same keys — one counter, not two); polling
+ * has its own bucket.
+ */
+Route::prefix('v2')->group(function () {
+    Route::post('/tools/{slug}/runs', [AnalysisRunController::class, 'store'])
+        ->where('slug', '[a-z0-9-]+')
+        ->middleware('throttle:tools-api')
+        ->name('analysis-runs.store');
+    Route::get('/runs/{uuid}', [AnalysisRunController::class, 'show'])
+        ->whereUuid('uuid')
+        ->middleware('throttle:analysis-runs-read')
+        ->name('analysis-runs.show');
+});
 
 /*
  * First-party analytics beacon (public/js/analytics.js → TrackingController).

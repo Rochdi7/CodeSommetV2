@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Outils SEO & IA Gratuits en Ligne : Analyse, Audit, Générateurs | CodeSommet',
+    'title' => '40+ Outils SEO & IA Gratuits en Ligne | CodeSommet',
     'meta_description' => 'Plus de 40 outils SEO et IA gratuits : audit de site, vérificateur de liens brisés, générateurs de schémas, minificateurs, analyseurs de performance. Sans inscription.',
     'meta_keywords' => 'outils SEO gratuits,audit SEO en ligne,vérificateur liens brisés,générateur schema,analyseur site web,outils webmaster gratuits',
     'og_title' => 'Outils SEO & IA Gratuits en Ligne | CodeSommet',

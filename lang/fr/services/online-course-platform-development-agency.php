@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Plateformes de Cours en Ligne | CodeSommet',
-    'meta_description' => 'Développement de plateformes de cours en ligne pour coachs, créateurs et éducateurs : hébergement vidéo, paiements intégrés et engagement étudiant. Une alternative sur mesure à Teachable. Contactez-nous pour les tarifs.',
+    'meta_description' => 'Plateformes de cours en ligne sur mesure pour coachs, créateurs et formateurs : hébergement vidéo, paiements intégrés et engagement étudiant. Devis gratuit.',
     'meta_keywords' => 'développement plateforme cours en ligne,développement site de cours,alternative teachable,alternative kajabi,plateforme de cours sur mesure,site créateur de cours,plateforme apprentissage en ligne,développement site d\'adhésion',
     'og_title' => 'Développement de Plateformes de Cours en Ligne | CodeSommet',
     'og_description' => 'Développement de plateformes de cours en ligne pour coachs, créateurs et éducateurs : hébergement vidéo, paiements intégrés et engagement étudiant. Une alternative sur mesure à Teachable. Contactez-nous pour les tarifs.',

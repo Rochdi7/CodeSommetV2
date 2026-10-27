@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ToolsTrackController;
 use App\Http\Controllers\Admin\AnalyticsController;
+use App\Http\Controllers\Admin\IntegrationsController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\FinanceController;
@@ -165,6 +166,10 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     Route::get('/analytics/visitors/{visitorId}', [AnalyticsController::class, 'visitor'])->where('visitorId', '[a-f0-9]{16,64}')->name('analytics.visitor');
     Route::get('/analytics/leads', [AnalyticsController::class, 'leads'])->name('analytics.leads');
     Route::get('/analytics/export', [AnalyticsController::class, 'export'])->name('analytics.export');
+
+    // Google Analytics / Tag Manager / Search Console / Meta Pixel / Clarity
+    Route::get('/integrations', [IntegrationsController::class, 'index'])->name('integrations.index');
+    Route::put('/integrations', [IntegrationsController::class, 'update'])->name('integrations.update');
 
     // Projects Management
     Route::resource('projects', ProjectController::class);

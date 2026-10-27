@@ -37,12 +37,15 @@ return [
     */
     'csp' => env('CSP', implode('; ', [
         "default-src 'self'",
-        "script-src 'self' 'unsafe-inline' https://app.cal.com https://app.cal.eu https://cal.com https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com",
+        // Admin « Intégrations & tags » also loads Meta Pixel (connect.facebook.net)
+        // and Microsoft Clarity; GA4 beacons go to regional hosts. Explicit hosts
+        // only — no wildcards (HomepageQualityTest).
+        "script-src 'self' 'unsafe-inline' https://app.cal.com https://app.cal.eu https://cal.com https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://www.clarity.ms https://scripts.clarity.ms",
         "style-src 'self' 'unsafe-inline'",
         "img-src 'self' data: https:",
         "font-src 'self' data:",
-        "connect-src 'self' https://app.cal.com https://app.cal.eu https://www.google-analytics.com https://www.googletagmanager.com",
-        "frame-src https://app.cal.com https://app.cal.eu https://cal.com https://www.google.com https://recaptcha.google.com",
+        "connect-src 'self' https://app.cal.com https://app.cal.eu https://www.google-analytics.com https://region1.google-analytics.com https://region1.analytics.google.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://www.facebook.com https://connect.facebook.net https://www.clarity.ms https://c.clarity.ms https://d.clarity.ms https://e.clarity.ms https://f.clarity.ms https://g.clarity.ms https://h.clarity.ms https://i.clarity.ms https://j.clarity.ms https://k.clarity.ms https://l.clarity.ms https://m.clarity.ms https://n.clarity.ms https://o.clarity.ms https://p.clarity.ms https://q.clarity.ms https://r.clarity.ms https://s.clarity.ms https://t.clarity.ms https://u.clarity.ms https://v.clarity.ms https://w.clarity.ms https://x.clarity.ms https://y.clarity.ms https://z.clarity.ms",
+        "frame-src https://app.cal.com https://app.cal.eu https://cal.com https://www.google.com https://recaptcha.google.com https://www.googletagmanager.com",
         "object-src 'none'",
         "base-uri 'self'",
         "form-action 'self'",

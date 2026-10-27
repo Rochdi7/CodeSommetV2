@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Nos Projets & Études de Cas : E-commerce, SaaS, Éducation | CodeSommet',
+    'title' => 'Portfolio & Études de Cas — Agence Web Maroc | CodeSommet',
     'meta_description' => 'Découvrez notre portfolio : boutiques e-commerce, plateformes SaaS multi-tenant, sites de voyage et solutions métier sur mesure, avec études de cas détaillées.',
     'meta_keywords' => 'portfolio, études de cas, projets de développement web, développement SaaS, e-commerce Shopify, application Laravel, plateformes éducatives, sites web santé',
     'og_title' => 'Nos Projets - CodeSommet Portfolio',

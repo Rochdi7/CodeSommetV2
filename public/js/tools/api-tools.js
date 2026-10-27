@@ -33,6 +33,11 @@
         'og-preview-generator': { title: 'OG Preview', action: 'Preview', actionText: 'aperçus générés', inputLabel: 'URL du site', inputPlaceholder: 'https://example.com' }
     };
 
+    /* Outils migrés vers l'API d'exécution versionnée (Phase A) :
+     * POST /api/v2/tools/{slug}/runs puis, si l'analyse est mise en file,
+     * GET /api/v2/runs/{id}. Les autres outils gardent l'ancien appel. */
+    var RUN_API_TOOLS = { 'website-analyzer': true };
+
     CodeSommetTools.onReady(function () {
         // Detect which tool page we're on
         var slug = detectToolSlug();
@@ -47,7 +52,23 @@
         if (!actionBtn) return;
         actionBtn.id = 'tool-action-btn';
 
+        var useRunApi = RUN_API_TOOLS[slug] === true;
+        var inFlight = false;
+
+        // Pilote : le bouton reflète la validité de la saisie.
+        if (useRunApi && urlInput) {
+            var syncValidity = function () {
+                if (inFlight) return;
+                var empty = urlInput.value.trim() === '';
+                actionBtn.disabled = empty;
+                actionBtn.setAttribute('aria-disabled', empty ? 'true' : 'false');
+            };
+            urlInput.addEventListener('input', syncValidity);
+            syncValidity();
+        }
+
         actionBtn.addEventListener('click', function () {
+            if (inFlight) return; // pas de double soumission
             CodeSommetTools.hideError();
             var url = urlInput ? urlInput.value.trim() : '';
             if (!url) { CodeSommetTools.showError('Veuillez saisir : ' + config.inputLabel); return; }
@@ -56,26 +77,22 @@
                 url = 'https://' + url;
             }
 
+            inFlight = true;
             CodeSommetTools.setLoading(true);
 
-            fetch('/api/tools/' + slug, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': getCSRFToken(), 'Accept': 'application/json' },
-                body: JSON.stringify({ url: url, domain: url.replace(/^https?:\/\//, '').replace(/\/.*$/, '') })
-            })
-            .then(function (res) {
-                return res.text().then(function (text) {
-                    var json = parseJsonSafe(text);
-                    if (!res.ok) throw new Error(json.error || json.message || 'L\'analyse a échoué');
-                    return json;
-                });
-            })
+            var request = useRunApi ? runViaApi(slug, url) : legacyRequest(slug, url);
+
+            request
             .then(function (data) {
+                inFlight = false;
+                setRunStatus('');
                 CodeSommetTools.setLoading(false);
                 CodeSommetTools.incrementUsage(slug, url);
                 showGenericResult(data, slug, config);
             })
             .catch(function (err) {
+                inFlight = false;
+                setRunStatus('');
                 CodeSommetTools.setLoading(false);
                 CodeSommetTools.showError(err.message || 'Analyse impossible. Vérifiez l\'URL et réessayez.');
             });
@@ -90,6 +107,105 @@
 
         CodeSommetTools.initUsageCounter(slug, config.actionText);
     });
+
+    /* Ancien contrat : POST /api/tools/{slug}, résultat direct. */
+    function legacyRequest(slug, url) {
+        return fetch('/api/tools/' + slug, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': getCSRFToken(), 'Accept': 'application/json' },
+            body: JSON.stringify({ url: url, domain: url.replace(/^https?:\/\//, '').replace(/\/.*$/, '') })
+        })
+        .then(function (res) {
+            return res.text().then(function (text) {
+                var json = parseJsonSafe(text);
+                if (!res.ok) throw new Error(json.error || json.message || 'L\'analyse a échoué');
+                return json;
+            });
+        });
+    }
+
+    /* API d'exécution : 201 = résultat immédiat, 202 = analyse en file. */
+    function runViaApi(slug, url) {
+        return fetch('/api/v2/tools/' + slug + '/runs', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': getCSRFToken(), 'Accept': 'application/json' },
+            body: JSON.stringify({ url: url })
+        })
+        .then(readJson)
+        .then(function (r) {
+            var body = r.json || {};
+            if (r.status === 201 && body.result) return body.result;
+            if (r.status === 202 && body.run) {
+                setRunStatus('Analyse en file d\'attente…');
+                return pollRun(body.run.id, body.accessToken, 0);
+            }
+            // Outil retiré de la liste des analyses persistées, ou API
+            // d'exécution indisponible (ex. migration pas encore jouée) :
+            // ancien appel. Un échec d'analyse réel (enveloppe `run`) reste
+            // affiché tel quel.
+            if ((r.status === 404 && body.error && body.error.code === 'unknown_tool') ||
+                (r.status >= 500 && !body.run && !(body.error && body.error.code))) {
+                return legacyRequest(slug, url);
+            }
+            throw new Error(runErrorMessage(body));
+        });
+    }
+
+    var POLL_MAX_ATTEMPTS = 90; // ≈ 3 min, puis le serveur déclare l'analyse expirée
+
+    function pollRun(id, token, attempt) {
+        if (attempt >= POLL_MAX_ATTEMPTS) {
+            return Promise.reject(new Error('L\'analyse prend plus de temps que prévu. Réessayez dans quelques minutes.'));
+        }
+        return new Promise(function (resolve) { setTimeout(resolve, attempt < 5 ? 1000 : 2000); })
+            .then(function () {
+                return fetch('/api/v2/runs/' + encodeURIComponent(id), {
+                    headers: { 'Accept': 'application/json', 'X-Run-Token': token }
+                });
+            })
+            .then(readJson)
+            .then(function (r) {
+                var body = r.json || {};
+                var run = body.run || {};
+                if (r.status === 200 && run.status === 'completed') return body.result;
+                if (r.status !== 200 || run.status === 'failed') throw new Error(runErrorMessage(body));
+                // Statut honnête : l'étape réelle, et le pourcentage seulement
+                // s'il est mesuré par l'outil.
+                var label = run.status === 'running' ? (run.stage || 'Analyse en cours…') : 'Analyse en file d\'attente…';
+                if (typeof run.progress === 'number') label += ' (' + run.progress + ' %)';
+                setRunStatus(label);
+                return pollRun(id, token, attempt + 1);
+            });
+    }
+
+    function readJson(res) {
+        return res.text().then(function (text) { return { status: res.status, json: parseJsonSafe(text) }; });
+    }
+
+    function runErrorMessage(body) {
+        var e = body && body.error;
+        if (e && typeof e === 'object' && e.message) return e.message;
+        if (typeof e === 'string') return e;
+        return 'L\'analyse a échoué. Vérifiez l\'URL et réessayez.';
+    }
+
+    /* Région « status » lue par les lecteurs d'écran pendant une analyse en file. */
+    function setRunStatus(text) {
+        var el = document.getElementById('tool-run-status');
+        if (!el) {
+            if (!text) return;
+            var btn = document.getElementById('tool-action-btn');
+            if (!btn || !btn.parentElement) return;
+            el = document.createElement('p');
+            el.id = 'tool-run-status';
+            el.className = 'text-sm text-gray-600 mt-2';
+            el.setAttribute('role', 'status');
+            el.setAttribute('aria-live', 'polite');
+            btn.parentElement.appendChild(el);
+        }
+        el.textContent = text;
+        el.hidden = !text;
+    }
 
     function detectToolSlug() {
         var path = window.location.pathname;

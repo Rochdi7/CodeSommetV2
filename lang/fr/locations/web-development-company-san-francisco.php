@@ -79,7 +79,7 @@ return [
     'text_167' => 'Contactez-Nous',
     'text_168' => 'Cliquez ici',
     'text_368' => 'Créez des chatbots intelligents, des workflows d\'automatisation, une recherche alimentée par l\'IA et des moteurs de recommandation adaptés à San Francisco\'s tech-savvy audience.',
-    'text_369' => 'Lancez votre MVP en 7 à 14 jours avec révisions illimitées. Parfait pour San Francisco\'s fast-paced startup ecosystem.',
+    'text_369' => 'Lancez votre MVP en 2 à 5 jours avec révisions illimitées. Parfait pour San Francisco\'s fast-paced startup ecosystem.',
     'text_370' => 'Les startups SaaS de San Francisco nous sollicitent souvent lorsque leur MVP initial peine à évoluer : requêtes de base de données lentes, tableau de bord instable sous forte charge, flux d\'intégration confus pour les nouveaux utilisateurs, et absence d\'analytique fiable pour piloter la croissance. Avant une levée de fonds, disposer d\'une infrastructure solide et démontrable devient une priorité.',
     'text_371' => 'Nous avons reconstruit l\'ensemble de la plateforme avec Next.js 15 pour des performances optimales, implémenté PostgreSQL avec des stratégies d\'indexation et de mise en cache, créé des fonctionnalités collaboratives en temps réel avec WebSockets, ajouté un tableau de bord analytique complet avec intégration Mixpanel, repensé le flux d\'intégration et déployé sur Vercel Edge Network.',
     'text_373' => 'Intégration de fonctionnalités propulsées par l\'IA',
@@ -197,7 +197,7 @@ return [
                     </div>
                 </div>
                 <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats concrets d',
-    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre, avec des révisions illimitées. Notre offre s\'adresse aux entreprises de San Francisco comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
+    'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de San Francisco comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',
     'faq_a4' => 'Oui. Nous intégrons vos systèmes existants : CRM, ERP, passerelles de paiement, systèmes de réservation et API tierces. Que vous utilisiez Salesforce, HubSpot, Stripe ou des outils internes, nous assurons une intégration fluide en préservant l\'intégrité de vos données.',

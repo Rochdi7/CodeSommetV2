@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Services de développement web dans le monde entier | CodeSommet',
-    'meta_description' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons à distance des sites web alimentés par l\'IA, des tableaux de bord et des plateformes SaaS, où que vous soyez.',
+    'title' => 'Agence Web Offshore au Maroc — Développement à Distance | CodeSommet',
+    'meta_description' => 'Agence web offshore basée au Maroc : sites web, tableaux de bord et plateformes SaaS développés à distance pour des entreprises du monde entier.',
     'meta_keywords' => 'développement web mondial, agence de développement web à distance, services de développement web globaux, développement web IA, développement Next.js, développement SaaS, développement de tableaux de bord, agence web Maroc',
     'og_title' => 'CodeSommet — Nous Vous Accompagnons Où Que Vous Soyez',
     'og_description' => 'Agence premium de développement web basée au Maroc, livrant des sites web alimentés par l\'IA, des tableaux de bord intelligents et des plateformes SaaS à des clients sur tous les continents.',
@@ -72,7 +72,7 @@ return [
     'sw_2157' => 'Démarrer Votre Projet',
     'sw_2158' => 'Démarrer Votre Projet',
     'sw_2159' => 'Oui ! Nous proposons des forfaits de maintenance, de mises à jour et de support continu. Nous ne disparaissons pas après le lancement — nous sommes votre partenaire digital à long terme.',
-    'sw_2160' => 'La plupart des sites web sont livrés en 2 à 5 jours. Les plateformes complexes comme les tableaux de bord SaaS ou les boutiques e-commerce sont planifiées par étapes selon l\\',
+    'sw_2160' => 'La plupart des sites web sont livrés en 2 à 5 jours, et en 2 jours seulement avec notre formule express. Les plateformes complexes comme les tableaux de bord SaaS ou les boutiques e-commerce sont planifiées par étapes selon l\\',
     'sw_2161' => 'Nous acceptons les virements bancaires internationaux (SWIFT), PayPal, Wise et les paiements par carte de crédit via Stripe. Nous nous adaptons à ce qui vous convient.',
     'sw_2162' => 'Nous utilisons Slack, Zoom, Google Meet, WhatsApp ou toute plateforme que vous préférez. Vous recevrez des mises à jour quotidiennes et un canal projet dédié pour la communication en temps réel.',
     'sw_2163' => 'Absolument. Nous ajustons nos heures de travail pour correspondre à votre emploi du temps. Que vous soyez à New York, Londres, Dubai ou Tokyo — nous nous adaptons.',
@@ -99,7 +99,7 @@ return [
     'faq_q4' => 'Quels modes de paiement acceptez-vous ?',
     'faq_a4' => 'Nous acceptons les virements bancaires internationaux (SWIFT), PayPal, Wise et les paiements par carte de crédit via Stripe. Nous nous adaptons à ce qui vous convient.',
     'faq_q5' => 'En combien de temps pouvez-vous livrer un site web ?',
-    'faq_a5' => 'La plupart des sites web sont livrés en 2 à 5 jours. Les plateformes complexes comme les tableaux de bord SaaS ou les boutiques e-commerce sont planifiées par étapes selon l\'envergure.',
+    'faq_a5' => 'La plupart des sites web sont livrés en 2 à 5 jours, et en 2 jours seulement avec notre formule express. Les plateformes complexes comme les tableaux de bord SaaS ou les boutiques e-commerce sont planifiées par étapes selon l\'envergure.',
     'faq_q6' => 'Offrez-vous un support continu après le lancement ?',
     'faq_a6' => 'Oui ! Nous proposons des forfaits de maintenance, de mises à jour et de support continu. Nous ne disparaissons pas après le lancement — nous sommes votre partenaire digital à long terme.',
 ];

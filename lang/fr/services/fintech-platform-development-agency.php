@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Plateformes FinTech & Paiement | CodeSommet',
-    'meta_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire. Contactez-nous pour les tarifs.',
+    'meta_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire. Devis gratuit.',
     'meta_keywords' => 'développement plateforme fintech,développement passerelle de paiement,développement logiciel bancaire,développement plateforme de trading,système de vérification KYC,tableau de bord analytique financier,développement portefeuille numérique',
     'og_title' => 'Développement de Plateformes FinTech & Paiement | CodeSommet',
     'og_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire. Contactez-nous pour les tarifs.',

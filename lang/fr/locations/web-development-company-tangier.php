@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Développement Web à Tanger, Maroc | CodeSommet',
-    'meta_description' => 'Sites web et plateformes pour les entreprises de Tanger : développement sur mesure, e-commerce et SEO par CodeSommet, agence web basée au Maroc.',
+    'title' => 'Création Site Web Tanger — Agence Web | CodeSommet',
+    'meta_description' => 'Création de sites web à Tanger : sites vitrines, e-commerce et plateformes sur mesure pour les entreprises tangéroises, avec SEO, par CodeSommet, agence web au Maroc.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Développement Web à Tanger, Maroc | CodeSommet',
+    'og_title' => 'Création Site Web Tanger — Agence Web | CodeSommet',
     'og_description' => 'Sites web et plateformes pour les entreprises de Tanger : développement sur mesure, e-commerce et SEO par CodeSommet, agence web basée au Maroc.',
     'twitter_description' => 'Sites web et plateformes pour les entreprises de Tanger : développement sur mesure, e-commerce et SEO.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
@@ -95,8 +95,8 @@ return [
     'text_682' => 'Automatisation',
     'text_683' => 'Automatisation',
     'text_684' => 'Automatisation',
-    'ml_1084' => 'CROISSANCE COMMERCIALE À TANGER',
-    'ml_1085' => 'CROISSANCE COMMERCIALE À TANGER',
+    'ml_1084' => 'LA CROISSANCE COMMERCIALE À TANGER',
+    'ml_1085' => 'LA CROISSANCE COMMERCIALE À TANGER',
     'ml_1086' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
     'ml_1087' => 'Réserver une consultation gratuite à Tanger',
     'ml_1088' => 'Spécialistes Dashboard & SaaS',
@@ -197,7 +197,7 @@ return [
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Tanger et vous gardez une visibilité complète sur l\'avancement à chaque étape.',
     'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',
     'faq_a4' => 'Nous concevons des sites conformes aux bonnes pratiques de protection des données : consentement aux cookies, politique de confidentialité, sécurisation des formulaires et des données. Pour les exigences propres à Maroc ou à votre secteur, nous adaptons les mentions et les fonctionnalités avec vous lors du cadrage.',
-    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
+    'faq_a5' => 'La plupart des sites vitrines sont livrés en 2 à 5 jours après validation du périmètre. Pour les projets urgents, notre formule express permet une mise en ligne en 2 jours seulement. Les plateformes plus complexes (portails, tableaux de bord, e-commerce) sont planifiées par étapes selon leur portée, que nous précisons lors de l\'appel découverte. Nous pouvons aussi lancer une première version rapidement, puis itérer.',
     'faq_a6' => 'Oui. Nous vous conseillons sur le choix du nom de domaine (.ma ou .com selon votre cible), nous vous guidons pour l\'enregistrement auprès d\'un registrar et nous configurons le DNS, le certificat SSL et les redirections pour que le site soit prêt dès la mise en ligne.',
     'faq_q1' => 'Avez-vous un bureau physique à Tanger ?',
     'faq_q2' => 'Pouvez-vous travailler avec les entreprises de Tanger à distance ?',

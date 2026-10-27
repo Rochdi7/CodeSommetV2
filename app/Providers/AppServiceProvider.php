@@ -73,7 +73,10 @@ class AppServiceProvider extends ServiceProvider
         RateLimiter::for('tools-api', function (Request $request) {
             $slug = (string) $request->route('slug');
 
-            return in_array($slug, \App\Http\Controllers\ToolsApiController::HEAVY_TOOLS, true)
+            $heavy = in_array($slug, \App\Http\Controllers\ToolsApiController::HEAVY_TOOLS, true)
+                || in_array($slug, (array) config('analysis.heavy_tools', []), true);
+
+            return $heavy
                 ? Limit::perMinute(5)->by('tools-heavy|' . $request->ip())
                 : Limit::perMinute(20)->by('tools|' . $request->ip());
         });
@@ -89,6 +92,11 @@ class AppServiceProvider extends ServiceProvider
         // sinon la simple navigation entre outils consomme le budget de l'incrément
         // (même nom de limiteur = même compteur) et renvoie des 429. Même plafond.
         RateLimiter::for('tools-usage-read', fn (Request $request) => Limit::perMinute(30)->by($request->ip()));
+
+        // Polling d'une analyse (GET /api/v2/runs/{id}) : lecture DB seule.
+        // Clé préfixée distincte : ne partage jamais le compteur des scans
+        // (POST /api/v2/tools/{slug}/runs reste sous `tools-api`).
+        RateLimiter::for('analysis-runs-read', fn (Request $request) => Limit::perMinute(60)->by('analysis-read|' . $request->ip()));
 
         // Beacon analytics interne (POST /api/track). Un humain envoie quelques
         // lots par page ; 120/min par IP laisse de la marge aux bureaux derrière
