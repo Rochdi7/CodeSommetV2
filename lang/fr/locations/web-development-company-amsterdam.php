@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement Web à Amsterdam, Pays-Bas | CodeSommet',
-    'meta_description' => 'Développement web pour les entreprises d\'Amsterdam : plateformes fintech, sites pour startups tech et santé, orientés conversion et livrés à distance par CodeSommet.',
+    'meta_description' => 'Développement web pour les entreprises d\'Amsterdam : plateformes fintech, sites pour startups tech et santé, livrés à distance par CodeSommet.',
     'meta_keywords' => 'web development Morocco,AI web development agency,Next.js development agency,dashboard development,SaaS development,education website development,healthcare website development,React development Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency Morocco',
     'og_title' => 'Développement Web à Amsterdam, Pays-Bas | CodeSommet',
     'og_description' => 'Développement web pour les entreprises d\'Amsterdam : plateformes fintech, sites pour startups tech et santé, orientés conversion et livrés à distance par CodeSommet.',

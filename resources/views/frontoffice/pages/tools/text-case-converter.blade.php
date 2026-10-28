@@ -429,9 +429,9 @@
                     </svg></a></div>
         </div>
     </section>
-    <section class="py-12 bg-[#F5F5F5]">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="relative overflow-hidden rounded-2xl px-6 py-8 md:py-10"
+    <section class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 cta-elite"
                 style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)">
                 <div class="absolute inset-0 z-0"
                     style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -439,18 +439,22 @@
                 </div>
                 <div class="absolute inset-0 z-[1]"
                     style="background:radial-gradient(
-                  ellipse 70% 70% at center,
-                  transparent 0%,
-                  rgba(10, 10, 10, 0.3) 50%,
-                  rgba(10, 10, 10, 0.8) 100%
-                )">
+                ellipse 70% 70% at center,
+                transparent 0%,
+                transparent 10%,
+                rgba(10, 10, 10, 0.15) 25%,
+                rgba(10, 10, 10, 0.35) 40%,
+                rgba(10, 10, 10, 0.6) 60%,
+                rgba(10, 10, 10, 0.85) 80%,
+                rgba(10, 10, 10, 0.95) 100%
+              )">
                 </div>
-                <div class="relative z-10 text-center space-y-6">
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white"
+                <div class="relative z-10 text-center">
+                    <h2 class="mx-auto max-w-4xl px-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white"
                         style="font-family:var(--font-display)">{{ __('tools/text-case-converter.text_29') }}</h2>
-                    <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+                    <p class="cta-elite__sub">
                         {{ __('tools/text-case-converter.text_30') }}</p>
-                    <div class="pt-2"><a target="_blank" rel="noopener noreferrer"
+                    <div class="cta-elite__actions flex flex-col items-center gap-4"><a target="_blank" rel="noopener noreferrer"
                             class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105"
                             style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
@@ -462,7 +466,10 @@
                                 class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
                                 style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/text-case-converter.text_31') }}</span>
                         </a></div>
-                    <p class="text-sm text-white/50 pt-2">{{ __('tools/text-case-converter.text_32') }}</p>
+                    <p class="cta-elite__note">{{ __('tools/text-case-converter.text_32') }}</p>
+                    <div class="cta-elite__mq">
+                        @include('frontoffice.partials.cta-marquee')
+                    </div>
                 </div>
             </div>
         </div>

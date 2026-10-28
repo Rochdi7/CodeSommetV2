@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur d\'Optimisation du Crawl Gratuit - Budget de Crawl | CodeSommet',
-    'meta_description' => 'Explorez jusqu\'à 50 pages comme un robot et listez ce qui gaspille le crawl : liens vers des erreurs, des redirections ou des pages noindex, pages profondes, URL à paramètres, titres dupliqués.',
+    'title' => 'Test d\'Optimisation du Budget de Crawl | CodeSommet',
+    'meta_description' => 'Explorez jusqu\'à 50 pages comme un robot : liens vers erreurs, redirections ou noindex, pages profondes, URL à paramètres, titres dupliqués.',
     'meta_keywords' => 'budget de crawl,optimisation crawl,crawl budget,liens cassés,redirections internes,noindex,profondeur de clic,robots.txt,audit technique seo',
     'og_title' => 'Vérificateur d\'Optimisation du Crawl',
     'og_description' => 'Liens internes vers des erreurs, redirections et pages noindex, profondeur, paramètres : ce qui gaspille l\'exploration de votre site.',

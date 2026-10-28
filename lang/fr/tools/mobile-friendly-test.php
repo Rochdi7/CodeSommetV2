@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Test de Compatibilité Mobile - Outil Gratuit de Test Mobile | CodeSommet',
-    'meta_description' => 'Analysez la réactivité mobile et l\'utilisabilité de votre site web. Vérifiez la configuration du viewport, les tailles de police, les cibles tactiles et obtenez des recommandations concrètes. Outil gratuit.',
+    'title' => 'Test de Compatibilité Mobile Gratuit | CodeSommet',
+    'meta_description' => 'Analysez l\'utilisabilité mobile de votre site : viewport, tailles de police, cibles tactiles, avec des recommandations concrètes. Outil gratuit.',
     'meta_keywords' => 'mobile friendly test,test mobile,responsive design,mobile SEO,viewport,touch targets,mobile usability',
     'og_title' => 'Test de Compatibilité Mobile - Outil Gratuit de Test Mobile',
     'og_description' => 'Analysez la réactivité mobile et l\'utilisabilité de votre site web. Vérifiez la configuration du viewport, les tailles de police et les cibles tactiles.',

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Akoubri - Site Web de Cabinet d\'Architecture à Marrakech | CodeSommet',
-    'meta_description' => 'Akoubri : site vitrine premium pour un cabinet d\'architecture et de design d\'intérieur à Marrakech. Portfolio de projets, images de synthèse, journal SEO et devis en ligne.',
+    'title' => 'Akoubri - Site d\'Architecte à Marrakech | CodeSommet',
+    'meta_description' => 'Akoubri : site vitrine premium pour un cabinet d\'architecture et de design d\'intérieur à Marrakech. Portfolio, images 3D, journal SEO et devis en ligne.',
     'meta_keywords' => 'site web cabinet d\'architecture,site architecte Marrakech,portfolio architecte,site design d\'intérieur,images de synthèse,site vitrine React,création site architecture Maroc',
     'og_title' => 'Étude de Cas Akoubri - Site Web d\'un Cabinet d\'Architecture & Design à Marrakech',
     'og_description' => 'Un site vitrine pensé comme un portfolio d\'architecte : hero vidéo, catalogue de projets livrés, pages projet avec galerie et lightbox, journal éditorial et formulaire de devis, en mode clair et sombre.',

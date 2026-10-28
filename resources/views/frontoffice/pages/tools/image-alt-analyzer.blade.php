@@ -312,25 +312,23 @@
                     </div>
                 </a><a
                     class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/sitemap-validator">
+                    href="/tools/image-compressor">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"
-                                class="lucide lucide-map w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
+                                class="lucide lucide-image w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors"
                                 aria-hidden="true">
-                                <path
-                                    d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z">
-                                </path>
-                                <path d="M15 5.764v15"></path>
-                                <path d="M9 3.236v15"></path>
+                                <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                                <circle cx="9" cy="9" r="2"></circle>
+                                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
                             </svg>
                         </div>
                     </div>
                     <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Validateur de Sitemap</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/image-alt-analyzer.text_24') }}</p>
+                        style="font-family:var(--font-heading)">Compresseur d&#039;Images</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Compressez et convertissez vos images en WebP, JPEG ou PNG, directement dans le navigateur.</p>
                     <div
                         class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
                         <span>Essayer gratuitement</span><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -342,7 +340,7 @@
                         </svg>
                     </div>
                     <div class="absolute top-4 right-4"><span
-                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
+                            class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">performance</span>
                     </div>
                 </a><a
                     class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
@@ -388,9 +386,9 @@
                     </svg></a></div>
         </div>
     </section>
-    <section class="py-12 bg-[#F5F5F5]">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="relative overflow-hidden rounded-2xl px-6 py-8 md:py-10"
+    <section class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 cta-elite"
                 style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)">
                 <div class="absolute inset-0 z-0"
                     style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -398,18 +396,22 @@
                 </div>
                 <div class="absolute inset-0 z-[1]"
                     style="background:radial-gradient(
-                  ellipse 70% 70% at center,
-                  transparent 0%,
-                  rgba(10, 10, 10, 0.3) 50%,
-                  rgba(10, 10, 10, 0.8) 100%
-                )">
+                ellipse 70% 70% at center,
+                transparent 0%,
+                transparent 10%,
+                rgba(10, 10, 10, 0.15) 25%,
+                rgba(10, 10, 10, 0.35) 40%,
+                rgba(10, 10, 10, 0.6) 60%,
+                rgba(10, 10, 10, 0.85) 80%,
+                rgba(10, 10, 10, 0.95) 100%
+              )">
                 </div>
-                <div class="relative z-10 text-center space-y-6">
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white"
+                <div class="relative z-10 text-center">
+                    <h2 class="mx-auto max-w-4xl px-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white"
                         style="font-family:var(--font-display)">{{ __('tools/image-alt-analyzer.text_26') }}</h2>
-                    <p class="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+                    <p class="cta-elite__sub">
                         {{ __('tools/image-alt-analyzer.text_27') }}</p>
-                    <div class="pt-2"><a target="_blank" rel="noopener noreferrer"
+                    <div class="cta-elite__actions flex flex-col items-center gap-4"><a target="_blank" rel="noopener noreferrer"
                             class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden transition-transform hover:scale-105"
                             style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,
@@ -421,7 +423,10 @@
                                 class="relative z-10 text-base md:text-lg font-medium tracking-tight text-black"
                                 style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('tools/image-alt-analyzer.text_28') }}</span>
                         </a></div>
-                    <p class="text-sm text-white/50 pt-2">{{ __('tools/image-alt-analyzer.text_29') }}</p>
+                    <p class="cta-elite__note">{{ __('tools/image-alt-analyzer.text_29') }}</p>
+                    <div class="cta-elite__mq">
+                        @include('frontoffice.partials.cta-marquee')
+                    </div>
                 </div>
             </div>
         </div>

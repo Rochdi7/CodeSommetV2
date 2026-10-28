@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Développement de Plateformes de Télémédecine | CodeSommet',
-    'meta_description' => 'Applications de télémédecine complètes : consultations vidéo, dossiers patients, ordonnances et paiements, conformes aux exigences de confidentialité santé.',
+    'meta_description' => 'Applications de télémédecine complètes : consultations vidéo, dossiers patients, ordonnances et paiements, conformes à la confidentialité santé.',
     'meta_keywords' => 'développement plateforme télémédecine,agence plateforme télésanté,développement plateforme soins virtuels,plateforme consultation médicale en ligne,développement logiciel télésanté,plateforme consultation vidéo,surveillance patient à distance,développement plateforme santé,plateforme conforme HIPAA',
     'og_title' => 'Développement de Plateforme de Télémédecine : Applications de Téléconsultation | CodeSommet',
     'og_description' => 'Développement de plateformes de télémédecine : solutions de soins virtuels alimentées par l\'IA, tableaux de bord intelligents et télésanté conforme HIPAA.',

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Développement de Plateformes SaaS & Logiciels B2B | CodeSommet',
+    'title' => 'Développement de Plateformes SaaS & B2B | CodeSommet',
     'meta_description' => 'Développement de plateformes SaaS sur mesure : tableaux de bord, administration, intégrations API et facturation par abonnement. Devis gratuit.',
     'meta_keywords' => 'développement plateforme saas,développement logiciel b2b,développement application cloud,développement tableau de bord saas,système facturation abonnement,plateforme intégration api,saas marque blanche',
     'og_title' => 'Développement de Plateformes SaaS & Logiciels B2B | CodeSommet',

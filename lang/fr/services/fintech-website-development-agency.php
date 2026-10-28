@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Création de Sites Web FinTech & Services Financiers | CodeSommet',
-    'meta_description' => 'Création de sites web FinTech : intégrations de paiement sécurisées, design conforme à la réglementation et pages optimisées pour la conversion. Devis gratuit.',
+    'title' => 'Création de Sites Web FinTech & Finance | CodeSommet',
+    'meta_description' => 'Création de sites web FinTech : paiements sécurisés, design conforme à la réglementation et pages optimisées pour la conversion. Devis gratuit.',
     'meta_keywords' => 'développement site web fintech,conception site web services financiers,page de destination fintech,développement site bancaire,conception site web financier,agence de conception web fintech,site web société de paiement,développement site web néobanque',
     'og_title' => 'Création de Sites Web FinTech & Services Financiers | CodeSommet',
     'og_description' => 'Développement de sites web FinTech : intégrations de paiement sécurisées, designs conformes à la réglementation et pages optimisées pour la conversion. Contactez-nous pour les tarifs.',

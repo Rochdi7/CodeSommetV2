@@ -418,7 +418,7 @@
                                 <div class="bg-[#F8F8F8] rounded-lg p-4">
                                     <h4 class="font-semibold text-[#0F0F0F] mb-2">Microsoft Edge</h4>
                                     <p class="text-sm">{{ __('legal/cookie-policy.text_84') }}</p><a
-                                        href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+                                        href="https://support.microsoft.com/en-us/edge/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use"
                                         target="_blank" rel="noopener noreferrer"
                                         class="text-sm text-[#00AEEF] hover:underline">{{ __('legal/cookie-policy.text_85') }}</a>
                                 </div>
@@ -513,7 +513,7 @@
                                 <p><strong>{{ __('legal/cookie-policy.text_108') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                                 <p><strong>{{ __('legal/cookie-policy.text_109') }}</strong> <a
-                                        href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer"
+                                        href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                             </div>
                             <div>

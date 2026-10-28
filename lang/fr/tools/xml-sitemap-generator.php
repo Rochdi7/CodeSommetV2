@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Sitemap XML - Créateur de Sitemap Gratuit | CodeSommet',
-    'meta_description' => 'Générez des sitemaps XML pour votre site web. Aidez les moteurs de recherche à découvrir et indexer vos pages. Générateur de sitemap gratuit avec téléchargement instantané.',
+    'title' => 'Générateur de Sitemap XML Gratuit | CodeSommet',
+    'meta_description' => 'Générez le sitemap XML de votre site pour aider les moteurs de recherche à découvrir et indexer vos pages. Gratuit, téléchargement instantané.',
     'meta_keywords' => 'XML sitemap generator,sitemap creator,sitemap builder,SEO sitemap,sitemap tool,website sitemap',
     'og_title' => 'Générateur de Sitemap XML - Créateur de Sitemap Gratuit',
     'og_description' => 'Générez des sitemaps XML appropriés pour une meilleure indexation par les moteurs de recherche',

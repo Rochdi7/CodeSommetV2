@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Schéma FAQ - Balisage JSON-LD FAQ Gratuit | CodeSommet',
-    'meta_description' => 'Générez du balisage de schéma FAQ (JSON-LD) pour votre site web. Améliorez la visibilité avec des rich snippets. Générateur de données structurées FAQ gratuit.',
+    'title' => 'Générateur de Schéma FAQ JSON-LD Gratuit | CodeSommet',
+    'meta_description' => 'Générez le balisage de schéma FAQ (JSON-LD) de votre site pour gagner en visibilité. Générateur de données structurées FAQ gratuit.',
     'meta_keywords' => 'FAQ schema generator,FAQ markup,JSON-LD FAQ,structured data,FAQ rich snippets,schema markup',
     'og_title' => 'Générateur de Schéma FAQ - Balisage JSON-LD Gratuit',
     'og_description' => 'Générez du balisage JSON-LD FAQ pour une meilleure visibilité',

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Extracteur de N-grammes - Expressions les Plus Fréquentes d\'un Texte ou d\'une Page | CodeSommet',
-    'meta_description' => 'Extrayez les mots et expressions de 1 à 4 mots les plus fréquents d\'un texte ou d\'une URL, avec densité et présence dans les titres. Idéal pour analyser le vocabulaire d\'une page qui se classe. Gratuit.',
+    'title' => 'Extracteur de N-grammes - Mots Fréquents | CodeSommet',
+    'meta_description' => 'Extrayez les expressions de 1 à 4 mots les plus fréquentes d\'un texte ou d\'une URL, avec densité et présence dans les titres. Gratuit.',
     'meta_keywords' => 'n-grammes,ngram extractor,expressions fréquentes,analyse sémantique,densité mots-clés,bigrammes trigrammes,vocabulaire page,analyse concurrent seo',
     'og_title' => 'Extracteur de N-grammes - Expressions les Plus Fréquentes',
     'og_description' => 'Mots et expressions de 1 à 4 mots les plus fréquents d\'un texte ou d\'une page, avec densité et présence dans les titres.',

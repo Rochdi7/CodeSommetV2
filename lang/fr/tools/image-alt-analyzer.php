@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Analyseur de Texte Alt d\'Image - Outil SEO d\'Image Gratuit | CodeSommet',
+    'title' => 'Analyseur de Texte Alt d\'Image - SEO | CodeSommet',
     'meta_description' => 'Analysez les textes alternatifs des images d\'une page : attributs alt manquants ou vides repérés instantanément, pour le SEO et l\'accessibilité.',
     'meta_keywords' => 'image alt analyzer,alt text checker,image SEO,alt tag optimizer,image accessibility,alt text tool,missing alt text checker,alt attribute analyzer,image SEO audit,accessibility checker,screen reader optimization,image optimization tool',
     'og_title' => 'Analyseur de Texte Alt d\'Image - Outil SEO d\'Image Gratuit',

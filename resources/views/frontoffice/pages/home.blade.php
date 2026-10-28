@@ -277,7 +277,7 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="112" height="66"
+                            <img src="{{ asset('images/partners/gls-hd.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="247" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
@@ -289,13 +289,13 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/LocalMoroccoTours_bg.webp') }}" alt="Logo de Local Morocco Tours, client de CodeSommet"
-                                loading="lazy" width="112" height="28" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                            <img src="{{ asset('images/partners/localmoroccotours-hd.webp') }}" alt="Logo de Local Morocco Tours, client de CodeSommet"
+                                loading="lazy" width="404" height="135" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy" width="112" height="31"
+                            <img src="{{ asset('images/partners/dentalpro-hd.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy" width="504" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
@@ -313,25 +313,31 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/monasso.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy" width="130" height="30"
+                            <img src="{{ asset('images/partners/monasso-hd.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy" width="585" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/moroccoquest.webp') }}" alt="Logo de Morocco Quest DMC, client de CodeSommet"
-                                loading="lazy" width="112" height="36" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
-                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                        </div>
-                        <div style="height:45px;width:auto"
-                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy" width="112" height="41"
+                            <img src="{{ asset('images/partners/hssabek-hd.webp') }}" alt="Logo de Hssabek, SaaS de facturation développé par CodeSommet" loading="lazy" width="627" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/wmcars.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy" width="112" height="35"
+                            <img src="{{ asset('images/partners/moroccoquest-hd.webp') }}" alt="Logo de Morocco Quest DMC, client de CodeSommet"
+                                loading="lazy" width="399" height="135" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        </div>
+                        <div style="height:45px;width:auto"
+                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                            <img src="{{ asset('images/partners/premiumkech-hd.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy" width="363" height="135"
+                                style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        </div>
+                        <div style="height:45px;width:auto"
+                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                            <img src="{{ asset('images/partners/wmcars-hd.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy" width="444" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
@@ -350,7 +356,7 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/GLS.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="112" height="66"
+                            <img src="{{ asset('images/partners/gls-hd.webp') }}" alt="Logo de GLS Sprachenzentrum, client de CodeSommet" loading="lazy" width="247" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
@@ -362,13 +368,13 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/LocalMoroccoTours_bg.webp') }}" alt="Logo de Local Morocco Tours, client de CodeSommet"
-                                loading="lazy" width="112" height="28" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                            <img src="{{ asset('images/partners/localmoroccotours-hd.webp') }}" alt="Logo de Local Morocco Tours, client de CodeSommet"
+                                loading="lazy" width="404" height="135" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/dentalpro.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy" width="112" height="31"
+                            <img src="{{ asset('images/partners/dentalpro-hd.webp') }}" alt="Logo de Dental Pro, client de CodeSommet" loading="lazy" width="504" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
@@ -386,25 +392,31 @@
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/monasso.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy" width="130" height="30"
+                            <img src="{{ asset('images/partners/monasso-hd.webp') }}" alt="Logo de Monasso, client de CodeSommet" loading="lazy" width="585" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/moroccoquest.webp') }}" alt="Logo de Morocco Quest DMC, client de CodeSommet"
-                                loading="lazy" width="112" height="36" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
-                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
-                        </div>
-                        <div style="height:45px;width:auto"
-                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/premiumkech.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy" width="112" height="41"
+                            <img src="{{ asset('images/partners/hssabek-hd.webp') }}" alt="Logo de Hssabek, SaaS de facturation développé par CodeSommet" loading="lazy" width="627" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>
                         <div style="height:45px;width:auto"
                             class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
-                            <img src="{{ asset('images/partners/wmcars.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy" width="112" height="35"
+                            <img src="{{ asset('images/partners/moroccoquest-hd.webp') }}" alt="Logo de Morocco Quest DMC, client de CodeSommet"
+                                loading="lazy" width="399" height="135" style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        </div>
+                        <div style="height:45px;width:auto"
+                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                            <img src="{{ asset('images/partners/premiumkech-hd.webp') }}" alt="Logo de Premium Kech, client de CodeSommet" loading="lazy" width="363" height="135"
+                                style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
+                                class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
+                        </div>
+                        <div style="height:45px;width:auto"
+                            class="jsx-fbe667a4dcceba66 flex-shrink-0 relative transition-transform duration-200 hover:scale-105">
+                            <img src="{{ asset('images/partners/wmcars-hd.webp') }}" alt="Logo de WM Cars, client de CodeSommet" loading="lazy" width="444" height="135"
                                 style="filter:grayscale(100%);height:45px;width:auto;opacity:0.8"
                                 class="jsx-fbe667a4dcceba66 object-contain transition-all duration-300" />
                         </div>

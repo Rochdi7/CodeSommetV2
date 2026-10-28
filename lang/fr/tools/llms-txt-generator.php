@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur LLMs.txt Gratuit - Créez le Fichier llms.txt de Votre Site | CodeSommet',
-    'meta_description' => 'Générez automatiquement un fichier llms.txt au format llmstxt.org à partir des pages réelles de votre site, pour aider ChatGPT, Claude et Perplexity à le comprendre.',
+    'title' => 'Générateur de Fichier llms.txt Gratuit | CodeSommet',
+    'meta_description' => 'Générez un fichier llms.txt au format llmstxt.org à partir des pages réelles de votre site, pour aider ChatGPT, Claude et Perplexity à le lire.',
     'meta_keywords' => 'llms.txt,générateur llms.txt,fichier llms.txt,GEO,optimisation IA,ChatGPT,Claude,Perplexity,llmstxt',
     'og_title' => 'Générateur LLMs.txt Gratuit',
     'og_description' => 'Créez en un clic le fichier llms.txt de votre site à partir de ses pages réelles, au format llmstxt.org.',

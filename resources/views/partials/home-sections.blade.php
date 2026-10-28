@@ -641,7 +641,7 @@ $comparisons = [
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors" href="{{ route('get-quote') }}">Obtenez Votre Devis Gratuit</a>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Contactez-nous sur WhatsApp</a>
+                        <a href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -752,7 +752,7 @@ $comparisons = [
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">Réserver un Appel Découverte</button>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Contactez-nous sur WhatsApp</a>
+                        <a href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Contactez-nous sur WhatsApp</a>
                     </div>
                 </div>
             </div>

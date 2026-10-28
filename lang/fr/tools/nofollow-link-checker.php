@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Liens Nofollow - Outil Gratuit d\'Attribut Nofollow | CodeSommet',
-    'meta_description' => 'Vérificateur de liens nofollow gratuit : analysez les attributs rel=\'nofollow\', rel=\'sponsored\' et rel=\'ugc\' de n\'importe quelle page et repérez les liens qui transmettent l\'autorité.',
+    'title' => 'Vérificateur de Liens Nofollow Gratuit | CodeSommet',
+    'meta_description' => 'Analysez les attributs rel nofollow, sponsored et ugc des liens de n\'importe quelle page et repérez ceux qui transmettent l\'autorité. Gratuit.',
     'meta_keywords' => 'nofollow link checker,nofollow attribute,link equity,follow nofollow,rel nofollow,link checker',
     'og_title' => 'Vérificateur de Liens Nofollow - Outil Gratuit d\'Attribut Nofollow',
     'og_description' => 'Outil gratuit d\'analyse des liens nofollow : examinez les attributs rel=\'nofollow\', rel=\'sponsored\' et rel=\'ugc\' de n\'importe quelle page. Identifiez les liens qui transmettent l\'autorité, distinguez dofollow et nofollow, et optimisez la répartition de votre équité de liens pour un meilleur SEO.',

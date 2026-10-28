@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Convertisseur HTML en Texte Brut - Outil Gratuit | CodeSommet',
+    'title' => 'Convertisseur HTML en Texte Brut Gratuit | CodeSommet',
     'meta_description' => 'Convertissez du HTML en texte brut : balises supprimées, contenu propre prêt à copier. Pratique pour l\'édition et l\'analyse de contenu.',
     'meta_keywords' => 'HTML to text,HTML stripper,remove HTML tags,HTML converter,plain text converter,strip HTML,HTML tag remover,convert HTML to text,email plain text,HTML parser,text extractor,content extractor',
     'og_title' => 'Convertisseur HTML en Texte Brut - Outil Gratuit',

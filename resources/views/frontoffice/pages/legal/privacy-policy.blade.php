@@ -375,7 +375,7 @@
                                 </li>
                                 <li><strong>{{ __('legal/privacy-policy.text_91') }}</strong> +212 6 32 58 20 96</li>
                                 <li><strong>{{ __('legal/privacy-policy.text_92') }}</strong> <a
-                                        href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer"
+                                        href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></li>
                             </ul>
                             <p class="mt-3 text-sm">{{ __('legal/privacy-policy.text_93') }}</p>
@@ -489,7 +489,7 @@
                                 <p><strong>{{ __('legal/privacy-policy.text_131') }}</strong> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                                 <p><strong>{{ __('legal/privacy-policy.text_132') }}</strong> <a
-                                        href="https://wa.me/212632582096" target="_blank" rel="noopener noreferrer"
+                                        href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                             </div>
                             <div>

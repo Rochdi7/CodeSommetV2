@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Extracteur de Domaines - Domaines Uniques d\'une Liste d\'URL | CodeSommet',
-    'meta_description' => 'Extrayez les noms de domaine uniques d\'une liste d\'URL ou de backlinks, avec le nombre d\'URL par domaine et la gestion des suffixes comme .co.ma ou .co.uk. Gratuit, 100 % local.',
+    'title' => 'Extracteur de Domaines d\'une Liste d\'URL | CodeSommet',
+    'meta_description' => 'Extrayez les domaines uniques d\'une liste d\'URL ou de backlinks, avec le nombre d\'URL par domaine et les suffixes .co.ma ou .co.uk. 100 % local.',
     'meta_keywords' => 'extraire domaines,domaines uniques,liste url en domaines,domain extractor,backlinks domaines référents,nom de domaine racine',
     'og_title' => 'Extracteur de Domaines Uniques',
     'og_description' => 'Transformez une liste d\'URL ou de backlinks en liste de domaines uniques, avec le nombre d\'URL par domaine.',

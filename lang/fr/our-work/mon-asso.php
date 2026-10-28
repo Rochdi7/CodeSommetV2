@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Mon Asso - Solution SaaS de Gestion Associative | CodeSommet',
-    'meta_description' => 'Plateforme SaaS Laravel de gestion d\'associations : membres, réunions, cotisations, événements, documents, dépenses et statistiques réunis dans un seul espace.',
+    'title' => 'Mon Asso - SaaS de Gestion Associative | CodeSommet',
+    'meta_description' => 'Plateforme SaaS Laravel de gestion d\'associations : membres, réunions, cotisations, événements, documents et dépenses réunis dans un seul espace.',
     'meta_keywords' => 'logiciel gestion association,SaaS associatif,gestion des adhérents,gestion des cotisations,développement Laravel,plateforme de gestion à but non lucratif',
     'og_title' => 'Étude de Cas Mon Asso - Solution SaaS de Gestion Associative',
     'og_description' => 'Plateforme SaaS moderne et responsive développée sous Laravel pour simplifier la gestion des associations à but non lucratif : membres, réunions, cotisations, événements, documents, dépenses et statistiques.',

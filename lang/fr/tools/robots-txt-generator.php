@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Générateur Robots.txt - Créateur de Fichier Robots Gratuit | CodeSommet',
+    'title' => 'Générateur de Fichier Robots.txt Gratuit | CodeSommet',
     'meta_description' => 'Générez un fichier robots.txt conforme en quelques clics : règles par robot, chemins bloqués et référence sitemap incluse. Outil gratuit.',
     'meta_keywords' => 'robots txt generator,robots.txt creator,robots file,crawl rules,search engine robots,robots.txt builder,robots.txt validator,user agent rules,disallow rules,sitemap url,crawl delay,googlebot rules,seo robots file',
     'og_title' => 'Générateur Robots.txt - Créateur de Fichier Robots Gratuit',

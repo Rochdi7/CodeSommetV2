@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Nettoyeur de Caractères Invisibles - Espaces Insécables, Zéro-Largeur, Contrôles | CodeSommet',
-    'meta_description' => 'Détectez et supprimez les caractères invisibles d\'un texte : espaces de largeur nulle, marques de direction, caractères de balise, espaces insécables. Rapport détaillé, 100 % local.',
+    'title' => 'Nettoyeur de Caractères Invisibles Gratuit | CodeSommet',
+    'meta_description' => 'Détectez et supprimez les caractères invisibles d\'un texte : largeur nulle, marques de direction, espaces insécables. Rapport détaillé, 100 % local.',
     'meta_keywords' => 'caractères invisibles,zero width space,espace insécable,nettoyer texte,caractères cachés,u+200b,texte copié coller',
     'og_title' => 'Nettoyeur de Caractères Invisibles',
     'og_description' => 'Trouvez et supprimez les caractères invisibles qui perturbent vos titres, balises et contenus copiés-collés.',

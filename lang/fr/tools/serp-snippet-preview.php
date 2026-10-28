@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Aperçu SERP Google - Simulateur de Titre et Meta Description | CodeSommet',
-    'meta_description' => 'Prévisualisez votre résultat Google sur ordinateur et mobile, mesurez la largeur en pixels du titre et de la meta description, et évitez les troncatures avant de publier.',
+    'title' => 'Aperçu SERP Google - Titre et Meta | CodeSommet',
+    'meta_description' => 'Prévisualisez votre résultat Google sur ordinateur et mobile et mesurez la largeur en pixels du titre et de la meta description avant publication.',
     'meta_keywords' => 'aperçu serp,simulateur snippet google,longueur title seo,meta description pixels,serp preview,prévisualisation google,title tag checker,meta description checker',
     'og_title' => 'Aperçu SERP Google - Simulateur de Titre et Meta Description',
     'og_description' => 'Simulez votre extrait Google (ordinateur, mobile, mode sombre), mesurez titre et description en pixels et corrigez les troncatures avant de publier.',
@@ -40,7 +40,7 @@ return [
     'related' => [
         ['slug' => 'meta-tag-generator', 'title' => 'Générateur de Balises Meta', 'desc' => 'Rédigez des balises title et description optimisées'],
         ['slug' => 'og-preview-generator', 'title' => 'Aperçu Open Graph', 'desc' => 'Prévisualisez le partage sur les réseaux sociaux'],
-        ['slug' => 'heading-analyzer', 'title' => 'Analyseur de Titres H1-H6', 'desc' => 'Vérifiez la structure des titres de votre page'],
+        ['slug' => 'meta-extractor', 'title' => 'Extracteur de Métadonnées', 'desc' => 'Titres et descriptions de centaines d\'URL'],
     ],
     'cta' => [
         'title' => 'Besoin d\'Optimiser Toutes Vos Pages ?',

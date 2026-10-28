@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Titres de Blog IA - Générateur de Titres SEO Gratuit | CodeSommet',
-    'meta_description' => 'Générez 10 titres de blog viraux avec l\'IA. Obtenez des scores SEO, des estimations de CTR et des accroches émotionnelles. Outil gratuit pour les créateurs de contenu et les marketeurs.',
+    'title' => 'Générateur de Titres de Blog IA Gratuit | CodeSommet',
+    'meta_description' => 'Générez 10 titres de blog avec l\'IA, avec score SEO, estimation de CTR et accroches émotionnelles. Outil gratuit pour créateurs et marketeurs.',
     'meta_keywords' => 'blog title generator,AI title generator,SEO blog titles,viral titles,headline generator,content marketing tool',
     'og_title' => 'Générateur de Titres de Blog IA - Créez des Titres Viraux',
     'og_description' => 'Générez 10 titres de blog optimisés avec des scores SEO et des estimations de CTR',

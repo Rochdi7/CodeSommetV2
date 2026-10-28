@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Agence Web Offshore au Maroc — Développement à Distance | CodeSommet',
+    'title' => 'Agence Web Offshore au Maroc — À Distance | CodeSommet',
     'meta_description' => 'Agence web offshore basée au Maroc : sites web, tableaux de bord et plateformes SaaS développés à distance pour des entreprises du monde entier.',
     'meta_keywords' => 'développement web mondial, agence de développement web à distance, services de développement web globaux, développement web IA, développement Next.js, développement SaaS, développement de tableaux de bord, agence web Maroc',
     'og_title' => 'CodeSommet — Nous Vous Accompagnons Où Que Vous Soyez',

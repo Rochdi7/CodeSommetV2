@@ -583,7 +583,7 @@ $comparisons = [
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors" href="{{ route('get-quote') }}">Obtenez Votre Devis Gratuit</a>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Discuter de mon projet web</a>
+                        <a href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'd%20like%20to%20discuss%20a%20website%20development%20project.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition-colors">Discuter de mon projet web</a>
                     </div>
                 </div>
             </div>
@@ -694,7 +694,7 @@ $comparisons = [
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">Réserver un Appel Découverte</button>
-                        <a href="https://wa.me/212632582096?text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Échanger sur le retainer</a>
+                        <a href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'd%20like%20to%20learn%20about%20your%20retainer%20plans.%20Can%20we%20schedule%20a%20call?" target="_blank" rel="noopener noreferrer" class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Échanger sur le retainer</a>
                     </div>
                 </div>
             </div>
@@ -798,15 +798,16 @@ $comparisons = [
 {{-- ============================================== --}}
 <div class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
     <div class="max-w-7xl mx-auto">
-        <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 py-6 md:py-8" style="background: linear-gradient(135deg, rgb(26, 26, 26) 0%, rgb(10, 10, 10) 100%);">
+        <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 cta-elite" style="background: linear-gradient(135deg, rgb(26, 26, 26) 0%, rgb(10, 10, 10) 100%);">
             {{-- Grid overlay --}}
             <div class="absolute inset-0 z-0" style="background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
             <div class="absolute inset-0 z-[1]" style="background: radial-gradient(70% 70%, transparent 0%, transparent 10%, rgba(10, 10, 10, 0.15) 25%, rgba(10, 10, 10, 0.35) 40%, rgba(10, 10, 10, 0.6) 60%, rgba(10, 10, 10, 0.85) 80%, rgba(10, 10, 10, 0.95) 100%);"></div>
 
-            <div class="relative z-10 text-center space-y-3 md:space-y-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8" style="font-family: var(--font-display);">Prêt à Construire Quelque Chose d'Extraordinaire ?</h2>
+            <div class="relative z-10 text-center">
+                <h2 class="mx-auto max-w-4xl px-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white" style="font-family: var(--font-display);">Prêt à Construire Quelque Chose d'Extraordinaire ?</h2>
+                        <p class="cta-elite__sub">Rejoignez les startups, PME et entreprises qui ont choisi CodeSommet</p>
 
-                <div class="flex flex-col items-center gap-4 md:gap-6">
+                <div class="cta-elite__actions flex flex-col items-center gap-4">
                     {{-- Mobile CTAs --}}
                     <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden">
                         <button type="button" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto" data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' style="background-color: rgba(0, 0, 0, 0.11); border-radius: 118px; box-shadow: rgba(0, 0, 0, 0.067) 0px 2.52px 2.52px -0.47px, rgba(0, 0, 0, 0.067) 0px 5.97px 5.97px -0.94px, rgba(0, 0, 0, 0.063) 0px 10.89px 10.89px -1.41px, rgba(0, 0, 0, 0.063) 0px 18.11px 18.11px -1.88px, rgba(0, 0, 0, 0.06) 0px 29.24px 29.24px -2.34px, rgba(0, 0, 0, 0.055) 0px 47.87px 47.87px -2.81px, rgba(0, 0, 0, 0.043) 0px 82.43px 82.43px -3.28px, rgba(0, 0, 0, 0.024) 0px 150px 150px -3.75px;">
@@ -866,82 +867,13 @@ $comparisons = [
                             <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analysez Votre Site Web</span>
                         </a>
                     </div>
-
-                    {{-- Cursor "Just click" --}}
-                    <div class="relative mt-2 h-16">
-                        <div class="absolute pointer-events-none" style="left: 50%; top: 50%;">
-                            <div class="absolute left-0 -top-6 -translate-x-1/2">
-                                <svg width="20" height="19" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-lg">
-                                    <path d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z" fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-miterlimit="10"></path>
-                                </svg>
-                            </div>
-                            <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90" style="font-size: 10px;">
-                                <span class="text-white font-medium whitespace-nowrap">Cliquez ici</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-                <p class="text-base md:text-lg text-white/70 font-medium">Rejoignez les startups, PME et entreprises qui ont choisi CodeSommet</p>
-                <p class="text-sm md:text-base text-white/50">Discutons de la façon dont nous pouvons développer votre présence digitale depuis Marrakech</p>
+                <p class="cta-elite__note">Discutons de la façon dont nous pouvons développer votre présence digitale depuis Marrakech</p>
 
                 {{-- Technology pills marquee --}}
-                <div class="mt-6">
-                    <div class="relative w-full py-8">
-                        <div class="flex items-center justify-center gap-0">
-                            {{-- Left side: dashed border pills (scrolling) --}}
-                            <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
-                                <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-left" style="will-change: transform;">
-                                    {{-- marquee-left uses translateX(-50%): 2 copies are the minimum for a seamless loop.
-                                         La 2e copie est purement décorative → aria-hidden pour ne pas dupliquer
-                                         la liste de technologies dans l'arbre d'accessibilité. --}}
-                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0" @if($i === 1) aria-hidden="true" @endif>
-                                        <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                            <div class="relative w-5 h-5">
-                                                <div class="absolute inset-0 rounded-full border-2 border-white/30"></div>
-                                            </div>
-                                            <span class="text-[10px] font-medium text-white/40">{{ $kw }}</span>
-                                        </div>
-                                        </li>
-                                        @endforeach
-                                        @endfor
-                                </ul>
-                            </section>
-
-                            {{-- Center: CodeSommet logo --}}
-                            <div class="relative z-10 flex-shrink-0" style="margin-top: 5px;">
-                                <div class="relative p-[2px] rounded-[12px]" style="background: linear-gradient(135deg, rgb(0, 174, 239), rgb(0, 113, 188), rgb(0, 136, 212)); animation: 2s ease-in-out 0s infinite normal none running pulse;">
-                                    <div class="relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center">
-                                        <img alt="CodeSommet" class="h-8 w-auto" width="220" height="150" src="{{ asset('logo-white.svg') }}">
-                                    </div>
-                                </div>
-                            </div>
-
-                            {{-- Right side: solid border pills with checkmarks (scrolling) --}}
-                            <section class="flex items-center overflow-hidden" style="width: 100%; max-width: 100%; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);">
-                                <ul class="flex items-center gap-3 list-none m-0 p-0 animate-marquee-right" style="will-change: transform;">
-                                    {{-- marquee-right uses translateX(-50%): 2 copies are the minimum for a seamless loop.
-                                         Idem : la 2e copie est décorative. Cette 2e liste répète en outre les
-                                         technologies déjà listées à gauche → masquée en entier aux lecteurs d'écran. --}}
-                                    @for($i = 0; $i < 2; $i++) @foreach(['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker'] as $kw) <li class="flex-shrink-0" @if($i === 1) aria-hidden="true" @endif>
-                                        <div class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                            <div class="relative w-5 h-5">
-                                                <div class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <span class="text-[10px] font-medium text-white/90">{{ $kw }}</span>
-                                        </div>
-                                        </li>
-                                        @endforeach
-                                        @endfor
-                                </ul>
-                            </section>
+                <div class="cta-elite__mq">
+                            @include('frontoffice.partials.cta-marquee', ['items' => ['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel 13', 'Tailwind CSS', 'Shopify', 'WordPress', 'Figma', 'Flutter', 'MySQL', 'Docker']])
                         </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

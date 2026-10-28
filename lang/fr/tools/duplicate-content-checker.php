@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Contenu Dupliqué - Détecteur de Plagiat Gratuit | CodeSommet',
-    'meta_description' => 'Détectez le contenu dupliqué et le plagiat instantanément. Vérifiez la similarité, évitez les pénalités SEO et assurez l\'unicité du contenu. Détecteur gratuit avec analyse détaillée.',
+    'title' => 'Vérificateur de Contenu Dupliqué Gratuit | CodeSommet',
+    'meta_description' => 'Détectez le contenu dupliqué et le plagiat : mesurez la similarité, évitez les pénalités SEO et assurez l\'unicité de vos pages. Analyse gratuite.',
     'meta_keywords' => 'duplicate content checker,plagiarism detector,content similarity,SEO duplicate,copy checker,content uniqueness',
     'og_title' => 'Vérificateur de Contenu Dupliqué - Détecteur de Plagiat Gratuit',
     'og_description' => 'Détectez le contenu dupliqué et le plagiat instantanément. Évitez les pénalités SEO avec notre vérificateur d\'unicité gratuit.',

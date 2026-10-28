@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas GLS Sprachenzentrum - École de Langue Allemande | CodeSommet',
+    'title' => 'GLS Sprachenzentrum - École de Langue Allemande | CodeSommet',
     'meta_description' => 'Étude de cas GLS Sprachenzentrum : site bilingue FR/EN et tableau de bord de gestion pour école de langue allemande (CRM, paie, certificats).',
     'meta_keywords' => 'plateforme école de langue,site bilingue FR EN,tableau de bord de gestion scolaire,CRM étudiant,automatisation de la paie,vérification de certificats QR code,cours d\'allemand A1 C1',
     'og_title' => 'Étude de Cas GLS Sprachenzentrum - École de Langue Allemande',

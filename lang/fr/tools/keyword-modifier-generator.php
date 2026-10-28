@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Variantes de Mots-Clés - Questions, Intentions, Longue Traîne | CodeSommet',
-    'meta_description' => 'Déclinez un mot-clé en questions, comparaisons, intentions commerciales et variantes locales pour trouver des idées de longue traîne. Combinaisons générées, sans volume inventé. Gratuit.',
+    'title' => 'Générateur de Variantes de Mots-Clés | CodeSommet',
+    'meta_description' => 'Déclinez un mot-clé en questions, comparaisons, intentions commerciales et variantes locales pour trouver la longue traîne. Sans volume inventé.',
     'meta_keywords' => 'variantes mots-clés,longue traîne,questions mot-clé,intention de recherche,générateur mots-clés,idées de contenu,mots-clés locaux',
     'og_title' => 'Générateur de Variantes de Mots-Clés',
     'og_description' => 'Questions, comparaisons, intentions et variantes locales d\'un mot-clé, pour nourrir votre plan de contenus.',

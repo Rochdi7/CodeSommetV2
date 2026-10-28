@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Authentic Morocco Adventures - Site de Circuits Privés au Maroc | CodeSommet',
-    'meta_description' => 'Authentic Morocco Adventures : refonte complète du site d\'un guide privé basé à Marrakech. 62 circuits, activités, treks dans l\'Atlas, guides de destinations et réservation WhatsApp.',
+    'title' => 'Authentic Morocco Adventures - Circuits Privés | CodeSommet',
+    'meta_description' => 'Refonte du site d\'un guide privé basé à Marrakech : 62 circuits, activités, treks dans l\'Atlas, guides de destinations et réservation WhatsApp.',
     'meta_keywords' => 'site agence de voyage Maroc,site circuits privés Maroc,site tour opérateur Marrakech,refonte site tourisme,site désert Sahara,création site voyage Laravel,site guide touristique Maroc',
     'og_title' => 'Étude de Cas Authentic Morocco Adventures - Refonte d\'un Site de Circuits Privés au Maroc',
     'og_description' => 'Un catalogue de 62 circuits privés, 12 activités à Marrakech et 3 treks dans l\'Atlas, avec guides de destinations, liste de favoris, centre d\'aide et réservation directe via WhatsApp.',

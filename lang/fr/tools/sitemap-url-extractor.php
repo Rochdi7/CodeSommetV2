@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Extracteur d\'URL de Sitemap XML - Listez Toutes les Pages d\'un Site | CodeSommet',
-    'meta_description' => 'Extrayez toutes les URL des sitemaps XML d\'un site (index suivis, fichiers gzip), avec lastmod, priorité et images, et repérez doublons, hôtes mixtes et dates incohérentes. Export CSV gratuit.',
+    'title' => 'Extracteur d\'URL de Sitemap XML Gratuit | CodeSommet',
+    'meta_description' => 'Extrayez toutes les URL des sitemaps XML d\'un site (index, gzip) avec lastmod et images, et repérez doublons et hôtes mixtes. Export CSV gratuit.',
     'meta_keywords' => 'extracteur sitemap,sitemap url extractor,lister urls sitemap,sitemap xml to csv,sitemap index,lastmod,toutes les pages d\'un site',
     'og_title' => 'Extracteur d\'URL de Sitemap XML',
     'og_description' => 'Toutes les URL des sitemaps d\'un site en un clic, avec lastmod et statistiques par dossier. Export CSV / JSON.',
@@ -32,7 +32,7 @@ return [
     ],
     'related' => [
         ['slug' => 'sitemap-validator', 'title' => 'Validateur de Sitemap', 'desc' => 'Vérifiez la validité XML de votre sitemap'],
-        ['slug' => 'xml-sitemap-generator', 'title' => 'Générateur de Sitemap XML', 'desc' => 'Créez un sitemap à partir d\'une liste d\'URL'],
+        ['slug' => 'crawl-optimization-checker', 'title' => 'Optimisation du Crawl', 'desc' => 'Liens, redirections et pages qui gaspillent le crawl'],
         ['slug' => 'crawl-visualizer', 'title' => 'Visualiseur d\'Exploration', 'desc' => 'Croisez sitemap et maillage pour trouver les orphelines'],
     ],
     'cta' => [

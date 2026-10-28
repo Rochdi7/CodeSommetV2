@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Extracteur et Validateur de Données Structurées (JSON-LD, Schema.org) | CodeSommet',
-    'meta_description' => 'Extrayez le JSON-LD, les microdonnées et le RDFa d\'une page, puis validez chaque entité schema.org : propriétés requises et recommandées pour les résultats enrichis Google. Gratuit.',
+    'title' => 'Extracteur de Données Structurées JSON-LD | CodeSommet',
+    'meta_description' => 'Extrayez JSON-LD, microdonnées et RDFa d\'une page et validez chaque entité schema.org pour les résultats enrichis Google. Gratuit.',
     'meta_keywords' => 'données structurées,json-ld validator,schema.org checker,rich results,résultats enrichis,extracteur json-ld,microdata,validateur schema,structured data testing',
     'og_title' => 'Extracteur et Validateur de Données Structurées',
     'og_description' => 'JSON-LD, microdonnées, RDFa : extrayez et validez les données structurées d\'une page pour les résultats enrichis Google.',
@@ -34,7 +34,7 @@ return [
     'related' => [
         ['slug' => 'schema-generator', 'title' => 'Générateur de Schema', 'desc' => 'Créez un JSON-LD valide pour vos pages'],
         ['slug' => 'faq-schema-generator', 'title' => 'Générateur de Schema FAQ', 'desc' => 'Balisage FAQPage prêt à coller'],
-        ['slug' => 'local-business-schema', 'title' => 'Schema LocalBusiness', 'desc' => 'Balisage pour les entreprises locales'],
+        ['slug' => 'meta-extractor', 'title' => 'Extracteur de Métadonnées', 'desc' => 'Titres, descriptions et canonical en masse'],
     ],
     'cta' => [
         'title' => 'Besoin d\'un Balisage Complet sur Tout le Site ?',

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Schema Markup - Outil Gratuit de Données Structurées | CodeSommet',
-    'meta_description' => 'Générez tout type de balisage schema.org. Créez des données structurées JSON-LD pour les articles, produits, événements et plus encore. Générateur de schema gratuit.',
+    'title' => 'Générateur de Schema Markup JSON-LD | CodeSommet',
+    'meta_description' => 'Générez tout type de balisage schema.org en JSON-LD : articles, produits, événements et plus encore. Générateur de schema gratuit.',
     'meta_keywords' => 'schema generator,schema markup,structured data,JSON-LD generator,schema.org,rich snippets',
     'og_title' => 'Générateur de Schema Markup - Créez des Données Structurées',
     'og_description' => 'Générez tout type de balisage schema.org pour des résultats de recherche enrichis',

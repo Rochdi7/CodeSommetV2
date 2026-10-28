@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Sites Web par Secteur : E-commerce, Santé, Éducation | CodeSommet',
-    'meta_description' => 'Sites web et plateformes adaptés à votre secteur : e-commerce, santé, éducation, immobilier, fintech, SaaS. Découvrez l\'approche CodeSommet pour chaque industrie.',
+    'title' => 'Sites Web par Secteur : E-commerce, Santé | CodeSommet',
+    'meta_description' => 'Sites web et plateformes adaptés à votre secteur : e-commerce, santé, éducation, immobilier, fintech, SaaS. L\'approche CodeSommet par industrie.',
     'meta_keywords' => 'développement web par secteur,site web e-commerce,site web santé,site web éducation,plateforme SaaS,site web immobilier,site web fintech',
     'og_title' => 'Développement Web par Secteur d\'Activité | CodeSommet',
     'og_description' => 'Sites web et plateformes adaptés à votre secteur : e-commerce, santé, éducation, immobilier, fintech, SaaS. Découvrez l\'approche CodeSommet pour chaque industrie.',
