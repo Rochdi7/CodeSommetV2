@@ -97,7 +97,7 @@ flowchart LR
 3. C: E-E-A-T Audit (FEATURE-020), our highest-intent "Free SEO Audit" equivalent.
 4. B/C: AI Crawler Access Checker (FEATURE-090), which reuses the robots parser.
 5. E: ~~the utility batch~~. Done on 2026-10-27: 6 client-side tools plus 3 run-API tools. Status per tool is in `FREE_TOOL_IMPLEMENTATION_MATRIX.md`. The tools that already existed (FEATURE-090 AI crawler checker, -114 bot viewer, -118 sitemap extractor, -024 crawl visualizer) were not rebuilt.
-6. ~~Batch 3~~ (2026-10-27): E-E-A-T signals (-020), the crawl-optimisation checker (-023) and the AI-readiness checker (-091) are done as run-API tools. Next free batch (4): crawl-based broken links (-032), duplicates (-029) and a sitemap from the crawl (-116). Crawl depth is limited by the 20 s synchronous budget until a worker exists (DR-1).
+6. ~~Batch 3~~ (2026-10-27): E-E-A-T signals (-020), the crawl-optimisation checker (-023) and the AI-readiness checker (-091) are done as run-API tools. ~~Batch 4~~ (2026-10-27): crawl-based broken links (-032), duplicates (-029) and a sitemap from the crawl (-116) are done as site-wide modes of the existing pages, with no new public pages. Crawl depth is limited by the synchronous budget (12–20 s, and slow targets yield fewer pages) until a worker exists (DR-1).
 
 ## 5. Decisions required
 

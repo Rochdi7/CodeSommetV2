@@ -70,4 +70,11 @@ return [
     'opt_358' => 'Monthly',
     'opt_359' => 'Yearly',
     'opt_360' => 'Never',
+    'site_scan' => [
+        'title' => 'Trouver les URL en explorant votre site',
+        'intro' => 'Plutôt que de coller les adresses à la main, laissez l\'outil suivre vos liens internes (jusqu\'à 50 pages) : seules les pages indexables et canoniques sont ajoutées au générateur ci-dessus.',
+        'label' => 'Page de départ',
+        'button' => 'Explorer et remplir la liste',
+        'note' => 'robots.txt est respecté. Les pages exclues (redirections, erreurs, noindex, canonical vers une autre URL) sont listées avec leur raison.',
+    ],
 ];

@@ -87,6 +87,7 @@
                         tabindex="0">{{ __('tools/xml-sitemap-generator.text_9') }}</button>
                 </div>
             </div>
+            @include('frontoffice.partials.site-scan-panel', ['page' => 'xml-sitemap-generator', 'run' => 'site-sitemap'])
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
                 <h2 class="text-lg font-semibold text-black mb-4">{{ __('tools/xml-sitemap-generator.text_10') }}</h2>
                 <div class="space-y-4">
@@ -605,4 +606,6 @@
 @push('scripts')
     <script src="{{ asset('js/tools-common.js') }}" defer></script>
     <script src="{{ asset('js/tools/xml-sitemap-generator.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/run-api.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/site-scan.js') }}" defer></script>
 @endpush
