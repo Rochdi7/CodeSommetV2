@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Bot Viewer - Voyez Votre Page comme Googlebot, Bingbot ou GPTBot | CodeSommet',
-    'meta_description' => 'Chargez une page avec le User-Agent de Googlebot, Bingbot, GPTBot, ClaudeBot ou Facebook et comparez avec un navigateur : statut, redirections, titre, contenu. Détectez cloaking et blocages. Gratuit.',
+    'title' => 'Bot Viewer - Votre Page Vue par Googlebot | CodeSommet',
+    'meta_description' => 'Chargez une page comme Googlebot, Bingbot, GPTBot ou ClaudeBot et comparez avec un navigateur : statut, redirections, contenu, cloaking. Gratuit.',
     'meta_keywords' => 'bot viewer,voir comme googlebot,fetch as google,user-agent googlebot,cloaking checker,gptbot test,page vue par les robots,waf bloque googlebot',
     'og_title' => 'Bot Viewer - Votre Page Vue par Googlebot, Bingbot et les Robots d\'IA',
     'og_description' => 'Comparez ce que reçoivent Googlebot, Bingbot, GPTBot ou Facebook avec ce que reçoit un navigateur : statut, redirections, titre, mots, liens. Détectez cloaking et blocages.',
@@ -33,7 +33,7 @@ return [
     ],
     'related' => [
         ['slug' => 'redirect-checker', 'title' => 'Vérificateur de Redirections', 'desc' => 'Suivez la chaîne complète de redirections'],
-        ['slug' => 'mobile-friendly-test', 'title' => 'Test Mobile', 'desc' => 'Compatibilité mobile de votre page'],
+        ['slug' => 'security-headers-checker', 'title' => 'En-têtes de Sécurité HTTP', 'desc' => 'Note de A à F et corrections à appliquer'],
         ['slug' => 'ai-crawler-access-checker', 'title' => 'Accès des Robots d\'IA', 'desc' => 'Ce que robots.txt autorise aux robots d\'IA'],
     ],
     'cta' => [

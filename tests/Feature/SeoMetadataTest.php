@@ -213,4 +213,36 @@ class SeoMetadataTest extends TestCase
         $this->assertStringContainsString('"@type":"Organization"', $html);
         $this->assertStringContainsString('"@type":"WebSite"', $html);
     }
+
+    /** Ahrefs : « Title too long » (> 60) et « Meta description too long » (> 160, marge à 155). */
+    public function test_titles_and_descriptions_fit_serp_lengths(): void
+    {
+        foreach (array_merge(self::SAMPLE_PAGES, ['/tools/ngram-extractor', '/tools/ai-crawler-access-checker', '/our-work/dental-pro']) as $url) {
+            $html = $this->get($url)->getContent();
+            preg_match('/<title[^>]*>(.*?)<\/title>/s', $html, $t);
+            preg_match('/<meta name="description"\s+content="([^"]*)"/s', $html, $d);
+            $title = html_entity_decode(trim($t[1] ?? ''), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            $description = html_entity_decode(trim($d[1] ?? ''), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+
+            $this->assertLessThanOrEqual(60, mb_strlen($title), "$url : titre trop long ($title)");
+            $this->assertLessThanOrEqual(155, mb_strlen($description), "$url : meta description trop longue");
+        }
+    }
+
+    public function test_case_study_has_product_schema_and_content_pages_have_article_schema(): void
+    {
+        $this->assertStringContainsString('"@type":"Product"', $this->get('/our-work/dental-pro')->getContent());
+        $this->assertStringContainsString('"@type":"Article"', $this->get('/tools/canonical-checker')->getContent());
+        $this->assertStringContainsString('"@type":"Article"', $this->get('/legal/acceptable-use')->getContent());
+    }
+
+    /** cal.com/code-sommet répond 404 (le compte est sur cal.eu) ; wa.me redirige (302). */
+    public function test_no_links_to_dead_or_redirecting_contact_urls(): void
+    {
+        foreach (['/services/saas-platform-development', '/web-development-company/casablanca', '/tools/word-counter', '/'] as $url) {
+            $html = $this->get($url)->getContent();
+            $this->assertStringNotContainsString('https://cal.com/code-sommet', $html, "$url : lien Cal.com 404");
+            $this->assertStringNotContainsString('https://wa.me/', $html, "$url : lien wa.me (redirection)");
+        }
+    }
 }

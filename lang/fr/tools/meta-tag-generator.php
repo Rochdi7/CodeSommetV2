@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Balises Méta IA - Outil de Balises Méta SEO Gratuit | CodeSommet',
-    'meta_description' => 'Générez des balises méta SEO parfaites avec l\'IA. Créez des balises de titre, méta descriptions et balises Open Graph optimisées instantanément. Outil gratuit pour de meilleurs classements de recherche.',
+    'title' => 'Générateur de Balises Méta IA Gratuit | CodeSommet',
+    'meta_description' => 'Générez avec l\'IA des balises title, meta description et Open Graph optimisées pour le SEO. Outil gratuit, résultat instantané.',
     'meta_keywords' => 'meta tag generator,SEO meta tags,title tag generator,meta description generator,open graph tags,AI SEO tool',
     'og_title' => 'Générateur de Balises Méta IA - Outil de Balises Méta SEO Gratuit',
     'og_description' => 'Générez des balises méta SEO parfaites avec une analyse alimentée par l\'IA',

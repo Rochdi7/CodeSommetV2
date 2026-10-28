@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Extracteur de Métadonnées en Masse - Titres, Descriptions, Canonical | CodeSommet',
+    'title' => 'Extracteur de Métadonnées en Masse | CodeSommet',
     'meta_description' => 'Récupérez en une fois le titre, la meta description, la canonical, la balise robots, le H1 et le nombre de mots de 20 pages. Doublons signalés, export CSV.',
     'meta_keywords' => 'extracteur meta,meta description en masse,balise title,canonical,audit SEO en masse,export CSV,balises meta',
     'og_title' => 'Extracteur de Métadonnées en Masse',

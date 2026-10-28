@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Morocco Quest - Agence de Voyage de Luxe | CodeSommet',
-    'meta_description' => 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le désert du Sahara et expériences sur mesure. Laravel + panneau d\'administration Filament.',
+    'title' => 'Morocco Quest - Agence de Voyage de Luxe | CodeSommet',
+    'meta_description' => 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le Sahara et expériences sur mesure. Laravel + administration Filament.',
     'meta_keywords' => 'développement site agence de voyage,circuits privés Maroc,voyage de luxe Sahara,plateforme réservation Laravel,panneau administration Filament,site web tourisme sur mesure',
     'og_title' => 'Étude de Cas Morocco Quest - Agence de Voyage de Luxe',
     'og_description' => 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le désert du Sahara et expériences sur mesure. Laravel + panneau d\'administration Filament.',

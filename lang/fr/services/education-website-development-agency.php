@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Éducatifs & E-Learning | CodeSommet',
-    'meta_description' => 'Sites web éducatifs sur mesure : portails d\'études à l\'étranger, LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Devis gratuit.',
+    'title' => 'Création de Sites Web Éducatifs & E-Learning | CodeSommet',
+    'meta_description' => 'Sites web éducatifs sur mesure : portails d\'études à l\'étranger, LMS et tableaux de bord étudiants, avec fonctionnalités IA. Devis gratuit.',
     'meta_keywords' => 'développement site web éducatif,site études à l\'étranger,développement portail étudiant,CRM éducation,plateforme de cours en ligne,site école de langues',
     'og_title' => 'Développement de Sites Web Éducatifs & E-Learning | CodeSommet',
     'og_description' => 'Développement de sites web éducatifs : portails d\'études à l\'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités IA et génération de leads. Contactez-nous pour les tarifs.',

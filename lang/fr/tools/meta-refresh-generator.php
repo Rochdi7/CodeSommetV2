@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Générateur Meta Refresh - Outil de Redirection Automatique Gratuit | CodeSommet',
+    'title' => 'Générateur de Balise Meta Refresh Gratuit | CodeSommet',
     'meta_description' => 'Générez une balise meta refresh avec le délai de votre choix pour créer une redirection HTML simple, sans configuration serveur.',
     'meta_keywords' => 'meta refresh,auto redirect,HTML redirect,meta refresh generator,page redirect,refresh tag',
     'og_title' => 'Générateur Meta Refresh - Outil de Redirection Automatique Gratuit',

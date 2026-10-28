@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Page d\'Atterrissage IA - Générateur de Texte Gratuit | CodeSommet',
-    'meta_description' => 'Générez du texte de page d\'atterrissage optimisé pour la conversion avec l\'IA. Créez des titres, avantages, CTA et fonctionnalités instantanément. Outil gratuit pour les marketeurs.',
+    'title' => 'Générateur de Landing Page IA Gratuit | CodeSommet',
+    'meta_description' => 'Générez avec l\'IA le texte d\'une page d\'atterrissage orientée conversion : titres, avantages, CTA et fonctionnalités. Gratuit pour marketeurs.',
     'meta_keywords' => 'landing page generator,AI copywriting,sales page generator,conversion copy,landing page copy,marketing tool',
     'og_title' => 'Générateur de Page d\'Atterrissage IA - Générateur de Texte Gratuit',
     'og_description' => 'Générez un texte complet de page d\'atterrissage optimisé pour les conversions',

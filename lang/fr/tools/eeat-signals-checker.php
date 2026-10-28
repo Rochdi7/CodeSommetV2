@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Signaux E-E-A-T Gratuit - Confiance, Auteur, Sources | CodeSommet',
-    'meta_description' => 'Contrôlez les signaux E-E-A-T d\'une page : HTTPS, pages légales, contact, organisation schema.org, auteur, dates, profils externes, sources citées et preuves d\'expérience.',
+    'title' => 'Vérificateur de Signaux E-E-A-T Gratuit | CodeSommet',
+    'meta_description' => 'Contrôlez les signaux E-E-A-T d\'une page : HTTPS, pages légales, contact, schema Organization, auteur, dates, profils externes et sources citées.',
     'meta_keywords' => 'eeat,e-e-a-t,audit eeat,signaux de confiance,expertise,auteur,schema organization,qualité de contenu,google quality rater',
     'og_title' => 'Vérificateur de Signaux E-E-A-T',
     'og_description' => 'Confiance, autorité, expertise, expérience : listez les signaux présents et manquants sur une page, règle par règle.',
@@ -37,7 +37,7 @@ return [
     'related' => [
         ['slug' => 'ai-readiness-checker', 'title' => 'Préparation aux Moteurs IA', 'desc' => 'Vérifiez si votre page peut être lue et citée par les moteurs IA.'],
         ['slug' => 'structured-data-extractor', 'title' => 'Extracteur de Données Structurées', 'desc' => 'Inspectez le JSON-LD Organization, Article ou LocalBusiness de la page.'],
-        ['slug' => 'local-business-schema', 'title' => 'Générateur Schema LocalBusiness', 'desc' => 'Déclarez votre entreprise, son adresse et ses profils.'],
+        ['slug' => 'security-headers-checker', 'title' => 'En-têtes de Sécurité HTTP', 'desc' => 'HSTS, CSP et cookies : note de A à F'],
     ],
     'usage' => 'pages analysées',
     'cta' => [

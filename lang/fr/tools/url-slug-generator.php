@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Slug URL - Créateur d\'URL SEO-Friendly Gratuit | CodeSommet',
-    'meta_description' => 'Générez des slugs d\'URL optimisés pour le SEO instantanément. Convertissez les titres en URL propres et lisibles. Générateur de slug URL gratuit avec formatage automatique.',
+    'title' => 'Générateur de Slug d\'URL SEO Gratuit | CodeSommet',
+    'meta_description' => 'Convertissez vos titres en slugs d\'URL propres, lisibles et optimisés pour le SEO. Générateur de slug gratuit avec formatage automatique.',
     'meta_keywords' => 'URL slug generator,SEO URL,permalink generator,URL formatter,slug creator,SEO-friendly URLs',
     'og_title' => 'Générateur de Slug URL - Créateur d\'URL SEO-Friendly Gratuit',
     'og_description' => 'Convertissez les titres en slugs d\'URL propres et optimisés SEO instantanément',

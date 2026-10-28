@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Minificateur HTML/CSS/JS - Compresseur de Code Gratuit | CodeSommet',
+    'title' => 'Minificateur HTML/CSS/JS Gratuit | CodeSommet',
     'meta_description' => 'Minifiez votre code HTML, CSS et JavaScript en ligne pour alléger vos pages et accélérer leur chargement. Outil gratuit, sans inscription.',
     'meta_keywords' => 'HTML minifier,CSS minifier,JS minifier,code compressor,minify code,code optimizer,HTML compressor,CSS compressor,JavaScript minifier,code minification,web performance,optimize code,reduce file size,compress HTML,compress CSS,compress JavaScript',
     'og_title' => 'Minificateur HTML/CSS/JS - Compresseur de Code Gratuit',

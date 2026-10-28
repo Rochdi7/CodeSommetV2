@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur d\'Aperçu Open Graph - Testeur d\'Image OG Gratuit | CodeSommet',
-    'meta_description' => 'Prévisualisez l\'apparence de votre page sur Facebook, Twitter, LinkedIn. Testez les balises Open Graph et les cartes de réseaux sociaux instantanément. Outil d\'aperçu OG gratuit.',
+    'title' => 'Aperçu Open Graph - Testeur Image OG | CodeSommet',
+    'meta_description' => 'Prévisualisez votre page sur Facebook, X et LinkedIn : testez vos balises Open Graph et vos cartes de réseaux sociaux. Outil d\'aperçu OG gratuit.',
     'meta_keywords' => 'open graph preview,OG tester,social media preview,Facebook preview,Twitter card preview,meta tag preview',
     'og_title' => 'Générateur d\'Aperçu Open Graph - Testeur d\'Image OG Gratuit',
     'og_description' => 'Prévisualisez l\'apparence de votre page sur Facebook, Twitter et LinkedIn',

@@ -2989,3 +2989,378 @@ a[aria-label="Home"]::after {
     height: 24px;
     transform: translate(-50%, -50%);
 }
+
+/* Grille « Nos projets » (/our-work) : cartes reproduites 1:1 depuis la grille
+   d'études de cas de pikassostudio.com/our-work (tokens --clean-*). La 1re carte
+   est mise en avant : 2 colonnes dès md, média à gauche + texte à droite dès lg.
+   Le média est la vidéo de démo (autoplay muet, chargée via data-src par app.js). */
+.ow-grid {
+    --ow-line: #ececea;
+    --ow-line-strong: #dcdcd8;
+    --ow-band: #faf9f7;
+    --ow-ink: #111111;
+    --ow-body: #474747;
+    --ow-muted: #6b6b6b;
+    --ow-shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.04), 0 2px 8px rgba(17, 17, 17, 0.04);
+    --ow-shadow-md: 0 2px 4px rgba(17, 17, 17, 0.04), 0 12px 32px rgba(17, 17, 17, 0.08);
+    display: grid;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ow-grid > li { display: flex; }
+.ow-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--ow-line);
+    border-radius: 22px;
+    background: #fff;
+    color: var(--ow-ink);
+    line-height: 1.5;
+    transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ow-card:hover {
+    color: var(--ow-ink);
+    border-color: var(--ow-line-strong);
+    box-shadow: var(--ow-shadow-sm);
+}
+.ow-card { position: relative; }
+/* Lien étiré : le ::after du lien du titre couvre toute la carte. */
+.ow-card__link,
+.ow-card__link:hover { color: inherit; }
+.ow-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 22px;
+}
+.ow-card__link:focus-visible { outline: none; }
+.ow-card:has(.ow-card__link:focus-visible) {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color-primary-orange, #00AEEF);
+}
+.ow-card__media {
+    display: block;
+    background: var(--ow-band);
+}
+.ow-card__frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+.ow-card__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+}
+.ow-card__play {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    background: #fff;
+    color: var(--ow-ink);
+    box-shadow: var(--ow-shadow-md);
+}
+.ow-card__play {
+    z-index: 2;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ow-card__play:hover { transform: scale(1.06); }
+.ow-card__play:focus-visible {
+    outline: 2px solid var(--color-primary-orange, #00AEEF);
+    outline-offset: 3px;
+}
+.ow-card__play svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+}
+.ow-card__icon-play { margin-left: 0.125rem; }
+.ow-card__icon-pause,
+.ow-card__play.is-playing .ow-card__icon-play { display: none; }
+.ow-card__play.is-playing .ow-card__icon-pause { display: block; }
+.ow-card__body {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding: 18px 1.25rem 1.25rem;
+}
+.ow-card__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.125rem 0.625rem;
+}
+.ow-card__title {
+    margin: 0;
+    font-family: var(--font-satoshi), Satoshi, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--ow-ink);
+}
+.ow-card__label {
+    font-size: 14px;
+    color: var(--ow-muted);
+}
+.ow-card__desc {
+    display: block;
+    margin-top: 0.375rem;
+    font-size: 15px;
+    line-height: 1.625;
+    color: var(--ow-body);
+}
+.ow-card__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.875rem;
+}
+.ow-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 11px;
+    border: 1px solid var(--ow-line);
+    border-radius: 9999px;
+    background: var(--ow-band);
+    font-family: var(--font-satoshi), Satoshi, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--ow-ink);
+}
+
+@media (min-width: 768px) {
+    .ow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ow-grid > li.ow-feature { grid-column: span 2 / span 2; }
+}
+
+@media (min-width: 1024px) {
+    .ow-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .ow-card__body { padding: 18px 1.5rem 1.5rem; }
+    .ow-card__title { font-size: 20px; }
+    .ow-card:not(.ow-card--feature) .ow-card__play { bottom: 1.25rem; left: 1.25rem; }
+
+    .ow-card--feature {
+        display: grid;
+        grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+    }
+    .ow-card--feature .ow-card__media {
+        display: flex;
+        align-items: center;
+        padding: 1.25rem;
+    }
+    .ow-card--feature .ow-card__frame {
+        border: 1px solid var(--ow-line);
+        border-radius: 14px;
+        box-shadow: var(--ow-shadow-sm);
+    }
+    .ow-card--feature .ow-card__body {
+        justify-content: center;
+        padding: 2rem 1.5rem;
+    }
+    .ow-card--feature .ow-card__chips {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ow-card,
+    .ow-card__play { transition: none; }
+    .ow-card__play:hover { transform: none; }
+}
+
+/* Bandeau animé du CTA sombre (partials/cta-marquee) — composant CTAElite de
+   pikassostudio.com : 3 copies des pastilles, défilement -33.333% → 0 en 20s
+   (keyframes cta-marquee ci-dessus), lueur pulsée sur le logo, bouton pause.
+   Palette CodeSommet : dégradé cyan au lieu de l'orange. */
+@keyframes cta-mq-pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(0, 174, 239, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(0, 174, 239, 0.5); }
+}
+.cta-mq__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+.cta-mq__lane {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+/* padding-right = gap : la piste mesure exactement 3 périodes, la boucle
+   -33.333% → 0 retombe pile sur la copie suivante (pas de saut de 4px). */
+.cta-mq__track {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0 0.75rem 0 0;
+    list-style: none;
+    will-change: transform;
+    animation: cta-marquee 20s linear infinite;
+}
+.cta-mq__item { flex-shrink: 0; }
+.cta-mq__pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    white-space: nowrap;
+    padding: 0.625rem 1.25rem;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    background: transparent;
+}
+.cta-mq__pill--done { border-style: solid; }
+.cta-mq__dot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+}
+.cta-mq__dot--todo { border: 2px solid rgba(255, 255, 255, 0.3); }
+.cta-mq__dot--done { background: #fff; }
+.cta-mq__label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+}
+.cta-mq__label--todo { color: rgba(255, 255, 255, 0.7); }
+.cta-mq__label--done { color: rgba(255, 255, 255, 0.9); }
+.cta-mq__hub {
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+.cta-mq__pulse {
+    position: relative;
+    padding: 2px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00AEEF, #0071BC, #0088D4);
+    animation: cta-mq-pulse 2s ease-in-out infinite;
+}
+.cta-mq__logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: #1a1a1a;
+}
+.cta-mq__controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+.cta-mq__toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 1px solid #3a3a3a;
+    border-radius: 9999px;
+    background: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cta-mq__toggle:hover { border-color: #5a5a5a; }
+.cta-mq__toggle:focus-visible {
+    outline: 2px solid var(--color-primary-orange, #00AEEF);
+    outline-offset: 3px;
+}
+.cta-mq__toggle svg { width: 1rem; height: 1rem; }
+.cta-mq__icon-play,
+.cta-mq.is-paused .cta-mq__icon-pause { display: none; }
+.cta-mq.is-paused .cta-mq__icon-play { display: block; }
+.cta-mq.is-paused .cta-mq__track,
+.cta-mq.is-paused .cta-mq__pulse { animation-play-state: paused; }
+
+/* Mouvement réduit : liste statique centrée (une seule copie), logo entre les
+   deux listes, pas de bouton — même rendu que le mode « static » de Pikasso. */
+@media (prefers-reduced-motion: reduce) {
+    .cta-mq__row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .cta-mq__lane {
+        overflow: visible;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+    .cta-mq__track {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        animation: none;
+        will-change: auto;
+    }
+    .cta-mq__dup,
+    .cta-mq__controls { display: none; }
+    .cta-mq__hub { align-self: center; }
+    .cta-mq__pulse { animation: none; }
+}
+
+/* Carte CTA sombre (structure CTAElite de Pikasso) : espacements en classes
+   dédiées — py-10 / md:py-14 / text-[14px] / leading-6 n'existent pas dans
+   main.css (Tailwind figé), le titre se retrouvait collé au bord haut. */
+.cta-elite { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.cta-elite__sub {
+    max-width: 36rem;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.cta-elite__actions { margin-top: 2rem; }
+.cta-elite__note {
+    margin-top: 1rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.cta-elite__mq { margin-top: 2.5rem; }
+@media (min-width: 768px) {
+    .cta-elite { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    .cta-elite__sub { font-size: 1.125rem; line-height: 1.75rem; }
+    .cta-elite__actions { margin-top: 2.5rem; }
+    .cta-elite__mq { margin-top: 3rem; }
+}

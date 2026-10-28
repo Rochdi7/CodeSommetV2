@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Générateur de Balises Hreflang - Outil SEO International Gratuit | CodeSommet',
+    'title' => 'Générateur de Balises Hreflang Gratuit | CodeSommet',
     'meta_description' => 'Générez des balises hreflang pour les sites multilingues et multi-régionaux. Configuration SEO internationale en secondes. Générateur hreflang gratuit.',
     'meta_keywords' => 'hreflang generator,hreflang tags,international SEO,multilingual SEO,hreflang tag generator,multi-regional SEO',
     'og_title' => 'Générateur de Balises Hreflang - Outil SEO International Gratuit',

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Visualiseur d\'Exploration de Site - Carte des Liens Internes Gratuite | CodeSommet',
-    'meta_description' => 'Explorez votre site jusqu\'à 500 pages et visualisez son maillage interne en graphe interactif : profondeur, pages orphelines, redirections et pages non indexables.',
+    'title' => 'Visualiseur de Crawl - Carte des Liens Internes | CodeSommet',
+    'meta_description' => 'Explorez jusqu\'à 500 pages et visualisez votre maillage interne en graphe interactif : profondeur, pages orphelines, redirections, noindex.',
     'meta_keywords' => 'crawl visualizer,visualiseur exploration site,carte maillage interne,graphe liens internes,pages orphelines,profondeur de clic,architecture de site,crawler SEO gratuit',
     'og_title' => 'Visualiseur d\'Exploration de Site - Carte Interactive du Maillage Interne',
     'og_description' => 'Lancez une exploration gratuite de votre site et obtenez un graphe interactif de son maillage interne : profondeur, orphelines, redirections, noindex. Export CSV et JSON.',

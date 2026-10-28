@@ -2058,6 +2058,48 @@
         });
     })();
 
+    // CTA marquee pause/play (partials/cta-marquee): toggles .is-paused on the
+    // wrapper, which sets animation-play-state on the pill tracks and logo glow.
+    document.querySelectorAll('[data-cta-marquee-toggle]').forEach(function (btn) {
+        var root = btn.closest('[data-cta-marquee]');
+        if (!root) return;
+        btn.addEventListener('click', function () {
+            var paused = root.classList.toggle('is-paused');
+            btn.setAttribute('aria-label', btn.getAttribute(paused ? 'data-label-play' : 'data-label-pause'));
+        });
+    });
+
+    // Project card play/pause (our-work grid): the round button over each
+    // video mirrors its real state (pause icon while playing) and toggles it.
+    document.querySelectorAll('[data-video-toggle]').forEach(function (btn) {
+        var video = btn.parentElement.querySelector('video');
+        if (!video) return;
+        function sync() {
+            var playing = !video.paused && !video.ended;
+            btn.classList.toggle('is-playing', playing);
+            btn.setAttribute('aria-label', btn.getAttribute(playing ? 'data-label-pause' : 'data-label-play'));
+        }
+        video.addEventListener('play', sync);
+        video.addEventListener('pause', sync);
+        sync();
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (video.paused) {
+                video.removeAttribute('data-user-paused');
+                if (!video.getAttribute('src') && video.getAttribute('data-src')) {
+                    video.src = video.getAttribute('data-src');
+                }
+                video.muted = true;
+                var attempt = video.play();
+                if (attempt && typeof attempt.catch === 'function') attempt.catch(function () {});
+            } else {
+                video.setAttribute('data-user-paused', '');
+                video.pause();
+            }
+        });
+    });
+
     // Showcase video autoplay
     // The muted attribute alone is not always enough for Chrome/Safari to grant
     // autoplay, so set the property explicitly and play once the video is in view.
@@ -2085,7 +2127,9 @@
         }
 
         function play(video) {
-            if (reduceMotion) return;
+            // data-user-paused: set by the card play/pause button — don't
+            // restart a video the visitor stopped when it scrolls back in.
+            if (reduceMotion || video.hasAttribute('data-user-paused')) return;
             video.muted = true;
             video.defaultMuted = true;
             var attempt = video.play();

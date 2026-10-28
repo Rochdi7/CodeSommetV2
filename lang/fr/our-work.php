@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Portfolio & Études de Cas — Agence Web Maroc | CodeSommet',
-    'meta_description' => 'Découvrez notre portfolio : boutiques e-commerce, plateformes SaaS multi-tenant, sites de voyage et solutions métier sur mesure, avec études de cas détaillées.',
+    'meta_description' => 'Notre portfolio : boutiques e-commerce, plateformes SaaS multi-tenant, sites de voyage et solutions métier sur mesure, avec études de cas détaillées.',
     'meta_keywords' => 'portfolio, études de cas, projets de développement web, développement SaaS, e-commerce Shopify, application Laravel, plateformes éducatives, sites web santé',
     'og_title' => 'Nos Projets - CodeSommet Portfolio',
     'og_description' => 'Découvrez notre portfolio : boutiques e-commerce, plateformes SaaS multi-tenant, sites de voyage et solutions métier sur mesure, avec études de cas détaillées.',
@@ -58,6 +58,24 @@ return [
     'ama_tag' => 'Tourisme',
     'ama_subtitle' => 'Circuits Privés & Voyages dans le Désert',
     'ama_description' => 'Refonte complète du site d\'un guide privé basé à Marrakech : catalogue de 62 circuits dans le Sahara et à travers le Maroc, 12 activités à Marrakech, treks dans l\'Atlas, guides de destinations, liste de favoris, centre d\'aide et réservation directe via WhatsApp',
+    // Cartes projets (grille style « études de cas ») — accroche courte + services
+    'gls_card' => 'Des inscriptions en ligne au CRM étudiant, sur une seule application',
+    'gls_chips' => ['Site bilingue', 'CRM et automatisation', 'Tableau de bord'],
+    'akoubri_card' => 'Un cabinet d\'architecture présenté projet par projet',
+    'akoubri_chips' => ['Site vitrine', 'Galerie de projets', 'SEO'],
+    'ama_card' => '62 circuits au Maroc, réservés directement sur WhatsApp',
+    'ama_chips' => ['Site de voyage', 'Réservation WhatsApp', 'SEO'],
+    'glamworlds_card' => 'Des lunettes de luxe vendues en ligne, du produit au paiement',
+    'glamworlds_chips' => ['E-commerce Shopify', 'Paiement en ligne', 'SEO'],
+    'monasso_card' => 'Membres, cotisations et événements d\'une association, au même endroit',
+    'monasso_chips' => ['Plateforme SaaS', 'Tableau de bord', 'Rôles et permissions'],
+    'morocco_quest_card' => 'Circuits et réservations gérés sans toucher au code',
+    'morocco_quest_chips' => ['Application Laravel', 'Panneau d\'administration', 'Réservations'],
+    'dentalpro_card' => 'Produits, articles et réservations dentaires, pilotés depuis un seul backoffice',
+    'dentalpro_chips' => ['E-commerce', 'CMS sur mesure', 'Réservations'],
+    'hssabek_card' => 'Devis, factures et paiements des TPE, chacune dans son propre espace',
+    'hssabek_chips' => ['SaaS multi-tenant', 'Facturation', 'Exports PDF et Excel'],
+
     'text_435' => 'Automatisation',
     'text_436' => 'Automatisation',
     'text_437' => 'Automatisation',

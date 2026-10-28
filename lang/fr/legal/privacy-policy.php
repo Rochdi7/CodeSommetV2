@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Politique de Confidentialité | CodeSommet',
-    'meta_description' => 'Comment CodeSommet collecte, utilise et protège vos données personnelles : cookies, formulaires, newsletter, analytics et vos droits en matière de vie privée.',
+    'meta_description' => 'Comment CodeSommet collecte, utilise et protège vos données personnelles : cookies, formulaires, newsletter, analytics et vos droits.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Politique de Confidentialité | CodeSommet',
     'og_description' => 'Comment CodeSommet collecte, utilise et protège vos données personnelles : cookies, formulaires, newsletter, analytics et vos droits en matière de vie privée.',

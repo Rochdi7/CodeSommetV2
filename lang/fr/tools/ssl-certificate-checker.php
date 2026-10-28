@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Certificat SSL - Vérificateur SSL/TLS Gratuit | CodeSommet',
-    'meta_description' => 'Vérifiez les certificats SSL/TLS et les avertissements de sécurité pour tout domaine. Vérifiez l\'émetteur, la date d\'expiration, la chaîne de certificat et la version du protocole. Outil gratuit de vérification SSL.',
+    'title' => 'Vérificateur de Certificat SSL/TLS Gratuit | CodeSommet',
+    'meta_description' => 'Vérifiez le certificat SSL/TLS d\'un domaine : émetteur, date d\'expiration, chaîne de certificats et version du protocole. Outil gratuit.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Vérificateur de Certificat SSL - Outil de Sécurité Gratuit',
     'og_description' => 'Vérifiez les certificats SSL/TLS et les avertissements de sécurité pour tout domaine. Vérifiez l\'émetteur, la date d\'expiration, la chaîne de certificat et la version du protocole. Outil gratuit de vérification SSL.',

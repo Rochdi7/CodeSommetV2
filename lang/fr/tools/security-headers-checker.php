@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur d\'En-têtes de Sécurité HTTP - Note A à F Gratuite | CodeSommet',
-    'meta_description' => 'Analysez les en-têtes de sécurité de votre site (HSTS, CSP, X-Frame-Options, Referrer-Policy, cookies) et obtenez une note A–F avec les corrections à appliquer. Gratuit, sans inscription.',
+    'title' => 'Test des En-têtes de Sécurité HTTP (A à F) | CodeSommet',
+    'meta_description' => 'Analysez les en-têtes de sécurité de votre site (HSTS, CSP, X-Frame-Options, cookies) : note de A à F et corrections à appliquer. Gratuit.',
     'meta_keywords' => 'security headers,en-têtes de sécurité,hsts,content security policy,x-frame-options,referrer-policy,vérifier sécurité site,csp checker,http headers',
     'og_title' => 'Vérificateur d\'En-têtes de Sécurité HTTP - Note A à F',
     'og_description' => 'Testez HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy et les attributs de cookies de votre site, avec les corrections prêtes à copier.',

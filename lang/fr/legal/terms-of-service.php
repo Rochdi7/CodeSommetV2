@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Conditions d\'Utilisation | CodeSommet',
-    'meta_description' => 'Conditions d\'utilisation des services CodeSommet : périmètre des prestations de développement web, obligations des parties, propriété intellectuelle et responsabilité.',
+    'meta_description' => 'Conditions d\'utilisation des services CodeSommet : prestations de développement web, obligations des parties, propriété intellectuelle, responsabilité.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site éducation,développement site santé,développement React Maroc,développement TypeScript,développement web Maroc,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
     'og_title' => 'Conditions d\'Utilisation | CodeSommet',
     'og_description' => 'Conditions d\'utilisation des services CodeSommet : périmètre des prestations de développement web, obligations des parties, propriété intellectuelle et responsabilité.',

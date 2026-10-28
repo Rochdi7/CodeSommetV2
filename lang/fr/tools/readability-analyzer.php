@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Analyseur de Lisibilité - Outil Gratuit de Lisibilité de Contenu | CodeSommet',
-    'meta_description' => 'Vérifiez la lisibilité du contenu avec les scores Flesch-Kincaid. Analysez le niveau de lecture, améliorez la clarté du contenu. Vérificateur de lisibilité gratuit.',
+    'title' => 'Analyseur de Lisibilité de Contenu Gratuit | CodeSommet',
+    'meta_description' => 'Vérifiez la lisibilité de vos contenus avec les scores Flesch-Kincaid : niveau de lecture et pistes pour un texte plus clair. Outil gratuit.',
     'meta_keywords' => 'readability analyzer,Flesch-Kincaid,reading level,content readability,readability score,text analysis',
     'og_title' => 'Analyseur de Lisibilité - Outil Gratuit de Lisibilité de Contenu',
     'og_description' => 'Analysez la lisibilité et améliorez la compréhension du contenu',

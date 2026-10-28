@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur d\'URL Canonical - Validateur de Balise Canonical Gratuit | CodeSommet',
-    'meta_description' => 'Vérifiez les balises canonical sur n\'importe quelle page. Validez les URL canonical, détectez les problèmes et évitez les pénalités de contenu dupliqué. Outil SEO gratuit.',
+    'title' => 'Vérificateur de Balise Canonical Gratuit | CodeSommet',
+    'meta_description' => 'Vérifiez la balise canonical de n\'importe quelle page : URL valide, problèmes détectés et risques de contenu dupliqué. Outil SEO gratuit.',
     'meta_keywords' => 'canonical checker,canonical URL,duplicate content,canonical tag validator,SEO canonical,URL canonicalization',
     'og_title' => 'Vérificateur d\'URL Canonical - Validateur de Balise Canonical Gratuit',
     'og_description' => 'Vérifiez et validez les URL canonical pour éviter les problèmes de contenu dupliqué',

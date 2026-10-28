@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Accès des Robots d\'IA - GPTBot, ClaudeBot, Gemini : Qui Peut Lire Votre Site ? | CodeSommet',
-    'meta_description' => 'Vérifiez en un clic ce que votre robots.txt, vos balises meta et votre llms.txt autorisent pour GPTBot, ClaudeBot, Google-Extended, PerplexityBot et 15 autres robots d\'IA. Gratuit.',
+    'title' => 'Accès des Robots d\'IA - GPTBot, ClaudeBot | CodeSommet',
+    'meta_description' => 'Vérifiez ce que votre robots.txt, vos balises meta et votre llms.txt autorisent pour GPTBot, ClaudeBot, PerplexityBot et 15 autres robots d\'IA.',
     'meta_keywords' => 'gptbot robots.txt,claudebot,google-extended,bloquer ia robots.txt,llms.txt,perplexitybot,ai crawler,robots ia,generative engine optimization,geo seo',
     'og_title' => 'Accès des Robots d\'IA - Qui Peut Lire Votre Site ?',
     'og_description' => 'GPTBot, ClaudeBot, Google-Extended, PerplexityBot… Vérifiez ce que votre site autorise aux robots d\'IA et générez le robots.txt adapté à votre stratégie.',
@@ -33,7 +33,7 @@ return [
     'related' => [
         ['slug' => 'robots-txt-tester', 'title' => 'Testeur Robots.txt', 'desc' => 'Testez vos URL contre vos règles, robot par robot'],
         ['slug' => 'robots-txt-generator', 'title' => 'Générateur Robots.txt', 'desc' => 'Créez un fichier robots.txt propre'],
-        ['slug' => 'canonical-checker', 'title' => 'Vérificateur de Canonique', 'desc' => 'Balises canonical, robots et hreflang d\'une page'],
+        ['slug' => 'bot-viewer', 'title' => 'Bot Viewer', 'desc' => 'Votre page telle que la voient Googlebot ou GPTBot'],
     ],
     'cta' => [
         'title' => 'Une Stratégie de Visibilité dans les Réponses IA ?',

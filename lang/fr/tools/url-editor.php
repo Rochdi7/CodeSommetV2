@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Éditeur d\'URL en Masse - Nettoyer, Dédoublonner et Normaliser des Listes d\'URL | CodeSommet',
-    'meta_description' => 'Nettoyez des centaines d\'URL en un clic : suppression des paramètres de suivi (utm, gclid), des ancres et des doublons, HTTPS forcé, réduction à la racine. Traitement 100 % local, gratuit.',
+    'title' => 'Éditeur d\'URL en Masse - Nettoyer les URL | CodeSommet',
+    'meta_description' => 'Nettoyez des centaines d\'URL : paramètres de suivi (utm, gclid), ancres et doublons supprimés, HTTPS forcé, réduction à la racine. 100 % local.',
     'meta_keywords' => 'éditeur url,nettoyer liste url,supprimer utm,dédoublonner url,normaliser url,supprimer paramètres url,liste url seo',
     'og_title' => 'Éditeur d\'URL en Masse - Nettoyer et Normaliser des Listes d\'URL',
     'og_description' => 'Supprimez paramètres de suivi, ancres et doublons, forcez HTTPS ou réduisez à la racine : des centaines d\'URL nettoyées en un clic.',
@@ -37,7 +37,7 @@ return [
     ],
     'related' => [
         ['slug' => 'domain-extractor', 'title' => 'Extracteur de Domaines', 'desc' => 'Isolez les domaines uniques d\'une liste d\'URL'],
-        ['slug' => 'utm-builder', 'title' => 'Générateur UTM', 'desc' => 'Créez des URL de campagne correctement balisées'],
+        ['slug' => 'invisible-character-cleaner', 'title' => 'Nettoyeur de Caractères Invisibles', 'desc' => 'Caractères cachés dans vos textes et URL'],
         ['slug' => 'redirect-checker', 'title' => 'Vérificateur de Redirections', 'desc' => 'Suivez la chaîne de redirections d\'une URL'],
     ],
     'cta' => [

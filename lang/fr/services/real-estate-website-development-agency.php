@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Développement de Sites Web Immobiliers & Portails | CodeSommet',
+    'title' => 'Sites Web Immobiliers & Portails Sur Mesure | CodeSommet',
     'meta_description' => 'Sites web immobiliers sur mesure : recherche avancée de biens, visites virtuelles, tableau de bord agents et gestion des leads. Devis gratuit.',
     'meta_keywords' => 'développement site web immobilier,développement portail immobilier,plateforme visite virtuelle,tableau de bord agent,intégration MLS,CRM immobilier,site annonces immobilières',
     'og_title' => 'Développement de Sites Web Immobiliers & Portails | CodeSommet',

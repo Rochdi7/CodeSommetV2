@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Compresseur d\'Images Gratuit - WebP, JPEG, PNG et Redimensionnement | CodeSommet',
-    'meta_description' => 'Compressez et convertissez jusqu\'à 30 images en WebP, JPEG ou PNG, avec redimensionnement et contrôle de qualité. Traitement dans votre navigateur : aucune image n\'est envoyée.',
+    'title' => 'Compresseur d\'Images Gratuit - WebP, JPEG | CodeSommet',
+    'meta_description' => 'Compressez et convertissez jusqu\'à 30 images en WebP, JPEG ou PNG, avec redimensionnement. Traitement dans votre navigateur, aucun envoi.',
     'meta_keywords' => 'compresser image,convertir webp,réduire poids image,compression jpeg,redimensionner image,optimiser images seo,images légères',
     'og_title' => 'Compresseur d\'Images Gratuit - WebP, JPEG, PNG',
     'og_description' => 'Réduisez le poids de vos images et convertissez-les en WebP, sans les envoyer sur un serveur.',

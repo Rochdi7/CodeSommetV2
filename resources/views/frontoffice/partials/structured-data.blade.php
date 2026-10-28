@@ -65,6 +65,24 @@
         return $t !== '' ? $t : \Illuminate\Support\Str::headline($fallbackSlug);
     };
 
+    // Article pour les pages de contenu éditorial (guides d'outils, pages légales).
+    $sdArticle = function (string $title, string $description) use ($__env, $sdOrgId, $sdPageUrl, $sdSiteUrl): array {
+        $sdImage = trim($__env->yieldContent('og_image')) ?: asset('heros/saas-hero.webp');
+        return [
+            '@context' => 'https://schema.org',
+            '@type' => 'Article',
+            'headline' => trim(\Illuminate\Support\Str::before($title, '|')),
+            'description' => $description,
+            'url' => $sdPageUrl,
+            'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $sdPageUrl],
+            'image' => $sdImage,
+            'inLanguage' => 'fr',
+            'author' => ['@id' => $sdOrgId],
+            'publisher' => ['@id' => $sdOrgId],
+            'isPartOf' => ['@id' => $sdSiteUrl.'/#website'],
+        ];
+    };
+
     $sdRoute = request()->route();
     $sdRouteName = $sdRoute?->getName();
     $sdCrumbs = null;
@@ -109,6 +127,10 @@
             'provider' => ['@id' => $sdOrgId],
             'inLanguage' => 'fr',
         ];
+        // La page outil porte aussi un guide (mode d'emploi, FAQ) : Article décrivant ce contenu.
+        $sdSchemas[] = $sdArticle(__("tools/{$sdSlug}.title"), __("tools/{$sdSlug}.meta_description"));
+    } elseif (in_array($sdRouteName, ['privacy-policy', 'terms-of-service', 'refund-policy', 'cookie-policy', 'acceptable-use'], true)) {
+        $sdSchemas[] = $sdArticle(__("legal/{$sdRouteName}.title"), __("legal/{$sdRouteName}.meta_description"));
     } elseif ($sdRouteName === 'location' && ($sdCity = $sdRoute->parameter('city'))) {
         $sdLeaf = $sdShortTitle(__("locations/web-development-company-{$sdCity}.title"), $sdCity);
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Emplacements', $sdSiteUrl.'/locations'], [$sdLeaf, $sdPageUrl]];
@@ -116,6 +138,29 @@
         && ! in_array($sdSlug, config('pages.noindexed_case_studies', []), true)) {
         $sdLeaf = $sdShortTitle(__("our-work/{$sdSlug}.title"), $sdSlug);
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Nos Projets', $sdSiteUrl.'/our-work'], [$sdLeaf, $sdPageUrl]];
+        // Le produit livré au client (site / SaaS) conçu et développé par CodeSommet.
+        // Aucun prix ni avis : rien n'est inventé.
+        $sdCaseImage = [
+            'akoubri' => 'mockups/akoubri-top.webp',
+            'authentic-morocco-adventures' => 'mockups/authentic-morocco-adventures-top.webp',
+            'dental-pro' => 'mockups/dental-pro-top.webp',
+            'glamworlds' => 'mockups/glamworlds-top.webp',
+            'gls-sprachenzentrum' => 'mockups/gls-top.webp',
+            'morocco-quest' => 'mockups/morocco-quest-top.webp',
+            'mon-asso' => 'images/partners/monasso-hd.webp',
+        ][$sdSlug] ?? null;
+        $sdCaseTitle = trim(\Illuminate\Support\Str::before(__("our-work/{$sdSlug}.title"), '|'));
+        $sdSchemas[] = array_filter([
+            '@context' => 'https://schema.org',
+            '@type' => 'Product',
+            'name' => $sdLeaf,
+            'description' => __("our-work/{$sdSlug}.meta_description"),
+            'url' => $sdPageUrl,
+            'category' => str_contains($sdCaseTitle, ' - ') ? trim(\Illuminate\Support\Str::after($sdCaseTitle, ' - ')) : null,
+            'image' => $sdCaseImage ? asset($sdCaseImage) : null,
+            'brand' => ['@type' => 'Brand', 'name' => $sdLeaf],
+            'manufacturer' => ['@id' => $sdOrgId],
+        ]);
     } elseif ($sdRouteName === 'blog.show' && isset($post)) {
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Blog', $sdSiteUrl.'/blog'], [$post->title, $sdPageUrl]];
     }
@@ -131,7 +176,7 @@
             'isPartOf' => ['@id' => $sdSiteUrl.'/#website'],
             'about' => ['@id' => $sdOrgId],
             'inLanguage' => 'fr',
-            'primaryImageOfPage' => asset('heros/saas-hero.webp'),
+            'primaryImageOfPage' => ['@type' => 'ImageObject', 'url' => asset('heros/saas-hero.webp')],
         ];
     }
 

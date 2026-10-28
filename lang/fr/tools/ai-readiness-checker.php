@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Préparation aux Moteurs IA (GEO) Gratuit | CodeSommet',
-    'meta_description' => 'Votre page peut-elle être lue et citée par ChatGPT, Perplexity, Claude ou AI Overviews ? Accès des robots IA, noindex et nosnippet, texte sans JavaScript, passages citables, schema, llms.txt.',
+    'title' => 'Test de Préparation aux Moteurs IA (GEO) | CodeSommet',
+    'meta_description' => 'Votre page peut-elle être citée par ChatGPT, Perplexity ou AI Overviews ? Accès des robots IA, noindex, texte sans JavaScript, schema, llms.txt.',
     'meta_keywords' => 'geo,generative engine optimization,ai overviews,chatgpt search,perplexity,robots ia,llms.txt,nosnippet,contenu citable,seo ia',
     'og_title' => 'Vérificateur de Préparation aux Moteurs IA',
     'og_description' => 'Accès des robots IA, directives d\'extrait, texte lisible sans JavaScript et passages citables : la page est-elle prête pour les réponses IA ?',

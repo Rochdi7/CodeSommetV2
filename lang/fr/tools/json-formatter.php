@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Formateur JSON - Embellisseur et Validateur JSON Gratuit | CodeSommet',
-    'meta_description' => 'Formatez, validez et minifiez les données JSON instantanément. Embellisseur JSON gratuit avec validation de syntaxe, détection d\'erreurs et optimisation de taille. Parfait pour les développeurs et les tests API.',
+    'title' => 'Formateur et Validateur JSON Gratuit | CodeSommet',
+    'meta_description' => 'Formatez, validez et minifiez vos données JSON instantanément : validation de syntaxe et détection d\'erreurs. Idéal pour développeurs et tests API.',
     'meta_keywords' => 'JSON formatter,JSON beautifier,JSON validator,format JSON,prettify JSON,JSON tool,minify JSON,validate JSON,JSON syntax checker',
     'og_title' => 'Formateur JSON - Embellisseur et Validateur JSON Gratuit',
     'og_description' => 'Formatez, validez et minifiez les données JSON instantanément avec notre outil gratuit',

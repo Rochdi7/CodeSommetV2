@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Dental Pro - E-commerce & CMS Dentaire | CodeSommet',
+    'title' => 'Dental Pro - E-commerce & CMS Dentaire | CodeSommet',
     'meta_description' => 'Étude de cas Dental Pro : plateforme e-commerce et CMS pour le secteur dentaire, avec vitrine client, catalogue produits, blog et backoffice unifié.',
     'meta_keywords' => 'développement e-commerce dentaire,plateforme CMS dentaire,boutique en ligne matériel dentaire,backoffice administration,système de réservation en ligne,catalogue produits dentaires',
     'og_title' => 'Étude de Cas Dental Pro - E-commerce & CMS Dentaire',

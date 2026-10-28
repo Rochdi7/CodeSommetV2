@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Générateur de Script Chatbot IA - Constructeur de Flux Chatbot Gratuit | CodeSommet',
-    'meta_description' => 'Générez des flux de conversation chatbot spécifiques à votre industrie avec l\'IA. Créez des scripts de support client, des flux de vente et des bots FAQ instantanément. Outil gratuit.',
+    'title' => 'Générateur de Script Chatbot IA Gratuit | CodeSommet',
+    'meta_description' => 'Générez avec l\'IA des flux de conversation chatbot adaptés à votre secteur : support client, vente et FAQ. Outil gratuit, résultat instantané.',
     'meta_keywords' => 'chatbot script generator,AI chatbot,conversation flow,chatbot builder,customer support bot,sales chatbot',
     'og_title' => 'Générateur de Script Chatbot IA - Construisez des Conversations Intelligentes',
     'og_description' => 'Générez des flux chatbot spécifiques à l\'industrie avec des scripts alimentés par l\'IA',

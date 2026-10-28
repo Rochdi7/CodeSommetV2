@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Validateur de Sitemap XML - Vérificateur de Sitemap Gratuit | CodeSommet',
-    'meta_description' => 'Validez votre sitemap XML pour les erreurs. Vérifiez la structure du sitemap, le statut des URL et assurez une indexation correcte. Outil gratuit de validation de sitemap.',
+    'title' => 'Validateur de Sitemap XML Gratuit | CodeSommet',
+    'meta_description' => 'Validez votre sitemap XML : structure, statut des URL et erreurs bloquant l\'indexation. Outil gratuit de validation de sitemap.',
     'meta_keywords' => 'sitemap validator,XML sitemap checker,sitemap tester,sitemap validation,SEO sitemap,sitemap errors',
     'og_title' => 'Validateur de Sitemap XML - Vérifiez Votre Sitemap',
     'og_description' => 'Validez les sitemaps XML et corrigez les problèmes d\'indexation instantanément',

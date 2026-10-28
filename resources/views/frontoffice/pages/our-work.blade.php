@@ -103,188 +103,67 @@
             </div>
         </div>
     </section>
-    <section class="py-20 bg-[#F5F5F5]">
-        <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-            <div id="work-grid" class="grid md:grid-cols-2 gap-8 lg:gap-10">
-                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="technology"><a class="block"
-                        href="{{ route('case-study', 'akoubri') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/akoubri-architecture-website-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span
-                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.akoubri_tag') }}</span>
+    @php
+        $workProjects = [
+            ['slug' => 'gls-sprachenzentrum', 'name' => 'GLS Sprachenzentrum', 'category' => 'education', 'label' => 'text_14', 'key' => 'gls', 'video' => 'gls-sprachenzentrum-language-school-showcase.mp4'],
+            ['slug' => 'akoubri', 'name' => 'Akoubri', 'category' => 'technology', 'label' => 'akoubri_tag', 'key' => 'akoubri', 'video' => 'akoubri-architecture-website-showcase.mp4'],
+            ['slug' => 'authentic-morocco-adventures', 'name' => 'Authentic Morocco Adventures', 'category' => 'technology', 'label' => 'ama_tag', 'key' => 'ama', 'video' => 'authentic-morocco-adventures-travel-website-showcase.mp4'],
+            ['slug' => 'glamworlds', 'name' => 'GlamWorlds', 'category' => 'technology', 'label' => 'text_7', 'key' => 'glamworlds', 'video' => 'glamworlds-luxury-ecommerce-showcase.mp4'],
+            ['slug' => 'mon-asso', 'name' => 'Mon Asso', 'category' => 'technology', 'label' => 'monasso_tag', 'key' => 'monasso', 'video' => 'monasso-association-platform-showcase.mp4'],
+            ['slug' => 'morocco-quest', 'name' => 'Morocco Quest', 'category' => 'technology', 'label' => 'morocco_quest_tag', 'key' => 'morocco_quest', 'video' => 'morocco-quest-travel-website-showcase.mp4'],
+            ['slug' => 'dental-pro', 'name' => 'Dental Pro', 'category' => 'healthcare', 'label' => 'text_16', 'key' => 'dentalpro', 'video' => 'dentalpro-ecommerce-website-showcase.mp4'],
+            ['slug' => 'hssabek', 'name' => 'Hssabek', 'category' => 'technology', 'label' => 'hssabek_tag', 'key' => 'hssabek', 'video' => 'hssabek-invoicing-saas-showcase.mp4'],
+        ];
+    @endphp
+    <section class="py-16 md:py-24 bg-white" aria-label="Études de cas">
+        <div class="w-full mx-auto max-w-[1240px] px-4 md:px-6">
+            <ul id="work-grid" class="ow-grid">
+                @foreach ($workProjects as $project)
+                    <li @class(['ow-feature' => $loop->first]) style="opacity:0;transform:translateY(30px)"
+                        data-delay="{{ min($loop->iteration, 6) }}" data-category="{{ $project['category'] }}">
+                        {{-- Carte entièrement cliquable via le ::after du lien du titre
+                             (un <button> ne peut pas être imbriqué dans un <a>). --}}
+                        <div @class(['ow-card', 'ow-card--feature' => $loop->first])>
+                            <span class="ow-card__media">
+                                <span class="ow-card__frame">
+                                    <video data-src="{{ asset('videos/' . $project['video']) }}" autoplay loop muted
+                                        playsinline webkit-playsinline preload="none" aria-hidden="true"
+                                        class="ow-card__video"></video>
+                                    <button type="button" class="ow-card__play" data-video-toggle
+                                        aria-label="Lire la vidéo de {{ $project['name'] }}"
+                                        data-label-play="Lire la vidéo de {{ $project['name'] }}"
+                                        data-label-pause="Mettre en pause la vidéo de {{ $project['name'] }}">
+                                        <svg class="ow-card__icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
+                                        </svg>
+                                        <svg class="ow-card__icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="14" y="3" width="5" height="18" rx="1"></rect>
+                                            <rect x="5" y="3" width="5" height="18" rx="1"></rect>
+                                        </svg>
+                                    </button>
+                                </span>
+                            </span>
+                            <div class="ow-card__body">
+                                <div class="ow-card__head">
+                                    <h2 class="ow-card__title"><a class="ow-card__link"
+                                            href="{{ route('case-study', $project['slug']) }}">{{ $project['name'] }}</a></h2>
+                                    <span class="ow-card__label">{{ __('our-work.' . $project['label']) }}</span>
                                 </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Akoubri</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.akoubri_subtitle') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.akoubri_description') }}</p>
-                            </div>
-                        </div>
-                    </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="technology"><a class="block"
-                        href="{{ route('case-study', 'authentic-morocco-adventures') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/authentic-morocco-adventures-travel-website-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span
-                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.ama_tag') }}</span>
-                                </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Authentic Morocco Adventures</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.ama_subtitle') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.ama_description') }}</p>
+                                <span class="ow-card__desc">{{ __('our-work.' . $project['key'] . '_card') }}</span>
+                                <span class="ow-card__chips">
+                                    @foreach (__('our-work.' . $project['key'] . '_chips') as $chip)
+                                        <span class="ow-chip">{{ $chip }}</span>
+                                    @endforeach
+                                </span>
                             </div>
                         </div>
-                    </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="technology"><a class="block"
-                        href="{{ route('case-study', 'glamworlds') }}">
-                        <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span
-                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.text_7') }}</span>
-                                </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.text_8') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.text_9') }}</p>
-                            </div>
-                        </div>
-                    </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="technology"><a class="block"
-                        href="{{ route('case-study', 'mon-asso') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.monasso_tag') }}</span></div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.text_10') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.text_11') }}</p>
-                            </div>
-                        </div>
-                    </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="technology"><a class="block"
-                        href="{{ route('case-study', 'morocco-quest') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
-                                    autoplay loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.morocco_quest_tag') }}</span>
-                                </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.text_12') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.text_13') }}</p>
-                            </div>
-                        </div>
-                    </a></div>
-<div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="education"><a class="block"
-                        href="{{ route('case-study', 'gls-sprachenzentrum') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}"
-                                    autoplay loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span
-                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.text_14') }}</span>
-                                </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.gls_subtitle') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.text_15') }}</p>
-                            </div>
-                        </div>
-                    </a></div>                <div style="opacity:0;transform:translateY(30px)" data-delay="1" data-category="healthcare"><a class="block"
-                        href="{{ route('case-study', 'dental-pro') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span
-                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.text_16') }}</span>
-                                </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.text_17') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.text_18') }}</p>
-                            </div>
-                        </div>
-                    </a></div>
-                <div style="opacity:0;transform:translateY(30px)" data-delay="2" data-category="technology"><a class="block"
-                        href="{{ route('case-study', 'hssabek') }}">
-                        <div
-                            class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
-                            <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
-                                    data-src="{{ asset('videos/hssabek-invoicing-saas-showcase.mp4') }}" autoplay
-                                    loop muted playsinline webkit-playsinline
-                                    preload="none" class="w-full h-full object-cover"></video>
-                                <div
-                                    class="absolute top-5 right-5 px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                                    <span
-                                        class="text-xs font-bold text-white tracking-wide uppercase">{{ __('our-work.hssabek_tag') }}</span>
-                                </div>
-                            </div>
-                            <div class="px-5 py-4">
-                                <h2 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Hssabek</h2>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-3">
-                                    {{ __('our-work.hssabek_subtitle') }}</p>
-                                <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">
-                                    {{ __('our-work.hssabek_description') }}</p>
-                            </div>
-                        </div>
-                    </a></div>
-            </div>
+                    </li>
+                @endforeach
+            </ul>
             <p class="mt-10 text-center text-sm md:text-base text-[var(--text-secondary)] max-w-3xl mx-auto">
                 Des boutiques comme GlamWorlds ou Dental Pro s'appuient sur
                 <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'ecommerce-website-development') }}">notre offre de développement e-commerce</a>,
@@ -332,7 +211,7 @@
     </section>
     <div class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
         <div class="max-w-7xl mx-auto">
-            <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 py-6 md:py-8"
+            <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 cta-elite"
                 style="background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)">
                 <div class="absolute inset-0 z-0"
                     style="background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
@@ -350,10 +229,11 @@
                 rgba(10, 10, 10, 0.95) 100%
               )">
                 </div>
-                <div class="relative z-10 text-center space-y-3 md:space-y-4">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white px-4 pb-6 md:pb-8"
+                <div class="relative z-10 text-center">
+                    <h2 class="mx-auto max-w-4xl px-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white"
                         style="font-family:var(--font-display)">{{ __('our-work.text_23') }}</h2>
-                    <div class="flex flex-col items-center gap-4 md:gap-6">
+                        <p class="cta-elite__sub">{{ __('our-work.text_28') }}</p>
+                    <div class="cta-elite__actions flex flex-col items-center gap-4">
                         <div class="flex flex-col sm:flex-row items-center gap-4 md:hidden"><a target="_blank"
                                 rel="noopener noreferrer"
                                 class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto"
@@ -460,628 +340,11 @@
                                     class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
                                     style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('our-work.text_27') }}</span>
                             </a></div>
-                        <div class="relative mt-2 h-16">
-                            <div class="absolute pointer-events-none animate-cursor-stops" style="left:50%;top:50%">
-                                <div class="absolute left-0 -top-6 -translate-x-1/2"><svg width="20" height="19"
-                                        viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        class="drop-shadow-lg">
-                                        <path
-                                            d="M 8.065 7.445 C 7.971 6.231 9.325 5.449 10.33 6.137 L 20.112 12.846 C 21.187 13.583 20.819 15.252 19.535 15.47 L 15.214 16.201 C 14.871 16.259 14.56 16.439 14.339 16.706 L 11.545 20.083 C 10.714 21.087 9.084 20.57 8.983 19.271 Z"
-                                            fill="rgb(0, 0, 0)" stroke="rgb(255, 255, 255)" stroke-width="2"
-                                            stroke-miterlimit="10"></path>
-                                    </svg></div>
-                                <div class="absolute left-0 top-0 -translate-x-1/2 px-3 py-1 rounded-full border border-white/80 bg-black/90"
-                                    style="font-size:10px"><span
-                                        class="text-white font-medium whitespace-nowrap">{{ __('our-work.text_129') }}</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <p class="text-base md:text-lg text-white/70 font-medium">{{ __('our-work.text_28') }}</p>
-                    <p class="text-sm md:text-base text-white/50">{{ __('our-work.text_29') }}</p>
-                    <div class="mt-6">
-                        <div class="relative w-full py-8">
-                            <div class="flex items-center justify-center gap-0">
-                                <section class="flex items-center overflow-hidden"
-                                    style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
-                                    <ul class="flex items-center gap-3 list-none m-0 p-0 animate-cta-marquee"
-                                        style="position:relative;flex-direction:row;will-change:transform">
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Chatbots
-                                                    IA</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">{{ __('our-work.text_130') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">{{ __('our-work.text_435') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">SEO</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Analytique</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">Authentification</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Paiements</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">CMS</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Chatbots
-                                                    IA</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">{{ __('our-work.text_131') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">{{ __('our-work.text_436') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">SEO</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Analytique</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">Authentification</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Paiements</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">CMS</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Chatbots
-                                                    IA</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">{{ __('our-work.text_132') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">{{ __('our-work.text_437') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">SEO</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Analytique</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/40">Authentification</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">Paiements</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-dashed border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div class="absolute inset-0 rounded-full border-2 border-white/30">
-                                                    </div>
-                                                </div><span class="text-[10px] font-medium text-white/40">CMS</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </section>
-                                <div style="margin-top:5px" class="jsx-19a8fa7e477c8109 relative z-10 flex-shrink-0">
-                                    <div style="background:linear-gradient(135deg, #00AEEF, #0071BC, #0088D4);animation:subtle-pulse 2s ease-in-out infinite"
-                                        class="jsx-19a8fa7e477c8109 relative p-[2px] rounded-[12px]">
-                                        <div
-                                            class="jsx-19a8fa7e477c8109 relative px-8 py-4 bg-[#1a1a1a] rounded-[10px] flex items-center justify-center">
-                                            <img src="{{ asset('logo-white.svg') }}" alt="CodeSommet"
-                                                class="jsx-19a8fa7e477c8109 h-8 w-auto" /></div>
-                                    </div>
-                                </div>
-                                <section class="flex items-center overflow-hidden"
-                                    style="width:100%;max-width:100%;mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)">
-                                    <ul class="flex items-center gap-3 list-none m-0 p-0 animate-cta-marquee"
-                                        style="position:relative;flex-direction:row;will-change:transform">
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Chatbots
-                                                    IA</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">{{ __('our-work.text_133') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">{{ __('our-work.text_438') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">SEO</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Analytique</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">Authentification</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Paiements</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">CMS</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Chatbots
-                                                    IA</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">{{ __('our-work.text_134') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">{{ __('our-work.text_439') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">SEO</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Analytique</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">Authentification</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Paiements</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">CMS</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Chatbots
-                                                    IA</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">{{ __('our-work.text_135') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">{{ __('our-work.text_440') }}</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">SEO</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Analytique</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span
-                                                    class="text-[10px] font-medium text-white/90">Authentification</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">Paiements</span>
-                                            </div>
-                                        </li>
-                                        <li class="flex-shrink-0">
-                                            <div
-                                                class="flex items-center gap-3 whitespace-nowrap px-5 py-2.5 rounded-full border border-solid border-white/20 bg-transparent">
-                                                <div class="relative w-5 h-5">
-                                                    <div
-                                                        class="absolute inset-0 rounded-full bg-white flex items-center justify-center">
-                                                        <svg width="12" height="10" viewBox="0 0 12 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1 5L4.5 8.5L11 1.5" stroke="black" stroke-width="2"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg></div>
-                                                </div><span class="text-[10px] font-medium text-white/90">CMS</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </section>
-                            </div>
+                    <p class="cta-elite__note">{{ __('our-work.text_29') }}</p>
+                    <div class="cta-elite__mq">
+                            @include('frontoffice.partials.cta-marquee')
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1090,7 +353,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             var grid = document.getElementById('work-grid');
             var filterBtns = document.querySelectorAll('#work-filters button[data-filter]');
-            var workCards = grid.querySelectorAll(':scope > div[data-category]');
+            var workCards = grid.querySelectorAll(':scope > li[data-category]');
 
             var activeClass =
                 'px-6 py-2.5 rounded-full font-medium transition-all duration-300 bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]';

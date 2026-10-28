@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Éditeur de Texte Ligne par Ligne - Trier, Dédoublonner, Filtrer, Remplacer | CodeSommet',
-    'meta_description' => 'Traitez des listes de mots-clés ou de lignes de texte : suppression des doublons et lignes vides, tri, filtres, rechercher-remplacer, préfixes et suffixes. Gratuit, 100 % dans le navigateur.',
+    'title' => 'Éditeur de Texte Ligne par Ligne Gratuit | CodeSommet',
+    'meta_description' => 'Traitez des listes de mots-clés ou de lignes : doublons et lignes vides supprimés, tri, filtres, rechercher-remplacer. 100 % dans le navigateur.',
     'meta_keywords' => 'éditeur de texte en ligne,supprimer doublons,trier liste,supprimer lignes vides,rechercher remplacer,liste mots-clés,outil texte seo',
     'og_title' => 'Éditeur de Texte Ligne par Ligne',
     'og_description' => 'Dédoublonnez, triez, filtrez et transformez vos listes de mots-clés ou de lignes de texte en un clic.',
@@ -39,7 +39,7 @@ return [
     'related' => [
         ['slug' => 'text-case-converter', 'title' => 'Convertisseur de Casse', 'desc' => 'Majuscules, minuscules, titres et formats de code'],
         ['slug' => 'keyword-modifier-generator', 'title' => 'Générateur de Variantes de Mots-Clés', 'desc' => 'Déclinez un mot-clé en questions et intentions'],
-        ['slug' => 'word-counter', 'title' => 'Compteur de Mots', 'desc' => 'Mots, caractères et temps de lecture'],
+        ['slug' => 'invisible-character-cleaner', 'title' => 'Nettoyeur de Caractères Invisibles', 'desc' => 'Supprimez espaces insécables et caractères cachés'],
     ],
     'cta' => [
         'title' => 'Une Stratégie de Mots-Clés à Construire ?',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Site Web Cabinet Médical & Télémédecine | CodeSommet',
-    'meta_description' => 'Sites web pour médecins et cliniques de télémédecine : présentation du cabinet, prise de rendez-vous en ligne et parcours patient clair, optimisés pour le SEO local.',
+    'meta_description' => 'Sites web pour médecins et cliniques de télémédecine : présentation du cabinet, rendez-vous en ligne et parcours patient clair, optimisés SEO local.',
     'meta_keywords' => 'création site web médecin,site web cabinet médical,site web clinique télémédecine,prise de rendez-vous en ligne médical,SEO médical local,site web professionnel de santé,site web multi-spécialités,conception site web patient',
     'og_title' => 'Création de Site Web de Télémédecine pour Cabinets & Cliniques | CodeSommet',
     'og_description' => 'Sites web pour médecins et cliniques proposant la télémédecine : présentation du cabinet, prise de rendez-vous en ligne et parcours patient clair, optimisés pour le référencement médical local.',

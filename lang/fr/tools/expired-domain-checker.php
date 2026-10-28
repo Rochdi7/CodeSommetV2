@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Vérificateur de Domaines Expirés et Disponibles - Données Officielles RDAP | CodeSommet',
-    'meta_description' => 'Vérifiez jusqu\'à 25 noms de domaine : disponibilité, registraire, date de création et d\'expiration, depuis les registres officiels (RDAP) et le DNS. Gratuit.',
+    'title' => 'Vérificateur de Domaines Expirés (RDAP) | CodeSommet',
+    'meta_description' => 'Vérifiez jusqu\'à 25 domaines : disponibilité, registraire, dates de création et d\'expiration, via les registres officiels (RDAP) et le DNS.',
     'meta_keywords' => 'domaine expiré,domaine disponible,vérifier nom de domaine,RDAP,whois,date expiration domaine,registraire,âge du domaine',
     'og_title' => 'Vérificateur de Domaines Expirés et Disponibles',
     'og_description' => 'Disponibilité, registraire, création et expiration de 25 domaines, depuis les registres officiels. Gratuit.',

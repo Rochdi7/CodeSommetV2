@@ -17,7 +17,7 @@
 
     {{-- WhatsApp --}}
     <a class="fab fab--whatsapp" target="_blank" rel="noopener noreferrer"
-        href="https://wa.me/212632582096?text=Bonjour%20CodeSommet%20!%20Je%20souhaite%20discuter%20d%27un%20projet%20de%20d%C3%A9veloppement%20web.%20Pouvons-nous%20%C3%A9changer%20%3F"
+        href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Bonjour%20CodeSommet%20!%20Je%20souhaite%20discuter%20d%27un%20projet%20de%20d%C3%A9veloppement%20web.%20Pouvons-nous%20%C3%A9changer%20%3F"
         aria-label="Discuter avec nous sur WhatsApp">
         <span class="fab__pulse" aria-hidden="true"></span>
         <svg class="fab__icon fab__icon--wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

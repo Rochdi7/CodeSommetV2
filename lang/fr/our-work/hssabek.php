@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Étude de Cas Hssabek - SaaS de Facturation Multi-Tenant | CodeSommet',
-    'meta_description' => 'Hssabek : SaaS de facturation multi-tenant pour TPE, PME et freelances. Devis, factures, avoirs, clients, stock, paiements et rapports TVA, 100 % en français.',
+    'title' => 'Hssabek - SaaS de Facturation Multi-Tenant | CodeSommet',
+    'meta_description' => 'Hssabek : SaaS de facturation multi-tenant pour TPE, PME et freelances. Devis, factures, avoirs, stock, paiements et rapports TVA, en français.',
     'meta_keywords' => 'logiciel de facturation,SaaS multi-tenant,devis en ligne,gestion commerciale TPE PME,facturation freelance,gestion de stock,rapports TVA,Laravel SaaS',
     'og_title' => 'Étude de Cas Hssabek - SaaS de Facturation Multi-Tenant pour TPE, PME et Freelances',
     'og_description' => 'Une solution SaaS multi-tenant où chaque entreprise dispose de son sous-domaine et de ses données isolées : devis convertibles en un clic, factures, avoirs, bons de livraison, stock temps réel, paiements et rapports TVA.',

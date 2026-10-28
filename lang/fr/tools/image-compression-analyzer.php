@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Analyseur de Compression d\'Images - Optimiseur d\'Images Gratuit | CodeSommet',
-    'meta_description' => 'Analysez et optimisez vos images pour le web. Vérifiez la taille des fichiers, les formats et la qualité de compression. Obtenez des recommandations pour améliorer la vitesse de chargement et les performances SEO.',
+    'title' => 'Analyseur de Compression d\'Images Gratuit | CodeSommet',
+    'meta_description' => 'Analysez vos images pour le web : taille des fichiers, formats et qualité de compression, avec des recommandations pour accélérer vos pages.',
     'meta_keywords' => 'image compression analyzer,image optimizer,compress images,image size checker,optimize images,image quality',
     'og_title' => 'Analyseur de Compression d\'Images - Optimiseur d\'Images Gratuit',
     'og_description' => 'Analysez et optimisez vos images pour le web. Vérifiez la taille des fichiers, les formats et la qualité de compression.',

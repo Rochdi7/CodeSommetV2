@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'Testeur Robots.txt - Vérifiez si une URL est Bloquée pour Googlebot | CodeSommet',
-    'meta_description' => 'Testez vos URL contre votre robots.txt pour Googlebot, Bingbot, GPTBot et tout autre robot : règle appliquée, groupes, sitemaps et erreurs de syntaxe. Gratuit, sans inscription.',
+    'title' => 'Testeur Robots.txt - URL Bloquée ou Non ? | CodeSommet',
+    'meta_description' => 'Testez vos URL contre votre robots.txt pour Googlebot, Bingbot, GPTBot ou tout robot : règle appliquée, groupes, sitemaps, erreurs. Gratuit.',
     'meta_keywords' => 'testeur robots.txt,robots.txt tester,url bloquée googlebot,vérifier robots.txt,disallow allow test,robots txt validator,crawl bloqué',
     'og_title' => 'Testeur Robots.txt - Vérifiez si une URL est Bloquée',
     'og_description' => 'Testez vos URL contre votre robots.txt pour n\'importe quel robot et voyez la règle exacte qui s\'applique.',
@@ -37,7 +37,7 @@ return [
     ],
     'related' => [
         ['slug' => 'robots-validator', 'title' => 'Validateur Robots.txt', 'desc' => 'Vérifiez la syntaxe globale de votre fichier'],
-        ['slug' => 'robots-txt-generator', 'title' => 'Générateur Robots.txt', 'desc' => 'Créez un fichier robots.txt propre'],
+        ['slug' => 'crawl-optimization-checker', 'title' => 'Optimisation du Crawl', 'desc' => 'Ce qui gaspille votre budget de crawl'],
         ['slug' => 'ai-crawler-access-checker', 'title' => 'Accès des Robots d\'IA', 'desc' => 'Qui peut lire votre site : GPTBot, ClaudeBot, Gemini…'],
     ],
     'cta' => [
