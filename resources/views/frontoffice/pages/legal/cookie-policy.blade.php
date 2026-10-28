@@ -90,10 +90,10 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/cookie-policy.text_215') }}
                             </h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Cookies :</strong> {{ __('legal/cookie-policy.text_9') }}</li>
-                                <li><strong>Balises web :</strong> {{ __('legal/cookie-policy.text_10') }}</li>
-                                <li><strong>Stockage local :</strong> {{ __('legal/cookie-policy.text_11') }}</li>
-                                <li><strong>{{ __('legal/cookie-policy.text_216') }}</strong>
+                                <li><span class="tx-strong">Cookies :</span> {{ __('legal/cookie-policy.text_9') }}</li>
+                                <li><span class="tx-strong">Balises web :</span> {{ __('legal/cookie-policy.text_10') }}</li>
+                                <li><span class="tx-strong">Stockage local :</span> {{ __('legal/cookie-policy.text_11') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/cookie-policy.text_216') }}</span>
                                     {{ __('legal/cookie-policy.text_12') }}</li>
                             </ul>
                         </div>
@@ -101,9 +101,9 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/cookie-policy.text_13') }}
                             </h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/cookie-policy.text_217') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/cookie-policy.text_217') }}</span>
                                     {{ __('legal/cookie-policy.text_14') }}</li>
-                                <li><strong>Cookies persistants :</strong> {{ __('legal/cookie-policy.text_15') }}</li>
+                                <li><span class="tx-strong">Cookies persistants :</span> {{ __('legal/cookie-policy.text_15') }}</li>
                             </ul>
                         </div>
                     </div>
@@ -150,16 +150,16 @@
                                         {{ __('legal/cookie-policy.text_17') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_18') }}
+                                    <p class="mb-2"><span class="tx-strong">Objectif :</span> {{ __('legal/cookie-policy.text_18') }}
                                     </p>
-                                    <p class="mb-2"><strong>Exemples :</strong></p>
+                                    <p class="mb-2"><span class="tx-strong">Exemples :</span></p>
                                     <ul class="list-disc pl-6 space-y-1">
                                         <li>{{ __('legal/cookie-policy.text_19') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_20') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_21') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_22') }}</li>
                                     </ul>
-                                    <p class="mt-3"><strong>{{ __('legal/cookie-policy.text_23') }}</strong>
+                                    <p class="mt-3"><span class="tx-strong">{{ __('legal/cookie-policy.text_23') }}</span>
                                         {{ __('legal/cookie-policy.text_24') }}</p>
                                     <p class="mt-2 font-medium text-[#0F0F0F]">{{ __('legal/cookie-policy.text_25') }}</p>
                                 </div>
@@ -191,9 +191,9 @@
                                         {{ __('legal/cookie-policy.text_218') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_26') }}
+                                    <p class="mb-2"><span class="tx-strong">Objectif :</span> {{ __('legal/cookie-policy.text_26') }}
                                     </p>
-                                    <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_27') }}</strong></p>
+                                    <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_27') }}</span></p>
                                     <ul class="list-disc pl-6 space-y-1">
                                         <li>{{ __('legal/cookie-policy.text_28') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_29') }}</li>
@@ -201,8 +201,8 @@
                                         <li>{{ __('legal/cookie-policy.text_31') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_32') }}</li>
                                     </ul>
-                                    <p class="mt-3"><strong>Service tiers :</strong> Google Analytics 4</p>
-                                    <p class="mt-2"><strong>{{ __('legal/cookie-policy.text_33') }}</strong>
+                                    <p class="mt-3"><span class="tx-strong">Service tiers :</span> Google Analytics 4</p>
+                                    <p class="mt-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_33') }}</span>
                                         {{ __('legal/cookie-policy.text_34') }}</p>
                                     <p class="mt-2 text-sm">{{ __('legal/cookie-policy.text_35') }} <a
                                             href="https://policies.google.com/privacy" target="_blank"
@@ -238,16 +238,16 @@
                                         {{ __('legal/cookie-policy.text_37') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_38') }}
+                                    <p class="mb-2"><span class="tx-strong">Objectif :</span> {{ __('legal/cookie-policy.text_38') }}
                                     </p>
-                                    <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_39') }}</strong></p>
+                                    <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_39') }}</span></p>
                                     <ul class="list-disc pl-6 space-y-1">
                                         <li>{{ __('legal/cookie-policy.text_40') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_41') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_42') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_43') }}</li>
                                     </ul>
-                                    <p class="mt-3"><strong>{{ __('legal/cookie-policy.text_44') }}</strong>
+                                    <p class="mt-3"><span class="tx-strong">{{ __('legal/cookie-policy.text_44') }}</span>
                                         {{ __('legal/cookie-policy.text_45') }}</p>
                                 </div>
                             </div>
@@ -278,16 +278,16 @@
                                         {{ __('legal/cookie-policy.text_46') }}</h3>
                                 </div>
                                 <div class="text-[#0F0F0F]/80">
-                                    <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_47') }}
+                                    <p class="mb-2"><span class="tx-strong">Objectif :</span> {{ __('legal/cookie-policy.text_47') }}
                                     </p>
-                                    <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_48') }}</strong></p>
+                                    <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_48') }}</span></p>
                                     <ul class="list-disc pl-6 space-y-1">
                                         <li>{{ __('legal/cookie-policy.text_49') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_219') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_50') }}</li>
                                         <li>{{ __('legal/cookie-policy.text_51') }}</li>
                                     </ul>
-                                    <p class="mt-3"><strong>{{ __('legal/cookie-policy.text_52') }}</strong>
+                                    <p class="mt-3"><span class="tx-strong">{{ __('legal/cookie-policy.text_52') }}</span>
                                         {{ __('legal/cookie-policy.text_53') }}</p>
                                     <p class="mt-2 font-medium text-[#0F0F0F]">{{ __('legal/cookie-policy.text_54') }}</p>
                                 </div>
@@ -314,15 +314,15 @@
                         <div class="space-y-4">
                             <div class="bg-[#F8F8F8] rounded-lg p-6">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">Google Analytics 4</h3>
-                                <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_220') }}</p>
-                                <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_56') }}</strong>
+                                <p class="mb-2"><span class="tx-strong">Objectif :</span> {{ __('legal/cookie-policy.text_220') }}</p>
+                                <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_56') }}</span>
                                     {{ __('legal/cookie-policy.text_57') }}</p>
-                                <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_58') }}</strong> <a
+                                <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_58') }}</span> <a
                                         href="https://policies.google.com/privacy" target="_blank"
                                         rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/cookie-policy.text_59') }}</a>
                                 </p>
-                                <p><strong>{{ __('legal/cookie-policy.text_60') }}</strong> <a
+                                <p><span class="tx-strong">{{ __('legal/cookie-policy.text_60') }}</span> <a
                                         href="https://tools.google.com/dlpage/gaoptout" target="_blank"
                                         rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/cookie-policy.text_61') }}</a>
@@ -331,14 +331,14 @@
                             <div class="bg-[#F8F8F8] rounded-lg p-6">
                                 <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">
                                     {{ __('legal/cookie-policy.text_62') }}</h3>
-                                <p class="mb-2"><strong>Objectif :</strong> {{ __('legal/cookie-policy.text_63') }}</p>
-                                <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_64') }}</strong>
+                                <p class="mb-2"><span class="tx-strong">Objectif :</span> {{ __('legal/cookie-policy.text_63') }}</p>
+                                <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_64') }}</span>
                                     {{ __('legal/cookie-policy.text_65') }}</p>
-                                <p class="mb-2"><strong>{{ __('legal/cookie-policy.text_66') }}</strong> <a
+                                <p class="mb-2"><span class="tx-strong">{{ __('legal/cookie-policy.text_66') }}</span> <a
                                         href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/cookie-policy.text_67') }}</a>
                                 </p>
-                                <p><strong>Remarque :</strong> {{ __('legal/cookie-policy.text_68') }}</p>
+                                <p><span class="tx-strong">Remarque :</span> {{ __('legal/cookie-policy.text_68') }}</p>
                             </div>
                         </div>
                         <div
@@ -453,11 +453,11 @@
                     <div class="space-y-4 text-[#0F0F0F]/70">
                         <p>{{ __('legal/cookie-policy.text_88') }}</p>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>{{ __('legal/cookie-policy.text_89') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/cookie-policy.text_89') }}</span>
                                 {{ __('legal/cookie-policy.text_90') }}</li>
-                            <li><strong>{{ __('legal/cookie-policy.text_91') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/cookie-policy.text_91') }}</span>
                                 {{ __('legal/cookie-policy.text_92') }}</li>
-                            <li><strong>{{ __('legal/cookie-policy.text_93') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/cookie-policy.text_93') }}</span>
                                 {{ __('legal/cookie-policy.text_94') }}</li>
                         </ul>
                         <p class="mt-4">{{ __('legal/cookie-policy.text_95') }}</p>
@@ -507,18 +507,18 @@
                                 <p>{{ __('legal/cookie-policy.text_107') }}</p>
                             </div>
                             <div class="space-y-2">
-                                <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
+                                <p><span class="tx-strong">Email :</span> <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/cookie-policy.text_421') }}</a>
                                 </p>
-                                <p><strong>{{ __('legal/cookie-policy.text_108') }}</strong> <a href="tel:+212632582096"
+                                <p><span class="tx-strong">{{ __('legal/cookie-policy.text_108') }}</span> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                                <p><strong>{{ __('legal/cookie-policy.text_109') }}</strong> <a
+                                <p><span class="tx-strong">{{ __('legal/cookie-policy.text_109') }}</span> <a
                                         href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                             </div>
                             <div>
-                                <p><strong>{{ __('legal/cookie-policy.text_110') }}</strong> Maroc</p>
-                                <p><strong>{{ __('legal/cookie-policy.text_111') }}</strong> Monde entier</p>
+                                <p><span class="tx-strong">{{ __('legal/cookie-policy.text_110') }}</span> Maroc</p>
+                                <p><span class="tx-strong">{{ __('legal/cookie-policy.text_111') }}</span> Monde entier</p>
                             </div>
                             <div class="pt-3 border-t border-[#0F0F0F]/10">
                                 <p class="text-sm">{{ __('legal/cookie-policy.text_112') }}</p>

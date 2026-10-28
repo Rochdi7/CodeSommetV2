@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Vérificateur de Certificat SSL/TLS Gratuit',
     'title' => 'Vérificateur de Certificat SSL/TLS Gratuit | CodeSommet',
     'meta_description' => 'Vérifiez le certificat SSL/TLS d\'un domaine : émetteur, date d\'expiration, chaîne de certificats et version du protocole. Outil gratuit.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Vérificateur de Redirections 301 et 302',
     'title' => 'Vérificateur de Redirections 301 et 302 | CodeSommet',
     'meta_description' => 'Vérifiez les redirections HTTP (301, 302, 307, 308) et les chaînes de redirection d\'une URL, et corrigez les problèmes SEO. Outil gratuit.',
     'meta_keywords' => 'redirect checker,301 redirect,302 redirect,redirect chain,URL redirect tester,HTTP redirect tool',

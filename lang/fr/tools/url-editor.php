@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Nettoyez et normalisez des listes d\'URL en un clic, directement dans votre navigateur.',
 
     'breadcrumb' => 'Éditeur d\'URL',
-    'h1' => 'Éditeur d\'URL en Masse',
+    'h1' => 'Éditeur d\'URL en Masse : Nettoyer les URL',
     'intro' => 'Collez une liste d\'URL exportée d\'un crawl, de la Search Console ou d\'un tableur, choisissez les nettoyages à appliquer et récupérez une liste propre et dédoublonnée.',
     'usage' => 'listes nettoyées',
 

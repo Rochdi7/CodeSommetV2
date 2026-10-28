@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web au Caire, Égypte : des sites web qui génèrent',
     'title' => 'Développement Web au Caire, Égypte | CodeSommet',
     'meta_description' => 'Du Caire, collaborez à distance avec CodeSommet : conception de sites, plateformes e-commerce et référencement pour les entreprises égyptiennes.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -180,7 +181,7 @@ return [
     'sw_2865' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_2866' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes de Le Caire entreprises.',
     'sw_2867' => 'Questions Fréquemment Posées Sur le Développement Web à Le Caire',
-    'sw_2868' => 'Voir l\'Étude de Cas',
+    'sw_2868' => 'Découvrir ce projet',
     'faq_a1' => 'Nous n\'avons pas de bureau à Le Caire : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Le Caire et vous gardez une visibilité complète sur l\'avancement à chaque étape.',
     'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',

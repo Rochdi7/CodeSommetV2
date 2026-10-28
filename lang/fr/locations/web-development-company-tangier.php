@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création Site Web Tanger : votre Agence Web pour des sites qui génèrent',
     'title' => 'Création Site Web Tanger — Agence Web | CodeSommet',
     'meta_description' => 'Création de sites web à Tanger : sites vitrines, e-commerce et plateformes sur mesure pour les entreprises tangéroises, avec SEO, par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -179,7 +180,7 @@ return [
     'sw_3063' => '* Comparaison basée sur les tarifs moyens et les offres de services généralement observés sur le marché',
     'sw_3064' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Tanger.',
     'sw_3065' => 'Questions fréquemment posées sur le Développement Web à Tanger',
-    'sw_3066' => 'Voir l\'Étude de Cas',
+    'sw_3066' => 'Découvrir ce projet',
     'sw_3067' => 'Contactez notre équipe Tanger',
     'sw_3068' => ') }}</span>
                     </div>

@@ -834,7 +834,7 @@ $comparisons = [
                                     <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                 </svg>
                             </div>
-                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analysez Votre Site Web</span>
+                            <span class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white" style="font-family: Inter, sans-serif; font-weight: 500; letter-spacing: -0.04em;">Analyser Mon Site Gratuitement</span>
                         </a>
                     </div>
 

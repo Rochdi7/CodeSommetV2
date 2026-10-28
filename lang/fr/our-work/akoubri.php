@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_sub' => 'Site d\'Architecte à Marrakech',
     'title' => 'Akoubri - Site d\'Architecte à Marrakech | CodeSommet',
     'meta_description' => 'Akoubri : site vitrine premium pour un cabinet d\'architecture et de design d\'intérieur à Marrakech. Portfolio, images 3D, journal SEO et devis en ligne.',
     'meta_keywords' => 'site web cabinet d\'architecture,site architecte Marrakech,portfolio architecte,site design d\'intérieur,images de synthèse,site vitrine React,création site architecture Maroc',
@@ -53,7 +54,7 @@ return [
     'text_38' => 'Voir Tout',
     'text_39' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_40' => 'Réserver un Appel Découverte',
-    'text_41' => 'Analyser Votre Site Web',
+    'text_41' => 'Analyser Mon Site Gratuitement',
     'text_42' => 'Réserver un Appel Découverte',
     'text_43' => 'Analyser Votre Site Web',
     'text_44' => 'Vous voulez des résultats similaires ? Obtenez votre devis gratuit aujourd\'hui',

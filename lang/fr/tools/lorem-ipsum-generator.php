@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur Lorem Ipsum Gratuit',
     'title' => 'Générateur Lorem Ipsum Gratuit | CodeSommet',
     'meta_description' => 'Générez du texte de remplissage Lorem Ipsum instantanément : paragraphes, phrases ou mots pour vos maquettes. Générateur gratuit.',
     'meta_keywords' => 'lorem ipsum generator,placeholder text,dummy text,lorem ipsum,text generator,design placeholder',

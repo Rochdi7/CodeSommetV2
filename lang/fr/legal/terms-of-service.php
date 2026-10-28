@@ -253,7 +253,7 @@ return [
     'text_342' => '3. Calendrier de paiement',
     'text_343' => 'Services de forfait :',
     'text_344' => '4. Retards de paiement',
-    'text_345' => 'Politique de Remboursement',
+    'text_345' => 'politique de remboursement détaillée',
     'text_346' => 'Utilisation en portfolio :',
     'text_347' => 'Calendrier et livraison du projet',
     'text_348' => 'Services de forfait :',

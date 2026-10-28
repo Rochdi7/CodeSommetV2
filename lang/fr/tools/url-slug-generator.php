@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur de Slug d\'URL SEO Gratuit',
     'title' => 'Générateur de Slug d\'URL SEO Gratuit | CodeSommet',
     'meta_description' => 'Convertissez vos titres en slugs d\'URL propres, lisibles et optimisés pour le SEO. Générateur de slug gratuit avec formatage automatique.',
     'meta_keywords' => 'URL slug generator,SEO URL,permalink generator,URL formatter,slug creator,SEO-friendly URLs',

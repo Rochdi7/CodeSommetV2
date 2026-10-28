@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Vérificateur de Préparation de Site Web Gratuit',
     'title' => 'Vérificateur de Préparation de Site Web Gratuit | CodeSommet',
     'meta_description' => 'Vérifiez que votre site est prêt pour le lancement : SEO, sécurité, performance et accessibilité passés en revue par une checklist automatisée.',
     'meta_keywords' => 'website readiness checker,launch checklist,website audit,pre-launch check,website launch,readiness tool,seo audit,website health check,pre-launch audit,website launch checklist',
@@ -48,8 +49,8 @@ return [
     'text_38' => 'Réserver un Appel Découverte',
     'text_39' => '50+ projets réussis • Livraison en 48h • Sans engagement à long terme',
     'label_139' => 'URL du Site Web',
-    'link_website_analyzer_intro' => 'Vous vous demandez',
-    'link_website_analyzer_anchor' => 'besoin d\'un audit complet de 40+ points plutôt que d\'une checklist de lancement ?',
+    'link_website_analyzer_intro' => 'Besoin d\'aller plus loin qu\'une checklist de lancement ? Lancez notre',
+    'link_website_analyzer_anchor' => 'audit complet de 40+ points',
     'link_ssl_intro' => 'Vous pouvez approfondir la vérification de votre certificat avec notre',
     'link_ssl_anchor' => 'vérificateur de certificat SSL/TLS',
     'link_get_quote_intro' => 'Prêt à lancer votre site en toute confiance ?',

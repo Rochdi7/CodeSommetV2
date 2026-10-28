@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Aperçu Open Graph : Testeur Image OG',
     'title' => 'Aperçu Open Graph - Testeur Image OG | CodeSommet',
     'meta_description' => 'Prévisualisez votre page sur Facebook, X et LinkedIn : testez vos balises Open Graph et vos cartes de réseaux sociaux. Outil d\'aperçu OG gratuit.',
     'meta_keywords' => 'open graph preview,OG tester,social media preview,Facebook preview,Twitter card preview,meta tag preview',

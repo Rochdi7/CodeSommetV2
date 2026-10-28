@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur de Schéma LocalBusiness Gratuit',
     'title' => 'Générateur de Schéma LocalBusiness Gratuit | CodeSommet',
     'meta_description' => 'Générez le balisage JSON-LD LocalBusiness de votre entreprise locale et renforcez votre SEO local avec des données structurées correctes.',
     'meta_keywords' => 'local business schema,local SEO,business markup,JSON-LD local business,Google My Business schema,NAP schema',

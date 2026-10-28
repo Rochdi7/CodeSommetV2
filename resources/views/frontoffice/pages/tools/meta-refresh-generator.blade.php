@@ -29,12 +29,12 @@
         </div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span
+                    class="hover:text-[#00AEEF] transition-colors" href="/">CodeSommet</a><span>/</span><a
+                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils SEO</a><span>/</span><span
                     class="text-black font-medium">{{ __('tools/meta-refresh-generator.text_0') }}</span></nav>
             <div class="mb-8">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">
-                    {{ __('tools/meta-refresh-generator.text_1') }}</h1>
+                    {{ __('tools/meta-refresh-generator.h1_seo') }}</h1>
                 <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                     {{ __('tools/meta-refresh-generator.text_2') }}</p>
             </div>
@@ -375,9 +375,7 @@
                     {{ __('tools/meta-refresh-generator.text_38') }}</h2>
                 <p class="text-gray-600 text-lg">{{ __('tools/meta-refresh-generator.text_39') }}</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-6 mb-8"><a
-                    class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/og-preview-generator">
+            <div class="grid md:grid-cols-3 gap-6 mb-8"><div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -392,8 +390,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">{{ __('tools/meta-refresh-generator.text_40') }}</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/og-preview-generator" class="stretched-link">{{ __('tools/meta-refresh-generator.text_40') }}</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/meta-refresh-generator.text_41') }}
                     </p>
                     <div
@@ -409,9 +406,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
-                </a><a
-                    class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/xml-sitemap-generator">
+                </div><div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -426,8 +421,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Générateur de Sitemap XML</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/xml-sitemap-generator" class="stretched-link">Générateur de Sitemap XML</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/meta-refresh-generator.text_42') }}
                     </p>
                     <div
@@ -443,9 +437,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
-                </a><a
-                    class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/robots-txt-generator">
+                </div><div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -461,8 +453,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Générateur Robots.txt</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/robots-txt-generator" class="stretched-link">Générateur Robots.txt</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ __('tools/meta-refresh-generator.text_43') }}
                     </p>
                     <div
@@ -478,7 +469,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
-                </a></div>
+                </div></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
                     href="/tools">{{ __('tools/meta-refresh-generator.text_44') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils Gratuits<svg

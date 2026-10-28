@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Analyseur de Densité de Mots-Clés Gratuit',
     'title' => 'Analyseur de Densité de Mots-Clés Gratuit | CodeSommet',
     'meta_description' => 'Analysez la densité et la fréquence des mots-clés de n\'importe quelle page pour éviter la sur-optimisation et améliorer le SEO du contenu.',
     'meta_keywords' => 'keyword density analyzer,keyword frequency,keyword checker,SEO keyword tool,content analysis,keyword optimization',

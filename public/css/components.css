@@ -2701,11 +2701,12 @@ video {
 #tools-grid [data-category="content"],   #tools-grid [data-group="content"]   { --tl: 236, 72, 153; --tl-ink: 190, 24, 93; }
 #tools-grid [data-category="utils"],     #tools-grid [data-group="utils"]     { --tl: 79, 70, 229;  --tl-ink: 67, 56, 202; }
 
-#tools-grid > a {
+#tools-grid > .card-link {
     display: block;
     border-radius: 20px;
     outline: none;
 }
+#tools-grid .stretched-link { outline: none; }
 
 .tl-card {
     position: relative;
@@ -2754,7 +2755,7 @@ video {
 }
 
 .tl-card:hover,
-#tools-grid > a:focus-visible .tl-card {
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card {
     transform: translateY(-4px);
     border-color: rgba(var(--tl), 0.38);
     box-shadow:
@@ -2762,17 +2763,17 @@ video {
         0 20px 40px -20px rgba(var(--tl), 0.55);
 }
 
-#tools-grid > a:focus-visible .tl-card {
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card {
     box-shadow:
         0 0 0 3px rgba(var(--tl), 0.35),
         0 20px 40px -20px rgba(var(--tl), 0.55);
 }
 
 .tl-card:hover::before,
-#tools-grid > a:focus-visible .tl-card::before { opacity: 1; }
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card::before { opacity: 1; }
 
 .tl-card:hover::after,
-#tools-grid > a:focus-visible .tl-card::after { transform: scaleX(1); }
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card::after { transform: scaleX(1); }
 
 .tl-card__top {
     display: flex;
@@ -2806,7 +2807,7 @@ video {
 }
 
 .tl-card:hover .tl-card__icon,
-#tools-grid > a:focus-visible .tl-card__icon {
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card__icon {
     color: #fff;
     background: rgb(var(--tl));
     box-shadow: 0 10px 20px -8px rgba(var(--tl), 0.7);
@@ -2866,7 +2867,7 @@ video {
 }
 
 .tl-card:hover .tl-card__cta,
-#tools-grid > a:focus-visible .tl-card__cta { color: rgb(var(--tl-ink)); }
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card__cta { color: rgb(var(--tl-ink)); }
 
 .tl-card__go {
     display: inline-flex;
@@ -2888,13 +2889,13 @@ video {
 }
 
 .tl-card:hover .tl-card__go,
-#tools-grid > a:focus-visible .tl-card__go {
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card__go {
     color: #fff;
     background: rgb(var(--tl));
 }
 
 .tl-card:hover .tl-card__go svg,
-#tools-grid > a:focus-visible .tl-card__go svg { transform: rotate(-45deg); }
+#tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card__go svg { transform: rotate(-45deg); }
 
 /* Category headings injected by the page script */
 .tools-group-heading {
@@ -2955,8 +2956,8 @@ video {
     }
     .tl-card:hover,
     .tl-card:hover .tl-card__icon,
-    #tools-grid > a:focus-visible .tl-card,
-    #tools-grid > a:focus-visible .tl-card__icon {
+    #tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card,
+    #tools-grid > .card-link:has(.stretched-link:focus-visible) .tl-card__icon {
         transform: none;
     }
 }
@@ -3364,3 +3365,41 @@ a[aria-label="Home"]::after {
     .cta-elite__actions { margin-top: 2.5rem; }
     .cta-elite__mq { margin-top: 3rem; }
 }
+
+/* ===== Link cards & demoted headings (on-page SEO) =====
+   Card titles used to be <hN> inside a card-wide <a>: every card became a
+   100+ char anchor and a heading. Cards are now <div class="card-link"> with
+   the link on the title only (.stretched-link covers the card).
+   :where() keeps specificity at 0 so utility classes still win, exactly as
+   they did over the `a` / `h1-h6` tag rules these mirror. */
+:where(.card-link) { color: var(--text-accent); text-decoration: none; transition: var(--transition-colors); }
+:where(.card-link):hover { color: var(--hover-accent); }
+.card-link:hover > .text-white { color: #fff; }
+.stretched-link, .stretched-link:hover { color: inherit; }
+.stretched-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+:where(.hd-2, .hd-3, .hd-4, .hd-5) {
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-weight: var(--font-semibold);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    margin-bottom: 0;
+}
+:where(.hd-2) { font-size: var(--text-3xl); }
+:where(.hd-3) { font-size: var(--text-2xl); }
+:where(.hd-4) { font-size: var(--text-xl); }
+:where(.hd-5) { font-size: var(--text-lg); }
+@media (max-width: 768px) {
+    :where(.hd-2) { font-size: var(--text-2xl); }
+    :where(.hd-3) { font-size: var(--text-xl); }
+    :where(.hd-4) { font-size: var(--text-lg); }
+    :where(.hd-5) { font-size: var(--text-base); }
+}
+.text-white .hd-2:not(.text-black), .text-white .hd-3:not(.text-black),
+.text-white .hd-4:not(.text-black), .text-white .hd-5:not(.text-black) { color: inherit; }
+
+/* Case-study H1 descriptor line (keeps the title keywords inside the H1). */
+.cs-h1-sub { margin-top: .5rem; font-family: var(--font-body); letter-spacing: normal; }
+
+/* Legal pages: label emphasis without <strong> (Seobility caps strong/b at ~30 per page). Mirrors the global b,strong rule. */
+:where(.tx-strong) { font-weight: var(--font-semibold); color: var(--text-primary); }

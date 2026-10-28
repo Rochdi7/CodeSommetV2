@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement de Sites Web Santé & Télésanté qui génèrent des',
     'title' => 'Développement de Sites Web Santé & Télésanté | CodeSommet',
     'meta_description' => 'Sites web pour cliniques et professionnels de santé : portails patients, télémédecine et prise de rendez-vous en ligne, avec IA. Devis gratuit.',
     'meta_keywords' => 'développement site web santé,développement portail patient,consultations vidéo santé,conception site web médical,développement site web hôpital,site web clinique,CRM santé,système de prise de rendez-vous',
@@ -247,7 +248,8 @@ return [
     'ml_1034' => 'Réserver un Appel Découverte',
     'ml_1035' => 'Réserver un Appel Découverte',
     'ml_1036' => 'Discutons de comment l\'IA et le design moderne peuvent élever votre entreprise',
-    'ml_1037' => 'Besoin d\'un site pour votre cabinet ou clinique qui propose aussi la téléconsultation ? Voir notre offre de site web de télémédecine pour cabinets',
+    'ml_1037' => 'Site web de télémédecine pour cabinets',
+    'ml_1037b' => ': pour votre cabinet ou clinique qui propose aussi la téléconsultation.',
     'attr_1536' => 'Système de Prise de Rendez-vous',
     'attr_1537' => 'Plateforme de Télémédecine',
     'qb_2137' => '"Une collaboration professionnelle du début à la fin. Je recommande sans hésiter."',

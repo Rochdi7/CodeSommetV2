@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_sub' => 'Boutique Shopify de Lunettes',
     'title' => 'GlamWorlds - Boutique Shopify de Lunettes | CodeSommet',
     'meta_description' => 'Comment nous avons créé la boutique Shopify de GlamWorlds, spécialiste des lunettes de soleil de luxe : SEO technique avancé et achat premium.',
     'meta_keywords' => 'boutique Shopify lunettes de luxe,e-commerce lunettes de soleil,création boutique Shopify,SEO Shopify,référencement e-commerce,fiches produits optimisées',
@@ -50,7 +51,7 @@ return [
     'text_33' => 'Voir Tout',
     'text_34' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_35' => 'Réserver un Appel Découverte',
-    'text_36' => 'Analyser Votre Site Web',
+    'text_36' => 'Analyser Mon Site Gratuitement',
     'text_37' => 'Réserver un Appel Découverte',
     'text_38' => 'Analyser Votre Site Web',
     'text_39' => 'Vous voulez des résultats similaires ? Obtenez votre devis gratuit aujourd\'hui',

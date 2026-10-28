@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Extrayez et validez le JSON-LD et les microdonnées d\'une page pour les résultats enrichis Google.',
 
     'breadcrumb' => 'Données Structurées',
-    'h1' => 'Extracteur de Données Structurées',
+    'h1' => 'Extracteur de Données Structurées JSON-LD',
     'intro' => 'Tout le balisage schema.org d\'une page, bloc par bloc et entité par entité, avec les propriétés qui manquent pour prétendre aux résultats enrichis de Google.',
     'usage' => 'pages analysées',
 

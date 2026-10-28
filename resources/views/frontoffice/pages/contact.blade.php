@@ -41,7 +41,7 @@
                             </svg><span class="text-sm font-medium text-[#00AEEF]">{{ __('contact.text_165') }}</span></div>
                         <div class="space-y-4">
                             <h1 class="font-heading tracking-tight text-[var(--text-4xl)] md:text-[var(--text-5xl)] lg:text-[var(--text-6xl)] font-bold leading-tight"
-                                style="font-family:var(--font-display)">{{ __('contact.text_0') }}</h1>
+                                style="font-family:var(--font-display)">{{ __('contact.h1_seo') }}</h1>
                             <p
                                 class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
                                 {{ __('contact.text_1') }}</p>
@@ -347,8 +347,8 @@
                         </div>
                         <div class="mb-6 sm:mb-8 rounded-xl border border-[#00AEEF]/20 bg-[#00AEEF]/5 p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                             <p class="text-sm text-[var(--text-secondary)]">Vous avez
-                                <a href="{{ route('get-quote') }}"
-                                    class="text-[#00AEEF] font-medium hover:text-[#0071BC] transition-colors">besoin d'un devis chiffré précis plutôt que d'échanger d'abord ? demandez votre devis structuré</a>.
+                                besoin d'un devis chiffré précis plutôt que d'échanger d'abord ? <a href="{{ route('get-quote') }}"
+                                    class="text-[#00AEEF] font-medium hover:text-[#0071BC] transition-colors">demandez votre devis structuré</a>.
                                 Ou <a href="{{ route('our-work') }}"
                                     class="text-[#00AEEF] font-medium hover:text-[#0071BC] transition-colors">voir des exemples de projets livrés</a>
                                 avant de nous écrire.

@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Testez vos URL contre votre robots.txt pour Googlebot, Bingbot, GPTBot et consorts.',
 
     'breadcrumb' => 'Testeur Robots.txt',
-    'h1' => 'Testeur Robots.txt',
+    'h1' => 'Testeur Robots.txt : URL Bloquée ou Non ?',
     'intro' => 'Vérifiez, URL par URL et robot par robot, ce que votre fichier robots.txt autorise ou interdit — avec la règle exacte qui l\'emporte, comme le fait Google.',
     'usage' => 'tests effectués',
 

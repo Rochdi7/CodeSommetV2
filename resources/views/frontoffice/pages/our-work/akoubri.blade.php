@@ -46,7 +46,7 @@
                             class="text-sm font-semibold text-[#00AEEF]">{{ __('our-work/akoubri.text_1') }}</span>
                     </div>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
-                        style="font-family:var(--font-heading)">Akoubri</h1>
+                        style="font-family:var(--font-heading)">Akoubri <span class="cs-h1-sub block text-xl md:text-2xl text-[var(--text-secondary)] font-medium">{{ __('our-work/akoubri.h1_sub') }}</span></h1>
                     <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">
                         {{ __('our-work/akoubri.text_2') }}</p>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">
@@ -189,7 +189,7 @@
                         <h3 class="text-xl font-bold text-gray-900" style="font-family:var(--font-heading)">
                             {{ __('our-work/akoubri.text_9') }}</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/akoubri.text_10') }} Cette vitrine s'appuie sur <a href="{{ route('service', 'real-estate-website-development') }}" class="text-[#00AEEF] font-semibold hover:underline">notre service de création de sites immobiliers et d'architecture</a>.</p>
+                    <p class="text-gray-700 leading-relaxed text-[15px] mb-4">{{ __('our-work/akoubri.text_10') }} Cette vitrine s'appuie sur notre service de <a href="{{ route('service', 'real-estate-website-development') }}" class="text-[#00AEEF] font-semibold hover:underline">création de sites immobiliers</a> et d'architecture.</p>
                     <ul class="space-y-2">
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/akoubri.solution_bullet_1') }}</span></li>
                         <li class="flex items-start gap-2 text-sm text-gray-700"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00AEEF] flex-shrink-0"></span><span>{{ __('our-work/akoubri.solution_bullet_2') }}</span></li>

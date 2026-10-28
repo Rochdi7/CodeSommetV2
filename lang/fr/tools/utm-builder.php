@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur d\'URL UTM Gratuit',
     'title' => 'Générateur d\'URL UTM Gratuit | CodeSommet',
     'meta_description' => 'Créez les URL de suivi UTM de vos campagnes (utm_source, utm_medium, utm_campaign) et suivez leurs performances dans Google Analytics.',
     'meta_keywords' => 'UTM builder,UTM generator,campaign URL,UTM parameters,Google Analytics UTM,tracking URL,utm_source,utm_medium,utm_campaign,marketing analytics,campaign tracking,URL builder,analytics tracking,traffic source tracking',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Agence Web Offshore au Maroc : nous travaillons à distance, où que vous soyez',
     'title' => 'Agence Web Offshore au Maroc — À Distance | CodeSommet',
     'meta_description' => 'Agence web offshore basée au Maroc : sites web, tableaux de bord et plateformes SaaS développés à distance pour des entreprises du monde entier.',
     'meta_keywords' => 'développement web mondial, agence de développement web à distance, services de développement web globaux, développement web IA, développement Next.js, développement SaaS, développement de tableaux de bord, agence web Maroc',
@@ -48,7 +49,7 @@ return [
     'text_38' => 'Plateforme de conseil en études à l\'étranger avec matching de programmes, suivi des candidatures et ressources étudiantes.',
     'text_39' => 'Client basé en Allemagne',
     'text_40' => 'Questions fréquemment posées',
-    'text_41' => 'Voir Nos Projets',
+    'text_41' => 'Parcourir Nos Réalisations',
     'text_42' => 'Découvrez les projets que nous avons livrés pour des clients dans le monde entier.',
     'text_43' => 'À Propos de CodeSommet',
     'text_44' => 'Découvrez notre équipe, nos valeurs et notre approche.',
@@ -56,7 +57,7 @@ return [
     'text_46' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_47' => 'Où que vous soyez dans le monde — créons ensemble quelque chose d\'exceptionnel. Obtenez une consultation gratuite dès aujourd\'hui.',
     'text_147' => 'Experts en IA',
-    'text_148' => 'Contactez-nous',
+    'text_148' => 'Demander une Consultation',
     'text_448' => 'Livraison Moyenne',
     'text_449' => '✈️',
     'ml_849' => 'OÙ QUE VOUS SOYEZ',
@@ -70,7 +71,7 @@ return [
     'php_1356' => 'Où êtes-vous basés ?',
     'php_1357' => 'Offrez-vous un support continu après le lancement ?',
     'sw_2157' => 'Démarrer Votre Projet',
-    'sw_2158' => 'Démarrer Votre Projet',
+    'sw_2158' => 'Lancer Mon Projet',
     'sw_2159' => 'Oui ! Nous proposons des forfaits de maintenance, de mises à jour et de support continu. Nous ne disparaissons pas après le lancement — nous sommes votre partenaire digital à long terme.',
     'sw_2160' => 'La plupart des sites web sont livrés en 2 à 5 jours, et en 2 jours seulement avec notre formule express. Les plateformes complexes comme les tableaux de bord SaaS ou les boutiques e-commerce sont planifiées par étapes selon l\\',
     'sw_2161' => 'Nous acceptons les virements bancaires internationaux (SWIFT), PayPal, Wise et les paiements par carte de crédit via Stripe. Nous nous adaptons à ce qui vous convient.',

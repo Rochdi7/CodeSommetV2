@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'title' => 'Agence Web Rabat — Création de Sites Web | CodeSommet',
+    'h1_seo' => 'Agence Web Rabat : Création de Sites qui génèrent',
+    'title' => 'Agence Web Rabat — Création de Sites | CodeSommet',
     'meta_description' => 'Développement web pour les entreprises et institutions de Rabat : sites modernes, plateformes métier et SEO, réalisés au Maroc par l\'équipe CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Agence Web Rabat — Création de Sites Web | CodeSommet',
+    'og_title' => 'Agence Web Rabat — Création de Sites | CodeSommet',
     'og_description' => 'Développement web pour les entreprises et institutions de Rabat : sites modernes, plateformes métier et SEO, réalisés au Maroc par l\'équipe CodeSommet.',
     'twitter_description' => 'Développement web pour les entreprises et institutions de Rabat : sites modernes, plateformes métier et SEO.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
@@ -178,7 +179,7 @@ return [
     'sw_3062' => '* Comparaison basée sur les tarifs moyens et les offres de services généralement observés sur le marché',
     'sw_3063' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Rabat.',
     'sw_3064' => 'Questions Fréquemment Posées sur le Développement Web à Rabat',
-    'sw_3065' => 'Voir l\'Étude de Cas',
+    'sw_3065' => 'Découvrir ce projet',
     'sw_3066' => 'Contactez notre équipe de Rabat',
     'faq_a1' => 'Nous n\'avons pas de bureau à Rabat : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Rabat et vous gardez une visibilité complète sur l\'avancement à chaque étape.',

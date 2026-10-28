@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Visualiseur de Crawl : Carte des Liens Internes',
     'title' => 'Visualiseur de Crawl - Carte des Liens Internes | CodeSommet',
     'meta_description' => 'Explorez jusqu\'à 500 pages et visualisez votre maillage interne en graphe interactif : profondeur, pages orphelines, redirections, noindex.',
     'meta_keywords' => 'crawl visualizer,visualiseur exploration site,carte maillage interne,graphe liens internes,pages orphelines,profondeur de clic,architecture de site,crawler SEO gratuit',

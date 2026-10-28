@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Vérificateur de Balise Canonical Gratuit',
     'title' => 'Vérificateur de Balise Canonical Gratuit | CodeSommet',
     'meta_description' => 'Vérifiez la balise canonical de n\'importe quelle page : URL valide, problèmes détectés et risques de contenu dupliqué. Outil SEO gratuit.',
     'meta_keywords' => 'canonical checker,canonical URL,duplicate content,canonical tag validator,SEO canonical,URL canonicalization',

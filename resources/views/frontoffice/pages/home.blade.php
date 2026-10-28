@@ -46,7 +46,7 @@
                     </div>
                     <div class="space-y-6 lg:space-y-6">
                         <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold"
-                            style="font-family:var(--font-display)">{{ __('home.text_1') }}<!-- --> <span
+                            style="font-family:var(--font-display)">{{ __('home.h1_seo') }}<!-- --> <span
                                 class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em"
                                     class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-0"
                                     id="hero-rotating-wrapper"><span
@@ -810,7 +810,7 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_2') }}</h3>
+                        <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3">{{ __('home.text_2') }}</div>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('home.ml_531') }}</p>
                     </div>
                 </div>
@@ -842,7 +842,7 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_3') }}</h3>
+                        <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3">{{ __('home.text_3') }}</div>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('home.ml_535') }}</p>
                     </div>
                 </div>
@@ -877,7 +877,7 @@
                         </div>
                     </div>
                     <div class="px-5 py-4">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ __('home.text_121') }}</h3>
+                        <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3">{{ __('home.text_121') }}</div>
                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed">{{ __('home.text_6') }}</p>
                     </div>
                 </div>
@@ -2028,9 +2028,7 @@
                                     src="{{ asset('images/benefits-tech-stack.webp') }}" />
                             </div>
                         </div>
-                    </div><a
-                        class="group bg-gray-900 text-white rounded-2xl p-6 flex items-center justify-between hover:bg-gray-800 transition-colors border-2 border-gray-800"
-                        href="{{ route('our-work') }}">
+                    </div><div class="group bg-gray-900 text-white rounded-2xl p-6 flex items-center justify-between hover:bg-gray-800 transition-colors border-2 border-gray-800 card-link relative">
                         <div class="flex items-center gap-3">
                             <div class="flex -space-x-3"><img alt="{{ __('home.attr_1082') }}" loading="lazy"
                                     width="32" height="32" decoding="async"
@@ -2051,7 +2049,7 @@
                                     srcset="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }} 96w, {{ asset('images/testimonials/mohammed-chajia.webp') }} 256w"
                                     sizes="32px"
                                     src="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }}" />
-                            </div><span class="text-sm font-medium">{{ __('home.text_14') }}</span>
+                            </div><span class="text-sm font-medium"><a href="{{ route('our-work') }}" class="stretched-link">{{ __('home.text_14') }}</a></span>
                         </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"
@@ -2060,7 +2058,7 @@
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
-                    </a>
+                    </div>
                 </div>
                 <div class="hidden lg:grid grid-cols-3 gap-6" style="opacity:0;transform:translateY(30px)">
                     <div
@@ -2142,9 +2140,7 @@
                                     src="{{ asset('images/benefits-complete-solution.webp') }}" />
                             </div>
                         </div>
-                    </div><a
-                        class="row-span-1 group bg-gray-900 text-white rounded-3xl p-6 flex items-center justify-between hover:bg-gray-800 transition-all duration-300 hover:shadow-xl border-2 border-gray-800"
-                        href="{{ route('our-work') }}">
+                    </div><div class="row-span-1 group bg-gray-900 text-white rounded-3xl p-6 flex items-center justify-between hover:bg-gray-800 transition-all duration-300 hover:shadow-xl border-2 border-gray-800 card-link relative">
                         <div class="flex items-center gap-3">
                             <div class="flex -space-x-3"><img alt="{{ __('home.attr_1087') }}" loading="lazy"
                                     width="40" height="40" decoding="async"
@@ -2167,7 +2163,7 @@
                                     srcset="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }} 96w, {{ asset('images/testimonials/mohammed-chajia.webp') }} 256w"
                                     sizes="32px"
                                     src="{{ asset('images/testimonials/mohammed-chajia-96w.webp') }}" />
-                            </div><span class="text-sm font-medium">{{ __('home.text_21') }}</span>
+                            </div><span class="text-sm font-medium"><a href="{{ route('our-work') }}" class="stretched-link">{{ __('home.text_21') }}</a></span>
                         </div>
                         <div
                             class="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors flex-shrink-0">
@@ -2180,7 +2176,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a>
+                    </div>
                     <div
                         class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-6 relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-teal-100">
                         <div class="flex items-center justify-between h-full">
@@ -2225,7 +2221,7 @@
                 class="promo-banner group relative block w-full overflow-hidden rounded-2xl"
                 style="aspect-ratio:21/9">
                 <img src="{{ asset('images/new-flyers/maintenance-site-web-securite-support-codesommet.webp') }}"
-                    alt="Maintenance de site web CodeSommet — sécurité, mises à jour et support réactif"
+                    alt="Maintenance CodeSommet"
                     loading="lazy" decoding="async"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                 <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5"></div>

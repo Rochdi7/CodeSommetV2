@@ -19,7 +19,7 @@
                             <div class="relative" style="height: 320px;">
                                 {{-- Abonnement card (behind, tilted) --}}
                                 <div id="mob-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-2xl border border-gray-200 shadow-lg" style="width: 200px; height: 270px; padding: 16px; transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(0.9); opacity: 0;">
-                                    <h3 class="font-semibold mb-3 italic text-base" style="font-family: var(--font-heading);">Abonnement</h3>
+                                    <div class="font-semibold mb-3 italic text-base hd-3" style="font-family: var(--font-heading);">Abonnement</div>
                                     <div class="space-y-1.5 text-xs text-gray-600">
                                         <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">1 projet actif</div>
                                         <div class="py-1.5 px-2.5 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
@@ -37,7 +37,7 @@
                                             </svg>
                                             <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                         </div>
-                                        <h3 class="font-semibold mb-3 text-white italic text-lg" style="font-family: var(--font-heading);">Développement de Site Web</h3>
+                                        <div class="font-semibold mb-3 text-white italic text-lg hd-3" style="font-family: var(--font-heading);">Développement de Site Web</div>
                                         <div class="space-y-1.5 text-xs">
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Landing page sur mesure</div>
                                             <div class="text-white/90 py-1.5 px-2.5 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
@@ -60,7 +60,7 @@
                                             </svg>
                                         </div>
                                         <div class="text-center space-y-2">
-                                            <h3 class="font-bold text-white leading-snug text-base" style="font-family: var(--font-heading);">Vous avez fait<br>votre part</h3>
+                                            <div class="font-bold text-white leading-snug text-base hd-3" style="font-family: var(--font-heading);">Vous avez fait<br>votre part</div>
                                             <div class="bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2">
                                                 <p class="text-white font-medium text-sm">C'est à notre tour maintenant</p>
                                             </div>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Choisissez votre formule</h3>
+                    <div class="text-xl font-semibold text-[var(--text-primary)] hd-3" style="font-family: var(--font-heading);">Choisissez votre formule</div>
                     <p class="text-base text-gray-600 leading-relaxed">Choisissez le développement de site web ou la formule mensuelle adaptée à vos besoins</p>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                 <div class="mb-6 overflow-hidden relative" style="height: 400px;">
                     <div class="max-w-full mx-auto absolute inset-0 flex items-center justify-center" style="max-width: 300px;">
                         <div id="mob-backlog-card" class="bg-white rounded-2xl shadow-xl border border-gray-200 w-full p-5" style="transform: rotate(-3deg);">
-                            <h3 class="font-semibold text-lg mb-4 text-gray-900" style="font-family: var(--font-heading);">Vos demandes design</h3>
+                            <div class="font-semibold text-lg mb-4 text-gray-900 hd-3" style="font-family: var(--font-heading);">Vos demandes design</div>
                             <div id="mob-backlog-list" class="space-y-2 relative">
                                 <div class="mob-backlog-item flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 bg-gray-50">
                                     <div class="flex items-center gap-2">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Envoyez votre demande</h3>
+                    <div class="text-xl font-semibold text-[var(--text-primary)] hd-3" style="font-family: var(--font-heading);">Envoyez votre demande</div>
                     <p class="text-base text-gray-600 leading-relaxed">Partagez vos besoins et nous prioriserons vos tâches</p>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-semibold text-gray-900 text-sm" style="font-family: var(--font-heading);">Tâches du projet</h3>
+                                    <div class="font-semibold text-gray-900 text-sm hd-3" style="font-family: var(--font-heading);">Tâches du projet</div>
                                     <p class="text-xs text-gray-500">Vos demandes design</p>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)]" style="font-family: var(--font-heading);">Suivez notre livraison</h3>
+                    <div class="text-xl font-semibold text-[var(--text-primary)] hd-3" style="font-family: var(--font-heading);">Suivez notre livraison</div>
                     <p class="text-base text-gray-600 leading-relaxed">Suivez l'avancement en temps réel pendant que nous réalisons votre projet</p>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                     <div class="relative w-full max-w-md mx-auto" style="height:450px">
                         {{-- Abonnement card (behind, tilted) --}}
                         <div id="plan-card-retainer" class="absolute top-1/2 left-1/2 bg-white rounded-3xl border border-gray-200 shadow-lg" style="width:300px;height:400px;padding:28px;transform:translateX(-90%) translateY(-35%) rotate(-8deg)">
-                            <h3 class="font-semibold mb-6 italic text-2xl" style="font-family:var(--font-heading)">Abonnement</h3>
+                            <div class="font-semibold mb-6 italic text-2xl hd-3" style="font-family:var(--font-heading)">Abonnement</div>
                             <div class="space-y-3 text-sm text-gray-600">
                                 <div class="py-2 px-4 bg-gray-50 rounded-xl italic">1 projet actif</div>
                                 <div class="py-2 px-4 bg-gray-50 rounded-xl italic">Révisions illimitées</div>
@@ -221,7 +221,7 @@
                                     </svg>
                                     <span class="text-xs text-white/90 font-medium italic">Recommandé</span>
                                 </div>
-                                <h3 class="font-semibold mb-6 text-white italic text-3xl" style="font-family:var(--font-heading)">Développement de Site Web</h3>
+                                <div class="font-semibold mb-6 text-white italic text-3xl hd-3" style="font-family:var(--font-heading)">Développement de Site Web</div>
                                 <div class="space-y-3 text-sm">
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Landing page sur mesure</div>
                                     <div class="text-white/90 py-2 px-4 bg-white/10 rounded-xl backdrop-blur-sm italic">Développement complet</div>
@@ -244,7 +244,7 @@
                                     </svg>
                                 </div>
                                 <div class="text-center space-y-4">
-                                    <h3 class="font-bold text-white leading-snug text-2xl" style="font-family:var(--font-heading)">Vous avez fait<br>votre part</h3>
+                                    <div class="font-bold text-white leading-snug text-2xl hd-3" style="font-family:var(--font-heading)">Vous avez fait<br>votre part</div>
                                     <div class="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4">
                                         <p class="text-white font-medium text-base">C'est à notre tour maintenant</p>
                                     </div>
@@ -263,7 +263,7 @@
                 {{-- ÉTAT 2 : carte des demandes design (Étape 2) --}}
                 <div id="process-card-2" class="process-card-state absolute inset-0 flex items-center justify-center transition-all duration-700 ease-out opacity-0 pointer-events-none" style="transform:translateY(30px)">
                     <div class="bg-white rounded-3xl shadow-xl border border-gray-200 w-full max-w-md p-6" style="transform:rotate(-5deg)">
-                        <h3 class="font-semibold text-xl mb-4 text-gray-900" style="font-family:var(--font-heading)">Vos demandes design</h3>
+                        <div class="font-semibold text-xl mb-4 text-gray-900 hd-3" style="font-family:var(--font-heading)">Vos demandes design</div>
                         <div class="space-y-3 relative backlog-list">
                             @foreach([
                             ['title' => 'Présentation pour le client', 'tag' => 'Demande', 'urgent' => false],
@@ -300,7 +300,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-gray-900 text-base" style="font-family:var(--font-heading)">Tâches du projet</h3>
+                                <div class="font-semibold text-gray-900 text-base hd-3" style="font-family:var(--font-heading)">Tâches du projet</div>
                                 <p class="text-xs text-gray-500">Vos demandes design</p>
                             </div>
                         </div>

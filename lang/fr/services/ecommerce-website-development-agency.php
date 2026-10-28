@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création Site E-commerce au Maroc : une Boutique qui génère des',
     'title' => 'Création Site E-commerce Maroc — Boutique | CodeSommet',
     'meta_description' => 'Création de sites e-commerce au Maroc : boutique en ligne sur mesure, paiements sécurisés, gestion des stocks et optimisation de conversion. Devis gratuit.',
     'meta_keywords' => 'développement site e-commerce,développement boutique en ligne,plateforme panier d\'achat,intégration passerelle de paiement,catalogue produits,gestion des stocks,SEO e-commerce',

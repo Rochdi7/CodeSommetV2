@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création de Sites Web Études à l\'Étranger qui génèrent des',
     'title' => 'Création de Sites Web Études à l\'Étranger | CodeSommet',
     'meta_description' => 'Sites web pour agences d\'études à l\'étranger : portails étudiants, suivi des dossiers visa et chatbots multilingues. Devis gratuit.',
     'meta_keywords' => 'développement site web études à l\'étranger,site web conseil en visa,plateforme éducation internationale,CRM études à l\'étranger,développement portail étudiant,système suivi de visa,site web conseil en éducation',

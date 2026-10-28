@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement de Plateformes de Cours en Ligne qui génèrent des',
     'title' => 'Développement de Plateformes de Cours en Ligne | CodeSommet',
     'meta_description' => 'Plateformes de cours en ligne sur mesure pour coachs, créateurs et formateurs : vidéo, paiements intégrés et engagement étudiant. Devis gratuit.',
     'meta_keywords' => 'développement plateforme cours en ligne,développement site de cours,alternative teachable,alternative kajabi,plateforme de cours sur mesure,site créateur de cours,plateforme apprentissage en ligne,développement site d\'adhésion',

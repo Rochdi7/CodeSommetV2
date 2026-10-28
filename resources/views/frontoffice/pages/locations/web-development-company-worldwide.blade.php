@@ -25,11 +25,12 @@
                 <div class="space-y-6 lg:space-y-8 text-center">
                     {{-- Breadcrumb --}}
                     <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb">
-                        <a class="hover:text-gray-600 transition-colors" aria-label="Home" href="{{ route('home') }}">
+                        <a class="hover:text-gray-600 transition-colors" aria-label="Accueil" href="{{ route('home') }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3" aria-hidden="true">
                                 <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             </svg>
+                        <span class="sr-only">CodeSommet</span>
                         </a>
                         <span>/</span>
                         <a class="hover:text-gray-600 transition-colors" href="{{ route('locations') }}">Emplacements</a>
@@ -58,7 +59,7 @@
                     {{-- Heading --}}
                     <div class="space-y-6">
                         <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto" style="font-family:var(--font-display)">
-                            NOUS VOUS SERVONS <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span>PARTOUT</span></span> {{ __('locations/web-development-company-worldwide.ml_849') }}</h1>
+                            {{ __('locations/web-development-company-worldwide.h1_seo') }} <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span style="min-height:1.2em" class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span style="border-color:var(--color-primary-orange);z-index:1" class="jsx-5c81c8c63985dc3f absolute inset-0 border-2 pointer-events-none animate-[scaleIn_0.3s_ease-out]"><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -top-[6px] -right-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span style="background-color:var(--color-primary-orange)" class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span>PARTOUT</span></span> {{ __('locations/web-development-company-worldwide.ml_849') }}</h1>
                         <p class="text-base sm:text-lg lg:text-xl text-[#0F0F0F]/70 max-w-3xl mx-auto leading-relaxed">{{ __('locations/web-development-company-worldwide.ml_850') }}</p>
                     </div>
 
@@ -253,13 +254,13 @@
                 ];
                 @endphp
                 @foreach($industries as $industry)
-                <a href="{{ route('service', $industry['slug']) }}" class="group bg-white rounded-2xl p-8 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300">
+                <div class="group bg-white rounded-2xl p-8 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-300 card-link relative">
                     <div class="w-12 h-12 rounded-xl bg-[#0F0F0F]/5 flex items-center justify-center mb-5 group-hover:bg-[#00AEEF]/10 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-[#0F0F0F]/60 group-hover:text-[#00AEEF] transition-colors">{!! $industry['icon'] !!}</svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">{{ $industry['name'] }}</h3>
+                    <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('service', $industry['slug']) }}" class="stretched-link">{{ $industry['name'] }}</a></div>
                     <p class="text-sm text-[#0F0F0F]/60 leading-relaxed">{{ $industry['desc'] }}</p>
-                </a>
+                </div>
                 @endforeach
             </div>
         </div>
@@ -277,7 +278,7 @@
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 {{-- Project 1 --}}
-                <a href="{{ route('case-study', 'mon-asso') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
+                <div class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300 card-link relative">
                     <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
                         <video data-src="{{ asset('videos/monasso-association-platform-showcase.mp4') }}"
                             autoplay loop muted playsinline
@@ -287,13 +288,13 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
+                        <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'mon-asso') }}" class="stretched-link">Mon Asso</a></div>
                         <p class="text-sm text-[#0F0F0F]/60 leading-relaxed mb-3">{{ __('locations/web-development-company-worldwide.text_33') }}</p>
                         <span class="text-xs text-[#0F0F0F]/40">{{ __('locations/web-development-company-worldwide.text_34') }}</span>
                     </div>
-                </a>
+                </div>
                 {{-- Project 2 --}}
-                <a href="{{ route('case-study', 'glamworlds') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
+                <div class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300 card-link relative">
                     <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
                         <video data-src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}"
                             autoplay loop muted playsinline
@@ -303,13 +304,13 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GlamWorlds</h3>
+                        <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'glamworlds') }}" class="stretched-link">GlamWorlds</a></div>
                         <p class="text-sm text-[#0F0F0F]/60 leading-relaxed mb-3">{{ __('locations/web-development-company-worldwide.text_35') }}</p>
                         <span class="text-xs text-[#0F0F0F]/40">{{ __('locations/web-development-company-worldwide.text_36') }}</span>
                     </div>
-                </a>
+                </div>
                 {{-- Project 3 --}}
-                <a href="{{ route('case-study', 'morocco-quest') }}" class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300">
+                <div class="group block bg-white rounded-2xl overflow-hidden border border-[#E8E8E8] hover:shadow-lg transition-all duration-300 card-link relative">
                     <div class="relative aspect-[16/10] overflow-hidden bg-[#F3F4F6]">
                         <video data-src="{{ asset('videos/morocco-quest-travel-website-showcase.mp4') }}"
                             autoplay loop muted playsinline
@@ -319,11 +320,11 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Morocco Quest</h3>
+                        <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'morocco-quest') }}" class="stretched-link">Morocco Quest</a></div>
                         <p class="text-sm text-[#0F0F0F]/60 leading-relaxed mb-3">{{ __('locations/web-development-company-worldwide.text_38') }}</p>
                         <span class="text-xs text-[#0F0F0F]/40">{{ __('locations/web-development-company-worldwide.text_39') }}</span>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="text-center mt-12">
                 <a href="{{ route('our-work') }}" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#0F0F0F] text-white font-medium text-sm hover:bg-[#0F0F0F]/90 transition-all duration-200">
@@ -383,18 +384,18 @@
                 <h2 class="text-3xl md:text-4xl font-semibold text-[var(--text-primary)] mb-3" style="font-family:var(--font-heading)">Explorer davantage</h2>
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <a href="{{ route('our-work') }}" class="group bg-white rounded-xl p-6 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-md transition-all duration-300">
-                    <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('locations/web-development-company-worldwide.text_41') }}</h3>
+                <div class="group bg-white rounded-xl p-6 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-md transition-all duration-300 card-link relative">
+                    <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('our-work') }}" class="stretched-link">{{ __('locations/web-development-company-worldwide.text_41') }}</a></div>
                     <p class="text-sm text-[#0F0F0F]/50">{{ __('locations/web-development-company-worldwide.text_42') }}</p>
-                </a>
-                <a href="{{ route('about') }}" class="group bg-white rounded-xl p-6 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-md transition-all duration-300">
-                    <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('locations/web-development-company-worldwide.text_43') }}</h3>
+                </div>
+                <div class="group bg-white rounded-xl p-6 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-md transition-all duration-300 card-link relative">
+                    <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('about') }}" class="stretched-link">{{ __('locations/web-development-company-worldwide.text_43') }}</a></div>
                     <p class="text-sm text-[#0F0F0F]/50">{{ __('locations/web-development-company-worldwide.text_44') }}</p>
-                </a>
-                <a href="{{ route('get-quote') }}" class="group bg-white rounded-xl p-6 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-md transition-all duration-300">
-                    <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">{{ __('locations/web-development-company-worldwide.text_148') }}</h3>
+                </div>
+                <div class="group bg-white rounded-xl p-6 border border-[#E8E8E8] hover:border-[#00AEEF]/30 hover:shadow-md transition-all duration-300 card-link relative">
+                    <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('get-quote') }}" class="stretched-link">{{ __('locations/web-development-company-worldwide.text_148') }}</a></div>
                     <p class="text-sm text-[#0F0F0F]/50">{{ __('locations/web-development-company-worldwide.text_45') }}</p>
-                </a>
+                </div>
             </div>
         </div>
     </section>

@@ -46,7 +46,7 @@
                             class="text-sm font-semibold text-[#00AEEF]">{{ __('our-work/gls-sprachenzentrum.text_1') }}</span>
                     </div>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
-                        style="font-family:var(--font-heading)">GLS Sprachenzentrum</h1>
+                        style="font-family:var(--font-heading)">GLS Sprachenzentrum <span class="cs-h1-sub block text-xl md:text-2xl text-[var(--text-secondary)] font-medium">{{ __('our-work/gls-sprachenzentrum.h1_sub') }}</span></h1>
                     <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">Deutsch Sprachenzentrum</p>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">
                         {{ __('our-work/gls-sprachenzentrum.text_2') }}</p>

@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Simulez votre extrait Google et mesurez titre et meta description en pixels pour éviter les troncatures.',
 
     'breadcrumb' => 'Aperçu SERP',
-    'h1' => 'Aperçu SERP Google',
+    'h1' => 'Aperçu SERP Google : Titre et Meta',
     'intro' => 'Voyez votre page telle que Google l\'affichera, sur ordinateur comme sur mobile, et vérifiez que le titre et la description tiennent dans l\'espace disponible — mesuré en pixels, pas seulement en caractères.',
     'usage' => 'extraits simulés',
 

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Convertisseur de Casse de Texte Gratuit',
     'title' => 'Convertisseur de Casse de Texte Gratuit | CodeSommet',
     'meta_description' => 'Convertissez un texte en majuscules, minuscules, casse de titre, casse de phrase ou camelCase. Conversion instantanée et gratuite.',
     'meta_keywords' => 'text case converter,uppercase converter,lowercase converter,title case,camelCase,text transformer',

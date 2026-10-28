@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Chicago, États-Unis : des sites web qui génèrent',
     'title' => 'Développement Web à Chicago, États-Unis | CodeSommet',
     'meta_description' => 'À Chicago, appuyez-vous sur CodeSommet pour vos tableaux de bord métier, sites corporate et boutiques en ligne développés sur mesure.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -186,7 +187,7 @@ return [
     'sw_2372' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_2373' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes de Chicago entreprises.',
     'sw_2374' => 'Questions Fréquemment Posées Sur le Développement Web à Chicago',
-    'sw_2375' => 'Voir l\'Étude de Cas',
+    'sw_2375' => 'Découvrir ce projet',
     'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Chicago comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',

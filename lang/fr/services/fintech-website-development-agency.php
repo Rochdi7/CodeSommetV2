@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création de Sites Web FinTech & Finance qui génèrent des',
     'title' => 'Création de Sites Web FinTech & Finance | CodeSommet',
     'meta_description' => 'Création de sites web FinTech : paiements sécurisés, design conforme à la réglementation et pages optimisées pour la conversion. Devis gratuit.',
     'meta_keywords' => 'développement site web fintech,conception site web services financiers,page de destination fintech,développement site bancaire,conception site web financier,agence de conception web fintech,site web société de paiement,développement site web néobanque',
@@ -138,7 +139,7 @@ return [
     'ml_925' => 'avec lesquelles nous avons collaboré',
     'ml_926' => 'Défis Courants',
     'ml_927' => 'Les agences web généralistes traitent votre site fintech comme un site vitrine classique — elles ratent les codes de confiance et de conformité qui font qu\'un visiteur reste ou qu\'il repart vers un concurrent.',
-    'ml_928' => 'Un visiteur du secteur financier est méfiant par défaut : sans badges de conformité visibles, mentions de sécurité claires et preuves sociales bien mises en avant, il quitte votre site avant même de lire votre offre. Nous concevons des pages qui affichent votre conformité PCI-DSS et vos certifications comme des arguments de réassurance, pas comme une mention en petits caractères. D\'ailleurs, <a href="/services/ecommerce-website-development" class="text-[#00AEEF] font-semibold hover:underline">les mêmes principes de réassurance visuelle s\'appliquent à nos sites e-commerce</a>.',
+    'ml_928' => 'Un visiteur du secteur financier est méfiant par défaut : sans badges de conformité visibles, mentions de sécurité claires et preuves sociales bien mises en avant, il quitte votre site avant même de lire votre offre. Nous concevons des pages qui affichent votre conformité PCI-DSS et vos certifications comme des arguments de réassurance, pas comme une mention en petits caractères. D\'ailleurs, les mêmes principes de réassurance visuelle s\'appliquent à <a href="/services/ecommerce-website-development" class="text-[#00AEEF] font-semibold hover:underline">nos sites e-commerce</a>.',
     'ml_929' => 'Les visiteurs qui recherchent un service financier sont déjà méfiants ; un site qui met plusieurs secondes à charger ou qui bug sur mobile renforce cette méfiance et les pousse vers un concurrent perçu comme plus sérieux. Nous livrons des sites fintech rapides, stables sur tous les appareils, pour que la vitesse technique renforce votre crédibilité au lieu de la saboter.',
     'ml_930' => 'Un site construit sur un thème générique ressemble à celui de dix autres sociétés financières et ne donne au visiteur aucune raison de vous choisir plutôt qu\'un concurrent. Nous concevons des parcours de conversion sur mesure — mise en avant de votre offre, appels à l\'action clairs et formulaires de capture de lead pensés pour votre audience fintech.',
     'ml_931' => 'Si un visiteur doit remplir un formulaire de contact juste pour comprendre ce que vous proposez ou combien ça coûte, vous perdez la majorité d\'entre eux avant même le premier échange. Nous structurons vos pages de service et vos grilles tarifaires pour que l\'offre soit lisible immédiatement, sans effort de la part du visiteur.',

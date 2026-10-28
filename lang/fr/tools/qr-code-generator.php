@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur de QR Code Gratuit',
     'title' => 'Générateur de QR Code Gratuit | CodeSommet',
     'meta_description' => 'Créez des QR codes personnalisés (URL, texte, Wi-Fi, vCard) et téléchargez-les en haute résolution. Générateur gratuit, sans inscription.',
     'meta_keywords' => 'QR code generator,QR code creator,custom QR code,QR code maker,free QR generator,QR code tool,create QR code,generate QR code online,QR code builder,printable QR code,URL QR code,QR code download,error correction QR,high quality QR code',

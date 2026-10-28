@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement de Plateformes EdTech qui génèrent des',
     'title' => 'Développement de Plateformes EdTech B2B | CodeSommet',
     'meta_description' => 'Développement de produits EdTech B2B : LMS commercialisables, marketplaces de cours et plateformes d\'engagement étudiant pour éditeurs et startups.',
     'meta_keywords' => 'développement plateforme edtech,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',

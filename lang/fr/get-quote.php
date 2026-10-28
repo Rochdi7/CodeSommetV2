@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Obtenir un Devis Gratuit pour Votre Site Web',
     'text_0' => 'Obtenir un Devis Gratuit | CodeSommet',
     'text_1' => 'Devis Gratuit pour Votre Site Web',
     'text_2' => 'Parlez-nous de votre projet et nous vous fournirons un devis personnalisé selon vos besoins.',

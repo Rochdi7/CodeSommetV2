@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Testez les en-têtes de sécurité HTTP de votre site et obtenez une note A–F avec les corrections.',
 
     'breadcrumb' => 'En-têtes de Sécurité',
-    'h1' => 'Vérificateur d\'En-têtes de Sécurité',
+    'h1' => 'Test des En-têtes de Sécurité HTTP (A à F)',
     'intro' => 'Une seule requête, une note A–F et la liste des en-têtes HTTP manquants ou mal configurés — avec, pour chacun, la ligne à ajouter à votre serveur.',
     'usage' => 'sites analysés',
 

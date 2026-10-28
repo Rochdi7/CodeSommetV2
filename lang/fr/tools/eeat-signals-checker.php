@@ -8,7 +8,7 @@ return [
     'og_description' => 'Confiance, autorité, expertise, expérience : listez les signaux présents et manquants sur une page, règle par règle.',
     'twitter_description' => 'Les signaux de confiance, d\'expertise et d\'expérience d\'une page, vérifiés règle par règle.',
     'breadcrumb' => 'Signaux E-E-A-T',
-    'h1' => 'Vérificateur de Signaux E-E-A-T',
+    'h1' => 'Vérificateur de Signaux E-E-A-T Gratuit',
     'intro' => 'Qui est derrière cette page, comment le joindre, sur quoi s\'appuie le contenu ? Vérifiez en une analyse les signaux de confiance, d\'autorité, d\'expertise et d\'expérience visibles dans le HTML.',
     'btn_submit' => 'Vérifier les signaux',
     'fields' => [

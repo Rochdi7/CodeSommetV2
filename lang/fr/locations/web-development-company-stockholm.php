@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Stockholm, Suède : des sites web qui génèrent',
     'title' => 'Développement Web à Stockholm, Suède | CodeSommet',
     'meta_description' => 'Sites web et tableaux de bord SaaS pour les entreprises de Stockholm : développement sur mesure à distance, design soigné et SEO par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -171,7 +172,7 @@ return [
     'sw_2559' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_2560' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Stockholm.',
     'sw_2561' => 'Questions fréquemment posées sur le Développement Web à Stockholm',
-    'sw_2562' => 'Voir l\'Étude de Cas',
+    'sw_2562' => 'Découvrir ce projet',
     'sw_2563' => 'Contactez notre équipe Stockholm',
     'sw_2564' => ') }}</span>
                     </div>

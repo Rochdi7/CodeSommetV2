@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur de Balises Méta IA Gratuit',
     'title' => 'Générateur de Balises Méta IA Gratuit | CodeSommet',
     'meta_description' => 'Générez avec l\'IA des balises title, meta description et Open Graph optimisées pour le SEO. Outil gratuit, résultat instantané.',
     'meta_keywords' => 'meta tag generator,SEO meta tags,title tag generator,meta description generator,open graph tags,AI SEO tool',

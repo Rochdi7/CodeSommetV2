@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur de Schema Markup JSON-LD',
     'title' => 'Générateur de Schema Markup JSON-LD | CodeSommet',
     'meta_description' => 'Générez tout type de balisage schema.org en JSON-LD : articles, produits, événements et plus encore. Générateur de schema gratuit.',
     'meta_keywords' => 'schema generator,schema markup,structured data,JSON-LD generator,schema.org,rich snippets',

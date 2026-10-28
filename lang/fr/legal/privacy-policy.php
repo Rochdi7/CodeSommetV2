@@ -156,7 +156,7 @@ return [
     'text_245' => 'Droit de suppression :',
     'text_246' => 'Droit de refus :',
     'text_247' => 'Cookies et technologies de suivi',
-    'text_248' => 'Politique de Cookies',
+    'text_248' => 'politique relative aux cookies',
     'text_249' => 'Fichiers de projet :',
     'text_250' => 'Analyse du site web :',
     'text_251' => 'Registres de paiement :',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Dublin, Irlande : des sites web qui génèrent',
     'title' => 'Développement Web à Dublin, Irlande | CodeSommet',
     'meta_description' => 'Pour les entreprises de Dublin, CodeSommet crée tableaux de bord SaaS, sites corporate et boutiques en ligne — collaboration 100 % à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -173,7 +174,7 @@ return [
     'sw_3061' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_3062' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Dublin.',
     'sw_3063' => 'Questions Fréquemment Posées sur le Développement Web à Dublin',
-    'sw_3064' => 'Voir l\'Étude de Cas',
+    'sw_3064' => 'Découvrir ce projet',
     'sw_3065' => 'Contactez notre équipe de Dublin',
     'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Dublin comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',

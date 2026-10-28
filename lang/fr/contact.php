@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Contact : Agence Web au Maroc, Réponse sous 24h',
     'title' => 'Contact — Agence Web au Maroc, Réponse sous 24h | CodeSommet',
     'meta_description' => 'Contactez CodeSommet, agence web au Maroc : réservez un appel découverte gratuit ou écrivez-nous par e-mail ou WhatsApp. Réponse sous 24 heures.',
     'meta_keywords' => 'contact CodeSommet,devis développement web Maroc,embaucher développeurs web,consultation développement IA,appel stratégique gratuit,demande développement web',
@@ -56,7 +57,7 @@ return [
     'text_46' => 'Recevez une proposition détaillée avec calendrier, livrables et tarification personnalisée adaptée à la portée de votre projet',
     'text_47' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_48' => 'Réserver un Appel Découverte',
-    'text_49' => 'Analyser Votre Site Web',
+    'text_49' => 'Analyser Mon Site Gratuitement',
     'text_50' => 'Réserver un Appel Découverte',
     'text_51' => 'Analyser Votre Site Web',
     'text_52' => 'Rejoignez les entreprises visionnaires qui ont choisi l\'excellence',

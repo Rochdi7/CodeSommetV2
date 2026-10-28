@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Score de Fondations SEO Techniques Gratuit',
     'title' => 'Score de Fondations SEO Techniques Gratuit | CodeSommet',
     'meta_description' => 'Évaluez les fondations SEO techniques de votre domaine : HTTPS, SSL, sitemap.xml, robots.txt, redirection WWW. Score sur 100 et recommandations.',
     'meta_keywords' => 'score fondations SEO techniques,vérificateur technique SEO,domain authority checker,technical SEO score,HTTPS checker,SSL checker,sitemap checker,robots.txt checker,audit technique domaine,SEO technique gratuit',

@@ -148,4 +148,16 @@ return [
         'usage_log' => env('SEMRUSH_USAGE_LOG', storage_path('app/seo/semrush-usage.jsonl')),
     ],
 
+    'seranking' => [
+        // One key covers both the Data API (credits) and the Project API (subscription limits).
+        'key' => env('SERANKING_API_KEY'),
+        // Regional keyword database (country code). `ma` is supported.
+        'source' => env('SERANKING_SOURCE', 'ma'),
+        'cache_ttl_hours' => (int) env('SERANKING_CACHE_TTL_HOURS', 24),
+        // Per-run safeguards (one artisan invocation = one run), checked BEFORE each live call.
+        'budget_credits' => (int) env('SERANKING_BUDGET_CREDITS', 2000),
+        'max_calls' => (int) env('SERANKING_MAX_CALLS', 10),
+        'usage_log' => env('SERANKING_USAGE_LOG', storage_path('app/seo/seranking-usage.jsonl')),
+    ],
+
 ];

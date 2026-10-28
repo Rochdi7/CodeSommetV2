@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Dédoublonnez, triez et filtrez vos listes de texte directement dans le navigateur.',
 
     'breadcrumb' => 'Éditeur de Texte',
-    'h1' => 'Éditeur de Texte Ligne par Ligne',
+    'h1' => 'Éditeur de Texte Ligne par Ligne Gratuit',
     'intro' => 'L\'outil des listes de mots-clés : supprimez les doublons et les lignes vides, triez, filtrez, remplacez et ajoutez des préfixes ou suffixes, en une seule passe.',
     'usage' => 'textes traités',
 

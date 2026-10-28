@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Compteur de Mots et de Caractères Gratuit',
     'title' => 'Compteur de Mots et de Caractères Gratuit | CodeSommet',
     'meta_description' => 'Comptez mots, caractères, phrases et paragraphes instantanément, avec temps de lecture estimé et fréquence des mots-clés. Gratuit.',
     'meta_keywords' => 'word counter,character counter,text counter,word count tool,character count,text statistics',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création Site Web au Maroc : Agence Web & SaaS qui génère',
     'title' => 'Création Site Web Maroc — Agence Web & SaaS | CodeSommet',
     'meta_description' => 'Agence web au Maroc : création de sites web sur mesure, e-commerce et plateformes SaaS qui génèrent des résultats. Devis gratuit sous 24h.',
     'meta_keywords' => 'développement web Maroc,agence digitale Maroc,design UI UX,agence branding,services SEO,développement e-commerce,développement applications mobiles,développement SaaS,design web Maroc,développement React,développement Next.js,solutions web sur mesure',
@@ -92,14 +93,14 @@ return [
     'attr_1079' => 'Illustration d\'un design de tableau de bord web moderne créé par CodeSommet',
     'attr_1080' => 'Illustration de la stratégie digitale axée sur la croissance mise en place par CodeSommet',
     'attr_1081' => 'Illustration de la solution digitale complète CodeSommet, du design au lancement',
-    'attr_1082' => 'Photo de Mounir Akajia, fondateur de Morocco Quest DMC et client de CodeSommet',
-    'attr_1083' => 'Photo de Rafiq, responsable administratif de GLS Sprachenzentrum et client de CodeSommet',
-    'attr_1084' => 'Photo de Mohammed, guide et propriétaire de Local Morocco Tours et client de CodeSommet',
+    'attr_1082' => 'Mounir Akajia',
+    'attr_1083' => 'Rafiq',
+    'attr_1084' => 'Mohammed',
     'attr_1085' => 'Illustration de la stratégie de croissance digitale proposée par CodeSommet',
     'attr_1086' => 'Illustration de la solution digitale complète proposée par CodeSommet',
-    'attr_1087' => 'Photo de Mounir Akajia, fondateur de Morocco Quest DMC et client de CodeSommet',
-    'attr_1088' => 'Photo de Rafiq, responsable administratif de GLS Sprachenzentrum et client de CodeSommet',
-    'attr_1089' => 'Photo de Mohammed, guide et propriétaire de Local Morocco Tours et client de CodeSommet',
+    'attr_1087' => 'Client Morocco Quest',
+    'attr_1088' => 'Client GLS',
+    'attr_1089' => 'Client Local Morocco Tours',
     'sw_1889' => 'Découvrir',
     'sw_1890' => 'CodeSommet — Offre Spéciale',
     'ad_alt_text' => 'Promotion CodeSommet',

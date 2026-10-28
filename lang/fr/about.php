@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'À Propos : Agence Digitale au Maroc Depuis 2018',
     'title' => 'À Propos - Agence Digitale au Maroc depuis 2018 | CodeSommet',
     'meta_description' => 'Découvrez CodeSommet : notre histoire depuis 2018, notre approche du développement web sur mesure et les valeurs qui guident chaque projet.',
     'meta_keywords' => 'à propos CodeSommet,agence digitale Maroc,développement web Maroc,design UI UX,agence branding,SEO Maroc,développement e-commerce,applications mobiles,solutions SaaS',
@@ -50,8 +51,8 @@ return [
     'text_139' => 'Pros du SEO & Marketing Digital',
     'text_140' => 'Contactez-nous',
     'text_141' => 'Contactez-nous',
-    'text_142' => 'Contactez-nous',
-    'text_143' => 'Contactez-nous',
+    'text_142' => 'Écrivez-nous',
+    'text_143' => 'Parlons de votre projet',
     'text_144' => 'et discutons-en.',
     'text_145' => 'Tableaux de Bord',
     'text_146' => 'Tableaux de Bord',

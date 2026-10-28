@@ -46,8 +46,8 @@
         </div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span
+                    class="hover:text-[#00AEEF] transition-colors" href="/">CodeSommet</a><span>/</span><a
+                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils SEO</a><span>/</span><span
                     class="text-black font-medium">{{ $t('breadcrumb') }}</span></nav>
             <div class="mb-8">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">{{ $t('h1') }}</h1>
@@ -167,8 +167,7 @@
             </div>
             <div class="grid md:grid-cols-3 gap-6 mb-8">
                 @foreach ($t('related') as $i => $rel)
-                    <a class="lx-card lx-v{{ 3 + $i * 2 }} group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                        href="/tools/{{ $rel['slug'] }}">
+                    <div class="lx-card lx-v{{ 3 + $i * 2 }} group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                         <div class="mb-4">
                             <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -182,8 +181,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                            style="font-family:var(--font-heading)">{{ $rel['title'] }}</h3>
+                        <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/{{ $rel['slug'] }}" class="stretched-link">{{ $rel['title'] }}</a></div>
                         <p class="text-sm text-gray-600 leading-relaxed mb-4">{{ $rel['desc'] }}</p>
                         <div
                             class="flex items-center gap-2 text-[#00AEEF] font-semibold text-sm group-hover:gap-3 transition-all">
@@ -198,7 +196,7 @@
                         <div class="absolute top-4 right-4"><span
                                 class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                         </div>
-                    </a>
+                    </div>
                 @endforeach
             </div>
             <div class="text-center"><a

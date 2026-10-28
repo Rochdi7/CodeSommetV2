@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création de Sites Web pour Écoles de Langues qui génèrent des',
     'title' => 'Création de Sites Web pour Écoles de Langues | CodeSommet',
     'meta_description' => 'Création de sites web pour écoles de langues : présentation des cours, inscriptions en ligne et outils d\'apprentissage interactifs. Devis gratuit.',
     'meta_keywords' => 'site web école de langues,plateforme apprentissage langues,cours de langues en ligne,site institut linguistique,développement plateforme ESL,apprentissage langues étrangères,plateforme tutorat langues,plateforme éducation multilingue',

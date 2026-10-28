@@ -46,7 +46,7 @@
                             class="text-sm font-semibold text-[#00AEEF]">{{ __('our-work/mon-asso.text_1') }}</span>
                     </div>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
-                        style="font-family:var(--font-heading)">Mon Asso</h1>
+                        style="font-family:var(--font-heading)">Mon Asso <span class="cs-h1-sub block text-xl md:text-2xl text-[var(--text-secondary)] font-medium">{{ __('our-work/mon-asso.h1_sub') }}</span></h1>
                     <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-medium">
                         {{ __('our-work/mon-asso.text_2') }}</p>
                     <p class="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed">

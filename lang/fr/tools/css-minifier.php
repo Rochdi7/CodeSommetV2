@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'title' => 'Minificateur CSS - Compression CSS Gratuite | CodeSommet',
+    'h1_seo' => 'Minificateur CSS : Compression de Code Gratuite',
+    'title' => 'Minificateur CSS - Compression de Code Gratuite | CodeSommet',
     'meta_description' => 'Minifiez vos fichiers CSS en ligne pour réduire leur taille et accélérer le chargement : espaces, commentaires et code redondant supprimés. Gratuit.',
     'meta_keywords' => 'CSS minifier,CSS compressor,minify CSS,CSS optimizer,compress CSS,CSS tool',
     'og_title' => 'Minificateur CSS - Outil de Compression CSS Gratuit',

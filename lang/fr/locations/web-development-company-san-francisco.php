@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à San Francisco, États-Unis : des sites web qui génèrent',
     'title' => 'Développement Web à San Francisco, États-Unis | CodeSommet',
     'meta_description' => 'Développement de sites et tableaux de bord SaaS pour les startups de San Francisco : plateformes sur mesure livrées à distance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -183,7 +184,7 @@ return [
     'sw_3066' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_3067' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de San Francisco.',
     'sw_3068' => 'Questions Fréquemment Posées sur le Développement Web à San Francisco',
-    'sw_3069' => 'Voir l\'Étude de Cas',
+    'sw_3069' => 'Découvrir ce projet',
     'sw_3070' => 'Contactez notre équipe San Francisco',
     'sw_3071' => ') }}</span>
                     </div>

@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Compressez et convertissez vos images en WebP, JPEG ou PNG, dans votre navigateur.',
 
     'breadcrumb' => 'Compresseur d\'Images',
-    'h1' => 'Compresseur d\'Images',
+    'h1' => 'Compresseur d\'Images Gratuit : WebP, JPEG',
     'intro' => 'Des images trop lourdes ralentissent vos pages et pèsent sur les Core Web Vitals. Compressez-les, convertissez-les en WebP et redimensionnez-les en quelques secondes — sans les envoyer nulle part.',
     'usage' => 'lots compressés',
 

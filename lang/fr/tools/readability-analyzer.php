@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Analyseur de Lisibilité de Contenu Gratuit',
     'title' => 'Analyseur de Lisibilité de Contenu Gratuit | CodeSommet',
     'meta_description' => 'Vérifiez la lisibilité de vos contenus avec les scores Flesch-Kincaid : niveau de lecture et pistes pour un texte plus clair. Outil gratuit.',
     'meta_keywords' => 'readability analyzer,Flesch-Kincaid,reading level,content readability,readability score,text analysis',

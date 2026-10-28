@@ -33,7 +33,7 @@
                 <div class="grid lg:grid-cols-1 gap-6 lg:gap-8 items-center">
                     <div class="space-y-6 lg:space-y-8 text-center">
                         <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb"><a
-                                class="hover:text-gray-600 transition-colors" aria-label="Home"
+                                class="hover:text-gray-600 transition-colors" aria-label="Accueil"
                                 href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3"
@@ -42,7 +42,7 @@
                                     <path
                                         d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                                     </path>
-                                </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
+                                </svg><span class="sr-only">CodeSommet</span></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="/#industries">Industries</a><span>/</span><span
                                 class="text-gray-600">{{ __('services/university-website-development-agency.ml_934') }}</span>
                         </nav>
@@ -71,7 +71,7 @@
                         <div class="space-y-6">
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
                                 style="font-family:var(--font-display)">
-                                {{ __('services/university-website-development-agency.text_2') }}<!-- -->
+                                {{ __('services/university-website-development-agency.h1_seo') }}<!-- -->
                                 <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
                                         style="min-height:1.2em"
                                         class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
@@ -895,7 +895,7 @@
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
-                    <div><a class="block" href="{{ route('case-study', 'gls-sprachenzentrum') }}">
+                    <div><div class="block card-link relative">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -908,13 +908,13 @@
                                     </div>
                                 </div>
                                 <div class="px-5 py-4">
-                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">GLS Sprachenzentrum</h3>
+                                    <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'gls-sprachenzentrum') }}" class="stretched-link">GLS Sprachenzentrum</a></div>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Centre de langues allemand avec inscription en ligne</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc → Allemagne</p>
                                 </div>
                             </div>
-                        </a></div>
-                    <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
+                        </div></div>
+                    <div><div class="block card-link relative">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -927,12 +927,12 @@
                                     </div>
                                 </div>
                                 <div class="px-5 py-4">
-                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
+                                    <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'mon-asso') }}" class="stretched-link">Mon Asso</a></div>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme SaaS de gestion d'associations</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
-                        </a></div>                </div>
+                        </div></div>                </div>
                 <div class="text-center"></div>
             </div>
         </section>
@@ -2526,8 +2526,7 @@
                         {{ __('services/university-website-development-agency.ml_1028') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
-                    <div><a class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'dubai') }}">
+                    <div><div class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2544,9 +2543,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            {{ __('services/university-website-development-agency.ml_1029') }}</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'dubai') }}" class="stretched-link">
+                                            {{ __('services/university-website-development-agency.ml_1029') }}</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/university-website-development-agency.text_523') }}</span><span
                                                 class="truncate">UAE</span>
@@ -2561,9 +2559,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'casablanca') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2580,9 +2577,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Casablanca</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'casablanca') }}" class="stretched-link">
+                                            Casablanca</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/university-website-development-agency.text_524') }}</span><span
                                                 class="truncate">Maroc</span>
@@ -2597,9 +2593,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v2 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'san-francisco') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v2 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2616,9 +2611,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            San Francisco</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'san-francisco') }}" class="stretched-link">
+                                            San Francisco</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/university-website-development-agency.text_525') }}</span><span
                                                 class="truncate">{{ __('services/university-website-development-agency.text_96') }}</span>
@@ -2633,9 +2627,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'london') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2652,9 +2645,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Londres</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'london') }}" class="stretched-link">
+                                            Londres</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/university-website-development-agency.text_526') }}</span><span
                                                 class="truncate">Royaume-Uni</span>
@@ -2669,9 +2661,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v5 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'paris') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v5 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2688,9 +2679,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Paris</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'paris') }}" class="stretched-link">
+                                            Paris</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/university-website-development-agency.text_527') }}</span><span
                                                 class="truncate">Paris</span>
@@ -2705,9 +2695,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'marrakech') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2724,9 +2713,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Marrakech</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'marrakech') }}" class="stretched-link">
+                                            Marrakech</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/university-website-development-agency.text_528') }}</span><span
                                                 class="truncate">Maroc</span>
@@ -2741,7 +2729,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
+                        </div></div>
                 </div>
                 <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
                     <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez <!-- -->universités
@@ -2784,9 +2772,7 @@
                     <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">
                         {{ __('services/university-website-development-agency.ml_1030') }}</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
-                        class="lx-card lx-v1 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'study-abroad-website-development') }}">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><div class="lx-card lx-v1 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2804,9 +2790,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/university-website-development-agency.ml_1031') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'study-abroad-website-development') }}" class="stretched-link">
+                                        {{ __('services/university-website-development-agency.ml_1031') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/university-website-development-agency.ml_1032') }}</p>
                                 </div>
@@ -2819,9 +2804,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v6 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'language-school-website-development') }}">
+                    </div><div class="lx-card lx-v6 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2837,9 +2820,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/university-website-development-agency.ml_1033') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'language-school-website-development') }}" class="stretched-link">
+                                        {{ __('services/university-website-development-agency.ml_1033') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/university-website-development-agency.ml_1034') }}</p>
                                 </div>
@@ -2852,9 +2834,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v4 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'edtech-platform-development') }}">
+                    </div><div class="lx-card lx-v4 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2871,9 +2851,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/university-website-development-agency.ml_1035') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'edtech-platform-development') }}" class="stretched-link">
+                                        {{ __('services/university-website-development-agency.ml_1035') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/university-website-development-agency.ml_1036') }}</p>
                                 </div>
@@ -2886,9 +2865,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'online-course-platform-development') }}">
+                    </div><div class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2904,9 +2881,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Plateformes de Cours en Ligne</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'online-course-platform-development') }}" class="stretched-link">
+                                        Plateformes de Cours en Ligne</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/university-website-development-agency.ml_1037') }}</p>
                                 </div>
@@ -2919,9 +2895,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'education-website-development') }}">
+                    </div><div class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2933,9 +2907,8 @@
                                         aria-hidden="true"><path d="M14 22v-4a2 2 0 1 0-4 0v4"></path><path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"></path><path d="M18 5v17"></path><path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6"></path><path d="M6 5v17"></path><circle cx="12" cy="9" r="2"></circle></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Éducation & EdTech</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'education-website-development') }}" class="stretched-link">
+                                        Éducation & EdTech</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         Sites web d'écoles et d'établissements avec portails de candidature, gestion des admissions et espaces étudiants.</p>
                                 </div>
@@ -2948,9 +2921,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v5 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'elearning-platform-development') }}">
+                    </div><div class="lx-card lx-v5 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2962,9 +2933,8 @@
                                         aria-hidden="true"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"></path><path d="M20.054 15.987H3.946"></path></svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Plateforme E-Learning</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'elearning-platform-development') }}" class="stretched-link">
+                                        Plateforme E-Learning</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         LMS sur mesure pour écoles, centres de formation et entreprises : cours, suivi des apprenants et certifications.</p>
                                 </div>
@@ -2977,7 +2947,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a></div>
+                    </div></div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
                         href="/#industries">{{ __('services/university-website-development-agency.text_101') }}<svg
@@ -2999,9 +2969,7 @@
                     <p class="text-lg text-[var(--text-secondary)]">
                         {{ __('services/university-website-development-agency.ml_1040') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
-                        class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('tool', 'website-analyzer') }}">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><div class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3013,9 +2981,8 @@
                                     <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                     <path d="M2 12h20"></path>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Audit Gratuit de Site Web</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('tool', 'website-analyzer') }}" class="stretched-link">
+                                Audit Gratuit de Site Web</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
                                 {{ __('services/university-website-development-agency.ml_1041') }}</p>
                             <div
@@ -3032,9 +2999,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v1 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('our-work') }}">
+                    </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3046,9 +3011,8 @@
                                         d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z">
                                     </path>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                {{ __('services/university-website-development-agency.ml_1042') }}</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('our-work') }}" class="stretched-link">
+                                {{ __('services/university-website-development-agency.ml_1042') }}</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
                                 {{ __('services/university-website-development-agency.ml_1043') }}</p>
                             <div
@@ -3065,9 +3029,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v6 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('about') }}">
+                    </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#8B5CF615"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3080,9 +3042,8 @@
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                {{ __('services/university-website-development-agency.ml_1044') }}</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('about') }}" class="stretched-link">
+                                {{ __('services/university-website-development-agency.ml_1044') }}</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
                                 {{ __('services/university-website-development-agency.ml_1045') }}</p>
                             <div
@@ -3099,9 +3060,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v4 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('contact') }}">
+                    </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#10B98115"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3112,9 +3071,8 @@
                                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                                     <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Contactez-nous</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('contact') }}" class="stretched-link">
+                                Contactez-nous</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous pour les
                                 exigences de votre projet</p>
                             <div
@@ -3131,9 +3089,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v2 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('home') }}">
+                    </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#3B82F615"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3144,9 +3100,8 @@
                                     <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                {{ __('services/university-website-development-agency.ml_1046') }}</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('home') }}" class="stretched-link">
+                                {{ __('services/university-website-development-agency.ml_1046') }}</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                                 offres</p>
                             <div
@@ -3163,7 +3118,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a></div>
+                    </div></div>
             </div>
         </section>
         <div class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
@@ -3243,8 +3198,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
-                                        Votre Site Web</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser Mon Site Gratuitement</span>
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"

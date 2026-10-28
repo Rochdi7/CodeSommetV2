@@ -10,7 +10,7 @@
 
         @if (isset($item['url']) && $index < count($items) - 1)
             @if ($item['label'] === 'Home')
-                <a class="hover:text-gray-600 transition-colors" aria-label="Home" href="{{ $item['url'] }}">
+                <a class="hover:text-gray-600 transition-colors" aria-label="Accueil" href="{{ $item['url'] }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-house w-3 h-3" aria-hidden="true">
@@ -19,6 +19,7 @@
                             d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                         </path>
                     </svg>
+                <span class="sr-only">CodeSommet</span>
                 </a>
             @else
                 <a class="hover:text-gray-600 transition-colors" href="{{ $item['url'] }}">{{ $item['label'] }}</a>

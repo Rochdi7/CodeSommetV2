@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Analyseur de Titres H1-H6 : Outil SEO',
     'title' => 'Analyseur de Titres H1-H6 - Outil SEO | CodeSommet',
     'meta_description' => 'Analysez la hiérarchie des titres H1-H6 de votre page : structure, problèmes détectés et organisation du contenu. Outil SEO gratuit.',
     'meta_keywords' => 'heading analyzer,H1 checker,heading hierarchy,SEO structure,heading tags,content SEO tool',

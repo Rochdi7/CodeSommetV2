@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Copenhague, Danemark : des sites web qui génèrent',
     'title' => 'Développement Web à Copenhague, Danemark | CodeSommet',
     'meta_description' => 'À Copenhague, CodeSommet conçoit des plateformes SaaS et des sites d\'entreprise épurés, développés à distance avec un haut niveau de finition.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -176,7 +177,7 @@ return [
     'sw_2863' => '* Comparaison indicative basée sur les offres de services généralement observées sur le marché',
     'sw_2864' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes de Copenhague entreprises.',
     'sw_2865' => 'Questions Fréquemment Posées Sur le Développement Web à Copenhague',
-    'sw_2866' => 'Voir l\'Étude de Cas',
+    'sw_2866' => 'Découvrir ce projet',
     'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Copenhague comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Tunis, Tunisie : des sites web qui génèrent',
     'title' => 'Développement Web à Tunis, Tunisie | CodeSommet',
     'meta_description' => 'Développement web pour les entreprises de Tunis : sites modernes, e-commerce et plateformes sur mesure, réalisés par CodeSommet, agence basée au Maroc.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -179,7 +180,7 @@ return [
     'sw_3063' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_3064' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Tunis.',
     'sw_3065' => 'Questions fréquemment posées sur le Développement Web à Tunis',
-    'sw_3066' => 'Voir l\'Étude de Cas',
+    'sw_3066' => 'Découvrir ce projet',
     'sw_3067' => 'Contactez notre équipe Tunis',
     'sw_3068' => ') }}</span>
                     </div>

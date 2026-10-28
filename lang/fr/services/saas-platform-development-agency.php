@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement de Plateformes SaaS & B2B qui génèrent des',
     'title' => 'Développement de Plateformes SaaS & B2B | CodeSommet',
     'meta_description' => 'Développement de plateformes SaaS sur mesure : tableaux de bord, administration, intégrations API et facturation par abonnement. Devis gratuit.',
     'meta_keywords' => 'développement plateforme saas,développement logiciel b2b,développement application cloud,développement tableau de bord saas,système facturation abonnement,plateforme intégration api,saas marque blanche',
@@ -240,7 +241,7 @@ return [
     'sw_2425' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes de SaaS & Logiciels B2B entreprises.',
     'sw_2426' => 'Questions Fréquemment Posées sur le Développement Web en SaaS & Logiciels B2B',
     'sw_2427' => 'Votre besoin est différent :',
-    'sw_2428' => 'vous construisez spécifiquement un produit fintech réglementé (KYC, trading, paiements) ?',
+    'sw_2428' => 'plateformes fintech réglementées (KYC, paiements)',
     'faq_a1' => 'Le délai dépend du périmètre fonctionnel : nombre de rôles, complexité de la facturation, intégrations et exigences d\'infrastructure. Pour un MVP ciblé, nous pouvons livrer une première version exploitable en 2-5 jours afin de valider le produit avec de vrais utilisateurs. Les itérations suivantes (nouvelles fonctionnalités, montée en charge, marque blanche) sont planifiées par lots dont la durée est confirmée lors de l\'appel découverte.',
     'faq_a2' => 'Nous concevons la plateforme en multi-tenant dès l\'architecture initiale : chaque client dispose d\'un espace logiquement isolé, avec des identifiants de tenant vérifiés à chaque requête côté API et base de données. Les permissions reposent sur un contrôle d\'accès basé sur les rôles (RBAC) afin qu\'un utilisateur ne voie jamais les données d\'une autre organisation. Selon vos contraintes, nous pouvons aussi isoler certains clients sur des bases dédiées.',
     'faq_a3' => 'Oui, c\'est précisément le problème que nous traitons en amont : équilibrage de charge, mise en cache, optimisation des requêtes et découplage des tâches lourdes via des files d\'attente. L\'infrastructure est dimensionnée pour évoluer horizontalement plutôt que de reposer sur un serveur unique. Nous mettons également en place la surveillance des performances pour anticiper les goulots d\'étranglement avant qu\'ils n\'affectent vos utilisateurs.',

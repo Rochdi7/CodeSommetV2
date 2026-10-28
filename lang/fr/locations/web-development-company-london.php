@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Londres, Royaume-Uni : des sites web qui génèrent',
     'title' => 'Développement Web à Londres, Royaume-Uni | CodeSommet',
     'meta_description' => 'Startups et scale-ups de Londres : CodeSommet développe vos plateformes FinTech, sites corporate et tableaux de bord, en collaboration à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -175,7 +176,7 @@ return [
     'sw_3058' => '* Comparaison basée sur les tarifs moyens et les offres de services généralement observés sur le marché',
     'sw_3059' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Londres.',
     'sw_3060' => 'Questions Fréquemment Posées sur le Développement Web à Londres',
-    'sw_3061' => 'Voir l\'Étude de Cas',
+    'sw_3061' => 'Découvrir ce projet',
     'sw_3062' => 'Contactez notre équipe de Londres',
     'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Londres comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',

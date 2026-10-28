@@ -33,7 +33,7 @@
                 <div class="grid lg:grid-cols-1 gap-6 lg:gap-8 items-center">
                     <div class="space-y-6 lg:space-y-8 text-center">
                         <nav class="flex items-center justify-center gap-2 text-xs text-gray-400" aria-label="Breadcrumb"><a
-                                class="hover:text-gray-600 transition-colors" aria-label="Home"
+                                class="hover:text-gray-600 transition-colors" aria-label="Accueil"
                                 href="{{ route('home') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-3 h-3"
@@ -42,7 +42,7 @@
                                     <path
                                         d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
                                     </path>
-                                </svg></a><span>/</span><a class="hover:text-gray-600 transition-colors"
+                                </svg><span class="sr-only">CodeSommet</span></a><span>/</span><a class="hover:text-gray-600 transition-colors"
                                 href="/#industries">Industries</a><span>/</span><span
                                 class="text-gray-600">{{ __('services/telemedicine-platform-development-agency.ml_1110') }}</span>
                         </nav>
@@ -71,7 +71,7 @@
                         <div class="space-y-6">
                             <h1 class="leading-[1.15] tracking-tight uppercase text-[28px] sm:text-[40px] lg:text-[56px] font-extrabold max-w-5xl mx-auto"
                                 style="font-family:var(--font-display)">
-                                {{ __('services/telemedicine-platform-development-agency.text_2') }}<!-- -->
+                                {{ __('services/telemedicine-platform-development-agency.h1_seo') }}<!-- -->
                                 <span class="jsx-5c81c8c63985dc3f inline-block relative text-black"><span
                                         style="min-height:1.2em"
                                         class="jsx-5c81c8c63985dc3f relative inline-flex items-center justify-center px-3 py-3"><span
@@ -162,8 +162,8 @@
                     </div>
                     <p class="text-sm md:text-base text-[#0F0F0F]/70 leading-relaxed">
                         Cette page concerne le développement d'une <strong class="text-[#0F0F0F] font-semibold">plateforme de télémédecine complète</strong>, pensée pour les cliniques virtuelles et les startups santé&nbsp;:
-                        <a class="text-[#00AEEF] font-semibold underline decoration-[#00AEEF]/30 hover:decoration-[#00AEEF] underline-offset-2 transition-colors"
-                            href="{{ route('service', 'telemedicine-website-development') }}">vous êtes un cabinet ou une clinique cherchant un site vitrine avec télésanté plutôt qu'une plateforme complète ?</a>
+                        vous êtes un cabinet ou une clinique cherchant un <a class="text-[#00AEEF] font-semibold underline decoration-[#00AEEF]/30 hover:decoration-[#00AEEF] underline-offset-2 transition-colors"
+                            href="{{ route('service', 'telemedicine-website-development') }}">site vitrine avec télésanté</a> plutôt qu'une plateforme complète ?
                     </p>
                 </div>
             </div>
@@ -927,7 +927,7 @@
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
-                    <div><a class="block" href="{{ route('case-study', 'dental-pro') }}">
+                    <div><div class="block card-link relative">
                             <div
                                 class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                 <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -940,12 +940,12 @@
                                     </div>
                                 </div>
                                 <div class="px-5 py-4">
-                                    <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Dental Pro</h3>
+                                    <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'dental-pro') }}" class="stretched-link">Dental Pro</a></div>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Boutique en ligne de matériel et pièces dentaires</p>
                                     <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                 </div>
                             </div>
-                        </a></div>                    <div><a class="block" href="{{ route('case-study', 'mon-asso') }}">
+                        </div></div>                    <div><div class="block card-link relative">
                                                               <div
                                                                   class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                                                                   <div class="relative aspect-[16/9] overflow-hidden rounded-[14px] bg-[#F3F4F6]"><video
@@ -958,12 +958,12 @@
                                                                       </div>
                                                                   </div>
                                                                   <div class="px-5 py-4">
-                                                                      <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-1.5">Mon Asso</h3>
+                                                                      <div class="text-xl font-semibold text-[var(--text-primary)] mb-1.5 hd-3"><a href="{{ route('case-study', 'mon-asso') }}" class="stretched-link">Mon Asso</a></div>
                                                                       <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-2">Plateforme SaaS de gestion d'associations</p>
                                                                       <p class="text-sm text-[var(--text-secondary)] leading-relaxed opacity-80">Maroc</p>
                                                                   </div>
                                                               </div>
-                                                          </a></div>
+                                                          </div></div>
                 </div>
                 <div class="text-center"></div>
             </div>
@@ -1724,8 +1724,7 @@
                                     class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">{{ __('services/telemedicine-platform-development-agency.ml_1186') }}</button><a
                                     href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Connectez-vous
-                                    sur WhatsApp</a></div>
+                                    class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap border-2 border-black/20 text-black text-sm font-semibold hover:bg-black/5 transition-colors">Écrivez-nous sur WhatsApp</a></div>
                         </div>
                     </div>
                 </div>
@@ -2562,8 +2561,7 @@
                         {{ __('services/telemedicine-platform-development-agency.ml_1226') }}</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
-                    <div><a class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'dubai') }}">
+                    <div><div class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2580,9 +2578,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            {{ __('services/telemedicine-platform-development-agency.ml_1227') }}</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'dubai') }}" class="stretched-link">
+                                            {{ __('services/telemedicine-platform-development-agency.ml_1227') }}</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/telemedicine-platform-development-agency.text_699') }}</span><span
                                                 class="truncate">UAE</span>
@@ -2597,9 +2594,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v5 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'casablanca') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v5 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2616,9 +2612,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Casablanca</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'casablanca') }}" class="stretched-link">
+                                            Casablanca</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/telemedicine-platform-development-agency.text_700') }}</span><span
                                                 class="truncate">Maroc</span>
@@ -2633,9 +2628,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'san-francisco') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2652,9 +2646,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            San Francisco</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'san-francisco') }}" class="stretched-link">
+                                            San Francisco</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/telemedicine-platform-development-agency.text_701') }}</span><span
                                                 class="truncate">{{ __('services/telemedicine-platform-development-agency.text_77') }}</span>
@@ -2669,9 +2662,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v1 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'london') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v1 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2688,9 +2680,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Londres</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'london') }}" class="stretched-link">
+                                            Londres</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/telemedicine-platform-development-agency.text_702') }}</span><span
                                                 class="truncate">Royaume-Uni</span>
@@ -2705,9 +2696,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'paris') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2724,9 +2714,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Paris</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'paris') }}" class="stretched-link">
+                                            Paris</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/telemedicine-platform-development-agency.text_703') }}</span><span
                                                 class="truncate">Paris</span>
@@ -2741,9 +2730,8 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
-                    <div><a class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block"
-                            href="{{ route('location', 'marrakech') }}">
+                        </div></div>
+                    <div><div class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2760,9 +2748,8 @@
                                         </svg>
                                     </div>
                                     <div class="min-w-0 flex-1">
-                                        <h3
-                                            class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                            Marrakech</h3>
+                                        <div class="text-sm md:text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('location', 'marrakech') }}" class="stretched-link">
+                                            Marrakech</a></div>
                                         <p class="text-xs md:text-sm text-[#0F0F0F]/60 flex items-center gap-1 truncate">
                                             <span>{{ __('services/telemedicine-platform-development-agency.text_704') }}</span><span
                                                 class="truncate">Maroc</span>
@@ -2777,7 +2764,7 @@
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
                             </div>
-                        </a></div>
+                        </div></div>
                 </div>
                 <div class="text-center pt-5 md:pt-6 border-t border-[#0F0F0F]/8">
                     <p class="text-sm md:text-base text-[#0F0F0F]/70 mb-3 md:mb-4 px-4">Vous cherchez <!-- -->télémédecine
@@ -2820,9 +2807,7 @@
                     <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">
                         {{ __('services/telemedicine-platform-development-agency.ml_1228') }}</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><a
-                        class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'healthcare-website-development') }}">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><div class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2838,9 +2823,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/telemedicine-platform-development-agency.ml_1229') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'healthcare-website-development') }}" class="stretched-link">
+                                        {{ __('services/telemedicine-platform-development-agency.ml_1229') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/telemedicine-platform-development-agency.ml_1230') }}</p>
                                 </div>
@@ -2853,9 +2837,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'telemedicine-website-development') }}">
+                    </div><div class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2871,9 +2853,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/telemedicine-platform-development-agency.ml_1231') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'telemedicine-website-development') }}" class="stretched-link">
+                                        {{ __('services/telemedicine-platform-development-agency.ml_1231') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/telemedicine-platform-development-agency.ml_1232') }}</p>
                                 </div>
@@ -2886,9 +2867,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v5 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'study-abroad-website-development') }}">
+                    </div><div class="lx-card lx-v5 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2906,9 +2885,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/telemedicine-platform-development-agency.ml_1233') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'study-abroad-website-development') }}" class="stretched-link">
+                                        {{ __('services/telemedicine-platform-development-agency.ml_1233') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/telemedicine-platform-development-agency.ml_1234') }}</p>
                                 </div>
@@ -2921,9 +2899,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v3 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'language-school-website-development') }}">
+                    </div><div class="lx-card lx-v3 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2939,9 +2915,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        {{ __('services/telemedicine-platform-development-agency.ml_1235') }}</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'language-school-website-development') }}" class="stretched-link">
+                                        {{ __('services/telemedicine-platform-development-agency.ml_1235') }}</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/telemedicine-platform-development-agency.ml_1236') }}</p>
                                 </div>
@@ -2954,9 +2929,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v1 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'immigration-consultancy-website-development') }}">
+                    </div><div class="lx-card lx-v1 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2975,9 +2948,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Conseil en Immigration</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'immigration-consultancy-website-development') }}" class="stretched-link">
+                                        Conseil en Immigration</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">Sites web
                                         professionnels pour les consultants en visa et immigration avec suivi de dossiers et
                                         gestion de documents.</p>
@@ -2991,9 +2963,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a><a
-                        class="lx-card lx-v6 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20"
-                        href="{{ route('service', 'saas-platform-development') }}">
+                    </div><div class="lx-card lx-v6 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -3009,9 +2979,8 @@
                                     </svg>
                                 </div>
                                 <div class="flex-1 min-w-0">
-                                    <h3
-                                        class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate">
-                                        Plateformes SaaS</h3>
+                                    <div class="text-base md:text-lg font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors truncate hd-3"><a href="{{ route('service', 'saas-platform-development') }}" class="stretched-link">
+                                        Plateformes SaaS</a></div>
                                     <p class="text-xs md:text-sm text-[#0F0F0F]/60 mt-1 line-clamp-2">
                                         {{ __('services/telemedicine-platform-development-agency.ml_1237') }}</p>
                                 </div>
@@ -3024,7 +2993,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </a></div>
+                    </div></div>
                 <div class="text-center mt-8 md:mt-10"><a
                         class="inline-flex items-center gap-2 text-[#00AEEF] font-semibold hover:underline"
                         href="/#industries">{{ __('services/telemedicine-platform-development-agency.text_82') }}<svg
@@ -3045,9 +3014,7 @@
                     <p class="text-lg text-[var(--text-secondary)]">
                         {{ __('services/telemedicine-platform-development-agency.ml_1238') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><a
-                        class="lx-card lx-v4 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('tool', 'website-analyzer') }}">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><div class="lx-card lx-v4 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3059,9 +3026,8 @@
                                     <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                     <path d="M2 12h20"></path>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Audit Gratuit de Site Web</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('tool', 'website-analyzer') }}" class="stretched-link">
+                                Audit Gratuit de Site Web</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
                                 {{ __('services/telemedicine-platform-development-agency.ml_1239') }}</p>
                             <div
@@ -3078,9 +3044,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v2 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('our-work') }}">
+                    </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3092,9 +3056,8 @@
                                         d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z">
                                     </path>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                {{ __('services/telemedicine-platform-development-agency.ml_1240') }}</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('our-work') }}" class="stretched-link">
+                                {{ __('services/telemedicine-platform-development-agency.ml_1240') }}</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
                                 {{ __('services/telemedicine-platform-development-agency.ml_1241') }}</p>
                             <div
@@ -3111,9 +3074,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v7 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('about') }}">
+                    </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#8B5CF615"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3126,9 +3087,8 @@
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                     <circle cx="9" cy="7" r="4"></circle>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                {{ __('services/telemedicine-platform-development-agency.ml_1242') }}</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('about') }}" class="stretched-link">
+                                {{ __('services/telemedicine-platform-development-agency.ml_1242') }}</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">
                                 {{ __('services/telemedicine-platform-development-agency.ml_1243') }}</p>
                             <div
@@ -3145,9 +3105,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v5 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('contact') }}">
+                    </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#10B98115"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3158,9 +3116,8 @@
                                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                                     <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                Contactez-nous</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('contact') }}" class="stretched-link">
+                                Contactez-nous</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Contactez-nous pour les
                                 exigences de votre projet</p>
                             <div
@@ -3177,9 +3134,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a
-                        class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200"
-                        href="{{ route('home') }}">
+                    </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#3B82F615"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3190,9 +3145,8 @@
                                     <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                                 </svg></div>
-                            <h3
-                                class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors">
-                                {{ __('services/telemedicine-platform-development-agency.ml_1244') }}</h3>
+                            <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('home') }}" class="stretched-link">
+                                {{ __('services/telemedicine-platform-development-agency.ml_1244') }}</a></div>
                             <p class="text-sm text-[var(--text-secondary)] mb-4 flex-grow">Explorez tous nos services et
                                 offres</p>
                             <div
@@ -3209,7 +3163,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a></div>
+                    </div></div>
             </div>
         </section>
         <div class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
@@ -3289,8 +3243,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
-                                        Votre Site Web</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser Mon Site Gratuitement</span>
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"

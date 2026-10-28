@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Lagos, Nigeria : des sites web qui génèrent',
     'title' => 'Développement Web à Lagos, Nigeria | CodeSommet',
     'meta_description' => 'CodeSommet développe pour les entreprises de Lagos des sites performants, boutiques en ligne et outils métier, avec collaboration à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -178,7 +179,7 @@ return [
     'sw_3062' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_3063' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Lagos.',
     'sw_3064' => 'Questions Fréquemment Posées sur le Développement Web à Lagos',
-    'sw_3065' => 'Voir l\'Étude de Cas',
+    'sw_3065' => 'Découvrir ce projet',
     'sw_3066' => 'Contactez notre équipe de Lagos',
     'faq_a1' => 'Nous n\'avons pas de bureau à Lagos : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Lagos et vous gardez une visibilité complète sur l\'avancement à chaque étape.',

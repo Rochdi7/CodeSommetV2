@@ -8,7 +8,7 @@ return [
     'og_description' => 'Liens internes vers des erreurs, redirections et pages noindex, profondeur, paramètres : ce qui gaspille l\'exploration de votre site.',
     'twitter_description' => 'Ce qui gaspille l\'exploration de votre site, page par page, avec les liens à corriger.',
     'breadcrumb' => 'Optimisation du Crawl',
-    'h1' => 'Vérificateur d\'Optimisation du Crawl',
+    'h1' => 'Test d\'Optimisation du Budget de Crawl',
     'intro' => 'Chaque lien interne vers une erreur, une redirection ou une page exclue de l\'index fait perdre du temps aux robots. Explorez votre site comme eux et obtenez la liste des liens à corriger, avec les pages qui les contiennent.',
     'btn_submit' => 'Explorer le site',
     'fields' => [

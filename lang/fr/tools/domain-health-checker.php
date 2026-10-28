@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Santé de Domaine : Testeur DNS & SSL Gratuit',
     'title' => 'Santé de Domaine - Testeur DNS & SSL Gratuit | CodeSommet',
     'meta_description' => 'Contrôlez la santé d\'un domaine : DNS, certificat SSL, temps de réponse serveur et configuration e-mail, dans un rapport unique et gratuit.',
     'meta_keywords' => 'domain health checker,DNS checker,SSL checker,domain analyzer,website health,server status,domain tester,SSL certificate checker,DNS lookup tool,website uptime checker,domain security checker,HTTPS checker,domain monitoring tool,website health analyzer,technical SEO checker',

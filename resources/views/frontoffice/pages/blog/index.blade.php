@@ -26,8 +26,8 @@
                     </div>
                     <div class="space-y-4">
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-heading">
-                            Insights & <span
-                                class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#0071BC]">{{ __('blog/index.text_1') }}</span>
+                            Blog Développement Web, <span
+                                class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#0071BC]">SEO &amp; Design</span>
                         </h1>
                         <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
                             {{ __('blog/index.ml_512') }}</p>
@@ -171,7 +171,7 @@
                         Article en Vedette
                     </span>
                 </div>
-                <a href="{{ route('blog.show', $featuredPost->slug) }}" class="block group">
+                <div class="block group card-link relative">
                     <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5">
                         <div class="grid md:grid-cols-2 gap-0">
                             <div
@@ -222,8 +222,7 @@
                                         {{ $featuredPost->read_time }} de lecture
                                     </div>
                                 </div>
-                                <h2 class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[#00AEEF] transition-colors"
-                                    style="font-family:var(--font-heading)">{{ $featuredPost->title }}</h2>
+                                <div class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[#00AEEF] transition-colors hd-2" style="font-family:var(--font-heading)"><a href="{{ route('blog.show', $featuredPost->slug) }}" class="stretched-link">{{ $featuredPost->title }}</a></div>
                                 @if ($featuredPost->excerpt)
                                     <p class="text-[var(--text-secondary)] leading-relaxed mb-6 line-clamp-3">
                                         {{ $featuredPost->excerpt }}</p>
@@ -253,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
     @endif
@@ -325,9 +324,11 @@
             @else
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($posts as $index => $post)
+                        {{-- Already shown as the featured card above: a second link with the same title is a duplicate anchor. --}}
+                        @continue($featuredPost && !request()->hasAny(['search', 'category']) && $post->id === $featuredPost->id)
                         @php $color = $post->category?->color ?: '#00AEEF'; @endphp
                         <article style="opacity:0;transform:translateY(30px)" data-delay="{{ ($index % 3) + 1 }}">
-                            <a href="{{ route('blog.show', $post->slug) }}" class="block group">
+                            <div class="block group card-link relative">
                                 <div
                                     class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                                     <div class="relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
@@ -363,9 +364,8 @@
                                             <span class="text-xs text-[var(--text-tertiary)]">{{ $post->read_time }} de
                                                 lecture</span>
                                         </div>
-                                        <h3
-                                            class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">
-                                            {{ $post->title }}</h3>
+                                        <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2 hd-3"><a href="{{ route('blog.show', $post->slug) }}" class="stretched-link">
+                                            {{ $post->title }}</a></div>
                                         <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2 mb-4">
                                             {{ $post->excerpt ?: Str::limit(strip_tags($post->content), 120) }}</p>
                                         <div class="flex items-center justify-between">
@@ -390,7 +390,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </article>
                     @endforeach
                 </div>
