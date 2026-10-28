@@ -94,23 +94,23 @@
                             <div id="tools-count" class="text-gray-400 px-5 py-4 text-sm">{{ $toolsCount }}</div>
                         </div>
                     </div>
-                    <div id="tools-filters" class="flex flex-wrap items-center justify-center gap-3 max-w-4xl mx-auto" role="group" aria-label="Filtrer les outils par catégorie">
+                    <div id="tools-filters" class="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto" role="group" aria-label="Filtrer les outils par catégorie">
                         <button type="button" data-filter="all" aria-pressed="true"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-[#00AEEF] text-white shadow-lg shadow-[#00AEEF]/25"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers h-4 w-4" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span>{{ __('tools.text_3') }}</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
                         <button type="button" data-filter="ai" aria-pressed="false"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><span>IA</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
+                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><span>IA &amp; GEO</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
                         <button type="button" data-filter="audit" aria-pressed="false"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-check h-4 w-4" aria-hidden="true"><path d="m8 11 2 2 4-4"></path><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><span>Audit SEO</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
+                        <button type="button" data-filter="crawl" aria-pressed="false"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network h-4 w-4" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1"></rect><rect x="2" y="16" width="6" height="6" rx="1"></rect><rect x="9" y="2" width="6" height="6" rx="1"></rect><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path><path d="M12 12V8"></path></svg><span>Crawl &amp; Indexation</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
+                        <button type="button" data-filter="speed" aria-pressed="false"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge h-4 w-4" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg><span>Vitesse &amp; Sécurité</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
                         <button type="button" data-filter="markup" aria-pressed="false"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml h-4 w-4" aria-hidden="true"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg><span>Balisage SEO</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
-                        <button type="button" data-filter="technical" aria-pressed="false"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge h-4 w-4" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg><span>Technique &amp; Vitesse</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
                         <button type="button" data-filter="content" aria-pressed="false"
                             class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code h-4 w-4" aria-hidden="true"><path d="M10 12.5 8 15l2 2.5"></path><path d="m14 12.5 2 2.5-2 2.5"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path></svg><span>Contenu</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
-                        <button type="button" data-filter="dev" aria-pressed="false"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal h-4 w-4" aria-hidden="true"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg><span>Développeur</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
-                        <button type="button" data-filter="design" aria-pressed="false"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette h-4 w-4" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg><span>Design</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
+                        <button type="button" data-filter="utils" aria-pressed="false"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-white border border-gray-200 text-gray-700 hover:border-[#00AEEF] hover:text-[#00AEEF] hover:shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench h-4 w-4" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg><span>Utilitaires</span><span data-filter-count style="font-size:12px;line-height:16px;font-variant-numeric:tabular-nums;opacity:.7"></span></button>
                     </div>
                 </div>
             </div>
@@ -380,7 +380,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'broken-link-checker') }}" data-category="audit">
+                    </a><a href="{{ route('tool', 'broken-link-checker') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -394,7 +394,7 @@
                                         <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                         <line x1="8" x2="16" y1="12" y2="12"></line>
                                     </svg>
-                                </div><span class="tl-card__tag">Audit</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_10') }}</h2>
@@ -472,7 +472,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'sitemap-validator') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'sitemap-validator') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -488,7 +488,7 @@
                                         <path d="M15 5.764v15"></path>
                                         <path d="M9 3.236v15"></path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_142') }}</h2>
@@ -506,7 +506,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-validator') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'robots-validator') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -520,7 +520,7 @@
                                             d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
                                         </path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">Validateur Robots.txt</h2>
@@ -566,7 +566,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'page-speed-analyzer') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'page-speed-analyzer') }}" data-category="speed">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -580,7 +580,7 @@
                                             d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
                                         </path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Vitesse</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_143') }}</h2>
@@ -598,7 +598,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'url-slug-generator') }}" data-category="markup">
+                    </a><a href="{{ route('tool', 'url-slug-generator') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -612,7 +612,7 @@
                                         <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                         <line x1="8" x2="16" y1="12" y2="12"></line>
                                     </svg>
-                                </div><span class="tl-card__tag">Balisage</span>
+                                </div><span class="tl-card__tag">URL</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_13') }}</h2>
@@ -628,7 +628,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'html-minifier') }}" data-category="dev">
+                    </a><a href="{{ route('tool', 'html-minifier') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -658,7 +658,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'redirect-checker') }}" data-category="audit">
+                    </a><a href="{{ route('tool', 'redirect-checker') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -672,7 +672,7 @@
                                         <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                         <line x1="8" x2="16" y1="12" y2="12"></line>
                                     </svg>
-                                </div><span class="tl-card__tag">Audit</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_14') }}</h2>
@@ -718,7 +718,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'internal-link-analyzer') }}" data-category="audit">
+                    </a><a href="{{ route('tool', 'internal-link-analyzer') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -732,7 +732,7 @@
                                         <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                         <line x1="8" x2="16" y1="12" y2="12"></line>
                                     </svg>
-                                </div><span class="tl-card__tag">Audit</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_144') }}</h2>
@@ -748,7 +748,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'image-compression-analyzer') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'image-compression-analyzer') }}" data-category="speed">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -763,7 +763,7 @@
                                         <circle cx="9" cy="9" r="2"></circle>
                                         <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Vitesse</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_145') }}</h2>
@@ -779,7 +779,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'domain-health-checker') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'domain-health-checker') }}" data-category="speed">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -793,7 +793,7 @@
                                             d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
                                         </path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Sécurité</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_16') }}</h2>
@@ -903,7 +903,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'xml-sitemap-generator') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'xml-sitemap-generator') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -918,7 +918,7 @@
                                         <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
                                         <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_20') }}</h2>
@@ -934,7 +934,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'utm-builder') }}" data-category="markup">
+                    </a><a href="{{ route('tool', 'utm-builder') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -948,7 +948,7 @@
                                         <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                         <line x1="8" x2="16" y1="12" y2="12"></line>
                                     </svg>
-                                </div><span class="tl-card__tag">Balisage</span>
+                                </div><span class="tl-card__tag">URL</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_21') }}</h2>
@@ -964,7 +964,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-txt-generator') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'robots-txt-generator') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -980,7 +980,7 @@
                                         <path d="M16 13H8"></path>
                                         <path d="M16 17H8"></path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_22') }}</h2>
@@ -996,7 +996,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'nofollow-link-checker') }}" data-category="audit">
+                    </a><a href="{{ route('tool', 'nofollow-link-checker') }}" data-category="crawl">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1010,7 +1010,7 @@
                                         <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
                                         <line x1="8" x2="16" y1="12" y2="12"></line>
                                     </svg>
-                                </div><span class="tl-card__tag">Audit</span>
+                                </div><span class="tl-card__tag">Crawl</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_23') }}</h2>
@@ -1244,7 +1244,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'base64-encoder') }}" data-category="dev">
+                    </a><a href="{{ route('tool', 'base64-encoder') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1273,7 +1273,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'json-formatter') }}" data-category="dev">
+                    </a><a href="{{ route('tool', 'json-formatter') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1338,7 +1338,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'color-palette-generator') }}" data-category="design">
+                    </a><a href="{{ route('tool', 'color-palette-generator') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1374,7 +1374,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'qr-code-generator') }}" data-category="design">
+                    </a><a href="{{ route('tool', 'qr-code-generator') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1413,7 +1413,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'css-minifier') }}" data-category="dev">
+                    </a><a href="{{ route('tool', 'css-minifier') }}" data-category="utils">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1443,7 +1443,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'ssl-certificate-checker') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'ssl-certificate-checker') }}" data-category="speed">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1457,7 +1457,7 @@
                                             d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
                                         </path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Sécurité</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_34') }}</h2>
@@ -1473,7 +1473,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'mobile-friendly-test') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'mobile-friendly-test') }}" data-category="speed">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1487,7 +1487,7 @@
                                             ry="2"></rect>
                                         <path d="M12 18h.01"></path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Vitesse</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_35') }}</h2>
@@ -1503,7 +1503,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'core-web-vitals-checker') }}" data-category="technical">
+                    </a><a href="{{ route('tool', 'core-web-vitals-checker') }}" data-category="speed">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1516,7 +1516,7 @@
                                         <path d="M16 7h6v6"></path>
                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                     </svg>
-                                </div><span class="tl-card__tag">Technique</span>
+                                </div><span class="tl-card__tag">Vitesse</span>
                             </div>
                             <h2 class="tl-card__title"
                                 style="font-family:var(--font-heading)">{{ __('tools.text_36') }}</h2>
@@ -1534,7 +1534,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'crawl-visualizer') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'crawl-visualizer') }}" data-category="crawl">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1567,7 +1567,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'serp-snippet-preview') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'serp-snippet-preview') }}" data-category="audit">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1596,7 +1596,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-txt-tester') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'robots-txt-tester') }}" data-category="crawl">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1625,7 +1625,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'security-headers-checker') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'security-headers-checker') }}" data-category="speed">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1654,7 +1654,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'ai-crawler-access-checker') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'ai-crawler-access-checker') }}" data-category="ai">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1683,7 +1683,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'structured-data-extractor') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'structured-data-extractor') }}" data-category="markup">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1712,7 +1712,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'sitemap-url-extractor') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'sitemap-url-extractor') }}" data-category="crawl">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1741,7 +1741,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'bot-viewer') }}" data-category="seo">
+                    </a><a href="{{ route('tool', 'bot-viewer') }}" data-category="crawl">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1802,16 +1802,16 @@
                     </a>@foreach ([
                         ['llms-txt-generator', 'ai', '<path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path>'],
                         ['meta-extractor', 'audit', '<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>'],
-                        ['expired-domain-checker', 'technical', '<circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path>'],
-                        ['url-editor', 'technical', '<path d="M9 17H7A5 5 0 0 1 7 7h2"></path><path d="M15 7h2a5 5 0 1 1 0 10h-2"></path><line x1="8" x2="16" y1="12" y2="12"></line>'],
-                        ['domain-extractor', 'technical', '<path d="M3 6h18"></path><path d="M7 12h10"></path><path d="M10 18h4"></path>'],
+                        ['expired-domain-checker', 'speed', '<circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path>'],
+                        ['url-editor', 'utils', '<path d="M9 17H7A5 5 0 0 1 7 7h2"></path><path d="M15 7h2a5 5 0 1 1 0 10h-2"></path><line x1="8" x2="16" y1="12" y2="12"></line>'],
+                        ['domain-extractor', 'utils', '<path d="M3 6h18"></path><path d="M7 12h10"></path><path d="M10 18h4"></path>'],
                         ['text-editor', 'content', '<path d="M17 6.1H3"></path><path d="M21 12.1H3"></path><path d="M15.1 18H3"></path>'],
                         ['invisible-character-cleaner', 'content', '<path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"></path><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"></path>'],
                         ['keyword-modifier-generator', 'content', '<circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path><path d="M11 8v6"></path><path d="M8 11h6"></path>'],
-                        ['image-compressor', 'design', '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>'],
+                        ['image-compressor', 'utils', '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>'],
                         ['eeat-signals-checker', 'audit', '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path>'],
                         ['ai-readiness-checker', 'ai', '<path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z"></path><path d="M5 3v4"></path><path d="M3 5h4"></path><path d="M19 17v4"></path><path d="M17 19h4"></path>'],
-                        ['crawl-optimization-checker', 'technical', '<circle cx="12" cy="5" r="3"></circle><circle cx="5" cy="19" r="3"></circle><circle cx="19" cy="19" r="3"></circle><path d="M10.5 7.5 6.5 16.5"></path><path d="m13.5 7.5 4 9"></path>'],
+                        ['crawl-optimization-checker', 'crawl', '<circle cx="12" cy="5" r="3"></circle><circle cx="5" cy="19" r="3"></circle><circle cx="19" cy="19" r="3"></circle><path d="M10.5 7.5 6.5 16.5"></path><path d="m13.5 7.5 4 9"></path>'],
                     ] as [$cardSlug, $cardCategory, $cardIcon])<a href="{{ route('tool', $cardSlug) }}" data-category="{{ $cardCategory }}">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -1892,13 +1892,13 @@
 
                 // Ordre et libellés des sections affichées dans la vue « Tous les Outils ».
                 var groups = [
-                    { key: 'ai', label: 'Outils IA' },
+                    { key: 'ai', label: 'Outils IA & GEO' },
                     { key: 'audit', label: 'Audit SEO' },
-                    { key: 'markup', label: 'Balisage SEO & Données structurées' },
-                    { key: 'technical', label: 'Technique, Indexation & Vitesse' },
+                    { key: 'crawl', label: 'Crawl, Liens & Indexation' },
+                    { key: 'speed', label: 'Vitesse & Sécurité' },
+                    { key: 'markup', label: 'Balisage & Données structurées' },
                     { key: 'content', label: 'Contenu & Texte' },
-                    { key: 'dev', label: 'Outils Développeur' },
-                    { key: 'design', label: 'Design' }
+                    { key: 'utils', label: 'Utilitaires Dev, URL & Design' }
                 ];
 
                 var counts = { all: toolCards.length };

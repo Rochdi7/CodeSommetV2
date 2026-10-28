@@ -63,11 +63,11 @@ The run API did not duplicate `crawl-visualizer`, `sitemap-url-extractor` or `ai
 | /geo/ai-compatibility | `/tools/ai-readiness-checker` | run / batch 3 | WORKING | SignalToolsTest, E2E (codesommet.com, iana.org) | Readiness signals, **not AI visibility**. Search/assistant bots only, reusing `AiCrawlerAccessCheckerTool::CRAWLERS` (training bots stay on ai-crawler-access-checker, which the page links to). llms.txt is shown but never scored. Passages = `<p>` of 40–150 words | — |
 | /tech-seo/crawl-visualizer, /geo/internal-links | `/tools/crawl-visualizer` | main controller | WORKING | CrawlVisualizerTest | — | — |
 | /seo-tools/robots-generator | `/tools/robots-txt-generator` | client | WORKING | ToolsMarkupContractTest | — | — |
-| /seo-tools/sitemap-generator | `/tools/xml-sitemap-generator` | client | RENDER_ONLY / PARTIAL | — | From pasted URLs, no crawl | Sitemap from crawl, batch 4 |
+| /seo-tools/sitemap-generator | `/tools/xml-sitemap-generator` (+ "explore" panel → run `site-sitemap`) | client + run / batch 4 | WORKING | SiteModesTest, E2E (codesommet.com) | Crawl keeps only 2xx, indexable, robots-allowed, self-canonical HTML pages, and lists every exclusion with its reason. The URLs fill the existing generator. ≤ 50 pages / 20 s; on a slow target only a few pages are reached (the panel says how many) | — |
 | /seo-tools/word-counter | `/tools/word-counter` | client | WORKING | ToolsTrackTest, UrlNormalizationTest | — | — |
 | /seo-tools/da-pa-checker | `/tools/domain-authority-checker` | legacy | DEFERRED_PAID_DATA (labelled) | AuthorityMetricLabellingTest | Shows provider metrics only when API keys are configured; never estimated | Owner decision (keys) |
-| /tech-seo/link-checker | `/tools/broken-link-checker`, `/tools/nofollow-link-checker` | legacy; client | PARTIAL | ToolsTrackTest | Single page | Site-wide broken links, batch 4 |
-| /tech-seo/duplicate | `/tools/duplicate-content-checker` | client | PARTIAL / RENDER_ONLY | — | Compares pasted texts | Site crawl duplicates, batch 4 |
+| /tech-seo/link-checker | `/tools/broken-link-checker` (+ site panel → run `site-broken-links`), `/tools/nofollow-link-checker` | legacy + run / batch 4; client | WORKING (site mode) | ToolsTrackTest, SiteModesTest, E2E | Site mode: ≤ 20 pages / 12 s crawl, then ≤ 60 HEAD probes (internal targets first). Extra links are reported "not checked". HEAD-refused (405/501) = unverifiable; 401/403/429/999 = restricted, not broken. Robots-disallowed internal links are never requested | Queue + bigger budget (DR-1) |
+| /tech-seo/duplicate | `/tools/duplicate-content-checker` (+ site panel → run `site-duplicate-pages`) | client + run / batch 4 | WORKING (site mode) | SiteModesTest, E2E | Site mode: ≤ 20 pages / 15 s. Main content only (`HtmlDocument::contentText()`). Exact copies plus 5-word-shingle Jaccard ≥ 80 %; boilerplate shingles are stripped only with ≥ 6 distinct pages. Canonicalized pairs are marked as handled. Duplicate titles, descriptions and H1s; thin pages under 150 words | — |
 | /tech-seo/image-seo | `/tools/image-alt-analyzer`, `/tools/image-compression-analyzer` | legacy | WORKING; RENDER_ONLY | ToolsApiLiveAccuracyTest | No WordPress write-back | — |
 | /tech-seo/speed, /tech-seo/bulk-pagespeed | `/tools/page-speed-analyzer`, `/tools/core-web-vitals-checker` | legacy (PSI) | RENDER_ONLY | — | One URL per run; PSI quota | Bulk: candidate |
 | /on-page/internal-link-opportunities | `/tools/internal-link-analyzer` | legacy | PARTIAL / RENDER_ONLY | — | Single page | Crawl-based, batch 4 |
@@ -122,6 +122,17 @@ Batch 3 (`eeat-signals-checker`, `ai-readiness-checker`, `crawl-optimization-che
   - the UI refuses `127.0.0.1` and `169.254.169.254` with the safe message;
   - no console errors;
   - no overflow at 390 px.
+
+Batch 4 adds site-wide modes to 3 existing pages. There is no new public page: the run slugs `site-*` have no `/tools/*` route (404, tested).
+
+- `SiteModesTest`: 6/6 pass. It covers:
+  - broken links: internal and external links, sources and occurrences, 404/410/403/405/redirect/private-target classification, robots-disallowed links never requested, crawled pages not probed twice;
+  - duplicates: exact, near (93 %) and canonicalized pairs, shared nav/footer ignored;
+  - sitemap: inclusion rules and exclusion reasons;
+  - SSRF rejection, the heavy rate limit and the page panels.
+- Selenium on codesommet.com: the three panels return results (9, 11 and 4 pages reached in 12–20 s while the production server was under load). The sitemap panel fills the generator textarea.
+- The original single-page modes of all three pages still work. A metadata address is refused in the UI, and nothing overflows at 390 px.
+- The three page fixtures were already in the stale set and were not regenerated.
 
 `SiteCrawler` now records redirects (`getNoRedirect`, target queued and re-validated) instead of following them. `llms-txt-generator` still lists only 2xx pages (FreeSeoToolsTest).
 

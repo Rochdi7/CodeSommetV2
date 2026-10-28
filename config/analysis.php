@@ -27,11 +27,17 @@ return [
         'eeat-signals-checker' => App\Services\Tools\EeatSignalsCheckerTool::class,
         'ai-readiness-checker' => App\Services\Tools\AiReadinessCheckerTool::class,
         'crawl-optimization-checker' => App\Services\Tools\CrawlOptimizationCheckerTool::class,
+        // Batch 4: site-wide modes of existing pages (no new public page):
+        // broken-link-checker, duplicate-content-checker, xml-sitemap-generator.
+        'site-broken-links' => App\Services\Tools\SiteBrokenLinksTool::class,
+        'site-duplicate-pages' => App\Services\Tools\SiteDuplicatePagesTool::class,
+        'site-sitemap' => App\Services\Tools\SiteSitemapTool::class,
     ],
 
     // Run-API tools that fetch many URLs per call: strict `tools-api` budget
     // (5/min per IP), like ToolsApiController::HEAVY_TOOLS for legacy tools.
-    'heavy_tools' => ['llms-txt-generator', 'meta-extractor', 'expired-domain-checker', 'crawl-optimization-checker'],
+    'heavy_tools' => ['llms-txt-generator', 'meta-extractor', 'expired-domain-checker', 'crawl-optimization-checker',
+        'site-broken-links', 'site-duplicate-pages', 'site-sitemap'],
 
     'queue' => [
         // Production runs on shared hosting with no long-running worker, so

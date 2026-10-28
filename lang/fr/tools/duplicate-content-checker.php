@@ -52,4 +52,11 @@ return [
     'placeholder_141' => 'Collez le premier bloc de texte ici...',
     'placeholder_142' => 'Collez le second bloc de texte ici...',
     'text_143' => 'Comparer le Contenu',
+    'site_scan' => [
+        'title' => 'Comparer toutes les pages de votre site',
+        'intro' => 'Explorez jusqu\'à 20 pages et repérez les copies exactes, les quasi-doublons et les titres, descriptions ou H1 identiques. Seul le contenu principal est comparé, sans les menus ni le pied de page.',
+        'label' => 'Page de départ',
+        'button' => 'Analyser le site',
+        'note' => 'robots.txt est respecté. Les paires déjà réglées par une balise canonical sont signalées comme traitées.',
+    ],
 ];

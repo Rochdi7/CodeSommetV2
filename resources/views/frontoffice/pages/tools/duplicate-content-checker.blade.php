@@ -73,6 +73,7 @@
                 </div>
                 <div class="mt-6"></div>
             </div>
+            @include('frontoffice.partials.site-scan-panel', ['page' => 'duplicate-content-checker', 'run' => 'site-duplicate-pages'])
             <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 p-6">
                 <h2 class="text-lg font-semibold text-black mb-4">{{ __('tools/duplicate-content-checker.text_5') }}</h2>
                 <div class="space-y-4 text-sm text-gray-700">
@@ -478,4 +479,6 @@
 @push('scripts')
     <script src="{{ asset('js/tools-common.js') }}" defer></script>
     <script src="{{ asset('js/tools/duplicate-content-checker.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/run-api.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/site-scan.js') }}" defer></script>
 @endpush

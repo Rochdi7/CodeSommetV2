@@ -2696,10 +2696,10 @@ video {
 #tools-grid [data-category="ai"],        #tools-grid [data-group="ai"]        { --tl: 124, 92, 255; --tl-ink: 99, 62, 230; }
 #tools-grid [data-category="audit"],     #tools-grid [data-group="audit"]     { --tl: 0, 174, 239;  --tl-ink: 0, 129, 178; }
 #tools-grid [data-category="markup"],    #tools-grid [data-group="markup"]    { --tl: 20, 184, 166; --tl-ink: 13, 128, 116; }
-#tools-grid [data-category="technical"], #tools-grid [data-group="technical"] { --tl: 245, 158, 11; --tl-ink: 180, 100, 6; }
+#tools-grid [data-category="crawl"],     #tools-grid [data-group="crawl"]     { --tl: 245, 158, 11; --tl-ink: 180, 100, 6; }
+#tools-grid [data-category="speed"],     #tools-grid [data-group="speed"]     { --tl: 239, 68, 68;  --tl-ink: 185, 28, 28; }
 #tools-grid [data-category="content"],   #tools-grid [data-group="content"]   { --tl: 236, 72, 153; --tl-ink: 190, 24, 93; }
-#tools-grid [data-category="dev"],       #tools-grid [data-group="dev"]       { --tl: 79, 70, 229;  --tl-ink: 67, 56, 202; }
-#tools-grid [data-category="design"],    #tools-grid [data-group="design"]    { --tl: 249, 115, 22; --tl-ink: 194, 65, 12; }
+#tools-grid [data-category="utils"],     #tools-grid [data-group="utils"]     { --tl: 79, 70, 229;  --tl-ink: 67, 56, 202; }
 
 #tools-grid > a {
     display: block;

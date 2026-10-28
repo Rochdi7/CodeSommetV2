@@ -614,6 +614,16 @@ Each check has a group, a status (`pass`/`warn`/`fail`/`info`) and a weight. The
 | `ai-readiness-checker` | page + robots.txt + /llms.txt | search/assistant AI bots from `AiCrawlerAccessCheckerTool::CRAWLERS` (training bots excluded), noindex/`none`, nosnippet/max-snippet:0/data-nosnippet, words without JS, H1/H2, question headings, `<p>` passages of 40–150 words, lists/tables outside nav, JSON-LD, meta description, lang, canonical, date. llms.txt is always `info` |
 | `crawl-optimization-checker` | ≤ 50 pages, 20 s (`heavy_tools`) | robots.txt status, Sitemap line, internal links to 4xx/5xx, redirects and noindex pages (each with the pages linking to it), robots-blocked links (`info`), depth > 3, parameter share > 25 %, duplicate and missing titles, sample coverage (`info`) |
 
+**Site-wide modes (batch 4, 2026-10-27).** These are added to existing pages, not new pages. `partials/site-scan-panel.blade.php` and `js/tools/site-scan.js` sit after the page's own form, and the original single-page mode is unchanged. The run slugs have no public route. All three are `heavy_tools`.
+
+| Page | Run slug | Budget | What it does |
+|---|---|---|---|
+| `broken-link-checker` | `site-broken-links` | 20 pages / 12 s crawl + ≤ 60 HEAD probes (`multiHead`, timeout 5 s, 12 parallel) | Every `<a>` target from the crawled pages (`collect.links`). Crawled pages reuse their crawl status. Internal targets are probed first, robots-disallowed ones are skipped. Classes: broken (404/410/other 4xx), server_error, unreachable, redirect, restricted (401/403/429/999), unverifiable (405/501), refused (private target) |
+| `duplicate-content-checker` | `site-duplicate-pages` | 20 pages / 15 s | `collect.content`: `HtmlDocument::contentText()` (`<main>`, or body without nav/header/footer/aside). Exact = identical word sequence (≥ 30 words). Near = 5-word shingle Jaccard ≥ 0.8. Shingles on more than half of ≥ 6 distinct contents are dropped as boilerplate. Canonicalized pairs are flagged. Duplicate title/description/H1 groups; thin pages under 150 words |
+| `xml-sitemap-generator` | `site-sitemap` | 50 pages / 20 s | Keeps 2xx HTML, indexable, robots-allowed, self-canonical pages, and gives a reason for every exclusion. The URLs fill the page's existing generator textarea |
+
+`SiteCrawler::crawl()` takes an opt-in `$collect` (`links`, `content`); callers without it are unaffected. Tested in `SiteModesTest`. `multiHead` is mocked there because it uses raw cURL.
+
 `SiteCrawler` uses `getNoRedirect`. A 3xx is recorded with its `redirectTo`, and the target is queued like a link: it is SSRF-validated when visited and skipped when off-site. Pages carry an `html` flag. Tested in `SignalToolsTest`.
 
 ---

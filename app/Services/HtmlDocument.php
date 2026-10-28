@@ -491,6 +491,37 @@ class HtmlDocument
         return $this->visibleTextCache = $this->clean($text);
     }
 
+    /**
+     * Main content text: the <main> element when the page has one, otherwise
+     * the body without nav/header/footer/aside. Used to compare pages with
+     * each other, where the shared site chrome would make every page look
+     * alike. Non-destructive (XPath on text nodes, no DOM changes).
+     */
+    public function contentText(): string
+    {
+        $this->ensureParsed();
+        if ($this->xpath === null) {
+            return '';
+        }
+
+        $skip = 'ancestor::script or ancestor::style or ancestor::noscript or ancestor::template';
+        $root = $this->query('//main') !== [] ? '//main' : '//body';
+        if ($root === '//body') {
+            $skip .= ' or ancestor::nav or ancestor::header or ancestor::footer or ancestor::aside';
+        }
+        $nodes = @$this->xpath->query("{$root}//text()[not({$skip})]");
+        if ($nodes === false) {
+            return '';
+        }
+
+        $parts = [];
+        foreach ($nodes as $node) {
+            $parts[] = $node->textContent;
+        }
+
+        return $this->clean(implode(' ', $parts));
+    }
+
     public function lang(): string
     {
         $html = $this->query('//html');

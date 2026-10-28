@@ -72,6 +72,9 @@
             </div>
         </div>
     </section>
+    <div class="max-w-5xl mx-auto px-4 pb-12">
+        @include('frontoffice.partials.site-scan-panel', ['page' => 'broken-link-checker', 'run' => 'site-broken-links'])
+    </div>
     <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
         <div class="mb-6">
             <div class="flex items-center gap-2 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -471,4 +474,6 @@
 @push('scripts')
     <script src="{{ asset('js/tools-common.js') }}" defer></script>
     <script src="{{ asset('js/tools/api-tools.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/run-api.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/site-scan.js') }}" defer></script>
 @endpush

@@ -19,6 +19,9 @@ class SiteCrawler
 {
     public const USER_AGENT = 'CodesommetBot/1.0 (+https://codesommet.com/tools)';
 
+    /** Cap on links collected per page with `collect.links`. */
+    public const MAX_OUTBOUND = 300;
+
     /** Query parameters that never identify distinct content. */
     private const TRACKING_PARAMS = ['gclid', 'fbclid', 'msclkid', 'mc_cid', 'mc_eid', '_ga', 'ref'];
 
@@ -36,8 +39,13 @@ class SiteCrawler
      *   discoveredNotCrawled: int, truncated: bool, stopReason: string,
      *   robots: array{status: string, sitemaps: list<string>}, durationMs: int
      * }
+     *
+     * @param  array{links?: bool, content?: bool}  $collect  opt-in extras per HTML page:
+     *   `links` → `outbound`: every http(s) <a> target (internal and external, nofollow
+     *   included, at most MAX_OUTBOUND) with its anchor text;
+     *   `content` → `contentText` (main text without nav/header/footer), `canonical`, `h1`.
      */
-    public function crawl(string $startUrl, int $maxPages = 30, int $maxSeconds = 20): array
+    public function crawl(string $startUrl, int $maxPages = 30, int $maxSeconds = 20, array $collect = []): array
     {
         $started = microtime(true);
         $start = self::normalize($startUrl);
@@ -65,7 +73,7 @@ class SiteCrawler
             [$url, $depth] = array_shift($queue);
             $id = count($pages);
             $ids[$url] = $id;
-            $page = $this->visit($url, $depth, $robots);
+            $page = $this->visit($url, $depth, $robots, $collect);
             $page['id'] = $id;
             $pages[] = $page;
 
@@ -145,7 +153,7 @@ class SiteCrawler
     /**
      * @return array<string, mixed>
      */
-    private function visit(string $url, int $depth, RobotsTxt $robots): array
+    private function visit(string $url, int $depth, RobotsTxt $robots, array $collect = []): array
     {
         $path = (string) (parse_url($url, PHP_URL_PATH) ?: '/');
         $query = parse_url($url, PHP_URL_QUERY);
@@ -208,6 +216,22 @@ class SiteCrawler
         $page['title'] = mb_substr($dom->title(), 0, 160) ?: null;
         $page['description'] = mb_substr($dom->metaByName('description'), 0, 300) ?: null;
         $robotsMeta = strtolower($dom->metaByName('robots') . ' ' . $response->header('X-Robots-Tag'));
+        if ($collect['links'] ?? false) {
+            $page['outbound'] = [];
+            foreach ($dom->links() as $link) {
+                $target = self::resolve($url, $link['href']);
+                if ($target !== null && count($page['outbound']) < self::MAX_OUTBOUND) {
+                    $page['outbound'][] = ['url' => $target, 'text' => mb_substr($link['text'], 0, 120)];
+                }
+            }
+        }
+        if ($collect['content'] ?? false) {
+            $page['contentText'] = mb_substr($dom->contentText(), 0, 50000);
+            $canonical = $dom->canonicals()[0] ?? null;
+            $page['canonical'] = $canonical !== null ? self::resolve($url, $canonical) : null;
+            $h1 = array_values(array_filter($dom->headings(), fn ($h) => $h['level'] === 1));
+            $page['h1'] = isset($h1[0]) ? mb_substr($h1[0]['text'], 0, 200) : null;
+        }
         $page['noindex'] = str_contains($robotsMeta, 'noindex');
         if (! str_contains($robotsMeta, 'nofollow')) {
             foreach ($dom->links() as $link) {

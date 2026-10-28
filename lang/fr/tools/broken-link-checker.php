@@ -43,4 +43,11 @@ return [
     'text_33' => 'Réserver un Appel Découverte',
     'text_34' => '50+ projets réussis • Livraison en 48h • Sans engagement',
     'label_134' => 'URL du site web',
+    'site_scan' => [
+        'title' => 'Vérifier les liens de tout le site',
+        'intro' => 'Explorez jusqu\'à 20 pages de votre site et testez chaque lien trouvé, interne et externe : liens cassés, erreurs serveur et redirections, avec les pages qui les contiennent.',
+        'label' => 'Page de départ',
+        'button' => 'Explorer le site',
+        'note' => 'robots.txt est respecté. 60 liens vérifiés au maximum par analyse : au-delà, ils sont signalés comme non testés, jamais estimés.',
+    ],
 ];
