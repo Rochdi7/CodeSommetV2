@@ -1,13 +1,14 @@
 <?php
 
 return [
+    'h1_seo' => 'Sites Web par Secteur : E-commerce, Santé et Sites Spécialisés',
     'title' => 'Sites Web par Secteur : E-commerce, Santé | CodeSommet',
     'meta_description' => 'Sites web et plateformes adaptés à votre secteur : e-commerce, santé, éducation, immobilier, fintech, SaaS. L\'approche CodeSommet par industrie.',
     'meta_keywords' => 'développement web par secteur,site web e-commerce,site web santé,site web éducation,plateforme SaaS,site web immobilier,site web fintech',
     'og_title' => 'Développement Web par Secteur d\'Activité | CodeSommet',
     'og_description' => 'Sites web et plateformes adaptés à votre secteur : e-commerce, santé, éducation, immobilier, fintech, SaaS. Découvrez l\'approche CodeSommet pour chaque industrie.',
     'twitter_description' => 'Sites web et plateformes adaptés à votre secteur : e-commerce, santé, éducation, immobilier, fintech, SaaS.',
-    'text_0' => 'Nos Projets',
+    'text_0' => 'Réalisations',
     'text_1' => '+ Spécialisations Sectorielles',
     'text_2' => 'Sites Web Spécialisés Pour',
     'text_3' => 'Chaque Secteur',
@@ -32,7 +33,7 @@ return [
     'text_121' => 'Immobilier',
     'text_122' => 'Contactez-Nous',
     'text_123' => 'Plateformes de Télémédecine',
-    'text_124' => 'FinTech & Services Financiers',
+    'text_124' => 'Sites web FinTech',
     'text_125' => 'Découvrir les villes où nous intervenons',
     'attr_622' => 'Services de développement web spécifiques à chaque secteur',
 ];

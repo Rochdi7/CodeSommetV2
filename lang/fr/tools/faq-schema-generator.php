@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Générateur de Schéma FAQ JSON-LD Gratuit',
     'title' => 'Générateur de Schéma FAQ JSON-LD Gratuit | CodeSommet',
     'meta_description' => 'Générez le balisage de schéma FAQ (JSON-LD) de votre site pour gagner en visibilité. Générateur de données structurées FAQ gratuit.',
     'meta_keywords' => 'FAQ schema generator,FAQ markup,JSON-LD FAQ,structured data,FAQ rich snippets,schema markup',
@@ -51,7 +52,8 @@ return [
     'text_41' => 'Réserver un Appel Découverte',
     'text_42' => '50+ projets réussis • Livraison en 48h • Sans engagement',
     'text_44' => 'Besoin de baliser autre chose qu\'une FAQ ? Utilisez notre',
-    'text_45' => 'générateur de schema markup général (Article, Produit, Organisation...)',
+    'text_45' => 'générateur de schema markup général',
+    'text_45b' => '(Article, Produit, Organisation...)',
     'placeholder_43' => 'Q : Qu\'est-ce que le balisage FAQ ?
 R : Le balisage FAQ est une donnée structurée qui aide les moteurs de recherche à comprendre votre contenu FAQ et à l\'afficher sous forme de résultats enrichis dans les résultats Google.
 

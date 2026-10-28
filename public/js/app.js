@@ -171,7 +171,7 @@
             if (!belowHero(sec)) return;
             // Centered headings
             sec.querySelectorAll('.text-center').forEach(function (el) {
-                if (el.querySelector('h2, h3') && el.children.length < 8 && !el._stag) {
+                if (el.querySelector('h2, h3, .hd-2, .hd-3') && el.children.length < 8 && !el._stag) {
                     tag(el, 'scroll-fade');
                 }
             });
@@ -202,8 +202,8 @@
             var a = kids[0], b = kids[1];
             var aImg = a.querySelector('img, video, canvas, [class*="h-["]');
             var bImg = b.querySelector('img, video, canvas, [class*="h-["]');
-            var aText = a.querySelector('h1, h2, h3');
-            var bText = b.querySelector('h1, h2, h3');
+            var aText = a.querySelector('h1, h2, h3, .hd-2, .hd-3');
+            var bText = b.querySelector('h1, h2, h3, .hd-2, .hd-3');
 
             if (aText && bImg) {
                 tag(a, 'scroll-fade-left');
@@ -1731,7 +1731,7 @@
                           retainerCard.querySelector('svg path[d*="M6 16c5 0 7-8"]');
         if (infinityIcon && infinityIcon.tagName !== 'svg') infinityIcon = infinityIcon.closest('svg');
         var iconWrap = infinityIcon ? infinityIcon.parentElement : null;
-        var titleH3 = retainerCard.querySelector('h3');
+        var titleH3 = retainerCard.querySelector('h3, .hd-3');
         var descP = retainerCard.querySelector('.text-black\\/70, p.text-black\\/70') ||
                     retainerCard.querySelector('p[class*="text-black/70"]');
         if (!descP) {
@@ -2536,3 +2536,15 @@
         init();
     }
 })();
+
+/* Link cards: the title's .stretched-link::after covers the card, but inner
+   layers with their own z-index (relative z-10 wrappers) sit above it. */
+document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0) { return; }
+    var card = e.target.closest && e.target.closest('.card-link');
+    if (!card || e.target.closest('a, button, input, select, textarea, label')) { return; }
+    var link = card.querySelector('a.stretched-link');
+    if (!link) { return; }
+    if (e.ctrlKey || e.metaKey) { window.open(link.href, '_blank'); return; }
+    link.click();
+});

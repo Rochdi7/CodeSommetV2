@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création de Sites Web Éducatifs & E-Learning qui génèrent des',
     'title' => 'Création de Sites Web Éducatifs & E-Learning | CodeSommet',
     'meta_description' => 'Sites web éducatifs sur mesure : portails d\'études à l\'étranger, LMS et tableaux de bord étudiants, avec fonctionnalités IA. Devis gratuit.',
     'meta_keywords' => 'développement site web éducatif,site études à l\'étranger,développement portail étudiant,CRM éducation,plateforme de cours en ligne,site école de langues',

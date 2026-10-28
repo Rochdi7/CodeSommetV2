@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Agence SEO Maroc : un Référencement Naturel Google qui génère des',
     'title' => 'Agence SEO Maroc — Référencement Naturel Google | CodeSommet',
     'meta_description' => 'Agence SEO au Maroc : audit technique, mots-clés, contenu et netlinking pour classer votre site sur Google, de Casablanca à Agadir. Devis gratuit.',
     'meta_keywords' => 'agence seo maroc,seo maroc,référencement naturel maroc,agence seo casablanca,consultant seo maroc,audit seo maroc,référencement google maroc',

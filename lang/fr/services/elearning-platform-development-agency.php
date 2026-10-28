@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement de Plateformes E-Learning qui génèrent des',
     'title' => 'Développement de Plateformes E-Learning (LMS) | CodeSommet',
     'meta_description' => 'Plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants, certification.',
     'meta_keywords' => 'développement plateforme elearning,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',
@@ -239,8 +240,8 @@ return [
     'ml_1026' => 'Réserver un Appel Découverte',
     'ml_1027' => 'Réserver un Appel Découverte',
     'ml_1028' => 'Discutons de comment l\'IA et le design moderne peuvent élever votre entreprise',
-    'ml_1029' => 'Vous êtes un éditeur EdTech qui vend son propre produit ? Découvrez notre offre plateforme EdTech',
-    'ml_1031' => 'Vous cherchez plutôt un site institutionnel complet avec portails étudiants ?',
+    'ml_1029' => 'Découvrez notre offre plateforme EdTech',
+    'ml_1031' => 'Sites institutionnels avec portails étudiants',
     'attr_1528' => 'Plateforme d\'Apprentissage Vidéo',
     'attr_1529' => 'Tableau de Bord Étudiant',
     'qb_2129' => '"Une collaboration professionnelle du début à la fin. Je recommande sans hésiter."',

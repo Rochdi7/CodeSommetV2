@@ -8,7 +8,7 @@ return [
     'og_description' => 'Disponibilité, registraire, création et expiration de 25 domaines, depuis les registres officiels. Gratuit.',
     'twitter_description' => 'Vérifiez la disponibilité et la date d\'expiration de 25 domaines depuis les registres officiels.',
     'breadcrumb' => 'Vérificateur de Domaines',
-    'h1' => 'Vérificateur de Domaines Expirés',
+    'h1' => 'Vérificateur de Domaines Expirés (RDAP)',
     'intro' => 'Vérifiez en lot si des noms de domaine sont libres, quand ils expirent et chez qui ils sont enregistrés, à partir des registres officiels.',
     'btn_submit' => 'Vérifier les domaines',
     'fields' => [

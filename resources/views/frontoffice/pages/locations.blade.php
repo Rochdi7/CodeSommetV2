@@ -30,7 +30,7 @@
             </div>
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
                 <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a
-                        class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Accueil</a><span>/</span><a
+                        class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">CodeSommet</a><span>/</span><a
                         class="hover:text-gray-600 transition-colors"
                         href="{{ route('our-work') }}">{{ __('locations.text_0') }}</a><span>/</span><span
                         class="text-gray-600 font-medium">Emplacements</span></nav>
@@ -48,7 +48,7 @@
                                 class="text-sm font-medium text-[#00AEEF]">34<!-- -->{{ __('locations.text_1') }}</span>
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
-                            style="font-family:var(--font-heading)">{{ __('locations.text_2') }}<!-- --> <span
+                            style="font-family:var(--font-heading)">{{ __('locations.h1_seo') }}<!-- --> <span
                                 class="text-[#00AEEF]">Internationales</span></h1>
                         <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('locations.text_3') }}</p>
@@ -82,9 +82,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(4<!-- --> <!-- -->villes<!-- -->)</span>
                         </h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'casablanca') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -100,9 +98,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Casablanca</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'casablanca') }}" class="stretched-link">
+                                                Casablanca</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_421') }}</span><span>Maroc</span></p>
                                         </div>
@@ -115,9 +112,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'marrakech') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -133,9 +128,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Marrakech</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'marrakech') }}" class="stretched-link">
+                                                Marrakech</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_422') }}</span><span>Maroc</span></p>
                                         </div>
@@ -148,9 +142,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'rabat') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -166,9 +158,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Rabat</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'rabat') }}" class="stretched-link">
+                                                Rabat</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_423') }}</span><span>Maroc</span></p>
                                         </div>
@@ -181,9 +172,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'tangier') }}">
+                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -199,9 +188,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Tanger</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'tangier') }}" class="stretched-link">
+                                                Tanger</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_424') }}</span><span>Maroc</span></p>
                                         </div>
@@ -214,9 +202,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'agadir') }}">
+                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -232,9 +218,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Agadir</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'agadir') }}" class="stretched-link">
+                                                Agadir</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_424') }}</span><span>Maroc</span></p>
                                         </div>
@@ -247,7 +232,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -256,9 +241,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->3<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'abudhabi') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -274,9 +257,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Abu Dhabi</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'abudhabi') }}" class="stretched-link">
+                                                Abu Dhabi</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_425') }}</span><span>EAU</span></p>
                                         </div>
@@ -289,9 +271,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'dubai') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -307,9 +287,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Dubai</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'dubai') }}" class="stretched-link">
+                                                Dubai</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_426') }}</span><span>UAE</span></p>
                                         </div>
@@ -322,9 +301,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'riyadh') }}">
+                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -340,9 +317,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Riyad</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'riyadh') }}" class="stretched-link">
+                                                Riyad</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_427') }}</span><span>Arabie Saoudite</span></p>
                                         </div>
@@ -355,7 +331,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -363,9 +339,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(3<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'tunis') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -381,9 +355,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Tunis</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'tunis') }}" class="stretched-link">
+                                                Tunis</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_428') }}</span><span>Tunisie</span></p>
                                         </div>
@@ -396,9 +369,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'cairo') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -414,9 +385,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Cairo</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'cairo') }}" class="stretched-link">
+                                                Cairo</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_429') }}</span><span>{{ __('locations.text_5') }}</span>
                                             </p>
@@ -430,9 +400,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'lagos') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -448,9 +416,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Lagos</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'lagos') }}" class="stretched-link">
+                                                Lagos</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_430') }}</span><span>{{ __('locations.text_6') }}</span>
                                             </p>
@@ -464,7 +431,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -473,9 +440,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(5<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'madrid') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -491,9 +456,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Madrid</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'madrid') }}" class="stretched-link">
+                                                Madrid</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_431') }}</span><span>Espagne</span></p>
                                         </div>
@@ -506,9 +470,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'barcelona') }}">
+                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -524,9 +486,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Barcelone</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'barcelona') }}" class="stretched-link">
+                                                Barcelone</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_432') }}</span><span>Spain</span></p>
                                         </div>
@@ -539,9 +500,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'lisbon') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -557,9 +516,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Lisbonne</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'lisbon') }}" class="stretched-link">
+                                                Lisbonne</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_433') }}</span><span>Portugal</span></p>
                                         </div>
@@ -572,9 +530,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'rome') }}">
+                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -590,9 +546,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Rome</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'rome') }}" class="stretched-link">
+                                                Rome</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_434') }}</span><span>Italie</span></p>
                                         </div>
@@ -605,9 +560,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'milan') }}">
+                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -623,9 +576,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Milan</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'milan') }}" class="stretched-link">
+                                                Milan</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_435') }}</span><span>Italy</span></p>
                                         </div>
@@ -638,7 +590,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -646,9 +598,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->9<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'amsterdam') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -664,9 +614,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Amsterdam</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'amsterdam') }}" class="stretched-link">
+                                                Amsterdam</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_436') }}</span><span>Pays-Bas</span></p>
                                         </div>
@@ -679,9 +628,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'berlin') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -697,9 +644,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Berlin</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'berlin') }}" class="stretched-link">
+                                                Berlin</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_437') }}</span><span>Allemagne</span></p>
                                         </div>
@@ -712,9 +658,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'brussels') }}">
+                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -730,9 +674,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Bruxelles</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'brussels') }}" class="stretched-link">
+                                                Bruxelles</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_438') }}</span><span>Belgique</span></p>
                                         </div>
@@ -745,9 +688,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'copenhagen') }}">
+                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -763,9 +704,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Copenhague</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'copenhagen') }}" class="stretched-link">
+                                                Copenhague</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_439') }}</span><span>Danemark</span></p>
                                         </div>
@@ -778,9 +718,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'dublin') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -796,9 +734,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Dublin</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'dublin') }}" class="stretched-link">
+                                                Dublin</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_440') }}</span><span>Irlande</span></p>
                                         </div>
@@ -811,9 +748,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'london') }}">
+                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -829,9 +764,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Londres</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'london') }}" class="stretched-link">
+                                                Londres</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_441') }}</span><span>Royaume-Uni</span></p>
                                         </div>
@@ -844,9 +778,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'paris') }}">
+                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -862,9 +794,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Paris</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'paris') }}" class="stretched-link">
+                                                Paris</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_442') }}</span><span>France</span></p>
                                         </div>
@@ -877,9 +808,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'stockholm') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -895,9 +824,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Stockholm</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'stockholm') }}" class="stretched-link">
+                                                Stockholm</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_443') }}</span><span>{{ __('locations.text_7') }}</span>
                                             </p>
@@ -911,9 +839,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'zurich') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -929,9 +855,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Zurich</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'zurich') }}" class="stretched-link">
+                                                Zurich</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_444') }}</span><span>Suisse</span></p>
                                         </div>
@@ -944,7 +869,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -953,9 +878,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->8<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'austin') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -971,9 +894,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Austin</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'austin') }}" class="stretched-link">
+                                                Austin</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_445') }}</span><span>{{ __('locations.text_9') }}</span>
                                             </p>
@@ -987,9 +909,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'boston') }}">
+                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1005,9 +925,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Boston</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'boston') }}" class="stretched-link">
+                                                Boston</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_446') }}</span><span>{{ __('locations.text_10') }}</span>
                                             </p>
@@ -1021,9 +940,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'chicago') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1039,9 +956,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Chicago</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'chicago') }}" class="stretched-link">
+                                                Chicago</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_447') }}</span><span>{{ __('locations.text_11') }}</span>
                                             </p>
@@ -1055,9 +971,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'denver') }}">
+                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1073,9 +987,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Denver</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'denver') }}" class="stretched-link">
+                                                Denver</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_448') }}</span><span>{{ __('locations.text_12') }}</span>
                                             </p>
@@ -1089,9 +1002,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'los-angeles') }}">
+                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1107,9 +1018,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Los Angeles</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'los-angeles') }}" class="stretched-link">
+                                                Los Angeles</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_449') }}</span><span>{{ __('locations.text_13') }}</span>
                                             </p>
@@ -1123,9 +1033,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'new-york') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1141,9 +1049,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                New York</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'new-york') }}" class="stretched-link">
+                                                New York</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_450') }}</span><span>{{ __('locations.text_14') }}</span>
                                             </p>
@@ -1157,9 +1064,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'san-francisco') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1175,9 +1080,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                San Francisco</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'san-francisco') }}" class="stretched-link">
+                                                San Francisco</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_451') }}</span><span>{{ __('locations.text_15') }}</span>
                                             </p>
@@ -1191,9 +1095,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'seattle') }}">
+                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1209,9 +1111,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Seattle</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'seattle') }}" class="stretched-link">
+                                                Seattle</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_452') }}</span><span>{{ __('locations.text_16') }}</span>
                                             </p>
@@ -1225,7 +1126,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -1233,9 +1134,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'toronto') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1251,9 +1150,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Toronto</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'toronto') }}" class="stretched-link">
+                                                Toronto</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_453') }}</span><span>Canada</span></p>
                                         </div>
@@ -1266,9 +1164,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('location', 'vancouver') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1284,9 +1180,8 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Vancouver</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('location', 'vancouver') }}" class="stretched-link">
+                                                Vancouver</a></div>
                                             <p class="text-sm text-[#0F0F0F]/60 flex items-center gap-1">
                                                 <span>{{ __('locations.text_454') }}</span><span>Canada</span></p>
                                         </div>
@@ -1299,7 +1194,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                 </div>
             </div>

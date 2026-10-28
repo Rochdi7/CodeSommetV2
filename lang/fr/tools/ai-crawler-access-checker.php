@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Vérifiez ce que votre site autorise aux robots d\'IA (GPTBot, ClaudeBot, Gemini, Perplexity) et ajustez votre robots.txt.',
 
     'breadcrumb' => 'Accès des Robots d\'IA',
-    'h1' => 'Accès des Robots d\'IA',
+    'h1' => 'Accès des Robots d\'IA : GPTBot, ClaudeBot',
     'intro' => 'Entraînement, recherche ou navigation : pour vingt robots d\'IA, voyez ce que votre robots.txt, vos balises meta et votre llms.txt autorisent — et décidez en connaissance de cause.',
     'usage' => 'sites vérifiés',
 

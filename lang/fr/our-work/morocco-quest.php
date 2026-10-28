@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_sub' => 'Agence de Voyage de Luxe',
     'title' => 'Morocco Quest - Agence de Voyage de Luxe | CodeSommet',
     'meta_description' => 'Agence de voyage de luxe au Maroc : circuits privés, aventures dans le Sahara et expériences sur mesure. Laravel + administration Filament.',
     'meta_keywords' => 'développement site agence de voyage,circuits privés Maroc,voyage de luxe Sahara,plateforme réservation Laravel,panneau administration Filament,site web tourisme sur mesure',
@@ -62,7 +63,7 @@ return [
     'text_45' => 'Voir Tout',
     'text_46' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_47' => 'Réserver un Appel Découverte',
-    'text_48' => 'Analyser Votre Site Web',
+    'text_48' => 'Analyser Mon Site Gratuitement',
     'text_49' => 'Réserver un Appel Découverte',
     'text_50' => 'Analyser Votre Site Web',
     'text_51' => 'Vous voulez des résultats similaires ? Obtenez votre devis gratuit aujourd\'hui',

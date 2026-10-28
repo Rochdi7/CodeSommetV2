@@ -30,7 +30,7 @@
             </div>
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
                 <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a
-                        class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">Accueil</a><span>/</span><a
+                        class="hover:text-gray-600 transition-colors" href="{{ route('home') }}">CodeSommet</a><span>/</span><a
                         class="hover:text-gray-600 transition-colors"
                         href="{{ route('our-work') }}">{{ __('industries.text_0') }}</a><span>/</span><span
                         class="text-gray-600 font-medium">Industries</span></nav>
@@ -50,7 +50,7 @@
                                 class="text-sm font-medium text-[#00AEEF]">16<!-- -->{{ __('industries.text_1') }}</span>
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
-                            style="font-family:var(--font-heading)">{{ __('industries.text_2') }}<!-- --> <span
+                            style="font-family:var(--font-heading)">{{ __('industries.h1_seo') }}<!-- --> <span
                                 class="text-[#00AEEF]">{{ __('industries.text_3') }}</span></h1>
                         <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('industries.text_4') }}</p>
@@ -85,9 +85,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->8<!-- -->
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'elearning-platform-development') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -104,9 +102,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                Plateforme E-Learning</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'elearning-platform-development') }}" class="stretched-link">
+                                                Plateforme E-Learning</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -117,9 +114,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'edtech-platform-development') }}">
+                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -136,9 +131,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                EdTech &amp; E-Learning</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'edtech-platform-development') }}" class="stretched-link">
+                                                EdTech &amp; E-Learning</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -149,9 +143,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'education-website-development') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -168,9 +160,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_7') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'education-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_7') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -181,9 +172,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'immigration-consultancy-website-development') }}">
+                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -200,9 +189,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_117') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'immigration-consultancy-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_117') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -213,9 +201,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'language-school-website-development') }}">
+                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -232,9 +218,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_8') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'language-school-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_8') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -245,9 +230,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'online-course-platform-development') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -264,9 +247,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_118') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'online-course-platform-development') }}" class="stretched-link">
+                                                {{ __('industries.text_118') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -277,9 +259,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'study-abroad-website-development') }}">
+                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -296,9 +276,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_9') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'study-abroad-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_9') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -309,9 +288,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'university-website-development') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -328,9 +305,8 @@
                                                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_10') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'university-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_10') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -341,7 +317,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -350,9 +326,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->3<!-- -->
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'healthcare-website-development') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -367,9 +341,8 @@
                                                 </path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_12') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'healthcare-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_12') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -380,9 +353,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'seo-maroc') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -396,9 +367,8 @@
                                                 <path d="m21 21-4.3-4.3"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                SEO & Référencement Naturel</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'seo-maroc') }}" class="stretched-link">
+                                                SEO & Référencement Naturel</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -409,9 +379,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'telemedicine-website-development') }}">
+                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -426,9 +394,8 @@
                                                 </path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_13') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'telemedicine-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_13') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -439,9 +406,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'telemedicine-platform-development') }}">
+                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -456,9 +421,8 @@
                                                 </path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_123') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'telemedicine-platform-development') }}" class="stretched-link">
+                                                {{ __('industries.text_123') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -469,7 +433,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -477,9 +441,7 @@
                             Technologie<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- -->
                                 <!-- -->secteurs<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'ecommerce-website-development') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -495,9 +457,8 @@
                                                 <path d="M20.054 15.987H3.946"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                E-commerce</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'ecommerce-website-development') }}" class="stretched-link">
+                                                E-commerce</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -508,9 +469,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'saas-platform-development') }}">
+                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -526,9 +485,8 @@
                                                 <path d="M20.054 15.987H3.946"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                SaaS &amp; Logiciels B2B</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'saas-platform-development') }}" class="stretched-link">
+                                                SaaS &amp; Logiciels B2B</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -539,7 +497,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -547,9 +505,7 @@
                             Professionnel<span class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- -->
                                 <!-- -->{{ __('industries.text_119') }}<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'fintech-platform-development') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -564,9 +520,8 @@
                                                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                FinTech &amp; Services Financiers</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'fintech-platform-development') }}" class="stretched-link">
+                                                Plateformes FinTech</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -577,9 +532,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a><a
-                                class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'fintech-website-development') }}">
+                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -594,9 +547,8 @@
                                                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_124') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'fintech-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_124') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -607,7 +559,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                     <div>
                         <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
@@ -616,9 +568,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->1<!-- -->
                                 <!-- -->{{ __('industries.text_120') }}<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><a
-                                class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-                                href="{{ route('service', 'real-estate-website-development') }}">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -637,9 +587,8 @@
                                                 <path d="M10 18h4"></path>
                                             </svg></div>
                                         <div>
-                                            <h3
-                                                class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors">
-                                                {{ __('industries.text_121') }}</h3>
+                                            <div class="text-base font-semibold text-[#0F0F0F] group-hover:text-[#00AEEF] transition-colors hd-3"><a href="{{ route('service', 'real-estate-website-development') }}" class="stretched-link">
+                                                {{ __('industries.text_121') }}</a></div>
                                         </div>
                                     </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -650,7 +599,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </a></div>
+                            </div></div>
                     </div>
                 </div>
             </div>

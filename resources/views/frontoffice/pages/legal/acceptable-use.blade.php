@@ -61,7 +61,7 @@
                     <div class="prose prose-lg max-w-none text-[#0F0F0F]/70 space-y-4">
                         <p>{{ __('legal/acceptable-use.text_3') }}</p>
                         <p>{{ __('legal/acceptable-use.text_4') }} <a class="text-[#00AEEF] hover:underline"
-                                href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a>
+                                href="{{ route('terms-of-service') }}">Conditions Générales d'Utilisation</a>
                             {{ __('legal/acceptable-use.text_5') }}</p>
                         <div
                             class="

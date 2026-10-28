@@ -169,7 +169,7 @@ return [
     'text_159' => 'Cette politique n\'affecte pas vos droits légaux en tant que consommateur en vertu de la loi applicable.',
     'text_160' => 'Autorité finale :',
     'text_161' => 'CodeSommet conserve l\'autorité finale sur toutes les décisions de remboursement. Les litiges peuvent être escaladés via notre processus de',
-    'text_162' => 'Résolution des litiges',
+    'text_162' => 'règlement des litiges',
     'text_163' => 'Politique de Confidentialité',
     'text_263' => 'Politique de Remboursement et d\'Annulation',
     'text_264' => 'Remboursements Projet',

@@ -29,12 +29,12 @@
         </div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span
+                    class="hover:text-[#00AEEF] transition-colors" href="/">CodeSommet</a><span>/</span><a
+                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils SEO</a><span>/</span><span
                     class="text-black font-medium">{{ __('tools/chatbot-script-generator.text_0') }}</span></nav>
             <div class="mb-8">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">
-                    {{ __('tools/chatbot-script-generator.text_1') }}</h1>
+                    {{ __('tools/chatbot-script-generator.h1_seo') }}</h1>
                 <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                     {{ __('tools/chatbot-script-generator.text_2') }}</p>
             </div>
@@ -314,8 +314,7 @@
                     <p class="text-sm text-gray-600 mt-4 mb-2">Envie d'aller plus loin qu'un script ? Notre équipe
                         peut développer et intégrer le chatbot directement sur votre site.</p><a
                         href="{{ route('get-quote') }}"
-                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Demander
-                        un devis pour l'intégration d'un chatbot IA sur votre site<svg class="w-4 h-4" fill="none"
+                        class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2 text-sm md:text-base">Demander un devis chatbot IA<svg class="w-4 h-4" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -331,9 +330,7 @@
                     {{ __('tools/chatbot-script-generator.text_30') }}</h2>
                 <p class="text-gray-600 text-lg">{{ __('tools/chatbot-script-generator.text_31') }}</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-6 mb-8"><a
-                    class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/meta-tag-generator">
+            <div class="grid md:grid-cols-3 gap-6 mb-8"><div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -352,8 +349,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Générateur de Balises Meta IA</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/meta-tag-generator" class="stretched-link">Générateur de Balises Meta IA</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/chatbot-script-generator.text_32') }}</p>
                     <div
@@ -369,9 +365,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">ai</span>
                     </div>
-                </a><a
-                    class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/blog-title-generator">
+                </div><div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -385,8 +379,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Générateur de Titres de Blog IA</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/blog-title-generator" class="stretched-link">Générateur de Titres de Blog IA</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/chatbot-script-generator.text_33') }}</p>
                     <div
@@ -402,9 +395,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">ai</span>
                     </div>
-                </a><a
-                    class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/landing-page-generator">
+                </div><div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -425,8 +416,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">{{ __('tools/chatbot-script-generator.text_142') }}</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/landing-page-generator" class="stretched-link">{{ __('tools/chatbot-script-generator.text_142') }}</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/chatbot-script-generator.text_34') }}</p>
                     <div
@@ -442,7 +432,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">ai</span>
                     </div>
-                </a></div>
+                </div></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
                     href="/tools">{{ __('tools/chatbot-script-generator.text_35') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils

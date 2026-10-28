@@ -87,15 +87,15 @@
                             </h3>
                             <p class="mb-3">{{ __('legal/privacy-policy.text_12') }}</p>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/privacy-policy.text_13') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_13') }}</span>
                                     {{ __('legal/privacy-policy.text_14') }}</li>
-                                <li><strong>Informations commerciales :</strong> {{ __('legal/privacy-policy.text_15') }}
+                                <li><span class="tx-strong">Informations commerciales :</span> {{ __('legal/privacy-policy.text_15') }}
                                 </li>
-                                <li><strong>{{ __('legal/privacy-policy.text_235') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_235') }}</span>
                                     {{ __('legal/privacy-policy.text_16') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_17') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_17') }}</span>
                                     {{ __('legal/privacy-policy.text_18') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_19') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_19') }}</span>
                                     {{ __('legal/privacy-policy.text_20') }}</li>
                             </ul>
                         </div>
@@ -104,13 +104,13 @@
                             </h3>
                             <p class="mb-3">{{ __('legal/privacy-policy.text_22') }}</p>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/privacy-policy.text_23') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_23') }}</span>
                                     {{ __('legal/privacy-policy.text_24') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_25') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_25') }}</span>
                                     {{ __('legal/privacy-policy.text_26') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_236') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_236') }}</span>
                                     {{ __('legal/privacy-policy.text_27') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_28') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_28') }}</span>
                                     {{ __('legal/privacy-policy.text_29') }}</li>
                             </ul>
                         </div>
@@ -118,12 +118,12 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_237') }}
                             </h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Fournisseurs d'analyse :</strong> {{ __('legal/privacy-policy.text_30') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_31') }}</strong>
+                                <li><span class="tx-strong">Fournisseurs d'analyse :</span> {{ __('legal/privacy-policy.text_30') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_31') }}</span>
                                     {{ __('legal/privacy-policy.text_32') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_238') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_238') }}</span>
                                     {{ __('legal/privacy-policy.text_33') }}</li>
-                                <li><strong>Outils marketing :</strong> {{ __('legal/privacy-policy.text_34') }}</li>
+                                <li><span class="tx-strong">Outils marketing :</span> {{ __('legal/privacy-policy.text_34') }}</li>
                             </ul>
                         </div>
                     </div>
@@ -254,18 +254,18 @@
                     <div class="space-y-4 text-[#0F0F0F]/70">
                         <p class="font-medium text-[#0F0F0F]">{{ __('legal/privacy-policy.text_48') }}</p>
                         <ul class="list-disc pl-6 space-y-3">
-                            <li><strong>{{ __('legal/privacy-policy.text_240') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_240') }}</span>
                                 {{ __('legal/privacy-policy.text_49') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_241') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_241') }}</span>
                                 {{ __('legal/privacy-policy.text_50') }} <a href="https://stripe.com/privacy"
                                     target="_blank" rel="noopener noreferrer"
                                     class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_51') }}</a>.
                             </li>
-                            <li><strong>{{ __('legal/privacy-policy.text_52') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_52') }}</span>
                                 {{ __('legal/privacy-policy.text_53') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_54') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_54') }}</span>
                                 {{ __('legal/privacy-policy.text_55') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_56') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_56') }}</span>
                                 {{ __('legal/privacy-policy.text_57') }}</li>
                         </ul>
                     </div>
@@ -286,14 +286,14 @@
                     <div class="space-y-4 text-[#0F0F0F]/70">
                         <p>{{ __('legal/privacy-policy.text_59') }}</p>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>Chiffrement :</strong> {{ __('legal/privacy-policy.text_60') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_61') }}</strong>
+                            <li><span class="tx-strong">Chiffrement :</span> {{ __('legal/privacy-policy.text_60') }}</li>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_61') }}</span>
                                 {{ __('legal/privacy-policy.text_62') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_63') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_63') }}</span>
                                 {{ __('legal/privacy-policy.text_64') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_65') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_65') }}</span>
                                 {{ __('legal/privacy-policy.text_66') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_67') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_67') }}</span>
                                 {{ __('legal/privacy-policy.text_68') }}</li>
                         </ul>
                         <div
@@ -313,7 +313,7 @@
                                     <line x1="12" x2="12.01" y1="16" y2="16"></line>
                                 </svg></div>
                             <div class="flex-1 text-sm text-[#0F0F0F]/80">
-                                <p><strong>Important :</strong> {{ __('legal/privacy-policy.text_69') }}</p>
+                                <p><span class="tx-strong">Important :</span> {{ __('legal/privacy-policy.text_69') }}</p>
                             </div>
                         </div>
                     </div>
@@ -337,18 +337,18 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_71') }}
                             </h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/privacy-policy.text_72') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_72') }}</span>
                                     {{ __('legal/privacy-policy.text_73') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_242') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_242') }}</span>
                                     {{ __('legal/privacy-policy.text_74') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_75') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_75') }}</span>
                                     {{ __('legal/privacy-policy.text_76') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_77') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_77') }}</span>
                                     {{ __('legal/privacy-policy.text_78') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_79') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_79') }}</span>
                                     {{ __('legal/privacy-policy.text_80') }}</li>
-                                <li><strong>Droit d'opposition :</strong> {{ __('legal/privacy-policy.text_81') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_243') }}</strong>
+                                <li><span class="tx-strong">Droit d'opposition :</span> {{ __('legal/privacy-policy.text_81') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_243') }}</span>
                                     {{ __('legal/privacy-policy.text_82') }}</li>
                             </ul>
                         </div>
@@ -356,13 +356,13 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_83') }}
                             </h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/privacy-policy.text_244') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_244') }}</span>
                                     {{ __('legal/privacy-policy.text_84') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_245') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_245') }}</span>
                                     {{ __('legal/privacy-policy.text_85') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_246') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_246') }}</span>
                                     {{ __('legal/privacy-policy.text_86') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_87') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_87') }}</span>
                                     {{ __('legal/privacy-policy.text_88') }}</li>
                             </ul>
                         </div>
@@ -370,11 +370,11 @@
                             <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/privacy-policy.text_89') }}</h4>
                             <p class="mb-3">{{ __('legal/privacy-policy.text_90') }}</p>
                             <ul class="space-y-2">
-                                <li><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
+                                <li><span class="tx-strong">Email :</span> <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_454') }}</a>
                                 </li>
-                                <li><strong>{{ __('legal/privacy-policy.text_91') }}</strong> +212 6 32 58 20 96</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_92') }}</strong> <a
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_91') }}</span> +212 6 32 58 20 96</li>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_92') }}</span> <a
                                         href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></li>
                             </ul>
@@ -394,11 +394,11 @@
                             <h3 class="text-lg font-semibold text-[#0F0F0F] mb-2">
                                 {{ __('legal/privacy-policy.text_95') }}</h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Cookies essentiels :</strong> {{ __('legal/privacy-policy.text_96') }}</li>
-                                <li><strong>Cookies d'analyse :</strong> {{ __('legal/privacy-policy.text_97') }}</li>
-                                <li><strong>{{ __('legal/privacy-policy.text_98') }}</strong>
+                                <li><span class="tx-strong">Cookies essentiels :</span> {{ __('legal/privacy-policy.text_96') }}</li>
+                                <li><span class="tx-strong">Cookies d'analyse :</span> {{ __('legal/privacy-policy.text_97') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/privacy-policy.text_98') }}</span>
                                     {{ __('legal/privacy-policy.text_99') }}</li>
-                                <li><strong>Cookies marketing :</strong> {{ __('legal/privacy-policy.text_100') }}</li>
+                                <li><span class="tx-strong">Cookies marketing :</span> {{ __('legal/privacy-policy.text_100') }}</li>
                             </ul>
                         </div>
                         <p>{{ __('legal/privacy-policy.text_101') }}</p>
@@ -423,15 +423,15 @@
                     <div class="space-y-4 text-[#0F0F0F]/70">
                         <p>{{ __('legal/privacy-policy.text_109') }}</p>
                         <ul class="list-disc pl-6 space-y-2">
-                            <li><strong>{{ __('legal/privacy-policy.text_110') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_110') }}</span>
                                 {{ __('legal/privacy-policy.text_111') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_249') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_249') }}</span>
                                 {{ __('legal/privacy-policy.text_112') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_113') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_113') }}</span>
                                 {{ __('legal/privacy-policy.text_114') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_250') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_250') }}</span>
                                 {{ __('legal/privacy-policy.text_115') }}</li>
-                            <li><strong>{{ __('legal/privacy-policy.text_251') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/privacy-policy.text_251') }}</span>
                                 {{ __('legal/privacy-policy.text_116') }}</li>
                         </ul>
                         <p>{{ __('legal/privacy-policy.text_117') }}</p>
@@ -483,18 +483,18 @@
                                 <p>{{ __('legal/privacy-policy.text_130') }}</p>
                             </div>
                             <div class="space-y-2">
-                                <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
+                                <p><span class="tx-strong">Email :</span> <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/privacy-policy.text_456') }}</a>
                                 </p>
-                                <p><strong>{{ __('legal/privacy-policy.text_131') }}</strong> <a href="tel:+212632582096"
+                                <p><span class="tx-strong">{{ __('legal/privacy-policy.text_131') }}</span> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                                <p><strong>{{ __('legal/privacy-policy.text_132') }}</strong> <a
+                                <p><span class="tx-strong">{{ __('legal/privacy-policy.text_132') }}</span> <a
                                         href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                             </div>
                             <div>
-                                <p><strong>{{ __('legal/privacy-policy.text_133') }}</strong> Maroc</p>
-                                <p><strong>{{ __('legal/privacy-policy.text_134') }}</strong> Monde entier</p>
+                                <p><span class="tx-strong">{{ __('legal/privacy-policy.text_133') }}</span> Maroc</p>
+                                <p><span class="tx-strong">{{ __('legal/privacy-policy.text_134') }}</span> Monde entier</p>
                             </div>
                             <div class="pt-3 border-t border-[#0F0F0F]/10">
                                 <p class="text-sm">{{ __('legal/privacy-policy.text_135') }}</p>

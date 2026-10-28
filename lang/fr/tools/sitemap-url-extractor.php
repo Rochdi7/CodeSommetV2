@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Listez toutes les URL des sitemaps XML d\'un site, index compris, et exportez en CSV.',
 
     'breadcrumb' => 'Extracteur de Sitemap',
-    'h1' => 'Extracteur d\'URL de Sitemap',
+    'h1' => 'Extracteur d\'URL de Sitemap XML Gratuit',
     'intro' => 'Indiquez un site ou un sitemap : nous suivons les index, lisons les fichiers (même compressés) et vous rendons la liste complète des URL avec leurs dates, prêtes à exporter.',
     'usage' => 'sitemaps lus',
 

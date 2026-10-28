@@ -29,12 +29,12 @@
         </div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span
+                    class="hover:text-[#00AEEF] transition-colors" href="/">CodeSommet</a><span>/</span><a
+                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils SEO</a><span>/</span><span
                     class="text-black font-medium">{{ __('tools/core-web-vitals-checker.text_0') }}</span></nav>
             <div class="mb-8">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">
-                    {{ __('tools/core-web-vitals-checker.text_1') }}</h1>
+                    {{ __('tools/core-web-vitals-checker.h1_seo') }}</h1>
                 <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                     {{ __('tools/core-web-vitals-checker.text_2') }}</p>
             </div>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-6 pt-6 border-t border-gray-200 text-sm text-gray-600 text-center">Pour aller plus loin, consultez notre <a href="{{ route('tool', 'page-speed-analyzer') }}" class="text-[#00AEEF] font-semibold hover:underline">analyseur de vitesse de page complet (poids, requêtes, bonnes pratiques)</a> afin d'obtenir une analyse détaillée au-delà des seules métriques Core Web Vitals.</div>
+                <div class="mt-6 pt-6 border-t border-gray-200 text-sm text-gray-600 text-center">Pour aller plus loin, consultez notre <a href="{{ route('tool', 'page-speed-analyzer') }}" class="text-[#00AEEF] font-semibold hover:underline">analyseur de vitesse de page complet</a> (poids, requêtes, bonnes pratiques) afin d'obtenir une analyse détaillée au-delà des seules métriques Core Web Vitals.</div>
                 <div class="mt-6 text-center">
                     <p class="text-sm text-gray-600 mb-2">{{ __('tools/core-web-vitals-checker.text_22') }}</p><a
                         href="/contact"

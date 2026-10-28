@@ -8,7 +8,7 @@ return [
     'og_description' => 'Accès des robots IA, directives d\'extrait, texte lisible sans JavaScript et passages citables : la page est-elle prête pour les réponses IA ?',
     'twitter_description' => 'La page est-elle lisible et citable par les moteurs de réponse IA ? 14 vérifications documentées.',
     'breadcrumb' => 'Préparation IA',
-    'h1' => 'Vérificateur de Préparation aux Moteurs IA',
+    'h1' => 'Test de Préparation aux Moteurs IA (GEO)',
     'intro' => 'ChatGPT Search, Perplexity, Claude, Copilot et les AI Overviews de Google ne citent que ce qu\'ils peuvent atteindre et lire. Vérifiez l\'accès des robots, les directives d\'extrait et la structure qui rend un passage citable.',
     'btn_submit' => 'Analyser la page',
     'fields' => [

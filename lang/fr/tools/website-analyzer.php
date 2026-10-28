@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Analyseur de Site Web : Audit SEO Gratuit',
     'title' => 'Analyseur de Site Web - Audit SEO Gratuit | CodeSommet',
     'meta_description' => 'Auditez votre site gratuitement : plus de 40 vérifications SEO, performance, sécurité et accessibilité, avec un score global et des conseils concrets.',
     'meta_keywords' => 'analyseur de site web,outil audit site web,vérificateur SEO,analyseur performance,test vitesse site web,analyse automatisée site web,audit SEO gratuit,vérificateur vitesse page,bilan santé site web,Core Web Vitals,analyse design,audit sécurité',

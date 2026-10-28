@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_sub' => 'SaaS de Gestion Associative',
     'title' => 'Mon Asso - SaaS de Gestion Associative | CodeSommet',
     'meta_description' => 'Plateforme SaaS Laravel de gestion d\'associations : membres, réunions, cotisations, événements, documents et dépenses réunis dans un seul espace.',
     'meta_keywords' => 'logiciel gestion association,SaaS associatif,gestion des adhérents,gestion des cotisations,développement Laravel,plateforme de gestion à but non lucratif',
@@ -57,7 +58,7 @@ return [
     'text_38' => 'Voir Tout',
     'text_39' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_40' => 'Réserver un Appel Découverte',
-    'text_41' => 'Analyser Votre Site Web',
+    'text_41' => 'Analyser Mon Site Gratuitement',
     'text_42' => 'Réserver un Appel Découverte',
     'text_43' => 'Analyser Votre Site Web',
     'text_44' => 'Vous voulez des résultats similaires ? Obtenez votre devis gratuit aujourd\'hui',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Vancouver, Canada : des sites web qui génèrent',
     'title' => 'Développement Web à Vancouver, Canada | CodeSommet',
     'meta_description' => 'Création de sites web et tableaux de bord SaaS pour les entreprises de Vancouver : développement sur mesure à distance par l\'agence CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -182,7 +183,7 @@ return [
     'sw_3065' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_3066' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Vancouver.',
     'sw_3067' => 'Questions fréquemment posées sur le Développement Web à Vancouver',
-    'sw_3068' => 'Voir l\'Étude de Cas',
+    'sw_3068' => 'Découvrir ce projet',
     'sw_3069' => 'Contactez notre équipe Vancouver',
     'sw_3070' => ') }}</span>
                     </div>

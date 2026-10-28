@@ -38,7 +38,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)] relative z-10">
                 <nav class="flex items-center gap-2 text-xs text-gray-400 mb-8 justify-center md:justify-start"><a
                         class="hover:text-gray-600 transition-colors"
-                        href="{{ route('home') }}">Accueil</a><span>/</span><span class="text-gray-600 font-medium">Outils
+                        href="{{ route('home') }}">CodeSommet</a><span>/</span><span class="text-gray-600 font-medium">Outils
                         Gratuits</span></nav>
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
                     <div class="space-y-6 text-center lg:text-left">
@@ -53,7 +53,7 @@
                                 Disponibles</span>
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F0F0F] leading-tight"
-                            style="font-family:var(--font-heading)">Outils SEO &amp; IA Gratuits<!-- --> <span
+                            style="font-family:var(--font-heading)">{{ __('tools.h1_seo') }}<!-- --> <span
                                 class="text-[#00AEEF]">{{ __('tools.text_0') }}</span></h1>
                         <p class="text-lg text-[#0F0F0F]/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             {{ __('tools.ml_546') }}</p>
@@ -118,8 +118,7 @@
         <section class="py-16 bg-[#F5F5F5]">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="tools-grid"
-                    style="opacity:0;transform:translateY(30px)"><a href="{{ route('tool', 'website-analyzer') }}"
-                        data-category="audit">
+                    style="opacity:0;transform:translateY(30px)"><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -135,8 +134,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_139') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'website-analyzer') }}" class="stretched-link">{{ __('tools.text_139') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_547') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -149,7 +147,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'meta-tag-generator') }}" data-category="ai">
+                    </div><div data-category="ai" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -170,8 +168,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">IA</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_4') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'meta-tag-generator') }}" class="stretched-link">{{ __('tools.text_4') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_548') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -184,7 +181,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'blog-title-generator') }}" data-category="ai">
+                    </div><div data-category="ai" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -200,11 +197,10 @@
                                     </svg>
                                 </div><span class="tl-card__tag">IA</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_5') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'blog-title-generator') }}" class="stretched-link">{{ __('tools.text_5') }}</a></div>
                             <p class="tl-card__desc">10 titres viraux avec des scores SEO
                                 et
-                                CTR estimates</p>
+                                CTR estimés</p>
                             <div
                                 class="tl-card__foot">
                                 <span class="tl-card__cta">Essayer gratuitement</span><span class="tl-card__go" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -216,7 +212,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'chatbot-script-generator') }}" data-category="ai">
+                    </div><div data-category="ai" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -232,8 +228,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">IA</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_6') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'chatbot-script-generator') }}" class="stretched-link">{{ __('tools.text_6') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_549') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -246,7 +241,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'landing-page-generator') }}" data-category="ai">
+                    </div><div data-category="ai" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -269,8 +264,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">IA</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_7') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'landing-page-generator') }}" class="stretched-link">{{ __('tools.text_7') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_550') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -283,7 +277,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'og-preview-generator') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -300,8 +294,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Balisage</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_8') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'og-preview-generator') }}" class="stretched-link">{{ __('tools.text_8') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_551') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -314,7 +307,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'heading-analyzer') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -333,8 +326,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_140') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'heading-analyzer') }}" class="stretched-link">{{ __('tools.text_140') }}</a></div>
                             <p class="tl-card__desc">Arbre visuel H1-H6 avec validation
                                 SEO
                             </p>
@@ -349,7 +341,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'keyword-density-analyzer') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -366,8 +358,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_9') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'keyword-density-analyzer') }}" class="stretched-link">{{ __('tools.text_9') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_552') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -380,7 +371,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'broken-link-checker') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -396,8 +387,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_10') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'broken-link-checker') }}" class="stretched-link">{{ __('tools.text_10') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_553') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -410,7 +400,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'domain-authority-checker') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -425,8 +415,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_domain_authority') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'domain-authority-checker') }}" class="stretched-link">{{ __('tools.text_domain_authority') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_domain_authority') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -439,7 +428,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'image-alt-analyzer') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -456,11 +445,10 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_141') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'image-alt-analyzer') }}" class="stretched-link">{{ __('tools.text_141') }}</a></div>
                             <p class="tl-card__desc">Analysez les images pour les balises
                                 alt manquantes ou insuffisantes
-                                text</p>
+                                </p>
                             <div
                                 class="tl-card__foot">
                                 <span class="tl-card__cta">Essayer gratuitement</span><span class="tl-card__go" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -472,7 +460,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'sitemap-validator') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -490,11 +478,10 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_142') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'sitemap-validator') }}" class="stretched-link">{{ __('tools.text_142') }}</a></div>
                             <p class="tl-card__desc">Validez les sitemaps XML selon les
                                 meilleures
-                                practices</p>
+                                pratiques</p>
                             <div
                                 class="tl-card__foot">
                                 <span class="tl-card__cta">Essayer gratuitement</span><span class="tl-card__go" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -506,7 +493,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-validator') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -522,8 +509,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">Validateur Robots.txt</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'robots-validator') }}" class="stretched-link">Validateur Robots.txt</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_555') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -536,7 +522,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'schema-generator') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -552,8 +538,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Balisage</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_12') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'schema-generator') }}" class="stretched-link">{{ __('tools.text_12') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_556') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -566,7 +551,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'page-speed-analyzer') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -582,11 +567,10 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Vitesse</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_143') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'page-speed-analyzer') }}" class="stretched-link">{{ __('tools.text_143') }}</a></div>
                             <p class="tl-card__desc">Analysez les performances de
                                 chargement et obtenez
-                                actionable recommendations</p>
+                                des recommandations concrètes</p>
                             <div
                                 class="tl-card__foot">
                                 <span class="tl-card__cta">Essayer gratuitement</span><span class="tl-card__go" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -598,7 +582,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'url-slug-generator') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -614,8 +598,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">URL</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_13') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'url-slug-generator') }}" class="stretched-link">{{ __('tools.text_13') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_557') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -628,7 +611,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'html-minifier') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -644,8 +627,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Dev</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">Minificateur HTML/CSS/JS</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'html-minifier') }}" class="stretched-link">Minificateur HTML/CSS/JS</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_558') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -658,7 +640,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'redirect-checker') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -674,8 +656,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_14') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'redirect-checker') }}" class="stretched-link">{{ __('tools.text_14') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_559') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -688,7 +669,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'canonical-checker') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -704,8 +685,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_15') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'canonical-checker') }}" class="stretched-link">{{ __('tools.text_15') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_560') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -718,7 +698,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'internal-link-analyzer') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -734,8 +714,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_144') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'internal-link-analyzer') }}" class="stretched-link">{{ __('tools.text_144') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_561') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -748,7 +727,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'image-compression-analyzer') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -765,8 +744,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Vitesse</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_145') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'image-compression-analyzer') }}" class="stretched-link">{{ __('tools.text_145') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_562') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -779,7 +757,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'domain-health-checker') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -795,8 +773,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Sécurité</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_16') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'domain-health-checker') }}" class="stretched-link">{{ __('tools.text_16') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_563') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -809,7 +786,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'website-readiness-checker') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -825,8 +802,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_17') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'website-readiness-checker') }}" class="stretched-link">{{ __('tools.text_17') }}</a></div>
                             <p class="tl-card__desc">Analyse en 14 points couvrant SEO,
                                 Croissance,
                                 Performance &amp; Sécurité</p>
@@ -841,7 +817,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'hreflang-generator') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -857,8 +833,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Balisage</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_18') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'hreflang-generator') }}" class="stretched-link">{{ __('tools.text_18') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_564') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -871,7 +846,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'local-business-schema') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -889,8 +864,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Balisage</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_19') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'local-business-schema') }}" class="stretched-link">{{ __('tools.text_19') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_565') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -903,7 +877,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'xml-sitemap-generator') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -920,8 +894,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_20') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'xml-sitemap-generator') }}" class="stretched-link">{{ __('tools.text_20') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_566') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -934,7 +907,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'utm-builder') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -950,8 +923,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">URL</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_21') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'utm-builder') }}" class="stretched-link">{{ __('tools.text_21') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_567') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -964,7 +936,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-txt-generator') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -982,8 +954,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_22') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'robots-txt-generator') }}" class="stretched-link">{{ __('tools.text_22') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_568') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -996,7 +967,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'nofollow-link-checker') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1012,8 +983,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Crawl</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_23') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'nofollow-link-checker') }}" class="stretched-link">{{ __('tools.text_23') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_569') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1026,7 +996,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'duplicate-content-checker') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1042,8 +1012,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Audit</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_24') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'duplicate-content-checker') }}" class="stretched-link">{{ __('tools.text_24') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_570') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1056,7 +1025,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'meta-refresh-generator') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1073,8 +1042,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Balisage</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_25') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'meta-refresh-generator') }}" class="stretched-link">{{ __('tools.text_25') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_571') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1087,7 +1055,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'faq-schema-generator') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1105,8 +1073,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Balisage</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_26') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'faq-schema-generator') }}" class="stretched-link">{{ __('tools.text_26') }}</a></div>
                             <p class="tl-card__desc">Convertissez les FAQ au format
                                 JSON-LD schema</p>
                             <div
@@ -1120,7 +1087,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'readability-analyzer') }}" data-category="content">
+                    </div><div data-category="content" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1137,8 +1104,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Contenu</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_27') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'readability-analyzer') }}" class="stretched-link">{{ __('tools.text_27') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_572') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1151,7 +1117,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'word-counter') }}" data-category="content">
+                    </div><div data-category="content" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1167,8 +1133,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Contenu</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_28') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'word-counter') }}" class="stretched-link">{{ __('tools.text_28') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_573') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1181,7 +1146,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'html-to-text') }}" data-category="content">
+                    </div><div data-category="content" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1198,8 +1163,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Contenu</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_29') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'html-to-text') }}" class="stretched-link">{{ __('tools.text_29') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_574') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1212,7 +1176,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'text-case-converter') }}" data-category="content">
+                    </div><div data-category="content" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1228,8 +1192,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Contenu</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_146') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'text-case-converter') }}" class="stretched-link">{{ __('tools.text_146') }}</a></div>
                             <p class="tl-card__desc">Convertissez du texte entre
                                 majuscules,
                                 minuscules, casse de titre et plus</p>
@@ -1244,7 +1207,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'base64-encoder') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1259,8 +1222,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Dev</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_30') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'base64-encoder') }}" class="stretched-link">{{ __('tools.text_30') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_575') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1273,7 +1235,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'json-formatter') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1290,8 +1252,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Dev</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">Formateur/Validateur JSON</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'json-formatter') }}" class="stretched-link">Formateur/Validateur JSON</a></div>
                             <p class="tl-card__desc">Formatez, validez et minifiez du
                                 JSON
                                 avec coloration syntaxique</p>
@@ -1306,7 +1267,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'lorem-ipsum-generator') }}" data-category="content">
+                    </div><div data-category="content" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1324,8 +1285,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Contenu</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_31') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'lorem-ipsum-generator') }}" class="stretched-link">{{ __('tools.text_31') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_576') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1338,7 +1298,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'color-palette-generator') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1358,8 +1318,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Design</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_32') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'color-palette-generator') }}" class="stretched-link">{{ __('tools.text_32') }}</a></div>
                             <p class="tl-card__desc">Extrayez les couleurs de marque des
                                 logos avec
                                 la vision IA</p>
@@ -1374,7 +1333,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'qr-code-generator') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1399,8 +1358,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Design</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_33') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'qr-code-generator') }}" class="stretched-link">{{ __('tools.text_33') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_577') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1413,7 +1371,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'css-minifier') }}" data-category="utils">
+                    </div><div data-category="utils" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1429,8 +1387,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Dev</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">Minificateur CSS</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'css-minifier') }}" class="stretched-link">Minificateur CSS</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_578') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1443,7 +1400,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'ssl-certificate-checker') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1459,8 +1416,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Sécurité</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_34') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'ssl-certificate-checker') }}" class="stretched-link">{{ __('tools.text_34') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_579') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1473,7 +1429,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'mobile-friendly-test') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1489,8 +1445,7 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Vitesse</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_35') }}</h2>
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'mobile-friendly-test') }}" class="stretched-link">{{ __('tools.text_35') }}</a></div>
                             <p class="tl-card__desc">{{ __('tools.ml_580') }}</p>
                             <div
                                 class="tl-card__foot">
@@ -1503,7 +1458,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'core-web-vitals-checker') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="tl-card group h-full">
                             <div class="tl-card__top">
@@ -1518,11 +1473,10 @@
                                     </svg>
                                 </div><span class="tl-card__tag">Vitesse</span>
                             </div>
-                            <h2 class="tl-card__title"
-                                style="font-family:var(--font-heading)">{{ __('tools.text_36') }}</h2>
-                            <p class="tl-card__desc">Mesurez LCP, FID, CLS pour le
+                            <div class="tl-card__title hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'core-web-vitals-checker') }}" class="stretched-link">{{ __('tools.text_36') }}</a></div>
+                            <p class="tl-card__desc">Mesurez LCP, INP, CLS pour le
                                 classement Google
-                                rankings</p>
+                                </p>
                             <div
                                 class="tl-card__foot">
                                 <span class="tl-card__cta">Essayer gratuitement</span><span class="tl-card__go" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1534,7 +1488,7 @@
                                 </svg></span>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'crawl-visualizer') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1553,8 +1507,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/crawl-visualizer.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'crawl-visualizer') }}" class="stretched-link">{{ __('tools/crawl-visualizer.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/crawl-visualizer.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1567,7 +1520,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'serp-snippet-preview') }}" data-category="audit">
+                    </div><div data-category="audit" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1582,8 +1535,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/serp-snippet-preview.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'serp-snippet-preview') }}" class="stretched-link">{{ __('tools/serp-snippet-preview.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/serp-snippet-preview.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1596,7 +1548,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'robots-txt-tester') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1611,8 +1563,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/robots-txt-tester.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'robots-txt-tester') }}" class="stretched-link">{{ __('tools/robots-txt-tester.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/robots-txt-tester.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1625,7 +1576,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'security-headers-checker') }}" data-category="speed">
+                    </div><div data-category="speed" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1640,8 +1591,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/security-headers-checker.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'security-headers-checker') }}" class="stretched-link">{{ __('tools/security-headers-checker.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/security-headers-checker.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1654,7 +1604,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'ai-crawler-access-checker') }}" data-category="ai">
+                    </div><div data-category="ai" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1669,8 +1619,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/ai-crawler-access-checker.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'ai-crawler-access-checker') }}" class="stretched-link">{{ __('tools/ai-crawler-access-checker.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/ai-crawler-access-checker.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1683,7 +1632,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'structured-data-extractor') }}" data-category="markup">
+                    </div><div data-category="markup" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1698,8 +1647,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/structured-data-extractor.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'structured-data-extractor') }}" class="stretched-link">{{ __('tools/structured-data-extractor.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/structured-data-extractor.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1712,7 +1660,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'sitemap-url-extractor') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1727,8 +1675,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/sitemap-url-extractor.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'sitemap-url-extractor') }}" class="stretched-link">{{ __('tools/sitemap-url-extractor.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/sitemap-url-extractor.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1741,7 +1688,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'bot-viewer') }}" data-category="crawl">
+                    </div><div data-category="crawl" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1756,8 +1703,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/bot-viewer.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'bot-viewer') }}" class="stretched-link">{{ __('tools/bot-viewer.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/bot-viewer.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1770,7 +1716,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a><a href="{{ route('tool', 'ngram-extractor') }}" data-category="content">
+                    </div><div data-category="content" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1785,8 +1731,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __('tools/ngram-extractor.card_title') }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', 'ngram-extractor') }}" class="stretched-link">{{ __('tools/ngram-extractor.card_title') }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __('tools/ngram-extractor.card_desc') }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1799,7 +1744,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a>@foreach ([
+                    </div>@foreach ([
                         ['llms-txt-generator', 'ai', '<path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path>'],
                         ['meta-extractor', 'audit', '<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>'],
                         ['expired-domain-checker', 'speed', '<circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path>'],
@@ -1812,7 +1757,7 @@
                         ['eeat-signals-checker', 'audit', '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path>'],
                         ['ai-readiness-checker', 'ai', '<path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z"></path><path d="M5 3v4"></path><path d="M3 5h4"></path><path d="M19 17v4"></path><path d="M17 19h4"></path>'],
                         ['crawl-optimization-checker', 'crawl', '<circle cx="12" cy="5" r="3"></circle><circle cx="5" cy="19" r="3"></circle><circle cx="19" cy="19" r="3"></circle><path d="M10.5 7.5 6.5 16.5"></path><path d="m13.5 7.5 4 9"></path>'],
-                    ] as [$cardSlug, $cardCategory, $cardIcon])<a href="{{ route('tool', $cardSlug) }}" data-category="{{ $cardCategory }}">
+                    ] as [$cardSlug, $cardCategory, $cardIcon])<div data-category="{{ $cardCategory }}" class="card-link relative">
                         <div
                             class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
@@ -1825,8 +1770,7 @@
                                         aria-hidden="true">{!! $cardIcon !!}</svg>
                                 </div>
                             </div>
-                            <h2 class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF]"
-                                style="font-family:var(--font-heading)">{{ __("tools/{$cardSlug}.card_title") }}</h2>
+                            <div class="text-xl font-bold mb-2 transition-colors text-[#0F0F0F] group-hover:text-[#00AEEF] hd-2" style="font-family:var(--font-heading)"><a href="{{ route('tool', $cardSlug) }}" class="stretched-link">{{ __("tools/{$cardSlug}.card_title") }}</a></div>
                             <p class="text-sm leading-relaxed mb-4 text-[#0F0F0F]/70">{{ __("tools/{$cardSlug}.card_desc") }}</p>
                             <div
                                 class="flex items-center gap-2 font-semibold text-sm transition-all text-[#00AEEF] group-hover:gap-3">
@@ -1839,7 +1783,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a>@endforeach</div>
+                    </div>@endforeach</div>
                 <div id="tools-empty" class="text-center py-20 bg-white rounded-2xl border border-gray-100"
                     style="display:none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1881,7 +1825,7 @@
                 var grid = document.getElementById('tools-grid');
                 var emptyState = document.getElementById('tools-empty');
                 var filterBtns = document.querySelectorAll('#tools-filters button[data-filter]');
-                var toolCards = Array.prototype.slice.call(grid.querySelectorAll(':scope > a'));
+                var toolCards = Array.prototype.slice.call(grid.querySelectorAll(':scope > .card-link'));
                 var activeFilter = 'all';
 
                 var baseClass =
@@ -1943,7 +1887,7 @@
 
                     toolCards.forEach(function(card) {
                         var category = card.getAttribute('data-category') || '';
-                        var name = card.querySelector('h2, h3') ? card.querySelector('h2, h3').textContent
+                        var name = card.querySelector('.tl-card__title') ? card.querySelector('.tl-card__title').textContent
                             .toLowerCase() : '';
                         var desc = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() :
                             '';

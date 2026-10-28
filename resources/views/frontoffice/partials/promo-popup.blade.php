@@ -48,7 +48,7 @@
 
             {{-- 1. L'offre --}}
             <div class="promo-modal__col promo-modal__col--offer">
-                <img src="{{ asset('logo.svg') }}" alt="" width="44" height="30" class="promo-modal__logo" />
+                <img src="{{ asset('logo.svg') }}" alt="Logo CodeSommet" width="44" height="30" class="promo-modal__logo" />
                 <p class="promo-modal__brand">CodeSommet · Offre de lancement</p>
 
                 <p class="promo-modal__figure" aria-label="Moins 30 pour cent">

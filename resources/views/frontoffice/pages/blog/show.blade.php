@@ -253,7 +253,7 @@
             @if($relatedPosts->isNotEmpty())
                 @foreach($relatedPosts as $related)
                 <article style="opacity:0;transform:translateY(30px)" data-delay="{{ $loop->index + 1 }}">
-                    <a href="{{ route('blog.show', $related->slug) }}" class="block group">
+                    <div class="block group card-link relative">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <div class="relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                                 @if($related->featured_image)
@@ -276,11 +276,11 @@
                                     <span class="text-[var(--text-tertiary)]">&middot;</span>
                                     <span class="text-xs text-[var(--text-tertiary)]">{{ $related->read_time }} {{ __('blog/show.text_102') }}</span>
                                 </div>
-                                <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">{{ $related->title }}</h3>
+                                <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2 hd-3"><a href="{{ route('blog.show', $related->slug) }}" class="stretched-link">{{ $related->title }}</a></div>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2">{{ $related->excerpt }}</p>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </article>
                 @endforeach
             @else
@@ -293,7 +293,7 @@
                 @endphp
                 @foreach($relatedStatic as $index => $related)
                 <article style="opacity:0;transform:translateY(30px)" data-delay="{{ $index + 1 }}">
-                    <a href="{{ route('blog') }}" class="block group">
+                    <div class="block group card-link relative">
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <div class="relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                                 <div class="w-full h-full bg-gradient-to-br {{ $related['gradient'] }} flex items-center justify-center">
@@ -309,11 +309,11 @@
                                     <span class="text-[var(--text-tertiary)]">&middot;</span>
                                     <span class="text-xs text-[var(--text-tertiary)]">{{ $related['read_time'] }} de lecture</span>
                                 </div>
-                                <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">{{ $related['title'] }}</h3>
+                                <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2 hd-3"><a href="{{ route('blog') }}" class="stretched-link">{{ $related['title'] }}</a></div>
                                 <p class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2">{{ $related['excerpt'] }}</p>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </article>
                 @endforeach
             @endif

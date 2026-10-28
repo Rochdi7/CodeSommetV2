@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Amsterdam, Pays-Bas : des sites web qui génèrent',
     'title' => 'Développement Web à Amsterdam, Pays-Bas | CodeSommet',
     'meta_description' => 'Développement web pour les entreprises d\'Amsterdam : plateformes fintech, sites pour startups tech et santé, livrés à distance par CodeSommet.',
     'meta_keywords' => 'web development Morocco,AI web development agency,Next.js development agency,dashboard development,SaaS development,education website development,healthcare website development,React development Dubai,TypeScript development,web development worldwide,AI chatbot integration,custom dashboard design,web agency Morocco',
@@ -174,7 +175,7 @@ return [
     'sw_2862' => '* Comparaison indicative basée sur les offres de services généralement observées sur le marché',
     'sw_2863' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes de Amsterdam entreprises.',
     'sw_2864' => 'Questions Fréquemment Posées Sur le Développement Web à Amsterdam',
-    'sw_2865' => 'Voir l\'Étude de Cas',
+    'sw_2865' => 'Découvrir ce projet',
     'faq_a1' => 'Parce que nous combinons un design soigné, des technologies modernes et une livraison rapide : la plupart des sites vitrines sont en ligne en 2 à 5 jours après validation du périmètre (et en 2 jours seulement avec notre formule express), avec des révisions illimitées. Notre offre s\'adresse aux entreprises de Amsterdam comme à celles d\'autres marchés, avec une expertise full-stack qui va du site vitrine aux tableaux de bord et aux chatbots IA.',
     'faq_a2' => 'Absolument. Nous travaillons avec des entreprises de toutes tailles, des startups en démarrage aux structures établies. Notre tarification flexible et nos forfaits mensuels sont pensés pour évoluer avec votre croissance, avec des délais courts et la possibilité de mettre en pause ou d\'annuler à tout moment.',
     'faq_a3' => 'Nous utilisons des technologies modernes comme Next.js, React, TypeScript, Node.js et Laravel pour le développement web. Côté IA, nous intégrons des chatbots sur mesure et des automatisations intelligentes. Cette stack garantit des performances rapides, un bon référencement et une vraie évolutivité.',

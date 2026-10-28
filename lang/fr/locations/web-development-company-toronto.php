@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Toronto, Canada : des sites web qui génèrent',
     'title' => 'Développement Web à Toronto, Canada | CodeSommet',
     'meta_description' => 'Développement web pour les entreprises de Toronto : sites sur mesure, tableaux de bord SaaS et e-commerce, livrés à distance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -177,7 +178,7 @@ return [
     'sw_2561' => '* Comparaison indicative basée sur les tarifs et offres de services généralement pratiqués par les agences web',
     'sw_2562' => 'Des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Toronto.',
     'sw_2563' => 'Questions fréquemment posées sur le Développement Web à Toronto',
-    'sw_2564' => 'Voir l\'Étude de Cas',
+    'sw_2564' => 'Découvrir ce projet',
     'sw_2565' => 'Contactez notre équipe Toronto',
     'sw_2566' => ') }}</span>
                     </div>

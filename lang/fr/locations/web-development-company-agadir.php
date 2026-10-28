@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'title' => 'Agence Web Agadir — Création de Sites Web | CodeSommet',
+    'h1_seo' => 'Agence Web Agadir : Création de Sites qui génèrent',
+    'title' => 'Agence Web Agadir — Création de Sites | CodeSommet',
     'meta_description' => 'Agence web à Agadir : sites vitrines, réservation en ligne, e-commerce et plateformes sur mesure pour les entreprises du Souss-Massa. SEO et devis gratuit.',
     'meta_keywords' => 'agence web agadir,création site web agadir,agence digitale agadir,agence seo agadir,site web hôtel agadir,création site internet agadir',
-    'og_title' => 'Agence Web Agadir — Création de Sites Web | CodeSommet',
+    'og_title' => 'Agence Web Agadir — Création de Sites | CodeSommet',
     'og_description' => 'Création de sites web pour les entreprises d\'Agadir : tourisme, hôtellerie, agroalimentaire, immobilier et services. Développement sur mesure, SEO et accompagnement en français.',
     'twitter_description' => 'Agence web pour les entreprises d\'Agadir : sites vitrines, réservation en ligne, e-commerce et plateformes sur mesure.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
@@ -180,7 +181,7 @@ return [
     'sw_2865' => '* Comparaison basée sur les tarifs moyens et les offres de services généralement observés sur le marché',
     'sw_2866' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises d\'Agadir.',
     'sw_2867' => 'Questions Fréquemment Posées Sur la Création de Site Web à Agadir',
-    'sw_2868' => 'Voir l\'Étude de Cas',
+    'sw_2868' => 'Découvrir ce projet',
     'faq_a1' => 'Nous n\'avons pas de bureau à Agadir : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, WhatsApp, Slack, suivi de projet en temps réel). Vous bénéficiez d\'une équipe marocaine, francophone, disponible sur votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui. Nous développons des sites de réservation avec calendrier de disponibilités, tarifs saisonniers, paiement en ligne sécurisé et confirmation automatique, pour les hôtels, riads, agences de voyages, prestataires de surf ou d\'excursions. Le site peut être synchronisé avec vos canaux existants pour éviter les doubles réservations, et il est structuré pour le référencement local sur Agadir.',
     'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui. Pour votre propre site, nous intégrons les passerelles adaptées à une clientèle marocaine et internationale.',

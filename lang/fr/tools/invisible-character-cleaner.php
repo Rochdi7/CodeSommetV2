@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Détectez et supprimez les caractères invisibles d\'un texte, dans votre navigateur.',
 
     'breadcrumb' => 'Caractères Invisibles',
-    'h1' => 'Nettoyeur de Caractères Invisibles',
+    'h1' => 'Nettoyeur de Caractères Invisibles Gratuit',
     'intro' => 'Un texte copié depuis un traitement de texte, une messagerie ou un outil en ligne peut contenir des caractères invisibles qui cassent les recherches, les balises title ou la mise en page. Repérez-les et nettoyez-les.',
     'usage' => 'textes nettoyés',
 

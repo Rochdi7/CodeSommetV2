@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Sites Web pour Cabinets d\'Immigration qui génèrent des',
     'title' => 'Sites Web pour Cabinets d\'Immigration | CodeSommet',
     'meta_description' => 'Sites web pour cabinets de conseil en immigration : suivi de dossiers, gestion de documents, calculateurs d\'éligibilité et portail client. Devis gratuit.',
     'meta_keywords' => 'site web conseil en immigration,développement site web conseil en visa,suivi de dossiers immigration,portail de demande de visa,CRM immigration,gestion de documents visa',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement Web à Madrid, Espagne : des sites web qui génèrent',
     'title' => 'Développement Web à Madrid, Espagne | CodeSommet',
     'meta_description' => 'À Madrid, faites développer votre site ou votre plateforme par CodeSommet : conception sur mesure, e-commerce et référencement, pilotés à distance.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -178,7 +179,7 @@ return [
     'sw_3062' => '* Comparaison indicative basée sur les tarifs moyens et les offres de services couramment observés sur le marché',
     'sw_3063' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Madrid.',
     'sw_3064' => 'Questions Fréquemment Posées sur le Développement Web à Madrid',
-    'sw_3065' => 'Voir l\'Étude de Cas',
+    'sw_3065' => 'Découvrir ce projet',
     'sw_3066' => 'Contactez notre équipe de Madrid',
     'faq_a1' => 'Nous n\'avons pas de bureau à Madrid : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Madrid et vous gardez une visibilité complète sur l\'avancement à chaque étape.',

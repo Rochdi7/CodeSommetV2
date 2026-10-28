@@ -59,7 +59,7 @@
                     <div class="prose prose-lg max-w-none text-[#0F0F0F]/70 space-y-4">
                         <p>{{ __('legal/refund-policy.text_3') }}</p>
                         <p>{{ __('legal/refund-policy.text_4') }}
-                            <strong>Stripe</strong>{{ __('legal/refund-policy.text_5') }}</p>
+                            <span class="tx-strong">Stripe</span>{{ __('legal/refund-policy.text_5') }}</p>
                         <div class="bg-[#00AEEF]/5 rounded-lg p-6 border border-[#00AEEF]/20 mt-6">
                             <h3 class="font-semibold text-[#0F0F0F] mb-3 flex items-center gap-2"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -92,14 +92,14 @@
                         <div>
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">Conditions d'annulation</h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/refund-policy.text_8') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_8') }}</span>
                                     {{ __('legal/refund-policy.text_9') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_10') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_10') }}</span>
                                     {{ __('legal/refund-policy.text_11') }} <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_480') }}</a>
                                     {{ __('legal/refund-policy.text_12') }}</li>
-                                <li><strong>Date d'effet :</strong> {{ __('legal/refund-policy.text_13') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_14') }}</strong>
+                                <li><span class="tx-strong">Date d'effet :</span> {{ __('legal/refund-policy.text_13') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_14') }}</span>
                                     {{ __('legal/refund-policy.text_15') }}</li>
                             </ul>
                         </div>
@@ -284,7 +284,7 @@
                                     </div>
                                     <div class="text-[#0F0F0F]/80">
                                         <p>{{ __('legal/refund-policy.text_32') }}
-                                            <strong>{{ __('legal/refund-policy.text_33') }}</strong>
+                                            <span class="tx-strong">{{ __('legal/refund-policy.text_33') }}</span>
                                             {{ __('legal/refund-policy.text_34') }}</p>
                                     </div>
                                 </div>
@@ -321,8 +321,8 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_269') }}
                             </h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Acompte initial :</strong> {{ __('legal/refund-policy.text_42') }}</li>
-                                <li><strong>Paiement final :</strong> {{ __('legal/refund-policy.text_43') }}</li>
+                                <li><span class="tx-strong">Acompte initial :</span> {{ __('legal/refund-policy.text_42') }}</li>
+                                <li><span class="tx-strong">Paiement final :</span> {{ __('legal/refund-policy.text_43') }}</li>
                             </ul>
                             <p class="mt-3 text-sm italic">{{ __('legal/refund-policy.text_44') }}</p>
                             <p class="mt-3">Avant de démarrer un projet, vous pouvez <a
@@ -338,11 +338,11 @@
                                     <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_46') }}
                                     </h4>
                                     <ul class="list-disc pl-6 space-y-1">
-                                        <li><strong>{{ __('legal/refund-policy.text_47') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_47') }}</span>
                                             {{ __('legal/refund-policy.text_48') }}</li>
-                                        <li><strong>{{ __('legal/refund-policy.text_270') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_270') }}</span>
                                             {{ __('legal/refund-policy.text_49') }}</li>
-                                        <li><strong>{{ __('legal/refund-policy.text_50') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_50') }}</span>
                                             {{ __('legal/refund-policy.text_51') }}</li>
                                     </ul>
                                 </div>
@@ -350,41 +350,41 @@
                                     <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_52') }}
                                     </h4>
                                     <ul class="list-disc pl-6 space-y-1">
-                                        <li><strong>{{ __('legal/refund-policy.text_271') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_271') }}</span>
                                             {{ __('legal/refund-policy.text_53') }}</li>
-                                        <li><strong>Montant retenu :</strong> {{ __('legal/refund-policy.text_54') }}</li>
-                                        <li><strong>Livrables :</strong> {{ __('legal/refund-policy.text_55') }}</li>
+                                        <li><span class="tx-strong">Montant retenu :</span> {{ __('legal/refund-policy.text_54') }}</li>
+                                        <li><span class="tx-strong">Livrables :</span> {{ __('legal/refund-policy.text_55') }}</li>
                                     </ul>
                                 </div>
                                 <div class="bg-[#F8F8F8] rounded-lg p-6 border border-[#0F0F0F]/10">
                                     <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_56') }}
                                     </h4>
                                     <ul class="list-disc pl-6 space-y-1">
-                                        <li><strong>{{ __('legal/refund-policy.text_272') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_272') }}</span>
                                             {{ __('legal/refund-policy.text_57') }}</li>
-                                        <li><strong>Montant retenu :</strong> {{ __('legal/refund-policy.text_58') }}</li>
-                                        <li><strong>Livrables :</strong> {{ __('legal/refund-policy.text_59') }}</li>
+                                        <li><span class="tx-strong">Montant retenu :</span> {{ __('legal/refund-policy.text_58') }}</li>
+                                        <li><span class="tx-strong">Livrables :</span> {{ __('legal/refund-policy.text_59') }}</li>
                                     </ul>
                                 </div>
                                 <div class="bg-[#F8F8F8] rounded-lg p-6 border border-[#0F0F0F]/10">
                                     <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_60') }}
                                     </h4>
                                     <ul class="list-disc pl-6 space-y-1">
-                                        <li><strong>{{ __('legal/refund-policy.text_61') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_61') }}</span>
                                             {{ __('legal/refund-policy.text_62') }}</li>
-                                        <li><strong>Raison :</strong> {{ __('legal/refund-policy.text_63') }}</li>
-                                        <li><strong>Alternative :</strong> {{ __('legal/refund-policy.text_64') }}</li>
+                                        <li><span class="tx-strong">Raison :</span> {{ __('legal/refund-policy.text_63') }}</li>
+                                        <li><span class="tx-strong">Alternative :</span> {{ __('legal/refund-policy.text_64') }}</li>
                                     </ul>
                                 </div>
                                 <div class="bg-[#F8F8F8] rounded-lg p-6 border border-[#0F0F0F]/10">
                                     <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_65') }}
                                     </h4>
                                     <ul class="list-disc pl-6 space-y-1">
-                                        <li><strong>{{ __('legal/refund-policy.text_273') }}</strong>
+                                        <li><span class="tx-strong">{{ __('legal/refund-policy.text_273') }}</span>
                                             {{ __('legal/refund-policy.text_66') }}</li>
-                                        <li><strong>Garantie post-lancement :</strong>
+                                        <li><span class="tx-strong">Garantie post-lancement :</span>
                                             {{ __('legal/refund-policy.text_67') }}</li>
-                                        <li><strong>Support continu :</strong> {{ __('legal/refund-policy.text_68') }}</li>
+                                        <li><span class="tx-strong">Support continu :</span> {{ __('legal/refund-policy.text_68') }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -416,7 +416,7 @@
                                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
                                     </svg></div>
                                 <div class="flex-1 text-sm text-[#0F0F0F]/80">
-                                    <p class="font-medium text-[#0F0F0F]"><strong>Exemple :</strong>
+                                    <p class="font-medium text-[#0F0F0F]"><span class="tx-strong">Exemple :</span>
                                         {{ __('legal/refund-policy.text_75') }}</p>
                                 </div>
                             </div>
@@ -456,11 +456,11 @@
                             </h3>
                             <p class="mb-2">{{ __('legal/refund-policy.text_80') }}</p>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/refund-policy.text_81') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_81') }}</span>
                                     {{ __('legal/refund-policy.text_82') }}</li>
-                                <li><strong>Plugins/Outils premium :</strong> {{ __('legal/refund-policy.text_83') }}</li>
-                                <li><strong>Photos/Assets stock :</strong> {{ __('legal/refund-policy.text_84') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_85') }}</strong>
+                                <li><span class="tx-strong">Plugins/Outils premium :</span> {{ __('legal/refund-policy.text_83') }}</li>
+                                <li><span class="tx-strong">Photos/Assets stock :</span> {{ __('legal/refund-policy.text_84') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_85') }}</span>
                                     {{ __('legal/refund-policy.text_86') }}</li>
                             </ul>
                             <p class="mt-3 text-sm italic">{{ __('legal/refund-policy.text_87') }}</p>
@@ -525,12 +525,12 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_98') }}
                             </h3>
                             <ol class="list-decimal pl-6 space-y-3">
-                                <li><strong>{{ __('legal/refund-policy.text_99') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_99') }}</span>
                                     {{ __('legal/refund-policy.text_100') }} <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_482') }}</a>
                                 </li>
-                                <li><strong>Objet :</strong> {{ __('legal/refund-policy.text_101') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_102') }}</strong>
+                                <li><span class="tx-strong">Objet :</span> {{ __('legal/refund-policy.text_101') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_102') }}</span>
                                     <ul class="list-disc pl-6 mt-2 space-y-1">
                                         <li>{{ __('legal/refund-policy.text_103') }}</li>
                                         <li>{{ __('legal/refund-policy.text_104') }}</li>
@@ -539,12 +539,12 @@
                                         <li>{{ __('legal/refund-policy.text_106') }}</li>
                                     </ul>
                                 </li>
-                                <li><strong>{{ __('legal/refund-policy.text_107') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_107') }}</span>
                                     {{ __('legal/refund-policy.text_108') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_109') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_109') }}</span>
                                     {{ __('legal/refund-policy.text_110') }}</li>
-                                <li><strong>Traitement :</strong> {{ __('legal/refund-policy.text_111') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_112') }}</strong>
+                                <li><span class="tx-strong">Traitement :</span> {{ __('legal/refund-policy.text_111') }}</li>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_112') }}</span>
                                     {{ __('legal/refund-policy.text_113') }}</li>
                             </ol>
                         </div>
@@ -552,11 +552,11 @@
                             <h4 class="font-semibold text-[#0F0F0F] mb-3">{{ __('legal/refund-policy.text_277') }}</h4>
                             <p class="mb-2">{{ __('legal/refund-policy.text_114') }}</p>
                             <ul class="list-disc pl-6 space-y-1">
-                                <li><strong>{{ __('legal/refund-policy.text_115') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_115') }}</span>
                                     {{ __('legal/refund-policy.text_116') }}</li>
-                                <li><strong>{{ __('legal/refund-policy.text_783') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/refund-policy.text_783') }}</span>
                                     {{ __('legal/refund-policy.text_117') }}</li>
-                                <li><strong>Mode alternatif :</strong> {{ __('legal/refund-policy.text_118') }}</li>
+                                <li><span class="tx-strong">Mode alternatif :</span> {{ __('legal/refund-policy.text_118') }}</li>
                             </ul>
                         </div>
                         <div>
@@ -630,18 +630,18 @@
                                 <p>{{ __('legal/refund-policy.text_145') }}</p>
                             </div>
                             <div class="space-y-2">
-                                <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
+                                <p><span class="tx-strong">Email :</span> <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/refund-policy.text_483') }}</a>
                                 </p>
-                                <p><strong>{{ __('legal/refund-policy.text_146') }}</strong> <a href="tel:+212632582096"
+                                <p><span class="tx-strong">{{ __('legal/refund-policy.text_146') }}</span> <a href="tel:+212632582096"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
-                                <p><strong>{{ __('legal/refund-policy.text_147') }}</strong> <a
+                                <p><span class="tx-strong">{{ __('legal/refund-policy.text_147') }}</span> <a
                                         href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20 96</a></p>
                             </div>
                             <div>
-                                <p><strong>{{ __('legal/refund-policy.text_148') }}</strong> Maroc</p>
-                                <p><strong>{{ __('legal/refund-policy.text_149') }}</strong> Monde entier</p>
+                                <p><span class="tx-strong">{{ __('legal/refund-policy.text_148') }}</span> Maroc</p>
+                                <p><span class="tx-strong">{{ __('legal/refund-policy.text_149') }}</span> Monde entier</p>
                             </div>
                             <div class="pt-3 border-t border-[#0F0F0F]/10">
                                 <p class="text-sm">{{ __('legal/refund-policy.text_150') }}</p>
@@ -683,7 +683,7 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <line x1="12" x2="12" y1="8" y2="12"></line>
                                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                                    </svg><span><strong>{{ __('legal/refund-policy.text_278') }}</strong>
+                                    </svg><span><span class="tx-strong">{{ __('legal/refund-policy.text_278') }}</span>
                                         {{ __('legal/refund-policy.text_154') }}</span></li>
                                 <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -693,10 +693,10 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <line x1="12" x2="12" y1="8" y2="12"></line>
                                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                                    </svg><span><strong>Droit applicable :</strong>
+                                    </svg><span><span class="tx-strong">Droit applicable :</span>
                                         {{ __('legal/refund-policy.text_155') }} <a
                                             class="text-[#00AEEF] hover:underline"
-                                            href="{{ route('terms-of-service') }}">Conditions d'Utilisation</a>
+                                            href="{{ route('terms-of-service') }}">Conditions Générales d'Utilisation</a>
                                         {{ __('legal/refund-policy.text_156') }}</span></li>
                                 <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -706,7 +706,7 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <line x1="12" x2="12" y1="8" y2="12"></line>
                                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                                    </svg><span><strong>Conditions Stripe :</strong>
+                                    </svg><span><span class="tx-strong">Conditions Stripe :</span>
                                         {{ __('legal/refund-policy.text_157') }} <a
                                             href="https://stripe.com/legal/consumer" target="_blank"
                                             rel="noopener noreferrer"
@@ -720,7 +720,7 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <line x1="12" x2="12" y1="8" y2="12"></line>
                                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                                    </svg><span><strong>{{ __('legal/refund-policy.text_158') }}</strong>
+                                    </svg><span><span class="tx-strong">{{ __('legal/refund-policy.text_158') }}</span>
                                         {{ __('legal/refund-policy.text_159') }}</span></li>
                                 <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -730,7 +730,7 @@
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <line x1="12" x2="12" y1="8" y2="12"></line>
                                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                                    </svg><span><strong>{{ __('legal/refund-policy.text_160') }}</strong>
+                                    </svg><span><span class="tx-strong">{{ __('legal/refund-policy.text_160') }}</span>
                                         {{ __('legal/refund-policy.text_161') }} <a
                                             class="text-[#00AEEF] hover:underline"
                                             href="/legal/terms-of-service#dispute-resolution">{{ __('legal/refund-policy.text_162') }}</a>.</span>

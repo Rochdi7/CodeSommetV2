@@ -43,7 +43,7 @@
                             </svg><span class="text-sm font-medium text-[#00AEEF]">{{ __('about.text_0') }}</span></div>
                         <div class="space-y-4">
                             <h1 class="font-heading tracking-tight text-[var(--text-4xl)] md:text-[var(--text-5xl)] lg:text-[var(--text-6xl)] font-bold leading-tight"
-                                style="font-family:var(--font-display)">{{ __('about.text_1') }}</h1>
+                                style="font-family:var(--font-display)">{{ __('about.h1_seo') }}</h1>
                             <p
                                 class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
                                 {{ __('about.text_350') }}</p>
@@ -636,8 +636,7 @@
                                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                         </svg></div><span
                                         class="relative z-10 text-base md:text-lg font-medium tracking-tight text-white"
-                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser
-                                        Votre Site Web</span>
+                                        style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">Analyser Mon Site Gratuitement</span>
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"

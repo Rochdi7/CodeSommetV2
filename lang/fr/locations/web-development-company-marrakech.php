@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Création Site Web Marrakech : votre Agence Web pour des sites qui génèrent',
     'title' => 'Création Site Web Marrakech — Agence Web | CodeSommet',
     'meta_description' => 'Création de sites web pour les entreprises de Marrakech : hôtellerie, tourisme et services. Développement sur mesure, SEO et maintenance par CodeSommet.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
@@ -180,7 +181,7 @@ return [
     'sw_3062' => '* Comparaison basée sur les tarifs moyens et les offres de services généralement observés sur le marché',
     'sw_3063' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Marrakech.',
     'sw_3064' => 'Questions Fréquemment Posées sur le Développement Web à Marrakech',
-    'sw_3065' => 'Voir l\'Étude de Cas',
+    'sw_3065' => 'Découvrir ce projet',
     'sw_3066' => 'Contactez notre équipe de Marrakech',
     'faq_a1' => 'Nous n\'avons pas de bureau à Marrakech : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Marrakech et vous gardez une visibilité complète sur l\'avancement à chaque étape.',

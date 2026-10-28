@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'title' => 'Agence Web Casablanca — Création de Sites Web | CodeSommet',
+    'h1_seo' => 'Agence Web Casablanca : Création de Sites qui génèrent',
+    'title' => 'Agence Web Casablanca — Création de Sites | CodeSommet',
     'meta_description' => 'Agence web à Casablanca : création de sites vitrines, e-commerce et plateformes sur mesure pour les entreprises casablancaises, avec SEO et devis gratuit.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Agence Web Casablanca — Création de Sites Web | CodeSommet',
+    'og_title' => 'Agence Web Casablanca — Création de Sites | CodeSommet',
     'og_description' => 'Agence web au Maroc pour les entreprises de Casablanca : sites vitrines, e-commerce et plateformes sur mesure, avec SEO et accompagnement en français.',
     'twitter_description' => 'Agence web au Maroc pour les entreprises de Casablanca : sites vitrines, e-commerce et plateformes sur mesure.',
     'text_0' => 'NOUS CRÉONS DES SITES WEB QUI GÉNÈRENT',
@@ -180,7 +181,7 @@ return [
     'sw_2865' => '* Comparaison basée sur les tarifs moyens et les offres de services généralement observés sur le marché',
     'sw_2866' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes de Casablanca entreprises.',
     'sw_2867' => 'Questions Fréquemment Posées Sur le Développement Web à Casablanca',
-    'sw_2868' => 'Voir l\'Étude de Cas',
+    'sw_2868' => 'Découvrir ce projet',
     'faq_a1' => 'Nous n\'avons pas de bureau à Casablanca : notre équipe travaille à distance depuis le Maroc et collabore avec ses clients entièrement en ligne (appels vidéo, Slack, suivi de projet en temps réel). Cela nous permet de rester réactifs quel que soit votre fuseau horaire, sans coût de structure locale répercuté sur votre projet.',
     'faq_a2' => 'Oui, tout se passe en ligne : appels vidéo pour le cadrage et les validations, collaboration sur Slack au quotidien et suivi de projet en temps réel. Nous adaptons nos créneaux au fuseau horaire de Casablanca et vous gardez une visibilité complète sur l\'avancement à chaque étape.',
     'faq_a3' => 'Nous acceptons les principaux moyens de paiement : virement bancaire, carte et PayPal selon votre pays. Le paiement est généralement échelonné par jalons, avec un acompte au démarrage puis le solde à la livraison, factures à l\'appui.',

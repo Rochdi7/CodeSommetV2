@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Analyseur de Vitesse de Page Gratuit',
     'title' => 'Analyseur de Vitesse de Page Gratuit | CodeSommet',
     'meta_description' => 'Testez la vitesse de chargement d\'une page et identifiez les optimisations prioritaires : poids, requêtes et bonnes pratiques de performance.',
     'meta_keywords' => 'analyseur vitesse page,test vitesse site web,Core Web Vitals,insights vitesse page,analyseur performance,vérificateur vitesse,LCP,FID,CLS,performance SEO',

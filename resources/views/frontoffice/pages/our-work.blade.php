@@ -45,7 +45,7 @@
                         </svg><span class="text-sm font-medium text-[#00AEEF]">{{ __('our-work.text_0') }}</span></div>
                     <div class="space-y-4">
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-heading">
-                            {{ __('our-work.text_1') }} <span
+                            {{ __('our-work.h1_seo') }} <span
                                 class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#0071BC]">{{ __('our-work.text_2') }}</span>
                         </h1>
                         <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-xl mx-auto lg:mx-0">
@@ -172,8 +172,8 @@
                 et Akoubri montre
                 <a class="text-[#00AEEF] hover:underline" href="{{ route('service', 'real-estate-website-development') }}">notre savoir-faire en sites d'architecture et d'immobilier</a>.
                 Côté tourisme,
-                <a class="text-[#00AEEF] hover:underline" href="{{ route('case-study', 'authentic-morocco-adventures') }}">Authentic Morocco Adventures</a>
-                et <a class="text-[#00AEEF] hover:underline" href="{{ route('case-study', 'morocco-quest') }}">Morocco Quest</a>
+                <a class="text-[#00AEEF] hover:underline" href="{{ route('case-study', 'authentic-morocco-adventures') }}">le site Authentic Morocco Adventures</a>
+                et <a class="text-[#00AEEF] hover:underline" href="{{ route('case-study', 'morocco-quest') }}">la plateforme Morocco Quest</a>
                 présentent nos sites de circuits et de voyages au Maroc.
             </p>
         </div>

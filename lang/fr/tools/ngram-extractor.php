@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Extrayez les expressions de 1 à 4 mots les plus fréquentes d\'un texte ou d\'une URL.',
 
     'breadcrumb' => 'Extracteur de N-grammes',
-    'h1' => 'Extracteur de N-grammes',
+    'h1' => 'Extracteur de N-grammes : Mots Fréquents',
     'intro' => 'Quelles expressions reviennent le plus dans une page qui se classe ? Extrayez les mots, bigrammes, trigrammes et quadrigrammes d\'un texte ou d\'une URL, avec leur fréquence et leur présence dans les titres.',
     'usage' => 'textes analysés',
 

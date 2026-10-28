@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Vérificateur de Contenu Dupliqué Gratuit',
     'title' => 'Vérificateur de Contenu Dupliqué Gratuit | CodeSommet',
     'meta_description' => 'Détectez le contenu dupliqué et le plagiat : mesurez la similarité, évitez les pénalités SEO et assurez l\'unicité de vos pages. Analyse gratuite.',
     'meta_keywords' => 'duplicate content checker,plagiarism detector,content similarity,SEO duplicate,copy checker,content uniqueness',

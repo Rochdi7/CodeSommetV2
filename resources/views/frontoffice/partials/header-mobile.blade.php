@@ -29,7 +29,7 @@
             <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center" href="{{ route('home') }}">
                 <div class="flex items-center gap-1">
                     <div class="w-14 h-14 flex items-center justify-center">
-                        <img src="{{ asset('logo.svg') }}" alt="CodeSommet" width="220" height="150" class="w-full h-full object-contain" />
+                        <img src="{{ asset('logo.svg') }}" alt="Logo de l'agence web CodeSommet" width="220" height="150" class="w-full h-full object-contain" />
                     </div>
                     <span class="text-[var(--text-primary)] font-bold text-[20px] font-heading">CodeSommet</span>
                 </div>
@@ -47,38 +47,38 @@
                     $mobileNav = [
                         [
                             'route' => 'home',
-                            'label' => __('nav.home'),
+                            'label' => __('nav.mobile_home'),
                             'icon' => '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>',
                         ],
                         [
                             'route' => 'about',
-                            'label' => __('nav.about'),
+                            'label' => __('nav.mobile_about'),
                             'icon' => '<circle cx="12" cy="12" r="10"></circle>
                 <path d="M12 16v-4"></path>
                 <path d="M12 8h.01"></path>',
                         ],
                         [
                             'route' => 'our-work',
-                            'label' => __('nav.our_work'),
+                            'label' => __('nav.mobile_our_work'),
                             'icon' => '<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>',
                         ],
                         [
                             'route' => 'tools',
-                            'label' => __('nav.tools'),
+                            'label' => __('nav.mobile_tools'),
                             'icon' =>
                                 '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>',
                         ],
                         [
                             'route' => 'blog',
-                            'label' => __('nav.blog'),
+                            'label' => __('nav.mobile_blog'),
                             'icon' => '<path d="M12 20h9"></path>
                 <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"></path>',
                         ],
                         [
                             'route' => 'contact',
-                            'label' => __('nav.contact'),
+                            'label' => __('nav.mobile_contact'),
                             'icon' => '<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>',
                         ],
@@ -104,7 +104,7 @@
             <div class="mt-4 rounded-2xl bg-white/80 p-2 shadow-inner backdrop-blur-sm space-y-2">
                 <a class="h-11 w-full rounded-xl bg-gradient-to-r from-[var(--color-primary-orange)] to-[var(--color-orange-hover)] text-white hover:shadow-lg inline-flex items-center justify-center font-semibold transition-all"
                     href="{{ route('get-quote') }}">
-                    {{ __('nav.get_quote') }}
+                    {{ __('nav.mobile_get_quote') }}
                 </a>
                 <button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
                     data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'

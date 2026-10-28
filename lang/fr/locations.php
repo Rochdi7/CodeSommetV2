@@ -1,13 +1,14 @@
 <?php
 
 return [
+    'h1_seo' => 'Agence Web au Maroc et à l\'International : des Sites Pour les Entreprises',
     'title' => 'Agence Web au Maroc et à l\'International | CodeSommet',
     'meta_description' => 'CodeSommet accompagne les entreprises depuis le Maroc et à distance : Casablanca, Paris, Dubaï, Londres, Toronto et plus de 30 villes.',
     'meta_keywords' => 'agence web internationale,développement web à distance,agence web Casablanca,agence web Paris,agence web Dubaï',
     'og_title' => 'Agence de Développement Web Internationale | CodeSommet',
     'og_description' => 'CodeSommet accompagne les entreprises depuis le Maroc et à distance : Casablanca, Paris, Dubaï, Londres, Toronto et plus de 30 villes. Trouvez votre marché.',
     'twitter_description' => 'Développement web depuis le Maroc et à distance : Casablanca, Paris, Dubaï, Londres, Toronto et plus de 30 villes.',
-    'text_0' => 'Nos Projets',
+    'text_0' => 'Réalisations',
     'text_1' => '+ Villes dans le Monde',
     'text_2' => 'Nous Créons des Sites Web Pour les Entreprises',
     'text_3' => 'Des sites web alimentés par l\'IA aux tableaux de bord intelligents, nous livrons des solutions web de pointe adaptées à votre marché local sur 4 continents.',

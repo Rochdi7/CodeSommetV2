@@ -29,12 +29,12 @@
         </div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <nav class="flex items-center justify-center gap-2 text-sm text-gray-600 mb-8"><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/">Accueil</a><span>/</span><a
-                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils</a><span>/</span><span
+                    class="hover:text-[#00AEEF] transition-colors" href="/">CodeSommet</a><span>/</span><a
+                    class="hover:text-[#00AEEF] transition-colors" href="/tools">Outils SEO</a><span>/</span><span
                     class="text-black font-medium">{{ __('tools/keyword-density-analyzer.text_0') }}</span></nav>
             <div class="mb-8">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 leading-tight">
-                    {{ __('tools/keyword-density-analyzer.text_1') }}</h1>
+                    {{ __('tools/keyword-density-analyzer.h1_seo') }}</h1>
                 <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                     {{ __('tools/keyword-density-analyzer.text_2') }}</p>
             </div>
@@ -276,9 +276,7 @@
                     {{ __('tools/keyword-density-analyzer.text_25') }}</h2>
                 <p class="text-gray-600 text-lg">{{ __('tools/keyword-density-analyzer.text_26') }}</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-6 mb-8"><a
-                    class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/url-slug-generator">
+            <div class="grid md:grid-cols-3 gap-6 mb-8"><div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -292,8 +290,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Générateur de Slug URL</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/url-slug-generator" class="stretched-link">Générateur de Slug URL</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/keyword-density-analyzer.text_27') }}</p>
                     <div
@@ -309,9 +306,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
-                </a><a
-                    class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/internal-link-analyzer">
+                </div><div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -325,8 +320,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Analyseur de Liens Internes</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/internal-link-analyzer" class="stretched-link">Analyseur de Liens Internes</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/keyword-density-analyzer.text_28') }}</p>
                     <div
@@ -342,9 +336,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
-                </a><a
-                    class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                    href="/tools/nofollow-link-checker">
+                </div><div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                     <div class="mb-4">
                         <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -358,8 +350,7 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors"
-                        style="font-family:var(--font-heading)">Vérificateur de Liens Nofollow</h3>
+                    <div class="text-lg font-bold text-black mb-2 group-hover:text-[#00AEEF] transition-colors hd-3" style="font-family:var(--font-heading)"><a href="/tools/nofollow-link-checker" class="stretched-link">Vérificateur de Liens Nofollow</a></div>
                     <p class="text-sm text-gray-600 leading-relaxed mb-4">
                         {{ __('tools/keyword-density-analyzer.text_29') }}</p>
                     <div
@@ -375,7 +366,7 @@
                     <div class="absolute top-4 right-4"><span
                             class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">seo</span>
                     </div>
-                </a></div>
+                </div></div>
             <div class="text-center"><a
                     class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#00AEEF] text-[#00AEEF] rounded-full font-semibold hover:bg-[#00AEEF] hover:text-white transition-colors"
                     href="/tools">{{ __('tools/keyword-density-analyzer.text_30') }} <!-- -->{{ \App\Support\ToolsCatalog::count() }}<!-- --> Outils

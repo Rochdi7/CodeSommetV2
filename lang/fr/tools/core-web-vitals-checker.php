@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Test Core Web Vitals Gratuit : LCP, INP, CLS',
     'title' => 'Test Core Web Vitals Gratuit - LCP, INP, CLS | CodeSommet',
     'meta_description' => 'Mesurez les Core Web Vitals de votre site (LCP, INP, CLS) sur mobile et desktop, avec des recommandations concrètes pour mieux vous classer.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',

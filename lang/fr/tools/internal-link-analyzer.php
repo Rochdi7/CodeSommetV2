@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Analyseur de Liens Internes Gratuit',
     'title' => 'Analyseur de Liens Internes Gratuit | CodeSommet',
     'meta_description' => 'Cartographiez les liens internes d\'une page : nombre de liens, ancres et pages orphelines potentielles, pour renforcer votre maillage interne.',
     'meta_keywords' => 'internal link analyzer,link structure,internal linking,SEO links,link checker,site architecture,orphan pages,link depth,broken links,link equity,site structure,internal link checker',

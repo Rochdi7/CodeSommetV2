@@ -100,13 +100,13 @@
                     <h2 class="text-2xl md:text-3xl font-semibold text-[#0F0F0F] mb-6"
                         style="font-family:var(--font-heading)">{{ __('legal/terms-of-service.text_9') }}</h2>
                     <div class="space-y-3 text-[#0F0F0F]/70">
-                        <p><strong>&quot;Services&quot;</strong> {{ __('legal/terms-of-service.text_10') }}</p>
-                        <p><strong>&quot;Client&quot;</strong> {{ __('legal/terms-of-service.text_11') }}</p>
-                        <p><strong>&quot;Livrables&quot;</strong> {{ __('legal/terms-of-service.text_12') }}</p>
-                        <p><strong>{{ __('legal/terms-of-service.text_331') }}</strong>
+                        <p><span class="tx-strong">&quot;Services&quot;</span> {{ __('legal/terms-of-service.text_10') }}</p>
+                        <p><span class="tx-strong">&quot;Client&quot;</span> {{ __('legal/terms-of-service.text_11') }}</p>
+                        <p><span class="tx-strong">&quot;Livrables&quot;</span> {{ __('legal/terms-of-service.text_12') }}</p>
+                        <p><span class="tx-strong">{{ __('legal/terms-of-service.text_331') }}</span>
                             {{ __('legal/terms-of-service.text_13') }}</p>
-                        <p><strong>&quot;Forfait&quot;</strong> {{ __('legal/terms-of-service.text_14') }}</p>
-                        <p><strong>{{ __('legal/terms-of-service.text_332') }}</strong>
+                        <p><span class="tx-strong">&quot;Forfait&quot;</span> {{ __('legal/terms-of-service.text_14') }}</p>
+                        <p><span class="tx-strong">{{ __('legal/terms-of-service.text_332') }}</span>
                             {{ __('legal/terms-of-service.text_15') }}</p>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                         <div>
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">
                                 {{ __('legal/terms-of-service.text_31') }}</h3>
-                            <p class="mb-2"><strong>{{ __('legal/terms-of-service.text_32') }}</strong></p>
+                            <p class="mb-2"><span class="tx-strong">{{ __('legal/terms-of-service.text_32') }}</span></p>
                             <p class="mb-3">{{ __('legal/terms-of-service.text_33') }}</p>
                             <ul class="list-disc pl-6 space-y-1">
                                 <li>{{ __('legal/terms-of-service.text_34') }}</li>
@@ -189,17 +189,17 @@
                     <div class="space-y-4 text-[#0F0F0F]/70">
                         <p>{{ __('legal/terms-of-service.text_47') }}</p>
                         <ul class="list-disc pl-6 space-y-3">
-                            <li><strong>{{ __('legal/terms-of-service.text_48') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/terms-of-service.text_48') }}</span>
                                 {{ __('legal/terms-of-service.text_49') }}</li>
-                            <li><strong>{{ __('legal/terms-of-service.text_50') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/terms-of-service.text_50') }}</span>
                                 {{ __('legal/terms-of-service.text_51') }}</li>
-                            <li><strong>{{ __('legal/terms-of-service.text_52') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/terms-of-service.text_52') }}</span>
                                 {{ __('legal/terms-of-service.text_53') }}</li>
-                            <li><strong>{{ __('legal/terms-of-service.text_54') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/terms-of-service.text_54') }}</span>
                                 {{ __('legal/terms-of-service.text_55') }}</li>
-                            <li><strong>{{ __('legal/terms-of-service.text_56') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/terms-of-service.text_56') }}</span>
                                 {{ __('legal/terms-of-service.text_57') }}</li>
-                            <li><strong>{{ __('legal/terms-of-service.text_58') }}</strong>
+                            <li><span class="tx-strong">{{ __('legal/terms-of-service.text_58') }}</span>
                                 {{ __('legal/terms-of-service.text_59') }}</li>
                         </ul>
                         <div
@@ -249,13 +249,13 @@
                                     href="{{ route('get-quote') }}">démarrer une demande de devis</a> pour obtenir une
                                 proposition personnalisée correspondant à votre projet.</p>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/terms-of-service.text_340') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_340') }}</span>
                                     {{ __('legal/terms-of-service.text_62') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_63') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_63') }}</span>
                                     {{ __('legal/terms-of-service.text_64') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_65') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_65') }}</span>
                                     {{ __('legal/terms-of-service.text_66') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_67') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_67') }}</span>
                                     {{ __('legal/terms-of-service.text_68') }}</li>
                             </ul>
                             <p class="mt-3 text-sm italic">{{ __('legal/terms-of-service.text_69') }}</p>
@@ -334,13 +334,13 @@
                                 {{ __('legal/terms-of-service.text_95') }}</h3>
                             <p class="mb-3">{{ __('legal/terms-of-service.text_96') }}</p>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/terms-of-service.text_346') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_346') }}</span>
                                     {{ __('legal/terms-of-service.text_97') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_98') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_98') }}</span>
                                     {{ __('legal/terms-of-service.text_99') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_100') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_100') }}</span>
                                     {{ __('legal/terms-of-service.text_101') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_102') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_102') }}</span>
                                     {{ __('legal/terms-of-service.text_103') }}</li>
                             </ul>
                         </div>
@@ -376,11 +376,11 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">
                                 {{ __('legal/terms-of-service.text_115') }}</h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/terms-of-service.text_116') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_116') }}</span>
                                     {{ __('legal/terms-of-service.text_117') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_118') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_118') }}</span>
                                     {{ __('legal/terms-of-service.text_119') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_120') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_120') }}</span>
                                     {{ __('legal/terms-of-service.text_121') }}</li>
                             </ul>
                             <p class="mt-3 text-sm italic">{{ __('legal/terms-of-service.text_122') }}</p>
@@ -416,9 +416,9 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">
                                 {{ __('legal/terms-of-service.text_126') }}</h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/terms-of-service.text_348') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_348') }}</span>
                                     {{ __('legal/terms-of-service.text_127') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_128') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_128') }}</span>
                                     {{ __('legal/terms-of-service.text_129') }}</li>
                             </ul>
                             <p class="mt-3 text-sm italic">{{ __('legal/terms-of-service.text_130') }}</p>
@@ -488,11 +488,11 @@
                         <div class="bg-[#F8F8F8] rounded-lg p-6 border-2 border-[#0F0F0F]/20">
                             <p class="font-semibold text-[#0F0F0F] mb-4">{{ __('legal/terms-of-service.text_355') }}</p>
                             <ul class="list-disc pl-6 space-y-3">
-                                <li><strong>{{ __('legal/terms-of-service.text_153') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_153') }}</span>
                                     {{ __('legal/terms-of-service.text_154') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_155') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_155') }}</span>
                                     {{ __('legal/terms-of-service.text_156') }}</li>
-                                <li><strong>EXCEPTIONS :</strong> {{ __('legal/terms-of-service.text_157') }}</li>
+                                <li><span class="tx-strong">EXCEPTIONS :</span> {{ __('legal/terms-of-service.text_157') }}</li>
                             </ul>
                         </div>
                         <p class="text-sm">{{ __('legal/terms-of-service.text_158') }}</p>
@@ -521,9 +521,9 @@
                             <h3 class="text-xl font-semibold text-[#0F0F0F] mb-3">
                                 {{ __('legal/terms-of-service.text_167') }}</h3>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>{{ __('legal/terms-of-service.text_356') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_356') }}</span>
                                     {{ __('legal/terms-of-service.text_168') }}</li>
-                                <li><strong>{{ __('legal/terms-of-service.text_169') }}</strong>
+                                <li><span class="tx-strong">{{ __('legal/terms-of-service.text_169') }}</span>
                                     {{ __('legal/terms-of-service.text_170') }}</li>
                             </ul>
                         </div>
@@ -685,20 +685,20 @@
                                 <p>{{ __('legal/terms-of-service.text_223') }}</p>
                             </div>
                             <div class="space-y-2">
-                                <p><strong>Email :</strong> <a href="mailto:codesommet@gmail.com"
+                                <p><span class="tx-strong">Email :</span> <a href="mailto:codesommet@gmail.com"
                                         class="text-[#00AEEF] hover:underline">{{ __('legal/terms-of-service.text_562') }}</a>
                                 </p>
-                                <p><strong>{{ __('legal/terms-of-service.text_224') }}</strong> <a
+                                <p><span class="tx-strong">{{ __('legal/terms-of-service.text_224') }}</span> <a
                                         href="tel:+212632582096" class="text-[#00AEEF] hover:underline">+212 6 32 58 20
                                         96</a></p>
-                                <p><strong>{{ __('legal/terms-of-service.text_225') }}</strong> <a
+                                <p><span class="tx-strong">{{ __('legal/terms-of-service.text_225') }}</span> <a
                                         href="https://api.whatsapp.com/send?phone=212632582096" target="_blank" rel="noopener noreferrer"
                                         class="text-[#00AEEF] hover:underline">+212 6 32 58 20
                                         96</a></p>
                             </div>
                             <div>
-                                <p><strong>{{ __('legal/terms-of-service.text_226') }}</strong> Maroc</p>
-                                <p><strong>{{ __('legal/terms-of-service.text_227') }}</strong> Monde entier</p>
+                                <p><span class="tx-strong">{{ __('legal/terms-of-service.text_226') }}</span> Maroc</p>
+                                <p><span class="tx-strong">{{ __('legal/terms-of-service.text_227') }}</span> Monde entier</p>
                             </div>
                             <div class="pt-3 border-t border-[#0F0F0F]/10">
                                 <p class="text-sm">{{ __('legal/terms-of-service.text_228') }}</p>

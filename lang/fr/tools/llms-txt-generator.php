@@ -8,7 +8,7 @@ return [
     'og_description' => 'Créez en un clic le fichier llms.txt de votre site à partir de ses pages réelles, au format llmstxt.org.',
     'twitter_description' => 'Générez le fichier llms.txt de votre site à partir de ses pages réelles.',
     'breadcrumb' => 'Générateur LLMs.txt',
-    'h1' => 'Générateur LLMs.txt',
+    'h1' => 'Générateur de Fichier llms.txt Gratuit',
     'intro' => 'Créez le fichier llms.txt de votre site : un résumé structuré de vos pages clés, au format llmstxt.org, lisible par les assistants IA.',
     'btn_submit' => 'Générer le llms.txt',
     'fields' => [

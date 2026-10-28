@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Extrayez les domaines uniques d\'une liste d\'URL, directement dans votre navigateur.',
 
     'breadcrumb' => 'Extracteur de Domaines',
-    'h1' => 'Extracteur de Domaines',
+    'h1' => 'Extracteur de Domaines d\'une Liste d\'URL',
     'intro' => 'Transformez une liste d\'URL — export de backlinks, crawl, liste de prospects — en domaines uniques, avec le nombre d\'URL pour chacun.',
     'usage' => 'listes analysées',
 

@@ -80,7 +80,7 @@
             <div class="text-center mb-6 sm:mb-8 max-w-lg" id="quoteHeader"
                 style="opacity:0;transform:translateY(10px)">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-3"
-                    style="font-family:var(--font-display)">{{ __('get-quote.text_1') }}</h1>
+                    style="font-family:var(--font-display)">{{ __('get-quote.h1_seo') }}</h1>
                 <p class="text-sm sm:text-base text-[var(--text-secondary)]">{{ __('get-quote.text_2') }}</p>
                 <div class="flex items-center justify-center gap-4 sm:gap-6 mt-4">
                     <div class="flex items-center gap-1.5">

@@ -31,7 +31,7 @@
                          ancres internes au libellé identique. --}}
                     <a class="inline-flex items-center gap-1" href="{{ route('home') }}">
                         <div class="w-10 h-10">
-                            <img src="{{ asset('logo-white.svg') }}" alt="" aria-hidden="true" width="220" height="150"
+                            <img src="{{ asset('logo-white.svg') }}" alt="Logo CodeSommet blanc" width="220" height="150"
                                 class="w-full h-full object-contain" />
                         </div>
                         <span style="font-family:var(--font-heading)"
@@ -51,11 +51,11 @@
                         <p class="text-base font-medium text-[#E0E0E0]">{{ __('footer.locations') }}</p>
                         <ul class="space-y-2.5">
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
-                                    href="{{ route('location', 'casablanca') }}">Casablanca</a></li>
+                                    href="{{ route('location', 'casablanca') }}">Agence web Casablanca</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
-                                    href="{{ route('location', 'marrakech') }}">Marrakech</a></li>
+                                    href="{{ route('location', 'marrakech') }}">Agence web Marrakech</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
-                                    href="{{ route('location', 'rabat') }}">Rabat</a></li>
+                                    href="{{ route('location', 'rabat') }}">Agence web Rabat</a></li>
                             <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"
                                     href="{{ route('location', 'tangier') }}">{{ __('footer.tangier') }}</a></li>
 <li><a class="text-sm text-[#A0A0A0] hover:text-white transition-colors duration-200 inline-block"

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Portfolio & Études de Cas, Agence Web Maroc : Nos Projets',
     'title' => 'Portfolio & Études de Cas — Agence Web Maroc | CodeSommet',
     'meta_description' => 'Notre portfolio : boutiques e-commerce, plateformes SaaS multi-tenant, sites de voyage et solutions métier sur mesure, avec études de cas détaillées.',
     'meta_keywords' => 'portfolio, études de cas, projets de développement web, développement SaaS, e-commerce Shopify, application Laravel, plateformes éducatives, sites web santé',
@@ -32,7 +33,7 @@ return [
     'text_22' => '✓ Aucune carte bancaire requise ✓ Résultats en 30 secondes ✓ Plan d\'amélioration personnalisé',
     'text_23' => 'Prêt à Créer Quelque Chose d\'Extraordinaire ?',
     'text_24' => 'Réserver un Appel Découverte',
-    'text_25' => 'Analyser Votre Site Web',
+    'text_25' => 'Analyser Mon Site Gratuitement',
     'text_26' => 'Réserver un Appel Découverte',
     'text_27' => 'Analyser Votre Site Web',
     'text_28' => 'Vous voulez des résultats similaires ? Obtenez votre devis gratuit aujourd\'hui',

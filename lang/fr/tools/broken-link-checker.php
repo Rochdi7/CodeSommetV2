@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Vérificateur de Liens Brisés Gratuit',
     'title' => 'Vérificateur de Liens Brisés Gratuit | CodeSommet',
     'meta_description' => 'Détectez les liens brisés et les erreurs 404 de votre site en un clic. Rapport clair pour corriger vos URL mortes et préserver votre SEO.',
     'meta_keywords' => 'broken link checker,dead link finder,404 checker,link validator,broken URL checker,link tester',

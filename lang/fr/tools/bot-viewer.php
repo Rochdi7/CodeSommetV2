@@ -9,7 +9,7 @@ return [
     'twitter_description' => 'Votre page vue par Googlebot, Bingbot, GPTBot : comparez avec un navigateur et détectez cloaking et blocages.',
 
     'breadcrumb' => 'Bot Viewer',
-    'h1' => 'Bot Viewer',
+    'h1' => 'Bot Viewer : Votre Page Vue par Googlebot',
     'intro' => 'Votre serveur répond-il la même chose à Googlebot qu\'à un visiteur ? Chargez la page avec le User-Agent de chaque robot et comparez statut, redirections, titre, contenu et liens.',
     'usage' => 'pages comparées',
 

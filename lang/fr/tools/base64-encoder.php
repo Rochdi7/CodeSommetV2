@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'title' => 'Encodeur/Décodeur Base64 - Outil Base64 Gratuit | CodeSommet',
+    'h1_seo' => 'Encodeur/Décodeur Base64 en Ligne Gratuit',
+    'title' => 'Encodeur/Décodeur Base64 en Ligne Gratuit | CodeSommet',
     'meta_description' => 'Encodez et décodez du texte ou des fichiers en Base64 instantanément, directement dans votre navigateur. Outil gratuit et sans inscription.',
     'meta_keywords' => 'base64 encoder,base64 decoder,base64 converter,encode base64,decode base64,base64 tool,base64 online,text to base64,base64 to text,free base64 encoder,base64 generator,url safe base64,base64 encoding tool,binary to text converter',
     'og_title' => 'Encodeur/Décodeur Base64 - Outil Base64 Gratuit',

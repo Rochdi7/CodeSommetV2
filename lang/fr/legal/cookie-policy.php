@@ -68,7 +68,7 @@ return [
     'text_58' => 'Politique de confidentialité :',
     'text_59' => 'Politique de confidentialité de Google',
     'text_60' => 'Désactivation :',
-    'text_61' => 'Module complémentaire de navigateur pour la désactivation de Google Analytics',
+    'text_61' => 'Module de désactivation Google Analytics',
     'text_62' => 'Stripe (Traitement des paiements)',
     'text_63' => 'Traitement sécurisé des paiements et prévention de la fraude',
     'text_64' => 'Données collectées :',

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'h1_seo' => 'Développement de',
     'title' => 'Développement de Plateformes de Télémédecine | CodeSommet',
     'meta_description' => 'Applications de télémédecine complètes : consultations vidéo, dossiers patients, ordonnances et paiements, conformes à la confidentialité santé.',
     'meta_keywords' => 'développement plateforme télémédecine,agence plateforme télésanté,développement plateforme soins virtuels,plateforme consultation médicale en ligne,développement logiciel télésanté,plateforme consultation vidéo,surveillance patient à distance,développement plateforme santé,plateforme conforme HIPAA',

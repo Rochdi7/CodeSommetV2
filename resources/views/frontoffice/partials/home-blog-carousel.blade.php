@@ -30,7 +30,7 @@
                                 @php $color = $post->category?->color ?: '#00AEEF'; @endphp
                                 {{-- Pre-JS visibility matches the first slide at each breakpoint (no layout shift) --}}
                                 <article class="blog-carousel-item {{ $i === 0 ? '' : ($i === 1 ? 'hidden md:block' : ($i === 2 ? 'hidden lg:block' : 'hidden')) }}">
-                                    <a href="{{ route('blog.show', $post->slug) }}" class="block group">
+                                    <div class="block group card-link relative">
                                         <div
                                             class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                                             <div
@@ -68,9 +68,8 @@
                                                     <span class="text-xs text-[var(--text-tertiary)]">{{ $post->read_time }}
                                                         de lecture</span>
                                                 </div>
-                                                <h3
-                                                    class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2">
-                                                    {{ $post->title }}</h3>
+                                                <div class="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[#00AEEF] transition-colors line-clamp-2 hd-3"><a href="{{ route('blog.show', $post->slug) }}" class="stretched-link">
+                                                    {{ $post->title }}</a></div>
                                                 <p
                                                     class="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2 mb-4">
                                                     {{ $post->excerpt ?: Str::limit(strip_tags($post->content), 120) }}
@@ -98,7 +97,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </article>
                             @endforeach
                     </div>
