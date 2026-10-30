@@ -93,7 +93,6 @@ return [
     'text_181' => 'Étape 4',
     'text_182' => 'projet de site web ?',
     'text_183' => 'Analytique et suivi de conversion',
-    'text_184' => '/mois',
     'text_185' => 'Conseil en Immigration',
     'text_186' => 'Conseil en Immigration',
     'text_187' => 'Conseil en Immigration',

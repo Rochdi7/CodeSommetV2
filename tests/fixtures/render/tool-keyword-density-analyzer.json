@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Analyseur de Densité de Mots-Clés"
+            "Analyseur de Densité de Mots-Clés Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "URL Slug Generator"
-        ],
-        [
-            3,
-            "Internal Link Analyzer"
-        ],
-        [
-            3,
-            "Nofollow Link Checker"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

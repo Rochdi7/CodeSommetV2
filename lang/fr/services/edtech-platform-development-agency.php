@@ -108,7 +108,6 @@ return [
     'text_196' => 'Étape 4',
     'text_197' => 'edtech et e-learning',
     'text_198' => 'Analytique et suivi de conversion',
-    'text_199' => '/mois',
     'text_200' => 'EdTech et E-Learning',
     'text_201' => 'EdTech et E-Learning',
     'text_202' => 'EdTech et E-Learning',

@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Vérificateur de Domaines Expirés"
+            "Vérificateur de Domaines Expirés (RDAP)"
         ],
         [
             2,
@@ -35,18 +35,6 @@
         [
             2,
             "Outils Connexes Qui Pourraient Vous Intéresser"
-        ],
-        [
-            3,
-            "Santé du Domaine"
-        ],
-        [
-            3,
-            "Vérificateur SSL"
-        ],
-        [
-            3,
-            "Autorité de Domaine"
         ],
         [
             2,

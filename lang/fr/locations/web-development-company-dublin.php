@@ -72,7 +72,6 @@ return [
     'text_162' => 'Experts en IA',
     'text_163' => 'Immobilier',
     'text_164' => 'Site de clinique dentaire avec prise de rendez-vous en ligne',
-    'text_165' => '/mois',
     'text_166' => 'Revue du design',
     'text_167' => 'PDG de GlamWorlds',
     'text_168' => 'Cliquez ici',

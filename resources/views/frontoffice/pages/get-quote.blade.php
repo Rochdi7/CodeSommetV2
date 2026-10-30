@@ -955,12 +955,14 @@
     <script src="{{ asset_v('vendor/toastr/toastr-2.1.4.min.js') }}"></script>
     <script src="{{ asset('js/toastr-init.js') }}"></script>
 
-    {{-- ?projectType=… (envoyé par les choix du pop-up d'offre) présélectionne
-         le type de projet. Seules les valeurs existantes du <select> sont
-         acceptées ; l'événement change resynchronise le custom-select. --}}
+    {{-- #projectType=… (envoyé par les choix du pop-up d'offre) présélectionne
+         le type de projet ; ?projectType=… reste lu pour les anciens liens.
+         Seules les valeurs existantes du <select> sont acceptées ; l'événement
+         change resynchronise le custom-select. --}}
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var wanted = new URLSearchParams(window.location.search).get('projectType');
+            var wanted = new URLSearchParams(window.location.hash.slice(1)).get('projectType')
+                || new URLSearchParams(window.location.search).get('projectType');
             var select = document.getElementById('projectType');
             if (!wanted || !select) return;
             for (var i = 0; i < select.options.length; i++) {

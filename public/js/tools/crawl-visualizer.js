@@ -50,6 +50,10 @@
         folderStroke: '#3b82f6',
         orphanStroke: '#8b5cf6',
         accent: '#00AEEF',
+        linkWeak: '#ef4444',
+        linkMedium: '#f59e0b',
+        linkStrong: '#22c55e',
+        linkIgnored: '#e5e7eb',
         edge: 'rgba(107, 114, 128, 0.45)',
         edgeFaint: 'rgba(148, 163, 184, 0.22)',
         label: '#111827'
@@ -216,6 +220,36 @@
         state.edgeKeys.add(key);
         state.edges.push({ s: source, t: target });
         target.inCount++;
+    }
+
+    /*
+     * Force du maillage d'une page indexable : faible si elle ne reçoit qu'un
+     * lien interne ou se trouve à 4 clics ou plus de l'accueil, moyenne avec
+     * 2–3 liens entrants ou à 3 clics. Les autres pages ne sont pas évaluées.
+     */
+    var LINK_WEAK_MAX_INLINKS = 1;
+    var LINK_MEDIUM_MAX_INLINKS = 3;
+    var LINK_WEAK_DEPTH = 4;
+
+    var LINK_LABELS = { weak: 'Maillage faible', medium: 'Maillage moyen', strong: 'Bien maillée' };
+
+    function linkStrength(n) {
+        if (!n || n.orphan || !n.crawled || n.kind !== 'indexable') return null;
+        if (n.depth === 0) return 'strong';
+        if (n.inCount <= LINK_WEAK_MAX_INLINKS || n.depth >= LINK_WEAK_DEPTH) return 'weak';
+        if (n.inCount <= LINK_MEDIUM_MAX_INLINKS || n.depth === LINK_WEAK_DEPTH - 1) return 'medium';
+        return 'strong';
+    }
+
+    function linkStrengthText(n) {
+        var strength = linkStrength(n);
+        if (!strength) return '';
+        var why = [];
+        if (strength !== 'strong') {
+            if (n.inCount <= LINK_MEDIUM_MAX_INLINKS) why.push(n.inCount + ' lien' + (n.inCount > 1 ? 's' : '') + ' entrant' + (n.inCount > 1 ? 's' : ''));
+            if (n.depth >= LINK_WEAK_DEPTH - 1) why.push(n.depth + ' clics depuis l\'accueil');
+        }
+        return LINK_LABELS[strength] + (why.length ? ' (' + why.join(', ') + ')' : '');
     }
 
     function kindOf(page) {
@@ -520,16 +554,19 @@
         var maxDepth = 0;
         var nonIndexable = 0;
         var errors = 0;
+        var weak = 0;
         pages.forEach(function (n) {
             if (n.depth > maxDepth) maxDepth = n.depth;
             if (n.kind !== 'indexable') nonIndexable++;
             if (n.kind === 'error') errors++;
+            if (linkStrength(n) === 'weak') weak++;
         });
         return {
             pages: pages.length,
             edges: state.edges.length,
             orphans: state.orphans.length,
             depth: maxDepth,
+            weak: weak,
             nonindexable: nonIndexable,
             errors: errors
         };
@@ -727,7 +764,11 @@
         g.nodes.forEach(function (v) {
             if (v.orphan && !v.parent && v !== g.root && visible.length < limit) visible.push(v);
         });
-        visible.forEach(function (v) { visibleSet.add(v); });
+        maxVisibleDepth = 1;
+        visible.forEach(function (v) {
+            visibleSet.add(v);
+            if (v.depth > maxVisibleDepth) maxVisibleDepth = v.depth;
+        });
     }
 
     function hiddenDescendants(v) {
@@ -748,6 +789,7 @@
             case 'redirect': return p.kind === 'redirect';
             case 'error': return p.kind === 'error';
             case 'orphan': return p.orphan;
+            case 'weak': return linkStrength(p) === 'weak';
             default: return true;
         }
     }
@@ -904,12 +946,28 @@
     var alpha = 0;
     var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    // Mêmes réglages que le « Force-Directed Crawl/Directory Tree Diagram » de
+    // Screaming Frog (d3-force) : liens rigides de 94 px, répulsion -184 sans
+    // portée maximale, rappel 0.1 vers le centre, collision à 50 % du rayon.
+    var SIM = {
+        linkDistance: 94,
+        linkIterations: 10,
+        charge: -184,
+        center: 0.1,
+        overlap: 0.5,
+        alphaMin: 0.001,
+        alphaDecay: 1 - Math.pow(0.001, 1 / 300),
+        velocityDecay: 0.4,
+        maxRadius: 20,
+        minRadius: 5
+    };
+    var maxVisibleDepth = 1;
+
+    /** Rayon dégressif selon la profondeur, comme l'échelle « Depth » de Screaming Frog. */
     function forceRadius(v) {
-        if (v.orphan) return 7;
-        if (v.depth === 0) return current.graph === 'dir' ? 24 : 28;
-        if (v.folder) return 6 + Math.min(10, 1.5 * Math.sqrt(v.pageCount));
-        var base = Math.max(5, 17 - 4 * (v.depth - 1));
-        return base + Math.min(9, 1.6 * Math.sqrt(v.page.inCount));
+        if (v.orphan && !v.parent) return 7;
+        var t = Math.min(1, Math.max(0, v.depth || 0) / maxVisibleDepth);
+        return SIM.maxRadius - (SIM.maxRadius - SIM.minRadius) * t;
     }
 
     function treeRadius(v) {
@@ -922,58 +980,109 @@
         return current.layout === 'tree' ? treeRadius(v) : forceRadius(v);
     }
 
+    function jiggle() {
+        return (Math.random() - 0.5) * 1e-6;
+    }
+
+    /**
+     * Un pas de simulation, transposition directe de d3-force (forceX/Y,
+     * forceLink, forceManyBody, forceCollide) ; la répulsion est calculée
+     * exactement (n², quelques centaines de nœuds) au lieu de Barnes-Hut.
+     */
     function tick(is3d) {
         var nodes = visible.filter(function (v) { return !v.orphan || v.parent; });
         var count = nodes.length;
-        var i, j, a, b, dx, dy, dz, d2, d, f;
+        var i, j, k, a, b, x, y, z, l, w;
 
-        // Ressorts de l'arbre.
-        for (i = 0; i < count; i++) {
-            b = nodes[i];
-            a = b.parent;
-            if (!a || !visibleSet.has(a)) continue;
-            dx = b.x - a.x; dy = b.y - a.y; dz = is3d ? b.z - a.z : 0;
-            d = Math.sqrt(dx * dx + dy * dy + dz * dz) || 0.01;
-            var length = (a.depth === 0 ? 150 : 55) + 5 * Math.sqrt(a.children.length) + forceRadius(b);
-            f = (d - length) / d * 0.08 * alpha;
-            dx *= f; dy *= f; dz *= f;
-            b.vx -= dx; b.vy -= dy; b.vz -= dz;
-            if (!a.fixed) { a.vx += dx * 0.5; a.vy += dy * 0.5; a.vz += dz * 0.5; }
-        }
+        alpha += (0 - alpha) * SIM.alphaDecay;
 
-        // Répulsion + collision (n² : au plus quelques centaines de nœuds).
+        // forceX / forceY (/ forceZ) vers l'origine.
         for (i = 0; i < count; i++) {
             a = nodes[i];
-            var ra = forceRadius(a);
-            for (j = i + 1; j < count; j++) {
-                b = nodes[j];
-                dx = b.x - a.x; dy = b.y - a.y; dz = is3d ? b.z - a.z : 0;
-                d2 = dx * dx + dy * dy + dz * dz;
-                if (d2 < 0.01) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; dz = is3d ? Math.random() - 0.5 : 0; d2 = dx * dx + dy * dy + dz * dz; }
-                if (d2 > 250000) continue;
-                d = Math.sqrt(d2);
-                f = 900 * alpha / d2;
-                var minDist = ra + forceRadius(b) + 6;
-                if (d < minDist) f += (minDist - d) / d * 0.5;
-                dx *= f; dy *= f; dz *= f;
-                if (!a.fixed) { a.vx -= dx; a.vy -= dy; a.vz -= dz; }
-                if (!b.fixed) { b.vx += dx; b.vy += dy; b.vz += dz; }
+            a.vx -= a.x * SIM.center * alpha;
+            a.vy -= a.y * SIM.center * alpha;
+            if (is3d) a.vz -= a.z * SIM.center * alpha;
+        }
+
+        // forceLink : arêtes de l'arbre, force 1 / min(degrés), biais vers le moins connecté.
+        var links = [];
+        var degree = new Map();
+        for (i = 0; i < count; i++) {
+            b = nodes[i];
+            if (!b.parent || !visibleSet.has(b.parent)) continue;
+            links.push(b);
+            degree.set(b, (degree.get(b) || 0) + 1);
+            degree.set(b.parent, (degree.get(b.parent) || 0) + 1);
+        }
+        for (k = 0; k < SIM.linkIterations; k++) {
+            for (i = 0; i < links.length; i++) {
+                b = links[i];
+                a = b.parent;
+                var ca = degree.get(a);
+                var cb = degree.get(b);
+                x = b.x + b.vx - a.x - a.vx || jiggle();
+                y = b.y + b.vy - a.y - a.vy || jiggle();
+                z = is3d ? (b.z + b.vz - a.z - a.vz || jiggle()) : 0;
+                l = Math.sqrt(x * x + y * y + z * z);
+                l = (l - SIM.linkDistance) / l * alpha / Math.min(ca, cb);
+                x *= l; y *= l; z *= l;
+                var bias = ca / (ca + cb);
+                b.vx -= x * bias; b.vy -= y * bias; b.vz -= z * bias;
+                a.vx += x * (1 - bias); a.vy += y * (1 - bias); a.vz += z * (1 - bias);
             }
         }
 
+        // forceManyBody : répulsion en 1/d, sans portée maximale.
+        for (i = 0; i < count; i++) {
+            a = nodes[i];
+            for (j = i + 1; j < count; j++) {
+                b = nodes[j];
+                x = b.x - a.x || jiggle();
+                y = b.y - a.y || jiggle();
+                z = is3d ? (b.z - a.z || jiggle()) : 0;
+                l = x * x + y * y + z * z;
+                if (l < 1) l = Math.sqrt(l);
+                w = SIM.charge * alpha / l;
+                a.vx += x * w; a.vy += y * w; a.vz += z * w;
+                b.vx -= x * w; b.vy -= y * w; b.vz -= z * w;
+            }
+        }
+
+        // forceCollide : rayon effectif = rayon affiché × chevauchement toléré.
+        for (i = 0; i < count; i++) {
+            a = nodes[i];
+            var ri = forceRadius(a) * SIM.overlap;
+            var ri2 = ri * ri;
+            for (j = i + 1; j < count; j++) {
+                b = nodes[j];
+                var rj = forceRadius(b) * SIM.overlap;
+                var r = ri + rj;
+                x = a.x + a.vx - b.x - b.vx;
+                y = a.y + a.vy - b.y - b.vy;
+                z = is3d ? a.z + a.vz - b.z - b.vz : 0;
+                l = x * x + y * y + z * z;
+                if (l >= r * r) continue;
+                if (x === 0) { x = jiggle(); l += x * x; }
+                if (y === 0) { y = jiggle(); l += y * y; }
+                l = Math.sqrt(l);
+                l = (r - l) / l;
+                x *= l; y *= l; z *= l;
+                var share = (rj * rj) / (ri2 + rj * rj);
+                a.vx += x * share; a.vy += y * share; a.vz += z * share;
+                b.vx -= x * (1 - share); b.vy -= y * (1 - share); b.vz -= z * (1 - share);
+            }
+        }
+
+        var keep = 1 - SIM.velocityDecay;
         for (i = 0; i < count; i++) {
             a = nodes[i];
             if (a.fixed) { a.vx = a.vy = a.vz = 0; continue; }
-            a.vx -= a.x * 0.002 * alpha;
-            a.vy -= a.y * 0.002 * alpha;
-            a.vz -= a.z * 0.002 * alpha;
-            a.vx *= 0.6; a.vy *= 0.6; a.vz *= 0.6;
+            a.vx *= keep; a.vy *= keep; a.vz *= keep;
             a.x += a.vx; a.y += a.vy;
             a.z = is3d ? a.z + a.vz : 0;
         }
 
-        alpha *= 0.985;
-        if (alpha < 0.004) alpha = 0;
+        if (alpha < SIM.alphaMin) alpha = 0;
         tickCount++;
         // Pendant la stabilisation : l'anneau d'orphelines suit le cœur du
         // graphe et le cadrage suit la disposition (tant qu'on n'y touche pas).
@@ -1180,7 +1289,7 @@
     var canvasSize = { w: 0, h: 0 };
     var view = { scale: 1, tx: 0, ty: 0 };
     var cam = { yaw: 0.6, pitch: -0.35, dist: FOCAL, radius: 1 };
-    var toggles = { labels: true, arrows: false, 'all-links': false, rotate: !reducedMotion, phrases: false };
+    var toggles = { labels: true, arrows: false, 'all-links': false, linking: false, rotate: !reducedMotion, phrases: false };
     var current = { view: DEFAULT_VIEW, graph: 'crawl', layout: 'force' };
     var selected = null;   // sommet de graphe, ou mot du nuage (isWord)
     var hovered = null;
@@ -1225,6 +1334,14 @@
         var p = v.page;
         if (p.orphan) return '#ffffff';
         if (v.depth === 0 && p.kind === 'indexable') return COLORS.root;
+        if (toggles.linking && (p.kind === 'indexable' || p.kind === 'nonindexable')) {
+            switch (linkStrength(p)) {
+                case 'weak': return COLORS.linkWeak;
+                case 'medium': return COLORS.linkMedium;
+                case 'strong': return COLORS.linkStrong;
+                default: return COLORS.linkIgnored;
+            }
+        }
         switch (p.kind) {
             case 'indexable': return COLORS.indexable[Math.min(COLORS.indexable.length - 1, Math.max(0, v.depth - 1))];
             case 'nonindexable': return COLORS.nonindexable;
@@ -1355,29 +1472,102 @@
         return v.label;
     }
 
-    function drawLabels2d(s, tree) {
-        var crowded = tree ? TREE_ROW * s < 10 : visible.length > 250 && s < 0.7;
-        ctx.font = (11 / s) + 'px Inter, sans-serif';
-        ctx.textAlign = tree ? 'left' : 'center';
-        ctx.textBaseline = tree ? 'middle' : 'top';
-        ctx.lineJoin = 'round';
-        visible.forEach(function (v) {
-            var r = radiusOf(v);
-            var important = v === selected || v === hovered || v.depth === 0 || searchMatches.has(v);
-            if (!important) {
-                if (isDimmed(v)) return;
-                if (crowded && v.depth > 1) return;
-                if (!tree && r * s < 4) return;
-            }
-            var x = tree ? v.x + r + 4 / s : v.x;
-            var y = tree ? v.y : v.y + r + 3 / s;
-            var text = labelText(v);
-            ctx.lineWidth = 3 / s;
-            ctx.strokeStyle = 'rgba(255,255,255,0.9)';
-            ctx.strokeText(text, x, y);
-            ctx.fillStyle = COLORS.label;
-            ctx.fillText(text, x, y);
+    var LABEL_PX = 11;
+    var LABEL_H = 14;
+
+    function isImportant(v) {
+        return v === selected || v === hovered || v.depth === 0 || searchMatches.has(v);
+    }
+
+    /** Largeur d'un libellé à 11 px, mise en cache sur le sommet. */
+    function labelWidth(v, text) {
+        if (v.lw === undefined || v.lwText !== text) {
+            ctx.save();
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.font = LABEL_PX + 'px Inter, sans-serif';
+            v.lw = ctx.measureText(text).width;
+            ctx.restore();
+            v.lwText = text;
+        }
+        return v.lw;
+    }
+
+    /**
+     * Placement glouton des libellés, en coordonnées écran : les sommets
+     * prioritaires (sélection, recherche, racine, puis les moins profonds et
+     * les plus liés) passent d'abord, un libellé qui en chevaucherait un autre
+     * est omis. Le zoom fait apparaître les libellés masqués.
+     * `candidates` : [{ v, x, y, r }] avec x, y = centre du nœud à l'écran.
+     */
+    function placeLabels(candidates) {
+        candidates.sort(function (a, b) {
+            var ia = isImportant(a.v) ? 0 : 1;
+            var ib = isImportant(b.v) ? 0 : 1;
+            if (ia !== ib) return ia - ib;
+            if ((a.v.depth || 0) !== (b.v.depth || 0)) return (a.v.depth || 0) - (b.v.depth || 0);
+            var wa = a.v.page ? a.v.page.inCount : a.v.pageCount;
+            var wb = b.v.page ? b.v.page.inCount : b.v.pageCount;
+            return wb - wa;
         });
+        var placed = [];
+        var out = [];
+        candidates.forEach(function (c) {
+            var text = labelText(c.v);
+            var w = labelWidth(c.v, text) + 4;
+            var rect = { x: c.x - w / 2, y: c.y + c.r + 2, w: w, h: LABEL_H };
+            if (rect.x > canvasSize.w || rect.x + rect.w < 0 || rect.y > canvasSize.h || rect.y + rect.h < 0) return;
+            var important = isImportant(c.v);
+            if (!important) {
+                for (var i = 0; i < placed.length; i++) {
+                    var o = placed[i];
+                    if (rect.x < o.x + o.w && rect.x + rect.w > o.x && rect.y < o.y + o.h && rect.y + rect.h > o.y) return;
+                }
+            }
+            placed.push(rect);
+            out.push({ c: c, text: text, rect: rect });
+        });
+        return out;
+    }
+
+    function drawLabels2d(s, tree) {
+        ctx.lineJoin = 'round';
+        if (tree) {
+            var crowded = TREE_ROW * s < 10;
+            ctx.font = (LABEL_PX / s) + 'px Inter, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.textBaseline = 'middle';
+            visible.forEach(function (v) {
+                var r = radiusOf(v);
+                if (!isImportant(v) && (isDimmed(v) || (crowded && v.depth > 1))) return;
+                var text = labelText(v);
+                ctx.lineWidth = 3 / s;
+                ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+                ctx.strokeText(text, v.x + r + 4 / s, v.y);
+                ctx.fillStyle = COLORS.label;
+                ctx.fillText(text, v.x + r + 4 / s, v.y);
+            });
+            return;
+        }
+
+        var candidates = [];
+        visible.forEach(function (v) {
+            if (!isImportant(v) && isDimmed(v)) return;
+            candidates.push({ v: v, x: v.x * s + view.tx, y: v.y * s + view.ty, r: radiusOf(v) * s });
+        });
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.font = LABEL_PX + 'px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        placeLabels(candidates).forEach(function (l) {
+            var x = l.c.x;
+            var y = l.rect.y + 1;
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+            ctx.strokeText(l.text, x, y);
+            ctx.fillStyle = COLORS.label;
+            ctx.fillText(l.text, x, y);
+        });
+        ctx.setTransform(dpr * s, 0, 0, dpr * s, dpr * view.tx, dpr * view.ty);
     }
 
     /* 3D : rotation (lacet puis tangage) et projection perspective. */
@@ -1475,20 +1665,23 @@
         ctx.globalAlpha = 1;
 
         if (toggles.labels) {
-            ctx.font = '11px Inter, sans-serif';
+            var candidates = [];
+            order.forEach(function (v) {
+                if (!isImportant(v) && (isDimmed(v) || v.sr < 4)) return;
+                candidates.push({ v: v, x: v.sx, y: v.sy, r: v.sr });
+            });
+            ctx.font = LABEL_PX + 'px Inter, sans-serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'top';
             ctx.lineJoin = 'round';
-            order.forEach(function (v) {
-                var important = v === selected || v === hovered || v.depth === 0 || searchMatches.has(v);
-                if (!important && (isDimmed(v) || v.sr < 6)) return;
-                var text = labelText(v);
-                ctx.globalAlpha = important ? 1 : depthAlpha(v);
+            placeLabels(candidates).forEach(function (l) {
+                var v = l.c.v;
+                ctx.globalAlpha = isImportant(v) ? 1 : depthAlpha(v);
                 ctx.lineWidth = 3;
                 ctx.strokeStyle = 'rgba(255,255,255,0.9)';
-                ctx.strokeText(text, v.sx, v.sy + v.sr + 3);
+                ctx.strokeText(l.text, l.c.x, l.rect.y + 1);
                 ctx.fillStyle = COLORS.label;
-                ctx.fillText(text, v.sx, v.sy + v.sr + 3);
+                ctx.fillText(l.text, l.c.x, l.rect.y + 1);
             });
             ctx.globalAlpha = 1;
         }
@@ -1923,6 +2116,7 @@
             row('Statut HTTP', n.status ? String(n.status) : (n.crawled ? '—' : '')) +
             row('Profondeur', n.depth === null ? '' : n.depth + ' clic' + (n.depth > 1 ? 's' : '')) +
             row('Liens entrants', n.orphan ? '0' : fmt(n.inCount)) +
+            row('Maillage', escapeHtml(linkStrengthText(n))) +
             row('Liens sortants internes', n.crawled ? fmt(n.outCount) : '') +
             row('Liens externes', n.crawled && n.externalLinks ? fmt(n.externalLinks) : '') +
             row('Liens nofollow', n.nofollowLinks ? fmt(n.nofollowLinks) : '') +
@@ -2069,6 +2263,7 @@
                 reason: n.reason || '',
                 depth: n.depth,
                 inlinks: n.inCount,
+                link_strength: LINK_LABELS[linkStrength(n)] || '',
                 outlinks: n.crawled ? n.outCount : null,
                 external_links: n.externalLinks,
                 inbound_anchors: inboundAnchors(n).slice(0, 5).map(function (a) { return a[0]; }).join(' | '),
@@ -2189,6 +2384,13 @@
         btn.setAttribute('aria-pressed', toggles[btn.dataset.cvToggle] ? 'true' : 'false');
     }
 
+    /** Légende de l'indexabilité ou du maillage selon le mode de couleur. */
+    function syncLegend() {
+        document.querySelectorAll('[data-cv-legend]').forEach(function (el) {
+            el.style.display = (el.dataset.cvLegend === 'linking') === toggles.linking ? '' : 'none';
+        });
+    }
+
     function debounce(fn, ms) {
         var t;
         return function () {
@@ -2249,8 +2451,8 @@
             }
             ui.url.value = parsed.url;
             startCrawl(parsed.url, {
-                maxPages: Math.min(500, Math.max(1, parseInt(ui.maxPages.value, 10) || 100)),
-                maxDepth: Math.min(10, Math.max(1, parseInt(ui.maxDepth.value, 10) || 4)),
+                maxPages: Math.min(500, Math.max(1, parseInt(ui.maxPages.value, 10) || 500)),
+                maxDepth: Math.min(10, Math.max(1, parseInt(ui.maxDepth.value, 10) || 10)),
                 sitemap: ui.sitemap.checked
             });
         });
@@ -2276,6 +2478,7 @@
                 var key = btn.dataset.cvToggle;
                 toggles[key] = !toggles[key];
                 syncToggle(btn);
+                if (key === 'linking') syncLegend();
                 if (key === 'phrases' && state) {
                     selected = null;
                     hideDetails();
@@ -2286,7 +2489,16 @@
             });
         });
 
-        ui.filter.addEventListener('change', function () { refreshFilter(); requestDraw(); });
+        ui.filter.addEventListener('change', function () {
+            // Le filtre « Maillage faible » n'a de sens qu'avec les couleurs du maillage.
+            if (ui.filter.value === 'weak' && !toggles.linking) {
+                toggles.linking = true;
+                document.querySelectorAll('[data-cv-toggle="linking"]').forEach(syncToggle);
+                syncLegend();
+            }
+            refreshFilter();
+            requestDraw();
+        });
         ui.limit.addEventListener('change', function () {
             relayout(0.3);
             scheduleFit();

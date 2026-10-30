@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Testeur Robots.txt"
+            "Testeur Robots.txt : URL Bloquée ou Non ?"
         ],
         [
             2,
@@ -57,24 +57,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Validateur Robots.txt"
-        ],
-        [
-            3,
-            "Générateur Robots.txt"
-        ],
-        [
-            3,
-            "Accès des Robots d'IA"
-        ],
-        [
             2,
             "Un Problème d'Exploration Plus Large ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

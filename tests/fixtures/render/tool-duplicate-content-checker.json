@@ -2,14 +2,18 @@
     "headings": [
         [
             1,
-            "Vérificateur de Contenu Dupliqué"
+            "Vérificateur de Contenu Dupliqué Gratuit"
         ],
         [
-            3,
+            2,
+            "Comparer toutes les pages de votre site"
+        ],
+        [
+            2,
             "Comment utiliser cet outil"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -45,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Canonical URL Checker"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Analyseur de Densité de Mots-clés"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

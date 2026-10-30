@@ -71,7 +71,6 @@ return [
     'text_160' => 'Experts en IA',
     'text_161' => 'Immobilier',
     'text_162' => 'Prise de rendez-vous en ligne',
-    'text_164' => '/mois',
     'text_165' => 'Revue du design',
     'text_166' => 'Secteur Mode & Luxe',
     'text_167' => 'Cliquez ici',

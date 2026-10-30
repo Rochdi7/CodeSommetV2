@@ -80,7 +80,6 @@ return [
     'text_166' => 'Livraison en 2-5 Jours',
     'text_167' => 'Experts en IA',
     'text_168' => 'Immobilier',
-    'text_169' => '/mois',
     'text_170' => 'Revue de design',
     'text_171' => 'Cliquez ici',
     'text_471' => '🇦🇪',

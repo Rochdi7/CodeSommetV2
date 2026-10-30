@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Validateur Robots.txt"
+            "Validateur Robots.txt Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Robots.txt Generator"
-        ],
-        [
-            3,
-            "Sitemap Validator"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

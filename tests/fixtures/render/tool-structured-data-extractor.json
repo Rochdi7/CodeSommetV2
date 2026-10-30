@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Extracteur de Données Structurées"
+            "Extracteur de Données Structurées JSON-LD"
         ],
         [
             2,
@@ -49,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Générateur de Schema"
-        ],
-        [
-            3,
-            "Générateur de Schema FAQ"
-        ],
-        [
-            3,
-            "Schema LocalBusiness"
-        ],
-        [
             2,
             "Besoin d'un Balisage Complet sur Tout le Site ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

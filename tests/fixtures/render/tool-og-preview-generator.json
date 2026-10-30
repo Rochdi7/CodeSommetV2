@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Générateur d'Aperçu Open Graph"
+            "Aperçu Open Graph : Testeur Image OG"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Meta Refresh Redirect Generator"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Analyseur de Densité de Mots-clés"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 62,
         "external": 5,
         "fragment": 1,
         "other": 0

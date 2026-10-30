@@ -2,18 +2,18 @@
     "headings": [
         [
             1,
-            "Générateur de Balises Hreflang"
+            "Générateur de Balises Hreflang Gratuit"
         ],
         [
-            3,
+            2,
             "Versions Linguistiques"
         ],
         [
-            3,
+            2,
             "Comment utiliser cet outil"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -49,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Aperçu Open Graph"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Analyseur de Densité de Mots-clés"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

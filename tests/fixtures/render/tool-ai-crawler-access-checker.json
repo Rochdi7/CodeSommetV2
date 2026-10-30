@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Accès des Robots d'IA"
+            "Accès des Robots d'IA : GPTBot, ClaudeBot"
         ],
         [
             2,
@@ -53,24 +53,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Testeur Robots.txt"
-        ],
-        [
-            3,
-            "Générateur Robots.txt"
-        ],
-        [
-            3,
-            "Vérificateur de Canonique"
-        ],
-        [
             2,
             "Une Stratégie de Visibilité dans les Réponses IA ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

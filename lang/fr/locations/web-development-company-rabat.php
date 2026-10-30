@@ -73,7 +73,6 @@ return [
     'text_160' => 'Site de réservation de voyages',
     'text_161' => 'Immobilier & PropTech',
     'text_162' => 'Délai adapté à la portée du projet',
-    'text_163' => '/mois',
     'text_164' => 'Revue du design',
     'text_165' => 'PDG de GlamWorlds',
     'text_166' => 'Cliquez ici',

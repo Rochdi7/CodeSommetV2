@@ -2,10 +2,14 @@
     "headings": [
         [
             1,
-            "Vérificateur de Liens Brisés"
+            "Vérificateur de Liens Brisés Gratuit"
         ],
         [
-            3,
+            2,
+            "Vérifier les liens de tout le site"
+        ],
+        [
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,32 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Nofollow Link Checker"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Image Alt Text Analyzer"
-        ],
-        [
-            3,
-            "Vérificateur d'URL Canonical"
-        ],
-        [
-            3,
-            "Analyseur de Liens Internes"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 54,
+        "internal": 62,
         "external": 5,
         "fragment": 1,
         "other": 0

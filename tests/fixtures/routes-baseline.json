@@ -319,6 +319,17 @@
     {
         "domain": null,
         "method": "GET|HEAD",
+        "uri": "admin/integrations",
+        "name": "admin.integrations.index",
+        "action": "App\\Http\\Controllers\\Admin\\IntegrationsController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
         "uri": "admin/login",
         "name": "admin.login",
         "action": "App\\Http\\Controllers\\Auth\\AdminLoginController@showLoginForm",
@@ -544,6 +555,17 @@
         "middleware": [
             "api",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-usage-read"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "api/v2/runs/{uuid}",
+        "name": "analysis-runs.show",
+        "action": "App\\Http\\Controllers\\AnalysisRunController@show",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:analysis-runs-read"
         ]
     },
     {
@@ -785,7 +807,27 @@
     {
         "domain": null,
         "method": "GET|HEAD|POST|PUT|PATCH|DELETE|OPTIONS",
+        "uri": "services",
+        "name": null,
+        "action": "Illuminate\\Routing\\RedirectController",
+        "middleware": [
+            "web"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD|POST|PUT|PATCH|DELETE|OPTIONS",
         "uri": "tools/backlink-checker",
+        "name": null,
+        "action": "Illuminate\\Routing\\RedirectController",
+        "middleware": [
+            "web"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD|POST|PUT|PATCH|DELETE|OPTIONS",
+        "uri": "web-development-company",
         "name": null,
         "action": "Illuminate\\Routing\\RedirectController",
         "middleware": [
@@ -1125,6 +1167,17 @@
     {
         "domain": null,
         "method": "POST",
+        "uri": "api/v2/tools/{slug}/runs",
+        "name": "analysis-runs.store",
+        "action": "App\\Http\\Controllers\\AnalysisRunController@store",
+        "middleware": [
+            "api",
+            "Illuminate\\Routing\\Middleware\\ThrottleRequests:tools-api"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
         "uri": "contact",
         "name": "contact.store",
         "action": "App\\Http\\Controllers\\ContactController@store",
@@ -1142,6 +1195,17 @@
         "middleware": [
             "web",
             "Illuminate\\Routing\\Middleware\\ThrottleRequests:newsletter"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "PUT",
+        "uri": "admin/integrations",
+        "name": "admin.integrations.update",
+        "action": "App\\Http\\Controllers\\Admin\\IntegrationsController@update",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
         ]
     },
     {

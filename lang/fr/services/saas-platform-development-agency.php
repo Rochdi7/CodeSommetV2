@@ -98,7 +98,6 @@ return [
     'text_186' => 'Étape 4',
     'text_187' => 'projet de site web ?',
     'text_188' => 'Analytique et suivi de conversion',
-    'text_189' => '/mois',
     'text_190' => 'REST complet + GraphQL',
     'text_191' => 'Cliquez ici',
     'text_491' => 'Abonnement',

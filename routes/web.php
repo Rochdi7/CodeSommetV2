@@ -69,6 +69,11 @@ Route::group([], function () {
         Route::view('/acceptable-use', 'frontoffice.pages.legal.acceptable-use')->name('acceptable-use');
     });
 
+    // Dossiers parents sans page propre (URL tronquée par un visiteur ou un
+    // robot) → hubs existants, au lieu d'un 404.
+    Route::permanentRedirect('/services', '/industries');
+    Route::permanentRedirect('/web-development-company', '/locations');
+
     // ─── Service / Industry Pages (SEO Landing Pages) ───────────────────────
     // Whitelist partagée avec le sitemap : voir config/pages.php
     $servicePages = config('pages.services');

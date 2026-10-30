@@ -130,7 +130,6 @@ return [
     'text_218' => 'Semaine 5-6',
     'text_219' => 'projet de site web ?',
     'text_220' => 'Analytique et suivi de conversion',
-    'text_221' => '/mois',
     'text_222' => 'Cliquez ici',
     'text_522' => 'Abonnement',
     'text_523' => '🇦🇪',

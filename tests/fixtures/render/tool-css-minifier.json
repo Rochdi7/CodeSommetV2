@@ -2,18 +2,18 @@
     "headings": [
         [
             1,
-            "Minificateur CSS"
+            "Minificateur CSS : Compression de Code Gratuite"
         ],
         [
-            3,
+            2,
             "Comment Fonctionne la Minification CSS"
         ],
         [
-            3,
+            2,
             "Bonnes Pratiques"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -49,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Color Palette Generator"
-        ],
-        [
-            3,
-            "QR Code Generator"
-        ],
-        [
-            3,
-            "HTML/CSS/JS Minifier"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

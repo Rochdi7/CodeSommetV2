@@ -106,7 +106,6 @@ return [
     'text_194' => 'Étape 4',
     'text_195' => 'projet de plateforme de télémédecine ?',
     'text_196' => 'Analytique et suivi de conversion',
-    'text_197' => '/mois',
     'text_198' => 'Cliquez ici',
     'text_398' => 'Zoom et Google Meet ne répondent pas aux exigences HIPAA pour les informations de santé protégées. Vous avez besoin de plateformes vidéo signées BAA avec stockage chiffré. Nous construisons des plateformes vidéo conformes HIPAA avec chiffrement de bout en bout, stockage sécurisé des données, journaux d\'audit et accords d\'associé commercial signés.',
     'text_698' => 'Abonnement',

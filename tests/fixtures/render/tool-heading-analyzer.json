@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Analyseur de Structure des Titres"
+            "Analyseur de Titres H1-H6 : Outil SEO"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Broken Link Checker"
-        ],
-        [
-            3,
-            "Image Alt Text Analyzer"
-        ],
-        [
-            3,
-            "Sitemap Validator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

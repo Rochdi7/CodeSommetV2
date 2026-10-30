@@ -2,14 +2,14 @@
     "headings": [
         [
             1,
-            "Convertisseur HTML en Texte Brut"
+            "Convertisseur HTML en Texte Brut Gratuit"
         ],
         [
-            3,
+            2,
             "Cas d'Utilisation"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -45,24 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Text Case Converter"
-        ],
-        [
-            3,
-            "Analyseur de Score de Lisibilité"
-        ],
-        [
-            3,
-            "Word & Character Counter"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 62,
         "external": 5,
         "fragment": 1,
         "other": 0

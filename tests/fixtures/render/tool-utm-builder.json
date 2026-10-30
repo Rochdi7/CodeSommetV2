@@ -2,35 +2,35 @@
     "headings": [
         [
             1,
-            "Constructeur de ParamÃ¨tres UTM"
+            "Générateur d'URL UTM Gratuit"
+        ],
+        [
+            2,
+            "Générateur d'URL de Campagne"
+        ],
+        [
+            2,
+            "Comment Utiliser les Paramètres UTM"
+        ],
+        [
+            2,
+            "Questions Fréquemment Posées"
         ],
         [
             3,
-            "GÃ©nÃ©rateur d'URL de Campagne"
+            "Que sont les paramètres UTM et pourquoi les utiliser ?"
         ],
         [
             3,
-            "Comment Utiliser les ParamÃ¨tres UTM"
+            "Quels paramètres UTM sont requis vs optionnels ?"
         ],
         [
             3,
-            "Questions FrÃ©quemment PosÃ©es"
+            "Quelles conventions de nommage suivre pour les paramètres UTM ?"
         ],
         [
             3,
-            "Que sont les paramÃ¨tres UTM et pourquoi les utiliser ?"
-        ],
-        [
-            3,
-            "Quels paramÃ¨tres UTM sont requis vs optionnels ?"
-        ],
-        [
-            3,
-            "Quelles conventions de nommage suivre pour les paramÃ¨tres UTM ?"
-        ],
-        [
-            3,
-            "Comment les paramÃ¨tres UTM fonctionnent-ils avec Google Analytics ?"
+            "Comment les paramètres UTM fonctionnent-ils avec Google Analytics ?"
         ],
         [
             3,
@@ -38,44 +38,27 @@
         ],
         [
             3,
-            "Quelles sont les erreurs courantes Ã Ã©viter avec les paramÃ¨tres UTM ?"
+            "Quelles sont les erreurs courantes à éviter avec les paramètres UTM ?"
         ],
         [
             3,
-            "Puis-je utiliser des paramÃ¨tres UTM pour le trafic non payant ?"
+            "Puis-je utiliser des paramètres UTM pour le trafic non payant ?"
         ],
         [
             2,
-            "Outils Connexes Qui Pourraient Vous IntÃ©resser"
-        ],
-        [
-            3,
-            "AperÃ§u Open Graph"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Analyseur de DensitÃ© de Mots-clÃ©s"
+            "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
             2,
-            "Besoin d'un Outil PersonnalisÃ© pour Votre Entreprise ?"
+            "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0
     },
     "fragment_ids": [],
-    "parser_errors": {
-        "Misplaced DOCTYPE declaration": 1,
-        "htmlParseStartTag: misplaced <body> tag": 1,
-        "htmlParseStartTag: misplaced <head> tag": 1,
-        "htmlParseStartTag: misplaced <html> tag": 1
-    }
+    "parser_errors": []
 }

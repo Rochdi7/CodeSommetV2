@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Compteur de Mots & Caractères"
+            "Compteur de Mots et de Caractères Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Analyseur de Score de Lisibilité"
-        ],
-        [
-            3,
-            "HTML to Plain Text Converter"
-        ],
-        [
-            3,
-            "Text Case Converter"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 62,
         "external": 5,
         "fragment": 1,
         "other": 0

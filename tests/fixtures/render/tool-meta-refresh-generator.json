@@ -2,22 +2,22 @@
     "headings": [
         [
             1,
-            "Générateur de Redirection Meta Refresh"
+            "Générateur de Balise Meta Refresh Gratuit"
         ],
         [
-            3,
+            2,
             "Configuration de Redirection"
         ],
         [
-            3,
+            2,
             "Avertissement Impact SEO"
         ],
         [
-            3,
+            2,
             "Quand Utiliser Meta Refresh"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -53,24 +53,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Aperçu Open Graph"
-        ],
-        [
-            3,
-            "XML Sitemap Generator"
-        ],
-        [
-            3,
-            "Robots.txt Generator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

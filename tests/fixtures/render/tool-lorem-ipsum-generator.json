@@ -2,22 +2,22 @@
     "headings": [
         [
             1,
-            "Générateur Lorem Ipsum"
+            "Générateur Lorem Ipsum Gratuit"
         ],
         [
-            3,
+            2,
             "Qu'est-ce que Lorem Ipsum ?"
         ],
         [
-            4,
+            3,
             "Cas d'Utilisation Courants :"
         ],
         [
-            4,
+            3,
             "Pourquoi Utiliser Lorem Ipsum ?"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -53,24 +53,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Analyseur de Score de Lisibilité"
-        ],
-        [
-            3,
-            "Word & Character Counter"
-        ],
-        [
-            3,
-            "HTML to Plain Text Converter"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

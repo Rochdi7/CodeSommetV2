@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Vérificateur d'En-têtes de Sécurité"
+            "Test des En-têtes de Sécurité HTTP (A à F)"
         ],
         [
             2,
@@ -49,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Vérificateur de Certificat SSL"
-        ],
-        [
-            3,
-            "Santé du Domaine"
-        ],
-        [
-            3,
-            "Site Prêt pour le Lancement ?"
-        ],
-        [
             2,
             "Besoin de Sécuriser Votre Infrastructure ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

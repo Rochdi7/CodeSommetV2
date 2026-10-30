@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Générateur de Texte de Page d'Atterrissage IA"
+            "Générateur de Landing Page IA Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "AI Blog Title Generator"
-        ],
-        [
-            3,
-            "AI Meta Tag Generator"
-        ],
-        [
-            3,
-            "AI Chatbot Script Generator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

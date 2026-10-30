@@ -106,7 +106,6 @@ return [
     'text_194' => 'Étape 4',
     'text_195' => 'projet de site web ?',
     'text_196' => 'Analytique et suivi de conversion',
-    'text_197' => '/mois',
     'text_198' => 'Cliquez ici',
     'text_398' => 'Un site vitrine standard ne suffit pas à rassurer un patient qui doit confier des informations de santé, même basiques, dans un formulaire de contact ou de rendez-vous. Il faut une présentation claire des médecins et spécialités, des mentions de confidentialité visibles et un formulaire de prise de rendez-vous qui inspire confiance dès le premier clic.',
     'text_698' => 'Abonnement',

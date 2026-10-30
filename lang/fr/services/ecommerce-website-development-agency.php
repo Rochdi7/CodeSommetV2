@@ -87,7 +87,6 @@ return [
     'text_175' => 'Tests, Analytique et Lancement',
     'text_176' => 'Étape 4',
     'text_177' => 'Analytique et suivi de conversion',
-    'text_178' => '/mois',
     'text_179' => 'Cliquez ici',
     'text_479' => 'Abonnement',
     'text_480' => '🇦🇪',
