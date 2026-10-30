@@ -2,7 +2,11 @@
     "headings": [
         [
             1,
-            "Analyseur de Score de Lisibilité"
+            "Analyseur de Lisibilité de Contenu Gratuit"
+        ],
+        [
+            2,
+            "Questions Fréquentes"
         ],
         [
             3,
@@ -29,30 +33,16 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Word & Character Counter"
-        ],
-        [
-            3,
-            "HTML to Plain Text Converter"
-        ],
-        [
-            3,
-            "Text Case Converter"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0
     },
     "fragment_ids": [],
-    "parser_errors": {
-        "Unexpected end tag : div": 3
-    }
+    "parser_errors": []
 }

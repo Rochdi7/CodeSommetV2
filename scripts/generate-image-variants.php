@@ -64,9 +64,14 @@ foreach ($jobs as $key => $job) {
             if (is_file($out) && filemtime($out) >= filemtime($src)) { $skipped++; continue; }
 
             $th = (int) round($h * $tw / $w);
-            $scaled = imagescale($img, $tw, $th, IMG_BICUBIC);
+            // imagescale(IMG_BICUBIC) smeared fully transparent pixels into ~4% grey,
+            // which showed as a box behind the benefits illustrations. Resample onto a
+            // transparent canvas instead.
+            $scaled = imagecreatetruecolor($tw, $th);
             imagealphablending($scaled, false);
             imagesavealpha($scaled, true);
+            imagefill($scaled, 0, 0, imagecolorallocatealpha($scaled, 0, 0, 0, 127));
+            imagecopyresampled($scaled, $img, 0, 0, 0, 0, $tw, $th, $w, $h);
             imagewebp($scaled, $out, 82);
             imagedestroy($scaled);
 

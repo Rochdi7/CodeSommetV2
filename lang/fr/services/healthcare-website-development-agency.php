@@ -112,7 +112,6 @@ return [
     'text_200' => 'Étape 3',
     'text_201' => 'Étape 4',
     'text_202' => 'Analytique et suivi de conversion',
-    'text_203' => '/mois',
     'text_204' => 'Cliquez ici',
     'text_504' => 'Abonnement',
     'text_505' => '🇦🇪',

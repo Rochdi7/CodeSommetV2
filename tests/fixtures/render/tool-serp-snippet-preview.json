@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Aperçu SERP Google"
+            "Aperçu SERP Google : Titre et Meta"
         ],
         [
             2,
@@ -45,24 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Générateur de Balises Meta"
-        ],
-        [
-            3,
-            "Aperçu Open Graph"
-        ],
-        [
-            3,
-            "Analyseur de Titres H1-H6"
-        ],
-        [
             2,
             "Besoin d'Optimiser Toutes Vos Pages ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

@@ -77,7 +77,7 @@
                         <select id="cv-max-pages"
                             class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none">
                             @foreach ([50, 100, 250, 500] as $n)
-                                <option value="{{ $n }}" @selected($n === 100)>{{ __('tools/crawl-visualizer.pages_option', ['n' => $n]) }}</option>
+                                <option value="{{ $n }}" @selected($n === 500)>{{ __('tools/crawl-visualizer.pages_option', ['n' => $n]) }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -86,7 +86,7 @@
                         <select id="cv-max-depth"
                             class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none">
                             @foreach ([1, 2, 3, 4, 5, 10] as $n)
-                                <option value="{{ $n }}" @selected($n === 4)>{{ __('tools/crawl-visualizer.depth_option', ['n' => $n]) }}</option>
+                                <option value="{{ $n }}" @selected($n === 10)>{{ __('tools/crawl-visualizer.depth_option', ['n' => $n]) }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -126,12 +126,13 @@
     </section>
 
     <section id="cv-results" class="hidden max-w-7xl mx-auto px-4 pb-12" aria-label="{{ __('tools/crawl-visualizer.h1') }}">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-6">
             @foreach ([
                 'pages' => ['stat_pages', 'text-black'],
                 'edges' => ['stat_edges', 'text-black'],
                 'orphans' => ['stat_orphans', 'text-violet-600'],
                 'depth' => ['stat_depth', 'text-black'],
+                'weak' => ['stat_weak', 'text-red-600'],
                 'nonindexable' => ['stat_nonindexable', 'text-red-600'],
                 'errors' => ['stat_errors', 'text-red-600'],
             ] as $key => [$label, $color])
@@ -200,6 +201,7 @@
                         <option value="redirect">{{ __('tools/crawl-visualizer.filter_redirect') }}</option>
                         <option value="error">{{ __('tools/crawl-visualizer.filter_error') }}</option>
                         <option value="orphan">{{ __('tools/crawl-visualizer.filter_orphan') }}</option>
+                        <option value="weak">{{ __('tools/crawl-visualizer.filter_weak') }}</option>
                     </select>
                     <select id="cv-limit" aria-label="Nœuds affichés"
                         class="h-10 px-3 rounded-lg bg-white border border-gray-200 text-sm text-black focus:border-[#00AEEF] focus:outline-none">
@@ -240,6 +242,7 @@
                         'labels' => ['toggle_labels', true, 'tree force 3d'],
                         'arrows' => ['toggle_arrows', false, 'tree force'],
                         'all-links' => ['toggle_all_links', false, 'force 3d'],
+                        'linking' => ['toggle_linking', false, 'tree force 3d'],
                         'rotate' => ['toggle_rotate', true, '3d'],
                         'phrases' => ['toggle_phrases', false, 'cloud'],
                     ] as $toggle => [$label, $on, $layouts])
@@ -249,8 +252,12 @@
                     @endforeach
                 </div>
                 <ul class="flex flex-wrap cv-legend text-xs text-gray-600" aria-label="Légende" data-cv-layouts="tree force 3d">
-                    <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--indexable"></span>{{ __('tools/crawl-visualizer.legend_indexable') }}</li>
-                    <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--nonindexable"></span>{{ __('tools/crawl-visualizer.legend_nonindexable') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-legend="index"><span class="cv-dot cv-dot--indexable"></span>{{ __('tools/crawl-visualizer.legend_indexable') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-legend="index"><span class="cv-dot cv-dot--nonindexable"></span>{{ __('tools/crawl-visualizer.legend_nonindexable') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-legend="linking" style="display:none"><span class="cv-dot cv-dot--link-weak"></span>{{ __('tools/crawl-visualizer.legend_link_weak') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-legend="linking" style="display:none"><span class="cv-dot cv-dot--link-medium"></span>{{ __('tools/crawl-visualizer.legend_link_medium') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-legend="linking" style="display:none"><span class="cv-dot cv-dot--link-strong"></span>{{ __('tools/crawl-visualizer.legend_link_strong') }}</li>
+                    <li class="flex items-center gap-1.5" data-cv-legend="linking" style="display:none"><span class="cv-dot cv-dot--link-ignored"></span>{{ __('tools/crawl-visualizer.legend_link_ignored') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--redirect"></span>{{ __('tools/crawl-visualizer.legend_redirect') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--blocked"></span>{{ __('tools/crawl-visualizer.legend_blocked') }}</li>
                     <li class="flex items-center gap-1.5"><span class="cv-dot cv-dot--collapsed"></span>{{ __('tools/crawl-visualizer.legend_collapsed') }}</li>

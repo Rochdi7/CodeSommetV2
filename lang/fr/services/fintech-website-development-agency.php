@@ -102,7 +102,6 @@ return [
     'text_190' => 'Étape 4',
     'text_191' => 'projet de site web ?',
     'text_192' => 'Analytique et suivi de conversion',
-    'text_193' => '/mois',
     'text_194' => 'FinTech et Services Financiers',
     'text_195' => 'FinTech et Services Financiers',
     'text_196' => 'FinTech et Services Financiers',

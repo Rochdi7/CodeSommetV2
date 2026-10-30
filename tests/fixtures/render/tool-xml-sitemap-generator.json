@@ -2,22 +2,26 @@
     "headings": [
         [
             1,
-            "Générateur de Sitemap XML"
+            "Générateur de Sitemap XML Gratuit"
         ],
         [
-            3,
+            2,
+            "Trouver les URL en explorant votre site"
+        ],
+        [
+            2,
             "Comment utiliser cet outil"
         ],
         [
-            3,
+            2,
             "Meilleures Pratiques pour les Sitemaps XML"
         ],
         [
-            3,
+            2,
             "Comprendre les Paramètres du Sitemap"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -53,24 +57,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Sitemap Validator"
-        ],
-        [
-            3,
-            "Robots.txt Generator"
-        ],
-        [
-            3,
-            "Robots.txt Validator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

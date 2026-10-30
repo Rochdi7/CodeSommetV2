@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Vérificateur Core Web Vitals"
+            "Test Core Web Vitals Gratuit : LCP, INP, CLS"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -42,7 +42,7 @@
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

@@ -126,7 +126,6 @@ return [
     'text_214' => 'Étape 4',
     'text_215' => 'projet de site web ?',
     'text_216' => 'Analytique et suivi de conversion',
-    'text_217' => '/mois',
     'text_218' => 'Plateformes de Cours en Ligne',
     'text_219' => 'Plateformes de Cours en Ligne',
     'text_220' => 'Plateformes de Cours en Ligne',

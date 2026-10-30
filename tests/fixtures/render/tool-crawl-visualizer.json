@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Visualiseur d'Exploration de Site"
+            "Visualiseur de Crawl : Carte des Liens Internes"
         ],
         [
             2,
@@ -45,24 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Analyseur de Liens Internes"
-        ],
-        [
-            3,
-            "Vérificateur de Liens Morts"
-        ],
-        [
-            3,
-            "Validateur de Sitemap"
-        ],
-        [
             2,
             "Besoin d'une Refonte de Votre Architecture de Site ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

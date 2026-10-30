@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Extracteur d'URL de Sitemap"
+            "Extracteur d'URL de Sitemap XML Gratuit"
         ],
         [
             2,
@@ -57,24 +57,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Validateur de Sitemap"
-        ],
-        [
-            3,
-            "Générateur de Sitemap XML"
-        ],
-        [
-            3,
-            "Visualiseur d'Exploration"
-        ],
-        [
             2,
             "Des Milliers de Pages à Mettre en Ordre ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

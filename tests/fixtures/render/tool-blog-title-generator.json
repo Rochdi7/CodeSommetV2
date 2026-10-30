@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Générateur de Titres de Blog IA"
+            "Générateur de Titres de Blog IA Gratuit"
         ],
         [
             2,
@@ -29,7 +29,7 @@
             "Bonnes Pratiques pour les Titres de Blog"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -65,24 +65,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "AI Meta Tag Generator"
-        ],
-        [
-            3,
-            "AI Landing Page Generator"
-        ],
-        [
-            3,
-            "AI Chatbot Script Generator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Analyseur de Site Web"
+            "Analyseur de Site Web : Audit SEO Gratuit"
         ],
         [
             2,
@@ -14,7 +14,7 @@
         ],
         [
             3,
-            "Enter URL & Instant Checks"
+            "Saisie de l'URL & vérifications instantanées"
         ],
         [
             3,
@@ -86,14 +86,14 @@
         ],
         [
             3,
-            "Prêt ? analyser votre site web ?"
+            "Prêt à analyser votre site web ?"
         ],
         [
             2,
             "Analyseur de site web vs audit SEO manuel"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -134,7 +134,7 @@
         ]
     ],
     "links": {
-        "internal": 55,
+        "internal": 63,
         "external": 5,
         "fragment": 1,
         "other": 0

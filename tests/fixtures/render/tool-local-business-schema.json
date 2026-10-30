@@ -2,14 +2,14 @@
     "headings": [
         [
             1,
-            "Générateur de Schéma d'Entreprise Locale"
+            "Générateur de Schéma LocalBusiness Gratuit"
         ],
         [
-            3,
+            2,
             "Optionnel (Recommandé pour un Meilleur SEO)"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -45,24 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Schema Markup Generator"
-        ],
-        [
-            3,
-            "Aperçu Open Graph"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

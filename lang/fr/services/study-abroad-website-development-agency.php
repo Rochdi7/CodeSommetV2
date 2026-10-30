@@ -117,7 +117,6 @@ return [
     'text_205' => 'Étape 4',
     'text_206' => 'projet de site web ?',
     'text_207' => 'Analytique et suivi de conversion',
-    'text_208' => '/mois',
     'text_209' => 'Cliquez ici',
     'text_409' => 'Wix et WordPress ne gèrent pas les parcours de candidature complexes, les exigences documentaires liées aux visas ni les processus propres à chaque pays dont ont besoin les agences d\'études à l\'étranger. Nous construisons des plateformes sur mesure avec formulaires de candidature en plusieurs étapes, téléchargement de documents et suivi de dossier.',
     'text_410' => 'Votre site ne se positionne pas sur les requêtes « étudier en [pays] ». Des concurrents mieux référencés captent l\'essentiel du trafic organique et vous dépendez de campagnes Google Ads coûteuses. Optimisation technique du SEO, pages d\'atterrissage par pays, données structurées et stratégie de contenu conçus pour se positionner sur les mots-clés études à l\'étranger.',

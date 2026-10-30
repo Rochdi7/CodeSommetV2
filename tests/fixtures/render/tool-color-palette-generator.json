@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Générateur de Palette de Couleurs"
+            "Générateur de Palette de Couleurs Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "QR Code Generator"
-        ],
-        [
-            3,
-            "CSS Minifier"
-        ],
-        [
-            3,
-            "AI Meta Tag Generator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

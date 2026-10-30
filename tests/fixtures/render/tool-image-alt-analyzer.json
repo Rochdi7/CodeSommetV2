@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Analyseur de Texte Alt d'Image"
+            "Analyseur de Texte Alt d'Image : SEO"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,28 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Broken Link Checker"
-        ],
-        [
-            3,
-            "Sitemap Validator"
-        ],
-        [
-            3,
-            "Analyseur de Compression d'Images"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

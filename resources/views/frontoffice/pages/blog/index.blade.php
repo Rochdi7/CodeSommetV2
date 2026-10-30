@@ -262,14 +262,20 @@
         @php $activeCategory = request('category', 'all'); @endphp
         <section class="py-8 bg-white border-b border-[var(--border-light)]">
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
-                <div class="flex flex-wrap justify-center gap-3">
+                {{-- Formulaire GET (boutons) plutôt que des <a href="?category=…"> :
+                     les robots ne soumettent pas les formulaires, donc les variantes
+                     filtrées (canonicalisées vers /blog) ne sont plus découvertes. --}}
+                <form method="GET" action="{{ route('blog') }}" class="flex flex-wrap justify-center gap-3">
+                    @if (request()->filled('search'))
+                        <input type="hidden" name="search" value="{{ request('search') }}">
+                    @endif
                     <a href="{{ route('blog', request()->only('search')) }}"
                         class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 {{ $activeCategory === 'all' ? 'bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]' : 'bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]' }}">Tous</a>
                     @foreach ($categories as $category)
-                        <a href="{{ route('blog', array_merge(request()->only('search'), ['category' => $category->slug])) }}"
-                            class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 {{ $activeCategory === $category->slug ? 'bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]' : 'bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]' }}">{{ $category->name }}</a>
+                        <button type="submit" name="category" value="{{ $category->slug }}"
+                            class="px-6 py-2.5 rounded-full font-medium transition-all duration-300 cursor-pointer {{ $activeCategory === $category->slug ? 'bg-[#00AEEF] text-white shadow-[0_4px_16px_rgba(0,174,239,0.25)]' : 'bg-white border border-gray-200 text-[var(--text-secondary)] hover:border-[#00AEEF]/30 hover:text-[#00AEEF]' }}">{{ $category->name }}</button>
                     @endforeach
-                </div>
+                </form>
             </div>
         </section>
     @endif

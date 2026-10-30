@@ -2218,15 +2218,14 @@
     <div class="w-full py-8 md:py-12 bg-[#F5F5F5]">
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <a href="{{ route('get-quote') }}"
-                class="promo-banner group relative block w-full overflow-hidden rounded-2xl"
-                style="aspect-ratio:21/9">
+                class="promo-banner promo-banner--wide group relative block w-full overflow-hidden rounded-2xl">
                 <img src="{{ asset('images/new-flyers/maintenance-site-web-securite-support-codesommet.webp') }}"
                     alt="Maintenance CodeSommet"
                     loading="lazy" decoding="async"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                 <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5"></div>
                 <div
-                    class="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
+                    class="promo-banner__label absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                     <span
                         class="inline-flex items-center gap-2 text-white text-sm md:text-base font-semibold tracking-wide uppercase">
                         Maintenance et support de site web

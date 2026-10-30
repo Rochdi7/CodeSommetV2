@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Analyseur de Vitesse de Page"
+            "Analyseur de Vitesse de Page Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "HTML/CSS/JS Minifier"
-        ],
-        [
-            3,
-            "Image Compression Analyzer"
-        ],
-        [
-            3,
-            "Analyseur de Densité de Mots-clés"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 55,
+        "internal": 63,
         "external": 5,
         "fragment": 1,
         "other": 0

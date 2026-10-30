@@ -74,7 +74,6 @@ return [
     'akoubri_badge' => 'Portfolio de cabinet d\'architecture',
     'text_160' => 'Immobilier & PropTech',
     'text_161' => 'Délai adapté à la portée du projet',
-    'text_162' => '/mois',
     'text_163' => 'Revue du design',
     'text_164' => 'PDG de GlamWorlds',
     'text_165' => 'Cliquez ici',

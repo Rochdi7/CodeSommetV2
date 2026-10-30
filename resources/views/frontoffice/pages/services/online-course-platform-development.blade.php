@@ -586,7 +586,7 @@
                     <div>
                         <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
                             <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
-                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
+                                <div class="svc-feat flex flex-col md:flex-row gap-0">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
                                             style="font-family:var(--font-heading)">
@@ -666,7 +666,7 @@
                     <div>
                         <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
                             <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
-                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse">
+                                <div class="svc-feat flex flex-col md:flex-row md:flex-row-reverse gap-0">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
                                             style="font-family:var(--font-heading)">
@@ -734,7 +734,7 @@
                     <div>
                         <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
                             <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
-                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row">
+                                <div class="svc-feat flex flex-col md:flex-row gap-0">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
                                             style="font-family:var(--font-heading)">
@@ -802,7 +802,7 @@
                     <div>
                         <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-2.5">
                             <div class="bg-[#F8F8F8] rounded-[20px] overflow-hidden relative">
-                                <div class="flex flex-col md:flex-row gap-0" style="flex-direction:row-reverse">
+                                <div class="svc-feat flex flex-col md:flex-row md:flex-row-reverse gap-0">
                                     <div class="flex-1 p-6 md:p-10 lg:p-12 relative overflow-hidden">
                                         <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#0F0F0F] relative z-10"
                                             style="font-family:var(--font-heading)">
@@ -1520,7 +1520,7 @@
                                         {{ __('services/online-course-platform-development-agency.ml_984') }}</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col sm:flex-row gap-3"><a
+                            <div class="svc-cta-row flex flex-col sm:flex-row gap-3"><a
                                     class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors"
                                     href="{{ route('get-quote') }}">{{ __('services/online-course-platform-development-agency.text_46') }}</a><a
                                     href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
@@ -1675,14 +1675,13 @@
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Obtenir
                                                 Votre Devis Gratuit</span><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Obtenir
-                                                Votre Devis Gratuit</span></div><span
-                                            class="text-black/50 text-xl mb-2">{{ __('services/online-course-platform-development-agency.text_217') }}</span>
+                                                Votre Devis Gratuit</span></div>
                                     </div>
                                     <p class="text-black/60 text-sm mt-2">
                                         {{ __('services/online-course-platform-development-agency.text_56') }}</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
+                            <div class="svc-cta-row flex flex-col sm:flex-row gap-3"><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
                                     data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
                                     class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">{{ __('services/online-course-platform-development-agency.ml_988') }}</button><a
                                     href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
@@ -2781,7 +2780,7 @@
                     <p class="text-base md:text-lg text-[#0F0F0F]/70 max-w-2xl mx-auto px-4">
                         {{ __('services/online-course-platform-development-agency.ml_1022') }}</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><div class="lx-card lx-v7 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><div class="svc-rel group card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2813,7 +2812,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v1 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
+                    </div><div class="svc-rel group card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2843,7 +2842,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v2 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
+                    </div><div class="svc-rel group card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2874,7 +2873,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v3 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
+                    </div><div class="svc-rel group card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2900,7 +2899,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v4 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
+                    </div><div class="svc-rel group card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div
@@ -2926,7 +2925,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v5 group bg-[#F8F8F8] rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-[#00AEEF]/20 card-link">
+                    </div><div class="svc-rel group card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                 <div

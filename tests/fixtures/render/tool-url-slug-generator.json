@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Générateur de Slug URL"
+            "Générateur de Slug d'URL SEO Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Analyseur de Densité de Mots-clés"
-        ],
-        [
-            3,
-            "Canonical URL Checker"
-        ],
-        [
-            3,
-            "Aperçu Open Graph"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

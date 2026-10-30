@@ -1052,7 +1052,7 @@
                                         {{ __('locations/web-development-company-toronto.ml_1115') }}</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col sm:flex-row gap-3"><a
+                            <div class="svc-cta-row flex flex-col sm:flex-row gap-3"><a
                                     class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-white text-black text-sm font-semibold hover:bg-white/90 transition-colors"
                                     href="{{ route('get-quote') }}">{{ __('locations/web-development-company-toronto.text_33') }}</a><a
                                     href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
@@ -1206,13 +1206,13 @@
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-full opacity-0 absolute top-0 left-0">Sur
                                                 Mesure</span><span
                                                 class="text-5xl md:text-6xl font-bold block transition-all duration-500 ease-in-out translate-y-0 opacity-100">Sur
-                                                Mesure</span></div><span class="text-black/50 text-xl mb-2">/mois</span>
+                                                Mesure</span></div>
                                     </div>
                                     <p class="text-black/60 text-sm mt-2">
                                         {{ __('locations/web-development-company-toronto.text_42') }}</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col sm:flex-row gap-3"><button
+                            <div class="svc-cta-row flex flex-col sm:flex-row gap-3"><button
                                     data-cal-link="code-sommet/new-client-meeting"
                                     data-cal-namespace="new-client-meeting"
                                     data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
@@ -1433,9 +1433,9 @@
                                         class="text-sm font-bold text-[#0F0F0F]">{{ __('locations/web-development-company-toronto.text_167') }}</span>
                                 </div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Premium/mois</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">Premium</span></div>
                                 <div class="p-3 md:p-4 text-center"><span
-                                        class="text-sm text-[#0F0F0F]/60">Premium/mois</span></div>
+                                        class="text-sm text-[#0F0F0F]/60">Premium</span></div>
                             </div>
                             <div
                                 class="grid grid-cols-4 border-b border-[#0F0F0F]/5 hover:bg-[#F8F8F8]/50 transition-colors bg-[#F8F8F8]/30">

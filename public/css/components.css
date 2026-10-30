@@ -3403,3 +3403,139 @@ a[aria-label="Home"]::after {
 
 /* Legal pages: label emphasis without <strong> (Seobility caps strong/b at ~30 per page). Mirrors the global b,strong rule. */
 :where(.tx-strong) { font-weight: var(--font-semibold); color: var(--text-primary); }
+
+/* Service feature cards (text + illustration): stack on mobile, alternate sides from md up. */
+@media (min-width: 768px) { .md\:flex-row-reverse { flex-direction: row-reverse; } }
+
+/* Home maintenance flyer (1915x821): 21/9 on desktop; on mobile a 3/2 centre crop keeps the
+   headline + mascot legible, and the hover label (which sticks on tap) is hidden. */
+.promo-banner--wide { aspect-ratio: 3 / 2; }
+.promo-banner--wide > img { object-position: 50% 50%; }
+.promo-banner--wide .promo-banner__label { display: none; }
+@media (min-width: 768px) {
+    .promo-banner--wide { aspect-ratio: 21 / 9; }
+    .promo-banner--wide .promo-banner__label { display: block; }
+}
+
+/* ---------------------------------------------------------------------------
+   Service & city pages: mobile polish (Oct 2026)
+   --------------------------------------------------------------------------- */
+
+/* Pricing CTA row: on mobile `flex-1` (basis 0) inside flex-col overrode h-11 and
+   collapsed the WhatsApp link to its text height. Full-width 48px buttons on mobile. */
+.svc-cta-row > * { flex: 0 0 auto; height: 3rem; }
+@media (min-width: 640px) { .svc-cta-row > * { flex: 1 1 0%; height: 2.75rem; } }
+.svc-wa-btn {
+    background: #fff;
+    color: #0F0F0F;
+    border: 1px solid rgba(15, 15, 15, .12);
+    box-shadow: 0 1px 2px rgba(15, 15, 15, .04);
+}
+.svc-wa-btn:hover { border-color: #25D366; background: rgba(37, 211, 102, .06); }
+.svc-wa-btn__icon { width: 1.125rem; height: 1.125rem; color: #25D366; flex-shrink: 0; }
+@media (max-width: 639.98px) {
+    /* "Obtenir Votre Devis Gratuit" headline: 48px wraps to 3 lines on a phone. */
+    div:has(> .svc-cta-row) .text-5xl { font-size: 2.25rem; line-height: 1.1; }
+}
+
+/* Related services ("Services Complémentaires"): one neutral card with a single
+   brand accent instead of the multi-colour .lx-card gradients. */
+.svc-rel {
+    position: relative;
+    background: #fff;
+    border: 1px solid rgba(15, 15, 15, .08);
+    border-radius: 1rem;
+    padding: 1rem 1.125rem;
+    transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.svc-rel::before {
+    content: "";
+    position: absolute;
+    left: -1px; top: 1rem; bottom: 1rem;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: #00AEEF;
+    transform: scaleY(0);
+    transition: transform .25s ease;
+}
+.svc-rel:hover {
+    border-color: rgba(0, 174, 239, .35);
+    box-shadow: 0 10px 30px -12px rgba(0, 113, 188, .25);
+    transform: translateY(-2px);
+}
+.svc-rel:hover::before { transform: scaleY(1); }
+.svc-rel .rounded-full.flex-shrink-0 { border-radius: .75rem; background: #F0FAFE; }
+.svc-rel:hover .rounded-full.flex-shrink-0 { background: #00AEEF; }
+.svc-rel .lucide-arrow-right {
+    box-sizing: content-box;
+    padding: .375rem;
+    border-radius: 9999px;
+    background: #F5F5F5;
+    color: rgba(15, 15, 15, .45);
+}
+.svc-rel:hover .lucide-arrow-right { background: #00AEEF; color: #fff; }
+.svc-rel .truncate { white-space: normal; overflow: visible; }
+@media (min-width: 768px) { .svc-rel { padding: 1.5rem; } }
+@media (prefers-reduced-motion: reduce) {
+    .svc-rel, .svc-rel::before { transition: none; }
+    .svc-rel:hover { transform: none; }
+}
+
+/* Feature cards (text + illustration): on mobile the illustration sits in an inset
+   white panel instead of a bare 280px strip, and the badge shrinks to fit. */
+@media (max-width: 767.98px) {
+    .svc-feat > div:first-child { padding: 1.5rem 1.25rem 1.25rem; }
+    .svc-feat > div:last-child {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+        margin: 0 .625rem .625rem;
+        background: #fff;
+        border-radius: 1rem;
+    }
+    .svc-feat > div:last-child > img { padding: 1rem; }
+    .svc-feat > div:last-child > .absolute.top-6.right-6 {
+        top: .75rem; right: auto; left: .75rem;
+        padding: .375rem .75rem;
+        font-size: .6875rem;
+        letter-spacing: .02em;
+    }
+}
+
+/* Portfolio -> case-study: drop the empty "view all" row under the grid
+   (section padding itself is handled by the global rhythm below). */
+#portfolio .grid.mb-10:has(+ .text-center:empty) { margin-bottom: 0; }
+@media (max-width: 767.98px) {
+    /* Case-study meta line: stack instead of wrapping with orphan "•" separators. */
+    #portfolio + section .text-center.mb-12 > .flex.flex-wrap { flex-direction: column; gap: .5rem; }
+    #portfolio + section .text-center.mb-12 > .flex.flex-wrap > span { display: none; }
+}
+
+/* ---------------------------------------------------------------------------
+   Global section rhythm (Oct 2026)
+   `py-24 md:py-32` (467 sections) gave 192px between sections on mobile and
+   256px on desktop, doubled again wherever two same-colour sections touch.
+   Heroes use pt-/pb- and are not affected.
+   --------------------------------------------------------------------------- */
+section.py-24 { padding-top: 4rem; padding-bottom: 4rem; }                          /* 96 -> 64 */
+@media (min-width: 768px)  { section.md\:py-32 { padding-top: 5rem; padding-bottom: 5rem; } } /* 128 -> 80 */
+@media (min-width: 1024px) { section.md\:py-32 { padding-top: 6rem; padding-bottom: 6rem; } } /* 128 -> 96 */
+
+/* Same background back-to-back: there is no visible seam, so the second section
+   only needs the first one's bottom padding. */
+section.bg-\[\#F5F5F5\] + section.bg-\[\#F5F5F5\][class*="py-"],
+section.bg-\[\#F8F8F8\] + section.bg-\[\#F8F8F8\][class*="py-"],
+section.bg-white + section.bg-white[class*="py-"] { padding-top: 0; }
+/* #F5F5F5 <-> #F8F8F8 differ by 3 levels: keep a faint seam, halve the top. */
+section.bg-\[\#F5F5F5\] + section.bg-\[\#F8F8F8\][class*="py-"],
+section.bg-\[\#F8F8F8\] + section.bg-\[\#F5F5F5\][class*="py-"] { padding-top: 2rem; }
+@media (min-width: 768px) {
+    section.bg-\[\#F5F5F5\] + section.bg-\[\#F8F8F8\][class*="py-"],
+    section.bg-\[\#F8F8F8\] + section.bg-\[\#F5F5F5\][class*="py-"] { padding-top: 3rem; }
+}
+
+@media (max-width: 767.98px) {
+    /* Section intro -> content: 64px is a desktop gap. */
+    section .text-center.mb-16 { margin-bottom: 2.5rem; }
+    /* Stacked feature / timeline cards. */
+    section .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 2rem; }
+}

@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Bot Viewer"
+            "Bot Viewer : Votre Page Vue par Googlebot"
         ],
         [
             2,
@@ -49,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Vérificateur de Redirections"
-        ],
-        [
-            3,
-            "Test Mobile"
-        ],
-        [
-            3,
-            "Accès des Robots d'IA"
-        ],
-        [
             2,
             "Un Pare-feu Qui Bloque les Moteurs ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

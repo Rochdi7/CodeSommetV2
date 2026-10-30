@@ -2,14 +2,14 @@
     "headings": [
         [
             1,
-            "Analyseur de Liens Internes"
+            "Analyseur de Liens Internes Gratuit"
         ],
         [
-            3,
+            2,
             "Comment Utiliser Cet Outil"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -45,20 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Nofollow Link Checker"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 62,
         "external": 5,
         "fragment": 1,
         "other": 0

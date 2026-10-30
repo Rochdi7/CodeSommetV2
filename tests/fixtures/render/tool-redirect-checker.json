@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Vérificateur de Redirections"
+            "Vérificateur de Redirections 301 et 302"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Broken Link Checker"
-        ],
-        [
-            3,
-            "Image Alt Text Analyzer"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 54,
+        "internal": 62,
         "external": 5,
         "fragment": 1,
         "other": 0

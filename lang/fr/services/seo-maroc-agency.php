@@ -87,7 +87,6 @@ return [
     'text_175' => 'Suivi, Mesure et Itération',
     'text_176' => 'Étape 4',
     'text_177' => 'Suivi des Positions et du Trafic',
-    'text_178' => '/mois',
     'text_179' => 'Cliquez ici',
     'text_479' => 'Accompagnement SEO Mensuel',
     'text_480' => '🇲🇦',

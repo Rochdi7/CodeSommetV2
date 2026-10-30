@@ -9,7 +9,7 @@
      filet —
        1. l'offre (chiffre, titre, avantages, compte à rebours, conditions) ;
        2. le type de projet : chaque choix ouvre le devis avec le type
-          présélectionné (?projectType=…, lu par get-quote.blade.php).
+          présélectionné (#projectType=…, lu par get-quote.blade.php).
      Empilé sous 768px ; bottom sheet sous 560px.
      Styles : public/css/components.css → « 1b. Offer pop-up ».
      Comportement : public/js/app.js → initPopup() / initCountdown(). --}}
@@ -128,8 +128,11 @@
 
                 <div class="promo-modal__slots">
                     @foreach ($promoProjects as $value => $label)
+                        {{-- Fragment (#projectType=…), pas de query string : les robots
+                             ignorent le fragment, donc un seul /get-quote indexable au lieu
+                             de 6 URL canonicalisées (non-indexables dans les crawls). --}}
                         <a class="promo-modal__slot"
-                            href="{{ route('get-quote', ['projectType' => $value]) }}">{{ $label }}</a>
+                            href="{{ route('get-quote') }}#projectType={{ rawurlencode($value) }}">{{ $label }}</a>
                     @endforeach
                 </div>
 

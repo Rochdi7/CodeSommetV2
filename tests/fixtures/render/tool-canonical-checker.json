@@ -2,14 +2,14 @@
     "headings": [
         [
             1,
-            "Vérificateur d'URL Canonical"
+            "Vérificateur de Balise Canonical Gratuit"
         ],
         [
-            3,
+            2,
             "Comment utiliser cet outil"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -45,24 +45,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Duplicate Content Checker"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
-            3,
-            "Broken Link Checker"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

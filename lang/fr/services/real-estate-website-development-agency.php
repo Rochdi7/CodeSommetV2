@@ -117,7 +117,6 @@ return [
     'text_205' => 'Étape 4',
     'text_206' => 'immobilier',
     'text_207' => 'Analytique et suivi de conversion',
-    'text_208' => '/mois',
     'text_209' => 'Immobilier',
     'text_210' => 'Immobilier',
     'text_211' => 'Immobilier',

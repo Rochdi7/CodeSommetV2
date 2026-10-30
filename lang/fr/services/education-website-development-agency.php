@@ -117,7 +117,6 @@ return [
     'text_205' => 'Lancement et Support',
     'text_206' => 'Étape 4',
     'text_207' => 'Analytique et suivi de conversion',
-    'text_208' => '/mois',
     'text_209' => 'Cliquez ici',
     'text_509' => 'Abonnement',
     'text_510' => '🇦🇪',

@@ -73,7 +73,6 @@ return [
     'text_160' => 'Site de voyages sur mesure avec demandes de devis en ligne',
     'text_161' => 'Immobilier & PropTech',
     'text_162' => '4 mois',
-    'text_163' => '/mois',
     'text_164' => 'Revue du design',
     'text_165' => 'PDG de GlamWorlds',
     'text_166' => 'Cliquez ici',

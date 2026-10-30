@@ -128,7 +128,6 @@ return [
     'text_216' => 'Lancement et Support',
     'text_217' => 'Étape 4',
     'text_218' => 'Analytique et suivi de conversion',
-    'text_219' => '/mois',
     'text_220' => 'Cliquez ici',
     'text_520' => 'Abonnement',
     'text_521' => '🇦🇪',

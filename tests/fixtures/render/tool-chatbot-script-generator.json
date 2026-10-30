@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Générateur de Script Chatbot IA"
+            "Générateur de Script Chatbot IA Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "AI Meta Tag Generator"
-        ],
-        [
-            3,
-            "AI Blog Title Generator"
-        ],
-        [
-            3,
-            "AI Landing Page Generator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 53,
+        "internal": 61,
         "external": 5,
         "fragment": 1,
         "other": 0

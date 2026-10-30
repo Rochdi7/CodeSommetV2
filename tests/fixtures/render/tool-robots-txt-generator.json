@@ -2,18 +2,18 @@
     "headings": [
         [
             1,
-            "Générateur Robots.txt"
+            "Générateur de Fichier Robots.txt Gratuit"
         ],
         [
-            3,
+            2,
             "Configurer le Robots.txt"
         ],
         [
-            3,
+            2,
             "Comment Utiliser Cet Outil"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -49,24 +49,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Robots.txt Validator"
-        ],
-        [
-            3,
-            "XML Sitemap Generator"
-        ],
-        [
-            3,
-            "Sitemap Validator"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0

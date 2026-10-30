@@ -2,10 +2,10 @@
     "headings": [
         [
             1,
-            "Vérificateur de Préparation du Site Web"
+            "Vérificateur de Préparation de Site Web Gratuit"
         ],
         [
-            3,
+            2,
             "Questions Fréquemment Posées"
         ],
         [
@@ -53,24 +53,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Domain Health Checker"
-        ],
-        [
-            3,
-            "Aperçu Open Graph"
-        ],
-        [
-            3,
-            "Analyseur de Structure des Titres"
-        ],
-        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 55,
+        "internal": 64,
         "external": 5,
         "fragment": 1,
         "other": 0

@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Extracteur de N-grammes"
+            "Extracteur de N-grammes : Mots Fréquents"
         ],
         [
             2,
@@ -41,24 +41,12 @@
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],
         [
-            3,
-            "Densité de Mots-clés"
-        ],
-        [
-            3,
-            "Analyseur de Lisibilité"
-        ],
-        [
-            3,
-            "Compteur de Mots"
-        ],
-        [
             2,
             "Besoin de Contenus Qui Se Classent ?"
         ]
     ],
     "links": {
-        "internal": 52,
+        "internal": 60,
         "external": 5,
         "fragment": 1,
         "other": 0
