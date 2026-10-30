@@ -168,7 +168,7 @@
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-tangier.sw_3061') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
@@ -398,7 +398,7 @@
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise approfondie dans les secteurs clés
                         de <!-- -->Tanger<!-- -->{{ __('locations/web-development-company-tangier.ml_1094') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
                         <div class="block h-full">
                             <div
@@ -806,7 +806,7 @@
                 </div>
                 <div class="grid lg:grid-cols-2 gap-8 mb-12">
                     <div
-                        class="lx-card lx-v2 bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
+                        class="cs-duo cs-duo--problem bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -824,7 +824,7 @@
                             {{ __('locations/web-development-company-tangier.text_367') }}</p>
                     </div>
                     <div
-                        class="lx-card lx-v4 bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
+                        class="cs-duo cs-duo--solution bg-white rounded-2xl p-8 border border-[#0F0F0F]/10 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 bg-[#00AEEF]/10 rounded-xl flex items-center justify-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1590,7 +1590,7 @@
                         <div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="0">
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v6 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1666,7 +1666,7 @@
                             </div>
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v1 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1745,7 +1745,7 @@
                             style="display: none;">
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v3 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1822,7 +1822,7 @@
                             </div>
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v5 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2104,7 +2104,7 @@
                     <p class="text-base md:text-lg text-[var(--text-secondary)] max-w-2xl mx-auto px-4">
                         {{ __('locations/web-development-company-tangier.text_376') }}</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><div class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"><div class="cs-plain group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 min-w-0">
                                 <div
@@ -2134,7 +2134,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 min-w-0">
                                 <div
@@ -2164,7 +2164,7 @@
                                 <path d="m12 5 7 7-7 7"></path>
                             </svg>
                         </div>
-                    </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                         <div class="flex items-start justify-between gap-2">
                             <div class="flex items-start gap-2 md:gap-3 min-w-0">
                                 <div
@@ -2214,7 +2214,7 @@
                     <p class="text-lg text-[var(--text-secondary)]">
                         {{ __('locations/web-development-company-tangier.ml_1152') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><div class="lx-card lx-v6 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                <div class="m-rail m-rail--sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -2244,7 +2244,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -2274,7 +2274,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#8B5CF615"><svg xmlns="http://www.w3.org/2000/svg"
@@ -2305,7 +2305,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#10B98115"><svg xmlns="http://www.w3.org/2000/svg"
@@ -2334,7 +2334,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#3B82F615"><svg xmlns="http://www.w3.org/2000/svg"

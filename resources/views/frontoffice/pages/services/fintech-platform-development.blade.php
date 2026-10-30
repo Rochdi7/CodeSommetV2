@@ -171,7 +171,7 @@
                         <!-- -->{{ __('services/fintech-platform-development-agency.text_180') }}<!-- -->.
                     </p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
                         <div class="relative group opacity-100 translate-y-0 transition-all duration-700 ease-out h-full">
                             <div
@@ -410,10 +410,10 @@
                             href="{{ route('service', 'fintech-website-development') }}"
                             class="text-[#00AEEF] font-semibold hover:underline">site vitrine pour société financière</a> ?</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
                         <div
-                            class="lx-card lx-v6 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            class="cs-issue h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                             <div
                                 class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -438,7 +438,7 @@
                     </div>
                     <div>
                         <div
-                            class="lx-card lx-v4 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            class="cs-issue h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                             <div
                                 class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -461,7 +461,7 @@
                     </div>
                     <div>
                         <div
-                            class="lx-card lx-v2 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            class="cs-issue h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                             <div
                                 class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -483,7 +483,7 @@
                     </div>
                     <div>
                         <div
-                            class="lx-card lx-v7 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            class="cs-issue h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                             <div
                                 class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -504,7 +504,7 @@
                     </div>
                     <div>
                         <div
-                            class="lx-card lx-v5 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            class="cs-issue h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                             <div
                                 class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -527,7 +527,7 @@
                     </div>
                     <div>
                         <div
-                            class="lx-card lx-v3 h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
+                            class="cs-issue h-full bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:border-[#00AEEF]/30 hover:shadow-lg transition-all duration-200">
                             <div
                                 class="w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center mb-3 md:mb-4 bg-[#F8F8F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -978,12 +978,12 @@
                 <div class="relative">
                     <div class="hidden md:block absolute left-1/2 top-0 w-1 bg-[#00AEEF]/30 transform -translate-x-1/2"
                         style="height:100%"></div>
-                    <div class="space-y-12 md:space-y-16">
+                    <div class="m-rail m-rail--steps space-y-12 md:space-y-16">
                         <div class="relative">
                             <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row">
                                 <div class="flex-1">
                                     <div
-                                        class="lx-card lx-v1 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        class="cs-step bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                         <div
                                             class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1077,7 +1077,7 @@
                             <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse">
                                 <div class="flex-1">
                                     <div
-                                        class="lx-card lx-v6 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        class="cs-step bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                         <div
                                             class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1185,7 +1185,7 @@
                             <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row">
                                 <div class="flex-1">
                                     <div
-                                        class="lx-card lx-v4 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        class="cs-step bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                         <div
                                             class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1279,7 +1279,7 @@
                             <div class="flex flex-col md:flex-row gap-6 md:gap-8" style="flex-direction:row-reverse">
                                 <div class="flex-1">
                                     <div
-                                        class="lx-card lx-v2 bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
+                                        class="cs-step bg-white rounded-xl p-5 md:p-8 border border-[#0F0F0F]/8 hover:shadow-lg transition-all duration-200">
                                         <div
                                             class="md:hidden w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 bg-[#00AEEF]">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1707,7 +1707,7 @@
                                     class="flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center whitespace-nowrap bg-black text-white text-sm font-semibold hover:bg-black/90 transition-colors">{{ __('services/fintech-platform-development-agency.ml_965') }}</button><a
                                     href="https://api.whatsapp.com/send?phone=212632582096&amp;text=Hi%20CodeSommet!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20development%20services."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="svc-wa-btn flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors"><svg class="svc-wa-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.896 9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.82 11.82 0 0 0 20.465 3.49"/></svg>Écrivez-nous sur WhatsApp</a></div>
+                                    class="svc-wa-btn flex-1 h-11 px-5 rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors"><svg class="svc-wa-btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.896 9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.82 11.82 0 0 0 20.465 3.49"/></svg>Écrivez-nous sur WhatsApp</a></div>
                         </div>
                     </div>
                 </div>
@@ -1994,7 +1994,7 @@
                         <div class="testimonial-slide grid grid-cols-1 lg:grid-cols-2 gap-8" data-slide="0">
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v7 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2070,7 +2070,7 @@
                             </div>
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v5 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2149,7 +2149,7 @@
                             style="display: none;">
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v3 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2226,7 +2226,7 @@
                             </div>
                             <div class="relative">
                                 <div
-                                    class="lx-card lx-v1 bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
+                                    class="cs-plain bg-white rounded-2xl p-8 border border-[#0F0F0F]/5 hover:border-[#00AEEF]/20 hover:shadow-xl transition-all duration-300 h-full">
                                     <div
                                         class="w-12 h-12 bg-[#00AEEF]/10 rounded-full flex items-center justify-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2560,8 +2560,8 @@
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/fintech-platform-development-agency.ml_1000') }}</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
-                    <div><div class="lx-card lx-v6 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
+                <div class="m-rail m-rail--2row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
+                    <div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2595,7 +2595,7 @@
                                 </svg>
                             </div>
                         </div></div>
-                    <div><div class="lx-card lx-v4 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
+                    <div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2629,7 +2629,7 @@
                                 </svg>
                             </div>
                         </div></div>
-                    <div><div class="lx-card lx-v2 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
+                    <div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2663,7 +2663,7 @@
                                 </svg>
                             </div>
                         </div></div>
-                    <div><div class="lx-card lx-v7 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
+                    <div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2697,7 +2697,7 @@
                                 </svg>
                             </div>
                         </div></div>
-                    <div><div class="lx-card lx-v5 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
+                    <div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -2731,7 +2731,7 @@
                                 </svg>
                             </div>
                         </div></div>
-                    <div><div class="lx-card lx-v3 group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
+                    <div><div class="cs-plain group bg-white rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 block card-link">
                             <div class="flex items-center justify-between gap-2">
                                 <div class="flex items-center gap-2 md:gap-3 min-w-0">
                                     <div
@@ -3005,7 +3005,7 @@
                     <p class="text-lg text-[var(--text-secondary)]">
                         {{ __('services/fintech-platform-development-agency.ml_1012') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><div class="lx-card lx-v3 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                <div class="m-rail m-rail--sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3035,7 +3035,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#00AEEF15"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3065,7 +3065,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#8B5CF615"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3096,7 +3096,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#10B98115"><svg xmlns="http://www.w3.org/2000/svg"
@@ -3125,7 +3125,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
+                    </div><div class="cs-plain group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-200 card-link">
                         <div class="flex flex-col h-full">
                             <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                                 style="background-color:#3B82F615"><svg xmlns="http://www.w3.org/2000/svg"
