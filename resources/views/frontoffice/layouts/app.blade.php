@@ -162,6 +162,7 @@
 
     {{-- JS principal --}}
     <script src="{{ asset_v('js/app.min.js') }}" defer></script>
+    <script src="{{ asset_v('js/rails.js') }}" defer></script>
     <script src="{{ asset_v('js/custom-select.min.js') }}" defer></script>
 
     {{-- Analytics interne (pages vues, clics sur chaque bouton, formulaires,

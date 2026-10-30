@@ -167,7 +167,7 @@
             </div>
             <div class="grid md:grid-cols-3 gap-6 mb-8">
                 @foreach ($t('related') as $i => $rel)
-                    <div class="lx-card lx-v{{ 3 + $i * 2 }} group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+                    <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
                         <div class="mb-4">
                             <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

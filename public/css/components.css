@@ -2484,6 +2484,7 @@ body.has-promo-bar .fab-stack {
 @media (max-width: 640px) {
     #pricing button[data-cal-link].h-11,
     #pricing a.h-11[href*="wa.me"],
+    #pricing a.h-11[href*="whatsapp"],
     #pricing a.h-11[href*="get-quote"] {
         flex: 0 0 44px;
         height: 44px;
@@ -3458,27 +3459,63 @@ a[aria-label="Home"]::after {
     transform: scaleY(0);
     transition: transform .25s ease;
 }
-.svc-rel:hover {
-    border-color: rgba(0, 174, 239, .35);
-    box-shadow: 0 10px 30px -12px rgba(0, 113, 188, .25);
-    transform: translateY(-2px);
-}
-.svc-rel:hover::before { transform: scaleY(1); }
+.svc-rel { -webkit-tap-highlight-color: transparent; }
 .svc-rel .rounded-full.flex-shrink-0 { border-radius: .75rem; background: #F0FAFE; }
-.svc-rel:hover .rounded-full.flex-shrink-0 { background: #00AEEF; }
 .svc-rel .lucide-arrow-right {
     box-sizing: content-box;
     padding: .375rem;
     border-radius: 9999px;
     background: #F5F5F5;
     color: rgba(15, 15, 15, .45);
+    transition: background-color .25s ease, color .25s ease, transform .25s ease;
 }
-.svc-rel:hover .lucide-arrow-right { background: #00AEEF; color: #fff; }
 .svc-rel .truncate { white-space: normal; overflow: visible; }
+/* Hover treatment only where a real pointer exists: on touch screens the
+   Tailwind group-hover tints stuck on whichever card was last tapped. */
+@media (hover: hover) {
+    .svc-rel:hover {
+        border-color: rgba(0, 174, 239, .35);
+        box-shadow: 0 10px 30px -12px rgba(0, 113, 188, .25);
+        transform: translateY(-2px);
+    }
+    .svc-rel:hover::before { transform: scaleY(1); }
+    .svc-rel:hover .rounded-full.flex-shrink-0 { background: #00AEEF; }
+    .svc-rel:hover .lucide-arrow-right { background: #00AEEF; color: #fff; }
+}
+@media (hover: none) {
+    .svc-rel.group:hover .rounded-full.flex-shrink-0 { background: #F0FAFE; }
+    .svc-rel.group:hover .rounded-full.flex-shrink-0 svg { color: #00AEEF; }
+    .svc-rel.group:hover .hd-3 { color: #0F0F0F; }
+    .svc-rel.group:hover .lucide-arrow-right { color: rgba(15, 15, 15, .45); transform: none; }
+    .svc-rel:active {
+        border-color: rgba(0, 174, 239, .35);
+        background: #F8FCFE;
+        transform: scale(.985);
+    }
+    .svc-rel:active::before { transform: scaleY(1); }
+    .svc-rel.group:active .lucide-arrow-right { background: #00AEEF; color: #fff; }
+}
+@media (max-width: 639.98px) {
+    /* Phone: icon / text / arrow aligned on one axis, full description
+       (the 2-line clamp cut most of them mid-sentence). */
+    .svc-rel { padding: 1rem; border-radius: 1.125rem; }
+    .svc-rel > .flex { align-items: center; gap: .75rem; }
+    .svc-rel > .flex > .flex { align-items: flex-start; gap: .875rem; }
+    .svc-rel .rounded-full.flex-shrink-0 { width: 2.5rem; height: 2.5rem; }
+    .svc-rel .hd-3 { font-size: 1rem; line-height: 1.35; }
+    .svc-rel .line-clamp-2 {
+        -webkit-line-clamp: unset;
+        display: block;
+        overflow: visible;
+        margin-top: .25rem;
+        line-height: 1.5;
+    }
+    .svc-rel .lucide-arrow-right { width: .875rem; height: .875rem; }
+}
 @media (min-width: 768px) { .svc-rel { padding: 1.5rem; } }
 @media (prefers-reduced-motion: reduce) {
-    .svc-rel, .svc-rel::before { transition: none; }
-    .svc-rel:hover { transform: none; }
+    .svc-rel, .svc-rel::before, .svc-rel .lucide-arrow-right { transition: none; }
+    .svc-rel:hover, .svc-rel:active { transform: none; }
 }
 
 /* Feature cards (text + illustration): on mobile the illustration sits in an inset
@@ -3538,4 +3575,166 @@ section.bg-\[\#F8F8F8\] + section.bg-\[\#F5F5F5\][class*="py-"] { padding-top: 2
     section .text-center.mb-16 { margin-bottom: 2.5rem; }
     /* Stacked feature / timeline cards. */
     section .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 2rem; }
+}
+
+/* CTA rows, round 2: refine the secondary (outline) button on light and dark cards,
+   and give every WhatsApp link the brand glyph (CSS mask, no markup needed). */
+.svc-cta-row > a.border-2 { border-width: 1px; }
+.svc-cta-row > a.border-black\/20 { border-color: rgba(15, 15, 15, .14); background: #fff; box-shadow: 0 1px 2px rgba(15, 15, 15, .04); }
+.svc-cta-row > a.border-black\/20:hover { border-color: rgba(15, 15, 15, .3); background: #FAFAFA; }
+.svc-cta-row > a.border-white\/20 { border-color: rgba(255, 255, 255, .22); background: rgba(255, 255, 255, .06); }
+.svc-cta-row > a.border-white\/20:hover { border-color: rgba(255, 255, 255, .4); background: rgba(255, 255, 255, .12); }
+.svc-cta-row > a[href*="whatsapp"]:not(.svc-wa-btn)::before {
+    content: "";
+    flex-shrink: 0;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: .5rem;
+    background: #25D366;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.896 9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.82 11.82 0 0 0 20.465 3.49'/%3E%3C/svg%3E") center / contain no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.896 9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.82 11.82 0 0 0 20.465 3.49'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.svc-cta-row > a[href*="whatsapp"].border-black\/20:hover { border-color: #25D366; background: rgba(37, 211, 102, .06); }
+.svc-cta-row > a[href*="whatsapp"].border-white\/20:hover { border-color: #25D366; background: rgba(37, 211, 102, .12); }
+
+/* ---------------------------------------------------------------------------
+   Mobile card rails (<768px). Stacked card grids become swipeable scroll-snap
+   rails; tablet/desktop keep their grids. Each section type gets its own feel:
+     .why-carousel / .m-rail--lg  peek rail, 84% cards (why-us, problems, industries)
+     .m-rail--sm                  compact rail, 70% cards (related tools)
+     .m-rail--2row                two-row rail for small cards (cities)
+     .m-rail--steps               method timeline, numbered stepper under it
+   Dots / stepper are injected by js/rails.js (.m-rail-dots).
+   --------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+    .why-carousel, .m-rail {
+        display: flex;
+        gap: .875rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: var(--container-padding);
+        /* bleed to the screen edges so cards slide under the gutter */
+        margin-inline: calc(-1 * var(--container-padding));
+        padding: .25rem var(--container-padding) 1rem;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+    .why-carousel::-webkit-scrollbar, .m-rail::-webkit-scrollbar { display: none; }
+    .why-carousel > *, .m-rail > * {
+        flex: 0 0 84%;
+        scroll-snap-align: start;
+        margin: 0 !important; /* space-y-* on the timeline */
+        /* the vertical scroll-reveal never fires for cards parked off-screen to the right */
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    .m-rail--sm > * { flex-basis: 70%; }
+    .m-rail--sm > * { height: auto; } /* h-full on the card blocked the flex stretch */
+
+    .m-rail--2row {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, auto);
+        grid-auto-columns: 72%;
+        gap: .625rem;
+        margin-bottom: 0;
+    }
+
+    .m-rail--steps > * { flex-basis: 86%; }
+    .m-rail--steps > * > .flex, .m-rail--steps > * > .flex > .flex-1, .m-rail--steps .cs-step { height: 100%; }
+
+    /* why-us + problems cards: tighter than the desktop card */
+    .why-carousel .lx-card > .p-8, .m-rail--lg .lx-card > .p-8 { padding: 1.5rem; min-height: 0; }
+    .why-carousel .lx-card .mb-6.flex-shrink-0, .m-rail--lg .lx-card .mb-6.flex-shrink-0 { margin-bottom: 1rem; }
+    .why-carousel .lx-card .w-14.h-14, .m-rail--lg .lx-card .w-14.h-14 { width: 3rem; height: 3rem; }
+    .why-carousel .lx-card h3, .m-rail--lg .lx-card h3 { font-size: 1.125rem; line-height: 1.35; }
+    /* empty decorative divider: 48px of nothing at the bottom of each card */
+    .why-carousel .lx-card .border-t.border-gray-50, .m-rail--lg .lx-card .border-t.border-gray-50 { margin-top: 1.25rem; padding-top: 0; }
+    /* industry image cards (h-72 = 288px art) */
+    .m-rail--lg .h-72 { height: 13rem; }
+
+    /* indicator */
+    .m-rail-dots { display: flex; justify-content: center; align-items: center; gap: .375rem; margin: .25rem 0 0; }
+    .m-rail-dots button {
+        width: .375rem; height: .375rem; padding: 0; border: 0; border-radius: 9999px;
+        background: rgba(15, 15, 15, .18);
+        transition: width .25s ease, background-color .25s ease;
+    }
+    .m-rail-dots button[aria-current="true"] { width: 1.25rem; background: #00AEEF; }
+
+    /* stepper: numbered steps joined by a track that fills as you swipe */
+    .m-rail-dots--steps { gap: 0; margin-top: .5rem; }
+    .m-rail-dots--steps button {
+        position: relative; width: 1.75rem; height: 1.75rem;
+        background: #fff; border: 1.5px solid rgba(15, 15, 15, .15);
+        color: rgba(15, 15, 15, .5); font: 600 .75rem/1 var(--font-body);
+        display: inline-flex; align-items: center; justify-content: center;
+    }
+    .m-rail-dots--steps button + button { margin-left: 2rem; }
+    .m-rail-dots--steps button + button::before {
+        content: ""; position: absolute; right: 100%; top: 50%;
+        width: calc(2rem + 1.5px); height: 2px; margin-right: 0; transform: translateY(-50%);
+        background: rgba(15, 15, 15, .12);
+    }
+    .m-rail-dots--steps button.is-done { border-color: #00AEEF; color: #00AEEF; }
+    .m-rail-dots--steps button.is-done::before,
+    .m-rail-dots--steps button[aria-current="true"]::before { background: #00AEEF; }
+    .m-rail-dots--steps button[aria-current="true"] { width: 1.75rem; background: #00AEEF; border-color: #00AEEF; color: #fff; }
+}
+@media (min-width: 768px) { .m-rail-dots { display: none; } }
+@media (prefers-reduced-motion: reduce) { .m-rail-dots button { transition: none; } }
+
+/* ---------------------------------------------------------------------------
+   Card families (Oct 2026 audit: 1,649 .lx-card gradients on 125 pages read as
+   copy-paste). The gradient now stays only where it is the signature: "Pourquoi
+   nous choisir" (52 pages) and the /industries showcase. Everything else:
+     .cs-plain  white, hairline border, quiet lift   (testimonials, cities,
+                related tools, tool grids, case-study chips)
+     .cs-issue  pain-point card: rose icon tile      (services "Défis courants")
+     .cs-step   method step: blue rail + numeral     (services timeline)
+     .cs-duo    challenge / solution pair            (city "Notre approche")
+   --------------------------------------------------------------------------- */
+.cs-plain, .cs-issue, .cs-step, .cs-duo {
+    position: relative;
+    background-color: #fff;
+    border-color: rgba(15, 15, 15, .08);
+    box-shadow: 0 1px 2px rgba(15, 15, 15, .03);
+    transition: transform .3s cubic-bezier(.22, 1, .36, 1), box-shadow .3s ease, border-color .3s ease;
+}
+.cs-plain:hover, .cs-step:hover, .cs-duo:hover {
+    border-color: rgba(0, 174, 239, .28);
+    box-shadow: 0 14px 32px -18px rgba(15, 15, 15, .22);
+}
+
+/* pain points */
+.cs-issue .rounded-lg.bg-\[\#F8F8F8\] { background: #FFF1F2; }
+.cs-issue .rounded-lg.bg-\[\#F8F8F8\] svg { color: #E11D48; }
+.cs-issue:hover { border-color: rgba(225, 29, 72, .25); box-shadow: 0 14px 32px -18px rgba(225, 29, 72, .25); }
+
+/* method steps: brand rail on the leading edge + big faint step number */
+.m-rail--steps { counter-reset: cs-step; }
+.cs-step { counter-increment: cs-step; overflow: hidden; box-shadow: inset 3px 0 0 #00AEEF, 0 1px 2px rgba(15, 15, 15, .03); }
+.cs-step:hover { box-shadow: inset 3px 0 0 #00AEEF, 0 14px 32px -18px rgba(15, 15, 15, .22); }
+.cs-step::after {
+    content: counter(cs-step, decimal-leading-zero);
+    position: absolute; top: .5rem; right: 1rem;
+    font: 700 4rem/1 var(--font-heading);
+    letter-spacing: -.04em;
+    color: rgba(0, 174, 239, .08);
+    pointer-events: none;
+}
+.cs-step > * { position: relative; z-index: 1; }
+
+/* challenge / solution */
+.cs-duo { overflow: hidden; }
+.cs-duo::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; }
+.cs-duo--problem::before { background: linear-gradient(90deg, #F43F5E, #FB923C); }
+.cs-duo--solution::before { background: linear-gradient(90deg, #00AEEF, #0071BC); }
+.cs-duo--problem { background: linear-gradient(180deg, #FFF8F8 0, #fff 7rem); }
+
+@media (prefers-reduced-motion: reduce) {
+    .cs-plain, .cs-issue, .cs-step, .cs-duo { transition: none; }
 }

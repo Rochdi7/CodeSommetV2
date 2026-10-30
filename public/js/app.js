@@ -296,6 +296,36 @@
         scheduleScrollAnimations();
     }
 
+    /* ── Fake cursor aiming (process cards) ───────────────────────────── */
+    // Arrow tip of the shared cursor SVG, in its 24×23 viewBox units
+    var CURSOR_TIP_X = 8.6, CURSOR_TIP_Y = 6.8;
+
+    // left/top that put the cursor's arrow tip on the center of `target`.
+    // offsetLeft/Top ignore CSS transforms, so the rotated cards stay exact.
+    function cursorPointAt(cursor, target, container) {
+        var x = target.offsetWidth / 2, y = target.offsetHeight / 2, el = target;
+        while (el && el !== container) { x += el.offsetLeft; y += el.offsetTop; el = el.offsetParent; }
+        // The cursor lives inside a space-y-* list, which gives it a margin-top
+        // that would push the arrow below the target
+        cursor.style.margin = '0';
+        var svg = cursor.querySelector('svg');
+        // Inline SVGs sit on the text baseline — pin to the box top
+        if (svg) svg.style.display = 'block';
+        var w = svg ? parseFloat(svg.getAttribute('width')) || 24 : 24;
+        var h = svg ? parseFloat(svg.getAttribute('height')) || 23 : 23;
+        return { x: x - CURSOR_TIP_X * w / 24, y: y - CURSOR_TIP_Y * h / 23 };
+    }
+
+    // Short press on the arrow (shrinks toward its tip) to sell the "click"
+    function cursorClick(cursor) {
+        var svg = cursor.querySelector('svg');
+        if (!svg) return;
+        svg.style.transformOrigin = (CURSOR_TIP_X / 24 * 100) + '% ' + (CURSOR_TIP_Y / 23 * 100) + '%';
+        svg.style.transition = 'transform 0.12s ease-out';
+        svg.style.transform = 'scale(0.8)';
+        setTimeout(function() { svg.style.transform = ''; }, 140);
+    }
+
     /* ── Process steps interactive cards ──────────────────────────────── */
     (function initProcessSteps() {
         var steps = document.querySelectorAll('.process-step');
@@ -393,7 +423,13 @@
             website.style.opacity = '0';
             if (planDetails) { planDetails.style.transition = 'none'; planDetails.style.opacity = '1'; }
             if (planDone) { planDone.style.transition = 'none'; planDone.style.opacity = '0'; planDone.classList.add('pointer-events-none'); }
-            if (planCursor) { planCursor.style.transition = 'none'; planCursor.style.opacity = '0'; planCursor.style.bottom = '60px'; planCursor.style.right = '80px'; }
+            // Cursor starts up-right of the button, then lands with its tip on the button center
+            var planTarget = planCursor && bookBtn ? cursorPointAt(planCursor, bookBtn, website) : null;
+            if (planCursor) {
+                planCursor.style.transition = 'none'; planCursor.style.opacity = '0';
+                planCursor.style.bottom = 'auto'; planCursor.style.right = 'auto';
+                if (planTarget) { planCursor.style.left = (planTarget.x + 40) + 'px'; planCursor.style.top = (planTarget.y - 18) + 'px'; }
+            }
             if (bookBtn) { bookBtn.style.background = '#fff'; }
 
             // 1. Cards entrance
@@ -410,16 +446,17 @@
 
             // 2. Show cursor moving toward "Book your Slot"
             checkTimers.push(setTimeout(function() {
-                if (planCursor) {
-                    planCursor.style.transition = 'opacity 0.4s, bottom 0.8s ease-in-out, right 0.8s ease-in-out';
+                if (planCursor && planTarget) {
+                    planCursor.style.transition = 'opacity 0.4s, left 0.8s ease-in-out, top 0.8s ease-in-out';
                     planCursor.style.opacity = '1';
-                    planCursor.style.bottom = '42px';
-                    planCursor.style.right = '120px';
+                    planCursor.style.left = planTarget.x + 'px';
+                    planCursor.style.top = planTarget.y + 'px';
                 }
             }, 2500));
 
             // 3. Cursor "clicks" — button highlights
             checkTimers.push(setTimeout(function() {
+                if (planCursor) { cursorClick(planCursor); }
                 if (bookBtn) { bookBtn.style.transition = 'background 0.15s'; bookBtn.style.background = '#e5e5e5'; }
             }, 3400));
             checkTimers.push(setTimeout(function() {
@@ -466,12 +503,12 @@
                     return { top: item.offsetTop, height: item.offsetHeight };
                 });
 
-                // Cursor position: center of the urgent item
-                var cursorX = 20;
-                var cursorStartY = urgentItem.offsetTop + urgentItem.offsetHeight / 2;
+                // Cursor position: tip on the urgent item's checkbox
+                var grab = cursorPointAt(cursor, urgentItem.querySelector('.flex-shrink-0') || urgentItem, listEl);
+                var cursorStartY = grab.y;
 
                 // 1. Show cursor at the urgent item
-                cursor.style.left = cursorX + 'px';
+                cursor.style.left = grab.x + 'px';
                 cursor.style.top = cursorStartY + 'px';
                 cursor.style.transition = 'left 0.5s ease-in-out, top 0.6s ease-in-out, opacity 0.3s';
                 cursor.style.opacity = '1';
@@ -541,20 +578,20 @@
             checkTimers.push(setTimeout(function() {
                 if (!listEl || !cursor || !items.length) return;
 
-                // Get positions: item.offsetTop relative to listEl + half item height
+                // Tip of the cursor on the center of each checkbox
                 var pos = [];
                 items.forEach(function(item) {
-                    pos.push({
-                        x: 20,
-                        y: item.offsetTop + item.offsetHeight / 2
-                    });
+                    pos.push(cursorPointAt(cursor, item.querySelector('.checklist-box') || item, listEl));
                 });
                 if (!pos.length) return;
 
-                // Show cursor at first item
+                // Glide in onto the first checkbox
+                cursor.style.left = (pos[0].x + 24) + 'px';
+                cursor.style.top = (pos[0].y + 18) + 'px';
+                void cursor.offsetWidth;
+                cursor.style.transition = 'left 0.4s ease-in-out, top 0.4s ease-in-out, opacity 0.3s';
                 cursor.style.left = pos[0].x + 'px';
                 cursor.style.top = pos[0].y + 'px';
-                cursor.style.transition = 'left 0.4s ease-in-out, top 0.4s ease-in-out, opacity 0.3s';
                 cursor.style.opacity = '1';
 
                 // Schedule: for each item, check it then move cursor to next
@@ -567,6 +604,7 @@
                             var check = item.querySelector('.checklist-check');
                             var text = item.querySelector('.checklist-text');
                             var box = item.querySelector('.checklist-box');
+                            cursorClick(cursor);
                             if (box) { box.classList.remove('border-gray-300'); box.classList.add('bg-[var(--color-primary-orange)]', 'border-[var(--color-primary-orange)]'); }
                             if (check) { check.style.transition = 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'; check.style.opacity = '1'; check.style.transform = 'scale(1)'; }
                             if (text) { text.classList.add('line-through', 'text-gray-400'); text.classList.remove('text-gray-700', 'font-medium'); }
@@ -653,7 +691,13 @@
             website.style.opacity = '0';
             if (details) { details.style.transition = 'none'; details.style.opacity = '1'; }
             if (done) { done.style.transition = 'none'; done.style.opacity = '0'; }
-            if (cursor) { cursor.style.transition = 'none'; cursor.style.opacity = '0'; cursor.style.bottom = '40px'; cursor.style.right = '40px'; }
+            // Cursor starts up-right of the button, then lands with its tip on the button center
+            var target = cursor && bookBtn ? cursorPointAt(cursor, bookBtn, website) : null;
+            if (cursor) {
+                cursor.style.transition = 'none'; cursor.style.opacity = '0';
+                cursor.style.bottom = 'auto'; cursor.style.right = 'auto';
+                if (target) { cursor.style.left = (target.x + 30) + 'px'; cursor.style.top = (target.y - 12) + 'px'; }
+            }
             if (bookBtn) { bookBtn.style.background = '#fff'; }
 
             // 1. Cards entrance
@@ -670,16 +714,17 @@
 
             // 2. Show cursor moving toward Book button
             timers.push(setTimeout(function() {
-                if (cursor) {
-                    cursor.style.transition = 'opacity 0.3s, bottom 0.6s ease-in-out, right 0.6s ease-in-out';
+                if (cursor && target) {
+                    cursor.style.transition = 'opacity 0.3s, left 0.6s ease-in-out, top 0.6s ease-in-out';
                     cursor.style.opacity = '1';
-                    cursor.style.bottom = '28px';
-                    cursor.style.right = '70px';
+                    cursor.style.left = target.x + 'px';
+                    cursor.style.top = target.y + 'px';
                 }
             }, 1800));
 
             // 3. Cursor clicks — button flash
             timers.push(setTimeout(function() {
+                if (cursor) { cursorClick(cursor); }
                 if (bookBtn) { bookBtn.style.transition = 'background 0.15s'; bookBtn.style.background = '#e5e5e5'; }
             }, 2500));
             timers.push(setTimeout(function() {
@@ -725,10 +770,11 @@
                 var itemRects = items.map(function(item) {
                     return { top: item.offsetTop, height: item.offsetHeight };
                 });
-                var cursorStartY = urgentItem.offsetTop + urgentItem.offsetHeight / 2;
+                var grab = cursorPointAt(cursor, urgentItem.querySelector('.flex-shrink-0') || urgentItem, listEl);
+                var cursorStartY = grab.y;
 
-                // Show cursor at urgent item
-                cursor.style.left = '15px';
+                // Show cursor at urgent item's checkbox
+                cursor.style.left = grab.x + 'px';
                 cursor.style.top = cursorStartY + 'px';
                 cursor.style.transition = 'left 0.4s ease-in-out, top 0.5s ease-in-out, opacity 0.3s';
                 cursor.style.opacity = '1';
@@ -797,16 +843,20 @@
             cursor.style.opacity = '0';
 
             timers.push(setTimeout(function() {
+                // Tip of the cursor on the center of each checkbox
                 var pos = [];
                 items.forEach(function(item) {
-                    pos.push({ x: 12, y: item.offsetTop + item.offsetHeight / 2 });
+                    pos.push(cursorPointAt(cursor, item.querySelector('.mob-check-box') || item, listEl));
                 });
                 if (!pos.length) return;
 
-                // Show cursor at first item
+                // Glide in onto the first checkbox
+                cursor.style.left = (pos[0].x + 20) + 'px';
+                cursor.style.top = (pos[0].y + 16) + 'px';
+                void cursor.offsetWidth;
+                cursor.style.transition = 'left 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s';
                 cursor.style.left = pos[0].x + 'px';
                 cursor.style.top = pos[0].y + 'px';
-                cursor.style.transition = 'left 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s';
                 cursor.style.opacity = '1';
 
                 var stepTime = 900;
@@ -818,6 +868,7 @@
                             var icon = item.querySelector('.mob-check-icon');
                             var text = item.querySelector('.mob-check-text');
                             var box = item.querySelector('.mob-check-box');
+                            cursorClick(cursor);
                             if (box) { box.style.transition = 'all 0.3s'; box.style.backgroundColor = 'var(--color-primary-orange)'; box.style.borderColor = 'var(--color-primary-orange)'; }
                             if (icon) { icon.style.transition = 'all 0.3s cubic-bezier(0.34,1.56,0.64,1)'; icon.style.opacity = '1'; icon.style.transform = 'scale(1)'; }
                             if (text) { text.classList.add('line-through', 'text-gray-400'); text.classList.remove('text-gray-700'); }

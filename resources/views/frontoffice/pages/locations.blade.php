@@ -82,7 +82,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(4<!-- --> <!-- -->villes<!-- -->)</span>
                         </h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -112,7 +112,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -142,7 +142,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -172,7 +172,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -202,7 +202,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -241,7 +241,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->3<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -271,7 +271,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -301,7 +301,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -339,7 +339,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(3<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -369,7 +369,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -400,7 +400,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -440,7 +440,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(5<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -470,7 +470,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -500,7 +500,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -530,7 +530,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -560,7 +560,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -598,7 +598,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->9<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -628,7 +628,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -658,7 +658,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -688,7 +688,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -718,7 +718,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -748,7 +748,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -778,7 +778,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -808,7 +808,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -839,7 +839,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -878,7 +878,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->8<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -909,7 +909,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -940,7 +940,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -971,7 +971,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v7 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1002,7 +1002,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v2 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1033,7 +1033,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v4 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1064,7 +1064,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v6 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1095,7 +1095,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v1 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1134,7 +1134,7 @@
                                 class="text-[#0F0F0F]/40 ml-2 text-lg font-normal">(<!-- -->2<!-- -->
                                 <!-- -->villes<!-- -->)</span></h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="lx-card lx-v3 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            style="opacity:0;transform:translateY(30px)" data-delay="1"><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div
@@ -1164,7 +1164,7 @@
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
                                 </div>
-                            </div><div class="lx-card lx-v5 group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
+                            </div><div class="cs-plain group bg-white rounded-2xl p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-link">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         <div

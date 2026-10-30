@@ -1490,7 +1490,7 @@
                         </div>
                     </div><div data-category="crawl" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1522,7 +1522,7 @@
                         </div>
                     </div><div data-category="audit" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1550,7 +1550,7 @@
                         </div>
                     </div><div data-category="crawl" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1578,7 +1578,7 @@
                         </div>
                     </div><div data-category="speed" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1606,7 +1606,7 @@
                         </div>
                     </div><div data-category="ai" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1634,7 +1634,7 @@
                         </div>
                     </div><div data-category="markup" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1662,7 +1662,7 @@
                         </div>
                     </div><div data-category="crawl" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1690,7 +1690,7 @@
                         </div>
                     </div><div data-category="crawl" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1718,7 +1718,7 @@
                         </div>
                     </div><div data-category="content" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
@@ -1759,7 +1759,7 @@
                         ['crawl-optimization-checker', 'crawl', '<circle cx="12" cy="5" r="3"></circle><circle cx="5" cy="19" r="3"></circle><circle cx="19" cy="19" r="3"></circle><path d="M10.5 7.5 6.5 16.5"></path><path d="m13.5 7.5 4 9"></path>'],
                     ] as [$cardSlug, $cardCategory, $cardIcon])<div data-category="{{ $cardCategory }}" class="card-link relative">
                         <div
-                            class="lx-card lx-v1 group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            class="cs-plain group h-full bg-white rounded-2xl p-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                             <div class="mb-4">
                                 <div
                                     class="inline-flex p-3 rounded-xl transition-colors bg-[#00AEEF]/10 group-hover:bg-[#00AEEF]">
