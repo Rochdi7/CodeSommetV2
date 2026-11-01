@@ -3562,6 +3562,9 @@ section.py-24 { padding-top: 4rem; padding-bottom: 4rem; }                      
 section.bg-\[\#F5F5F5\] + section.bg-\[\#F5F5F5\][class*="py-"],
 section.bg-\[\#F8F8F8\] + section.bg-\[\#F8F8F8\][class*="py-"],
 section.bg-white + section.bg-white[class*="py-"] { padding-top: 0; }
+/* Home: the final CTA wrapper is a <div>, so the rule above misses it after the FAQ
+   (same #F5F5F5). Without this the gap is FAQ bottom + CTA top (~176px). */
+#faq + #home-final-cta { padding-top: 0; }
 /* #F5F5F5 <-> #F8F8F8 differ by 3 levels: keep a faint seam, halve the top. */
 section.bg-\[\#F5F5F5\] + section.bg-\[\#F8F8F8\][class*="py-"],
 section.bg-\[\#F8F8F8\] + section.bg-\[\#F5F5F5\][class*="py-"] { padding-top: 2rem; }

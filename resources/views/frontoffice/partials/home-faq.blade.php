@@ -10,7 +10,7 @@
         <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
             <div class="text-center mb-16">
                 <span class="inline-block px-4 py-1.5 bg-[#F59E0B]/10 text-[#F59E0B] text-xs font-semibold uppercase tracking-wider rounded-full mb-4">FAQ</span>
-                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4" style="font-family:var(--font-heading)">{{ __('home.faq_title') }}</h2>
+                <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 text-3xl md:text-4xl lg:text-5xl" style="font-family:var(--font-heading)">{{ __('home.faq_title') }}</h2>
                 <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('home.faq_intro') }}</p>
             </div>
             <div class="max-w-3xl mx-auto space-y-3">
