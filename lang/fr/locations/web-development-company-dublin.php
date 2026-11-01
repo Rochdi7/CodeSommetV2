@@ -189,4 +189,7 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les entreprises de Dublin ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_67bfdcaa' => 'Découvrez pourquoi les entreprises de Dublin choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_84701349' => 'Expertise approfondie dans les secteurs clés de Dublin. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_64a580ee' => 'Nos secteurs de spécialisation à Dublin',
 ];

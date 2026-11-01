@@ -25,7 +25,7 @@ return [
     'text_14' => 'Nos réalisations à',
     'text_15' => 'Histoires de réussite à',
     'text_16' => 'Éducation',
-    'text_17' => 'Plateforme d\x27inscription en ligne',
+    'text_17' => 'Plateforme d\'inscription en ligne',
     'text_18' => 'Santé',
     'text_19' => 'Tourisme',
     'text_20' => 'Réservation de circuits en ligne',
@@ -206,4 +206,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement à Toronto ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_8c04a19f' => 'Découvrez pourquoi les entreprises de Toronto choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_2920c1ca' => 'CodeSommet Toronto vs Autres',
+    'seo_fix_40b9509f' => 'Une expertise approfondie dans les secteurs clés de Toronto. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
+    'seo_fix_3eba56b4' => 'Nos secteurs de spécialisation à Toronto',
+    'seo_fix_1dae7b24' => 'Pourquoi Choisir CodeSommet à Toronto ?',
 ];

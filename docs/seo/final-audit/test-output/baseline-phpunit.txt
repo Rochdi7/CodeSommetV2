@@ -1,0 +1,934 @@
+PHPUnit 11.5.55 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.2.12
+Configuration: C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\phpunit.xml
+
+............................................................[41;37mF[0m[41;37mF[0m[41;37mF[0m  63 / 192 ( 32%)
+[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m 126 / 192 ( 65%)
+[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m[41;37mF[0m........................... 189 / 192 ( 98%)
+...                                                             192 / 192 (100%)
+
+Time: 00:44.347, Memory: 36.00 MB
+
+There were 102 failures:
+
+1) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:worldwide" ('/web-development-company/worldwide', 'city-worldwide', 'city')
+/web-development-company/worldwide: normalized DOM differs from fixture city-worldwide.html.
+First difference at line 857:
+  expected:     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
+  actual:       <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
+(863 vs 864 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+2) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:casablanca" ('/web-development-company/casablanca', 'city-casablanca', 'city')
+/web-development-company/casablanca: normalized DOM differs from fixture city-casablanca.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2607 vs 2608 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+3) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:marrakech" ('/web-development-company/marrakech', 'city-marrakech', 'city')
+/web-development-company/marrakech: normalized DOM differs from fixture city-marrakech.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2624 vs 2625 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+4) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:rabat" ('/web-development-company/rabat', 'city-rabat', 'city')
+/web-development-company/rabat: normalized DOM differs from fixture city-rabat.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2601 vs 2602 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+5) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:tangier" ('/web-development-company/tangier', 'city-tangier', 'city')
+/web-development-company/tangier: normalized DOM differs from fixture city-tangier.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2584 vs 2583 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+6) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:agadir" ('/web-development-company/agadir', 'city-agadir', 'city')
+/web-development-company/agadir: normalized DOM differs from fixture city-agadir.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2570 vs 2571 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+7) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:dubai" ('/web-development-company/dubai', 'city-dubai', 'city')
+/web-development-company/dubai: normalized DOM differs from fixture city-dubai.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2584 vs 2585 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+8) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:abudhabi" ('/web-development-company/abudhabi', 'city-abudhabi', 'city')
+/web-development-company/abudhabi: normalized DOM differs from fixture city-abudhabi.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2588 vs 2589 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+9) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:riyadh" ('/web-development-company/riyadh', 'city-riyadh', 'city')
+/web-development-company/riyadh: normalized DOM differs from fixture city-riyadh.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2571 vs 2570 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+10) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:london" ('/web-development-company/london', 'city-london', 'city')
+/web-development-company/london: normalized DOM differs from fixture city-london.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2648 vs 2649 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+11) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:amsterdam" ('/web-development-company/amsterdam', 'city-amsterdam', 'city')
+/web-development-company/amsterdam: normalized DOM differs from fixture city-amsterdam.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2647 vs 2648 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+12) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:berlin" ('/web-development-company/berlin', 'city-berlin', 'city')
+/web-development-company/berlin: normalized DOM differs from fixture city-berlin.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2648 vs 2649 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+13) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:paris" ('/web-development-company/paris', 'city-paris', 'city')
+/web-development-company/paris: normalized DOM differs from fixture city-paris.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2638 vs 2639 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+14) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:copenhagen" ('/web-development-company/copenhagen', 'city-copenhagen', 'city')
+/web-development-company/copenhagen: normalized DOM differs from fixture city-copenhagen.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2650 vs 2651 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+15) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:dublin" ('/web-development-company/dublin', 'city-dublin', 'city')
+/web-development-company/dublin: normalized DOM differs from fixture city-dublin.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2639 vs 2640 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+16) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:brussels" ('/web-development-company/brussels', 'city-brussels', 'city')
+/web-development-company/brussels: normalized DOM differs from fixture city-brussels.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2647 vs 2648 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+17) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:zurich" ('/web-development-company/zurich', 'city-zurich', 'city')
+/web-development-company/zurich: normalized DOM differs from fixture city-zurich.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2623 vs 2622 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+18) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:stockholm" ('/web-development-company/stockholm', 'city-stockholm', 'city')
+/web-development-company/stockholm: normalized DOM differs from fixture city-stockholm.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2620 vs 2619 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+19) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:madrid" ('/web-development-company/madrid', 'city-madrid', 'city')
+/web-development-company/madrid: normalized DOM differs from fixture city-madrid.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2614 vs 2615 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+20) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:barcelona" ('/web-development-company/barcelona', 'city-barcelona', 'city')
+/web-development-company/barcelona: normalized DOM differs from fixture city-barcelona.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2623 vs 2624 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+21) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:lisbon" ('/web-development-company/lisbon', 'city-lisbon', 'city')
+/web-development-company/lisbon: normalized DOM differs from fixture city-lisbon.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2631 vs 2632 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+22) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:rome" ('/web-development-company/rome', 'city-rome', 'city')
+/web-development-company/rome: normalized DOM differs from fixture city-rome.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2599 vs 2598 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+23) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:milan" ('/web-development-company/milan', 'city-milan', 'city')
+/web-development-company/milan: normalized DOM differs from fixture city-milan.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2614 vs 2615 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+24) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:new-york" ('/web-development-company/new-york', 'city-new-york', 'city')
+/web-development-company/new-york: normalized DOM differs from fixture city-new-york.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2650 vs 2651 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+25) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:san-francisco" ('/web-development-company/san-francisco', 'city-san-francisco', 'city')
+/web-development-company/san-francisco: normalized DOM differs from fixture city-san-francisco.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2634 vs 2633 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+26) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:los-angeles" ('/web-development-company/los-angeles', 'city-los-angeles', 'city')
+/web-development-company/los-angeles: normalized DOM differs from fixture city-los-angeles.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2645 vs 2646 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+27) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:austin" ('/web-development-company/austin', 'city-austin', 'city')
+/web-development-company/austin: normalized DOM differs from fixture city-austin.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2654 vs 2655 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+28) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:seattle" ('/web-development-company/seattle', 'city-seattle', 'city')
+/web-development-company/seattle: normalized DOM differs from fixture city-seattle.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2636 vs 2635 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+29) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:boston" ('/web-development-company/boston', 'city-boston', 'city')
+/web-development-company/boston: normalized DOM differs from fixture city-boston.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2658 vs 2659 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+30) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:chicago" ('/web-development-company/chicago', 'city-chicago', 'city')
+/web-development-company/chicago: normalized DOM differs from fixture city-chicago.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2659 vs 2660 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+31) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:denver" ('/web-development-company/denver', 'city-denver', 'city')
+/web-development-company/denver: normalized DOM differs from fixture city-denver.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2659 vs 2660 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+32) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:toronto" ('/web-development-company/toronto', 'city-toronto', 'city')
+/web-development-company/toronto: normalized DOM differs from fixture city-toronto.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2629 vs 2628 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+33) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:vancouver" ('/web-development-company/vancouver', 'city-vancouver', 'city')
+/web-development-company/vancouver: normalized DOM differs from fixture city-vancouver.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2627 vs 2626 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+34) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:tunis" ('/web-development-company/tunis', 'city-tunis', 'city')
+/web-development-company/tunis: normalized DOM differs from fixture city-tunis.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2568 vs 2567 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+35) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:cairo" ('/web-development-company/cairo', 'city-cairo', 'city')
+/web-development-company/cairo: normalized DOM differs from fixture city-cairo.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2593 vs 2594 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+36) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:lagos" ('/web-development-company/lagos', 'city-lagos', 'city')
+/web-development-company/lagos: normalized DOM differs from fixture city-lagos.html.
+First difference at line 287:
+  expected:             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  actual:               <div class="why-carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+(2584 vs 2585 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+37) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ai-crawler-access-checker" ('/tools/ai-crawler-access-checker', 'tool-ai-crawler-access-checker', 'tool')
+/tools/ai-crawler-access-checker: normalized DOM differs from fixture tool-ai-crawler-access-checker.html.
+First difference at line 433:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1105 vs 1106 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+38) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ai-readiness-checker" ('/tools/ai-readiness-checker', 'tool-ai-readiness-checker', 'tool')
+/tools/ai-readiness-checker: normalized DOM differs from fixture tool-ai-readiness-checker.html.
+First difference at line 384:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1056 vs 1057 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+39) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:base64-encoder" ('/tools/base64-encoder', 'tool-base64-encoder', 'tool')
+/tools/base64-encoder: normalized DOM differs from fixture tool-base64-encoder.html.
+First difference at line 406:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1079 vs 1080 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+40) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:blog-title-generator" ('/tools/blog-title-generator', 'tool-blog-title-generator', 'tool')
+/tools/blog-title-generator: normalized DOM differs from fixture tool-blog-title-generator.html.
+First difference at line 416:
+  expected:             <div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1095 vs 1096 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+41) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:bot-viewer" ('/tools/bot-viewer', 'tool-bot-viewer', 'tool')
+/tools/bot-viewer: normalized DOM differs from fixture tool-bot-viewer.html.
+First difference at line 404:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1076 vs 1077 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+42) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:broken-link-checker" ('/tools/broken-link-checker', 'tool-broken-link-checker', 'tool')
+/tools/broken-link-checker: normalized DOM differs from fixture tool-broken-link-checker.html.
+First difference at line 365:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1086 vs 1087 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+43) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:canonical-checker" ('/tools/canonical-checker', 'tool-canonical-checker', 'tool')
+/tools/canonical-checker: normalized DOM differs from fixture tool-canonical-checker.html.
+First difference at line 366:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1058 vs 1059 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+44) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:chatbot-script-generator" ('/tools/chatbot-script-generator', 'tool-chatbot-script-generator', 'tool')
+/tools/chatbot-script-generator: normalized DOM differs from fixture tool-chatbot-script-generator.html.
+First difference at line 408:
+  expected:             <div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1089 vs 1090 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+45) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:color-palette-generator" ('/tools/color-palette-generator', 'tool-color-palette-generator', 'tool')
+/tools/color-palette-generator: normalized DOM differs from fixture tool-color-palette-generator.html.
+First difference at line 359:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1041 vs 1042 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+46) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:core-web-vitals-checker" ('/tools/core-web-vitals-checker', 'tool-core-web-vitals-checker', 'tool')
+/tools/core-web-vitals-checker: normalized DOM differs from fixture tool-core-web-vitals-checker.html.
+First difference at line 950:
+  expected:     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
+  actual:       <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
+(958 vs 959 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+47) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:crawl-optimization-checker" ('/tools/crawl-optimization-checker', 'tool-crawl-optimization-checker', 'tool')
+/tools/crawl-optimization-checker: normalized DOM differs from fixture tool-crawl-optimization-checker.html.
+First difference at line 397:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1069 vs 1070 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+48) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:crawl-visualizer" ('/tools/crawl-visualizer', 'tool-crawl-visualizer', 'tool')
+/tools/crawl-visualizer: normalized DOM differs from fixture tool-crawl-visualizer.html.
+First difference at line 684:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1355 vs 1356 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+49) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:css-minifier" ('/tools/css-minifier', 'tool-css-minifier', 'tool')
+/tools/css-minifier: normalized DOM differs from fixture tool-css-minifier.html.
+First difference at line 414:
+  expected:             <div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1096 vs 1097 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+50) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-authority-checker" ('/tools/domain-authority-checker', 'tool-domain-authority-checker', 'tool')
+/tools/domain-authority-checker: normalized DOM differs from fixture tool-domain-authority-checker.html.
+First difference at line 371:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1043 vs 1044 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+51) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-extractor" ('/tools/domain-extractor', 'tool-domain-extractor', 'tool')
+/tools/domain-extractor: normalized DOM differs from fixture tool-domain-extractor.html.
+First difference at line 383:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1055 vs 1056 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+52) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-health-checker" ('/tools/domain-health-checker', 'tool-domain-health-checker', 'tool')
+/tools/domain-health-checker: normalized DOM differs from fixture tool-domain-health-checker.html.
+First difference at line 384:
+  expected:             <div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1054 vs 1055 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+53) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:duplicate-content-checker" ('/tools/duplicate-content-checker', 'tool-duplicate-content-checker', 'tool')
+/tools/duplicate-content-checker: normalized DOM differs from fixture tool-duplicate-content-checker.html.
+First difference at line 404:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1102 vs 1103 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+54) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:eeat-signals-checker" ('/tools/eeat-signals-checker', 'tool-eeat-signals-checker', 'tool')
+/tools/eeat-signals-checker: normalized DOM differs from fixture tool-eeat-signals-checker.html.
+First difference at line 380:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1052 vs 1053 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+55) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:expired-domain-checker" ('/tools/expired-domain-checker', 'tool-expired-domain-checker', 'tool')
+/tools/expired-domain-checker: normalized DOM differs from fixture tool-expired-domain-checker.html.
+First difference at line 375:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1047 vs 1048 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+56) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:faq-schema-generator" ('/tools/faq-schema-generator', 'tool-faq-schema-generator', 'tool')
+/tools/faq-schema-generator: normalized DOM differs from fixture tool-faq-schema-generator.html.
+First difference at line 381:
+  expected:             <div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1075 vs 1076 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+57) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:heading-analyzer" ('/tools/heading-analyzer', 'tool-heading-analyzer', 'tool')
+/tools/heading-analyzer: normalized DOM differs from fixture tool-heading-analyzer.html.
+First difference at line 348:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1019 vs 1020 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+58) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:hreflang-generator" ('/tools/hreflang-generator', 'tool-hreflang-generator', 'tool')
+/tools/hreflang-generator: normalized DOM differs from fixture tool-hreflang-generator.html.
+First difference at line 401:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1075 vs 1076 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+59) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:html-minifier" ('/tools/html-minifier', 'tool-html-minifier', 'tool')
+/tools/html-minifier: normalized DOM differs from fixture tool-html-minifier.html.
+First difference at line 369:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1079 vs 1080 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+60) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:html-to-text" ('/tools/html-to-text', 'tool-html-to-text', 'tool')
+/tools/html-to-text: normalized DOM differs from fixture tool-html-to-text.html.
+First difference at line 382:
+  expected:             <div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1074 vs 1075 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+61) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-alt-analyzer" ('/tools/image-alt-analyzer', 'tool-image-alt-analyzer', 'tool')
+/tools/image-alt-analyzer: normalized DOM differs from fixture tool-image-alt-analyzer.html.
+First difference at line 348:
+  expected:             <div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1043 vs 1044 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+62) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-compression-analyzer" ('/tools/image-compression-analyzer', 'tool-image-compression-analyzer', 'tool')
+/tools/image-compression-analyzer: normalized DOM differs from fixture tool-image-compression-analyzer.html.
+First difference at line 366:
+  expected:             <div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1055 vs 1056 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+63) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-compressor" ('/tools/image-compressor', 'tool-image-compressor', 'tool')
+/tools/image-compressor: normalized DOM differs from fixture tool-image-compressor.html.
+First difference at line 408:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1080 vs 1081 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+64) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:internal-link-analyzer" ('/tools/internal-link-analyzer', 'tool-internal-link-analyzer', 'tool')
+/tools/internal-link-analyzer: normalized DOM differs from fixture tool-internal-link-analyzer.html.
+First difference at line 366:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1059 vs 1060 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+65) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:invisible-character-cleaner" ('/tools/invisible-character-cleaner', 'tool-invisible-character-cleaner', 'tool')
+/tools/invisible-character-cleaner: normalized DOM differs from fixture tool-invisible-character-cleaner.html.
+First difference at line 394:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1066 vs 1067 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+66) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:json-formatter" ('/tools/json-formatter', 'tool-json-formatter', 'tool')
+/tools/json-formatter: normalized DOM differs from fixture tool-json-formatter.html.
+First difference at line 401:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1072 vs 1073 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+67) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:keyword-density-analyzer" ('/tools/keyword-density-analyzer', 'tool-keyword-density-analyzer', 'tool')
+/tools/keyword-density-analyzer: normalized DOM differs from fixture tool-keyword-density-analyzer.html.
+First difference at line 362:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1033 vs 1034 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+68) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:keyword-modifier-generator" ('/tools/keyword-modifier-generator', 'tool-keyword-modifier-generator', 'tool')
+/tools/keyword-modifier-generator: normalized DOM differs from fixture tool-keyword-modifier-generator.html.
+First difference at line 397:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1069 vs 1070 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+69) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:landing-page-generator" ('/tools/landing-page-generator', 'tool-landing-page-generator', 'tool')
+/tools/landing-page-generator: normalized DOM differs from fixture tool-landing-page-generator.html.
+First difference at line 370:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1044 vs 1045 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+70) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:llms-txt-generator" ('/tools/llms-txt-generator', 'tool-llms-txt-generator', 'tool')
+/tools/llms-txt-generator: normalized DOM differs from fixture tool-llms-txt-generator.html.
+First difference at line 388:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1060 vs 1061 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+71) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:local-business-schema" ('/tools/local-business-schema', 'tool-local-business-schema', 'tool')
+/tools/local-business-schema: normalized DOM differs from fixture tool-local-business-schema.html.
+First difference at line 403:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1076 vs 1077 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+72) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:lorem-ipsum-generator" ('/tools/lorem-ipsum-generator', 'tool-lorem-ipsum-generator', 'tool')
+/tools/lorem-ipsum-generator: normalized DOM differs from fixture tool-lorem-ipsum-generator.html.
+First difference at line 400:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1073 vs 1074 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+73) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-extractor" ('/tools/meta-extractor', 'tool-meta-extractor', 'tool')
+/tools/meta-extractor: normalized DOM differs from fixture tool-meta-extractor.html.
+First difference at line 367:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1039 vs 1040 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+74) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-refresh-generator" ('/tools/meta-refresh-generator', 'tool-meta-refresh-generator', 'tool')
+/tools/meta-refresh-generator: normalized DOM differs from fixture tool-meta-refresh-generator.html.
+First difference at line 446:
+  expected:             <div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1119 vs 1120 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+75) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-tag-generator" ('/tools/meta-tag-generator', 'tool-meta-tag-generator', 'tool')
+/tools/meta-tag-generator: normalized DOM differs from fixture tool-meta-tag-generator.html.
+First difference at line 419:
+  expected:             <div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1093 vs 1094 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+76) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:mobile-friendly-test" ('/tools/mobile-friendly-test', 'tool-mobile-friendly-test', 'tool')
+/tools/mobile-friendly-test: normalized DOM differs from fixture tool-mobile-friendly-test.html.
+First difference at line 937:
+  expected:     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
+  actual:       <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
+(945 vs 946 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+77) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ngram-extractor" ('/tools/ngram-extractor', 'tool-ngram-extractor', 'tool')
+/tools/ngram-extractor: normalized DOM differs from fixture tool-ngram-extractor.html.
+First difference at line 429:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1101 vs 1102 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+78) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:nofollow-link-checker" ('/tools/nofollow-link-checker', 'tool-nofollow-link-checker', 'tool')
+/tools/nofollow-link-checker: normalized DOM differs from fixture tool-nofollow-link-checker.html.
+First difference at line 374:
+  expected:             <div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1045 vs 1046 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+79) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:og-preview-generator" ('/tools/og-preview-generator', 'tool-og-preview-generator', 'tool')
+/tools/og-preview-generator: normalized DOM differs from fixture tool-og-preview-generator.html.
+First difference at line 353:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1050 vs 1051 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+80) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:page-speed-analyzer" ('/tools/page-speed-analyzer', 'tool-page-speed-analyzer', 'tool')
+/tools/page-speed-analyzer: normalized DOM differs from fixture tool-page-speed-analyzer.html.
+First difference at line 360:
+  expected:             <div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1030 vs 1031 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+81) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:qr-code-generator" ('/tools/qr-code-generator', 'tool-qr-code-generator', 'tool')
+/tools/qr-code-generator: normalized DOM differs from fixture tool-qr-code-generator.html.
+First difference at line 429:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1103 vs 1104 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+82) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:readability-analyzer" ('/tools/readability-analyzer', 'tool-readability-analyzer', 'tool')
+/tools/readability-analyzer: normalized DOM differs from fixture tool-readability-analyzer.html.
+First difference at line 310:
+  expected:             <div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1005 vs 1006 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+83) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:redirect-checker" ('/tools/redirect-checker', 'tool-redirect-checker', 'tool')
+/tools/redirect-checker: normalized DOM differs from fixture tool-redirect-checker.html.
+First difference at line 352:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1026 vs 1027 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+84) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-txt-generator" ('/tools/robots-txt-generator', 'tool-robots-txt-generator', 'tool')
+/tools/robots-txt-generator: normalized DOM differs from fixture tool-robots-txt-generator.html.
+First difference at line 443:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1113 vs 1114 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+85) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-txt-tester" ('/tools/robots-txt-tester', 'tool-robots-txt-tester', 'tool')
+/tools/robots-txt-tester: normalized DOM differs from fixture tool-robots-txt-tester.html.
+First difference at line 449:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1121 vs 1122 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+86) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-validator" ('/tools/robots-validator', 'tool-robots-validator', 'tool')
+/tools/robots-validator: normalized DOM differs from fixture tool-robots-validator.html.
+First difference at line 348:
+  expected:             <div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1024 vs 1025 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+87) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:schema-generator" ('/tools/schema-generator', 'tool-schema-generator', 'tool')
+/tools/schema-generator: normalized DOM differs from fixture tool-schema-generator.html.
+First difference at line 376:
+  expected:             <div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1069 vs 1070 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+88) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:security-headers-checker" ('/tools/security-headers-checker', 'tool-security-headers-checker', 'tool')
+/tools/security-headers-checker: normalized DOM differs from fixture tool-security-headers-checker.html.
+First difference at line 399:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1071 vs 1072 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+89) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:serp-snippet-preview" ('/tools/serp-snippet-preview', 'tool-serp-snippet-preview', 'tool')
+/tools/serp-snippet-preview: normalized DOM differs from fixture tool-serp-snippet-preview.html.
+First difference at line 413:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1085 vs 1086 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+90) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:sitemap-url-extractor" ('/tools/sitemap-url-extractor', 'tool-sitemap-url-extractor', 'tool')
+/tools/sitemap-url-extractor: normalized DOM differs from fixture tool-sitemap-url-extractor.html.
+First difference at line 411:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1083 vs 1084 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+91) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:sitemap-validator" ('/tools/sitemap-validator', 'tool-sitemap-validator', 'tool')
+/tools/sitemap-validator: normalized DOM differs from fixture tool-sitemap-validator.html.
+First difference at line 348:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1021 vs 1022 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+92) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ssl-certificate-checker" ('/tools/ssl-certificate-checker', 'tool-ssl-certificate-checker', 'tool')
+/tools/ssl-certificate-checker: normalized DOM differs from fixture tool-ssl-certificate-checker.html.
+First difference at line 953:
+  expected:     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
+  actual:       <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
+(961 vs 962 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+93) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:structured-data-extractor" ('/tools/structured-data-extractor', 'tool-structured-data-extractor', 'tool')
+/tools/structured-data-extractor: normalized DOM differs from fixture tool-structured-data-extractor.html.
+First difference at line 397:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1069 vs 1070 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+94) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:text-case-converter" ('/tools/text-case-converter', 'tool-text-case-converter', 'tool')
+/tools/text-case-converter: normalized DOM differs from fixture tool-text-case-converter.html.
+First difference at line 388:
+  expected:             <div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1081 vs 1082 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+95) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:text-editor" ('/tools/text-editor', 'tool-text-editor', 'tool')
+/tools/text-editor: normalized DOM differs from fixture tool-text-editor.html.
+First difference at line 439:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1111 vs 1112 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+96) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:url-editor" ('/tools/url-editor', 'tool-url-editor', 'tool')
+/tools/url-editor: normalized DOM differs from fixture tool-url-editor.html.
+First difference at line 435:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1107 vs 1108 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+97) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:url-slug-generator" ('/tools/url-slug-generator', 'tool-url-slug-generator', 'tool')
+/tools/url-slug-generator: normalized DOM differs from fixture tool-url-slug-generator.html.
+First difference at line 344:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1016 vs 1017 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+98) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:utm-builder" ('/tools/utm-builder', 'tool-utm-builder', 'tool')
+/tools/utm-builder: normalized DOM differs from fixture tool-utm-builder.html.
+First difference at line 517:
+  expected:             <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1191 vs 1192 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+99) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:website-analyzer" ('/tools/website-analyzer', 'tool-website-analyzer', 'tool')
+/tools/website-analyzer: normalized DOM differs from fixture tool-website-analyzer.html.
+First difference at line 1407:
+  expected:     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
+  actual:       <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
+(1415 vs 1416 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+100) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:website-readiness-checker" ('/tools/website-readiness-checker', 'tool-website-readiness-checker', 'tool')
+/tools/website-readiness-checker: normalized DOM differs from fixture tool-website-readiness-checker.html.
+First difference at line 402:
+  expected:             <div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1093 vs 1094 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+101) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:word-counter" ('/tools/word-counter', 'tool-word-counter', 'tool')
+/tools/word-counter: normalized DOM differs from fixture tool-word-counter.html.
+First difference at line 353:
+  expected:             <div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1049 vs 1050 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+102) Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:xml-sitemap-generator" ('/tools/xml-sitemap-generator', 'tool-xml-sitemap-generator', 'tool')
+/tools/xml-sitemap-generator: normalized DOM differs from fixture tool-xml-sitemap-generator.html.
+First difference at line 547:
+  expected:             <div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+  actual:               <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+(1241 vs 1242 lines)
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\RenderSnapshotTest.php:222
+
+[37;41mFAILURES![0m
+[37;41mTests: 192[0m[37;41m, Assertions: 3188[0m[37;41m, Failures: 102[0m[37;41m, PHPUnit Deprecations: 10[0m[37;41m.[0m

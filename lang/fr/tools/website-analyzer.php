@@ -5,7 +5,7 @@ return [
     'title' => 'Analyseur de Site Web - Audit SEO Gratuit | CodeSommet',
     'meta_description' => 'Auditez votre site gratuitement : plus de 40 vérifications SEO, performance, sécurité et accessibilité, avec un score global et des conseils concrets.',
     'meta_keywords' => 'analyseur de site web,outil audit site web,vérificateur SEO,analyseur performance,test vitesse site web,analyse automatisée site web,audit SEO gratuit,vérificateur vitesse page,bilan santé site web,Core Web Vitals,analyse design,audit sécurité',
-    'og_title' => 'Analyseur de Site Web - 40+ Vérifications pour SEO, Performance & Design',
+    'og_title' => 'Analyseur de Site Web - Audit SEO Gratuit | CodeSommet',
     'og_description' => 'Audit complet et gratuit de site web avec analyse avancée. Vérifiez le SEO, la performance, le design et la sécurité en 30 secondes. Obtenez un plan d\'amélioration personnalisé.',
     'twitter_description' => 'Audit complet et gratuit de site web avec analyse avancée. Vérifiez le SEO, la performance, le design et la sécurité en 30 secondes.',
     'text_0' => 'Analyse complète de site web avec insights alimentés par l\'IA, audit SEO, métriques de performance et plan d\'amélioration personnalisé',
@@ -180,4 +180,6 @@ return [
     'check_tech_7_desc' => 'Valide la redirection www vers non-www (ou inversement)',
     'check_tech_8_name' => 'Temps de Réponse',
     'check_tech_8_desc' => 'Mesure le temps de réponse du serveur (objectif : < 600 ms)',
+    'faq9_q' => 'L\'audit SEO est-il vraiment gratuit et sans inscription ?',
+    'faq9_a' => 'Oui. L\'audit SEO gratuit de cette page ne demande ni compte ni carte bancaire : saisissez une adresse, l\'analyse se lance et vous obtenez un score avec des recommandations. Il s\'agit d\'un diagnostic automatique de la page analysée, utile pour repérer rapidement les problèmes techniques. Si vous souhaitez un plan d\'action complet (mots-clés, concurrents, contenus, netlinking), notre <a href="/services/seo-maroc" class="underline">accompagnement SEO au Maroc</a> prend le relais sur devis.',
 ];

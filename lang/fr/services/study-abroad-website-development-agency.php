@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'h1_seo' => 'Création de Sites Web Études à l\'Étranger qui génèrent des',
+    'h1_seo' => 'Création de Sites Web pour Agences d\'Études à l\'Étranger, avec des',
     'title' => 'Création de Sites Web Études à l\'Étranger | CodeSommet',
     'meta_description' => 'Sites web pour agences d\'études à l\'étranger : portails étudiants, suivi des dossiers visa et chatbots multilingues. Devis gratuit.',
     'meta_keywords' => 'développement site web études à l\'étranger,site web conseil en visa,plateforme éducation internationale,CRM études à l\'étranger,développement portail étudiant,système suivi de visa,site web conseil en éducation',
@@ -319,4 +319,7 @@ return [
     'faq_q6' => 'Supportez-vous plusieurs devises et passerelles de paiement ?',
     'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs web ?',
     'faq_q8' => 'Pouvez-vous aider avec Google Ads et le SEO pour les mots-clés études à l\'étranger ?',
+    'seo_fix_4b42a1ce' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des agences d\'études à l\'étranger.',
+    'seo_fix_136d4991' => 'Des résultats réels obtenus avec des agences d\'études à l\'étranger',
+    'seo_fix_14693cbd' => 'Adopté par les agences d\'études à l\'étranger',
 ];

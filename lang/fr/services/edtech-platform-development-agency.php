@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement de Plateformes EdTech qui génèrent des',
+    'h1_seo' => 'Développement de Plateformes EdTech : des',
     'title' => 'Développement de Plateformes EdTech B2B | CodeSommet',
     'meta_description' => 'Développement de produits EdTech B2B : LMS commercialisables, marketplaces de cours et plateformes d\'engagement étudiant pour éditeurs et startups.',
     'meta_keywords' => 'développement plateforme edtech,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',
@@ -130,8 +130,8 @@ return [
     'text_518' => 'Automatisation',
     'text_519' => 'Automatisation',
     'text_520' => 'Automatisation',
-    'ml_920' => 'PLATEFORMES EDTECH B2B',
-    'ml_921' => 'PLATEFORMES EDTECH B2B',
+    'ml_920' => 'PRODUITS ÉDUCATIFS B2B SUR MESURE',
+    'ml_921' => 'PRODUITS ÉDUCATIFS B2B SUR MESURE',
     'ml_922' => 'Développement de plateformes EdTech pour les éditeurs, startups et entreprises qui commercialisent ou licencient un produit d\'apprentissage à plusieurs clients : architecture multi-tenant, marque blanche par client, facturation par contrat et intégrations institutionnelles (LTI, SSO, SIS).',
     'ml_923' => 'Réserver une Démo LMS Gratuite',
     'ml_924' => 'Spécialistes en Technologie Éducative',
@@ -264,4 +264,11 @@ return [
     'faq_q6' => 'Quelles intégrations API et LTI proposez-vous pour les institutions clientes (LMS existants, SSO, SIS) ?',
     'faq_q7' => 'Comment gérez-vous la facturation par client et le partage des revenus avec nos instructeurs ou clients revendeurs ?',
     'faq_q8' => 'Les étudiants peuvent-ils accéder aux cours sur appareils mobiles ?',
+    'seo_fix_8e5d8828' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des acteurs de l\'EdTech.',
+    'seo_fix_35a16c6d' => 'Découvrez pourquoi les acteurs de l\'EdTech choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
+    'seo_fix_7253f886' => 'Notre Processus de Développement de Plateformes EdTech',
+    'seo_fix_3633ac31' => 'Le Défi : les acteurs de l\'EdTech font face à des défis web uniques',
+    'seo_fix_638c3229' => 'Des résultats réels obtenus avec des acteurs de l\'EdTech',
+    'seo_fix_89459da0' => 'Adopté par les acteurs de l\'EdTech',
+    'seo_fix_56472a23' => 'Fonctionnalités essentielles pour les acteurs de l\'EdTech',
 ];

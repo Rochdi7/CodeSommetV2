@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Stockholm<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Stockholm</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -84,9 +84,8 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="Tableaux de Bord SaaS"></span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Tableaux
-                                            de Bord SaaS</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="des Tableaux de Bord SaaS"></span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">des Tableaux de Bord SaaS</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-stockholm.ml_1087') }}</p>
@@ -162,9 +161,7 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-stockholm.text_4') }} <!-- -->Stockholm<!-- -->?
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-stockholm.seo_fix_521e93aa') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-stockholm.sw_2556') }}</p>
                 </div>
@@ -392,10 +389,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Stockholm<!-- -->
-                        {{ __('locations/web-development-company-stockholm.text_9') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise approfondie dans les secteurs clés
-                        de <!-- -->Stockholm<!-- -->{{ __('locations/web-development-company-stockholm.ml_1095') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-stockholm.seo_fix_85204ecf') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-stockholm.seo_fix_cbcb92a7') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -1291,11 +1286,8 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Stockholm<!-- --> vs Others</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-stockholm.text_43') }}
-                        <!-- -->Stockholm<!-- -->{{ __('locations/web-development-company-stockholm.ml_1126') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-stockholm.seo_fix_1e8be133') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-stockholm.seo_fix_442b61b4') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1313,7 +1305,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Stockholm<!-- --> Agences</div>
+                                    Autres agences à Stockholm</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>

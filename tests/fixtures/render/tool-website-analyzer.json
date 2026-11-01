@@ -129,12 +129,16 @@
             "Qu'est-ce qui différencie cet outil des autres analyseurs de site web ?"
         ],
         [
+            3,
+            "L'audit SEO est-il vraiment gratuit et sans inscription ?"
+        ],
+        [
             2,
             "Besoin d'un Outil Personnalisé pour Votre Entreprise ?"
         ]
     ],
     "links": {
-        "internal": 63,
+        "internal": 64,
         "external": 5,
         "fragment": 1,
         "other": 0

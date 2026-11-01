@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Tests\Feature\RenderSnapshotTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" tests="104" assertions="2040" errors="0" failures="43" skipped="0" time="25.761204">
+    <testcase name="test_inventory_is_exactly_102_routes_and_matches_repository" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="111" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="5" time="2.160843"/>
+    <testsuite name="Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot" tests="102" assertions="2033" errors="0" failures="43" skipped="0" time="22.758314">
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:worldwide&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="19" time="0.270483"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:casablanca&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.217531"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:marrakech&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.221169"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:rabat&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.280423"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:tangier&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.676078"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:agadir&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="1.438324"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:dubai&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="1.094636"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:abudhabi&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.639604"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:riyadh&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.565817"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:london&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.429039"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:amsterdam&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.470792"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:berlin&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.345612"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:paris&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.305177"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:copenhagen&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.304293"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:dublin&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.314705"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:brussels&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.299966"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:zurich&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.341307"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:stockholm&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.303528"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:madrid&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.323683"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:barcelona&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.303372"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:lisbon&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.261144"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:rome&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.357673"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:milan&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.357775"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:new-york&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.512418"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:san-francisco&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.186144"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:los-angeles&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.168793"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:austin&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.174432"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:seattle&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.160483"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:boston&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.163547"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:chicago&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.169861"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:denver&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.187876"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:toronto&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.215720"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:vancouver&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.204251"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:tunis&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="28" time="0.256668"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:cairo&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.211761"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:lagos&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="24" time="0.216805"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ai-crawler-access-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.200885">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ai-crawler-access-checker"&#13;
+/tools/ai-crawler-access-checker: normalized DOM differs from fixture tool-ai-crawler-access-checker.html.
+First difference at line 433:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1105 vs 1106 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ai-readiness-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.099945">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ai-readiness-checker"&#13;
+/tools/ai-readiness-checker: normalized DOM differs from fixture tool-ai-readiness-checker.html.
+First difference at line 384:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1056 vs 1057 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:base64-encoder&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.100097"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:blog-title-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.098445">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:blog-title-generator"&#13;
+/tools/blog-title-generator: normalized DOM differs from fixture tool-blog-title-generator.html.
+First difference at line 416:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1095 vs 1096 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:bot-viewer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.156960">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:bot-viewer"&#13;
+/tools/bot-viewer: normalized DOM differs from fixture tool-bot-viewer.html.
+First difference at line 404:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1076 vs 1077 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:broken-link-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.098663">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:broken-link-checker"&#13;
+/tools/broken-link-checker: normalized DOM differs from fixture tool-broken-link-checker.html.
+First difference at line 365:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1086 vs 1087 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:canonical-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.110067">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:canonical-checker"&#13;
+/tools/canonical-checker: normalized DOM differs from fixture tool-canonical-checker.html.
+First difference at line 366:
+  expected:             &lt;div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1058 vs 1059 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:chatbot-script-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.155970">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:chatbot-script-generator"&#13;
+/tools/chatbot-script-generator: normalized DOM differs from fixture tool-chatbot-script-generator.html.
+First difference at line 408:
+  expected:             &lt;div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1089 vs 1090 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:color-palette-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.220375">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:color-palette-generator"&#13;
+/tools/color-palette-generator: normalized DOM differs from fixture tool-color-palette-generator.html.
+First difference at line 359:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1041 vs 1042 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:core-web-vitals-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.163690">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:core-web-vitals-checker"&#13;
+/tools/core-web-vitals-checker: normalized DOM differs from fixture tool-core-web-vitals-checker.html.
+First difference at line 950:
+  expected:     &lt;script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION"&gt;
+  actual:       &lt;script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION"&gt;
+(958 vs 959 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:crawl-optimization-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.205883">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:crawl-optimization-checker"&#13;
+/tools/crawl-optimization-checker: normalized DOM differs from fixture tool-crawl-optimization-checker.html.
+First difference at line 397:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:crawl-visualizer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.216916">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:crawl-visualizer"&#13;
+/tools/crawl-visualizer: normalized DOM differs from fixture tool-crawl-visualizer.html.
+First difference at line 684:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1355 vs 1356 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:css-minifier&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.122881"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:domain-authority-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.069765">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-authority-checker"&#13;
+/tools/domain-authority-checker: normalized DOM differs from fixture tool-domain-authority-checker.html.
+First difference at line 371:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1043 vs 1044 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:domain-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.095833"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:domain-health-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.103012">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-health-checker"&#13;
+/tools/domain-health-checker: normalized DOM differs from fixture tool-domain-health-checker.html.
+First difference at line 384:
+  expected:             &lt;div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1054 vs 1055 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:duplicate-content-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.096155">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:duplicate-content-checker"&#13;
+/tools/duplicate-content-checker: normalized DOM differs from fixture tool-duplicate-content-checker.html.
+First difference at line 404:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1102 vs 1103 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:eeat-signals-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.096209">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:eeat-signals-checker"&#13;
+/tools/eeat-signals-checker: normalized DOM differs from fixture tool-eeat-signals-checker.html.
+First difference at line 380:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1052 vs 1053 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:expired-domain-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.110767">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:expired-domain-checker"&#13;
+/tools/expired-domain-checker: normalized DOM differs from fixture tool-expired-domain-checker.html.
+First difference at line 375:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1047 vs 1048 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:faq-schema-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.080014">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:faq-schema-generator"&#13;
+/tools/faq-schema-generator: normalized DOM differs from fixture tool-faq-schema-generator.html.
+First difference at line 381:
+  expected:             &lt;div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1075 vs 1076 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:heading-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.084958">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:heading-analyzer"&#13;
+/tools/heading-analyzer: normalized DOM differs from fixture tool-heading-analyzer.html.
+First difference at line 348:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1019 vs 1020 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:hreflang-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.094816">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:hreflang-generator"&#13;
+/tools/hreflang-generator: normalized DOM differs from fixture tool-hreflang-generator.html.
+First difference at line 401:
+  expected:             &lt;div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1075 vs 1076 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:html-minifier&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.100832">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:html-minifier"&#13;
+/tools/html-minifier: normalized DOM differs from fixture tool-html-minifier.html.
+First difference at line 369:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1079 vs 1080 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:html-to-text&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.099309">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:html-to-text"&#13;
+/tools/html-to-text: normalized DOM differs from fixture tool-html-to-text.html.
+First difference at line 382:
+  expected:             &lt;div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1074 vs 1075 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:image-alt-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.093921">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-alt-analyzer"&#13;
+/tools/image-alt-analyzer: normalized DOM differs from fixture tool-image-alt-analyzer.html.
+First difference at line 348:
+  expected:             &lt;div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1043 vs 1044 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:image-compression-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.089717">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-compression-analyzer"&#13;
+/tools/image-compression-analyzer: normalized DOM differs from fixture tool-image-compression-analyzer.html.
+First difference at line 366:
+  expected:             &lt;div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1055 vs 1056 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:image-compressor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.095530"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:internal-link-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.100348">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:internal-link-analyzer"&#13;
+/tools/internal-link-analyzer: normalized DOM differs from fixture tool-internal-link-analyzer.html.
+First difference at line 366:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1059 vs 1060 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:invisible-character-cleaner&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.084599"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:json-formatter&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.111861"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:keyword-density-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.093718"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:keyword-modifier-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.095933">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:keyword-modifier-generator"&#13;
+/tools/keyword-modifier-generator: normalized DOM differs from fixture tool-keyword-modifier-generator.html.
+First difference at line 397:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:landing-page-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.094903"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:llms-txt-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.078167">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:llms-txt-generator"&#13;
+/tools/llms-txt-generator: normalized DOM differs from fixture tool-llms-txt-generator.html.
+First difference at line 388:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1060 vs 1061 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:local-business-schema&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.163061">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:local-business-schema"&#13;
+/tools/local-business-schema: normalized DOM differs from fixture tool-local-business-schema.html.
+First difference at line 403:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1076 vs 1077 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:lorem-ipsum-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.146490"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:meta-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.126339">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-extractor"&#13;
+/tools/meta-extractor: normalized DOM differs from fixture tool-meta-extractor.html.
+First difference at line 367:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1039 vs 1040 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:meta-refresh-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.136332"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:meta-tag-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.186883">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-tag-generator"&#13;
+/tools/meta-tag-generator: normalized DOM differs from fixture tool-meta-tag-generator.html.
+First difference at line 419:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1093 vs 1094 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:mobile-friendly-test&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.150675"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ngram-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.119394">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ngram-extractor"&#13;
+/tools/ngram-extractor: normalized DOM differs from fixture tool-ngram-extractor.html.
+First difference at line 429:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1101 vs 1102 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:nofollow-link-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.180356"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:og-preview-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.155518"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:page-speed-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.145647">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:page-speed-analyzer"&#13;
+/tools/page-speed-analyzer: normalized DOM differs from fixture tool-page-speed-analyzer.html.
+First difference at line 360:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1030 vs 1031 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:qr-code-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.177347"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:readability-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.175825">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:readability-analyzer"&#13;
+/tools/readability-analyzer: normalized DOM differs from fixture tool-readability-analyzer.html.
+First difference at line 310:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1005 vs 1006 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:redirect-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.296187">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:redirect-checker"&#13;
+/tools/redirect-checker: normalized DOM differs from fixture tool-redirect-checker.html.
+First difference at line 352:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1026 vs 1027 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:robots-txt-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.261931">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-txt-generator"&#13;
+/tools/robots-txt-generator: normalized DOM differs from fixture tool-robots-txt-generator.html.
+First difference at line 443:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1113 vs 1114 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:robots-txt-tester&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.173658">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-txt-tester"&#13;
+/tools/robots-txt-tester: normalized DOM differs from fixture tool-robots-txt-tester.html.
+First difference at line 449:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1121 vs 1122 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:robots-validator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.181181"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:schema-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.186781">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:schema-generator"&#13;
+/tools/schema-generator: normalized DOM differs from fixture tool-schema-generator.html.
+First difference at line 376:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:security-headers-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.174940">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:security-headers-checker"&#13;
+/tools/security-headers-checker: normalized DOM differs from fixture tool-security-headers-checker.html.
+First difference at line 399:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1071 vs 1072 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:serp-snippet-preview&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.148491">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:serp-snippet-preview"&#13;
+/tools/serp-snippet-preview: normalized DOM differs from fixture tool-serp-snippet-preview.html.
+First difference at line 413:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1085 vs 1086 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:sitemap-url-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.179441">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:sitemap-url-extractor"&#13;
+/tools/sitemap-url-extractor: normalized DOM differs from fixture tool-sitemap-url-extractor.html.
+First difference at line 411:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1083 vs 1084 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:sitemap-validator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.193704">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:sitemap-validator"&#13;
+/tools/sitemap-validator: normalized DOM differs from fixture tool-sitemap-validator.html.
+First difference at line 348:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1021 vs 1022 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ssl-certificate-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.208148">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ssl-certificate-checker"&#13;
+/tools/ssl-certificate-checker: normalized DOM differs from fixture tool-ssl-certificate-checker.html.
+First difference at line 953:
+  expected:     &lt;script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION"&gt;
+  actual:       &lt;script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION"&gt;
+(961 vs 962 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:structured-data-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.239222">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:structured-data-extractor"&#13;
+/tools/structured-data-extractor: normalized DOM differs from fixture tool-structured-data-extractor.html.
+First difference at line 397:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:text-case-converter&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.183352"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:text-editor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.196785"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:url-editor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.161655"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:url-slug-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.213487"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:utm-builder&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.188836"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:website-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.203305"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:website-readiness-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.152987">
+        <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:website-readiness-checker"&#13;
+/tools/website-readiness-checker: normalized DOM differs from fixture tool-website-readiness-checker.html.
+First difference at line 402:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1093 vs 1094 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+      </testcase>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:word-counter&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.156893"/>
+      <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:xml-sitemap-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.321423"/>
+    </testsuite>
+    <testcase name="test_routes_match_committed_baseline" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="229" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="2" time="0.842047"/>
+  </testsuite>
+</testsuites>

@@ -29,7 +29,7 @@ return [
         ['q' => 'Qu\'est-ce que le domaine racine ?', 'a' => 'C\'est le nom enregistré auprès d\'un registraire, sans les sous-domaines : blog.exemple.com devient exemple.com. Pour les extensions à deux niveaux comme .co.ma, .co.uk ou .com.br, l\'outil conserve le niveau supplémentaire (exemple.co.ma).'],
         ['q' => 'Quelles extensions à plusieurs niveaux sont reconnues ?', 'a' => 'Une liste des suffixes publics les plus courants (Maroc, France, Royaume-Uni, Brésil, Australie, Japon, Inde, Afrique…), intégrée à la page. Pour un suffixe rare non listé, utilisez le mode « nom d\'hôte complet ».'],
         ['q' => 'À quoi cela sert-il en SEO ?', 'a' => 'À compter les domaines référents d\'un export de backlinks, à préparer un fichier de désaveu au niveau domaine, ou à dédoublonner une liste de prospection.'],
-        ['q' => 'Mes données sont-elles envoyées ?', 'a' => 'Non, l\'extraction se fait entièrement dans votre navigateur.'],
+        ['q' => 'Mes données sont-elles envoyées ?', 'a' => 'Non. L\'extraction se fait entièrement dans votre navigateur : la liste n\'est ni envoyée à nos serveurs ni enregistrée. Vous pouvez donc y coller sans risque un export de backlinks, une liste de prospects ou des URL internes confidentielles.'],
     ],
     'related' => [
         ['slug' => 'url-editor', 'title' => 'Éditeur d\'URL en Masse', 'desc' => 'Nettoyez et dédoublonnez vos listes d\'URL'],

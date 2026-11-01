@@ -1,0 +1,1405 @@
+{
+ "resources/views/frontoffice/pages/get-quote.blade.php": {
+  "removed": {
+   "meta": 2
+  },
+  "added": {
+   "meta": 2,
+   "other": 14,
+   "details-class": 1
+  },
+  "removed_other": [],
+  "added_other_count": 14
+ },
+ "resources/views/frontoffice/pages/home.blade.php": {
+  "removed": {},
+  "added": {
+   "other": 1
+  },
+  "removed_other": [],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-abudhabi.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 11,
+   "comment": 11
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 8
+  },
+  "removed_other": [
+   "Immobiliers</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">",
+   "{{ __('locations/web-development-company-abudhabi.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-abudhabi.sw_2862') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-agadir.blade.php": {
+  "removed": {
+   "other": 7,
+   "comment": 3,
+   "plain-text": 1
+  },
+  "added": {
+   "templfix-key": 3,
+   "faq-block": 3,
+   "other": 12,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">De vrais résultats de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-agadir.text_44') }}",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Ne vous fiez pas seulement à notre parole.",
+   "</p>"
+  ],
+  "added_other_count": 12
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-amsterdam.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 15,
+   "comment": 7,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 8
+  },
+  "removed_other": [
+   "FinTech</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "Entreprises</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">De vrais résultats de",
+   "</p>",
+   "{{ __('locations/web-development-company-amsterdam.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "{{ __('locations/web-development-company-amsterdam.text_14') }}</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-amsterdam.text_46') }}",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-amsterdam.sw_2863') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-austin.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 10,
+   "comment": 5,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 6
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "{{ __('locations/web-development-company-austin.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-austin.text_47') }}",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-austin.sw_2871') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-barcelona.blade.php": {
+  "removed": {
+   "comment": 4,
+   "other": 8
+  },
+  "added": {
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "{{ __('locations/web-development-company-barcelona.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-barcelona.text_44') }}",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-barcelona.sw_2866') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-berlin.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 15,
+   "comment": 7,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 8
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">De vrais résultats de",
+   "</p>",
+   "{{ __('locations/web-development-company-berlin.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-berlin.text_47') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-berlin.sw_2866') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-boston.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 12,
+   "comment": 5,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 6
+  },
+  "removed_other": [
+   "EdTech</span></span></span></h1>",
+   "{{ __('locations/web-development-company-boston.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-boston.text_49') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-boston.sw_2374') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-brussels.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 10,
+   "comment": 4
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "FinTech</span></span></span></h1>",
+   "{{ __('locations/web-development-company-brussels.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-brussels.text_47') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-brussels.sw_2868') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-cairo.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 1
+  },
+  "added": {
+   "h1-sizer": 2
+  },
+  "removed_other": [
+   "DES ENTREPRISES AU CAIRE</span></span></span></h1>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-casablanca.blade.php": {
+  "removed": {
+   "other": 15,
+   "comment": 7,
+   "plain-text": 1
+  },
+  "added": {
+   "templfix-key": 8,
+   "faq-block": 3,
+   "other": 12,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "Entreprises</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">De vrais résultats de",
+   "</p>",
+   "{{ __('locations/web-development-company-casablanca.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-casablanca.text_44') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-casablanca.sw_2866') }}</p>"
+  ],
+  "added_other_count": 12
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-chicago.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 12,
+   "comment": 5,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 6
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "{{ __('locations/web-development-company-chicago.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-chicago.text_47') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-chicago.sw_2373') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-copenhagen.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 16,
+   "comment": 7,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 8
+  },
+  "removed_other": [
+   "SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "Entreprises</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">De vrais résultats de",
+   "</p>",
+   "{{ __('locations/web-development-company-copenhagen.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-copenhagen.text_46') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-copenhagen.sw_2864') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-denver.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 12,
+   "comment": 5,
+   "plain-text": 1
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 6
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "{{ __('locations/web-development-company-denver.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">De vrais projets, de vrais résultats. Découvrez",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-denver.text_47') }}",
+   "</p>",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-denver.sw_2871') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-dubai.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 1
+  },
+  "added": {
+   "h1-sizer": 2
+  },
+  "removed_other": [
+   "COMMERCIALE À DUBAÏ</span></span></span></h1>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-dublin.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 7,
+   "comment": 3
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "{{ __('locations/web-development-company-dublin.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-dublin.text_44') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-lagos.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 9,
+   "comment": 4
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 4
+  },
+  "removed_other": [
+   "COMMERCIALE À LAGOS</span></span></span></h1>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "{{ __('locations/web-development-company-lagos.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-lagos.text_39') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-lisbon.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 7,
+   "comment": 3
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "COMMERCIALE À LISBONNE</span></span></span></h1>",
+   "{{ __('locations/web-development-company-lisbon.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-lisbon.text_39') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-london.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 9,
+   "comment": 4
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 4
+  },
+  "removed_other": [
+   "FinTech</span></span></span></h1>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "{{ __('locations/web-development-company-london.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-london.text_41') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-los-angeles.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 5,
+   "comment": 4
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "{{ __('locations/web-development-company-los-angeles.text_10') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-madrid.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 7,
+   "comment": 3
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "COMMERCIALE À MADRID</span></span></span></h1>",
+   "{{ __('locations/web-development-company-madrid.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-madrid.text_39') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-marrakech.blade.php": {
+  "removed": {
+   "other": 8,
+   "comment": 4
+  },
+  "added": {
+   "templfix-key": 4,
+   "faq-block": 6,
+   "other": 24,
+   "plain-text": 4
+  },
+  "removed_other": [
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "{{ __('locations/web-development-company-marrakech.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-marrakech.text_39') }}",
+   "</p>"
+  ],
+  "added_other_count": 24
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-milan.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 7,
+   "comment": 3
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "COMMERCIALE À MILAN</span></span></span></h1>",
+   "{{ __('locations/web-development-company-milan.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-milan.text_39') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-new-york.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 5,
+   "comment": 4
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "FinTech</span></span></span></h1>",
+   "{{ __('locations/web-development-company-new-york.text_10') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-paris.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 9,
+   "comment": 4
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 4
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "{{ __('locations/web-development-company-paris.text_7') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-paris.text_42') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-rabat.blade.php": {
+  "removed": {
+   "other": 8,
+   "comment": 4
+  },
+  "added": {
+   "templfix-key": 4,
+   "faq-block": 3,
+   "other": 12,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "{{ __('locations/web-development-company-rabat.text_6') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Expertise approfondie dans les secteurs clés de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-rabat.text_39') }}",
+   "</p>"
+  ],
+  "added_other_count": 12
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-riyadh.blade.php": {
+  "removed": {
+   "other": 7,
+   "comment": 6
+  },
+  "added": {
+   "templfix-key": 6
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('locations/web-development-company-riyadh.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-riyadh.text_40') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-rome.blade.php": {
+  "removed": {
+   "other": 7,
+   "comment": 5
+  },
+  "added": {
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">{{ __('locations/web-development-company-rome.text_4') }}",
+   "</h2>",
+   "{{ __('locations/web-development-company-rome.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-rome.text_41') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-san-francisco.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 6,
+   "comment": 7
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('locations/web-development-company-san-francisco.text_10') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-seattle.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 8,
+   "comment": 5
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "{{ __('locations/web-development-company-seattle.text_10') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-seattle.text_44') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-stockholm.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 8,
+   "comment": 5
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "{{ __('locations/web-development-company-stockholm.text_9') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-stockholm.text_43') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-tangier.blade.php": {
+  "removed": {
+   "other": 9,
+   "comment": 6
+  },
+  "added": {
+   "templfix-key": 6,
+   "faq-block": 3,
+   "other": 12,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "{{ __('locations/web-development-company-tangier.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-tangier.text_40') }}",
+   "</p>"
+  ],
+  "added_other_count": 12
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-toronto.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 8,
+   "comment": 5
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "{{ __('locations/web-development-company-toronto.text_9') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-toronto.text_44') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-tunis.blade.php": {
+  "removed": {
+   "other": 7,
+   "comment": 5
+  },
+  "added": {
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">{{ __('locations/web-development-company-tunis.text_4') }}",
+   "</h2>",
+   "{{ __('locations/web-development-company-tunis.text_8') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-tunis.text_40') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-vancouver.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 8,
+   "comment": 5
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "de Bord SaaS</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "{{ __('locations/web-development-company-vancouver.text_9') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-vancouver.text_42') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-worldwide.blade.php": {
+  "removed": {
+   "details-class": 1,
+   "other": 1
+  },
+  "added": {
+   "faq-block": 2,
+   "details-class": 1,
+   "other": 1
+  },
+  "removed_other": [
+   "<p class=\"text-[15px] text-[#0F0F0F]/60 leading-[1.7]\">{{ $faq['a'] }}</p>"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/locations/web-development-company-zurich.blade.php": {
+  "removed": {
+   "h1-sizer": 2,
+   "other": 8,
+   "comment": 5
+  },
+  "added": {
+   "h1-sizer": 2,
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "FinTech</span></span></span></h1>",
+   "style=\"font-family:var(--font-heading)\">{{ __('locations/web-development-company-zurich.text_4') }}",
+   "</h2>",
+   "{{ __('locations/web-development-company-zurich.text_12') }}</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Une expertise approfondie dans les secteurs clés",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('locations/web-development-company-zurich.text_47') }}",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/ecommerce-website-development.blade.php": {
+  "removed": {
+   "other": 17,
+   "comment": 9
+  },
+  "added": {
+   "templfix-key": 7,
+   "other": 49,
+   "faq-block": 12,
+   "plain-text": 8
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "Entreprises</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Tout ce dont votre entreprise e-commerce a",
+   "besoin sur une seule plateforme</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('services/ecommerce-website-development-agency.text_47') }}",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('services/ecommerce-website-development-agency.sw_2917') }}</p>"
+  ],
+  "added_other_count": 49
+ },
+ "resources/views/frontoffice/pages/services/edtech-platform-development.blade.php": {
+  "removed": {
+   "other": 12,
+   "comment": 11,
+   "plain-text": 3
+  },
+  "added": {
+   "templfix-key": 7
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/edtech-platform-development-agency.text_3') }}",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "et E-Learning</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/education-website-development.blade.php": {
+  "removed": {
+   "other": 13,
+   "comment": 11,
+   "plain-text": 2
+  },
+  "added": {
+   "templfix-key": 7
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/education-website-development-agency.text_7') }}",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/elearning-platform-development.blade.php": {
+  "removed": {
+   "other": 10,
+   "comment": 7,
+   "plain-text": 3
+  },
+  "added": {
+   "templfix-key": 5,
+   "faq-block": 6,
+   "other": 24,
+   "plain-text": 4
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/elearning-platform-development-agency.text_3') }}",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "Platform</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 24
+ },
+ "resources/views/frontoffice/pages/services/fintech-platform-development.blade.php": {
+  "removed": {
+   "other": 10,
+   "comment": 12,
+   "plain-text": 3
+  },
+  "added": {
+   "templfix-key": 7
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/fintech-website-development.blade.php": {
+  "removed": {
+   "other": 10,
+   "comment": 12,
+   "plain-text": 2
+  },
+  "added": {
+   "templfix-key": 7
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/healthcare-website-development.blade.php": {
+  "removed": {
+   "other": 12,
+   "comment": 12,
+   "plain-text": 1
+  },
+  "added": {
+   "templfix-key": 7,
+   "faq-block": 3,
+   "other": 12,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/healthcare-website-development-agency.text_7') }}",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 12
+ },
+ "resources/views/frontoffice/pages/services/immigration-consultancy-website-development.blade.php": {
+  "removed": {
+   "other": 15,
+   "comment": 12,
+   "plain-text": 3
+  },
+  "added": {
+   "templfix-key": 7
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/immigration-consultancy-website-development-agency.text_3') }}",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/language-school-website-development.blade.php": {
+  "removed": {
+   "other": 9,
+   "comment": 8,
+   "plain-text": 3
+  },
+  "added": {
+   "templfix-key": 5
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/language-school-website-development-agency.text_8') }}",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/online-course-platform-development.blade.php": {
+  "removed": {
+   "other": 8,
+   "comment": 8,
+   "plain-text": 5
+  },
+  "added": {
+   "templfix-key": 5,
+   "faq-block": 3,
+   "other": 12,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "{{ __('services/online-course-platform-development-agency.text_10') }}",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 12
+ },
+ "resources/views/frontoffice/pages/services/real-estate-website-development.blade.php": {
+  "removed": {
+   "other": 15,
+   "comment": 6,
+   "plain-text": 3
+  },
+  "added": {
+   "templfix-key": 5,
+   "other": 13,
+   "faq-block": 3,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/real-estate-website-development-agency.text_6') }}",
+   "</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "{{ __('services/real-estate-website-development-agency.text_11') }}",
+   "</p>",
+   "style=\"font-family:var(--font-heading)\">",
+   "</h2>",
+   "style=\"font-family:var(--font-body)\">Immersive property viewing with 360°",
+   "immersion.</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('services/real-estate-website-development-agency.text_53') }}",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 13
+ },
+ "resources/views/frontoffice/pages/services/saas-platform-development.blade.php": {
+  "removed": {
+   "other": 2
+  },
+  "added": {
+   "templfix-key": 1,
+   "faq-block": 6,
+   "other": 24,
+   "plain-text": 4
+  },
+  "removed_other": [
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('services/saas-platform-development-agency.sw_2425') }}</p>"
+  ],
+  "added_other_count": 24
+ },
+ "resources/views/frontoffice/pages/services/seo-maroc.blade.php": {
+  "removed": {},
+  "added": {
+   "faq-block": 9,
+   "other": 36,
+   "plain-text": 6
+  },
+  "removed_other": [],
+  "added_other_count": 36
+ },
+ "resources/views/frontoffice/pages/services/study-abroad-website-development.blade.php": {
+  "removed": {
+   "other": 8,
+   "comment": 2
+  },
+  "added": {
+   "templfix-key": 3
+  },
+  "removed_other": [
+   "style=\"font-family:var(--font-heading)\">",
+   "{{ __('services/study-abroad-website-development-agency.text_8') }}",
+   "Entreprises</h2>",
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">",
+   "{{ __('services/study-abroad-website-development-agency.text_13') }}",
+   "avec lesquelles nous avons collaboré</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('services/study-abroad-website-development-agency.sw_3147') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/telemedicine-platform-development.blade.php": {
+  "removed": {
+   "other": 6,
+   "comment": 2,
+   "plain-text": 5
+  },
+  "added": {
+   "templfix-key": 2,
+   "other": 1
+  },
+  "removed_other": [
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "style=\"font-family:var(--font-body)\">Doctors manually copy consultation notes from video",
+   "summaries.</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/services/telemedicine-website-development.blade.php": {
+  "removed": {
+   "other": 4,
+   "comment": 2,
+   "plain-text": 2
+  },
+  "added": {
+   "templfix-key": 2
+  },
+  "removed_other": [
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">Vous avez des questions ? Nous avons les",
+   "</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/services/university-website-development.blade.php": {
+  "removed": {
+   "other": 5,
+   "comment": 1
+  },
+  "added": {
+   "templfix-key": 2
+  },
+  "removed_other": [
+   "<p class=\"text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4\">Résultats réels de",
+   "{{ __('services/university-website-development-agency.text_14') }}",
+   "</p>",
+   "<p class=\"text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto\">",
+   "{{ __('services/university-website-development-agency.sw_2953') }}</p>"
+  ],
+  "added_other_count": 0
+ },
+ "resources/views/frontoffice/pages/tools/base64-encoder.blade.php": {
+  "removed": {
+   "other": 2
+  },
+  "added": {
+   "other": 1
+  },
+  "removed_other": [
+   "<p class=\"text-xs text-gray-500 mt-4\">💡 <strong>Tip:</strong> Use Cmd+Enter (Mac) or Ctrl+Enter",
+   "(Windows) to quickly encode/decode</p>"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/tools/json-formatter.blade.php": {
+  "removed": {
+   "other": 2
+  },
+  "added": {
+   "other": 1
+  },
+  "removed_other": [
+   "<p class=\"text-xs text-gray-500 mt-4\">💡 <strong>Tip:</strong> Use Cmd+Enter (Mac) or Ctrl+Enter",
+   "(Windows) to quickly process JSON</p>"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/tools/meta-refresh-generator.blade.php": {
+  "removed": {
+   "other": 1,
+   "meta": 1,
+   "plain-text": 3
+  },
+  "added": {
+   "other": 1
+  },
+  "removed_other": [
+   "<p>Une redirection meta refresh est une redirection HTML qui utilise une balise"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/tools/nofollow-link-checker.blade.php": {
+  "removed": {
+   "other": 2
+  },
+  "added": {
+   "other": 1
+  },
+  "removed_other": [
+   "<p>Les <strong>liens nofollow</strong> (rel=&quot;nofollow&quot;) tell search engines not to follow the",
+   "link or pass authority. Common uses:</p>"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/tools/qr-code-generator.blade.php": {
+  "removed": {},
+  "added": {
+   "other": 18,
+   "faq-block": 2,
+   "plain-text": 2
+  },
+  "removed_other": [],
+  "added_other_count": 18
+ },
+ "resources/views/frontoffice/pages/tools/text-case-converter.blade.php": {
+  "removed": {},
+  "added": {
+   "other": 18,
+   "faq-block": 2,
+   "plain-text": 2
+  },
+  "removed_other": [],
+  "added_other_count": 18
+ },
+ "resources/views/frontoffice/pages/tools/utm-builder.blade.php": {
+  "removed": {
+   "other": 18,
+   "plain-text": 15
+  },
+  "added": {
+   "other": 9
+  },
+  "removed_other": [
+   "<p class=\"text-sm text-gray-700 leading-relaxed\">UTM parameters are tags you add to URLs to track",
+   "campaigns, sources, and content drive the most traffic and conversions.</p>",
+   "<p>UTM parameters are tags added to URLs that help track the performance of marketing campaigns",
+   "essential for optimizing your marketing spend and strategy.</p>",
+   "<p>Three parameters are required: utm_source (identifies traffic source like 'google'),",
+   "search keywords) and utm_content (to differentiate similar ads or links).</p>",
+   "<p>Always use lowercase letters and replace spaces with underscores (e.g., 'summer_sale' not",
+   "conventions so your entire team uses the same standards.</p>",
+   "<p>When someone clicks a URL with UTM parameters, Google Analytics automatically captures those",
+   "sources, and measure ROI on your marketing efforts.</p>",
+   "<p>Yes, it's highly recommended to use URL shorteners like Bitly or TinyURL for UTM-tagged URLs,",
+   "making links clean and shareable.</p>",
+   "<p>Avoid inconsistent naming (using both 'Facebook' and 'facebook'), using spaces instead of",
+   "Always test your URLs before launching campaigns to ensure tracking works correctly.</p>",
+   "<p>Absolutely! UTM parameters work for any traffic source, not just paid ads. Use them for email",
+   "(medium=referral), QR codes (medium=qr_code) generated with our <a",
+   "href=\"{{ route('tool', 'qr-code-generator') }}\">générateur de QR code</a>, and any",
+   "sources, not just paid campaigns.</p>"
+  ],
+  "added_other_count": 9
+ },
+ "resources/views/frontoffice/pages/tools/website-analyzer.blade.php": {
+  "removed": {
+   "other": 22,
+   "plain-text": 2
+  },
+  "added": {
+   "other": 35,
+   "faq-block": 2,
+   "plain-text": 2
+  },
+  "removed_other": [
+   "<p class=\"text-gray-600\">Get instant feedback on SEO, performance, design, security, and more. Enter",
+   "<p class=\"text-base text-gray-600\">We&#x27;re not just another website checker. Our AI-powered",
+   "and design experts.</p>",
+   "Feature</th>",
+   "<td class=\"py-4 px-4 text-sm font-medium text-gray-900\">Cost</td>",
+   "<td class=\"py-4 px-4 text-sm text-gray-600\">$500 - $2,000</td>",
+   "<td class=\"py-4 px-4 text-sm font-medium text-gray-900\">Time Required</td>",
+   "<td class=\"py-4 px-4 text-sm text-gray-600\">2-5 business days</td>",
+   "</svg><span class=\"text-sm font-semibold text-black\">30 seconds</span></div>",
+   "<td class=\"py-4 px-4 text-sm text-gray-600\">15-20 items</td>",
+   "<td class=\"py-4 px-4 text-sm text-gray-600\">Subjective opinion</td>",
+   "</svg><span class=\"text-sm font-semibold text-black\">Computer vision",
+   "powered</span></div>",
+   "</svg><span class=\"text-sm font-semibold text-black\">Automated real-time",
+   "data</span></div>",
+   "<td class=\"py-4 px-4 text-sm font-medium text-gray-900\">Improvement Plan</td>",
+   "<td class=\"py-4 px-4 text-sm text-gray-600\">Generic recommendations</td>",
+   "<td class=\"py-4 px-4 text-sm text-gray-600\">Not included</td>",
+   "<td class=\"py-4 px-4 text-sm font-medium text-gray-900\">Follow-up Audits</td>",
+   "<p class=\"text-sm text-gray-800 leading-relaxed\"><strong class=\"text-black\">Save",
+   "$500-$2,000 and 2-5 days</strong> by using our free automated analyzer. Get the same",
+   "depth of analysis with advanced algorithms that manual audits can&#x27;t provide.</p>"
+  ],
+  "added_other_count": 35
+ },
+ "resources/views/frontoffice/pages/tools/word-counter.blade.php": {
+  "removed": {
+   "other": 2,
+   "plain-text": 2
+  },
+  "added": {
+   "other": 1
+  },
+  "removed_other": [
+   "<p>Words are individual text units separated by spaces. Sentences are complete thoughts ending",
+   "improve clarity, while proper paragraph breaks enhance scannability.</p>"
+  ],
+  "added_other_count": 1
+ },
+ "resources/views/frontoffice/pages/tools/xml-sitemap-generator.blade.php": {
+  "removed": {
+   "other": 6,
+   "plain-text": 2
+  },
+  "added": {
+   "other": 3
+  },
+  "removed_other": [
+   "<p class=\"text-sm text-gray-600\">Click &quot;Generate&quot; to create your sitemap.xml file,",
+   "then download it</p>",
+   "<p class=\"text-sm text-gray-600\">Envoyer your sitemap in Google Search Console for faster",
+   "indexing</p>",
+   "<p>Log in to Google Search Console, select your property, go to 'Sitemaps' in the left sidebar,",
+   "errors or warnings that need attention.</p>"
+  ],
+  "added_other_count": 3
+ },
+ "resources/views/frontoffice/partials/home-sections.blade.php": {
+  "removed": {
+   "other": 4
+  },
+  "added": {
+   "other": 4
+  },
+  "removed_other": [
+   "<p class=\"text-lg text-[var(--text-secondary)] max-w-2xl mx-auto\">Comparez vos options et découvrez pourquoi CodeSommet offre le meilleur rapport qualité-prix. <a href=\"{{ route('get-quote') }}\" class",
+   "<p class=\"font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto\">Transformez les défis en opportunités avec nos solutions éprouvées</p>",
+   "<h3 class=\"text-base font-semibold text-[var(--text-primary)] mb-3\">{{ $item['title'] }}</h3>",
+   "<p class=\"text-lg md:text-xl text-black/70 max-w-3xl mx-auto\">Réservez un appel découverte pour discuter de vos besoins et obtenir un devis personnalisé</p>"
+  ],
+  "added_other_count": 4
+ }
+}

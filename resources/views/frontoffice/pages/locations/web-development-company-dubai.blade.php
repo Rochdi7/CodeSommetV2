@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Dubai<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Dubai</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -85,9 +85,8 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="CROISSANCE COMMERCIALE À DUBAÏ"></span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">CROISSANCE
-                                            COMMERCIALE À DUBAÏ</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="LA CROISSANCE COMMERCIALE À DUBAÏ"></span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">LA CROISSANCE COMMERCIALE À DUBAÏ</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-dubai.ml_1072') }}</p>

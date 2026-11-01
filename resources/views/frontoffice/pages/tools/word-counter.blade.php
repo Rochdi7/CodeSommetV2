@@ -156,10 +156,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Words are individual text units separated by spaces. Sentences are complete thoughts ending
-                                with punctuation (. ! ?). Paragraphs are groups of sentences separated by line breaks.
-                                Understanding these metrics helps you structure content for readability-shorter sentences
-                                improve clarity, while proper paragraph breaks enhance scannability.</p>
+                            <p>Les mots sont des unités de texte séparées par des espaces. Les phrases expriment une idée complète et se terminent par une ponctuation (. ! ?). Les paragraphes sont des groupes de phrases séparés par des retours à la ligne. Comprendre ces indicateurs aide à structurer un contenu lisible : des phrases courtes gagnent en clarté et des paragraphes bien découpés facilitent la lecture en diagonale.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

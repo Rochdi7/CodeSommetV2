@@ -104,8 +104,7 @@
                                 SGVsbG8gV29ybGQh</p>
                         </div>
                     </div>
-                    <p class="text-xs text-gray-500 mt-4">💡 <strong>Tip:</strong> Use Cmd+Enter (Mac) or Ctrl+Enter
-                        (Windows) to quickly encode/decode</p>
+                    <p class="text-xs text-gray-500 mt-4">💡 <strong>Astuce :</strong> utilisez Cmd+Entrée (Mac) ou Ctrl+Entrée (Windows) pour encoder ou décoder rapidement</p>
                 </div>
             </div>
             <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">

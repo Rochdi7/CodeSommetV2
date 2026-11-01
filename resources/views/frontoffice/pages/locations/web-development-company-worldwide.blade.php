@@ -356,18 +356,20 @@
                 ['q' => __('locations/web-development-company-worldwide.faq_q4'), 'a' => __('locations/web-development-company-worldwide.faq_a4')],
                 ['q' => __('locations/web-development-company-worldwide.faq_q5'), 'a' => __('locations/web-development-company-worldwide.faq_a5')],
                 ['q' => __('locations/web-development-company-worldwide.faq_q6'), 'a' => __('locations/web-development-company-worldwide.faq_a6')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q7'), 'a' => __('locations/web-development-company-worldwide.faq_a7')],
+                ['q' => __('locations/web-development-company-worldwide.faq_q8'), 'a' => __('locations/web-development-company-worldwide.faq_a8')],
                 ];
                 @endphp
                 @foreach($faqs as $faq)
                 <details class="group bg-[#F8F8F8] rounded-xl border border-[#E8E8E8] transition-colors duration-200 hover:border-[#DCDCDC] open:bg-white">
-                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-5 sm:px-6 py-4 sm:py-5 text-left list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-5 sm:px-6 py-4 sm:py-5 text-left list-none [&amp;::-webkit-details-marker]:hidden">
                         <h3 class="text-base sm:text-lg font-semibold text-[#0F0F0F] leading-snug mb-0">{{ $faq['q'] }}</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#0F0F0F]/40 flex-shrink-0 transition-transform duration-200 group-open:rotate-180">
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </summary>
                     <div class="px-5 sm:px-6 pt-4 pb-5 sm:pb-6 border-t border-[#E8E8E8]">
-                        <p class="text-[15px] text-[#0F0F0F]/60 leading-[1.7]">{{ $faq['a'] }}</p>
+                        <p class="text-[15px] text-[#0F0F0F]/60 leading-[1.7]">{!! $faq['a'] !!}</p>
                     </div>
                 </details>
                 @endforeach

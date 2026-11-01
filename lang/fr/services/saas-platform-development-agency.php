@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement de Plateformes SaaS & B2B qui génèrent des',
-    'title' => 'Développement de Plateformes SaaS & B2B | CodeSommet',
-    'meta_description' => 'Développement de plateformes SaaS sur mesure : tableaux de bord, administration, intégrations API et facturation par abonnement. Devis gratuit.',
+    'h1_seo' => 'Développement SaaS & Plateformes B2B avec des',
+    'title' => 'Développement SaaS & Applications Web B2B | CodeSommet',
+    'meta_description' => 'Développement SaaS sur mesure : applications web B2B, tableaux de bord, multi-tenant, intégrations API et facturation par abonnement. Devis gratuit.',
     'meta_keywords' => 'développement plateforme saas,développement logiciel b2b,développement application cloud,développement tableau de bord saas,système facturation abonnement,plateforme intégration api,saas marque blanche',
-    'og_title' => 'Développement de Plateformes SaaS & Logiciels B2B | CodeSommet',
-    'og_description' => 'Développement spécialisé de plateformes SaaS : tableaux de bord utilisateurs, panneaux d\'administration, intégrations API et facturation par abonnement. Contactez-nous pour les tarifs.',
-    'twitter_description' => 'Développement spécialisé de plateformes SaaS : tableaux de bord utilisateurs, panneaux d\'administration, intégrations API et facturation par abonnement.',
+    'og_title' => 'Développement SaaS & Applications Web B2B | CodeSommet',
+    'og_description' => 'Développement SaaS sur mesure : applications web B2B, tableaux de bord, multi-tenant, intégrations API et facturation par abonnement. Devis gratuit.',
+    'twitter_description' => 'Développement SaaS sur mesure : applications web B2B, tableaux de bord, multi-tenant, intégrations API et facturation par abonnement. Devis gratuit.',
     'text_0' => 'Industrie Spécialisée',
     'text_1' => 'NOUS CRÉONS DES PLATEFORMES SAAS QUI GÉNÈRENT DES',
     'text_2' => 'Basé dans le secteur',
@@ -113,7 +113,7 @@ return [
     'text_501' => 'Automatisation',
     'text_502' => 'Automatisation',
     'text_503' => 'Automatisation',
-    'ml_903' => 'Développement spécialisé de plateformes SaaS pour les éditeurs B2B, fournisseurs de services cloud et startups tech. Nous créons des plateformes SaaS avec architecture évolutive, analytiques en temps réel et intégrations fluides, pensées pour faire croître vos inscriptions utilisateurs.',
+    'ml_903' => 'Développement SaaS sur mesure pour les éditeurs B2B, les startups et les entreprises qui veulent transformer un processus en produit : architecture multi-tenant évolutive, abonnements et facturation, tableaux de bord et intégrations API. Nous développons aussi des applications web sur mesure à usage interne, du MVP à la plateforme complète.',
     'ml_904' => 'Réserver une démo gratuite',
     'ml_905' => 'Expertise approfondie en logiciels B2B, plateformes cloud et services par abonnement. Nous comprenons l\'onboarding utilisateur, la réduction du churn et les stratégies de croissance orientées produit.',
     'ml_906' => 'Fonctionnalités SaaS Alimentées par l\'IA',
@@ -257,4 +257,9 @@ return [
     'faq_q6' => 'Supportez-vous le développement et la documentation d\'API ?',
     'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs SaaS ?',
     'faq_q8' => 'Que se passe-t-il après le lancement du MVP : itérations, maintenance et évolutions ?',
+    'faq_q9' => 'Combien coûte le développement d\'une plateforme SaaS ?',
+    'faq_a9' => 'Tout dépend du périmètre de la première version : un MVP centré sur une fonctionnalité clé, avec authentification, abonnement et tableau de bord, ne représente pas le même effort qu\'un produit multi-tenant complet avec rôles, intégrations et API publique. Il faut aussi prévoir les coûts récurrents (hébergement, services tiers, maintenance et évolutions). Nous recommandons de lancer un MVP, de le confronter à de vrais utilisateurs, puis d\'itérer. Notre article <a href="/blog/creer-une-plateforme-saas-mvp-multi-tenant-facturation-par-ou-commencer" class="underline">créer une plateforme SaaS : par où commencer</a> détaille la démarche, et chaque projet est chiffré sur devis.',
+    'faq_q10' => 'Développez-vous aussi des applications web sur mesure qui ne sont pas des SaaS ?',
+    'faq_a10' => 'Oui. Une partie de nos projets sont des applications web sur mesure à usage interne ou réservé à vos clients : portail client, back-office de gestion, outil de devis, CRM adapté à votre processus ou tableau de bord de pilotage. Le développement suit la même méthode que pour un SaaS (cadrage, maquettes, livraisons par étapes), sans la couche d\'abonnement et de multi-tenant si elle n\'est pas nécessaire.',
+    'seo_fix_bdc6dd02' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des éditeurs SaaS et B2B.',
 ];

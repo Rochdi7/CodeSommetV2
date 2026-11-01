@@ -387,7 +387,7 @@ $comparisons = [
         {{-- Section Header --}}
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="font-family: var(--font-heading);">Le Choix d'Investissement Intelligent</h2>
-            <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Comparez vos options et découvrez pourquoi CodeSommet offre le meilleur rapport qualité-prix. <a href="{{ route('get-quote') }}" class="text-[var(--color-primary-orange)] font-semibold hover:underline">Demandez Votre Devis Gratuit</a></p>
+            <p class="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">Création de site web avec CodeSommet, designer à temps plein ou agence traditionnelle : comparez délais, périmètre et mode de tarification. <a href="{{ route('get-quote') }}" class="text-[var(--color-primary-orange)] font-semibold hover:underline">Demandez Votre Devis Gratuit</a></p>
         </div>
 
         {{-- Single responsive table: fixed px columns + horizontal scroll on
@@ -466,7 +466,7 @@ $comparisons = [
     <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
         <div class="text-center mb-16">
             <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4 max-w-4xl mx-auto text-3xl md:text-4xl lg:text-5xl">6 Problèmes Courants de Sites Web que Nous Résolvons</h2>
-            <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Transformez les défis en opportunités avec nos solutions éprouvées</p>
+            <p class="font-body leading-relaxed font-normal text-[var(--text-secondary)] max-w-2xl mx-auto">Ce que notre agence digitale au Maroc corrige le plus souvent sur les sites existants de ses clients</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @php
@@ -487,7 +487,7 @@ $comparisons = [
                     <div class="absolute inset-0 w-full h-full bg-white rounded-2xl flip-card-front">
                         <div class="w-full h-full bg-white rounded-2xl border-2 border-dashed border-[#E5E5E5] p-5 flex flex-col justify-between">
                             <div>
-                                <h3 class="text-base font-semibold text-[var(--text-primary)] mb-3">{{ $item['title'] }}</h3>
+                                <div class="hd-3 text-base font-semibold text-[var(--text-primary)] mb-3">{{ $item['title'] }}</div>
                                 <div class="hidden md:block bg-[#F8F8F8] rounded-lg px-4 py-2 mb-3">
                                     <p class="text-xs font-medium text-center text-[var(--text-primary)]">Problème</p>
                                 </div>
@@ -525,7 +525,7 @@ $comparisons = [
     <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-12 md:mb-16">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-4" style="font-family:var(--font-heading)">Solutions Personnalisées, Conçues pour Vous</h2>
-            <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Réservez un appel découverte pour discuter de vos besoins et obtenir un devis personnalisé</p>
+            <p class="text-lg md:text-xl text-black/70 max-w-3xl mx-auto">Site vitrine, e-commerce ou plateforme sur mesure : le prix de la création de votre site web au Maroc est établi sur devis, après un appel découverte gratuit</p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {{-- Développement de Site Web Card --}}

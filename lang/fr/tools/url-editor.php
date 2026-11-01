@@ -31,7 +31,7 @@ return [
     'faq' => [
         ['q' => 'Pourquoi retirer les paramètres de suivi ?', 'a' => 'Les paramètres utm_*, gclid ou fbclid ne changent pas le contenu de la page mais créent des URL différentes. Les retirer évite de compter plusieurs fois la même page dans un audit ou un fichier de redirections.'],
         ['q' => 'Quelle différence entre « retirer le suivi » et « tout retirer » ?', 'a' => '« Retirer le suivi » ne supprime que les paramètres publicitaires et analytiques connus et conserve ceux qui changent le contenu (pagination, filtres). « Tout retirer » supprime toute la chaîne de requête.'],
-        ['q' => 'Les URL sont-elles envoyées quelque part ?', 'a' => 'Non. Tout le traitement se fait dans votre navigateur : la liste ne quitte jamais votre ordinateur.'],
+        ['q' => 'Les URL sont-elles envoyées quelque part ?', 'a' => 'Non. Tout le traitement se fait dans votre navigateur : la liste ne quitte jamais votre ordinateur et n\'est pas enregistrée. Vous pouvez donc nettoyer sans crainte des exports d\'audit, des fichiers de redirections ou des URL de pré-production.'],
         ['q' => 'Que deviennent les lignes qui ne sont pas des URL ?', 'a' => 'Elles sont mises de côté et listées séparément pour que vous puissiez les corriger, au lieu d\'être silencieusement supprimées.'],
         ['q' => 'La barre oblique finale est-elle importante ?', 'a' => 'Pour un serveur, /page et /page/ sont deux adresses différentes. Choisissez une convention et appliquez-la partout (liens internes, sitemap, canonical) ; l\'option « retirer la barre finale » vous aide à harmoniser une liste.'],
     ],

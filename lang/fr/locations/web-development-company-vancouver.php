@@ -25,7 +25,7 @@ return [
     'text_14' => 'Nos réalisations à',
     'text_15' => 'Histoires de réussite à',
     'text_16' => 'Éducation',
-    'text_17' => 'Plateforme d\x27inscription en ligne',
+    'text_17' => 'Plateforme d\'inscription en ligne',
     'text_18' => 'Santé',
     'text_19' => 'Tourisme',
     'text_20' => 'Tableaux de bord SaaS conçus pour évoluer avec votre activité',
@@ -211,4 +211,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu pour les entreprises de Vancouver après le lancement ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_92a24a7f' => 'Découvrez pourquoi les entreprises de Vancouver choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_fedf67e8' => 'CodeSommet Vancouver vs Autres',
+    'seo_fix_e81865b5' => 'Une expertise approfondie dans les secteurs clés de Vancouver. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
+    'seo_fix_d74e5386' => 'Nos secteurs de spécialisation à Vancouver',
+    'seo_fix_cdf32fa4' => 'Pourquoi Choisir CodeSommet à Vancouver ?',
 ];

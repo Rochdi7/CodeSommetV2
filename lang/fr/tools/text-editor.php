@@ -32,9 +32,9 @@ return [
     'faq_intro' => 'Préparer des listes propres pour vos analyses SEO',
     'faq' => [
         ['q' => 'Dans quel ordre les opérations sont-elles appliquées ?', 'a' => 'Nettoyage des espaces, suppression des contenus entre crochets ou parenthèses, rechercher-remplacer, filtres, préfixe et suffixe, suppression des doublons et des lignes vides, puis tri. Le résultat est donc prévisible.'],
-        ['q' => 'La suppression des doublons tient-elle compte des majuscules ?', 'a' => 'Par défaut « Mot-clé » et « mot-clé » sont considérés comme identiques ; décochez l\'option pour les distinguer.'],
+        ['q' => 'La suppression des doublons tient-elle compte des majuscules ?', 'a' => 'Par défaut, « Mot-clé » et « mot-clé » sont considérés comme identiques, ce qui convient au nettoyage de listes de mots-clés ou d\'adresses e-mail. Décochez l\'option pour les distinguer lorsque la casse a un sens, par exemple pour des codes produits ou des identifiants.'],
         ['q' => 'Comment utiliser une expression régulière ?', 'a' => 'Cochez « Expression régulière » : le champ « Rechercher » est alors interprété comme une expression JavaScript (drapeaux g et i). Une expression invalide est signalée sans modifier le texte.'],
-        ['q' => 'Et pour changer la casse ?', 'a' => 'Utilisez notre convertisseur de casse dédié, qui gère majuscules, minuscules, titres et formats de développeur.'],
+        ['q' => 'Et pour changer la casse ?', 'a' => 'Utilisez notre convertisseur de casse, proposé dans les outils connexes de cette page : il passe un texte en majuscules, en minuscules, en casse de titre ou de phrase, et gère les formats de développeur comme camelCase ou snake_case.'],
     ],
     'related' => [
         ['slug' => 'text-case-converter', 'title' => 'Convertisseur de Casse', 'desc' => 'Majuscules, minuscules, titres et formats de code'],

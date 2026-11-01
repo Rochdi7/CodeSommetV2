@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Nettoyeur de Caractères Invisibles Gratuit | CodeSommet',
+    'title' => 'Nettoyeur de Caractère Invisible Gratuit | CodeSommet',
     'meta_description' => 'Détectez et supprimez les caractères invisibles d\'un texte : largeur nulle, marques de direction, espaces insécables. Rapport détaillé, 100 % local.',
     'meta_keywords' => 'caractères invisibles,zero width space,espace insécable,nettoyer texte,caractères cachés,u+200b,texte copié coller',
-    'og_title' => 'Nettoyeur de Caractères Invisibles',
+    'og_title' => 'Nettoyeur de Caractère Invisible Gratuit | CodeSommet',
     'og_description' => 'Trouvez et supprimez les caractères invisibles qui perturbent vos titres, balises et contenus copiés-collés.',
     'twitter_description' => 'Détectez et supprimez les caractères invisibles d\'un texte, dans votre navigateur.',
 
@@ -31,6 +31,7 @@ return [
         ['q' => 'Pourquoi c\'est un problème pour le SEO ?', 'a' => 'Un caractère invisible dans une balise title, une URL ou un mot-clé crée une chaîne différente de celle attendue : recherches internes qui échouent, doublons apparents, affichage inattendu dans les résultats.'],
         ['q' => 'Les emojis sont-ils conservés ?', 'a' => 'Oui. Le joint de largeur nulle (U+200D) qui compose certains emojis est conservé lorsqu\'il se trouve entre deux emojis, et les sélecteurs de variante ne sont pas touchés.'],
         ['q' => 'Cet outil rend-il un texte « indétectable » ?', 'a' => 'Non. Il nettoie des caractères techniques ; il ne modifie ni le style ni le vocabulaire d\'un texte et ne prétend pas masquer son origine.'],
+        ['q' => 'Qu\'est-ce qu\'un caractère invisible ?', 'a' => 'Un caractère invisible est un caractère Unicode qui n\'affiche rien à l\'écran mais reste présent dans le texte : espace de largeur nulle, marque de direction, espace insécable ou trait d\'union conditionnel. Ils arrivent souvent par copier-coller depuis un traitement de texte, un PDF, un site web ou un outil de rédaction, et peuvent casser une recherche, une URL ou une balise sans que vous le voyiez. Cet outil les repère, les liste et les supprime.'],
     ],
     'related' => [
         ['slug' => 'word-counter', 'title' => 'Compteur de Mots', 'desc' => 'Mots, caractères et temps de lecture'],

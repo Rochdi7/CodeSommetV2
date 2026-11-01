@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement de Plateformes E-Learning qui génèrent des',
-    'title' => 'Développement de Plateformes E-Learning (LMS) | CodeSommet',
+    'h1_seo' => 'Plateforme E-Learning sur Mesure : des',
+    'title' => 'Plateforme E-Learning & LMS sur Mesure | CodeSommet',
     'meta_description' => 'Plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants, certification.',
     'meta_keywords' => 'développement plateforme elearning,développement LMS,système de gestion d\'apprentissage,plateforme de cours en ligne,LMS personnalisé,développement marketplace de cours,plateforme e-learning,développement logiciel éducatif',
-    'og_title' => 'Développement de Plateforme E-Learning : LMS sur Mesure | CodeSommet',
+    'og_title' => 'Plateforme E-Learning & LMS sur Mesure | CodeSommet',
     'og_description' => 'Création de plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants et certification.',
     'twitter_description' => 'Création de plateformes e-learning et LMS sur mesure pour écoles, centres de formation et entreprises : parcours d\'apprentissage, suivi des apprenants et certification.',
     'text_0' => 'Industrie Spécialisée',
@@ -264,4 +264,13 @@ return [
     'faq_q6' => 'Les étudiants peuvent-ils accéder aux cours sur appareils mobiles ?',
     'faq_q7' => 'Pouvons-nous migrer nos contenus de formation existants (SCORM, PDF, vidéos) ?',
     'faq_q8' => 'Pouvez-vous gérer plusieurs sites, classes ou services avec des parcours différents ?',
+    'faq_q9' => 'Combien coûte une plateforme e-learning sur mesure ?',
+    'faq_a9' => 'Le budget dépend du nombre de profils (apprenants, formateurs, administrateurs), des fonctionnalités pédagogiques (parcours, quiz, certificats, classes virtuelles), des intégrations (paiement, SSO, outils RH) et du volume de contenus à migrer. Adapter un LMS existant coûte moins au départ mais implique des licences et des limites ; une plateforme e-learning sur mesure vous appartient et suit vos processus. Notre article <a href="/blog/lms-sur-mesure-ou-produit-edtech-quelle-plateforme-e-learning" class="underline">LMS sur mesure ou produit EdTech</a> compare les deux approches, et chaque projet est chiffré sur devis.',
+    'faq_q10' => 'Comment créer une plateforme e-learning pour mon organisation ?',
+    'faq_a10' => 'Partez des apprenants : qui doit se former, sur quoi, et comment mesurer la réussite. Listez ensuite les fonctionnalités indispensables au lancement (inscriptions, parcours, suivi de progression, certificats) et celles qui peuvent attendre. Nous structurons le projet en cadrage, maquettes, développement par étapes et phase pilote avec un premier groupe d\'apprenants avant le déploiement complet.',
+    'seo_fix_d4c049fa' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des organismes de formation.',
+    'seo_fix_ba74f52a' => 'Notre Processus de Développement de Plateformes E-Learning',
+    'seo_fix_699d3be8' => 'Le Défi : les organismes de formation font face à des défis web uniques',
+    'seo_fix_9e66bd29' => 'Adopté par les organismes de formation',
+    'seo_fix_70013097' => 'Fonctionnalités essentielles pour les organismes de formation',
 ];

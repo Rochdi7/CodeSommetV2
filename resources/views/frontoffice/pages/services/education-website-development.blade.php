@@ -363,11 +363,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/education-website-development-agency.text_7') }}
-                        <!-- -->{{ __('services/education-website-development-agency.text_8') }}<!-- -->
-                        Entreprises
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/education-website-development-agency.seo_fix_2e1ec1c3') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -385,9 +381,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->{{ __('services/education-website-development-agency.text_13') }}<!-- -->{{ __('services/education-website-development-agency.ml_939') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/education-website-development-agency.seo_fix_cbad64fa') }}</p>
                 </div>
             </div>
         </section>
@@ -405,10 +399,7 @@
                         </svg>{{ __('services/education-website-development-agency.ml_940') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/education-website-development-agency.text_14') }}<!-- -->:
-                        <!-- -->{{ __('services/education-website-development-agency.text_15') }}<!-- -->{{ __('services/education-website-development-agency.ml_941') }}
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/education-website-development-agency.seo_fix_22768b74') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/education-website-development-agency.ml_942') }}</p>
                 </div>
@@ -580,9 +571,7 @@
                         <!-- -->{{ __('services/education-website-development-agency.ml_950') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/education-website-development-agency.text_22') }}<!-- --> for <!-- -->Éducation
-                        et EdTech<!-- --> Sites Web</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/education-website-development-agency.seo_fix_ed3cf615') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/education-website-development-agency.ml_951') }}</p>
                 </div>
@@ -967,10 +956,7 @@
                         </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/education-website-development-agency.text_32') }}<!-- --> for
-                        <!-- -->{{ __('services/education-website-development-agency.ml_968') }}
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/education-website-development-agency.seo_fix_1537bcce') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/education-website-development-agency.ml_969') }}</p>
                 </div>
@@ -1783,9 +1769,7 @@
                         <!-- -->{{ __('services/education-website-development-agency.text_58') }}<!-- --> vs
                         Autres
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('services/education-website-development-agency.text_59') }} <!-- -->Éducation et
-                        EdTech<!-- -->{{ __('services/education-website-development-agency.ml_994') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/education-website-development-agency.seo_fix_43e5b45d') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -2380,10 +2364,7 @@
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
                         <!-- -->{{ __('services/education-website-development-agency.ml_1014') }}
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de
-                        <!-- -->{{ __('services/education-website-development-agency.text_78') }}<!-- --> entreprises.
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/education-website-development-agency.seo_fix_d2363ea2') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"

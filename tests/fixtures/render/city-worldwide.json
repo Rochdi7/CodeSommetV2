@@ -2,7 +2,7 @@
     "headings": [
         [
             1,
-            "Agence Web Offshore au Maroc : nous travaillons à distance, où que vous soyez PARTOUT OÙ QUE VOUS SOYEZ"
+            "Agence Web Offshore au Maroc : développement web sur mesure pour vos projets, PARTOUT OÙ QUE VOUS SOYEZ"
         ],
         [
             2,
@@ -89,6 +89,14 @@
             "Offrez-vous un support continu après le lancement ?"
         ],
         [
+            3,
+            "Pourquoi externaliser le développement web au Maroc ?"
+        ],
+        [
+            3,
+            "Quels sont les avantages et les risques du développement web offshore ?"
+        ],
+        [
             2,
             "Explorer davantage"
         ],
@@ -98,7 +106,7 @@
         ]
     ],
     "links": {
-        "internal": 73,
+        "internal": 75,
         "external": 5,
         "fragment": 0,
         "other": 0
@@ -107,7 +115,6 @@
         "portfolio"
     ],
     "parser_errors": {
-        "htmlParseEntityRef: expecting ';'": 6,
         "htmlParseEntityRef: no name": 2
     }
 }

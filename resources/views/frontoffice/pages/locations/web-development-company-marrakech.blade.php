@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Marrakech<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Marrakech</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -381,9 +381,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients dans plusieurs pays</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->Marrakech<!-- -->{{ __('locations/web-development-company-marrakech.ml_1082') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('locations/web-development-company-marrakech.seo_fix_25079f4b') }}</p>
                 </div>
             </div>
         </section>
@@ -406,11 +404,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Marrakech<!-- -->
-                        {{ __('locations/web-development-company-marrakech.text_6') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans les secteurs clés de
-                        <!-- -->Marrakech<!-- -->{{ __('locations/web-development-company-marrakech.ml_1083') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-marrakech.seo_fix_3a11b44d') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-marrakech.seo_fix_c79cbeee') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -1344,10 +1339,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Marrakech<!-- -->
                         {{ __('locations/web-development-company-marrakech.text_38') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-marrakech.text_39') }}
-                        <!-- -->Marrakech<!-- -->{{ __('locations/web-development-company-marrakech.ml_1123') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-marrakech.seo_fix_c1609993') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -2135,6 +2127,40 @@
                                 </svg></div>
                         </button>
                         <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-marrakech.faq_a6') }}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">7</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-marrakech.faq_q7') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('locations/web-development-company-marrakech.faq_a7') !!}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-8"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">8</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-marrakech.faq_q8') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-8" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('locations/web-development-company-marrakech.faq_a8') !!}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">

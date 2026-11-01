@@ -191,4 +191,12 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement à Copenhague ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_0ee2ee01' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Copenhague.',
+    'seo_fix_0f26cbae' => 'Ce que nos clients de Copenhague disent de nous',
+    'seo_fix_d6eb86b6' => 'Découvrez pourquoi les entreprises de Copenhague choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
+    'seo_fix_657cf81a' => 'De vrais projets, de vrais résultats. Découvrez comment nous avons aidé des entreprises de Copenhague à atteindre leurs objectifs numériques.',
+    'seo_fix_4718106a' => 'Expertise approfondie des secteurs clés de Copenhague. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_fb9e4eb3' => 'Nos secteurs de spécialisation à Copenhague',
+    'seo_fix_8b9f1c16' => 'De vrais résultats obtenus avec des entreprises de Copenhague',
+    'seo_fix_c609b892' => 'Approuvé par les entreprises de Copenhague',
 ];

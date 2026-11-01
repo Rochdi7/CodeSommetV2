@@ -285,7 +285,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Les cibles tactiles sont des éléments interactifs comme les boutons, liens et champs de formulaire que les utilisateurs tapent sur les appareils mobiles. Google recommends minimum dimensions of 48x48 pixels (CSS pixels) with adequate spacing between them. Small or crowded touch targets lead to accidental taps, frustrating users and increasing bounce rates. Proper touch target sizing is crucial for mobile usability.
+                    #text Les cibles tactiles sont les éléments interactifs, comme les boutons, liens et champs de formulaire, que les utilisateurs touchent sur mobile. Les recommandations d'accessibilité et de Google préconisent une taille minimale d'environ 48 x 48 pixels CSS, avec un espacement suffisant entre elles. Des cibles trop petites ou trop serrées provoquent des clics accidentels, frustrent les utilisateurs et augmentent le taux de rebond.
               <div class="border-b border-gray-200 last:border-0">
                 <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                   <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -299,7 +299,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Le défilement horizontal se produit lorsque le contenu est plus large que le viewport. Prevent this by: 1) Using the viewport meta tag, 2) Setting max-width: 100% on images and media, 3) Using responsive units (%, vw, rem) instead of fixed pixels, 4) Testing with CSS media queries, and 5) Avoiding fixed-width containers wider than the viewport. Modern CSS frameworks handle this automatically.
+                    #text Le défilement horizontal apparaît lorsque le contenu est plus large que la zone d'affichage (viewport). Pour l'éviter : 1) utilisez la balise meta viewport, 2) appliquez max-width: 100% aux images et médias, 3) privilégiez des unités adaptatives (%, vw, rem) plutôt que des pixels fixes, 4) testez vos media queries CSS, et 5) évitez les conteneurs à largeur fixe plus larges que l'écran. Les frameworks CSS modernes gèrent généralement ces points automatiquement.
               <div class="border-b border-gray-200 last:border-0">
                 <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                   <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -327,7 +327,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Testez la compatibilité mobile après chaque changement de design majeur, new feature deployment, or content update. Also run monthly checks to catch issues from third-party scripts or plugins. Use this tool alongside Google's Mobile-Friendly Test, real device testing (iPhone, Android), and Chrome DevTools mobile emulation. Mobile issues can appear unexpectedly, so regular testing prevents ranking drops.
+                    #text Testez la compatibilité mobile après chaque changement de design important, chaque nouvelle fonctionnalité ou mise à jour de contenu, et faites une vérification mensuelle pour repérer les problèmes causés par des scripts ou extensions tiers. Complétez cet outil par des tests sur de vrais appareils (iPhone, Android), l'émulation mobile de Chrome DevTools et un audit Lighthouse (Google a retiré son ancien test d'optimisation mobile fin 2023). Des problèmes mobiles peuvent apparaître à tout moment : des tests réguliers évitent les pertes de positions.
             <div class="mt-6 text-center">
               <p class="text-sm text-gray-600 mb-2">
                 #text Vous avez encore des questions ?
@@ -934,6 +934,7 @@
     <script defer="defer" src="http://localhost:8000/js/toastr-init.js?v=VERSION">
     <script src="http://localhost:8000/js/devtools-deterrent.min.js?v=VERSION">
     <script defer="defer" src="http://localhost:8000/js/app.min.js?v=VERSION">
+    <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
     <script defer="defer" src="http://localhost:8000/js/analytics.min.js?v=VERSION">
     <script>

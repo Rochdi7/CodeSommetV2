@@ -2,10 +2,10 @@
 
 return [
     'h1_seo' => 'Convertisseur de Casse de Texte Gratuit',
-    'title' => 'Convertisseur de Casse de Texte Gratuit | CodeSommet',
+    'title' => 'Convertisseur Majuscule en Minuscule | CodeSommet',
     'meta_description' => 'Convertissez un texte en majuscules, minuscules, casse de titre, casse de phrase ou camelCase. Conversion instantanée et gratuite.',
     'meta_keywords' => 'text case converter,uppercase converter,lowercase converter,title case,camelCase,text transformer',
-    'og_title' => 'Convertisseur de Casse de Texte - Transformez le Texte Instantanément',
+    'og_title' => 'Convertisseur Majuscule en Minuscule | CodeSommet',
     'og_description' => 'Convertissez le texte entre majuscules, minuscules, casse de titre et plus',
     'twitter_description' => 'Convertissez le texte entre majuscules, minuscules, casse de titre et plus',
     'text_0' => 'Convertissez le texte entre différentes casses (majuscules, minuscules, casse de titre, camelCase, snake_case et plus)',
@@ -25,7 +25,7 @@ return [
     'text_14' => 'camelCase est standard pour les variables et fonctions JavaScript/TypeScript (ex. : getUserData). snake_case est courant en Python, Ruby et les champs de base de données (ex. : user_name). Title Case est rarement utilisé dans le code. UPPERCASE est généralement réservé aux constantes (ex. : API_KEY). Suivre ces conventions améliore la lisibilité et la maintenabilité du code.',
     'text_15' => 'Quelles sont les conventions de nommage en programmation ?',
     'text_16' => 'Quelles sont les règles correctes pour la Casse de Titre ?',
-    'text_17' => 'En Casse de Titre, mettez en majuscule le premier et le dernier mot, ainsi que tous les mots principaux (noms, verbes, adjectifs, adverbes). Ne mettez pas en majuscule les articles (a, an, the), les conjonctions de coordination (and, but, or) ou les prépositions de moins de 5 lettres (in, on, at, to, for) sauf s\'ils sont le premier ou le dernier mot. Notre outil suit la convention AP Stylebook.',
+    'text_17' => 'En casse de titre anglaise, mettez en majuscule le premier et le dernier mot, ainsi que tous les mots principaux (noms, verbes, adjectifs, adverbes). Les articles (a, an, the), les conjonctions de coordination (and, but, or) et les prépositions de moins de 5 lettres (in, on, at, to, for) restent en minuscules, sauf en première ou dernière position. Notre outil suit la convention de l\'AP Stylebook ; en français, l\'usage est de ne mettre une majuscule qu\'au premier mot et aux noms propres.',
     'text_18' => 'Comment la casse du texte affecte-t-elle l\'accessibilité pour les lecteurs d\'écran ?',
     'text_19' => 'Les lecteurs d\'écran gèrent bien les différentes casses, mais évitez les MAJUSCULES pour les longs paragraphes car certains anciens lecteurs d\'écran peuvent lire chaque lettre individuellement. La casse de phrase et la casse de titre sont également accessibles. Pour les labels d\'interface, la casse de phrase est souvent préférée dans le design moderne pour une meilleure lisibilité rapide.',
     'text_20' => 'Oui ! Cet outil gère du texte de toute longueur, y compris plusieurs paragraphes et caractères spéciaux. Collez simplement votre contenu et tout le formatage sera préservé. L\'outil convertit la casse tout en maintenant les sauts de ligne, la ponctuation et l\'espacement. Utilisez le bouton Copier sur chaque carte de résultat pour une copie rapide.',
@@ -49,4 +49,6 @@ return [
     'text_135' => 'Convertir le Texte',
     'text_136' => 'Quand utiliser la Casse de Titre vs la Casse de Phrase ?',
     'text_137' => 'Puis-je convertir de grands blocs de texte ou plusieurs paragraphes ?',
+    'faq_new1_q' => 'Comment transformer un texte en majuscules ou en minuscules ?',
+    'faq_new1_a' => 'Collez votre texte, puis choisissez « UPPERCASE » pour tout passer en majuscules ou « lowercase » pour tout passer en minuscules : la conversion est instantanée. Dans Word, le raccourci Maj + F3 fait alterner les casses ; dans Excel, les fonctions MAJUSCULE() et MINUSCULE() convertissent le contenu d\'une cellule. Pour un titre, préférez la casse de phrase ou de titre aux majuscules intégrales, plus difficiles à lire.',
 ];

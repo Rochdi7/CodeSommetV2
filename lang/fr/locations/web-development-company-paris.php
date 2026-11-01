@@ -190,4 +190,8 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement à Paris ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_3ceed562' => 'Découvrez pourquoi les entreprises de Paris choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_2df18b12' => 'Expertise approfondie dans les secteurs clés de Paris. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_f0eb568d' => 'Nos secteurs de spécialisation à Paris',
+    'seo_fix_69165b0f' => 'De vrais résultats obtenus avec des entreprises de Paris',
 ];

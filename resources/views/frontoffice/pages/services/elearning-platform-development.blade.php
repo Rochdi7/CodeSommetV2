@@ -357,11 +357,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/elearning-platform-development-agency.text_3') }}
-                        <!-- -->{{ __('services/elearning-platform-development-agency.text_180') }}<!-- -->
-                        Entreprises
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/elearning-platform-development-agency.seo_fix_9e66bd29') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -399,10 +395,7 @@
                         </svg>{{ __('services/elearning-platform-development-agency.ml_934') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/elearning-platform-development-agency.text_10') }}<!-- -->:
-                        <!-- -->{{ __('services/elearning-platform-development-agency.text_181') }}<!-- -->{{ __('services/elearning-platform-development-agency.ml_935') }}
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/elearning-platform-development-agency.seo_fix_699d3be8') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/elearning-platform-development-agency.ml_936') }}</p>
                 </div>
@@ -576,9 +569,7 @@
                         Platform
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/elearning-platform-development-agency.text_17') }}<!-- --> for <!-- -->E-Learning
-                        Platform<!-- --> Sites Web</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/elearning-platform-development-agency.seo_fix_70013097') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise e-learning
                         platform a besoin sur une seule plateforme</p>
                 </div>
@@ -961,9 +952,7 @@
                         </svg>{{ __('services/elearning-platform-development-agency.text_176') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/elearning-platform-development-agency.text_27') }}<!-- --> for <!-- -->E-Learning
-                        Platform</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/elearning-platform-development-agency.seo_fix_ba74f52a') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/elearning-platform-development-agency.ml_952') }}</p>
                 </div>
@@ -2363,11 +2352,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('services/elearning-platform-development-agency.sw_2932') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de
-                        <!-- -->{{ __('services/elearning-platform-development-agency.text_206') }}<!-- -->
-                        entreprises.
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/elearning-platform-development-agency.seo_fix_d4c049fa') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
@@ -2506,6 +2491,40 @@
                                 </svg></div>
                         </button>
                         <div id="faq-answer-8" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/elearning-platform-development-agency.faq_a8') }}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-9"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">9</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/elearning-platform-development-agency.faq_q9') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-9" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('services/elearning-platform-development-agency.faq_a9') !!}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-10"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">10</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/elearning-platform-development-agency.faq_q10') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-10" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('services/elearning-platform-development-agency.faq_a10') !!}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">

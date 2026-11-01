@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Tunis<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Tunis</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -163,9 +163,7 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tunis.text_4') }}
-                        <!-- -->Tunis<!-- -->?
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tunis.seo_fix_d8f9dfb8') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-tunis.sw_3061') }}</p>
                 </div>
@@ -394,10 +392,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Tunis<!-- -->
-                        {{ __('locations/web-development-company-tunis.text_8') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise approfondie dans les secteurs clés
-                        de <!-- -->Tunis<!-- -->{{ __('locations/web-development-company-tunis.ml_1094') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tunis.seo_fix_137c2902') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-tunis.seo_fix_18eff243') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -1290,11 +1286,8 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Tunis<!-- --> vs Others</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-tunis.text_40') }}
-                        <!-- -->Tunis<!-- -->{{ __('locations/web-development-company-tunis.ml_1130') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tunis.seo_fix_4e21ed5c') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-tunis.seo_fix_1c5d8394') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1312,7 +1305,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Tunis<!-- --> Agences</div>
+                                    Autres agences à Tunis</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1536,8 +1529,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-tunis.text_45') }} <!-- -->Tunis<!-- -->
-                            Entreprises
+                            </svg>{{ __('locations/web-development-company-tunis.text_45') }} les entreprises de Tunis
                         </div>
                     </div>
                 </div>

@@ -38,7 +38,7 @@
         ],
         [
             2,
-            "Marrakech Nos Secteurs de Spécialisation"
+            "Nos secteurs de spécialisation à Marrakech"
         ],
         [
             2,
@@ -106,7 +106,7 @@
         ],
         [
             3,
-            "Comprenez-vous les lois de conformité et de protection des données du Morocco ?"
+            "Comprenez-vous les règles de protection des données au Maroc ?"
         ],
         [
             3,
@@ -115,6 +115,14 @@
         [
             3,
             "Pouvez-vous aider avec l'enregistrement de domaine .ma ?"
+        ],
+        [
+            3,
+            "Combien coûte la création d'un site web à Marrakech ?"
+        ],
+        [
+            3,
+            "Pouvez-vous créer un site pour un riad, un hôtel ou une agence de voyage à Marrakech ?"
         ],
         [
             2,
@@ -130,7 +138,7 @@
         ]
     ],
     "links": {
-        "internal": 79,
+        "internal": 83,
         "external": 7,
         "fragment": 3,
         "other": 0

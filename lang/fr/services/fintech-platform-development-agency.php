@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement de Plateformes FinTech qui génèrent des',
-    'title' => 'Développement de Plateformes FinTech & Paiement | CodeSommet',
+    'h1_seo' => 'Développement FinTech sur Mesure : plateformes et',
+    'title' => 'Développement FinTech & Paiement sur Mesure | CodeSommet',
     'meta_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire. Devis gratuit.',
     'meta_keywords' => 'développement plateforme fintech,développement passerelle de paiement,développement logiciel bancaire,développement plateforme de trading,système de vérification KYC,tableau de bord analytique financier,développement portefeuille numérique',
-    'og_title' => 'Développement de Plateformes FinTech & Paiement | CodeSommet',
+    'og_title' => 'Développement FinTech & Paiement sur Mesure | CodeSommet',
     'og_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire. Contactez-nous pour les tarifs.',
     'twitter_description' => 'Développement de plateformes FinTech : passerelles de paiement, tableaux de bord de trading, vérification KYC et conformité réglementaire.',
     'text_0' => 'Industrie Spécialisée',
@@ -123,7 +123,7 @@ return [
     'text_511' => 'Automatisation',
     'text_512' => 'Automatisation',
     'text_513' => 'Automatisation',
-    'ml_913' => 'Développement de plateformes FinTech spécialisé pour les processeurs de paiement, les banques numériques, les plateformes de trading et les services financiers. Nous construisons des plateformes FinTech suivant les bonnes pratiques PCI-DSS avec détection de fraude et traitement de transactions en temps réel, pensées pour soutenir la croissance de votre volume de transactions.',
+    'ml_913' => 'Développement fintech sur mesure pour les sociétés de paiement, banques numériques, plateformes d\'investissement et services financiers : plateformes de paiement suivant les bonnes pratiques PCI-DSS, détection de fraude et traitement des transactions en temps réel, conçues pour accompagner la croissance de vos volumes.',
     'ml_914' => 'Réserver une Démo FinTech Gratuite',
     'ml_915' => 'Expertise approfondie dans le traitement des paiements, la banque numérique et les plateformes de trading. Nous comprenons la conformité PCI-DSS, les réglementations AML et les stratégies de prévention de la fraude.',
     'ml_916' => 'Fonctionnalités FinTech Alimentées par l\'IA',
@@ -256,4 +256,11 @@ return [
     'faq_q6' => 'Supportez-vous les paiements multi-devises et transfrontaliers ?',
     'faq_q7' => 'Qu\'est-ce qui vous différencie des autres développeurs FinTech ?',
     'faq_q8' => 'Comment gérez-vous le reporting réglementaire et les pistes d\'audit ?',
+    'seo_fix_0e0439d1' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des entreprises de la fintech et de la finance.',
+    'seo_fix_8854616a' => 'Découvrez pourquoi les entreprises de la fintech et de la finance choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
+    'seo_fix_a0d88ad3' => 'Notre Processus de Développement pour la FinTech',
+    'seo_fix_0bfb8c4c' => 'Le Défi : les entreprises de la fintech et de la finance font face à des défis web uniques',
+    'seo_fix_a14263c5' => 'Des résultats réels obtenus avec des entreprises de la fintech et de la finance',
+    'seo_fix_074d7ab2' => 'Adopté par les entreprises de la fintech et de la finance',
+    'seo_fix_d38a1f7b' => 'Fonctionnalités essentielles pour les entreprises de la fintech et de la finance',
 ];

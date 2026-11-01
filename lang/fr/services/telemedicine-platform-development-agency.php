@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement de',
-    'title' => 'Développement de Plateformes de Télémédecine | CodeSommet',
-    'meta_description' => 'Applications de télémédecine complètes : consultations vidéo, dossiers patients, ordonnances et paiements, conformes à la confidentialité santé.',
+    'h1_seo' => 'Logiciel de Téléconsultation sur Mesure : développement de',
+    'title' => 'Logiciel de Téléconsultation sur Mesure | CodeSommet',
+    'meta_description' => 'Développement de logiciel de téléconsultation sur mesure : consultations vidéo, dossiers patients, ordonnances et paiements, données de santé protégées.',
     'meta_keywords' => 'développement plateforme télémédecine,agence plateforme télésanté,développement plateforme soins virtuels,plateforme consultation médicale en ligne,développement logiciel télésanté,plateforme consultation vidéo,surveillance patient à distance,développement plateforme santé,plateforme conforme HIPAA',
-    'og_title' => 'Développement de Plateforme de Télémédecine : Applications de Téléconsultation | CodeSommet',
-    'og_description' => 'Développement de plateformes de télémédecine : solutions de soins virtuels alimentées par l\'IA, tableaux de bord intelligents et télésanté conforme HIPAA.',
-    'twitter_description' => 'Développement de plateformes de télémédecine : soins virtuels alimentés par l\'IA, conformes HIPAA.',
+    'og_title' => 'Logiciel de Téléconsultation sur Mesure | CodeSommet',
+    'og_description' => 'Développement de logiciel de téléconsultation sur mesure : consultations vidéo, dossiers patients, ordonnances et paiements, données de santé protégées.',
+    'twitter_description' => 'Développement de logiciel de téléconsultation sur mesure : consultations vidéo, dossiers patients, ordonnances et paiements, données de santé protégées.',
     'text_0' => 'Télémédecine & Virtual Care',
     'text_1' => 'Industrie Spécialisée',
     'text_2' => 'NOUS CONSTRUISONS DES',
@@ -124,7 +124,7 @@ return [
     'ml_1110' => 'Télémédecine & Virtual Care',
     'ml_1111' => 'PLATEFORMES DE TÉLÉMÉDECINE',
     'ml_1112' => 'PLATEFORMES DE TÉLÉMÉDECINE',
-    'ml_1113' => 'Développement spécialisé de plateformes de télémédecine pour les cliniques virtuelles, les médecins en ligne et les prestataires de soins à distance. Nous concevons des plateformes de télésanté avec consultations vidéo sécurisées, portails patients et gestion des ordonnances, pensées pour absorber la croissance de votre activité de consultation à distance.',
+    'ml_1113' => 'Développement de logiciel de téléconsultation sur mesure pour les cliniques virtuelles, réseaux de soins et prestataires de santé à distance : consultations vidéo sécurisées, dossiers patients, ordonnances et paiements, réunis dans une plateforme de télémédecine qui évolue avec votre activité.',
     'ml_1114' => 'Réserver une démo gratuite',
     'ml_1115' => 'Voir le Portfolio Santé',
     'ml_1116' => 'Télémédecine & Virtual Care',
@@ -280,4 +280,6 @@ return [
     'faq_q6' => 'Supportez-vous les services de télémédecine internationaux ?',
     'faq_q7' => 'Comment fonctionne l\'e-prescription sur la plateforme ?',
     'faq_q8' => 'La plateforme peut-elle absorber un grand nombre de consultations simultanées ?',
+    'seo_fix_6420dc14' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des acteurs de la télémédecine.',
+    'seo_fix_674acb42' => 'Des résultats réels obtenus avec des acteurs de la télémédecine',
 ];

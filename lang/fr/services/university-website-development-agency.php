@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement de Sites Web Universitaires qui génèrent des',
-    'title' => 'Développement de Sites Web Universitaires | CodeSommet',
+    'h1_seo' => 'Création de Site Web pour Université : des',
+    'title' => 'Création de Site Web pour Université | CodeSommet',
     'meta_description' => 'Sites web universitaires sur mesure : admissions en ligne, portails étudiants et enseignants, catalogues de cours et gestion de campus. Devis gratuit.',
     'meta_keywords' => 'développement site web universitaire,design web enseignement supérieur,développement site web collège,développement portail étudiant,site web admissions,système gestion campus,système inscription universitaire,développement site web académique',
-    'og_title' => 'Développement de Sites Web Universitaires | CodeSommet',
+    'og_title' => 'Création de Site Web pour Université | CodeSommet',
     'og_description' => 'Développement de sites web universitaires sur mesure : admissions, portails étudiants, catalogues de cours, portails enseignants et gestion de campus. Contactez-nous pour les tarifs.',
     'twitter_description' => 'Développement de sites web universitaires sur mesure : admissions, portails étudiants, catalogues de cours, portails enseignants et gestion de campus.',
     'text_0' => 'Universités & Enseignement Supérieur',
@@ -147,7 +147,7 @@ return [
     'ml_934' => 'Universités & Enseignement Supérieur',
     'ml_935' => 'PORTAILS D\'ADMISSION ÉTUDIANTE',
     'ml_936' => 'PORTAILS D\'ADMISSION ÉTUDIANTE',
-    'ml_937' => 'Développement de sites web universitaires sur mesure pour les établissements d\'enseignement supérieur. Nous créons des sites avec systèmes d\'admission étudiante, catalogues de cours, portails enseignants et outils de gestion de campus, conçus pour augmenter les candidatures en ligne et alléger la charge administrative.',
+    'ml_937' => 'Création de site web pour université et établissement d\'enseignement supérieur : admissions en ligne, catalogue des formations, portails étudiants et enseignants, outils de gestion de campus, pour faciliter les candidatures et alléger la charge administrative.',
     'ml_938' => 'Réserver une démo gratuite',
     'ml_939' => 'Universités & Enseignement Supérieur',
     'ml_940' => 'Experts Web en Enseignement Supérieur',
@@ -283,4 +283,6 @@ return [
     'faq_q6' => 'Les étudiants peuvent-ils suivre le statut de leur candidature en ligne ?',
     'faq_q7' => 'Fournissez-vous une formation pour le personnel d\'admission et les enseignants ?',
     'faq_q8' => 'Pouvons-nous gérer plusieurs campus depuis un seul système ?',
+    'seo_fix_a9722e23' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des universités et écoles supérieures.',
+    'seo_fix_8781a6db' => 'Des résultats réels obtenus avec des universités et écoles supérieures',
 ];

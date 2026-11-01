@@ -191,4 +191,8 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les projets de Londres ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_85b3dd4e' => 'Découvrez pourquoi les entreprises de Londres choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_443d778e' => 'Expertise approfondie dans les secteurs clés de Londres. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_65a9aa53' => 'Nos secteurs de spécialisation à Londres',
+    'seo_fix_7d4c4b6b' => 'De vrais résultats obtenus avec des entreprises de Londres',
 ];

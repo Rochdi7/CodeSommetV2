@@ -69,8 +69,7 @@
                 <h2 class="text-lg font-bold text-black mb-3">{{ __('tools/nofollow-link-checker.text_6') }}</h2>
                 <div class="space-y-2 text-sm text-gray-700">
                     <p>Les <strong>liens dofollow</strong> {{ __('tools/nofollow-link-checker.text_7') }}</p>
-                    <p>Les <strong>liens nofollow</strong> (rel=&quot;nofollow&quot;) tell search engines not to follow the
-                        link or pass authority. Common uses:</p>
+                    <p>Les <strong>liens nofollow</strong> (rel=&quot;nofollow&quot;) indiquent aux moteurs de recherche de ne pas suivre le lien et de ne pas lui transmettre d'autorité. Usages courants :</p>
                     <ul class="list-disc list-inside space-y-1 ml-4">
                         <li><strong>rel=&quot;nofollow&quot;</strong> {{ __('tools/nofollow-link-checker.text_8') }}</li>
                         <li><strong>rel=&quot;sponsored&quot;</strong> {{ __('tools/nofollow-link-checker.text_9') }}</li>

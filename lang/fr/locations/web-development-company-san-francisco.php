@@ -212,4 +212,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu aux clients de San Francisco après le lancement ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_56770cec' => 'Découvrez pourquoi les entreprises de San Francisco choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_74d26e6f' => 'CodeSommet San Francisco vs Autres',
+    'seo_fix_4ac379d8' => 'Une expertise approfondie dans les secteurs clés de San Francisco. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
+    'seo_fix_fbc65a2d' => 'Nos secteurs de spécialisation à San Francisco',
+    'seo_fix_fe6a3c0a' => 'Pourquoi Choisir CodeSommet à San Francisco ?',
 ];

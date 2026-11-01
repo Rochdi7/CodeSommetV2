@@ -202,4 +202,7 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les clients de New York ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_af1c6a82' => 'Découvrez pourquoi les entreprises de New York choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_8a9a3b52' => 'Expertise approfondie dans les secteurs clés de New York. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_7e4039a1' => 'Nos secteurs de spécialisation à New York',
 ];

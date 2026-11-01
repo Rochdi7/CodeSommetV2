@@ -376,10 +376,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->{{ __('services/university-website-development-agency.text_13') }}<!-- -->
-                        {{ __('services/university-website-development-agency.text_14') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/university-website-development-agency.seo_fix_8781a6db') }}</p>
                 </div>
             </div>
         </section>
@@ -2350,8 +2347,7 @@
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
                         <!-- -->{{ __('services/university-website-development-agency.text_90') }}
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('services/university-website-development-agency.sw_2953') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/university-website-development-agency.seo_fix_a9722e23') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"

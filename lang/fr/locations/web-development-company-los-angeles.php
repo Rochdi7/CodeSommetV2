@@ -202,4 +202,7 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les projets de Los Angeles ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_af1d153e' => 'Découvrez pourquoi les entreprises de Los Angeles choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_01594cde' => 'Expertise approfondie dans les secteurs clés de Los Angeles. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_dfffbf34' => 'Nos secteurs de spécialisation à Los Angeles',
 ];

@@ -1,0 +1,2194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\phpunit.xml" tests="192" assertions="3076" errors="0" failures="102" skipped="0" time="46.853569">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.028379">
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.028379">
+        <testcase name="test_that_true_is_true" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Unit\ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.028379"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="191" assertions="3075" errors="0" failures="102" skipped="0" time="46.825190">
+      <testsuite name="Tests\Feature\BlogSecurityTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" tests="7" assertions="21" errors="0" failures="0" skipped="0" time="3.031892">
+        <testcase name="test_duplicate_titles_produce_unique_slugs" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="25" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="5" time="2.174032"/>
+        <testcase name="test_invalid_custom_slug_is_rejected" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="46" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="2" time="0.079920"/>
+        <testcase name="test_script_tags_are_stripped_from_content" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="56" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="5" time="0.111825"/>
+        <testcase name="test_draft_and_future_posts_return_404_publicly" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="75" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="2" time="0.130959"/>
+        <testcase name="test_published_post_renders_valid_json_ld" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="86" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="4" time="0.335361"/>
+        <testcase name="test_default_og_image_exists" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="110" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="1" time="0.076077"/>
+        <testcase name="test_blog_preview_is_noindex" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\BlogSecurityTest.php" line="116" class="Tests\Feature\BlogSecurityTest" classname="Tests.Feature.BlogSecurityTest" assertions="2" time="0.123718"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ClientSideToolsTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ClientSideToolsTest.php" tests="3" assertions="73" errors="0" failures="0" skipped="0" time="1.339530">
+        <testcase name="test_each_page_renders_its_form_and_script" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ClientSideToolsTest.php" line="24" class="Tests\Feature\ClientSideToolsTest" classname="Tests.Feature.ClientSideToolsTest" assertions="30" time="0.818335"/>
+        <testcase name="test_each_tool_has_a_card_on_the_index" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ClientSideToolsTest.php" line="36" class="Tests\Feature\ClientSideToolsTest" classname="Tests.Feature.ClientSideToolsTest" assertions="13" time="0.426240"/>
+        <testcase name="test_scripts_make_no_network_requests" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ClientSideToolsTest.php" line="45" class="Tests\Feature\ClientSideToolsTest" classname="Tests.Feature.ClientSideToolsTest" assertions="30" time="0.094955"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ContactTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ContactTest.php" tests="4" assertions="13" errors="0" failures="0" skipped="0" time="0.829483">
+        <testcase name="test_valid_submission_is_stored_and_sends_notification_and_confirmation" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ContactTest.php" line="22" class="Tests\Feature\ContactTest" classname="Tests.Feature.ContactTest" assertions="4" time="0.352415"/>
+        <testcase name="test_missing_required_fields_return_422" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ContactTest.php" line="41" class="Tests\Feature\ContactTest" classname="Tests.Feature.ContactTest" assertions="5" time="0.093499"/>
+        <testcase name="test_honeypot_is_rejected" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ContactTest.php" line="49" class="Tests\Feature\ContactTest" classname="Tests.Feature.ContactTest" assertions="3" time="0.070444"/>
+        <testcase name="test_rate_limit_applies" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ContactTest.php" line="61" class="Tests\Feature\ContactTest" classname="Tests.Feature.ContactTest" assertions="1" time="0.313125"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.248154">
+        <testcase name="test_the_application_returns_a_successful_response" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\ExampleTest.php" line="19" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.248154"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\FormAntiSpamRenderTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" tests="10" assertions="36" errors="0" failures="0" skipped="0" time="1.077818">
+        <testsuite name="Tests\Feature\FormAntiSpamRenderTest::test_form_page_renders_the_anti_spam_fields" tests="2" assertions="10" errors="0" failures="0" skipped="0" time="0.456146">
+          <testcase name="test_form_page_renders_the_anti_spam_fields with data set &quot;contact&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="39" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="5" time="0.343937"/>
+          <testcase name="test_form_page_renders_the_anti_spam_fields with data set &quot;quote&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="39" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="5" time="0.112209"/>
+        </testsuite>
+        <testsuite name="Tests\Feature\FormAntiSpamRenderTest::test_secret_key_is_never_rendered" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.184948">
+          <testcase name="test_secret_key_is_never_rendered with data set &quot;contact&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="57" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="1" time="0.103285"/>
+          <testcase name="test_secret_key_is_never_rendered with data set &quot;quote&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="57" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="1" time="0.081663"/>
+        </testsuite>
+        <testsuite name="Tests\Feature\FormAntiSpamRenderTest::test_no_recaptcha_script_when_unconfigured" tests="2" assertions="6" errors="0" failures="0" skipped="0" time="0.153577">
+          <testcase name="test_no_recaptcha_script_when_unconfigured with data set &quot;contact&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="68" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="3" time="0.091622"/>
+          <testcase name="test_no_recaptcha_script_when_unconfigured with data set &quot;quote&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="68" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="3" time="0.061956"/>
+        </testsuite>
+        <testsuite name="Tests\Feature\FormAntiSpamRenderTest::test_v2_renders_the_visible_checkbox" tests="2" assertions="12" errors="0" failures="0" skipped="0" time="0.153112">
+          <testcase name="test_v2_renders_the_visible_checkbox with data set &quot;contact&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="87" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="6" time="0.087498"/>
+          <testcase name="test_v2_renders_the_visible_checkbox with data set &quot;quote&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="87" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="6" time="0.065614"/>
+        </testsuite>
+        <testcase name="test_v2_loader_script_is_included_once" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="112" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="3" time="0.084903"/>
+        <testcase name="test_csp_allows_the_recaptcha_origins" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FormAntiSpamRenderTest.php" line="129" class="Tests\Feature\FormAntiSpamRenderTest" classname="Tests.Feature.FormAntiSpamRenderTest" assertions="3" time="0.045131"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\FreeSeoToolsTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" tests="8" assertions="76" errors="0" failures="0" skipped="0" time="1.167839">
+        <testcase name="test_llms_txt_lists_only_indexable_pages_in_llmstxt_format" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="51" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="14" time="0.384555"/>
+        <testcase name="test_llms_txt_uses_the_provided_name_and_summary" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="72" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="2" time="0.079390"/>
+        <testcase name="test_meta_extractor_reports_tags_errors_and_duplicates" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="83" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="14" time="0.084852"/>
+        <testcase name="test_meta_extractor_rejects_private_targets_before_any_request" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="111" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="4" time="0.077918"/>
+        <testcase name="test_expired_domains_classification_is_conservative" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="122" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="9" time="0.109240"/>
+        <testcase name="test_expired_domains_input_limits" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="147" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="5" time="0.062391"/>
+        <testcase name="test_these_tools_use_the_strict_heavy_rate_limit" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="159" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="6" time="0.100426"/>
+        <testcase name="test_tool_pages_render_with_form_and_index_cards" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\FreeSeoToolsTest.php" line="172" class="Tests\Feature\FreeSeoToolsTest" classname="Tests.Feature.FreeSeoToolsTest" assertions="22" time="0.269069"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\HomepageQualityTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" tests="19" assertions="220" errors="0" failures="0" skipped="0" time="2.316309">
+        <testcase name="test_homepage_returns_200" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="20" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.137652"/>
+        <testcase name="test_homepage_has_exactly_one_h1" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="25" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.116174"/>
+        <testcase name="test_no_empty_headings" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="32" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="31" time="0.123062"/>
+        <testcase name="test_duplicate_heading_texts_are_limited_to_approved_cases" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="45" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="2" time="0.124271"/>
+        <testcase name="test_heading_count_stays_within_regression_threshold" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="86" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="3" time="0.150919"/>
+        <testcase name="test_no_internal_links_have_empty_accessible_name" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="98" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="72" time="0.145640"/>
+        <testcase name="test_generic_cta_text_is_not_repeated_across_unrelated_destinations" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="173" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="72" time="0.142209"/>
+        <testcase name="test_viewport_meta_tag_exists" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="202" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.111308"/>
+        <testcase name="test_apple_touch_icon_is_present" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="208" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.120325"/>
+        <testcase name="test_csp_header_exists_and_is_not_weakened" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="214" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="3" time="0.135909"/>
+        <testcase name="test_csp_does_not_use_wildcard_origins" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="225" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.114136"/>
+        <testcase name="test_csp_does_not_reference_cdnjs_for_jquery_or_toastr" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="235" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="3" time="0.112135"/>
+        <testcase name="test_local_jquery_and_toastr_assets_are_served" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="250" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="6" time="0.047633"/>
+        <testcase name="test_homepage_references_local_jquery_and_toastr" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="269" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="3" time="0.124979"/>
+        <testcase name="test_homepage_html_size_stays_below_regression_threshold" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="277" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.129536"/>
+        <testcase name="test_no_duplicate_json_ld_blocks" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="289" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="7" time="0.115946"/>
+        <testcase name="test_no_base64_image_embedded_in_homepage_html" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="306" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="1" time="0.125959"/>
+        <testcase name="test_metadata_canonical_and_og_tags_are_correct" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="312" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="8" time="0.122369"/>
+        <testcase name="test_badge_contrast_utility_class_is_the_darker_accessible_blue" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\HomepageQualityTest.php" line="331" class="Tests\Feature\HomepageQualityTest" classname="Tests.Feature.HomepageQualityTest" assertions="3" time="0.116147"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\QuoteRequestTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" tests="6" assertions="17" errors="0" failures="0" skipped="0" time="0.649879">
+        <testcase name="test_quote_route_exists" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" line="22" class="Tests\Feature\QuoteRequestTest" classname="Tests.Feature.QuoteRequestTest" assertions="1" time="0.049665"/>
+        <testcase name="test_valid_submission_is_stored" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" line="27" class="Tests\Feature\QuoteRequestTest" classname="Tests.Feature.QuoteRequestTest" assertions="3" time="0.250045"/>
+        <testcase name="test_valid_submission_sends_internal_notification_and_sender_confirmation" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" line="48" class="Tests\Feature\QuoteRequestTest" classname="Tests.Feature.QuoteRequestTest" assertions="3" time="0.076045"/>
+        <testcase name="test_missing_required_fields_return_422" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" line="61" class="Tests\Feature\QuoteRequestTest" classname="Tests.Feature.QuoteRequestTest" assertions="5" time="0.080497"/>
+        <testcase name="test_honeypot_is_rejected" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" line="70" class="Tests\Feature\QuoteRequestTest" classname="Tests.Feature.QuoteRequestTest" assertions="4" time="0.064992"/>
+        <testcase name="test_rate_limit_applies" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\QuoteRequestTest.php" line="81" class="Tests\Feature\QuoteRequestTest" classname="Tests.Feature.QuoteRequestTest" assertions="1" time="0.128636"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\RenderSnapshotTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" tests="104" assertions="1917" errors="0" failures="102" skipped="0" time="23.612564">
+        <testcase name="test_inventory_is_exactly_102_routes_and_matches_repository" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="111" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="5" time="0.056250"/>
+        <testsuite name="Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot" tests="102" assertions="1910" errors="0" failures="102" skipped="0" time="23.341768">
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:worldwide&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="16" time="0.302684">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:worldwide"&#13;
+/web-development-company/worldwide: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Agence Web Offshore au Maroc : nous travaillons à distance, où que vous soyez PARTOUT OÙ QUE VOUS SOYEZ',
++        1 =&gt; 'Agence Web Offshore au Maroc : développement web sur mesure pour vos projets, PARTOUT OÙ QUE VOUS SOYEZ',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+         1 =&gt; 'Offrez-vous un support continu après le lancement ?',
+     ],
+     22 =&gt; Array &amp;23 [
++        0 =&gt; 3,
++        1 =&gt; 'Pourquoi externaliser le développement web au Maroc ?',
++    ],
++    23 =&gt; Array &amp;24 [
++        0 =&gt; 3,
++        1 =&gt; 'Quels sont les avantages et les risques du développement web offshore ?',
++    ],
++    24 =&gt; Array &amp;25 [
+         0 =&gt; 2,
+         1 =&gt; 'Explorer davantage',
+     ],
+-    23 =&gt; Array &amp;24 [
++    25 =&gt; Array &amp;26 [
+         0 =&gt; 2,
+         1 =&gt; 'Prêt à Créer Quelque Chose d'Extraordinaire ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:casablanca&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.353184">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:casablanca"&#13;
+/web-development-company/casablanca: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Casablanca Entreprises',
++        1 =&gt; 'Approuvé par les entreprises de Casablanca',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Casablanca Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Casablanca',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Casablanca Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Casablanca disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+@@ @@
+         1 =&gt; 'Pouvez-vous aider avec l'enregistrement de domaine .ma ?',
+     ],
+     29 =&gt; Array &amp;30 [
++        0 =&gt; 3,
++        1 =&gt; 'Combien coûte la création d'un site web à Casablanca ?',
++    ],
++    30 =&gt; Array &amp;31 [
+         0 =&gt; 2,
+         1 =&gt; 'Nous Servons Également',
+     ],
+-    30 =&gt; Array &amp;31 [
++    31 =&gt; Array &amp;32 [
+         0 =&gt; 2,
+         1 =&gt; 'En Savoir Plus',
+     ],
+-    31 =&gt; Array &amp;32 [
++    32 =&gt; Array &amp;33 [
+         0 =&gt; 2,
+         1 =&gt; 'Prêt à Créer Quelque Chose d'Extraordinaire ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:marrakech&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.332093">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:marrakech"&#13;
+/web-development-company/marrakech: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Marrakech Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Marrakech',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     26 =&gt; Array &amp;27 [
+         0 =&gt; 3,
+-        1 =&gt; 'Comprenez-vous les lois de conformité et de protection des données du Morocco ?',
++        1 =&gt; 'Comprenez-vous les règles de protection des données au Maroc ?',
+     ],
+     27 =&gt; Array &amp;28 [
+         0 =&gt; 3,
+@@ @@
+         1 =&gt; 'Pouvez-vous aider avec l'enregistrement de domaine .ma ?',
+     ],
+     29 =&gt; Array &amp;30 [
++        0 =&gt; 3,
++        1 =&gt; 'Combien coûte la création d'un site web à Marrakech ?',
++    ],
++    30 =&gt; Array &amp;31 [
++        0 =&gt; 3,
++        1 =&gt; 'Pouvez-vous créer un site pour un riad, un hôtel ou une agence de voyage à Marrakech ?',
++    ],
++    31 =&gt; Array &amp;32 [
+         0 =&gt; 2,
+         1 =&gt; 'Nous Desservons Aussi',
+     ],
+-    30 =&gt; Array &amp;31 [
++    32 =&gt; Array &amp;33 [
+         0 =&gt; 2,
+         1 =&gt; 'Explorer Plus',
+     ],
+-    31 =&gt; Array &amp;32 [
++    33 =&gt; Array &amp;34 [
+         0 =&gt; 2,
+         1 =&gt; 'Prêt à Créer Quelque Chose d'Extraordinaire ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:rabat&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.296509">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:rabat"&#13;
+/web-development-company/rabat: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Rabat Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Rabat',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     26 =&gt; Array &amp;27 [
+         0 =&gt; 3,
+-        1 =&gt; 'Comprenez-vous les lois de conformité et de protection des données du Morocco ?',
++        1 =&gt; 'Comprenez-vous les règles de protection des données au Maroc ?',
+     ],
+     27 =&gt; Array &amp;28 [
+         0 =&gt; 3,
+@@ @@
+         1 =&gt; 'Pouvez-vous aider avec l'enregistrement de domaine .ma ?',
+     ],
+     29 =&gt; Array &amp;30 [
++        0 =&gt; 3,
++        1 =&gt; 'Travaillez-vous avec les associations et institutions de Rabat ?',
++    ],
++    30 =&gt; Array &amp;31 [
+         0 =&gt; 2,
+         1 =&gt; 'Nous Desservons Aussi',
+     ],
+-    30 =&gt; Array &amp;31 [
++    31 =&gt; Array &amp;32 [
+         0 =&gt; 2,
+         1 =&gt; 'Explorer Plus',
+     ],
+-    31 =&gt; Array &amp;32 [
++    32 =&gt; Array &amp;33 [
+         0 =&gt; 2,
+         1 =&gt; 'Prêt à Créer Quelque Chose d'Extraordinaire ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:tangier&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.258173">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:tangier"&#13;
+/web-development-company/tangier: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Tanger?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Tanger ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Tanger Entreprises',
++        1 =&gt; 'Approuvé par les entreprises de Tanger',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Tanger Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Tanger',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Tanger vs Others',
++        1 =&gt; 'CodeSommet Tanger vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+@@ @@
+         1 =&gt; 'Pouvez-vous aider avec l'enregistrement de domaine ?',
+     ],
+     29 =&gt; Array &amp;30 [
++        0 =&gt; 3,
++        1 =&gt; 'Combien coûte la création d'un site web à Tanger ?',
++    ],
++    30 =&gt; Array &amp;31 [
+         0 =&gt; 2,
+         1 =&gt; 'Nous Desservons Également',
+     ],
+-    30 =&gt; Array &amp;31 [
++    31 =&gt; Array &amp;32 [
+         0 =&gt; 2,
+         1 =&gt; 'Explorer davantage',
+     ],
+-    31 =&gt; Array &amp;32 [
++    32 =&gt; Array &amp;33 [
+         0 =&gt; 2,
+         1 =&gt; 'Prêt à Créer Quelque Chose d'Extraordinaire ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:agadir&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.261863">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:agadir"&#13;
+/web-development-company/agadir: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         1 =&gt; 'Pouvez-vous aider avec l'enregistrement de domaine .ma ?',
+     ],
+     29 =&gt; Array &amp;30 [
++        0 =&gt; 3,
++        1 =&gt; 'Accompagnez-vous aussi les exportateurs et entreprises agricoles d'Agadir ?',
++    ],
++    30 =&gt; Array &amp;31 [
+         0 =&gt; 2,
+         1 =&gt; 'Nous Servons Également',
+     ],
+-    30 =&gt; Array &amp;31 [
++    31 =&gt; Array &amp;32 [
+         0 =&gt; 2,
+         1 =&gt; 'En Savoir Plus',
+     ],
+-    31 =&gt; Array &amp;32 [
++    32 =&gt; Array &amp;33 [
+         0 =&gt; 2,
+         1 =&gt; 'Prêt à Créer Quelque Chose d'Extraordinaire ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:dubai&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.245323">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:dubai"&#13;
+/web-development-company/dubai: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Dubaï, EAU : des sites web qui génèrent CROISSANCE COMMERCIALE À DUBAÏ',
++        1 =&gt; 'Développement Web à Dubaï, EAU : des sites web qui génèrent LA CROISSANCE COMMERCIALE À DUBAÏ',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:abudhabi&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.229024">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:abudhabi"&#13;
+/web-development-company/abudhabi: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Abu Dhabi, EAU : des sites web qui génèrent Portails Immobiliers',
++        1 =&gt; 'Développement Web à Abu Dhabi, EAU : des sites web qui génèrent des Portails Immobiliers',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Abu Dhabi Entreprises',
++        1 =&gt; 'Approuvé par les entreprises d'Abu Dhabi',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Abu Dhabi Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Abu Dhabi',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Abu Dhabi Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients d'Abu Dhabi disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:riyadh&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.246262">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:riyadh"&#13;
+/web-development-company/riyadh: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Riyad, Arabie Saoudite : des sites web qui génèrent CROISSANCE COMMERCIALE À RIYAD',
++        1 =&gt; 'Développement Web à Riyad, Arabie Saoudite : des sites web qui génèrent LA CROISSANCE COMMERCIALE À RIYAD',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Riyad?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Riyad ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Riyad Entreprises',
++        1 =&gt; 'Approuvé par les entreprises de Riyad',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Riyad Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Riyad',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Riyad vs Others',
++        1 =&gt; 'CodeSommet Riyad vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:london&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.364353">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:london"&#13;
+/web-development-company/london: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Londres, Royaume-Uni : des sites web qui génèrent Plateformes FinTech',
++        1 =&gt; 'Développement Web à Londres, Royaume-Uni : des sites web qui génèrent des Plateformes FinTech',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Londres Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Londres',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:amsterdam&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.319748">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:amsterdam"&#13;
+/web-development-company/amsterdam: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Amsterdam, Pays-Bas : des sites web qui génèrent Plateformes FinTech',
++        1 =&gt; 'Développement Web à Amsterdam, Pays-Bas : des sites web qui génèrent des Plateformes FinTech',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Amsterdam Entreprises',
++        1 =&gt; 'Approuvé par les entreprises d'Amsterdam',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Amsterdam Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Amsterdam',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Amsterdam Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients d'Amsterdam disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:berlin&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.333649">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:berlin"&#13;
+/web-development-company/berlin: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Berlin, Allemagne : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Berlin, Allemagne : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Berlin Entreprises',
++        1 =&gt; 'Approuvé par les entreprises de Berlin',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Berlin Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Berlin',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Berlin Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Berlin disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:paris&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.356391">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:paris"&#13;
+/web-development-company/paris: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Paris, France : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Paris, France : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Paris Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Paris',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:copenhagen&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.392813">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:copenhagen"&#13;
+/web-development-company/copenhagen: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Copenhague, Danemark : des sites web qui génèrent Plateformes SaaS',
++        1 =&gt; 'Développement Web à Copenhague, Danemark : des sites web qui génèrent des Plateformes SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     8 =&gt; Array &amp;9 [
+         0 =&gt; 2,
+-        1 =&gt; 'Approuvé par Copenhague Entreprises',
++        1 =&gt; 'Approuvé par les entreprises de Copenhague',
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Copenhague Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Copenhague',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Copenhague Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Copenhague disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:dublin&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.351903">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:dublin"&#13;
+/web-development-company/dublin: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Dublin, Irlande : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Dublin, Irlande : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Dublin Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Dublin',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:brussels&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.361378">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:brussels"&#13;
+/web-development-company/brussels: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Bruxelles, Belgique : des sites web qui génèrent Plateformes FinTech',
++        1 =&gt; 'Création Site Web à Bruxelles, Belgique : des sites web qui génèrent des Plateformes FinTech',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Bruxelles Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Bruxelles',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Bruxelles Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Bruxelles disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:zurich&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.328707">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:zurich"&#13;
+/web-development-company/zurich: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Zurich, Suisse : des sites web qui génèrent Plateformes FinTech',
++        1 =&gt; 'Développement Web à Zurich, Suisse : des sites web qui génèrent des Plateformes FinTech',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Zurich?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Zurich ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Zurich Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Zurich',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Zurich vs Others',
++        1 =&gt; 'CodeSommet Zurich vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:stockholm&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.333157">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:stockholm"&#13;
+/web-development-company/stockholm: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Stockholm, Suède : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Stockholm, Suède : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Stockholm?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Stockholm ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Stockholm Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Stockholm',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Stockholm vs Others',
++        1 =&gt; 'CodeSommet Stockholm vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:madrid&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.330236">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:madrid"&#13;
+/web-development-company/madrid: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Madrid, Espagne : des sites web qui génèrent CROISSANCE COMMERCIALE À MADRID',
++        1 =&gt; 'Développement Web à Madrid, Espagne : des sites web qui génèrent LA CROISSANCE COMMERCIALE À MADRID',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Madrid Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Madrid',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:barcelona&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.349966">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:barcelona"&#13;
+/web-development-company/barcelona: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Barcelone, Espagne : des sites web qui génèrent CROISSANCE DES ENTREPRISES À BARCELONE',
++        1 =&gt; 'Développement Web à Barcelone, Espagne : des sites web qui génèrent LA CROISSANCE DES ENTREPRISES À BARCELONE',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Barcelone Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Barcelone',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Barcelone Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Barcelone disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:lisbon&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.310770">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:lisbon"&#13;
+/web-development-company/lisbon: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Lisbonne, Portugal : des sites web qui génèrent CROISSANCE COMMERCIALE À LISBONNE',
++        1 =&gt; 'Développement Web à Lisbonne, Portugal : des sites web qui génèrent LA CROISSANCE COMMERCIALE À LISBONNE',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Lisbonne Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Lisbonne',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:rome&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.340476">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:rome"&#13;
+/web-development-company/rome: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Rome, Italie : des sites web qui génèrent CROISSANCE COMMERCIALE À ROME',
++        1 =&gt; 'Développement Web à Rome, Italie : des sites web qui génèrent LA CROISSANCE COMMERCIALE À ROME',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Rome?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Rome ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Rome Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Rome',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Rome vs Others',
++        1 =&gt; 'CodeSommet Rome vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:milan&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.336917">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:milan"&#13;
+/web-development-company/milan: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Milan, Italie : des sites web qui génèrent CROISSANCE COMMERCIALE À MILAN',
++        1 =&gt; 'Développement Web à Milan, Italie : des sites web qui génèrent LA CROISSANCE COMMERCIALE À MILAN',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Milan Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Milan',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:new-york&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.324219">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:new-york"&#13;
+/web-development-company/new-york: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à New York, États-Unis : des sites web qui génèrent Plateformes FinTech',
++        1 =&gt; 'Développement Web à New York, États-Unis : des sites web qui génèrent des Plateformes FinTech',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'New York Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à New York',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:san-francisco&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.335508">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:san-francisco"&#13;
+/web-development-company/san-francisco: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à San Francisco, États-Unis : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à San Francisco, États-Unis : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in San Francisco?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à San Francisco ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'San Francisco Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à San Francisco',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet San Francisco vs Others',
++        1 =&gt; 'CodeSommet San Francisco vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:los-angeles&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.315839">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:los-angeles"&#13;
+/web-development-company/los-angeles: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Los Angeles, États-Unis : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Los Angeles, États-Unis : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Los Angeles Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Los Angeles',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:austin&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.337466">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:austin"&#13;
+/web-development-company/austin: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Austin, États-Unis : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Austin, États-Unis : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Austin Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Austin',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Austin Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients d'Austin disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:seattle&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.354056">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:seattle"&#13;
+/web-development-company/seattle: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Seattle, États-Unis : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Seattle, États-Unis : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Seattle?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Seattle ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Seattle Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Seattle',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Seattle vs Others',
++        1 =&gt; 'CodeSommet Seattle vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:boston&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.362325">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:boston"&#13;
+/web-development-company/boston: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Boston, États-Unis : des sites web qui génèrent Plateformes EdTech',
++        1 =&gt; 'Développement Web à Boston, États-Unis : des sites web qui génèrent des Plateformes EdTech',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Boston Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Boston',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Boston Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Boston disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:chicago&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.325009">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:chicago"&#13;
+/web-development-company/chicago: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Chicago, États-Unis : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Chicago, États-Unis : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Chicago Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Chicago',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Chicago Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Chicago disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:denver&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.323817">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:denver"&#13;
+/web-development-company/denver: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Denver, États-Unis : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Denver, États-Unis : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Denver Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Denver',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+-        1 =&gt; 'Quoi Denver Nos Clients Disent de Nous',
++        1 =&gt; 'Ce que nos clients de Denver disent de nous',
+     ],
+     18 =&gt; Array &amp;19 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:toronto&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.325608">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:toronto"&#13;
+/web-development-company/toronto: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Toronto, Canada : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Toronto, Canada : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Toronto?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Toronto ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Toronto Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Toronto',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Toronto vs Others',
++        1 =&gt; 'CodeSommet Toronto vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:vancouver&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.308607">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:vancouver"&#13;
+/web-development-company/vancouver: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Vancouver, Canada : des sites web qui génèrent Tableaux de Bord SaaS',
++        1 =&gt; 'Développement Web à Vancouver, Canada : des sites web qui génèrent des Tableaux de Bord SaaS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Vancouver?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Vancouver ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Vancouver Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Vancouver',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Vancouver vs Others',
++        1 =&gt; 'CodeSommet Vancouver vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:tunis&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="25" time="0.331541">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:tunis"&#13;
+/web-development-company/tunis: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Tunis, Tunisie : des sites web qui génèrent CROISSANCE COMMERCIALE À TUNIS',
++        1 =&gt; 'Développement Web à Tunis, Tunisie : des sites web qui génèrent LA CROISSANCE COMMERCIALE À TUNIS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+-        1 =&gt; 'Pourquoi Choisir CodeSommet in Tunis?',
++        1 =&gt; 'Pourquoi Choisir CodeSommet à Tunis ?',
+     ],
+     2 =&gt; Array &amp;3 [
+         0 =&gt; 3,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Tunis Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Tunis',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     16 =&gt; Array &amp;17 [
+         0 =&gt; 2,
+-        1 =&gt; 'CodeSommet Tunis vs Others',
++        1 =&gt; 'CodeSommet Tunis vs Autres',
+     ],
+     17 =&gt; Array &amp;18 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:cairo&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.335541">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:cairo"&#13;
+/web-development-company/cairo: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web au Caire, Égypte : des sites web qui génèrent CROISSANCE DES ENTREPRISES AU CAIRE',
++        1 =&gt; 'Développement Web au Caire, Égypte : des sites web qui génèrent LA CROISSANCE DES ENTREPRISES AU CAIRE',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;city:lagos&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.318107">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "city:lagos"&#13;
+/web-development-company/lagos: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &amp;0 [
+     0 =&gt; Array &amp;1 [
+         0 =&gt; 1,
+-        1 =&gt; 'Développement Web à Lagos, Nigeria : des sites web qui génèrent CROISSANCE COMMERCIALE À LAGOS',
++        1 =&gt; 'Développement Web à Lagos, Nigeria : des sites web qui génèrent LA CROISSANCE COMMERCIALE À LAGOS',
+     ],
+     1 =&gt; Array &amp;2 [
+         0 =&gt; 2,
+@@ @@
+     ],
+     9 =&gt; Array &amp;10 [
+         0 =&gt; 2,
+-        1 =&gt; 'Lagos Nos Secteurs de Spécialisation',
++        1 =&gt; 'Nos secteurs de spécialisation à Lagos',
+     ],
+     10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ai-crawler-access-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.194932">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ai-crawler-access-checker"&#13;
+/tools/ai-crawler-access-checker: normalized DOM differs from fixture tool-ai-crawler-access-checker.html.
+First difference at line 433:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1105 vs 1106 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ai-readiness-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.209319">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ai-readiness-checker"&#13;
+/tools/ai-readiness-checker: normalized DOM differs from fixture tool-ai-readiness-checker.html.
+First difference at line 384:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1056 vs 1057 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:base64-encoder&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.191705">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:base64-encoder"&#13;
+/tools/base64-encoder: normalized DOM differs from fixture tool-base64-encoder.html.
+First difference at line 279:
+  expected:                   #text Tip:
+  actual:                     #text Astuce :
+(1079 vs 1080 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:blog-title-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.193837">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:blog-title-generator"&#13;
+/tools/blog-title-generator: normalized DOM differs from fixture tool-blog-title-generator.html.
+First difference at line 416:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1095 vs 1096 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:bot-viewer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.188620">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:bot-viewer"&#13;
+/tools/bot-viewer: normalized DOM differs from fixture tool-bot-viewer.html.
+First difference at line 404:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1076 vs 1077 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:broken-link-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.181637">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:broken-link-checker"&#13;
+/tools/broken-link-checker: normalized DOM differs from fixture tool-broken-link-checker.html.
+First difference at line 365:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1086 vs 1087 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:canonical-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.165188">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:canonical-checker"&#13;
+/tools/canonical-checker: normalized DOM differs from fixture tool-canonical-checker.html.
+First difference at line 366:
+  expected:             &lt;div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1058 vs 1059 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:chatbot-script-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.199412">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:chatbot-script-generator"&#13;
+/tools/chatbot-script-generator: normalized DOM differs from fixture tool-chatbot-script-generator.html.
+First difference at line 408:
+  expected:             &lt;div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1089 vs 1090 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:color-palette-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.185605">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:color-palette-generator"&#13;
+/tools/color-palette-generator: normalized DOM differs from fixture tool-color-palette-generator.html.
+First difference at line 359:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1041 vs 1042 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:core-web-vitals-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.153658">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:core-web-vitals-checker"&#13;
+/tools/core-web-vitals-checker: normalized DOM differs from fixture tool-core-web-vitals-checker.html.
+First difference at line 950:
+  expected:     &lt;script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION"&gt;
+  actual:       &lt;script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION"&gt;
+(958 vs 959 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:crawl-optimization-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.186379">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:crawl-optimization-checker"&#13;
+/tools/crawl-optimization-checker: normalized DOM differs from fixture tool-crawl-optimization-checker.html.
+First difference at line 397:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:crawl-visualizer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.208835">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:crawl-visualizer"&#13;
+/tools/crawl-visualizer: normalized DOM differs from fixture tool-crawl-visualizer.html.
+First difference at line 684:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1355 vs 1356 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:css-minifier&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.188049">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:css-minifier"&#13;
+/tools/css-minifier: normalized DOM differs from fixture tool-css-minifier.html.
+First difference at line 7:
+  expected:       #text Minificateur CSS - Compression de Code Gratuite | CodeSommet
+  actual:         #text Minify CSS : Minificateur CSS Gratuit | CodeSommet
+(1096 vs 1097 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:domain-authority-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.180033">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-authority-checker"&#13;
+/tools/domain-authority-checker: normalized DOM differs from fixture tool-domain-authority-checker.html.
+First difference at line 371:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1043 vs 1044 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:domain-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.152469">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-extractor"&#13;
+/tools/domain-extractor: normalized DOM differs from fixture tool-domain-extractor.html.
+First difference at line 367:
+  expected:                     #text Non, l'extraction se fait entièrement dans votre navigateur.
+  actual:                       #text Non. L'extraction se fait entièrement dans votre navigateur : la liste n'est ni envoyée à nos serveurs ni enregistrée. Vous pouvez donc y coller sans risque un export de backlinks, une liste de prospects ou des URL internes confidentielles.
+(1055 vs 1056 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:domain-health-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.174731">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:domain-health-checker"&#13;
+/tools/domain-health-checker: normalized DOM differs from fixture tool-domain-health-checker.html.
+First difference at line 384:
+  expected:             &lt;div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1054 vs 1055 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:duplicate-content-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.179722">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:duplicate-content-checker"&#13;
+/tools/duplicate-content-checker: normalized DOM differs from fixture tool-duplicate-content-checker.html.
+First difference at line 404:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1102 vs 1103 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:eeat-signals-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.171776">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:eeat-signals-checker"&#13;
+/tools/eeat-signals-checker: normalized DOM differs from fixture tool-eeat-signals-checker.html.
+First difference at line 380:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1052 vs 1053 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:expired-domain-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.153870">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:expired-domain-checker"&#13;
+/tools/expired-domain-checker: normalized DOM differs from fixture tool-expired-domain-checker.html.
+First difference at line 375:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1047 vs 1048 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:faq-schema-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.200005">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:faq-schema-generator"&#13;
+/tools/faq-schema-generator: normalized DOM differs from fixture tool-faq-schema-generator.html.
+First difference at line 381:
+  expected:             &lt;div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1075 vs 1076 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:heading-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.207796">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:heading-analyzer"&#13;
+/tools/heading-analyzer: normalized DOM differs from fixture tool-heading-analyzer.html.
+First difference at line 348:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1019 vs 1020 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:hreflang-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.198162">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:hreflang-generator"&#13;
+/tools/hreflang-generator: normalized DOM differs from fixture tool-hreflang-generator.html.
+First difference at line 401:
+  expected:             &lt;div class="lx-card lx-v2 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1075 vs 1076 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:html-minifier&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.191908">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:html-minifier"&#13;
+/tools/html-minifier: normalized DOM differs from fixture tool-html-minifier.html.
+First difference at line 369:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1079 vs 1080 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:html-to-text&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.204728">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:html-to-text"&#13;
+/tools/html-to-text: normalized DOM differs from fixture tool-html-to-text.html.
+First difference at line 382:
+  expected:             &lt;div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1074 vs 1075 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:image-alt-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.182678">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-alt-analyzer"&#13;
+/tools/image-alt-analyzer: normalized DOM differs from fixture tool-image-alt-analyzer.html.
+First difference at line 348:
+  expected:             &lt;div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1043 vs 1044 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:image-compression-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.170843">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-compression-analyzer"&#13;
+/tools/image-compression-analyzer: normalized DOM differs from fixture tool-image-compression-analyzer.html.
+First difference at line 366:
+  expected:             &lt;div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1055 vs 1056 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:image-compressor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="14" time="0.150726">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:image-compressor"&#13;
+/tools/image-compressor: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         1 =&gt; 'Et si l'image compressée est plus lourde ?',
+     ],
+     9 =&gt; Array &amp;10 [
++        0 =&gt; 3,
++        1 =&gt; 'Comment compresser une image sans perte de qualité visible ?',
++    ],
++    10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+         1 =&gt; 'Outils Connexes Qui Pourraient Vous Intéresser',
+     ],
+-    10 =&gt; Array &amp;11 [
++    11 =&gt; Array &amp;12 [
+         0 =&gt; 2,
+         1 =&gt; 'Un Site Trop Lent ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:internal-link-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.203752">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:internal-link-analyzer"&#13;
+/tools/internal-link-analyzer: normalized DOM differs from fixture tool-internal-link-analyzer.html.
+First difference at line 366:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1059 vs 1060 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:invisible-character-cleaner&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="14" time="0.136996">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:invisible-character-cleaner"&#13;
+/tools/invisible-character-cleaner: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         1 =&gt; 'Cet outil rend-il un texte « indétectable » ?',
+     ],
+     9 =&gt; Array &amp;10 [
++        0 =&gt; 3,
++        1 =&gt; 'Qu'est-ce qu'un caractère invisible ?',
++    ],
++    10 =&gt; Array &amp;11 [
+         0 =&gt; 2,
+         1 =&gt; 'Outils Connexes Qui Pourraient Vous Intéresser',
+     ],
+-    10 =&gt; Array &amp;11 [
++    11 =&gt; Array &amp;12 [
+         0 =&gt; 2,
+         1 =&gt; 'Des Contenus à Fiabiliser à Grande Échelle ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:json-formatter&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.120228">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:json-formatter"&#13;
+/tools/json-formatter: normalized DOM differs from fixture tool-json-formatter.html.
+First difference at line 274:
+  expected:                   #text Tip:
+  actual:                     #text Astuce :
+(1072 vs 1073 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:keyword-density-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.142537">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:keyword-density-analyzer"&#13;
+/tools/keyword-density-analyzer: normalized DOM differs from fixture tool-keyword-density-analyzer.html.
+First difference at line 276:
+  expected:                     #text Le bourrage de mots-clés est la pratique de surutilisation des mots-clés (généralement au-dessus de 3% de densité) to manipulate search rankings. Google penalizes this practice because it creates poor user experience and unnatural content. Focus on natural language and user intent instead of forcing keywords.
+  actual:                       #text Le bourrage de mots-clés consiste à surutiliser des mots-clés (en général au-delà de 3 % de densité) pour tenter de manipuler les classements. Google sanctionne cette pratique, qui dégrade l'expérience utilisateur et produit un contenu peu naturel. Privilégiez un langage naturel et l'intention de recherche plutôt que de forcer les mots-clés.
+(1033 vs 1034 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:keyword-modifier-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.122693">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:keyword-modifier-generator"&#13;
+/tools/keyword-modifier-generator: normalized DOM differs from fixture tool-keyword-modifier-generator.html.
+First difference at line 397:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:landing-page-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.110453">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:landing-page-generator"&#13;
+/tools/landing-page-generator: normalized DOM differs from fixture tool-landing-page-generator.html.
+First difference at line 271:
+  expected:                     #text Une page d'atterrissage à fort taux de conversion a une proposition de valeur claire dans le titre, addresses customer pain points, includes compelling social proof, has a single focused call-to-action, uses persuasive copy that focuses on benefits over features, and creates urgency without being pushy. Our tool structures all these elements based on proven conversion principles.
+  actual:                       #text Une page d'atterrissage à fort taux de conversion présente une proposition de valeur claire dans le titre, répond aux problèmes des clients, s'appuie sur des preuves sociales convaincantes, propose un seul appel à l'action, utilise un texte persuasif centré sur les bénéfices plutôt que sur les fonctionnalités, et crée un sentiment d'urgence sans être insistante. Notre outil structure tous ces éléments selon des principes de conversion éprouvés.
+(1044 vs 1045 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:llms-txt-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.119940">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:llms-txt-generator"&#13;
+/tools/llms-txt-generator: normalized DOM differs from fixture tool-llms-txt-generator.html.
+First difference at line 388:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1060 vs 1061 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:local-business-schema&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.145259">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:local-business-schema"&#13;
+/tools/local-business-schema: normalized DOM differs from fixture tool-local-business-schema.html.
+First difference at line 403:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1076 vs 1077 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:lorem-ipsum-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.180056">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:lorem-ipsum-generator"&#13;
+/tools/lorem-ipsum-generator: normalized DOM differs from fixture tool-lorem-ipsum-generator.html.
+First difference at line 314:
+  expected:                     #text Le Lorem Ipsum aide les spectateurs à se concentrer sur le design visuel, la typographie et la mise en page sans être distraits par un contenu lisible. It provides realistic text distribution and word length variation that mimics natural language, making it ideal for testing how actual content will look once it's added. Using nonsensical text also prevents clients from prematurely critiquing content when the focus should be on design approval.
+  actual:                       #text Le Lorem Ipsum aide à se concentrer sur le design visuel, la typographie et la mise en page sans être distrait par un contenu lisible. Il reproduit une répartition réaliste du texte et des longueurs de mots proches d'une vraie langue, ce qui permet de tester l'apparence du contenu final. Un texte sans signification évite aussi que les clients commentent le contenu trop tôt, alors que l'objectif est de valider le design.
+(1073 vs 1074 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:meta-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.150425">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-extractor"&#13;
+/tools/meta-extractor: normalized DOM differs from fixture tool-meta-extractor.html.
+First difference at line 367:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1039 vs 1040 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:meta-refresh-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.168350">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-refresh-generator"&#13;
+/tools/meta-refresh-generator: normalized DOM differs from fixture tool-meta-refresh-generator.html.
+First difference at line 344:
+  expected:                     #text Une redirection meta refresh est une redirection HTML qui utilise une balise
+  actual:                       #text Une redirection meta refresh est une redirection HTML qui utilise une balise &lt;meta&gt; placée dans la section head de la page pour rediriger automatiquement les visiteurs vers une autre URL après un délai défini. Contrairement aux redirections côté serveur (301/302), elle s'exécute dans le navigateur une fois la page chargée : le navigateur lit la balise, attend le délai indiqué, puis ouvre l'URL de destination.
+(1119 vs 1118 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:meta-tag-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.204064">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:meta-tag-generator"&#13;
+/tools/meta-tag-generator: normalized DOM differs from fixture tool-meta-tag-generator.html.
+First difference at line 419:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1093 vs 1094 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:mobile-friendly-test&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.181820">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:mobile-friendly-test"&#13;
+/tools/mobile-friendly-test: normalized DOM differs from fixture tool-mobile-friendly-test.html.
+First difference at line 288:
+  expected:                     #text Les cibles tactiles sont des éléments interactifs comme les boutons, liens et champs de formulaire que les utilisateurs tapent sur les appareils mobiles. Google recommends minimum dimensions of 48x48 pixels (CSS pixels) with adequate spacing between them. Small or crowded touch targets lead to accidental taps, frustrating users and increasing bounce rates. Proper touch target sizing is crucial for mobile usability.
+  actual:                       #text Les cibles tactiles sont les éléments interactifs, comme les boutons, liens et champs de formulaire, que les utilisateurs touchent sur mobile. Les recommandations d'accessibilité et de Google préconisent une taille minimale d'environ 48 x 48 pixels CSS, avec un espacement suffisant entre elles. Des cibles trop petites ou trop serrées provoquent des clics accidentels, frustrent les utilisateurs et augmentent le taux de rebond.
+(945 vs 946 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ngram-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.175772">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ngram-extractor"&#13;
+/tools/ngram-extractor: normalized DOM differs from fixture tool-ngram-extractor.html.
+First difference at line 429:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1101 vs 1102 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:nofollow-link-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.182669">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:nofollow-link-checker"&#13;
+/tools/nofollow-link-checker: normalized DOM differs from fixture tool-nofollow-link-checker.html.
+First difference at line 231:
+  expected:                 #text (rel="nofollow") tell search engines not to follow the link or pass authority. Common uses:
+  actual:                   #text (rel="nofollow") indiquent aux moteurs de recherche de ne pas suivre le lien et de ne pas lui transmettre d'autorité. Usages courants :
+(1045 vs 1046 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:og-preview-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.181124">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:og-preview-generator"&#13;
+/tools/og-preview-generator: normalized DOM differs from fixture tool-og-preview-generator.html.
+First difference at line 248:
+  expected:                     #text Les balises Open Graph (OG) sont des balises méta HTML qui contrôlent l'apparence de votre page web lorsqu'elle est partagée sur les plateformes de réseaux sociaux like Facebook, LinkedIn, Twitter, and WhatsApp. They define the title, description, and preview image that users see, which directly impacts click-through rates and engagement. Without proper OG tags, platforms use default content that may not represent your page well.
+  actual:                       #text Les balises Open Graph (OG) sont des balises méta HTML qui contrôlent l'apparence de votre page lorsqu'elle est partagée sur les réseaux sociaux comme Facebook, LinkedIn, X (Twitter) ou WhatsApp. Elles définissent le titre, la description et l'image d'aperçu affichés, ce qui influence directement le taux de clic et l'engagement. Sans balises OG correctes, les plateformes affichent un contenu par défaut qui représente souvent mal votre page.
+(1050 vs 1051 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:page-speed-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.191989">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:page-speed-analyzer"&#13;
+/tools/page-speed-analyzer: normalized DOM differs from fixture tool-page-speed-analyzer.html.
+First difference at line 360:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1030 vs 1031 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:qr-code-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="14" time="0.199849">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:qr-code-generator"&#13;
+/tools/qr-code-generator: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         1 =&gt; 'Comment tester si mon QR code fonctionne correctement ?',
+     ],
+     10 =&gt; Array &amp;11 [
++        0 =&gt; 3,
++        1 =&gt; 'Un QR code créé ici est-il gratuit et sans date d'expiration ?',
++    ],
++    11 =&gt; Array &amp;12 [
+         0 =&gt; 2,
+         1 =&gt; 'Outils Connexes Qui Pourraient Vous Intéresser',
+     ],
+-    11 =&gt; Array &amp;12 [
++    12 =&gt; Array &amp;13 [
+         0 =&gt; 2,
+         1 =&gt; 'Besoin d'un Outil Personnalisé pour Votre Entreprise ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:readability-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.192774">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:readability-analyzer"&#13;
+/tools/readability-analyzer: normalized DOM differs from fixture tool-readability-analyzer.html.
+First difference at line 310:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1005 vs 1006 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:redirect-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.185353">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:redirect-checker"&#13;
+/tools/redirect-checker: normalized DOM differs from fixture tool-redirect-checker.html.
+First difference at line 352:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1026 vs 1027 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:robots-txt-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.172120">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-txt-generator"&#13;
+/tools/robots-txt-generator: normalized DOM differs from fixture tool-robots-txt-generator.html.
+First difference at line 443:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1113 vs 1114 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:robots-txt-tester&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.186318">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-txt-tester"&#13;
+/tools/robots-txt-tester: normalized DOM differs from fixture tool-robots-txt-tester.html.
+First difference at line 449:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1121 vs 1122 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:robots-validator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.156206">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:robots-validator"&#13;
+/tools/robots-validator: normalized DOM differs from fixture tool-robots-validator.html.
+First difference at line 8:
+  expected:     &lt;meta content="Validez la syntaxe de votre fichier robots.txt, vérifiez les directives de crawl et le blocage d'URL pour les moteurs de recherche. Outil gratuit." name="description"&gt;
+  actual:       &lt;meta content="Validez la syntaxe de votre robots.txt : directives inconnues, user-agents, sitemaps et erreurs de format. Pour tester une URL, utilisez le testeur." name="description"&gt;
+(1024 vs 1025 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:schema-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="21" time="0.199040">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:schema-generator"&#13;
+/tools/schema-generator: normalized DOM differs from fixture tool-schema-generator.html.
+First difference at line 376:
+  expected:             &lt;div class="lx-card lx-v5 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:security-headers-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.182501">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:security-headers-checker"&#13;
+/tools/security-headers-checker: normalized DOM differs from fixture tool-security-headers-checker.html.
+First difference at line 399:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1071 vs 1072 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:serp-snippet-preview&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.175382">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:serp-snippet-preview"&#13;
+/tools/serp-snippet-preview: normalized DOM differs from fixture tool-serp-snippet-preview.html.
+First difference at line 413:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1085 vs 1086 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:sitemap-url-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.182886">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:sitemap-url-extractor"&#13;
+/tools/sitemap-url-extractor: normalized DOM differs from fixture tool-sitemap-url-extractor.html.
+First difference at line 411:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1083 vs 1084 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:sitemap-validator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.187699">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:sitemap-validator"&#13;
+/tools/sitemap-validator: normalized DOM differs from fixture tool-sitemap-validator.html.
+First difference at line 348:
+  expected:             &lt;div class="lx-card lx-v4 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1021 vs 1022 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:ssl-certificate-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.169877">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:ssl-certificate-checker"&#13;
+/tools/ssl-certificate-checker: normalized DOM differs from fixture tool-ssl-certificate-checker.html.
+First difference at line 953:
+  expected:     &lt;script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION"&gt;
+  actual:       &lt;script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION"&gt;
+(961 vs 962 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:structured-data-extractor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.174916">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:structured-data-extractor"&#13;
+/tools/structured-data-extractor: normalized DOM differs from fixture tool-structured-data-extractor.html.
+First difference at line 397:
+  expected:             &lt;div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1069 vs 1070 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:text-case-converter&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="14" time="0.188607">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:text-case-converter"&#13;
+/tools/text-case-converter: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         1 =&gt; 'Pourquoi aurais-je besoin de snake_case ou camelCase pour des tâches non liées au code ?',
+     ],
+     10 =&gt; Array &amp;11 [
++        0 =&gt; 3,
++        1 =&gt; 'Comment transformer un texte en majuscules ou en minuscules ?',
++    ],
++    11 =&gt; Array &amp;12 [
+         0 =&gt; 2,
+         1 =&gt; 'Outils Connexes Qui Pourraient Vous Intéresser',
+     ],
+-    11 =&gt; Array &amp;12 [
++    12 =&gt; Array &amp;13 [
+         0 =&gt; 2,
+         1 =&gt; 'Besoin d'un Outil Personnalisé pour Votre Entreprise ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:text-editor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.158570">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:text-editor"&#13;
+/tools/text-editor: normalized DOM differs from fixture tool-text-editor.html.
+First difference at line 395:
+  expected:                     #text Par défaut « Mot-clé » et « mot-clé » sont considérés comme identiques ; décochez l'option pour les distinguer.
+  actual:                       #text Par défaut, « Mot-clé » et « mot-clé » sont considérés comme identiques, ce qui convient au nettoyage de listes de mots-clés ou d'adresses e-mail. Décochez l'option pour les distinguer lorsque la casse a un sens, par exemple pour des codes produits ou des identifiants.
+(1111 vs 1112 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:url-editor&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.159350">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:url-editor"&#13;
+/tools/url-editor: normalized DOM differs from fixture tool-url-editor.html.
+First difference at line 391:
+  expected:                     #text Non. Tout le traitement se fait dans votre navigateur : la liste ne quitte jamais votre ordinateur.
+  actual:                       #text Non. Tout le traitement se fait dans votre navigateur : la liste ne quitte jamais votre ordinateur et n'est pas enregistrée. Vous pouvez donc nettoyer sans crainte des exports d'audit, des fichiers de redirections ou des URL de pré-production.
+(1107 vs 1108 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:url-slug-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.160530">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:url-slug-generator"&#13;
+/tools/url-slug-generator: normalized DOM differs from fixture tool-url-slug-generator.html.
+First difference at line 218:
+  expected:                 &lt;input class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" placeholder="The Ultimate Guide to Développement Web in 2026" required="" type="text" value=""&gt;
+  actual:                   &lt;input class="h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 focus:outline-none disabled:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-60" placeholder="Le guide complet du développement web en 2026" required="" type="text" value=""&gt;
+(1016 vs 1017 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:utm-builder&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.184337">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:utm-builder"&#13;
+/tools/utm-builder: normalized DOM differs from fixture tool-utm-builder.html.
+First difference at line 14:
+  expected:     &lt;meta content="Create UTM tracking URLs for marketing campaigns with our free UTM builder. Track campaign performance in Google Analytics with utm_source, utm_medium, utm_campaign, and more." property="og:description"&gt;
+  actual:       &lt;meta content="Créez des URL de suivi UTM pour vos campagnes marketing avec notre générateur UTM gratuit, et suivez leurs performances dans Google Analytics avec utm_source, utm_medium et utm_campaign." property="og:description"&gt;
+(1191 vs 1192 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:website-analyzer&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="14" time="0.212892">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:website-analyzer"&#13;
+/tools/website-analyzer: heading hierarchy changed (A16)
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         1 =&gt; 'Qu'est-ce qui différencie cet outil des autres analyseurs de site web ?',
+     ],
+     32 =&gt; Array &amp;33 [
++        0 =&gt; 3,
++        1 =&gt; 'L'audit SEO est-il vraiment gratuit et sans inscription ?',
++    ],
++    33 =&gt; Array &amp;34 [
+         0 =&gt; 2,
+         1 =&gt; 'Besoin d'un Outil Personnalisé pour Votre Entreprise ?',
+     ],
+ ]
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:215</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:website-readiness-checker&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.192628">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:website-readiness-checker"&#13;
+/tools/website-readiness-checker: normalized DOM differs from fixture tool-website-readiness-checker.html.
+First difference at line 402:
+  expected:             &lt;div class="lx-card lx-v1 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+  actual:               &lt;div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link"&gt;
+(1093 vs 1094 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:word-counter&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.187708">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:word-counter"&#13;
+/tools/word-counter: normalized DOM differs from fixture tool-word-counter.html.
+First difference at line 284:
+  expected:                     #text Words are individual text units separated by spaces. Sentences are complete thoughts ending with punctuation (. ! ?). Paragraphs are groups of sentences separated by line breaks. Understanding these metrics helps you structure content for readability-shorter sentences improve clarity, while proper paragraph breaks enhance scannability.
+  actual:                       #text Les mots sont des unités de texte séparées par des espaces. Les phrases expriment une idée complète et se terminent par une ponctuation (. ! ?). Les paragraphes sont des groupes de phrases séparés par des retours à la ligne. Comprendre ces indicateurs aide à structurer un contenu lisible : des phrases courtes gagnent en clarté et des paragraphes bien découpés facilitent la lecture en diagonale.
+(1049 vs 1050 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+          <testcase name="test_route_renders_and_matches_snapshot with data set &quot;tool:xml-sitemap-generator&quot;" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="134" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="17" time="0.214257">
+            <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set "tool:xml-sitemap-generator"&#13;
+/tools/xml-sitemap-generator: normalized DOM differs from fixture tool-xml-sitemap-generator.html.
+First difference at line 297:
+  expected:                     #text Click "Generate" to create your sitemap.xml file, then download it
+  actual:                       #text Cliquez sur « Générer » pour créer votre fichier sitemap.xml, puis téléchargez-le
+(1241 vs 1242 lines)
+&#13;
+C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php:222</failure>
+          </testcase>
+        </testsuite>
+        <testcase name="test_routes_match_committed_baseline" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\RenderSnapshotTest.php" line="229" class="Tests\Feature\RenderSnapshotTest" classname="Tests.Feature.RenderSnapshotTest" assertions="2" time="0.214546"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\SecurityHeadersTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SecurityHeadersTest.php" tests="2" assertions="10" errors="0" failures="0" skipped="0" time="0.260806">
+        <testcase name="test_security_headers_present_on_front_office_response" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SecurityHeadersTest.php" line="18" class="Tests\Feature\SecurityHeadersTest" classname="Tests.Feature.SecurityHeadersTest" assertions="9" time="0.140330"/>
+        <testcase name="test_csp_does_not_allow_unsafe_eval" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SecurityHeadersTest.php" line="34" class="Tests\Feature\SecurityHeadersTest" classname="Tests.Feature.SecurityHeadersTest" assertions="1" time="0.120476"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\SeoMetadataTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" tests="18" assertions="315" errors="0" failures="0" skipped="0" time="5.277617">
+        <testcase name="test_all_public_page_groups_return_200" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="40" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="20" time="1.257220"/>
+        <testcase name="test_indexable_pages_have_title_description_canonical_and_single_h1" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="47" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="120" time="0.754148"/>
+        <testcase name="test_titles_and_descriptions_are_unique_across_sample" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="65" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.727115"/>
+        <testcase name="test_json_ld_blocks_are_valid_json" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="81" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="21" time="0.207352"/>
+        <testcase name="test_service_page_has_service_and_breadcrumb_schema" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="93" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.084169"/>
+        <testcase name="test_tool_page_has_webapplication_schema" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="100" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="1" time="0.067798"/>
+        <testcase name="test_blog_preview_is_noindexed" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="106" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.073556"/>
+        <testcase name="test_admin_login_is_noindexed" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="113" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.063886"/>
+        <testcase name="test_sitemap_is_valid_and_excludes_private_urls" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="120" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="28" time="0.132159"/>
+        <testcase name="test_sitemap_includes_published_posts_only" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="142" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.124341"/>
+        <testcase name="test_published_post_is_indexable_with_blogposting_schema" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="158" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="5" time="0.078451"/>
+        <testcase name="test_draft_post_is_not_public" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="174" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="1" time="0.055646"/>
+        <testcase name="test_removed_city_routes_return_404" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="184" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.062714"/>
+        <testcase name="test_mismatched_case_studies_are_noindexed_and_out_of_sitemap" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="190" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.145343"/>
+        <testcase name="test_get_quote_has_organization_schema" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="210" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="2" time="0.072580"/>
+        <testcase name="test_titles_and_descriptions_fit_serp_lengths" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="218" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="92" time="0.882966"/>
+        <testcase name="test_case_study_has_product_schema_and_content_pages_have_article_schema" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="232" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="3" time="0.236188"/>
+        <testcase name="test_no_links_to_dead_or_redirecting_contact_urls" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SeoMetadataTest.php" line="240" class="Tests\Feature\SeoMetadataTest" classname="Tests.Feature.SeoMetadataTest" assertions="8" time="0.251984"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\SiteModesTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" tests="6" assertions="73" errors="0" failures="0" skipped="0" time="0.590426">
+        <testcase name="test_site_broken_links_checks_internal_and_external_links_with_sources" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" line="77" class="Tests\Feature\SiteModesTest" classname="Tests.Feature.SiteModesTest" assertions="12" time="0.085806"/>
+        <testcase name="test_site_duplicate_pages_finds_exact_near_and_canonicalized_duplicates" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" line="123" class="Tests\Feature\SiteModesTest" classname="Tests.Feature.SiteModesTest" assertions="9" time="0.088260"/>
+        <testcase name="test_site_sitemap_keeps_only_indexable_canonical_pages" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" line="153" class="Tests\Feature\SiteModesTest" classname="Tests.Feature.SiteModesTest" assertions="5" time="0.070713"/>
+        <testcase name="test_private_targets_are_rejected_before_any_request" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" line="181" class="Tests\Feature\SiteModesTest" classname="Tests.Feature.SiteModesTest" assertions="26" time="0.120964"/>
+        <testcase name="test_site_modes_use_the_strict_heavy_rate_limit" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" line="195" class="Tests\Feature\SiteModesTest" classname="Tests.Feature.SiteModesTest" assertions="3" time="0.051983"/>
+        <testcase name="test_existing_pages_offer_the_site_mode_without_a_new_page" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SiteModesTest.php" line="202" class="Tests\Feature\SiteModesTest" classname="Tests.Feature.SiteModesTest" assertions="18" time="0.172700"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\SitemapIntegrityTest" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SitemapIntegrityTest.php" tests="3" assertions="303" errors="0" failures="0" skipped="0" time="6.422874">
+        <testcase name="test_sitemap_is_valid_and_nonempty" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SitemapIntegrityTest.php" line="33" class="Tests\Feature\SitemapIntegrityTest" classname="Tests.Feature.SitemapIntegrityTest" assertions="5" time="0.134517"/>
+        <testcase name="test_every_listed_url_returns_200" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SitemapIntegrityTest.php" line="38" class="Tests\Feature\SitemapIntegrityTest" classname="Tests.Feature.SitemapIntegrityTest" assertions="147" time="6.122316"/>
+        <testcase name="test_no_private_or_excluded_url_present" file="C:\Users\ASUS\Desktop\pikasso studio\pikassostudio.com\tests\Feature\SitemapIntegrityTest.php" line="64" class="Tests\Feature\SitemapIntegrityTest" classname="Tests.Feature.SitemapIntegrityTest" assertions="151" time="0.166041"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

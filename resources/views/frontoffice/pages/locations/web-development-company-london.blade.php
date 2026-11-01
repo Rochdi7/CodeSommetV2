@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Londres<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Londres</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -84,9 +84,8 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="Plateformes FinTech"></span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Plateformes
-                                            FinTech</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="des Plateformes FinTech"></span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">des Plateformes FinTech</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-london.ml_1072') }}</p>
@@ -380,9 +379,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients dans plusieurs pays</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1083') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('locations/web-development-company-london.seo_fix_7d4c4b6b') }}</p>
                 </div>
             </div>
         </section>
@@ -405,11 +402,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Londres<!-- -->
-                        {{ __('locations/web-development-company-london.text_7') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans les secteurs clés de
-                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1084') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-london.seo_fix_65a9aa53') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-london.seo_fix_443d778e') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -1300,10 +1294,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Londres<!-- -->
                         {{ __('locations/web-development-company-london.text_40') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-london.text_41') }}
-                        <!-- -->Londres<!-- -->{{ __('locations/web-development-company-london.ml_1123') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-london.seo_fix_85b3dd4e') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">

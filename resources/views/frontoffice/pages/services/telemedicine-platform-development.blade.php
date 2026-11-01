@@ -404,9 +404,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->{{ __('services/telemedicine-platform-development-agency.text_12') }}<!-- -->{{ __('services/telemedicine-platform-development-agency.ml_1127') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/telemedicine-platform-development-agency.seo_fix_674acb42') }}</p>
                 </div>
             </div>
         </section>
@@ -499,11 +497,7 @@
                                 style="font-family:var(--font-heading)">
                                 {{ __('services/telemedicine-platform-development-agency.text_15') }}</h3>
                             <p class="text-[#0F0F0F]/70 leading-relaxed text-xs md:text-sm"
-                                style="font-family:var(--font-body)">Doctors manually copy consultation notes from video
-                                calls to EMR systems. Patients can&#x27;t access their records or prescriptions easily.
-                                Built-in consultation note templates, automatic EMR integration with Epic/Cerner, and
-                                patient portals where they can download prescriptions, lab reports, and consultation
-                                summaries.</p>
+                                style="font-family:var(--font-body)">Les médecins recopient à la main leurs notes de consultation depuis les appels vidéo vers le dossier patient informatisé, et les patients accèdent difficilement à leurs dossiers ou à leurs ordonnances. La solution : des modèles de notes de consultation intégrés, une connexion automatisée au dossier patient informatisé (DPI) et un portail patient pour télécharger ordonnances, résultats d'analyses et comptes rendus de consultation.</p>
                         </div>
                     </div>
                     <div>
@@ -2382,11 +2376,7 @@
                         Plateforme en
                         <!-- -->{{ __('services/telemedicine-platform-development-agency.ml_1216') }}
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de
-                        <!-- -->{{ __('services/telemedicine-platform-development-agency.text_72') }}<!-- -->
-                        entreprises.
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/telemedicine-platform-development-agency.seo_fix_6420dc14') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"

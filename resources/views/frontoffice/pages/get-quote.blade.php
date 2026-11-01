@@ -7,10 +7,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>{{ __('get-quote.text_0') }}</title>
     <meta name="description"
-        content="Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure." />
+        content="Demandez votre devis site web gratuit : décrivez votre projet de création de site au Maroc et recevez une estimation sous 24 h, sans engagement." />
     <meta name="keywords"
         content="développement web Maroc, agence web IA, agence de développement Next.js, développement SaaS" />
-    <meta property="og:title" content="Obtenir un Devis Gratuit | CodeSommet" />
+    <meta property="og:title" content="Devis Site Web Gratuit au Maroc | CodeSommet" />
     <meta property="og:description"
         content="Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures." />
     {{-- Page autonome (sans layout) : mêmes balises OG/Twitter que le layout principal --}}
@@ -489,6 +489,21 @@
 
                 </div>
             </div>
+            {{-- FAQ devis (balises <details> natives : fonctionne sans JS sur cette page autonome) --}}
+            <section class="w-full max-w-3xl mx-auto mt-10 space-y-3" aria-labelledby="quote-faq-title">
+                <h2 id="quote-faq-title" class="text-xl font-bold text-[var(--text-primary)] mb-6 text-center" style="font-family:var(--font-heading)">{{ __('get-quote.faq_title') }}</h2>
+                @foreach ([1, 2] as $i)
+                    <details class="group bg-[#F8F8F8] rounded-xl border border-[#E8E8E8] transition-colors duration-200 hover:border-[#DCDCDC] open:bg-white">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer px-5 sm:px-6 py-4 sm:py-5 text-left list-none [&amp;::-webkit-details-marker]:hidden">
+                            <h3 class="text-base sm:text-lg font-semibold text-[#0F0F0F] leading-snug mb-0">{{ __("get-quote.faq_q{$i}") }}</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#0F0F0F]/40 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                        </summary>
+                        <div class="px-5 sm:px-6 pt-4 pb-5 sm:pb-6 border-t border-[#E8E8E8]">
+                            <p class="text-[15px] text-[#0F0F0F]/60 leading-[1.7]">{!! __("get-quote.faq_a{$i}") !!}</p>
+                        </div>
+                    </details>
+                @endforeach
+            </section>
 
         </main>
     </div>

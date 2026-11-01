@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'h1_seo' => 'Développement Web à Bruxelles, Belgique : des sites web qui génèrent',
-    'title' => 'Développement Web à Bruxelles, Belgique | CodeSommet',
-    'meta_description' => 'Entreprises de Bruxelles : plateformes FinTech, sites institutionnels et e-commerce développés sur mesure et à distance par CodeSommet.',
+    'h1_seo' => 'Création Site Web à Bruxelles, Belgique : des sites web qui génèrent',
+    'title' => 'Création Site Web Bruxelles - Agence Web | CodeSommet',
+    'meta_description' => 'Création de site web à Bruxelles : plateformes FinTech, sites institutionnels et e-commerce développés sur mesure, à distance et en français.',
     'meta_keywords' => 'développement web Maroc,agence développement web IA,agence développement Next.js,développement tableaux de bord,développement SaaS,développement site Éducation,développement site santé,développement React Maroc,développement TypeScript,développement web mondial,intégration chatbot IA,conception tableau de bord personnalisé,agence web Maroc',
-    'og_title' => 'Développement Web à Bruxelles, Belgique | CodeSommet',
-    'og_description' => 'Développement web pour les entreprises de Bruxelles : plateformes FinTech, sites corporate et e-commerce sur mesure, livrés à distance par CodeSommet.',
-    'twitter_description' => 'Développement web pour les entreprises de Bruxelles : FinTech, sites corporate et e-commerce sur mesure.',
+    'og_title' => 'Création Site Web Bruxelles - Agence Web | CodeSommet',
+    'og_description' => 'Création de site web à Bruxelles : plateformes FinTech, sites institutionnels et e-commerce développés sur mesure, à distance et en français.',
+    'twitter_description' => 'Création de site web à Bruxelles : plateformes FinTech, sites institutionnels et e-commerce développés sur mesure, à distance et en français.',
     'text_0' => 'Entreprises de Bruxelles : nous créons des sites web qui génèrent',
     'text_1' => 'Équipe basée au Maroc',
     'text_2' => 'Disponible pour les entreprises de',
@@ -86,7 +86,7 @@ return [
     'text_476' => 'Automatisation',
     'text_477' => 'Automatisation',
     'text_478' => 'Automatisation',
-    'ml_878' => 'Depuis le Maroc, notre studio de développement web accompagne à distance les entreprises de Bruxelles dans la création de sites web alimentés par l\'IA et de tableaux de bord intelligents. Nous sommes spécialisés dans la création de plateformes axées sur la conversion pour l\'éducation, la santé et les startups SaaS.',
+    'ml_878' => 'Création de site web à Bruxelles depuis le Maroc : notre équipe accompagne à distance, en français, les entreprises bruxelloises pour leurs sites vitrines, plateformes FinTech et boutiques en ligne, avec des parcours pensés pour la conversion et un décalage horaire nul ou d\'une heure.',
     'ml_879' => 'Réserver une Consultation Gratuite Bruxelles',
     'ml_880' => 'Créez des chatbots intelligents, des workflows d\'automatisation, de la recherche alimentée par l\'IA et des moteurs de recommandation adaptés au public technophile de Bruxelles.',
     'ml_881' => 'Spécialistes Dashboard & SaaS',
@@ -194,4 +194,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement à Bruxelles ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_490895ae' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Bruxelles.',
+    'seo_fix_2913ff48' => 'Ce que nos clients de Bruxelles disent de nous',
+    'seo_fix_5d361d30' => 'Découvrez pourquoi les entreprises de Bruxelles choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
+    'seo_fix_14ca2a19' => 'Expertise approfondie des secteurs clés de Bruxelles. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_4a596b56' => 'Nos secteurs de spécialisation à Bruxelles',
 ];

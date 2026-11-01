@@ -365,9 +365,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/fintech-website-development-agency.text_3') }} <!-- -->FinTech et Services
-                        Financiers<!-- --> Entreprises</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/fintech-website-development-agency.seo_fix_074d7ab2') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -385,9 +383,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->{{ __('services/fintech-website-development-agency.text_181') }}<!-- -->{{ __('services/fintech-website-development-agency.ml_925') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/fintech-website-development-agency.seo_fix_a14263c5') }}</p>
                 </div>
             </div>
         </section>
@@ -405,9 +401,7 @@
                         </svg>{{ __('services/fintech-website-development-agency.ml_926') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/fintech-website-development-agency.text_8') }}<!-- -->: <!-- -->FinTech et Services
-                        Financiers<!-- --> {{ __('services/fintech-website-development-agency.text_9') }}</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/fintech-website-development-agency.seo_fix_0bfb8c4c') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/fintech-website-development-agency.ml_927') }}</p>
                 </div>
@@ -579,9 +573,7 @@
                         Financiers
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/fintech-website-development-agency.text_18') }}<!-- --> for <!-- -->FinTech et
-                        Services Financiers<!-- --> Sites Web</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/fintech-website-development-agency.seo_fix_d38a1f7b') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Tout ce dont votre entreprise fintech et de
                         services financiers a besoin sur un seul site web</p>
                 </div>
@@ -962,10 +954,7 @@
                         </svg>Calendrier de Lancement en 2-5 Jours
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/fintech-website-development-agency.text_26') }}<!-- --> for
-                        <!-- -->FinTech et Services Financiers
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/fintech-website-development-agency.seo_fix_a0d88ad3') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/fintech-website-development-agency.ml_946') }}</p>
                 </div>
@@ -1774,9 +1763,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->FinTech et Services
                         Financiers<!-- --> {{ __('services/fintech-website-development-agency.text_50') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('services/fintech-website-development-agency.text_51') }} <!-- -->FinTech et Services
-                        Financiers<!-- -->{{ __('services/fintech-website-development-agency.ml_974') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/fintech-website-development-agency.seo_fix_8854616a') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -2376,11 +2363,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('services/fintech-website-development-agency.sw_2929') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de
-                        <!-- -->{{ __('services/fintech-website-development-agency.text_199') }}<!-- -->
-                        entreprises.
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/fintech-website-development-agency.seo_fix_0e0439d1') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"

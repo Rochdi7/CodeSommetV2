@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Tanger<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Tanger</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -162,9 +162,7 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-tangier.text_4') }} <!-- -->Tanger<!-- -->?
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tangier.seo_fix_46e5f879') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-tangier.sw_3061') }}</p>
                 </div>
@@ -362,9 +360,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-tangier.text_5') }} <!-- -->Tanger<!-- --> Entreprises
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tangier.seo_fix_2ed8e156') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -393,10 +389,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Tanger<!-- -->
-                        {{ __('locations/web-development-company-tangier.text_8') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise approfondie dans les secteurs clés
-                        de <!-- -->Tanger<!-- -->{{ __('locations/web-development-company-tangier.ml_1094') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tangier.seo_fix_618ff99d') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-tangier.seo_fix_22c21ce6') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -1294,11 +1288,8 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Tanger<!-- --> vs Others</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-tangier.text_40') }}
-                        <!-- -->Tanger<!-- -->{{ __('locations/web-development-company-tangier.ml_1130') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-tangier.seo_fix_76d3753b') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-tangier.seo_fix_01a40112') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1316,7 +1307,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Tanger<!-- --> Agences</div>
+                                    Autres agences à Tanger</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1540,8 +1531,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-tangier.text_45') }} <!-- -->Tanger<!-- -->
-                            Entreprises
+                            </svg>{{ __('locations/web-development-company-tangier.text_45') }} les entreprises de Tanger
                         </div>
                     </div>
                 </div>
@@ -2086,6 +2076,23 @@
                                 </svg></div>
                         </button>
                         <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-tangier.faq_a6') }}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">7</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-tangier.faq_q7') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('locations/web-development-company-tangier.faq_a7') !!}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">

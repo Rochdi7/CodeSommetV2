@@ -200,4 +200,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu pour Stockholm après le lancement ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_442b61b4' => 'Découvrez pourquoi les entreprises de Stockholm choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_1e8be133' => 'CodeSommet Stockholm vs Autres',
+    'seo_fix_cbcb92a7' => 'Une expertise approfondie dans les secteurs clés de Stockholm. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
+    'seo_fix_85204ecf' => 'Nos secteurs de spécialisation à Stockholm',
+    'seo_fix_521e93aa' => 'Pourquoi Choisir CodeSommet à Stockholm ?',
 ];

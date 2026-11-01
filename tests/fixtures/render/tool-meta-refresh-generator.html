@@ -341,9 +341,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Une redirection meta refresh est une redirection HTML qui utilise une balise
-                    <meta>
-                    #text dans la section head de la page to automatically redirect users to another URL after a specified delay. Unlike server-side redirects (301/302), meta refresh happens in the browser after the page loads. The browser reads the meta tag, waits for the delay, and then navigates to the destination URL.
+                    #text Une redirection meta refresh est une redirection HTML qui utilise une balise <meta> placée dans la section head de la page pour rediriger automatiquement les visiteurs vers une autre URL après un délai défini. Contrairement aux redirections côté serveur (301/302), elle s'exécute dans le navigateur une fois la page chargée : le navigateur lit la balise, attend le délai indiqué, puis ouvre l'URL de destination.
               <div class="border-b border-gray-200 last:border-0">
                 <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                   <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -357,7 +355,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Utilisez les redirections meta refresh uniquement lorsque vous n'avez pas accès au serveur (like static hosting platforms) or want users to see a 'redirecting...' message. For SEO purposes, always prefer 301 redirects as they pass link equity (PageRank) to the new URL. Meta refresh redirects may not preserve SEO value and can be treated as soft 301s by search engines, but results vary.
+                    #text Utilisez les redirections meta refresh uniquement lorsque vous n'avez pas accès au serveur (hébergement statique, par exemple) ou si vous voulez afficher un message « Redirection en cours… ». Pour le SEO, privilégiez toujours les redirections 301, qui transmettent la popularité (PageRank) à la nouvelle URL. Une meta refresh peut ne pas conserver toute la valeur SEO ; les moteurs la traitent parfois comme une redirection permanente, mais les résultats varient.
               <div class="border-b border-gray-200 last:border-0">
                 <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                   <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -385,7 +383,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Oui, les redirections meta refresh peuvent avoir un impact négatif sur le SEO. Search engines like Google may not pass full link equity through meta refresh redirects, and they're considered a less reliable signal than server-side 301 redirects. Google generally treats 0-second meta refresh redirects similarly to 301s, but delays over 5 seconds may be ignored completely. For permanent moves, always use 301 redirects.
+                    #text Oui, les redirections meta refresh peuvent nuire au SEO. Elles constituent un signal moins fiable qu'une redirection 301 côté serveur : Google traite une meta refresh instantanée (0 seconde) comme une redirection permanente, mais une meta refresh différée comme une redirection temporaire. Pour un déménagement définitif, utilisez toujours une redirection 301.
               <div class="border-b border-gray-200 last:border-0">
                 <button class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                   <div class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
@@ -427,7 +425,7 @@
                       <path d="m6 9 6 6 6-6">
                 <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed" style="padding-left:3.5rem">
                   <p>
-                    #text Les cas d'utilisation valides incluent : les pages d'atterrissage de campagne temporaires with countdown timers, client-side redirects on static hosting platforms (GitHub Pages, Netlify without server access), affiliate link redirect pages, 'thank you' pages that redirect after showing a message, and maintenance pages that redirect after a specific time. Avoid using them for permanent SEO redirects or critical navigation paths.
+                    #text Les cas d'utilisation valables incluent : les pages d'atterrissage de campagnes temporaires avec compte à rebours, les redirections côté client sur des hébergements statiques (GitHub Pages, Netlify sans accès serveur), les pages de redirection de liens affiliés, les pages de remerciement qui redirigent après un message, et les pages de maintenance qui redirigent après un délai. Évitez-les pour les redirections SEO permanentes ou les parcours de navigation critiques.
             <div class="mt-6 text-center">
               <p class="text-sm text-gray-600 mb-2">
                 #text Vous avez encore des questions ?
@@ -443,7 +441,7 @@
             <p class="text-gray-600 text-lg">
               #text Continuez à optimiser votre site web avec ces outils complémentaires
           <div class="grid md:grid-cols-3 gap-6 mb-8">
-            <div class="lx-card lx-v6 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+            <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
               <div class="mb-4">
                 <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                   <svg aria-hidden="true" class="lucide lucide-eye w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -463,7 +461,7 @@
               <div class="absolute top-4 right-4">
                 <span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">
                   #text seo
-            <div class="lx-card lx-v3 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+            <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
               <div class="mb-4">
                 <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                   <svg aria-hidden="true" class="lucide lucide-file-code w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -485,7 +483,7 @@
               <div class="absolute top-4 right-4">
                 <span class="inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full capitalize">
                   #text seo
-            <div class="lx-card lx-v7 group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
+            <div class="cs-plain group relative bg-white rounded-xl border border-gray-200 p-6 hover:border-[#00AEEF] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 card-link">
               <div class="mb-4">
                 <div class="inline-flex p-3 rounded-xl bg-[#00AEEF]/10 group-hover:bg-[#00AEEF] transition-colors">
                   <svg aria-hidden="true" class="lucide lucide-file-text w-6 h-6 text-[#00AEEF] group-hover:text-white transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -1108,6 +1106,7 @@
     <script defer="defer" src="http://localhost:8000/js/toastr-init.js?v=VERSION">
     <script src="http://localhost:8000/js/devtools-deterrent.min.js?v=VERSION">
     <script defer="defer" src="http://localhost:8000/js/app.min.js?v=VERSION">
+    <script defer="defer" src="http://localhost:8000/js/rails.js?v=VERSION">
     <script defer="defer" src="http://localhost:8000/js/custom-select.min.js?v=VERSION">
     <script defer="defer" src="http://localhost:8000/js/analytics.min.js?v=VERSION">
     <script>

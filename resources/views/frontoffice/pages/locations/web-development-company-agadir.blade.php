@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Agadir<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Agadir</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -380,9 +380,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients dans plusieurs pays</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
-                        <!-- -->Agadir<!-- -->{{ __('locations/web-development-company-agadir.ml_889') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('locations/web-development-company-agadir.seo_fix_53f85079') }}</p>
                 </div>
             </div>
         </section>
@@ -1270,10 +1268,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Agadir<!-- -->
                         {{ __('locations/web-development-company-agadir.text_43') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-agadir.text_44') }}
-                        <!-- -->Agadir<!-- -->{{ __('locations/web-development-company-agadir.ml_929') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-agadir.seo_fix_49bedeaf') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1291,7 +1286,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Agadir<!-- --> Agences</div>
+                                    Autres agences à Agadir</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1518,7 +1513,7 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>{{ __('locations/web-development-company-agadir.text_50') }}
-                            <!-- -->Agadir<!-- --> Entreprises
+                            les entreprises d'Agadir
                         </div>
                     </div>
                 </div>
@@ -1541,10 +1536,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">Ce que Nos Clients Marocains Disent de Nous
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
-                        Écoutez les entreprises de
-                        <!-- -->Agadir<!-- -->{{ __('locations/web-development-company-agadir.ml_941') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-agadir.seo_fix_c26b0c83') }}</p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -2062,14 +2054,30 @@
                                 </svg></div>
                         </button>
                         <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-agadir.faq_a6') }}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">7</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-agadir.faq_q7') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('locations/web-development-company-agadir.faq_a7') !!}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">
                         {{ __('locations/web-development-company-agadir.text_54') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Agadir<!-- -->
-                        {{ __('locations/web-development-company-agadir.text_55') }}<svg class="w-4 h-4"
+                        notre {{ __('locations/web-development-company-agadir.text_55') }}<svg class="w-4 h-4"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

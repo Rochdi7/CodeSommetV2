@@ -347,10 +347,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/real-estate-website-development-agency.text_6') }}
-                        <!-- -->{{ __('services/real-estate-website-development-agency.text_185') }}<!-- --> Entreprises
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/real-estate-website-development-agency.seo_fix_c3bdd095') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -368,10 +365,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->{{ __('services/real-estate-website-development-agency.text_186') }}<!-- -->
-                        {{ __('services/real-estate-website-development-agency.text_11') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/real-estate-website-development-agency.seo_fix_5a103e2b') }}</p>
                 </div>
             </div>
         </section>
@@ -389,10 +383,7 @@
                         </svg>{{ __('services/real-estate-website-development-agency.text_12') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/real-estate-website-development-agency.text_13') }}<!-- -->:
-                        <!-- -->{{ __('services/real-estate-website-development-agency.text_187') }}<!-- -->{{ __('services/real-estate-website-development-agency.ml_944') }}
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('services/real-estate-website-development-agency.seo_fix_fcfe6a15') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('services/real-estate-website-development-agency.ml_945') }}</p>
                 </div>
@@ -646,10 +637,7 @@
                                             style="font-family:var(--font-heading)">Plateforme de Visite Virtuelle 360°
                                         </h3>
                                         <p class="text-base md:text-lg text-[#0F0F0F]/70 mb-6 md:mb-8 leading-relaxed relative z-10 max-w-lg"
-                                            style="font-family:var(--font-body)">Immersive property viewing with 360°
-                                            panoramas, video walkthroughs, interactive floor plans, and drone footage.
-                                            Mobile-optimized pour on-the-go viewing with VR headset support pour ultimate
-                                            immersion.</p>
+                                            style="font-family:var(--font-body)">Visite immersive des biens avec panoramas 360°, vidéos de visite, plans interactifs et prises de vue par drone. Optimisée pour le mobile, pour visiter en déplacement, et compatible avec les casques de réalité virtuelle pour une immersion totale.</p>
                                         <ul class="space-y-3 md:space-y-4 relative z-10">
                                             <li class="flex items-start gap-2 md:gap-3"><svg
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1744,10 +1732,7 @@
                         <!-- -->{{ __('services/real-estate-website-development-agency.text_209') }}<!-- -->
                         {{ __('services/real-estate-website-development-agency.text_52') }}
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('services/real-estate-website-development-agency.text_53') }}
-                        <!-- -->{{ __('services/real-estate-website-development-agency.text_210') }}<!-- -->{{ __('services/real-estate-website-development-agency.ml_997') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/real-estate-website-development-agency.seo_fix_442fd9fb') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -2334,10 +2319,7 @@
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
                         <!-- -->{{ __('services/real-estate-website-development-agency.text_216') }}
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de
-                        <!-- -->{{ __('services/real-estate-website-development-agency.text_217') }}<!-- --> entreprises.
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/real-estate-website-development-agency.seo_fix_3f99408c') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
@@ -2476,6 +2458,23 @@
                                 </svg></div>
                         </button>
                         <div id="faq-answer-8" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('services/real-estate-website-development-agency.faq_a8') }}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-9"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">9</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('services/real-estate-website-development-agency.faq_q9') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-9" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('services/real-estate-website-development-agency.faq_a9') !!}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">

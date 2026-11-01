@@ -65,4 +65,6 @@ return [
     'label_153' => 'Niveau de Correction d\'Erreur',
     'text_353' => 'hello@example.com',
     'text_653' => 'Taille',
+    'faq_new1_q' => 'Un QR code créé ici est-il gratuit et sans date d\'expiration ?',
+    'faq_new1_a' => 'Oui. Le QR code généré ici est statique : votre lien ou votre texte est encodé directement dans l\'image, sans redirection par un service intermédiaire. Une fois téléchargé, il fonctionne aussi longtemps que le lien qu\'il contient reste en ligne, sans abonnement ni date d\'expiration, y compris pour un usage commercial. À l\'inverse, les QR codes « dynamiques » de certaines plateformes passent par leur serveur et cessent de fonctionner si l\'abonnement s\'arrête.',
 ];

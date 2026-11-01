@@ -1,0 +1,1801 @@
+{
+ "pages": {
+  "/": {
+   "identical": false,
+   "text": 6,
+   "inserted": {
+    "other": 1,
+    "faq": 1
+   },
+   "deleted_elements": [
+    [
+     "                <article class=\"blog-carousel-item hidden\">",
+     "                  <div class=\"block group card-link relative\">",
+     "                    <div class=\"w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300\">",
+     "                      <div class=\"relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]\">",
+     "                        <div class=\"w-full h-full flex items-center justify-center\" style=\"background-image:linear-gradient(to bottom right, #00AEEF33, #00AEEF1a, #00AEEF0d)\">"
+    ]
+   ],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title",
+    "REPLACE el:div/el:h3",
+    "REPLACE el:div/el:h3",
+    "REPLACE el:div/el:h3",
+    "REPLACE el:div/el:h3",
+    "REPLACE el:div/el:h3",
+    "REPLACE el:div/el:h3",
+    "REPLACE el:article",
+    "REPLACE el:article"
+   ]
+  },
+  "/about": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/contact": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/get-quote": {
+   "identical": false,
+   "text": 0,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:title"
+   ]
+  },
+  "/our-work": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/industries": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/locations": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/blog": {
+   "identical": false,
+   "text": 3,
+   "inserted": {
+    "other": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE link",
+    "REPLACE el:article",
+    "REPLACE el:article",
+    "REPLACE el:article"
+   ]
+  },
+  "/legal/privacy-policy": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/legal/terms-of-service": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/legal/refund-policy": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/legal/cookie-policy": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/legal/acceptable-use": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/services/ecommerce-website-development": {
+   "identical": false,
+   "text": 12,
+   "inserted": {
+    "other": 1,
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/services/saas-platform-development": {
+   "identical": false,
+   "text": 6,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title"
+   ]
+  },
+  "/services/fintech-platform-development": {
+   "identical": false,
+   "text": 12,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/services/fintech-website-development": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/services/healthcare-website-development": {
+   "identical": false,
+   "text": 12,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title"
+   ]
+  },
+  "/services/education-website-development": {
+   "identical": false,
+   "text": 11,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title"
+   ]
+  },
+  "/services/edtech-platform-development": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/services/elearning-platform-development": {
+   "identical": false,
+   "text": 10,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/services/online-course-platform-development": {
+   "identical": false,
+   "text": 10,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title"
+   ]
+  },
+  "/services/university-website-development": {
+   "identical": false,
+   "text": 7,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/services/language-school-website-development": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/services/study-abroad-website-development": {
+   "identical": false,
+   "text": 4,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/services/immigration-consultancy-website-development": {
+   "identical": false,
+   "text": 8,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/services/real-estate-website-development": {
+   "identical": false,
+   "text": 11,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title"
+   ]
+  },
+  "/services/telemedicine-platform-development": {
+   "identical": false,
+   "text": 7,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title"
+   ]
+  },
+  "/services/telemedicine-website-development": {
+   "identical": false,
+   "text": 4,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description",
+    "REPLACE meta:twitter:description"
+   ]
+  },
+  "/services/seo-maroc": {
+   "identical": false,
+   "text": 6,
+   "inserted": {
+    "other": 1,
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/web-development-company/worldwide": {
+   "identical": false,
+   "text": 5,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description",
+    "REPLACE meta:twitter:description"
+   ]
+  },
+  "/web-development-company/casablanca": {
+   "identical": false,
+   "text": 17,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE el:button/el:div/el:h3/el:p/el:path/el:span/el:svg/link"
+   ]
+  },
+  "/web-development-company/marrakech": {
+   "identical": false,
+   "text": 11,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE el:button/el:div/el:h3/el:p/el:path/el:span/el:svg/link"
+   ]
+  },
+  "/web-development-company/rabat": {
+   "identical": false,
+   "text": 11,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description",
+    "REPLACE meta:twitter:description",
+    "REPLACE el:button/el:div/el:h3/el:p/el:path/el:span/el:svg/link"
+   ]
+  },
+  "/web-development-company/tangier": {
+   "identical": false,
+   "text": 14,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/web-development-company/agadir": {
+   "identical": false,
+   "text": 10,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE el:button/el:div/el:h3/el:p/el:path/el:span/el:svg/link"
+   ]
+  },
+  "/web-development-company/dubai": {
+   "identical": false,
+   "text": 3,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/abudhabi": {
+   "identical": false,
+   "text": 18,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/riyadh": {
+   "identical": false,
+   "text": 11,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/london": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/amsterdam": {
+   "identical": false,
+   "text": 18,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/berlin": {
+   "identical": false,
+   "text": 13,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/paris": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/copenhagen": {
+   "identical": false,
+   "text": 13,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/dublin": {
+   "identical": false,
+   "text": 5,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/brussels": {
+   "identical": false,
+   "text": 12,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description/meta:og:title",
+    "REPLACE meta:twitter:description/meta:twitter:title",
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/zurich": {
+   "identical": false,
+   "text": 8,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/stockholm": {
+   "identical": false,
+   "text": 8,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/madrid": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/barcelona": {
+   "identical": false,
+   "text": 10,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/lisbon": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/rome": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/milan": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/new-york": {
+   "identical": false,
+   "text": 5,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/san-francisco": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/los-angeles": {
+   "identical": false,
+   "text": 5,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/austin": {
+   "identical": false,
+   "text": 17,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/seattle": {
+   "identical": false,
+   "text": 10,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/boston": {
+   "identical": false,
+   "text": 13,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/chicago": {
+   "identical": false,
+   "text": 13,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/denver": {
+   "identical": false,
+   "text": 13,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/toronto": {
+   "identical": false,
+   "text": 10,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/vancouver": {
+   "identical": false,
+   "text": 10,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/tunis": {
+   "identical": false,
+   "text": 10,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/cairo": {
+   "identical": false,
+   "text": 24,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/web-development-company/lagos": {
+   "identical": false,
+   "text": 7,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE h1-sizer"
+   ]
+  },
+  "/tools/ai-crawler-access-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/ai-readiness-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/base64-encoder": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/blog-title-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/bot-viewer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/broken-link-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/canonical-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/chatbot-script-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/color-palette-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/core-web-vitals-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/crawl-optimization-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/crawl-visualizer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/css-minifier": {
+   "identical": false,
+   "text": 2,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/tools/domain-authority-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/domain-extractor": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/domain-health-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/duplicate-content-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/eeat-signals-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/expired-domain-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/faq-schema-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/heading-analyzer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/hreflang-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/html-minifier": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/html-to-text": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/image-alt-analyzer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/image-compression-analyzer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/image-compressor": {
+   "identical": false,
+   "text": 5,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/tools/internal-link-analyzer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/invisible-character-cleaner": {
+   "identical": false,
+   "text": 4,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/tools/json-formatter": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/keyword-density-analyzer": {
+   "identical": false,
+   "text": 2,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/keyword-modifier-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/landing-page-generator": {
+   "identical": false,
+   "text": 5,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/llms-txt-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/local-business-schema": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/lorem-ipsum-generator": {
+   "identical": false,
+   "text": 3,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/meta-extractor": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/meta-refresh-generator": {
+   "identical": false,
+   "text": 3,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:?"
+   ]
+  },
+  "/tools/meta-tag-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/mobile-friendly-test": {
+   "identical": false,
+   "text": 3,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/ngram-extractor": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/nofollow-link-checker": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/og-preview-generator": {
+   "identical": false,
+   "text": 6,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/page-speed-analyzer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/qr-code-generator": {
+   "identical": false,
+   "text": 0,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/readability-analyzer": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/redirect-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/robots-txt-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/robots-txt-tester": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/robots-validator": {
+   "identical": false,
+   "text": 3,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:description",
+    "REPLACE meta:og:description",
+    "REPLACE meta:twitter:description"
+   ]
+  },
+  "/tools/schema-generator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/security-headers-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/serp-snippet-preview": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/sitemap-url-extractor": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/sitemap-validator": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/ssl-certificate-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/structured-data-extractor": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/text-case-converter": {
+   "identical": false,
+   "text": 5,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/tools/text-editor": {
+   "identical": false,
+   "text": 2,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/url-editor": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/url-slug-generator": {
+   "identical": false,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE el:input"
+   ]
+  },
+  "/tools/utm-builder": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:description"
+   ]
+  },
+  "/tools/website-analyzer": {
+   "identical": false,
+   "text": 19,
+   "inserted": {
+    "faq": 1
+   },
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/tools/website-readiness-checker": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/word-counter": {
+   "identical": false,
+   "text": 1,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/tools/xml-sitemap-generator": {
+   "identical": false,
+   "text": 3,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/akoubri": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/authentic-morocco-adventures": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/dental-pro": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/glamworlds": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/gls-sprachenzentrum": {
+   "identical": false,
+   "text": 2,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE meta:og:title",
+    "REPLACE meta:twitter:title"
+   ]
+  },
+  "/our-work/hssabek": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/mon-asso": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/our-work/morocco-quest": {
+   "identical": true,
+   "text": 0,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": []
+  },
+  "/blog/creer-une-plateforme-saas-mvp-multi-tenant-facturation-par-ou-commencer": {
+   "identical": false,
+   "text": 7,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE link",
+    "REPLACE link",
+    "REPLACE link"
+   ]
+  },
+  "/blog/site-immobilier-structurer-les-annonces-pour-le-seo-et-la-conversion": {
+   "identical": false,
+   "text": 7,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE link",
+    "REPLACE link",
+    "REPLACE link"
+   ]
+  },
+  "/blog/lms-sur-mesure-ou-produit-edtech-quelle-plateforme-e-learning": {
+   "identical": false,
+   "text": 8,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE link",
+    "REPLACE link",
+    "REPLACE link"
+   ]
+  },
+  "/blog/site-web-telemedecine-cabinet-clinique-que-doit-il-contenir": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE link",
+    "REPLACE link",
+    "REPLACE link"
+   ]
+  },
+  "/blog/site-web-fintech-7-elements-qui-rassurent-un-visiteur": {
+   "identical": false,
+   "text": 9,
+   "inserted": {},
+   "deleted_elements": [],
+   "replaced_struct": [
+    "REPLACE link",
+    "REPLACE link",
+    "REPLACE link"
+   ]
+  }
+ },
+ "groups": {
+  "REPLACE meta:og:title": 14,
+  "REPLACE meta:twitter:title": 13,
+  "REPLACE el:div/el:h3": 6,
+  "INSERT el:article/el:div/el:img/el:p/el:path/el:span/el:svg/link/text": 2,
+  "REPLACE el:article": 5,
+  "DELETE el:article/el:div/el:img/el:p/el:path/el:span/el:svg/link/text": 1,
+  "REPLACE meta:description": 12,
+  "REPLACE link": 16,
+  "INSERT el:article/el:div/el:h2/el:p/el:path/el:section/el:span/el:svg/link/text": 2,
+  "REPLACE meta:og:description/meta:og:title": 7,
+  "REPLACE meta:twitter:description/meta:twitter:title": 7,
+  "REPLACE h1-sizer": 33,
+  "REPLACE meta:og:description": 5,
+  "REPLACE meta:twitter:description": 4,
+  "REPLACE el:button/el:div/el:h3/el:p/el:path/el:span/el:svg/link": 4,
+  "REPLACE meta:?": 1,
+  "REPLACE el:input": 1
+ },
+ "examples": {
+  "REPLACE meta:og:title": [
+   [
+    "/",
+    {
+     "old": [
+      "<meta content=\"Création Site Web Maroc — Agence Web & SaaS | CodeSommet\" property=\"og:title\">"
+     ],
+     "new": [
+      "<meta content=\"Création Site Web Maroc – Agence Web & SaaS | CodeSommet\" property=\"og:title\">"
+     ]
+    }
+   ],
+   [
+    "/about",
+    {
+     "old": [
+      "<meta content=\"À Propos - CodeSommet | Agence Digitale au Maroc\" property=\"og:title\">"
+     ],
+     "new": [
+      "<meta content=\"À Propos de CodeSommet – Agence Digitale depuis 2018\" property=\"og:title\">"
+     ]
+    }
+   ],
+   [
+    "/contact",
+    {
+     "old": [
+      "<meta content=\"Contactez-Nous - CodeSommet\" property=\"og:title\">"
+     ],
+     "new": [
+      "<meta content=\"Contact – Agence Web au Maroc | CodeSommet\" property=\"og:title\">"
+     ]
+    }
+   ]
+  ],
+  "REPLACE meta:twitter:title": [
+   [
+    "/",
+    {
+     "old": [
+      "<meta content=\"Création Site Web Maroc — Agence Web & SaaS | CodeSommet\" name=\"twitter:title\">"
+     ],
+     "new": [
+      "<meta content=\"Création Site Web Maroc – Agence Web & SaaS | CodeSommet\" name=\"twitter:title\">"
+     ]
+    }
+   ],
+   [
+    "/about",
+    {
+     "old": [
+      "<meta content=\"À Propos - CodeSommet | Agence Digitale au Maroc\" name=\"twitter:title\">"
+     ],
+     "new": [
+      "<meta content=\"À Propos de CodeSommet – Agence Digitale depuis 2018\" name=\"twitter:title\">"
+     ]
+    }
+   ],
+   [
+    "/contact",
+    {
+     "old": [
+      "<meta content=\"Contactez-Nous - CodeSommet\" name=\"twitter:title\">"
+     ],
+     "new": [
+      "<meta content=\"Contact – Agence Web au Maroc | CodeSommet\" name=\"twitter:title\">"
+     ]
+    }
+   ]
+  ],
+  "REPLACE el:div/el:h3": [
+   [
+    "/",
+    {
+     "old": [
+      "<h3 class=\"text-base font-semibold text-[var(--text-primary)] mb-3\">"
+     ],
+     "new": [
+      "<div class=\"hd-3 text-base font-semibold text-[var(--text-primary)] mb-3\">"
+     ]
+    }
+   ],
+   [
+    "/",
+    {
+     "old": [
+      "<h3 class=\"text-base font-semibold text-[var(--text-primary)] mb-3\">"
+     ],
+     "new": [
+      "<div class=\"hd-3 text-base font-semibold text-[var(--text-primary)] mb-3\">"
+     ]
+    }
+   ],
+   [
+    "/",
+    {
+     "old": [
+      "<h3 class=\"text-base font-semibold text-[var(--text-primary)] mb-3\">"
+     ],
+     "new": [
+      "<div class=\"hd-3 text-base font-semibold text-[var(--text-primary)] mb-3\">"
+     ]
+    }
+   ]
+  ],
+  "INSERT el:article/el:div/el:img/el:p/el:path/el:span/el:svg/link/text": [
+   [
+    "/",
+    [
+     "#text 30 octobre 2026",
+     "<span class=\"text-[var(--text-tertiary)]\">",
+     "#text ·",
+     "<span class=\"text-xs text-[var(--text-tertiary)]\">",
+     "#text 4 min de lecture"
+    ]
+   ],
+   [
+    "/blog",
+    [
+     "#text 30 octobre 2026",
+     "<span class=\"text-[var(--text-tertiary)]\">",
+     "#text ·",
+     "<span class=\"text-xs text-[var(--text-tertiary)]\">",
+     "#text 6 min de lecture"
+    ]
+   ]
+  ],
+  "REPLACE el:article": [
+   [
+    "/",
+    {
+     "old": [
+      "<article class=\"blog-carousel-item hidden md:block\">"
+     ],
+     "new": [
+      "<article class=\"blog-carousel-item hidden\">"
+     ]
+    }
+   ],
+   [
+    "/",
+    {
+     "old": [
+      "<article class=\"blog-carousel-item hidden lg:block\">"
+     ],
+     "new": [
+      "<article class=\"blog-carousel-item hidden\">"
+     ]
+    }
+   ],
+   [
+    "/blog",
+    {
+     "old": [
+      "<article data-delay=\"3\" style=\"opacity:0;transform:translateY(30px)\">"
+     ],
+     "new": [
+      "<article data-delay=\"2\" style=\"opacity:0;transform:translateY(30px)\">"
+     ]
+    }
+   ]
+  ],
+  "DELETE el:article/el:div/el:img/el:p/el:path/el:span/el:svg/link/text": [
+   [
+    "/",
+    [
+     "<article class=\"blog-carousel-item hidden\">",
+     "<div class=\"block group card-link relative\">",
+     "<div class=\"w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transiti",
+     "<div class=\"relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]\">",
+     "<div class=\"w-full h-full flex items-center justify-center\" style=\"background-image:linear-gradient(to bottom right, #00AEEF33, #00AEEF1a, #00AEEF0d)\""
+    ]
+   ]
+  ],
+  "REPLACE meta:description": [
+   [
+    "/get-quote",
+    {
+     "old": [
+      "<meta content=\"Parlez-nous de votre projet et obtenez un devis personnalisé sous 24 heures. Devis gratuit, sans engagement, tarification sur mesure.\" "
+     ],
+     "new": [
+      "<meta content=\"Demandez votre devis site web gratuit : décrivez votre projet de création de site au Maroc et recevez une estimation sous 24 h, sans en"
+     ]
+    }
+   ],
+   [
+    "/services/saas-platform-development",
+    {
+     "old": [
+      "<meta content=\"Développement de plateformes SaaS sur mesure : tableaux de bord, administration, intégrations API et facturation par abonnement. Devis "
+     ],
+     "new": [
+      "<meta content=\"Développement SaaS sur mesure : applications web B2B, tableaux de bord, multi-tenant, intégrations API et facturation par abonnement. D"
+     ]
+    }
+   ],
+   [
+    "/services/healthcare-website-development",
+    {
+     "old": [
+      "<meta content=\"Sites web pour cliniques et professionnels de santé : portails patients, télémédecine et prise de rendez-vous en ligne, avec IA. Devis "
+     ],
+     "new": [
+      "<meta content=\"Agence web santé pour cliniques, centres médicaux et organisations de santé : sites sur mesure, portails patients et rendez-vous en lig"
+     ]
+    }
+   ]
+  ],
+  "REPLACE link": [
+   [
+    "/blog",
+    {
+     "old": [
+      "<a class=\"stretched-link\" href=\"http://localhost/blog/creer-une-plateforme-saas-mvp-multi-tenant-facturation-par-ou-commencer\">"
+     ],
+     "new": [
+      "<a class=\"stretched-link\" href=\"http://localhost/blog/e-commerce-maroc-guide-lancer-boutique-en-ligne\">"
+     ]
+    }
+   ],
+   [
+    "/blog/creer-une-plateforme-saas-mvp-multi-tenant-facturation-par-ou-commencer",
+    {
+     "old": [
+      "<a class=\"stretched-link\" href=\"http://localhost/blog/site-immobilier-structurer-les-annonces-pour-le-seo-et-la-conversion\">"
+     ],
+     "new": [
+      "<a class=\"stretched-link\" href=\"http://localhost/blog/e-commerce-maroc-guide-lancer-boutique-en-ligne\">"
+     ]
+    }
+   ],
+   [
+    "/blog/creer-une-plateforme-saas-mvp-multi-tenant-facturation-par-ou-commencer",
+    {
+     "old": [
+      "<a class=\"stretched-link\" href=\"http://localhost/blog/lms-sur-mesure-ou-produit-edtech-quelle-plateforme-e-learning\">"
+     ],
+     "new": [
+      "<a class=\"stretched-link\" href=\"http://localhost/blog/prix-site-web-maroc-combien-coute-la-creation-d-un-site-internet\">"
+     ]
+    }
+   ]
+  ],
+  "INSERT el:article/el:div/el:h2/el:p/el:path/el:section/el:span/el:svg/link/text": [
+   [
+    "/services/ecommerce-website-development",
+    [
+     "<section aria-labelledby=\"related-articles-heading\" class=\"w-full bg-white py-16 md:py-20\">",
+     "<div class=\"max-w-7xl mx-auto px-4 md:px-6\">",
+     "<div class=\"text-center mb-8 md:mb-10\">",
+     "<h2 class=\"text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4\" id=\"related-articles-heading\" style=\"font-family:var(--font-headin",
+     "#text Articles liés"
+    ]
+   ],
+   [
+    "/services/seo-maroc",
+    [
+     "<section aria-labelledby=\"related-articles-heading\" class=\"w-full bg-white py-16 md:py-20\">",
+     "<div class=\"max-w-7xl mx-auto px-4 md:px-6\">",
+     "<div class=\"text-center mb-8 md:mb-10\">",
+     "<h2 class=\"text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0F0F0F] mb-3 px-4\" id=\"related-articles-heading\" style=\"font-family:var(--font-headin",
+     "#text Articles liés"
+    ]
+   ]
+  ],
+  "REPLACE meta:og:description/meta:og:title": [
+   [
+    "/services/saas-platform-development",
+    {
+     "old": [
+      "<meta content=\"Développement de Plateformes SaaS & Logiciels B2B | CodeSommet\" property=\"og:title\">",
+      "<meta content=\"Développement spécialisé de plateformes SaaS : tableaux de bord utilisateurs, panneaux d'administration, intégrations API et facturatio"
+     ],
+     "new": [
+      "<meta content=\"Développement SaaS & Applications Web B2B | CodeSommet\" property=\"og:title\">",
+      "<meta content=\"Développement SaaS sur mesure : applications web B2B, tableaux de bord, multi-tenant, intégrations API et facturation par abonnement. D"
+     ]
+    }
+   ],
+   [
+    "/services/healthcare-website-development",
+    {
+     "old": [
+      "<meta content=\"Développement de Sites Web Santé & Télésanté | CodeSommet\" property=\"og:title\">",
+      "<meta content=\"Développement de sites web de santé : portails patients, systèmes de télémédecine et prise de rendez-vous, conformes HIPAA et enrichis "
+     ],
+     "new": [
+      "<meta content=\"Agence Web Santé - Sites Médicaux | CodeSommet\" property=\"og:title\">",
+      "<meta content=\"Agence web santé pour cliniques, centres médicaux et organisations de santé : sites sur mesure, portails patients et rendez-vous en lig"
+     ]
+    }
+   ],
+   [
+    "/services/education-website-development",
+    {
+     "old": [
+      "<meta content=\"Développement de Sites Web Éducatifs & E-Learning | CodeSommet\" property=\"og:title\">",
+      "<meta content=\"Développement de sites web éducatifs : portails d'études à l'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités"
+     ],
+     "new": [
+      "<meta content=\"Création de Site Internet pour École | CodeSommet\" property=\"og:title\">",
+      "<meta content=\"Création de site internet pour écoles, établissements et centres de formation : inscriptions en ligne, portails de candidature, espace "
+     ]
+    }
+   ]
+  ],
+  "REPLACE meta:twitter:description/meta:twitter:title": [
+   [
+    "/services/saas-platform-development",
+    {
+     "old": [
+      "<meta content=\"Développement de Plateformes SaaS & Logiciels B2B | CodeSommet\" name=\"twitter:title\">",
+      "<meta content=\"Développement spécialisé de plateformes SaaS : tableaux de bord utilisateurs, panneaux d'administration, intégrations API et facturatio"
+     ],
+     "new": [
+      "<meta content=\"Développement SaaS & Applications Web B2B | CodeSommet\" name=\"twitter:title\">",
+      "<meta content=\"Développement SaaS sur mesure : applications web B2B, tableaux de bord, multi-tenant, intégrations API et facturation par abonnement. D"
+     ]
+    }
+   ],
+   [
+    "/services/healthcare-website-development",
+    {
+     "old": [
+      "<meta content=\"Développement de Sites Web Santé & Télésanté | CodeSommet\" name=\"twitter:title\">",
+      "<meta content=\"Développement de sites web de santé : portails patients, systèmes de télémédecine et prise de rendez-vous, conformes HIPAA et enrichis "
+     ],
+     "new": [
+      "<meta content=\"Agence Web Santé - Sites Médicaux | CodeSommet\" name=\"twitter:title\">",
+      "<meta content=\"Agence web santé pour cliniques, centres médicaux et organisations de santé : sites sur mesure, portails patients et rendez-vous en lig"
+     ]
+    }
+   ],
+   [
+    "/services/education-website-development",
+    {
+     "old": [
+      "<meta content=\"Développement de Sites Web Éducatifs & E-Learning | CodeSommet\" name=\"twitter:title\">",
+      "<meta content=\"Développement de sites web éducatifs : portails d'études à l'étranger, systèmes LMS et tableaux de bord étudiants, avec fonctionnalités"
+     ],
+     "new": [
+      "<meta content=\"Création de Site Internet pour École | CodeSommet\" name=\"twitter:title\">",
+      "<meta content=\"Création de site internet pour écoles, établissements et centres de formation : inscriptions en ligne, portails de candidature, espace "
+     ]
+    }
+   ]
+  ],
+  "REPLACE h1-sizer": [
+   [
+    "/services/fintech-website-development",
+    {
+     "old": [
+      "<span aria-hidden=\"true\" class=\"jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none\" data-sizer=\"CROISSANCE FINANCIÈRE\">"
+     ],
+     "new": [
+      "<span aria-hidden=\"true\" class=\"jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none\" data-sizer=\"DEMANDES DE DÉMO\">"
+     ]
+    }
+   ],
+   [
+    "/services/edtech-platform-development",
+    {
+     "old": [
+      "<span aria-hidden=\"true\" class=\"jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none\" data-sizer=\"PLATEFORMES EDTECH B2B\">"
+     ],
+     "new": [
+      "<span aria-hidden=\"true\" class=\"jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none\" data-sizer=\"PRODUITS ÉDUCATIFS B2B SUR MESURE\">"
+     ]
+    }
+   ],
+   [
+    "/services/language-school-website-development",
+    {
+     "old": [
+      "<span aria-hidden=\"true\" class=\"jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none\" data-sizer=\"Écoles de Langues\">"
+     ],
+     "new": [
+      "<span aria-hidden=\"true\" class=\"jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none\" data-sizer=\"INSCRIPTIONS D'ÉLÈVES\">"
+     ]
+    }
+   ]
+  ],
+  "REPLACE meta:og:description": [
+   [
+    "/services/telemedicine-website-development",
+    {
+     "old": [
+      "<meta content=\"Sites web pour médecins et cliniques proposant la télémédecine : présentation du cabinet, prise de rendez-vous en ligne et parcours pat"
+     ],
+     "new": [
+      "<meta content=\"Création de site web pour cabinet médical : présentation du médecin, rendez-vous en ligne et téléconsultation, optimisé pour le SEO loc"
+     ]
+    }
+   ],
+   [
+    "/web-development-company/worldwide",
+    {
+     "old": [
+      "<meta content=\"Agence premium de développement web basée au Maroc, livrant des sites web alimentés par l'IA, des tableaux de bord intelligents et des "
+     ],
+     "new": [
+      "<meta content=\"Agence web offshore au Maroc : développement web sur mesure, sites et plateformes SaaS réalisés à distance pour des entreprises francop"
+     ]
+    }
+   ],
+   [
+    "/web-development-company/rabat",
+    {
+     "old": [
+      "<meta content=\"Développement web pour les entreprises et institutions de Rabat : sites modernes, plateformes métier et SEO, réalisés au Maroc par l'éq"
+     ],
+     "new": [
+      "<meta content=\"Agence web à Rabat : sites modernes, plateformes métier et SEO pour les entreprises, associations et institutions de la capitale, par l"
+     ]
+    }
+   ]
+  ],
+  "REPLACE meta:twitter:description": [
+   [
+    "/services/telemedicine-website-development",
+    {
+     "old": [
+      "<meta content=\"Sites web pour médecins et cliniques proposant la télémédecine : présentation du cabinet, prise de rendez-vous en ligne et parcours pat"
+     ],
+     "new": [
+      "<meta content=\"Création de site web pour cabinet médical : présentation du médecin, rendez-vous en ligne et téléconsultation, optimisé pour le SEO loc"
+     ]
+    }
+   ],
+   [
+    "/web-development-company/worldwide",
+    {
+     "old": [
+      "<meta content=\"Agence de développement web au service de clients dans le monde entier : sites alimentés par l'IA, tableaux de bord et plateformes SaaS"
+     ],
+     "new": [
+      "<meta content=\"Agence web offshore au Maroc : développement web sur mesure, sites et plateformes SaaS réalisés à distance pour des entreprises francop"
+     ]
+    }
+   ],
+   [
+    "/web-development-company/rabat",
+    {
+     "old": [
+      "<meta content=\"Développement web pour les entreprises et institutions de Rabat : sites modernes, plateformes métier et SEO.\" name=\"twitter:description"
+     ],
+     "new": [
+      "<meta content=\"Agence web à Rabat : sites modernes, plateformes métier et SEO pour les entreprises, associations et institutions de la capitale, par l"
+     ]
+    }
+   ]
+  ],
+  "REPLACE el:button/el:div/el:h3/el:p/el:path/el:span/el:svg/link": [
+   [
+    "/web-development-company/casablanca",
+    {
+     "old": [],
+     "new": [
+      "<div class=\"border-b border-[#0F0F0F]/10 last:border-0\">",
+      "<button aria-controls=\"faq-answer-7\" aria-expanded=\"false\" class=\"w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded",
+      "<div class=\"flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center\">"
+     ]
+    }
+   ],
+   [
+    "/web-development-company/marrakech",
+    {
+     "old": [],
+     "new": [
+      "<div class=\"border-b border-[#0F0F0F]/10 last:border-0\">",
+      "<button aria-controls=\"faq-answer-7\" aria-expanded=\"false\" class=\"w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded",
+      "<div class=\"flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center\">"
+     ]
+    }
+   ],
+   [
+    "/web-development-company/rabat",
+    {
+     "old": [],
+     "new": [
+      "<div class=\"border-b border-[#0F0F0F]/10 last:border-0\">",
+      "<button aria-controls=\"faq-answer-7\" aria-expanded=\"false\" class=\"w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded",
+      "<div class=\"flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center\">"
+     ]
+    }
+   ]
+  ],
+  "REPLACE meta:?": [
+   [
+    "/tools/meta-refresh-generator",
+    {
+     "old": [
+      "<meta>"
+     ],
+     "new": []
+    }
+   ]
+  ],
+  "REPLACE el:input": [
+   [
+    "/tools/url-slug-generator",
+    {
+     "old": [
+      "<input class=\"h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:borde"
+     ],
+     "new": [
+      "<input class=\"h-12 w-full px-4 rounded-lg bg-white border border-gray-200 text-black placeholder:text-gray-400 transition-all duration-200 focus:borde"
+     ]
+    }
+   ]
+  ]
+ }
+}

@@ -1,0 +1,90 @@
+{
+    "db": "C:\/Users\/ASUS\/AppData\/Local\/Temp\/claude\/c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\/015ab8ed-9f21-4b08-8b82-7140a0663267\/scratchpad\/isolated_guides.sqlite",
+    "count": 7,
+    "rows": [
+        {
+            "id": 5,
+            "slug": "creer-une-plateforme-saas-mvp-multi-tenant-facturation-par-ou-commencer",
+            "status": "published",
+            "published_at": "2026-10-26 09:00:00",
+            "updated_at": "2026-10-30 20:08:05",
+            "meta_title": "Créer une plateforme SaaS : MVP, multi-tenant et facturation",
+            "mt_len": 60,
+            "md_len": 166,
+            "featured_image": null,
+            "category_id": 1
+        },
+        {
+            "id": 7,
+            "slug": "e-commerce-maroc-guide-lancer-boutique-en-ligne",
+            "status": "published",
+            "published_at": "2026-10-30 10:00:00",
+            "updated_at": "2026-10-30 20:08:10",
+            "meta_title": "E-commerce au Maroc : lancer sa boutique en ligne",
+            "mt_len": 49,
+            "md_len": 153,
+            "featured_image": null,
+            "category_id": 1
+        },
+        {
+            "id": 3,
+            "slug": "lms-sur-mesure-ou-produit-edtech-quelle-plateforme-e-learning",
+            "status": "published",
+            "published_at": "2026-10-18 09:00:00",
+            "updated_at": "2026-10-30 20:08:04",
+            "meta_title": "LMS sur mesure ou produit EdTech : quelle plateforme e-learning choisir ?",
+            "mt_len": 73,
+            "md_len": 150,
+            "featured_image": null,
+            "category_id": 1
+        },
+        {
+            "id": 6,
+            "slug": "prix-site-web-maroc-combien-coute-la-creation-d-un-site-internet",
+            "status": "published",
+            "published_at": "2026-10-30 09:00:00",
+            "updated_at": "2026-10-30 20:11:17",
+            "meta_title": "Prix d'un site web au Maroc : ce qui fait le coût",
+            "mt_len": 49,
+            "md_len": 147,
+            "featured_image": null,
+            "category_id": 1
+        },
+        {
+            "id": 4,
+            "slug": "site-immobilier-structurer-les-annonces-pour-le-seo-et-la-conversion",
+            "status": "published",
+            "published_at": "2026-10-22 09:00:00",
+            "updated_at": "2026-10-30 20:08:05",
+            "meta_title": "Site immobilier : structurer les annonces pour le SEO et la conversion",
+            "mt_len": 70,
+            "md_len": 166,
+            "featured_image": null,
+            "category_id": 1
+        },
+        {
+            "id": 1,
+            "slug": "site-web-fintech-7-elements-qui-rassurent-un-visiteur",
+            "status": "published",
+            "published_at": "2026-10-10 09:00:00",
+            "updated_at": "2026-10-30 20:08:04",
+            "meta_title": "Site web fintech : 7 éléments qui rassurent vos visiteurs",
+            "mt_len": 57,
+            "md_len": 135,
+            "featured_image": null,
+            "category_id": 1
+        },
+        {
+            "id": 2,
+            "slug": "site-web-telemedecine-cabinet-clinique-que-doit-il-contenir",
+            "status": "published",
+            "published_at": "2026-10-14 09:00:00",
+            "updated_at": "2026-10-30 20:08:04",
+            "meta_title": "Site web de télémédecine : contenu indispensable pour un cabinet",
+            "mt_len": 64,
+            "md_len": 169,
+            "featured_image": null,
+            "category_id": 1
+        }
+    ]
+}

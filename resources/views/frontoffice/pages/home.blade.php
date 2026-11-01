@@ -2242,6 +2242,7 @@
     @include('frontoffice.partials.home-testimonials')
     @include('frontoffice.partials.home-sections')
     @include('frontoffice.partials.home-blog-carousel')
+    @include('frontoffice.partials.home-faq')
 
     {{-- Barre promo fixe (bas de page) --}}
     @include('frontoffice.partials.promo-sticky-bar')

@@ -206,4 +206,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu pour les projets de Zurich après le lancement ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_baf2677c' => 'Découvrez pourquoi les entreprises de Zurich choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_073f455e' => 'CodeSommet Zurich vs Autres',
+    'seo_fix_ff569286' => 'Une expertise approfondie dans les secteurs clés de Zurich. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
+    'seo_fix_722b5112' => 'Nos secteurs de spécialisation à Zurich',
+    'seo_fix_8af294d4' => 'Pourquoi Choisir CodeSommet à Zurich ?',
 ];

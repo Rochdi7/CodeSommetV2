@@ -26,7 +26,7 @@ return [
     'text_15' => 'Nos réalisations à',
     'text_16' => 'Histoires de réussite à',
     'text_17' => 'Éducation',
-    'text_18' => 'Plateforme d\x27inscription en ligne',
+    'text_18' => 'Plateforme d\'inscription en ligne',
     'text_19' => 'Santé',
     'text_20' => 'Tourisme',
     'text_21' => 'SaaS Entreprise',
@@ -210,4 +210,9 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu après le lancement pour les entreprises de Seattle ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_09d888e5' => 'Découvrez pourquoi les entreprises de Seattle choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_f1cacc2e' => 'CodeSommet Seattle vs Autres',
+    'seo_fix_63305926' => 'Une expertise approfondie dans les secteurs clés de Seattle. Nous comprenons les défis propres à votre secteur et ses exigences de conformité.',
+    'seo_fix_5ba0e88a' => 'Nos secteurs de spécialisation à Seattle',
+    'seo_fix_a812c64c' => 'Pourquoi Choisir CodeSommet à Seattle ?',
 ];

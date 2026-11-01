@@ -2,10 +2,10 @@
 
 return [
     'h1_seo' => 'À Propos : Agence Digitale au Maroc Depuis 2018',
-    'title' => 'À Propos - Agence Digitale au Maroc depuis 2018 | CodeSommet',
+    'title' => 'À Propos de CodeSommet – Agence Digitale depuis 2018',
     'meta_description' => 'Découvrez CodeSommet : notre histoire depuis 2018, notre approche du développement web sur mesure et les valeurs qui guident chaque projet.',
     'meta_keywords' => 'à propos CodeSommet,agence digitale Maroc,développement web Maroc,design UI UX,agence branding,SEO Maroc,développement e-commerce,applications mobiles,solutions SaaS',
-    'og_title' => 'À Propos - CodeSommet | Agence Digitale au Maroc',
+    'og_title' => 'À Propos de CodeSommet – Agence Digitale depuis 2018',
     'og_description' => 'CodeSommet est une agence digitale basée au Maroc depuis 2018. Nous sommes spécialisés en développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles et solutions SaaS.',
     'twitter_description' => 'Agence digitale basée au Maroc depuis 2018. Développement web, design UI/UX, branding, SEO, e-commerce, applications mobiles & SaaS.',
     'text_0' => 'Notre Histoire',

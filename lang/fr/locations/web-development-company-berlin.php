@@ -192,4 +192,12 @@ return [
     'faq_q6' => 'Fournissez-vous un support continu pour les entreprises de Berlin après le lancement ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_f8f169c2' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus fréquentes des entreprises de Berlin.',
+    'seo_fix_83ae2ffc' => 'Ce que nos clients de Berlin disent de nous',
+    'seo_fix_df2385f6' => 'Découvrez pourquoi les entreprises de Berlin choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
+    'seo_fix_4c7c9713' => 'De vrais projets, de vrais résultats. Découvrez comment nous avons aidé des entreprises de Berlin à atteindre leurs objectifs numériques.',
+    'seo_fix_0a68383e' => 'Expertise approfondie des secteurs clés de Berlin. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_0633c959' => 'Nos secteurs de spécialisation à Berlin',
+    'seo_fix_26b98be9' => 'De vrais résultats obtenus avec des entreprises de Berlin',
+    'seo_fix_da20f917' => 'Approuvé par les entreprises de Berlin',
 ];

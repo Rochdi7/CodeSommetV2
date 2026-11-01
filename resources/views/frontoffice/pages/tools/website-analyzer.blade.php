@@ -53,8 +53,7 @@
                 <div class="space-y-6">
                     <div>
                         <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ __('tools/website-analyzer.text_2') }}</h2>
-                        <p class="text-gray-600">Get instant feedback on SEO, performance, design, security, and more. Enter
-                            your URL and we&#x27;ll analyze 40+ checkpoints across 5 categories using AI-powered insights.
+                        <p class="text-gray-600">Obtenez un retour immédiat sur le SEO, la performance, le design, la sécurité et plus encore : saisissez votre URL et l'outil analyse plus de 40 points de contrôle répartis en 5 catégories.
                             Vous avez besoin d'une <a class="text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors" href="{{ route('tool', 'website-readiness-checker') }}">checklist rapide avant lancement</a> plutôt qu'un audit complet de 40+ points ?
                         </p>
                     </div>
@@ -424,9 +423,7 @@
                     <div class="mb-8">
                         <h2 class="text-2xl md:text-3xl font-bold text-black mb-3">
                             {{ __('tools/website-analyzer.text_27') }}</h2>
-                        <p class="text-base text-gray-600">We&#x27;re not just another website checker. Our AI-powered
-                            analyzer provides insights that typically require hiring SEO consultants, performance engineers,
-                            and design experts.</p>
+                        <p class="text-base text-gray-600">Cet analyseur ne se contente pas de vérifier quelques balises : il combine des contrôles SEO, de performance, de design et de sécurité pour fournir un premier diagnostic complet de votre page.</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         <div
@@ -603,7 +600,7 @@
                                 <tr class="border-b-2 border-gray-200">
                                     <th
                                         class="text-left py-4 px-4 text-sm font-bold text-gray-700 uppercase tracking-wide">
-                                        Feature</th>
+                                        Critère</th>
                                     <th
                                         class="text-left py-4 px-4 text-sm font-bold text-gray-700 uppercase tracking-wide">
                                         Audit manuel</th>
@@ -615,8 +612,8 @@
                             <tbody>
                                 <tr
                                     class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
-                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Cost</td>
-                                    <td class="py-4 px-4 text-sm text-gray-600">$500 - $2,000</td>
+                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Coût</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Variable, sur devis</td>
                                     <td class="py-4 px-4">
                                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -631,8 +628,8 @@
                                 </tr>
                                 <tr
                                     class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
-                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Time Required</td>
-                                    <td class="py-4 px-4 text-sm text-gray-600">2-5 business days</td>
+                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Délai</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Plusieurs jours</td>
                                     <td class="py-4 px-4">
                                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -642,14 +639,14 @@
                                                 aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm font-semibold text-black">30 seconds</span></div>
+                                            </svg><span class="text-sm font-semibold text-black">Environ 30 secondes</span></div>
                                     </td>
                                 </tr>
                                 <tr
                                     class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
                                     <td class="py-4 px-4 text-sm font-medium text-gray-900">
                                         {{ __('tools/website-analyzer.text_44') }}</td>
-                                    <td class="py-4 px-4 text-sm text-gray-600">15-20 items</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">15 à 20 points</td>
                                     <td class="py-4 px-4">
                                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -668,7 +665,7 @@
                                     class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
                                     <td class="py-4 px-4 text-sm font-medium text-gray-900">
                                         {{ __('tools/website-analyzer.text_178') }}</td>
-                                    <td class="py-4 px-4 text-sm text-gray-600">Subjective opinion</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Selon l'appréciation de l'auditeur</td>
                                     <td class="py-4 px-4">
                                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -678,8 +675,7 @@
                                                 aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm font-semibold text-black">Computer vision
-                                                powered</span></div>
+                                            </svg><span class="text-sm font-semibold text-black">Analyse par vision par ordinateur</span></div>
                                     </td>
                                 </tr>
                                 <tr
@@ -696,14 +692,13 @@
                                                 aria-hidden="true">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <path d="m9 12 2 2 4-4"></path>
-                                            </svg><span class="text-sm font-semibold text-black">Automated real-time
-                                                data</span></div>
+                                            </svg><span class="text-sm font-semibold text-black">Données automatisées en temps réel</span></div>
                                     </td>
                                 </tr>
                                 <tr
                                     class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
-                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Improvement Plan</td>
-                                    <td class="py-4 px-4 text-sm text-gray-600">Generic recommendations</td>
+                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Plan d'amélioration</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Recommandations selon l'auditeur</td>
                                     <td class="py-4 px-4">
                                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -721,7 +716,7 @@
                                 <tr
                                     class="border-b border-gray-100 bg-white hover:bg-orange-50 transition-colors duration-200">
                                     <td class="py-4 px-4 text-sm font-medium text-gray-900">Benchmark Sectoriel</td>
-                                    <td class="py-4 px-4 text-sm text-gray-600">Not included</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Non inclus</td>
                                     <td class="py-4 px-4">
                                         <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -737,7 +732,7 @@
                                 </tr>
                                 <tr
                                     class="border-b border-gray-100 bg-gray-50 hover:bg-orange-50 transition-colors duration-200">
-                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Follow-up Audits</td>
+                                    <td class="py-4 px-4 text-sm font-medium text-gray-900">Audits de suivi</td>
                                     <td class="py-4 px-4 text-sm text-gray-600">{{ __('tools/website-analyzer.text_48') }}
                                     </td>
                                     <td class="py-4 px-4">
@@ -767,9 +762,7 @@
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>
                             <div>
-                                <p class="text-sm text-gray-800 leading-relaxed"><strong class="text-black">Save
-                                        $500-$2,000 and 2-5 days</strong> by using our free automated analyzer. Get the same
-                                    depth of analysis with advanced algorithms that manual audits can&#x27;t provide.</p>
+                                <p class="text-sm text-gray-800 leading-relaxed"><strong class="text-black">Un premier diagnostic gratuit en quelques minutes</strong>, sans attendre un audit manuel. Pour une stratégie complète (mots-clés, concurrence, contenus), l'analyse d'un consultant SEO reste complémentaire.</p>
                             </div>
                         </div>
                     </div>
@@ -780,14 +773,14 @@
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
-                            </svg>See how we improved MSinGermany&#x27;s SEO by 300%</a><a
+                            </svg>Voir l'étude de cas Mon Asso</a><a
                             class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors"
                             href="/our-work/dental-pro"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
-                            </svg>Read Doctor Hubli case study - 50K monthly visitors</a><a
+                            </svg>Voir l'étude de cas Dental Pro</a><a
                             class="inline-flex items-center gap-2 text-sm text-[#00AEEF] hover:text-[#0071BC] font-medium transition-colors"
                             href="{{ route('get-quote') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -987,6 +980,28 @@
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
                             <p>{{ __('tools/website-analyzer.text_66') }}</p>
+                        </div>
+                    </div>
+<div class="border-b border-gray-200 last:border-0"><button
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">9</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-base md:text-lg font-semibold text-black">
+                                    {{ __('tools/website-analyzer.faq9_q') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
+                            <p>{!! __('tools/website-analyzer.faq9_a') !!}</p>
                         </div>
                     </div>
                 </div>

@@ -84,7 +84,7 @@ return [
     'text_670' => 'Automatisation',
     'text_671' => 'Automatisation',
     'text_672' => 'Automatisation',
-    'ml_1072' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
+    'ml_1072' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites vitrines livrés en 2 à 5 jours après validation du périmètre.',
     'ml_1073' => 'Réserver une Consultation Gratuite Milan',
     'ml_1074' => 'Créez des chatbots intelligents, des workflows d\'automatisation, une recherche alimentée par l\'IA et des moteurs de recommandation adaptés au public technophile de Milan.',
     'ml_1075' => 'Spécialistes Dashboard & SaaS',
@@ -196,4 +196,7 @@ return [
     'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine .it ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_318c268e' => 'Découvrez pourquoi les entreprises de Milan choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_f6fa7774' => 'Expertise approfondie dans les secteurs clés de Milan. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_a26a5f1e' => 'Nos secteurs de spécialisation à Milan',
 ];

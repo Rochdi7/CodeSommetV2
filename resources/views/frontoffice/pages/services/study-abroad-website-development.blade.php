@@ -338,10 +338,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('services/study-abroad-website-development-agency.text_8') }}
-                        <!-- -->{{ __('services/study-abroad-website-development-agency.text_7') }}<!-- -->
-                        Entreprises</h2>
+                        style="font-family:var(--font-heading)">{{ __('services/study-abroad-website-development-agency.seo_fix_14693cbd') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -359,10 +356,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">
-                        {{ __('services/study-abroad-website-development-agency.text_13') }}
-                        <!-- -->{{ __('services/study-abroad-website-development-agency.text_7') }}<!-- -->
-                        avec lesquelles nous avons collaboré</p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/study-abroad-website-development-agency.seo_fix_136d4991') }}</p>
                 </div>
             </div>
         </section>
@@ -2341,8 +2335,7 @@
                     style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
                     <!-- -->{{ __('services/study-abroad-website-development-agency.text_73') }}
                 </h2>
-                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                    {{ __('services/study-abroad-website-development-agency.sw_3147') }}</p>
+                <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/study-abroad-website-development-agency.seo_fix_4b42a1ce') }}</p>
             </div>
             <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                 <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"

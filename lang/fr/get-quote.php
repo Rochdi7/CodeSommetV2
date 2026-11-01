@@ -2,7 +2,7 @@
 
 return [
     'h1_seo' => 'Obtenir un Devis Gratuit pour Votre Site Web',
-    'text_0' => 'Obtenir un Devis Gratuit | CodeSommet',
+    'text_0' => 'Devis Site Web Gratuit au Maroc | CodeSommet',
     'text_1' => 'Devis Gratuit pour Votre Site Web',
     'text_2' => 'Parlez-nous de votre projet et nous vous fournirons un devis personnalisé selon vos besoins.',
     'text_3' => 'Devis gratuit',
@@ -83,4 +83,9 @@ return [
     'text_374' => 'Fonctionnalités clés requises',
     'text_375' => 'Brève description',
     'text_376' => 'Fourchette budgétaire',
+    'faq_title' => 'Questions fréquentes sur votre devis',
+    'faq_q1' => 'Que contient un devis de création de site internet ?',
+    'faq_a1' => 'Notre devis détaille le périmètre du projet (pages, fonctionnalités, langues), ce qui est inclus (design, développement, intégration des contenus, optimisation SEO de base), les options éventuelles (rédaction, paiement en ligne, maintenance), le calendrier de livraison et l\'échéancier de paiement : un acompte pour démarrer, le solde à la livraison. Il est gratuit, sans engagement, et vous est envoyé sous 24 heures.',
+    'faq_q2' => 'Quel est le prix d\'un site internet ?',
+    'faq_a2' => 'Il n\'existe pas de prix unique : un site vitrine, une boutique e-commerce et une plateforme sur mesure n\'impliquent pas le même travail. Plutôt qu\'une grille fixe, nous chiffrons chaque projet selon le nombre de pages, les fonctionnalités, les langues et l\'accompagnement souhaité, afin que vous ne payiez que ce dont vous avez besoin. Plus la description de votre projet est précise dans le formulaire, plus l\'estimation sera juste. Vous pouvez aussi consulter nos <a href="/our-work" class="underline">réalisations</a> pour situer votre projet.',
 ];

@@ -41,5 +41,5 @@ return [
     'text_30' => 'Nous créons des outils alimentés par l\'IA, des tableaux de bord et des automatisations qui génèrent de vrais résultats',
     'text_31' => 'Réserver un Appel Découverte',
     'text_32' => '50+ projets réussis • Livraison en 48h • Sans engagement à long terme',
-    'placeholder_33' => 'The Ultimate Guide to Développement Web in 2026',
+    'placeholder_33' => 'Le guide complet du développement web en 2026',
 ];

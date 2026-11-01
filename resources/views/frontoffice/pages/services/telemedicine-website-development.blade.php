@@ -393,9 +393,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">Résultats réels de
-                        <!-- -->{{ __('services/telemedicine-website-development-agency.text_12') }}<!-- -->{{ __('services/telemedicine-website-development-agency.ml_1127') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('services/telemedicine-website-development-agency.seo_fix_674acb42') }}</p>
                 </div>
             </div>
         </section>
@@ -2379,11 +2377,7 @@
                         style="font-family:var(--font-heading)">Questions Fréquemment Posées sur le Développement Web en
                         <!-- -->{{ __('services/telemedicine-website-development-agency.ml_1216') }}
                     </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Vous avez des questions ? Nous avons les
-                        réponses. Voici les questions les plus courantes de
-                        <!-- -->{{ __('services/telemedicine-website-development-agency.text_72') }}<!-- -->
-                        entreprises.
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('services/telemedicine-website-development-agency.seo_fix_6420dc14') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"

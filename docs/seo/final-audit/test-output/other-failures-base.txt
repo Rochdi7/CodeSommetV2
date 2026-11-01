@@ -1,0 +1,21 @@
+1) Tests\Feature\CrawlVisualizerTest::test_page_renders_with_its_controls
+Failed asserting that '<!DOCTYPE html>\r\n
+<html lang="fr" dir="ltr">\r\n
+\r\n
+1) Tests\Feature\ToolsCatalogTest::test_every_catalog_slug_has_a_card_on_the_index
+Outils sans carte sur /tools : ai-crawler-access-checker, ai-readiness-checker, base64-encoder, blog-title-generator, bot-viewer, broken-link-checker, canonical-checker, chatbot-script-generator, color-palette-generator, core-web-vitals-checker, crawl-optimization-checker, crawl-visualizer, css-minifier, domain-authority-checker, domain-extractor, domain-health-checker, duplicate-content-checker, eeat-signals-checker, expired-domain-checker, faq-schema-generator, heading-analyzer, hreflang-generator, html-minifier, html-to-text, image-alt-analyzer, image-compression-analyzer, image-compressor, internal-link-analyzer, invisible-character-cleaner, json-formatter, keyword-density-analyzer, keyword-modifier-generator, landing-page-generator, llms-txt-generator, local-business-schema, lorem-ipsum-generator, meta-extractor, meta-refresh-generator, meta-tag-generator, mobile-friendly-test, ngram-extractor, nofollow-link-checker, og-preview-generator, page-speed-analyzer, qr-code-generator, readability-analyzer, redirect-checker, robots-txt-generator, robots-txt-tester, robots-validator, schema-generator, security-headers-checker, serp-snippet-preview, sitemap-url-extractor, sitemap-validator, ssl-certificate-checker, structured-data-extractor, text-case-converter, text-editor, url-editor, url-slug-generator, utm-builder, website-analyzer, website-readiness-checker, word-counter, xml-sitemap-generator
+Failed asserting that two arrays are identical.
+--- Expected
+--
+2) Tests\Feature\ToolsCatalogTest::test_visible_counters_match_the_real_tool_count
+Failed asserting that actual size 0 matches expected size 66.
+
+C:\Users\ASUS\AppData\Local\Temp\claude\c--Users-ASUS-Desktop-pikasso-studio-pikassostudio-com\015ab8ed-9f21-4b08-8b82-7140a0663267\scratchpad\baseline\tests\Feature\ToolsCatalogTest.php:70
+1) Tests\Feature\ToolsV2\ExtractorToolsTest::test_pages_render
+Failed asserting that '<!DOCTYPE html>\r\n
+<html lang="fr" dir="ltr">\r\n
+\r\n
+1) Tests\Feature\ToolsV2\RobotsToolsTest::test_pages_render
+Failed asserting that '<!DOCTYPE html>\r\n
+<html lang="fr" dir="ltr">\r\n
+\r\n

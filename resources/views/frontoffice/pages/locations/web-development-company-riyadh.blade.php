@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Riyad<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Riyad</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -162,8 +162,7 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-riyadh.text_4') }} <!-- -->Riyad<!-- -->?</h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-riyadh.seo_fix_5fe2cb2a') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-riyadh.sw_3061') }}</p>
                 </div>
@@ -361,8 +360,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-riyadh.text_5') }} <!-- -->Riyad<!-- --> Entreprises</h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-riyadh.seo_fix_4d2549c1') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -391,10 +389,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Riyad<!-- -->
-                        {{ __('locations/web-development-company-riyadh.text_8') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Une expertise approfondie dans les secteurs clés
-                        de <!-- -->Riyad<!-- -->{{ __('locations/web-development-company-riyadh.ml_1094') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-riyadh.seo_fix_b2b97e36') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-riyadh.seo_fix_6e517c48') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -1292,11 +1288,8 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">CodeSommet <!-- -->Riyad<!-- --> vs Others</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-riyadh.text_40') }}
-                        <!-- -->Riyad<!-- -->{{ __('locations/web-development-company-riyadh.ml_1130') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-riyadh.seo_fix_197c01c1') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-riyadh.seo_fix_bf9ded1d') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1314,7 +1307,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Riyad<!-- --> Agences</div>
+                                    Autres agences à Riyad</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1538,8 +1531,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-riyadh.text_45') }} <!-- -->Riyad<!-- -->
-                            Entreprises
+                            </svg>{{ __('locations/web-development-company-riyadh.text_45') }} les entreprises de Riyad
                         </div>
                     </div>
                 </div>

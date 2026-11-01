@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'h1_seo' => 'Sites Web pour Cabinets d\'Immigration qui génèrent des',
+    'h1_seo' => 'Sites Web pour Cabinets d\'Immigration, avec des',
     'title' => 'Sites Web pour Cabinets d\'Immigration | CodeSommet',
     'meta_description' => 'Sites web pour cabinets de conseil en immigration : suivi de dossiers, gestion de documents, calculateurs d\'éligibilité et portail client. Devis gratuit.',
     'meta_keywords' => 'site web conseil en immigration,développement site web conseil en visa,suivi de dossiers immigration,portail de demande de visa,CRM immigration,gestion de documents visa',
@@ -266,4 +266,11 @@ return [
     'faq_q6' => 'Pouvez-vous vous intégrer avec des systèmes CRM comme HubSpot ou Salesforce ?',
     'faq_q7' => 'Supportez-vous plusieurs types de visa par pays ?',
     'faq_q8' => 'Aidez-vous avec le SEO et Google Ads pour les sites web d\'immigration ?',
+    'seo_fix_001b349f' => 'Vous avez des questions ? Nous avons les réponses. Voici les questions les plus courantes des cabinets d\'immigration.',
+    'seo_fix_57f90a80' => 'Découvrez pourquoi les cabinets d\'immigration choisissent CodeSommet plutôt que d\'autres agences locales et concurrents internationaux.',
+    'seo_fix_848fe086' => 'Notre Processus de Création de Sites pour Cabinets d\'Immigration',
+    'seo_fix_6458b02d' => 'Le Défi : les cabinets d\'immigration font face à des défis web uniques',
+    'seo_fix_c456ea1d' => 'Des résultats réels obtenus avec des cabinets d\'immigration',
+    'seo_fix_2fbe3018' => 'Adopté par les cabinets d\'immigration',
+    'seo_fix_bf994354' => 'Fonctionnalités essentielles pour les cabinets d\'immigration',
 ];

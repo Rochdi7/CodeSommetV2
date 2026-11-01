@@ -145,9 +145,7 @@
                 <div class="space-y-4">
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-2">{{ __('tools/utm-builder.text_16') }}</p>
-                        <p class="text-sm text-gray-700 leading-relaxed">UTM parameters are tags you add to URLs to track
-                            the effectiveness of marketing campaigns in Google Analytics. They help you identify which
-                            campaigns, sources, and content drive the most traffic and conversions.</p>
+                        <p class="text-sm text-gray-700 leading-relaxed">Les paramètres UTM sont des balises ajoutées aux URL pour mesurer l'efficacité de vos campagnes marketing dans Google Analytics. Ils indiquent quelles campagnes, sources et contenus génèrent le plus de trafic et de conversions.</p>
                     </div>
                     <div>
                         <p class="text-sm font-semibold text-gray-900 mb-2">{{ __('tools/utm-builder.text_17') }}</p>
@@ -247,10 +245,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>UTM parameters are tags added to URLs that help track the performance of marketing campaigns
-                                in Google Analytics. They allow you to see exactly where your traffic comes from, which
-                                campaigns are most effective, and which content drives the most conversions. This data is
-                                essential for optimizing your marketing spend and strategy.</p>
+                            <p>Les paramètres UTM sont des balises ajoutées aux URL qui permettent de suivre les performances de vos campagnes marketing dans Google Analytics. Vous voyez précisément d'où vient votre trafic, quelles campagnes sont les plus efficaces et quels contenus génèrent le plus de conversions : des données essentielles pour optimiser votre budget et votre stratégie marketing.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -272,10 +267,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Three parameters are required: utm_source (identifies traffic source like 'google'),
-                                utm_medium (identifies marketing channel like 'cpc' or 'email'), and utm_campaign
-                                (identifies the specific campaign like 'summer_sale'). Two are optional: utm_term (for paid
-                                search keywords) and utm_content (to differentiate similar ads or links).</p>
+                            <p>Trois paramètres sont obligatoires : utm_source (la source du trafic, par exemple « google »), utm_medium (le canal marketing, par exemple « cpc » ou « email ») et utm_campaign (la campagne, par exemple « soldes_ete »). Deux sont facultatifs : utm_term (mots-clés des annonces payantes) et utm_content (pour distinguer des annonces ou des liens similaires).</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -297,10 +289,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Always use lowercase letters and replace spaces with underscores (e.g., 'summer_sale' not
-                                'Summer Sale'). Be consistent across all campaigns-decide on a naming structure and stick to
-                                it. Avoid special characters and keep names descriptive but concise. Document your
-                                conventions so your entire team uses the same standards.</p>
+                            <p>Utilisez toujours des minuscules et remplacez les espaces par des tirets bas (par exemple « soldes_ete » et non « Soldes Été »). Soyez cohérent d'une campagne à l'autre : choisissez une convention de nommage et respectez-la. Évitez les caractères spéciaux, gardez des noms descriptifs mais courts, et documentez vos conventions pour que toute l'équipe applique les mêmes règles.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -322,10 +311,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>When someone clicks a URL with UTM parameters, Google Analytics automatically captures those
-                                parameters and organizes your traffic data by source, medium, and campaign. You can view
-                                this data in the Acquisition reports to analyze campaign performance, compare traffic
-                                sources, and measure ROI on your marketing efforts.</p>
+                            <p>Lorsqu'un internaute clique sur une URL contenant des paramètres UTM, Google Analytics les enregistre automatiquement et classe votre trafic par source, support et campagne. Vous retrouvez ces données dans les rapports d'acquisition pour analyser vos campagnes, comparer vos sources de trafic et mesurer le retour sur investissement de vos actions marketing.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -347,10 +333,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Yes, it's highly recommended to use URL shorteners like Bitly or TinyURL for UTM-tagged URLs,
-                                especially for social media and printed materials. Long URLs with multiple parameters look
-                                unprofessional and may get truncated. URL shorteners preserve all tracking parameters while
-                                making links clean and shareable.</p>
+                            <p>Oui, il est recommandé d'utiliser un raccourcisseur d'URL comme Bitly ou TinyURL pour les liens UTM, surtout sur les réseaux sociaux et les supports imprimés. Les URL longues avec plusieurs paramètres paraissent peu professionnelles et peuvent être tronquées. Un raccourcisseur conserve tous les paramètres de suivi tout en rendant le lien propre et facile à partager.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -372,10 +355,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Avoid inconsistent naming (using both 'Facebook' and 'facebook'), using spaces instead of
-                                underscores, adding UTM parameters to internal links (this breaks your analytics),
-                                forgetting to encode special characters, and creating URLs longer than 2000 characters.
-                                Always test your URLs before launching campaigns to ensure tracking works correctly.</p>
+                            <p>Évitez les noms incohérents (« Facebook » et « facebook » en même temps), les espaces au lieu des tirets bas, les paramètres UTM sur vos liens internes (ils faussent vos statistiques), les caractères spéciaux non encodés et les URL de plus de 2 000 caractères. Testez toujours vos URL avant de lancer une campagne pour vérifier que le suivi fonctionne.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button
@@ -397,13 +377,9 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Absolutely! UTM parameters work for any traffic source, not just paid ads. Use them for email
-                                newsletters (medium=email), organic social posts (medium=social), blog guest posts
-                                (medium=referral), QR codes (medium=qr_code) generated with our <a
+                            <p>Absolument ! Les paramètres UTM fonctionnent pour toutes les sources de trafic, pas seulement les annonces payantes. Utilisez-les pour vos newsletters (medium=email), vos publications sociales organiques (medium=social), vos articles invités (medium=referral) ou vos QR codes (medium=qr_code) créés avec notre <a
                                     class="text-[#00AEEF] hover:underline"
-                                    href="{{ route('tool', 'qr-code-generator') }}">générateur de QR code</a>, and any
-                                other marketing channel. This gives you complete visibility into all your traffic
-                                sources, not just paid campaigns.</p>
+                                    href="{{ route('tool', 'qr-code-generator') }}">générateur de QR code</a>, ainsi que pour tout autre canal marketing. Vous obtenez ainsi une vision complète de toutes vos sources de trafic, et pas seulement de vos campagnes payantes.</p>
                         </div>
                     </div>
                 </div>

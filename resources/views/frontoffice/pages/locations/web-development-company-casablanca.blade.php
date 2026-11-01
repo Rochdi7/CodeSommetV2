@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Casablanca<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Casablanca</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -361,9 +361,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-casablanca.text_4') }} <!-- -->Casablanca<!-- -->
-                        Entreprises</h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-casablanca.seo_fix_f74b6d80') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -381,9 +379,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients dans plusieurs pays</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
-                        <!-- -->Casablanca<!-- -->{{ __('locations/web-development-company-casablanca.ml_889') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('locations/web-development-company-casablanca.seo_fix_bd7c20cf') }}</p>
                 </div>
             </div>
         </section>
@@ -406,11 +402,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Casablanca<!-- -->
-                        {{ __('locations/web-development-company-casablanca.text_6') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Expertise approfondie dans
-                        <!-- -->Casablanca<!-- -->{{ __('locations/web-development-company-casablanca.ml_890') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-casablanca.seo_fix_bd455f36') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-casablanca.seo_fix_079613e0') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -657,10 +650,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-casablanca.text_12') }} <!-- -->Casablanca</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
-                        comment nous avons aidé les entreprises à
-                        <!-- -->Casablanca<!-- -->{{ __('locations/web-development-company-casablanca.ml_902') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-casablanca.seo_fix_3f12c9e6') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><div class="block card-link relative">
@@ -1312,10 +1302,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Casablanca<!-- -->
                         {{ __('locations/web-development-company-casablanca.text_43') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-casablanca.text_44') }}
-                        <!-- -->Casablanca<!-- -->{{ __('locations/web-development-company-casablanca.ml_929') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-casablanca.seo_fix_798e7157') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1333,7 +1320,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Casablanca<!-- --> Agences</div>
+                                    Autres agences à Casablanca</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1560,7 +1547,7 @@
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                             </svg>{{ __('locations/web-development-company-casablanca.text_50') }}
-                            <!-- -->Casablanca<!-- --> Entreprises
+                            les entreprises de Casablanca
                         </div>
                     </div>
                 </div>
@@ -1581,8 +1568,7 @@
                         </svg>{{ __('locations/web-development-company-casablanca.ml_940') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Quoi <!-- -->Casablanca<!-- --> Nos Clients Disent de Nous
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-casablanca.seo_fix_0ea59ccd') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
                         Écoutez les entreprises de
                         <!-- -->Casablanca<!-- -->{{ __('locations/web-development-company-casablanca.ml_941') }}
@@ -1998,8 +1984,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-casablanca.sw_2867') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-casablanca.sw_2866') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-casablanca.seo_fix_c5fbe8da') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
@@ -2104,14 +2089,30 @@
                                 </svg></div>
                         </button>
                         <div id="faq-answer-6" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{{ __('locations/web-development-company-casablanca.faq_a6') }}</p></div></div></div>
+<div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-7"
+                            class="w-full py-6 flex items-start gap-4 text-left hover:bg-[#00AEEF]/5 -mx-4 px-4 rounded-lg transition-colors duration-200">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-[#00AEEF]/10 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-bold text-[#00AEEF]">7</span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg font-semibold text-[#0F0F0F] mb-1">{{ __('locations/web-development-company-casablanca.faq_q7') }}</h3>
+                            </div>
+                            <div class="flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-down w-5 h-5 text-[#0F0F0F]/40" aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg></div>
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer overflow-hidden" style="max-height:0;transition:max-height 0.3s ease"><div class="px-6 pb-6"><p class="text-[#0F0F0F]/70 text-base leading-relaxed">{!! __('locations/web-development-company-casablanca.faq_a7') !!}</p></div></div></div>
                 </div>
                 <div class="mt-10 text-center">
                     <p class="text-sm text-[#0F0F0F]/60 mb-2">
                         {{ __('locations/web-development-company-casablanca.text_54') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Casablanca<!-- -->
-                        {{ __('locations/web-development-company-casablanca.text_55') }}<svg class="w-4 h-4"
+                        notre {{ __('locations/web-development-company-casablanca.text_55') }}<svg class="w-4 h-4"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

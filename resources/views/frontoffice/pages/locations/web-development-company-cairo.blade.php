@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Le Caire<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    au Caire</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -85,9 +85,8 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="CROISSANCE DES ENTREPRISES AU CAIRE"></span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">CROISSANCE
-                                            DES ENTREPRISES AU CAIRE</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="LA CROISSANCE DES ENTREPRISES AU CAIRE"></span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">LA CROISSANCE DES ENTREPRISES AU CAIRE</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-cairo.ml_880') }}</p>
@@ -163,9 +162,7 @@
                         </svg>Pourquoi Nous Choisir
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.text_4') }}
-                        <!-- -->Le Caire<!-- -->?
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.seo_fix_2ae61ad8') }}</h2>
                     <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
                         {{ __('locations/web-development-company-cairo.sw_2862') }}</p>
                 </div>
@@ -382,9 +379,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients accompagnés</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">De vrais résultats de
-                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_891') }}
-                    </p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('locations/web-development-company-cairo.seo_fix_c3cb3c93') }}</p>
                 </div>
             </div>
         </section>
@@ -407,12 +402,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Le Caire<!-- -->
-                        {{ __('locations/web-development-company-cairo.text_7') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-cairo.text_8') }}
-                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_892') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.seo_fix_6df154bf') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-cairo.seo_fix_d6b891e6') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -654,15 +645,11 @@
                             stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4 mr-2" aria-hidden="true">
                             <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                             <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                        </svg>{{ __('locations/web-development-company-cairo.text_13') }} <!-- -->Le Caire
+                        </svg>{{ __('locations/web-development-company-cairo.text_13') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-cairo.text_14') }} <!-- -->Le Caire</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
-                        comment nous avons aidé les entreprises à
-                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_904') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.seo_fix_c4c3998d') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-cairo.seo_fix_534c8a7d') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><div class="block card-link relative">
@@ -1307,10 +1294,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Le Caire<!-- -->
                         {{ __('locations/web-development-company-cairo.text_45') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-cairo.text_46') }}
-                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_931') }}
-                    </p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-cairo.seo_fix_673ed7c5') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1328,7 +1312,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Le Caire<!-- --> Agences</div>
+                                    Autres agences au Caire</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1554,8 +1538,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-cairo.text_52') }} <!-- -->Le Caire<!-- -->
-                            Entreprises
+                            </svg>{{ __('locations/web-development-company-cairo.text_52') }} les entreprises du Caire
                         </div>
                     </div>
                 </div>
@@ -1576,12 +1559,8 @@
                         </svg>{{ __('locations/web-development-company-cairo.ml_942') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Quoi <!-- -->Le Caire<!-- -->
-                        {{ __('locations/web-development-company-cairo.text_53') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
-                        Écoutez les entreprises de
-                        <!-- -->Le Caire<!-- -->{{ __('locations/web-development-company-cairo.ml_943') }}
-                    </p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-cairo.seo_fix_acba197e') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-cairo.seo_fix_f2eafac8') }}</p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -2105,7 +2084,7 @@
                         {{ __('locations/web-development-company-cairo.text_57') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Le Caire<!-- --> {{ __('locations/web-development-company-cairo.text_58') }}<svg
+                        notre {{ __('locations/web-development-company-cairo.text_58') }}<svg
                             class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

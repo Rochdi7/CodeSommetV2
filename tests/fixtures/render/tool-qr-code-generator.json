@@ -41,6 +41,10 @@
             "Comment tester si mon QR code fonctionne correctement ?"
         ],
         [
+            3,
+            "Un QR code créé ici est-il gratuit et sans date d'expiration ?"
+        ],
+        [
             2,
             "Outils Connexes Qui Pourraient Vous Intéresser"
         ],

@@ -115,8 +115,7 @@
                             3</div>
                         <div>
                             <p class="text-sm font-medium text-black">{{ __('tools/xml-sitemap-generator.text_15') }}</p>
-                            <p class="text-sm text-gray-600">Click &quot;Generate&quot; to create your sitemap.xml file,
-                                then download it</p>
+                            <p class="text-sm text-gray-600">Cliquez sur « Générer » pour créer votre fichier sitemap.xml, puis téléchargez-le</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-3">
@@ -134,8 +133,7 @@
                             5</div>
                         <div>
                             <p class="text-sm font-medium text-black">Envoyer to Google</p>
-                            <p class="text-sm text-gray-600">Envoyer your sitemap in Google Search Console for faster
-                                indexing</p>
+                            <p class="text-sm text-gray-600">Envoyez votre sitemap dans Google Search Console pour accélérer l'indexation</p>
                         </div>
                     </div>
                 </div>
@@ -302,10 +300,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Log in to Google Search Console, select your property, go to 'Sitemaps' in the left sidebar,
-                                and enter your sitemap URL (e.g., https://example.com/sitemap.xml). Click 'Envoyer' and
-                                Google will start crawling your pages. You can check the status to see if there are any
-                                errors or warnings that need attention.</p>
+                            <p>Connectez-vous à Google Search Console, sélectionnez votre propriété, ouvrez « Sitemaps » dans le menu de gauche et saisissez l'URL de votre sitemap (par exemple https://example.com/sitemap.xml). Cliquez sur « Envoyer » : Google commencera à explorer vos pages. Vous pourrez ensuite consulter l'état du sitemap et les éventuelles erreurs ou avertissements à corriger.</p>
                         </div>
                     </div>
                     <div class="border-b border-gray-200 last:border-0"><button

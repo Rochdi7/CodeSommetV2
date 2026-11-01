@@ -51,8 +51,8 @@
                                     <div class="w-2 h-2 bg-[#22C55E] rounded-full"></div>
                                     <div class="absolute inset-0 w-2 h-2 bg-[#22C55E] rounded-full animate-ping opacity-75">
                                     </div>
-                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nous Acceptons Maintenant
-                                    les <!-- -->Abu Dhabi<!-- --> Projets</span><span
+                                </div><span class="text-xs sm:text-sm font-medium text-[#22C55E]">Nouveaux projets acceptés
+                                    à Abu Dhabi</span><span
                                     class="text-xs sm:text-sm text-[#0F0F0F]/40">•</span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -85,9 +85,8 @@
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -left-[6px]"></span><span
                                                 style="background-color:var(--color-primary-orange)"
                                                 class="jsx-5c81c8c63985dc3f absolute w-3 h-3 -bottom-[6px] -right-[6px]"></span></span><span
-                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="Portails Immobiliers"></span><span
-                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">Portails
-                                            Immobiliers</span></span></span></h1>
+                                            class="jsx-5c81c8c63985dc3f inline-block opacity-0 pointer-events-none" aria-hidden="true" data-sizer="des Portails Immobiliers"></span><span
+                                            class="jsx-5c81c8c63985dc3f absolute inset-0 inline-flex items-center justify-center animate-[textFadeIn_0.3s_ease-in-out,textReveal_1.2s_cubic-bezier(0.22,1,0.36,1)]">des Portails Immobiliers</span></span></span></h1>
                             <p
                                 class="text-sm sm:text-base lg:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl mx-auto">
                                 {{ __('locations/web-development-company-abudhabi.ml_877') }}</p>
@@ -138,8 +137,7 @@
                             <div class="w-px h-4 bg-[#0F0F0F]/20"></div>
                             <div class="flex items-center gap-2">
                                 <div class="w-2 h-2 rounded-full bg-[#00AEEF]"></div><span
-                                    class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-abudhabi.text_2') }}
-                                    <!-- -->Abu Dhabi<!-- --></span>
+                                    class="font-semibold text-[#0F0F0F]">{{ __('locations/web-development-company-abudhabi.seo_fix_ce9a8cf4') }}</span>
                             </div>
                         </div>
                     </div>
@@ -362,9 +360,7 @@
             <div class="w-full mx-auto px-[var(--container-padding)] max-w-[var(--container-max)]">
                 <div class="text-center">
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-8"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-abudhabi.text_4') }} <!-- -->Abu Dhabi<!-- --> Entreprises
-                    </h2>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-abudhabi.seo_fix_db8a42d3') }}</h2>
                     <div
                         class="flex flex-wrap items-center justify-center gap-3 md:gap-6 lg:gap-8 text-sm md:text-base lg:text-lg mb-6">
                         <div class="flex items-center gap-2">
@@ -382,9 +378,7 @@
                                 class="font-semibold text-[#0F0F0F] whitespace-nowrap">Clients dans plusieurs pays</span>
                         </div>
                     </div>
-                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">
-                        {{ __('locations/web-development-company-abudhabi.text_6') }} <!-- -->Abu
-                        Dhabi<!-- --> {{ __('locations/web-development-company-abudhabi.text_7') }}</p>
+                    <p class="text-xs md:text-sm text-[#0F0F0F]/60 max-w-xl mx-auto px-4">{{ __('locations/web-development-company-abudhabi.seo_fix_88024750') }}</p>
                 </div>
             </div>
         </section>
@@ -407,11 +401,8 @@
                         </svg>Expertise Sectorielle
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Abu Dhabi<!-- -->
-                        {{ __('locations/web-development-company-abudhabi.text_8') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-abudhabi.text_9') }} <!-- -->Abu
-                        Dhabi<!-- -->{{ __('locations/web-development-company-abudhabi.ml_889') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-abudhabi.seo_fix_1ed48279') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-abudhabi.seo_fix_e2671c37') }}</p>
                 </div>
                 <div class="m-rail m-rail--lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div style="opacity: 1; transform: none;">
@@ -658,11 +649,8 @@
                         </svg>{{ __('locations/web-development-company-abudhabi.text_14') }} <!-- -->Abu Dhabi
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">
-                        {{ __('locations/web-development-company-abudhabi.text_15') }} <!-- -->Abu Dhabi</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">De vrais projets, de vrais résultats. Découvrez
-                        comment nous avons aidé les entreprises à <!-- -->Abu
-                        Dhabi<!-- -->{{ __('locations/web-development-company-abudhabi.ml_901') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-abudhabi.seo_fix_986552b2') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-abudhabi.seo_fix_d167a06e') }}</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-10">
                     <div><div class="block card-link relative">
@@ -1303,9 +1291,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">CodeSommet <!-- -->Abu Dhabi<!-- -->
                         {{ __('locations/web-development-company-abudhabi.text_47') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-abudhabi.text_48') }} <!-- -->Abu
-                        Dhabi<!-- -->{{ __('locations/web-development-company-abudhabi.ml_924') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-abudhabi.seo_fix_a340994f') }}</p>
                 </div>
                 <div class="max-w-5xl mx-auto">
                     <div class="overflow-x-auto -mx-4 md:mx-0 px-4 md:px-0">
@@ -1323,7 +1309,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
-                                    Autres <!-- -->Abu Dhabi<!-- --> Agences</div>
+                                    Autres agences à Abu Dhabi</div>
                                 <div class="p-3 md:p-4 text-center font-semibold text-[#0F0F0F]/60 text-xs md:text-sm break-words leading-tight">
                                     Agences Internationales</div>
                             </div>
@@ -1547,8 +1533,7 @@
                                 class="lucide lucide-circle-check w-4 h-4" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg>{{ __('locations/web-development-company-abudhabi.text_52') }} <!-- -->Abu Dhabi<!-- -->
-                            Entreprises
+                            </svg>{{ __('locations/web-development-company-abudhabi.text_52') }} les entreprises d'Abu Dhabi
                         </div>
                     </div>
                 </div>
@@ -1569,11 +1554,8 @@
                         </svg>{{ __('locations/web-development-company-abudhabi.ml_935') }}
                     </div>
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
-                        style="font-family:var(--font-heading)">Quoi <!-- -->Abu Dhabi<!-- --> Nos Clients Disent de Nous
-                    </h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">Ne vous fiez pas seulement à notre parole.
-                        Écoutez les entreprises de <!-- -->Abu
-                        Dhabi<!-- -->{{ __('locations/web-development-company-abudhabi.ml_936') }}</p>
+                        style="font-family:var(--font-heading)">{{ __('locations/web-development-company-abudhabi.seo_fix_fc59701b') }}</h2>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-abudhabi.seo_fix_8fd84458') }}</p>
                 </div>
                 <div class="relative max-w-5xl mx-auto"><button
                         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl border border-[#0F0F0F]/10 hover:border-[#00AEEF]/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -1985,8 +1967,7 @@
                     <h2 class="font-heading font-semibold tracking-tight text-[var(--text-3xl)] md:text-[var(--text-4xl)] lg:text-[var(--text-5xl)] mb-4"
                         style="font-family:var(--font-heading)">
                         {{ __('locations/web-development-company-abudhabi.sw_2863') }}</h2>
-                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">
-                        {{ __('locations/web-development-company-abudhabi.sw_2862') }}</p>
+                    <p class="text-[#0F0F0F]/70 text-lg max-w-2xl mx-auto">{{ __('locations/web-development-company-abudhabi.seo_fix_1217de54') }}</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-[#0F0F0F]/10 p-6">
                     <div class="border-b border-[#0F0F0F]/10 last:border-0"><button aria-expanded="false" aria-controls="faq-answer-1"
@@ -2097,7 +2078,7 @@
                         {{ __('locations/web-development-company-abudhabi.text_56') }}</p><a
                         href="{{ route('contact') }}"
                         class="text-[#00AEEF] font-semibold hover:underline inline-flex items-center gap-2">Contactez
-                        notre <!-- -->Abu Dhabi<!-- --> {{ __('locations/web-development-company-abudhabi.text_57') }}<svg
+                        notre {{ __('locations/web-development-company-abudhabi.text_57') }}<svg
                             class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

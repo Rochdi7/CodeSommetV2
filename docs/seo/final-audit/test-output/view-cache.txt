@@ -1,0 +1,7 @@
+
+
+  [37;44m INFO [39;49m Blade templates cached successfully.  
+
+
+  [37;44m INFO [39;49m Compiled views cleared successfully.  
+

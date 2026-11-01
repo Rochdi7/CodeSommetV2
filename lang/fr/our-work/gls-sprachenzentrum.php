@@ -2,10 +2,10 @@
 
 return [
     'h1_sub' => 'École de Langue Allemande',
-    'title' => 'GLS Sprachenzentrum - École de Langue Allemande | CodeSommet',
+    'title' => 'GLS Sprachenzentrum - École d\'Allemand | CodeSommet',
     'meta_description' => 'Étude de cas GLS Sprachenzentrum : site bilingue FR/EN et tableau de bord de gestion pour école de langue allemande (CRM, paie, certificats).',
     'meta_keywords' => 'plateforme école de langue,site bilingue FR EN,tableau de bord de gestion scolaire,CRM étudiant,automatisation de la paie,vérification de certificats QR code,cours d\'allemand A1 C1',
-    'og_title' => 'Étude de Cas GLS Sprachenzentrum - École de Langue Allemande',
+    'og_title' => 'GLS Sprachenzentrum - École d\'Allemand | CodeSommet',
     'og_description' => 'Application web à double vocation pour une école de langue allemande : site vitrine bilingue FR/EN orienté conversion et tableau de bord d\'administration à rôles couvrant cours, inscriptions, CRM, paie, encaissement et contrôle d\'accès.',
     'twitter_description' => 'Application web à double vocation pour une école de langue allemande : site vitrine bilingue FR/EN orienté conversion et tableau de bord d\'administration à rôles couvrant cours, inscriptions, CRM, paie, encaissement et contrôle d\'accès.',
     'text_0' => 'Retour aux Nos Projets',

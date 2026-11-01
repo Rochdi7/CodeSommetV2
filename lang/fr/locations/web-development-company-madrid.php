@@ -84,7 +84,7 @@ return [
     'text_670' => 'Automatisation',
     'text_671' => 'Automatisation',
     'text_672' => 'Automatisation',
-    'ml_1072' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites web de qualité premium livrés en 7 jours.',
+    'ml_1072' => 'Studio de développement web basé au Maroc au service des entreprises du monde entier. Nous créons des sites web alimentés par l\'IA et des tableaux de bord intelligents à distance. Sites vitrines livrés en 2 à 5 jours après validation du périmètre.',
     'ml_1073' => 'Réserver une Consultation Gratuite Madrid',
     'ml_1074' => 'Créez des chatbots intelligents, des workflows d\'automatisation, une recherche alimentée par l\'IA et des moteurs de recommandation adaptés au public technophile de Madrid.',
     'ml_1075' => 'Spécialistes Dashboard & SaaS',
@@ -194,4 +194,7 @@ return [
     'faq_q6' => 'Pouvez-vous aider avec l\'enregistrement de domaine .es ?',
     'ama_tag' => 'Tourisme',
     'ama_badge' => 'Circuits privés au Maroc',
+    'seo_fix_b085e0c7' => 'Découvrez pourquoi les entreprises de Madrid choisissent CodeSommet plutôt que d\'autres agences locales et internationales.',
+    'seo_fix_a4cb35da' => 'Expertise approfondie dans les secteurs clés de Madrid. Nous comprenons les défis uniques de votre secteur et les exigences de conformité.',
+    'seo_fix_e14ecfbe' => 'Nos secteurs de spécialisation à Madrid',
 ];

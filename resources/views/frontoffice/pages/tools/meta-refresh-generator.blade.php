@@ -215,11 +215,7 @@
                         </button>
                         <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
                             style="padding-left:3.5rem">
-                            <p>Une redirection meta refresh est une redirection HTML qui utilise une balise
-                                <meta> dans la section head de la page to automatically redirect users to another URL after
-                                a specified delay. Unlike server-side redirects (301/302), meta refresh happens in the
-                                browser after the page loads. The browser reads the meta tag, waits for the delay, and then
-                                navigates to the destination URL.
+                            <p>Une redirection meta refresh est une redirection HTML qui utilise une balise &lt;meta&gt; placée dans la section head de la page pour rediriger automatiquement les visiteurs vers une autre URL après un délai défini. Contrairement aux redirections côté serveur (301/302), elle s'exécute dans le navigateur une fois la page chargée : le navigateur lit la balise, attend le délai indiqué, puis ouvre l'URL de destination.
                             </p>
                         </div>
                     </div>

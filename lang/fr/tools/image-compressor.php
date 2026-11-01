@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Compresseur d\'Images Gratuit - WebP, JPEG | CodeSommet',
+    'title' => 'Compresseur d\'Images - Compresser une Image | CodeSommet',
     'meta_description' => 'Compressez et convertissez jusqu\'à 30 images en WebP, JPEG ou PNG, avec redimensionnement. Traitement dans votre navigateur, aucun envoi.',
     'meta_keywords' => 'compresser image,convertir webp,réduire poids image,compression jpeg,redimensionner image,optimiser images seo,images légères',
-    'og_title' => 'Compresseur d\'Images Gratuit - WebP, JPEG, PNG',
+    'og_title' => 'Compresseur d\'Images - Compresser une Image | CodeSommet',
     'og_description' => 'Réduisez le poids de vos images et convertissez-les en WebP, sans les envoyer sur un serveur.',
     'twitter_description' => 'Compressez et convertissez vos images en WebP, JPEG ou PNG, dans votre navigateur.',
 
@@ -26,11 +26,12 @@ return [
     ],
     'faq_intro' => 'Optimiser ses images pour la vitesse et le SEO',
     'faq' => [
-        ['q' => 'Mes images sont-elles envoyées sur un serveur ?', 'a' => 'Non. La compression utilise le moteur graphique de votre navigateur : les fichiers ne quittent jamais votre appareil.'],
+        ['q' => 'Mes images sont-elles envoyées sur un serveur ?', 'a' => 'Non. La compression utilise le moteur graphique de votre navigateur : vos fichiers ne quittent jamais votre appareil et rien n\'est conservé après la fermeture de la page. C\'est pratique pour des photos de produits pas encore publiées, des visuels clients ou des documents internes.'],
         ['q' => 'Quel format choisir ?', 'a' => 'WebP offre généralement le meilleur rapport poids/qualité et est lu par tous les navigateurs récents. JPEG reste universel pour les photos ; PNG est sans perte et conserve la transparence, mais il est souvent plus lourd.'],
         ['q' => 'Quelle qualité utiliser ?', 'a' => '80 % est un bon équilibre pour les photos ; descendez à 60 % pour des vignettes. La qualité ne s\'applique pas au PNG, qui est sans perte.'],
         ['q' => 'Les métadonnées sont-elles conservées ?', 'a' => 'Non : la réencodage supprime les métadonnées EXIF (appareil, coordonnées GPS), ce qui allège aussi le fichier. Conservez vos originaux si vous en avez besoin.'],
         ['q' => 'Et si l\'image compressée est plus lourde ?', 'a' => 'Cela arrive avec des fichiers déjà très optimisés ou une conversion en PNG. L\'outil l\'indique clairement : gardez alors l\'original.'],
+        ['q' => 'Comment compresser une image sans perte de qualité visible ?', 'a' => 'Choisissez le format WebP et une qualité proche de 80 % : la différence est rarement perceptible à l\'œil nu, alors que le poids baisse fortement. Redimensionnez aussi l\'image à sa taille réelle d\'affichage : inutile d\'envoyer 4 000 pixels de large pour un visuel affiché sur 1 200. Pour une compression strictement sans perte, gardez le PNG, au prix d\'un fichier plus lourd, puis comparez le poids obtenu avec l\'original avant de télécharger.'],
     ],
     'related' => [
         ['slug' => 'image-compression-analyzer', 'title' => 'Analyseur de Compression d\'Images', 'desc' => 'Repérez les images trop lourdes d\'une page'],

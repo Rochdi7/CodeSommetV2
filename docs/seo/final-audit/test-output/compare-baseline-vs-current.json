@@ -1,0 +1,966 @@
+{
+ "pass-both": [
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_blog_preview_is_noindex",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_default_og_image_exists",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_draft_and_future_posts_return_404_publicly",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_duplicate_titles_produce_unique_slugs",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_invalid_custom_slug_is_rejected",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_published_post_renders_valid_json_ld",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\BlogSecurityTest::test_script_tags_are_stripped_from_content",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ClientSideToolsTest::test_each_page_renders_its_form_and_script",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ClientSideToolsTest::test_each_tool_has_a_card_on_the_index",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ClientSideToolsTest::test_scripts_make_no_network_requests",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ContactTest::test_honeypot_is_rejected",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ContactTest::test_missing_required_fields_return_422",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ContactTest::test_rate_limit_applies",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ContactTest::test_valid_submission_is_stored_and_sends_notification_and_confirmation",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\ExampleTest::test_the_application_returns_a_successful_response",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_csp_allows_the_recaptcha_origins",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_form_page_renders_the_anti_spam_fields with data set \"contact\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_form_page_renders_the_anti_spam_fields with data set \"quote\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_no_recaptcha_script_when_unconfigured with data set \"contact\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_no_recaptcha_script_when_unconfigured with data set \"quote\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_secret_key_is_never_rendered with data set \"contact\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_secret_key_is_never_rendered with data set \"quote\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_v2_loader_script_is_included_once",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_v2_renders_the_visible_checkbox with data set \"contact\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FormAntiSpamRenderTest::test_v2_renders_the_visible_checkbox with data set \"quote\"",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_expired_domains_classification_is_conservative",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_expired_domains_input_limits",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_llms_txt_lists_only_indexable_pages_in_llmstxt_format",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_llms_txt_uses_the_provided_name_and_summary",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_meta_extractor_rejects_private_targets_before_any_request",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_meta_extractor_reports_tags_errors_and_duplicates",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_these_tools_use_the_strict_heavy_rate_limit",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\FreeSeoToolsTest::test_tool_pages_render_with_form_and_index_cards",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_apple_touch_icon_is_present",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_badge_contrast_utility_class_is_the_darker_accessible_blue",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_csp_does_not_reference_cdnjs_for_jquery_or_toastr",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_csp_does_not_use_wildcard_origins",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_csp_header_exists_and_is_not_weakened",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_duplicate_heading_texts_are_limited_to_approved_cases",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_generic_cta_text_is_not_repeated_across_unrelated_destinations",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_heading_count_stays_within_regression_threshold",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_homepage_has_exactly_one_h1",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_homepage_html_size_stays_below_regression_threshold",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_homepage_references_local_jquery_and_toastr",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_homepage_returns_200",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_local_jquery_and_toastr_assets_are_served",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_metadata_canonical_and_og_tags_are_correct",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_no_base64_image_embedded_in_homepage_html",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_no_duplicate_json_ld_blocks",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_no_empty_headings",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_no_internal_links_have_empty_accessible_name",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\HomepageQualityTest::test_viewport_meta_tag_exists",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\QuoteRequestTest::test_honeypot_is_rejected",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\QuoteRequestTest::test_missing_required_fields_return_422",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\QuoteRequestTest::test_quote_route_exists",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\QuoteRequestTest::test_rate_limit_applies",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\QuoteRequestTest::test_valid_submission_is_stored",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\QuoteRequestTest::test_valid_submission_sends_internal_notification_and_sender_confirmation",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_inventory_is_exactly_102_routes_and_matches_repository",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_routes_match_committed_baseline",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SecurityHeadersTest::test_csp_does_not_allow_unsafe_eval",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SecurityHeadersTest::test_security_headers_present_on_front_office_response",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_admin_login_is_noindexed",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_all_public_page_groups_return_200",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_blog_preview_is_noindexed",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_case_study_has_product_schema_and_content_pages_have_article_schema",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_draft_post_is_not_public",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_get_quote_has_organization_schema",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_indexable_pages_have_title_description_canonical_and_single_h1",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_json_ld_blocks_are_valid_json",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_mismatched_case_studies_are_noindexed_and_out_of_sitemap",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_no_links_to_dead_or_redirecting_contact_urls",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_published_post_is_indexable_with_blogposting_schema",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_removed_city_routes_return_404",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_service_page_has_service_and_breadcrumb_schema",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_sitemap_includes_published_posts_only",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_sitemap_is_valid_and_excludes_private_urls",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_titles_and_descriptions_are_unique_across_sample",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_titles_and_descriptions_fit_serp_lengths",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SeoMetadataTest::test_tool_page_has_webapplication_schema",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SiteModesTest::test_existing_pages_offer_the_site_mode_without_a_new_page",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SiteModesTest::test_private_targets_are_rejected_before_any_request",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SiteModesTest::test_site_broken_links_checks_internal_and_external_links_with_sources",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SiteModesTest::test_site_duplicate_pages_finds_exact_near_and_canonicalized_duplicates",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SiteModesTest::test_site_modes_use_the_strict_heavy_rate_limit",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SiteModesTest::test_site_sitemap_keeps_only_indexable_canonical_pages",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SitemapIntegrityTest::test_every_listed_url_returns_200",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SitemapIntegrityTest::test_no_private_or_excluded_url_present",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Feature\\SitemapIntegrityTest::test_sitemap_is_valid_and_nonempty",
+   "baseline": "",
+   "current": ""
+  },
+  {
+   "test": "Tests\\Unit\\ExampleTest::test_that_true_is_true",
+   "baseline": "",
+   "current": ""
+  }
+ ],
+ "fail-both-same-msg": [
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:abudhabi\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:abudhabi\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:abudhabi\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:agadir\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:agadir\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:agadir\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:amsterdam\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:amsterdam\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:amsterdam\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:austin\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:austin\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:austin\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:barcelona\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:barcelona\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:barcelona\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:berlin\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:berlin\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:berlin\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:boston\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:boston\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:boston\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:brussels\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:brussels\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:brussels\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:cairo\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:cairo\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:cairo\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:casablanca\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:casablanca\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:casablanca\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:chicago\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:chicago\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:chicago\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:copenhagen\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:copenhagen\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:copenhagen\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:denver\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:denver\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:denver\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:dubai\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:dubai\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:dubai\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:dublin\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:dublin\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:dublin\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:lagos\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:lagos\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:lagos\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:lisbon\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:lisbon\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:lisbon\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:london\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:london\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:london\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:los-angeles\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:los-angeles\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:los-angeles\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:madrid\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:madrid\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:madrid\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:marrakech\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:marrakech\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:marrakech\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:milan\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:milan\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:milan\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:new-york\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:new-york\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:new-york\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:paris\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:paris\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:paris\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:rabat\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:rabat\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:rabat\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:riyadh\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:riyadh\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:riyadh\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:rome\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:rome\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:rome\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:san-francisco\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:san-francisco\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:san-francisco\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:seattle\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:seattle\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:seattle\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:stockholm\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:stockholm\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:stockholm\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:tangier\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:tangier\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:tangier\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:toronto\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:toronto\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:toronto\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:tunis\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:tunis\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:tunis\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:vancouver\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:vancouver\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:vancouver\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:worldwide\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:worldwide\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:worldwide\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:zurich\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:zurich\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"city:zurich\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ai-crawler-access-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ai-crawler-access-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ai-crawler-access-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ai-readiness-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ai-readiness-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ai-readiness-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:base64-encoder\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:base64-encoder\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:base64-encoder\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:blog-title-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:blog-title-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:blog-title-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:bot-viewer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:bot-viewer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:bot-viewer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:broken-link-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:broken-link-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:broken-link-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:canonical-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:canonical-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:canonical-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:chatbot-script-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:chatbot-script-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:chatbot-script-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:color-palette-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:color-palette-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:color-palette-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:core-web-vitals-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:core-web-vitals-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:core-web-vitals-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:crawl-optimization-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:crawl-optimization-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:crawl-optimization-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:crawl-visualizer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:crawl-visualizer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:crawl-visualizer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:css-minifier\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:css-minifier\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:css-minifier\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-authority-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-authority-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-authority-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-extractor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-extractor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-extractor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-health-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-health-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:domain-health-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:duplicate-content-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:duplicate-content-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:duplicate-content-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:eeat-signals-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:eeat-signals-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:eeat-signals-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:expired-domain-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:expired-domain-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:expired-domain-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:faq-schema-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:faq-schema-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:faq-schema-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:heading-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:heading-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:heading-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:hreflang-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:hreflang-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:hreflang-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:html-minifier\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:html-minifier\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:html-minifier\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:html-to-text\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:html-to-text\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:html-to-text\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-alt-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-alt-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-alt-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-compression-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-compression-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-compression-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-compressor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-compressor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:image-compressor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:internal-link-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:internal-link-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:internal-link-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:invisible-character-cleaner\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:invisible-character-cleaner\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:invisible-character-cleaner\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:json-formatter\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:json-formatter\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:json-formatter\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:keyword-density-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:keyword-density-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:keyword-density-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:keyword-modifier-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:keyword-modifier-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:keyword-modifier-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:landing-page-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:landing-page-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:landing-page-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:llms-txt-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:llms-txt-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:llms-txt-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:local-business-schema\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:local-business-schema\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:local-business-schema\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:lorem-ipsum-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:lorem-ipsum-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:lorem-ipsum-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-extractor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-extractor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-extractor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-refresh-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-refresh-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-refresh-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-tag-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-tag-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:meta-tag-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:mobile-friendly-test\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:mobile-friendly-test\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:mobile-friendly-test\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ngram-extractor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ngram-extractor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ngram-extractor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:nofollow-link-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:nofollow-link-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:nofollow-link-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:og-preview-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:og-preview-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:og-preview-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:page-speed-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:page-speed-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:page-speed-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:qr-code-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:qr-code-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:qr-code-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:readability-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:readability-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:readability-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:redirect-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:redirect-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:redirect-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-txt-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-txt-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-txt-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-txt-tester\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-txt-tester\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-txt-tester\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-validator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-validator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:robots-validator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:schema-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:schema-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:schema-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:security-headers-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:security-headers-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:security-headers-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:serp-snippet-preview\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:serp-snippet-preview\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:serp-snippet-preview\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:sitemap-url-extractor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:sitemap-url-extractor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:sitemap-url-extractor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:sitemap-validator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:sitemap-validator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:sitemap-validator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ssl-certificate-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ssl-certificate-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:ssl-certificate-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:structured-data-extractor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:structured-data-extractor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:structured-data-extractor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:text-case-converter\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:text-case-converter\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:text-case-converter\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:text-editor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:text-editor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:text-editor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:url-editor\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:url-editor\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:url-editor\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:url-slug-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:url-slug-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:url-slug-generator\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:utm-builder\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:utm-builder\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:utm-builder\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:website-analyzer\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:website-analyzer\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:website-analyzer\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:website-readiness-checker\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:website-readiness-checker\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:website-readiness-checker\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:word-counter\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:word-counter\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:word-counter\"\r"
+  },
+  {
+   "test": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:xml-sitemap-generator\"",
+   "baseline": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:xml-sitemap-generator\"\r",
+   "current": "Tests\\Feature\\RenderSnapshotTest::test_route_renders_and_matches_snapshot with data set \"tool:xml-sitemap-generator\"\r"
+  }
+ ]
+}
