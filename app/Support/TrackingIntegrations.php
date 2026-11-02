@@ -19,6 +19,9 @@ final class TrackingIntegrations
      */
     public const DEFAULT_GA4 = 'G-3S8MG2YJ1K';
 
+    /** Site GTM container, on by default (an admin edit still overrides it). */
+    public const DEFAULT_GTM = 'GTM-559SHH9V';
+
     /** @var array<string, array{label:string, pattern:string, example:string}> */
     public const IDS = [
         'ga4_id' => ['label' => 'ID de mesure GA4', 'pattern' => '/^G-[A-Z0-9]{4,16}$/', 'example' => 'G-XXXXXXXXXX'],
@@ -32,7 +35,7 @@ final class TrackingIntegrations
     /** On/off switches (stored as "1" / "0"). */
     public const SWITCHES = [
         'ga4_enabled' => true,
-        'gtm_enabled' => false,
+        'gtm_enabled' => true,
         'meta_pixel_enabled' => false,
         'clarity_enabled' => false,
         'forward_events' => true,
@@ -53,7 +56,7 @@ final class TrackingIntegrations
 
         $config = [
             'ga4' => $on('ga4_enabled') ? $id('ga4_id', self::DEFAULT_GA4) : null,
-            'gtm' => $on('gtm_enabled') ? $id('gtm_id') : null,
+            'gtm' => $on('gtm_enabled') ? $id('gtm_id', self::DEFAULT_GTM) : null,
             'pixel' => $on('meta_pixel_enabled') ? $id('meta_pixel_id') : null,
             'clarity' => $on('clarity_enabled') ? $id('clarity_id') : null,
             'gsc' => $id('gsc_verification'),
@@ -76,7 +79,11 @@ final class TrackingIntegrations
         $s = SiteSetting::allCached();
         $values = [];
         foreach (array_keys(self::IDS) as $key) {
-            $values[$key] = $s[$key] ?? ($key === 'ga4_id' ? self::DEFAULT_GA4 : null);
+            $values[$key] = $s[$key] ?? match ($key) {
+                'ga4_id' => self::DEFAULT_GA4,
+                'gtm_id' => self::DEFAULT_GTM,
+                default => null,
+            };
         }
         foreach (self::SWITCHES as $key => $default) {
             $values[$key] = array_key_exists($key, $s) ? $s[$key] === '1' : $default;

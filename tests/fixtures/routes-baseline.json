@@ -46,6 +46,17 @@
     {
         "domain": null,
         "method": "DELETE",
+        "uri": "admin/integrations/google",
+        "name": "admin.integrations.google.disconnect",
+        "action": "App\\Http\\Controllers\\Admin\\GoogleConnectController@disconnect",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "DELETE",
         "uri": "admin/media/{medium}",
         "name": "admin.media.destroy",
         "action": "App\\Http\\Controllers\\Admin\\MediaController@destroy",
@@ -322,6 +333,28 @@
         "uri": "admin/integrations",
         "name": "admin.integrations.index",
         "action": "App\\Http\\Controllers\\Admin\\IntegrationsController@index",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/integrations/google/callback",
+        "name": "admin.integrations.google.callback",
+        "action": "App\\Http\\Controllers\\Admin\\GoogleConnectController@callback",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "GET|HEAD",
+        "uri": "admin/integrations/google/connect",
+        "name": "admin.integrations.google.connect",
+        "action": "App\\Http\\Controllers\\Admin\\GoogleConnectController@redirect",
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"
@@ -951,6 +984,28 @@
         "uri": "admin/home-ads/{homeAd}/toggle",
         "name": "admin.home-ads.toggle",
         "action": "App\\Http\\Controllers\\Admin\\HomeAdController@toggle",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/integrations/google/refresh",
+        "name": "admin.integrations.google.refresh",
+        "action": "App\\Http\\Controllers\\Admin\\GoogleConnectController@refresh",
+        "middleware": [
+            "web",
+            "App\\Http\\Middleware\\SuperAdmin"
+        ]
+    },
+    {
+        "domain": null,
+        "method": "POST",
+        "uri": "admin/integrations/google/search-console",
+        "name": "admin.integrations.google.search-console",
+        "action": "App\\Http\\Controllers\\Admin\\GoogleConnectController@verifySearchConsole",
         "middleware": [
             "web",
             "App\\Http\\Middleware\\SuperAdmin"

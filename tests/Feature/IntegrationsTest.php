@@ -39,6 +39,7 @@ class IntegrationsTest extends TestCase
 
         $this->get('/')->assertOk()
             ->assertSee('"ga4":"'.TrackingIntegrations::DEFAULT_GA4.'"', false)
+            ->assertSee('"gtm":"GTM-559SHH9V"', false)
             ->assertDontSee('google-site-verification', false);
     }
 

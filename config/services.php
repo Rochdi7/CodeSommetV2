@@ -160,4 +160,16 @@ return [
         'usage_log' => env('SERANKING_USAGE_LOG', storage_path('app/seo/seranking-usage.jsonl')),
     ],
 
+    'google_oauth' => [
+        // "Se connecter avec Google" on admin → Intégrations & tags: lists the
+        // GA4 streams / GTM containers of the signed-in account and verifies
+        // the site in Search Console. Create a "Web application" OAuth client
+        // at https://console.cloud.google.com/apis/credentials with redirect
+        // URI {APP_URL}/admin/integrations/google/callback.
+        'client_id' => env('GOOGLE_OAUTH_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_OAUTH_CLIENT_SECRET'),
+        // Property verified in Search Console (URL-prefix, trailing slash).
+        'site_url' => env('GOOGLE_OAUTH_SITE_URL', 'https://codesommet.com/'),
+    ],
+
 ];

@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ToolsTrackController;
 use App\Http\Controllers\Admin\AnalyticsController;
+use App\Http\Controllers\Admin\GoogleConnectController;
 use App\Http\Controllers\Admin\IntegrationsController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\PaymentController;
@@ -175,6 +176,11 @@ Route::middleware('super_admin')->prefix('admin')->name('admin.')->group(functio
     // Google Analytics / Tag Manager / Search Console / Meta Pixel / Clarity
     Route::get('/integrations', [IntegrationsController::class, 'index'])->name('integrations.index');
     Route::put('/integrations', [IntegrationsController::class, 'update'])->name('integrations.update');
+    Route::get('/integrations/google/connect', [GoogleConnectController::class, 'redirect'])->name('integrations.google.connect');
+    Route::get('/integrations/google/callback', [GoogleConnectController::class, 'callback'])->name('integrations.google.callback');
+    Route::post('/integrations/google/refresh', [GoogleConnectController::class, 'refresh'])->name('integrations.google.refresh');
+    Route::post('/integrations/google/search-console', [GoogleConnectController::class, 'verifySearchConsole'])->name('integrations.google.search-console');
+    Route::delete('/integrations/google', [GoogleConnectController::class, 'disconnect'])->name('integrations.google.disconnect');
 
     // Projects Management
     Route::resource('projects', ProjectController::class);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\SiteSetting;
+use App\Support\GoogleConnect;
 use App\Support\TrackingIntegrations;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -22,6 +23,13 @@ class IntegrationsController extends Controller
             'values' => TrackingIntegrations::formValues(),
             'config' => TrackingIntegrations::config(),
             'ids' => TrackingIntegrations::IDS,
+            'google' => [
+                'configured' => GoogleConnect::configured(),
+                'account' => $account = GoogleConnect::account(),
+                'found' => $account ? GoogleConnect::discover() : null,
+                'redirect_uri' => GoogleConnect::redirectUri(),
+                'site_url' => GoogleConnect::siteUrl(),
+            ],
         ]);
     }
 
