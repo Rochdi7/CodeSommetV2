@@ -361,6 +361,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Free open-source (GPL) usage. Not enforced in this version — it only
             // affects the "Powered by CKEditor" badge.
             licenseKey: 'GPL',
+            // The editor mounts on an empty <div>; without this the saved article
+            // (kept in the hidden #blogContent textarea) never shows up on edit.
+            initialData: document.getElementById('blogContent').value,
             plugins: [
                 Essentials, Paragraph, Bold, Italic, Underline, Strikethrough,
                 Code, CodeBlock, Link, List, BlockQuote, Heading, HorizontalLine,

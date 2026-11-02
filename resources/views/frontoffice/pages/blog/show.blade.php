@@ -65,13 +65,88 @@
         $blogSchema['keywords'] = $post->tags->pluck('name')->implode(', ');
     }
     if ($post->featured_image) {
-        $blogSchema['image'] = asset('storage/' . $post->featured_image);
+        $blogImage = ['@type' => 'ImageObject', 'url' => asset('storage/' . $post->featured_image)];
+        if (! empty($ogImageSize)) {
+            $blogImage['width'] = $ogImageSize[0];
+            $blogImage['height'] = $ogImageSize[1];
+        }
+        if ($post->featured_image_caption) {
+            $blogImage['caption'] = $post->featured_image_caption;
+        }
+        if ($post->featured_image_description) {
+            $blogImage['description'] = $post->featured_image_description;
+        }
+        $blogSchema['image'] = $blogImage;
+    }
+
+    // FAQPage : questions (h3) et réponses (p / listes) de la section « Questions
+    // fréquentes » du contenu, pour que le schéma reflète exactement le texte affiché.
+    $blogFaq = [];
+    if (is_string($post->content) && preg_match('#<h2[^>]*>\s*Questions fréquentes#iu', $post->content)) {
+        $faqDom = new \DOMDocument();
+        $prevLibxml = libxml_use_internal_errors(true);
+        $faqDom->loadHTML('<?xml encoding="UTF-8"><div>' . $post->content . '</div>', LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        libxml_clear_errors();
+        libxml_use_internal_errors($prevLibxml);
+
+        $faqRoot = $faqDom->getElementsByTagName('div')->item(0);
+        $faqInSection = false;
+        $faqQuestion = null;
+        $faqAnswer = [];
+        $faqFlush = function () use (&$blogFaq, &$faqQuestion, &$faqAnswer) {
+            if ($faqQuestion !== null && $faqAnswer !== []) {
+                $blogFaq[] = [
+                    '@type' => 'Question',
+                    'name' => $faqQuestion,
+                    'acceptedAnswer' => ['@type' => 'Answer', 'text' => implode(' ', $faqAnswer)],
+                ];
+            }
+            $faqQuestion = null;
+            $faqAnswer = [];
+        };
+        foreach ($faqRoot ? $faqRoot->childNodes : [] as $faqNode) {
+            if ($faqNode->nodeType !== XML_ELEMENT_NODE) {
+                continue;
+            }
+            $faqTag = strtolower($faqNode->nodeName);
+            $faqText = trim(preg_replace('/\s+/u', ' ', $faqNode->textContent));
+            if ($faqTag === 'h2') {
+                $faqFlush();
+                $faqInSection = (bool) preg_match('/^Questions fréquentes/iu', $faqText);
+            } elseif ($faqInSection && $faqTag === 'h3') {
+                $faqFlush();
+                $faqQuestion = $faqText;
+            } elseif ($faqInSection && $faqQuestion !== null && in_array($faqTag, ['p', 'ul', 'ol'], true) && $faqText !== '') {
+                $faqAnswer[] = $faqText;
+            }
+        }
+        $faqFlush();
     }
 @endphp
 <script type="application/ld+json">
 {!! json_encode($blogSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP) !!}
 </script>
+@if($blogFaq !== [])
+<script type="application/ld+json">
+{!! json_encode(['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => $blogFaq], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP) !!}
+</script>
+@endif
 @endsection
+
+@push('head')
+{{-- Tableaux du contenu (règles d'origine du chunk 091f2075115b2b44.css, non chargé sur cette page)
+     + défilement horizontal sur mobile pour les tableaux comparatifs à 4 colonnes. --}}
+<style>
+.blog-content table{width:100%;border-collapse:separate;border-spacing:0;margin:2rem 0;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e5e7eb;border-radius:12px}
+.blog-content thead{background:#f9fafb}
+.blog-content th{padding:1rem 1.5rem;text-align:left;font-size:.875rem;font-weight:600;color:#111827;border-bottom:1px solid #e5e7eb;min-width:9rem}
+.blog-content tbody{background:white}
+.blog-content td{padding:1rem 1.5rem;font-size:.875rem;color:#374151;border-bottom:1px solid #f3f4f6;vertical-align:top;min-width:9rem}
+.blog-content tbody tr:nth-child(2n){background:#f9fafb}
+.blog-content tbody tr:last-child td{border-bottom:none}
+@media (min-width:768px){.blog-content table{display:table}}
+</style>
+@endpush
 
 @section('content')
 {{-- Hero / Header --}}
@@ -257,7 +332,7 @@
                         <div class="w-full bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] overflow-hidden p-2.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
                             <div class="relative aspect-[16/10] overflow-hidden rounded-[14px] bg-[#F3F4F6]">
                                 @if($related->featured_image)
-                                <img src="{{ asset('storage/' . $related->featured_image) }}" alt="{{ $related->title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                <img src="{{ asset('storage/' . $related->featured_image) }}" alt="{{ $related->image_alt }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                                 @else
                                 <div class="w-full h-full bg-gradient-to-br from-[#00AEEF]/20 to-[#0071BC]/10 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1" class="opacity-30">
