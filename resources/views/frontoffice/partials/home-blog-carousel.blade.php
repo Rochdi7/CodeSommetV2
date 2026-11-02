@@ -127,7 +127,7 @@
                     {{-- Dots (rebuilt by JS for the current cards-per-slide) --}}
                     <div class="blog-carousel-dots flex justify-center items-center gap-3 mt-8">
                         @foreach ($homeBlogPages as $page => $posts)
-                            <button type="button" class="blog-carousel-dot rounded-full transition-all duration-300 {{ $page === 0 ? 'w-3 h-3 bg-[#00AEEF] scale-125' : 'w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40' }}"
+                            <button type="button" class="blog-carousel-dot rounded-full transition-all duration-300 {{ $page === 0 ? 'is-active w-3 h-3 bg-[#00AEEF] scale-125' : 'w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40' }}"
                                 data-dot="{{ $page }}" aria-label="Aller au groupe d'articles {{ $page + 1 }}"></button>
                         @endforeach
                     </div>
@@ -164,7 +164,7 @@
                 var mqMd = window.matchMedia('(min-width: 768px)');
                 var perPage = 3, total = 1, currentSlide = 0, autoRotate = null;
 
-                var DOT_ON = 'blog-carousel-dot rounded-full transition-all duration-300 w-3 h-3 bg-[#00AEEF] scale-125';
+                var DOT_ON = 'blog-carousel-dot is-active rounded-full transition-all duration-300 w-3 h-3 bg-[#00AEEF] scale-125';
                 var DOT_OFF = 'blog-carousel-dot rounded-full transition-all duration-300 w-2.5 h-2.5 bg-[#0F0F0F]/20 hover:bg-[#0F0F0F]/40';
 
                 // 1 card per slide on mobile, 2 on tablet, 3 on desktop

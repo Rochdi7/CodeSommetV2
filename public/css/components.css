@@ -3741,3 +3741,113 @@ section.bg-\[\#F8F8F8\] + section.bg-\[\#F5F5F5\][class*="py-"] { padding-top: 2
 @media (prefers-reduced-motion: reduce) {
     .cs-plain, .cs-issue, .cs-step, .cs-duo { transition: none; }
 }
+
+/* Home blog carousel dots — 24x24 touch target (Lighthouse target-size)
+   while the visible dot stays 10px (inactive) / 15px (active): the
+   background is clipped to the padded content box. Negative block margin
+   keeps the row layout height at the original 12px. */
+.blog-carousel-container .blog-carousel-dots { gap: 0; }
+.blog-carousel-container .blog-carousel-dot {
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    padding: 7px;
+    margin: -6px 0;
+    border: 0;
+    background-clip: content-box;
+}
+/* active dot was 12px * scale-125 = 15px: same size via padding, no transform
+   so its box never overlaps the neighbouring targets */
+.blog-carousel-container .blog-carousel-dot.is-active { padding: 4.5px; transform: none; scale: none; }
+
+/* Blog article — share & tags bar. Lives inside the 860px article column
+   (was its own section: py-8 + border-t + article py-16 = ~100px of dead
+   white above a lone left-hugging row). Hairline divider, label + 40px
+   round buttons on one centred axis; the copy button is a true circle
+   that swaps to a check + "Lien copié" tooltip instead of growing. */
+.blog-share {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-light);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 24px;
+}
+.blog-share__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.blog-share__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #F3F4F6;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--text-secondary);
+}
+.blog-share__actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.blog-share__label {
+    margin-right: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+}
+.blog-share__btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color .2s, border-color .2s, background-color .2s, transform .2s;
+}
+.blog-share__btn:hover,
+.blog-share__btn:focus-visible {
+    color: #00AEEF;
+    border-color: #00AEEF;
+    background: rgba(0, 174, 239, .06);
+    transform: translateY(-1px);
+}
+.blog-share__btn:focus-visible { outline: 2px solid #00AEEF; outline-offset: 2px; }
+.blog-share__ico-check { display: none; }
+.blog-share__btn--copy.is-copied { color: #16A34A; border-color: #16A34A; background: rgba(22, 163, 74, .06); }
+.blog-share__btn--copy.is-copied .blog-share__ico-link { display: none; }
+.blog-share__btn--copy.is-copied .blog-share__ico-check { display: block; }
+.blog-share__toast {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    right: 0;
+    transform: translateY(4px);
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: #111827;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s, transform .2s;
+}
+.blog-share__btn--copy.is-copied .blog-share__toast { opacity: 1; transform: none; }
+@media (max-width: 639px) {
+    .blog-share { margin-top: 40px; flex-direction: column; justify-content: center; }
+    .blog-share__tags { justify-content: center; }
+    .blog-share__actions { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .blog-share__btn, .blog-share__toast { transition: none; }
+    .blog-share__btn:hover { transform: none; }
+}
