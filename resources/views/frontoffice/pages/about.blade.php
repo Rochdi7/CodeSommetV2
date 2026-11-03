@@ -640,7 +640,7 @@
                                 </a></div>
                             <div class="hidden md:flex flex-row items-center gap-4"><button
                                     data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
-                                    data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
+                                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
                                     class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full overflow-hidden"
                                     style="background-color:rgba(0, 0, 0, 0.11);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.067) 0px 2.51941px 2.51941px -0.46875px,
                 rgba(0, 0, 0, 0.067) 0px 5.97144px 5.97144px -0.9375px,

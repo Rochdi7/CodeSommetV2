@@ -356,9 +356,9 @@
                   #text Ce que Nous Analysons : 40+ Points de Contrôle
                 <p class="text-base text-gray-600">
                   #text Notre analyse complète couvre chaque aspect critique de votre site web à travers 5 grandes catégories. Cliquez sur chaque catégorie pour voir le détail des vérifications effectuées.
-              <div class="space-y-3">
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+              <div class="space-y-3" data-accordion-group="">
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" data-accordion-item="">
+                  <button aria-controls="wa-checks-seo" aria-expanded="false" class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200" data-accordion-trigger="" type="button">
                     <div class="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
                       <svg aria-hidden="true" class="lucide lucide-trending-up w-6 h-6 text-[#00AEEF]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 7h6v6">
@@ -370,11 +370,104 @@
                         #text 10
                         #comment 
                         #text vérifications complètes
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0" data-accordion-chevron="">
                       <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="m6 9 6 6 6-6">
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div class="overflow-hidden" data-accordion-panel="" hidden="" id="wa-checks-seo" style="height:0;opacity:0">
+                    <div class="px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                      <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Balise Meta Title
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie la longueur de la balise title (50-60 caractères) et l'optimisation des mots-clés
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Meta Description
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide la présence d'une meta description de 150-160 caractères avec les mots-clés cibles
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Balise H1
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie la présence d'une seule balise H1 contenant le mot-clé principal
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Hiérarchie des Titres
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide une structure H1-H6 correcte sans sauter de niveaux
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Balises Open Graph
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie les balises de partage social pour Facebook/LinkedIn
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Twitter Card
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide les balises meta spécifiques à Twitter pour des aperçus enrichis
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Balise Canonique
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie l'URL canonique pour éviter les problèmes de contenu dupliqué
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Texte Alt des Images
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie que les images ont des attributs alt descriptifs pour l'accessibilité et le SEO
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Liens Internes
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Analyse la structure du maillage interne pour sa valeur SEO
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-[#00AEEF] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Données Structurées
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Détecte les données structurées (JSON-LD, Microdata) pour les extraits enrichis
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" data-accordion-item="">
+                  <button aria-controls="wa-checks-perf" aria-expanded="false" class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200" data-accordion-trigger="" type="button">
                     <div class="w-12 h-12 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
                       <svg aria-hidden="true" class="lucide lucide-zap w-6 h-6 text-green-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
@@ -385,11 +478,86 @@
                         #text 8
                         #comment 
                         #text vérifications complètes
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0" data-accordion-chevron="">
                       <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="m6 9 6 6 6-6">
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div class="overflow-hidden" data-accordion-panel="" hidden="" id="wa-checks-perf" style="height:0;opacity:0">
+                    <div class="px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                      <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Largest Contentful Paint (LCP)
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Mesure la vitesse de chargement du contenu principal (objectif : < 2,5 secondes)
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text First Contentful Paint (FCP)
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Mesure le délai d'apparition du premier contenu (objectif : < 1,8 seconde)
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Cumulative Layout Shift (CLS)
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Mesure la stabilité visuelle et les décalages de mise en page (objectif : < 0,1)
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Time to Interactive (TTI)
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Mesure le moment où la page devient pleinement interactive (objectif : < 3,8 secondes)
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Temps de Chargement
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vitesse de chargement globale mesurée via Google PageSpeed Insights
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Optimisation des Images
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie les formats modernes (WebP, AVIF) et une compression adaptée
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Minification du Code
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide la minification CSS/JS pour un chargement plus rapide
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Ressources Bloquantes
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Identifie les CSS/JS qui bloquent le rendu initial de la page
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" data-accordion-item="">
+                  <button aria-controls="wa-checks-design" aria-expanded="false" class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200" data-accordion-trigger="" type="button">
                     <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center flex-shrink-0">
                       <svg aria-hidden="true" class="lucide lucide-palette w-6 h-6 text-purple-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
@@ -404,11 +572,77 @@
                         #text 7
                         #comment 
                         #text vérifications complètes
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0" data-accordion-chevron="">
                       <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="m6 9 6 6 6-6">
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div class="overflow-hidden" data-accordion-panel="" hidden="" id="wa-checks-design" style="height:0;opacity:0">
+                    <div class="px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                      <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Qualité Globale du Design
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Une analyse visuelle avancée évalue les principes de design modernes et l'attrait esthétique
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Harmonie des Couleurs
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Analyse la cohérence de la palette et les ratios de contraste d'accessibilité
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Typographie
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Évalue les choix de polices, la lisibilité et la hiérarchie
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Adaptabilité Mobile
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie l'optimisation mobile et la taille des zones tactiles
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Visibilité des CTA
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Analyse le placement et la proéminence visuelle des appels à l'action
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Utilisation des Espaces Blancs
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Évalue la respiration de la mise en page et la densité du contenu
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Clarté de la Navigation
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Évalue la structure du menu et l'intuitivité du parcours utilisateur
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" data-accordion-item="">
+                  <button aria-controls="wa-checks-sec" aria-expanded="false" class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200" data-accordion-trigger="" type="button">
                     <div class="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
                       <svg aria-hidden="true" class="lucide lucide-shield w-6 h-6 text-blue-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
@@ -419,11 +653,77 @@
                         #text 7
                         #comment 
                         #text vérifications complètes
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0" data-accordion-chevron="">
                       <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="m6 9 6 6 6-6">
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <button class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div class="overflow-hidden" data-accordion-panel="" hidden="" id="wa-checks-sec" style="height:0;opacity:0">
+                    <div class="px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                      <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text HTTPS Activé
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie que le chiffrement SSL/TLS est actif
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Validité du Certificat SSL
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie l'expiration du certificat et la fiabilité de l'émetteur
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text En-têtes de Sécurité
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide les en-têtes HSTS, CSP, X-Frame-Options et X-Content-Type-Options
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Politique de Confidentialité
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie la présence d'une page de confidentialité conforme RGPD/CCPA
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Conditions d'Utilisation
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide l'existence d'une page de conditions d'utilisation
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Consentement aux Cookies
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie la présence d'une bannière de consentement aux cookies (conformité UE)
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Contenu Mixte
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Détecte les ressources HTTP non sécurisées sur les pages HTTPS
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden" data-accordion-item="">
+                  <button aria-controls="wa-checks-tech" aria-expanded="false" class="w-full p-5 sm:p-6 flex items-center gap-4 hover:bg-gray-50 transition-colors duration-200" data-accordion-trigger="" type="button">
                     <div class="w-12 h-12 rounded-lg bg-teal-50 flex items-center justify-center flex-shrink-0">
                       <svg aria-hidden="true" class="lucide lucide-circle-check w-6 h-6 text-teal-600" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10">
@@ -435,9 +735,84 @@
                         #text 8
                         #comment 
                         #text vérifications complètes
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0" data-accordion-chevron="">
                       <svg aria-hidden="true" class="lucide lucide-chevron-down w-5 h-5 text-gray-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path d="m6 9 6 6 6-6">
+                  <div class="overflow-hidden" data-accordion-panel="" hidden="" id="wa-checks-tech" style="height:0;opacity:0">
+                    <div class="px-5 sm:px-6 pb-6 pt-2 border-t border-gray-100">
+                      <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Protocole HTTPS
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérification instantanée de la connexion HTTPS sécurisée
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Sitemap.xml
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie la présence d'un sitemap XML à /sitemap.xml
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Robots.txt
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie le fichier robots.txt à la racine du domaine
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Favicon
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide la présence de l'icône d'onglet du navigateur
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Certificat SSL
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Validation rapide de la négociation SSL
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Viewport Mobile
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Vérifie la présence de la balise meta viewport pour mobile
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Redirection WWW
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Valide la redirection www vers non-www (ou inversement)
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <svg aria-hidden="true" class="lucide lucide-circle-check w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10">
+                            <path d="m9 12 2 2 4-4">
+                          <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-semibold text-black mb-1">
+                              #text Temps de Réponse
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                              #text Mesure le temps de réponse du serveur (objectif : < 600 ms)
               <div class="mt-6 p-4 bg-gradient-to-r from-[#00AEEF]/10 to-orange-50 border border-[#00AEEF]/20 rounded-lg">
                 <p class="text-sm text-gray-700">
                   <strong class="text-black">
@@ -541,12 +916,12 @@
                       #text Prêt à analyser votre site web ?
                     <p class="text-sm text-white/90">
                       #text Obtenez des insights instantanés et un plan d'amélioration personnalisé en 30 secondes
-                  <button class="flex items-center gap-2 text-sm font-medium bg-white text-[#00AEEF] px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all flex-shrink-0 cursor-pointer">
+                  <button class="flex items-center gap-2 text-sm font-medium bg-white text-[#00AEEF] px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all flex-shrink-0 cursor-pointer" data-scroll-to-tool="" type="button">
                     <svg aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5 12h14">
                       <path d="m12 5 7 7-7 7">
                     <span>
-                      #text Scroll up to start
+                      #text Remonter pour commencer
             <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 md:p-8">
               <div class="mb-8">
                 <h2 class="text-2xl md:text-3xl font-bold text-black mb-3">

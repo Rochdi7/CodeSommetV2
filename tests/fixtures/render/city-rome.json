@@ -143,7 +143,6 @@
         "Opening and ending tag mismatch: main and div": 1,
         "Opening and ending tag mismatch: section and div": 1,
         "Unexpected end tag : p": 1,
-        "error parsing attribute name": 2,
         "htmlParseEntityRef: no name": 4
     }
 }

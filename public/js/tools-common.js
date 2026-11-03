@@ -42,8 +42,80 @@ window.CodeSommetTools.onReady = function (fn) {
                 setTimeout(function () {
                     var toolSection = document.querySelector('section.max-w-5xl') || document.querySelector('section.max-w-4xl');
                     var input = (toolSection || document).querySelector('input[type="text"], input[type="url"], textarea');
-                    if (input) input.focus({ preventScroll: true });
+                    // No preventScroll: like the original, focus() brings the
+                    // input into view when the hero pushes it below the fold.
+                    if (input) input.focus();
                 }, 500);
+            });
+        });
+    }
+
+    /* ── Category accordion (e.g. website-analyzer "40+ checkpoints") ────
+     * [data-accordion-group] > [data-accordion-item] > [data-accordion-trigger]
+     * + [data-accordion-panel]. One item open at a time, toggling closes it —
+     * mirrors the original React state (useState(null) + framer-motion:
+     * height 0→auto, opacity 0→1, chevron rotate 180°, 0.3s). */
+    function initAccordionGroups() {
+        var DURATION = 300;
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function setChevron(item, open) {
+            var chev = item.querySelector('[data-accordion-chevron]');
+            if (!chev) return;
+            chev.style.transition = 'transform 0.3s ease';
+            chev.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        function open(item) {
+            var trigger = item.querySelector('[data-accordion-trigger]');
+            var panel = item.querySelector('[data-accordion-panel]');
+            if (!trigger || !panel) return;
+            item.dataset.open = 'true';
+            trigger.setAttribute('aria-expanded', 'true');
+            setChevron(item, true);
+            clearTimeout(panel._accTimer);
+            panel.hidden = false;
+            if (reduce) { panel.style.height = ''; panel.style.opacity = '1'; return; }
+            panel.style.transition = 'none';
+            panel.style.height = '0px';
+            panel.style.opacity = '0';
+            void panel.offsetHeight; // reflow so the transition starts from 0
+            panel.style.transition = 'height 0.3s ease, opacity 0.3s ease';
+            panel.style.height = panel.scrollHeight + 'px';
+            panel.style.opacity = '1';
+            panel._accTimer = setTimeout(function () { panel.style.height = ''; }, DURATION);
+        }
+
+        function close(item) {
+            var trigger = item.querySelector('[data-accordion-trigger]');
+            var panel = item.querySelector('[data-accordion-panel]');
+            if (!trigger || !panel || item.dataset.open !== 'true') return;
+            item.dataset.open = 'false';
+            trigger.setAttribute('aria-expanded', 'false');
+            setChevron(item, false);
+            clearTimeout(panel._accTimer);
+            if (reduce) { panel.hidden = true; panel.style.height = '0px'; panel.style.opacity = '0'; return; }
+            panel.style.transition = 'none';
+            panel.style.height = panel.scrollHeight + 'px';
+            void panel.offsetHeight;
+            panel.style.transition = 'height 0.3s ease, opacity 0.3s ease';
+            panel.style.height = '0px';
+            panel.style.opacity = '0';
+            panel._accTimer = setTimeout(function () { panel.hidden = true; }, DURATION);
+        }
+
+        document.querySelectorAll('[data-accordion-group]').forEach(function (group) {
+            if (group.dataset.accordionBound === 'true') return;
+            group.dataset.accordionBound = 'true';
+            var items = group.querySelectorAll('[data-accordion-item]');
+            items.forEach(function (item) {
+                var trigger = item.querySelector('[data-accordion-trigger]');
+                if (!trigger) return;
+                trigger.addEventListener('click', function () {
+                    var wasOpen = item.dataset.open === 'true';
+                    items.forEach(close);
+                    if (!wasOpen) open(item);
+                });
             });
         });
     }
@@ -504,6 +576,7 @@ window.CodeSommetTools.onReady = function (fn) {
     function _initAll() {
         initAutoTabs();
         initScrollToToolButtons();
+        initAccordionGroups();
     }
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', _initAll);

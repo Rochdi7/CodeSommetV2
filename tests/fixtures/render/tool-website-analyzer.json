@@ -41,20 +41,180 @@
             "Analyse SEO"
         ],
         [
+            4,
+            "Balise Meta Title"
+        ],
+        [
+            4,
+            "Meta Description"
+        ],
+        [
+            4,
+            "Balise H1"
+        ],
+        [
+            4,
+            "Hiérarchie des Titres"
+        ],
+        [
+            4,
+            "Balises Open Graph"
+        ],
+        [
+            4,
+            "Twitter Card"
+        ],
+        [
+            4,
+            "Balise Canonique"
+        ],
+        [
+            4,
+            "Texte Alt des Images"
+        ],
+        [
+            4,
+            "Liens Internes"
+        ],
+        [
+            4,
+            "Données Structurées"
+        ],
+        [
             3,
             "Métriques de Performance"
+        ],
+        [
+            4,
+            "Largest Contentful Paint (LCP)"
+        ],
+        [
+            4,
+            "First Contentful Paint (FCP)"
+        ],
+        [
+            4,
+            "Cumulative Layout Shift (CLS)"
+        ],
+        [
+            4,
+            "Time to Interactive (TTI)"
+        ],
+        [
+            4,
+            "Temps de Chargement"
+        ],
+        [
+            4,
+            "Optimisation des Images"
+        ],
+        [
+            4,
+            "Minification du Code"
+        ],
+        [
+            4,
+            "Ressources Bloquantes"
         ],
         [
             3,
             "Analyse de la Qualité du Design"
         ],
         [
+            4,
+            "Qualité Globale du Design"
+        ],
+        [
+            4,
+            "Harmonie des Couleurs"
+        ],
+        [
+            4,
+            "Typographie"
+        ],
+        [
+            4,
+            "Adaptabilité Mobile"
+        ],
+        [
+            4,
+            "Visibilité des CTA"
+        ],
+        [
+            4,
+            "Utilisation des Espaces Blancs"
+        ],
+        [
+            4,
+            "Clarté de la Navigation"
+        ],
+        [
             3,
             "Audit de Sécurité"
         ],
         [
+            4,
+            "HTTPS Activé"
+        ],
+        [
+            4,
+            "Validité du Certificat SSL"
+        ],
+        [
+            4,
+            "En-têtes de Sécurité"
+        ],
+        [
+            4,
+            "Politique de Confidentialité"
+        ],
+        [
+            4,
+            "Conditions d'Utilisation"
+        ],
+        [
+            4,
+            "Consentement aux Cookies"
+        ],
+        [
+            4,
+            "Contenu Mixte"
+        ],
+        [
             3,
             "Vérifications Instantanées de Santé"
+        ],
+        [
+            4,
+            "Protocole HTTPS"
+        ],
+        [
+            4,
+            "Sitemap.xml"
+        ],
+        [
+            4,
+            "Robots.txt"
+        ],
+        [
+            4,
+            "Favicon"
+        ],
+        [
+            4,
+            "Certificat SSL"
+        ],
+        [
+            4,
+            "Viewport Mobile"
+        ],
+        [
+            4,
+            "Redirection WWW"
+        ],
+        [
+            4,
+            "Temps de Réponse"
         ],
         [
             2,

@@ -40,4 +40,5 @@ return [
     'label_128' => 'Contenu Texte',
     'text_129' => 'Coller le Texte',
     'text_130' => 'Combien de mots ma page d\'accueil devrait-elle avoir ?',
+    'text_17_answer' => 'Notre outil prend en charge les deux méthodes ! Vous pouvez coller votre texte pour une analyse instantanée, ou saisir une URL pour extraire et analyser le contenu de n\'importe quelle page web. L\'analyse par URL est idéale pour la veille concurrentielle, les audits de contenu ou la vérification d\'articles déjà publiés. Il suffit de basculer entre les modes « Coller le Texte » et « Analyser l\'URL ».',
 ];

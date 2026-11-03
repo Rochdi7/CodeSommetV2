@@ -128,7 +128,12 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
+                            <p>{{ __('tools/url-slug-generator.text_11_answer') }}</p>
+                        </div>
+                    </div>
                     <div class="border-b border-gray-200 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
@@ -145,7 +150,12 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
+                            <p>{{ __('tools/url-slug-generator.text_12_answer') }}</p>
+                        </div>
+                    </div>
                     <div class="border-b border-gray-200 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
@@ -189,7 +199,12 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
+                            <p>{{ __('tools/url-slug-generator.text_15_answer') }}</p>
+                        </div>
+                    </div>
                     <div class="border-b border-gray-200 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div
@@ -206,7 +221,12 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
+                            <p>{{ __('tools/url-slug-generator.text_16_answer') }}</p>
+                        </div>
+                    </div>
                     <div class="border-b border-gray-200 last:border-0"><button
                             class="w-full py-6 flex items-start gap-4 text-left hover:bg-gray-50 -mx-4 px-4 rounded-lg transition-colors duration-200">
                             <div

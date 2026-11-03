@@ -241,7 +241,12 @@
                                     class="lucide lucide-chevron-down w-5 h-5 text-gray-400" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg></div>
-                        </button></div>
+                        </button>
+                        <div class="faq-answer hidden px-4 pb-6 text-sm text-gray-700 leading-relaxed"
+                            style="padding-left:3.5rem">
+                            <p>{{ __('tools/word-counter.text_17_answer') }}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="mt-6 text-center">
                     <p class="text-sm text-gray-600 mb-2">{{ __('tools/word-counter.text_18') }}</p><a href="/contact"

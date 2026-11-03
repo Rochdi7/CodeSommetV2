@@ -60,4 +60,5 @@ return [
         'button' => 'Analyser le site',
         'note' => 'robots.txt est respecté. Les paires déjà réglées par une balise canonical sont signalées comme traitées.',
     ],
+    'text_21_answer' => 'Oui, mais uniquement avec les bonnes précautions. Si vous republiez du contenu sur des sites tiers (comme Medium ou LinkedIn), ajoutez toujours une balise canonique pointant vers votre article original, insérez un lien visible créditant la source et attendez 1 à 2 semaines après la publication sur votre site. Cela aide les moteurs de recherche à identifier la source originale et protège votre positionnement SEO.',
 ];

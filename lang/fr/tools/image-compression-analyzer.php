@@ -47,4 +47,5 @@ return [
     'text_135' => 'Analyseur de Compression d\'Images',
     'text_136' => 'Analyser la Compression d\'Images',
     'text_137' => 'Page Speed Analyzer',
+    'text_16_answer' => 'Oui, absolument. Les CDN comme Cloudflare, Cloudinary ou imgix servent vos images depuis des serveurs répartis géographiquement, plus proches de vos utilisateurs, ce qui réduit la latence. Beaucoup de CDN proposent aussi la conversion automatique de format (WebP pour les navigateurs compatibles), la génération d\'images responsives et la compression à la volée, ce qui vous fait gagner des heures d\'optimisation manuelle.',
 ];

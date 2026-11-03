@@ -49,4 +49,6 @@ return [
     'placeholder_38' => 'Décrivez brièvement votre produit/service et ce qui le rend précieux (2-3 phrases)',
     'label_138' => 'Nom du Produit/Service',
     'placeholder_139' => 'ex., Assistant Email IA, Studio de Yoga',
+    'text_18_answer' => 'La longueur dépend de la complexité de votre produit et de son prix. Pour des produits simples et peu coûteux (moins de 50 $), des pages courtes (1 à 2 écrans) fonctionnent bien. Pour des offres complexes ou haut de gamme (500 $ et plus), des pages longues (5 à 10 sections) qui répondent en détail aux objections convertissent mieux. Notre outil recommande la structure optimale selon ce que vous vendez.',
+    'text_21_answer' => 'Oui ! Utilisez le texte généré comme version de référence, puis testez un seul élément à la fois : variantes de titre, texte du bouton CTA, images principales ou emplacement de la preuve sociale. Attendez d\'atteindre la significativité statistique (généralement plus de 100 conversions par variante). Le texte que nous générons repose sur des principes éprouvés, ce qui en fait une excellente version de contrôle pour vos tests.',
 ];

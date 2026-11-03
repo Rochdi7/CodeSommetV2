@@ -52,11 +52,17 @@
             <div><label
                     class="block text-sm font-semibold text-gray-700 mb-2">{{ __('tools/schema-generator.label_131') }}</label>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-2"><button
+                        type="button" data-schema-type="Article"
                         class="px-4 py-2 rounded-lg font-medium transition-colors bg-[#00AEEF] text-white">Article</button><button
+                        type="button" data-schema-type="Product"
                         class="px-4 py-2 rounded-lg font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">Product</button><button
+                        type="button" data-schema-type="Organization"
                         class="px-4 py-2 rounded-lg font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">Organization</button><button
+                        type="button" data-schema-type="LocalBusiness"
                         class="px-4 py-2 rounded-lg font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">LocalBusiness</button><button
+                        type="button" data-schema-type="Review"
                         class="px-4 py-2 rounded-lg font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">Review</button><button
+                        type="button" data-schema-type="WebSite"
                         class="px-4 py-2 rounded-lg font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">WebSite</button>
                 </div>
             </div>

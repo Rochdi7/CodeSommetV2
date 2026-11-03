@@ -46,4 +46,5 @@ return [
     'label_134' => 'Page URL',
     'text_135' => 'Analyseur de Liens Internes',
     'text_136' => 'Analyseur de Liens Internes',
+    'text_15_answer' => 'La profondeur de lien correspond au nombre de clics nécessaires pour atteindre une page depuis la page d\'accueil. Les pages accessibles en peu de clics (faible profondeur) reçoivent plus de PageRank et sont explorées plus souvent par les moteurs de recherche. Gardez vos pages importantes à 3 clics maximum de la page d\'accueil en ajoutant des liens internes depuis vos pages les plus fortes.',
 ];

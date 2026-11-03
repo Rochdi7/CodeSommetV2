@@ -51,4 +51,5 @@ return [
     'text_137' => 'Puis-je convertir de grands blocs de texte ou plusieurs paragraphes ?',
     'faq_new1_q' => 'Comment transformer un texte en majuscules ou en minuscules ?',
     'faq_new1_a' => 'Collez votre texte, puis choisissez « UPPERCASE » pour tout passer en majuscules ou « lowercase » pour tout passer en minuscules : la conversion est instantanée. Dans Word, le raccourci Maj + F3 fait alterner les casses ; dans Excel, les fonctions MAJUSCULE() et MINUSCULE() convertissent le contenu d\'une cellule. Pour un titre, préférez la casse de phrase ou de titre aux majuscules intégrales, plus difficiles à lire.',
+    'text_15_answer' => 'Le camelCase est la norme pour les variables et fonctions JavaScript/TypeScript (ex. getUserData). Le snake_case est courant en Python, en Ruby et pour les champs de base de données (ex. user_name). La Casse de Titre est rarement utilisée dans le code. Les MAJUSCULES sont généralement réservées aux constantes (ex. API_KEY). Respecter ces conventions améliore la lisibilité et la maintenabilité du code.',
 ];

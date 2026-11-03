@@ -141,7 +141,6 @@
     ],
     "parser_errors": {
         "Opening and ending tag mismatch: main and div": 1,
-        "error parsing attribute name": 2,
         "htmlParseEntityRef: no name": 4
     }
 }

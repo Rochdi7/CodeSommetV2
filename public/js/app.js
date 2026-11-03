@@ -1750,10 +1750,25 @@
         // Find retainer toggle button by text content (FR or EN)
         var allButtons = document.querySelectorAll('button');
         var toggleBtn = null;
+        // 'social' = original retainer add-on; 'local' = /services/seo-maroc,
+        // whose label was rewritten to « Inclure le Référencement Local » and
+        // therefore never bound (dead toggle).
+        var variant = 'social';
         allButtons.forEach(function (btn) {
-            var txt = btn.textContent.trim();
-            if ((txt.indexOf('Include Social Media') !== -1 || (txt.indexOf('Inclure') !== -1 && txt.indexOf('seaux Sociaux') !== -1)) && !btn.id) {
+            if (btn.id) return;
+            // Case/accent-insensitive: city pages say « Inclut les Réseaux
+            // Sociaux » or « Inclure les réseaux sociaux », which the old exact
+            // match missed (dead toggle on 15 city pages).
+            var txt = btn.textContent.toLowerCase().normalize('NFD')
+                .replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+            if (txt.length > 60) return;
+            var inc = txt.indexOf('inclu') !== -1;
+            if (txt.indexOf('include social media') !== -1 || (inc && txt.indexOf('reseaux sociaux') !== -1)) {
                 toggleBtn = btn;
+                variant = 'social';
+            } else if (inc && txt.indexOf('referencement local') !== -1) {
+                toggleBtn = btn;
+                variant = 'local';
             }
         });
         if (!toggleBtn) return;
@@ -1804,6 +1819,21 @@
             '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg><span class="text-[var(--color-primary-orange)]">Rapports mensuels d\'analytique & croissance</span></div>' +
             '</div>';
 
+        var variantCopy = {
+            social: { badge: '+Social', descOn: 'Transformation digitale complète avec gestion des réseaux sociaux et stratégie de contenu.' },
+            local: { badge: '+Local', descOn: 'Accompagnement SEO complet avec référencement local : Google Business Profile, pages villes, avis et suivi des positions locales.' }
+        }[variant];
+        if (variant === 'local') {
+            socialFeaturesHTML = '<div class="retainer-social-features" style="display:none">' +
+                '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="text-[var(--color-primary-orange)]">Pages locales « service + ville » optimisées</span></div>' +
+                '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path></svg><span class="text-[var(--color-primary-orange)]">Citations et cohérence NAP dans les annuaires marocains</span></div>' +
+                '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><span class="text-[var(--color-primary-orange)]">Collecte et gestion des avis Google</span></div>' +
+                '<div class="flex items-start gap-3 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[var(--color-primary-orange)] mt-0.5 flex-shrink-0"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg><span class="text-[var(--color-primary-orange)]">Suivi des positions dans le pack local Google Maps</span></div>' +
+                '</div>';
+        }
+        // Original description, restored when the add-on is switched off.
+        var descOff = descP ? descP.textContent : '';
+
         // Inject social features at the top of the features container
         if (featuresContainer && !featuresContainer.querySelector('.retainer-social-features')) {
             featuresContainer.insertAdjacentHTML('afterbegin', socialFeaturesHTML);
@@ -1851,11 +1881,11 @@
                 }
                 if (titleH3) {
                     if (!titleH3.querySelector('.retainer-social-badge')) {
-                        titleH3.insertAdjacentHTML('beforeend', ' <span class="retainer-social-badge text-[var(--color-primary-orange)]">+Social</span>');
+                        titleH3.insertAdjacentHTML('beforeend', ' <span class="retainer-social-badge text-[var(--color-primary-orange)]">' + variantCopy.badge + '</span>');
                     }
                 }
                 if (descP) {
-                    descP.textContent = 'Transformation digitale complète avec gestion des réseaux sociaux et stratégie de contenu.';
+                    descP.textContent = variantCopy.descOn;
                 }
                 if (socialFeatures) {
                     socialFeatures.style.display = '';
@@ -1884,7 +1914,7 @@
                 var badge = titleH3 ? titleH3.querySelector('.retainer-social-badge') : null;
                 if (badge) badge.remove();
                 if (descP) {
-                    descP.textContent = 'Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d\'améliorations de site web.';
+                    descP.textContent = descOff || 'Parfait pour les entreprises ayant besoin de fonctionnalités IA continues, de tableaux de bord et d\'améliorations de site web.';
                 }
                 if (socialFeatures) {
                     socialFeatures.style.display = 'none';

@@ -36,4 +36,5 @@ return [
     'text_25' => 'Réserver un Appel Découverte',
     'text_26' => '50+ projets réussis • Livraison en 48h • Pas de contrats à long terme',
     'label_126' => 'URL du site web',
+    'text_12_answer' => 'Google recommande une taille de police minimale de 12 px sur mobile, mais 16 px est idéal pour le texte courant. En dessous de 12 px, les utilisateurs doivent zoomer pour lire, ce qui dégrade l\'expérience. Utiliser des unités relatives (em, rem) plutôt que des pixels permet au texte de s\'adapter correctement aux différents appareils et aux préférences des utilisateurs.',
 ];

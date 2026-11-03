@@ -97,7 +97,7 @@
                                 class="relative z-10 text-sm md:text-base font-medium tracking-tight text-white"
                                 style="font-family:Inter, sans-serif;font-weight:500;letter-spacing:-0.04em">{{ __('home.ml_525') }}</span>
                         </a><button data-cal-link="code-sommet/new-client-meeting" data-cal-namespace="new-client-meeting"
-                            data-cal-config="{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}"
+                            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
                             class="hidden md:inline-flex group relative items-center justify-center gap-3 px-8 py-4 rounded-full overflow-hidden w-full sm:w-auto"
                             style="background-color:rgba(0, 0, 0, 0.08);border-radius:118px;box-shadow:rgba(0, 0, 0, 0.1) 0px 2.51941px 2.51941px -0.46875px,
                       rgba(0, 0, 0, 0.1) 0px 5.97144px 5.97144px -0.9375px,

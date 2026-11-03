@@ -51,6 +51,7 @@ return [
     'text_40' => 'Aucune inscription requise, aucune carte bancaire, analyses illimitées. Nous avons conçu cet outil pour démontrer notre expertise technique et aider les entreprises à améliorer leur présence en ligne. Utilisé par plus de 10 000 sites web dans le monde.',
     'text_41' => 'Prêt à analyser votre site web ?',
     'text_42' => 'Obtenez des insights instantanés et un plan d\'amélioration personnalisé en 30 secondes',
+    'cta_scroll_up' => 'Remonter pour commencer',
     'text_43' => 'Découvrez comment notre analyseur automatisé gratuit se compare à l\'embauche d\'un consultant SEO pour un audit manuel. Économisez des milliers de dollars et des semaines d\'attente.',
     'text_44' => 'Nombre de Vérifications',
     'text_45' => '40+ vérifications complètes',
