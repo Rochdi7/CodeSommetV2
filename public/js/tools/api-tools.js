@@ -80,6 +80,10 @@
             inFlight = true;
             CodeSommetTools.setLoading(true);
 
+            // Analyseur de site : rapport grand public progressif (site-report.js).
+            var report = (slug === 'website-analyzer' && window.CodeSommetSiteReport) ? window.CodeSommetSiteReport : null;
+            if (report) report.start(url);
+
             var request = useRunApi ? runViaApi(slug, url) : legacyRequest(slug, url);
 
             request
@@ -88,12 +92,17 @@
                 setRunStatus('');
                 CodeSommetTools.setLoading(false);
                 CodeSommetTools.incrementUsage(slug, url);
-                showGenericResult(data, slug, config);
+                if (report) {
+                    report.complete(data, function (mount) { showGenericResult(data, slug, config, mount); });
+                } else {
+                    showGenericResult(data, slug, config);
+                }
             })
             .catch(function (err) {
                 inFlight = false;
                 setRunStatus('');
                 CodeSommetTools.setLoading(false);
+                if (report) report.fail();
                 CodeSommetTools.showError(err.message || 'Analyse impossible. Vérifiez l\'URL et réessayez.');
             });
         });
@@ -236,7 +245,7 @@
      * L'identité visuelle du site reste inchangée : seule la zone de résultats
      * est retravaillée.
      */
-    function showGenericResult(data, slug, config) {
+    function showGenericResult(data, slug, config, mount) {
         var existing = document.getElementById('tool-results');
         if (existing) existing.remove();
 
@@ -305,12 +314,26 @@
 
         html += '</div></div>';
 
+        // Rapport grand public : le détail technique va dans son volet repliable.
+        if (mount) {
+            mount.innerHTML = html;
+            return;
+        }
+
         var actionBtn = document.getElementById('tool-action-btn');
         var insertTarget = actionBtn ? actionBtn.closest('.space-y-4') || actionBtn.parentElement : null;
         if (!insertTarget) insertTarget = document.querySelector('section.max-w-5xl .space-y-6');
         if (insertTarget) {
             insertTarget.insertAdjacentHTML('afterend', html);
             var el = document.getElementById('tool-results');
+            // « Recevez ce rapport par e-mail » sous le score (report-capture.js).
+            if (el && window.CodeSommetReportCapture && window.CodeSommetReportCapture.isReportable(data)) {
+                var scoreEl = el.querySelector('.csr-score');
+                var capTarget = scoreEl ? scoreEl.closest('.csr-card') : el.querySelector('.csr-body');
+                window.CodeSommetReportCapture.mount(capTarget, scoreEl ? 'afterend' : 'afterbegin', {
+                    slug: slug, url: data.analyzedUrl || data.url || (document.querySelector('section.max-w-5xl input[type="url"], section.max-w-5xl input[type="text"]') || {}).value
+                });
+            }
             if (el) {
                 el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 // Cible focalisable : l'utilisateur au clavier arrive

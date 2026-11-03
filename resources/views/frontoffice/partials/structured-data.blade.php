@@ -161,6 +161,36 @@
             'brand' => ['@type' => 'Brand', 'name' => $sdLeaf],
             'manufacturer' => ['@id' => $sdOrgId],
         ]);
+    } elseif ($sdRouteName === 'case-study.video' && isset($video, $videoSlug)) {
+        // Watch page : seule page du site qui déclare la vidéo (VideoObject).
+        $sdCaseLeaf = $sdShortTitle(__("our-work/{$videoSlug}.title"), $videoSlug);
+        $sdCrumbs = [
+            ['Accueil', $sdSiteUrl.'/'],
+            ['Nos Projets', $sdSiteUrl.'/our-work'],
+            [$sdCaseLeaf, $sdSiteUrl.'/our-work/'.$videoSlug],
+            [__('videos.breadcrumb'), $sdPageUrl],
+        ];
+        $sdSchemas[] = [
+            '@context' => 'https://schema.org',
+            '@type' => 'VideoObject',
+            '@id' => $sdPageUrl.'#video',
+            'name' => __("videos.{$videoSlug}.name"),
+            'description' => __("videos.{$videoSlug}.description"),
+            'thumbnailUrl' => [asset($video['thumbnail'])],
+            'uploadDate' => $video['upload_date'],
+            'duration' => $video['duration'],
+            'contentUrl' => asset($video['file']),
+            'encodingFormat' => 'video/mp4',
+            'width' => $video['width'],
+            'height' => $video['height'],
+            'inLanguage' => 'fr',
+            'isFamilyFriendly' => true,
+            'url' => $sdPageUrl,
+            'mainEntityOfPage' => $sdPageUrl,
+            'publisher' => ['@id' => $sdOrgId],
+            'creator' => ['@id' => $sdOrgId],
+            'about' => ['@type' => 'CreativeWork', 'name' => $sdCaseLeaf, 'url' => $sdSiteUrl.'/our-work/'.$videoSlug],
+        ];
     } elseif ($sdRouteName === 'blog.show' && isset($post)) {
         $sdCrumbs = [['Accueil', $sdSiteUrl.'/'], ['Blog', $sdSiteUrl.'/blog'], [$post->title, $sdPageUrl]];
     }

@@ -117,6 +117,16 @@ Route::group([], function () {
     })->where('slug', '[a-z0-9\-]+')->name('tool');
 
     // ─── Our Work / Case Study Pages ────────────────────────────────────────
+    // Page vidéo dédiée (« watch page ») : seule page qui porte le VideoObject
+    // et l'entrée du sitemap vidéo. Whitelist : config/videos.php.
+    Route::get('/our-work/{slug}/video', function (string $slug) {
+        $video = config("videos.{$slug}");
+        if (! $video || in_array($slug, config('pages.noindexed_case_studies', []), true)) {
+            abort(404);
+        }
+        return view('frontoffice.pages.videos.show', ['videoSlug' => $slug, 'video' => $video]);
+    })->where('slug', '[a-z\-]+')->name('case-study.video');
+
     Route::get('/our-work/{slug}', function (string $slug) {
         $view = "frontoffice.pages.our-work.{$slug}";
         if (! view()->exists($view)) {
@@ -134,6 +144,11 @@ Route::group([], function () {
     Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
         ->middleware('throttle:newsletter')
         ->name('newsletter.subscribe');
+
+    // ─── Rapport d'outil par e-mail (pages /tools, lead) ─────────────────────
+    Route::post('/tools/report-email', [\App\Http\Controllers\ToolReportController::class, 'send'])
+        ->middleware('throttle:tool-report')
+        ->name('tools.report-email');
 
     // ─── Contact (Public) ────────────────────────────────────────────────────
     Route::post('/contact', [ContactController::class, 'store'])

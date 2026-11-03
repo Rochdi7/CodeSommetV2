@@ -35,9 +35,9 @@ final class AnalyticsLabels
         'leave' => '#6B7280', 'lead' => '#EF4444', 'tool_use' => '#F59E0B', 'js_error' => '#DC2626',
     ];
 
-    public const LEAD_TYPES = ['contact' => 'Message de contact', 'quote' => 'Demande de devis', 'newsletter' => 'Newsletter'];
+    public const LEAD_TYPES = ['contact' => 'Message de contact', 'quote' => 'Demande de devis', 'newsletter' => 'Newsletter', 'tool_report' => 'Rapport par e-mail'];
 
-    public const LEAD_COLORS = ['contact' => '#00AEEF', 'quote' => '#10B981', 'newsletter' => '#7D53FF'];
+    public const LEAD_COLORS = ['contact' => '#00AEEF', 'quote' => '#10B981', 'newsletter' => '#7D53FF', 'tool_report' => '#F59E0B'];
 
     public const DEVICES = ['mobile' => 'Mobile', 'tablet' => 'Tablette', 'desktop' => 'Ordinateur'];
 

@@ -477,6 +477,7 @@
                     </svg></a></div>
         </div>
     </section>
+    @include('frontoffice.partials.tool-fix-cta')
     <section class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
         <div class="max-w-7xl mx-auto">
             <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 cta-elite"

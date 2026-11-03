@@ -135,6 +135,7 @@
                         <video data-src="{{ asset('videos/dentalpro-ecommerce-website-showcase.mp4') }}" autoplay
                             loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                     </div>
+                    @include('frontoffice.partials.case-study-video-link', ['slug' => 'dental-pro'])
                 </div>
             </div>
         </div>

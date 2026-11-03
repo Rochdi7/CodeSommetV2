@@ -125,6 +125,13 @@ class AppServiceProvider extends ServiceProvider
         // hit (60 s). The hour/day limits then never accumulate — which is
         // precisely how the September 2026 bot got exactly 2 messages through
         // every minute of the day. The window prefix keeps the counters apart.
+        // « Recevez ce rapport par e-mail » (pages outils). Clés préfixées
+        // distinctes : deux limites, deux compteurs.
+        RateLimiter::for('tool-report', fn (Request $request) => [
+            Limit::perMinute(3)->by('tool-report-minute:'.$request->ip()),
+            Limit::perHour(10)->by('tool-report-hour:'.$request->ip()),
+        ]);
+
         RateLimiter::for('newsletter', fn (Request $request) => [
             Limit::perMinute(3)->by('minute:'.$request->ip()),
             Limit::perHour(10)->by('hour:'.$request->ip()),

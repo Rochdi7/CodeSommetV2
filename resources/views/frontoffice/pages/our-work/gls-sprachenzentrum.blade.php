@@ -134,6 +134,7 @@
                         <video data-src="{{ asset('videos/gls-sprachenzentrum-language-school-showcase.mp4') }}" autoplay
                             loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                     </div>
+                    @include('frontoffice.partials.case-study-video-link', ['slug' => 'gls-sprachenzentrum'])
                 </div>
             </div>
         </div>

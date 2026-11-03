@@ -187,6 +187,79 @@
     "schemaTypes": [
         "Organization"
     ],
+    "groups": [
+        {
+            "key": "speed",
+            "title": "Chargement rapide",
+            "status": "good",
+            "label": "Réponse immédiate",
+            "text": "Le serveur répond vite et la page reste légère : vos visiteurs n'attendent pas.",
+            "source": "static"
+        },
+        {
+            "key": "mobile",
+            "title": "Adapté aux mobiles",
+            "status": "good",
+            "label": "Écran mobile OK",
+            "text": "Vos pages s'adaptent à la taille de l'écran : elles se lisent bien sur téléphone."
+        },
+        {
+            "key": "secure",
+            "title": "Connexion sécurisée",
+            "status": "good",
+            "label": "HTTPS actif",
+            "text": "La connexion est chiffrée : le cadenas s'affiche et vos visiteurs sont rassurés."
+        },
+        {
+            "key": "google",
+            "title": "Bien présenté sur Google",
+            "status": "good",
+            "label": "Titres en place",
+            "text": "La page a un titre et une description clairs : elle s'affiche proprement dans Google."
+        },
+        {
+            "key": "indexable",
+            "title": "Google peut lire votre site",
+            "status": "good",
+            "label": "Ouvert à la recherche",
+            "text": "Rien ne cache votre site à Google ni aux moteurs de recherche IA."
+        },
+        {
+            "key": "address",
+            "title": "Une seule adresse web",
+            "status": "good",
+            "label": "Adresse unique",
+            "text": "La page indique à Google son adresse officielle : votre classement n'est pas dispersé."
+        },
+        {
+            "key": "business",
+            "title": "Infos entreprise pour Google",
+            "status": "good",
+            "label": "Fiche lisible",
+            "text": "Google lit clairement le nom de votre entreprise et ses informations (Organization)."
+        },
+        {
+            "key": "pages",
+            "title": "Les pages clés",
+            "status": "work",
+            "label": "2 sur 5",
+            "text": "Introuvable depuis cette page : à propos, offre ou tarifs, confidentialité. Vos visiteurs les cherchent avant de vous contacter."
+        },
+        {
+            "key": "reach",
+            "title": "Facile à vous joindre",
+            "status": "work",
+            "label": "Difficile à joindre",
+            "text": "Il manque : téléphone ou e-mail cliquable, réseaux sociaux, mentions légales. Les visiteurs les cherchent avant de vous faire confiance."
+        },
+        {
+            "key": "hosting",
+            "title": "Hébergement moderne",
+            "status": "work",
+            "label": "Hébergement classique",
+            "text": "Votre site n'utilise pas de réseau de diffusion rapide (CDN) : il est plus lent loin du serveur."
+        }
+    ],
     "message": "Bonne santé générale",
     "analyzedUrl": "https://8.8.8.8/"
 }

@@ -135,6 +135,7 @@
                         <video data-src="{{ asset('videos/authentic-morocco-adventures-travel-website-showcase.mp4') }}" autoplay
                             loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                     </div>
+                    @include('frontoffice.partials.case-study-video-link', ['slug' => 'authentic-morocco-adventures'])
                 </div>
             </div>
         </div>

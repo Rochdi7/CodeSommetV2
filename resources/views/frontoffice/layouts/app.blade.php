@@ -81,6 +81,7 @@
          ring-amber-200…) étaient absentes du CSS compilé. --}}
     @if (request()->is('tools') || request()->is('tools/*') || request()->is('*/tools/*'))
         <link rel="stylesheet" href="{{ asset_v('css/tool-results.min.css') }}" />
+        <script src="{{ asset_v('js/tools/report-capture.js') }}" defer></script>
     @endif
 
     {{-- Toastr (notifications) : hors chemin critique — aucune notification ne se

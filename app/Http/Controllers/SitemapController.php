@@ -26,6 +26,30 @@ class SitemapController extends Controller
             $sitemap->add(Url::create($base.$path));
         }
 
+        // Pages vidéo (watch pages) + extension sitemap vidéo Google.
+        $noindexedCaseStudies = config('pages.noindexed_case_studies', []);
+        foreach (config('videos', []) as $slug => $video) {
+            if (in_array($slug, $noindexedCaseStudies, true)) {
+                continue;
+            }
+            $seconds = (int) preg_replace('/\D/', '', $video['duration']);
+            $sitemap->add(
+                Url::create($base.'/our-work/'.$slug.'/video')
+                    ->addVideo(
+                        asset($video['thumbnail']),
+                        __("videos.{$slug}.name"),
+                        __("videos.{$slug}.description"),
+                        asset($video['file']),
+                        null,
+                        [
+                            'duration' => $seconds,
+                            'publication_date' => $video['upload_date'],
+                            'family_friendly' => 'yes',
+                        ]
+                    )
+            );
+        }
+
         // Articles publiés — lastmod réel (date de dernière modification).
         foreach (BlogPost::published()->orderByDesc('published_at')->get(['slug', 'updated_at']) as $post) {
             $sitemap->add(

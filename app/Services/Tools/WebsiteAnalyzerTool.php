@@ -269,6 +269,8 @@ class WebsiteAnalyzerTool implements AnalysisTool
         ]);
 
         $payload['schemaTypes'] = $types;
+        // Rapport grand public (10 points) : clé additive, hors score.
+        $payload['groups'] = SiteReportGroups::build($analysis);
         $payload['message'] = $payload['score'] >= 80
             ? 'Bonne santé générale'
             : ($payload['score'] >= 50 ? 'Des améliorations sont nécessaires' : 'Problèmes critiques détectés');

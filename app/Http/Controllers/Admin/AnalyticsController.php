@@ -8,6 +8,7 @@ use App\Models\AnalyticsSession;
 use App\Models\ContactMessage;
 use App\Models\NewsletterSubscriber;
 use App\Models\QuoteRequest;
+use App\Models\ToolReportRequest;
 use App\Services\AnalyticsStats;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\StreamedResponse;
@@ -149,6 +150,19 @@ class AnalyticsController extends Controller
                 ]));
         }
 
+        if ($type === null || $type === 'tool_report') {
+            $rows = $rows->merge(ToolReportRequest::query()
+                ->when($start, fn ($q) => $q->where('created_at', '>=', $start))
+                ->latest()->limit(300)->get()
+                ->map(fn ($m) => [
+                    'type' => 'tool_report', 'id' => $m->id, 'at' => $m->created_at,
+                    'name' => $m->name, 'email' => $m->email, 'phone' => null, 'company' => null,
+                    'detail' => trim(implode(' · ', array_filter([$m->report['tool'] ?? $m->tool_slug, $m->target_url, $m->score !== null ? $m->score . '/100' : null]))),
+                    'message' => null, 'status' => $m->emailed_at ? 'envoyé' : 'échec envoi',
+                    'session_id' => $m->analytics_session_id, 'visitor_id' => $m->visitor_id, 'ip' => $m->ip_address,
+                ]));
+        }
+
         if ($filters['q']) {
             $q = mb_strtolower($filters['q']);
             $rows = $rows->filter(fn ($r) => str_contains(mb_strtolower(implode(' ', array_filter([$r['name'], $r['email'], $r['phone'], $r['company'], $r['ip'], $r['detail']]))), $q));
@@ -164,6 +178,7 @@ class AnalyticsController extends Controller
             'contact' => ContactMessage::when($start, fn ($q) => $q->where('created_at', '>=', $start))->count(),
             'quote' => QuoteRequest::when($start, fn ($q) => $q->where('created_at', '>=', $start))->count(),
             'newsletter' => NewsletterSubscriber::when($start, fn ($q) => $q->where('created_at', '>=', $start))->count(),
+            'tool_report' => ToolReportRequest::when($start, fn ($q) => $q->where('created_at', '>=', $start))->count(),
         ];
 
         return view('backoffice.pages.analytics.leads', [
@@ -217,6 +232,7 @@ class AnalyticsController extends Controller
             'contact' => ContactMessage::find($session->lead_id),
             'quote' => QuoteRequest::find($session->lead_id),
             'newsletter' => NewsletterSubscriber::find($session->lead_id),
+            'tool_report' => ToolReportRequest::find($session->lead_id),
             default => null,
         };
         if (! $model) {
@@ -233,6 +249,7 @@ class AnalyticsController extends Controller
             'detail' => match ($session->lead_type) {
                 'contact' => trim(($model->inquiry_type ? $model->inquiry_type . ' · ' : '') . ($model->budget ?? '')),
                 'quote' => trim(implode(' · ', array_filter([$model->project_type, $model->budget, $model->timeline]))),
+                'tool_report' => trim(implode(' · ', array_filter([$model->report['tool'] ?? $model->tool_slug, $model->target_url, $model->score !== null ? $model->score . '/100' : null]))),
                 default => $model->source,
             },
             'message' => $model->message ?? $model->details ?? null,

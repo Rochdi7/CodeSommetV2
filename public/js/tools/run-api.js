@@ -58,6 +58,12 @@
             });
     }
 
+    /* Signale le résultat à ToolsV2 (encart « rapport par e-mail »). */
+    function note(slug, result, payload) {
+        if (window.ToolsV2 && window.ToolsV2.noteServer) window.ToolsV2.noteServer(slug, result || {}, payload);
+        return result;
+    }
+
     function start(slug, payload) {
         return fetch('/api/v2/tools/' + encodeURIComponent(slug) + '/runs', {
             method: 'POST',
@@ -67,8 +73,8 @@
             .then(readJson, function () { throw new Error('Connexion interrompue. Vérifiez votre réseau et réessayez.'); })
             .then(function (r) {
                 var body = r.json || {};
-                if (r.status === 201 && body.result) return body.result;
-                if (r.status === 202 && body.run) { setStage('Analyse en file d\'attente…'); return poll(body.run.id, body.accessToken, 0); }
+                if (r.status === 201 && body.result) return note(slug, body.result, payload);
+                if (r.status === 202 && body.run) { setStage('Analyse en file d\'attente…'); return poll(body.run.id, body.accessToken, 0).then(function (res) { return note(slug, res, payload); }); }
                 if (r.status === 429) throw new Error('Limite de requêtes atteinte. Réessayez dans ' + (parseInt(r.retryAfter || '60', 10)) + ' secondes.');
                 throw new Error(message(body));
             });

@@ -197,6 +197,24 @@ body {
     .logo-scroll-container {
         animation-duration: 25s;
     }
+    /* Mobile: logos have very different aspect ratios (MonAsso/Hssabek ≈4.5:1,
+       Glamworlds/Location Buggy 1:1) so a shared 45px height made the wide
+       wordmarks dominate. Give every logo the same box and let object-fit
+       scale it inside → equal slots, even rhythm. !important beats the
+       inline height/width styles on the markup. */
+    .logo-scroll-container > div {
+        width: 112px !important;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-scroll-container > div > img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain;
+        object-position: center;
+    }
 }
 
 /* ── Hero text rotation animations ───────────────────────────────────── */

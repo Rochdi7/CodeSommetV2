@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
  */
 Route::post('/tools/{slug}', [ToolsApiController::class, 'handle'])
     ->where('slug', '[a-z0-9-]+')
-    ->middleware('throttle:tools-api');
+    ->middleware(['throttle:tools-api', \App\Http\Middleware\RememberToolReport::class]);
 
 /*
  * Real, server-side "N scans performed" counter shown on tool pages.
@@ -53,7 +53,7 @@ Route::post('/crawl-visualizer', [\App\Http\Controllers\Tools\CrawlVisualizerCon
  */
 Route::post('/tools-v2/{slug}', [\App\Http\Controllers\Tools\ToolsV2ApiController::class, 'handle'])
     ->where('slug', '[a-z0-9-]+')
-    ->middleware('throttle:30,1');
+    ->middleware(['throttle:30,1', \App\Http\Middleware\RememberToolReport::class]);
 
 /*
  * Versioned analysis-run API (Phase A, docs/reverse-engineering/seosignalx/
@@ -65,11 +65,11 @@ Route::post('/tools-v2/{slug}', [\App\Http\Controllers\Tools\ToolsV2ApiControlle
 Route::prefix('v2')->group(function () {
     Route::post('/tools/{slug}/runs', [AnalysisRunController::class, 'store'])
         ->where('slug', '[a-z0-9-]+')
-        ->middleware('throttle:tools-api')
+        ->middleware(['throttle:tools-api', \App\Http\Middleware\RememberToolReport::class])
         ->name('analysis-runs.store');
     Route::get('/runs/{uuid}', [AnalysisRunController::class, 'show'])
         ->whereUuid('uuid')
-        ->middleware('throttle:analysis-runs-read')
+        ->middleware(['throttle:analysis-runs-read', \App\Http\Middleware\RememberToolReport::class])
         ->name('analysis-runs.show');
 });
 

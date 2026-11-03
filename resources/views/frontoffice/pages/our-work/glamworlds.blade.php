@@ -134,6 +134,7 @@
                         <video data-src="{{ asset('videos/glamworlds-luxury-ecommerce-showcase.mp4') }}" autoplay
                             loop muted playsinline webkit-playsinline preload="none" class="w-full h-full object-cover"></video>
                     </div>
+                    @include('frontoffice.partials.case-study-video-link', ['slug' => 'glamworlds'])
                 </div>
             </div>
         </div>

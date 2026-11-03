@@ -1147,6 +1147,7 @@
             </div>
         </div>
     </section>
+    @include('frontoffice.partials.tool-fix-cta')
     <section class="relative w-full px-4 py-12 md:py-16 lg:py-20 bg-[#F5F5F5]">
         <div class="max-w-7xl mx-auto">
             <div class="relative overflow-hidden rounded-[24px] md:rounded-[32px] px-6 cta-elite"
@@ -1195,6 +1196,7 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('js/tools-common.js') }}" defer></script>
-    <script src="{{ asset('js/tools/api-tools.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools-common.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/site-report.js') }}" defer></script>
+    <script src="{{ asset_v('js/tools/api-tools.js') }}" defer></script>
 @endpush

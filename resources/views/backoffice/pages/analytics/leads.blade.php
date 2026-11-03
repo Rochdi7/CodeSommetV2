@@ -13,7 +13,7 @@
 <div class="flex items-center justify-between mb-6 gap-4 flex-wrap">
     <div>
         <h1 class="text-xl font-bold text-[var(--text-primary)]">Leads</h1>
-        <p class="text-xs text-[var(--text-tertiary)] mt-0.5">Messages de contact, demandes de devis et inscriptions newsletter, avec la visite qui les a produits. {{ $tracked }} sur {{ $leads->count() }} affich&eacute;s ont un parcours suivi.</p>
+        <p class="text-xs text-[var(--text-tertiary)] mt-0.5">Messages de contact, demandes de devis, inscriptions newsletter et rapports d'outils envoyés par e-mail, avec la visite qui les a produits. {{ $tracked }} sur {{ $leads->count() }} affich&eacute;s ont un parcours suivi.</p>
     </div>
     <a href="{{ route('admin.analytics.index') }}" class="admin-btn admin-btn-secondary">&larr; Vue d'ensemble</a>
 </div>
@@ -46,7 +46,7 @@
     </div>
 </div>
 
-<div class="grid grid-cols-3 gap-4 mb-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
     @foreach(L::LEAD_TYPES as $k => $label)
     <a href="{{ $link(['type' => $type === $k ? null : $k]) }}" class="admin-stat-card block {{ $type === $k ? 'ring-2 ring-[#00AEEF]' : '' }}">
         <div class="text-xs font-semibold text-[var(--text-tertiary)] uppercase tracking-wider mb-1">{{ $label }}</div>

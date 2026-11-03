@@ -25,7 +25,7 @@ class AnalyticsSession extends Model
 
     public const SOURCES = ['direct', 'organic', 'social', 'ai', 'campaign', 'paid', 'referral'];
 
-    public const LEAD_TYPES = ['contact', 'quote', 'newsletter'];
+    public const LEAD_TYPES = ['contact', 'quote', 'newsletter', 'tool_report'];
 
     public const ID_PATTERN = '/^[a-f0-9]{16,64}$/';
 

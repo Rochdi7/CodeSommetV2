@@ -94,7 +94,17 @@
                 if (err instanceof TypeError) throw new Error('Connexion interrompue. Vérifiez votre réseau et réessayez.');
                 throw err;
             })
-            .then(function (data) { if (timer) clearTimeout(timer); return data; }, function (err) { if (timer) clearTimeout(timer); throw err; });
+            .then(function (data) { if (timer) clearTimeout(timer); noteServer(slug, data, payload); return data; }, function (err) { if (timer) clearTimeout(timer); throw err; });
+    }
+
+    /* Dernière analyse serveur réussie de ce passage : permet d'afficher
+     * « Recevez ce rapport par e-mail » (report-capture.js) uniquement après
+     * un vrai scan, pas après un outil 100 % navigateur. */
+    var lastServer = null;
+    function noteServer(slug, data, payload) {
+        var cap = window.CodeSommetReportCapture;
+        if (!cap || !cap.isReportable(data)) return;
+        lastServer = { slug: slug, url: (payload && (payload.url || payload.domain)) || data.analyzedUrl || data.url || null };
     }
 
     /* ── Exports ──────────────────────────────────────────────────────── */
@@ -218,12 +228,18 @@
             if (loadingOn) return;
             hideError();
             setLoading(true);
+            lastServer = null;
+            var oldCap = results && results.querySelector('[data-rcap]');
+            if (oldCap) oldCap.remove();
             Promise.resolve()
                 .then(function () { return def.run(form); })
                 .then(function (result) {
                     lastResult = result || null;
                     if (result !== false) {
                         results.classList.remove('hidden');
+                        if (lastServer && window.CodeSommetReportCapture) {
+                            window.CodeSommetReportCapture.mount(results, 'afterbegin', lastServer);
+                        }
                         if (window.CodeSommetTools && window.CodeSommetTools.incrementUsage) {
                             window.CodeSommetTools.incrementUsage(def.slug, def.target ? def.target(form) : undefined);
                         }
@@ -263,6 +279,7 @@
         showError: showError, hideError: hideError, setLoading: setLoading,
         badge: badge, checks: checks, table: table, gradeFor: gradeFor, scoreBadge: scoreBadge, stat: stat,
         toCsv: toCsv, download: download, register: register, onReady: onReady, initTabs: initTabs,
-        result: function () { return lastResult; }
+        result: function () { return lastResult; },
+        noteServer: noteServer
     };
 })();
